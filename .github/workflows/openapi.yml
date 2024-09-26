@@ -1,8 +1,8 @@
 name: OpenApi Client Build
 
 on:
-  push:
-  workflow_dispatch:
+  release:
+    types: [published]
 
 permissions:
   contents: write
