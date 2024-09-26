@@ -18,7 +18,7 @@ Name | Type | Description | Notes
 **_updated_at** | **string** |  | [optional]
 **_usernames** | **string[]** |  | [optional]
 **e2e_key_id** | **string** |  | [optional]
-**last_message** | [**\RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInner**](GetApiV1ChatGetMentionedMessages200ResponseMessagesInner.md) |  | [optional]
+**last_message** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInner**](GetApiV1ChatGetMentionedMessages200ResponseMessagesInner.md) |  | [optional]
 **lm** | **string** |  | [optional]
 **topic** | **string** |  | [optional]
 

@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\LivechatAudioVideoCallsApi
+# WebMIRocketChatApiClientOmnichannelApi\LivechatAudioVideoCallsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatWebrtcCall()`
 
 ```php
-getApiV1LivechatWebrtcCall($x_auth_token, $x_user_id, $rid): \RocketChatOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200Response
+getApiV1LivechatWebrtcCall($x_auth_token, $x_user_id, $rid): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200Response
 ```
 
 Start Call
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatAudioVideoCallsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatAudioVideoCallsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200Response**](../Model/GetApiV1LivechatWebrtcCall200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200Response**](../Model/GetApiV1LivechatWebrtcCall200Response.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `putApiV1LivechatWebrtcCallCallId()`
 
 ```php
-putApiV1LivechatWebrtcCallCallId($x_auth_token, $x_user_id, $call_id, $put_api_v1_livechat_webrtc_call_call_id_request): \RocketChatOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallId200Response
+putApiV1LivechatWebrtcCallCallId($x_auth_token, $x_user_id, $call_id, $put_api_v1_livechat_webrtc_call_call_id_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallId200Response
 ```
 
 Update Call Status
@@ -86,7 +86,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatAudioVideoCallsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatAudioVideoCallsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -94,7 +94,7 @@ $apiInstance = new RocketChatOmnichannelApi\Api\LivechatAudioVideoCallsApi(
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $call_id = zRAeTszXor8CCPceB; // string | The call message _id.
-$put_api_v1_livechat_webrtc_call_call_id_request = new \RocketChatOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallIdRequest(); // \RocketChatOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallIdRequest
+$put_api_v1_livechat_webrtc_call_call_id_request = new \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallIdRequest(); // \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallIdRequest
 
 try {
     $result = $apiInstance->putApiV1LivechatWebrtcCallCallId($x_auth_token, $x_user_id, $call_id, $put_api_v1_livechat_webrtc_call_call_id_request);
@@ -111,11 +111,11 @@ try {
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **call_id** | **string**| The call message _id. | |
-| **put_api_v1_livechat_webrtc_call_call_id_request** | [**\RocketChatOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallIdRequest**](../Model/PutApiV1LivechatWebrtcCallCallIdRequest.md)|  | [optional] |
+| **put_api_v1_livechat_webrtc_call_call_id_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallIdRequest**](../Model/PutApiV1LivechatWebrtcCallCallIdRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallId200Response**](../Model/PutApiV1LivechatWebrtcCallCallId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatWebrtcCallCallId200Response**](../Model/PutApiV1LivechatWebrtcCallCallId200Response.md)
 
 ### Authorization
 

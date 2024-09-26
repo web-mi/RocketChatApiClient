@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImFiles200ResponseFilesInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -74,7 +74,7 @@ class GetApiV1ImFiles200ResponseFilesInner implements ModelInterface, ArrayAcces
         'uploading' => 'bool',
         'url' => 'string',
         'type_group' => 'string',
-        'user' => '\RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU'
+        'user' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU'
     ];
 
     /**
@@ -870,7 +870,7 @@ class GetApiV1ImFiles200ResponseFilesInner implements ModelInterface, ArrayAcces
     /**
      * Gets user
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
     public function getUser()
     {
@@ -880,7 +880,7 @@ class GetApiV1ImFiles200ResponseFilesInner implements ModelInterface, ArrayAcces
     /**
      * Sets user
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $user user
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $user user
      *
      * @return self
      */

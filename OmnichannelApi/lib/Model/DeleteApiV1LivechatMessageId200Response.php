@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * DeleteApiV1LivechatMessageId200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class DeleteApiV1LivechatMessageId200Response implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatMessageId200ResponseMessage',
+        'message' => '\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatMessageId200ResponseMessage',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class DeleteApiV1LivechatMessageId200Response implements ModelInterface, ArrayAc
     /**
      * Gets message
      *
-     * @return \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatMessageId200ResponseMessage|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatMessageId200ResponseMessage|null
      */
     public function getMessage()
     {
@@ -309,7 +309,7 @@ class DeleteApiV1LivechatMessageId200Response implements ModelInterface, ArrayAc
     /**
      * Sets message
      *
-     * @param \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatMessageId200ResponseMessage|null $message message
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatMessageId200ResponseMessage|null $message message
      *
      * @return self
      */

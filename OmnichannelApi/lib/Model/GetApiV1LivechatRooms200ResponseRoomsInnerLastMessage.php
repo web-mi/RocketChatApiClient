@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage implements ModelInte
         'token' => 'string',
         'alias' => 'string',
         'ts' => 'string',
-        'u' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
+        'u' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
         '_updated_at' => 'string',
         'mentions' => 'object[]',
         'channels' => 'object[]',
@@ -531,7 +531,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage implements ModelInte
     /**
      * Gets u
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
     public function getU()
     {
@@ -541,7 +541,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage implements ModelInte
     /**
      * Sets u
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
      *
      * @return self
      */

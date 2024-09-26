@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **rid** | **string** |  | [optional]
 **ts** | **string** |  | [optional]
 **msg** | **string** |  | [optional]
-**u** | [**\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
+**u** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
 **groupable** | **bool** |  | [optional]
 **drid** | **string** |  | [optional]
 **_updated_at** | **string** |  | [optional]

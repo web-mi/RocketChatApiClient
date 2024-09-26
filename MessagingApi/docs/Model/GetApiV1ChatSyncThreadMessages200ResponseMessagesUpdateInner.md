@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **tmid** | **string** |  | [optional]
 **msg** | **string** |  | [optional]
 **ts** | **string** |  | [optional]
-**u** | [**\RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU**](PostApiV1ChatDelete200ResponseMessageU.md) |  | [optional]
+**u** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU**](PostApiV1ChatDelete200ResponseMessageU.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **mentions** | **object[]** |  | [optional]
 **channels** | **object[]** |  | [optional]

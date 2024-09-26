@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatDelete200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
     protected static $openAPITypes = [
         '_id' => 'string',
         'ts' => 'string',
-        'message' => '\RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessage',
+        'message' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessage',
         'success' => 'bool'
     ];
 
@@ -367,7 +367,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets message
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessage|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessage|null
      */
     public function getMessage()
     {
@@ -377,7 +377,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets message
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessage|null $message message
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessage|null $message message
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
       * @var string[]
       */
     protected static $openAPITypes = [
-        'password' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServicesPassword',
-        'email2fa' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa',
-        'resume' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume',
-        'email' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail',
-        'totp' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp',
+        'password' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServicesPassword',
+        'email2fa' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa',
+        'resume' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume',
+        'email' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail',
+        'totp' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp',
         'password_history' => 'string[]'
     ];
 
@@ -327,7 +327,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Gets password
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServicesPassword|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServicesPassword|null
      */
     public function getPassword()
     {
@@ -337,7 +337,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Sets password
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServicesPassword|null $password password
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServicesPassword|null $password password
      *
      * @return self
      */
@@ -354,7 +354,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Gets email2fa
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa|null
      */
     public function getEmail2fa()
     {
@@ -364,7 +364,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Sets email2fa
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa|null $email2fa email2fa
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa|null $email2fa email2fa
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Gets resume
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume|null
      */
     public function getResume()
     {
@@ -391,7 +391,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Sets resume
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume|null $resume resume
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume|null $resume resume
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Gets email
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail|null
      */
     public function getEmail()
     {
@@ -418,7 +418,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Sets email
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail|null $email email
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail|null $email email
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Gets totp
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp|null
      */
     public function getTotp()
     {
@@ -445,7 +445,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
     /**
      * Sets totp
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp|null $totp totp
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp|null $totp totp
      *
      * @return self
      */

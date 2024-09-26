@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200Response i
       * @var string[]
       */
     protected static $openAPITypes = [
-        'history' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHistoryInner[]',
+        'history' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHistoryInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200Response i
     /**
      * Gets history
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHistoryInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHistoryInner[]|null
      */
     public function getHistory()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200Response i
     /**
      * Sets history
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHistoryInner[]|null $history history
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHistoryInner[]|null $history history
      *
      * @return self
      */

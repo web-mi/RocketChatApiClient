@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAgentNext200ResponseAgent Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1LivechatAgentNext200ResponseAgent implements ModelInterface, Array
       */
     protected static $openAPITypes = [
         '_id' => 'string',
-        'emails' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]',
+        'emails' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]',
         'name' => 'string',
         'username' => 'string'
     ];
@@ -340,7 +340,7 @@ class GetApiV1LivechatAgentNext200ResponseAgent implements ModelInterface, Array
     /**
      * Gets emails
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null
      */
     public function getEmails()
     {
@@ -350,7 +350,7 @@ class GetApiV1LivechatAgentNext200ResponseAgent implements ModelInterface, Array
     /**
      * Sets emails
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null $emails emails
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null $emails emails
      *
      * @return self
      */

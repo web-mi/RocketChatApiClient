@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatMessageId200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatMessageId200Response implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatMessageId200ResponseMessage',
+        'message' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessageId200ResponseMessage',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatMessageId200Response implements ModelInterface, ArrayAcces
     /**
      * Gets message
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatMessageId200ResponseMessage|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessageId200ResponseMessage|null
      */
     public function getMessage()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatMessageId200Response implements ModelInterface, ArrayAcces
     /**
      * Sets message
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatMessageId200ResponseMessage|null $message message
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessageId200ResponseMessage|null $message message
      *
      * @return self
      */

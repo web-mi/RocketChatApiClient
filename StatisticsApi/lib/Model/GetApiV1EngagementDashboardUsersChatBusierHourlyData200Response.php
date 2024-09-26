@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Model;
+namespace WebMIRocketChatApiClientStatisticsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatStatisticsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response implements
       * @var string[]
       */
     protected static $openAPITypes = [
-        'hours' => '\RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner[]',
+        'hours' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response implements
     /**
      * Gets hours
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner[]|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner[]|null
      */
     public function getHours()
     {
@@ -309,7 +309,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response implements
     /**
      * Sets hours
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner[]|null $hours hours
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner[]|null $hours hours
      *
      * @return self
      */

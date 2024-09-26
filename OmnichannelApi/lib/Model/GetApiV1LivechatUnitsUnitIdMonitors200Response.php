@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatUnitsUnitIdMonitors200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200Response implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'monitors' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner[]',
+        'monitors' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200Response implements ModelInterface, 
     /**
      * Gets monitors
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner[]|null
      */
     public function getMonitors()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200Response implements ModelInterface, 
     /**
      * Sets monitors
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner[]|null $monitors monitors
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner[]|null $monitors monitors
      *
      * @return self
      */

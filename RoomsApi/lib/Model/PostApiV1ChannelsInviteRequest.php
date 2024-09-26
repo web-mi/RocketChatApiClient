@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1ChannelsInviteRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
     protected static $openAPITypes = [
         'room_id' => 'string',
         'user_id' => 'string',
-        'user_ids' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]'
+        'user_ids' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]'
     ];
 
     /**
@@ -369,7 +369,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets user_ids
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]
      */
     public function getUserIds()
     {
@@ -379,7 +379,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets user_ids
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[] $user_ids An array of the userId of users to be invited
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[] $user_ids An array of the userId of users to be invited
      *
      * @return self
      */

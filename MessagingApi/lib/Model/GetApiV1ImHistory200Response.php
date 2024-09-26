@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImHistory200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ImHistory200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\RocketChatMessagingApi\Model\GetApiV1ImHistory200ResponseMessagesInner[]',
+        'messages' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImHistory200ResponseMessagesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ImHistory200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets messages
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ImHistory200ResponseMessagesInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImHistory200ResponseMessagesInner[]|null
      */
     public function getMessages()
     {
@@ -309,7 +309,7 @@ class GetApiV1ImHistory200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets messages
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ImHistory200ResponseMessagesInner[]|null $messages messages
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImHistory200ResponseMessagesInner[]|null $messages messages
      *
      * @return self
      */

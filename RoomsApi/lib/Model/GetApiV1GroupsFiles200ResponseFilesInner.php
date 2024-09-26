@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1GroupsFiles200ResponseFilesInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -68,7 +68,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
         'uploading' => 'bool',
         'extension' => 'string',
         'progress' => 'int',
-        'user' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'user' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         '_updated_at' => 'string',
         'instance_id' => 'string',
         'etag' => 'string',
@@ -715,7 +715,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
     /**
      * Gets user
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getUser()
     {
@@ -725,7 +725,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
     /**
      * Sets user
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $user user
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $user user
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatContentManagementApi\Api;
+namespace WebMIRocketChatApiClientContentManagementApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatContentManagementApi\ApiException;
-use RocketChatContentManagementApi\Configuration;
-use RocketChatContentManagementApi\HeaderSelector;
-use RocketChatContentManagementApi\ObjectSerializer;
+use WebMIRocketChatApiClientContentManagementApi\ApiException;
+use WebMIRocketChatApiClientContentManagementApi\Configuration;
+use WebMIRocketChatApiClientContentManagementApi\HeaderSelector;
+use WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
 
 /**
  * CustomUserStatusApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -140,9 +140,9 @@ class CustomUserStatusApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1CustomUserStatusList'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\GetApiV1CustomUserStatusList200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function getApiV1CustomUserStatusList($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1CustomUserStatusList'][0])
     {
@@ -159,9 +159,9 @@ class CustomUserStatusApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1CustomUserStatusList'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\GetApiV1CustomUserStatusList200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1CustomUserStatusListWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1CustomUserStatusList'][0])
     {
@@ -204,11 +204,11 @@ class CustomUserStatusApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1CustomUserStatusList200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1CustomUserStatusList200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -226,16 +226,16 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1CustomUserStatusList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -253,13 +253,13 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\GetApiV1CustomUserStatusList200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -292,7 +292,7 @@ class CustomUserStatusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1CustomUserStatusList200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -300,7 +300,7 @@ class CustomUserStatusApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -346,7 +346,7 @@ class CustomUserStatusApi
      */
     public function getApiV1CustomUserStatusListAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1CustomUserStatusList'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\GetApiV1CustomUserStatusList200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response';
         $request = $this->getApiV1CustomUserStatusListRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -492,12 +492,12 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request post_api_v1_custom_user_status_create_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request post_api_v1_custom_user_status_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusCreate'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response|\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function postApiV1CustomUserStatusCreate($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_create_request = null, string $contentType = self::contentTypes['postApiV1CustomUserStatusCreate'][0])
     {
@@ -512,12 +512,12 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusCreate'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response|\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1CustomUserStatusCreateWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_create_request = null, string $contentType = self::contentTypes['postApiV1CustomUserStatusCreate'][0])
     {
@@ -560,11 +560,11 @@ class CustomUserStatusApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -582,16 +582,16 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -609,16 +609,16 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -636,13 +636,13 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -675,7 +675,7 @@ class CustomUserStatusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -683,7 +683,7 @@ class CustomUserStatusApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -691,7 +691,7 @@ class CustomUserStatusApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -708,7 +708,7 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusCreate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -731,7 +731,7 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusCreate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -739,7 +739,7 @@ class CustomUserStatusApi
      */
     public function postApiV1CustomUserStatusCreateAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_create_request = null, string $contentType = self::contentTypes['postApiV1CustomUserStatusCreate'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response';
         $request = $this->postApiV1CustomUserStatusCreateRequest($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_create_request, $contentType);
 
         return $this->client
@@ -783,7 +783,7 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest $post_api_v1_custom_user_status_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusCreate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -894,12 +894,12 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request post_api_v1_custom_user_status_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request post_api_v1_custom_user_status_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusDelete'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function postApiV1CustomUserStatusDelete($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_delete_request = null, string $contentType = self::contentTypes['postApiV1CustomUserStatusDelete'][0])
     {
@@ -914,12 +914,12 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusDelete'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1CustomUserStatusDeleteWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_delete_request = null, string $contentType = self::contentTypes['postApiV1CustomUserStatusDelete'][0])
     {
@@ -962,11 +962,11 @@ class CustomUserStatusApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -984,16 +984,16 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1011,16 +1011,16 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1038,13 +1038,13 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1077,7 +1077,7 @@ class CustomUserStatusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1085,7 +1085,7 @@ class CustomUserStatusApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1093,7 +1093,7 @@ class CustomUserStatusApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1110,7 +1110,7 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1133,7 +1133,7 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1141,7 +1141,7 @@ class CustomUserStatusApi
      */
     public function postApiV1CustomUserStatusDeleteAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_delete_request = null, string $contentType = self::contentTypes['postApiV1CustomUserStatusDelete'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
         $request = $this->postApiV1CustomUserStatusDeleteRequest($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_delete_request, $contentType);
 
         return $this->client
@@ -1185,7 +1185,7 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest $post_api_v1_custom_user_status_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1296,12 +1296,12 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request post_api_v1_custom_user_status_update_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request post_api_v1_custom_user_status_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusUpdate'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response|\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function postApiV1CustomUserStatusUpdate($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_update_request = null, string $contentType = self::contentTypes['postApiV1CustomUserStatusUpdate'][0])
     {
@@ -1316,12 +1316,12 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusUpdate'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response|\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1CustomUserStatusUpdateWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_update_request = null, string $contentType = self::contentTypes['postApiV1CustomUserStatusUpdate'][0])
     {
@@ -1364,11 +1364,11 @@ class CustomUserStatusApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1386,16 +1386,16 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1413,16 +1413,16 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1440,13 +1440,13 @@ class CustomUserStatusApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1479,7 +1479,7 @@ class CustomUserStatusApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1487,7 +1487,7 @@ class CustomUserStatusApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1495,7 +1495,7 @@ class CustomUserStatusApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1512,7 +1512,7 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1535,7 +1535,7 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1543,7 +1543,7 @@ class CustomUserStatusApi
      */
     public function postApiV1CustomUserStatusUpdateAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_update_request = null, string $contentType = self::contentTypes['postApiV1CustomUserStatusUpdate'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response';
         $request = $this->postApiV1CustomUserStatusUpdateRequest($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_update_request, $contentType);
 
         return $this->client
@@ -1587,7 +1587,7 @@ class CustomUserStatusApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest $post_api_v1_custom_user_status_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CustomUserStatusUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

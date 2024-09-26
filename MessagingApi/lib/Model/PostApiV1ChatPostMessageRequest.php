@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatPostMessageRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class PostApiV1ChatPostMessageRequest implements ModelInterface, ArrayAccess, \J
         'emoji' => 'string',
         'room_id' => 'string',
         'text' => 'string',
-        'attachments' => '\RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInner[]',
+        'attachments' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInner[]',
         'tmid' => 'string',
         'tmshow' => 'bool',
         'custom_fields' => 'object'
@@ -520,7 +520,7 @@ class PostApiV1ChatPostMessageRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets attachments
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInner[]|null
      */
     public function getAttachments()
     {
@@ -530,7 +530,7 @@ class PostApiV1ChatPostMessageRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets attachments
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInner[]|null $attachments attachments
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInner[]|null $attachments attachments
      *
      * @return self
      */

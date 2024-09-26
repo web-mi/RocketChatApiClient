@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\CannedResponsesApi
+# WebMIRocketChatApiClientOmnichannelApi\CannedResponsesApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1CannedResponses()`
 
 ```php
-getApiV1CannedResponses($x_auth_token, $x_user_id, $shortcut, $text, $scope, $tags, $department_id, $offset, $count, $sort, $fields, $created_by): \RocketChatOmnichannelApi\Model\GetApiV1CannedResponses200Response
+getApiV1CannedResponses($x_auth_token, $x_user_id, $shortcut, $text, $scope, $tags, $department_id, $offset, $count, $sort, $fields, $created_by): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponses200Response
 ```
 
 List All Canned Responses
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\CannedResponsesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\CannedResponsesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -73,7 +73,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1CannedResponses200Response**](../Model/GetApiV1CannedResponses200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponses200Response**](../Model/GetApiV1CannedResponses200Response.md)
 
 ### Authorization
 
@@ -91,7 +91,7 @@ No authorization required
 ## `getApiV1CannedResponsesGet()`
 
 ```php
-getApiV1CannedResponsesGet($x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetApiV1CannedResponsesGet200Response
+getApiV1CannedResponsesGet($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponsesGet200Response
 ```
 
 Get User Canned Responses
@@ -106,7 +106,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\CannedResponsesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\CannedResponsesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -131,7 +131,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1CannedResponsesGet200Response**](../Model/GetApiV1CannedResponsesGet200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponsesGet200Response**](../Model/GetApiV1CannedResponsesGet200Response.md)
 
 ### Authorization
 
@@ -149,7 +149,7 @@ No authorization required
 ## `getApiV1CannedResponsesId()`
 
 ```php
-getApiV1CannedResponsesId($_id, $x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetApiV1CannedResponsesId200Response
+getApiV1CannedResponsesId($_id, $x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponsesId200Response
 ```
 
 Get a Canned Response
@@ -164,7 +164,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\CannedResponsesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\CannedResponsesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -191,7 +191,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1CannedResponsesId200Response**](../Model/GetApiV1CannedResponsesId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponsesId200Response**](../Model/GetApiV1CannedResponsesId200Response.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ No authorization required
 ## `postApiV1CannedResponses()`
 
 ```php
-postApiV1CannedResponses($x_auth_token, $x_user_id, $post_api_v1_canned_responses_request): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postApiV1CannedResponses($x_auth_token, $x_user_id, $post_api_v1_canned_responses_request): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Create or Update or Delete a Canned Response
@@ -224,14 +224,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\CannedResponsesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\CannedResponsesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_canned_responses_request = {"shortcut":"test-canned","text":"This is an example test for canned response","scope":"global","tags":["tag1","tag2"]}; // \RocketChatOmnichannelApi\Model\PostApiV1CannedResponsesRequest | Note:   * To update a canned response, the `_id` parameter is required along with the other required parameters. This parameter is not used to create a canned response.   * To delete a canned response, enter the `_id` of the canned response that you want to delete. No other parameter is required.
+$post_api_v1_canned_responses_request = {"shortcut":"test-canned","text":"This is an example test for canned response","scope":"global","tags":["tag1","tag2"]}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1CannedResponsesRequest | Note:   * To update a canned response, the `_id` parameter is required along with the other required parameters. This parameter is not used to create a canned response.   * To delete a canned response, enter the `_id` of the canned response that you want to delete. No other parameter is required.
 
 try {
     $result = $apiInstance->postApiV1CannedResponses($x_auth_token, $x_user_id, $post_api_v1_canned_responses_request);
@@ -247,11 +247,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_canned_responses_request** | [**\RocketChatOmnichannelApi\Model\PostApiV1CannedResponsesRequest**](../Model/PostApiV1CannedResponsesRequest.md)| Note:   * To update a canned response, the &#x60;_id&#x60; parameter is required along with the other required parameters. This parameter is not used to create a canned response.   * To delete a canned response, enter the &#x60;_id&#x60; of the canned response that you want to delete. No other parameter is required. | [optional] |
+| **post_api_v1_canned_responses_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1CannedResponsesRequest**](../Model/PostApiV1CannedResponsesRequest.md)| Note:   * To update a canned response, the &#x60;_id&#x60; parameter is required along with the other required parameters. This parameter is not used to create a canned response.   * To delete a canned response, enter the &#x60;_id&#x60; of the canned response that you want to delete. No other parameter is required. | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**mentions** | [**\RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner[]**](GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner.md) |  | [optional]
+**mentions** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner[]**](GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

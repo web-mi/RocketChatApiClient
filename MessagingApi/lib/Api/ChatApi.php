@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Api;
+namespace WebMIRocketChatApiClientMessagingApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatMessagingApi\ApiException;
-use RocketChatMessagingApi\Configuration;
-use RocketChatMessagingApi\HeaderSelector;
-use RocketChatMessagingApi\ObjectSerializer;
+use WebMIRocketChatApiClientMessagingApi\ApiException;
+use WebMIRocketChatApiClientMessagingApi\Configuration;
+use WebMIRocketChatApiClientMessagingApi\HeaderSelector;
+use WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * ChatApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -214,9 +214,9 @@ class ChatApi
      * @param  string $room_id The room ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetDeletedMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatGetDeletedMessages($x_auth_token, $x_user_id, $since, $room_id, string $contentType = self::contentTypes['getApiV1ChatGetDeletedMessages'][0])
     {
@@ -235,9 +235,9 @@ class ChatApi
      * @param  string $room_id The room ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetDeletedMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetDeletedMessagesWithHttpInfo($x_auth_token, $x_user_id, $since, $room_id, string $contentType = self::contentTypes['getApiV1ChatGetDeletedMessages'][0])
     {
@@ -280,11 +280,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -302,16 +302,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -329,16 +329,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -356,13 +356,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -395,7 +395,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -403,7 +403,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -411,7 +411,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -461,7 +461,7 @@ class ChatApi
      */
     public function getApiV1ChatGetDeletedMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $since, $room_id, string $contentType = self::contentTypes['getApiV1ChatGetDeletedMessages'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200Response';
         $request = $this->getApiV1ChatGetDeletedMessagesRequest($x_auth_token, $x_user_id, $since, $room_id, $contentType);
 
         return $this->client
@@ -647,9 +647,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetDiscussions'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetDiscussions200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDiscussions200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatGetDiscussions($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetDiscussions'][0])
     {
@@ -670,9 +670,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetDiscussions'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatGetDiscussions200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDiscussions200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetDiscussionsWithHttpInfo($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetDiscussions'][0])
     {
@@ -715,11 +715,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetDiscussions200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDiscussions200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetDiscussions200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDiscussions200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -737,16 +737,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetDiscussions200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDiscussions200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -764,16 +764,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -791,13 +791,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetDiscussions200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDiscussions200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -830,7 +830,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetDiscussions200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDiscussions200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -838,7 +838,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -846,7 +846,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -900,7 +900,7 @@ class ChatApi
      */
     public function getApiV1ChatGetDiscussionsAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetDiscussions'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetDiscussions200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDiscussions200Response';
         $request = $this->getApiV1ChatGetDiscussionsRequest($x_auth_token, $x_user_id, $room_id, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -1102,9 +1102,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetMentionedMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatGetMentionedMessages($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetMentionedMessages'][0])
     {
@@ -1125,9 +1125,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetMentionedMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetMentionedMessagesWithHttpInfo($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetMentionedMessages'][0])
     {
@@ -1170,11 +1170,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1192,16 +1192,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1219,16 +1219,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1246,13 +1246,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1285,7 +1285,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1293,7 +1293,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1301,7 +1301,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1355,7 +1355,7 @@ class ChatApi
      */
     public function getApiV1ChatGetMentionedMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetMentionedMessages'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200Response';
         $request = $this->getApiV1ChatGetMentionedMessagesRequest($x_auth_token, $x_user_id, $room_id, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -1554,9 +1554,9 @@ class ChatApi
      * @param  string $msg_id The message ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response
      */
     public function getApiV1ChatGetMessage($x_auth_token, $x_user_id, $msg_id, string $contentType = self::contentTypes['getApiV1ChatGetMessage'][0])
     {
@@ -1574,9 +1574,9 @@ class ChatApi
      * @param  string $msg_id The message ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetMessageWithHttpInfo($x_auth_token, $x_user_id, $msg_id, string $contentType = self::contentTypes['getApiV1ChatGetMessage'][0])
     {
@@ -1619,11 +1619,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1641,16 +1641,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1668,16 +1668,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1695,13 +1695,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1734,7 +1734,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1742,7 +1742,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1750,7 +1750,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1798,7 +1798,7 @@ class ChatApi
      */
     public function getApiV1ChatGetMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $msg_id, string $contentType = self::contentTypes['getApiV1ChatGetMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
         $request = $this->getApiV1ChatGetMessageRequest($x_auth_token, $x_user_id, $msg_id, $contentType);
 
         return $this->client
@@ -1966,9 +1966,9 @@ class ChatApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetMessageReadReceipts'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response
      */
     public function getApiV1ChatGetMessageReadReceipts($x_auth_token, $x_user_id, $message_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1ChatGetMessageReadReceipts'][0])
     {
@@ -1988,9 +1988,9 @@ class ChatApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetMessageReadReceipts'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetMessageReadReceiptsWithHttpInfo($x_auth_token, $x_user_id, $message_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1ChatGetMessageReadReceipts'][0])
     {
@@ -2033,11 +2033,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2055,16 +2055,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2082,16 +2082,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2109,13 +2109,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2148,7 +2148,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2156,7 +2156,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2164,7 +2164,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2216,7 +2216,7 @@ class ChatApi
      */
     public function getApiV1ChatGetMessageReadReceiptsAsyncWithHttpInfo($x_auth_token, $x_user_id, $message_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1ChatGetMessageReadReceipts'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200Response';
         $request = $this->getApiV1ChatGetMessageReadReceiptsRequest($x_auth_token, $x_user_id, $message_id, $offset, $count, $contentType);
 
         return $this->client
@@ -2406,9 +2406,9 @@ class ChatApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetPinnedMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatGetPinnedMessages($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1ChatGetPinnedMessages'][0])
     {
@@ -2428,9 +2428,9 @@ class ChatApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetPinnedMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetPinnedMessagesWithHttpInfo($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1ChatGetPinnedMessages'][0])
     {
@@ -2473,11 +2473,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2495,16 +2495,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2522,16 +2522,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2549,13 +2549,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2588,7 +2588,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2596,7 +2596,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2604,7 +2604,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2656,7 +2656,7 @@ class ChatApi
      */
     public function getApiV1ChatGetPinnedMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1ChatGetPinnedMessages'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetPinnedMessages200Response';
         $request = $this->getApiV1ChatGetPinnedMessagesRequest($x_auth_token, $x_user_id, $room_id, $offset, $count, $contentType);
 
         return $this->client
@@ -2844,9 +2844,9 @@ class ChatApi
      * @param  string $message_id The message id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetSnippetedMessageById'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response
      */
     public function getApiV1ChatGetSnippetedMessageById($x_auth_token, $x_user_id, $message_id, string $contentType = self::contentTypes['getApiV1ChatGetSnippetedMessageById'][0])
     {
@@ -2864,9 +2864,9 @@ class ChatApi
      * @param  string $message_id The message id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetSnippetedMessageById'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetSnippetedMessageByIdWithHttpInfo($x_auth_token, $x_user_id, $message_id, string $contentType = self::contentTypes['getApiV1ChatGetSnippetedMessageById'][0])
     {
@@ -2909,11 +2909,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2931,13 +2931,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2970,7 +2970,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3018,7 +3018,7 @@ class ChatApi
      */
     public function getApiV1ChatGetSnippetedMessageByIdAsyncWithHttpInfo($x_auth_token, $x_user_id, $message_id, string $contentType = self::contentTypes['getApiV1ChatGetSnippetedMessageById'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessageById200Response';
         $request = $this->getApiV1ChatGetSnippetedMessageByIdRequest($x_auth_token, $x_user_id, $message_id, $contentType);
 
         return $this->client
@@ -3187,9 +3187,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetSnippetedMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response
      */
     public function getApiV1ChatGetSnippetedMessages($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetSnippetedMessages'][0])
     {
@@ -3210,9 +3210,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetSnippetedMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetSnippetedMessagesWithHttpInfo($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetSnippetedMessages'][0])
     {
@@ -3255,11 +3255,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3277,13 +3277,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3316,7 +3316,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3370,7 +3370,7 @@ class ChatApi
      */
     public function getApiV1ChatGetSnippetedMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetSnippetedMessages'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200Response';
         $request = $this->getApiV1ChatGetSnippetedMessagesRequest($x_auth_token, $x_user_id, $room_id, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -3572,9 +3572,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetStarredMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatGetStarredMessages($x_user_id, $x_auth_token, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetStarredMessages'][0])
     {
@@ -3595,9 +3595,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetStarredMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetStarredMessagesWithHttpInfo($x_user_id, $x_auth_token, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetStarredMessages'][0])
     {
@@ -3640,11 +3640,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3662,16 +3662,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3689,16 +3689,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3716,13 +3716,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3755,7 +3755,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3763,7 +3763,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3771,7 +3771,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3825,7 +3825,7 @@ class ChatApi
      */
     public function getApiV1ChatGetStarredMessagesAsyncWithHttpInfo($x_user_id, $x_auth_token, $room_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatGetStarredMessages'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetStarredMessages200Response';
         $request = $this->getApiV1ChatGetStarredMessagesRequest($x_user_id, $x_auth_token, $room_id, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -4029,9 +4029,9 @@ class ChatApi
      * @param  string $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;&#x60;{ \&quot;username\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetThreadMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatGetThreadMessages($x_auth_token, $x_user_id, $tmid, $offset = null, $count = null, $sort = null, $query = null, $fields = null, string $contentType = self::contentTypes['getApiV1ChatGetThreadMessages'][0])
     {
@@ -4054,9 +4054,9 @@ class ChatApi
      * @param  string $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;&#x60;{ \&quot;username\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatGetThreadMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatGetThreadMessagesWithHttpInfo($x_auth_token, $x_user_id, $tmid, $offset = null, $count = null, $sort = null, $query = null, $fields = null, string $contentType = self::contentTypes['getApiV1ChatGetThreadMessages'][0])
     {
@@ -4099,11 +4099,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4121,16 +4121,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4148,16 +4148,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4175,13 +4175,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4214,7 +4214,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4222,7 +4222,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4230,7 +4230,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4288,7 +4288,7 @@ class ChatApi
      */
     public function getApiV1ChatGetThreadMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $tmid, $offset = null, $count = null, $sort = null, $query = null, $fields = null, string $contentType = self::contentTypes['getApiV1ChatGetThreadMessages'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetThreadMessages200Response';
         $request = $this->getApiV1ChatGetThreadMessagesRequest($x_auth_token, $x_user_id, $tmid, $offset, $count, $sort, $query, $fields, $contentType);
 
         return $this->client
@@ -4511,9 +4511,9 @@ class ChatApi
      * @param  bool $ignore If the user is to be ignored or not, default is true. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatIgnoreUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatIgnoreUser($x_auth_token, $x_user_id, $rid, $user_id, $ignore = null, string $contentType = self::contentTypes['getApiV1ChatIgnoreUser'][0])
     {
@@ -4533,9 +4533,9 @@ class ChatApi
      * @param  bool $ignore If the user is to be ignored or not, default is true. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatIgnoreUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatIgnoreUserWithHttpInfo($x_auth_token, $x_user_id, $rid, $user_id, $ignore = null, string $contentType = self::contentTypes['getApiV1ChatIgnoreUser'][0])
     {
@@ -4578,11 +4578,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4600,16 +4600,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4627,16 +4627,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4654,13 +4654,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4693,7 +4693,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4701,7 +4701,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4709,7 +4709,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4761,7 +4761,7 @@ class ChatApi
      */
     public function getApiV1ChatIgnoreUserAsyncWithHttpInfo($x_auth_token, $x_user_id, $rid, $user_id, $ignore = null, string $contentType = self::contentTypes['getApiV1ChatIgnoreUser'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
         $request = $this->getApiV1ChatIgnoreUserRequest($x_auth_token, $x_user_id, $rid, $user_id, $ignore, $contentType);
 
         return $this->client
@@ -4957,9 +4957,9 @@ class ChatApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatSearch'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatSearch200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatSearch($x_auth_token, $x_user_id, $room_id, $search_text, $count = null, string $contentType = self::contentTypes['getApiV1ChatSearch'][0])
     {
@@ -4979,9 +4979,9 @@ class ChatApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatSearch'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatSearch200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatSearchWithHttpInfo($x_auth_token, $x_user_id, $room_id, $search_text, $count = null, string $contentType = self::contentTypes['getApiV1ChatSearch'][0])
     {
@@ -5024,11 +5024,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatSearch200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatSearch200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5046,16 +5046,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatSearch200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5073,16 +5073,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5100,13 +5100,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatSearch200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5139,7 +5139,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatSearch200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5147,7 +5147,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5155,7 +5155,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5207,7 +5207,7 @@ class ChatApi
      */
     public function getApiV1ChatSearchAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id, $search_text, $count = null, string $contentType = self::contentTypes['getApiV1ChatSearch'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatSearch200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200Response';
         $request = $this->getApiV1ChatSearchRequest($x_auth_token, $x_user_id, $room_id, $search_text, $count, $contentType);
 
         return $this->client
@@ -5405,9 +5405,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatSyncMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatSyncMessages($x_auth_token, $x_user_id, $room_id, $last_update, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatSyncMessages'][0])
     {
@@ -5429,9 +5429,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatSyncMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatSyncMessagesWithHttpInfo($x_auth_token, $x_user_id, $room_id, $last_update, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatSyncMessages'][0])
     {
@@ -5474,11 +5474,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5496,16 +5496,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5523,16 +5523,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5550,13 +5550,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5589,7 +5589,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5597,7 +5597,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5605,7 +5605,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5661,7 +5661,7 @@ class ChatApi
      */
     public function getApiV1ChatSyncMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id, $last_update, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatSyncMessages'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200Response';
         $request = $this->getApiV1ChatSyncMessagesRequest($x_auth_token, $x_user_id, $room_id, $last_update, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -5881,9 +5881,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatSyncThreadMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatSyncThreadMessages($x_auth_token, $x_user_id, $updated_since, $tmid, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatSyncThreadMessages'][0])
     {
@@ -5905,9 +5905,9 @@ class ChatApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatSyncThreadMessages'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatSyncThreadMessagesWithHttpInfo($x_auth_token, $x_user_id, $updated_since, $tmid, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatSyncThreadMessages'][0])
     {
@@ -5950,11 +5950,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5972,16 +5972,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5999,16 +5999,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6026,13 +6026,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6065,7 +6065,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6073,7 +6073,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6081,7 +6081,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6137,7 +6137,7 @@ class ChatApi
      */
     public function getApiV1ChatSyncThreadMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $updated_since, $tmid, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ChatSyncThreadMessages'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200Response';
         $request = $this->getApiV1ChatSyncThreadMessagesRequest($x_auth_token, $x_user_id, $updated_since, $tmid, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -6358,9 +6358,9 @@ class ChatApi
      * @param  string $updated_since Date as an ISO string. When you provide the &#x60;updatedSince&#x60; query parameter, then the &#x60;update&#x60; and &#x60;remove&#x60; parameters in the response will contain only those updated and removed since this date and time. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatSyncThreadsList'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function getApiV1ChatSyncThreadsList($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $offset = null, $count = null, $sort = null, $updated_since = null, string $contentType = self::contentTypes['getApiV1ChatSyncThreadsList'][0])
     {
@@ -6383,9 +6383,9 @@ class ChatApi
      * @param  string $updated_since Date as an ISO string. When you provide the &#x60;updatedSince&#x60; query parameter, then the &#x60;update&#x60; and &#x60;remove&#x60; parameters in the response will contain only those updated and removed since this date and time. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChatSyncThreadsList'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ChatSyncThreadsListWithHttpInfo($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $offset = null, $count = null, $sort = null, $updated_since = null, string $contentType = self::contentTypes['getApiV1ChatSyncThreadsList'][0])
     {
@@ -6428,11 +6428,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6450,16 +6450,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6477,16 +6477,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6504,13 +6504,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6543,7 +6543,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6551,7 +6551,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6559,7 +6559,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6617,7 +6617,7 @@ class ChatApi
      */
     public function getApiV1ChatSyncThreadsListAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $offset = null, $count = null, $sort = null, $updated_since = null, string $contentType = self::contentTypes['getApiV1ChatSyncThreadsList'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200Response';
         $request = $this->getApiV1ChatSyncThreadsListRequest($x_auth_token, $x_user_id, $room_id, $room_name, $offset, $count, $sort, $updated_since, $contentType);
 
         return $this->client
@@ -6837,9 +6837,9 @@ class ChatApi
      * @param  string $rid The room ID. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getChatGetThreadsList'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\GetChatGetThreadsList200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response
      */
     public function getChatGetThreadsList($x_auth_token, $x_user_id, $offset = null, $count = null, $sort = null, $query = null, $fields = null, $rid = null, string $contentType = self::contentTypes['getChatGetThreadsList'][0])
     {
@@ -6862,9 +6862,9 @@ class ChatApi
      * @param  string $rid The room ID. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getChatGetThreadsList'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\GetChatGetThreadsList200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getChatGetThreadsListWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $count = null, $sort = null, $query = null, $fields = null, $rid = null, string $contentType = self::contentTypes['getChatGetThreadsList'][0])
     {
@@ -6907,11 +6907,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\GetChatGetThreadsList200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\GetChatGetThreadsList200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6929,16 +6929,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\GetChatGetThreadsList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6956,13 +6956,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\GetChatGetThreadsList200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6995,7 +6995,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\GetChatGetThreadsList200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7003,7 +7003,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7061,7 +7061,7 @@ class ChatApi
      */
     public function getChatGetThreadsListAsyncWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $count = null, $sort = null, $query = null, $fields = null, $rid = null, string $contentType = self::contentTypes['getChatGetThreadsList'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\GetChatGetThreadsList200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200Response';
         $request = $this->getChatGetThreadsListRequest($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields, $rid, $contentType);
 
         return $this->client
@@ -7273,12 +7273,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatDelete'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatDelete200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response
      */
     public function postApiV1ChatDelete($x_auth_token, $x_user_id, $post_api_v1_chat_delete_request = null, string $contentType = self::contentTypes['postApiV1ChatDelete'][0])
     {
@@ -7293,12 +7293,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatDelete'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatDelete200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatDeleteWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_delete_request = null, string $contentType = self::contentTypes['postApiV1ChatDelete'][0])
     {
@@ -7341,11 +7341,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7363,16 +7363,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7390,16 +7390,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7417,13 +7417,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatDelete200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7456,7 +7456,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7464,7 +7464,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7472,7 +7472,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7489,7 +7489,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7512,7 +7512,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7520,7 +7520,7 @@ class ChatApi
      */
     public function postApiV1ChatDeleteAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_delete_request = null, string $contentType = self::contentTypes['postApiV1ChatDelete'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatDelete200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200Response';
         $request = $this->postApiV1ChatDeleteRequest($x_auth_token, $x_user_id, $post_api_v1_chat_delete_request, $contentType);
 
         return $this->client
@@ -7564,7 +7564,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDeleteRequest $post_api_v1_chat_delete_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7675,12 +7675,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatFollowMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatFollowMessage($x_auth_token, $x_user_id, $post_api_v1_chat_follow_message_request = null, string $contentType = self::contentTypes['postApiV1ChatFollowMessage'][0])
     {
@@ -7695,12 +7695,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatFollowMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatFollowMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_follow_message_request = null, string $contentType = self::contentTypes['postApiV1ChatFollowMessage'][0])
     {
@@ -7743,11 +7743,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7765,16 +7765,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7792,16 +7792,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7819,13 +7819,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7858,7 +7858,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7866,7 +7866,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7874,7 +7874,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7891,7 +7891,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatFollowMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7914,7 +7914,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatFollowMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7922,7 +7922,7 @@ class ChatApi
      */
     public function postApiV1ChatFollowMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_follow_message_request = null, string $contentType = self::contentTypes['postApiV1ChatFollowMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
         $request = $this->postApiV1ChatFollowMessageRequest($x_auth_token, $x_user_id, $post_api_v1_chat_follow_message_request, $contentType);
 
         return $this->client
@@ -7966,7 +7966,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatFollowMessageRequest $post_api_v1_chat_follow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatFollowMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8077,12 +8077,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request post_api_v1_chat_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request post_api_v1_chat_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPinMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatPinMessage200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatPinMessage($x_auth_token, $x_user_id, $post_api_v1_chat_pin_message_request = null, string $contentType = self::contentTypes['postApiV1ChatPinMessage'][0])
     {
@@ -8097,12 +8097,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPinMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatPinMessage200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatPinMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_pin_message_request = null, string $contentType = self::contentTypes['postApiV1ChatPinMessage'][0])
     {
@@ -8145,11 +8145,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatPinMessage200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatPinMessage200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8167,16 +8167,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatPinMessage200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8194,16 +8194,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8221,13 +8221,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatPinMessage200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -8260,7 +8260,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatPinMessage200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8268,7 +8268,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8276,7 +8276,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8293,7 +8293,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPinMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8316,7 +8316,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPinMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8324,7 +8324,7 @@ class ChatApi
      */
     public function postApiV1ChatPinMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_pin_message_request = null, string $contentType = self::contentTypes['postApiV1ChatPinMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatPinMessage200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200Response';
         $request = $this->postApiV1ChatPinMessageRequest($x_auth_token, $x_user_id, $post_api_v1_chat_pin_message_request, $contentType);
 
         return $this->client
@@ -8368,7 +8368,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessageRequest $post_api_v1_chat_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPinMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8479,12 +8479,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request post_api_v1_chat_post_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request post_api_v1_chat_post_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPostMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatPostMessage200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessage200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatPostMessage($x_auth_token, $x_user_id, $post_api_v1_chat_post_message_request = null, string $contentType = self::contentTypes['postApiV1ChatPostMessage'][0])
     {
@@ -8499,12 +8499,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPostMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatPostMessage200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessage200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatPostMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_post_message_request = null, string $contentType = self::contentTypes['postApiV1ChatPostMessage'][0])
     {
@@ -8547,11 +8547,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatPostMessage200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatPostMessage200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8569,16 +8569,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatPostMessage200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8596,16 +8596,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8623,13 +8623,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatPostMessage200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -8662,7 +8662,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatPostMessage200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8670,7 +8670,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8678,7 +8678,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8695,7 +8695,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPostMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8718,7 +8718,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPostMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8726,7 +8726,7 @@ class ChatApi
      */
     public function postApiV1ChatPostMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_post_message_request = null, string $contentType = self::contentTypes['postApiV1ChatPostMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatPostMessage200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessage200Response';
         $request = $this->postApiV1ChatPostMessageRequest($x_auth_token, $x_user_id, $post_api_v1_chat_post_message_request, $contentType);
 
         return $this->client
@@ -8770,7 +8770,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequest $post_api_v1_chat_post_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatPostMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8881,12 +8881,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReact'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatReact($x_auth_token, $x_user_id, $post_api_v1_chat_react_request = null, string $contentType = self::contentTypes['postApiV1ChatReact'][0])
     {
@@ -8901,12 +8901,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReact'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatReactWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_react_request = null, string $contentType = self::contentTypes['postApiV1ChatReact'][0])
     {
@@ -8949,11 +8949,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8971,16 +8971,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8998,16 +8998,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9025,13 +9025,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -9064,7 +9064,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9072,7 +9072,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9080,7 +9080,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9097,7 +9097,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9120,7 +9120,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9128,7 +9128,7 @@ class ChatApi
      */
     public function postApiV1ChatReactAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_react_request = null, string $contentType = self::contentTypes['postApiV1ChatReact'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
         $request = $this->postApiV1ChatReactRequest($x_auth_token, $x_user_id, $post_api_v1_chat_react_request, $contentType);
 
         return $this->client
@@ -9172,7 +9172,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReactRequest $post_api_v1_chat_react_request The emoji doesn&#39;t have to contain &#x60;:&#x60;. However, the emoji must exist. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReact'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9283,12 +9283,12 @@ class ChatApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request post_api_v1_chat_report_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request post_api_v1_chat_report_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReportMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatReportMessage($x_user_id, $x_auth_token, $post_api_v1_chat_report_message_request = null, string $contentType = self::contentTypes['postApiV1ChatReportMessage'][0])
     {
@@ -9303,12 +9303,12 @@ class ChatApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReportMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatReportMessageWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_chat_report_message_request = null, string $contentType = self::contentTypes['postApiV1ChatReportMessage'][0])
     {
@@ -9351,11 +9351,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9373,16 +9373,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9400,16 +9400,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9427,13 +9427,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -9466,7 +9466,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9474,7 +9474,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9482,7 +9482,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9499,7 +9499,7 @@ class ChatApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReportMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9522,7 +9522,7 @@ class ChatApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReportMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9530,7 +9530,7 @@ class ChatApi
      */
     public function postApiV1ChatReportMessageAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_chat_report_message_request = null, string $contentType = self::contentTypes['postApiV1ChatReportMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
         $request = $this->postApiV1ChatReportMessageRequest($x_user_id, $x_auth_token, $post_api_v1_chat_report_message_request, $contentType);
 
         return $this->client
@@ -9574,7 +9574,7 @@ class ChatApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReportMessageRequest $post_api_v1_chat_report_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatReportMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9685,12 +9685,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatSendMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatSendMessage200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessage200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatSendMessage($x_auth_token, $x_user_id, $post_api_v1_chat_send_message_request = null, string $contentType = self::contentTypes['postApiV1ChatSendMessage'][0])
     {
@@ -9705,12 +9705,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatSendMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatSendMessage200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessage200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatSendMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_send_message_request = null, string $contentType = self::contentTypes['postApiV1ChatSendMessage'][0])
     {
@@ -9753,11 +9753,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatSendMessage200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatSendMessage200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9775,16 +9775,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatSendMessage200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9802,16 +9802,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9829,13 +9829,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatSendMessage200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -9868,7 +9868,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatSendMessage200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9876,7 +9876,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9884,7 +9884,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9901,7 +9901,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatSendMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9924,7 +9924,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatSendMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9932,7 +9932,7 @@ class ChatApi
      */
     public function postApiV1ChatSendMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_send_message_request = null, string $contentType = self::contentTypes['postApiV1ChatSendMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatSendMessage200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessage200Response';
         $request = $this->postApiV1ChatSendMessageRequest($x_auth_token, $x_user_id, $post_api_v1_chat_send_message_request, $contentType);
 
         return $this->client
@@ -9976,7 +9976,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequest $post_api_v1_chat_send_message_request **Some important things to note about the &#x60;previewUrls&#x60; parameter include:** * If the &#x60;previewUrls&#x60; array is empty, no URL will be previewed. * If the &#x60;previewUrls&#x60; parameter isn&#39;t sent, all URLs (up to a maximum of five external URLs) will be previewed. * If the message contains attachments or quotes, no URL is previewed. * Internal URLs are not considered in the &#x60;previewUrls&#x60; array. * A maximum of five external URLs is previewed  per message. If there are more than 5 external URLs, no URL is previewed. &gt; URLs that include the same text as the &lt;a href&#x3D;&#39;https://docs.rocket.chat/use-rocket.chat/workspace-administration/settings/general#general-settings&#39; target&#x3D;&#39;_blank&#39;&gt;**Site URL**&lt;/a&gt; are referred to as Internal URLs. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatSendMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10087,12 +10087,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request post_api_v1_chat_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request post_api_v1_chat_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatStarMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatStarMessage($x_auth_token, $x_user_id, $post_api_v1_chat_star_message_request = null, string $contentType = self::contentTypes['postApiV1ChatStarMessage'][0])
     {
@@ -10107,12 +10107,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatStarMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatStarMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_star_message_request = null, string $contentType = self::contentTypes['postApiV1ChatStarMessage'][0])
     {
@@ -10155,11 +10155,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10177,16 +10177,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10204,16 +10204,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10231,13 +10231,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -10270,7 +10270,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10278,7 +10278,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10286,7 +10286,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10303,7 +10303,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatStarMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10326,7 +10326,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatStarMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10334,7 +10334,7 @@ class ChatApi
      */
     public function postApiV1ChatStarMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_star_message_request = null, string $contentType = self::contentTypes['postApiV1ChatStarMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
         $request = $this->postApiV1ChatStarMessageRequest($x_auth_token, $x_user_id, $post_api_v1_chat_star_message_request, $contentType);
 
         return $this->client
@@ -10378,7 +10378,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatStarMessageRequest $post_api_v1_chat_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatStarMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10489,12 +10489,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request post_api_v1_chat_un_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request post_api_v1_chat_un_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnPinMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatUnPinMessage($x_auth_token, $x_user_id, $post_api_v1_chat_un_pin_message_request = null, string $contentType = self::contentTypes['postApiV1ChatUnPinMessage'][0])
     {
@@ -10509,12 +10509,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnPinMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatUnPinMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_un_pin_message_request = null, string $contentType = self::contentTypes['postApiV1ChatUnPinMessage'][0])
     {
@@ -10557,11 +10557,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10579,16 +10579,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10606,16 +10606,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10633,13 +10633,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -10672,7 +10672,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10680,7 +10680,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10688,7 +10688,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10705,7 +10705,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnPinMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10728,7 +10728,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnPinMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10736,7 +10736,7 @@ class ChatApi
      */
     public function postApiV1ChatUnPinMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_un_pin_message_request = null, string $contentType = self::contentTypes['postApiV1ChatUnPinMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
         $request = $this->postApiV1ChatUnPinMessageRequest($x_auth_token, $x_user_id, $post_api_v1_chat_un_pin_message_request, $contentType);
 
         return $this->client
@@ -10780,7 +10780,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnPinMessageRequest $post_api_v1_chat_un_pin_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnPinMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10891,12 +10891,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request post_api_v1_chat_un_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request post_api_v1_chat_un_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnStarMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatUnStarMessage($x_auth_token, $x_user_id, $post_api_v1_chat_un_star_message_request = null, string $contentType = self::contentTypes['postApiV1ChatUnStarMessage'][0])
     {
@@ -10911,12 +10911,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnStarMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatUnStarMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_un_star_message_request = null, string $contentType = self::contentTypes['postApiV1ChatUnStarMessage'][0])
     {
@@ -10959,11 +10959,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10981,16 +10981,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11008,16 +11008,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11035,13 +11035,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -11074,7 +11074,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11082,7 +11082,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11090,7 +11090,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11107,7 +11107,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnStarMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11130,7 +11130,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnStarMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11138,7 +11138,7 @@ class ChatApi
      */
     public function postApiV1ChatUnStarMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_un_star_message_request = null, string $contentType = self::contentTypes['postApiV1ChatUnStarMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
         $request = $this->postApiV1ChatUnStarMessageRequest($x_auth_token, $x_user_id, $post_api_v1_chat_un_star_message_request, $contentType);
 
         return $this->client
@@ -11182,7 +11182,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnStarMessageRequest $post_api_v1_chat_un_star_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnStarMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11293,12 +11293,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnfollowMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatUnfollowMessage($x_auth_token, $x_user_id, $post_api_v1_chat_unfollow_message_request = null, string $contentType = self::contentTypes['postApiV1ChatUnfollowMessage'][0])
     {
@@ -11313,12 +11313,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnfollowMessage'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatReact200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatUnfollowMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_unfollow_message_request = null, string $contentType = self::contentTypes['postApiV1ChatUnfollowMessage'][0])
     {
@@ -11361,11 +11361,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11383,16 +11383,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11410,16 +11410,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11437,13 +11437,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -11476,7 +11476,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11484,7 +11484,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11492,7 +11492,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11509,7 +11509,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnfollowMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11532,7 +11532,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnfollowMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11540,7 +11540,7 @@ class ChatApi
      */
     public function postApiV1ChatUnfollowMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_unfollow_message_request = null, string $contentType = self::contentTypes['postApiV1ChatUnfollowMessage'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatReact200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response';
         $request = $this->postApiV1ChatUnfollowMessageRequest($x_auth_token, $x_user_id, $post_api_v1_chat_unfollow_message_request, $contentType);
 
         return $this->client
@@ -11584,7 +11584,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUnfollowMessageRequest $post_api_v1_chat_unfollow_message_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUnfollowMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11695,12 +11695,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request post_api_v1_chat_update_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request post_api_v1_chat_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUpdate'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response
      */
     public function postApiV1ChatUpdate($x_auth_token, $x_user_id, $post_api_v1_chat_update_request = null, string $contentType = self::contentTypes['postApiV1ChatUpdate'][0])
     {
@@ -11715,12 +11715,12 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUpdate'] to see the possible values for this operation
      *
-     * @throws \RocketChatMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMessagingApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200Response|\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response|\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response|\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ChatUpdateWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_update_request = null, string $contentType = self::contentTypes['postApiV1ChatUpdate'][0])
     {
@@ -11763,11 +11763,11 @@ class ChatApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11785,16 +11785,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11812,16 +11812,16 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11839,13 +11839,13 @@ class ChatApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200Response';
+            $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -11878,7 +11878,7 @@ class ChatApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11886,7 +11886,7 @@ class ChatApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatDelete401Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11894,7 +11894,7 @@ class ChatApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMessagingApi\Model\PostApiV1ChatReact400Response',
+                        '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11911,7 +11911,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11934,7 +11934,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11942,7 +11942,7 @@ class ChatApi
      */
     public function postApiV1ChatUpdateAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_chat_update_request = null, string $contentType = self::contentTypes['postApiV1ChatUpdate'][0])
     {
-        $returnType = '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200Response';
+        $returnType = '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200Response';
         $request = $this->postApiV1ChatUpdateRequest($x_auth_token, $x_user_id, $post_api_v1_chat_update_request, $contentType);
 
         return $this->client
@@ -11986,7 +11986,7 @@ class ChatApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request (optional)
+     * @param  \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdateRequest $post_api_v1_chat_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ChatUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

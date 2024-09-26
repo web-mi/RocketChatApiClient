@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Model;
+namespace WebMIRocketChatApiClientStatisticsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatStatisticsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1EngagementDashboardMessagesMessagesSent200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
       * @var string[]
       */
     protected static $openAPITypes = [
-        'days' => '\RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner[]',
-        'period' => '\RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod',
-        'yesterday' => '\RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod',
+        'days' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner[]',
+        'period' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod',
+        'yesterday' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod',
         'success' => 'bool'
     ];
 
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
     /**
      * Gets days
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner[]|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner[]|null
      */
     public function getDays()
     {
@@ -323,7 +323,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
     /**
      * Sets days
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner[]|null $days days
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner[]|null $days days
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
     /**
      * Gets period
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
      */
     public function getPeriod()
     {
@@ -350,7 +350,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
     /**
      * Sets period
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null $period period
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null $period period
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
     /**
      * Gets yesterday
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
      */
     public function getYesterday()
     {
@@ -377,7 +377,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
     /**
      * Sets yesterday
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null $yesterday yesterday
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null $yesterday yesterday
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1ChannelsConvertToTeam200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ChannelsConvertToTeam200Response implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'team' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam',
+        'team' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1ChannelsConvertToTeam200Response implements ModelInterface, Array
     /**
      * Gets team
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam|null
      */
     public function getTeam()
     {
@@ -309,7 +309,7 @@ class PostApiV1ChannelsConvertToTeam200Response implements ModelInterface, Array
     /**
      * Sets team
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam|null $team team
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam|null $team team
      *
      * @return self
      */

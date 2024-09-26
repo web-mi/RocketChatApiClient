@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTriggers200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatTriggers200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'triggers' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner[]',
+        'triggers' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatTriggers200Response implements ModelInterface, ArrayAccess
     /**
      * Gets triggers
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner[]|null
      */
     public function getTriggers()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatTriggers200Response implements ModelInterface, ArrayAccess
     /**
      * Sets triggers
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner[]|null $triggers triggers
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner[]|null $triggers triggers
      *
      * @return self
      */

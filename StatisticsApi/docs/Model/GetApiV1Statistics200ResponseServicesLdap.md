@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **sync_channels** | **bool** |  | [optional]
 **sync_avatar** | **bool** |  | [optional]
 **group_filter** | **bool** |  | [optional]
-**background_sync** | [**\RocketChatStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapBackgroundSync**](GetApiV1Statistics200ResponseServicesLdapBackgroundSync.md) |  | [optional]
-**ee** | [**\RocketChatStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapEe**](GetApiV1Statistics200ResponseServicesLdapEe.md) |  | [optional]
+**background_sync** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapBackgroundSync**](GetApiV1Statistics200ResponseServicesLdapBackgroundSync.md) |  | [optional]
+**ee** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapEe**](GetApiV1Statistics200ResponseServicesLdapEe.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

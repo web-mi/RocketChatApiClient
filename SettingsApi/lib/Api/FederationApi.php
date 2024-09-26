@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Api;
+namespace WebMIRocketChatApiClientSettingsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatSettingsApi\ApiException;
-use RocketChatSettingsApi\Configuration;
-use RocketChatSettingsApi\HeaderSelector;
-use RocketChatSettingsApi\ObjectSerializer;
+use WebMIRocketChatApiClientSettingsApi\ApiException;
+use WebMIRocketChatApiClientSettingsApi\Configuration;
+use WebMIRocketChatApiClientSettingsApi\HeaderSelector;
+use WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * FederationApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -143,9 +143,9 @@ class FederationApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1FederationListServersByUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
      */
     public function getApiV1FederationListServersByUser($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1FederationListServersByUser'][0])
     {
@@ -162,9 +162,9 @@ class FederationApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1FederationListServersByUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1FederationListServersByUserWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1FederationListServersByUser'][0])
     {
@@ -207,11 +207,11 @@ class FederationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -229,16 +229,16 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -256,13 +256,13 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response';
+            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -295,7 +295,7 @@ class FederationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -303,7 +303,7 @@ class FederationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -349,7 +349,7 @@ class FederationApi
      */
     public function getApiV1FederationListServersByUserAsyncWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1FederationListServersByUser'][0])
     {
-        $returnType = '\RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response';
+        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response';
         $request = $this->getApiV1FederationListServersByUserRequest($x_user_id, $x_auth_token, $contentType);
 
         return $this->client
@@ -501,9 +501,9 @@ class FederationApi
      * @param  int $count How many items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1FederationSearchPublicRooms'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
      */
     public function getApiV1FederationSearchPublicRooms($x_user_id, $x_auth_token, $server_name, $room_name = null, $page_token = null, $count = null, string $contentType = self::contentTypes['getApiV1FederationSearchPublicRooms'][0])
     {
@@ -524,9 +524,9 @@ class FederationApi
      * @param  int $count How many items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1FederationSearchPublicRooms'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1FederationSearchPublicRoomsWithHttpInfo($x_user_id, $x_auth_token, $server_name, $room_name = null, $page_token = null, $count = null, string $contentType = self::contentTypes['getApiV1FederationSearchPublicRooms'][0])
     {
@@ -569,11 +569,11 @@ class FederationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -591,16 +591,16 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -618,13 +618,13 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response';
+            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -657,7 +657,7 @@ class FederationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -665,7 +665,7 @@ class FederationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -719,7 +719,7 @@ class FederationApi
      */
     public function getApiV1FederationSearchPublicRoomsAsyncWithHttpInfo($x_user_id, $x_auth_token, $server_name, $room_name = null, $page_token = null, $count = null, string $contentType = self::contentTypes['getApiV1FederationSearchPublicRooms'][0])
     {
-        $returnType = '\RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response';
+        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response';
         $request = $this->getApiV1FederationSearchPublicRoomsRequest($x_user_id, $x_auth_token, $server_name, $room_name, $page_token, $count, $contentType);
 
         return $this->client
@@ -915,12 +915,12 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request post_api_v1_federation_add_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request post_api_v1_federation_add_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationAddServerByUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
      */
     public function postApiV1FederationAddServerByUser($x_user_id, $x_auth_token, $post_api_v1_federation_add_server_by_user_request = null, string $contentType = self::contentTypes['postApiV1FederationAddServerByUser'][0])
     {
@@ -935,12 +935,12 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationAddServerByUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1FederationAddServerByUserWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_federation_add_server_by_user_request = null, string $contentType = self::contentTypes['postApiV1FederationAddServerByUser'][0])
     {
@@ -983,11 +983,11 @@ class FederationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1005,16 +1005,16 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1032,13 +1032,13 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1071,7 +1071,7 @@ class FederationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1079,7 +1079,7 @@ class FederationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1096,7 +1096,7 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationAddServerByUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1119,7 +1119,7 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationAddServerByUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1127,7 +1127,7 @@ class FederationApi
      */
     public function postApiV1FederationAddServerByUserAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_federation_add_server_by_user_request = null, string $contentType = self::contentTypes['postApiV1FederationAddServerByUser'][0])
     {
-        $returnType = '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->postApiV1FederationAddServerByUserRequest($x_user_id, $x_auth_token, $post_api_v1_federation_add_server_by_user_request, $contentType);
 
         return $this->client
@@ -1171,7 +1171,7 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationAddServerByUserRequest $post_api_v1_federation_add_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationAddServerByUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1282,12 +1282,12 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request post_api_v1_federation_join_external_public_room_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request post_api_v1_federation_join_external_public_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationJoinExternalPublicRoom'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
      */
     public function postApiV1FederationJoinExternalPublicRoom($x_user_id, $x_auth_token, $post_api_v1_federation_join_external_public_room_request = null, string $contentType = self::contentTypes['postApiV1FederationJoinExternalPublicRoom'][0])
     {
@@ -1302,12 +1302,12 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationJoinExternalPublicRoom'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1FederationJoinExternalPublicRoomWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_federation_join_external_public_room_request = null, string $contentType = self::contentTypes['postApiV1FederationJoinExternalPublicRoom'][0])
     {
@@ -1350,11 +1350,11 @@ class FederationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1372,16 +1372,16 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1399,13 +1399,13 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1438,7 +1438,7 @@ class FederationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1446,7 +1446,7 @@ class FederationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1463,7 +1463,7 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationJoinExternalPublicRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1486,7 +1486,7 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationJoinExternalPublicRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1494,7 +1494,7 @@ class FederationApi
      */
     public function postApiV1FederationJoinExternalPublicRoomAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_federation_join_external_public_room_request = null, string $contentType = self::contentTypes['postApiV1FederationJoinExternalPublicRoom'][0])
     {
-        $returnType = '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->postApiV1FederationJoinExternalPublicRoomRequest($x_user_id, $x_auth_token, $post_api_v1_federation_join_external_public_room_request, $contentType);
 
         return $this->client
@@ -1538,7 +1538,7 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest $post_api_v1_federation_join_external_public_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationJoinExternalPublicRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1649,12 +1649,12 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request post_api_v1_federation_remove_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request post_api_v1_federation_remove_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationRemoveServerByUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\RocketChatSettingsApi\Model\PostApiV1CloudManualRegister400Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
      */
     public function postApiV1FederationRemoveServerByUser($x_user_id, $x_auth_token, $post_api_v1_federation_remove_server_by_user_request = null, string $contentType = self::contentTypes['postApiV1FederationRemoveServerByUser'][0])
     {
@@ -1669,12 +1669,12 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationRemoveServerByUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\RocketChatSettingsApi\Model\PostApiV1CloudManualRegister400Response|\RocketChatSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1FederationRemoveServerByUserWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_federation_remove_server_by_user_request = null, string $contentType = self::contentTypes['postApiV1FederationRemoveServerByUser'][0])
     {
@@ -1717,11 +1717,11 @@ class FederationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1739,16 +1739,16 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1766,16 +1766,16 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1793,13 +1793,13 @@ class FederationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1832,7 +1832,7 @@ class FederationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1840,7 +1840,7 @@ class FederationApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1848,7 +1848,7 @@ class FederationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1865,7 +1865,7 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationRemoveServerByUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1888,7 +1888,7 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationRemoveServerByUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1896,7 +1896,7 @@ class FederationApi
      */
     public function postApiV1FederationRemoveServerByUserAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_federation_remove_server_by_user_request = null, string $contentType = self::contentTypes['postApiV1FederationRemoveServerByUser'][0])
     {
-        $returnType = '\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->postApiV1FederationRemoveServerByUserRequest($x_user_id, $x_auth_token, $post_api_v1_federation_remove_server_by_user_request, $contentType);
 
         return $this->client
@@ -1940,7 +1940,7 @@ class FederationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \RocketChatSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request (optional)
+     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest $post_api_v1_federation_remove_server_by_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FederationRemoveServerByUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

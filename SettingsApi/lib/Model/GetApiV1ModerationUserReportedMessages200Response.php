@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1ModerationUserReportedMessages200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'user' => '\RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseUser',
-        'messages' => '\RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInner[]',
+        'user' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseUser',
+        'messages' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInner[]',
         'count' => 'int',
         'total' => 'int',
         'offset' => 'int',
@@ -327,7 +327,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
     /**
      * Gets user
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseUser|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseUser|null
      */
     public function getUser()
     {
@@ -337,7 +337,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
     /**
      * Sets user
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseUser|null $user user
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseUser|null $user user
      *
      * @return self
      */
@@ -354,7 +354,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
     /**
      * Gets messages
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInner[]|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInner[]|null
      */
     public function getMessages()
     {
@@ -364,7 +364,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
     /**
      * Sets messages
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInner[]|null $messages messages
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInner[]|null $messages messages
      *
      * @return self
      */

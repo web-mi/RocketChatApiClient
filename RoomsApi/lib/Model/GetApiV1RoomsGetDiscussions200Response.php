@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsGetDiscussions200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'discussions' => '\RocketChatRoomsApi\Model\GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner[]',
+        'discussions' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
     /**
      * Gets discussions
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner[]|null
      */
     public function getDiscussions()
     {
@@ -330,7 +330,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
     /**
      * Sets discussions
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner[]|null $discussions discussions
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner[]|null $discussions discussions
      *
      * @return self
      */

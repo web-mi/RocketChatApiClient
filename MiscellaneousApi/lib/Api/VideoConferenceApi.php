@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Api;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatMiscellaneousApi\ApiException;
-use RocketChatMiscellaneousApi\Configuration;
-use RocketChatMiscellaneousApi\HeaderSelector;
-use RocketChatMiscellaneousApi\ObjectSerializer;
+use WebMIRocketChatApiClientMiscellaneousApi\ApiException;
+use WebMIRocketChatApiClientMiscellaneousApi\Configuration;
+use WebMIRocketChatApiClientMiscellaneousApi\HeaderSelector;
+use WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * VideoConferenceApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -129,12 +129,12 @@ class VideoConferenceApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request post_api_v1_video_conference_jitsi_update_timeout_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request post_api_v1_video_conference_jitsi_update_timeout_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1VideoConferenceJitsiUpdateTimeout'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function postApiV1VideoConferenceJitsiUpdateTimeout($x_user_id, $x_auth_token, $post_api_v1_video_conference_jitsi_update_timeout_request = null, string $contentType = self::contentTypes['postApiV1VideoConferenceJitsiUpdateTimeout'][0])
     {
@@ -149,12 +149,12 @@ class VideoConferenceApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1VideoConferenceJitsiUpdateTimeout'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1VideoConferenceJitsiUpdateTimeoutWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_video_conference_jitsi_update_timeout_request = null, string $contentType = self::contentTypes['postApiV1VideoConferenceJitsiUpdateTimeout'][0])
     {
@@ -197,11 +197,11 @@ class VideoConferenceApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -219,16 +219,16 @@ class VideoConferenceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -246,13 +246,13 @@ class VideoConferenceApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -285,7 +285,7 @@ class VideoConferenceApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -293,7 +293,7 @@ class VideoConferenceApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -310,7 +310,7 @@ class VideoConferenceApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1VideoConferenceJitsiUpdateTimeout'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -333,7 +333,7 @@ class VideoConferenceApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1VideoConferenceJitsiUpdateTimeout'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -341,7 +341,7 @@ class VideoConferenceApi
      */
     public function postApiV1VideoConferenceJitsiUpdateTimeoutAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_video_conference_jitsi_update_timeout_request = null, string $contentType = self::contentTypes['postApiV1VideoConferenceJitsiUpdateTimeout'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response';
         $request = $this->postApiV1VideoConferenceJitsiUpdateTimeoutRequest($x_user_id, $x_auth_token, $post_api_v1_video_conference_jitsi_update_timeout_request, $contentType);
 
         return $this->client
@@ -385,7 +385,7 @@ class VideoConferenceApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest $post_api_v1_video_conference_jitsi_update_timeout_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1VideoConferenceJitsiUpdateTimeout'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

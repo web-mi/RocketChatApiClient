@@ -1,4 +1,4 @@
-# RocketChatSettingsApi\DeviceManagementApi
+# WebMIRocketChatApiClientSettingsApi\DeviceManagementApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1SessionsInfo()`
 
 ```php
-getApiV1SessionsInfo($x_user_id, $x_auth_token, $session_id): \RocketChatSettingsApi\Model\GetApiV1SessionsInfo200Response
+getApiV1SessionsInfo($x_user_id, $x_auth_token, $session_id): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response
 ```
 
 Get Current User Session Information
@@ -30,7 +30,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\DeviceManagementApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\DeviceManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -57,7 +57,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1SessionsInfo200Response**](../Model/GetApiV1SessionsInfo200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response**](../Model/GetApiV1SessionsInfo200Response.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `getApiV1SessionsInfoAdmin()`
 
 ```php
-getApiV1SessionsInfoAdmin($x_user_id, $x_auth_token, $session_id, $x_2fa_code, $x_2fa_method): \RocketChatSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response
+getApiV1SessionsInfoAdmin($x_user_id, $x_auth_token, $session_id, $x_2fa_code, $x_2fa_method): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response
 ```
 
 Get Session Information
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\DeviceManagementApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\DeviceManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response**](../Model/GetApiV1SessionsInfoAdmin200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response**](../Model/GetApiV1SessionsInfoAdmin200Response.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ No authorization required
 ## `getApiV1SessionsList()`
 
 ```php
-getApiV1SessionsList($x_user_id, $x_auth_token, $filter, $offset, $count, $sort): \RocketChatSettingsApi\Model\GetApiV1SessionsList200Response
+getApiV1SessionsList($x_user_id, $x_auth_token, $filter, $offset, $count, $sort): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response
 ```
 
 Get Current User Sessions
@@ -154,7 +154,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\DeviceManagementApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\DeviceManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -187,7 +187,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1SessionsList200Response**](../Model/GetApiV1SessionsList200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response**](../Model/GetApiV1SessionsList200Response.md)
 
 ### Authorization
 
@@ -205,7 +205,7 @@ No authorization required
 ## `getApiV1SessionsListAll()`
 
 ```php
-getApiV1SessionsListAll($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $filter, $offset, $count, $sort): \RocketChatSettingsApi\Model\GetApiV1SessionsListAll200Response
+getApiV1SessionsListAll($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $filter, $offset, $count, $sort): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response
 ```
 
 Get All User Sessions
@@ -220,7 +220,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\DeviceManagementApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\DeviceManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -257,7 +257,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1SessionsListAll200Response**](../Model/GetApiV1SessionsListAll200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response**](../Model/GetApiV1SessionsListAll200Response.md)
 
 ### Authorization
 
@@ -275,7 +275,7 @@ No authorization required
 ## `postApiV1SessionsLogout()`
 
 ```php
-postApiV1SessionsLogout($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_sessions_logout_me_request): \RocketChatSettingsApi\Model\PostApiV1SessionsLogoutMe200Response
+postApiV1SessionsLogout($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_sessions_logout_me_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response
 ```
 
 Logout Session
@@ -290,7 +290,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\DeviceManagementApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\DeviceManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -299,7 +299,7 @@ $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
 $x_2fa_code = 'x_2fa_code_example'; // string | The 2FA code from the authentication method. If the method is password, encrypt it as SHA256.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_sessions_logout_me_request = new \RocketChatSettingsApi\Model\PostApiV1SessionsLogoutMeRequest(); // \RocketChatSettingsApi\Model\PostApiV1SessionsLogoutMeRequest
+$post_api_v1_sessions_logout_me_request = new \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest(); // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest
 
 try {
     $result = $apiInstance->postApiV1SessionsLogout($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_sessions_logout_me_request);
@@ -317,11 +317,11 @@ try {
 | **x_auth_token** | **string**| The authentication token. | |
 | **x_2fa_code** | **string**| The 2FA code from the authentication method. If the method is password, encrypt it as SHA256. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_sessions_logout_me_request** | [**\RocketChatSettingsApi\Model\PostApiV1SessionsLogoutMeRequest**](../Model/PostApiV1SessionsLogoutMeRequest.md)|  | [optional] |
+| **post_api_v1_sessions_logout_me_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest**](../Model/PostApiV1SessionsLogoutMeRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SessionsLogoutMe200Response**](../Model/PostApiV1SessionsLogoutMe200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response**](../Model/PostApiV1SessionsLogoutMe200Response.md)
 
 ### Authorization
 
@@ -339,7 +339,7 @@ No authorization required
 ## `postApiV1SessionsLogoutMe()`
 
 ```php
-postApiV1SessionsLogoutMe($x_user_id, $x_auth_token, $post_api_v1_sessions_logout_me_request): \RocketChatSettingsApi\Model\PostApiV1SessionsLogoutMe200Response
+postApiV1SessionsLogoutMe($x_user_id, $x_auth_token, $post_api_v1_sessions_logout_me_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response
 ```
 
 Logout Current User Session
@@ -354,14 +354,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\DeviceManagementApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\DeviceManagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_sessions_logout_me_request = {"sessionId":"WJ2giBwm4B9mcojFi"}; // \RocketChatSettingsApi\Model\PostApiV1SessionsLogoutMeRequest
+$post_api_v1_sessions_logout_me_request = {"sessionId":"WJ2giBwm4B9mcojFi"}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest
 
 try {
     $result = $apiInstance->postApiV1SessionsLogoutMe($x_user_id, $x_auth_token, $post_api_v1_sessions_logout_me_request);
@@ -377,11 +377,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_sessions_logout_me_request** | [**\RocketChatSettingsApi\Model\PostApiV1SessionsLogoutMeRequest**](../Model/PostApiV1SessionsLogoutMeRequest.md)|  | [optional] |
+| **post_api_v1_sessions_logout_me_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest**](../Model/PostApiV1SessionsLogoutMeRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SessionsLogoutMe200Response**](../Model/PostApiV1SessionsLogoutMe200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response**](../Model/PostApiV1SessionsLogoutMe200Response.md)
 
 ### Authorization
 

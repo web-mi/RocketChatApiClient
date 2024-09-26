@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1CannedResponsesId200ResponseCannedResponse Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
         'text' => 'string',
         'scope' => 'string',
         'user_id' => 'string',
-        'created_by' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser',
+        'created_by' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser',
         '_created_at' => 'string',
         '_updated_at' => 'string'
     ];
@@ -476,7 +476,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
     /**
      * Gets created_by
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
      */
     public function getCreatedBy()
     {
@@ -486,7 +486,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
     /**
      * Sets created_by
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null $created_by created_by
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null $created_by created_by
      *
      * @return self
      */

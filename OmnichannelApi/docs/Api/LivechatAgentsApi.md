@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\LivechatAgentsApi
+# WebMIRocketChatApiClientOmnichannelApi\LivechatAgentsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatAgent()`
 
 ```php
-getApiV1LivechatAgent($rid, $token): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAgent200Response
+getApiV1LivechatAgent($rid, $token): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAgent200Response
 ```
 
 Get Agent Information
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatAgentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatAgentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -52,7 +52,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAgent200Response**](../Model/GetApiV1LivechatAgent200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAgent200Response**](../Model/GetApiV1LivechatAgent200Response.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `getApiV1LivechatAgentNext()`
 
 ```php
-getApiV1LivechatAgentNext($token): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAgentNext200Response
+getApiV1LivechatAgentNext($token): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAgentNext200Response
 ```
 
 Get Next Agent Information
@@ -85,7 +85,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatAgentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatAgentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -108,7 +108,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAgentNext200Response**](../Model/GetApiV1LivechatAgentNext200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAgentNext200Response**](../Model/GetApiV1LivechatAgentNext200Response.md)
 
 ### Authorization
 
@@ -126,7 +126,7 @@ No authorization required
 ## `getApiV1OmnichannelAgentsAvailable()`
 
 ```php
-getApiV1OmnichannelAgentsAvailable($x_auth_token, $x_user_id, $query, $text, $include_extension, $offset, $count, $sort): \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200Response
+getApiV1OmnichannelAgentsAvailable($x_auth_token, $x_user_id, $query, $text, $include_extension, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200Response
 ```
 
 Get Available Agent Information
@@ -141,7 +141,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatAgentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatAgentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -178,7 +178,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200Response**](../Model/GetApiV1OmnichannelAgentsAvailable200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200Response**](../Model/GetApiV1OmnichannelAgentsAvailable200Response.md)
 
 ### Authorization
 

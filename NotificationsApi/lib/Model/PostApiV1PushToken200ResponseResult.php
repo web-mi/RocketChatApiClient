@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatNotificationsApi\Model;
+namespace WebMIRocketChatApiClientNotificationsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatNotificationsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
 
 /**
  * PostApiV1PushToken200ResponseResult Class Doc Comment
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'token' => '\RocketChatNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken',
+        'token' => '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken',
         'app_name' => 'string',
         'user_id' => 'string',
         'enabled' => 'bool',
@@ -334,7 +334,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
     /**
      * Gets token
      *
-     * @return \RocketChatNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken|null
+     * @return \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken|null
      */
     public function getToken()
     {
@@ -344,7 +344,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
     /**
      * Sets token
      *
-     * @param \RocketChatNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken|null $token token
+     * @param \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken|null $token token
      *
      * @return self
      */

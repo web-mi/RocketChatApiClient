@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatCustomFields200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fields' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]',
+        'fields' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
     /**
      * Gets fields
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]|null
      */
     public function getFields()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
     /**
      * Sets fields
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]|null $fields fields
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]|null $fields fields
      *
      * @return self
      */

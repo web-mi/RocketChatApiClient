@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1LdapSyncNow400Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostApiV1LdapSyncNow400Response implements ModelInterface, ArrayAccess, \J
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\RocketChatUserManagementApi\Model\PostApiV1LdapSyncNow400ResponseDetails'
+        'details' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapSyncNow400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class PostApiV1LdapSyncNow400Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets details
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1LdapSyncNow400ResponseDetails|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapSyncNow400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class PostApiV1LdapSyncNow400Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets details
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1LdapSyncNow400ResponseDetails|null $details details
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapSyncNow400ResponseDetails|null $details details
      *
      * @return self
      */

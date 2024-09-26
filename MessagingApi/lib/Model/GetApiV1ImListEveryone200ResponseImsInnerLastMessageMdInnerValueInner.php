@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner impl
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValueInner[]'
+        'value' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner impl
     /**
      * Gets value
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValueInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner impl
     /**
      * Sets value
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValueInner[]|null $value value
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValueInner[]|null $value value
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# RocketChatSettingsApi\FederationApi
+# WebMIRocketChatApiClientSettingsApi\FederationApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1FederationListServersByUser()`
 
 ```php
-getApiV1FederationListServersByUser($x_user_id, $x_auth_token): \RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response
+getApiV1FederationListServersByUser($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response
 ```
 
 Get Federated Servers
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\FederationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\FederationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1FederationListServersByUser200Response**](../Model/GetApiV1FederationListServersByUser200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200Response**](../Model/GetApiV1FederationListServersByUser200Response.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `getApiV1FederationSearchPublicRooms()`
 
 ```php
-getApiV1FederationSearchPublicRooms($x_user_id, $x_auth_token, $server_name, $room_name, $page_token, $count): \RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response
+getApiV1FederationSearchPublicRooms($x_user_id, $x_auth_token, $server_name, $room_name, $page_token, $count): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response
 ```
 
 Search Public Rooms
@@ -87,7 +87,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\FederationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\FederationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -120,7 +120,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response**](../Model/GetApiV1FederationSearchPublicRooms200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200Response**](../Model/GetApiV1FederationSearchPublicRooms200Response.md)
 
 ### Authorization
 
@@ -138,7 +138,7 @@ No authorization required
 ## `postApiV1FederationAddServerByUser()`
 
 ```php
-postApiV1FederationAddServerByUser($x_user_id, $x_auth_token, $post_api_v1_federation_add_server_by_user_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1FederationAddServerByUser($x_user_id, $x_auth_token, $post_api_v1_federation_add_server_by_user_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Add Federated Server
@@ -153,14 +153,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\FederationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\FederationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_federation_add_server_by_user_request = {"serverName":"my-server.rocket.chat"}; // \RocketChatSettingsApi\Model\PostApiV1FederationAddServerByUserRequest
+$post_api_v1_federation_add_server_by_user_request = {"serverName":"my-server.rocket.chat"}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationAddServerByUserRequest
 
 try {
     $result = $apiInstance->postApiV1FederationAddServerByUser($x_user_id, $x_auth_token, $post_api_v1_federation_add_server_by_user_request);
@@ -176,11 +176,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_federation_add_server_by_user_request** | [**\RocketChatSettingsApi\Model\PostApiV1FederationAddServerByUserRequest**](../Model/PostApiV1FederationAddServerByUserRequest.md)|  | [optional] |
+| **post_api_v1_federation_add_server_by_user_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationAddServerByUserRequest**](../Model/PostApiV1FederationAddServerByUserRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ No authorization required
 ## `postApiV1FederationJoinExternalPublicRoom()`
 
 ```php
-postApiV1FederationJoinExternalPublicRoom($x_user_id, $x_auth_token, $post_api_v1_federation_join_external_public_room_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1FederationJoinExternalPublicRoom($x_user_id, $x_auth_token, $post_api_v1_federation_join_external_public_room_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Join External Public Room
@@ -213,14 +213,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\FederationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\FederationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_federation_join_external_public_room_request = {"externalRoomId":"!externalRoomId:server.com"}; // \RocketChatSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest
+$post_api_v1_federation_join_external_public_room_request = {"externalRoomId":"!externalRoomId:server.com"}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest
 
 try {
     $result = $apiInstance->postApiV1FederationJoinExternalPublicRoom($x_user_id, $x_auth_token, $post_api_v1_federation_join_external_public_room_request);
@@ -236,11 +236,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_federation_join_external_public_room_request** | [**\RocketChatSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest**](../Model/PostApiV1FederationJoinExternalPublicRoomRequest.md)|  | [optional] |
+| **post_api_v1_federation_join_external_public_room_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationJoinExternalPublicRoomRequest**](../Model/PostApiV1FederationJoinExternalPublicRoomRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ No authorization required
 ## `postApiV1FederationRemoveServerByUser()`
 
 ```php
-postApiV1FederationRemoveServerByUser($x_user_id, $x_auth_token, $post_api_v1_federation_remove_server_by_user_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1FederationRemoveServerByUser($x_user_id, $x_auth_token, $post_api_v1_federation_remove_server_by_user_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Remove Federated Server
@@ -273,14 +273,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\FederationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\FederationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_federation_remove_server_by_user_request = new \RocketChatSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest(); // \RocketChatSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest
+$post_api_v1_federation_remove_server_by_user_request = new \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest(); // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest
 
 try {
     $result = $apiInstance->postApiV1FederationRemoveServerByUser($x_user_id, $x_auth_token, $post_api_v1_federation_remove_server_by_user_request);
@@ -296,11 +296,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_federation_remove_server_by_user_request** | [**\RocketChatSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest**](../Model/PostApiV1FederationRemoveServerByUserRequest.md)|  | [optional] |
+| **post_api_v1_federation_remove_server_by_user_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1FederationRemoveServerByUserRequest**](../Model/PostApiV1FederationRemoveServerByUserRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 

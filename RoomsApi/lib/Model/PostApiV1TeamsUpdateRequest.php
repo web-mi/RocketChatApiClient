@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1TeamsUpdateRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
       */
     protected static $openAPITypes = [
         'team_id' => 'string',
-        'data' => '\RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRequestData'
+        'data' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequestData'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets data
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRequestData
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequestData
      */
     public function getData()
     {
@@ -342,7 +342,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets data
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRequestData $data data
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequestData $data data
      *
      * @return self
      */

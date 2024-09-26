@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1FederationSearchPublicRooms200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'rooms' => '\RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200ResponseRoomsInner[]',
+        'rooms' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200ResponseRoomsInner[]',
         'count' => 'int',
         'total' => 'int',
         'next_page_token' => 'string',
@@ -327,7 +327,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
     /**
      * Gets rooms
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200ResponseRoomsInner[]|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200ResponseRoomsInner[]|null
      */
     public function getRooms()
     {
@@ -337,7 +337,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
     /**
      * Sets rooms
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1FederationSearchPublicRooms200ResponseRoomsInner[]|null $rooms rooms
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200ResponseRoomsInner[]|null $rooms rooms
      *
      * @return self
      */

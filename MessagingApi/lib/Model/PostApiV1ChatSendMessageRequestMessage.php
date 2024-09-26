@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatSendMessageRequestMessage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
         'alias' => 'string',
         'emoji' => 'string',
         'avatar' => 'string',
-        'attachments' => '\RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequestMessageAttachmentsInner[]',
+        'attachments' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequestMessageAttachmentsInner[]',
         'tmid' => 'string',
         'tshow' => 'string',
         'blocks' => 'object',
@@ -493,7 +493,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
     /**
      * Gets attachments
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequestMessageAttachmentsInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequestMessageAttachmentsInner[]|null
      */
     public function getAttachments()
     {
@@ -503,7 +503,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
     /**
      * Sets attachments
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequestMessageAttachmentsInner[]|null $attachments The attachment is an array of objects with any of the following properties. One attachment can have many sections, including: * General * Author Information * Title Information * Image * Audio * Video * Table/Fields
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequestMessageAttachmentsInner[]|null $attachments The attachment is an array of objects with any of the following properties. One attachment can have many sections, including: * General * Author Information * Title Information * Image * Audio * Video * Table/Fields
      *
      * @return self
      */

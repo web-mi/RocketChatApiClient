@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_id** | **string** |  | [optional]
 **username** | **string** |  | [optional]
-**emails** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]**](GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner.md) |  | [optional]
+**emails** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]**](GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner.md) |  | [optional]
 **status** | **string** |  | [optional]
 **name** | **string** |  | [optional]
 **status_livechat** | **string** |  | [optional]

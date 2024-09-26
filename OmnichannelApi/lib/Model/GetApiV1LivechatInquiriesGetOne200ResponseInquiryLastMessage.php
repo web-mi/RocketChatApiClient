@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,12 +61,12 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage implements Mo
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
+        'u' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
         '_updated_at' => 'string',
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]'
+        'md' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]'
     ];
 
     /**
@@ -463,7 +463,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage implements Mo
     /**
      * Gets u
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
     public function getU()
     {
@@ -473,7 +473,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage implements Mo
     /**
      * Sets u
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
      *
      * @return self
      */
@@ -598,7 +598,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage implements Mo
     /**
      * Gets md
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -608,7 +608,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage implements Mo
     /**
      * Sets md
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]|null $md md
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]|null $md md
      *
      * @return self
      */

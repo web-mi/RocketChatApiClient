@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatUpdate200ResponseMessage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,14 +61,14 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
+        'u' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
         '_updated_at' => 'string',
-        'urls' => '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageUrlsInner[]',
+        'urls' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageUrlsInner[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]',
+        'md' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]',
         'edited_at' => 'string',
-        'edited_by' => '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy'
+        'edited_by' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy'
     ];
 
     /**
@@ -477,7 +477,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
     /**
      * Gets u
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
     public function getU()
     {
@@ -487,7 +487,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
     /**
      * Sets u
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
      *
      * @return self
      */
@@ -531,7 +531,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
     /**
      * Gets urls
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageUrlsInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageUrlsInner[]|null
      */
     public function getUrls()
     {
@@ -541,7 +541,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
     /**
      * Sets urls
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageUrlsInner[]|null $urls urls
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageUrlsInner[]|null $urls urls
      *
      * @return self
      */
@@ -612,7 +612,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
     /**
      * Gets md
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -622,7 +622,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
     /**
      * Sets md
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null $md md
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null $md md
      *
      * @return self
      */
@@ -666,7 +666,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
     /**
      * Gets edited_by
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null
      */
     public function getEditedBy()
     {
@@ -676,7 +676,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
     /**
      * Sets edited_by
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null $edited_by edited_by
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null $edited_by edited_by
      *
      * @return self
      */

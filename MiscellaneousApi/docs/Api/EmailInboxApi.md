@@ -1,4 +1,4 @@
-# RocketChatMiscellaneousApi\EmailInboxApi
+# WebMIRocketChatApiClientMiscellaneousApi\EmailInboxApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1EmailInboxId()`
 
 ```php
-deleteApiV1EmailInboxId($x_auth_token, $x_user_id, $_id): \RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response
+deleteApiV1EmailInboxId($x_auth_token, $x_user_id, $_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response
 ```
 
 Delete Email Inbox by ID
@@ -30,7 +30,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\EmailInboxApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\EmailInboxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -57,7 +57,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response**](../Model/PostApiV1EmailInbox200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response**](../Model/PostApiV1EmailInbox200Response.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `getApiV1EmailInboxId()`
 
 ```php
-getApiV1EmailInboxId($x_auth_token, $x_user_id, $_id): \RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response
+getApiV1EmailInboxId($x_auth_token, $x_user_id, $_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response
 ```
 
 Email Inbox by ID
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\EmailInboxApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\EmailInboxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -117,7 +117,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response**](../Model/GetApiV1EmailInboxId200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response**](../Model/GetApiV1EmailInboxId200Response.md)
 
 ### Authorization
 
@@ -135,7 +135,7 @@ No authorization required
 ## `getApiV1EmailInboxList()`
 
 ```php
-getApiV1EmailInboxList($x_auth_token, $x_user_id, $offset, $sort, $count, $query, $fields): \RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response
+getApiV1EmailInboxList($x_auth_token, $x_user_id, $offset, $sort, $count, $query, $fields): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response
 ```
 
 List Email Inbox
@@ -150,7 +150,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\EmailInboxApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\EmailInboxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -185,7 +185,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response**](../Model/GetApiV1EmailInboxList200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response**](../Model/GetApiV1EmailInboxList200Response.md)
 
 ### Authorization
 
@@ -203,7 +203,7 @@ No authorization required
 ## `getApiV1EmailInboxSearch()`
 
 ```php
-getApiV1EmailInboxSearch($x_auth_token, $x_user_id, $email): \RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response
+getApiV1EmailInboxSearch($x_auth_token, $x_user_id, $email): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response
 ```
 
 Search Email Inbox
@@ -218,7 +218,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\EmailInboxApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\EmailInboxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -245,7 +245,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response**](../Model/GetApiV1EmailInboxSearch200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response**](../Model/GetApiV1EmailInboxSearch200Response.md)
 
 ### Authorization
 
@@ -263,7 +263,7 @@ No authorization required
 ## `getApiV1EmailInboxSendTestId()`
 
 ```php
-getApiV1EmailInboxSendTestId($x_auth_token, $x_user_id, $_id): \RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response
+getApiV1EmailInboxSendTestId($x_auth_token, $x_user_id, $_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response
 ```
 
 Send test email to email inbox
@@ -278,7 +278,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\EmailInboxApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\EmailInboxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -305,7 +305,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response**](../Model/PostApiV1EmailInbox200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response**](../Model/PostApiV1EmailInbox200Response.md)
 
 ### Authorization
 
@@ -323,7 +323,7 @@ No authorization required
 ## `postApiV1EmailInbox()`
 
 ```php
-postApiV1EmailInbox($x_auth_token, $x_user_id, $post_api_v1_email_inbox_request): \RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response
+postApiV1EmailInbox($x_auth_token, $x_user_id, $post_api_v1_email_inbox_request): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response
 ```
 
 Set Email Inbox
@@ -338,14 +338,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\EmailInboxApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\EmailInboxApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_email_inbox_request = {"name":"new email","email":"mdyemaasil@rocket.chat","active":false,"description":"This email has been set","senderInfo":"email sender","department":"awesome department","smtp":{"password":"10fae4dc374fb87d","port":25,"secure":true,"server":"smtp.mailtrap.io","username":"b5ef5safd6cb806c"},"imap":{"password":"10fae4374sdfb87d","port":993,"secure":true,"server":"imap.mailtrap.io","username":"b5ef5aafd6cb806c"}}; // \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequest
+$post_api_v1_email_inbox_request = {"name":"new email","email":"mdyemaasil@rocket.chat","active":false,"description":"This email has been set","senderInfo":"email sender","department":"awesome department","smtp":{"password":"10fae4dc374fb87d","port":25,"secure":true,"server":"smtp.mailtrap.io","username":"b5ef5safd6cb806c"},"imap":{"password":"10fae4374sdfb87d","port":993,"secure":true,"server":"imap.mailtrap.io","username":"b5ef5aafd6cb806c"}}; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequest
 
 try {
     $result = $apiInstance->postApiV1EmailInbox($x_auth_token, $x_user_id, $post_api_v1_email_inbox_request);
@@ -361,11 +361,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_email_inbox_request** | [**\RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequest**](../Model/PostApiV1EmailInboxRequest.md)|  | [optional] |
+| **post_api_v1_email_inbox_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequest**](../Model/PostApiV1EmailInboxRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response**](../Model/PostApiV1EmailInbox200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response**](../Model/PostApiV1EmailInbox200Response.md)
 
 ### Authorization
 

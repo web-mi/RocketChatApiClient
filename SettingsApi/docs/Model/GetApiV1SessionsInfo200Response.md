@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **login_token** | **string** |  | [optional]
 **ip** | **string** |  | [optional]
 **host** | **string** |  | [optional]
-**device** | [**\RocketChatSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice**](GetApiV1SessionsList200ResponseSessionsInnerDevice.md) |  | [optional]
+**device** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice**](GetApiV1SessionsList200ResponseSessionsInnerDevice.md) |  | [optional]
 **user_id** | **string** |  | [optional]
 **roles** | **string[]** |  | [optional]
 **most_important_role** | **string** |  | [optional]

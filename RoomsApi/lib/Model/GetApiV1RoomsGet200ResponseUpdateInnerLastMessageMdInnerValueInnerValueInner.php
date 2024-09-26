@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
     protected static $openAPITypes = [
         'type' => 'string',
         'value' => 'string',
-        'src' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner',
-        'label' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]'
+        'src' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner',
+        'label' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]'
     ];
 
     /**
@@ -367,7 +367,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
     /**
      * Gets src
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner|null
      */
     public function getSrc()
     {
@@ -377,7 +377,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
     /**
      * Sets src
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner|null $src src
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner|null $src src
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
     /**
      * Gets label
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]|null
      */
     public function getLabel()
     {
@@ -404,7 +404,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
     /**
      * Sets label
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]|null $label label
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]|null $label label
      *
      * @return self
      */

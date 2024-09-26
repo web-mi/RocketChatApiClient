@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * GetPermissionsListAll200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\RocketChatUserManagementApi\Model\GetPermissionsListAll200ResponseUpdateInner[]',
+        'update' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll200ResponseUpdateInner[]',
         'remove' => 'object[]',
         'success' => 'bool'
     ];
@@ -306,7 +306,7 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets update
      *
-     * @return \RocketChatUserManagementApi\Model\GetPermissionsListAll200ResponseUpdateInner[]|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll200ResponseUpdateInner[]|null
      */
     public function getUpdate()
     {
@@ -316,7 +316,7 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets update
      *
-     * @param \RocketChatUserManagementApi\Model\GetPermissionsListAll200ResponseUpdateInner[]|null $update update
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll200ResponseUpdateInner[]|null $update update
      *
      * @return self
      */

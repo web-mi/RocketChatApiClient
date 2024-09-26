@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdateOwnBasicInfo200ResponseUser Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,9 +59,9 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     protected static $openAPITypes = [
         '_id' => 'string',
         'created_at' => 'string',
-        'services' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices',
+        'services' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices',
         'username' => 'string',
-        'emails' => '\RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]',
+        'emails' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]',
         'type' => 'string',
         'status' => 'string',
         'active' => 'bool',
@@ -69,18 +69,18 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
         '__rooms' => 'string[]',
         'roles' => 'string[]',
         'name' => 'string',
-        'settings' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings',
+        'settings' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings',
         'last_login' => 'string',
         'status_connection' => 'string',
         'utc_offset' => 'int',
-        'banners' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners',
+        'banners' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners',
         'status_default' => 'string',
         'status_text' => 'string',
         'operator' => 'bool',
         'livechat_status_system_modified' => 'bool',
         'status_livechat' => 'string',
         'livechat_count' => 'int',
-        'livechat' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat',
+        'livechat' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat',
         'bio' => 'string',
         'nickname' => 'string'
     ];
@@ -521,7 +521,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Gets services
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices|null
      */
     public function getServices()
     {
@@ -531,7 +531,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Sets services
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices|null $services services
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices|null $services services
      *
      * @return self
      */
@@ -575,7 +575,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Gets emails
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null
      */
     public function getEmails()
     {
@@ -585,7 +585,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Sets emails
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null $emails emails
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null $emails emails
      *
      * @return self
      */
@@ -791,7 +791,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Gets settings
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings|null
      */
     public function getSettings()
     {
@@ -801,7 +801,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Sets settings
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings|null $settings settings
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings|null $settings settings
      *
      * @return self
      */
@@ -899,7 +899,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Gets banners
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners|null
      */
     public function getBanners()
     {
@@ -909,7 +909,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Sets banners
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners|null $banners banners
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners|null $banners banners
      *
      * @return self
      */
@@ -1088,7 +1088,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Gets livechat
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat|null
      */
     public function getLivechat()
     {
@@ -1098,7 +1098,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
     /**
      * Sets livechat
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat|null $livechat livechat
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat|null $livechat livechat
      *
      * @return self
      */

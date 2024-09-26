@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1ModerationReportsByUsers200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ModerationReportsByUsers200Response implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'reports' => '\RocketChatSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]',
+        'reports' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ModerationReportsByUsers200Response implements ModelInterface, Arr
     /**
      * Gets reports
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]|null
      */
     public function getReports()
     {
@@ -330,7 +330,7 @@ class GetApiV1ModerationReportsByUsers200Response implements ModelInterface, Arr
     /**
      * Sets reports
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]|null $reports reports
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]|null $reports reports
      *
      * @return self
      */

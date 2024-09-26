@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1LicensesInfo200ResponseLicenseLicenseValidation Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,12 +57,12 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
       * @var string[]
       */
     protected static $openAPITypes = [
-        'server_urls' => '\RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner[]',
+        'server_urls' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner[]',
         'cloud_workspace_id' => 'string',
         'server_unique_id' => 'string',
-        'valid_periods' => '\RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner[]',
-        'legal_text_agreement' => '\RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement',
-        'statistics_report' => '\RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport'
+        'valid_periods' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner[]',
+        'legal_text_agreement' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement',
+        'statistics_report' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport'
     ];
 
     /**
@@ -327,7 +327,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
     /**
      * Gets server_urls
      *
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner[]|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner[]|null
      */
     public function getServerUrls()
     {
@@ -337,7 +337,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
     /**
      * Sets server_urls
      *
-     * @param \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner[]|null $server_urls server_urls
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner[]|null $server_urls server_urls
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
     /**
      * Gets valid_periods
      *
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner[]|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner[]|null
      */
     public function getValidPeriods()
     {
@@ -418,7 +418,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
     /**
      * Sets valid_periods
      *
-     * @param \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner[]|null $valid_periods valid_periods
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner[]|null $valid_periods valid_periods
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
     /**
      * Gets legal_text_agreement
      *
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement|null
      */
     public function getLegalTextAgreement()
     {
@@ -445,7 +445,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
     /**
      * Sets legal_text_agreement
      *
-     * @param \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement|null $legal_text_agreement legal_text_agreement
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement|null $legal_text_agreement legal_text_agreement
      *
      * @return self
      */
@@ -462,7 +462,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
     /**
      * Gets statistics_report
      *
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport|null
      */
     public function getStatisticsReport()
     {
@@ -472,7 +472,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
     /**
      * Sets statistics_report
      *
-     * @param \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport|null $statistics_report statistics_report
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport|null $statistics_report statistics_report
      *
      * @return self
      */

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Api;
+namespace WebMIRocketChatApiClientRoomsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatRoomsApi\ApiException;
-use RocketChatRoomsApi\Configuration;
-use RocketChatRoomsApi\HeaderSelector;
-use RocketChatRoomsApi\ObjectSerializer;
+use WebMIRocketChatApiClientRoomsApi\ApiException;
+use WebMIRocketChatApiClientRoomsApi\Configuration;
+use WebMIRocketChatApiClientRoomsApi\HeaderSelector;
+use WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * DirectoryApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -136,9 +136,9 @@ class DirectoryApi
      * @param  string $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;{ \&quot;username\&quot;: 1 } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1Directory'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\GetApiV1Directory200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function getApiV1Directory($x_auth_token, $x_user_id, $query, $offset = null, $count = null, $sort = null, $fields = null, string $contentType = self::contentTypes['getApiV1Directory'][0])
     {
@@ -160,9 +160,9 @@ class DirectoryApi
      * @param  string $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;{ \&quot;username\&quot;: 1 } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1Directory'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\GetApiV1Directory200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1DirectoryWithHttpInfo($x_auth_token, $x_user_id, $query, $offset = null, $count = null, $sort = null, $fields = null, string $contentType = self::contentTypes['getApiV1Directory'][0])
     {
@@ -205,11 +205,11 @@ class DirectoryApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\GetApiV1Directory200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\GetApiV1Directory200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,16 +227,16 @@ class DirectoryApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\GetApiV1Directory200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -254,13 +254,13 @@ class DirectoryApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\GetApiV1Directory200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -293,7 +293,7 @@ class DirectoryApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\GetApiV1Directory200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -301,7 +301,7 @@ class DirectoryApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -357,7 +357,7 @@ class DirectoryApi
      */
     public function getApiV1DirectoryAsyncWithHttpInfo($x_auth_token, $x_user_id, $query, $offset = null, $count = null, $sort = null, $fields = null, string $contentType = self::contentTypes['getApiV1Directory'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\GetApiV1Directory200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response';
         $request = $this->getApiV1DirectoryRequest($x_auth_token, $x_user_id, $query, $offset, $count, $sort, $fields, $contentType);
 
         return $this->client

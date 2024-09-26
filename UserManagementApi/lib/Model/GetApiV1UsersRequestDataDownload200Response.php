@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1UsersRequestDataDownload200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
       */
     protected static $openAPITypes = [
         'requested' => 'bool',
-        'export_operation' => '\RocketChatUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperation',
+        'export_operation' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperation',
         'success' => 'bool'
     ];
 
@@ -333,7 +333,7 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
     /**
      * Gets export_operation
      *
-     * @return \RocketChatUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperation|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperation|null
      */
     public function getExportOperation()
     {
@@ -343,7 +343,7 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
     /**
      * Sets export_operation
      *
-     * @param \RocketChatUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperation|null $export_operation export_operation
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperation|null $export_operation export_operation
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatInquiriesGetOne200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatInquiriesGetOne200Response implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'inquiry' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiry',
+        'inquiry' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiry',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatInquiriesGetOne200Response implements ModelInterface, Arra
     /**
      * Gets inquiry
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiry|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiry|null
      */
     public function getInquiry()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatInquiriesGetOne200Response implements ModelInterface, Arra
     /**
      * Sets inquiry
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiry|null $inquiry inquiry
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiry|null $inquiry inquiry
      *
      * @return self
      */

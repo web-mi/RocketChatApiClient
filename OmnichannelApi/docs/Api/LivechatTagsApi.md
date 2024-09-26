@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\LivechatTagsApi
+# WebMIRocketChatApiClientOmnichannelApi\LivechatTagsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatTags()`
 
 ```php
-getApiV1LivechatTags($x_auth_token, $x_user_id, $offset, $count, $sort, $text, $department, $view_all): \RocketChatOmnichannelApi\Model\GetApiV1LivechatTags200Response
+getApiV1LivechatTags($x_auth_token, $x_user_id, $offset, $count, $sort, $text, $department, $view_all): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTags200Response
 ```
 
 Get List of Tags
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatTagsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -65,7 +65,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatTags200Response**](../Model/GetApiV1LivechatTags200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTags200Response**](../Model/GetApiV1LivechatTags200Response.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ No authorization required
 ## `getApiV1LivechatTagsList()`
 
 ```php
-getApiV1LivechatTagsList($x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatTagsList200Response
+getApiV1LivechatTagsList($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsList200Response
 ```
 
 List of Tags
@@ -98,7 +98,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatTagsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -123,7 +123,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatTagsList200Response**](../Model/GetApiV1LivechatTagsList200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsList200Response**](../Model/GetApiV1LivechatTagsList200Response.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ No authorization required
 ## `getApiV1LivechatTagsTagId()`
 
 ```php
-getApiV1LivechatTagsTagId($x_auth_token, $x_user_id, $tag_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatTagsTagId200Response
+getApiV1LivechatTagsTagId($x_auth_token, $x_user_id, $tag_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsTagId200Response
 ```
 
 Get a Tag
@@ -156,7 +156,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatTagsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -183,7 +183,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatTagsTagId200Response**](../Model/GetApiV1LivechatTagsTagId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsTagId200Response**](../Model/GetApiV1LivechatTagsTagId200Response.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ No authorization required
 ## `getLivechatTagsGetOne()`
 
 ```php
-getLivechatTagsGetOne(): \RocketChatOmnichannelApi\Model\GetLivechatTagsGetOne200Response
+getLivechatTagsGetOne(): \WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatTagsGetOne200Response
 ```
 
 Get One Tag
@@ -216,7 +216,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatTagsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTagsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -236,7 +236,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetLivechatTagsGetOne200Response**](../Model/GetLivechatTagsGetOne200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatTagsGetOne200Response**](../Model/GetLivechatTagsGetOne200Response.md)
 
 ### Authorization
 

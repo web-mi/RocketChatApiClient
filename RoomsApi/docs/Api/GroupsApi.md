@@ -1,4 +1,4 @@
-# RocketChatRoomsApi\GroupsApi
+# WebMIRocketChatApiClientRoomsApi\GroupsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -48,7 +48,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1GroupsCounters()`
 
 ```php
-getApiV1GroupsCounters($x_auth_token, $x_user_id, $room_id, $room_name, $user_id): \RocketChatRoomsApi\Model\GetApiV1ChannelsCounters200Response
+getApiV1GroupsCounters($x_auth_token, $x_user_id, $room_id, $room_name, $user_id): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsCounters200Response
 ```
 
 Get Group Counters
@@ -63,7 +63,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -94,7 +94,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1ChannelsCounters200Response**](../Model/GetApiV1ChannelsCounters200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsCounters200Response**](../Model/GetApiV1ChannelsCounters200Response.md)
 
 ### Authorization
 
@@ -112,7 +112,7 @@ No authorization required
 ## `getApiV1GroupsFiles()`
 
 ```php
-getApiV1GroupsFiles($x_auth_token, $x_user_id, $room_name, $room_id, $offset, $count, $sort, $query, $fields): \RocketChatRoomsApi\Model\GetApiV1GroupsFiles200Response
+getApiV1GroupsFiles($x_auth_token, $x_user_id, $room_name, $room_id, $offset, $count, $sort, $query, $fields): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsFiles200Response
 ```
 
 Get Group Files
@@ -127,7 +127,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -166,7 +166,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsFiles200Response**](../Model/GetApiV1GroupsFiles200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsFiles200Response**](../Model/GetApiV1GroupsFiles200Response.md)
 
 ### Authorization
 
@@ -184,7 +184,7 @@ No authorization required
 ## `getApiV1GroupsGetIntegrations()`
 
 ```php
-getApiV1GroupsGetIntegrations($x_auth_token, $x_user_id, $room_id, $offset, $count, $sort, $query, $fields): \RocketChatRoomsApi\Model\GetApiV1GroupsGetIntegrations200Response
+getApiV1GroupsGetIntegrations($x_auth_token, $x_user_id, $room_id, $offset, $count, $sort, $query, $fields): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsGetIntegrations200Response
 ```
 
 Get Group Integrations
@@ -199,7 +199,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -236,7 +236,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsGetIntegrations200Response**](../Model/GetApiV1GroupsGetIntegrations200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsGetIntegrations200Response**](../Model/GetApiV1GroupsGetIntegrations200Response.md)
 
 ### Authorization
 
@@ -254,7 +254,7 @@ No authorization required
 ## `getApiV1GroupsHistory()`
 
 ```php
-getApiV1GroupsHistory($x_auth_token, $x_user_id, $room_id, $latest, $oldest, $inclusive, $unreads, $offset, $count): \RocketChatRoomsApi\Model\GetApiV1GroupsHistory200Response
+getApiV1GroupsHistory($x_auth_token, $x_user_id, $room_id, $latest, $oldest, $inclusive, $unreads, $offset, $count): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsHistory200Response
 ```
 
 Get Group History
@@ -269,7 +269,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -308,7 +308,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsHistory200Response**](../Model/GetApiV1GroupsHistory200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsHistory200Response**](../Model/GetApiV1GroupsHistory200Response.md)
 
 ### Authorization
 
@@ -326,7 +326,7 @@ No authorization required
 ## `getApiV1GroupsInfo()`
 
 ```php
-getApiV1GroupsInfo($x_user_id, $x_auth_token, $room_id, $room_name): \RocketChatRoomsApi\Model\GetApiV1GroupsInfo200Response
+getApiV1GroupsInfo($x_user_id, $x_auth_token, $room_id, $room_name): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsInfo200Response
 ```
 
 Get Group Information
@@ -341,7 +341,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -370,7 +370,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsInfo200Response**](../Model/GetApiV1GroupsInfo200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsInfo200Response**](../Model/GetApiV1GroupsInfo200Response.md)
 
 ### Authorization
 
@@ -388,7 +388,7 @@ No authorization required
 ## `getApiV1GroupsList()`
 
 ```php
-getApiV1GroupsList($x_auth_token, $x_user_id, $offset, $count, $sort): \RocketChatRoomsApi\Model\GetApiV1GroupsList200Response
+getApiV1GroupsList($x_auth_token, $x_user_id, $offset, $count, $sort): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsList200Response
 ```
 
 Get Groups
@@ -403,7 +403,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -434,7 +434,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsList200Response**](../Model/GetApiV1GroupsList200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsList200Response**](../Model/GetApiV1GroupsList200Response.md)
 
 ### Authorization
 
@@ -452,7 +452,7 @@ No authorization required
 ## `getApiV1GroupsListAll()`
 
 ```php
-getApiV1GroupsListAll($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields): \RocketChatRoomsApi\Model\GetApiV1GroupsListAll200Response
+getApiV1GroupsListAll($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsListAll200Response
 ```
 
 Get List of User Groups
@@ -467,7 +467,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -502,7 +502,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsListAll200Response**](../Model/GetApiV1GroupsListAll200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsListAll200Response**](../Model/GetApiV1GroupsListAll200Response.md)
 
 ### Authorization
 
@@ -520,7 +520,7 @@ No authorization required
 ## `getApiV1GroupsMembers()`
 
 ```php
-getApiV1GroupsMembers($x_auth_token, $x_user_id, $room_id, $room_name, $sort, $count, $offset, $status, $filter): \RocketChatRoomsApi\Model\GetApiV1GroupsMembers200Response
+getApiV1GroupsMembers($x_auth_token, $x_user_id, $room_id, $room_name, $sort, $count, $offset, $status, $filter): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMembers200Response
 ```
 
 List Group Members
@@ -535,7 +535,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -574,7 +574,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsMembers200Response**](../Model/GetApiV1GroupsMembers200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMembers200Response**](../Model/GetApiV1GroupsMembers200Response.md)
 
 ### Authorization
 
@@ -592,7 +592,7 @@ No authorization required
 ## `getApiV1GroupsMessages()`
 
 ```php
-getApiV1GroupsMessages($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $query, $sort, $offset, $count): \RocketChatRoomsApi\Model\GetApiV1GroupsMessages200Response
+getApiV1GroupsMessages($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $query, $sort, $offset, $count): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMessages200Response
 ```
 
 Get Group Messages
@@ -607,7 +607,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -646,7 +646,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsMessages200Response**](../Model/GetApiV1GroupsMessages200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMessages200Response**](../Model/GetApiV1GroupsMessages200Response.md)
 
 ### Authorization
 
@@ -664,7 +664,7 @@ No authorization required
 ## `getApiV1GroupsModerators()`
 
 ```php
-getApiV1GroupsModerators($x_auth_token, $x_user_id, $room_id, $room_name): \RocketChatRoomsApi\Model\GetApiV1GroupsModerators200Response
+getApiV1GroupsModerators($x_auth_token, $x_user_id, $room_id, $room_name): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsModerators200Response
 ```
 
 Get Group Moderators
@@ -679,7 +679,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -708,7 +708,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsModerators200Response**](../Model/GetApiV1GroupsModerators200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsModerators200Response**](../Model/GetApiV1GroupsModerators200Response.md)
 
 ### Authorization
 
@@ -726,7 +726,7 @@ No authorization required
 ## `getApiV1GroupsOnline()`
 
 ```php
-getApiV1GroupsOnline($x_auth_token, $x_user_id, $query): \RocketChatRoomsApi\Model\GetApiV1ChannelsOnline200Response
+getApiV1GroupsOnline($x_auth_token, $x_user_id, $query): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsOnline200Response
 ```
 
 Get Group Online Users
@@ -741,7 +741,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -768,7 +768,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1ChannelsOnline200Response**](../Model/GetApiV1ChannelsOnline200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsOnline200Response**](../Model/GetApiV1ChannelsOnline200Response.md)
 
 ### Authorization
 
@@ -786,7 +786,7 @@ No authorization required
 ## `getApiV1GroupsRoles()`
 
 ```php
-getApiV1GroupsRoles($x_auth_token, $x_user_id): \RocketChatRoomsApi\Model\GetApiV1GroupsRoles200Response
+getApiV1GroupsRoles($x_auth_token, $x_user_id): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsRoles200Response
 ```
 
 List Group Roles
@@ -801,7 +801,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -826,7 +826,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetApiV1GroupsRoles200Response**](../Model/GetApiV1GroupsRoles200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsRoles200Response**](../Model/GetApiV1GroupsRoles200Response.md)
 
 ### Authorization
 
@@ -844,7 +844,7 @@ No authorization required
 ## `getGroupsMembersByHighestRole()`
 
 ```php
-getGroupsMembersByHighestRole($x_auth_token, $x_user_id, $offset, $count, $sort, $room_id, $room_name, $status, $filter): \RocketChatRoomsApi\Model\GetChannelsMembersByHighestRole200Response
+getGroupsMembersByHighestRole($x_auth_token, $x_user_id, $offset, $count, $sort, $room_id, $room_name, $status, $filter): \WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200Response
 ```
 
 Group Members By Highest Role
@@ -859,7 +859,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -898,7 +898,7 @@ try {
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\GetChannelsMembersByHighestRole200Response**](../Model/GetChannelsMembersByHighestRole200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200Response**](../Model/GetChannelsMembersByHighestRole200Response.md)
 
 ### Authorization
 
@@ -916,7 +916,7 @@ No authorization required
 ## `postApiV1GroupsAddAll()`
 
 ```php
-postApiV1GroupsAddAll($x_auth_token, $x_user_id, $post_api_v1_groups_add_all_request): \RocketChatRoomsApi\Model\PostApiV1GroupsAddAll200Response
+postApiV1GroupsAddAll($x_auth_token, $x_user_id, $post_api_v1_groups_add_all_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddAll200Response
 ```
 
 Add All Users to Group
@@ -931,14 +931,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_add_all_request = {"roomId":"ByehQjC44FwMeiLbX","activeUsersOnly":"true"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsAddAllRequest
+$post_api_v1_groups_add_all_request = {"roomId":"ByehQjC44FwMeiLbX","activeUsersOnly":"true"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddAllRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsAddAll($x_auth_token, $x_user_id, $post_api_v1_groups_add_all_request);
@@ -954,11 +954,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_add_all_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsAddAllRequest**](../Model/PostApiV1GroupsAddAllRequest.md)|  | [optional] |
+| **post_api_v1_groups_add_all_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddAllRequest**](../Model/PostApiV1GroupsAddAllRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsAddAll200Response**](../Model/PostApiV1GroupsAddAll200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddAll200Response**](../Model/PostApiV1GroupsAddAll200Response.md)
 
 ### Authorization
 
@@ -976,7 +976,7 @@ No authorization required
 ## `postApiV1GroupsAddLeader()`
 
 ```php
-postApiV1GroupsAddLeader($x_auth_token, $x_user_id, $post_api_v1_groups_add_leader_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsAddLeader($x_auth_token, $x_user_id, $post_api_v1_groups_add_leader_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Add Group Leader
@@ -991,14 +991,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_add_leader_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"oCHkav5Zf6vmpu2W2"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsAddLeaderRequest
+$post_api_v1_groups_add_leader_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"oCHkav5Zf6vmpu2W2"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddLeaderRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsAddLeader($x_auth_token, $x_user_id, $post_api_v1_groups_add_leader_request);
@@ -1014,11 +1014,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_add_leader_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsAddLeaderRequest**](../Model/PostApiV1GroupsAddLeaderRequest.md)|  | [optional] |
+| **post_api_v1_groups_add_leader_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddLeaderRequest**](../Model/PostApiV1GroupsAddLeaderRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1036,7 +1036,7 @@ No authorization required
 ## `postApiV1GroupsAddModerator()`
 
 ```php
-postApiV1GroupsAddModerator($x_auth_token, $x_user_id, $post_api_v1_groups_add_leader_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsAddModerator($x_auth_token, $x_user_id, $post_api_v1_groups_add_leader_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Add Group Moderator
@@ -1051,14 +1051,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_add_leader_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"nSYqWzZ4GsKTX4dyK"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsAddLeaderRequest
+$post_api_v1_groups_add_leader_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"nSYqWzZ4GsKTX4dyK"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddLeaderRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsAddModerator($x_auth_token, $x_user_id, $post_api_v1_groups_add_leader_request);
@@ -1074,11 +1074,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_add_leader_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsAddLeaderRequest**](../Model/PostApiV1GroupsAddLeaderRequest.md)|  | [optional] |
+| **post_api_v1_groups_add_leader_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddLeaderRequest**](../Model/PostApiV1GroupsAddLeaderRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1096,7 +1096,7 @@ No authorization required
 ## `postApiV1GroupsAddOwner()`
 
 ```php
-postApiV1GroupsAddOwner($x_auth_token, $x_user_id, $post_api_v1_groups_add_owner_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsAddOwner($x_auth_token, $x_user_id, $post_api_v1_groups_add_owner_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Add Group Owner
@@ -1111,14 +1111,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_add_owner_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"nSYqWzZ4GsKTX4dyK"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsAddOwnerRequest
+$post_api_v1_groups_add_owner_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"nSYqWzZ4GsKTX4dyK"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddOwnerRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsAddOwner($x_auth_token, $x_user_id, $post_api_v1_groups_add_owner_request);
@@ -1134,11 +1134,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_add_owner_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsAddOwnerRequest**](../Model/PostApiV1GroupsAddOwnerRequest.md)|  | [optional] |
+| **post_api_v1_groups_add_owner_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddOwnerRequest**](../Model/PostApiV1GroupsAddOwnerRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1156,7 +1156,7 @@ No authorization required
 ## `postApiV1GroupsArchive()`
 
 ```php
-postApiV1GroupsArchive($x_auth_token, $x_user_id, $post_api_v1_groups_archive_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsArchive($x_auth_token, $x_user_id, $post_api_v1_groups_archive_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Archive a Group
@@ -1171,14 +1171,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_archive_request = new \RocketChatRoomsApi\Model\PostApiV1GroupsArchiveRequest(); // \RocketChatRoomsApi\Model\PostApiV1GroupsArchiveRequest | 
+$post_api_v1_groups_archive_request = new \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsArchiveRequest(); // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsArchiveRequest | 
 
 try {
     $result = $apiInstance->postApiV1GroupsArchive($x_auth_token, $x_user_id, $post_api_v1_groups_archive_request);
@@ -1194,11 +1194,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_archive_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsArchiveRequest**](../Model/PostApiV1GroupsArchiveRequest.md)|  | [optional] |
+| **post_api_v1_groups_archive_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsArchiveRequest**](../Model/PostApiV1GroupsArchiveRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1216,7 +1216,7 @@ No authorization required
 ## `postApiV1GroupsClose()`
 
 ```php
-postApiV1GroupsClose($x_auth_token, $x_user_id, $post_api_v1_groups_close_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsClose($x_auth_token, $x_user_id, $post_api_v1_groups_close_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Close Group
@@ -1231,14 +1231,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_close_request = new \RocketChatRoomsApi\Model\PostApiV1GroupsCloseRequest(); // \RocketChatRoomsApi\Model\PostApiV1GroupsCloseRequest | 
+$post_api_v1_groups_close_request = new \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsCloseRequest(); // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsCloseRequest | 
 
 try {
     $result = $apiInstance->postApiV1GroupsClose($x_auth_token, $x_user_id, $post_api_v1_groups_close_request);
@@ -1254,11 +1254,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_close_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsCloseRequest**](../Model/PostApiV1GroupsCloseRequest.md)|  | [optional] |
+| **post_api_v1_groups_close_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsCloseRequest**](../Model/PostApiV1GroupsCloseRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1276,7 +1276,7 @@ No authorization required
 ## `postApiV1GroupsConvertToTeam()`
 
 ```php
-postApiV1GroupsConvertToTeam($x_auth_token, $x_user_id, $post_api_v1_teams_delete_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response
+postApiV1GroupsConvertToTeam($x_auth_token, $x_user_id, $post_api_v1_teams_delete_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response
 ```
 
 Convert a Group to Team
@@ -1291,14 +1291,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_teams_delete_request = new \RocketChatRoomsApi\Model\PostApiV1TeamsDeleteRequest(); // \RocketChatRoomsApi\Model\PostApiV1TeamsDeleteRequest
+$post_api_v1_teams_delete_request = new \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsDeleteRequest(); // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsDeleteRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsConvertToTeam($x_auth_token, $x_user_id, $post_api_v1_teams_delete_request);
@@ -1314,11 +1314,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_teams_delete_request** | [**\RocketChatRoomsApi\Model\PostApiV1TeamsDeleteRequest**](../Model/PostApiV1TeamsDeleteRequest.md)|  | [optional] |
+| **post_api_v1_teams_delete_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsDeleteRequest**](../Model/PostApiV1TeamsDeleteRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response**](../Model/PostApiV1ChannelsConvertToTeam200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response**](../Model/PostApiV1ChannelsConvertToTeam200Response.md)
 
 ### Authorization
 
@@ -1336,7 +1336,7 @@ No authorization required
 ## `postApiV1GroupsCreate()`
 
 ```php
-postApiV1GroupsCreate($x_auth_token, $x_user_id, $post_api_v1_groups_create_request): \RocketChatRoomsApi\Model\PostApiV1GroupsCreate200Response
+postApiV1GroupsCreate($x_auth_token, $x_user_id, $post_api_v1_groups_create_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsCreate200Response
 ```
 
 Create Group
@@ -1351,14 +1351,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_create_request = {"name":"groupname","members":["rocket.cat"],"readOnly":true,"excludeSelf":true,"customFields":{"type":"default"},"extraData":{"broadcast":true,"encrypted":false,"teamId":"658441562dd9f928ad9951aa"}}; // \RocketChatRoomsApi\Model\PostApiV1GroupsCreateRequest
+$post_api_v1_groups_create_request = {"name":"groupname","members":["rocket.cat"],"readOnly":true,"excludeSelf":true,"customFields":{"type":"default"},"extraData":{"broadcast":true,"encrypted":false,"teamId":"658441562dd9f928ad9951aa"}}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsCreateRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsCreate($x_auth_token, $x_user_id, $post_api_v1_groups_create_request);
@@ -1374,11 +1374,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_create_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsCreateRequest**](../Model/PostApiV1GroupsCreateRequest.md)|  | [optional] |
+| **post_api_v1_groups_create_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsCreateRequest**](../Model/PostApiV1GroupsCreateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsCreate200Response**](../Model/PostApiV1GroupsCreate200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsCreate200Response**](../Model/PostApiV1GroupsCreate200Response.md)
 
 ### Authorization
 
@@ -1396,7 +1396,7 @@ No authorization required
 ## `postApiV1GroupsDelete()`
 
 ```php
-postApiV1GroupsDelete($x_auth_token, $x_user_id, $post_api_v1_channels_delete_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsDelete($x_auth_token, $x_user_id, $post_api_v1_channels_delete_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Delete Group
@@ -1411,14 +1411,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_channels_delete_request = new \RocketChatRoomsApi\Model\PostApiV1ChannelsDeleteRequest(); // \RocketChatRoomsApi\Model\PostApiV1ChannelsDeleteRequest | 
+$post_api_v1_channels_delete_request = new \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsDeleteRequest(); // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsDeleteRequest | 
 
 try {
     $result = $apiInstance->postApiV1GroupsDelete($x_auth_token, $x_user_id, $post_api_v1_channels_delete_request);
@@ -1434,11 +1434,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_channels_delete_request** | [**\RocketChatRoomsApi\Model\PostApiV1ChannelsDeleteRequest**](../Model/PostApiV1ChannelsDeleteRequest.md)|  | [optional] |
+| **post_api_v1_channels_delete_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsDeleteRequest**](../Model/PostApiV1ChannelsDeleteRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1456,7 +1456,7 @@ No authorization required
 ## `postApiV1GroupsInvite()`
 
 ```php
-postApiV1GroupsInvite($x_auth_token, $x_user_id, $post_api_v1_groups_invite_request): \RocketChatRoomsApi\Model\PostApiV1GroupsInvite200Response
+postApiV1GroupsInvite($x_auth_token, $x_user_id, $post_api_v1_groups_invite_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsInvite200Response
 ```
 
 Invite Users to Group
@@ -1471,14 +1471,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_invite_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"nSYqWzZ4GsKTX4dyK"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsInviteRequest
+$post_api_v1_groups_invite_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"nSYqWzZ4GsKTX4dyK"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsInviteRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsInvite($x_auth_token, $x_user_id, $post_api_v1_groups_invite_request);
@@ -1494,11 +1494,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_invite_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsInviteRequest**](../Model/PostApiV1GroupsInviteRequest.md)|  | [optional] |
+| **post_api_v1_groups_invite_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsInviteRequest**](../Model/PostApiV1GroupsInviteRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsInvite200Response**](../Model/PostApiV1GroupsInvite200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsInvite200Response**](../Model/PostApiV1GroupsInvite200Response.md)
 
 ### Authorization
 
@@ -1516,7 +1516,7 @@ No authorization required
 ## `postApiV1GroupsKick()`
 
 ```php
-postApiV1GroupsKick($x_auth_token, $x_user_id, $post_api_v1_groups_add_owner_request): \RocketChatRoomsApi\Model\PostApiV1GroupsKick200Response
+postApiV1GroupsKick($x_auth_token, $x_user_id, $post_api_v1_groups_add_owner_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsKick200Response
 ```
 
 Remove User from Group
@@ -1531,14 +1531,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_add_owner_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"nSYqWzZ4GsKTX4dyK"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsAddOwnerRequest
+$post_api_v1_groups_add_owner_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"nSYqWzZ4GsKTX4dyK"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddOwnerRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsKick($x_auth_token, $x_user_id, $post_api_v1_groups_add_owner_request);
@@ -1554,11 +1554,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_add_owner_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsAddOwnerRequest**](../Model/PostApiV1GroupsAddOwnerRequest.md)|  | [optional] |
+| **post_api_v1_groups_add_owner_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddOwnerRequest**](../Model/PostApiV1GroupsAddOwnerRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsKick200Response**](../Model/PostApiV1GroupsKick200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsKick200Response**](../Model/PostApiV1GroupsKick200Response.md)
 
 ### Authorization
 
@@ -1576,7 +1576,7 @@ No authorization required
 ## `postApiV1GroupsOpen()`
 
 ```php
-postApiV1GroupsOpen($x_auth_token, $x_user_id, $post_api_v1_groups_open_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsOpen($x_auth_token, $x_user_id, $post_api_v1_groups_open_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Add Group to List
@@ -1591,14 +1591,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_open_request = new \RocketChatRoomsApi\Model\PostApiV1GroupsOpenRequest(); // \RocketChatRoomsApi\Model\PostApiV1GroupsOpenRequest
+$post_api_v1_groups_open_request = new \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsOpenRequest(); // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsOpenRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsOpen($x_auth_token, $x_user_id, $post_api_v1_groups_open_request);
@@ -1614,11 +1614,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_open_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsOpenRequest**](../Model/PostApiV1GroupsOpenRequest.md)|  | [optional] |
+| **post_api_v1_groups_open_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsOpenRequest**](../Model/PostApiV1GroupsOpenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1636,7 +1636,7 @@ No authorization required
 ## `postApiV1GroupsRemoveLeader()`
 
 ```php
-postApiV1GroupsRemoveLeader($x_auth_token, $x_user_id, $post_api_v1_groups_remove_leader_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsRemoveLeader($x_auth_token, $x_user_id, $post_api_v1_groups_remove_leader_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Remove Group Leader
@@ -1651,14 +1651,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_remove_leader_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"oCHkav5Zf6vmpu2W2"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsRemoveLeaderRequest
+$post_api_v1_groups_remove_leader_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"oCHkav5Zf6vmpu2W2"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsRemoveLeaderRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsRemoveLeader($x_auth_token, $x_user_id, $post_api_v1_groups_remove_leader_request);
@@ -1674,11 +1674,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_remove_leader_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsRemoveLeaderRequest**](../Model/PostApiV1GroupsRemoveLeaderRequest.md)|  | [optional] |
+| **post_api_v1_groups_remove_leader_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsRemoveLeaderRequest**](../Model/PostApiV1GroupsRemoveLeaderRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1696,7 +1696,7 @@ No authorization required
 ## `postApiV1GroupsRemoveModerator()`
 
 ```php
-postApiV1GroupsRemoveModerator($x_auth_token, $x_user_id, $post_api_v1_groups_remove_moderator_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsRemoveModerator($x_auth_token, $x_user_id, $post_api_v1_groups_remove_moderator_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Remove Group Moderator
@@ -1711,14 +1711,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_remove_moderator_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"oCHkav5Zf6vmpu2W2"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsRemoveModeratorRequest
+$post_api_v1_groups_remove_moderator_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"oCHkav5Zf6vmpu2W2"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsRemoveModeratorRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsRemoveModerator($x_auth_token, $x_user_id, $post_api_v1_groups_remove_moderator_request);
@@ -1734,11 +1734,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_remove_moderator_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsRemoveModeratorRequest**](../Model/PostApiV1GroupsRemoveModeratorRequest.md)|  | [optional] |
+| **post_api_v1_groups_remove_moderator_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsRemoveModeratorRequest**](../Model/PostApiV1GroupsRemoveModeratorRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1756,7 +1756,7 @@ No authorization required
 ## `postApiV1GroupsRemoveOwner()`
 
 ```php
-postApiV1GroupsRemoveOwner($x_auth_token, $x_user_id, $post_api_v1_groups_remove_owner_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsRemoveOwner($x_auth_token, $x_user_id, $post_api_v1_groups_remove_owner_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Remove Group Owner
@@ -1771,14 +1771,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_remove_owner_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"oCHkav5Zf6vmpu2W2"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsRemoveOwnerRequest
+$post_api_v1_groups_remove_owner_request = {"roomId":"ByehQjC44FwMeiLbX","userId":"oCHkav5Zf6vmpu2W2"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsRemoveOwnerRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsRemoveOwner($x_auth_token, $x_user_id, $post_api_v1_groups_remove_owner_request);
@@ -1794,11 +1794,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_remove_owner_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsRemoveOwnerRequest**](../Model/PostApiV1GroupsRemoveOwnerRequest.md)|  | [optional] |
+| **post_api_v1_groups_remove_owner_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsRemoveOwnerRequest**](../Model/PostApiV1GroupsRemoveOwnerRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -1816,7 +1816,7 @@ No authorization required
 ## `postApiV1GroupsRename()`
 
 ```php
-postApiV1GroupsRename($x_auth_token, $x_user_id, $post_api_v1_groups_rename_request): \RocketChatRoomsApi\Model\PostApiV1GroupsKick200Response
+postApiV1GroupsRename($x_auth_token, $x_user_id, $post_api_v1_groups_rename_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsKick200Response
 ```
 
 Rename Group
@@ -1831,14 +1831,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_rename_request = {"roomId":"ByehQjC44FwMeiLbX","name":"new-name"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsRenameRequest
+$post_api_v1_groups_rename_request = {"roomId":"ByehQjC44FwMeiLbX","name":"new-name"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsRenameRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsRename($x_auth_token, $x_user_id, $post_api_v1_groups_rename_request);
@@ -1854,11 +1854,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_rename_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsRenameRequest**](../Model/PostApiV1GroupsRenameRequest.md)|  | [optional] |
+| **post_api_v1_groups_rename_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsRenameRequest**](../Model/PostApiV1GroupsRenameRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsKick200Response**](../Model/PostApiV1GroupsKick200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsKick200Response**](../Model/PostApiV1GroupsKick200Response.md)
 
 ### Authorization
 
@@ -1876,7 +1876,7 @@ No authorization required
 ## `postApiV1GroupsSetAnnouncement()`
 
 ```php
-postApiV1GroupsSetAnnouncement($x_auth_token, $x_user_id, $post_api_v1_groups_set_announcement_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsSetAnnouncement200Response
+postApiV1GroupsSetAnnouncement($x_auth_token, $x_user_id, $post_api_v1_groups_set_announcement_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetAnnouncement200Response
 ```
 
 Set Group Announcement
@@ -1891,14 +1891,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_set_announcement_request = {"roomId":"ByehQjC44FwMeiLbX","announcement":"Test out everything"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsSetAnnouncementRequest
+$post_api_v1_groups_set_announcement_request = {"roomId":"ByehQjC44FwMeiLbX","announcement":"Test out everything"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetAnnouncementRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsSetAnnouncement($x_auth_token, $x_user_id, $post_api_v1_groups_set_announcement_request);
@@ -1914,11 +1914,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_set_announcement_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsSetAnnouncementRequest**](../Model/PostApiV1GroupsSetAnnouncementRequest.md)|  | [optional] |
+| **post_api_v1_groups_set_announcement_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetAnnouncementRequest**](../Model/PostApiV1GroupsSetAnnouncementRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsSetAnnouncement200Response**](../Model/PostApiV1ChannelsSetAnnouncement200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetAnnouncement200Response**](../Model/PostApiV1ChannelsSetAnnouncement200Response.md)
 
 ### Authorization
 
@@ -1936,7 +1936,7 @@ No authorization required
 ## `postApiV1GroupsSetCustomFields()`
 
 ```php
-postApiV1GroupsSetCustomFields($x_auth_token, $x_user_id, $post_api_v1_groups_set_custom_fields_request): \RocketChatRoomsApi\Model\PostApiV1GroupsSetCustomFields200Response
+postApiV1GroupsSetCustomFields($x_auth_token, $x_user_id, $post_api_v1_groups_set_custom_fields_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFields200Response
 ```
 
 Sets Group Custom Fields
@@ -1951,14 +1951,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_set_custom_fields_request = {"roomId":"euzoT67Gx6nXcn66M","customFields":{"company":"sell-and-more"}}; // \RocketChatRoomsApi\Model\PostApiV1GroupsSetCustomFieldsRequest
+$post_api_v1_groups_set_custom_fields_request = {"roomId":"euzoT67Gx6nXcn66M","customFields":{"company":"sell-and-more"}}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFieldsRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsSetCustomFields($x_auth_token, $x_user_id, $post_api_v1_groups_set_custom_fields_request);
@@ -1974,11 +1974,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_set_custom_fields_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsSetCustomFieldsRequest**](../Model/PostApiV1GroupsSetCustomFieldsRequest.md)|  | [optional] |
+| **post_api_v1_groups_set_custom_fields_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFieldsRequest**](../Model/PostApiV1GroupsSetCustomFieldsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsSetCustomFields200Response**](../Model/PostApiV1GroupsSetCustomFields200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFields200Response**](../Model/PostApiV1GroupsSetCustomFields200Response.md)
 
 ### Authorization
 
@@ -1996,7 +1996,7 @@ No authorization required
 ## `postApiV1GroupsSetDescription()`
 
 ```php
-postApiV1GroupsSetDescription($x_auth_token, $x_user_id, $post_api_v1_groups_set_description_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsSetDescription200Response
+postApiV1GroupsSetDescription($x_auth_token, $x_user_id, $post_api_v1_groups_set_description_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetDescription200Response
 ```
 
 Set Group Description
@@ -2011,14 +2011,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_set_description_request = {"roomId":"ByehQjC44FwMeiLbX","description":"Test out everything"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsSetDescriptionRequest
+$post_api_v1_groups_set_description_request = {"roomId":"ByehQjC44FwMeiLbX","description":"Test out everything"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetDescriptionRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsSetDescription($x_auth_token, $x_user_id, $post_api_v1_groups_set_description_request);
@@ -2034,11 +2034,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_set_description_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsSetDescriptionRequest**](../Model/PostApiV1GroupsSetDescriptionRequest.md)|  | [optional] |
+| **post_api_v1_groups_set_description_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetDescriptionRequest**](../Model/PostApiV1GroupsSetDescriptionRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsSetDescription200Response**](../Model/PostApiV1ChannelsSetDescription200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetDescription200Response**](../Model/PostApiV1ChannelsSetDescription200Response.md)
 
 ### Authorization
 
@@ -2056,7 +2056,7 @@ No authorization required
 ## `postApiV1GroupsSetEncrypted()`
 
 ```php
-postApiV1GroupsSetEncrypted($x_auth_token, $x_user_id, $post_api_v1_groups_set_encrypted_request): \RocketChatRoomsApi\Model\PostApiV1GroupsSetEncrypted200Response
+postApiV1GroupsSetEncrypted($x_auth_token, $x_user_id, $post_api_v1_groups_set_encrypted_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetEncrypted200Response
 ```
 
 Set Group as Encrypted
@@ -2071,14 +2071,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_set_encrypted_request = {"encrypted":false,"roomId":"JZ8Y2dLfYhsg323Rf"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsSetEncryptedRequest
+$post_api_v1_groups_set_encrypted_request = {"encrypted":false,"roomId":"JZ8Y2dLfYhsg323Rf"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetEncryptedRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsSetEncrypted($x_auth_token, $x_user_id, $post_api_v1_groups_set_encrypted_request);
@@ -2094,11 +2094,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_set_encrypted_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsSetEncryptedRequest**](../Model/PostApiV1GroupsSetEncryptedRequest.md)|  | [optional] |
+| **post_api_v1_groups_set_encrypted_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetEncryptedRequest**](../Model/PostApiV1GroupsSetEncryptedRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsSetEncrypted200Response**](../Model/PostApiV1GroupsSetEncrypted200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetEncrypted200Response**](../Model/PostApiV1GroupsSetEncrypted200Response.md)
 
 ### Authorization
 
@@ -2116,7 +2116,7 @@ No authorization required
 ## `postApiV1GroupsSetPurpose()`
 
 ```php
-postApiV1GroupsSetPurpose($x_auth_token, $x_user_id, $post_api_v1_groups_set_purpose_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsSetPurpose200Response
+postApiV1GroupsSetPurpose($x_auth_token, $x_user_id, $post_api_v1_groups_set_purpose_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetPurpose200Response
 ```
 
 Set Group Purpose
@@ -2131,14 +2131,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_set_purpose_request = {"roomId":"ByehQjC44FwMeiLbX","purpose":"Test out everything"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsSetPurposeRequest
+$post_api_v1_groups_set_purpose_request = {"roomId":"ByehQjC44FwMeiLbX","purpose":"Test out everything"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetPurposeRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsSetPurpose($x_auth_token, $x_user_id, $post_api_v1_groups_set_purpose_request);
@@ -2154,11 +2154,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_set_purpose_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsSetPurposeRequest**](../Model/PostApiV1GroupsSetPurposeRequest.md)|  | [optional] |
+| **post_api_v1_groups_set_purpose_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetPurposeRequest**](../Model/PostApiV1GroupsSetPurposeRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsSetPurpose200Response**](../Model/PostApiV1ChannelsSetPurpose200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetPurpose200Response**](../Model/PostApiV1ChannelsSetPurpose200Response.md)
 
 ### Authorization
 
@@ -2176,7 +2176,7 @@ No authorization required
 ## `postApiV1GroupsSetReadOnly()`
 
 ```php
-postApiV1GroupsSetReadOnly($x_auth_token, $x_user_id, $post_api_v1_groups_set_read_only_request): \RocketChatRoomsApi\Model\PostApiV1GroupsSetReadOnly200Response
+postApiV1GroupsSetReadOnly($x_auth_token, $x_user_id, $post_api_v1_groups_set_read_only_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetReadOnly200Response
 ```
 
 Set Group as Read Only
@@ -2191,14 +2191,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_set_read_only_request = {"roomId":"ByehQjC44FwMei5LbX","readOnly":true}; // \RocketChatRoomsApi\Model\PostApiV1GroupsSetReadOnlyRequest
+$post_api_v1_groups_set_read_only_request = {"roomId":"ByehQjC44FwMei5LbX","readOnly":true}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetReadOnlyRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsSetReadOnly($x_auth_token, $x_user_id, $post_api_v1_groups_set_read_only_request);
@@ -2214,11 +2214,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_set_read_only_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsSetReadOnlyRequest**](../Model/PostApiV1GroupsSetReadOnlyRequest.md)|  | [optional] |
+| **post_api_v1_groups_set_read_only_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetReadOnlyRequest**](../Model/PostApiV1GroupsSetReadOnlyRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsSetReadOnly200Response**](../Model/PostApiV1GroupsSetReadOnly200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetReadOnly200Response**](../Model/PostApiV1GroupsSetReadOnly200Response.md)
 
 ### Authorization
 
@@ -2236,7 +2236,7 @@ No authorization required
 ## `postApiV1GroupsSetTopic()`
 
 ```php
-postApiV1GroupsSetTopic($x_auth_token, $x_user_id, $post_api_v1_groups_set_topic_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsSetTopic200Response
+postApiV1GroupsSetTopic($x_auth_token, $x_user_id, $post_api_v1_groups_set_topic_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetTopic200Response
 ```
 
 Set Group Topic
@@ -2251,14 +2251,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_set_topic_request = {"roomId":"ByehQjC44FwMeiLbX","topic":"Discuss all of the testing"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsSetTopicRequest
+$post_api_v1_groups_set_topic_request = {"roomId":"ByehQjC44FwMeiLbX","topic":"Discuss all of the testing"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetTopicRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsSetTopic($x_auth_token, $x_user_id, $post_api_v1_groups_set_topic_request);
@@ -2274,11 +2274,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_set_topic_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsSetTopicRequest**](../Model/PostApiV1GroupsSetTopicRequest.md)|  | [optional] |
+| **post_api_v1_groups_set_topic_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetTopicRequest**](../Model/PostApiV1GroupsSetTopicRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsSetTopic200Response**](../Model/PostApiV1ChannelsSetTopic200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetTopic200Response**](../Model/PostApiV1ChannelsSetTopic200Response.md)
 
 ### Authorization
 
@@ -2296,7 +2296,7 @@ No authorization required
 ## `postApiV1GroupsSetType()`
 
 ```php
-postApiV1GroupsSetType($x_auth_token, $x_user_id, $post_api_v1_groups_set_type_request): \RocketChatRoomsApi\Model\PostApiV1GroupsSetReadOnly200Response
+postApiV1GroupsSetType($x_auth_token, $x_user_id, $post_api_v1_groups_set_type_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetReadOnly200Response
 ```
 
 Set Group Type
@@ -2311,14 +2311,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_set_type_request = {"roomId":"ByehQjC44FwMeiLbX","type":"c"}; // \RocketChatRoomsApi\Model\PostApiV1GroupsSetTypeRequest
+$post_api_v1_groups_set_type_request = {"roomId":"ByehQjC44FwMeiLbX","type":"c"}; // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetTypeRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsSetType($x_auth_token, $x_user_id, $post_api_v1_groups_set_type_request);
@@ -2334,11 +2334,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_set_type_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsSetTypeRequest**](../Model/PostApiV1GroupsSetTypeRequest.md)|  | [optional] |
+| **post_api_v1_groups_set_type_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetTypeRequest**](../Model/PostApiV1GroupsSetTypeRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsSetReadOnly200Response**](../Model/PostApiV1GroupsSetReadOnly200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetReadOnly200Response**](../Model/PostApiV1GroupsSetReadOnly200Response.md)
 
 ### Authorization
 
@@ -2356,7 +2356,7 @@ No authorization required
 ## `postApiV1GroupsUnarchive()`
 
 ```php
-postApiV1GroupsUnarchive($x_auth_token, $x_user_id, $post_api_v1_groups_unarchive_request): \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
+postApiV1GroupsUnarchive($x_auth_token, $x_user_id, $post_api_v1_groups_unarchive_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response
 ```
 
 Unarchive Group
@@ -2371,14 +2371,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_groups_unarchive_request = new \RocketChatRoomsApi\Model\PostApiV1GroupsUnarchiveRequest(); // \RocketChatRoomsApi\Model\PostApiV1GroupsUnarchiveRequest
+$post_api_v1_groups_unarchive_request = new \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsUnarchiveRequest(); // \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsUnarchiveRequest
 
 try {
     $result = $apiInstance->postApiV1GroupsUnarchive($x_auth_token, $x_user_id, $post_api_v1_groups_unarchive_request);
@@ -2394,11 +2394,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_groups_unarchive_request** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsUnarchiveRequest**](../Model/PostApiV1GroupsUnarchiveRequest.md)|  | [optional] |
+| **post_api_v1_groups_unarchive_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsUnarchiveRequest**](../Model/PostApiV1GroupsUnarchiveRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
 
 ### Authorization
 
@@ -2416,7 +2416,7 @@ No authorization required
 ## `postGroupsLeave()`
 
 ```php
-postGroupsLeave($x_auth_token, $x_user_id, $post_groups_leave_request): \RocketChatRoomsApi\Model\PostApiV1GroupsKick200Response
+postGroupsLeave($x_auth_token, $x_user_id, $post_groups_leave_request): \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsKick200Response
 ```
 
 Leave Group
@@ -2431,14 +2431,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatRoomsApi\Api\GroupsApi(
+$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\GroupsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_groups_leave_request = new \RocketChatRoomsApi\Model\PostGroupsLeaveRequest(); // \RocketChatRoomsApi\Model\PostGroupsLeaveRequest
+$post_groups_leave_request = new \WebMIRocketChatApiClientRoomsApi\Model\PostGroupsLeaveRequest(); // \WebMIRocketChatApiClientRoomsApi\Model\PostGroupsLeaveRequest
 
 try {
     $result = $apiInstance->postGroupsLeave($x_auth_token, $x_user_id, $post_groups_leave_request);
@@ -2454,11 +2454,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_groups_leave_request** | [**\RocketChatRoomsApi\Model\PostGroupsLeaveRequest**](../Model/PostGroupsLeaveRequest.md)|  | [optional] |
+| **post_groups_leave_request** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostGroupsLeaveRequest**](../Model/PostGroupsLeaveRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatRoomsApi\Model\PostApiV1GroupsKick200Response**](../Model/PostApiV1GroupsKick200Response.md)
+[**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsKick200Response**](../Model/PostApiV1GroupsKick200Response.md)
 
 ### Authorization
 

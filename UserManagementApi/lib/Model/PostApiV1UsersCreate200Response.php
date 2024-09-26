@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersCreate200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1UsersCreate200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'user' => '\RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUser',
+        'user' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUser',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1UsersCreate200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets user
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUser|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUser|null
      */
     public function getUser()
     {
@@ -309,7 +309,7 @@ class PostApiV1UsersCreate200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets user
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUser|null $user user
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUser|null $user user
      *
      * @return self
      */

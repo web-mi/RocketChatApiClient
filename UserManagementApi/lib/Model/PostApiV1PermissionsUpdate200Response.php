@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1PermissionsUpdate200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1PermissionsUpdate200Response implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'permissions' => '\RocketChatUserManagementApi\Model\PostApiV1PermissionsUpdate200ResponsePermissionsInner[]',
+        'permissions' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate200ResponsePermissionsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1PermissionsUpdate200Response implements ModelInterface, ArrayAcce
     /**
      * Gets permissions
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1PermissionsUpdate200ResponsePermissionsInner[]|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate200ResponsePermissionsInner[]|null
      */
     public function getPermissions()
     {
@@ -309,7 +309,7 @@ class PostApiV1PermissionsUpdate200Response implements ModelInterface, ArrayAcce
     /**
      * Sets permissions
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1PermissionsUpdate200ResponsePermissionsInner[]|null $permissions permissions
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate200ResponsePermissionsInner[]|null $permissions permissions
      *
      * @return self
      */

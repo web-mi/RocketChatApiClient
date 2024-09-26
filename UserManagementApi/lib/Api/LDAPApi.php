@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Api;
+namespace WebMIRocketChatApiClientUserManagementApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatUserManagementApi\ApiException;
-use RocketChatUserManagementApi\Configuration;
-use RocketChatUserManagementApi\HeaderSelector;
-use RocketChatUserManagementApi\ObjectSerializer;
+use WebMIRocketChatApiClientUserManagementApi\ApiException;
+use WebMIRocketChatApiClientUserManagementApi\Configuration;
+use WebMIRocketChatApiClientUserManagementApi\HeaderSelector;
+use WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * LDAPApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,9 +139,9 @@ class LDAPApi
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LdapSyncNow'] to see the possible values for this operation
      *
-     * @throws \RocketChatUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response|\RocketChatUserManagementApi\Model\PostApiV1LdapSyncNow400Response|\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapSyncNow400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1LdapSyncNow($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['postApiV1LdapSyncNow'][0])
     {
@@ -160,9 +160,9 @@ class LDAPApi
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LdapSyncNow'] to see the possible values for this operation
      *
-     * @throws \RocketChatUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response|\RocketChatUserManagementApi\Model\PostApiV1LdapSyncNow400Response|\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapSyncNow400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LdapSyncNowWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['postApiV1LdapSyncNow'][0])
     {
@@ -205,11 +205,11 @@ class LDAPApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,16 +227,16 @@ class LDAPApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatUserManagementApi\Model\PostApiV1LdapSyncNow400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapSyncNow400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatUserManagementApi\Model\PostApiV1LdapSyncNow400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapSyncNow400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -254,16 +254,16 @@ class LDAPApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatUserManagementApi\Model\PostApiV1LdapSyncNow400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapSyncNow400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -281,13 +281,13 @@ class LDAPApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response';
+            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -320,7 +320,7 @@ class LDAPApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response',
+                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -328,7 +328,7 @@ class LDAPApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatUserManagementApi\Model\PostApiV1LdapSyncNow400Response',
+                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapSyncNow400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -336,7 +336,7 @@ class LDAPApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -386,7 +386,7 @@ class LDAPApi
      */
     public function postApiV1LdapSyncNowAsyncWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['postApiV1LdapSyncNow'][0])
     {
-        $returnType = '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response';
+        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response';
         $request = $this->postApiV1LdapSyncNowRequest($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $contentType);
 
         return $this->client
@@ -558,9 +558,9 @@ class LDAPApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LdapTestConnection'] to see the possible values for this operation
      *
-     * @throws \RocketChatUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response|\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1LdapTestConnection($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1LdapTestConnection'][0])
     {
@@ -577,9 +577,9 @@ class LDAPApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LdapTestConnection'] to see the possible values for this operation
      *
-     * @throws \RocketChatUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response|\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LdapTestConnectionWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1LdapTestConnection'][0])
     {
@@ -622,11 +622,11 @@ class LDAPApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -644,16 +644,16 @@ class LDAPApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -671,13 +671,13 @@ class LDAPApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response';
+            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -710,7 +710,7 @@ class LDAPApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response',
+                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -718,7 +718,7 @@ class LDAPApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -764,7 +764,7 @@ class LDAPApi
      */
     public function postApiV1LdapTestConnectionAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1LdapTestConnection'][0])
     {
-        $returnType = '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response';
+        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response';
         $request = $this->postApiV1LdapTestConnectionRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -910,12 +910,12 @@ class LDAPApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \RocketChatUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request post_api_v1_ldap_test_search_request (optional)
+     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request post_api_v1_ldap_test_search_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LdapTestSearch'] to see the possible values for this operation
      *
-     * @throws \RocketChatUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response|\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1LdapTestSearch($x_auth_token, $x_user_id, $post_api_v1_ldap_test_search_request = null, string $contentType = self::contentTypes['postApiV1LdapTestSearch'][0])
     {
@@ -930,12 +930,12 @@ class LDAPApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \RocketChatUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request (optional)
+     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LdapTestSearch'] to see the possible values for this operation
      *
-     * @throws \RocketChatUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response|\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LdapTestSearchWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_ldap_test_search_request = null, string $contentType = self::contentTypes['postApiV1LdapTestSearch'][0])
     {
@@ -978,11 +978,11 @@ class LDAPApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1000,16 +1000,16 @@ class LDAPApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1027,13 +1027,13 @@ class LDAPApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response';
+            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1066,7 +1066,7 @@ class LDAPApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response',
+                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1074,7 +1074,7 @@ class LDAPApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1091,7 +1091,7 @@ class LDAPApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \RocketChatUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request (optional)
+     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LdapTestSearch'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1114,7 +1114,7 @@ class LDAPApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \RocketChatUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request (optional)
+     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LdapTestSearch'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1122,7 +1122,7 @@ class LDAPApi
      */
     public function postApiV1LdapTestSearchAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_ldap_test_search_request = null, string $contentType = self::contentTypes['postApiV1LdapTestSearch'][0])
     {
-        $returnType = '\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response';
+        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response';
         $request = $this->postApiV1LdapTestSearchRequest($x_auth_token, $x_user_id, $post_api_v1_ldap_test_search_request, $contentType);
 
         return $this->client
@@ -1166,7 +1166,7 @@ class LDAPApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \RocketChatUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request (optional)
+     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapTestSearchRequest $post_api_v1_ldap_test_search_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LdapTestSearch'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

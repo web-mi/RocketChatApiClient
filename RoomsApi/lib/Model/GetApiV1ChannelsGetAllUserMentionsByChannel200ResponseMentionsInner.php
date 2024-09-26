@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,12 +61,12 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         '_updated_at' => 'string',
         'urls' => 'object[]',
-        'mentions' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]',
+        'mentions' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]',
         'channels' => 'object[]',
-        'md' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]'
+        'md' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]'
     ];
 
     /**
@@ -463,7 +463,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
     /**
      * Gets u
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -473,7 +473,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
     /**
      * Sets u
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -544,7 +544,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
     /**
      * Gets mentions
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]|null
      */
     public function getMentions()
     {
@@ -554,7 +554,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
     /**
      * Sets mentions
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]|null $mentions mentions
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]|null $mentions mentions
      *
      * @return self
      */
@@ -598,7 +598,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
     /**
      * Gets md
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]|null
      */
     public function getMd()
     {
@@ -608,7 +608,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
     /**
      * Sets md
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]|null $md md
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]|null $md md
      *
      * @return self
      */

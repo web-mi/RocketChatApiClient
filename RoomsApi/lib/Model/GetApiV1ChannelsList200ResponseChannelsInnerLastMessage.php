@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsList200ResponseChannelsInnerLastMessage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,16 +61,16 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessage implements ModelIn
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         '_updated_at' => 'string',
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]',
+        'md' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]',
         'groupable' => 'bool',
-        'blocks' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner[]',
+        'blocks' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner[]',
         'edited_at' => 'string',
-        'edited_by' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU'
+        'edited_by' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU'
     ];
 
     /**
@@ -491,7 +491,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessage implements ModelIn
     /**
      * Gets u
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -501,7 +501,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessage implements ModelIn
     /**
      * Sets u
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -626,7 +626,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessage implements ModelIn
     /**
      * Gets md
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -636,7 +636,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessage implements ModelIn
     /**
      * Sets md
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
      *
      * @return self
      */
@@ -680,7 +680,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessage implements ModelIn
     /**
      * Gets blocks
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner[]|null
      */
     public function getBlocks()
     {
@@ -690,7 +690,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessage implements ModelIn
     /**
      * Sets blocks
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner[]|null $blocks blocks
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner[]|null $blocks blocks
      *
      * @return self
      */
@@ -734,7 +734,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessage implements ModelIn
     /**
      * Gets edited_by
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
     public function getEditedBy()
     {
@@ -744,7 +744,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessage implements ModelIn
     /**
      * Sets edited_by
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $edited_by edited_by
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $edited_by edited_by
      *
      * @return self
      */

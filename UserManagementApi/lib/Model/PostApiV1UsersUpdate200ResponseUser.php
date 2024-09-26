@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdate200ResponseUser Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,16 +59,16 @@ class PostApiV1UsersUpdate200ResponseUser implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         '_id' => 'string',
         'created_at' => 'string',
-        'services' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServices',
+        'services' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServices',
         'username' => 'string',
-        'emails' => '\RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]',
+        'emails' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]',
         'type' => 'string',
         'status' => 'string',
         'active' => 'bool',
         'roles' => 'string[]',
         '_updated_at' => 'string',
         'name' => 'string',
-        'custom_fields' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserCustomFields'
+        'custom_fields' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserCustomFields'
     ];
 
     /**
@@ -423,7 +423,7 @@ class PostApiV1UsersUpdate200ResponseUser implements ModelInterface, ArrayAccess
     /**
      * Gets services
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServices|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServices|null
      */
     public function getServices()
     {
@@ -433,7 +433,7 @@ class PostApiV1UsersUpdate200ResponseUser implements ModelInterface, ArrayAccess
     /**
      * Sets services
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServices|null $services services
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServices|null $services services
      *
      * @return self
      */
@@ -477,7 +477,7 @@ class PostApiV1UsersUpdate200ResponseUser implements ModelInterface, ArrayAccess
     /**
      * Gets emails
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null
      */
     public function getEmails()
     {
@@ -487,7 +487,7 @@ class PostApiV1UsersUpdate200ResponseUser implements ModelInterface, ArrayAccess
     /**
      * Sets emails
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null $emails emails
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null $emails emails
      *
      * @return self
      */
@@ -666,7 +666,7 @@ class PostApiV1UsersUpdate200ResponseUser implements ModelInterface, ArrayAccess
     /**
      * Gets custom_fields
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserCustomFields|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserCustomFields|null
      */
     public function getCustomFields()
     {
@@ -676,7 +676,7 @@ class PostApiV1UsersUpdate200ResponseUser implements ModelInterface, ArrayAccess
     /**
      * Sets custom_fields
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserCustomFields|null $custom_fields custom_fields
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserCustomFields|null $custom_fields custom_fields
      *
      * @return self
      */

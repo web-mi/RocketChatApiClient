@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** |  | [optional]
-**value** | [**\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]**](PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner.md) |  | [optional]
+**value** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]**](PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

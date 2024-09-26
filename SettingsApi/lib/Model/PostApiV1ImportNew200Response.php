@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * PostApiV1ImportNew200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'operation' => '\RocketChatSettingsApi\Model\PostApiV1ImportNew200ResponseOperation',
+        'operation' => '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportNew200ResponseOperation',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets operation
      *
-     * @return \RocketChatSettingsApi\Model\PostApiV1ImportNew200ResponseOperation|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportNew200ResponseOperation|null
      */
     public function getOperation()
     {
@@ -309,7 +309,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets operation
      *
-     * @param \RocketChatSettingsApi\Model\PostApiV1ImportNew200ResponseOperation|null $operation operation
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportNew200ResponseOperation|null $operation operation
      *
      * @return self
      */

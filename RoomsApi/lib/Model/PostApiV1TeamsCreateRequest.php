@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1TeamsCreateRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
         'name' => 'string',
         'type' => 'int',
         'members' => 'string[]',
-        'room' => '\RocketChatRoomsApi\Model\PostApiV1TeamsCreateRequestRoom',
-        'sidepanel' => '\RocketChatRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel',
+        'room' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsCreateRequestRoom',
+        'sidepanel' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel',
         'owner' => 'string'
     ];
 
@@ -414,7 +414,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets room
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1TeamsCreateRequestRoom|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsCreateRequestRoom|null
      */
     public function getRoom()
     {
@@ -424,7 +424,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets room
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1TeamsCreateRequestRoom|null $room room
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsCreateRequestRoom|null $room room
      *
      * @return self
      */
@@ -441,7 +441,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets sidepanel
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null
      */
     public function getSidepanel()
     {
@@ -451,7 +451,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets sidepanel
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null $sidepanel sidepanel
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null $sidepanel sidepanel
      *
      * @return self
      */

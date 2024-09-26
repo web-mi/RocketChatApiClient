@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImListEveryone200ResponseImsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -69,7 +69,7 @@ class GetApiV1ImListEveryone200ResponseImsInner implements ModelInterface, Array
         'sys_mes' => 'bool',
         '_updated_at' => 'string',
         '_usernames' => 'string[]',
-        'last_message' => '\RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessage',
+        'last_message' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessage',
         'lm' => 'string'
     ];
 
@@ -707,7 +707,7 @@ class GetApiV1ImListEveryone200ResponseImsInner implements ModelInterface, Array
     /**
      * Gets last_message
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessage|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessage|null
      */
     public function getLastMessage()
     {
@@ -717,7 +717,7 @@ class GetApiV1ImListEveryone200ResponseImsInner implements ModelInterface, Array
     /**
      * Sets last_message
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessage|null $last_message last_message
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessage|null $last_message last_message
      *
      * @return self
      */

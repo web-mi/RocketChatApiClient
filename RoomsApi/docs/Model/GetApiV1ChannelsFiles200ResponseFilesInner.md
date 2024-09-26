@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **user_id** | **string** |  | [optional]
 **store** | **string** |  | [optional]
 **_updated_at** | **string** |  | [optional]
-**identify** | [**\RocketChatRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify**](GetApiV1ChannelsFiles200ResponseFilesInnerIdentify.md) |  | [optional]
+**identify** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify**](GetApiV1ChannelsFiles200ResponseFilesInnerIdentify.md) |  | [optional]
 **complete** | **bool** |  | [optional]
 **etag** | **string** |  | [optional]
 **path** | **string** |  | [optional]
@@ -22,6 +22,6 @@ Name | Type | Description | Notes
 **uploading** | **bool** |  | [optional]
 **url** | **string** |  | [optional]
 **type_group** | **string** |  | [optional]
-**user** | [**\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
+**user** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

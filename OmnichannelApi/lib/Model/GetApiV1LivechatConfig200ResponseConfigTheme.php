@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatConfig200ResponseConfigTheme Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
         'color' => 'string',
         'offline_title' => 'string',
         'offline_color' => 'string',
-        'action_links' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner[]'
+        'action_links' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner[]'
     ];
 
     /**
@@ -428,7 +428,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
     /**
      * Gets action_links
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner[]|null
      */
     public function getActionLinks()
     {
@@ -438,7 +438,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
     /**
      * Sets action_links
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner[]|null $action_links action_links
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner[]|null $action_links action_links
      *
      * @return self
      */

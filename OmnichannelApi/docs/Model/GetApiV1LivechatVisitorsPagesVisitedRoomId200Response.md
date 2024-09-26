@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**pages** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner[]**](GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner.md) |  | [optional]
+**pages** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner[]**](GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

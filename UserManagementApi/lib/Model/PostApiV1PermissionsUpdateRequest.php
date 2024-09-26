@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1PermissionsUpdateRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1PermissionsUpdateRequest implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'permissions' => '\RocketChatUserManagementApi\Model\PostApiV1PermissionsUpdateRequestPermissionsInner[]'
+        'permissions' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdateRequestPermissionsInner[]'
     ];
 
     /**
@@ -295,7 +295,7 @@ class PostApiV1PermissionsUpdateRequest implements ModelInterface, ArrayAccess, 
     /**
      * Gets permissions
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1PermissionsUpdateRequestPermissionsInner[]
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdateRequestPermissionsInner[]
      */
     public function getPermissions()
     {
@@ -305,7 +305,7 @@ class PostApiV1PermissionsUpdateRequest implements ModelInterface, ArrayAccess, 
     /**
      * Sets permissions
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1PermissionsUpdateRequestPermissionsInner[] $permissions The array of roles to overwrite.
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdateRequestPermissionsInner[] $permissions The array of roles to overwrite.
      *
      * @return self
      */

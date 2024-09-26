@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1ChannelsSetCustomFields200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ChannelsSetCustomFields200Response implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'channel' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsSetCustomFields200ResponseChannel',
+        'channel' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetCustomFields200ResponseChannel',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1ChannelsSetCustomFields200Response implements ModelInterface, Arr
     /**
      * Gets channel
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsSetCustomFields200ResponseChannel|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetCustomFields200ResponseChannel|null
      */
     public function getChannel()
     {
@@ -309,7 +309,7 @@ class PostApiV1ChannelsSetCustomFields200Response implements ModelInterface, Arr
     /**
      * Sets channel
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsSetCustomFields200ResponseChannel|null $channel channel
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetCustomFields200ResponseChannel|null $channel channel
      *
      * @return self
      */

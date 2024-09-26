@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**members** | [**\RocketChatRoomsApi\Model\GetApiV1ChannelsMembers200ResponseMembersInner[]**](GetApiV1ChannelsMembers200ResponseMembersInner.md) |  | [optional]
+**members** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsMembers200ResponseMembersInner[]**](GetApiV1ChannelsMembers200ResponseMembersInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

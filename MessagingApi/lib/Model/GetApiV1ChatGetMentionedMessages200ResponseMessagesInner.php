@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatGetMentionedMessages200ResponseMessagesInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,12 +61,12 @@ class GetApiV1ChatGetMentionedMessages200ResponseMessagesInner implements ModelI
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
+        'u' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
         '_updated_at' => 'string',
         'urls' => 'object[]',
-        'mentions' => '\RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner[]',
+        'mentions' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner[]',
         'channels' => 'object[]',
-        'md' => '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]'
+        'md' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]'
     ];
 
     /**
@@ -463,7 +463,7 @@ class GetApiV1ChatGetMentionedMessages200ResponseMessagesInner implements ModelI
     /**
      * Gets u
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
     public function getU()
     {
@@ -473,7 +473,7 @@ class GetApiV1ChatGetMentionedMessages200ResponseMessagesInner implements ModelI
     /**
      * Sets u
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
      *
      * @return self
      */
@@ -544,7 +544,7 @@ class GetApiV1ChatGetMentionedMessages200ResponseMessagesInner implements ModelI
     /**
      * Gets mentions
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner[]|null
      */
     public function getMentions()
     {
@@ -554,7 +554,7 @@ class GetApiV1ChatGetMentionedMessages200ResponseMessagesInner implements ModelI
     /**
      * Sets mentions
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner[]|null $mentions mentions
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner[]|null $mentions mentions
      *
      * @return self
      */
@@ -598,7 +598,7 @@ class GetApiV1ChatGetMentionedMessages200ResponseMessagesInner implements ModelI
     /**
      * Gets md
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -608,7 +608,7 @@ class GetApiV1ChatGetMentionedMessages200ResponseMessagesInner implements ModelI
     /**
      * Sets md
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null $md md
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null $md md
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatUsersTypeId200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatUsersTypeId200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'user' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser',
+        'user' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatUsersTypeId200Response implements ModelInterface, ArrayAcc
     /**
      * Gets user
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser|null
      */
     public function getUser()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatUsersTypeId200Response implements ModelInterface, ArrayAcc
     /**
      * Sets user
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser|null $user user
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser|null $user user
      *
      * @return self
      */

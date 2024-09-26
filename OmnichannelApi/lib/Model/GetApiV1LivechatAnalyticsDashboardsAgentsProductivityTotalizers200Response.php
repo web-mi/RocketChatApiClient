@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
       * @var string[]
       */
     protected static $openAPITypes = [
-        'totalizers' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200ResponseTotalizersInner[]',
+        'totalizers' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200ResponseTotalizersInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
     /**
      * Gets totalizers
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200ResponseTotalizersInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200ResponseTotalizersInner[]|null
      */
     public function getTotalizers()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
     /**
      * Sets totalizers
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200ResponseTotalizersInner[]|null $totalizers totalizers
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200ResponseTotalizersInner[]|null $totalizers totalizers
      *
      * @return self
      */

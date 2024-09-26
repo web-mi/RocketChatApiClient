@@ -1,4 +1,4 @@
-# RocketChatSettingsApi\ModerationApi
+# WebMIRocketChatApiClientSettingsApi\ModerationApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1ModerationReportInfo()`
 
 ```php
-getApiV1ModerationReportInfo($x_user_id, $x_auth_token, $report_id): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+getApiV1ModerationReportInfo($x_user_id, $x_auth_token, $report_id): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Get Report Information
@@ -30,7 +30,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\ModerationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ModerationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -57,7 +57,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `getApiV1ModerationReports()`
 
 ```php
-getApiV1ModerationReports($x_user_id, $x_auth_token, $msg_id, $offset, $count, $sort): \RocketChatSettingsApi\Model\GetApiV1ModerationReports200Response
+getApiV1ModerationReports($x_user_id, $x_auth_token, $msg_id, $offset, $count, $sort): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response
 ```
 
 Get Reports of a Message
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\ModerationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ModerationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -123,7 +123,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1ModerationReports200Response**](../Model/GetApiV1ModerationReports200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response**](../Model/GetApiV1ModerationReports200Response.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ No authorization required
 ## `getApiV1ModerationReportsByUsers()`
 
 ```php
-getApiV1ModerationReportsByUsers($x_user_id, $x_auth_token, $oldest, $latest, $offset, $count, $sort): \RocketChatSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response
+getApiV1ModerationReportsByUsers($x_user_id, $x_auth_token, $oldest, $latest, $offset, $count, $sort): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response
 ```
 
 Get Reported Messages
@@ -156,7 +156,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\ModerationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ModerationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -191,7 +191,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response**](../Model/GetApiV1ModerationReportsByUsers200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response**](../Model/GetApiV1ModerationReportsByUsers200Response.md)
 
 ### Authorization
 
@@ -209,7 +209,7 @@ No authorization required
 ## `getApiV1ModerationUserReportedMessages()`
 
 ```php
-getApiV1ModerationUserReportedMessages($x_user_id, $x_auth_token, $user_id, $offset, $count, $sort): \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response
+getApiV1ModerationUserReportedMessages($x_user_id, $x_auth_token, $user_id, $offset, $count, $sort): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response
 ```
 
 Get User's Reported Messages
@@ -224,7 +224,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\ModerationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ModerationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -257,7 +257,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response**](../Model/GetApiV1ModerationUserReportedMessages200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response**](../Model/GetApiV1ModerationUserReportedMessages200Response.md)
 
 ### Authorization
 
@@ -275,7 +275,7 @@ No authorization required
 ## `postApiV1ModerationDismissReports()`
 
 ```php
-postApiV1ModerationDismissReports($x_user_id, $x_auth_token, $post_api_v1_moderation_dismiss_reports_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1ModerationDismissReports($x_user_id, $x_auth_token, $post_api_v1_moderation_dismiss_reports_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Dismiss Reports
@@ -290,14 +290,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\ModerationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ModerationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_moderation_dismiss_reports_request = new \RocketChatSettingsApi\Model\PostApiV1ModerationDismissReportsRequest(); // \RocketChatSettingsApi\Model\PostApiV1ModerationDismissReportsRequest
+$post_api_v1_moderation_dismiss_reports_request = new \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationDismissReportsRequest(); // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationDismissReportsRequest
 
 try {
     $result = $apiInstance->postApiV1ModerationDismissReports($x_user_id, $x_auth_token, $post_api_v1_moderation_dismiss_reports_request);
@@ -313,11 +313,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_moderation_dismiss_reports_request** | [**\RocketChatSettingsApi\Model\PostApiV1ModerationDismissReportsRequest**](../Model/PostApiV1ModerationDismissReportsRequest.md)|  | [optional] |
+| **post_api_v1_moderation_dismiss_reports_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationDismissReportsRequest**](../Model/PostApiV1ModerationDismissReportsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -335,7 +335,7 @@ No authorization required
 ## `postApiV1ModerationUserDeleteReportedMessages()`
 
 ```php
-postApiV1ModerationUserDeleteReportedMessages($x_user_id, $x_auth_token, $post_api_v1_moderation_user_delete_reported_messages_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1ModerationUserDeleteReportedMessages($x_user_id, $x_auth_token, $post_api_v1_moderation_user_delete_reported_messages_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Delete Reported Messages of a User
@@ -350,14 +350,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\ModerationApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ModerationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_moderation_user_delete_reported_messages_request = new \RocketChatSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest(); // \RocketChatSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest
+$post_api_v1_moderation_user_delete_reported_messages_request = new \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest(); // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest
 
 try {
     $result = $apiInstance->postApiV1ModerationUserDeleteReportedMessages($x_user_id, $x_auth_token, $post_api_v1_moderation_user_delete_reported_messages_request);
@@ -373,11 +373,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_moderation_user_delete_reported_messages_request** | [**\RocketChatSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest**](../Model/PostApiV1ModerationUserDeleteReportedMessagesRequest.md)|  | [optional] |
+| **post_api_v1_moderation_user_delete_reported_messages_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest**](../Model/PostApiV1ModerationUserDeleteReportedMessagesRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 

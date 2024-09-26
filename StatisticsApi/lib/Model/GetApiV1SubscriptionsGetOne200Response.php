@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Model;
+namespace WebMIRocketChatApiClientStatisticsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatStatisticsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1SubscriptionsGetOne200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'subscription' => '\RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription',
+        'subscription' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
     /**
      * Gets subscription
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null
      */
     public function getSubscription()
     {
@@ -309,7 +309,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
     /**
      * Sets subscription
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null $subscription subscription
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null $subscription subscription
      *
      * @return self
      */

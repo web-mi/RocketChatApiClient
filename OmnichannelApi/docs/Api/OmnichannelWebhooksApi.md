@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\OmnichannelWebhooksApi
+# WebMIRocketChatApiClientOmnichannelApi\OmnichannelWebhooksApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiV1LivechatWebhookTest()`
 
 ```php
-postApiV1LivechatWebhookTest($x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postApiV1LivechatWebhookTest($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Test the Webhook Integration
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\OmnichannelWebhooksApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\OmnichannelWebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `postApiV1OmnichannelIntegrations()`
 
 ```php
-postApiV1OmnichannelIntegrations($x_auth_token, $x_user_id, $post_api_v1_omnichannel_integrations_request): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postApiV1OmnichannelIntegrations($x_auth_token, $x_user_id, $post_api_v1_omnichannel_integrations_request): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Set up Omnichannel webhook
@@ -84,14 +84,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\OmnichannelWebhooksApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\OmnichannelWebhooksApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_omnichannel_integrations_request = {"LivechatWebhookUrl":"https://webhook/d548683u3-7f38ow-48ba-ieooefa-oejiduiw","LivechatSecretToken":"","LivechatHttpTimeout":5000,"LivechatWebhookOnStart":true,"LivechatWebhookOnClose":true,"LivechatWebhookOnChatTaken":true,"LivechatWebhookOnChatQueued":false,"LivechatWebhookOnForward":false,"LivechatWebhookOnOfflineMsg":true,"LivechatWebhookOnVisitorMessage":true,"LivechatWebhookOnAgentMessage":true}; // \RocketChatOmnichannelApi\Model\PostApiV1OmnichannelIntegrationsRequest
+$post_api_v1_omnichannel_integrations_request = {"LivechatWebhookUrl":"https://webhook/d548683u3-7f38ow-48ba-ieooefa-oejiduiw","LivechatSecretToken":"","LivechatHttpTimeout":5000,"LivechatWebhookOnStart":true,"LivechatWebhookOnClose":true,"LivechatWebhookOnChatTaken":true,"LivechatWebhookOnChatQueued":false,"LivechatWebhookOnForward":false,"LivechatWebhookOnOfflineMsg":true,"LivechatWebhookOnVisitorMessage":true,"LivechatWebhookOnAgentMessage":true}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelIntegrationsRequest
 
 try {
     $result = $apiInstance->postApiV1OmnichannelIntegrations($x_auth_token, $x_user_id, $post_api_v1_omnichannel_integrations_request);
@@ -107,11 +107,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_omnichannel_integrations_request** | [**\RocketChatOmnichannelApi\Model\PostApiV1OmnichannelIntegrationsRequest**](../Model/PostApiV1OmnichannelIntegrationsRequest.md)|  | [optional] |
+| **post_api_v1_omnichannel_integrations_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelIntegrationsRequest**](../Model/PostApiV1OmnichannelIntegrationsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1Directory200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1Directory200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'result' => '\RocketChatRoomsApi\Model\GetApiV1Directory200ResponseResultInner[]',
+        'result' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200ResponseResultInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1Directory200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets result
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1Directory200ResponseResultInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200ResponseResultInner[]|null
      */
     public function getResult()
     {
@@ -330,7 +330,7 @@ class GetApiV1Directory200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets result
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1Directory200ResponseResultInner[]|null $result result
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200ResponseResultInner[]|null $result result
      *
      * @return self
      */

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**room** | [**\RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom**](GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom.md) |  | [optional]
+**room** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom**](GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom.md) |  | [optional]
 **messages** | **int** |  | [optional]
 **last_week_messages** | **int** |  | [optional]
 **diff_from_last_week** | **int** |  | [optional]

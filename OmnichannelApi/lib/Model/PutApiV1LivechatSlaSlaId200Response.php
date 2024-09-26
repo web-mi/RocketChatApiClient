@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PutApiV1LivechatSlaSlaId200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PutApiV1LivechatSlaSlaId200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sla' => '\RocketChatOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla',
+        'sla' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PutApiV1LivechatSlaSlaId200Response implements ModelInterface, ArrayAccess
     /**
      * Gets sla
      *
-     * @return \RocketChatOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla|null
      */
     public function getSla()
     {
@@ -309,7 +309,7 @@ class PutApiV1LivechatSlaSlaId200Response implements ModelInterface, ArrayAccess
     /**
      * Sets sla
      *
-     * @param \RocketChatOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla|null $sla sla
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla|null $sla sla
      *
      * @return self
      */

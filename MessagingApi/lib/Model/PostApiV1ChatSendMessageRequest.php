@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatSendMessageRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ChatSendMessageRequest implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequestMessage',
+        'message' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequestMessage',
         'preview_urls_' => 'string[]'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1ChatSendMessageRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets message
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequestMessage|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequestMessage|null
      */
     public function getMessage()
     {
@@ -309,7 +309,7 @@ class PostApiV1ChatSendMessageRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets message
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatSendMessageRequestMessage|null $message message
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatSendMessageRequestMessage|null $message message
      *
      * @return self
      */

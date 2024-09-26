@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\LivechatApi
+# WebMIRocketChatApiClientOmnichannelApi\LivechatApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatConfig()`
 
 ```php
-getApiV1LivechatConfig($token, $department): \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200Response
+getApiV1LivechatConfig($token, $department): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200Response
 ```
 
 Get Livechat Configurations
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200Response**](../Model/GetApiV1LivechatConfig200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200Response**](../Model/GetApiV1LivechatConfig200Response.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `getApiV1LivechatIntegrationsSettings()`
 
 ```php
-getApiV1LivechatIntegrationsSettings($x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200Response
+getApiV1LivechatIntegrationsSettings($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200Response
 ```
 
 Get Livechat Integrations
@@ -86,7 +86,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -111,7 +111,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200Response**](../Model/GetApiV1LivechatIntegrationsSettings200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200Response**](../Model/GetApiV1LivechatIntegrationsSettings200Response.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ No authorization required
 ## `getApiV1LivechatQueue()`
 
 ```php
-getApiV1LivechatQueue($x_auth_token, $x_user_id, $department_id, $agent_id, $include_offline_agents, $offset, $count, $sort): \RocketChatOmnichannelApi\Model\GetApiV1LivechatQueue200Response
+getApiV1LivechatQueue($x_auth_token, $x_user_id, $department_id, $agent_id, $include_offline_agents, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatQueue200Response
 ```
 
 Get Livechat Queue
@@ -144,7 +144,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -181,7 +181,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatQueue200Response**](../Model/GetApiV1LivechatQueue200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatQueue200Response**](../Model/GetApiV1LivechatQueue200Response.md)
 
 ### Authorization
 
@@ -214,13 +214,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $service = twilio; // string | Only the server `twilio` is accepted at moment.
-$post_api_v1_livechat_sms_incoming_service_request = {"From":"5551123456789","To":"5551987654321","Body":"SMS message","ToCountry":"Brazil","ToState":"RS","ToCity":"Porto Alegre","ToZip":"","FromCountry":"Brazil","FromState":"RS","FromCity":"Porto Alegre","FromZip":""}; // \RocketChatOmnichannelApi\Model\PostApiV1LivechatSmsIncomingServiceRequest
+$post_api_v1_livechat_sms_incoming_service_request = {"From":"5551123456789","To":"5551987654321","Body":"SMS message","ToCountry":"Brazil","ToState":"RS","ToCity":"Porto Alegre","ToZip":"","FromCountry":"Brazil","FromState":"RS","FromCity":"Porto Alegre","FromZip":""}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatSmsIncomingServiceRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatSmsIncomingService($service, $post_api_v1_livechat_sms_incoming_service_request);
@@ -235,7 +235,7 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **service** | **string**| Only the server &#x60;twilio&#x60; is accepted at moment. | |
-| **post_api_v1_livechat_sms_incoming_service_request** | [**\RocketChatOmnichannelApi\Model\PostApiV1LivechatSmsIncomingServiceRequest**](../Model/PostApiV1LivechatSmsIncomingServiceRequest.md)|  | [optional] |
+| **post_api_v1_livechat_sms_incoming_service_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatSmsIncomingServiceRequest**](../Model/PostApiV1LivechatSmsIncomingServiceRequest.md)|  | [optional] |
 
 ### Return type
 

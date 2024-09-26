@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImList200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ImList200Response implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ims' => '\RocketChatMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]',
+        'ims' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]',
         'offset' => 'int',
         'count' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ImList200Response implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets ims
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]|null
      */
     public function getIms()
     {
@@ -330,7 +330,7 @@ class GetApiV1ImList200Response implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets ims
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]|null $ims ims
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]|null $ims ims
      *
      * @return self
      */

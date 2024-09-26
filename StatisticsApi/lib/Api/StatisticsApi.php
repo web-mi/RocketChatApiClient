@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Api;
+namespace WebMIRocketChatApiClientStatisticsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatStatisticsApi\ApiException;
-use RocketChatStatisticsApi\Configuration;
-use RocketChatStatisticsApi\HeaderSelector;
-use RocketChatStatisticsApi\ObjectSerializer;
+use WebMIRocketChatApiClientStatisticsApi\ApiException;
+use WebMIRocketChatApiClientStatisticsApi\Configuration;
+use WebMIRocketChatApiClientStatisticsApi\HeaderSelector;
+use WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * StatisticsApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -135,9 +135,9 @@ class StatisticsApi
      * @param  bool $refresh Refresh the statistics. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1Statistics'] to see the possible values for this operation
      *
-     * @throws \RocketChatStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatStatisticsApi\Model\GetApiV1Statistics200Response|\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response|\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response
      */
     public function getApiV1Statistics($x_auth_token, $x_user_id, $refresh = null, string $contentType = self::contentTypes['getApiV1Statistics'][0])
     {
@@ -155,9 +155,9 @@ class StatisticsApi
      * @param  bool $refresh Refresh the statistics. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1Statistics'] to see the possible values for this operation
      *
-     * @throws \RocketChatStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatStatisticsApi\Model\GetApiV1Statistics200Response|\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response|\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1StatisticsWithHttpInfo($x_auth_token, $x_user_id, $refresh = null, string $contentType = self::contentTypes['getApiV1Statistics'][0])
     {
@@ -200,11 +200,11 @@ class StatisticsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatStatisticsApi\Model\GetApiV1Statistics200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatStatisticsApi\Model\GetApiV1Statistics200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -222,16 +222,16 @@ class StatisticsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatStatisticsApi\Model\GetApiV1Statistics200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -249,16 +249,16 @@ class StatisticsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -276,13 +276,13 @@ class StatisticsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatStatisticsApi\Model\GetApiV1Statistics200Response';
+            $returnType = '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -315,7 +315,7 @@ class StatisticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatStatisticsApi\Model\GetApiV1Statistics200Response',
+                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -323,7 +323,7 @@ class StatisticsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response',
+                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -331,7 +331,7 @@ class StatisticsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response',
+                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -379,7 +379,7 @@ class StatisticsApi
      */
     public function getApiV1StatisticsAsyncWithHttpInfo($x_auth_token, $x_user_id, $refresh = null, string $contentType = self::contentTypes['getApiV1Statistics'][0])
     {
-        $returnType = '\RocketChatStatisticsApi\Model\GetApiV1Statistics200Response';
+        $returnType = '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response';
         $request = $this->getApiV1StatisticsRequest($x_auth_token, $x_user_id, $refresh, $contentType);
 
         return $this->client
@@ -543,9 +543,9 @@ class StatisticsApi
      * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;&#x60;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1StatisticsList'] to see the possible values for this operation
      *
-     * @throws \RocketChatStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200Response|\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response|\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response
      */
     public function getApiV1StatisticsList($x_auth_token, $x_user_id, $count = null, $offset = null, $sort = null, $fields = null, $query = null, string $contentType = self::contentTypes['getApiV1StatisticsList'][0])
     {
@@ -567,9 +567,9 @@ class StatisticsApi
      * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;&#x60;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } }&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1StatisticsList'] to see the possible values for this operation
      *
-     * @throws \RocketChatStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200Response|\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response|\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1StatisticsListWithHttpInfo($x_auth_token, $x_user_id, $count = null, $offset = null, $sort = null, $fields = null, $query = null, string $contentType = self::contentTypes['getApiV1StatisticsList'][0])
     {
@@ -612,11 +612,11 @@ class StatisticsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -634,16 +634,16 @@ class StatisticsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -661,16 +661,16 @@ class StatisticsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -688,13 +688,13 @@ class StatisticsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200Response';
+            $returnType = '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -727,7 +727,7 @@ class StatisticsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200Response',
+                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -735,7 +735,7 @@ class StatisticsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList400Response',
+                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -743,7 +743,7 @@ class StatisticsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList401Response',
+                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -799,7 +799,7 @@ class StatisticsApi
      */
     public function getApiV1StatisticsListAsyncWithHttpInfo($x_auth_token, $x_user_id, $count = null, $offset = null, $sort = null, $fields = null, $query = null, string $contentType = self::contentTypes['getApiV1StatisticsList'][0])
     {
-        $returnType = '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200Response';
+        $returnType = '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response';
         $request = $this->getApiV1StatisticsListRequest($x_auth_token, $x_user_id, $count, $offset, $sort, $fields, $query, $contentType);
 
         return $this->client

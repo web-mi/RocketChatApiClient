@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatContentManagementApi\Model;
+namespace WebMIRocketChatApiClientContentManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatContentManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1EmojiCustomAll200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1EmojiCustomAll200Response implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'emojis' => '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200ResponseEmojisInner[]',
+        'emojis' => '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200ResponseEmojisInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1EmojiCustomAll200Response implements ModelInterface, ArrayAccess, 
     /**
      * Gets emojis
      *
-     * @return \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200ResponseEmojisInner[]|null
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200ResponseEmojisInner[]|null
      */
     public function getEmojis()
     {
@@ -330,7 +330,7 @@ class GetApiV1EmojiCustomAll200Response implements ModelInterface, ArrayAccess, 
     /**
      * Sets emojis
      *
-     * @param \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200ResponseEmojisInner[]|null $emojis emojis
+     * @param \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200ResponseEmojisInner[]|null $emojis emojis
      *
      * @return self
      */

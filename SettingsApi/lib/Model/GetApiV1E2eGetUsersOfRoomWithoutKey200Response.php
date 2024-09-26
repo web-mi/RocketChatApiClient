@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1E2eGetUsersOfRoomWithoutKey200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200Response implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'users' => '\RocketChatSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner[]',
+        'users' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200Response implements ModelInterface, 
     /**
      * Gets users
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner[]|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner[]|null
      */
     public function getUsers()
     {
@@ -309,7 +309,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200Response implements ModelInterface, 
     /**
      * Sets users
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner[]|null $users users
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner[]|null $users users
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetChatGetThreadsList200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetChatGetThreadsList200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'threads' => '\RocketChatMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]',
+        'threads' => '\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetChatGetThreadsList200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets threads
      *
-     * @return \RocketChatMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]|null
      */
     public function getThreads()
     {
@@ -330,7 +330,7 @@ class GetChatGetThreadsList200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets threads
      *
-     * @param \RocketChatMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]|null $threads threads
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]|null $threads threads
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatCustomField200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatCustomField200Response implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'field' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField',
+        'field' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatCustomField200Response implements ModelInterface, ArrayAc
     /**
      * Gets field
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField|null
      */
     public function getField()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatCustomField200Response implements ModelInterface, ArrayAc
     /**
      * Sets field
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField|null $field field
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField|null $field field
      *
      * @return self
      */

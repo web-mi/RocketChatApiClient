@@ -1,4 +1,4 @@
-# RocketChatMarketplaceAppsApi\WhatsAppApi
+# WebMIRocketChatApiClientMarketplaceAppsApi\WhatsAppApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiAppsPublicAppIdTemplateMessage()`
 
 ```php
-postApiAppsPublicAppIdTemplateMessage($app_id, $post_api_apps_public_app_id_template_message_request): \RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response
+postApiAppsPublicAppIdTemplateMessage($app_id, $post_api_apps_public_app_id_template_message_request): \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response
 ```
 
 Send a WhatsApp Template Message
@@ -25,13 +25,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMarketplaceAppsApi\Api\WhatsAppApi(
+$apiInstance = new WebMIRocketChatApiClientMarketplaceAppsApi\Api\WhatsAppApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $app_id = 'app_id_example'; // string
-$post_api_apps_public_app_id_template_message_request = new \RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest(); // \RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest | We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use.
+$post_api_apps_public_app_id_template_message_request = new \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest(); // \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest | We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use.
 
 try {
     $result = $apiInstance->postApiAppsPublicAppIdTemplateMessage($app_id, $post_api_apps_public_app_id_template_message_request);
@@ -46,11 +46,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **app_id** | **string**|  | |
-| **post_api_apps_public_app_id_template_message_request** | [**\RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest**](../Model/PostApiAppsPublicAppIdTemplateMessageRequest.md)| We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. | [optional] |
+| **post_api_apps_public_app_id_template_message_request** | [**\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest**](../Model/PostApiAppsPublicAppIdTemplateMessageRequest.md)| We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. | [optional] |
 
 ### Return type
 
-[**\RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response**](../Model/PostApiAppsPublicAppIdTemplateMessage200Response.md)
+[**\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response**](../Model/PostApiAppsPublicAppIdTemplateMessage200Response.md)
 
 ### Authorization
 

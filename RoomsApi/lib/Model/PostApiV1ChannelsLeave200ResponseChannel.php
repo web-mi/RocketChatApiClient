@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1ChannelsLeave200ResponseChannel Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class PostApiV1ChannelsLeave200ResponseChannel implements ModelInterface, ArrayA
         't' => 'string',
         'usernames' => 'string[]',
         'msgs' => 'int',
-        'u' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU',
+        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU',
         'ts' => 'string',
         'ro' => 'bool',
         'sys_mes' => 'bool',
@@ -490,7 +490,7 @@ class PostApiV1ChannelsLeave200ResponseChannel implements ModelInterface, ArrayA
     /**
      * Gets u
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
     public function getU()
     {
@@ -500,7 +500,7 @@ class PostApiV1ChannelsLeave200ResponseChannel implements ModelInterface, ArrayA
     /**
      * Sets u
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $u u
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $u u
      *
      * @return self
      */

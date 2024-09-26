@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Model;
+namespace WebMIRocketChatApiClientStatisticsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatStatisticsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1StatisticsList200ResponseStatisticsInnerServices Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServices implements ModelI
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ldap' => '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap',
-        'saml' => '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml',
-        'cas' => '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml',
-        'oauth' => '\RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth'
+        'ldap' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap',
+        'saml' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml',
+        'cas' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml',
+        'oauth' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth'
     ];
 
     /**
@@ -313,7 +313,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServices implements ModelI
     /**
      * Gets ldap
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap|null
      */
     public function getLdap()
     {
@@ -323,7 +323,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServices implements ModelI
     /**
      * Sets ldap
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap|null $ldap ldap
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap|null $ldap ldap
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServices implements ModelI
     /**
      * Gets saml
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml|null
      */
     public function getSaml()
     {
@@ -350,7 +350,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServices implements ModelI
     /**
      * Sets saml
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml|null $saml saml
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml|null $saml saml
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServices implements ModelI
     /**
      * Gets cas
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml|null
      */
     public function getCas()
     {
@@ -377,7 +377,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServices implements ModelI
     /**
      * Sets cas
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml|null $cas cas
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml|null $cas cas
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServices implements ModelI
     /**
      * Gets oauth
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth|null
      */
     public function getOauth()
     {
@@ -404,7 +404,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServices implements ModelI
     /**
      * Sets oauth
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth|null $oauth oauth
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth|null $oauth oauth
      *
      * @return self
      */

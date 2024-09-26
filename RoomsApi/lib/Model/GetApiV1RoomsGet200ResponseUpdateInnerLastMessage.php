@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsGet200ResponseUpdateInnerLastMessage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,14 +62,14 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'rid' => 'string',
         'ts' => 'string',
         'msg' => 'string',
-        'u' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         'groupable' => 'bool',
         'drid' => 'string',
         '_updated_at' => 'string',
-        'urls' => '\RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]',
+        'urls' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]'
+        'md' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]'
     ];
 
     /**
@@ -511,7 +511,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Gets u
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -521,7 +521,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Sets u
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -619,7 +619,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Gets urls
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null
      */
     public function getUrls()
     {
@@ -629,7 +629,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Sets urls
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null $urls urls
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null $urls urls
      *
      * @return self
      */
@@ -700,7 +700,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Gets md
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -710,7 +710,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Sets md
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null $md md
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null $md md
      *
      * @return self
      */

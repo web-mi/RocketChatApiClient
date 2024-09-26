@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1RolesCreate200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1RolesCreate200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'role' => '\RocketChatUserManagementApi\Model\PostApiV1RolesCreate200ResponseRole',
+        'role' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200ResponseRole',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1RolesCreate200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets role
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1RolesCreate200ResponseRole|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200ResponseRole|null
      */
     public function getRole()
     {
@@ -309,7 +309,7 @@ class PostApiV1RolesCreate200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets role
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1RolesCreate200ResponseRole|null $role role
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200ResponseRole|null $role role
      *
      * @return self
      */

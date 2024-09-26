@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatInquiriesGetOne200ResponseInquiry Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,13 +63,13 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
         'ts' => 'string',
         'message' => 'string',
         'status' => 'string',
-        'v' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryV',
+        'v' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryV',
         't' => 'string',
         'priority_weight' => 'int',
         'estimated_waiting_time_queue' => 'int',
-        'source' => '\RocketChatOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource',
+        'source' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource',
         '_updated_at' => 'string',
-        'last_message' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage',
+        'last_message' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage',
         'taken_at' => 'string'
     ];
 
@@ -545,7 +545,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
     /**
      * Gets v
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryV|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryV|null
      */
     public function getV()
     {
@@ -555,7 +555,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
     /**
      * Sets v
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryV|null $v v
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryV|null $v v
      *
      * @return self
      */
@@ -653,7 +653,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
     /**
      * Gets source
      *
-     * @return \RocketChatOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null
      */
     public function getSource()
     {
@@ -663,7 +663,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
     /**
      * Sets source
      *
-     * @param \RocketChatOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null $source source
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null $source source
      *
      * @return self
      */
@@ -707,7 +707,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
     /**
      * Gets last_message
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage|null
      */
     public function getLastMessage()
     {
@@ -717,7 +717,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
     /**
      * Sets last_message
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage|null $last_message last_message
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage|null $last_message last_message
      *
      * @return self
      */

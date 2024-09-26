@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatConfig200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatConfig200Response implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'config' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig',
+        'config' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatConfig200Response implements ModelInterface, ArrayAccess, 
     /**
      * Gets config
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig|null
      */
     public function getConfig()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatConfig200Response implements ModelInterface, ArrayAccess, 
     /**
      * Sets config
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig|null $config config
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig|null $config config
      *
      * @return self
      */

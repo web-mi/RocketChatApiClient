@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **total** | **int** |  | [optional]
-**data** | [**\RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]**](GetApiV1TeamsListChildren200ResponseDataInner.md) |  | [optional]
+**data** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]**](GetApiV1TeamsListChildren200ResponseDataInner.md) |  | [optional]
 **offset** | **int** |  | [optional]
 **count** | **int** |  | [optional]
 **success** | **bool** |  | [optional]

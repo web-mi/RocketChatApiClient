@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1TeamsAddMembersRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1TeamsAddMembersRequest implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'team_id' => 'string',
-        'members' => '\RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequestMembersInner[]'
+        'members' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequestMembersInner[]'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1TeamsAddMembersRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets members
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequestMembersInner[]
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequestMembersInner[]
      */
     public function getMembers()
     {
@@ -342,7 +342,7 @@ class PostApiV1TeamsAddMembersRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets members
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequestMembersInner[] $members The users (IDs and roles) to add to the team.
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequestMembersInner[] $members The users (IDs and roles) to add to the team.
      *
      * @return self
      */

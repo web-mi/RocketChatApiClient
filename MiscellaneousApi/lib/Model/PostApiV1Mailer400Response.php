@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * PostApiV1Mailer400Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostApiV1Mailer400Response implements ModelInterface, ArrayAccess, \JsonSe
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\RocketChatMiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails'
+        'details' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class PostApiV1Mailer400Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets details
      *
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class PostApiV1Mailer400Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets details
      *
-     * @param \RocketChatMiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails|null $details details
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails|null $details details
      *
      * @return self
      */

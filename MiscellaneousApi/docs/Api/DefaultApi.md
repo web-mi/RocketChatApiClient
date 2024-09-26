@@ -1,4 +1,4 @@
-# RocketChatMiscellaneousApi\DefaultApi
+# WebMIRocketChatApiClientMiscellaneousApi\DefaultApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\DefaultApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -74,7 +74,7 @@ No authorization required
 ## `getApiV1Spotlight()`
 
 ```php
-getApiV1Spotlight($x_auth_token, $x_user_id, $query): \RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response
+getApiV1Spotlight($x_auth_token, $x_user_id, $query): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response
 ```
 
 Spotlight
@@ -89,7 +89,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\DefaultApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response**](../Model/GetApiV1Spotlight200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response**](../Model/GetApiV1Spotlight200Response.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ No authorization required
 ## `getApiV1StdoutQueue()`
 
 ```php
-getApiV1StdoutQueue($x_auth_token, $x_user_id): \RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response
+getApiV1StdoutQueue($x_auth_token, $x_user_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response
 ```
 
 Get stdout queue
@@ -149,7 +149,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\DefaultApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -174,7 +174,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response**](../Model/GetApiV1StdoutQueue200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response**](../Model/GetApiV1StdoutQueue200Response.md)
 
 ### Authorization
 

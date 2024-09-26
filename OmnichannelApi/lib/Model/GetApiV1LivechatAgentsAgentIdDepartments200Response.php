@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAgentsAgentIdDepartments200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatAgentsAgentIdDepartments200Response implements ModelInterf
       * @var string[]
       */
     protected static $openAPITypes = [
-        'departments' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner[]',
+        'departments' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatAgentsAgentIdDepartments200Response implements ModelInterf
     /**
      * Gets departments
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner[]|null
      */
     public function getDepartments()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatAgentsAgentIdDepartments200Response implements ModelInterf
     /**
      * Sets departments
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner[]|null $departments departments
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner[]|null $departments departments
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsGetAllUserMentionsByChannel200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200Response implements ModelInt
       * @var string[]
       */
     protected static $openAPITypes = [
-        'mentions' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner[]',
+        'mentions' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200Response implements ModelInt
     /**
      * Gets mentions
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner[]|null
      */
     public function getMentions()
     {
@@ -330,7 +330,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200Response implements ModelInt
     /**
      * Sets mentions
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner[]|null $mentions mentions
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner[]|null $mentions mentions
      *
      * @return self
      */

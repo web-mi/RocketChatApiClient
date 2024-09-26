@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatQueue200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatQueue200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'queue' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInner[]',
+        'queue' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatQueue200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets queue
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInner[]|null
      */
     public function getQueue()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatQueue200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets queue
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInner[]|null $queue queue
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInner[]|null $queue queue
      *
      * @return self
      */

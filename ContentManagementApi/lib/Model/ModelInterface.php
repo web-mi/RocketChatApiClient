@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatContentManagementApi\Model
+ * @package  WebMIRocketChatApiClientContentManagementApi\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatContentManagementApi\Model;
+namespace WebMIRocketChatApiClientContentManagementApi\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package RocketChatContentManagementApi\Model
+ * @package WebMIRocketChatApiClientContentManagementApi\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

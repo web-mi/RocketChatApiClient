@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PutApiV1LivechatMessageId200ResponseMessage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
     protected static $openAPITypes = [
         '_id' => 'string',
         'msg' => 'string',
-        'u' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
+        'u' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
         'ls' => 'string'
     ];
 
@@ -367,7 +367,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
     /**
      * Gets u
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
     public function getU()
     {
@@ -377,7 +377,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
     /**
      * Sets u
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
      *
      * @return self
      */

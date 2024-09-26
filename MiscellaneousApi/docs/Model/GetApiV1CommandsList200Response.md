@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**commands** | [**\RocketChatMiscellaneousApi\Model\GetApiV1CommandsList200ResponseCommandsInner[]**](GetApiV1CommandsList200ResponseCommandsInner.md) |  | [optional]
+**commands** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsList200ResponseCommandsInner[]**](GetApiV1CommandsList200ResponseCommandsInner.md) |  | [optional]
 **offset** | **int** |  | [optional]
 **count** | **int** |  | [optional]
 **total** | **int** |  | [optional]

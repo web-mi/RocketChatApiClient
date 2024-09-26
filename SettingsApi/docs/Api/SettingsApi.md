@@ -1,4 +1,4 @@
-# RocketChatSettingsApi\SettingsApi
+# WebMIRocketChatApiClientSettingsApi\SettingsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -16,7 +16,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1ServiceConfigurations()`
 
 ```php
-getApiV1ServiceConfigurations(): \RocketChatSettingsApi\Model\GetApiV1ServiceConfigurations200Response
+getApiV1ServiceConfigurations(): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ServiceConfigurations200Response
 ```
 
 Get OAuth Service Configuration
@@ -31,7 +31,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\SettingsApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1ServiceConfigurations200Response**](../Model/GetApiV1ServiceConfigurations200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ServiceConfigurations200Response**](../Model/GetApiV1ServiceConfigurations200Response.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `getApiV1Settings()`
 
 ```php
-getApiV1Settings($x_user_id, $x_auth_token): \RocketChatSettingsApi\Model\GetApiV1SettingsPublic200Response
+getApiV1Settings($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsPublic200Response
 ```
 
 Get Private Settings
@@ -84,7 +84,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\SettingsApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -109,7 +109,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1SettingsPublic200Response**](../Model/GetApiV1SettingsPublic200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsPublic200Response**](../Model/GetApiV1SettingsPublic200Response.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ No authorization required
 ## `getApiV1SettingsId()`
 
 ```php
-getApiV1SettingsId($_id, $x_user_id, $x_auth_token): \RocketChatSettingsApi\Model\GetApiV1SettingsId200Response
+getApiV1SettingsId($_id, $x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsId200Response
 ```
 
 Get Setting
@@ -142,7 +142,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\SettingsApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -169,7 +169,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1SettingsId200Response**](../Model/GetApiV1SettingsId200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsId200Response**](../Model/GetApiV1SettingsId200Response.md)
 
 ### Authorization
 
@@ -187,7 +187,7 @@ No authorization required
 ## `getApiV1SettingsOauth()`
 
 ```php
-getApiV1SettingsOauth(): \RocketChatSettingsApi\Model\GetApiV1SettingsOauth200Response
+getApiV1SettingsOauth(): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsOauth200Response
 ```
 
 Get OAuth Settings
@@ -202,7 +202,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\SettingsApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -222,7 +222,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1SettingsOauth200Response**](../Model/GetApiV1SettingsOauth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsOauth200Response**](../Model/GetApiV1SettingsOauth200Response.md)
 
 ### Authorization
 
@@ -240,7 +240,7 @@ No authorization required
 ## `getApiV1SettingsPublic()`
 
 ```php
-getApiV1SettingsPublic($offset, $count, $sort, $query, $fields): \RocketChatSettingsApi\Model\GetApiV1SettingsPublic200Response
+getApiV1SettingsPublic($offset, $count, $sort, $query, $fields): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsPublic200Response
 ```
 
 Get Public Settings
@@ -255,7 +255,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\SettingsApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -286,7 +286,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1SettingsPublic200Response**](../Model/GetApiV1SettingsPublic200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsPublic200Response**](../Model/GetApiV1SettingsPublic200Response.md)
 
 ### Authorization
 
@@ -304,7 +304,7 @@ No authorization required
 ## `postApiV1SettingsAddCustomOAuth()`
 
 ```php
-postApiV1SettingsAddCustomOAuth($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_settings_add_custom_o_auth_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1SettingsAddCustomOAuth($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_settings_add_custom_o_auth_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Add Custom OAuth
@@ -319,7 +319,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\SettingsApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -328,7 +328,7 @@ $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
 $x_2fa_code = 'x_2fa_code_example'; // string | The 2FA code from the authentication method. If the method is password, encrypt it as SHA256.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_settings_add_custom_o_auth_request = new \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuthRequest(); // \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuthRequest
+$post_api_v1_settings_add_custom_o_auth_request = new \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuthRequest(); // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuthRequest
 
 try {
     $result = $apiInstance->postApiV1SettingsAddCustomOAuth($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_settings_add_custom_o_auth_request);
@@ -346,11 +346,11 @@ try {
 | **x_auth_token** | **string**| The authentication token. | |
 | **x_2fa_code** | **string**| The 2FA code from the authentication method. If the method is password, encrypt it as SHA256. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_settings_add_custom_o_auth_request** | [**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuthRequest**](../Model/PostApiV1SettingsAddCustomOAuthRequest.md)|  | [optional] |
+| **post_api_v1_settings_add_custom_o_auth_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuthRequest**](../Model/PostApiV1SettingsAddCustomOAuthRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -368,7 +368,7 @@ No authorization required
 ## `postApiV1SettingsId()`
 
 ```php
-postApiV1SettingsId($_id, $x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_settings_id_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1SettingsId($_id, $x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_settings_id_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Update Setting
@@ -383,7 +383,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\SettingsApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\SettingsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -393,7 +393,7 @@ $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
 $x_2fa_code = 'x_2fa_code_example'; // string | The 2FA code from the authentication method. If the method is password, encrypt it as SHA256.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_settings_id_request = new \RocketChatSettingsApi\Model\PostApiV1SettingsIdRequest(); // \RocketChatSettingsApi\Model\PostApiV1SettingsIdRequest
+$post_api_v1_settings_id_request = new \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsIdRequest(); // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsIdRequest
 
 try {
     $result = $apiInstance->postApiV1SettingsId($_id, $x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_settings_id_request);
@@ -412,11 +412,11 @@ try {
 | **x_auth_token** | **string**| The authentication token. | |
 | **x_2fa_code** | **string**| The 2FA code from the authentication method. If the method is password, encrypt it as SHA256. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_settings_id_request** | [**\RocketChatSettingsApi\Model\PostApiV1SettingsIdRequest**](../Model/PostApiV1SettingsIdRequest.md)|  | [optional] |
+| **post_api_v1_settings_id_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsIdRequest**](../Model/PostApiV1SettingsIdRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 

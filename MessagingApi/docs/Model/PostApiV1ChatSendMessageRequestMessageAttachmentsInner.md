@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **author_name** | **string** | Name of the author. | [optional]
 **collapsed** | **bool** | Causes the image, audio, and video sections to be displayed as collapsed when set to true. | [optional]
 **color** | **string** | See &lt;a href&#x3D;&#39;https://developer.mozilla.org/en-US/docs/Web/CSS/background-color&#39; target&#x3D;&#39;_blank&#39;&gt;background-css&lt;/a&gt; for the supported format. | [optional]
-**fields** | [**\RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner[]**](PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner.md) |  | [optional]
+**fields** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner[]**](PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner.md) |  | [optional]
 **image_url** | **string** | The image to display, will be big and easy to see. | [optional]
 **message_link** | **string** | Only applicable if the &#x60;ts&#x60; parameter is provided, as it makes the time clickable to this link. | [optional]
 **text** | **string** | The text to display for this attachment, it is different than the message&#39;s text. | [optional]

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1UsersSendWelcomeEmail400Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1UsersSendWelcomeEmail400Response implements ModelInterface, ArrayA
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\RocketChatUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400ResponseDetails'
+        'details' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class GetApiV1UsersSendWelcomeEmail400Response implements ModelInterface, ArrayA
     /**
      * Gets details
      *
-     * @return \RocketChatUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400ResponseDetails|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class GetApiV1UsersSendWelcomeEmail400Response implements ModelInterface, ArrayA
     /**
      * Sets details
      *
-     * @param \RocketChatUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400ResponseDetails|null $details details
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400ResponseDetails|null $details details
      *
      * @return self
      */

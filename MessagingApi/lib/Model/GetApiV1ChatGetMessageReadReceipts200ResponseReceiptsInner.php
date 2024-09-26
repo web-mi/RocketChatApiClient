@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
         'user_id' => 'string',
         'message_id' => 'string',
         'ts' => 'string',
-        'user' => '\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser'
+        'user' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser'
     ];
 
     /**
@@ -462,7 +462,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
     /**
      * Gets user
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser|null
      */
     public function getUser()
     {
@@ -472,7 +472,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
     /**
      * Sets user
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser|null $user user
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser|null $user user
      *
      * @return self
      */

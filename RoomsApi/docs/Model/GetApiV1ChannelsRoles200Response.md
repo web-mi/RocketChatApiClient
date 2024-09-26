@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**roles** | [**\RocketChatRoomsApi\Model\GetApiV1ChannelsRoles200ResponseRolesInner[]**](GetApiV1ChannelsRoles200ResponseRolesInner.md) |  | [optional]
+**roles** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsRoles200ResponseRolesInner[]**](GetApiV1ChannelsRoles200ResponseRolesInner.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

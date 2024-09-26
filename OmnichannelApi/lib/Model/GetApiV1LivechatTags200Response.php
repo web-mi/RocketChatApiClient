@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTags200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatTags200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tags' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatTags200ResponseTagsInner[]',
+        'tags' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTags200ResponseTagsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatTags200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets tags
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatTags200ResponseTagsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTags200ResponseTagsInner[]|null
      */
     public function getTags()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatTags200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets tags
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatTags200ResponseTagsInner[]|null $tags tags
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTags200ResponseTagsInner[]|null $tags tags
      *
      * @return self
      */

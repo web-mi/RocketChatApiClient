@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersSetPreferences200ResponseUserSettings Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1UsersSetPreferences200ResponseUserSettings implements ModelInterf
       * @var string[]
       */
     protected static $openAPITypes = [
-        'preferences' => '\RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettingsPreferences'
+        'preferences' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettingsPreferences'
     ];
 
     /**
@@ -292,7 +292,7 @@ class PostApiV1UsersSetPreferences200ResponseUserSettings implements ModelInterf
     /**
      * Gets preferences
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettingsPreferences|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettingsPreferences|null
      */
     public function getPreferences()
     {
@@ -302,7 +302,7 @@ class PostApiV1UsersSetPreferences200ResponseUserSettings implements ModelInterf
     /**
      * Sets preferences
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettingsPreferences|null $preferences preferences
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettingsPreferences|null $preferences preferences
      *
      * @return self
      */

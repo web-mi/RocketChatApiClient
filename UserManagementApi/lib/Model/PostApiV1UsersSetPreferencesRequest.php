@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersSetPreferencesRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1UsersSetPreferencesRequest implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'user_id' => 'string',
-        'data' => '\RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData'
+        'data' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData'
     ];
 
     /**
@@ -329,7 +329,7 @@ class PostApiV1UsersSetPreferencesRequest implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData
      */
     public function getData()
     {
@@ -339,7 +339,7 @@ class PostApiV1UsersSetPreferencesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData $data data
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData $data data
      *
      * @return self
      */

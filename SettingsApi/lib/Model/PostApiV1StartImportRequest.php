@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * PostApiV1StartImportRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1StartImportRequest implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'input' => '\RocketChatSettingsApi\Model\PostApiV1StartImportRequestInput'
+        'input' => '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequestInput'
     ];
 
     /**
@@ -295,7 +295,7 @@ class PostApiV1StartImportRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets input
      *
-     * @return \RocketChatSettingsApi\Model\PostApiV1StartImportRequestInput
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequestInput
      */
     public function getInput()
     {
@@ -305,7 +305,7 @@ class PostApiV1StartImportRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets input
      *
-     * @param \RocketChatSettingsApi\Model\PostApiV1StartImportRequestInput $input input
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequestInput $input input
      *
      * @return self
      */

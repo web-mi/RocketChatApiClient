@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1ChannelsAddOwner400Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostApiV1ChannelsAddOwner400Response implements ModelInterface, ArrayAcces
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddOwner400ResponseDetails'
+        'details' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddOwner400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class PostApiV1ChannelsAddOwner400Response implements ModelInterface, ArrayAcces
     /**
      * Gets details
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddOwner400ResponseDetails|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddOwner400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class PostApiV1ChannelsAddOwner400Response implements ModelInterface, ArrayAcces
     /**
      * Sets details
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddOwner400ResponseDetails|null $details details
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddOwner400ResponseDetails|null $details details
      *
      * @return self
      */

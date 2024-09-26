@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsUploadRid200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RoomsUploadRid200Response implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage',
+        'message' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1RoomsUploadRid200Response implements ModelInterface, ArrayAccess, 
     /**
      * Gets message
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage|null
      */
     public function getMessage()
     {
@@ -309,7 +309,7 @@ class GetApiV1RoomsUploadRid200Response implements ModelInterface, ArrayAccess, 
     /**
      * Sets message
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage|null $message message
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage|null $message message
      *
      * @return self
      */

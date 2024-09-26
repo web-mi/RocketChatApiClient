@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1LicensesInfo200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LicensesInfo200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'license' => '\RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense',
+        'license' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LicensesInfo200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets license
      *
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense|null
      */
     public function getLicense()
     {
@@ -309,7 +309,7 @@ class GetApiV1LicensesInfo200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets license
      *
-     * @param \RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense|null $license license
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense|null $license license
      *
      * @return self
      */

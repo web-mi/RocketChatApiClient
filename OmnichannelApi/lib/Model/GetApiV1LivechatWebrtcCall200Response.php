@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatWebrtcCall200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatWebrtcCall200Response implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'video_call' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200ResponseVideoCall',
+        'video_call' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200ResponseVideoCall',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatWebrtcCall200Response implements ModelInterface, ArrayAcce
     /**
      * Gets video_call
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200ResponseVideoCall|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200ResponseVideoCall|null
      */
     public function getVideoCall()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatWebrtcCall200Response implements ModelInterface, ArrayAcce
     /**
      * Sets video_call
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200ResponseVideoCall|null $video_call video_call
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200ResponseVideoCall|null $video_call video_call
      *
      * @return self
      */

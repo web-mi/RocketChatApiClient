@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsAutocomplete200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1TeamsAutocomplete200Response implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'teams' => '\RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200ResponseTeamsInner[]',
+        'teams' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200ResponseTeamsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1TeamsAutocomplete200Response implements ModelInterface, ArrayAcces
     /**
      * Gets teams
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200ResponseTeamsInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200ResponseTeamsInner[]|null
      */
     public function getTeams()
     {
@@ -309,7 +309,7 @@ class GetApiV1TeamsAutocomplete200Response implements ModelInterface, ArrayAcces
     /**
      * Sets teams
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200ResponseTeamsInner[]|null $teams teams
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200ResponseTeamsInner[]|null $teams teams
      *
      * @return self
      */
