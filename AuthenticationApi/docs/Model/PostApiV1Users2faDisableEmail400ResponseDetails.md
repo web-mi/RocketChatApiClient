@@ -1,0 +1,11 @@
+# # PostApiV1Users2faDisableEmail400ResponseDetails
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**method** | **string** |  | [optional]
+**code_generated** | **bool** |  | [optional]
+**available_methods** | **object[]** |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

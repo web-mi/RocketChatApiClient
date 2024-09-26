@@ -1,0 +1,64 @@
+{
+    "name": "web-mi/rocket.chat-php-api-client",
+    "description": "Auto generated (by https://openapi-generator.tech) PHP Api Client from Rocket.chat OpenAPI Specification Repo",
+    "keywords": [
+        "openapitools",
+        "openapi-generator",
+        "openapi",
+        "php",
+        "sdk",
+        "rest",
+        "api",
+        "rocket.chat"
+    ],
+    "homepage": "https://github.com/web-mi/RocketChatPHPClient",
+    "license": "unlicense",
+    "authors": [
+        {
+            "name": "Web-MI",
+            "homepage": "https://github.com/web-mi"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "guzzlehttp/guzzle": "^7.3",
+        "guzzlehttp/psr7": "^1.7 || ^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.0 || ^9.0",
+        "friendsofphp/php-cs-fixer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "RocketChat\\AuthenticationApi\\" : "AuthenticationApi/lib/",
+            "RocketChat\\ContentManagementApi\\" : "ContentManagementApi/lib/",
+            "RocketChat\\MarketplaceAppsApi\\" : "MarketplaceAppsApi/lib/",
+            "RocketChat\\MessagingApi\\" : "MessagingApi/lib/",
+            "RocketChat\\MiscellaneousApi\\" : "MiscellaneousApi/lib/",
+            "RocketChat\\NotificationsApi\\" : "NotificationsApi/lib/",
+            "RocketChat\\OmnichannelApi\\" : "OmnichannelApi/lib/",
+            "RocketChat\\RoomsApi\\" : "RoomsApi/lib/",
+            "RocketChat\\SettingsApi\\" : "SettingsApi/lib/",
+            "RocketChat\\StatisticsApi\\" : "StatisticsApi/lib/",
+            "RocketChat\\UserManagementApi\\" : "UserManagementApi/lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "RocketChat\\AuthenticationApi\\Test\\" : "AuthenticationApi/test/",
+            "RocketChat\\ContentManagementApi\\Test\\" : "ContentManagementApi/test/",
+            "RocketChat\\MarketplaceAppsApi\\Test\\" : "MarketplaceAppsApi/test/",
+            "RocketChat\\MessagingApi\\Test\\" : "MessagingApi/test/",
+            "RocketChat\\MiscellaneousApi\\Test\\" : "MiscellaneousApi/test/",
+            "RocketChat\\NotificationsApi\\Test\\" : "NotificationsApi/test/",
+            "RocketChat\\OmnichannelApi\\Test\\" : "OmnichannelApi/test/",
+            "RocketChat\\RoomsApi\\Test\\" : "RoomsApi/test/",
+            "RocketChat\\SettingsApi\\Test\\" : "SettingsApi/test/",
+            "RocketChat\\StatisticsApi\\Test\\" : "StatisticsApi/test/",
+            "RocketChat\\UserManagementApi\\Test\\" : "UserManagementApi/test/"
+        }
+    }
+}

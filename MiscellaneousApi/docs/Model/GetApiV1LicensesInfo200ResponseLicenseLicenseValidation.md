@@ -1,0 +1,14 @@
+# # GetApiV1LicensesInfo200ResponseLicenseLicenseValidation
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**server_urls** | [**\RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner[]**](GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner.md) |  | [optional]
+**cloud_workspace_id** | **string** |  | [optional]
+**server_unique_id** | **string** |  | [optional]
+**valid_periods** | [**\RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner[]**](GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner.md) |  | [optional]
+**legal_text_agreement** | [**\RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement**](GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement.md) |  | [optional]
+**statistics_report** | [**\RocketChatMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport**](GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport.md) |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

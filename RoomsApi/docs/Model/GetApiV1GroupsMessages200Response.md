@@ -1,0 +1,13 @@
+# # GetApiV1GroupsMessages200Response
+
+## Properties
+
+Name | Type | Description | Notes
+------------ | ------------- | ------------- | -------------
+**messages** | [**\RocketChatRoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInner[]**](GetApiV1GroupsMessages200ResponseMessagesInner.md) |  | [optional]
+**count** | **int** |  | [optional]
+**offset** | **int** |  | [optional]
+**total** | **int** |  | [optional]
+**success** | **bool** |  | [optional]
+
+[[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
