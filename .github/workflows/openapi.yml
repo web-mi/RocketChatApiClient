@@ -1,8 +1,9 @@
 name: OpenApi Client Build
 
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
