@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsUploadRid200ResponseMessage Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,13 +61,13 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
         'rid' => 'string',
         'ts' => 'string',
         'msg' => 'string',
-        'file' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile',
-        'files' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]',
-        'attachments' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]',
-        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile',
+        'files' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]',
+        'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]',
+        'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         '_updated_at' => 'string',
         'urls' => 'object[]',
-        'md' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
+        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
     ];
 
     /**
@@ -470,7 +470,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets file
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile|null
      */
     public function getFile()
     {
@@ -480,7 +480,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets file
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile|null $file file
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile|null $file file
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets files
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]|null
      */
     public function getFiles()
     {
@@ -507,7 +507,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets files
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]|null $files files
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]|null $files files
      *
      * @return self
      */
@@ -524,7 +524,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets attachments
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null
      */
     public function getAttachments()
     {
@@ -534,7 +534,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets attachments
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null $attachments attachments
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null $attachments attachments
      *
      * @return self
      */
@@ -551,7 +551,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -561,7 +561,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -632,7 +632,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets md
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -642,7 +642,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets md
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
      *
      * @return self
      */

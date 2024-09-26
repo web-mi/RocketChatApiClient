@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientAuthenticationApi\AuthenticationApi
+# WebMI\RocketChatApiClient\AuthenticationApi\AuthenticationApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1Me()`
 
 ```php
-getApiV1Me($x_user_id, $x_auth_token): \WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response
+getApiV1Me($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response
 ```
 
 Get Profile Information
@@ -30,7 +30,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientAuthenticationApi\Api\AuthenticationApi(
+$apiInstance = new WebMI\RocketChatApiClient\AuthenticationApi\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -55,7 +55,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response**](../Model/GetApiV1Me200Response.md)
+[**\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response**](../Model/GetApiV1Me200Response.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ No authorization required
 ## `postApiV1Login()`
 
 ```php
-postApiV1Login($post_api_v1_login_request): \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response
+postApiV1Login($post_api_v1_login_request): \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response
 ```
 
 Login with Username and Password
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientAuthenticationApi\Api\AuthenticationApi(
+$apiInstance = new WebMI\RocketChatApiClient\AuthenticationApi\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_login_request = {"user":"test@rocket.test","password":"vanvica32"}; // \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginRequest | 
+$post_api_v1_login_request = {"user":"test@rocket.test","password":"vanvica32"}; // \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginRequest | 
 
 try {
     $result = $apiInstance->postApiV1Login($post_api_v1_login_request);
@@ -107,11 +107,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_login_request** | [**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginRequest**](../Model/PostApiV1LoginRequest.md)|  | [optional] |
+| **post_api_v1_login_request** | [**\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginRequest**](../Model/PostApiV1LoginRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response**](../Model/PostApiV1Login200Response.md)
+[**\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response**](../Model/PostApiV1Login200Response.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ No authorization required
 ## `postApiV1LoginFacebook()`
 
 ```php
-postApiV1LoginFacebook($post_api_v1_login_facebook_request): \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response
+postApiV1LoginFacebook($post_api_v1_login_facebook_request): \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response
 ```
 
 Login with Facebook
@@ -144,12 +144,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientAuthenticationApi\Api\AuthenticationApi(
+$apiInstance = new WebMI\RocketChatApiClient\AuthenticationApi\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_login_facebook_request = {"serviceName":"facebook","accessToken":"hash","secret":"hash","expiresIn":200}; // \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginFacebookRequest | 
+$post_api_v1_login_facebook_request = {"serviceName":"facebook","accessToken":"hash","secret":"hash","expiresIn":200}; // \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginFacebookRequest | 
 
 try {
     $result = $apiInstance->postApiV1LoginFacebook($post_api_v1_login_facebook_request);
@@ -163,11 +163,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_login_facebook_request** | [**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginFacebookRequest**](../Model/PostApiV1LoginFacebookRequest.md)|  | [optional] |
+| **post_api_v1_login_facebook_request** | [**\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginFacebookRequest**](../Model/PostApiV1LoginFacebookRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response**](../Model/PostApiV1Login200Response.md)
+[**\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response**](../Model/PostApiV1Login200Response.md)
 
 ### Authorization
 
@@ -185,7 +185,7 @@ No authorization required
 ## `postApiV1LoginGoogle()`
 
 ```php
-postApiV1LoginGoogle($post_api_v1_login_google_request): \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response
+postApiV1LoginGoogle($post_api_v1_login_google_request): \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response
 ```
 
 Login with Google
@@ -200,12 +200,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientAuthenticationApi\Api\AuthenticationApi(
+$apiInstance = new WebMI\RocketChatApiClient\AuthenticationApi\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_login_google_request = {"serviceName":"google","accessToken":"hash","idToken":"hash","expiresIn":200,"scope":"profile"}; // \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogleRequest | 
+$post_api_v1_login_google_request = {"serviceName":"google","accessToken":"hash","idToken":"hash","expiresIn":200,"scope":"profile"}; // \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogleRequest | 
 
 try {
     $result = $apiInstance->postApiV1LoginGoogle($post_api_v1_login_google_request);
@@ -219,11 +219,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_login_google_request** | [**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogleRequest**](../Model/PostApiV1LoginGoogleRequest.md)|  | [optional] |
+| **post_api_v1_login_google_request** | [**\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogleRequest**](../Model/PostApiV1LoginGoogleRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response**](../Model/PostApiV1LoginGoogle200Response.md)
+[**\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response**](../Model/PostApiV1LoginGoogle200Response.md)
 
 ### Authorization
 
@@ -241,7 +241,7 @@ No authorization required
 ## `postApiV1LoginTwitter()`
 
 ```php
-postApiV1LoginTwitter($post_api_v1_login_twitter_request): \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response
+postApiV1LoginTwitter($post_api_v1_login_twitter_request): \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response
 ```
 
 Login with Twitter
@@ -256,12 +256,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientAuthenticationApi\Api\AuthenticationApi(
+$apiInstance = new WebMI\RocketChatApiClient\AuthenticationApi\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_login_twitter_request = {"serviceName":"twitter","accessToken":"hash","accessTokenSecret":"hash","appSecret":"hash","appId":"hash","expiresIn":200}; // \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginTwitterRequest | 
+$post_api_v1_login_twitter_request = {"serviceName":"twitter","accessToken":"hash","accessTokenSecret":"hash","appSecret":"hash","appId":"hash","expiresIn":200}; // \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginTwitterRequest | 
 
 try {
     $result = $apiInstance->postApiV1LoginTwitter($post_api_v1_login_twitter_request);
@@ -275,11 +275,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_login_twitter_request** | [**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginTwitterRequest**](../Model/PostApiV1LoginTwitterRequest.md)|  | [optional] |
+| **post_api_v1_login_twitter_request** | [**\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginTwitterRequest**](../Model/PostApiV1LoginTwitterRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response**](../Model/PostApiV1Login200Response.md)
+[**\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response**](../Model/PostApiV1Login200Response.md)
 
 ### Authorization
 
@@ -297,7 +297,7 @@ No authorization required
 ## `postApiV1Logout()`
 
 ```php
-postApiV1Logout($x_auth_token, $x_user_id): \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response
+postApiV1Logout($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response
 ```
 
 Logout
@@ -312,7 +312,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientAuthenticationApi\Api\AuthenticationApi(
+$apiInstance = new WebMI\RocketChatApiClient\AuthenticationApi\Api\AuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -337,7 +337,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response**](../Model/PostApiV1Logout200Response.md)
+[**\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response**](../Model/PostApiV1Logout200Response.md)
 
 ### Authorization
 

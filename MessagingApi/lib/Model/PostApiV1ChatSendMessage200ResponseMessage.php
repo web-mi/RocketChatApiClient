@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatSendMessage200ResponseMessage Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
+        'u' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
         'unread' => 'bool',
         'mentions' => 'object[]',
         'channels' => 'object[]',
@@ -429,7 +429,7 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
     public function getU()
     {
@@ -439,7 +439,7 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
      *
      * @return self
      */

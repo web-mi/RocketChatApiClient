@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_id** | **string** |  | [optional]
 **rid** | **string** |  | [optional]
-**u** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU**](PostApiV1ChatDelete200ResponseMessageU.md) |  | [optional]
+**u** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU**](PostApiV1ChatDelete200ResponseMessageU.md) |  | [optional]
 **msg** | **string** |  | [optional]
 **ts** | **string** |  | [optional]
 **_updated_at** | **string** |  | [optional]
@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **urls** | **object[]** |  | [optional]
 **mentions** | **object[]** |  | [optional]
 **channels** | **object[]** |  | [optional]
-**md** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]**](PostApiV1ChatUpdate200ResponseMessageMdInner.md) |  | [optional]
+**md** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]**](PostApiV1ChatUpdate200ResponseMessageMdInner.md) |  | [optional]
 **t** | **string** |  | [optional]
 **groupable** | **bool** |  | [optional]
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi;
+namespace WebMI\RocketChatApiClient\SettingsApi;
 
 use GuzzleHttp\Psr7\Utils;
-use WebMIRocketChatApiClientSettingsApi\Model\ModelInterface;
+use WebMI\RocketChatApiClient\SettingsApi\Model\ModelInterface;
 
 /**
  * ObjectSerializer Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -521,7 +521,7 @@ class ObjectSerializer
             // If a discriminator is defined and points to a valid subclass, use it.
             $discriminator = $class::DISCRIMINATOR;
             if (!empty($discriminator) && isset($data->{$discriminator}) && is_string($data->{$discriminator})) {
-                $subclass = '\WebMIRocketChatApiClientSettingsApi\Model\\' . $data->{$discriminator};
+                $subclass = '\WebMI\RocketChatApiClient\SettingsApi\Model\\' . $data->{$discriminator};
                 if (is_subclass_of($subclass, $class)) {
                     $class = $subclass;
                 }

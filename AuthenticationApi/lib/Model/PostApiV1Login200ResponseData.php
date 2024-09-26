@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientAuthenticationApi\Model;
+namespace WebMI\RocketChatApiClient\AuthenticationApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientAuthenticationApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
  * PostApiV1Login200ResponseData Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostApiV1Login200ResponseData implements ModelInterface, ArrayAccess, \Jso
     protected static $openAPITypes = [
         'auth_token' => 'string',
         'user_id' => 'string',
-        'me' => '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMe'
+        'me' => '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMe'
     ];
 
     /**
@@ -360,7 +360,7 @@ class PostApiV1Login200ResponseData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets me
      *
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMe|null
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMe|null
      */
     public function getMe()
     {
@@ -370,7 +370,7 @@ class PostApiV1Login200ResponseData implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets me
      *
-     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMe|null $me me
+     * @param \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMe|null $me me
      *
      * @return self
      */

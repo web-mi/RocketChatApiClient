@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1GroupsInfo200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1GroupsInfo200Response implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'group' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsInfo200ResponseGroup',
+        'group' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsInfo200ResponseGroup',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1GroupsInfo200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets group
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsInfo200ResponseGroup|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsInfo200ResponseGroup|null
      */
     public function getGroup()
     {
@@ -309,7 +309,7 @@ class GetApiV1GroupsInfo200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets group
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsInfo200ResponseGroup|null $group group
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsInfo200ResponseGroup|null $group group
      *
      * @return self
      */

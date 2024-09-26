@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1UsersAutocomplete200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1UsersAutocomplete200Response implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200ResponseItemsInner[]',
+        'items' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200ResponseItemsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1UsersAutocomplete200Response implements ModelInterface, ArrayAcces
     /**
      * Gets items
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200ResponseItemsInner[]|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200ResponseItemsInner[]|null
      */
     public function getItems()
     {
@@ -309,7 +309,7 @@ class GetApiV1UsersAutocomplete200Response implements ModelInterface, ArrayAcces
     /**
      * Sets items
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200ResponseItemsInner[]|null $items items
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200ResponseItemsInner[]|null $items items
      *
      * @return self
      */

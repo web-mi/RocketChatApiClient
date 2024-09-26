@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ImCreate200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ImCreate200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreate200ResponseRoom',
+        'room' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCreate200ResponseRoom',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1ImCreate200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets room
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreate200ResponseRoom|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCreate200ResponseRoom|null
      */
     public function getRoom()
     {
@@ -309,7 +309,7 @@ class PostApiV1ImCreate200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets room
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreate200ResponseRoom|null $room room
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCreate200ResponseRoom|null $room room
      *
      * @return self
      */

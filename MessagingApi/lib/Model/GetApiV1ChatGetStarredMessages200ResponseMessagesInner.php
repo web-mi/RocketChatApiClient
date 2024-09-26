@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatGetStarredMessages200ResponseMessagesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,13 +62,13 @@ class GetApiV1ChatGetStarredMessages200ResponseMessagesInner implements ModelInt
         'rid' => 'string',
         'ts' => 'string',
         'msg' => 'string',
-        'u' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
+        'u' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
         'groupable' => 'bool',
         'drid' => 'string',
         '_updated_at' => 'string',
         'dcount' => 'int',
         'dlm' => 'string',
-        'starred' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200ResponseMessagesInner[]'
+        'starred' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetDeletedMessages200ResponseMessagesInner[]'
     ];
 
     /**
@@ -504,7 +504,7 @@ class GetApiV1ChatGetStarredMessages200ResponseMessagesInner implements ModelInt
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
     public function getU()
     {
@@ -514,7 +514,7 @@ class GetApiV1ChatGetStarredMessages200ResponseMessagesInner implements ModelInt
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
      *
      * @return self
      */
@@ -666,7 +666,7 @@ class GetApiV1ChatGetStarredMessages200ResponseMessagesInner implements ModelInt
     /**
      * Gets starred
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200ResponseMessagesInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetDeletedMessages200ResponseMessagesInner[]|null
      */
     public function getStarred()
     {
@@ -676,7 +676,7 @@ class GetApiV1ChatGetStarredMessages200ResponseMessagesInner implements ModelInt
     /**
      * Sets starred
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDeletedMessages200ResponseMessagesInner[]|null $starred starred
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetDeletedMessages200ResponseMessagesInner[]|null $starred starred
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\LivechatPageVisitedApi
+# WebMI\RocketChatApiClient\OmnichannelApi\LivechatPageVisitedApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiV1LivechatPageVisited()`
 
 ```php
-postApiV1LivechatPageVisited($post_api_v1_livechat_page_visited_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response
+postApiV1LivechatPageVisited($post_api_v1_livechat_page_visited_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200Response
 ```
 
 Send Visitor navigation history
@@ -25,12 +25,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatPageVisitedApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatPageVisitedApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_livechat_page_visited_request = {"token":"iNKE8a6k6cjbqWhWd","rid":"vp3D9H8ud6HYvRpvq","pageInfo":{"change":"url","title":"","location":{"href":"http://localhost:3000/packages/rocketchat_livechat/assets/demo.html#page-4"}}}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest
+$post_api_v1_livechat_page_visited_request = {"token":"iNKE8a6k6cjbqWhWd","rid":"vp3D9H8ud6HYvRpvq","pageInfo":{"change":"url","title":"","location":{"href":"http://localhost:3000/packages/rocketchat_livechat/assets/demo.html#page-4"}}}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatPageVisited($post_api_v1_livechat_page_visited_request);
@@ -44,11 +44,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_livechat_page_visited_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest**](../Model/PostApiV1LivechatPageVisitedRequest.md)|  | [optional] |
+| **post_api_v1_livechat_page_visited_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest**](../Model/PostApiV1LivechatPageVisitedRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response**](../Model/PostApiV1LivechatPageVisited200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200Response**](../Model/PostApiV1LivechatPageVisited200Response.md)
 
 ### Authorization
 

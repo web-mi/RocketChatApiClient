@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
       */
     protected static $openAPITypes = [
         'host' => 'string',
-        'call_server_config' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServerConfig',
-        'extension_details' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionDetails'
+        'call_server_config' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServerConfig',
+        'extension_details' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionDetails'
     ];
 
     /**
@@ -333,7 +333,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
     /**
      * Gets call_server_config
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServerConfig|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServerConfig|null
      */
     public function getCallServerConfig()
     {
@@ -343,7 +343,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
     /**
      * Sets call_server_config
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServerConfig|null $call_server_config call_server_config
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServerConfig|null $call_server_config call_server_config
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
     /**
      * Gets extension_details
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionDetails|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionDetails|null
      */
     public function getExtensionDetails()
     {
@@ -370,7 +370,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
     /**
      * Sets extension_details
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionDetails|null $extension_details extension_details
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionDetails|null $extension_details extension_details
      *
      * @return self
      */

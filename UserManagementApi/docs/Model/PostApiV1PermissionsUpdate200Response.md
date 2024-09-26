@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**permissions** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate200ResponsePermissionsInner[]**](PostApiV1PermissionsUpdate200ResponsePermissionsInner.md) |  | [optional]
+**permissions** | [**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate200ResponsePermissionsInner[]**](PostApiV1PermissionsUpdate200ResponsePermissionsInner.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

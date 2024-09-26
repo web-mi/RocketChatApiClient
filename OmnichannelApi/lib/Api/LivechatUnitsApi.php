@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Api;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientOmnichannelApi\ApiException;
-use WebMIRocketChatApiClientOmnichannelApi\Configuration;
-use WebMIRocketChatApiClientOmnichannelApi\HeaderSelector;
-use WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\OmnichannelApi\ApiException;
+use WebMI\RocketChatApiClient\OmnichannelApi\Configuration;
+use WebMI\RocketChatApiClient\OmnichannelApi\HeaderSelector;
+use WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * LivechatUnitsApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -162,9 +162,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1LivechatUnitsId'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function deleteApiV1LivechatUnitsId($id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['deleteApiV1LivechatUnitsId'][0])
     {
@@ -182,9 +182,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1LivechatUnitsId'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteApiV1LivechatUnitsIdWithHttpInfo($id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['deleteApiV1LivechatUnitsId'][0])
     {
@@ -227,11 +227,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -249,16 +249,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -276,16 +276,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -303,13 +303,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -342,7 +342,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -350,7 +350,7 @@ class LivechatUnitsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -358,7 +358,7 @@ class LivechatUnitsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -406,7 +406,7 @@ class LivechatUnitsApi
      */
     public function deleteApiV1LivechatUnitsIdAsyncWithHttpInfo($id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['deleteApiV1LivechatUnitsId'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response';
         $request = $this->deleteApiV1LivechatUnitsIdRequest($id, $x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -574,9 +574,9 @@ class LivechatUnitsApi
      * @param  mixed $sort List of fields to order by, and in which direction. JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, sort &#x3D; &#x60;{\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1}&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnits'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function getApiV1LivechatUnits($x_auth_token, $x_user_id, $text = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1LivechatUnits'][0])
     {
@@ -597,9 +597,9 @@ class LivechatUnitsApi
      * @param  mixed $sort List of fields to order by, and in which direction. JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, sort &#x3D; &#x60;{\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1}&#x60; (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnits'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1LivechatUnitsWithHttpInfo($x_auth_token, $x_user_id, $text = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1LivechatUnits'][0])
     {
@@ -642,11 +642,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -664,16 +664,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -691,16 +691,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -718,13 +718,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -757,7 +757,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -765,7 +765,7 @@ class LivechatUnitsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -773,7 +773,7 @@ class LivechatUnitsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -827,7 +827,7 @@ class LivechatUnitsApi
      */
     public function getApiV1LivechatUnitsAsyncWithHttpInfo($x_auth_token, $x_user_id, $text = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1LivechatUnits'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200Response';
         $request = $this->getApiV1LivechatUnitsRequest($x_auth_token, $x_user_id, $text, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -1020,9 +1020,9 @@ class LivechatUnitsApi
      * @param  string $unit_id The unit ID. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsGetOne'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response
      * @deprecated
      */
     public function getApiV1LivechatUnitsGetOne($x_auth_token, $x_user_id, $unit_id = null, string $contentType = self::contentTypes['getApiV1LivechatUnitsGetOne'][0])
@@ -1041,9 +1041,9 @@ class LivechatUnitsApi
      * @param  string $unit_id The unit ID. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsGetOne'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getApiV1LivechatUnitsGetOneWithHttpInfo($x_auth_token, $x_user_id, $unit_id = null, string $contentType = self::contentTypes['getApiV1LivechatUnitsGetOne'][0])
@@ -1087,11 +1087,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1109,13 +1109,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1148,7 +1148,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1198,7 +1198,7 @@ class LivechatUnitsApi
      */
     public function getApiV1LivechatUnitsGetOneAsyncWithHttpInfo($x_auth_token, $x_user_id, $unit_id = null, string $contentType = self::contentTypes['getApiV1LivechatUnitsGetOne'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response';
         $request = $this->getApiV1LivechatUnitsGetOneRequest($x_auth_token, $x_user_id, $unit_id, $contentType);
 
         return $this->client
@@ -1358,9 +1358,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsList200Response
      * @deprecated
      */
     public function getApiV1LivechatUnitsList($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsList'][0])
@@ -1378,9 +1378,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsList200Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getApiV1LivechatUnitsListWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsList'][0])
@@ -1424,11 +1424,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1446,13 +1446,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1485,7 +1485,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1533,7 +1533,7 @@ class LivechatUnitsApi
      */
     public function getApiV1LivechatUnitsListAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsList'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsList200Response';
         $request = $this->getApiV1LivechatUnitsListRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -1682,9 +1682,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsMonitorsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response
      * @deprecated
      */
     public function getApiV1LivechatUnitsMonitorsList($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsMonitorsList'][0])
@@ -1702,9 +1702,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsMonitorsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function getApiV1LivechatUnitsMonitorsListWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsMonitorsList'][0])
@@ -1748,11 +1748,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1770,13 +1770,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1809,7 +1809,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1857,7 +1857,7 @@ class LivechatUnitsApi
      */
     public function getApiV1LivechatUnitsMonitorsListAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsMonitorsList'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response';
         $request = $this->getApiV1LivechatUnitsMonitorsListRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -2007,9 +2007,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitId'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function getApiV1LivechatUnitsUnitId($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
     {
@@ -2027,9 +2027,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitId'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1LivechatUnitsUnitIdWithHttpInfo($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
     {
@@ -2072,11 +2072,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2094,16 +2094,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2121,16 +2121,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2148,13 +2148,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2187,7 +2187,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2195,7 +2195,7 @@ class LivechatUnitsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2203,7 +2203,7 @@ class LivechatUnitsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2251,7 +2251,7 @@ class LivechatUnitsApi
      */
     public function getApiV1LivechatUnitsUnitIdAsyncWithHttpInfo($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response';
         $request = $this->getApiV1LivechatUnitsUnitIdRequest($unit_id, $x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -2418,9 +2418,9 @@ class LivechatUnitsApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitIdDepartments'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function getApiV1LivechatUnitsUnitIdDepartments($unit_id, $x_auth_token, $x_user_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitIdDepartments'][0])
     {
@@ -2440,9 +2440,9 @@ class LivechatUnitsApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitIdDepartments'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1LivechatUnitsUnitIdDepartmentsWithHttpInfo($unit_id, $x_auth_token, $x_user_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitIdDepartments'][0])
     {
@@ -2485,11 +2485,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2507,16 +2507,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2534,16 +2534,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2561,13 +2561,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2600,7 +2600,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2608,7 +2608,7 @@ class LivechatUnitsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2616,7 +2616,7 @@ class LivechatUnitsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2668,7 +2668,7 @@ class LivechatUnitsApi
      */
     public function getApiV1LivechatUnitsUnitIdDepartmentsAsyncWithHttpInfo($unit_id, $x_auth_token, $x_user_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitIdDepartments'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response';
         $request = $this->getApiV1LivechatUnitsUnitIdDepartmentsRequest($unit_id, $x_auth_token, $x_user_id, $offset, $count, $contentType);
 
         return $this->client
@@ -2859,9 +2859,9 @@ class LivechatUnitsApi
      * @param  bool $only_my_departments Whether you want the result for the departments that you are part of. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitIdDepartmentsAvailable'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function getApiV1LivechatUnitsUnitIdDepartmentsAvailable($unit_id, $x_auth_token, $x_user_id, $offset = null, $count = null, $text = null, $only_my_departments = null, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitIdDepartmentsAvailable'][0])
     {
@@ -2883,9 +2883,9 @@ class LivechatUnitsApi
      * @param  bool $only_my_departments Whether you want the result for the departments that you are part of. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitIdDepartmentsAvailable'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1LivechatUnitsUnitIdDepartmentsAvailableWithHttpInfo($unit_id, $x_auth_token, $x_user_id, $offset = null, $count = null, $text = null, $only_my_departments = null, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitIdDepartmentsAvailable'][0])
     {
@@ -2928,11 +2928,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2950,16 +2950,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2977,16 +2977,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3004,13 +3004,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3043,7 +3043,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3051,7 +3051,7 @@ class LivechatUnitsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3059,7 +3059,7 @@ class LivechatUnitsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3115,7 +3115,7 @@ class LivechatUnitsApi
      */
     public function getApiV1LivechatUnitsUnitIdDepartmentsAvailableAsyncWithHttpInfo($unit_id, $x_auth_token, $x_user_id, $offset = null, $count = null, $text = null, $only_my_departments = null, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitIdDepartmentsAvailable'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response';
         $request = $this->getApiV1LivechatUnitsUnitIdDepartmentsAvailableRequest($unit_id, $x_auth_token, $x_user_id, $offset, $count, $text, $only_my_departments, $contentType);
 
         return $this->client
@@ -3324,9 +3324,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitIdMonitors'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function getApiV1LivechatUnitsUnitIdMonitors($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitIdMonitors'][0])
     {
@@ -3344,9 +3344,9 @@ class LivechatUnitsApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitIdMonitors'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1LivechatUnitsUnitIdMonitorsWithHttpInfo($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitIdMonitors'][0])
     {
@@ -3389,11 +3389,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3411,16 +3411,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3438,16 +3438,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3465,13 +3465,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3504,7 +3504,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3512,7 +3512,7 @@ class LivechatUnitsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3520,7 +3520,7 @@ class LivechatUnitsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3568,7 +3568,7 @@ class LivechatUnitsApi
      */
     public function getApiV1LivechatUnitsUnitIdMonitorsAsyncWithHttpInfo($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitIdMonitors'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response';
         $request = $this->getApiV1LivechatUnitsUnitIdMonitorsRequest($unit_id, $x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -3730,12 +3730,12 @@ class LivechatUnitsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request post_api_v1_livechat_units_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request post_api_v1_livechat_units_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnits'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function postApiV1LivechatUnits($x_auth_token, $x_user_id, $post_api_v1_livechat_units_request = null, string $contentType = self::contentTypes['postApiV1LivechatUnits'][0])
     {
@@ -3750,12 +3750,12 @@ class LivechatUnitsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnits'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LivechatUnitsWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_livechat_units_request = null, string $contentType = self::contentTypes['postApiV1LivechatUnits'][0])
     {
@@ -3798,11 +3798,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3820,16 +3820,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3847,16 +3847,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3874,16 +3874,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3901,13 +3901,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3940,7 +3940,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3948,7 +3948,7 @@ class LivechatUnitsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3956,7 +3956,7 @@ class LivechatUnitsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3964,7 +3964,7 @@ class LivechatUnitsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3981,7 +3981,7 @@ class LivechatUnitsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnits'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4004,7 +4004,7 @@ class LivechatUnitsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnits'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4012,7 +4012,7 @@ class LivechatUnitsApi
      */
     public function postApiV1LivechatUnitsAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_livechat_units_request = null, string $contentType = self::contentTypes['postApiV1LivechatUnits'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response';
         $request = $this->postApiV1LivechatUnitsRequest($x_auth_token, $x_user_id, $post_api_v1_livechat_units_request, $contentType);
 
         return $this->client
@@ -4056,7 +4056,7 @@ class LivechatUnitsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsRequest $post_api_v1_livechat_units_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnits'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4168,12 +4168,12 @@ class LivechatUnitsApi
      * @param  string $id The unit ID that you want to update. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request post_api_v1_livechat_units_id_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request post_api_v1_livechat_units_id_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnitsId'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function postApiV1LivechatUnitsId($id, $x_auth_token, $x_user_id, $post_api_v1_livechat_units_id_request = null, string $contentType = self::contentTypes['postApiV1LivechatUnitsId'][0])
     {
@@ -4189,12 +4189,12 @@ class LivechatUnitsApi
      * @param  string $id The unit ID that you want to update. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnitsId'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LivechatUnitsIdWithHttpInfo($id, $x_auth_token, $x_user_id, $post_api_v1_livechat_units_id_request = null, string $contentType = self::contentTypes['postApiV1LivechatUnitsId'][0])
     {
@@ -4237,11 +4237,11 @@ class LivechatUnitsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4259,16 +4259,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4286,16 +4286,16 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4313,13 +4313,13 @@ class LivechatUnitsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4352,7 +4352,7 @@ class LivechatUnitsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4360,7 +4360,7 @@ class LivechatUnitsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4368,7 +4368,7 @@ class LivechatUnitsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4386,7 +4386,7 @@ class LivechatUnitsApi
      * @param  string $id The unit ID that you want to update. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnitsId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4410,7 +4410,7 @@ class LivechatUnitsApi
      * @param  string $id The unit ID that you want to update. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnitsId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4418,7 +4418,7 @@ class LivechatUnitsApi
      */
     public function postApiV1LivechatUnitsIdAsyncWithHttpInfo($id, $x_auth_token, $x_user_id, $post_api_v1_livechat_units_id_request = null, string $contentType = self::contentTypes['postApiV1LivechatUnitsId'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnits200Response';
         $request = $this->postApiV1LivechatUnitsIdRequest($id, $x_auth_token, $x_user_id, $post_api_v1_livechat_units_id_request, $contentType);
 
         return $this->client
@@ -4463,7 +4463,7 @@ class LivechatUnitsApi
      * @param  string $id The unit ID that you want to update. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatUnitsId'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

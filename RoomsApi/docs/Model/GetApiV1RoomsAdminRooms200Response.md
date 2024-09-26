@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rooms** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsAdminRooms200ResponseRoomsInner[]**](GetApiV1RoomsAdminRooms200ResponseRoomsInner.md) |  | [optional]
+**rooms** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsAdminRooms200ResponseRoomsInner[]**](GetApiV1RoomsAdminRooms200ResponseRoomsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

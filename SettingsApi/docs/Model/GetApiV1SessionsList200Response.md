@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sessions** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInner[]**](GetApiV1SessionsList200ResponseSessionsInner.md) |  | [optional]
+**sessions** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInner[]**](GetApiV1SessionsList200ResponseSessionsInner.md) |  | [optional]
 **total** | **int** |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]

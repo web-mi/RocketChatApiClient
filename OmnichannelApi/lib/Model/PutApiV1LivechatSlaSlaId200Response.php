@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PutApiV1LivechatSlaSlaId200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PutApiV1LivechatSlaSlaId200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sla' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla',
+        'sla' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PutApiV1LivechatSlaSlaId200Response implements ModelInterface, ArrayAccess
     /**
      * Gets sla
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla|null
      */
     public function getSla()
     {
@@ -309,7 +309,7 @@ class PutApiV1LivechatSlaSlaId200Response implements ModelInterface, ArrayAccess
     /**
      * Sets sla
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla|null $sla sla
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatSlaSlaId200ResponseSla|null $sla sla
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientStatisticsApi\StatisticsApi
+# WebMI\RocketChatApiClient\StatisticsApi\StatisticsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1Statistics()`
 
 ```php
-getApiV1Statistics($x_auth_token, $x_user_id, $refresh): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response
+getApiV1Statistics($x_auth_token, $x_user_id, $refresh): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200Response
 ```
 
 Get Last Statistics
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\StatisticsApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\StatisticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200Response**](../Model/GetApiV1Statistics200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200Response**](../Model/GetApiV1Statistics200Response.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `getApiV1StatisticsList()`
 
 ```php
-getApiV1StatisticsList($x_auth_token, $x_user_id, $count, $offset, $sort, $fields, $query): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response
+getApiV1StatisticsList($x_auth_token, $x_user_id, $count, $offset, $sort, $fields, $query): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200Response
 ```
 
 Get Statistics List
@@ -86,7 +86,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\StatisticsApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\StatisticsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200Response**](../Model/GetApiV1StatisticsList200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200Response**](../Model/GetApiV1StatisticsList200Response.md)
 
 ### Authorization
 

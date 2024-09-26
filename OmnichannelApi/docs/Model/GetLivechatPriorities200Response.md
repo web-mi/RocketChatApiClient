@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**priorities** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPriorities200ResponsePrioritiesInner[]**](GetLivechatPriorities200ResponsePrioritiesInner.md) |  | [optional]
+**priorities** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetLivechatPriorities200ResponsePrioritiesInner[]**](GetLivechatPriorities200ResponsePrioritiesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**service_history** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner[]**](GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner.md) |  | [optional]
+**service_history** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner[]**](GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner.md) |  | [optional]
 **available_time_in_seconds** | **int** |  | [optional]
 **username** | **string** |  | [optional]
 

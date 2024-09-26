@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**updated** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]**](GetApiV1ChatSyncMessages200ResponseResultUpdatedInner.md) |  | [optional]
+**updated** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]**](GetApiV1ChatSyncMessages200ResponseResultUpdatedInner.md) |  | [optional]
 **deleted** | **object[]** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

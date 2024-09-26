@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -75,7 +75,7 @@ class GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner implements Model
         'user_id' => 'string',
         'channel' => 'string[]',
         '_created_at' => 'string',
-        '_created_by' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy',
+        '_created_by' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy',
         '_updated_at' => 'string'
     ];
 
@@ -911,7 +911,7 @@ class GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner implements Model
     /**
      * Gets _created_by
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy|null
      */
     public function getCreatedBy()
     {
@@ -921,7 +921,7 @@ class GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner implements Model
     /**
      * Sets _created_by
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy|null $_created_by _created_by
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy|null $_created_by _created_by
      *
      * @return self
      */

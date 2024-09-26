@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1RolesList200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RolesList200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'roles' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesList200ResponseRolesInner[]',
+        'roles' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesList200ResponseRolesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1RolesList200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets roles
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesList200ResponseRolesInner[]|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesList200ResponseRolesInner[]|null
      */
     public function getRoles()
     {
@@ -309,7 +309,7 @@ class GetApiV1RolesList200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets roles
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesList200ResponseRolesInner[]|null $roles roles
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesList200ResponseRolesInner[]|null $roles roles
      *
      * @return self
      */

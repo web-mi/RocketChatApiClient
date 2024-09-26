@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**business_hours** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner[]**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner.md) |  | [optional]
+**business_hours** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner[]**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

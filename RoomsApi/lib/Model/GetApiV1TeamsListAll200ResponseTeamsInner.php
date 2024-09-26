@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsListAll200ResponseTeamsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetApiV1TeamsListAll200ResponseTeamsInner implements ModelInterface, Array
         'name' => 'string',
         'type' => 'int',
         'created_at' => 'string',
-        'created_by' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU',
+        'created_by' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU',
         '_updated_at' => 'string',
         'room_id' => 'string',
         'rooms' => 'int',
@@ -456,7 +456,7 @@ class GetApiV1TeamsListAll200ResponseTeamsInner implements ModelInterface, Array
     /**
      * Gets created_by
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
     public function getCreatedBy()
     {
@@ -466,7 +466,7 @@ class GetApiV1TeamsListAll200ResponseTeamsInner implements ModelInterface, Array
     /**
      * Sets created_by
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $created_by created_by
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $created_by created_by
      *
      * @return self
      */

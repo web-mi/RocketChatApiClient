@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1VoipRooms200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1VoipRooms200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoom',
+        'room' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoom',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1VoipRooms200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets room
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoom|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoom|null
      */
     public function getRoom()
     {
@@ -309,7 +309,7 @@ class GetApiV1VoipRooms200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets room
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoom|null $room room
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoom|null $room room
      *
      * @return self
      */

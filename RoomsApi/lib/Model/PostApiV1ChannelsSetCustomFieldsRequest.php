@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1ChannelsSetCustomFieldsRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1ChannelsSetCustomFieldsRequest implements ModelInterface, ArrayAc
       */
     protected static $openAPITypes = [
         'room_id' => 'string',
-        'custom_fields' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetCustomFieldsRequestCustomFields'
+        'custom_fields' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsSetCustomFieldsRequestCustomFields'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1ChannelsSetCustomFieldsRequest implements ModelInterface, ArrayAc
     /**
      * Gets custom_fields
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetCustomFieldsRequestCustomFields
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsSetCustomFieldsRequestCustomFields
      */
     public function getCustomFields()
     {
@@ -342,7 +342,7 @@ class PostApiV1ChannelsSetCustomFieldsRequest implements ModelInterface, ArrayAc
     /**
      * Sets custom_fields
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetCustomFieldsRequestCustomFields $custom_fields custom_fields
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsSetCustomFieldsRequestCustomFields $custom_fields custom_fields
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom',
+        'room' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom',
         'messages' => 'int',
         'last_week_messages' => 'int',
         'diff_from_last_week' => 'int'
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
     /**
      * Gets room
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom|null
      */
     public function getRoom()
     {
@@ -323,7 +323,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
     /**
      * Sets room
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom|null $room room
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom|null $room room
      *
      * @return self
      */

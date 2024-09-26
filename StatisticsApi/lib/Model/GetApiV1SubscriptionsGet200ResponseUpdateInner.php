@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1SubscriptionsGet200ResponseUpdateInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class GetApiV1SubscriptionsGet200ResponseUpdateInner implements ModelInterface, 
         'name' => 'string',
         'fname' => 'string',
         'rid' => 'string',
-        'u' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU',
+        'u' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU',
         'open' => 'bool',
         'alert' => 'bool',
         'unread' => 'int',
@@ -518,7 +518,7 @@ class GetApiV1SubscriptionsGet200ResponseUpdateInner implements ModelInterface, 
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU|null
      */
     public function getU()
     {
@@ -528,7 +528,7 @@ class GetApiV1SubscriptionsGet200ResponseUpdateInner implements ModelInterface, 
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU|null $u u
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU|null $u u
      *
      * @return self
      */

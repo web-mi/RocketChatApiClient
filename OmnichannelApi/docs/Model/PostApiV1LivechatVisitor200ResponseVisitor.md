@@ -10,9 +10,9 @@ Name | Type | Description | Notes
 **ts** | **string** |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **name** | **string** |  | [optional]
-**phone** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]**](GetApiV1OmnichannelContact200ResponseContactPhoneInner.md) |  | [optional]
+**phone** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]**](GetApiV1OmnichannelContact200ResponseContactPhoneInner.md) |  | [optional]
 **token** | **string** |  | [optional]
-**visitor_emails** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]**](GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner.md) |  | [optional]
+**visitor_emails** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]**](GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner.md) |  | [optional]
 **department** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

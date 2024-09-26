@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Api;
+namespace WebMI\RocketChatApiClient\SettingsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientSettingsApi\ApiException;
-use WebMIRocketChatApiClientSettingsApi\Configuration;
-use WebMIRocketChatApiClientSettingsApi\HeaderSelector;
-use WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\SettingsApi\ApiException;
+use WebMI\RocketChatApiClient\SettingsApi\Configuration;
+use WebMI\RocketChatApiClient\SettingsApi\HeaderSelector;
+use WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * ImportApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -155,9 +155,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1GetCurrentImportOperation'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1GetCurrentImportOperation($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetCurrentImportOperation'][0])
     {
@@ -174,9 +174,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1GetCurrentImportOperation'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1GetCurrentImportOperationWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetCurrentImportOperation'][0])
     {
@@ -219,11 +219,11 @@ class ImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -241,16 +241,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -268,16 +268,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -295,13 +295,13 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -334,7 +334,7 @@ class ImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -342,7 +342,7 @@ class ImportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -350,7 +350,7 @@ class ImportApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -396,7 +396,7 @@ class ImportApi
      */
     public function getApiV1GetCurrentImportOperationAsyncWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetCurrentImportOperation'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response';
         $request = $this->getApiV1GetCurrentImportOperationRequest($x_user_id, $x_auth_token, $contentType);
 
         return $this->client
@@ -544,9 +544,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1GetImportFileData'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1GetImportFileData($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetImportFileData'][0])
     {
@@ -563,9 +563,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1GetImportFileData'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1GetImportFileDataWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetImportFileData'][0])
     {
@@ -608,11 +608,11 @@ class ImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -630,16 +630,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -657,16 +657,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -684,13 +684,13 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -723,7 +723,7 @@ class ImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -731,7 +731,7 @@ class ImportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -739,7 +739,7 @@ class ImportApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -785,7 +785,7 @@ class ImportApi
      */
     public function getApiV1GetImportFileDataAsyncWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetImportFileData'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response';
         $request = $this->getApiV1GetImportFileDataRequest($x_user_id, $x_auth_token, $contentType);
 
         return $this->client
@@ -933,9 +933,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1GetImportProgress'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1GetImportProgress($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetImportProgress'][0])
     {
@@ -952,9 +952,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1GetImportProgress'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1GetImportProgressWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetImportProgress'][0])
     {
@@ -997,11 +997,11 @@ class ImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1019,16 +1019,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1046,16 +1046,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1073,13 +1073,13 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1112,7 +1112,7 @@ class ImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1120,7 +1120,7 @@ class ImportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1128,7 +1128,7 @@ class ImportApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1174,7 +1174,7 @@ class ImportApi
      */
     public function getApiV1GetImportProgressAsyncWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetImportProgress'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response';
         $request = $this->getApiV1GetImportProgressRequest($x_user_id, $x_auth_token, $contentType);
 
         return $this->client
@@ -1322,9 +1322,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1GetLatestImportOperations'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1GetLatestImportOperations($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetLatestImportOperations'][0])
     {
@@ -1341,9 +1341,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1GetLatestImportOperations'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1GetLatestImportOperationsWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetLatestImportOperations'][0])
     {
@@ -1386,11 +1386,11 @@ class ImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1408,16 +1408,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1435,16 +1435,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1462,13 +1462,13 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1501,7 +1501,7 @@ class ImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1509,7 +1509,7 @@ class ImportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1517,7 +1517,7 @@ class ImportApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1563,7 +1563,7 @@ class ImportApi
      */
     public function getApiV1GetLatestImportOperationsAsyncWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1GetLatestImportOperations'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]';
         $request = $this->getApiV1GetLatestImportOperationsRequest($x_user_id, $x_auth_token, $contentType);
 
         return $this->client
@@ -1711,9 +1711,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1DownloadPendingAvatars'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function postApiV1DownloadPendingAvatars($x_user_id, $x_auth_token, string $contentType = self::contentTypes['postApiV1DownloadPendingAvatars'][0])
     {
@@ -1730,9 +1730,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1DownloadPendingAvatars'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1DownloadPendingAvatarsWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['postApiV1DownloadPendingAvatars'][0])
     {
@@ -1775,11 +1775,11 @@ class ImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1797,16 +1797,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1824,16 +1824,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1851,13 +1851,13 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1890,7 +1890,7 @@ class ImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1898,7 +1898,7 @@ class ImportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1906,7 +1906,7 @@ class ImportApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1952,7 +1952,7 @@ class ImportApi
      */
     public function postApiV1DownloadPendingAvatarsAsyncWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['postApiV1DownloadPendingAvatars'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response';
         $request = $this->postApiV1DownloadPendingAvatarsRequest($x_user_id, $x_auth_token, $contentType);
 
         return $this->client
@@ -2100,9 +2100,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1DownloadPendingFiles'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function postApiV1DownloadPendingFiles($x_user_id, $x_auth_token, string $contentType = self::contentTypes['postApiV1DownloadPendingFiles'][0])
     {
@@ -2119,9 +2119,9 @@ class ImportApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1DownloadPendingFiles'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1DownloadPendingFilesWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['postApiV1DownloadPendingFiles'][0])
     {
@@ -2164,11 +2164,11 @@ class ImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2186,16 +2186,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2213,16 +2213,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2240,13 +2240,13 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2279,7 +2279,7 @@ class ImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2287,7 +2287,7 @@ class ImportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2295,7 +2295,7 @@ class ImportApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2341,7 +2341,7 @@ class ImportApi
      */
     public function postApiV1DownloadPendingFilesAsyncWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['postApiV1DownloadPendingFiles'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response';
         $request = $this->postApiV1DownloadPendingFilesRequest($x_user_id, $x_auth_token, $contentType);
 
         return $this->client
@@ -2487,12 +2487,12 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request post_api_v1_download_public_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request post_api_v1_download_public_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1DownloadPublicImportFile'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function postApiV1DownloadPublicImportFile($x_user_id, $x_auth_token, $post_api_v1_download_public_import_file_request = null, string $contentType = self::contentTypes['postApiV1DownloadPublicImportFile'][0])
     {
@@ -2507,12 +2507,12 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1DownloadPublicImportFile'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1DownloadPublicImportFileWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_download_public_import_file_request = null, string $contentType = self::contentTypes['postApiV1DownloadPublicImportFile'][0])
     {
@@ -2555,11 +2555,11 @@ class ImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2577,16 +2577,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2604,16 +2604,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2631,16 +2631,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2658,13 +2658,13 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2697,7 +2697,7 @@ class ImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2705,7 +2705,7 @@ class ImportApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2713,7 +2713,7 @@ class ImportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2721,7 +2721,7 @@ class ImportApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2738,7 +2738,7 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1DownloadPublicImportFile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2761,7 +2761,7 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1DownloadPublicImportFile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2769,7 +2769,7 @@ class ImportApi
      */
     public function postApiV1DownloadPublicImportFileAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_download_public_import_file_request = null, string $contentType = self::contentTypes['postApiV1DownloadPublicImportFile'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->postApiV1DownloadPublicImportFileRequest($x_user_id, $x_auth_token, $post_api_v1_download_public_import_file_request, $contentType);
 
         return $this->client
@@ -2813,7 +2813,7 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPublicImportFileRequest $post_api_v1_download_public_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1DownloadPublicImportFile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2924,12 +2924,12 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request post_api_v1_start_import_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request post_api_v1_start_import_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1StartImport'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function postApiV1StartImport($x_user_id, $x_auth_token, $post_api_v1_start_import_request = null, string $contentType = self::contentTypes['postApiV1StartImport'][0])
     {
@@ -2944,12 +2944,12 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1StartImport'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1StartImportWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_start_import_request = null, string $contentType = self::contentTypes['postApiV1StartImport'][0])
     {
@@ -2992,11 +2992,11 @@ class ImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3014,16 +3014,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3041,16 +3041,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3068,13 +3068,13 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3107,7 +3107,7 @@ class ImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3115,7 +3115,7 @@ class ImportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3123,7 +3123,7 @@ class ImportApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3140,7 +3140,7 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1StartImport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3163,7 +3163,7 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1StartImport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3171,7 +3171,7 @@ class ImportApi
      */
     public function postApiV1StartImportAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_start_import_request = null, string $contentType = self::contentTypes['postApiV1StartImport'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->postApiV1StartImportRequest($x_user_id, $x_auth_token, $post_api_v1_start_import_request, $contentType);
 
         return $this->client
@@ -3215,7 +3215,7 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequest $post_api_v1_start_import_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1StartImport'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3326,12 +3326,12 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request post_api_v1_upload_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request post_api_v1_upload_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UploadImportFile'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response
      */
     public function postApiV1UploadImportFile($x_user_id, $x_auth_token, $post_api_v1_upload_import_file_request = null, string $contentType = self::contentTypes['postApiV1UploadImportFile'][0])
     {
@@ -3346,12 +3346,12 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UploadImportFile'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UploadImportFileWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_upload_import_file_request = null, string $contentType = self::contentTypes['postApiV1UploadImportFile'][0])
     {
@@ -3394,11 +3394,11 @@ class ImportApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3416,16 +3416,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3443,16 +3443,16 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3470,13 +3470,13 @@ class ImportApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3509,7 +3509,7 @@ class ImportApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3517,7 +3517,7 @@ class ImportApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFile400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFile400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3525,7 +3525,7 @@ class ImportApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3542,7 +3542,7 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UploadImportFile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3565,7 +3565,7 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UploadImportFile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3573,7 +3573,7 @@ class ImportApi
      */
     public function postApiV1UploadImportFileAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_upload_import_file_request = null, string $contentType = self::contentTypes['postApiV1UploadImportFile'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->postApiV1UploadImportFileRequest($x_user_id, $x_auth_token, $post_api_v1_upload_import_file_request, $contentType);
 
         return $this->client
@@ -3617,7 +3617,7 @@ class ImportApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFileRequest $post_api_v1_upload_import_file_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UploadImportFile'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

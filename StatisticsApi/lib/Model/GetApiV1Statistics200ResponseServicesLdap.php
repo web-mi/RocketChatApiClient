@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1Statistics200ResponseServicesLdap Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -68,8 +68,8 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
         'sync_channels' => 'bool',
         'sync_avatar' => 'bool',
         'group_filter' => 'bool',
-        'background_sync' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapBackgroundSync',
-        'ee' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapEe'
+        'background_sync' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapBackgroundSync',
+        'ee' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapEe'
     ];
 
     /**
@@ -673,7 +673,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
     /**
      * Gets background_sync
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapBackgroundSync|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapBackgroundSync|null
      */
     public function getBackgroundSync()
     {
@@ -683,7 +683,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
     /**
      * Sets background_sync
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapBackgroundSync|null $background_sync background_sync
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapBackgroundSync|null $background_sync background_sync
      *
      * @return self
      */
@@ -700,7 +700,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
     /**
      * Gets ee
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapEe|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapEe|null
      */
     public function getEe()
     {
@@ -710,7 +710,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
     /**
      * Sets ee
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapEe|null $ee ee
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapEe|null $ee ee
      *
      * @return self
      */

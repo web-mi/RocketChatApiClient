@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatSearch200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatSearch200Response implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200ResponseMessagesInner[]',
+        'messages' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSearch200ResponseMessagesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChatSearch200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets messages
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200ResponseMessagesInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSearch200ResponseMessagesInner[]|null
      */
     public function getMessages()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatSearch200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets messages
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSearch200ResponseMessagesInner[]|null $messages messages
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSearch200ResponseMessagesInner[]|null $messages messages
      *
      * @return self
      */

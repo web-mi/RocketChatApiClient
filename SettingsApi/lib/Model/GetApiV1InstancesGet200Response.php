@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1InstancesGet200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1InstancesGet200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'instances' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInner[]',
+        'instances' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1InstancesGet200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets instances
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInner[]|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInner[]|null
      */
     public function getInstances()
     {
@@ -309,7 +309,7 @@ class GetApiV1InstancesGet200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets instances
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInner[]|null $instances instances
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInner[]|null $instances instances
      *
      * @return self
      */

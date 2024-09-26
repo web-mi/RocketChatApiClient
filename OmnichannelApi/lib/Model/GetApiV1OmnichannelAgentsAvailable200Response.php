@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1OmnichannelAgentsAvailable200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1OmnichannelAgentsAvailable200Response implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'agent' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200ResponseAgent',
+        'agent' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200ResponseAgent',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1OmnichannelAgentsAvailable200Response implements ModelInterface, A
     /**
      * Gets agent
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200ResponseAgent|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200ResponseAgent|null
      */
     public function getAgent()
     {
@@ -309,7 +309,7 @@ class GetApiV1OmnichannelAgentsAvailable200Response implements ModelInterface, A
     /**
      * Sets agent
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200ResponseAgent|null $agent agent
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200ResponseAgent|null $agent agent
      *
      * @return self
      */

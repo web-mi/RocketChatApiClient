@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsImages200ResponseFilesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,7 +65,7 @@ class GetApiV1RoomsImages200ResponseFilesInner implements ModelInterface, ArrayA
         'user_id' => 'string',
         'store' => 'string',
         '_updated_at' => 'string',
-        'identify' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify',
+        'identify' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify',
         'complete' => 'bool',
         'etag' => 'string',
         'path' => 'string',
@@ -627,7 +627,7 @@ class GetApiV1RoomsImages200ResponseFilesInner implements ModelInterface, ArrayA
     /**
      * Gets identify
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null
      */
     public function getIdentify()
     {
@@ -637,7 +637,7 @@ class GetApiV1RoomsImages200ResponseFilesInner implements ModelInterface, ArrayA
     /**
      * Sets identify
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null $identify identify
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null $identify identify
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings implements ModelIn
       * @var string[]
       */
     protected static $openAPITypes = [
-        'preferences' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences',
+        'preferences' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences',
         'profile' => 'object'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings implements ModelIn
     /**
      * Gets preferences
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences|null
      */
     public function getPreferences()
     {
@@ -309,7 +309,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings implements ModelIn
     /**
      * Sets preferences
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences|null $preferences preferences
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences|null $preferences preferences
      *
      * @return self
      */

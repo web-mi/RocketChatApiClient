@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **rid** | **string** |  | [optional]
 **msg** | **string** |  | [optional]
 **ts** | **string** |  | [optional]
-**u** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy**](PostApiV1ChatUpdate200ResponseMessageEditedBy.md) |  | [optional]
+**u** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy**](PostApiV1ChatUpdate200ResponseMessageEditedBy.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **t** | **string** |  | [optional]
 **groupable** | **bool** |  | [optional]

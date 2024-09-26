@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientMessagingApi\IMApi
+# WebMI\RocketChatApiClient\MessagingApi\IMApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -22,7 +22,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1ImCounters()`
 
 ```php
-getApiV1ImCounters($x_auth_token, $x_user_id, $room_id, $user_id): \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImCounters200Response
+getApiV1ImCounters($x_auth_token, $x_user_id, $room_id, $user_id): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImCounters200Response
 ```
 
 Get DM Counters
@@ -37,7 +37,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -66,7 +66,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImCounters200Response**](../Model/GetApiV1ImCounters200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImCounters200Response**](../Model/GetApiV1ImCounters200Response.md)
 
 ### Authorization
 
@@ -84,7 +84,7 @@ No authorization required
 ## `getApiV1ImFiles()`
 
 ```php
-getApiV1ImFiles($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields, $room_id, $username): \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImFiles200Response
+getApiV1ImFiles($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields, $room_id, $username): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImFiles200Response
 ```
 
 Get DM Files
@@ -99,7 +99,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -138,7 +138,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImFiles200Response**](../Model/GetApiV1ImFiles200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImFiles200Response**](../Model/GetApiV1ImFiles200Response.md)
 
 ### Authorization
 
@@ -156,7 +156,7 @@ No authorization required
 ## `getApiV1ImHistory()`
 
 ```php
-getApiV1ImHistory($x_auth_token, $x_user_id, $room_id, $offset, $count, $latest, $oldest, $inclusive, $unreads): \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImHistory200Response
+getApiV1ImHistory($x_auth_token, $x_user_id, $room_id, $offset, $count, $latest, $oldest, $inclusive, $unreads): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImHistory200Response
 ```
 
 DM History
@@ -171,7 +171,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -210,7 +210,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImHistory200Response**](../Model/GetApiV1ImHistory200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImHistory200Response**](../Model/GetApiV1ImHistory200Response.md)
 
 ### Authorization
 
@@ -228,7 +228,7 @@ No authorization required
 ## `getApiV1ImList()`
 
 ```php
-getApiV1ImList($x_auth_token, $x_user_id, $offset, $count, $sort): \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImList200Response
+getApiV1ImList($x_auth_token, $x_user_id, $offset, $count, $sort): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImList200Response
 ```
 
 List DMs
@@ -243,7 +243,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -274,7 +274,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImList200Response**](../Model/GetApiV1ImList200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImList200Response**](../Model/GetApiV1ImList200Response.md)
 
 ### Authorization
 
@@ -292,7 +292,7 @@ No authorization required
 ## `getApiV1ImListEveryone()`
 
 ```php
-getApiV1ImListEveryone($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields): \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200Response
+getApiV1ImListEveryone($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200Response
 ```
 
 List All DMs
@@ -307,7 +307,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -342,7 +342,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200Response**](../Model/GetApiV1ImListEveryone200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200Response**](../Model/GetApiV1ImListEveryone200Response.md)
 
 ### Authorization
 
@@ -360,7 +360,7 @@ No authorization required
 ## `getApiV1ImMembers()`
 
 ```php
-getApiV1ImMembers($x_auth_token, $x_user_id, $offset, $count, $sort, $room_id, $username): \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMembers200Response
+getApiV1ImMembers($x_auth_token, $x_user_id, $offset, $count, $sort, $room_id, $username): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMembers200Response
 ```
 
 List DM Members
@@ -375,7 +375,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -410,7 +410,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMembers200Response**](../Model/GetApiV1ImMembers200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMembers200Response**](../Model/GetApiV1ImMembers200Response.md)
 
 ### Authorization
 
@@ -428,7 +428,7 @@ No authorization required
 ## `getApiV1ImMessages()`
 
 ```php
-getApiV1ImMessages($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields, $room_id, $username): \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMessages200Response
+getApiV1ImMessages($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields, $room_id, $username): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMessages200Response
 ```
 
 List DM Messages
@@ -443,7 +443,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -482,7 +482,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMessages200Response**](../Model/GetApiV1ImMessages200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMessages200Response**](../Model/GetApiV1ImMessages200Response.md)
 
 ### Authorization
 
@@ -500,7 +500,7 @@ No authorization required
 ## `getApiV1ImMessagesOthers()`
 
 ```php
-getApiV1ImMessagesOthers($x_auth_token, $x_user_id, $room_id, $offset, $count, $sort, $query, $fields): \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImHistory200Response
+getApiV1ImMessagesOthers($x_auth_token, $x_user_id, $room_id, $offset, $count, $sort, $query, $fields): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImHistory200Response
 ```
 
 Message Others
@@ -515,7 +515,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -552,7 +552,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImHistory200Response**](../Model/GetApiV1ImHistory200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImHistory200Response**](../Model/GetApiV1ImHistory200Response.md)
 
 ### Authorization
 
@@ -570,7 +570,7 @@ No authorization required
 ## `postApiV1ImClose()`
 
 ```php
-postApiV1ImClose($x_auth_token, $x_user_id, $post_api_v1_im_close_request): \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response
+postApiV1ImClose($x_auth_token, $x_user_id, $post_api_v1_im_close_request): \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatReact200Response
 ```
 
 Close DM
@@ -585,14 +585,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_im_close_request = {"roomId":"ByehQjC44FwMeiLbX"}; // \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCloseRequest
+$post_api_v1_im_close_request = {"roomId":"ByehQjC44FwMeiLbX"}; // \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCloseRequest
 
 try {
     $result = $apiInstance->postApiV1ImClose($x_auth_token, $x_user_id, $post_api_v1_im_close_request);
@@ -608,11 +608,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_im_close_request** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCloseRequest**](../Model/PostApiV1ImCloseRequest.md)|  | [optional] |
+| **post_api_v1_im_close_request** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCloseRequest**](../Model/PostApiV1ImCloseRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response**](../Model/PostApiV1ChatReact200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatReact200Response**](../Model/PostApiV1ChatReact200Response.md)
 
 ### Authorization
 
@@ -630,7 +630,7 @@ No authorization required
 ## `postApiV1ImCreate()`
 
 ```php
-postApiV1ImCreate($x_auth_token, $x_user_id, $post_api_v1_im_create_request): \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreate200Response
+postApiV1ImCreate($x_auth_token, $x_user_id, $post_api_v1_im_create_request): \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCreate200Response
 ```
 
 Create DM
@@ -645,14 +645,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_im_create_request = {"username":"kim.dok","excludeSelf":true}; // \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreateRequest
+$post_api_v1_im_create_request = {"username":"kim.dok","excludeSelf":true}; // \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCreateRequest
 
 try {
     $result = $apiInstance->postApiV1ImCreate($x_auth_token, $x_user_id, $post_api_v1_im_create_request);
@@ -668,11 +668,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_im_create_request** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreateRequest**](../Model/PostApiV1ImCreateRequest.md)|  | [optional] |
+| **post_api_v1_im_create_request** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCreateRequest**](../Model/PostApiV1ImCreateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreate200Response**](../Model/PostApiV1ImCreate200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCreate200Response**](../Model/PostApiV1ImCreate200Response.md)
 
 ### Authorization
 
@@ -690,7 +690,7 @@ No authorization required
 ## `postApiV1ImDelete()`
 
 ```php
-postApiV1ImDelete($x_auth_token, $x_user_id, $post_api_v1_im_delete_request): \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response
+postApiV1ImDelete($x_auth_token, $x_user_id, $post_api_v1_im_delete_request): \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatReact200Response
 ```
 
 Delete DM
@@ -705,14 +705,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_im_delete_request = {"roomId":"hdy9972092873h8s7s0"}; // \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImDeleteRequest
+$post_api_v1_im_delete_request = {"roomId":"hdy9972092873h8s7s0"}; // \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImDeleteRequest
 
 try {
     $result = $apiInstance->postApiV1ImDelete($x_auth_token, $x_user_id, $post_api_v1_im_delete_request);
@@ -728,11 +728,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_im_delete_request** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImDeleteRequest**](../Model/PostApiV1ImDeleteRequest.md)|  | [optional] |
+| **post_api_v1_im_delete_request** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImDeleteRequest**](../Model/PostApiV1ImDeleteRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response**](../Model/PostApiV1ChatReact200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatReact200Response**](../Model/PostApiV1ChatReact200Response.md)
 
 ### Authorization
 
@@ -750,7 +750,7 @@ No authorization required
 ## `postApiV1ImOpen()`
 
 ```php
-postApiV1ImOpen($x_auth_token, $x_user_id, $post_api_v1_im_close_request): \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response
+postApiV1ImOpen($x_auth_token, $x_user_id, $post_api_v1_im_close_request): \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatReact200Response
 ```
 
 Open DM
@@ -765,14 +765,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_im_close_request = {"roomId":"5fRTXMt7DMJbpPJfhrbAXPnMktTFbNpwtJ"}; // \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCloseRequest
+$post_api_v1_im_close_request = {"roomId":"5fRTXMt7DMJbpPJfhrbAXPnMktTFbNpwtJ"}; // \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCloseRequest
 
 try {
     $result = $apiInstance->postApiV1ImOpen($x_auth_token, $x_user_id, $post_api_v1_im_close_request);
@@ -788,11 +788,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_im_close_request** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCloseRequest**](../Model/PostApiV1ImCloseRequest.md)|  | [optional] |
+| **post_api_v1_im_close_request** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImCloseRequest**](../Model/PostApiV1ImCloseRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatReact200Response**](../Model/PostApiV1ChatReact200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatReact200Response**](../Model/PostApiV1ChatReact200Response.md)
 
 ### Authorization
 
@@ -810,7 +810,7 @@ No authorization required
 ## `postApiV1ImSetTopic()`
 
 ```php
-postApiV1ImSetTopic($x_auth_token, $x_user_id, $post_api_v1_im_set_topic_request): \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImSetTopic200Response
+postApiV1ImSetTopic($x_auth_token, $x_user_id, $post_api_v1_im_set_topic_request): \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImSetTopic200Response
 ```
 
 Set DM Topic
@@ -825,14 +825,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMessagingApi\Api\IMApi(
+$apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\IMApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_im_set_topic_request = {"roomId":"ByehQjC44FwMeiLbX","topic":"Discuss all of the testing"}; // \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImSetTopicRequest
+$post_api_v1_im_set_topic_request = {"roomId":"ByehQjC44FwMeiLbX","topic":"Discuss all of the testing"}; // \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImSetTopicRequest
 
 try {
     $result = $apiInstance->postApiV1ImSetTopic($x_auth_token, $x_user_id, $post_api_v1_im_set_topic_request);
@@ -848,11 +848,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_im_set_topic_request** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImSetTopicRequest**](../Model/PostApiV1ImSetTopicRequest.md)|  | [optional] |
+| **post_api_v1_im_set_topic_request** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImSetTopicRequest**](../Model/PostApiV1ImSetTopicRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImSetTopic200Response**](../Model/PostApiV1ImSetTopic200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ImSetTopic200Response**](../Model/PostApiV1ImSetTopic200Response.md)
 
 ### Authorization
 

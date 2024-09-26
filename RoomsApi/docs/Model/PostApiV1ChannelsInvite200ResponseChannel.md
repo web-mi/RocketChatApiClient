@@ -15,13 +15,13 @@ Name | Type | Description | Notes
 **t** | **string** |  | [optional]
 **msgs** | **int** |  | [optional]
 **users_count** | **int** |  | [optional]
-**u** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU**](PostApiV1ChannelsAddAll200ResponseChannelU.md) |  | [optional]
+**u** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU**](PostApiV1ChannelsAddAll200ResponseChannelU.md) |  | [optional]
 **ts** | **string** |  | [optional]
 **ro** | **bool** |  | [optional]
 **default** | **bool** |  | [optional]
 **sys_mes** | **bool** |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **lm** | **string** |  | [optional]
-**last_message** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsInvite200ResponseChannelLastMessage**](PostApiV1ChannelsInvite200ResponseChannelLastMessage.md) |  | [optional]
+**last_message** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsInvite200ResponseChannelLastMessage**](PostApiV1ChannelsInvite200ResponseChannelLastMessage.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\VoiceChannelEventsApi
+# WebMI\RocketChatApiClient\OmnichannelApi\VoiceChannelEventsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -25,14 +25,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelEventsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\VoiceChannelEventsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$get_api_v1_voip_events_request = {"rid":"oWLW6v8c8oRGb4cC9","event":"voip-call-started"}; // \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipEventsRequest
+$get_api_v1_voip_events_request = {"rid":"oWLW6v8c8oRGb4cC9","event":"voip-call-started"}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipEventsRequest
 
 try {
     $apiInstance->getApiV1VoipEvents($x_auth_token, $x_user_id, $get_api_v1_voip_events_request);
@@ -47,7 +47,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **get_api_v1_voip_events_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipEventsRequest**](../Model/GetApiV1VoipEventsRequest.md)|  | [optional] |
+| **get_api_v1_voip_events_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipEventsRequest**](../Model/GetApiV1VoipEventsRequest.md)|  | [optional] |
 
 ### Return type
 

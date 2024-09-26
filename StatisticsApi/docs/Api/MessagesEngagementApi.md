@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientStatisticsApi\MessagesEngagementApi
+# WebMI\RocketChatApiClient\StatisticsApi\MessagesEngagementApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1EngagementDashboardMessagesMessagesSent()`
 
 ```php
-getApiV1EngagementDashboardMessagesMessagesSent($x_auth_token, $x_user_id, $start, $end): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200Response
+getApiV1EngagementDashboardMessagesMessagesSent($x_auth_token, $x_user_id, $start, $end): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200Response
 ```
 
 Get Number of Sent Messages
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\MessagesEngagementApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\MessagesEngagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200Response**](../Model/GetApiV1EngagementDashboardMessagesMessagesSent200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200Response**](../Model/GetApiV1EngagementDashboardMessagesMessagesSent200Response.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 ## `getApiV1EngagementDashboardMessagesOrigin()`
 
 ```php
-getApiV1EngagementDashboardMessagesOrigin($x_auth_token, $x_user_id, $start, $end): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200Response
+getApiV1EngagementDashboardMessagesOrigin($x_auth_token, $x_user_id, $start, $end): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200Response
 ```
 
 Get Origin of Message Sent
@@ -89,7 +89,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\MessagesEngagementApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\MessagesEngagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -118,7 +118,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200Response**](../Model/GetApiV1EngagementDashboardMessagesOrigin200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200Response**](../Model/GetApiV1EngagementDashboardMessagesOrigin200Response.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ No authorization required
 ## `getApiV1EngagementDashboardMessagesTopFivePopularChannels()`
 
 ```php
-getApiV1EngagementDashboardMessagesTopFivePopularChannels($x_auth_token, $x_user_id, $start, $end): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response
+getApiV1EngagementDashboardMessagesTopFivePopularChannels($x_auth_token, $x_user_id, $start, $end): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response
 ```
 
 Get the Most Popular Channels
@@ -151,7 +151,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\MessagesEngagementApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\MessagesEngagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -180,7 +180,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response**](../Model/GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response**](../Model/GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response.md)
 
 ### Authorization
 

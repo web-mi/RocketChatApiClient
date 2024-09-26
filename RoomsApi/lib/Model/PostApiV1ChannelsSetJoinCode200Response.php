@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1ChannelsSetJoinCode200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ChannelsSetJoinCode200Response implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'channel' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetJoinCode200ResponseChannel',
+        'channel' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsSetJoinCode200ResponseChannel',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1ChannelsSetJoinCode200Response implements ModelInterface, ArrayAc
     /**
      * Gets channel
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetJoinCode200ResponseChannel|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsSetJoinCode200ResponseChannel|null
      */
     public function getChannel()
     {
@@ -309,7 +309,7 @@ class PostApiV1ChannelsSetJoinCode200Response implements ModelInterface, ArrayAc
     /**
      * Sets channel
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsSetJoinCode200ResponseChannel|null $channel channel
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsSetJoinCode200ResponseChannel|null $channel channel
      *
      * @return self
      */

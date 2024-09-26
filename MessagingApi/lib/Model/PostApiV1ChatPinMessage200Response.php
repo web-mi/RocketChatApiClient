@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatPinMessage200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ChatPinMessage200Response implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessage',
+        'message' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessage',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1ChatPinMessage200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets message
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessage|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessage|null
      */
     public function getMessage()
     {
@@ -309,7 +309,7 @@ class PostApiV1ChatPinMessage200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets message
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessage|null $message message
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessage|null $message message
      *
      * @return self
      */

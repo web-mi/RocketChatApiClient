@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Api;
+namespace WebMI\RocketChatApiClient\SettingsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientSettingsApi\ApiException;
-use WebMIRocketChatApiClientSettingsApi\Configuration;
-use WebMIRocketChatApiClientSettingsApi\HeaderSelector;
-use WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\SettingsApi\ApiException;
+use WebMI\RocketChatApiClient\SettingsApi\Configuration;
+use WebMI\RocketChatApiClient\SettingsApi\HeaderSelector;
+use WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * CloudApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -129,12 +129,12 @@ class CloudApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request post_api_v1_cloud_manual_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request post_api_v1_cloud_manual_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CloudManualRegister'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response
      */
     public function postApiV1CloudManualRegister($x_user_id, $x_auth_token, $post_api_v1_cloud_manual_register_request = null, string $contentType = self::contentTypes['postApiV1CloudManualRegister'][0])
     {
@@ -149,12 +149,12 @@ class CloudApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CloudManualRegister'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1CloudManualRegisterWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_cloud_manual_register_request = null, string $contentType = self::contentTypes['postApiV1CloudManualRegister'][0])
     {
@@ -197,11 +197,11 @@ class CloudApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -219,16 +219,16 @@ class CloudApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -246,16 +246,16 @@ class CloudApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -273,13 +273,13 @@ class CloudApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -312,7 +312,7 @@ class CloudApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -320,7 +320,7 @@ class CloudApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -328,7 +328,7 @@ class CloudApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -345,7 +345,7 @@ class CloudApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CloudManualRegister'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -368,7 +368,7 @@ class CloudApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CloudManualRegister'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -376,7 +376,7 @@ class CloudApi
      */
     public function postApiV1CloudManualRegisterAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_cloud_manual_register_request = null, string $contentType = self::contentTypes['postApiV1CloudManualRegister'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->postApiV1CloudManualRegisterRequest($x_user_id, $x_auth_token, $post_api_v1_cloud_manual_register_request, $contentType);
 
         return $this->client
@@ -420,7 +420,7 @@ class CloudApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegisterRequest $post_api_v1_cloud_manual_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1CloudManualRegister'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

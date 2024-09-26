@@ -8,11 +8,11 @@ Name | Type | Description | Notes
 **rid** | **string** |  | [optional]
 **msg** | **string** |  | [optional]
 **ts** | **string** |  | [optional]
-**u** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
+**u** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **urls** | **object[]** |  | [optional]
-**mentions** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]**](GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner.md) |  | [optional]
+**mentions** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]**](GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner.md) |  | [optional]
 **channels** | **object[]** |  | [optional]
-**md** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]**](GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner.md) |  | [optional]
+**md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]**](GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

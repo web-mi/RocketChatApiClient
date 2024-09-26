@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\VoiceChannelExtensionsApi
+# WebMI\RocketChatApiClient\OmnichannelApi\VoiceChannelExtensionsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1OmnichannelExtension()`
 
 ```php
-getApiV1OmnichannelExtension($x_auth_token, $x_user_id, $user_id, $type): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelExtension200Response
+getApiV1OmnichannelExtension($x_auth_token, $x_user_id, $user_id, $type): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelExtension200Response
 ```
 
 Get Call Center Extension
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelExtensionsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\VoiceChannelExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -55,7 +55,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelExtension200Response**](../Model/GetApiV1OmnichannelExtension200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelExtension200Response**](../Model/GetApiV1OmnichannelExtension200Response.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ No authorization required
 ## `getApiV1OmnichannelExtensions()`
 
 ```php
-getApiV1OmnichannelExtensions($x_auth_token, $x_user_id, $status, $agent_id, $queues, $extension, $offset, $count): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+getApiV1OmnichannelExtensions($x_auth_token, $x_user_id, $status, $agent_id, $queues, $extension, $offset, $count): \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Get List of Call Center Extensions
@@ -88,7 +88,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelExtensionsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\VoiceChannelExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -125,7 +125,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 

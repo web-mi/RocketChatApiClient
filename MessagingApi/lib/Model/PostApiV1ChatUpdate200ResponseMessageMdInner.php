@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatUpdate200ResponseMessageMdInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1ChatUpdate200ResponseMessageMdInner implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]'
+        'value' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PostApiV1ChatUpdate200ResponseMessageMdInner implements ModelInterface, Ar
     /**
      * Gets value
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class PostApiV1ChatUpdate200ResponseMessageMdInner implements ModelInterface, Ar
     /**
      * Sets value
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]|null $value value
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]|null $value value
      *
      * @return self
      */

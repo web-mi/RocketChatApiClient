@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientSettingsApi\CloudApi
+# WebMI\RocketChatApiClient\SettingsApi\CloudApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiV1CloudManualRegister()`
 
 ```php
-postApiV1CloudManualRegister($x_user_id, $x_auth_token, $post_api_v1_cloud_manual_register_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1CloudManualRegister($x_user_id, $x_auth_token, $post_api_v1_cloud_manual_register_request): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Manual Cloud Register
@@ -25,14 +25,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\CloudApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\CloudApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_cloud_manual_register_request = {"cloudBlob":"jfiscsm38urc3ujd"}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegisterRequest
+$post_api_v1_cloud_manual_register_request = {"cloudBlob":"jfiscsm38urc3ujd"}; // \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegisterRequest
 
 try {
     $result = $apiInstance->postApiV1CloudManualRegister($x_user_id, $x_auth_token, $post_api_v1_cloud_manual_register_request);
@@ -48,11 +48,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_cloud_manual_register_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegisterRequest**](../Model/PostApiV1CloudManualRegisterRequest.md)|  | [optional] |
+| **post_api_v1_cloud_manual_register_request** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegisterRequest**](../Model/PostApiV1CloudManualRegisterRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 

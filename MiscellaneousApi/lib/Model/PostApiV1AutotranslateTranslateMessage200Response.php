@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * PostApiV1AutotranslateTranslateMessage200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1AutotranslateTranslateMessage200Response implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessage',
+        'message' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessage',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1AutotranslateTranslateMessage200Response implements ModelInterfac
     /**
      * Gets message
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessage|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessage|null
      */
     public function getMessage()
     {
@@ -309,7 +309,7 @@ class PostApiV1AutotranslateTranslateMessage200Response implements ModelInterfac
     /**
      * Sets message
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessage|null $message message
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessage|null $message message
      *
      * @return self
      */

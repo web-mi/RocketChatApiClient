@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsGet200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RoomsGet200Response implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]',
+        'update' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]',
         'remove' => 'object[]',
         'success' => 'bool'
     ];
@@ -306,7 +306,7 @@ class GetApiV1RoomsGet200Response implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets update
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]|null
      */
     public function getUpdate()
     {
@@ -316,7 +316,7 @@ class GetApiV1RoomsGet200Response implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets update
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]|null $update update
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]|null $update update
      *
      * @return self
      */

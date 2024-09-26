@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rooms** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationSearchPublicRooms200ResponseRoomsInner[]**](GetApiV1FederationSearchPublicRooms200ResponseRoomsInner.md) |  | [optional]
+**rooms** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1FederationSearchPublicRooms200ResponseRoomsInner[]**](GetApiV1FederationSearchPublicRooms200ResponseRoomsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **total** | **int** |  | [optional]
 **next_page_token** | **string** |  | [optional]

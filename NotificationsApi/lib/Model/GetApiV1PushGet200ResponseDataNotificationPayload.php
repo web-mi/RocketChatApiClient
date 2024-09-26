@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientNotificationsApi\Model;
+namespace WebMI\RocketChatApiClient\NotificationsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\NotificationsApi\ObjectSerializer;
 
 /**
  * GetApiV1PushGet200ResponseDataNotificationPayload Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
         'message_id' => 'string',
         'notification_type' => 'string',
         'rid' => 'string',
-        'sender' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU',
+        'sender' => '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU',
         'sender_name' => 'string',
         'type' => 'string',
         'name' => 'string'
@@ -449,7 +449,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
     /**
      * Gets sender
      *
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null
      */
     public function getSender()
     {
@@ -459,7 +459,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
     /**
      * Sets sender
      *
-     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null $sender sender
+     * @param \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null $sender sender
      *
      * @return self
      */

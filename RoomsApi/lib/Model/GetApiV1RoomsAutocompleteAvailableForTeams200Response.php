@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsAutocompleteAvailableForTeams200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]',
+        'items' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
     /**
      * Gets items
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]|null
      */
     public function getItems()
     {
@@ -309,7 +309,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
     /**
      * Sets items
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]|null $items items
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]|null $items items
      *
      * @return self
      */

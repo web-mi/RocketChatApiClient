@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1ModerationReports200ResponseReportsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
     protected static $openAPITypes = [
         '_id' => 'string',
         'description' => 'string',
-        'reported_by' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInnerReportedBy',
-        'room' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom',
+        'reported_by' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInnerReportedBy',
+        'room' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom',
         'ts' => 'string'
     ];
 
@@ -374,7 +374,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
     /**
      * Gets reported_by
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInnerReportedBy|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInnerReportedBy|null
      */
     public function getReportedBy()
     {
@@ -384,7 +384,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
     /**
      * Sets reported_by
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInnerReportedBy|null $reported_by reported_by
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInnerReportedBy|null $reported_by reported_by
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
     /**
      * Gets room
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null
      */
     public function getRoom()
     {
@@ -411,7 +411,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
     /**
      * Sets room
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null $room room
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null $room room
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1ServiceConfigurations200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ServiceConfigurations200Response implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'configurations' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ServiceConfigurations200ResponseConfigurationsInner[]',
+        'configurations' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ServiceConfigurations200ResponseConfigurationsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ServiceConfigurations200Response implements ModelInterface, ArrayA
     /**
      * Gets configurations
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ServiceConfigurations200ResponseConfigurationsInner[]|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ServiceConfigurations200ResponseConfigurationsInner[]|null
      */
     public function getConfigurations()
     {
@@ -309,7 +309,7 @@ class GetApiV1ServiceConfigurations200Response implements ModelInterface, ArrayA
     /**
      * Sets configurations
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ServiceConfigurations200ResponseConfigurationsInner[]|null $configurations configurations
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ServiceConfigurations200ResponseConfigurationsInner[]|null $configurations configurations
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientNotificationsApi\PushTokenApi
+# WebMI\RocketChatApiClient\NotificationsApi\PushTokenApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1PushToken()`
 
 ```php
-deleteApiV1PushToken($x_auth_token, $x_user_id, $delete_api_v1_push_token_request): \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response
+deleteApiV1PushToken($x_auth_token, $x_user_id, $delete_api_v1_push_token_request): \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response
 ```
 
 Delete Push Token
@@ -27,14 +27,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientNotificationsApi\Api\PushTokenApi(
+$apiInstance = new WebMI\RocketChatApiClient\NotificationsApi\Api\PushTokenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq; // string | The authorization token of the user.
 $x_user_id = aobEdbYhXfu5hkeqG; // string | The user ID of the user.
-$delete_api_v1_push_token_request = {"token":"abc"}; // \WebMIRocketChatApiClientNotificationsApi\Model\DeleteApiV1PushTokenRequest
+$delete_api_v1_push_token_request = {"token":"abc"}; // \WebMI\RocketChatApiClient\NotificationsApi\Model\DeleteApiV1PushTokenRequest
 
 try {
     $result = $apiInstance->deleteApiV1PushToken($x_auth_token, $x_user_id, $delete_api_v1_push_token_request);
@@ -50,11 +50,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authorization token of the user. | |
 | **x_user_id** | **string**| The user ID of the user. | |
-| **delete_api_v1_push_token_request** | [**\WebMIRocketChatApiClientNotificationsApi\Model\DeleteApiV1PushTokenRequest**](../Model/DeleteApiV1PushTokenRequest.md)|  | [optional] |
+| **delete_api_v1_push_token_request** | [**\WebMI\RocketChatApiClient\NotificationsApi\Model\DeleteApiV1PushTokenRequest**](../Model/DeleteApiV1PushTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response**](../Model/PostApiV1BannersDismiss200Response.md)
+[**\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response**](../Model/PostApiV1BannersDismiss200Response.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `getApiV1PushGet()`
 
 ```php
-getApiV1PushGet($x_auth_token, $x_user_id, $id): \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response
+getApiV1PushGet($x_auth_token, $x_user_id, $id): \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response
 ```
 
 Get Push Notification
@@ -87,7 +87,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientNotificationsApi\Api\PushTokenApi(
+$apiInstance = new WebMI\RocketChatApiClient\NotificationsApi\Api\PushTokenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -114,7 +114,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response**](../Model/GetApiV1PushGet200Response.md)
+[**\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response**](../Model/GetApiV1PushGet200Response.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 ## `postApiV1PushToken()`
 
 ```php
-postApiV1PushToken($x_auth_token, $x_user_id, $post_api_v1_push_token_request): \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response
+postApiV1PushToken($x_auth_token, $x_user_id, $post_api_v1_push_token_request): \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response
 ```
 
 Create Push Token
@@ -147,14 +147,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientNotificationsApi\Api\PushTokenApi(
+$apiInstance = new WebMI\RocketChatApiClient\NotificationsApi\Api\PushTokenApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq; // string | The authorization token of the user.
 $x_user_id = aobEdbYhXfu5hkeqG; // string | The user ID of the user.
-$post_api_v1_push_token_request = {"type":"gcm","value":"TOKEN","appName":"MyApp"}; // \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushTokenRequest
+$post_api_v1_push_token_request = {"type":"gcm","value":"TOKEN","appName":"MyApp"}; // \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushTokenRequest
 
 try {
     $result = $apiInstance->postApiV1PushToken($x_auth_token, $x_user_id, $post_api_v1_push_token_request);
@@ -170,11 +170,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authorization token of the user. | |
 | **x_user_id** | **string**| The user ID of the user. | |
-| **post_api_v1_push_token_request** | [**\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushTokenRequest**](../Model/PostApiV1PushTokenRequest.md)|  | [optional] |
+| **post_api_v1_push_token_request** | [**\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushTokenRequest**](../Model/PostApiV1PushTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response**](../Model/PostApiV1PushToken200Response.md)
+[**\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response**](../Model/PostApiV1PushToken200Response.md)
 
 ### Authorization
 

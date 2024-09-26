@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**appearance** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAppearance200ResponseAppearanceInner[]**](GetApiV1LivechatAppearance200ResponseAppearanceInner.md) |  | [optional]
+**appearance** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAppearance200ResponseAppearanceInner[]**](GetApiV1LivechatAppearance200ResponseAppearanceInner.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientSettingsApi\PasswordPolicyApi
+# WebMI\RocketChatApiClient\SettingsApi\PasswordPolicyApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\PasswordPolicyApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\PasswordPolicyApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatDepartmentRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PostApiV1LivechatDepartmentRequest implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'department' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentRequestDepartment',
-        'agents' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentRequestAgentsInner[]'
+        'department' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentRequestDepartment',
+        'agents' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentRequestAgentsInner[]'
     ];
 
     /**
@@ -302,7 +302,7 @@ class PostApiV1LivechatDepartmentRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets department
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentRequestDepartment
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentRequestDepartment
      */
     public function getDepartment()
     {
@@ -312,7 +312,7 @@ class PostApiV1LivechatDepartmentRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets department
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentRequestDepartment $department department
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentRequestDepartment $department department
      *
      * @return self
      */
@@ -329,7 +329,7 @@ class PostApiV1LivechatDepartmentRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets agents
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentRequestAgentsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentRequestAgentsInner[]|null
      */
     public function getAgents()
     {
@@ -339,7 +339,7 @@ class PostApiV1LivechatDepartmentRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets agents
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentRequestAgentsInner[]|null $agents The object with the agent details that you want to add to the department.
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentRequestAgentsInner[]|null $agents The object with the agent details that you want to add to the department.
      *
      * @return self
      */

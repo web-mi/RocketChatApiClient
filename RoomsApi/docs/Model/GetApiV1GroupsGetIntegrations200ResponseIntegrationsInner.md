@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **user_id** | **string** |  | [optional]
 **channel** | **string[]** |  | [optional]
 **_created_at** | **string** |  | [optional]
-**_created_by** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy**](GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy.md) |  | [optional]
+**_created_by** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy**](GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

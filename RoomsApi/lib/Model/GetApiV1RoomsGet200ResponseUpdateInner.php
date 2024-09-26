@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsGet200ResponseUpdateInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,9 +65,9 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
         'msgs' => 'int',
         'users_count' => 'int',
         '_updated_at' => 'string',
-        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         'default' => 'bool',
-        'last_message' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessage',
+        'last_message' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessage',
         'lm' => 'string',
         'uids' => 'string[]',
         'ro' => 'bool',
@@ -606,7 +606,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -616,7 +616,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -660,7 +660,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
     /**
      * Gets last_message
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessage|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessage|null
      */
     public function getLastMessage()
     {
@@ -670,7 +670,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
     /**
      * Sets last_message
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessage|null $last_message last_message
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessage|null $last_message last_message
      *
      * @return self
      */

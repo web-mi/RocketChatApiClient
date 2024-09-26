@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**agent** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAgent200ResponseAgent**](GetApiV1LivechatAgent200ResponseAgent.md) |  | [optional]
+**agent** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAgent200ResponseAgent**](GetApiV1LivechatAgent200ResponseAgent.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1GroupsGetIntegrations200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1GroupsGetIntegrations200Response implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'integrations' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner[]',
+        'integrations' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1GroupsGetIntegrations200Response implements ModelInterface, ArrayA
     /**
      * Gets integrations
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner[]|null
      */
     public function getIntegrations()
     {
@@ -309,7 +309,7 @@ class GetApiV1GroupsGetIntegrations200Response implements ModelInterface, ArrayA
     /**
      * Sets integrations
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner[]|null $integrations integrations
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsGetIntegrations200ResponseIntegrationsInner[]|null $integrations integrations
      *
      * @return self
      */

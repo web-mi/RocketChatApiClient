@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatDepartmentId200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'department' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseDepartment',
-        'agents' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseAgentsInner[]',
+        'department' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseDepartment',
+        'agents' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseAgentsInner[]',
         'success' => 'bool'
     ];
 
@@ -306,7 +306,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
     /**
      * Gets department
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseDepartment|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseDepartment|null
      */
     public function getDepartment()
     {
@@ -316,7 +316,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
     /**
      * Sets department
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseDepartment|null $department department
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseDepartment|null $department department
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
     /**
      * Gets agents
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseAgentsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseAgentsInner[]|null
      */
     public function getAgents()
     {
@@ -343,7 +343,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
     /**
      * Sets agents
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseAgentsInner[]|null $agents agents
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseAgentsInner[]|null $agents agents
      *
      * @return self
      */

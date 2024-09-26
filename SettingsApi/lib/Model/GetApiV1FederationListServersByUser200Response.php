@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1FederationListServersByUser200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1FederationListServersByUser200Response implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'servers' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200ResponseServersInner[]',
+        'servers' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1FederationListServersByUser200ResponseServersInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1FederationListServersByUser200Response implements ModelInterface, 
     /**
      * Gets servers
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200ResponseServersInner[]|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1FederationListServersByUser200ResponseServersInner[]|null
      */
     public function getServers()
     {
@@ -309,7 +309,7 @@ class GetApiV1FederationListServersByUser200Response implements ModelInterface, 
     /**
      * Sets servers
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1FederationListServersByUser200ResponseServersInner[]|null $servers servers
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1FederationListServersByUser200ResponseServersInner[]|null $servers servers
      *
      * @return self
      */

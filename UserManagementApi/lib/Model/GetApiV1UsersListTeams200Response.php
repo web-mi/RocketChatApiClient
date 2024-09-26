@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1UsersListTeams200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1UsersListTeams200Response implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'teams' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInner[]',
+        'teams' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1UsersListTeams200Response implements ModelInterface, ArrayAccess, 
     /**
      * Gets teams
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInner[]|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInner[]|null
      */
     public function getTeams()
     {
@@ -309,7 +309,7 @@ class GetApiV1UsersListTeams200Response implements ModelInterface, ArrayAccess, 
     /**
      * Sets teams
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInner[]|null $teams teams
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInner[]|null $teams teams
      *
      * @return self
      */

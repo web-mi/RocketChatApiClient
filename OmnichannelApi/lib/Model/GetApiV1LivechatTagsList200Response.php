@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTagsList200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatTagsList200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tags' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]',
+        'tags' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatTagsList200Response implements ModelInterface, ArrayAccess
     /**
      * Gets tags
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]|null
      */
     public function getTags()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatTagsList200Response implements ModelInterface, ArrayAccess
     /**
      * Sets tags
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]|null $tags tags
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]|null $tags tags
      *
      * @return self
      */

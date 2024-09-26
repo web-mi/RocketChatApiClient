@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * DeleteApiV1RemoveInviteId400Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class DeleteApiV1RemoveInviteId400Response implements ModelInterface, ArrayAcces
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails'
+        'details' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class DeleteApiV1RemoveInviteId400Response implements ModelInterface, ArrayAcces
     /**
      * Gets details
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class DeleteApiV1RemoveInviteId400Response implements ModelInterface, ArrayAcces
     /**
      * Sets details
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails|null $details details
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails|null $details details
      *
      * @return self
      */

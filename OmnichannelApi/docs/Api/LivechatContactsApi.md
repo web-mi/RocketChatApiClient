@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\LivechatContactsApi
+# WebMI\RocketChatApiClient\OmnichannelApi\LivechatContactsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1OmnichannelContact()`
 
 ```php
-getApiV1OmnichannelContact($x_auth_token, $x_user_id, $contact_id_): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200Response
+getApiV1OmnichannelContact($x_auth_token, $x_user_id, $contact_id_): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200Response
 ```
 
 Get Omnichannel Contact
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatContactsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200Response**](../Model/GetApiV1OmnichannelContact200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200Response**](../Model/GetApiV1OmnichannelContact200Response.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `getApiV1OmnichannelContactSearch()`
 
 ```php
-getApiV1OmnichannelContactSearch($x_auth_token, $x_user_id, $email, $phone, $custom): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200Response
+getApiV1OmnichannelContactSearch($x_auth_token, $x_user_id, $email, $phone, $custom): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContactSearch200Response
 ```
 
 Search Omnichannel Contacts
@@ -87,7 +87,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatContactsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -118,7 +118,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200Response**](../Model/GetApiV1OmnichannelContactSearch200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContactSearch200Response**](../Model/GetApiV1OmnichannelContactSearch200Response.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ No authorization required
 ## `postApiV1OmnichannelContact()`
 
 ```php
-postApiV1OmnichannelContact($x_auth_token, $x_user_id, $post_api_v1_omnichannel_contact_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelContact200Response
+postApiV1OmnichannelContact($x_auth_token, $x_user_id, $post_api_v1_omnichannel_contact_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1OmnichannelContact200Response
 ```
 
 Register or Update Omnichannel Contact
@@ -151,14 +151,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatContactsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatContactsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_omnichannel_contact_request = {"token":"434lxd7iss8yh8c4m80wh","name":"Chris","email":"chris@gmail.com","phone":"+91123456788","contactManager":{"username":"kim.jane"}}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelContactRequest
+$post_api_v1_omnichannel_contact_request = {"token":"434lxd7iss8yh8c4m80wh","name":"Chris","email":"chris@gmail.com","phone":"+91123456788","contactManager":{"username":"kim.jane"}}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1OmnichannelContactRequest
 
 try {
     $result = $apiInstance->postApiV1OmnichannelContact($x_auth_token, $x_user_id, $post_api_v1_omnichannel_contact_request);
@@ -174,11 +174,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_omnichannel_contact_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelContactRequest**](../Model/PostApiV1OmnichannelContactRequest.md)|  | [optional] |
+| **post_api_v1_omnichannel_contact_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1OmnichannelContactRequest**](../Model/PostApiV1OmnichannelContactRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelContact200Response**](../Model/PostApiV1OmnichannelContact200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1OmnichannelContact200Response**](../Model/PostApiV1OmnichannelContact200Response.md)
 
 ### Authorization
 

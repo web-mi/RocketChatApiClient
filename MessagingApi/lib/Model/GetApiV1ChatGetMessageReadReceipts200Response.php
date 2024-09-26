@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatGetMessageReadReceipts200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatGetMessageReadReceipts200Response implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'receipts' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner[]',
+        'receipts' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChatGetMessageReadReceipts200Response implements ModelInterface, A
     /**
      * Gets receipts
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner[]|null
      */
     public function getReceipts()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatGetMessageReadReceipts200Response implements ModelInterface, A
     /**
      * Sets receipts
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner[]|null $receipts receipts
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner[]|null $receipts receipts
      *
      * @return self
      */

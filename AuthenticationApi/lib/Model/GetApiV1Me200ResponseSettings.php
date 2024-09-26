@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientAuthenticationApi\Model;
+namespace WebMI\RocketChatApiClient\AuthenticationApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientAuthenticationApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
  * GetApiV1Me200ResponseSettings Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1Me200ResponseSettings implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'preferences' => '\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200ResponseSettingsPreferences'
+        'preferences' => '\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseSettingsPreferences'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetApiV1Me200ResponseSettings implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets preferences
      *
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200ResponseSettingsPreferences|null
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseSettingsPreferences|null
      */
     public function getPreferences()
     {
@@ -302,7 +302,7 @@ class GetApiV1Me200ResponseSettings implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets preferences
      *
-     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200ResponseSettingsPreferences|null $preferences preferences
+     * @param \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseSettingsPreferences|null $preferences preferences
      *
      * @return self
      */

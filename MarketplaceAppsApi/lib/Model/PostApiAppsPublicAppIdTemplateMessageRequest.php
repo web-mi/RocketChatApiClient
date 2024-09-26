@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMarketplaceAppsApi\Model;
+namespace WebMI\RocketChatApiClient\MarketplaceAppsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMarketplaceAppsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MarketplaceAppsApi\ObjectSerializer;
 
 /**
  * PostApiAppsPublicAppIdTemplateMessageRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
         'connected_whats_app_no' => 'string',
         'target_agent' => 'string',
         'target_department' => 'string',
-        'template' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplate'
+        'template' => '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplate'
     ];
 
     /**
@@ -437,7 +437,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
     /**
      * Gets template
      *
-     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplate
+     * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplate
      */
     public function getTemplate()
     {
@@ -447,7 +447,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
     /**
      * Sets template
      *
-     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplate $template template
+     * @param \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplate $template template
      *
      * @return self
      */

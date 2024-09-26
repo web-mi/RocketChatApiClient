@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**contact** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContact**](GetApiV1OmnichannelContactSearch200ResponseContact.md) |  | [optional]
+**contact** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContact**](GetApiV1OmnichannelContactSearch200ResponseContact.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

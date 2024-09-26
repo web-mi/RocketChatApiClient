@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientUserManagementApi\RolesApi
+# WebMI\RocketChatApiClient\UserManagementApi\RolesApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -17,7 +17,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1RolesGetUsersInRole()`
 
 ```php
-getApiV1RolesGetUsersInRole($role, $x_user_id, $x_auth_token, $room_id, $offset, $count): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesGetUsersInRole200Response
+getApiV1RolesGetUsersInRole($role, $x_user_id, $x_auth_token, $room_id, $offset, $count): \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesGetUsersInRole200Response
 ```
 
 Get Users of a Role
@@ -32,7 +32,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\RolesApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -65,7 +65,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesGetUsersInRole200Response**](../Model/GetApiV1RolesGetUsersInRole200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesGetUsersInRole200Response**](../Model/GetApiV1RolesGetUsersInRole200Response.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ No authorization required
 ## `getApiV1RolesList()`
 
 ```php
-getApiV1RolesList($x_user_id, $x_auth_token): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesList200Response
+getApiV1RolesList($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesList200Response
 ```
 
 Get Roles
@@ -98,7 +98,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\RolesApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -123,7 +123,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesList200Response**](../Model/GetApiV1RolesList200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesList200Response**](../Model/GetApiV1RolesList200Response.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ No authorization required
 ## `getApiV1RolesSync()`
 
 ```php
-getApiV1RolesSync($updated_since, $x_user_id, $x_auth_token): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync200Response
+getApiV1RolesSync($updated_since, $x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync200Response
 ```
 
 Get Updated Roles
@@ -156,7 +156,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\RolesApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -183,7 +183,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync200Response**](../Model/GetApiV1RolesSync200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync200Response**](../Model/GetApiV1RolesSync200Response.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ No authorization required
 ## `postApiV1RolesAddUserToRole()`
 
 ```php
-postApiV1RolesAddUserToRole($x_user_id, $x_auth_token, $post_api_v1_roles_add_user_to_role_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesAddUserToRole200Response
+postApiV1RolesAddUserToRole($x_user_id, $x_auth_token, $post_api_v1_roles_add_user_to_role_request): \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesAddUserToRole200Response
 ```
 
 Assign Role to User
@@ -216,14 +216,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\RolesApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_roles_add_user_to_role_request = {"roleName":"auditor-log","username":"test.fun","roomId":"64adb09baa5ad4273bfc"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesAddUserToRoleRequest | By default, the three major room roles are available in Rocket.Chat are **Owner**, **Leader**, and **Moderator**.  [Creating custom roles](https://docs.rocket.chat/use-rocket.chat/user-management/custom-roles) is exclusively available on the Enterprise plan.  Refer to [Roles](https://docs.rocket.chat/setup-and-configure/roles-in-rocket.chat) for more information.
+$post_api_v1_roles_add_user_to_role_request = {"roleName":"auditor-log","username":"test.fun","roomId":"64adb09baa5ad4273bfc"}; // \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesAddUserToRoleRequest | By default, the three major room roles are available in Rocket.Chat are **Owner**, **Leader**, and **Moderator**.  [Creating custom roles](https://docs.rocket.chat/use-rocket.chat/user-management/custom-roles) is exclusively available on the Enterprise plan.  Refer to [Roles](https://docs.rocket.chat/setup-and-configure/roles-in-rocket.chat) for more information.
 
 try {
     $result = $apiInstance->postApiV1RolesAddUserToRole($x_user_id, $x_auth_token, $post_api_v1_roles_add_user_to_role_request);
@@ -239,11 +239,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_roles_add_user_to_role_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesAddUserToRoleRequest**](../Model/PostApiV1RolesAddUserToRoleRequest.md)| By default, the three major room roles are available in Rocket.Chat are **Owner**, **Leader**, and **Moderator**.  [Creating custom roles](https://docs.rocket.chat/use-rocket.chat/user-management/custom-roles) is exclusively available on the Enterprise plan.  Refer to [Roles](https://docs.rocket.chat/setup-and-configure/roles-in-rocket.chat) for more information. | [optional] |
+| **post_api_v1_roles_add_user_to_role_request** | [**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesAddUserToRoleRequest**](../Model/PostApiV1RolesAddUserToRoleRequest.md)| By default, the three major room roles are available in Rocket.Chat are **Owner**, **Leader**, and **Moderator**.  [Creating custom roles](https://docs.rocket.chat/use-rocket.chat/user-management/custom-roles) is exclusively available on the Enterprise plan.  Refer to [Roles](https://docs.rocket.chat/setup-and-configure/roles-in-rocket.chat) for more information. | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesAddUserToRole200Response**](../Model/PostApiV1RolesAddUserToRole200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesAddUserToRole200Response**](../Model/PostApiV1RolesAddUserToRole200Response.md)
 
 ### Authorization
 
@@ -261,7 +261,7 @@ No authorization required
 ## `postApiV1RolesCreate()`
 
 ```php
-postApiV1RolesCreate($x_user_id, $x_auth_token, $post_api_v1_roles_create_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200Response
+postApiV1RolesCreate($x_user_id, $x_auth_token, $post_api_v1_roles_create_request): \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesCreate200Response
 ```
 
 Create Role
@@ -276,14 +276,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\RolesApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_roles_create_request = {"name":"Test Role","scope":"Users","description":"Testing Role for API","mandatory2fa":false}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreateRequest
+$post_api_v1_roles_create_request = {"name":"Test Role","scope":"Users","description":"Testing Role for API","mandatory2fa":false}; // \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesCreateRequest
 
 try {
     $result = $apiInstance->postApiV1RolesCreate($x_user_id, $x_auth_token, $post_api_v1_roles_create_request);
@@ -299,11 +299,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_roles_create_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreateRequest**](../Model/PostApiV1RolesCreateRequest.md)|  | [optional] |
+| **post_api_v1_roles_create_request** | [**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesCreateRequest**](../Model/PostApiV1RolesCreateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200Response**](../Model/PostApiV1RolesCreate200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesCreate200Response**](../Model/PostApiV1RolesCreate200Response.md)
 
 ### Authorization
 
@@ -321,7 +321,7 @@ No authorization required
 ## `postApiV1RolesDelete()`
 
 ```php
-postApiV1RolesDelete($x_user_id, $x_auth_token, $post_api_v1_roles_delete_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1RolesDelete($x_user_id, $x_auth_token, $post_api_v1_roles_delete_request): \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Delete Role
@@ -336,14 +336,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\RolesApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_roles_delete_request = new \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDeleteRequest(); // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDeleteRequest
+$post_api_v1_roles_delete_request = new \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDeleteRequest(); // \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDeleteRequest
 
 try {
     $result = $apiInstance->postApiV1RolesDelete($x_user_id, $x_auth_token, $post_api_v1_roles_delete_request);
@@ -359,11 +359,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_roles_delete_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDeleteRequest**](../Model/PostApiV1RolesDeleteRequest.md)|  | [optional] |
+| **post_api_v1_roles_delete_request** | [**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDeleteRequest**](../Model/PostApiV1RolesDeleteRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -381,7 +381,7 @@ No authorization required
 ## `postApiV1RolesRemoveUserFromRole()`
 
 ```php
-postApiV1RolesRemoveUserFromRole($x_user_id, $x_auth_token, $post_api_v1_roles_remove_user_from_role_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1RolesRemoveUserFromRole($x_user_id, $x_auth_token, $post_api_v1_roles_remove_user_from_role_request): \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Remove Role from User
@@ -396,14 +396,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\RolesApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_roles_remove_user_from_role_request = new \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesRemoveUserFromRoleRequest(); // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesRemoveUserFromRoleRequest
+$post_api_v1_roles_remove_user_from_role_request = new \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesRemoveUserFromRoleRequest(); // \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesRemoveUserFromRoleRequest
 
 try {
     $result = $apiInstance->postApiV1RolesRemoveUserFromRole($x_user_id, $x_auth_token, $post_api_v1_roles_remove_user_from_role_request);
@@ -419,11 +419,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_roles_remove_user_from_role_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesRemoveUserFromRoleRequest**](../Model/PostApiV1RolesRemoveUserFromRoleRequest.md)|  | [optional] |
+| **post_api_v1_roles_remove_user_from_role_request** | [**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesRemoveUserFromRoleRequest**](../Model/PostApiV1RolesRemoveUserFromRoleRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -441,7 +441,7 @@ No authorization required
 ## `postApiV1RolesUpdate()`
 
 ```php
-postApiV1RolesUpdate($x_user_id, $x_auth_token, $post_api_v1_roles_update_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200Response
+postApiV1RolesUpdate($x_user_id, $x_auth_token, $post_api_v1_roles_update_request): \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesCreate200Response
 ```
 
 Update Role
@@ -456,14 +456,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\RolesApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\RolesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_roles_update_request = {"roleId":"646c431fa8c3a3ba32d0e1c4","name":"Test Role","scope":"Users","description":"Testing Role for API","mandatory2fa":false}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesUpdateRequest
+$post_api_v1_roles_update_request = {"roleId":"646c431fa8c3a3ba32d0e1c4","name":"Test Role","scope":"Users","description":"Testing Role for API","mandatory2fa":false}; // \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesUpdateRequest
 
 try {
     $result = $apiInstance->postApiV1RolesUpdate($x_user_id, $x_auth_token, $post_api_v1_roles_update_request);
@@ -479,11 +479,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_roles_update_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesUpdateRequest**](../Model/PostApiV1RolesUpdateRequest.md)|  | [optional] |
+| **post_api_v1_roles_update_request** | [**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesUpdateRequest**](../Model/PostApiV1RolesUpdateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200Response**](../Model/PostApiV1RolesCreate200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesCreate200Response**](../Model/PostApiV1RolesCreate200Response.md)
 
 ### Authorization
 

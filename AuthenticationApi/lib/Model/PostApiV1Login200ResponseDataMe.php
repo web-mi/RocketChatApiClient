@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientAuthenticationApi\Model;
+namespace WebMI\RocketChatApiClient\AuthenticationApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientAuthenticationApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
  * PostApiV1Login200ResponseDataMe Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,14 +59,14 @@ class PostApiV1Login200ResponseDataMe implements ModelInterface, ArrayAccess, \J
     protected static $openAPITypes = [
         '_id' => 'string',
         'name' => 'string',
-        'emails' => '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]',
+        'emails' => '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]',
         'status' => 'string',
         'status_connection' => 'string',
         'username' => 'string',
         'utc_offset' => 'int',
         'active' => 'bool',
         'roles' => 'string[]',
-        'settings' => '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMeSettings',
+        'settings' => '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeSettings',
         'avatar_url' => 'string'
     ];
 
@@ -416,7 +416,7 @@ class PostApiV1Login200ResponseDataMe implements ModelInterface, ArrayAccess, \J
     /**
      * Gets emails
      *
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]|null
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]|null
      */
     public function getEmails()
     {
@@ -426,7 +426,7 @@ class PostApiV1Login200ResponseDataMe implements ModelInterface, ArrayAccess, \J
     /**
      * Sets emails
      *
-     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]|null $emails emails
+     * @param \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]|null $emails emails
      *
      * @return self
      */
@@ -605,7 +605,7 @@ class PostApiV1Login200ResponseDataMe implements ModelInterface, ArrayAccess, \J
     /**
      * Gets settings
      *
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMeSettings|null
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeSettings|null
      */
     public function getSettings()
     {
@@ -615,7 +615,7 @@ class PostApiV1Login200ResponseDataMe implements ModelInterface, ArrayAccess, \J
     /**
      * Sets settings
      *
-     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMeSettings|null $settings settings
+     * @param \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeSettings|null $settings settings
      *
      * @return self
      */

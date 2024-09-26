@@ -16,7 +16,7 @@ Name | Type | Description | Notes
 **sys_mes** | **bool** |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **_usernames** | **string[]** |  | [optional]
-**last_message** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessage**](GetApiV1ImListEveryone200ResponseImsInnerLastMessage.md) |  | [optional]
+**last_message** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessage**](GetApiV1ImListEveryone200ResponseImsInnerLastMessage.md) |  | [optional]
 **lm** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -8,11 +8,11 @@ Name | Type | Description | Notes
 **rid** | **string** |  | [optional]
 **msg** | **string** |  | [optional]
 **ts** | **string** |  | [optional]
-**u** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU**](PostApiV1ChatDelete200ResponseMessageU.md) |  | [optional]
+**u** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU**](PostApiV1ChatDelete200ResponseMessageU.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **urls** | **object[]** |  | [optional]
-**mentions** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner[]**](GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner.md) |  | [optional]
+**mentions** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner[]**](GetApiV1ChatGetMentionedMessages200ResponseMessagesInnerMentionsInner.md) |  | [optional]
 **channels** | **object[]** |  | [optional]
-**md** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]**](PostApiV1ChatUpdate200ResponseMessageMdInner.md) |  | [optional]
+**md** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]**](PostApiV1ChatUpdate200ResponseMessageMdInner.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

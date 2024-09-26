@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsFiles200ResponseFilesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,7 +65,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInner implements ModelInterface, Arra
         'user_id' => 'string',
         'store' => 'string',
         '_updated_at' => 'string',
-        'identify' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify',
+        'identify' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify',
         'complete' => 'bool',
         'etag' => 'string',
         'path' => 'string',
@@ -75,7 +75,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInner implements ModelInterface, Arra
         'uploading' => 'bool',
         'url' => 'string',
         'type_group' => 'string',
-        'user' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU'
+        'user' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU'
     ];
 
     /**
@@ -634,7 +634,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInner implements ModelInterface, Arra
     /**
      * Gets identify
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null
      */
     public function getIdentify()
     {
@@ -644,7 +644,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInner implements ModelInterface, Arra
     /**
      * Sets identify
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null $identify identify
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null $identify identify
      *
      * @return self
      */
@@ -904,7 +904,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInner implements ModelInterface, Arra
     /**
      * Gets user
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getUser()
     {
@@ -914,7 +914,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInner implements ModelInterface, Arra
     /**
      * Sets user
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $user user
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $user user
      *
      * @return self
      */

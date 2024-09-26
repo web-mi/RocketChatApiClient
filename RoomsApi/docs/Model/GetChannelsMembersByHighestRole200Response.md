@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**members** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInner[]**](GetChannelsMembersByHighestRole200ResponseMembersInner.md) |  | [optional]
+**members** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInner[]**](GetChannelsMembersByHighestRole200ResponseMembersInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

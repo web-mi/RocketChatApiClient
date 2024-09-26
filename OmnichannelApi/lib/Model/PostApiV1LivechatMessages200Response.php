@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatMessages200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatMessages200Response implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessages200ResponseMessagesInner[]',
+        'messages' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessages200ResponseMessagesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatMessages200Response implements ModelInterface, ArrayAcces
     /**
      * Gets messages
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessages200ResponseMessagesInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessages200ResponseMessagesInner[]|null
      */
     public function getMessages()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatMessages200Response implements ModelInterface, ArrayAcces
     /**
      * Sets messages
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessages200ResponseMessagesInner[]|null $messages messages
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessages200ResponseMessagesInner[]|null $messages messages
      *
      * @return self
      */

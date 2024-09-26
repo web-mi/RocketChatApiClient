@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatSyncMessages200ResponseResult Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'updated' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]',
+        'updated' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]',
         'deleted' => 'object[]'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
     /**
      * Gets updated
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]|null
      */
     public function getUpdated()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
     /**
      * Sets updated
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]|null $updated updated
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]|null $updated updated
      *
      * @return self
      */

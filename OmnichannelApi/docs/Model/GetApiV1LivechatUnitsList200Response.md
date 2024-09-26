@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**units** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200ResponseUnitsInner[]**](GetApiV1LivechatUnits200ResponseUnitsInner.md) |  | [optional]
+**units** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200ResponseUnitsInner[]**](GetApiV1LivechatUnits200ResponseUnitsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

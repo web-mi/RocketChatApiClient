@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientAuthenticationApi\Model;
+namespace WebMI\RocketChatApiClient\AuthenticationApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientAuthenticationApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
  * PostApiV1Logout200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1Logout200Response implements ModelInterface, ArrayAccess, \JsonSe
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'data' => '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200ResponseData'
+        'data' => '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200ResponseData'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PostApiV1Logout200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200ResponseData|null
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200ResponseData|null
      */
     public function getData()
     {
@@ -336,7 +336,7 @@ class PostApiV1Logout200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200ResponseData|null $data data
+     * @param \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200ResponseData|null $data data
      *
      * @return self
      */

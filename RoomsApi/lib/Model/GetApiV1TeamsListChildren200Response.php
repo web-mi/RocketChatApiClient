@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsListChildren200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1TeamsListChildren200Response implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'total' => 'int',
-        'data' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]',
+        'data' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]',
         'offset' => 'int',
         'count' => 'int',
         'success' => 'bool'
@@ -347,7 +347,7 @@ class GetApiV1TeamsListChildren200Response implements ModelInterface, ArrayAcces
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]|null
      */
     public function getData()
     {
@@ -357,7 +357,7 @@ class GetApiV1TeamsListChildren200Response implements ModelInterface, ArrayAcces
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]|null $data data
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]|null $data data
      *
      * @return self
      */

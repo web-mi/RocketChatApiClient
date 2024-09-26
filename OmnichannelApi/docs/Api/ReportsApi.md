@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\ReportsApi
+# WebMI\RocketChatApiClient\OmnichannelApi\ReportsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatAnalyticsDashboardsConversationsByAgent()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsConversationsByAgent($x_user_id, $x_auth_token, $start, $end): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response
+getApiV1LivechatAnalyticsDashboardsConversationsByAgent($x_user_id, $x_auth_token, $start, $end): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response
 ```
 
 Get Conversation by Agents
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\ReportsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\ReportsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -57,7 +57,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsConversationsByDepartment()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsConversationsByDepartment($x_auth_token, $x_user_id, $start, $end, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response
+getApiV1LivechatAnalyticsDashboardsConversationsByDepartment($x_auth_token, $x_user_id, $start, $end, $sort): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response
 ```
 
 Get Conversations by Departments
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\ReportsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\ReportsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsConversationsByStatus()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsConversationsByStatus($x_auth_token, $x_user_id, $start, $end): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response
+getApiV1LivechatAnalyticsDashboardsConversationsByStatus($x_auth_token, $x_user_id, $start, $end): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response
 ```
 
 Get Conversations by Status
@@ -154,7 +154,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\ReportsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\ReportsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -183,7 +183,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsConversationsByTags()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsConversationsByTags($x_auth_token, $x_user_id, $start, $end): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response
+getApiV1LivechatAnalyticsDashboardsConversationsByTags($x_auth_token, $x_user_id, $start, $end): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response
 ```
 
 Get Conversations by Tags
@@ -216,7 +216,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\ReportsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\ReportsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -245,7 +245,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response.md)
 
 ### Authorization
 

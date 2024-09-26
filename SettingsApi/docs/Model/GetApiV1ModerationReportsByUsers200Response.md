@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**reports** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]**](GetApiV1ModerationReportsByUsers200ResponseReportsInner.md) |  | [optional]
+**reports** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]**](GetApiV1ModerationReportsByUsers200ResponseReportsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

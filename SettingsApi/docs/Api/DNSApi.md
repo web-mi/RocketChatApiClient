@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientSettingsApi\DNSApi
+# WebMI\RocketChatApiClient\SettingsApi\DNSApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiV1DnsResolveSrv()`
 
 ```php
-postApiV1DnsResolveSrv($x_user_id, $x_auth_token, $url): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1DnsResolveSrv($x_user_id, $x_auth_token, $url): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Resolve DNS URL Records
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\DNSApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\DNSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `postApiV1DnsResolveTxt()`
 
 ```php
-postApiV1DnsResolveTxt($x_user_id, $x_auth_token, $url): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1DnsResolveTxt($x_user_id, $x_auth_token, $url): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Resolve DNS Text Records
@@ -86,7 +86,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\DNSApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\DNSApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -113,7 +113,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 

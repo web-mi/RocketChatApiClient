@@ -12,7 +12,7 @@ Name | Type | Description | Notes
 **user_id** | **string** |  | [optional]
 **store** | **string** |  | [optional]
 **_updated_at** | **string** |  | [optional]
-**identify** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify**](GetApiV1ChannelsFiles200ResponseFilesInnerIdentify.md) |  | [optional]
+**identify** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify**](GetApiV1ChannelsFiles200ResponseFilesInnerIdentify.md) |  | [optional]
 **complete** | **bool** |  | [optional]
 **etag** | **string** |  | [optional]
 **path** | **string** |  | [optional]

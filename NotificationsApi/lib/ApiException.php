@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientNotificationsApi;
+namespace WebMI\RocketChatApiClient\NotificationsApi;
 
 use \Exception;
 
@@ -33,7 +33,7 @@ use \Exception;
  * ApiException Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */

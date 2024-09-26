@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientContentManagementApi\AssetsApi
+# WebMI\RocketChatApiClient\ContentManagementApi\AssetsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiV1AssetsSetAsset()`
 
 ```php
-postApiV1AssetsSetAsset($x_auth_token, $x_user_id, $post_api_v1_assets_set_asset_request): \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
+postApiV1AssetsSetAsset($x_auth_token, $x_user_id, $post_api_v1_assets_set_asset_request): \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
 ```
 
 Set Asset
@@ -26,14 +26,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\AssetsApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_assets_set_asset_request = new \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest(); // \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest | 
+$post_api_v1_assets_set_asset_request = new \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1AssetsSetAssetRequest(); // \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1AssetsSetAssetRequest | 
 
 try {
     $result = $apiInstance->postApiV1AssetsSetAsset($x_auth_token, $x_user_id, $post_api_v1_assets_set_asset_request);
@@ -49,11 +49,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_assets_set_asset_request** | [**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest**](../Model/PostApiV1AssetsSetAssetRequest.md)|  | [optional] |
+| **post_api_v1_assets_set_asset_request** | [**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1AssetsSetAssetRequest**](../Model/PostApiV1AssetsSetAssetRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `postApiV1AssetsUnsetAsset()`
 
 ```php
-postApiV1AssetsUnsetAsset($x_auth_token, $x_user_id, $post_api_v1_assets_unset_asset_request): \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
+postApiV1AssetsUnsetAsset($x_auth_token, $x_user_id, $post_api_v1_assets_unset_asset_request): \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
 ```
 
 Unset Asset
@@ -86,14 +86,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\AssetsApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_assets_unset_asset_request = {"assetName":"logo","refreshAllClients":true}; // \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest
+$post_api_v1_assets_unset_asset_request = {"assetName":"logo","refreshAllClients":true}; // \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest
 
 try {
     $result = $apiInstance->postApiV1AssetsUnsetAsset($x_auth_token, $x_user_id, $post_api_v1_assets_unset_asset_request);
@@ -109,11 +109,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_assets_unset_asset_request** | [**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest**](../Model/PostApiV1AssetsUnsetAssetRequest.md)|  | [optional] |
+| **post_api_v1_assets_unset_asset_request** | [**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest**](../Model/PostApiV1AssetsUnsetAssetRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
 
 ### Authorization
 

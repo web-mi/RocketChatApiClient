@@ -8,11 +8,11 @@ Name | Type | Description | Notes
 **rid** | **string** |  | [optional]
 **msg** | **string** |  | [optional]
 **ts** | **string** |  | [optional]
-**u** | [**\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU**](GetApiV1PushGet200ResponseDataMessageU.md) |  | [optional]
+**u** | [**\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU**](GetApiV1PushGet200ResponseDataMessageU.md) |  | [optional]
 **urls** | **object[]** |  | [optional]
 **mentions** | **object[]** |  | [optional]
 **channels** | **object[]** |  | [optional]
-**md** | [**\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInner[]**](GetApiV1PushGet200ResponseDataMessageMdInner.md) |  | [optional]
+**md** | [**\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInner[]**](GetApiV1PushGet200ResponseDataMessageMdInner.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

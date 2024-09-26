@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatMessage200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatMessage200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessage200ResponseMessage',
+        'message' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessage200ResponseMessage',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatMessage200Response implements ModelInterface, ArrayAccess
     /**
      * Gets message
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessage200ResponseMessage|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessage200ResponseMessage|null
      */
     public function getMessage()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatMessage200Response implements ModelInterface, ArrayAccess
     /**
      * Sets message
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessage200ResponseMessage|null $message message
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessage200ResponseMessage|null $message message
      *
      * @return self
      */

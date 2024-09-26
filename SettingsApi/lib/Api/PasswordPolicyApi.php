@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Api;
+namespace WebMI\RocketChatApiClient\SettingsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientSettingsApi\ApiException;
-use WebMIRocketChatApiClientSettingsApi\Configuration;
-use WebMIRocketChatApiClientSettingsApi\HeaderSelector;
-use WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\SettingsApi\ApiException;
+use WebMI\RocketChatApiClient\SettingsApi\Configuration;
+use WebMI\RocketChatApiClient\SettingsApi\HeaderSelector;
+use WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * PasswordPolicyApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -131,7 +131,7 @@ class PasswordPolicyApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPwGetPolicy'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -150,7 +150,7 @@ class PasswordPolicyApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getPwGetPolicy'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */

@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\LivechatInquiriesApi
+# WebMI\RocketChatApiClient\OmnichannelApi\LivechatInquiriesApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -15,7 +15,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatInquiriesGetOne()`
 
 ```php
-getApiV1LivechatInquiriesGetOne($x_auth_token, $x_user_id, $room_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200Response
+getApiV1LivechatInquiriesGetOne($x_auth_token, $x_user_id, $room_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200Response
 ```
 
 Get Inquiry by Room
@@ -30,7 +30,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatInquiriesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatInquiriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -57,7 +57,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200Response**](../Model/GetApiV1LivechatInquiriesGetOne200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200Response**](../Model/GetApiV1LivechatInquiriesGetOne200Response.md)
 
 ### Authorization
 
@@ -75,7 +75,7 @@ No authorization required
 ## `getApiV1LivechatInquiriesList()`
 
 ```php
-getApiV1LivechatInquiriesList($x_auth_token, $x_user_id, $department, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesList200Response
+getApiV1LivechatInquiriesList($x_auth_token, $x_user_id, $department, $offset, $count, $sort): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesList200Response
 ```
 
 Get Inquiries List
@@ -90,7 +90,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatInquiriesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatInquiriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -123,7 +123,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesList200Response**](../Model/GetApiV1LivechatInquiriesList200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesList200Response**](../Model/GetApiV1LivechatInquiriesList200Response.md)
 
 ### Authorization
 
@@ -141,7 +141,7 @@ No authorization required
 ## `getApiV1LivechatInquiriesQueued()`
 
 ```php
-getApiV1LivechatInquiriesQueued($x_user_id, $x_auth_token, $department, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response
+getApiV1LivechatInquiriesQueued($x_user_id, $x_auth_token, $department, $offset, $count, $sort): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response
 ```
 
 List Queued Inquiries
@@ -156,7 +156,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatInquiriesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatInquiriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -189,7 +189,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response**](../Model/GetApiV1LivechatInquiriesQueued200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response**](../Model/GetApiV1LivechatInquiriesQueued200Response.md)
 
 ### Authorization
 
@@ -207,7 +207,7 @@ No authorization required
 ## `getApiV1LivechatInquiriesQueuedForUser()`
 
 ```php
-getApiV1LivechatInquiriesQueuedForUser($x_user_id, $x_auth_token, $department, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response
+getApiV1LivechatInquiriesQueuedForUser($x_user_id, $x_auth_token, $department, $offset, $count, $sort): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response
 ```
 
 List Queued User Inquiries
@@ -222,7 +222,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatInquiriesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatInquiriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -255,7 +255,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response**](../Model/GetApiV1LivechatInquiriesQueued200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response**](../Model/GetApiV1LivechatInquiriesQueued200Response.md)
 
 ### Authorization
 
@@ -273,7 +273,7 @@ No authorization required
 ## `postApiV1LivechatInquiriesTake()`
 
 ```php
-postApiV1LivechatInquiriesTake($x_auth_token, $x_user_id, $post_api_v1_livechat_inquiries_take_request): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postApiV1LivechatInquiriesTake($x_auth_token, $x_user_id, $post_api_v1_livechat_inquiries_take_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Take Inquiry
@@ -288,14 +288,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatInquiriesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatInquiriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_livechat_inquiries_take_request = {"inquiryId":"ByehQjC44FwMeiLbX"}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatInquiriesTakeRequest | If the `userId` is provided, the user must have the `view-l-room` permission.
+$post_api_v1_livechat_inquiries_take_request = {"inquiryId":"ByehQjC44FwMeiLbX"}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatInquiriesTakeRequest | If the `userId` is provided, the user must have the `view-l-room` permission.
 
 try {
     $result = $apiInstance->postApiV1LivechatInquiriesTake($x_auth_token, $x_user_id, $post_api_v1_livechat_inquiries_take_request);
@@ -311,11 +311,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_livechat_inquiries_take_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatInquiriesTakeRequest**](../Model/PostApiV1LivechatInquiriesTakeRequest.md)| If the &#x60;userId&#x60; is provided, the user must have the &#x60;view-l-room&#x60; permission. | [optional] |
+| **post_api_v1_livechat_inquiries_take_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatInquiriesTakeRequest**](../Model/PostApiV1LivechatInquiriesTakeRequest.md)| If the &#x60;userId&#x60; is provided, the user must have the &#x60;view-l-room&#x60; permission. | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -333,7 +333,7 @@ No authorization required
 ## `putApiV1LivechatInquirySetSLA()`
 
 ```php
-putApiV1LivechatInquirySetSLA($x_auth_token, $x_user_id, $put_api_v1_livechat_inquiry_set_sla_request): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+putApiV1LivechatInquirySetSLA($x_auth_token, $x_user_id, $put_api_v1_livechat_inquiry_set_sla_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Set SLA Policy to Inquiry
@@ -348,14 +348,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatInquiriesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatInquiriesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$put_api_v1_livechat_inquiry_set_sla_request = {"roomId":"ZDYMFPpvnXgptmzMs","sla":"6417f67528384134ed600dc6"}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatInquirySetSLARequest
+$put_api_v1_livechat_inquiry_set_sla_request = {"roomId":"ZDYMFPpvnXgptmzMs","sla":"6417f67528384134ed600dc6"}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatInquirySetSLARequest
 
 try {
     $result = $apiInstance->putApiV1LivechatInquirySetSLA($x_auth_token, $x_user_id, $put_api_v1_livechat_inquiry_set_sla_request);
@@ -371,11 +371,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **put_api_v1_livechat_inquiry_set_sla_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatInquirySetSLARequest**](../Model/PutApiV1LivechatInquirySetSLARequest.md)|  | [optional] |
+| **put_api_v1_livechat_inquiry_set_sla_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatInquirySetSLARequest**](../Model/PutApiV1LivechatInquirySetSLARequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 

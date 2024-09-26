@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**queue** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInner[]**](GetApiV1LivechatQueue200ResponseQueueInner.md) |  | [optional]
+**queue** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInner[]**](GetApiV1LivechatQueue200ResponseQueueInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

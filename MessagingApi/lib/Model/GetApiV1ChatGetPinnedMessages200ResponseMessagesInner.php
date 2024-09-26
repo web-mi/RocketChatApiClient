@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatGetPinnedMessages200ResponseMessagesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,16 +61,16 @@ class GetApiV1ChatGetPinnedMessages200ResponseMessagesInner implements ModelInte
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
+        'u' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
         '_updated_at' => 'string',
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]',
+        'md' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]',
         'pinned' => 'bool',
         'pinned_at' => 'string',
-        'pinned_by' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy',
-        'reactions' => '\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactions',
+        'pinned_by' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy',
+        'reactions' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactions',
         'starred' => 'object[]',
         'replies' => 'string[]',
         'tcount' => 'int',
@@ -519,7 +519,7 @@ class GetApiV1ChatGetPinnedMessages200ResponseMessagesInner implements ModelInte
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
     public function getU()
     {
@@ -529,7 +529,7 @@ class GetApiV1ChatGetPinnedMessages200ResponseMessagesInner implements ModelInte
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
      *
      * @return self
      */
@@ -654,7 +654,7 @@ class GetApiV1ChatGetPinnedMessages200ResponseMessagesInner implements ModelInte
     /**
      * Gets md
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -664,7 +664,7 @@ class GetApiV1ChatGetPinnedMessages200ResponseMessagesInner implements ModelInte
     /**
      * Sets md
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null $md md
      *
      * @return self
      */
@@ -735,7 +735,7 @@ class GetApiV1ChatGetPinnedMessages200ResponseMessagesInner implements ModelInte
     /**
      * Gets pinned_by
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null
      */
     public function getPinnedBy()
     {
@@ -745,7 +745,7 @@ class GetApiV1ChatGetPinnedMessages200ResponseMessagesInner implements ModelInte
     /**
      * Sets pinned_by
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null $pinned_by pinned_by
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null $pinned_by pinned_by
      *
      * @return self
      */
@@ -762,7 +762,7 @@ class GetApiV1ChatGetPinnedMessages200ResponseMessagesInner implements ModelInte
     /**
      * Gets reactions
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactions|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactions|null
      */
     public function getReactions()
     {
@@ -772,7 +772,7 @@ class GetApiV1ChatGetPinnedMessages200ResponseMessagesInner implements ModelInte
     /**
      * Sets reactions
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactions|null $reactions reactions
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactions|null $reactions reactions
      *
      * @return self
      */

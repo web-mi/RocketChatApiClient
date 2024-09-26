@@ -30,9 +30,9 @@
         "friendsofphp/php-cs-fixer": "^3.5"
     },
     "autoload": {
-        "psr-4": { "WebMIRocketChatApiClientMessagingApi\\" : "lib/" }
+        "psr-4": { "WebMI\\RocketChatApiClient\\MessagingApi\\" : "lib/" }
     },
     "autoload-dev": {
-        "psr-4": { "WebMIRocketChatApiClientMessagingApi\\Test\\" : "test/" }
+        "psr-4": { "WebMI\\RocketChatApiClient\\MessagingApi\\Test\\" : "test/" }
     }
 }

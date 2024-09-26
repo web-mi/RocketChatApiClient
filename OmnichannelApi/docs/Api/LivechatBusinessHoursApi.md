@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\LivechatBusinessHoursApi
+# WebMI\RocketChatApiClient\OmnichannelApi\LivechatBusinessHoursApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatBusinessHour()`
 
 ```php
-getApiV1LivechatBusinessHour($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHour200Response
+getApiV1LivechatBusinessHour($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHour200Response
 ```
 
 Get Default Business Hour
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatBusinessHoursApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatBusinessHoursApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -52,7 +52,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHour200Response**](../Model/GetApiV1LivechatBusinessHour200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHour200Response**](../Model/GetApiV1LivechatBusinessHour200Response.md)
 
 ### Authorization
 
@@ -70,7 +70,7 @@ No authorization required
 ## `getApiV1LivechatBusinessHours()`
 
 ```php
-getApiV1LivechatBusinessHours($x_auth_token, $x_user_id, $name, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200Response
+getApiV1LivechatBusinessHours($x_auth_token, $x_user_id, $name, $offset, $count, $sort): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200Response
 ```
 
 Get Business Hours
@@ -85,7 +85,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatBusinessHoursApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatBusinessHoursApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -118,7 +118,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200Response**](../Model/GetApiV1LivechatBusinessHours200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200Response**](../Model/GetApiV1LivechatBusinessHours200Response.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ No authorization required
 ## `getApiV1LivechatBusinessHoursList()`
 
 ```php
-getApiV1LivechatBusinessHoursList($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHoursList200Response
+getApiV1LivechatBusinessHoursList($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHoursList200Response
 ```
 
 Business Hours List
@@ -151,7 +151,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatBusinessHoursApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatBusinessHoursApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -176,7 +176,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHoursList200Response**](../Model/GetApiV1LivechatBusinessHoursList200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHoursList200Response**](../Model/GetApiV1LivechatBusinessHoursList200Response.md)
 
 ### Authorization
 

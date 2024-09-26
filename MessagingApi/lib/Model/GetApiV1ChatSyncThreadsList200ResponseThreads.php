@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatSyncThreadsList200ResponseThreads Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class GetApiV1ChatSyncThreadsList200ResponseThreads implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsUpdateInner[]',
-        'remove' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsRemoveInner[]'
+        'update' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsUpdateInner[]',
+        'remove' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsRemoveInner[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class GetApiV1ChatSyncThreadsList200ResponseThreads implements ModelInterface, A
     /**
      * Gets update
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsUpdateInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsUpdateInner[]|null
      */
     public function getUpdate()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatSyncThreadsList200ResponseThreads implements ModelInterface, A
     /**
      * Sets update
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsUpdateInner[]|null $update update
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsUpdateInner[]|null $update update
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class GetApiV1ChatSyncThreadsList200ResponseThreads implements ModelInterface, A
     /**
      * Gets remove
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsRemoveInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsRemoveInner[]|null
      */
     public function getRemove()
     {
@@ -336,7 +336,7 @@ class GetApiV1ChatSyncThreadsList200ResponseThreads implements ModelInterface, A
     /**
      * Sets remove
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsRemoveInner[]|null $remove remove
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreadsRemoveInner[]|null $remove remove
      *
      * @return self
      */

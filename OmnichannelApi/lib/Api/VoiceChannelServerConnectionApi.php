@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Api;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientOmnichannelApi\ApiException;
-use WebMIRocketChatApiClientOmnichannelApi\Configuration;
-use WebMIRocketChatApiClientOmnichannelApi\HeaderSelector;
-use WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\OmnichannelApi\ApiException;
+use WebMI\RocketChatApiClient\OmnichannelApi\Configuration;
+use WebMI\RocketChatApiClient\OmnichannelApi\HeaderSelector;
+use WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * VoiceChannelServerConnectionApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -138,9 +138,9 @@ class VoiceChannelServerConnectionApi
      * @param  string $path The path of the websocket. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1VoipCallServerCheckConnection'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function getApiV1VoipCallServerCheckConnection($x_auth_token, $x_user_id, $websocket_url, $host, $port, $path, string $contentType = self::contentTypes['getApiV1VoipCallServerCheckConnection'][0])
     {
@@ -161,9 +161,9 @@ class VoiceChannelServerConnectionApi
      * @param  string $path The path of the websocket. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1VoipCallServerCheckConnection'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1VoipCallServerCheckConnectionWithHttpInfo($x_auth_token, $x_user_id, $websocket_url, $host, $port, $path, string $contentType = self::contentTypes['getApiV1VoipCallServerCheckConnection'][0])
     {
@@ -206,11 +206,11 @@ class VoiceChannelServerConnectionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -228,16 +228,16 @@ class VoiceChannelServerConnectionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -255,16 +255,16 @@ class VoiceChannelServerConnectionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -282,16 +282,16 @@ class VoiceChannelServerConnectionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -309,13 +309,13 @@ class VoiceChannelServerConnectionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -348,7 +348,7 @@ class VoiceChannelServerConnectionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -356,7 +356,7 @@ class VoiceChannelServerConnectionApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -364,7 +364,7 @@ class VoiceChannelServerConnectionApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -372,7 +372,7 @@ class VoiceChannelServerConnectionApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -426,7 +426,7 @@ class VoiceChannelServerConnectionApi
      */
     public function getApiV1VoipCallServerCheckConnectionAsyncWithHttpInfo($x_auth_token, $x_user_id, $websocket_url, $host, $port, $path, string $contentType = self::contentTypes['getApiV1VoipCallServerCheckConnection'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response';
         $request = $this->getApiV1VoipCallServerCheckConnectionRequest($x_auth_token, $x_user_id, $websocket_url, $host, $port, $path, $contentType);
 
         return $this->client
@@ -646,9 +646,9 @@ class VoiceChannelServerConnectionApi
      * @param  string $password The password of the administrator user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1VoipManagementServerCheckConnection'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
     public function getApiV1VoipManagementServerCheckConnection($x_auth_token, $x_user_id, $host, $port, $username, $password, string $contentType = self::contentTypes['getApiV1VoipManagementServerCheckConnection'][0])
     {
@@ -669,9 +669,9 @@ class VoiceChannelServerConnectionApi
      * @param  string $password The password of the administrator user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1VoipManagementServerCheckConnection'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1VoipManagementServerCheckConnectionWithHttpInfo($x_auth_token, $x_user_id, $host, $port, $username, $password, string $contentType = self::contentTypes['getApiV1VoipManagementServerCheckConnection'][0])
     {
@@ -714,11 +714,11 @@ class VoiceChannelServerConnectionApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -736,16 +736,16 @@ class VoiceChannelServerConnectionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -763,16 +763,16 @@ class VoiceChannelServerConnectionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -790,16 +790,16 @@ class VoiceChannelServerConnectionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -817,13 +817,13 @@ class VoiceChannelServerConnectionApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response';
+            $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -856,7 +856,7 @@ class VoiceChannelServerConnectionApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -864,7 +864,7 @@ class VoiceChannelServerConnectionApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -872,7 +872,7 @@ class VoiceChannelServerConnectionApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -880,7 +880,7 @@ class VoiceChannelServerConnectionApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -934,7 +934,7 @@ class VoiceChannelServerConnectionApi
      */
     public function getApiV1VoipManagementServerCheckConnectionAsyncWithHttpInfo($x_auth_token, $x_user_id, $host, $port, $username, $password, string $contentType = self::contentTypes['getApiV1VoipManagementServerCheckConnection'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response';
+        $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response';
         $request = $this->getApiV1VoipManagementServerCheckConnectionRequest($x_auth_token, $x_user_id, $host, $port, $username, $password, $contentType);
 
         return $this->client

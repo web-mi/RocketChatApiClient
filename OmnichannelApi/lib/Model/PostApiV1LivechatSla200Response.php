@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatSla200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sla' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatSla200ResponseSla',
+        'sla' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatSla200ResponseSla',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets sla
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatSla200ResponseSla|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatSla200ResponseSla|null
      */
     public function getSla()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets sla
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatSla200ResponseSla|null $sla sla
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatSla200ResponseSla|null $sla sla
      *
      * @return self
      */

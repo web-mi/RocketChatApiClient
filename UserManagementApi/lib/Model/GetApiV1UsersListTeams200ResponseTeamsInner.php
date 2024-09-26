@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1UsersListTeams200ResponseTeamsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetApiV1UsersListTeams200ResponseTeamsInner implements ModelInterface, Arr
         'name' => 'string',
         'type' => 'int',
         'created_at' => 'string',
-        'created_by' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy',
+        'created_by' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy',
         '_updated_at' => 'string',
         'room_id' => 'string',
         'is_owner' => 'bool'
@@ -449,7 +449,7 @@ class GetApiV1UsersListTeams200ResponseTeamsInner implements ModelInterface, Arr
     /**
      * Gets created_by
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy|null
      */
     public function getCreatedBy()
     {
@@ -459,7 +459,7 @@ class GetApiV1UsersListTeams200ResponseTeamsInner implements ModelInterface, Arr
     /**
      * Sets created_by
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy|null $created_by created_by
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy|null $created_by created_by
      *
      * @return self
      */

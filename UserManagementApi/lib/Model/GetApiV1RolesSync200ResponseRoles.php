@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1RolesSync200ResponseRoles Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class GetApiV1RolesSync200ResponseRoles implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]',
-        'remove' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]'
+        'update' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]',
+        'remove' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class GetApiV1RolesSync200ResponseRoles implements ModelInterface, ArrayAccess, 
     /**
      * Gets update
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]|null
      */
     public function getUpdate()
     {
@@ -309,7 +309,7 @@ class GetApiV1RolesSync200ResponseRoles implements ModelInterface, ArrayAccess, 
     /**
      * Sets update
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]|null $update update
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]|null $update update
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class GetApiV1RolesSync200ResponseRoles implements ModelInterface, ArrayAccess, 
     /**
      * Gets remove
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]|null
      */
     public function getRemove()
     {
@@ -336,7 +336,7 @@ class GetApiV1RolesSync200ResponseRoles implements ModelInterface, ArrayAccess, 
     /**
      * Sets remove
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]|null $remove remove
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync200ResponseRolesUpdateInner[]|null $remove remove
      *
      * @return self
      */

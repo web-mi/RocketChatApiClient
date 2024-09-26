@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1CommandsGet200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1CommandsGet200Response implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'command' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsGet200ResponseCommand',
+        'command' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1CommandsGet200ResponseCommand',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1CommandsGet200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets command
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsGet200ResponseCommand|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1CommandsGet200ResponseCommand|null
      */
     public function getCommand()
     {
@@ -309,7 +309,7 @@ class GetApiV1CommandsGet200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets command
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsGet200ResponseCommand|null $command command
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1CommandsGet200ResponseCommand|null $command command
      *
      * @return self
      */

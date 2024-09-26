@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**tags** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTags200ResponseTagsInner[]**](GetApiV1LivechatTags200ResponseTagsInner.md) |  | [optional]
+**tags** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTags200ResponseTagsInner[]**](GetApiV1LivechatTags200ResponseTagsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatVisitor200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatVisitor200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'visitor' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatVisitor200ResponseVisitor',
+        'visitor' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatVisitor200ResponseVisitor',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatVisitor200Response implements ModelInterface, ArrayAccess
     /**
      * Gets visitor
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatVisitor200ResponseVisitor|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatVisitor200ResponseVisitor|null
      */
     public function getVisitor()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatVisitor200Response implements ModelInterface, ArrayAccess
     /**
      * Sets visitor
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatVisitor200ResponseVisitor|null $visitor visitor
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatVisitor200ResponseVisitor|null $visitor visitor
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1EngagementDashboardMessagesOrigin200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200Response implements ModelInter
       * @var string[]
       */
     protected static $openAPITypes = [
-        'origins' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner[]',
+        'origins' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200Response implements ModelInter
     /**
      * Gets origins
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner[]|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner[]|null
      */
     public function getOrigins()
     {
@@ -309,7 +309,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200Response implements ModelInter
     /**
      * Sets origins
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner[]|null $origins origins
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner[]|null $origins origins
      *
      * @return self
      */

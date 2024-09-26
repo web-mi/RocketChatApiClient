@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**roles** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner[]**](GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner.md) |  | [optional]
+**roles** | [**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner[]**](GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **sessions** | **int** |  | [optional]
 **time** | **int** |  | [optional]

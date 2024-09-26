@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientAuthenticationApi\Api;
+namespace WebMI\RocketChatApiClient\AuthenticationApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientAuthenticationApi\ApiException;
-use WebMIRocketChatApiClientAuthenticationApi\Configuration;
-use WebMIRocketChatApiClientAuthenticationApi\HeaderSelector;
-use WebMIRocketChatApiClientAuthenticationApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\AuthenticationApi\ApiException;
+use WebMI\RocketChatApiClient\AuthenticationApi\Configuration;
+use WebMI\RocketChatApiClient\AuthenticationApi\HeaderSelector;
+use WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
  * TwoFactorAuthenticationApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,9 +139,9 @@ class TwoFactorAuthenticationApi
      * @param  string $x_2fa_method The 2FA method. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faDisableEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response
      */
     public function postApiV1Users2faDisableEmail($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['postApiV1Users2faDisableEmail'][0])
     {
@@ -160,9 +160,9 @@ class TwoFactorAuthenticationApi
      * @param  string $x_2fa_method The 2FA method. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faDisableEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1Users2faDisableEmailWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['postApiV1Users2faDisableEmail'][0])
     {
@@ -205,11 +205,11 @@ class TwoFactorAuthenticationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,16 +227,16 @@ class TwoFactorAuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -254,13 +254,13 @@ class TwoFactorAuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
+            $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -293,7 +293,7 @@ class TwoFactorAuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -301,7 +301,7 @@ class TwoFactorAuthenticationApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faDisableEmail400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -351,7 +351,7 @@ class TwoFactorAuthenticationApi
      */
     public function postApiV1Users2faDisableEmailAsyncWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['postApiV1Users2faDisableEmail'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
+        $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
         $request = $this->postApiV1Users2faDisableEmailRequest($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $contentType);
 
         return $this->client
@@ -523,9 +523,9 @@ class TwoFactorAuthenticationApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faEnableEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response
      */
     public function postApiV1Users2faEnableEmail($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1Users2faEnableEmail'][0])
     {
@@ -542,9 +542,9 @@ class TwoFactorAuthenticationApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faEnableEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1Users2faEnableEmailWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1Users2faEnableEmail'][0])
     {
@@ -587,11 +587,11 @@ class TwoFactorAuthenticationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -609,16 +609,16 @@ class TwoFactorAuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -636,13 +636,13 @@ class TwoFactorAuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
+            $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -675,7 +675,7 @@ class TwoFactorAuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -683,7 +683,7 @@ class TwoFactorAuthenticationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -729,7 +729,7 @@ class TwoFactorAuthenticationApi
      */
     public function postApiV1Users2faEnableEmailAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1Users2faEnableEmail'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
+        $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
         $request = $this->postApiV1Users2faEnableEmailRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -873,12 +873,12 @@ class TwoFactorAuthenticationApi
      *
      * Request a new Email Code
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response
      */
     public function postApiV1Users2faSendEmailCode($post_api_v1_users2fa_send_email_code_request = null, string $contentType = self::contentTypes['postApiV1Users2faSendEmailCode'][0])
     {
@@ -891,12 +891,12 @@ class TwoFactorAuthenticationApi
      *
      * Request a new Email Code
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response|\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1Users2faSendEmailCodeWithHttpInfo($post_api_v1_users2fa_send_email_code_request = null, string $contentType = self::contentTypes['postApiV1Users2faSendEmailCode'][0])
     {
@@ -939,11 +939,11 @@ class TwoFactorAuthenticationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -961,16 +961,16 @@ class TwoFactorAuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -988,13 +988,13 @@ class TwoFactorAuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
+            $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1027,7 +1027,7 @@ class TwoFactorAuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1035,7 +1035,7 @@ class TwoFactorAuthenticationApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCode400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1050,7 +1050,7 @@ class TwoFactorAuthenticationApi
      *
      * Request a new Email Code
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1071,7 +1071,7 @@ class TwoFactorAuthenticationApi
      *
      * Request a new Email Code
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1079,7 +1079,7 @@ class TwoFactorAuthenticationApi
      */
     public function postApiV1Users2faSendEmailCodeAsyncWithHttpInfo($post_api_v1_users2fa_send_email_code_request = null, string $contentType = self::contentTypes['postApiV1Users2faSendEmailCode'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
+        $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response';
         $request = $this->postApiV1Users2faSendEmailCodeRequest($post_api_v1_users2fa_send_email_code_request, $contentType);
 
         return $this->client
@@ -1121,7 +1121,7 @@ class TwoFactorAuthenticationApi
     /**
      * Create request for operation 'postApiV1Users2faSendEmailCode'
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsFiles200ResponseFilesInnerIdentify Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInnerIdentify implements ModelInterfa
       */
     protected static $openAPITypes = [
         'format' => 'string',
-        'size' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentifySize'
+        'size' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentifySize'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInnerIdentify implements ModelInterfa
     /**
      * Gets size
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentifySize|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentifySize|null
      */
     public function getSize()
     {
@@ -336,7 +336,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInnerIdentify implements ModelInterfa
     /**
      * Sets size
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentifySize|null $size size
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentifySize|null $size size
      *
      * @return self
      */

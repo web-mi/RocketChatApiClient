@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatVisitorRequestVisitor Class Doc Comment
  *
  * @category Class
  * @description Enter the body parameters in the &#x60;visitor&#x60; object.
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
         'token' => 'string',
         'phone' => 'string',
         'username' => 'string',
-        'custom_fields' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner[]'
+        'custom_fields' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner[]'
     ];
 
     /**
@@ -500,7 +500,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
     /**
      * Gets custom_fields
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner[]|null
      */
     public function getCustomFields()
     {
@@ -510,7 +510,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
     /**
      * Sets custom_fields
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner[]|null $custom_fields Enter the custom field key, value, and whether you want to overwrite this information.
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner[]|null $custom_fields Enter the custom field key, value, and whether you want to overwrite this information.
      *
      * @return self
      */

@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **_id** | **string** |  | [optional]
 **created_at** | **string** |  | [optional]
 **username** | **string** |  | [optional]
-**emails** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]**](PostApiV1UsersCreate200ResponseUserEmailsInner.md) |  | [optional]
+**emails** | [**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]**](PostApiV1UsersCreate200ResponseUserEmailsInner.md) |  | [optional]
 **type** | **string** |  | [optional]
 **status** | **string** |  | [optional]
 **active** | **bool** |  | [optional]

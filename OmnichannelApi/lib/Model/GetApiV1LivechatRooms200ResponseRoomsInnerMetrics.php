@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatRooms200ResponseRoomsInnerMetrics Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetrics implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'v' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV'
+        'v' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetrics implements ModelInterfac
     /**
      * Gets v
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null
      */
     public function getV()
     {
@@ -302,7 +302,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetrics implements ModelInterfac
     /**
      * Sets v
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null $v v
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null $v v
      *
      * @return self
      */

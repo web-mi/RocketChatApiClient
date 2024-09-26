@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\VoiceChannelRoomsApi
+# WebMI\RocketChatApiClient\OmnichannelApi\VoiceChannelRoomsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1VoipRoom()`
 
 ```php
-getApiV1VoipRoom($x_auth_token, $x_user_id, $token, $agent_id, $rid, $direction): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200Response
+getApiV1VoipRoom($x_auth_token, $x_user_id, $token, $agent_id, $rid, $direction): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200Response
 ```
 
 Create or Get Call Center Room
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelRoomsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\VoiceChannelRoomsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200Response**](../Model/GetApiV1LivechatRoom200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200Response**](../Model/GetApiV1LivechatRoom200Response.md)
 
 ### Authorization
 
@@ -78,7 +78,7 @@ No authorization required
 ## `getApiV1VoipRooms()`
 
 ```php
-getApiV1VoipRooms($x_auth_token, $x_user_id, $agents, $open, $created_at, $closed_at, $tags, $queue, $visitor_id, $direction, $room_name, $offset, $count, $sort, $fields): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipRooms200Response
+getApiV1VoipRooms($x_auth_token, $x_user_id, $agents, $open, $created_at, $closed_at, $tags, $queue, $visitor_id, $direction, $room_name, $offset, $count, $sort, $fields): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipRooms200Response
 ```
 
 Get List of Call Center Rooms
@@ -93,7 +93,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelRoomsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\VoiceChannelRoomsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -144,7 +144,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipRooms200Response**](../Model/GetApiV1VoipRooms200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipRooms200Response**](../Model/GetApiV1VoipRooms200Response.md)
 
 ### Authorization
 
@@ -162,7 +162,7 @@ No authorization required
 ## `postApiV1VoipRoomClose()`
 
 ```php
-postApiV1VoipRoomClose($x_auth_token, $x_user_id, $post_api_v1_voip_room_close_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1VoipRoomClose200Response
+postApiV1VoipRoomClose($x_auth_token, $x_user_id, $post_api_v1_voip_room_close_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1VoipRoomClose200Response
 ```
 
 Close Call Center Room
@@ -177,14 +177,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelRoomsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\VoiceChannelRoomsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_voip_room_close_request = {"rid":"c9YW3rejo7HeL6ZDW","token":"yHoawq4s9bDn4dM5H"}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1VoipRoomCloseRequest
+$post_api_v1_voip_room_close_request = {"rid":"c9YW3rejo7HeL6ZDW","token":"yHoawq4s9bDn4dM5H"}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1VoipRoomCloseRequest
 
 try {
     $result = $apiInstance->postApiV1VoipRoomClose($x_auth_token, $x_user_id, $post_api_v1_voip_room_close_request);
@@ -200,11 +200,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_voip_room_close_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1VoipRoomCloseRequest**](../Model/PostApiV1VoipRoomCloseRequest.md)|  | [optional] |
+| **post_api_v1_voip_room_close_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1VoipRoomCloseRequest**](../Model/PostApiV1VoipRoomCloseRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1VoipRoomClose200Response**](../Model/PostApiV1VoipRoomClose200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1VoipRoomClose200Response**](../Model/PostApiV1VoipRoomClose200Response.md)
 
 ### Authorization
 

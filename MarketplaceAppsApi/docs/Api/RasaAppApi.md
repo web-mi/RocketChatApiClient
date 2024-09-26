@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientMarketplaceAppsApi\RasaAppApi
+# WebMI\RocketChatApiClient\MarketplaceAppsApi\RasaAppApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiAppsPublicAppIdIncoming()`
 
 ```php
-postApiAppsPublicAppIdIncoming($app_id, $x_auth_token, $x_user_id, $post_api_apps_public_app_id_incoming_request): \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response
+postApiAppsPublicAppIdIncoming($app_id, $x_auth_token, $x_user_id, $post_api_apps_public_app_id_incoming_request): \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response
 ```
 
 Close Chat or Perform Handover
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMarketplaceAppsApi\Api\RasaAppApi(
+$apiInstance = new WebMI\RocketChatApiClient\MarketplaceAppsApi\Api\RasaAppApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -33,7 +33,7 @@ $apiInstance = new WebMIRocketChatApiClientMarketplaceAppsApi\Api\RasaAppApi(
 $app_id = 'app_id_example'; // string | The app id. Navigate to App Info > Details > APIs > POST incoming to get the complete URL for this endpoint.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_apps_public_app_id_incoming_request = {"action":"close-chat","sessionId":"2Sfq8wXw4fYPMf6r4"}; // \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest
+$post_api_apps_public_app_id_incoming_request = {"action":"close-chat","sessionId":"2Sfq8wXw4fYPMf6r4"}; // \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest
 
 try {
     $result = $apiInstance->postApiAppsPublicAppIdIncoming($app_id, $x_auth_token, $x_user_id, $post_api_apps_public_app_id_incoming_request);
@@ -50,11 +50,11 @@ try {
 | **app_id** | **string**| The app id. Navigate to App Info &gt; Details &gt; APIs &gt; POST incoming to get the complete URL for this endpoint. | |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_apps_public_app_id_incoming_request** | [**\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest**](../Model/PostApiAppsPublicAppIdIncomingRequest.md)|  | [optional] |
+| **post_api_apps_public_app_id_incoming_request** | [**\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest**](../Model/PostApiAppsPublicAppIdIncomingRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response**](../Model/PostApiAppsPublicAppIdIncoming200Response.md)
+[**\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response**](../Model/PostApiAppsPublicAppIdIncoming200Response.md)
 
 ### Authorization
 

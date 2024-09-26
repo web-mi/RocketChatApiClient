@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientSettingsApi\BulkUserImportApi
+# WebMI\RocketChatApiClient\SettingsApi\BulkUserImportApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1ImportStatus()`
 
 ```php
-getApiV1ImportStatus($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ImportStatus200Response
+getApiV1ImportStatus($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ImportStatus200Response
 ```
 
 Get Import Operation Status
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\BulkUserImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\BulkUserImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ImportStatus200Response**](../Model/GetApiV1ImportStatus200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ImportStatus200Response**](../Model/GetApiV1ImportStatus200Response.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `postApiV1ImportAddUsers()`
 
 ```php
-postApiV1ImportAddUsers($x_user_id, $x_auth_token, $post_api_v1_import_add_users_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1ImportAddUsers($x_user_id, $x_auth_token, $post_api_v1_import_add_users_request): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Add Users
@@ -87,14 +87,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\BulkUserImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\BulkUserImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_import_add_users_request = {"users":[{"username":"john.doe","emails":["john.doe@example.com"],"importIds":["1523"],"name":"John Doe","password":"P@ssw0rd"},{"username":"jane.doe","emails":["jane.doe@example.com"],"importIds":["1524"],"name":"Jane Doe"}]}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportAddUsersRequest | Note:   1. A minimum of one email address and one import ID is required. If any user is missing those, the endpoint will fail and no user will be added to the operation.   2. Emails and usernames will not be validated, but they must be unique or the user creation will fail.   3. If roles are added, they must be valid Rocket.Chat roles, or the endpoint will fail and no user will be added to the operation.   4. The default roles will be added to all users automatically.   5. If no password is added, a temporary random password will be generated automatically.   6. Users flagged as `deleted` will be created as `Deactivated` on Rocket.Chat.   7. Avatar URLs will not be fetched automatically. The workspace administrator needs to use the **Download Pending Avatars** button in **Administration** > **Workspace** > **Import** on the workspace after the import is completed.   8. Import IDs will not be used as IDs by Rocket.Chat, but you can query users by their import ID with the  <a href=\"https://developer.rocket.chat/apidocs/get-users-info\" target=\"_blank\">users.info</a>.
+$post_api_v1_import_add_users_request = {"users":[{"username":"john.doe","emails":["john.doe@example.com"],"importIds":["1523"],"name":"John Doe","password":"P@ssw0rd"},{"username":"jane.doe","emails":["jane.doe@example.com"],"importIds":["1524"],"name":"Jane Doe"}]}; // \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportAddUsersRequest | Note:   1. A minimum of one email address and one import ID is required. If any user is missing those, the endpoint will fail and no user will be added to the operation.   2. Emails and usernames will not be validated, but they must be unique or the user creation will fail.   3. If roles are added, they must be valid Rocket.Chat roles, or the endpoint will fail and no user will be added to the operation.   4. The default roles will be added to all users automatically.   5. If no password is added, a temporary random password will be generated automatically.   6. Users flagged as `deleted` will be created as `Deactivated` on Rocket.Chat.   7. Avatar URLs will not be fetched automatically. The workspace administrator needs to use the **Download Pending Avatars** button in **Administration** > **Workspace** > **Import** on the workspace after the import is completed.   8. Import IDs will not be used as IDs by Rocket.Chat, but you can query users by their import ID with the  <a href=\"https://developer.rocket.chat/apidocs/get-users-info\" target=\"_blank\">users.info</a>.
 
 try {
     $result = $apiInstance->postApiV1ImportAddUsers($x_user_id, $x_auth_token, $post_api_v1_import_add_users_request);
@@ -110,11 +110,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_import_add_users_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportAddUsersRequest**](../Model/PostApiV1ImportAddUsersRequest.md)| Note:   1. A minimum of one email address and one import ID is required. If any user is missing those, the endpoint will fail and no user will be added to the operation.   2. Emails and usernames will not be validated, but they must be unique or the user creation will fail.   3. If roles are added, they must be valid Rocket.Chat roles, or the endpoint will fail and no user will be added to the operation.   4. The default roles will be added to all users automatically.   5. If no password is added, a temporary random password will be generated automatically.   6. Users flagged as &#x60;deleted&#x60; will be created as &#x60;Deactivated&#x60; on Rocket.Chat.   7. Avatar URLs will not be fetched automatically. The workspace administrator needs to use the **Download Pending Avatars** button in **Administration** &gt; **Workspace** &gt; **Import** on the workspace after the import is completed.   8. Import IDs will not be used as IDs by Rocket.Chat, but you can query users by their import ID with the  &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/get-users-info\&quot; target&#x3D;\&quot;_blank\&quot;&gt;users.info&lt;/a&gt;. | [optional] |
+| **post_api_v1_import_add_users_request** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportAddUsersRequest**](../Model/PostApiV1ImportAddUsersRequest.md)| Note:   1. A minimum of one email address and one import ID is required. If any user is missing those, the endpoint will fail and no user will be added to the operation.   2. Emails and usernames will not be validated, but they must be unique or the user creation will fail.   3. If roles are added, they must be valid Rocket.Chat roles, or the endpoint will fail and no user will be added to the operation.   4. The default roles will be added to all users automatically.   5. If no password is added, a temporary random password will be generated automatically.   6. Users flagged as &#x60;deleted&#x60; will be created as &#x60;Deactivated&#x60; on Rocket.Chat.   7. Avatar URLs will not be fetched automatically. The workspace administrator needs to use the **Download Pending Avatars** button in **Administration** &gt; **Workspace** &gt; **Import** on the workspace after the import is completed.   8. Import IDs will not be used as IDs by Rocket.Chat, but you can query users by their import ID with the  &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/get-users-info\&quot; target&#x3D;\&quot;_blank\&quot;&gt;users.info&lt;/a&gt;. | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 ## `postApiV1ImportClear()`
 
 ```php
-postApiV1ImportClear($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1ImportClear($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Abort Import Operation
@@ -147,7 +147,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\BulkUserImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\BulkUserImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -172,7 +172,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ No authorization required
 ## `postApiV1ImportNew()`
 
 ```php
-postApiV1ImportNew($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportNew200Response
+postApiV1ImportNew($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportNew200Response
 ```
 
 Create New Import Operation
@@ -205,7 +205,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\BulkUserImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\BulkUserImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -230,7 +230,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportNew200Response**](../Model/PostApiV1ImportNew200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportNew200Response**](../Model/PostApiV1ImportNew200Response.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ No authorization required
 ## `postApiV1ImportRun()`
 
 ```php
-postApiV1ImportRun($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1ImportRun($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Run Import Operation
@@ -263,7 +263,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\BulkUserImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\BulkUserImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -288,7 +288,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 

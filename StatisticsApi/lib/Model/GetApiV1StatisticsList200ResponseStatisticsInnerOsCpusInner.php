@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
     protected static $openAPITypes = [
         'model' => 'string',
         'speed' => 'int',
-        'times' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes'
+        'times' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes'
     ];
 
     /**
@@ -360,7 +360,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
     /**
      * Gets times
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes|null
      */
     public function getTimes()
     {
@@ -370,7 +370,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
     /**
      * Sets times
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes|null $times times
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes|null $times times
      *
      * @return self
      */

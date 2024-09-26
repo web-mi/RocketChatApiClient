@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1Spotlight200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'users' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]',
+        'users' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]',
         'rooms' => 'object[]',
         'success' => 'bool'
     ];
@@ -306,7 +306,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets users
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]|null
      */
     public function getUsers()
     {
@@ -316,7 +316,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets users
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]|null $users users
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]|null $users users
      *
      * @return self
      */

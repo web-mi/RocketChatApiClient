@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1SessionsListAll200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1SessionsListAll200Response implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sessions' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]',
+        'sessions' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]',
         'total' => 'int',
         'count' => 'int',
         'offset' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1SessionsListAll200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets sessions
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]|null
      */
     public function getSessions()
     {
@@ -330,7 +330,7 @@ class GetApiV1SessionsListAll200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets sessions
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]|null $sessions sessions
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]|null $sessions sessions
      *
      * @return self
      */

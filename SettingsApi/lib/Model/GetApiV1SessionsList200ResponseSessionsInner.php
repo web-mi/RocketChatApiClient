@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1SessionsList200ResponseSessionsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetApiV1SessionsList200ResponseSessionsInner implements ModelInterface, Ar
     protected static $openAPITypes = [
         'session_id' => 'string',
         'user_id' => 'string',
-        'device' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice',
+        'device' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice',
         'host' => 'string',
         'ip' => 'string',
         'login_at' => 'string',
@@ -388,7 +388,7 @@ class GetApiV1SessionsList200ResponseSessionsInner implements ModelInterface, Ar
     /**
      * Gets device
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null
      */
     public function getDevice()
     {
@@ -398,7 +398,7 @@ class GetApiV1SessionsList200ResponseSessionsInner implements ModelInterface, Ar
     /**
      * Sets device
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null $device device
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null $device device
      *
      * @return self
      */

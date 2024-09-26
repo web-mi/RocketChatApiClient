@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1TeamsUpdateRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
       */
     protected static $openAPITypes = [
         'team_id' => 'string',
-        'data' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequestData'
+        'data' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRequestData'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequestData
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRequestData
      */
     public function getData()
     {
@@ -342,7 +342,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequestData $data data
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRequestData $data data
      *
      * @return self
      */

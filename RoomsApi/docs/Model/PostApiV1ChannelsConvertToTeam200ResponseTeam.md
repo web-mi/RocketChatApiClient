@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **name** | **string** |  | [optional]
 **type** | **int** |  | [optional]
 **created_at** | **string** |  | [optional]
-**created_by** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU**](PostApiV1ChannelsAddAll200ResponseChannelU.md) |  | [optional]
+**created_by** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU**](PostApiV1ChannelsAddAll200ResponseChannelU.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **room_id** | **string** |  | [optional]
 

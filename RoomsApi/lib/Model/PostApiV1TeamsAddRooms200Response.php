@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1TeamsAddRooms200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1TeamsAddRooms200Response implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'rooms' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200ResponseRoomsInner[]',
+        'rooms' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsAddRooms200ResponseRoomsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1TeamsAddRooms200Response implements ModelInterface, ArrayAccess, 
     /**
      * Gets rooms
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200ResponseRoomsInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsAddRooms200ResponseRoomsInner[]|null
      */
     public function getRooms()
     {
@@ -309,7 +309,7 @@ class PostApiV1TeamsAddRooms200Response implements ModelInterface, ArrayAccess, 
     /**
      * Sets rooms
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200ResponseRoomsInner[]|null $rooms rooms
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsAddRooms200ResponseRoomsInner[]|null $rooms rooms
      *
      * @return self
      */

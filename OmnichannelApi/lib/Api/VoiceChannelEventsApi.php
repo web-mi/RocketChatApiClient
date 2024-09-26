@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Api;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientOmnichannelApi\ApiException;
-use WebMIRocketChatApiClientOmnichannelApi\Configuration;
-use WebMIRocketChatApiClientOmnichannelApi\HeaderSelector;
-use WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\OmnichannelApi\ApiException;
+use WebMI\RocketChatApiClient\OmnichannelApi\Configuration;
+use WebMI\RocketChatApiClient\OmnichannelApi\HeaderSelector;
+use WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * VoiceChannelEventsApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -129,10 +129,10 @@ class VoiceChannelEventsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request get_api_v1_voip_events_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request get_api_v1_voip_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1VoipEvents'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return void
      */
@@ -148,10 +148,10 @@ class VoiceChannelEventsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1VoipEvents'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\OmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of null, HTTP status code, HTTP response headers (array of strings)
      */
@@ -201,7 +201,7 @@ class VoiceChannelEventsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -209,7 +209,7 @@ class VoiceChannelEventsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -217,7 +217,7 @@ class VoiceChannelEventsApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -225,7 +225,7 @@ class VoiceChannelEventsApi
                 case 404:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
+                        '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -242,7 +242,7 @@ class VoiceChannelEventsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1VoipEvents'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -265,7 +265,7 @@ class VoiceChannelEventsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1VoipEvents'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -304,7 +304,7 @@ class VoiceChannelEventsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request (optional)
+     * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipEventsRequest $get_api_v1_voip_events_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1VoipEvents'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

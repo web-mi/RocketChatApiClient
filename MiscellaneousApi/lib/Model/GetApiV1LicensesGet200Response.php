@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1LicensesGet200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LicensesGet200Response implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'licenses' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInner[]',
+        'licenses' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LicensesGet200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets licenses
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInner[]|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInner[]|null
      */
     public function getLicenses()
     {
@@ -309,7 +309,7 @@ class GetApiV1LicensesGet200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets licenses
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInner[]|null $licenses licenses
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInner[]|null $licenses licenses
      *
      * @return self
      */

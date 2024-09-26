@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1SubscriptionsGet200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]',
+        'update' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]',
         'remove' => 'object[]',
         'success' => 'bool'
     ];
@@ -306,7 +306,7 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
     /**
      * Gets update
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]|null
      */
     public function getUpdate()
     {
@@ -316,7 +316,7 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
     /**
      * Sets update
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]|null $update update
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]|null $update update
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1UsersGetPersonalAccessTokens200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1UsersGetPersonalAccessTokens200Response implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tokens' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner[]',
+        'tokens' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1UsersGetPersonalAccessTokens200Response implements ModelInterface,
     /**
      * Gets tokens
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner[]|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner[]|null
      */
     public function getTokens()
     {
@@ -309,7 +309,7 @@ class GetApiV1UsersGetPersonalAccessTokens200Response implements ModelInterface,
     /**
      * Sets tokens
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner[]|null $tokens tokens
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner[]|null $tokens tokens
      *
      * @return self
      */

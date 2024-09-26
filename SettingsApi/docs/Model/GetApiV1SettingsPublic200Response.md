@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**settings** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsPublic200ResponseSettingsInner[]**](GetApiV1SettingsPublic200ResponseSettingsInner.md) |  | [optional]
+**settings** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SettingsPublic200ResponseSettingsInner[]**](GetApiV1SettingsPublic200ResponseSettingsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1EmailInboxSearch200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1EmailInboxSearch200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'email_inbox' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInner',
+        'email_inbox' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInner',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1EmailInboxSearch200Response implements ModelInterface, ArrayAccess
     /**
      * Gets email_inbox
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInner|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInner|null
      */
     public function getEmailInbox()
     {
@@ -309,7 +309,7 @@ class GetApiV1EmailInboxSearch200Response implements ModelInterface, ArrayAccess
     /**
      * Sets email_inbox
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInner|null $email_inbox email_inbox
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInner|null $email_inbox email_inbox
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatRoomTransfer200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatRoomTransfer200Response implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomTransfer200ResponseRoom',
+        'room' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomTransfer200ResponseRoom',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatRoomTransfer200Response implements ModelInterface, ArrayA
     /**
      * Gets room
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomTransfer200ResponseRoom|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomTransfer200ResponseRoom|null
      */
     public function getRoom()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatRoomTransfer200Response implements ModelInterface, ArrayA
     /**
      * Sets room
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomTransfer200ResponseRoom|null $room room
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomTransfer200ResponseRoom|null $room room
      *
      * @return self
      */

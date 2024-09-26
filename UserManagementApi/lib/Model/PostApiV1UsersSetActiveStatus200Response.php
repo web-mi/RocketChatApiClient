@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersSetActiveStatus200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1UsersSetActiveStatus200Response implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'user' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200ResponseUser',
+        'user' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200ResponseUser',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1UsersSetActiveStatus200Response implements ModelInterface, ArrayA
     /**
      * Gets user
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200ResponseUser|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200ResponseUser|null
      */
     public function getUser()
     {
@@ -309,7 +309,7 @@ class PostApiV1UsersSetActiveStatus200Response implements ModelInterface, ArrayA
     /**
      * Sets user
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200ResponseUser|null $user user
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200ResponseUser|null $user user
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientNotificationsApi\Model;
+namespace WebMI\RocketChatApiClient\NotificationsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\NotificationsApi\ObjectSerializer;
 
 /**
  * GetApiV1PushGet200ResponseDataMessageMdInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]'
+        'value' => '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
     /**
      * Gets value
      *
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]|null
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
     /**
      * Sets value
      *
-     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]|null $value value
+     * @param \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]|null $value value
      *
      * @return self
      */

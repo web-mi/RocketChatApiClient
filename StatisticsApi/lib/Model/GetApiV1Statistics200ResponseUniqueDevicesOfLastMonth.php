@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
         'year' => 'int',
         'month' => 'int',
         'day' => 'int',
-        'data' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner[]'
+        'data' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner[]'
     ];
 
     /**
@@ -394,7 +394,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner[]|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner[]|null
      */
     public function getData()
     {
@@ -404,7 +404,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner[]|null $data data
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner[]|null $data data
      *
      * @return self
      */

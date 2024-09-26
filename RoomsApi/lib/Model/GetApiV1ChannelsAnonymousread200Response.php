@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsAnonymousread200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChannelsAnonymousread200Response implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner[]',
+        'messages' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ChannelsAnonymousread200Response implements ModelInterface, ArrayA
     /**
      * Gets messages
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner[]|null
      */
     public function getMessages()
     {
@@ -330,7 +330,7 @@ class GetApiV1ChannelsAnonymousread200Response implements ModelInterface, ArrayA
     /**
      * Sets messages
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner[]|null $messages messages
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner[]|null $messages messages
      *
      * @return self
      */

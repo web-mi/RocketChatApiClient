@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **parse_urls** | **bool** |  | [optional]
 **groupable** | **bool** |  | [optional]
 **ts** | **string** |  | [optional]
-**u** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy**](PostApiV1ChatUpdate200ResponseMessageEditedBy.md) |  | [optional]
+**u** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy**](PostApiV1ChatUpdate200ResponseMessageEditedBy.md) |  | [optional]
 **rid** | **string** |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **_id** | **string** |  | [optional]

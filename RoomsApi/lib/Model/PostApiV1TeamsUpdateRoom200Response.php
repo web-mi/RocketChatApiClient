@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1TeamsUpdateRoom200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1TeamsUpdateRoom200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom',
+        'room' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1TeamsUpdateRoom200Response implements ModelInterface, ArrayAccess
     /**
      * Gets room
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom|null
      */
     public function getRoom()
     {
@@ -309,7 +309,7 @@ class PostApiV1TeamsUpdateRoom200Response implements ModelInterface, ArrayAccess
     /**
      * Sets room
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom|null $room room
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom|null $room room
      *
      * @return self
      */

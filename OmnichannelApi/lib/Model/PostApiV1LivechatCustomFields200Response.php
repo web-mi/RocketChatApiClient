@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatCustomFields200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'fields' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]',
+        'fields' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
     /**
      * Gets fields
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]|null
      */
     public function getFields()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
     /**
      * Sets fields
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]|null $fields fields
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]|null $fields fields
      *
      * @return self
      */

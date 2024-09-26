@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1LicensesInfo200ResponseLicense Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'license' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicense',
+        'license' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicense',
         'active_modules' => 'string[]',
-        'prevented_actions' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicensePreventedActions',
-        'limits' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimits',
-        'tags' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]',
+        'prevented_actions' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicensePreventedActions',
+        'limits' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimits',
+        'tags' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]',
         'trial' => 'bool'
     ];
 
@@ -327,7 +327,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
     /**
      * Gets license
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicense|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicense|null
      */
     public function getLicense()
     {
@@ -337,7 +337,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
     /**
      * Sets license
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicense|null $license license
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicense|null $license license
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
     /**
      * Gets prevented_actions
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicensePreventedActions|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicensePreventedActions|null
      */
     public function getPreventedActions()
     {
@@ -391,7 +391,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
     /**
      * Sets prevented_actions
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicensePreventedActions|null $prevented_actions prevented_actions
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicensePreventedActions|null $prevented_actions prevented_actions
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
     /**
      * Gets limits
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimits|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimits|null
      */
     public function getLimits()
     {
@@ -418,7 +418,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
     /**
      * Sets limits
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimits|null $limits limits
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimits|null $limits limits
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
     /**
      * Gets tags
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null
      */
     public function getTags()
     {
@@ -445,7 +445,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
     /**
      * Sets tags
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null $tags tags
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null $tags tags
      *
      * @return self
      */

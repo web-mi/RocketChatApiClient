@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,20 +57,20 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
       * @var string[]
       */
     protected static $openAPITypes = [
-        'apple' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'dolphin' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'drupal' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'facebook' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'github' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'github_enterprise' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'gitlab' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'google' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'linkedin' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'meteor' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'nextcloud' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'tokenpass' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'twitter' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
-        'wordpress' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'apple' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'dolphin' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'drupal' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'facebook' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'github' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'github_enterprise' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'gitlab' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'google' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'linkedin' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'meteor' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'nextcloud' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'tokenpass' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'twitter' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
+        'wordpress' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple',
         'custom' => 'object'
     ];
 
@@ -390,7 +390,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets apple
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getApple()
     {
@@ -400,7 +400,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets apple
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $apple apple
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $apple apple
      *
      * @return self
      */
@@ -417,7 +417,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets dolphin
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getDolphin()
     {
@@ -427,7 +427,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets dolphin
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $dolphin dolphin
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $dolphin dolphin
      *
      * @return self
      */
@@ -444,7 +444,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets drupal
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getDrupal()
     {
@@ -454,7 +454,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets drupal
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $drupal drupal
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $drupal drupal
      *
      * @return self
      */
@@ -471,7 +471,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets facebook
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getFacebook()
     {
@@ -481,7 +481,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets facebook
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $facebook facebook
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $facebook facebook
      *
      * @return self
      */
@@ -498,7 +498,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets github
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getGithub()
     {
@@ -508,7 +508,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets github
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $github github
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $github github
      *
      * @return self
      */
@@ -525,7 +525,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets github_enterprise
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getGithubEnterprise()
     {
@@ -535,7 +535,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets github_enterprise
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $github_enterprise github_enterprise
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $github_enterprise github_enterprise
      *
      * @return self
      */
@@ -552,7 +552,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets gitlab
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getGitlab()
     {
@@ -562,7 +562,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets gitlab
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $gitlab gitlab
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $gitlab gitlab
      *
      * @return self
      */
@@ -579,7 +579,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets google
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getGoogle()
     {
@@ -589,7 +589,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets google
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $google google
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $google google
      *
      * @return self
      */
@@ -606,7 +606,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets linkedin
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getLinkedin()
     {
@@ -616,7 +616,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets linkedin
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $linkedin linkedin
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $linkedin linkedin
      *
      * @return self
      */
@@ -633,7 +633,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets meteor
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getMeteor()
     {
@@ -643,7 +643,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets meteor
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $meteor meteor
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $meteor meteor
      *
      * @return self
      */
@@ -660,7 +660,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets nextcloud
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getNextcloud()
     {
@@ -670,7 +670,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets nextcloud
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $nextcloud nextcloud
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $nextcloud nextcloud
      *
      * @return self
      */
@@ -687,7 +687,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets tokenpass
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getTokenpass()
     {
@@ -697,7 +697,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets tokenpass
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $tokenpass tokenpass
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $tokenpass tokenpass
      *
      * @return self
      */
@@ -714,7 +714,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets twitter
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getTwitter()
     {
@@ -724,7 +724,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets twitter
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $twitter twitter
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $twitter twitter
      *
      * @return self
      */
@@ -741,7 +741,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Gets wordpress
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
     public function getWordpress()
     {
@@ -751,7 +751,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
     /**
      * Sets wordpress
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $wordpress wordpress
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null $wordpress wordpress
      *
      * @return self
      */

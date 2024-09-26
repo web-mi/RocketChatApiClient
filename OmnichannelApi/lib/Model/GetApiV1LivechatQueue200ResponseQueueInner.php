@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatQueue200ResponseQueueInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
       */
     protected static $openAPITypes = [
         'chats' => 'int',
-        'user' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInnerUser',
-        'department' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment'
+        'user' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInnerUser',
+        'department' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment'
     ];
 
     /**
@@ -333,7 +333,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
     /**
      * Gets user
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInnerUser|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInnerUser|null
      */
     public function getUser()
     {
@@ -343,7 +343,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
     /**
      * Sets user
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInnerUser|null $user user
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInnerUser|null $user user
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
     /**
      * Gets department
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null
      */
     public function getDepartment()
     {
@@ -370,7 +370,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
     /**
      * Sets department
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null $department department
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null $department department
      *
      * @return self
      */

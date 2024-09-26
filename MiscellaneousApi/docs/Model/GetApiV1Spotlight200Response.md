@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**users** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]**](GetApiV1Spotlight200ResponseUsersInner.md) |  | [optional]
+**users** | [**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]**](GetApiV1Spotlight200ResponseUsersInner.md) |  | [optional]
 **rooms** | **object[]** |  | [optional]
 **success** | **bool** |  | [optional]
 

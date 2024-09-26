@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Api;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientMiscellaneousApi\ApiException;
-use WebMIRocketChatApiClientMiscellaneousApi\Configuration;
-use WebMIRocketChatApiClientMiscellaneousApi\HeaderSelector;
-use WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\MiscellaneousApi\ApiException;
+use WebMI\RocketChatApiClient\MiscellaneousApi\Configuration;
+use WebMI\RocketChatApiClient\MiscellaneousApi\HeaderSelector;
+use WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * AutoTranslateApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -138,9 +138,9 @@ class AutoTranslateApi
      * @param  string $target_language Language in which the language names will be returned. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1AutotranslateGetSupportedLanguages'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function getApiV1AutotranslateGetSupportedLanguages($x_auth_token, $x_user_id, $target_language, string $contentType = self::contentTypes['getApiV1AutotranslateGetSupportedLanguages'][0])
     {
@@ -158,9 +158,9 @@ class AutoTranslateApi
      * @param  string $target_language Language in which the language names will be returned. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1AutotranslateGetSupportedLanguages'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1AutotranslateGetSupportedLanguagesWithHttpInfo($x_auth_token, $x_user_id, $target_language, string $contentType = self::contentTypes['getApiV1AutotranslateGetSupportedLanguages'][0])
     {
@@ -203,11 +203,11 @@ class AutoTranslateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -225,16 +225,16 @@ class AutoTranslateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -252,16 +252,16 @@ class AutoTranslateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -279,13 +279,13 @@ class AutoTranslateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response';
+            $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -318,7 +318,7 @@ class AutoTranslateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -326,7 +326,7 @@ class AutoTranslateApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -334,7 +334,7 @@ class AutoTranslateApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -382,7 +382,7 @@ class AutoTranslateApi
      */
     public function getApiV1AutotranslateGetSupportedLanguagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $target_language, string $contentType = self::contentTypes['getApiV1AutotranslateGetSupportedLanguages'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response';
+        $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response';
         $request = $this->getApiV1AutotranslateGetSupportedLanguagesRequest($x_auth_token, $x_user_id, $target_language, $contentType);
 
         return $this->client
@@ -545,12 +545,12 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request post_api_v1_autotranslate_save_settings_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request post_api_v1_autotranslate_save_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateSaveSettings'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function postApiV1AutotranslateSaveSettings($x_auth_token, $x_user_id, $post_api_v1_autotranslate_save_settings_request = null, string $contentType = self::contentTypes['postApiV1AutotranslateSaveSettings'][0])
     {
@@ -565,12 +565,12 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateSaveSettings'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1AutotranslateSaveSettingsWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_autotranslate_save_settings_request = null, string $contentType = self::contentTypes['postApiV1AutotranslateSaveSettings'][0])
     {
@@ -613,11 +613,11 @@ class AutoTranslateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -635,16 +635,16 @@ class AutoTranslateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -662,13 +662,13 @@ class AutoTranslateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
+            $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -701,7 +701,7 @@ class AutoTranslateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -709,7 +709,7 @@ class AutoTranslateApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -726,7 +726,7 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateSaveSettings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -749,7 +749,7 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateSaveSettings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -757,7 +757,7 @@ class AutoTranslateApi
      */
     public function postApiV1AutotranslateSaveSettingsAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_autotranslate_save_settings_request = null, string $contentType = self::contentTypes['postApiV1AutotranslateSaveSettings'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
+        $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
         $request = $this->postApiV1AutotranslateSaveSettingsRequest($x_auth_token, $x_user_id, $post_api_v1_autotranslate_save_settings_request, $contentType);
 
         return $this->client
@@ -801,7 +801,7 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest $post_api_v1_autotranslate_save_settings_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateSaveSettings'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -912,12 +912,12 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request post_api_v1_autotranslate_translate_message_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request post_api_v1_autotranslate_translate_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateTranslateMessage'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function postApiV1AutotranslateTranslateMessage($x_auth_token, $x_user_id, $post_api_v1_autotranslate_translate_message_request = null, string $contentType = self::contentTypes['postApiV1AutotranslateTranslateMessage'][0])
     {
@@ -932,12 +932,12 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateTranslateMessage'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1AutotranslateTranslateMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_autotranslate_translate_message_request = null, string $contentType = self::contentTypes['postApiV1AutotranslateTranslateMessage'][0])
     {
@@ -980,11 +980,11 @@ class AutoTranslateApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1002,16 +1002,16 @@ class AutoTranslateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1029,13 +1029,13 @@ class AutoTranslateApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response';
+            $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1068,7 +1068,7 @@ class AutoTranslateApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1076,7 +1076,7 @@ class AutoTranslateApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1093,7 +1093,7 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateTranslateMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1116,7 +1116,7 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateTranslateMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1124,7 +1124,7 @@ class AutoTranslateApi
      */
     public function postApiV1AutotranslateTranslateMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_autotranslate_translate_message_request = null, string $contentType = self::contentTypes['postApiV1AutotranslateTranslateMessage'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response';
+        $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response';
         $request = $this->postApiV1AutotranslateTranslateMessageRequest($x_auth_token, $x_user_id, $post_api_v1_autotranslate_translate_message_request, $contentType);
 
         return $this->client
@@ -1168,7 +1168,7 @@ class AutoTranslateApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest $post_api_v1_autotranslate_translate_message_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AutotranslateTranslateMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

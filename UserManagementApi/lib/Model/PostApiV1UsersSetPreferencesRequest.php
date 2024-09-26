@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersSetPreferencesRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1UsersSetPreferencesRequest implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'user_id' => 'string',
-        'data' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData'
+        'data' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData'
     ];
 
     /**
@@ -329,7 +329,7 @@ class PostApiV1UsersSetPreferencesRequest implements ModelInterface, ArrayAccess
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData
      */
     public function getData()
     {
@@ -339,7 +339,7 @@ class PostApiV1UsersSetPreferencesRequest implements ModelInterface, ArrayAccess
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData $data data
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferencesRequestData $data data
      *
      * @return self
      */

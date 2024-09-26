@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1Statistics200ResponseSettingsGeneral Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'apps' => 'object',
-        'nps' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralNps',
-        'update' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralUpdate'
+        'nps' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralNps',
+        'update' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralUpdate'
     ];
 
     /**
@@ -333,7 +333,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
     /**
      * Gets nps
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralNps|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralNps|null
      */
     public function getNps()
     {
@@ -343,7 +343,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
     /**
      * Sets nps
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralNps|null $nps nps
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralNps|null $nps nps
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
     /**
      * Gets update
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralUpdate|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralUpdate|null
      */
     public function getUpdate()
     {
@@ -370,7 +370,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
     /**
      * Sets update
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralUpdate|null $update update
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralUpdate|null $update update
      *
      * @return self
      */

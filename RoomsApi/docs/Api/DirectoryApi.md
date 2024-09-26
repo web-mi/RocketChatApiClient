@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientRoomsApi\DirectoryApi
+# WebMI\RocketChatApiClient\RoomsApi\DirectoryApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1Directory()`
 
 ```php
-getApiV1Directory($x_auth_token, $x_user_id, $query, $offset, $count, $sort, $fields): \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response
+getApiV1Directory($x_auth_token, $x_user_id, $query, $offset, $count, $sort, $fields): \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1Directory200Response
 ```
 
 Directory
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\DirectoryApi(
+$apiInstance = new WebMI\RocketChatApiClient\RoomsApi\Api\DirectoryApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200Response**](../Model/GetApiV1Directory200Response.md)
+[**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1Directory200Response**](../Model/GetApiV1Directory200Response.md)
 
 ### Authorization
 

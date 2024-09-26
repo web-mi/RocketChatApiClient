@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatMessagesHistoryRid200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner[]',
+        'messages' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner[]',
         'unread_not_loaded' => 'int',
         'success' => 'bool'
     ];
@@ -306,7 +306,7 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
     /**
      * Gets messages
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner[]|null
      */
     public function getMessages()
     {
@@ -316,7 +316,7 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
     /**
      * Sets messages
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner[]|null $messages messages
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner[]|null $messages messages
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatPageVisitedRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
     protected static $openAPITypes = [
         'token' => 'string',
         'rid' => 'string',
-        'page_info' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfo'
+        'page_info' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfo'
     ];
 
     /**
@@ -366,7 +366,7 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
     /**
      * Gets page_info
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfo
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfo
      */
     public function getPageInfo()
     {
@@ -376,7 +376,7 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
     /**
      * Sets page_info
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfo $page_info page_info
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfo $page_info page_info
      *
      * @return self
      */

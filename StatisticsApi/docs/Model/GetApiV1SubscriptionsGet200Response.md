@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**update** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]**](GetApiV1SubscriptionsGet200ResponseUpdateInner.md) |  | [optional]
+**update** | [**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]**](GetApiV1SubscriptionsGet200ResponseUpdateInner.md) |  | [optional]
 **remove** | **object[]** |  | [optional]
 **success** | **bool** |  | [optional]
 

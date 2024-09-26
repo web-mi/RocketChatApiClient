@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImListEveryone200ResponseImsInnerLastMessage Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,13 +60,13 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessage implements ModelInter
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
+        'u' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
         '_id' => 'string',
         '_updated_at' => 'string',
-        'urls' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner[]',
+        'urls' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner[]'
+        'md' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner[]'
     ];
 
     /**
@@ -436,7 +436,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessage implements ModelInter
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
     public function getU()
     {
@@ -446,7 +446,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessage implements ModelInter
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
      *
      * @return self
      */
@@ -517,7 +517,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessage implements ModelInter
     /**
      * Gets urls
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner[]|null
      */
     public function getUrls()
     {
@@ -527,7 +527,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessage implements ModelInter
     /**
      * Sets urls
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner[]|null $urls urls
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner[]|null $urls urls
      *
      * @return self
      */
@@ -598,7 +598,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessage implements ModelInter
     /**
      * Gets md
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -608,7 +608,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessage implements ModelInter
     /**
      * Sets md
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner[]|null $md md
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1StatisticsList200ResponseStatisticsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
       */
     protected static $openAPITypes = [
         '_id' => 'string',
-        'wizard' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerWizard',
+        'wizard' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerWizard',
         'unique_id' => 'string',
         'installed_at' => 'string',
         'version' => 'string',
@@ -73,7 +73,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
         'total_connected_users' => 'int',
         'offline_users' => 'int',
         'total_rooms' => 'int',
-        'user_languages' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages',
+        'user_languages' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages',
         'total_channels' => 'int',
         'total_private_groups' => 'int',
         'total_direct' => 'int',
@@ -84,7 +84,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
         'total_livechat_agents' => 'int',
         'voip_enabled' => 'bool',
         'omnichannel_sources' => 'object[]',
-        'business_hours' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours',
+        'business_hours' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours',
         'chats_on_hold' => 'int',
         'departments' => 'int',
         'email_inboxes' => 'int',
@@ -100,44 +100,44 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
         'total_messages' => 'int',
         'federated_servers' => 'int',
         'federated_users' => 'int',
-        'os' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOs',
-        'process' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerProcess',
-        'deploy' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerDeploy',
+        'os' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOs',
+        'process' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerProcess',
+        'deploy' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerDeploy',
         'read_receipts_enabled' => 'bool',
         'read_receipts_detailed' => 'bool',
         'enterprise_ready' => 'bool',
         'uploads_total' => 'int',
         'uploads_total_size' => 'int',
-        'migration' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerMigration',
+        'migration' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerMigration',
         'instance_count' => 'int',
         'ms_enabled' => 'bool',
         'oplog_enabled' => 'bool',
         'mongo_version' => 'string',
         'mongo_storage_engine' => 'string',
-        'apps' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerApps',
-        'unique_users_of_yesterday' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
-        'unique_devices_of_last_week' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
-        'unique_osof_last_week' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
-        'unique_devices_of_last_month' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
-        'unique_osof_yesterday' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
-        'unique_osof_last_month' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
-        'unique_devices_of_yesterday' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
-        'unique_users_of_last_week' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
-        'unique_users_of_last_month' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
-        'services' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServices',
-        'importer' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerImporter',
-        'video_conf' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConf',
+        'apps' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerApps',
+        'unique_users_of_yesterday' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
+        'unique_devices_of_last_week' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
+        'unique_osof_last_week' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
+        'unique_devices_of_last_month' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
+        'unique_osof_yesterday' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
+        'unique_osof_last_month' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
+        'unique_devices_of_yesterday' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
+        'unique_users_of_last_week' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
+        'unique_users_of_last_month' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday',
+        'services' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServices',
+        'importer' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerImporter',
+        'video_conf' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConf',
         'dashboard_count' => 'int',
         'message_audit_apply' => 'int',
         'message_audit_load' => 'int',
         'settings' => 'object',
-        'integrations' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations',
+        'integrations' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations',
         'push_queue' => 'int',
-        'enterprise' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise',
+        'enterprise' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise',
         'total_otr_rooms' => 'int',
         'total_otr' => 'int',
         'total_broadcast_rooms' => 'int',
-        'teams' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerTeams',
+        'teams' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerTeams',
         'total_rooms_with_active_livestream' => 'int',
         'total_triggered_emails' => 'int',
         'total_rooms_with_starred' => 'int',
@@ -1082,7 +1082,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets wizard
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerWizard|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerWizard|null
      */
     public function getWizard()
     {
@@ -1092,7 +1092,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets wizard
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerWizard|null $wizard wizard
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerWizard|null $wizard wizard
      *
      * @return self
      */
@@ -1487,7 +1487,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets user_languages
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages|null
      */
     public function getUserLanguages()
     {
@@ -1497,7 +1497,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets user_languages
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages|null $user_languages user_languages
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages|null $user_languages user_languages
      *
      * @return self
      */
@@ -1784,7 +1784,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets business_hours
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours|null
      */
     public function getBusinessHours()
     {
@@ -1794,7 +1794,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets business_hours
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours|null $business_hours business_hours
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours|null $business_hours business_hours
      *
      * @return self
      */
@@ -2216,7 +2216,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets os
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOs|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOs|null
      */
     public function getOs()
     {
@@ -2226,7 +2226,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets os
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOs|null $os os
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOs|null $os os
      *
      * @return self
      */
@@ -2243,7 +2243,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets process
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerProcess|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerProcess|null
      */
     public function getProcess()
     {
@@ -2253,7 +2253,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets process
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerProcess|null $process process
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerProcess|null $process process
      *
      * @return self
      */
@@ -2270,7 +2270,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets deploy
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerDeploy|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerDeploy|null
      */
     public function getDeploy()
     {
@@ -2280,7 +2280,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets deploy
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerDeploy|null $deploy deploy
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerDeploy|null $deploy deploy
      *
      * @return self
      */
@@ -2432,7 +2432,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets migration
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerMigration|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerMigration|null
      */
     public function getMigration()
     {
@@ -2442,7 +2442,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets migration
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerMigration|null $migration migration
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerMigration|null $migration migration
      *
      * @return self
      */
@@ -2594,7 +2594,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets apps
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerApps|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerApps|null
      */
     public function getApps()
     {
@@ -2604,7 +2604,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets apps
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerApps|null $apps apps
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerApps|null $apps apps
      *
      * @return self
      */
@@ -2621,7 +2621,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets unique_users_of_yesterday
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
      */
     public function getUniqueUsersOfYesterday()
     {
@@ -2631,7 +2631,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets unique_users_of_yesterday
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_users_of_yesterday unique_users_of_yesterday
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_users_of_yesterday unique_users_of_yesterday
      *
      * @return self
      */
@@ -2648,7 +2648,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets unique_devices_of_last_week
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
      */
     public function getUniqueDevicesOfLastWeek()
     {
@@ -2658,7 +2658,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets unique_devices_of_last_week
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_devices_of_last_week unique_devices_of_last_week
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_devices_of_last_week unique_devices_of_last_week
      *
      * @return self
      */
@@ -2675,7 +2675,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets unique_osof_last_week
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
      */
     public function getUniqueOsofLastWeek()
     {
@@ -2685,7 +2685,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets unique_osof_last_week
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_osof_last_week unique_osof_last_week
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_osof_last_week unique_osof_last_week
      *
      * @return self
      */
@@ -2702,7 +2702,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets unique_devices_of_last_month
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
      */
     public function getUniqueDevicesOfLastMonth()
     {
@@ -2712,7 +2712,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets unique_devices_of_last_month
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_devices_of_last_month unique_devices_of_last_month
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_devices_of_last_month unique_devices_of_last_month
      *
      * @return self
      */
@@ -2729,7 +2729,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets unique_osof_yesterday
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
      */
     public function getUniqueOsofYesterday()
     {
@@ -2739,7 +2739,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets unique_osof_yesterday
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_osof_yesterday unique_osof_yesterday
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_osof_yesterday unique_osof_yesterday
      *
      * @return self
      */
@@ -2756,7 +2756,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets unique_osof_last_month
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
      */
     public function getUniqueOsofLastMonth()
     {
@@ -2766,7 +2766,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets unique_osof_last_month
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_osof_last_month unique_osof_last_month
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_osof_last_month unique_osof_last_month
      *
      * @return self
      */
@@ -2783,7 +2783,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets unique_devices_of_yesterday
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
      */
     public function getUniqueDevicesOfYesterday()
     {
@@ -2793,7 +2793,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets unique_devices_of_yesterday
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_devices_of_yesterday unique_devices_of_yesterday
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_devices_of_yesterday unique_devices_of_yesterday
      *
      * @return self
      */
@@ -2810,7 +2810,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets unique_users_of_last_week
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
      */
     public function getUniqueUsersOfLastWeek()
     {
@@ -2820,7 +2820,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets unique_users_of_last_week
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_users_of_last_week unique_users_of_last_week
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_users_of_last_week unique_users_of_last_week
      *
      * @return self
      */
@@ -2837,7 +2837,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets unique_users_of_last_month
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null
      */
     public function getUniqueUsersOfLastMonth()
     {
@@ -2847,7 +2847,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets unique_users_of_last_month
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_users_of_last_month unique_users_of_last_month
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUniqueUsersOfYesterday|null $unique_users_of_last_month unique_users_of_last_month
      *
      * @return self
      */
@@ -2864,7 +2864,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets services
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServices|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServices|null
      */
     public function getServices()
     {
@@ -2874,7 +2874,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets services
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServices|null $services services
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServices|null $services services
      *
      * @return self
      */
@@ -2891,7 +2891,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets importer
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerImporter|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerImporter|null
      */
     public function getImporter()
     {
@@ -2901,7 +2901,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets importer
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerImporter|null $importer importer
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerImporter|null $importer importer
      *
      * @return self
      */
@@ -2918,7 +2918,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets video_conf
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConf|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConf|null
      */
     public function getVideoConf()
     {
@@ -2928,7 +2928,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets video_conf
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConf|null $video_conf video_conf
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConf|null $video_conf video_conf
      *
      * @return self
      */
@@ -3053,7 +3053,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets integrations
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations|null
      */
     public function getIntegrations()
     {
@@ -3063,7 +3063,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets integrations
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations|null $integrations integrations
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations|null $integrations integrations
      *
      * @return self
      */
@@ -3107,7 +3107,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets enterprise
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise|null
      */
     public function getEnterprise()
     {
@@ -3117,7 +3117,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets enterprise
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise|null $enterprise enterprise
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise|null $enterprise enterprise
      *
      * @return self
      */
@@ -3215,7 +3215,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Gets teams
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerTeams|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerTeams|null
      */
     public function getTeams()
     {
@@ -3225,7 +3225,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInner implements ModelInterface
     /**
      * Sets teams
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerTeams|null $teams teams
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerTeams|null $teams teams
      *
      * @return self
      */

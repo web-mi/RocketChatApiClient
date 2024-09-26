@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersGeneratePersonalAccessToken400Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostApiV1UsersGeneratePersonalAccessToken400Response implements ModelInter
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400ResponseDetails'
+        'details' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class PostApiV1UsersGeneratePersonalAccessToken400Response implements ModelInter
     /**
      * Gets details
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400ResponseDetails|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class PostApiV1UsersGeneratePersonalAccessToken400Response implements ModelInter
     /**
      * Sets details
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400ResponseDetails|null $details details
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400ResponseDetails|null $details details
      *
      * @return self
      */

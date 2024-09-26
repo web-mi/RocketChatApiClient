@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsMembers200ResponseMembersInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'user' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUser',
+        'user' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUser',
         'roles' => 'string[]',
-        'created_by' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU',
+        'created_by' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU',
         'created_at' => 'string'
     ];
 
@@ -313,7 +313,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
     /**
      * Gets user
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUser|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUser|null
      */
     public function getUser()
     {
@@ -323,7 +323,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
     /**
      * Sets user
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUser|null $user user
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUser|null $user user
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
     /**
      * Gets created_by
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
     public function getCreatedBy()
     {
@@ -377,7 +377,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
     /**
      * Sets created_by
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $created_by created_by
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $created_by created_by
      *
      * @return self
      */

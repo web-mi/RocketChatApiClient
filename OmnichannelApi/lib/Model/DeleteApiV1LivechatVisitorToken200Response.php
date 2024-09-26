@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * DeleteApiV1LivechatVisitorToken200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class DeleteApiV1LivechatVisitorToken200Response implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'visitor' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat',
+        'visitor' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class DeleteApiV1LivechatVisitorToken200Response implements ModelInterface, Arra
     /**
      * Gets visitor
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null
      */
     public function getVisitor()
     {
@@ -309,7 +309,7 @@ class DeleteApiV1LivechatVisitorToken200Response implements ModelInterface, Arra
     /**
      * Sets visitor
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null $visitor visitor
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null $visitor visitor
      *
      * @return self
      */

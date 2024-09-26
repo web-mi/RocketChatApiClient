@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatRoomSurveyRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
     protected static $openAPITypes = [
         'rid' => 'string',
         'token' => 'string',
-        'data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]'
+        'data' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]'
     ];
 
     /**
@@ -369,7 +369,7 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]
      */
     public function getData()
     {
@@ -379,7 +379,7 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[] $data An array of object with `name` and `value` to provide feedback.
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[] $data An array of object with `name` and `value` to provide feedback.
      *
      * @return self
      */

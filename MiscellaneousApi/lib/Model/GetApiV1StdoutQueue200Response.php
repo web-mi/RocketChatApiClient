@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1StdoutQueue200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1StdoutQueue200Response implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'queue' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200ResponseQueueInner[]',
+        'queue' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1StdoutQueue200ResponseQueueInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1StdoutQueue200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets queue
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200ResponseQueueInner[]|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1StdoutQueue200ResponseQueueInner[]|null
      */
     public function getQueue()
     {
@@ -309,7 +309,7 @@ class GetApiV1StdoutQueue200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets queue
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200ResponseQueueInner[]|null $queue queue
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1StdoutQueue200ResponseQueueInner[]|null $queue queue
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\LivechatAppearanceApi
+# WebMI\RocketChatApiClient\OmnichannelApi\LivechatAppearanceApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatAppearance()`
 
 ```php
-getApiV1LivechatAppearance($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAppearance200Response
+getApiV1LivechatAppearance($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAppearance200Response
 ```
 
 Get Livechat Appearance
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatAppearanceApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatAppearanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -51,7 +51,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAppearance200Response**](../Model/GetApiV1LivechatAppearance200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAppearance200Response**](../Model/GetApiV1LivechatAppearance200Response.md)
 
 ### Authorization
 
@@ -69,7 +69,7 @@ No authorization required
 ## `postApiV1LivechatAppearance()`
 
 ```php
-postApiV1LivechatAppearance($x_auth_token, $x_user_id, $post_api_v1_livechat_appearance_request_inner): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postApiV1LivechatAppearance($x_auth_token, $x_user_id, $post_api_v1_livechat_appearance_request_inner): \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Set Livechat Appearance
@@ -84,14 +84,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatAppearanceApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatAppearanceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_livechat_appearance_request_inner = [{"_id":"Livechat_title","value":"Hello"},{"_id":"Livechat_show_agent_email","value":"false"},{"_id":"Livechat_show_agent_info","value":true},{"_id":"Livechat_title_color","value":"#b427bed"}]; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatAppearanceRequestInner[] | An array of objects containing the `_id` and `value` of the settings to be updated. See <a href=\"https://developer.rocket.chat/apidocs/get-livechat-appearance\" target=\"_blank\">Get LiveChat Appearance</a> example response for the `_id` of each setting.
+$post_api_v1_livechat_appearance_request_inner = [{"_id":"Livechat_title","value":"Hello"},{"_id":"Livechat_show_agent_email","value":"false"},{"_id":"Livechat_show_agent_info","value":true},{"_id":"Livechat_title_color","value":"#b427bed"}]; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatAppearanceRequestInner[] | An array of objects containing the `_id` and `value` of the settings to be updated. See <a href=\"https://developer.rocket.chat/apidocs/get-livechat-appearance\" target=\"_blank\">Get LiveChat Appearance</a> example response for the `_id` of each setting.
 
 try {
     $result = $apiInstance->postApiV1LivechatAppearance($x_auth_token, $x_user_id, $post_api_v1_livechat_appearance_request_inner);
@@ -107,11 +107,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_livechat_appearance_request_inner** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatAppearanceRequestInner[]**](../Model/PostApiV1LivechatAppearanceRequestInner.md)| An array of objects containing the &#x60;_id&#x60; and &#x60;value&#x60; of the settings to be updated. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/get-livechat-appearance\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Get LiveChat Appearance&lt;/a&gt; example response for the &#x60;_id&#x60; of each setting. | [optional] |
+| **post_api_v1_livechat_appearance_request_inner** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatAppearanceRequestInner[]**](../Model/PostApiV1LivechatAppearanceRequestInner.md)| An array of objects containing the &#x60;_id&#x60; and &#x60;value&#x60; of the settings to be updated. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/get-livechat-appearance\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Get LiveChat Appearance&lt;/a&gt; example response for the &#x60;_id&#x60; of each setting. | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 

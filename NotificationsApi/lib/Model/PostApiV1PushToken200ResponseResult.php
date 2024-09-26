@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientNotificationsApi\Model;
+namespace WebMI\RocketChatApiClient\NotificationsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\NotificationsApi\ObjectSerializer;
 
 /**
  * PostApiV1PushToken200ResponseResult Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'token' => '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken',
+        'token' => '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200ResponseResultToken',
         'app_name' => 'string',
         'user_id' => 'string',
         'enabled' => 'bool',
@@ -334,7 +334,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
     /**
      * Gets token
      *
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken|null
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200ResponseResultToken|null
      */
     public function getToken()
     {
@@ -344,7 +344,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
     /**
      * Sets token
      *
-     * @param \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken|null $token token
+     * @param \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200ResponseResultToken|null $token token
      *
      * @return self
      */

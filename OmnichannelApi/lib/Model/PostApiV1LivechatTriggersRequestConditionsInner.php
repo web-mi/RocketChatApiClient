@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatTriggersRequestConditionsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1LivechatTriggersRequestConditionsInner implements ModelInterface,
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'value' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInnerValue'
+        'value' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInnerValue'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PostApiV1LivechatTriggersRequestConditionsInner implements ModelInterface,
     /**
      * Gets value
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInnerValue|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInnerValue|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class PostApiV1LivechatTriggersRequestConditionsInner implements ModelInterface,
     /**
      * Sets value
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInnerValue|null $value value
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInnerValue|null $value value
      *
      * @return self
      */

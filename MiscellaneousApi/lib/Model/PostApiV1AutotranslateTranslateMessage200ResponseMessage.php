@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * PostApiV1AutotranslateTranslateMessage200ResponseMessage Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,11 +61,11 @@ class PostApiV1AutotranslateTranslateMessage200ResponseMessage implements ModelI
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageU',
+        'u' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageU',
         '_updated_at' => 'string',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'translations' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations'
+        'translations' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations'
     ];
 
     /**
@@ -456,7 +456,7 @@ class PostApiV1AutotranslateTranslateMessage200ResponseMessage implements ModelI
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageU|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageU|null
      */
     public function getU()
     {
@@ -466,7 +466,7 @@ class PostApiV1AutotranslateTranslateMessage200ResponseMessage implements ModelI
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageU|null $u u
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageU|null $u u
      *
      * @return self
      */
@@ -564,7 +564,7 @@ class PostApiV1AutotranslateTranslateMessage200ResponseMessage implements ModelI
     /**
      * Gets translations
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations|null
      */
     public function getTranslations()
     {
@@ -574,7 +574,7 @@ class PostApiV1AutotranslateTranslateMessage200ResponseMessage implements ModelI
     /**
      * Sets translations
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations|null $translations translations
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations|null $translations translations
      *
      * @return self
      */

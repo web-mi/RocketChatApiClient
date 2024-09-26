@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsGet200ResponseUpdateInnerLastMessage Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,14 +62,14 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'rid' => 'string',
         'ts' => 'string',
         'msg' => 'string',
-        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         'groupable' => 'bool',
         'drid' => 'string',
         '_updated_at' => 'string',
-        'urls' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]',
+        'urls' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]'
+        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]'
     ];
 
     /**
@@ -511,7 +511,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -521,7 +521,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -619,7 +619,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Gets urls
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null
      */
     public function getUrls()
     {
@@ -629,7 +629,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Sets urls
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null $urls urls
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null $urls urls
      *
      * @return self
      */
@@ -700,7 +700,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Gets md
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -710,7 +710,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Sets md
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null $md md
      *
      * @return self
      */

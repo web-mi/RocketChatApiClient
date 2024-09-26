@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **t** | **string** |  | [optional]
 **msgs** | **int** |  | [optional]
 **users_count** | **int** |  | [optional]
-**u** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU**](PostApiV1ChannelsAddAll200ResponseChannelU.md) |  | [optional]
+**u** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU**](PostApiV1ChannelsAddAll200ResponseChannelU.md) |  | [optional]
 **topic** | **string** |  | [optional]
 **prid** | **string** |  | [optional]
 **ts** | **string** |  | [optional]

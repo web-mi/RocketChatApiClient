@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**messages** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner[]**](GetApiV1ChannelsAnonymousread200ResponseMessagesInner.md) |  | [optional]
+**messages** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner[]**](GetApiV1ChannelsAnonymousread200ResponseMessagesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

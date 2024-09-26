@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatUpload200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,11 +61,11 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
         'rid' => 'string',
         'msg' => 'string',
         'token' => 'string',
-        'file' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseFile',
-        'attachments' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInner[]',
+        'file' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUpload200ResponseFile',
+        'attachments' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInner[]',
         'alias' => 'string',
         'ts' => 'string',
-        'u' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
+        'u' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
         '_updated_at' => 'string',
         'urls' => 'object[]',
         'mentions' => 'object[]',
@@ -505,7 +505,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets file
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseFile|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUpload200ResponseFile|null
      */
     public function getFile()
     {
@@ -515,7 +515,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets file
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseFile|null $file file
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUpload200ResponseFile|null $file file
      *
      * @return self
      */
@@ -532,7 +532,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets attachments
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInner[]|null
      */
     public function getAttachments()
     {
@@ -542,7 +542,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets attachments
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInner[]|null $attachments attachments
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInner[]|null $attachments attachments
      *
      * @return self
      */
@@ -613,7 +613,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
     public function getU()
     {
@@ -623,7 +623,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
      *
      * @return self
      */

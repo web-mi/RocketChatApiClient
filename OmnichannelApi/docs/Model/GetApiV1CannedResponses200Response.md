@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**canned_responses** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponses200ResponseCannedResponsesInner[]**](GetApiV1CannedResponses200ResponseCannedResponsesInner.md) |  | [optional]
+**canned_responses** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1CannedResponses200ResponseCannedResponsesInner[]**](GetApiV1CannedResponses200ResponseCannedResponsesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

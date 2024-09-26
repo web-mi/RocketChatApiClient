@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatCustomFieldsRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1LivechatCustomFieldsRequest implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'token' => 'string',
-        'custom_fields' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequestCustomFieldsInner[]'
+        'custom_fields' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequestCustomFieldsInner[]'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1LivechatCustomFieldsRequest implements ModelInterface, ArrayAcces
     /**
      * Gets custom_fields
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequestCustomFieldsInner[]
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequestCustomFieldsInner[]
      */
     public function getCustomFields()
     {
@@ -342,7 +342,7 @@ class PostApiV1LivechatCustomFieldsRequest implements ModelInterface, ArrayAcces
     /**
      * Sets custom_fields
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequestCustomFieldsInner[] $custom_fields The object in which you must enter the custom field information.
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequestCustomFieldsInner[] $custom_fields The object in which you must enter the custom field information.
      *
      * @return self
      */

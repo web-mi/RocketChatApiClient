@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatSyncThreadMessages200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatSyncThreadMessages200Response implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessages',
+        'messages' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessages',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChatSyncThreadMessages200Response implements ModelInterface, Array
     /**
      * Gets messages
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessages|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessages|null
      */
     public function getMessages()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatSyncThreadMessages200Response implements ModelInterface, Array
     /**
      * Sets messages
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessages|null $messages messages
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessages|null $messages messages
      *
      * @return self
      */

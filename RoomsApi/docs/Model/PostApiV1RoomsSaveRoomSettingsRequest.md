@@ -27,6 +27,6 @@ Name | Type | Description | Notes
 **retention_override_global** | **bool** | Whether to override the global retention settings for the room or not. | [optional]
 **encrypted** | **bool** | Whether the room is encrypted or not. | [optional]
 **favorite** | **object** | The favorite settings of the room. Whether the room is marked as favorite and whether it is set as the default room. | [optional]
-**sidepanel** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel**](PostApiV1RoomsSaveRoomSettingsRequestSidepanel.md) |  | [optional]
+**sidepanel** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel**](PostApiV1RoomsSaveRoomSettingsRequestSidepanel.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

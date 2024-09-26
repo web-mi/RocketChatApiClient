@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientMiscellaneousApi\LicensesApi
+# WebMI\RocketChatApiClient\MiscellaneousApi\LicensesApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LicensesGet()`
 
 ```php
-getApiV1LicensesGet($x_auth_token, $x_user_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200Response
+getApiV1LicensesGet($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200Response
 ```
 
 Get Licenses
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\LicensesApi(
+$apiInstance = new WebMI\RocketChatApiClient\MiscellaneousApi\Api\LicensesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200Response**](../Model/GetApiV1LicensesGet200Response.md)
+[**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200Response**](../Model/GetApiV1LicensesGet200Response.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `getApiV1LicensesInfo()`
 
 ```php
-getApiV1LicensesInfo($x_auth_token, $x_user_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200Response
+getApiV1LicensesInfo($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200Response
 ```
 
 Get Licenses
@@ -87,7 +87,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\LicensesApi(
+$apiInstance = new WebMI\RocketChatApiClient\MiscellaneousApi\Api\LicensesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -112,7 +112,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200Response**](../Model/GetApiV1LicensesInfo200Response.md)
+[**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200Response**](../Model/GetApiV1LicensesInfo200Response.md)
 
 ### Authorization
 
@@ -130,7 +130,7 @@ No authorization required
 ## `getApiV1LicensesIsEnterprise()`
 
 ```php
-getApiV1LicensesIsEnterprise($x_auth_token, $x_user_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesIsEnterprise200Response
+getApiV1LicensesIsEnterprise($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesIsEnterprise200Response
 ```
 
 Confirm Enterprise License
@@ -145,7 +145,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\LicensesApi(
+$apiInstance = new WebMI\RocketChatApiClient\MiscellaneousApi\Api\LicensesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -170,7 +170,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesIsEnterprise200Response**](../Model/GetApiV1LicensesIsEnterprise200Response.md)
+[**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesIsEnterprise200Response**](../Model/GetApiV1LicensesIsEnterprise200Response.md)
 
 ### Authorization
 
@@ -188,7 +188,7 @@ No authorization required
 ## `getLicensesMaxActiveUsers()`
 
 ```php
-getLicensesMaxActiveUsers($x_auth_token, $x_user_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetLicensesMaxActiveUsers200Response
+getLicensesMaxActiveUsers($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetLicensesMaxActiveUsers200Response
 ```
 
 Get Maximum Active User
@@ -203,7 +203,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\LicensesApi(
+$apiInstance = new WebMI\RocketChatApiClient\MiscellaneousApi\Api\LicensesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -228,7 +228,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetLicensesMaxActiveUsers200Response**](../Model/GetLicensesMaxActiveUsers200Response.md)
+[**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetLicensesMaxActiveUsers200Response**](../Model/GetLicensesMaxActiveUsers200Response.md)
 
 ### Authorization
 
@@ -246,7 +246,7 @@ No authorization required
 ## `postApiV1LicensesAdd()`
 
 ```php
-postApiV1LicensesAdd($x_auth_token, $x_user_id, $post_api_v1_licenses_add_request): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response
+postApiV1LicensesAdd($x_auth_token, $x_user_id, $post_api_v1_licenses_add_request): \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response
 ```
 
 Add License
@@ -261,14 +261,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\LicensesApi(
+$apiInstance = new WebMI\RocketChatApiClient\MiscellaneousApi\Api\LicensesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_licenses_add_request = {"license":"VFJ0vHf3Jm9AR0minB342MLaHRlZdc3Du5nf0E5Sv0QJ4SUkEIaU2boCYaDsxQ2N1UL4uhLjCF9M7iCZ/yxafJjxbHvOu1D5rOfdgO4RKlAGE9tGHDidJR9crJyXVb16jPHHvLSkUFzb7HoIq/nUXxU8gEgT3uJ9u2+Dw5ukDLX3SG2AFq1hLoPSZqsP6g2AQo="}; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1LicensesAddRequest
+$post_api_v1_licenses_add_request = {"license":"VFJ0vHf3Jm9AR0minB342MLaHRlZdc3Du5nf0E5Sv0QJ4SUkEIaU2boCYaDsxQ2N1UL4uhLjCF9M7iCZ/yxafJjxbHvOu1D5rOfdgO4RKlAGE9tGHDidJR9crJyXVb16jPHHvLSkUFzb7HoIq/nUXxU8gEgT3uJ9u2+Dw5ukDLX3SG2AFq1hLoPSZqsP6g2AQo="}; // \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1LicensesAddRequest
 
 try {
     $result = $apiInstance->postApiV1LicensesAdd($x_auth_token, $x_user_id, $post_api_v1_licenses_add_request);
@@ -284,11 +284,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_licenses_add_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1LicensesAddRequest**](../Model/PostApiV1LicensesAddRequest.md)|  | [optional] |
+| **post_api_v1_licenses_add_request** | [**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1LicensesAddRequest**](../Model/PostApiV1LicensesAddRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response**](../Model/PostApiV1AutotranslateSaveSettings200Response.md)
+[**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response**](../Model/PostApiV1AutotranslateSaveSettings200Response.md)
 
 ### Authorization
 

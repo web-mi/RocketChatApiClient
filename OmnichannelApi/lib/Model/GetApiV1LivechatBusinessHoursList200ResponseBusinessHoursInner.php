@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
         'name' => 'string',
         'active' => 'bool',
         'type' => 'string',
-        'work_hours' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner[]',
-        'timezone' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone',
+        'work_hours' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner[]',
+        'timezone' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone',
         'departments_to_apply_business_hour' => 'string'
     ];
 
@@ -476,7 +476,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
     /**
      * Gets work_hours
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner[]|null
      */
     public function getWorkHours()
     {
@@ -486,7 +486,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
     /**
      * Sets work_hours
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner[]|null $work_hours work_hours
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner[]|null $work_hours work_hours
      *
      * @return self
      */
@@ -503,7 +503,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
     /**
      * Gets timezone
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone|null
      */
     public function getTimezone()
     {
@@ -513,7 +513,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
     /**
      * Sets timezone
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone|null $timezone timezone
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone|null $timezone timezone
      *
      * @return self
      */

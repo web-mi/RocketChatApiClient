@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1SubscriptionsGetOne200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'subscription' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription',
+        'subscription' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
     /**
      * Gets subscription
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null
      */
     public function getSubscription()
     {
@@ -309,7 +309,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
     /**
      * Sets subscription
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null $subscription subscription
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null $subscription subscription
      *
      * @return self
      */

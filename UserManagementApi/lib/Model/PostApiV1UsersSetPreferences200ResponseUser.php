@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersSetPreferences200ResponseUser Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
       */
     protected static $openAPITypes = [
         '_id' => 'string',
-        'settings' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings'
+        'settings' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
     /**
      * Gets settings
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings|null
      */
     public function getSettings()
     {
@@ -336,7 +336,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
     /**
      * Sets settings
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings|null $settings settings
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings|null $settings settings
      *
      * @return self
      */

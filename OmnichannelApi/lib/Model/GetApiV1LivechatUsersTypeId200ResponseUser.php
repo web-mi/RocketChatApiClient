@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatUsersTypeId200ResponseUser Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class GetApiV1LivechatUsersTypeId200ResponseUser implements ModelInterface, Arra
         'name' => 'string',
         'status' => 'string',
         'status_livechat' => 'string',
-        'emails' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserEmailsInner[]',
-        'livechat' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat'
+        'emails' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserEmailsInner[]',
+        'livechat' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat'
     ];
 
     /**
@@ -469,7 +469,7 @@ class GetApiV1LivechatUsersTypeId200ResponseUser implements ModelInterface, Arra
     /**
      * Gets emails
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserEmailsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserEmailsInner[]|null
      */
     public function getEmails()
     {
@@ -479,7 +479,7 @@ class GetApiV1LivechatUsersTypeId200ResponseUser implements ModelInterface, Arra
     /**
      * Sets emails
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserEmailsInner[]|null $emails emails
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserEmailsInner[]|null $emails emails
      *
      * @return self
      */
@@ -496,7 +496,7 @@ class GetApiV1LivechatUsersTypeId200ResponseUser implements ModelInterface, Arra
     /**
      * Gets livechat
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat|null
      */
     public function getLivechat()
     {
@@ -506,7 +506,7 @@ class GetApiV1LivechatUsersTypeId200ResponseUser implements ModelInterface, Arra
     /**
      * Sets livechat
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat|null $livechat livechat
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat|null $livechat livechat
      *
      * @return self
      */

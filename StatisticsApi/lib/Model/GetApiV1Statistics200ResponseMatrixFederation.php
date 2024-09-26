@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1Statistics200ResponseMatrixFederation Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
         'smallest_room' => 'string',
         'amount_of_external_users' => 'int',
         'amount_of_federated_rooms' => 'int',
-        'external_connected_servers' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers'
+        'external_connected_servers' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers'
     ];
 
     /**
@@ -496,7 +496,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
     /**
      * Gets external_connected_servers
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers|null
      */
     public function getExternalConnectedServers()
     {
@@ -506,7 +506,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
     /**
      * Sets external_connected_servers
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers|null $external_connected_servers external_connected_servers
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers|null $external_connected_servers external_connected_servers
      *
      * @return self
      */

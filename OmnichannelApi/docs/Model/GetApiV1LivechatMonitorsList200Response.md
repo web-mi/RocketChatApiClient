@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**monitors** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitors200ResponseMonitorsInner[]**](GetApiV1LivechatMonitors200ResponseMonitorsInner.md) |  | [optional]
+**monitors** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitors200ResponseMonitorsInner[]**](GetApiV1LivechatMonitors200ResponseMonitorsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

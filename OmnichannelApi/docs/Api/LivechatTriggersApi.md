@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\LivechatTriggersApi
+# WebMI\RocketChatApiClient\OmnichannelApi\LivechatTriggersApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1LivechatTriggersId()`
 
 ```php
-deleteApiV1LivechatTriggersId($x_auth_token, $x_user_id, $_id): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+deleteApiV1LivechatTriggersId($x_auth_token, $x_user_id, $_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Delete a trigger
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTriggersApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatTriggersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -55,7 +55,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ No authorization required
 ## `getApiV1LivechatTriggers()`
 
 ```php
-getApiV1LivechatTriggers($x_auth_token, $x_user_id, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200Response
+getApiV1LivechatTriggers($x_auth_token, $x_user_id, $offset, $count, $sort): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200Response
 ```
 
 Get List of Livechat Triggers
@@ -88,7 +88,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTriggersApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatTriggersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -119,7 +119,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200Response**](../Model/GetApiV1LivechatTriggers200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200Response**](../Model/GetApiV1LivechatTriggers200Response.md)
 
 ### Authorization
 
@@ -137,7 +137,7 @@ No authorization required
 ## `getApiV1LivechatTriggersId()`
 
 ```php
-getApiV1LivechatTriggersId($_id, $x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggersId200Response
+getApiV1LivechatTriggersId($_id, $x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggersId200Response
 ```
 
 Get Livechat Trigger
@@ -152,7 +152,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTriggersApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatTriggersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -179,7 +179,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggersId200Response**](../Model/GetApiV1LivechatTriggersId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggersId200Response**](../Model/GetApiV1LivechatTriggersId200Response.md)
 
 ### Authorization
 
@@ -197,7 +197,7 @@ No authorization required
 ## `postApiV1LivechatTriggers()`
 
 ```php
-postApiV1LivechatTriggers($x_auth_token, $x_user_id, $post_api_v1_livechat_triggers_request): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postApiV1LivechatTriggers($x_auth_token, $x_user_id, $post_api_v1_livechat_triggers_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Create or Update Livechat Triggers
@@ -212,14 +212,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTriggersApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatTriggersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_livechat_triggers_request = {"name":"api-trigger","description":"testing create trigger endpoint","enabled":false,"runOnce":true,"conditions":[{"name":"chat-opened-by-visitor","value":0}],"actions":[{"name":"send-message","params":{"sender":"queue","msg":"hello world"}}]}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequest
+$post_api_v1_livechat_triggers_request = {"name":"api-trigger","description":"testing create trigger endpoint","enabled":false,"runOnce":true,"conditions":[{"name":"chat-opened-by-visitor","value":0}],"actions":[{"name":"send-message","params":{"sender":"queue","msg":"hello world"}}]}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatTriggers($x_auth_token, $x_user_id, $post_api_v1_livechat_triggers_request);
@@ -235,11 +235,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_livechat_triggers_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequest**](../Model/PostApiV1LivechatTriggersRequest.md)|  | [optional] |
+| **post_api_v1_livechat_triggers_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequest**](../Model/PostApiV1LivechatTriggersRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 

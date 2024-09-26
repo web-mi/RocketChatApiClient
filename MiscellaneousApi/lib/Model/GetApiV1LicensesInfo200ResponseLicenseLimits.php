@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1LicensesInfo200ResponseLicenseLimits Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
       * @var string[]
       */
     protected static $openAPITypes = [
-        'active_users' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers',
-        'guest_users' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers',
-        'private_apps' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers',
-        'marketplace_apps' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers',
-        'monthly_active_contacts' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers'
+        'active_users' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers',
+        'guest_users' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers',
+        'private_apps' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers',
+        'marketplace_apps' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers',
+        'monthly_active_contacts' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers'
     ];
 
     /**
@@ -320,7 +320,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Gets active_users
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
      */
     public function getActiveUsers()
     {
@@ -330,7 +330,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Sets active_users
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $active_users active_users
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $active_users active_users
      *
      * @return self
      */
@@ -347,7 +347,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Gets guest_users
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
      */
     public function getGuestUsers()
     {
@@ -357,7 +357,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Sets guest_users
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $guest_users guest_users
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $guest_users guest_users
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Gets private_apps
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
      */
     public function getPrivateApps()
     {
@@ -384,7 +384,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Sets private_apps
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $private_apps private_apps
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $private_apps private_apps
      *
      * @return self
      */
@@ -401,7 +401,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Gets marketplace_apps
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
      */
     public function getMarketplaceApps()
     {
@@ -411,7 +411,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Sets marketplace_apps
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $marketplace_apps marketplace_apps
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $marketplace_apps marketplace_apps
      *
      * @return self
      */
@@ -428,7 +428,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Gets monthly_active_contacts
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null
      */
     public function getMonthlyActiveContacts()
     {
@@ -438,7 +438,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimits implements ModelInterface, Ar
     /**
      * Sets monthly_active_contacts
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $monthly_active_contacts monthly_active_contacts
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers|null $monthly_active_contacts monthly_active_contacts
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner implements Mo
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'params' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams'
+        'params' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner implements Mo
     /**
      * Gets params
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams|null
      */
     public function getParams()
     {
@@ -336,7 +336,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner implements Mo
     /**
      * Sets params
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams|null $params params
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams|null $params params
      *
      * @return self
      */

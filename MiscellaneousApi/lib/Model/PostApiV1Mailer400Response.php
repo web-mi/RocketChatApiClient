@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * PostApiV1Mailer400Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostApiV1Mailer400Response implements ModelInterface, ArrayAccess, \JsonSe
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails'
+        'details' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class PostApiV1Mailer400Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets details
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class PostApiV1Mailer400Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets details
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails|null $details details
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1Mailer400ResponseDetails|null $details details
      *
      * @return self
      */

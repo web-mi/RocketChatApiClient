@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1ModerationReportsByUsers200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ModerationReportsByUsers200Response implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'reports' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]',
+        'reports' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ModerationReportsByUsers200Response implements ModelInterface, Arr
     /**
      * Gets reports
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]|null
      */
     public function getReports()
     {
@@ -330,7 +330,7 @@ class GetApiV1ModerationReportsByUsers200Response implements ModelInterface, Arr
     /**
      * Sets reports
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]|null $reports reports
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInner[]|null $reports reports
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientMiscellaneousApi\AutoTranslateApi
+# WebMI\RocketChatApiClient\MiscellaneousApi\AutoTranslateApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1AutotranslateGetSupportedLanguages()`
 
 ```php
-getApiV1AutotranslateGetSupportedLanguages($x_auth_token, $x_user_id, $target_language): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response
+getApiV1AutotranslateGetSupportedLanguages($x_auth_token, $x_user_id, $target_language): \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response
 ```
 
 Get Supported Languages
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\AutoTranslateApi(
+$apiInstance = new WebMI\RocketChatApiClient\MiscellaneousApi\Api\AutoTranslateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response**](../Model/GetApiV1AutotranslateGetSupportedLanguages200Response.md)
+[**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200Response**](../Model/GetApiV1AutotranslateGetSupportedLanguages200Response.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `postApiV1AutotranslateSaveSettings()`
 
 ```php
-postApiV1AutotranslateSaveSettings($x_auth_token, $x_user_id, $post_api_v1_autotranslate_save_settings_request): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response
+postApiV1AutotranslateSaveSettings($x_auth_token, $x_user_id, $post_api_v1_autotranslate_save_settings_request): \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response
 ```
 
 Save Auto-Translate  Settings
@@ -87,14 +87,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\AutoTranslateApi(
+$apiInstance = new WebMI\RocketChatApiClient\MiscellaneousApi\Api\AutoTranslateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_autotranslate_save_settings_request = {"roomId":"7aDSXtjMA3KPLxLjt","field":"autoTranslate","value":true,"defaultLanguage":"en"}; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest
+$post_api_v1_autotranslate_save_settings_request = {"roomId":"7aDSXtjMA3KPLxLjt","field":"autoTranslate","value":true,"defaultLanguage":"en"}; // \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest
 
 try {
     $result = $apiInstance->postApiV1AutotranslateSaveSettings($x_auth_token, $x_user_id, $post_api_v1_autotranslate_save_settings_request);
@@ -110,11 +110,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_autotranslate_save_settings_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest**](../Model/PostApiV1AutotranslateSaveSettingsRequest.md)|  | [optional] |
+| **post_api_v1_autotranslate_save_settings_request** | [**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettingsRequest**](../Model/PostApiV1AutotranslateSaveSettingsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response**](../Model/PostApiV1AutotranslateSaveSettings200Response.md)
+[**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response**](../Model/PostApiV1AutotranslateSaveSettings200Response.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 ## `postApiV1AutotranslateTranslateMessage()`
 
 ```php
-postApiV1AutotranslateTranslateMessage($x_auth_token, $x_user_id, $post_api_v1_autotranslate_translate_message_request): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response
+postApiV1AutotranslateTranslateMessage($x_auth_token, $x_user_id, $post_api_v1_autotranslate_translate_message_request): \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response
 ```
 
 Translate Message
@@ -147,14 +147,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\AutoTranslateApi(
+$apiInstance = new WebMI\RocketChatApiClient\MiscellaneousApi\Api\AutoTranslateApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_autotranslate_translate_message_request = {"messageId":"Fq7sQNSnDEfzj8qoS","targetLanguage":"en"}; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest
+$post_api_v1_autotranslate_translate_message_request = {"messageId":"Fq7sQNSnDEfzj8qoS","targetLanguage":"en"}; // \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest
 
 try {
     $result = $apiInstance->postApiV1AutotranslateTranslateMessage($x_auth_token, $x_user_id, $post_api_v1_autotranslate_translate_message_request);
@@ -170,11 +170,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_autotranslate_translate_message_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest**](../Model/PostApiV1AutotranslateTranslateMessageRequest.md)|  | [optional] |
+| **post_api_v1_autotranslate_translate_message_request** | [**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessageRequest**](../Model/PostApiV1AutotranslateTranslateMessageRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response**](../Model/PostApiV1AutotranslateTranslateMessage200Response.md)
+[**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200Response**](../Model/PostApiV1AutotranslateTranslateMessage200Response.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**visitors** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner[]**](GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner.md) |  | [optional]
+**visitors** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner[]**](GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

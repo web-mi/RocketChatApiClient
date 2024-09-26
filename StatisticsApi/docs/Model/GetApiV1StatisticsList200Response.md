@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**statistics** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInner[]**](GetApiV1StatisticsList200ResponseStatisticsInner.md) |  | [optional]
+**statistics** | [**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInner[]**](GetApiV1StatisticsList200ResponseStatisticsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

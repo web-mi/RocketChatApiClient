@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1LicensesInfo200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LicensesInfo200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'license' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense',
+        'license' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LicensesInfo200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets license
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense|null
      */
     public function getLicense()
     {
@@ -309,7 +309,7 @@ class GetApiV1LicensesInfo200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets license
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense|null $license license
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicense|null $license license
      *
      * @return self
      */

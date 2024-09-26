@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsAnonymousread200ResponseMessagesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,15 +61,15 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
         't' => 'string',
         'msg' => 'string',
         'groupable' => 'bool',
-        'blocks' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]',
+        'blocks' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]',
         'ts' => 'string',
-        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         'rid' => 'string',
         '_updated_at' => 'string',
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
+        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
     ];
 
     /**
@@ -484,7 +484,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Gets blocks
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]|null
      */
     public function getBlocks()
     {
@@ -494,7 +494,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Sets blocks
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]|null $blocks blocks
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]|null $blocks blocks
      *
      * @return self
      */
@@ -538,7 +538,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -548,7 +548,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -700,7 +700,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Gets md
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -710,7 +710,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Sets md
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
      *
      * @return self
      */

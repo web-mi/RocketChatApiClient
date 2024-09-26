@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatRooms200ResponseRoomsInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,16 +64,16 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
         'fname' => 'string',
         't' => 'string',
         'ts' => 'string',
-        'v' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerV',
-        'served_by' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy',
+        'v' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerV',
+        'served_by' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy',
         'cl' => 'bool',
         'open' => 'bool',
         'waiting_response' => 'bool',
         'department_id' => 'string',
         '_updated_at' => 'string',
-        'last_message' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage',
-        'metrics' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetrics',
-        'livechat_data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData',
+        'last_message' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage',
+        'metrics' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetrics',
+        'livechat_data' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData',
         'tags' => 'string[]',
         'name' => 'string'
     ];
@@ -607,7 +607,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Gets v
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerV|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerV|null
      */
     public function getV()
     {
@@ -617,7 +617,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Sets v
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerV|null $v v
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerV|null $v v
      *
      * @return self
      */
@@ -634,7 +634,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Gets served_by
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null
      */
     public function getServedBy()
     {
@@ -644,7 +644,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Sets served_by
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null $served_by served_by
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null $served_by served_by
      *
      * @return self
      */
@@ -796,7 +796,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Gets last_message
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage|null
      */
     public function getLastMessage()
     {
@@ -806,7 +806,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Sets last_message
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage|null $last_message last_message
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessage|null $last_message last_message
      *
      * @return self
      */
@@ -823,7 +823,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Gets metrics
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetrics|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetrics|null
      */
     public function getMetrics()
     {
@@ -833,7 +833,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Sets metrics
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetrics|null $metrics metrics
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetrics|null $metrics metrics
      *
      * @return self
      */
@@ -850,7 +850,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Gets livechat_data
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData|null
      */
     public function getLivechatData()
     {
@@ -860,7 +860,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInner implements ModelInterface, Arra
     /**
      * Sets livechat_data
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData|null $livechat_data livechat_data
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData|null $livechat_data livechat_data
      *
      * @return self
      */

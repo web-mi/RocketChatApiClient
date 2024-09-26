@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1GroupsMessages200ResponseMessagesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,12 +61,12 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         '_updated_at' => 'string',
-        'reactions' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerReactions',
+        'reactions' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerReactions',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'starred' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerStarred',
+        'starred' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerStarred',
         't' => 'string',
         'groupable' => 'bool'
     ];
@@ -477,7 +477,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -487,7 +487,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -531,7 +531,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
     /**
      * Gets reactions
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerReactions|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerReactions|null
      */
     public function getReactions()
     {
@@ -541,7 +541,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
     /**
      * Sets reactions
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerReactions|null $reactions reactions
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerReactions|null $reactions reactions
      *
      * @return self
      */
@@ -612,7 +612,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
     /**
      * Gets starred
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerStarred|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerStarred|null
      */
     public function getStarred()
     {
@@ -622,7 +622,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
     /**
      * Sets starred
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerStarred|null $starred starred
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerStarred|null $starred starred
      *
      * @return self
      */

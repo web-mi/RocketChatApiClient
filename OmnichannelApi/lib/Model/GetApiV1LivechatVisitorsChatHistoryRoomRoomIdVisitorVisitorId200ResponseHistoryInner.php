@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,13 +65,13 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
         't' => 'string',
         'ts' => 'string',
         'department_id' => 'string',
-        'v' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV',
+        'v' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV',
         'cl' => 'bool',
         'open' => 'bool',
         '_updated_at' => 'string',
         'department_ancestors' => 'string[]',
-        'last_message' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerLastMessage',
-        'metrics' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerMetrics',
+        'last_message' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerLastMessage',
+        'metrics' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerMetrics',
         'waiting_response' => 'bool'
     ];
 
@@ -613,7 +613,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Gets v
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null
      */
     public function getV()
     {
@@ -623,7 +623,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Sets v
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null $v v
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null $v v
      *
      * @return self
      */
@@ -748,7 +748,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Gets last_message
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerLastMessage|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerLastMessage|null
      */
     public function getLastMessage()
     {
@@ -758,7 +758,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Sets last_message
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerLastMessage|null $last_message last_message
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerLastMessage|null $last_message last_message
      *
      * @return self
      */
@@ -775,7 +775,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Gets metrics
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerMetrics|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerMetrics|null
      */
     public function getMetrics()
     {
@@ -785,7 +785,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Sets metrics
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerMetrics|null $metrics metrics
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerMetrics|null $metrics metrics
      *
      * @return self
      */

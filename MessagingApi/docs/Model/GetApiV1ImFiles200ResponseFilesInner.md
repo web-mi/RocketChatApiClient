@@ -21,6 +21,6 @@ Name | Type | Description | Notes
 **uploading** | **bool** |  | [optional]
 **url** | **string** |  | [optional]
 **type_group** | **string** |  | [optional]
-**user** | [**\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU**](PostApiV1ChatDelete200ResponseMessageU.md) |  | [optional]
+**user** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU**](PostApiV1ChatDelete200ResponseMessageU.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

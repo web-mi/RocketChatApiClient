@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientNotificationsApi\Api;
+namespace WebMI\RocketChatApiClient\NotificationsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientNotificationsApi\ApiException;
-use WebMIRocketChatApiClientNotificationsApi\Configuration;
-use WebMIRocketChatApiClientNotificationsApi\HeaderSelector;
-use WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\NotificationsApi\ApiException;
+use WebMI\RocketChatApiClient\NotificationsApi\Configuration;
+use WebMI\RocketChatApiClient\NotificationsApi\HeaderSelector;
+use WebMI\RocketChatApiClient\NotificationsApi\ObjectSerializer;
 
 /**
  * PushTokenApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -135,12 +135,12 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request delete_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request delete_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1PushToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientNotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\NotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response|\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response|\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response
      */
     public function deleteApiV1PushToken($x_auth_token, $x_user_id, $delete_api_v1_push_token_request = null, string $contentType = self::contentTypes['deleteApiV1PushToken'][0])
     {
@@ -155,12 +155,12 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1PushToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientNotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\NotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response|\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response|\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteApiV1PushTokenWithHttpInfo($x_auth_token, $x_user_id, $delete_api_v1_push_token_request = null, string $contentType = self::contentTypes['deleteApiV1PushToken'][0])
     {
@@ -203,11 +203,11 @@ class PushTokenApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -225,16 +225,16 @@ class PushTokenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -252,16 +252,16 @@ class PushTokenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -279,13 +279,13 @@ class PushTokenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response';
+            $returnType = '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -318,7 +318,7 @@ class PushTokenApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response',
+                        '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -326,7 +326,7 @@ class PushTokenApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response',
+                        '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -334,7 +334,7 @@ class PushTokenApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response',
+                        '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -351,7 +351,7 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1PushToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -374,7 +374,7 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1PushToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -382,7 +382,7 @@ class PushTokenApi
      */
     public function deleteApiV1PushTokenAsyncWithHttpInfo($x_auth_token, $x_user_id, $delete_api_v1_push_token_request = null, string $contentType = self::contentTypes['deleteApiV1PushToken'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response';
+        $returnType = '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response';
         $request = $this->deleteApiV1PushTokenRequest($x_auth_token, $x_user_id, $delete_api_v1_push_token_request, $contentType);
 
         return $this->client
@@ -426,7 +426,7 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\DeleteApiV1PushTokenRequest $delete_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1PushToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -540,9 +540,9 @@ class PushTokenApi
      * @param  string $id The message ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1PushGet'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientNotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\NotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response|\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId400Response|\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId400Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response
      */
     public function getApiV1PushGet($x_auth_token, $x_user_id, $id, string $contentType = self::contentTypes['getApiV1PushGet'][0])
     {
@@ -560,9 +560,9 @@ class PushTokenApi
      * @param  string $id The message ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1PushGet'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientNotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\NotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response|\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId400Response|\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId400Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1PushGetWithHttpInfo($x_auth_token, $x_user_id, $id, string $contentType = self::contentTypes['getApiV1PushGet'][0])
     {
@@ -605,11 +605,11 @@ class PushTokenApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -627,16 +627,16 @@ class PushTokenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -654,16 +654,16 @@ class PushTokenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -681,13 +681,13 @@ class PushTokenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response';
+            $returnType = '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -720,7 +720,7 @@ class PushTokenApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response',
+                        '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -728,7 +728,7 @@ class PushTokenApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId400Response',
+                        '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -736,7 +736,7 @@ class PushTokenApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response',
+                        '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -784,7 +784,7 @@ class PushTokenApi
      */
     public function getApiV1PushGetAsyncWithHttpInfo($x_auth_token, $x_user_id, $id, string $contentType = self::contentTypes['getApiV1PushGet'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200Response';
+        $returnType = '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200Response';
         $request = $this->getApiV1PushGetRequest($x_auth_token, $x_user_id, $id, $contentType);
 
         return $this->client
@@ -947,12 +947,12 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request post_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request post_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1PushToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientNotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\NotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response|\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response|\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response
      */
     public function postApiV1PushToken($x_auth_token, $x_user_id, $post_api_v1_push_token_request = null, string $contentType = self::contentTypes['postApiV1PushToken'][0])
     {
@@ -967,12 +967,12 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1PushToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientNotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\NotificationsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response|\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response|\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response|\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1PushTokenWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_push_token_request = null, string $contentType = self::contentTypes['postApiV1PushToken'][0])
     {
@@ -1015,11 +1015,11 @@ class PushTokenApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1037,16 +1037,16 @@ class PushTokenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1064,16 +1064,16 @@ class PushTokenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1091,13 +1091,13 @@ class PushTokenApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response';
+            $returnType = '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1130,7 +1130,7 @@ class PushTokenApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response',
+                        '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1138,7 +1138,7 @@ class PushTokenApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken400Response',
+                        '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1146,7 +1146,7 @@ class PushTokenApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId401Response',
+                        '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1163,7 +1163,7 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1PushToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1186,7 +1186,7 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1PushToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1194,7 +1194,7 @@ class PushTokenApi
      */
     public function postApiV1PushTokenAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_push_token_request = null, string $contentType = self::contentTypes['postApiV1PushToken'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200Response';
+        $returnType = '\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200Response';
         $request = $this->postApiV1PushTokenRequest($x_auth_token, $x_user_id, $post_api_v1_push_token_request, $contentType);
 
         return $this->client
@@ -1238,7 +1238,7 @@ class PushTokenApi
      *
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $x_user_id The user ID of the user. (required)
-     * @param  \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushTokenRequest $post_api_v1_push_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1PushToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

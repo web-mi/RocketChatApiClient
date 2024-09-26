@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMarketplaceAppsApi\Api;
+namespace WebMI\RocketChatApiClient\MarketplaceAppsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientMarketplaceAppsApi\ApiException;
-use WebMIRocketChatApiClientMarketplaceAppsApi\Configuration;
-use WebMIRocketChatApiClientMarketplaceAppsApi\HeaderSelector;
-use WebMIRocketChatApiClientMarketplaceAppsApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\MarketplaceAppsApi\ApiException;
+use WebMI\RocketChatApiClient\MarketplaceAppsApi\Configuration;
+use WebMI\RocketChatApiClient\MarketplaceAppsApi\HeaderSelector;
+use WebMI\RocketChatApiClient\MarketplaceAppsApi\ObjectSerializer;
 
 /**
  * RasaAppApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -130,12 +130,12 @@ class RasaAppApi
      * @param  string $app_id The app id. Navigate to App Info &gt; Details &gt; APIs &gt; POST incoming to get the complete URL for this endpoint. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request post_api_apps_public_app_id_incoming_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request post_api_apps_public_app_id_incoming_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdIncoming'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMarketplaceAppsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MarketplaceAppsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response|\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response
+     * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response|\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response
      */
     public function postApiAppsPublicAppIdIncoming($app_id, $x_auth_token, $x_user_id, $post_api_apps_public_app_id_incoming_request = null, string $contentType = self::contentTypes['postApiAppsPublicAppIdIncoming'][0])
     {
@@ -151,12 +151,12 @@ class RasaAppApi
      * @param  string $app_id The app id. Navigate to App Info &gt; Details &gt; APIs &gt; POST incoming to get the complete URL for this endpoint. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdIncoming'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMarketplaceAppsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MarketplaceAppsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response|\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response|\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiAppsPublicAppIdIncomingWithHttpInfo($app_id, $x_auth_token, $x_user_id, $post_api_apps_public_app_id_incoming_request = null, string $contentType = self::contentTypes['postApiAppsPublicAppIdIncoming'][0])
     {
@@ -199,11 +199,11 @@ class RasaAppApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -221,16 +221,16 @@ class RasaAppApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -248,13 +248,13 @@ class RasaAppApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response';
+            $returnType = '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -287,7 +287,7 @@ class RasaAppApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response',
+                        '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -295,7 +295,7 @@ class RasaAppApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response',
+                        '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -313,7 +313,7 @@ class RasaAppApi
      * @param  string $app_id The app id. Navigate to App Info &gt; Details &gt; APIs &gt; POST incoming to get the complete URL for this endpoint. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdIncoming'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -337,7 +337,7 @@ class RasaAppApi
      * @param  string $app_id The app id. Navigate to App Info &gt; Details &gt; APIs &gt; POST incoming to get the complete URL for this endpoint. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdIncoming'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -345,7 +345,7 @@ class RasaAppApi
      */
     public function postApiAppsPublicAppIdIncomingAsyncWithHttpInfo($app_id, $x_auth_token, $x_user_id, $post_api_apps_public_app_id_incoming_request = null, string $contentType = self::contentTypes['postApiAppsPublicAppIdIncoming'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response';
+        $returnType = '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming200Response';
         $request = $this->postApiAppsPublicAppIdIncomingRequest($app_id, $x_auth_token, $x_user_id, $post_api_apps_public_app_id_incoming_request, $contentType);
 
         return $this->client
@@ -390,7 +390,7 @@ class RasaAppApi
      * @param  string $app_id The app id. Navigate to App Info &gt; Details &gt; APIs &gt; POST incoming to get the complete URL for this endpoint. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequest $post_api_apps_public_app_id_incoming_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdIncoming'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

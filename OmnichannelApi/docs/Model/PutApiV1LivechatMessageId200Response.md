@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**message** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatMessageId200ResponseMessage**](PutApiV1LivechatMessageId200ResponseMessage.md) |  | [optional]
+**message** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatMessageId200ResponseMessage**](PutApiV1LivechatMessageId200ResponseMessage.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

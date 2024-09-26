@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatDepartmentsByUnitUnitId200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatDepartmentsByUnitUnitId200Response implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'departments' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200ResponseDepartmentsInner[]',
+        'departments' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200ResponseDepartmentsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatDepartmentsByUnitUnitId200Response implements ModelInterfa
     /**
      * Gets departments
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200ResponseDepartmentsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200ResponseDepartmentsInner[]|null
      */
     public function getDepartments()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatDepartmentsByUnitUnitId200Response implements ModelInterfa
     /**
      * Sets departments
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200ResponseDepartmentsInner[]|null $departments departments
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200ResponseDepartmentsInner[]|null $departments departments
      *
      * @return self
      */

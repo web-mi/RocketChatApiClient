@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1Directory200ResponseResultInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
     protected static $openAPITypes = [
         '_id' => 'string',
         'created_at' => 'string',
-        'emails' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200ResponseResultInnerEmailsInner[]',
+        'emails' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1Directory200ResponseResultInnerEmailsInner[]',
         'name' => 'string',
         'username' => 'string',
         'avatar_e_tag' => 'string'
@@ -381,7 +381,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
     /**
      * Gets emails
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200ResponseResultInnerEmailsInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1Directory200ResponseResultInnerEmailsInner[]|null
      */
     public function getEmails()
     {
@@ -391,7 +391,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
     /**
      * Sets emails
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200ResponseResultInnerEmailsInner[]|null $emails emails
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1Directory200ResponseResultInnerEmailsInner[]|null $emails emails
      *
      * @return self
      */

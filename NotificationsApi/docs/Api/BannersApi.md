@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientNotificationsApi\BannersApi
+# WebMI\RocketChatApiClient\NotificationsApi\BannersApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1Banners()`
 
 ```php
-getApiV1Banners($x_auth_token, $x_user_id, $platform): \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId200Response
+getApiV1Banners($x_auth_token, $x_user_id, $platform): \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId200Response
 ```
 
 Get Banners
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientNotificationsApi\Api\BannersApi(
+$apiInstance = new WebMI\RocketChatApiClient\NotificationsApi\Api\BannersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId200Response**](../Model/GetApiV1BannersId200Response.md)
+[**\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId200Response**](../Model/GetApiV1BannersId200Response.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `getApiV1BannersId()`
 
 ```php
-getApiV1BannersId($id, $x_auth_token, $x_user_id, $platform): \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId200Response
+getApiV1BannersId($id, $x_auth_token, $x_user_id, $platform): \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId200Response
 ```
 
 Get Banner by ID
@@ -87,7 +87,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientNotificationsApi\Api\BannersApi(
+$apiInstance = new WebMI\RocketChatApiClient\NotificationsApi\Api\BannersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1BannersId200Response**](../Model/GetApiV1BannersId200Response.md)
+[**\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId200Response**](../Model/GetApiV1BannersId200Response.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ No authorization required
 ## `postApiV1BannersDismiss()`
 
 ```php
-postApiV1BannersDismiss($x_auth_token, $x_user_id, $post_api_v1_banners_dismiss_request): \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response
+postApiV1BannersDismiss($x_auth_token, $x_user_id, $post_api_v1_banners_dismiss_request): \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response
 ```
 
 Dismiss a Banner
@@ -147,14 +147,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientNotificationsApi\Api\BannersApi(
+$apiInstance = new WebMI\RocketChatApiClient\NotificationsApi\Api\BannersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq; // string | The authorization token of the user.
 $x_user_id = aobEdbYhXfu5hkeqG; // string | The user ID of the user.
-$post_api_v1_banners_dismiss_request = {"bannerId":"ByehQjC44FwMeiLbX"}; // \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismissRequest
+$post_api_v1_banners_dismiss_request = {"bannerId":"ByehQjC44FwMeiLbX"}; // \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismissRequest
 
 try {
     $result = $apiInstance->postApiV1BannersDismiss($x_auth_token, $x_user_id, $post_api_v1_banners_dismiss_request);
@@ -170,11 +170,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authorization token of the user. | |
 | **x_user_id** | **string**| The user ID of the user. | |
-| **post_api_v1_banners_dismiss_request** | [**\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismissRequest**](../Model/PostApiV1BannersDismissRequest.md)|  | [optional] |
+| **post_api_v1_banners_dismiss_request** | [**\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismissRequest**](../Model/PostApiV1BannersDismissRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1BannersDismiss200Response**](../Model/PostApiV1BannersDismiss200Response.md)
+[**\WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1BannersDismiss200Response**](../Model/PostApiV1BannersDismiss200Response.md)
 
 ### Authorization
 

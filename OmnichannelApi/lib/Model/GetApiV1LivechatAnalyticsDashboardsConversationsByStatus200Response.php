@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
       */
     protected static $openAPITypes = [
         'total' => 'int',
-        'data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]',
+        'data' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]',
         'success' => 'bool'
     ];
 
@@ -333,7 +333,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]|null
      */
     public function getData()
     {
@@ -343,7 +343,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]|null $data data
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]|null $data data
      *
      * @return self
      */

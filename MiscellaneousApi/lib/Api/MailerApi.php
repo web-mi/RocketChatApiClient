@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Api;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientMiscellaneousApi\ApiException;
-use WebMIRocketChatApiClientMiscellaneousApi\Configuration;
-use WebMIRocketChatApiClientMiscellaneousApi\HeaderSelector;
-use WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\MiscellaneousApi\ApiException;
+use WebMI\RocketChatApiClient\MiscellaneousApi\Configuration;
+use WebMI\RocketChatApiClient\MiscellaneousApi\HeaderSelector;
+use WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * MailerApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -132,12 +132,12 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request post_api_v1_mailer_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request post_api_v1_mailer_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Mailer'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1Mailer400Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function postApiV1Mailer($x_auth_token, $x_user_id, $post_api_v1_mailer_request = null, string $contentType = self::contentTypes['postApiV1Mailer'][0])
     {
@@ -152,12 +152,12 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Mailer'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1Mailer400Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1MailerWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_mailer_request = null, string $contentType = self::contentTypes['postApiV1Mailer'][0])
     {
@@ -200,11 +200,11 @@ class MailerApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -222,16 +222,16 @@ class MailerApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1Mailer400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1Mailer400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -249,16 +249,16 @@ class MailerApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1Mailer400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -276,13 +276,13 @@ class MailerApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
+            $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -315,7 +315,7 @@ class MailerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -323,7 +323,7 @@ class MailerApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1Mailer400Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1Mailer400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -331,7 +331,7 @@ class MailerApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -348,7 +348,7 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Mailer'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -371,7 +371,7 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Mailer'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -379,7 +379,7 @@ class MailerApi
      */
     public function postApiV1MailerAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_mailer_request = null, string $contentType = self::contentTypes['postApiV1Mailer'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
+        $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
         $request = $this->postApiV1MailerRequest($x_auth_token, $x_user_id, $post_api_v1_mailer_request, $contentType);
 
         return $this->client
@@ -423,7 +423,7 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerRequest $post_api_v1_mailer_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Mailer'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -534,12 +534,12 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request post_api_v1_mailer_unsubscribe_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request post_api_v1_mailer_unsubscribe_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MailerUnsubscribe'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function postApiV1MailerUnsubscribe($x_auth_token, $x_user_id, $post_api_v1_mailer_unsubscribe_request = null, string $contentType = self::contentTypes['postApiV1MailerUnsubscribe'][0])
     {
@@ -554,12 +554,12 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MailerUnsubscribe'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1MailerUnsubscribeWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_mailer_unsubscribe_request = null, string $contentType = self::contentTypes['postApiV1MailerUnsubscribe'][0])
     {
@@ -602,11 +602,11 @@ class MailerApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -624,16 +624,16 @@ class MailerApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -651,13 +651,13 @@ class MailerApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
+            $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -690,7 +690,7 @@ class MailerApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -698,7 +698,7 @@ class MailerApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -715,7 +715,7 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MailerUnsubscribe'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -738,7 +738,7 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MailerUnsubscribe'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -746,7 +746,7 @@ class MailerApi
      */
     public function postApiV1MailerUnsubscribeAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_mailer_unsubscribe_request = null, string $contentType = self::contentTypes['postApiV1MailerUnsubscribe'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
+        $returnType = '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
         $request = $this->postApiV1MailerUnsubscribeRequest($x_auth_token, $x_user_id, $post_api_v1_mailer_unsubscribe_request, $contentType);
 
         return $this->client
@@ -790,7 +790,7 @@ class MailerApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1MailerUnsubscribeRequest $post_api_v1_mailer_unsubscribe_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MailerUnsubscribe'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

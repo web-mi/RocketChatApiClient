@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatRoomTransfer200ResponseRoom Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         '_id' => 'string',
-        'served_by' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser',
+        'served_by' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser',
         'open' => 'bool',
         'department_id' => 'string'
     ];
@@ -340,7 +340,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
     /**
      * Gets served_by
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
      */
     public function getServedBy()
     {
@@ -350,7 +350,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
     /**
      * Sets served_by
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null $served_by served_by
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null $served_by served_by
      *
      * @return self
      */

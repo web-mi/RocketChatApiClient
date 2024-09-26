@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatUnits200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatUnits200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'units' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200ResponseUnitsInner[]',
+        'units' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200ResponseUnitsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatUnits200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets units
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200ResponseUnitsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200ResponseUnitsInner[]|null
      */
     public function getUnits()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatUnits200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets units
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200ResponseUnitsInner[]|null $units units
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnits200ResponseUnitsInner[]|null $units units
      *
      * @return self
      */

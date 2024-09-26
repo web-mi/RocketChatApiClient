@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMarketplaceAppsApi\Model;
+namespace WebMI\RocketChatApiClient\MarketplaceAppsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMarketplaceAppsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MarketplaceAppsApi\ObjectSerializer;
 
 /**
  * PostApiAppsPublicAppIdTemplateMessageRequestTemplate Class Doc Comment
  *
  * @category Class
  * @description Provide the details of the template message you want to send. The structure of the template object may differ depending on the template defined within your WhatsApp provider account. For further clarification, refer to the official guide on &lt;a href&#x3D;\&quot;https://developer.rocket.chat/docs/whatsapp-business-template-messages#api-endpoint\&quot; target&#x3D;\&quot;_blank\&quot;&gt;sending template messages via API in Rocket.Chat&lt;/a&gt;. The example template object provided here is based on the configuration outlined in the official guide for the &lt;a href&#x3D;\&quot;https://developer.rocket.chat/docs/whatsapp-business-template-messages#whatsapp-cloud\&quot; target&#x3D;\&quot;_blank\&quot;&gt;WhatsApp Cloud App&lt;/a&gt;.  If your template message includes parameters, make sure to replace all of them with the appropriate information before sending. Failure to do so may lead to an error.
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,8 +60,8 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
     protected static $openAPITypes = [
         'namespace' => 'string',
         'name' => 'string',
-        'language' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage',
-        'components' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner[]'
+        'language' => '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage',
+        'components' => '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner[]'
     ];
 
     /**
@@ -368,7 +368,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
     /**
      * Gets language
      *
-     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage|null
+     * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage|null
      */
     public function getLanguage()
     {
@@ -378,7 +378,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
     /**
      * Sets language
      *
-     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage|null $language language
+     * @param \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage|null $language language
      *
      * @return self
      */
@@ -395,7 +395,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
     /**
      * Gets components
      *
-     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner[]|null
+     * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner[]|null
      */
     public function getComponents()
     {
@@ -405,7 +405,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
     /**
      * Sets components
      *
-     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner[]|null $components components
+     * @param \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner[]|null $components components
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientAuthenticationApi\Model;
+namespace WebMI\RocketChatApiClient\AuthenticationApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientAuthenticationApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
  * GetApiV1Me200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,15 +59,15 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
     protected static $openAPITypes = [
         '_id' => 'string',
         'name' => 'string',
-        'emails' => '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]',
+        'emails' => '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]',
         'status' => 'string',
         'status_connection' => 'string',
         'username' => 'string',
         'utc_offset' => 'int',
         'active' => 'bool',
         'roles' => 'string[]',
-        'settings' => '\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200ResponseSettings',
-        'custom_fields' => '\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200ResponseCustomFields',
+        'settings' => '\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseSettings',
+        'custom_fields' => '\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseCustomFields',
         'avatar_url' => 'string',
         'success' => 'bool'
     ];
@@ -430,7 +430,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets emails
      *
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]|null
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]|null
      */
     public function getEmails()
     {
@@ -440,7 +440,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets emails
      *
-     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]|null $emails emails
+     * @param \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]|null $emails emails
      *
      * @return self
      */
@@ -619,7 +619,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets settings
      *
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200ResponseSettings|null
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseSettings|null
      */
     public function getSettings()
     {
@@ -629,7 +629,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets settings
      *
-     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200ResponseSettings|null $settings settings
+     * @param \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseSettings|null $settings settings
      *
      * @return self
      */
@@ -646,7 +646,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Gets custom_fields
      *
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200ResponseCustomFields|null
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseCustomFields|null
      */
     public function getCustomFields()
     {
@@ -656,7 +656,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
     /**
      * Sets custom_fields
      *
-     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200ResponseCustomFields|null $custom_fields custom_fields
+     * @param \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseCustomFields|null $custom_fields custom_fields
      *
      * @return self
      */

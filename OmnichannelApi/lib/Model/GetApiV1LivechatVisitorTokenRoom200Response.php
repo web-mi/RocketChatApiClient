@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorTokenRoom200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'rooms' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]',
+        'rooms' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
     /**
      * Gets rooms
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]|null
      */
     public function getRooms()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
     /**
      * Sets rooms
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]|null $rooms rooms
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]|null $rooms rooms
      *
      * @return self
      */

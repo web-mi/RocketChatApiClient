@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInnerValueInner[]'
+        'value' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInnerValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner
     /**
      * Gets value
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInnerValueInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInnerValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner
     /**
      * Sets value
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInnerValueInner[]|null $value value
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInnerValueInner[]|null $value value
      *
      * @return self
      */

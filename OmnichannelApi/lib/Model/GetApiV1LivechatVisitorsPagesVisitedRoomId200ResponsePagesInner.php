@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,9 +61,9 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
         't' => 'string',
         'ts' => 'string',
         'msg' => 'string',
-        'u' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
+        'u' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
         'groupable' => 'bool',
-        'navigation' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation',
+        'navigation' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation',
         'expire_at' => 'int',
         '_updated_at' => 'string',
         'rid' => 'string'
@@ -463,7 +463,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
     public function getU()
     {
@@ -473,7 +473,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
      *
      * @return self
      */
@@ -517,7 +517,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
     /**
      * Gets navigation
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null
      */
     public function getNavigation()
     {
@@ -527,7 +527,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
     /**
      * Sets navigation
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null $navigation navigation
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null $navigation navigation
      *
      * @return self
      */

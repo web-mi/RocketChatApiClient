@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**files** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImFiles200ResponseFilesInner[]**](GetApiV1ImFiles200ResponseFilesInner.md) |  | [optional]
+**files** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImFiles200ResponseFilesInner[]**](GetApiV1ImFiles200ResponseFilesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImMembers200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ImMembers200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'members' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMembers200ResponseMembersInner[]',
+        'members' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMembers200ResponseMembersInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ImMembers200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets members
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMembers200ResponseMembersInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMembers200ResponseMembersInner[]|null
      */
     public function getMembers()
     {
@@ -330,7 +330,7 @@ class GetApiV1ImMembers200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets members
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMembers200ResponseMembersInner[]|null $members members
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMembers200ResponseMembersInner[]|null $members members
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsMembers200ResponseMembersInnerUser Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
         'username' => 'string',
         'name' => 'string',
         'status' => 'string',
-        'settings' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings'
+        'settings' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings'
     ];
 
     /**
@@ -428,7 +428,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
     /**
      * Gets settings
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings|null
      */
     public function getSettings()
     {
@@ -438,7 +438,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
     /**
      * Sets settings
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings|null $settings settings
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings|null $settings settings
      *
      * @return self
      */

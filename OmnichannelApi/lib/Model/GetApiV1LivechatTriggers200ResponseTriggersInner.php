@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTriggers200ResponseTriggersInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
         'description' => 'string',
         'enabled' => 'bool',
         'run_once' => 'bool',
-        'conditions' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]',
-        'actions' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner[]',
+        'conditions' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]',
+        'actions' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner[]',
         '_updated_at' => 'string'
     ];
 
@@ -476,7 +476,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
     /**
      * Gets conditions
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null
      */
     public function getConditions()
     {
@@ -486,7 +486,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
     /**
      * Sets conditions
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null $conditions conditions
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null $conditions conditions
      *
      * @return self
      */
@@ -503,7 +503,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
     /**
      * Gets actions
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner[]|null
      */
     public function getActions()
     {
@@ -513,7 +513,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
     /**
      * Sets actions
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner[]|null $actions actions
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner[]|null $actions actions
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorsSearch200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatVisitorsSearch200Response implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'visitors' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner[]',
+        'visitors' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatVisitorsSearch200Response implements ModelInterface, Array
     /**
      * Gets visitors
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner[]|null
      */
     public function getVisitors()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatVisitorsSearch200Response implements ModelInterface, Array
     /**
      * Sets visitors
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner[]|null $visitors visitors
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner[]|null $visitors visitors
      *
      * @return self
      */

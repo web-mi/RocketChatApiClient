@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**sounds** | [**\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200ResponseSoundsInner[]**](GetApiV1CustomSoundsList200ResponseSoundsInner.md) |  | [optional]
+**sounds** | [**\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200ResponseSoundsInner[]**](GetApiV1CustomSoundsList200ResponseSoundsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**team** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam**](PostApiV1ChannelsConvertToTeam200ResponseTeam.md) |  | [optional]
+**team** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam**](PostApiV1ChannelsConvertToTeam200ResponseTeam.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

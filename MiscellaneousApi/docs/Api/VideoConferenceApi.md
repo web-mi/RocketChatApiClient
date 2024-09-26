@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientMiscellaneousApi\VideoConferenceApi
+# WebMI\RocketChatApiClient\MiscellaneousApi\VideoConferenceApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiV1VideoConferenceJitsiUpdateTimeout()`
 
 ```php
-postApiV1VideoConferenceJitsiUpdateTimeout($x_user_id, $x_auth_token, $post_api_v1_video_conference_jitsi_update_timeout_request): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response
+postApiV1VideoConferenceJitsiUpdateTimeout($x_user_id, $x_auth_token, $post_api_v1_video_conference_jitsi_update_timeout_request): \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response
 ```
 
 Update Jitsi Timeout
@@ -25,14 +25,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\VideoConferenceApi(
+$apiInstance = new WebMI\RocketChatApiClient\MiscellaneousApi\Api\VideoConferenceApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
-$post_api_v1_video_conference_jitsi_update_timeout_request = {"roomId":"hyoM5JSQi94RwqPE7"}; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest
+$post_api_v1_video_conference_jitsi_update_timeout_request = {"roomId":"hyoM5JSQi94RwqPE7"}; // \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest
 
 try {
     $result = $apiInstance->postApiV1VideoConferenceJitsiUpdateTimeout($x_user_id, $x_auth_token, $post_api_v1_video_conference_jitsi_update_timeout_request);
@@ -48,11 +48,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
-| **post_api_v1_video_conference_jitsi_update_timeout_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest**](../Model/PostApiV1VideoConferenceJitsiUpdateTimeoutRequest.md)|  | [optional] |
+| **post_api_v1_video_conference_jitsi_update_timeout_request** | [**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeoutRequest**](../Model/PostApiV1VideoConferenceJitsiUpdateTimeoutRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response**](../Model/PostApiV1VideoConferenceJitsiUpdateTimeout200Response.md)
+[**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1VideoConferenceJitsiUpdateTimeout200Response**](../Model/PostApiV1VideoConferenceJitsiUpdateTimeout200Response.md)
 
 ### Authorization
 

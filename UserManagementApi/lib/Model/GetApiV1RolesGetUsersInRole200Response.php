@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1RolesGetUsersInRole200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RolesGetUsersInRole200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'users' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesGetUsersInRole200ResponseUsersInner[]',
+        'users' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesGetUsersInRole200ResponseUsersInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1RolesGetUsersInRole200Response implements ModelInterface, ArrayAcc
     /**
      * Gets users
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesGetUsersInRole200ResponseUsersInner[]|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesGetUsersInRole200ResponseUsersInner[]|null
      */
     public function getUsers()
     {
@@ -309,7 +309,7 @@ class GetApiV1RolesGetUsersInRole200Response implements ModelInterface, ArrayAcc
     /**
      * Sets users
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesGetUsersInRole200ResponseUsersInner[]|null $users users
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesGetUsersInRole200ResponseUsersInner[]|null $users users
      *
      * @return self
      */

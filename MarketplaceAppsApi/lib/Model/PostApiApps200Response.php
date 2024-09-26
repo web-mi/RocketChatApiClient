@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMarketplaceAppsApi\Model;
+namespace WebMI\RocketChatApiClient\MarketplaceAppsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMarketplaceAppsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MarketplaceAppsApi\ObjectSerializer;
 
 /**
  * PostApiApps200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'app' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseApp',
-        'implemented' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseImplemented',
-        'license_validation' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation',
+        'app' => '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseApp',
+        'implemented' => '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseImplemented',
+        'license_validation' => '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation',
         'success' => 'bool'
     ];
 
@@ -313,7 +313,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets app
      *
-     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseApp|null
+     * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseApp|null
      */
     public function getApp()
     {
@@ -323,7 +323,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets app
      *
-     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseApp|null $app app
+     * @param \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseApp|null $app app
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets implemented
      *
-     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseImplemented|null
+     * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseImplemented|null
      */
     public function getImplemented()
     {
@@ -350,7 +350,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets implemented
      *
-     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseImplemented|null $implemented implemented
+     * @param \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseImplemented|null $implemented implemented
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets license_validation
      *
-     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation|null
+     * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation|null
      */
     public function getLicenseValidation()
     {
@@ -377,7 +377,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets license_validation
      *
-     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation|null $license_validation license_validation
+     * @param \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation|null $license_validation license_validation
      *
      * @return self
      */

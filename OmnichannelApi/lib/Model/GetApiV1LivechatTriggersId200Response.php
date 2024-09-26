@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTriggersId200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatTriggersId200Response implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'trigger' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner',
+        'trigger' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatTriggersId200Response implements ModelInterface, ArrayAcce
     /**
      * Gets trigger
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner|null
      */
     public function getTrigger()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatTriggersId200Response implements ModelInterface, ArrayAcce
     /**
      * Sets trigger
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner|null $trigger trigger
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner|null $trigger trigger
      *
      * @return self
      */

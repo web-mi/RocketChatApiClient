@@ -14,7 +14,7 @@ Name | Type | Description | Notes
 **rid** | **string** |  | [optional]
 **name** | **string** |  | [optional]
 **t** | **string** |  | [optional]
-**u** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscriptionU**](GetApiV1SubscriptionsGetOne200ResponseSubscriptionU.md) |  | [optional]
+**u** | [**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscriptionU**](GetApiV1SubscriptionsGetOne200ResponseSubscriptionU.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **ls** | **string** |  | [optional]
 

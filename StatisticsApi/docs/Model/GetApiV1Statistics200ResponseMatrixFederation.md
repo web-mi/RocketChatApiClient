@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **smallest_room** | **string** |  | [optional]
 **amount_of_external_users** | **int** |  | [optional]
 **amount_of_federated_rooms** | **int** |  | [optional]
-**external_connected_servers** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers**](GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers.md) |  | [optional]
+**external_connected_servers** | [**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers**](GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

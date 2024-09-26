@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1GroupsSetCustomFields200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'group' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup',
+        'group' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup',
         'success' => 'bool',
         'developer_warning' => 'string'
     ];
@@ -306,7 +306,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
     /**
      * Gets group
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup|null
      */
     public function getGroup()
     {
@@ -316,7 +316,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
     /**
      * Sets group
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup|null $group group
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup|null $group group
      *
      * @return self
      */

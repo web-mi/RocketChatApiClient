@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **history** | **object[]** |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
-**data** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData**](GetApiV1LivechatTransferHistoryRid200ResponseData.md) |  | [optional]
+**data** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData**](GetApiV1LivechatTransferHistoryRid200ResponseData.md) |  | [optional]
 **total** | **int** |  | [optional]
 **success** | **bool** |  | [optional]
 

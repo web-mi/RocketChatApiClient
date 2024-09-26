@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1UsersInfo200ResponseUser Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1UsersInfo200ResponseUser implements ModelInterface, ArrayAccess, \
         '_id' => 'string',
         'created_at' => 'string',
         'username' => 'string',
-        'emails' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]',
+        'emails' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]',
         'type' => 'string',
         'status' => 'string',
         'active' => 'bool',
@@ -464,7 +464,7 @@ class GetApiV1UsersInfo200ResponseUser implements ModelInterface, ArrayAccess, \
     /**
      * Gets emails
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null
      */
     public function getEmails()
     {
@@ -474,7 +474,7 @@ class GetApiV1UsersInfo200ResponseUser implements ModelInterface, ArrayAccess, \
     /**
      * Sets emails
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null $emails emails
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null $emails emails
      *
      * @return self
      */

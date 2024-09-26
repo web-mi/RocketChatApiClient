@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatCustomField200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatCustomField200Response implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'field' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField',
+        'field' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatCustomField200Response implements ModelInterface, ArrayAc
     /**
      * Gets field
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField|null
      */
     public function getField()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatCustomField200Response implements ModelInterface, ArrayAc
     /**
      * Sets field
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField|null $field field
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField|null $field field
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response imple
       * @var string[]
       */
     protected static $openAPITypes = [
-        'channels' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChannelsInner[]',
+        'channels' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChannelsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response imple
     /**
      * Gets channels
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChannelsInner[]|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChannelsInner[]|null
      */
     public function getChannels()
     {
@@ -309,7 +309,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response imple
     /**
      * Sets channels
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChannelsInner[]|null $channels channels
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChannelsInner[]|null $channels channels
      *
      * @return self
      */

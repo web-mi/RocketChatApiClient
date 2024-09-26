@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **department** | **string** |  | [optional]
 **message** | **string** |  | [optional]
 **status** | **string** |  | [optional]
-**v** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerV**](GetApiV1LivechatRooms200ResponseRoomsInnerV.md) |  | [optional]
+**v** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerV**](GetApiV1LivechatRooms200ResponseRoomsInnerV.md) |  | [optional]
 **t** | **string** |  | [optional]
 **queue_order** | **int** |  | [optional]
 **estimated_waiting_time_queue** | **int** |  | [optional]

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Api;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientUserManagementApi\ApiException;
-use WebMIRocketChatApiClientUserManagementApi\Configuration;
-use WebMIRocketChatApiClientUserManagementApi\HeaderSelector;
-use WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\UserManagementApi\ApiException;
+use WebMI\RocketChatApiClient\UserManagementApi\Configuration;
+use WebMI\RocketChatApiClient\UserManagementApi\HeaderSelector;
+use WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * UsersApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -257,7 +257,7 @@ class UsersApi
      * @param  string $rc_token User auth token for authenticating is only required if &#x60;Accounts_AvatarBlockUnauthenticatedAccess&#x60; is enabled. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1AvatarSubject'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \SplFileObject
      */
@@ -279,7 +279,7 @@ class UsersApi
      * @param  string $rc_token User auth token for authenticating is only required if &#x60;Accounts_AvatarBlockUnauthenticatedAccess&#x60; is enabled. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1AvatarSubject'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \SplFileObject, HTTP status code, HTTP response headers (array of strings)
      */
@@ -622,9 +622,9 @@ class UsersApi
      * @param  object $selector Filter the response with the parameters. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersAutocomplete'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersAutocomplete($x_auth_token, $x_user_id, $selector, string $contentType = self::contentTypes['getApiV1UsersAutocomplete'][0])
     {
@@ -642,9 +642,9 @@ class UsersApi
      * @param  object $selector Filter the response with the parameters. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersAutocomplete'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersAutocompleteWithHttpInfo($x_auth_token, $x_user_id, $selector, string $contentType = self::contentTypes['getApiV1UsersAutocomplete'][0])
     {
@@ -687,11 +687,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -709,16 +709,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -736,16 +736,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -763,13 +763,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -802,7 +802,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -810,7 +810,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -818,7 +818,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -866,7 +866,7 @@ class UsersApi
      */
     public function getApiV1UsersAutocompleteAsyncWithHttpInfo($x_auth_token, $x_user_id, $selector, string $contentType = self::contentTypes['getApiV1UsersAutocomplete'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersAutocomplete200Response';
         $request = $this->getApiV1UsersAutocompleteRequest($x_auth_token, $x_user_id, $selector, $contentType);
 
         return $this->client
@@ -1031,9 +1031,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersCheckUsernameAvailability'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersCheckUsernameAvailability($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1UsersCheckUsernameAvailability'][0])
     {
@@ -1050,9 +1050,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersCheckUsernameAvailability'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersCheckUsernameAvailabilityWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1UsersCheckUsernameAvailability'][0])
     {
@@ -1095,11 +1095,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1117,16 +1117,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1144,16 +1144,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1171,13 +1171,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1210,7 +1210,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1218,7 +1218,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1226,7 +1226,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1272,7 +1272,7 @@ class UsersApi
      */
     public function getApiV1UsersCheckUsernameAvailabilityAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1UsersCheckUsernameAvailability'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response';
         $request = $this->getApiV1UsersCheckUsernameAvailabilityRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -1419,9 +1419,9 @@ class UsersApi
      * @param  string $user_id The user ID. Alternatively, you can enter the &#x60;username&#x60; parameter. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetAvatar'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \SplFileObject|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response
+     * @return \SplFileObject|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response
      */
     public function getApiV1UsersGetAvatar($user_id, string $contentType = self::contentTypes['getApiV1UsersGetAvatar'][0])
     {
@@ -1437,9 +1437,9 @@ class UsersApi
      * @param  string $user_id The user ID. Alternatively, you can enter the &#x60;username&#x60; parameter. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetAvatar'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \SplFileObject|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \SplFileObject|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersGetAvatarWithHttpInfo($user_id, string $contentType = self::contentTypes['getApiV1UsersGetAvatar'][0])
     {
@@ -1509,11 +1509,11 @@ class UsersApi
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1531,7 +1531,7 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1578,7 +1578,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1763,9 +1763,9 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetPersonalAccessTokens'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersGetPersonalAccessTokens($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1UsersGetPersonalAccessTokens'][0])
     {
@@ -1782,9 +1782,9 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetPersonalAccessTokens'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersGetPersonalAccessTokensWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1UsersGetPersonalAccessTokens'][0])
     {
@@ -1827,11 +1827,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1849,16 +1849,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1876,16 +1876,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1903,13 +1903,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1942,7 +1942,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1950,7 +1950,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1958,7 +1958,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2004,7 +2004,7 @@ class UsersApi
      */
     public function getApiV1UsersGetPersonalAccessTokensAsyncWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1UsersGetPersonalAccessTokens'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response';
         $request = $this->getApiV1UsersGetPersonalAccessTokensRequest($x_user_id, $x_auth_token, $contentType);
 
         return $this->client
@@ -2152,9 +2152,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetPreferences'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPreferences200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersGetPreferences($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1UsersGetPreferences'][0])
     {
@@ -2171,9 +2171,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetPreferences'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPreferences200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersGetPreferencesWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1UsersGetPreferences'][0])
     {
@@ -2216,11 +2216,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPreferences200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPreferences200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2238,16 +2238,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPreferences200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2265,13 +2265,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPreferences200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2304,7 +2304,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPreferences200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2312,7 +2312,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2358,7 +2358,7 @@ class UsersApi
      */
     public function getApiV1UsersGetPreferencesAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1UsersGetPreferences'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPreferences200Response';
         $request = $this->getApiV1UsersGetPreferencesRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -2507,9 +2507,9 @@ class UsersApi
      * @param  string $user_id The user ID. Alternatively, you can enter the &#x60;username&#x60; parameter. If not provided, the user who sending the request is retrieved. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetPresence'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPresence200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersGetPresence($x_user_id, $x_auth_token, $user_id = null, string $contentType = self::contentTypes['getApiV1UsersGetPresence'][0])
     {
@@ -2527,9 +2527,9 @@ class UsersApi
      * @param  string $user_id The user ID. Alternatively, you can enter the &#x60;username&#x60; parameter. If not provided, the user who sending the request is retrieved. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetPresence'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPresence200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersGetPresenceWithHttpInfo($x_user_id, $x_auth_token, $user_id = null, string $contentType = self::contentTypes['getApiV1UsersGetPresence'][0])
     {
@@ -2572,11 +2572,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPresence200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPresence200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2594,16 +2594,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPresence200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2621,13 +2621,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPresence200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2660,7 +2660,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPresence200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2668,7 +2668,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2716,7 +2716,7 @@ class UsersApi
      */
     public function getApiV1UsersGetPresenceAsyncWithHttpInfo($x_user_id, $x_auth_token, $user_id = null, string $contentType = self::contentTypes['getApiV1UsersGetPresence'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPresence200Response';
         $request = $this->getApiV1UsersGetPresenceRequest($x_user_id, $x_auth_token, $user_id, $contentType);
 
         return $this->client
@@ -2874,9 +2874,9 @@ class UsersApi
      * @param  string $user_id The &#x60;userId&#x60; of the user. Alternatively, you can use the &#x60;username&#x60; property and value. If the value is not provided, the authenticated user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetStatus'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetStatus200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersGetStatus($user_id = null, string $contentType = self::contentTypes['getApiV1UsersGetStatus'][0])
     {
@@ -2892,9 +2892,9 @@ class UsersApi
      * @param  string $user_id The &#x60;userId&#x60; of the user. Alternatively, you can use the &#x60;username&#x60; property and value. If the value is not provided, the authenticated user is used. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetStatus'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetStatus200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersGetStatusWithHttpInfo($user_id = null, string $contentType = self::contentTypes['getApiV1UsersGetStatus'][0])
     {
@@ -2937,11 +2937,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetStatus200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetStatus200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2959,16 +2959,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetStatus200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2986,13 +2986,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetStatus200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3025,7 +3025,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetStatus200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3033,7 +3033,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3077,7 +3077,7 @@ class UsersApi
      */
     public function getApiV1UsersGetStatusAsyncWithHttpInfo($user_id = null, string $contentType = self::contentTypes['getApiV1UsersGetStatus'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetStatus200Response';
         $request = $this->getApiV1UsersGetStatusRequest($user_id, $contentType);
 
         return $this->client
@@ -3212,9 +3212,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetUsernameSuggestion'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersGetUsernameSuggestion($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1UsersGetUsernameSuggestion'][0])
     {
@@ -3231,9 +3231,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersGetUsernameSuggestion'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersGetUsernameSuggestionWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1UsersGetUsernameSuggestion'][0])
     {
@@ -3276,11 +3276,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3298,16 +3298,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3325,13 +3325,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3364,7 +3364,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3372,7 +3372,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3418,7 +3418,7 @@ class UsersApi
      */
     public function getApiV1UsersGetUsernameSuggestionAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1UsersGetUsernameSuggestion'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response';
         $request = $this->getApiV1UsersGetUsernameSuggestionRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -3568,9 +3568,9 @@ class UsersApi
      * @param  mixed $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;{ \&quot;username\&quot;: 1 } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersInfo'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersInfo200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersInfo($x_auth_token, $x_user_id, $user_id, $fields = null, string $contentType = self::contentTypes['getApiV1UsersInfo'][0])
     {
@@ -3589,9 +3589,9 @@ class UsersApi
      * @param  mixed $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;{ \&quot;username\&quot;: 1 } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersInfo'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersInfo200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersInfoWithHttpInfo($x_auth_token, $x_user_id, $user_id, $fields = null, string $contentType = self::contentTypes['getApiV1UsersInfo'][0])
     {
@@ -3634,11 +3634,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersInfo200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersInfo200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3656,16 +3656,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersInfo200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3683,16 +3683,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3710,13 +3710,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersInfo200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3749,7 +3749,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersInfo200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3757,7 +3757,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3765,7 +3765,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3815,7 +3815,7 @@ class UsersApi
      */
     public function getApiV1UsersInfoAsyncWithHttpInfo($x_auth_token, $x_user_id, $user_id, $fields = null, string $contentType = self::contentTypes['getApiV1UsersInfo'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersInfo200Response';
         $request = $this->getApiV1UsersInfoRequest($x_auth_token, $x_user_id, $user_id, $fields, $contentType);
 
         return $this->client
@@ -3996,9 +3996,9 @@ class UsersApi
      * @param  int $count How many items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersList200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersList($x_auth_token, $x_user_id, $query = null, $fields = null, $offset = null, $sort = null, $count = null, string $contentType = self::contentTypes['getApiV1UsersList'][0])
     {
@@ -4020,9 +4020,9 @@ class UsersApi
      * @param  int $count How many items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersList200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersListWithHttpInfo($x_auth_token, $x_user_id, $query = null, $fields = null, $offset = null, $sort = null, $count = null, string $contentType = self::contentTypes['getApiV1UsersList'][0])
     {
@@ -4065,11 +4065,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4087,16 +4087,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4114,13 +4114,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4153,7 +4153,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4161,7 +4161,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4217,7 +4217,7 @@ class UsersApi
      */
     public function getApiV1UsersListAsyncWithHttpInfo($x_auth_token, $x_user_id, $query = null, $fields = null, $offset = null, $sort = null, $count = null, string $contentType = self::contentTypes['getApiV1UsersList'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersList200Response';
         $request = $this->getApiV1UsersListRequest($x_auth_token, $x_user_id, $query, $fields, $offset, $sort, $count, $contentType);
 
         return $this->client
@@ -4428,9 +4428,9 @@ class UsersApi
      * @param  string $search_term Filter the list of users returned based on a search term (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersListByStatus'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListByStatus200Response
      */
     public function getApiV1UsersListByStatus($x_auth_token, $x_user_id, $offset = null, $sort = null, $count = null, $status = null, $has_logged_in = null, $type = null, $roles = null, $search_term = null, string $contentType = self::contentTypes['getApiV1UsersListByStatus'][0])
     {
@@ -4455,9 +4455,9 @@ class UsersApi
      * @param  string $search_term Filter the list of users returned based on a search term (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersListByStatus'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListByStatus200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersListByStatusWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $sort = null, $count = null, $status = null, $has_logged_in = null, $type = null, $roles = null, $search_term = null, string $contentType = self::contentTypes['getApiV1UsersListByStatus'][0])
     {
@@ -4500,11 +4500,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListByStatus200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListByStatus200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4522,13 +4522,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListByStatus200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListByStatus200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4561,7 +4561,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListByStatus200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4623,7 +4623,7 @@ class UsersApi
      */
     public function getApiV1UsersListByStatusAsyncWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $sort = null, $count = null, $status = null, $has_logged_in = null, $type = null, $roles = null, $search_term = null, string $contentType = self::contentTypes['getApiV1UsersListByStatus'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListByStatus200Response';
         $request = $this->getApiV1UsersListByStatusRequest($x_auth_token, $x_user_id, $offset, $sort, $count, $status, $has_logged_in, $type, $roles, $search_term, $contentType);
 
         return $this->client
@@ -4860,9 +4860,9 @@ class UsersApi
      * @param  string $user_id The &#x60;userId&#x60; of the user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersListTeams'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersListTeams($x_auth_token, $x_user_id, $user_id, string $contentType = self::contentTypes['getApiV1UsersListTeams'][0])
     {
@@ -4880,9 +4880,9 @@ class UsersApi
      * @param  string $user_id The &#x60;userId&#x60; of the user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersListTeams'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersListTeamsWithHttpInfo($x_auth_token, $x_user_id, $user_id, string $contentType = self::contentTypes['getApiV1UsersListTeams'][0])
     {
@@ -4925,11 +4925,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4947,16 +4947,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4974,16 +4974,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5001,13 +5001,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5040,7 +5040,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5048,7 +5048,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5056,7 +5056,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5104,7 +5104,7 @@ class UsersApi
      */
     public function getApiV1UsersListTeamsAsyncWithHttpInfo($x_auth_token, $x_user_id, $user_id, string $contentType = self::contentTypes['getApiV1UsersListTeams'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200Response';
         $request = $this->getApiV1UsersListTeamsRequest($x_auth_token, $x_user_id, $user_id, $contentType);
 
         return $this->client
@@ -5271,9 +5271,9 @@ class UsersApi
      * @param  string $ids The user IDs whose status you want. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersPresence'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersPresence200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersPresence($x_user_id, $x_auth_token, $from = null, $ids = null, string $contentType = self::contentTypes['getApiV1UsersPresence'][0])
     {
@@ -5292,9 +5292,9 @@ class UsersApi
      * @param  string $ids The user IDs whose status you want. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersPresence'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersPresence200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersPresenceWithHttpInfo($x_user_id, $x_auth_token, $from = null, $ids = null, string $contentType = self::contentTypes['getApiV1UsersPresence'][0])
     {
@@ -5337,11 +5337,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersPresence200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersPresence200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5359,16 +5359,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersPresence200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5386,13 +5386,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersPresence200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5425,7 +5425,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersPresence200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5433,7 +5433,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5483,7 +5483,7 @@ class UsersApi
      */
     public function getApiV1UsersPresenceAsyncWithHttpInfo($x_user_id, $x_auth_token, $from = null, $ids = null, string $contentType = self::contentTypes['getApiV1UsersPresence'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersPresence200Response';
         $request = $this->getApiV1UsersPresenceRequest($x_user_id, $x_auth_token, $from, $ids, $contentType);
 
         return $this->client
@@ -5654,9 +5654,9 @@ class UsersApi
      * @param  bool $full_export Whether you want a full export or not. By default, the value is false. (optional, default to false)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersRequestDataDownload'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersRequestDataDownload($x_auth_token, $x_user_id, $full_export = false, string $contentType = self::contentTypes['getApiV1UsersRequestDataDownload'][0])
     {
@@ -5674,9 +5674,9 @@ class UsersApi
      * @param  bool $full_export Whether you want a full export or not. By default, the value is false. (optional, default to false)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersRequestDataDownload'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersRequestDataDownloadWithHttpInfo($x_auth_token, $x_user_id, $full_export = false, string $contentType = self::contentTypes['getApiV1UsersRequestDataDownload'][0])
     {
@@ -5719,11 +5719,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5741,16 +5741,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5768,13 +5768,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5807,7 +5807,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5815,7 +5815,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5863,7 +5863,7 @@ class UsersApi
      */
     public function getApiV1UsersRequestDataDownloadAsyncWithHttpInfo($x_auth_token, $x_user_id, $full_export = false, string $contentType = self::contentTypes['getApiV1UsersRequestDataDownload'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response';
         $request = $this->getApiV1UsersRequestDataDownloadRequest($x_auth_token, $x_user_id, $full_export, $contentType);
 
         return $this->client
@@ -6020,12 +6020,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request get_api_v1_users_send_welcome_email_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request get_api_v1_users_send_welcome_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersSendWelcomeEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function getApiV1UsersSendWelcomeEmail($x_auth_token, $x_user_id, $get_api_v1_users_send_welcome_email_request = null, string $contentType = self::contentTypes['getApiV1UsersSendWelcomeEmail'][0])
     {
@@ -6040,12 +6040,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersSendWelcomeEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1UsersSendWelcomeEmailWithHttpInfo($x_auth_token, $x_user_id, $get_api_v1_users_send_welcome_email_request = null, string $contentType = self::contentTypes['getApiV1UsersSendWelcomeEmail'][0])
     {
@@ -6088,11 +6088,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6110,16 +6110,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6137,16 +6137,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6164,13 +6164,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6203,7 +6203,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6211,7 +6211,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmail400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6219,7 +6219,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6236,7 +6236,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersSendWelcomeEmail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6259,7 +6259,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersSendWelcomeEmail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6267,7 +6267,7 @@ class UsersApi
      */
     public function getApiV1UsersSendWelcomeEmailAsyncWithHttpInfo($x_auth_token, $x_user_id, $get_api_v1_users_send_welcome_email_request = null, string $contentType = self::contentTypes['getApiV1UsersSendWelcomeEmail'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->getApiV1UsersSendWelcomeEmailRequest($x_auth_token, $x_user_id, $get_api_v1_users_send_welcome_email_request, $contentType);
 
         return $this->client
@@ -6311,7 +6311,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest $get_api_v1_users_send_welcome_email_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1UsersSendWelcomeEmail'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6422,12 +6422,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request post_api_v1_moderation_report_user_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request post_api_v1_moderation_report_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationReportUser'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1ModerationReportUser($x_auth_token, $x_user_id, $post_api_v1_moderation_report_user_request = null, string $contentType = self::contentTypes['postApiV1ModerationReportUser'][0])
     {
@@ -6442,12 +6442,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationReportUser'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ModerationReportUserWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_moderation_report_user_request = null, string $contentType = self::contentTypes['postApiV1ModerationReportUser'][0])
     {
@@ -6490,11 +6490,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6512,16 +6512,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6539,16 +6539,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6566,13 +6566,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6605,7 +6605,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6613,7 +6613,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6621,7 +6621,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6638,7 +6638,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationReportUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6661,7 +6661,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationReportUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6669,7 +6669,7 @@ class UsersApi
      */
     public function postApiV1ModerationReportUserAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_moderation_report_user_request = null, string $contentType = self::contentTypes['postApiV1ModerationReportUser'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1ModerationReportUserRequest($x_auth_token, $x_user_id, $post_api_v1_moderation_report_user_request, $contentType);
 
         return $this->client
@@ -6713,7 +6713,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1ModerationReportUserRequest $post_api_v1_moderation_report_user_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationReportUser'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6828,9 +6828,9 @@ class UsersApi
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faDisableEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1Users2faDisableEmail($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['postApiV1Users2faDisableEmail'][0])
     {
@@ -6849,9 +6849,9 @@ class UsersApi
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faDisableEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1Users2faDisableEmailWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['postApiV1Users2faDisableEmail'][0])
     {
@@ -6894,11 +6894,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6916,16 +6916,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6943,16 +6943,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6970,13 +6970,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7009,7 +7009,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7017,7 +7017,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7025,7 +7025,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7075,7 +7075,7 @@ class UsersApi
      */
     public function postApiV1Users2faDisableEmailAsyncWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['postApiV1Users2faDisableEmail'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1Users2faDisableEmailRequest($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $contentType);
 
         return $this->client
@@ -7247,9 +7247,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faEnableEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1Users2faEnableEmail($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1Users2faEnableEmail'][0])
     {
@@ -7266,9 +7266,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faEnableEmail'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1Users2faEnableEmailWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1Users2faEnableEmail'][0])
     {
@@ -7311,11 +7311,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7333,16 +7333,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7360,13 +7360,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7399,7 +7399,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7407,7 +7407,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7453,7 +7453,7 @@ class UsersApi
      */
     public function postApiV1Users2faEnableEmailAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1Users2faEnableEmail'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1Users2faEnableEmailRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -7599,12 +7599,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1Users2faSendEmailCode($x_auth_token, $x_user_id, $post_api_v1_users2fa_send_email_code_request = null, string $contentType = self::contentTypes['postApiV1Users2faSendEmailCode'][0])
     {
@@ -7619,12 +7619,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1Users2faSendEmailCodeWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_users2fa_send_email_code_request = null, string $contentType = self::contentTypes['postApiV1Users2faSendEmailCode'][0])
     {
@@ -7667,11 +7667,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7689,16 +7689,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7716,16 +7716,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7743,13 +7743,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7782,7 +7782,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7790,7 +7790,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7798,7 +7798,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7815,7 +7815,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7838,7 +7838,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7846,7 +7846,7 @@ class UsersApi
      */
     public function postApiV1Users2faSendEmailCodeAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_users2fa_send_email_code_request = null, string $contentType = self::contentTypes['postApiV1Users2faSendEmailCode'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1Users2faSendEmailCodeRequest($x_auth_token, $x_user_id, $post_api_v1_users2fa_send_email_code_request, $contentType);
 
         return $this->client
@@ -7890,7 +7890,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest $post_api_v1_users2fa_send_email_code_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Users2faSendEmailCode'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8001,12 +8001,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request post_api_v1_users_create_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request post_api_v1_users_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreate'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersCreate($x_user_id, $x_auth_token, $post_api_v1_users_create_request = null, string $contentType = self::contentTypes['postApiV1UsersCreate'][0])
     {
@@ -8021,12 +8021,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreate'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersCreateWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_create_request = null, string $contentType = self::contentTypes['postApiV1UsersCreate'][0])
     {
@@ -8069,11 +8069,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8091,16 +8091,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8118,16 +8118,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8145,13 +8145,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -8184,7 +8184,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8192,7 +8192,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8200,7 +8200,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8217,7 +8217,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8240,7 +8240,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8248,7 +8248,7 @@ class UsersApi
      */
     public function postApiV1UsersCreateAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_create_request = null, string $contentType = self::contentTypes['postApiV1UsersCreate'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200Response';
         $request = $this->postApiV1UsersCreateRequest($x_user_id, $x_auth_token, $post_api_v1_users_create_request, $contentType);
 
         return $this->client
@@ -8292,7 +8292,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateRequest $post_api_v1_users_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8403,12 +8403,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request post_api_v1_users_create_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request post_api_v1_users_create_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreateToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateToken200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      * @deprecated
      */
     public function postApiV1UsersCreateToken($x_auth_token, $x_user_id, $post_api_v1_users_create_token_request = null, string $contentType = self::contentTypes['postApiV1UsersCreateToken'][0])
@@ -8424,12 +8424,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreateToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateToken200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      * @deprecated
      */
     public function postApiV1UsersCreateTokenWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_users_create_token_request = null, string $contentType = self::contentTypes['postApiV1UsersCreateToken'][0])
@@ -8473,11 +8473,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateToken200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateToken200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8495,16 +8495,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateToken200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8522,16 +8522,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8549,13 +8549,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateToken200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -8588,7 +8588,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateToken200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8596,7 +8596,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8604,7 +8604,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -8621,7 +8621,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreateToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8645,7 +8645,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreateToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8654,7 +8654,7 @@ class UsersApi
      */
     public function postApiV1UsersCreateTokenAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_users_create_token_request = null, string $contentType = self::contentTypes['postApiV1UsersCreateToken'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateToken200Response';
         $request = $this->postApiV1UsersCreateTokenRequest($x_auth_token, $x_user_id, $post_api_v1_users_create_token_request, $contentType);
 
         return $this->client
@@ -8698,7 +8698,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreateTokenRequest $post_api_v1_users_create_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersCreateToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -8810,12 +8810,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request post_api_v1_users_deactivate_idle_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request post_api_v1_users_deactivate_idle_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeactivateIdle'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response
      */
     public function postApiV1UsersDeactivateIdle($x_user_id, $x_auth_token, $post_api_v1_users_deactivate_idle_request = null, string $contentType = self::contentTypes['postApiV1UsersDeactivateIdle'][0])
     {
@@ -8830,12 +8830,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeactivateIdle'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersDeactivateIdleWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_deactivate_idle_request = null, string $contentType = self::contentTypes['postApiV1UsersDeactivateIdle'][0])
     {
@@ -8878,11 +8878,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8900,16 +8900,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8927,16 +8927,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8954,16 +8954,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -8981,13 +8981,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -9020,7 +9020,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9028,7 +9028,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9036,7 +9036,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9044,7 +9044,7 @@ class UsersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9061,7 +9061,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeactivateIdle'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9084,7 +9084,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeactivateIdle'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9092,7 +9092,7 @@ class UsersApi
      */
     public function postApiV1UsersDeactivateIdleAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_deactivate_idle_request = null, string $contentType = self::contentTypes['postApiV1UsersDeactivateIdle'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response';
         $request = $this->postApiV1UsersDeactivateIdleRequest($x_user_id, $x_auth_token, $post_api_v1_users_deactivate_idle_request, $contentType);
 
         return $this->client
@@ -9136,7 +9136,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest $post_api_v1_users_deactivate_idle_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeactivateIdle'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9247,12 +9247,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request post_api_v1_users_delete_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request post_api_v1_users_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDelete'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response
      */
     public function postApiV1UsersDelete($x_auth_token, $x_user_id, $post_api_v1_users_delete_request = null, string $contentType = self::contentTypes['postApiV1UsersDelete'][0])
     {
@@ -9267,12 +9267,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDelete'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersDeleteWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_users_delete_request = null, string $contentType = self::contentTypes['postApiV1UsersDelete'][0])
     {
@@ -9315,11 +9315,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9337,16 +9337,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9364,16 +9364,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9391,16 +9391,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9418,13 +9418,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -9457,7 +9457,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9465,7 +9465,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9473,7 +9473,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9481,7 +9481,7 @@ class UsersApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9498,7 +9498,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9521,7 +9521,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9529,7 +9529,7 @@ class UsersApi
      */
     public function postApiV1UsersDeleteAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_users_delete_request = null, string $contentType = self::contentTypes['postApiV1UsersDelete'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1UsersDeleteRequest($x_auth_token, $x_user_id, $post_api_v1_users_delete_request, $contentType);
 
         return $this->client
@@ -9573,7 +9573,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteRequest $post_api_v1_users_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9684,12 +9684,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request post_api_v1_users_delete_own_account_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request post_api_v1_users_delete_own_account_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeleteOwnAccount'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersDeleteOwnAccount($x_auth_token, $x_user_id, $post_api_v1_users_delete_own_account_request = null, string $contentType = self::contentTypes['postApiV1UsersDeleteOwnAccount'][0])
     {
@@ -9704,12 +9704,12 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeleteOwnAccount'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersDeleteOwnAccountWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_users_delete_own_account_request = null, string $contentType = self::contentTypes['postApiV1UsersDeleteOwnAccount'][0])
     {
@@ -9752,11 +9752,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9774,16 +9774,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9801,16 +9801,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -9828,13 +9828,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -9867,7 +9867,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9875,7 +9875,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9883,7 +9883,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -9900,7 +9900,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeleteOwnAccount'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9923,7 +9923,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeleteOwnAccount'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -9931,7 +9931,7 @@ class UsersApi
      */
     public function postApiV1UsersDeleteOwnAccountAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_users_delete_own_account_request = null, string $contentType = self::contentTypes['postApiV1UsersDeleteOwnAccount'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1UsersDeleteOwnAccountRequest($x_auth_token, $x_user_id, $post_api_v1_users_delete_own_account_request, $contentType);
 
         return $this->client
@@ -9975,7 +9975,7 @@ class UsersApi
      *
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_user_id The authenticated user ID. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest $post_api_v1_users_delete_own_account_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersDeleteOwnAccount'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10084,12 +10084,12 @@ class UsersApi
      *
      * Forgot Password
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request post_api_v1_users_forgot_password_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request post_api_v1_users_forgot_password_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersForgotPassword'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPassword200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response
      */
     public function postApiV1UsersForgotPassword($post_api_v1_users_forgot_password_request = null, string $contentType = self::contentTypes['postApiV1UsersForgotPassword'][0])
     {
@@ -10102,12 +10102,12 @@ class UsersApi
      *
      * Forgot Password
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersForgotPassword'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPassword200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersForgotPasswordWithHttpInfo($post_api_v1_users_forgot_password_request = null, string $contentType = self::contentTypes['postApiV1UsersForgotPassword'][0])
     {
@@ -10150,11 +10150,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPassword200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPassword200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10172,16 +10172,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPassword200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10199,13 +10199,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPassword200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -10238,7 +10238,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPassword200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10246,7 +10246,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10261,7 +10261,7 @@ class UsersApi
      *
      * Forgot Password
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersForgotPassword'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10282,7 +10282,7 @@ class UsersApi
      *
      * Forgot Password
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersForgotPassword'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10290,7 +10290,7 @@ class UsersApi
      */
     public function postApiV1UsersForgotPasswordAsyncWithHttpInfo($post_api_v1_users_forgot_password_request = null, string $contentType = self::contentTypes['postApiV1UsersForgotPassword'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPassword200Response';
         $request = $this->postApiV1UsersForgotPasswordRequest($post_api_v1_users_forgot_password_request, $contentType);
 
         return $this->client
@@ -10332,7 +10332,7 @@ class UsersApi
     /**
      * Create request for operation 'postApiV1UsersForgotPassword'
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersForgotPasswordRequest $post_api_v1_users_forgot_password_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersForgotPassword'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10423,12 +10423,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request post_api_v1_users_generate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request post_api_v1_users_generate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersGeneratePersonalAccessToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersGeneratePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_generate_personal_access_token_request = null, string $contentType = self::contentTypes['postApiV1UsersGeneratePersonalAccessToken'][0])
     {
@@ -10445,12 +10445,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersGeneratePersonalAccessToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersGeneratePersonalAccessTokenWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_generate_personal_access_token_request = null, string $contentType = self::contentTypes['postApiV1UsersGeneratePersonalAccessToken'][0])
     {
@@ -10493,11 +10493,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10515,16 +10515,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10542,16 +10542,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10569,13 +10569,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -10608,7 +10608,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10616,7 +10616,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10624,7 +10624,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -10643,7 +10643,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersGeneratePersonalAccessToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10668,7 +10668,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersGeneratePersonalAccessToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10676,7 +10676,7 @@ class UsersApi
      */
     public function postApiV1UsersGeneratePersonalAccessTokenAsyncWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_generate_personal_access_token_request = null, string $contentType = self::contentTypes['postApiV1UsersGeneratePersonalAccessToken'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response';
         $request = $this->postApiV1UsersGeneratePersonalAccessTokenRequest($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_generate_personal_access_token_request, $contentType);
 
         return $this->client
@@ -10722,7 +10722,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest $post_api_v1_users_generate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersGeneratePersonalAccessToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -10857,9 +10857,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersLogout'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersLogout($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1UsersLogout'][0])
     {
@@ -10876,9 +10876,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersLogout'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogout200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersLogoutWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1UsersLogout'][0])
     {
@@ -10921,11 +10921,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogout200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogout200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10943,16 +10943,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogout200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -10970,13 +10970,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogout200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -11009,7 +11009,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogout200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11017,7 +11017,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11063,7 +11063,7 @@ class UsersApi
      */
     public function postApiV1UsersLogoutAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1UsersLogout'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogout200Response';
         $request = $this->postApiV1UsersLogoutRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -11211,9 +11211,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersLogoutOtherClients'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersLogoutOtherClients($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1UsersLogoutOtherClients'][0])
     {
@@ -11230,9 +11230,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersLogoutOtherClients'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersLogoutOtherClientsWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1UsersLogoutOtherClients'][0])
     {
@@ -11275,11 +11275,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11297,16 +11297,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11324,13 +11324,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -11363,7 +11363,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11371,7 +11371,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11417,7 +11417,7 @@ class UsersApi
      */
     public function postApiV1UsersLogoutOtherClientsAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1UsersLogoutOtherClients'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response';
         $request = $this->postApiV1UsersLogoutOtherClientsRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -11565,12 +11565,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegeneratePersonalAccessToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersRegeneratePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request = null, string $contentType = self::contentTypes['postApiV1UsersRegeneratePersonalAccessToken'][0])
     {
@@ -11587,12 +11587,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegeneratePersonalAccessToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersRegeneratePersonalAccessTokenWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request = null, string $contentType = self::contentTypes['postApiV1UsersRegeneratePersonalAccessToken'][0])
     {
@@ -11635,11 +11635,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11657,16 +11657,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11684,16 +11684,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -11711,13 +11711,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -11750,7 +11750,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11758,7 +11758,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11766,7 +11766,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -11785,7 +11785,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegeneratePersonalAccessToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11810,7 +11810,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegeneratePersonalAccessToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11818,7 +11818,7 @@ class UsersApi
      */
     public function postApiV1UsersRegeneratePersonalAccessTokenAsyncWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request = null, string $contentType = self::contentTypes['postApiV1UsersRegeneratePersonalAccessToken'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response';
         $request = $this->postApiV1UsersRegeneratePersonalAccessTokenRequest($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request, $contentType);
 
         return $this->client
@@ -11864,7 +11864,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegeneratePersonalAccessToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -11995,12 +11995,12 @@ class UsersApi
      *
      * Register User
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request post_api_v1_users_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request post_api_v1_users_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegister'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegister200Response
      */
     public function postApiV1UsersRegister($post_api_v1_users_register_request = null, string $contentType = self::contentTypes['postApiV1UsersRegister'][0])
     {
@@ -12013,12 +12013,12 @@ class UsersApi
      *
      * Register User
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegister'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegister200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersRegisterWithHttpInfo($post_api_v1_users_register_request = null, string $contentType = self::contentTypes['postApiV1UsersRegister'][0])
     {
@@ -12061,11 +12061,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegister200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegister200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -12083,13 +12083,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegister200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegister200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -12122,7 +12122,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegister200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12137,7 +12137,7 @@ class UsersApi
      *
      * Register User
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegister'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -12158,7 +12158,7 @@ class UsersApi
      *
      * Register User
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegister'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -12166,7 +12166,7 @@ class UsersApi
      */
     public function postApiV1UsersRegisterAsyncWithHttpInfo($post_api_v1_users_register_request = null, string $contentType = self::contentTypes['postApiV1UsersRegister'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegister200Response';
         $request = $this->postApiV1UsersRegisterRequest($post_api_v1_users_register_request, $contentType);
 
         return $this->client
@@ -12208,7 +12208,7 @@ class UsersApi
     /**
      * Create request for operation 'postApiV1UsersRegister'
      *
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegisterRequest $post_api_v1_users_register_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRegister'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -12299,9 +12299,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRemoveOtherTokens'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersRemoveOtherTokens($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1UsersRemoveOtherTokens'][0])
     {
@@ -12318,9 +12318,9 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRemoveOtherTokens'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersRemoveOtherTokensWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1UsersRemoveOtherTokens'][0])
     {
@@ -12363,11 +12363,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -12385,16 +12385,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -12412,13 +12412,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -12451,7 +12451,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12459,7 +12459,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12505,7 +12505,7 @@ class UsersApi
      */
     public function postApiV1UsersRemoveOtherTokensAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1UsersRemoveOtherTokens'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1UsersRemoveOtherTokensRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -12653,12 +12653,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRemovePersonalAccessToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersRemovePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request = null, string $contentType = self::contentTypes['postApiV1UsersRemovePersonalAccessToken'][0])
     {
@@ -12675,12 +12675,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRemovePersonalAccessToken'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersRemovePersonalAccessTokenWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request = null, string $contentType = self::contentTypes['postApiV1UsersRemovePersonalAccessToken'][0])
     {
@@ -12723,11 +12723,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -12745,16 +12745,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -12772,16 +12772,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -12799,13 +12799,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -12838,7 +12838,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12846,7 +12846,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12854,7 +12854,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -12873,7 +12873,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRemovePersonalAccessToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -12898,7 +12898,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRemovePersonalAccessToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -12906,7 +12906,7 @@ class UsersApi
      */
     public function postApiV1UsersRemovePersonalAccessTokenAsyncWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request = null, string $contentType = self::contentTypes['postApiV1UsersRemovePersonalAccessToken'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1UsersRemovePersonalAccessTokenRequest($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request, $contentType);
 
         return $this->client
@@ -12952,7 +12952,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest $post_api_v1_users_regenerate_personal_access_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersRemovePersonalAccessToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -13085,12 +13085,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request post_api_v1_users_reset_avatar_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request post_api_v1_users_reset_avatar_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetAvatar'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersResetAvatar($x_user_id, $x_auth_token, $post_api_v1_users_reset_avatar_request = null, string $contentType = self::contentTypes['postApiV1UsersResetAvatar'][0])
     {
@@ -13105,12 +13105,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetAvatar'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersResetAvatarWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_reset_avatar_request = null, string $contentType = self::contentTypes['postApiV1UsersResetAvatar'][0])
     {
@@ -13153,11 +13153,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -13175,16 +13175,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -13202,16 +13202,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -13229,13 +13229,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -13268,7 +13268,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13276,7 +13276,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13284,7 +13284,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13301,7 +13301,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetAvatar'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -13324,7 +13324,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetAvatar'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -13332,7 +13332,7 @@ class UsersApi
      */
     public function postApiV1UsersResetAvatarAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_reset_avatar_request = null, string $contentType = self::contentTypes['postApiV1UsersResetAvatar'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1UsersResetAvatarRequest($x_user_id, $x_auth_token, $post_api_v1_users_reset_avatar_request, $contentType);
 
         return $this->client
@@ -13376,7 +13376,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetAvatarRequest $post_api_v1_users_reset_avatar_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetAvatar'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -13489,12 +13489,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request post_api_v1_users_reset_e2_e_key_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request post_api_v1_users_reset_e2_e_key_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetE2EKey'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersResetE2EKey($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_e2_e_key_request = null, string $contentType = self::contentTypes['postApiV1UsersResetE2EKey'][0])
     {
@@ -13511,12 +13511,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetE2EKey'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersResetE2EKeyWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_e2_e_key_request = null, string $contentType = self::contentTypes['postApiV1UsersResetE2EKey'][0])
     {
@@ -13559,11 +13559,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -13581,16 +13581,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -13608,16 +13608,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -13635,13 +13635,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -13674,7 +13674,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13682,7 +13682,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13690,7 +13690,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -13709,7 +13709,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetE2EKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -13734,7 +13734,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetE2EKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -13742,7 +13742,7 @@ class UsersApi
      */
     public function postApiV1UsersResetE2EKeyAsyncWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_e2_e_key_request = null, string $contentType = self::contentTypes['postApiV1UsersResetE2EKey'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1UsersResetE2EKeyRequest($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_e2_e_key_request, $contentType);
 
         return $this->client
@@ -13788,7 +13788,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest $post_api_v1_users_reset_e2_e_key_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetE2EKey'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -13923,12 +13923,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request post_api_v1_users_reset_totp_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request post_api_v1_users_reset_totp_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetTOTP'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersResetTOTP($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_totp_request = null, string $contentType = self::contentTypes['postApiV1UsersResetTOTP'][0])
     {
@@ -13945,12 +13945,12 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetTOTP'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersResetTOTPWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_totp_request = null, string $contentType = self::contentTypes['postApiV1UsersResetTOTP'][0])
     {
@@ -13993,11 +13993,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -14015,16 +14015,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -14042,16 +14042,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -14069,13 +14069,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -14108,7 +14108,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14116,7 +14116,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14124,7 +14124,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14143,7 +14143,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetTOTP'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -14168,7 +14168,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetTOTP'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -14176,7 +14176,7 @@ class UsersApi
      */
     public function postApiV1UsersResetTOTPAsyncWithHttpInfo($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_totp_request = null, string $contentType = self::contentTypes['postApiV1UsersResetTOTP'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1UsersResetTOTPRequest($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_totp_request, $contentType);
 
         return $this->client
@@ -14222,7 +14222,7 @@ class UsersApi
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersResetTOTPRequest $post_api_v1_users_reset_totp_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersResetTOTP'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -14355,12 +14355,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetActiveStatus'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersSetActiveStatus($x_user_id, $x_auth_token, $post_api_v1_users_set_active_status_request = null, string $contentType = self::contentTypes['postApiV1UsersSetActiveStatus'][0])
     {
@@ -14375,12 +14375,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetActiveStatus'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersSetActiveStatusWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_set_active_status_request = null, string $contentType = self::contentTypes['postApiV1UsersSetActiveStatus'][0])
     {
@@ -14423,11 +14423,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -14445,16 +14445,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -14472,16 +14472,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -14499,13 +14499,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -14538,7 +14538,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14546,7 +14546,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14554,7 +14554,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14571,7 +14571,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetActiveStatus'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -14594,7 +14594,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetActiveStatus'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -14602,7 +14602,7 @@ class UsersApi
      */
     public function postApiV1UsersSetActiveStatusAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_set_active_status_request = null, string $contentType = self::contentTypes['postApiV1UsersSetActiveStatus'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response';
         $request = $this->postApiV1UsersSetActiveStatusRequest($x_user_id, $x_auth_token, $post_api_v1_users_set_active_status_request, $contentType);
 
         return $this->client
@@ -14646,7 +14646,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest $post_api_v1_users_set_active_status_request If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetActiveStatus'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -14757,12 +14757,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetAvatar'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersSetAvatar($x_user_id, $x_auth_token, $post_api_v1_users_set_avatar_request = null, string $contentType = self::contentTypes['postApiV1UsersSetAvatar'][0])
     {
@@ -14777,12 +14777,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetAvatar'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersSetAvatarWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_set_avatar_request = null, string $contentType = self::contentTypes['postApiV1UsersSetAvatar'][0])
     {
@@ -14825,11 +14825,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -14847,16 +14847,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -14874,16 +14874,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -14901,13 +14901,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -14940,7 +14940,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14948,7 +14948,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1RolesSync400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesSync400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14956,7 +14956,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -14973,7 +14973,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetAvatar'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -14996,7 +14996,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetAvatar'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -15004,7 +15004,7 @@ class UsersApi
      */
     public function postApiV1UsersSetAvatarAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_set_avatar_request = null, string $contentType = self::contentTypes['postApiV1UsersSetAvatar'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1UsersSetAvatarRequest($x_user_id, $x_auth_token, $post_api_v1_users_set_avatar_request, $contentType);
 
         return $this->client
@@ -15048,7 +15048,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetAvatarRequest $post_api_v1_users_set_avatar_request You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetAvatar'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -15159,12 +15159,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request post_api_v1_users_set_preferences_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request post_api_v1_users_set_preferences_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetPreferences'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersSetPreferences($x_user_id, $x_auth_token, $post_api_v1_users_set_preferences_request = null, string $contentType = self::contentTypes['postApiV1UsersSetPreferences'][0])
     {
@@ -15179,12 +15179,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetPreferences'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersSetPreferencesWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_set_preferences_request = null, string $contentType = self::contentTypes['postApiV1UsersSetPreferences'][0])
     {
@@ -15227,11 +15227,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -15249,16 +15249,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -15276,16 +15276,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -15303,13 +15303,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -15342,7 +15342,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -15350,7 +15350,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -15358,7 +15358,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -15375,7 +15375,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetPreferences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -15398,7 +15398,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetPreferences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -15406,7 +15406,7 @@ class UsersApi
      */
     public function postApiV1UsersSetPreferencesAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_set_preferences_request = null, string $contentType = self::contentTypes['postApiV1UsersSetPreferences'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200Response';
         $request = $this->postApiV1UsersSetPreferencesRequest($x_user_id, $x_auth_token, $post_api_v1_users_set_preferences_request, $contentType);
 
         return $this->client
@@ -15450,7 +15450,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferencesRequest $post_api_v1_users_set_preferences_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetPreferences'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -15561,12 +15561,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request post_api_v1_users_set_status_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request post_api_v1_users_set_status_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetStatus'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersSetStatus($x_user_id, $x_auth_token, $post_api_v1_users_set_status_request = null, string $contentType = self::contentTypes['postApiV1UsersSetStatus'][0])
     {
@@ -15581,12 +15581,12 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetStatus'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersSetStatusWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_set_status_request = null, string $contentType = self::contentTypes['postApiV1UsersSetStatus'][0])
     {
@@ -15629,11 +15629,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -15651,16 +15651,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -15678,13 +15678,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -15717,7 +15717,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -15725,7 +15725,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -15742,7 +15742,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetStatus'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -15765,7 +15765,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetStatus'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -15773,7 +15773,7 @@ class UsersApi
      */
     public function postApiV1UsersSetStatusAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_users_set_status_request = null, string $contentType = self::contentTypes['postApiV1UsersSetStatus'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesDelete200Response';
         $request = $this->postApiV1UsersSetStatusRequest($x_user_id, $x_auth_token, $post_api_v1_users_set_status_request, $contentType);
 
         return $this->client
@@ -15817,7 +15817,7 @@ class UsersApi
      *
      * @param  string $x_user_id The authenticated user ID. (required)
      * @param  string $x_auth_token The authenticated user token. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetStatusRequest $post_api_v1_users_set_status_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersSetStatus'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -15930,12 +15930,12 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request post_api_v1_users_update_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request post_api_v1_users_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdate'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersUpdate($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_request = null, string $contentType = self::contentTypes['postApiV1UsersUpdate'][0])
     {
@@ -15952,12 +15952,12 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdate'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response|\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersUpdateWithHttpInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_request = null, string $contentType = self::contentTypes['postApiV1UsersUpdate'][0])
     {
@@ -16000,11 +16000,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -16022,16 +16022,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -16049,16 +16049,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -16076,13 +16076,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -16115,7 +16115,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16123,7 +16123,7 @@ class UsersApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate400Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16131,7 +16131,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16150,7 +16150,7 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -16175,7 +16175,7 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -16183,7 +16183,7 @@ class UsersApi
      */
     public function postApiV1UsersUpdateAsyncWithHttpInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_request = null, string $contentType = self::contentTypes['postApiV1UsersUpdate'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200Response';
         $request = $this->postApiV1UsersUpdateRequest($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_request, $contentType);
 
         return $this->client
@@ -16229,7 +16229,7 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequest $post_api_v1_users_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -16364,12 +16364,12 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request post_api_v1_users_update_own_basic_info_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request post_api_v1_users_update_own_basic_info_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdateOwnBasicInfo'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response
      */
     public function postApiV1UsersUpdateOwnBasicInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_own_basic_info_request = null, string $contentType = self::contentTypes['postApiV1UsersUpdateOwnBasicInfo'][0])
     {
@@ -16386,12 +16386,12 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdateOwnBasicInfo'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientUserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\UserManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response|\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response|\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UsersUpdateOwnBasicInfoWithHttpInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_own_basic_info_request = null, string $contentType = self::contentTypes['postApiV1UsersUpdateOwnBasicInfo'][0])
     {
@@ -16434,11 +16434,11 @@ class UsersApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -16456,16 +16456,16 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -16483,13 +16483,13 @@ class UsersApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response';
+            $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -16522,7 +16522,7 @@ class UsersApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16530,7 +16530,7 @@ class UsersApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll401Response',
+                        '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -16549,7 +16549,7 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdateOwnBasicInfo'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -16574,7 +16574,7 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdateOwnBasicInfo'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -16582,7 +16582,7 @@ class UsersApi
      */
     public function postApiV1UsersUpdateOwnBasicInfoAsyncWithHttpInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_own_basic_info_request = null, string $contentType = self::contentTypes['postApiV1UsersUpdateOwnBasicInfo'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response';
+        $returnType = '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response';
         $request = $this->postApiV1UsersUpdateOwnBasicInfoRequest($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_own_basic_info_request, $contentType);
 
         return $this->client
@@ -16628,7 +16628,7 @@ class UsersApi
      * @param  string $x_auth_token The authenticated user token. (required)
      * @param  string $x_2fa_code The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request (optional)
+     * @param  \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest $post_api_v1_users_update_own_basic_info_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UsersUpdateOwnBasicInfo'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

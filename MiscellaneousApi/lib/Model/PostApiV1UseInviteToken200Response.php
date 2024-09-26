@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * PostApiV1UseInviteToken200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1UseInviteToken200Response implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom',
+        'room' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1UseInviteToken200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets room
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom|null
      */
     public function getRoom()
     {
@@ -309,7 +309,7 @@ class PostApiV1UseInviteToken200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets room
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom|null $room room
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom|null $room room
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientNotificationsApi\Model;
+namespace WebMI\RocketChatApiClient\NotificationsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\NotificationsApi\ObjectSerializer;
 
 /**
  * GetApiV1PushGet200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseData',
+        'data' => '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseData',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseData|null
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseData|null
      */
     public function getData()
     {
@@ -309,7 +309,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseData|null $data data
+     * @param \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseData|null $data data
      *
      * @return self
      */

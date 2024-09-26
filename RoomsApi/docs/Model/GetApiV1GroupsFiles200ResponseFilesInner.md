@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **uploading** | **bool** |  | [optional]
 **extension** | **string** |  | [optional]
 **progress** | **int** |  | [optional]
-**user** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
+**user** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **instance_id** | **string** |  | [optional]
 **etag** | **string** |  | [optional]

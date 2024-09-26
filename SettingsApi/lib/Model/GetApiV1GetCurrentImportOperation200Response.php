@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1GetCurrentImportOperation200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1GetCurrentImportOperation200Response implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'success' => 'bool',
-        'operation' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner'
+        'operation' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1GetCurrentImportOperation200Response implements ModelInterface, Ar
     /**
      * Gets operation
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner|null
      */
     public function getOperation()
     {
@@ -336,7 +336,7 @@ class GetApiV1GetCurrentImportOperation200Response implements ModelInterface, Ar
     /**
      * Sets operation
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner|null $operation operation
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner|null $operation operation
      *
      * @return self
      */

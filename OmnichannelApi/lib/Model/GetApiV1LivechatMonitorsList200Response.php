@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatMonitorsList200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatMonitorsList200Response implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'monitors' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitors200ResponseMonitorsInner[]',
+        'monitors' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitors200ResponseMonitorsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatMonitorsList200Response implements ModelInterface, ArrayAc
     /**
      * Gets monitors
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitors200ResponseMonitorsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitors200ResponseMonitorsInner[]|null
      */
     public function getMonitors()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatMonitorsList200Response implements ModelInterface, ArrayAc
     /**
      * Sets monitors
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitors200ResponseMonitorsInner[]|null $monitors monitors
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitors200ResponseMonitorsInner[]|null $monitors monitors
      *
      * @return self
      */

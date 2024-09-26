@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * PostApiV1ImportAddUsersRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ImportAddUsersRequest implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'users' => '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]'
+        'users' => '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class PostApiV1ImportAddUsersRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets users
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]|null
      */
     public function getUsers()
     {
@@ -302,7 +302,7 @@ class PostApiV1ImportAddUsersRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets users
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]|null $users users
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]|null $users users
      *
      * @return self
      */

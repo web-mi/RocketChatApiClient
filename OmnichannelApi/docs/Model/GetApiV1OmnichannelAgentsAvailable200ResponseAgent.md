@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **name** | **string** |  | [optional]
 **status** | **string** |  | [optional]
 **status_livechat** | **string** |  | [optional]
-**emails** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]**](GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner.md) |  | [optional]
-**livechat** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat**](GetApiV1LivechatUsersTypeId200ResponseUserLivechat.md) |  | [optional]
+**emails** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]**](GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner.md) |  | [optional]
+**livechat** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat**](GetApiV1LivechatUsersTypeId200ResponseUserLivechat.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

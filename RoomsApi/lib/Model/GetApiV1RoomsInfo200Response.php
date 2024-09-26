@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsInfo200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsInfo200ResponseRoom',
+        'room' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsInfo200ResponseRoom',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets room
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsInfo200ResponseRoom|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsInfo200ResponseRoom|null
      */
     public function getRoom()
     {
@@ -309,7 +309,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets room
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsInfo200ResponseRoom|null $room room
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsInfo200ResponseRoom|null $room room
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientAuthenticationApi\Model;
+namespace WebMI\RocketChatApiClient\AuthenticationApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientAuthenticationApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
  * PostApiV1Users2faDisableEmail400Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostApiV1Users2faDisableEmail400Response implements ModelInterface, ArrayA
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faDisableEmail400ResponseDetails'
+        'details' => '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faDisableEmail400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class PostApiV1Users2faDisableEmail400Response implements ModelInterface, ArrayA
     /**
      * Gets details
      *
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faDisableEmail400ResponseDetails|null
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faDisableEmail400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class PostApiV1Users2faDisableEmail400Response implements ModelInterface, ArrayA
     /**
      * Sets details
      *
-     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faDisableEmail400ResponseDetails|null $details details
+     * @param \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Users2faDisableEmail400ResponseDetails|null $details details
      *
      * @return self
      */

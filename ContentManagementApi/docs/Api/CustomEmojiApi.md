@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientContentManagementApi\CustomEmojiApi
+# WebMI\RocketChatApiClient\ContentManagementApi\CustomEmojiApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1EmojiCustomAll()`
 
 ```php
-getApiV1EmojiCustomAll($x_auth_token, $x_user_id): \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response
+getApiV1EmojiCustomAll($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomAll200Response
 ```
 
 List All Custom Emojis
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomEmojiApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomEmojiApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response**](../Model/GetApiV1EmojiCustomAll200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomAll200Response**](../Model/GetApiV1EmojiCustomAll200Response.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `getApiV1EmojiCustomList()`
 
 ```php
-getApiV1EmojiCustomList($x_auth_token, $x_user_id, $updated_since, $query): \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response
+getApiV1EmojiCustomList($x_auth_token, $x_user_id, $updated_since, $query): \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomList200Response
 ```
 
 Get Updated List of Custom Emojis
@@ -87,7 +87,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomEmojiApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomEmojiApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response**](../Model/GetApiV1EmojiCustomList200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomList200Response**](../Model/GetApiV1EmojiCustomList200Response.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ No authorization required
 ## `postApiV1EmojiCustomCreate()`
 
 ```php
-postApiV1EmojiCustomCreate($x_auth_token, $x_user_id, $emoji, $name, $aliases): \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
+postApiV1EmojiCustomCreate($x_auth_token, $x_user_id, $emoji, $name, $aliases): \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
 ```
 
 Create an Emoji
@@ -149,7 +149,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomEmojiApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomEmojiApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -180,7 +180,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ No authorization required
 ## `postApiV1EmojiCustomDelete()`
 
 ```php
-postApiV1EmojiCustomDelete($x_auth_token, $x_user_id, $post_api_v1_emoji_custom_delete_request): \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
+postApiV1EmojiCustomDelete($x_auth_token, $x_user_id, $post_api_v1_emoji_custom_delete_request): \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
 ```
 
 Delete a Custom Emoji
@@ -213,14 +213,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomEmojiApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomEmojiApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_emoji_custom_delete_request = {"emojiId":"6542e83aa2f73c7460e18efb"}; // \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest
+$post_api_v1_emoji_custom_delete_request = {"emojiId":"6542e83aa2f73c7460e18efb"}; // \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest
 
 try {
     $result = $apiInstance->postApiV1EmojiCustomDelete($x_auth_token, $x_user_id, $post_api_v1_emoji_custom_delete_request);
@@ -236,11 +236,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_emoji_custom_delete_request** | [**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest**](../Model/PostApiV1EmojiCustomDeleteRequest.md)|  | [optional] |
+| **post_api_v1_emoji_custom_delete_request** | [**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest**](../Model/PostApiV1EmojiCustomDeleteRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ No authorization required
 ## `postApiV1EmojiCustomUpdate()`
 
 ```php
-postApiV1EmojiCustomUpdate($x_user_id, $x_auth_token, $post_api_v1_emoji_custom_update_request): \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
+postApiV1EmojiCustomUpdate($x_user_id, $x_auth_token, $post_api_v1_emoji_custom_update_request): \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
 ```
 
 Update a Custom Emoji
@@ -273,14 +273,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomEmojiApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomEmojiApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
-$post_api_v1_emoji_custom_update_request = new \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest(); // \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest | If you are updating the image, provide the image file as form data.
+$post_api_v1_emoji_custom_update_request = new \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest(); // \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest | If you are updating the image, provide the image file as form data.
 
 try {
     $result = $apiInstance->postApiV1EmojiCustomUpdate($x_user_id, $x_auth_token, $post_api_v1_emoji_custom_update_request);
@@ -296,11 +296,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
-| **post_api_v1_emoji_custom_update_request** | [**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest**](../Model/PostApiV1EmojiCustomUpdateRequest.md)| If you are updating the image, provide the image file as form data. | [optional] |
+| **post_api_v1_emoji_custom_update_request** | [**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest**](../Model/PostApiV1EmojiCustomUpdateRequest.md)| If you are updating the image, provide the image file as form data. | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
 
 ### Authorization
 

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1VoipQueuesGetMembershipSubscription200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200Response implements ModelInt
       * @var string[]
       */
     protected static $openAPITypes = [
-        'queues' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues',
+        'queues' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues',
         'extension' => 'string'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200Response implements ModelInt
     /**
      * Gets queues
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues|null
      */
     public function getQueues()
     {
@@ -309,7 +309,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200Response implements ModelInt
     /**
      * Sets queues
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues|null $queues queues
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues|null $queues queues
      *
      * @return self
      */

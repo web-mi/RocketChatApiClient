@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1LicensesInfo200ResponseLicenseLicense Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
       */
     protected static $openAPITypes = [
         'version' => 'string',
-        'information' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseInformation',
-        'validation' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidation',
-        'granted_modules' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner[]',
-        'limits' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimits',
+        'information' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseInformation',
+        'validation' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidation',
+        'granted_modules' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner[]',
+        'limits' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimits',
         'cloud_meta' => 'object'
     ];
 
@@ -354,7 +354,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
     /**
      * Gets information
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseInformation|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseInformation|null
      */
     public function getInformation()
     {
@@ -364,7 +364,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
     /**
      * Sets information
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseInformation|null $information information
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseInformation|null $information information
      *
      * @return self
      */
@@ -381,7 +381,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
     /**
      * Gets validation
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidation|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidation|null
      */
     public function getValidation()
     {
@@ -391,7 +391,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
     /**
      * Sets validation
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidation|null $validation validation
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidation|null $validation validation
      *
      * @return self
      */
@@ -408,7 +408,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
     /**
      * Gets granted_modules
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner[]|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner[]|null
      */
     public function getGrantedModules()
     {
@@ -418,7 +418,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
     /**
      * Sets granted_modules
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner[]|null $granted_modules granted_modules
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner[]|null $granted_modules granted_modules
      *
      * @return self
      */
@@ -435,7 +435,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
     /**
      * Gets limits
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimits|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimits|null
      */
     public function getLimits()
     {
@@ -445,7 +445,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
     /**
      * Sets limits
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimits|null $limits limits
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimits|null $limits limits
      *
      * @return self
      */

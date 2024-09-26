@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1RoomsSaveRoomSettingsRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -80,7 +80,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
         'retention_override_global' => 'bool',
         'encrypted' => 'bool',
         'favorite' => 'object',
-        'sidepanel' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel'
+        'sidepanel' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel'
     ];
 
     /**
@@ -1077,7 +1077,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
     /**
      * Gets sidepanel
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null
      */
     public function getSidepanel()
     {
@@ -1087,7 +1087,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
     /**
      * Sets sidepanel
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null $sidepanel sidepanel
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null $sidepanel sidepanel
      *
      * @return self
      */

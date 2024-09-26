@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1Statistics200ResponseSettingsEmail Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1Statistics200ResponseSettingsEmail implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'smtp' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmailSmtp'
+        'smtp' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmailSmtp'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetApiV1Statistics200ResponseSettingsEmail implements ModelInterface, Arra
     /**
      * Gets smtp
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmailSmtp|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmailSmtp|null
      */
     public function getSmtp()
     {
@@ -302,7 +302,7 @@ class GetApiV1Statistics200ResponseSettingsEmail implements ModelInterface, Arra
     /**
      * Sets smtp
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmailSmtp|null $smtp smtp
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmailSmtp|null $smtp smtp
      *
      * @return self
      */

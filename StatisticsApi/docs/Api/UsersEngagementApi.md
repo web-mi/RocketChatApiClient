@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientStatisticsApi\UsersEngagementApi
+# WebMI\RocketChatApiClient\StatisticsApi\UsersEngagementApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1EngagementDashboardUsersActiveUsers()`
 
 ```php
-getApiV1EngagementDashboardUsersActiveUsers($x_user_id, $x_auth_token, $start, $end): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersActiveUsers200Response
+getApiV1EngagementDashboardUsersActiveUsers($x_user_id, $x_auth_token, $start, $end): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersActiveUsers200Response
 ```
 
 Get Active Users
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\UsersEngagementApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\UsersEngagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -58,7 +58,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersActiveUsers200Response**](../Model/GetApiV1EngagementDashboardUsersActiveUsers200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersActiveUsers200Response**](../Model/GetApiV1EngagementDashboardUsersActiveUsers200Response.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ No authorization required
 ## `getApiV1EngagementDashboardUsersChatBusierHourlyData()`
 
 ```php
-getApiV1EngagementDashboardUsersChatBusierHourlyData($x_auth_token, $x_user_id, $start): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response
+getApiV1EngagementDashboardUsersChatBusierHourlyData($x_auth_token, $x_user_id, $start): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response
 ```
 
 Get Hourly Data When Chat is Busier
@@ -91,7 +91,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\UsersEngagementApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\UsersEngagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -118,7 +118,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response**](../Model/GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response**](../Model/GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response.md)
 
 ### Authorization
 
@@ -136,7 +136,7 @@ No authorization required
 ## `getApiV1EngagementDashboardUsersChatBusierWeeklyData()`
 
 ```php
-getApiV1EngagementDashboardUsersChatBusierWeeklyData($x_auth_token, $x_user_id, $start): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response
+getApiV1EngagementDashboardUsersChatBusierWeeklyData($x_auth_token, $x_user_id, $start): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response
 ```
 
 Get Weekly Data When Chat is Busier
@@ -151,7 +151,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\UsersEngagementApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\UsersEngagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -178,7 +178,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response**](../Model/GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response**](../Model/GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response.md)
 
 ### Authorization
 
@@ -196,7 +196,7 @@ No authorization required
 ## `getApiV1EngagementDashboardUsersNewUsers()`
 
 ```php
-getApiV1EngagementDashboardUsersNewUsers($x_auth_token, $x_user_id, $start, $end): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200Response
+getApiV1EngagementDashboardUsersNewUsers($x_auth_token, $x_user_id, $start, $end): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200Response
 ```
 
 Get New Users
@@ -211,7 +211,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\UsersEngagementApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\UsersEngagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -240,7 +240,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200Response**](../Model/GetApiV1EngagementDashboardUsersNewUsers200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200Response**](../Model/GetApiV1EngagementDashboardUsersNewUsers200Response.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ No authorization required
 ## `getApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek()`
 
 ```php
-getApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek($x_auth_token, $x_user_id, $start, $end): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response
+getApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek($x_auth_token, $x_user_id, $start, $end): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response
 ```
 
 Get User By Time of the Day
@@ -273,7 +273,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\UsersEngagementApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\UsersEngagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -302,7 +302,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response**](../Model/GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response**](../Model/GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response.md)
 
 ### Authorization
 

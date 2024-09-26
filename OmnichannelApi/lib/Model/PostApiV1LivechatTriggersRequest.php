@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatTriggersRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class PostApiV1LivechatTriggersRequest implements ModelInterface, ArrayAccess, \
         'description' => 'string',
         'enabled' => 'bool',
         'run_once' => 'bool',
-        'conditions' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInner[]',
-        'actions' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInner[]'
+        'conditions' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInner[]',
+        'actions' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInner[]'
     ];
 
     /**
@@ -487,7 +487,7 @@ class PostApiV1LivechatTriggersRequest implements ModelInterface, ArrayAccess, \
     /**
      * Gets conditions
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInner[]
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInner[]
      */
     public function getConditions()
     {
@@ -497,7 +497,7 @@ class PostApiV1LivechatTriggersRequest implements ModelInterface, ArrayAccess, \
     /**
      * Sets conditions
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInner[] $conditions Enter the conditions for the trigger to execute.
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInner[] $conditions Enter the conditions for the trigger to execute.
      *
      * @return self
      */
@@ -514,7 +514,7 @@ class PostApiV1LivechatTriggersRequest implements ModelInterface, ArrayAccess, \
     /**
      * Gets actions
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInner[]
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInner[]
      */
     public function getActions()
     {
@@ -524,7 +524,7 @@ class PostApiV1LivechatTriggersRequest implements ModelInterface, ArrayAccess, \
     /**
      * Sets actions
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInner[] $actions The actions that take place once the trigger is executed.
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInner[] $actions The actions that take place once the trigger is executed.
      *
      * @return self
      */

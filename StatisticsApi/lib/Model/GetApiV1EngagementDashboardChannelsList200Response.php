@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1EngagementDashboardChannelsList200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1EngagementDashboardChannelsList200Response implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'channels' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner[]',
+        'channels' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner[]',
         'total' => 'int',
         'offset' => 'int',
         'count' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1EngagementDashboardChannelsList200Response implements ModelInterfa
     /**
      * Gets channels
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner[]|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner[]|null
      */
     public function getChannels()
     {
@@ -330,7 +330,7 @@ class GetApiV1EngagementDashboardChannelsList200Response implements ModelInterfa
     /**
      * Sets channels
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner[]|null $channels channels
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner[]|null $channels channels
      *
      * @return self
      */

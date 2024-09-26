@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**rooms** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom[]**](PostApiV1TeamsUpdateRoom200ResponseRoom.md) |  | [optional]
+**rooms** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom[]**](PostApiV1TeamsUpdateRoom200ResponseRoom.md) |  | [optional]
 **total** | **int** |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]

@@ -12,6 +12,6 @@ Name | Type | Description | Notes
 **valid** | **bool** |  | [optional]
 **user** | **string** |  | [optional]
 **_updated_at** | **string** |  | [optional]
-**count** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ImportStatus200ResponseOperationCount**](GetApiV1ImportStatus200ResponseOperationCount.md) |  | [optional]
+**count** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ImportStatus200ResponseOperationCount**](GetApiV1ImportStatus200ResponseOperationCount.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

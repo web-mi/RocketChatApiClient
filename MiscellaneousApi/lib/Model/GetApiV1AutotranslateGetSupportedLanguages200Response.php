@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1AutotranslateGetSupportedLanguages200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'languages' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]',
+        'languages' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
     /**
      * Gets languages
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]|null
      */
     public function getLanguages()
     {
@@ -309,7 +309,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
     /**
      * Sets languages
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]|null $languages languages
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]|null $languages languages
      *
      * @return self
      */

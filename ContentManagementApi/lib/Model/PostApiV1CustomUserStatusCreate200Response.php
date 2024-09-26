@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientContentManagementApi
+ * @package  WebMI\RocketChatApiClient\ContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientContentManagementApi\Model;
+namespace WebMI\RocketChatApiClient\ContentManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\ContentManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1CustomUserStatusCreate200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientContentManagementApi
+ * @package  WebMI\RocketChatApiClient\ContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1CustomUserStatusCreate200Response implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'custom_user_status' => '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200ResponseStatusesInner',
+        'custom_user_status' => '\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomUserStatusList200ResponseStatusesInner',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1CustomUserStatusCreate200Response implements ModelInterface, Arra
     /**
      * Gets custom_user_status
      *
-     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200ResponseStatusesInner|null
+     * @return \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomUserStatusList200ResponseStatusesInner|null
      */
     public function getCustomUserStatus()
     {
@@ -309,7 +309,7 @@ class PostApiV1CustomUserStatusCreate200Response implements ModelInterface, Arra
     /**
      * Sets custom_user_status
      *
-     * @param \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200ResponseStatusesInner|null $custom_user_status custom_user_status
+     * @param \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomUserStatusList200ResponseStatusesInner|null $custom_user_status custom_user_status
      *
      * @return self
      */

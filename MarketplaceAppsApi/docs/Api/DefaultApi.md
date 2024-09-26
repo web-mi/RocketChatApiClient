@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientMarketplaceAppsApi\DefaultApi
+# WebMI\RocketChatApiClient\MarketplaceAppsApi\DefaultApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiApps()`
 
 ```php
-postApiApps($x_auth_token, $x_user_id, $post_api_apps_request): \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200Response
+postApiApps($x_auth_token, $x_user_id, $post_api_apps_request): \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200Response
 ```
 
 Install Private Apps
@@ -25,14 +25,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientMarketplaceAppsApi\Api\DefaultApi(
+$apiInstance = new WebMI\RocketChatApiClient\MarketplaceAppsApi\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_apps_request = {"url":"https://github.com/RocketChat/Apps.RocketChat.Tester/blob/master/dist/appsrocketchattester_0.0.5.zip?raw=true"}; // \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsRequest
+$post_api_apps_request = {"url":"https://github.com/RocketChat/Apps.RocketChat.Tester/blob/master/dist/appsrocketchattester_0.0.5.zip?raw=true"}; // \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsRequest
 
 try {
     $result = $apiInstance->postApiApps($x_auth_token, $x_user_id, $post_api_apps_request);
@@ -48,11 +48,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_apps_request** | [**\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsRequest**](../Model/PostApiAppsRequest.md)|  | [optional] |
+| **post_api_apps_request** | [**\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsRequest**](../Model/PostApiAppsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200Response**](../Model/PostApiApps200Response.md)
+[**\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200Response**](../Model/PostApiApps200Response.md)
 
 ### Authorization
 

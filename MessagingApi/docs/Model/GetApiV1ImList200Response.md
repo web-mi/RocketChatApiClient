@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**ims** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]**](GetApiV1ImList200ResponseImsInner.md) |  | [optional]
+**ims** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImList200ResponseImsInner[]**](GetApiV1ImList200ResponseImsInner.md) |  | [optional]
 **offset** | **int** |  | [optional]
 **count** | **int** |  | [optional]
 **total** | **int** |  | [optional]

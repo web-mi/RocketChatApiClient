@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response imple
       * @var string[]
       */
     protected static $openAPITypes = [
-        'totalizers' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200ResponseTotalizersInner[]',
+        'totalizers' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200ResponseTotalizersInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response imple
     /**
      * Gets totalizers
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200ResponseTotalizersInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200ResponseTotalizersInner[]|null
      */
     public function getTotalizers()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response imple
     /**
      * Sets totalizers
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200ResponseTotalizersInner[]|null $totalizers totalizers
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200ResponseTotalizersInner[]|null $totalizers totalizers
      *
      * @return self
      */

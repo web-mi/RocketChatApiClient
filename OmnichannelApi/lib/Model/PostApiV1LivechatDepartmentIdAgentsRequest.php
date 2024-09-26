@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatDepartmentIdAgentsRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatDepartmentIdAgentsRequest implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'upsert' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequestUpsertInner[]',
+        'upsert' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequestUpsertInner[]',
         'remove' => 'object[]'
     ];
 
@@ -305,7 +305,7 @@ class PostApiV1LivechatDepartmentIdAgentsRequest implements ModelInterface, Arra
     /**
      * Gets upsert
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequestUpsertInner[]
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequestUpsertInner[]
      */
     public function getUpsert()
     {
@@ -315,7 +315,7 @@ class PostApiV1LivechatDepartmentIdAgentsRequest implements ModelInterface, Arra
     /**
      * Sets upsert
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequestUpsertInner[] $upsert The object that contains the agent details.
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequestUpsertInner[] $upsert The object that contains the agent details.
      *
      * @return self
      */

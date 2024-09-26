@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsUploadRid200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RoomsUploadRid200Response implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage',
+        'message' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1RoomsUploadRid200Response implements ModelInterface, ArrayAccess, 
     /**
      * Gets message
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage|null
      */
     public function getMessage()
     {
@@ -309,7 +309,7 @@ class GetApiV1RoomsUploadRid200Response implements ModelInterface, ArrayAccess, 
     /**
      * Sets message
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage|null $message message
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessage|null $message message
      *
      * @return self
      */

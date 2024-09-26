@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatConfig200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatConfig200Response implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'config' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig',
+        'config' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatConfig200Response implements ModelInterface, ArrayAccess, 
     /**
      * Gets config
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig|null
      */
     public function getConfig()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatConfig200Response implements ModelInterface, ArrayAccess, 
     /**
      * Sets config
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig|null $config config
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfig|null $config config
      *
      * @return self
      */

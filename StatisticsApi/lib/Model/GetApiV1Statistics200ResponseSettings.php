@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1Statistics200ResponseSettings Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,19 +57,19 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
       * @var string[]
       */
     protected static $openAPITypes = [
-        'accounts' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsAccounts',
-        'canned_responses' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsCannedResponses',
-        'e2ee' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsE2ee',
-        'email' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmail',
-        'file_upload' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsFileUpload',
-        'general' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneral',
+        'accounts' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsAccounts',
+        'canned_responses' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsCannedResponses',
+        'e2ee' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsE2ee',
+        'email' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmail',
+        'file_upload' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsFileUpload',
+        'general' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneral',
         'live_stream_and_broadcasting' => 'object',
-        'message' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsMessage',
-        'otr' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsOtr',
-        'push' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsPush',
-        'search' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsSearch',
-        'threads' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsThreads',
-        'web_rtc' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsWebRTC'
+        'message' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsMessage',
+        'otr' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsOtr',
+        'push' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsPush',
+        'search' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsSearch',
+        'threads' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsThreads',
+        'web_rtc' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsWebRTC'
     ];
 
     /**
@@ -376,7 +376,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets accounts
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsAccounts|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsAccounts|null
      */
     public function getAccounts()
     {
@@ -386,7 +386,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets accounts
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsAccounts|null $accounts accounts
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsAccounts|null $accounts accounts
      *
      * @return self
      */
@@ -403,7 +403,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets canned_responses
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsCannedResponses|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsCannedResponses|null
      */
     public function getCannedResponses()
     {
@@ -413,7 +413,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets canned_responses
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsCannedResponses|null $canned_responses canned_responses
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsCannedResponses|null $canned_responses canned_responses
      *
      * @return self
      */
@@ -430,7 +430,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets e2ee
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsE2ee|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsE2ee|null
      */
     public function getE2ee()
     {
@@ -440,7 +440,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets e2ee
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsE2ee|null $e2ee e2ee
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsE2ee|null $e2ee e2ee
      *
      * @return self
      */
@@ -457,7 +457,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets email
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmail|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmail|null
      */
     public function getEmail()
     {
@@ -467,7 +467,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets email
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmail|null $email email
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmail|null $email email
      *
      * @return self
      */
@@ -484,7 +484,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets file_upload
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsFileUpload|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsFileUpload|null
      */
     public function getFileUpload()
     {
@@ -494,7 +494,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets file_upload
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsFileUpload|null $file_upload file_upload
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsFileUpload|null $file_upload file_upload
      *
      * @return self
      */
@@ -511,7 +511,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets general
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneral|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneral|null
      */
     public function getGeneral()
     {
@@ -521,7 +521,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets general
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneral|null $general general
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneral|null $general general
      *
      * @return self
      */
@@ -565,7 +565,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets message
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsMessage|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsMessage|null
      */
     public function getMessage()
     {
@@ -575,7 +575,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets message
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsMessage|null $message message
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsMessage|null $message message
      *
      * @return self
      */
@@ -592,7 +592,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets otr
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsOtr|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsOtr|null
      */
     public function getOtr()
     {
@@ -602,7 +602,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets otr
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsOtr|null $otr otr
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsOtr|null $otr otr
      *
      * @return self
      */
@@ -619,7 +619,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets push
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsPush|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsPush|null
      */
     public function getPush()
     {
@@ -629,7 +629,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets push
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsPush|null $push push
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsPush|null $push push
      *
      * @return self
      */
@@ -646,7 +646,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets search
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsSearch|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsSearch|null
      */
     public function getSearch()
     {
@@ -656,7 +656,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets search
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsSearch|null $search search
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsSearch|null $search search
      *
      * @return self
      */
@@ -673,7 +673,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets threads
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsThreads|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsThreads|null
      */
     public function getThreads()
     {
@@ -683,7 +683,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets threads
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsThreads|null $threads threads
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsThreads|null $threads threads
      *
      * @return self
      */
@@ -700,7 +700,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Gets web_rtc
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsWebRTC|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsWebRTC|null
      */
     public function getWebRtc()
     {
@@ -710,7 +710,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
     /**
      * Sets web_rtc
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseSettingsWebRTC|null $web_rtc web_rtc
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsWebRTC|null $web_rtc web_rtc
      *
      * @return self
      */

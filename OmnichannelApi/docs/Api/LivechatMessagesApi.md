@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\LivechatMessagesApi
+# WebMI\RocketChatApiClient\OmnichannelApi\LivechatMessagesApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -16,7 +16,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1LivechatMessageId()`
 
 ```php
-deleteApiV1LivechatMessageId($_id, $delete_api_v1_livechat_message_id_request): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatMessageId200Response
+deleteApiV1LivechatMessageId($_id, $delete_api_v1_livechat_message_id_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatMessageId200Response
 ```
 
 Delete Livechat Message
@@ -31,13 +31,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMessagesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMessagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $_id = ZKWP8LfGnRHQ3ozWa; // string | The message ID that you want to update.
-$delete_api_v1_livechat_message_id_request = {"token":"54fc5544030bcecda053311cb6b989","rid":"hGFwSKA28nRKut3pD"}; // \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatMessageIdRequest
+$delete_api_v1_livechat_message_id_request = {"token":"54fc5544030bcecda053311cb6b989","rid":"hGFwSKA28nRKut3pD"}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatMessageIdRequest
 
 try {
     $result = $apiInstance->deleteApiV1LivechatMessageId($_id, $delete_api_v1_livechat_message_id_request);
@@ -52,11 +52,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **_id** | **string**| The message ID that you want to update. | |
-| **delete_api_v1_livechat_message_id_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatMessageIdRequest**](../Model/DeleteApiV1LivechatMessageIdRequest.md)|  | [optional] |
+| **delete_api_v1_livechat_message_id_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatMessageIdRequest**](../Model/DeleteApiV1LivechatMessageIdRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatMessageId200Response**](../Model/DeleteApiV1LivechatMessageId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatMessageId200Response**](../Model/DeleteApiV1LivechatMessageId200Response.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 ## `getApiV1LivechatMessageId()`
 
 ```php
-getApiV1LivechatMessageId($_id, $token, $rid): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessageId200Response
+getApiV1LivechatMessageId($_id, $token, $rid): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMessageId200Response
 ```
 
 Get a Livechat Message
@@ -89,7 +89,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMessagesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMessagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessageId200Response**](../Model/GetApiV1LivechatMessageId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMessageId200Response**](../Model/GetApiV1LivechatMessageId200Response.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ No authorization required
 ## `getApiV1LivechatMessagesHistoryRid()`
 
 ```php
-getApiV1LivechatMessagesHistoryRid($rid, $token, $ls, $end, $limit): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200Response
+getApiV1LivechatMessagesHistoryRid($rid, $token, $ls, $end, $limit): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200Response
 ```
 
 Get Livechat Message History
@@ -149,7 +149,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMessagesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMessagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -180,7 +180,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200Response**](../Model/GetApiV1LivechatMessagesHistoryRid200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200Response**](../Model/GetApiV1LivechatMessagesHistoryRid200Response.md)
 
 ### Authorization
 
@@ -198,7 +198,7 @@ No authorization required
 ## `postApiV1LivechatMessage()`
 
 ```php
-postApiV1LivechatMessage($post_api_v1_livechat_message_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessage200Response
+postApiV1LivechatMessage($post_api_v1_livechat_message_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessage200Response
 ```
 
 Send New Livechat Message
@@ -213,12 +213,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMessagesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMessagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_livechat_message_request = {"token":"54fc5544030bcecda053311cb6b","rid":"hGFwSKA28nRKut3pD","msg":"Hello World!","agent":{"agentId":"CkCPNcvsvCDfmWLqC","username":"kim.jane"}}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessageRequest
+$post_api_v1_livechat_message_request = {"token":"54fc5544030bcecda053311cb6b","rid":"hGFwSKA28nRKut3pD","msg":"Hello World!","agent":{"agentId":"CkCPNcvsvCDfmWLqC","username":"kim.jane"}}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessageRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatMessage($post_api_v1_livechat_message_request);
@@ -232,11 +232,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_livechat_message_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessageRequest**](../Model/PostApiV1LivechatMessageRequest.md)|  | [optional] |
+| **post_api_v1_livechat_message_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessageRequest**](../Model/PostApiV1LivechatMessageRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessage200Response**](../Model/PostApiV1LivechatMessage200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessage200Response**](../Model/PostApiV1LivechatMessage200Response.md)
 
 ### Authorization
 
@@ -254,7 +254,7 @@ No authorization required
 ## `postApiV1LivechatMessages()`
 
 ```php
-postApiV1LivechatMessages($x_auth_token, $x_user_id, $post_api_v1_livechat_messages_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessages200Response
+postApiV1LivechatMessages($x_auth_token, $x_user_id, $post_api_v1_livechat_messages_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessages200Response
 ```
 
 Send Array of Messages
@@ -269,14 +269,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMessagesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMessagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_livechat_messages_request = {"visitor":{"token":"54fc5544030bcecda053311cb6b98920b"},"messages":[{"msg":"test"},{"msg":"hello"}]}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessagesRequest
+$post_api_v1_livechat_messages_request = {"visitor":{"token":"54fc5544030bcecda053311cb6b98920b"},"messages":[{"msg":"test"},{"msg":"hello"}]}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessagesRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatMessages($x_auth_token, $x_user_id, $post_api_v1_livechat_messages_request);
@@ -292,11 +292,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_livechat_messages_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessagesRequest**](../Model/PostApiV1LivechatMessagesRequest.md)|  | [optional] |
+| **post_api_v1_livechat_messages_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessagesRequest**](../Model/PostApiV1LivechatMessagesRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessages200Response**](../Model/PostApiV1LivechatMessages200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessages200Response**](../Model/PostApiV1LivechatMessages200Response.md)
 
 ### Authorization
 
@@ -314,7 +314,7 @@ No authorization required
 ## `postApiV1LivechatOfflineMessage()`
 
 ```php
-postApiV1LivechatOfflineMessage($post_api_v1_livechat_offline_message_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTranscript200Response
+postApiV1LivechatOfflineMessage($post_api_v1_livechat_offline_message_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTranscript200Response
 ```
 
 Send Offline Livechat Message
@@ -329,12 +329,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMessagesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMessagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_livechat_offline_message_request = {"name":"Livechat Visitor","email":"visitor@rocket.chat","message":"I need help","department":"Support","host":"null"}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatOfflineMessageRequest
+$post_api_v1_livechat_offline_message_request = {"name":"Livechat Visitor","email":"visitor@rocket.chat","message":"I need help","department":"Support","host":"null"}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatOfflineMessageRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatOfflineMessage($post_api_v1_livechat_offline_message_request);
@@ -348,11 +348,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_livechat_offline_message_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatOfflineMessageRequest**](../Model/PostApiV1LivechatOfflineMessageRequest.md)|  | [optional] |
+| **post_api_v1_livechat_offline_message_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatOfflineMessageRequest**](../Model/PostApiV1LivechatOfflineMessageRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTranscript200Response**](../Model/PostApiV1LivechatTranscript200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTranscript200Response**](../Model/PostApiV1LivechatTranscript200Response.md)
 
 ### Authorization
 
@@ -370,7 +370,7 @@ No authorization required
 ## `putApiV1LivechatMessageId()`
 
 ```php
-putApiV1LivechatMessageId($_id, $put_api_v1_livechat_message_id_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatMessageId200Response
+putApiV1LivechatMessageId($_id, $put_api_v1_livechat_message_id_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatMessageId200Response
 ```
 
 Update Livechat Message
@@ -385,13 +385,13 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMessagesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMessagesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $_id = ZKWP8LfGnRHQ3ozWa; // string | The message ID that you want to update.
-$put_api_v1_livechat_message_id_request = {"token":"54fc5544030bcecda053311cb6b9892","rid":"hGFwSKA28nRKut3pD","msg":"editing livechat message.."}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatMessageIdRequest
+$put_api_v1_livechat_message_id_request = {"token":"54fc5544030bcecda053311cb6b9892","rid":"hGFwSKA28nRKut3pD","msg":"editing livechat message.."}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatMessageIdRequest
 
 try {
     $result = $apiInstance->putApiV1LivechatMessageId($_id, $put_api_v1_livechat_message_id_request);
@@ -406,11 +406,11 @@ try {
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
 | **_id** | **string**| The message ID that you want to update. | |
-| **put_api_v1_livechat_message_id_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatMessageIdRequest**](../Model/PutApiV1LivechatMessageIdRequest.md)|  | [optional] |
+| **put_api_v1_livechat_message_id_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatMessageIdRequest**](../Model/PutApiV1LivechatMessageIdRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatMessageId200Response**](../Model/PutApiV1LivechatMessageId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatMessageId200Response**](../Model/PutApiV1LivechatMessageId200Response.md)
 
 ### Authorization
 

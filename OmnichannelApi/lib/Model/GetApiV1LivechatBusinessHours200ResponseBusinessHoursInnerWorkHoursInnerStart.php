@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
       */
     protected static $openAPITypes = [
         'time' => 'string',
-        'utc' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc',
-        'cron' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc'
+        'utc' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc',
+        'cron' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc'
     ];
 
     /**
@@ -333,7 +333,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
     /**
      * Gets utc
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null
      */
     public function getUtc()
     {
@@ -343,7 +343,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
     /**
      * Sets utc
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null $utc utc
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null $utc utc
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
     /**
      * Gets cron
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null
      */
     public function getCron()
     {
@@ -370,7 +370,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
     /**
      * Sets cron
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null $cron cron
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null $cron cron
      *
      * @return self
      */

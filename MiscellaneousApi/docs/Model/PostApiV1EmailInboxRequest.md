@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **description** | **string** | The description for this entry. | [optional]
 **sender_info** | **string** | Sender info to be attached on outgoing emails. | [optional]
 **department** | **string** | The department to which the email will be available. | [optional]
-**smtp** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequestSmtp**](PostApiV1EmailInboxRequestSmtp.md) |  |
-**imap** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequestImap**](PostApiV1EmailInboxRequestImap.md) |  |
+**smtp** | [**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1EmailInboxRequestSmtp**](PostApiV1EmailInboxRequestSmtp.md) |  |
+**imap** | [**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1EmailInboxRequestImap**](PostApiV1EmailInboxRequestImap.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

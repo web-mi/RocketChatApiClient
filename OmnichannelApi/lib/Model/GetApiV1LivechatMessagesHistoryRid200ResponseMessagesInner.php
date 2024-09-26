@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,12 +63,12 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
         'token' => 'string',
         'alias' => 'string',
         'ls' => 'string',
-        'u' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
+        'u' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU',
         'mentions' => 'object[]',
         'channels' => 'object[]',
         '_updated_at' => 'string',
         'edited_at' => 'string',
-        'edited_by' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser',
+        'edited_by' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser',
         'urls' => 'object[]'
     ];
 
@@ -538,7 +538,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
     public function getU()
     {
@@ -548,7 +548,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null $u u
      *
      * @return self
      */
@@ -673,7 +673,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
     /**
      * Gets edited_by
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
      */
     public function getEditedBy()
     {
@@ -683,7 +683,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
     /**
      * Sets edited_by
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null $edited_by edited_by
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null $edited_by edited_by
      *
      * @return self
      */

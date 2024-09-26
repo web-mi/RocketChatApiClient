@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsMembers200ResponseMembersInnerUserSettings Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUserSettings implements ModelIn
       * @var string[]
       */
     protected static $openAPITypes = [
-        'preferences' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettingsPreferences',
+        'preferences' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettingsPreferences',
         'profile' => 'object'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUserSettings implements ModelIn
     /**
      * Gets preferences
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettingsPreferences|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettingsPreferences|null
      */
     public function getPreferences()
     {
@@ -309,7 +309,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUserSettings implements ModelIn
     /**
      * Sets preferences
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettingsPreferences|null $preferences preferences
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettingsPreferences|null $preferences preferences
      *
      * @return self
      */

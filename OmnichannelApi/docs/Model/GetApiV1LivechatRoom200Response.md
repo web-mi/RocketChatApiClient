@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**room** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoom**](GetApiV1LivechatRoom200ResponseRoom.md) |  | [optional]
+**room** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoom**](GetApiV1LivechatRoom200ResponseRoom.md) |  | [optional]
 **new_room** | **bool** |  | [optional]
 **success** | **bool** |  | [optional]
 

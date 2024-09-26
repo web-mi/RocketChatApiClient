@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **active** | **bool** |  | [optional]
 **type** | **string** |  | [optional]
 **ts** | **string** |  | [optional]
-**work_hours** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner[]**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner.md) |  | [optional]
-**timezone** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone.md) |  | [optional]
+**work_hours** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner[]**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner.md) |  | [optional]
+**timezone** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **departments_to_apply_business_hour** | **string** |  | [optional]
 

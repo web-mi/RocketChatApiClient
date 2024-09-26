@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**history** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInner[]**](GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInner.md) |  | [optional]
+**history** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInner[]**](GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientStatisticsApi\ChannelsEngagementApi
+# WebMI\RocketChatApiClient\StatisticsApi\ChannelsEngagementApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1EngagementDashboardChannelsList()`
 
 ```php
-getApiV1EngagementDashboardChannelsList($x_auth_token, $x_user_id, $start, $end, $count, $offset): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response
+getApiV1EngagementDashboardChannelsList($x_auth_token, $x_user_id, $start, $end, $count, $offset): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response
 ```
 
 Get Channels Engagement
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\ChannelsEngagementApi(
+$apiInstance = new WebMI\RocketChatApiClient\StatisticsApi\Api\ChannelsEngagementApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -58,7 +58,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response**](../Model/GetApiV1EngagementDashboardChannelsList200Response.md)
+[**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response**](../Model/GetApiV1EngagementDashboardChannelsList200Response.md)
 
 ### Authorization
 

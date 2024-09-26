@@ -11,6 +11,6 @@ Name | Type | Description | Notes
 **status_connection** | **string** |  | [optional]
 **username** | **string** |  | [optional]
 **avatar_e_tag** | **string** |  | [optional]
-**highest_role** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole**](GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole.md) |  | [optional]
+**highest_role** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole**](GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

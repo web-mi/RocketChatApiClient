@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Api;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientStatisticsApi\ApiException;
-use WebMIRocketChatApiClientStatisticsApi\Configuration;
-use WebMIRocketChatApiClientStatisticsApi\HeaderSelector;
-use WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\StatisticsApi\ApiException;
+use WebMI\RocketChatApiClient\StatisticsApi\Configuration;
+use WebMI\RocketChatApiClient\StatisticsApi\HeaderSelector;
+use WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * ChannelsEngagementApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -135,9 +135,9 @@ class ChannelsEngagementApi
      * @param  int $offset Number of items to \&quot;skip\&quot; in the query, i.e. requests return &#x60;count&#x60; items, skipping the first &#x60;offset&#x60; items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EngagementDashboardChannelsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\StatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response|\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response|\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList401Response|\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response
      */
     public function getApiV1EngagementDashboardChannelsList($x_auth_token, $x_user_id, $start, $end, $count = null, $offset = null, string $contentType = self::contentTypes['getApiV1EngagementDashboardChannelsList'][0])
     {
@@ -158,9 +158,9 @@ class ChannelsEngagementApi
      * @param  int $offset Number of items to \&quot;skip\&quot; in the query, i.e. requests return &#x60;count&#x60; items, skipping the first &#x60;offset&#x60; items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EngagementDashboardChannelsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientStatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\StatisticsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response|\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response|\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response|\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList401Response|\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1EngagementDashboardChannelsListWithHttpInfo($x_auth_token, $x_user_id, $start, $end, $count = null, $offset = null, string $contentType = self::contentTypes['getApiV1EngagementDashboardChannelsList'][0])
     {
@@ -203,11 +203,11 @@ class ChannelsEngagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -225,16 +225,16 @@ class ChannelsEngagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -252,16 +252,16 @@ class ChannelsEngagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -279,16 +279,16 @@ class ChannelsEngagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -306,13 +306,13 @@ class ChannelsEngagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response';
+            $returnType = '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -345,7 +345,7 @@ class ChannelsEngagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response',
+                        '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -353,7 +353,7 @@ class ChannelsEngagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response',
+                        '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -361,7 +361,7 @@ class ChannelsEngagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList401Response',
+                        '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -369,7 +369,7 @@ class ChannelsEngagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList400Response',
+                        '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -423,7 +423,7 @@ class ChannelsEngagementApi
      */
     public function getApiV1EngagementDashboardChannelsListAsyncWithHttpInfo($x_auth_token, $x_user_id, $start, $end, $count = null, $offset = null, string $contentType = self::contentTypes['getApiV1EngagementDashboardChannelsList'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response';
+        $returnType = '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response';
         $request = $this->getApiV1EngagementDashboardChannelsListRequest($x_auth_token, $x_user_id, $start, $end, $count, $offset, $contentType);
 
         return $this->client

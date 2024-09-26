@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**messages** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner[]**](GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner.md) |  | [optional]
+**messages** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner[]**](GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner.md) |  | [optional]
 **unread_not_loaded** | **int** |  | [optional]
 **success** | **bool** |  | [optional]
 

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **session_id** | **string** |  | [optional]
 **user_id** | **string** |  | [optional]
-**device** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice**](GetApiV1SessionsList200ResponseSessionsInnerDevice.md) |  | [optional]
+**device** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice**](GetApiV1SessionsList200ResponseSessionsInnerDevice.md) |  | [optional]
 **host** | **string** |  | [optional]
 **ip** | **string** |  | [optional]
 **login_at** | **string** |  | [optional]

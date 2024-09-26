@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdateRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
       */
     protected static $openAPITypes = [
         'user_id' => 'string',
-        'data' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequestData'
+        'data' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequestData'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequestData
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequestData
      */
     public function getData()
     {
@@ -342,7 +342,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequestData $data data
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequestData $data data
      *
      * @return self
      */

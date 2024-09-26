@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner implements Mod
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]'
+        'value' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner implements Mod
     /**
      * Gets value
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner implements Mod
     /**
      * Sets value
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]|null $value value
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]|null $value value
      *
      * @return self
      */

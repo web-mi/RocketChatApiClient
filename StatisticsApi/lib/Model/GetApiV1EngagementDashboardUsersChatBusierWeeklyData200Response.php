@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response implements
       * @var string[]
       */
     protected static $openAPITypes = [
-        'month' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner[]',
+        'month' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response implements
     /**
      * Gets month
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner[]|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner[]|null
      */
     public function getMonth()
     {
@@ -309,7 +309,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response implements
     /**
      * Sets month
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner[]|null $month month
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner[]|null $month month
      *
      * @return self
      */

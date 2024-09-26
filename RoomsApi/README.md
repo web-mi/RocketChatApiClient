@@ -50,7 +50,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientRoomsApi\Api\ChannelsApi(
+$apiInstance = new WebMI\RocketChatApiClient\RoomsApi\Api\ChannelsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

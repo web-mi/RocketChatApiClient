@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\SLAPoliciesApi
+# WebMI\RocketChatApiClient\OmnichannelApi\SLAPoliciesApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1LivechatSlaSlaId()`
 
 ```php
-deleteApiV1LivechatSlaSlaId($x_auth_token, $x_user_id, $sla_id): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+deleteApiV1LivechatSlaSlaId($x_auth_token, $x_user_id, $sla_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Delete an SLA
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\SLAPoliciesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\SLAPoliciesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 ## `getApiV1LivechatSla()`
 
 ```php
-getApiV1LivechatSla($x_auth_token, $x_user_id, $text, $count, $sort, $offset): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatSla200Response
+getApiV1LivechatSla($x_auth_token, $x_user_id, $text, $count, $sort, $offset): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatSla200Response
 ```
 
 Get List of SLA Policies
@@ -89,7 +89,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\SLAPoliciesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\SLAPoliciesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -122,7 +122,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatSla200Response**](../Model/GetApiV1LivechatSla200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatSla200Response**](../Model/GetApiV1LivechatSla200Response.md)
 
 ### Authorization
 
@@ -140,7 +140,7 @@ No authorization required
 ## `getApiV1LivechatSlaSlaId()`
 
 ```php
-getApiV1LivechatSlaSlaId($x_auth_token, $x_user_id, $sla_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatSlaSlaId200Response
+getApiV1LivechatSlaSlaId($x_auth_token, $x_user_id, $sla_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatSlaSlaId200Response
 ```
 
 Get an SLA
@@ -155,7 +155,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\SLAPoliciesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\SLAPoliciesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -182,7 +182,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatSlaSlaId200Response**](../Model/GetApiV1LivechatSlaSlaId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatSlaSlaId200Response**](../Model/GetApiV1LivechatSlaSlaId200Response.md)
 
 ### Authorization
 
@@ -200,7 +200,7 @@ No authorization required
 ## `postApiV1LivechatSla()`
 
 ```php
-postApiV1LivechatSla($x_auth_token, $x_user_id, $post_api_v1_livechat_sla_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatSla200Response
+postApiV1LivechatSla($x_auth_token, $x_user_id, $post_api_v1_livechat_sla_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatSla200Response
 ```
 
 Create SLA Policy
@@ -215,14 +215,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\SLAPoliciesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\SLAPoliciesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_livechat_sla_request = {"name":"Optimum","description":"OPtimum SLA","dueTimeInMinutes":4}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatSlaRequest
+$post_api_v1_livechat_sla_request = {"name":"Optimum","description":"OPtimum SLA","dueTimeInMinutes":4}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatSlaRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatSla($x_auth_token, $x_user_id, $post_api_v1_livechat_sla_request);
@@ -238,11 +238,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_livechat_sla_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatSlaRequest**](../Model/PostApiV1LivechatSlaRequest.md)|  | [optional] |
+| **post_api_v1_livechat_sla_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatSlaRequest**](../Model/PostApiV1LivechatSlaRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatSla200Response**](../Model/PostApiV1LivechatSla200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatSla200Response**](../Model/PostApiV1LivechatSla200Response.md)
 
 ### Authorization
 
@@ -260,7 +260,7 @@ No authorization required
 ## `putApiV1LivechatSlaSlaId()`
 
 ```php
-putApiV1LivechatSlaSlaId($x_auth_token, $x_user_id, $sla_id): \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200Response
+putApiV1LivechatSlaSlaId($x_auth_token, $x_user_id, $sla_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatSlaSlaId200Response
 ```
 
 Update an SLA
@@ -275,7 +275,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\SLAPoliciesApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\SLAPoliciesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -302,7 +302,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatSlaSlaId200Response**](../Model/PutApiV1LivechatSlaSlaId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatSlaSlaId200Response**](../Model/PutApiV1LivechatSlaSlaId200Response.md)
 
 ### Authorization
 

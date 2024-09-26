@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatGetSnippetedMessages200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatGetSnippetedMessages200Response implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner[]',
+        'messages' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ChatGetSnippetedMessages200Response implements ModelInterface, Arr
     /**
      * Gets messages
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner[]|null
      */
     public function getMessages()
     {
@@ -330,7 +330,7 @@ class GetApiV1ChatGetSnippetedMessages200Response implements ModelInterface, Arr
     /**
      * Sets messages
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner[]|null $messages messages
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner[]|null $messages messages
      *
      * @return self
      */

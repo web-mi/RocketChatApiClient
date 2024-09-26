@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
       * @var string[]
       */
     protected static $openAPITypes = [
-        'version_update_6_0_0' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600',
-        'version_update_6_2_8' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate628'
+        'version_update_6_0_0' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600',
+        'version_update_6_2_8' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate628'
     ];
 
     /**
@@ -299,7 +299,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
     /**
      * Gets version_update_6_0_0
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600|null
      */
     public function getVersionUpdate600()
     {
@@ -309,7 +309,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
     /**
      * Sets version_update_6_0_0
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600|null $version_update_6_0_0 version_update_6_0_0
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600|null $version_update_6_0_0 version_update_6_0_0
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
     /**
      * Gets version_update_6_2_8
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate628|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate628|null
      */
     public function getVersionUpdate628()
     {
@@ -336,7 +336,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
     /**
      * Sets version_update_6_2_8
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate628|null $version_update_6_2_8 version_update_6_2_8
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate628|null $version_update_6_2_8 version_update_6_2_8
      *
      * @return self
      */

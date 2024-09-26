@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatPinMessage200ResponseMessage Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,9 +62,9 @@ class PostApiV1ChatPinMessage200ResponseMessage implements ModelInterface, Array
         'rid' => 'string',
         'ts' => 'string',
         'msg' => 'string',
-        'u' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
+        'u' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
         'groupable' => 'bool',
-        'attachments' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner[]',
+        'attachments' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner[]',
         '_updated_at' => 'string'
     ];
 
@@ -483,7 +483,7 @@ class PostApiV1ChatPinMessage200ResponseMessage implements ModelInterface, Array
     /**
      * Gets u
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
     public function getU()
     {
@@ -493,7 +493,7 @@ class PostApiV1ChatPinMessage200ResponseMessage implements ModelInterface, Array
     /**
      * Sets u
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
      *
      * @return self
      */
@@ -537,7 +537,7 @@ class PostApiV1ChatPinMessage200ResponseMessage implements ModelInterface, Array
     /**
      * Gets attachments
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner[]|null
      */
     public function getAttachments()
     {
@@ -547,7 +547,7 @@ class PostApiV1ChatPinMessage200ResponseMessage implements ModelInterface, Array
     /**
      * Sets attachments
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner[]|null $attachments attachments
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner[]|null $attachments attachments
      *
      * @return self
      */

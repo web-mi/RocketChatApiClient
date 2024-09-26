@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**update** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]**](GetApiV1RoomsGet200ResponseUpdateInner.md) |  | [optional]
+**update** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]**](GetApiV1RoomsGet200ResponseUpdateInner.md) |  | [optional]
 **remove** | **object[]** |  | [optional]
 **success** | **bool** |  | [optional]
 

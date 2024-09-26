@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * PostApiV1ImportNew200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'operation' => '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportNew200ResponseOperation',
+        'operation' => '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportNew200ResponseOperation',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets operation
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportNew200ResponseOperation|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportNew200ResponseOperation|null
      */
     public function getOperation()
     {
@@ -309,7 +309,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets operation
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportNew200ResponseOperation|null $operation operation
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportNew200ResponseOperation|null $operation operation
      *
      * @return self
      */

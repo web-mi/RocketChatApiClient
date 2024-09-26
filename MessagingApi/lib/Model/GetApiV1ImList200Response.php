@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImList200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ImList200Response implements ModelInterface, ArrayAccess, \JsonSer
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ims' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]',
+        'ims' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImList200ResponseImsInner[]',
         'offset' => 'int',
         'count' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ImList200Response implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets ims
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImList200ResponseImsInner[]|null
      */
     public function getIms()
     {
@@ -330,7 +330,7 @@ class GetApiV1ImList200Response implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets ims
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImList200ResponseImsInner[]|null $ims ims
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImList200ResponseImsInner[]|null $ims ims
      *
      * @return self
      */

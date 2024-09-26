@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1OmnichannelContactRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
         'name' => 'string',
         'email' => 'string',
         'phone' => 'string',
-        'contact_manager' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelContactRequestContactManager'
+        'contact_manager' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1OmnichannelContactRequestContactManager'
     ];
 
     /**
@@ -434,7 +434,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
     /**
      * Gets contact_manager
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelContactRequestContactManager|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1OmnichannelContactRequestContactManager|null
      */
     public function getContactManager()
     {
@@ -444,7 +444,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
     /**
      * Sets contact_manager
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelContactRequestContactManager|null $contact_manager contact_manager
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1OmnichannelContactRequestContactManager|null $contact_manager contact_manager
      *
      * @return self
      */

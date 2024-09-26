@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PutApiV1LivechatRoomVisitor200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PutApiV1LivechatRoomVisitor200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoom',
+        'room' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoom',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PutApiV1LivechatRoomVisitor200Response implements ModelInterface, ArrayAcc
     /**
      * Gets room
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoom|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoom|null
      */
     public function getRoom()
     {
@@ -309,7 +309,7 @@ class PutApiV1LivechatRoomVisitor200Response implements ModelInterface, ArrayAcc
     /**
      * Sets room
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoom|null $room room
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoom|null $room room
      *
      * @return self
      */

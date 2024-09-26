@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_id** | **string** |  | [optional]
-**served_by** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser**](PostApiV1LivechatUsersType200ResponseUser.md) |  | [optional]
+**served_by** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser**](PostApiV1LivechatUsersType200ResponseUser.md) |  | [optional]
 **open** | **bool** |  | [optional]
 **department_id** | **string** |  | [optional]
 

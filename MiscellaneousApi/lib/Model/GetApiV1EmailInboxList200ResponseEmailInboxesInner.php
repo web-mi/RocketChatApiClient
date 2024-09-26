@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1EmailInboxList200ResponseEmailInboxesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,11 +64,11 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInner implements ModelInterfa
         'description' => 'string',
         'sender_info' => 'string',
         'department' => 'string',
-        'smtp' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp',
-        'imap' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp',
+        'smtp' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp',
+        'imap' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp',
         '_created_at' => 'string',
         '_updated_at' => 'string',
-        '_created_by' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerCreatedBy'
+        '_created_by' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerCreatedBy'
     ];
 
     /**
@@ -558,7 +558,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInner implements ModelInterfa
     /**
      * Gets smtp
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null
      */
     public function getSmtp()
     {
@@ -568,7 +568,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInner implements ModelInterfa
     /**
      * Sets smtp
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null $smtp smtp
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null $smtp smtp
      *
      * @return self
      */
@@ -585,7 +585,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInner implements ModelInterfa
     /**
      * Gets imap
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null
      */
     public function getImap()
     {
@@ -595,7 +595,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInner implements ModelInterfa
     /**
      * Sets imap
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null $imap imap
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null $imap imap
      *
      * @return self
      */
@@ -666,7 +666,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInner implements ModelInterfa
     /**
      * Gets _created_by
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerCreatedBy|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerCreatedBy|null
      */
     public function getCreatedBy()
     {
@@ -676,7 +676,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInner implements ModelInterfa
     /**
      * Sets _created_by
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerCreatedBy|null $_created_by _created_by
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerCreatedBy|null $_created_by _created_by
      *
      * @return self
      */

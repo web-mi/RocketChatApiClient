@@ -50,14 +50,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\AssetsApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\AssetsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_assets_set_asset_request = new \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest(); // \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest | 
+$post_api_v1_assets_set_asset_request = new \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1AssetsSetAssetRequest(); // \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1AssetsSetAssetRequest | 
 
 try {
     $result = $apiInstance->postApiV1AssetsSetAsset($x_auth_token, $x_user_id, $post_api_v1_assets_set_asset_request);

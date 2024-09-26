@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetLivechatPriorities200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetLivechatPriorities200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'priorities' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPriorities200ResponsePrioritiesInner[]',
+        'priorities' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetLivechatPriorities200ResponsePrioritiesInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetLivechatPriorities200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets priorities
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPriorities200ResponsePrioritiesInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetLivechatPriorities200ResponsePrioritiesInner[]|null
      */
     public function getPriorities()
     {
@@ -330,7 +330,7 @@ class GetLivechatPriorities200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets priorities
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPriorities200ResponsePrioritiesInner[]|null $priorities priorities
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetLivechatPriorities200ResponsePrioritiesInner[]|null $priorities priorities
      *
      * @return self
      */

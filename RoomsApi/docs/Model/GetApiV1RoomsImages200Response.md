@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**files** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsImages200ResponseFilesInner[]**](GetApiV1RoomsImages200ResponseFilesInner.md) |  | [optional]
+**files** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsImages200ResponseFilesInner[]**](GetApiV1RoomsImages200ResponseFilesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

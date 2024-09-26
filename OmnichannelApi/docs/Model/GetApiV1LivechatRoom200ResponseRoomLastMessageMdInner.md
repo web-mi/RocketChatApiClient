@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** |  | [optional]
-**value** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInnerValueInner[]**](GetApiV1LivechatRoom200ResponseRoomLastMessageMdInnerValueInner.md) |  | [optional]
+**value** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInnerValueInner[]**](GetApiV1LivechatRoom200ResponseRoomLastMessageMdInnerValueInner.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

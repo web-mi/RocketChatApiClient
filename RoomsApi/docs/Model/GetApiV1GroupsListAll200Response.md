@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**groups** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsListAll200ResponseGroupsInner[]**](GetApiV1GroupsListAll200ResponseGroupsInner.md) |  | [optional]
+**groups** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsListAll200ResponseGroupsInner[]**](GetApiV1GroupsListAll200ResponseGroupsInner.md) |  | [optional]
 **offset** | **int** |  | [optional]
 **count** | **int** |  | [optional]
 **total** | **int** |  | [optional]

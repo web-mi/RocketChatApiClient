@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1UsersRequestDataDownload200ResponseExportOperation Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
         '_id' => 'string',
         'created_at' => 'string',
         'user_id' => 'string',
-        'room_list' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner[]',
+        'room_list' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner[]',
         'status' => 'string',
         'export_path' => 'string',
         'assets_path' => 'string',
@@ -443,7 +443,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
     /**
      * Gets room_list
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner[]|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner[]|null
      */
     public function getRoomList()
     {
@@ -453,7 +453,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
     /**
      * Sets room_list
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner[]|null $room_list room_list
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner[]|null $room_list room_list
      *
      * @return self
      */

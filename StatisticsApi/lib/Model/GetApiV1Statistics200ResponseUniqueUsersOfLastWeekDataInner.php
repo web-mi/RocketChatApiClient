@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
       * @var string[]
       */
     protected static $openAPITypes = [
-        'roles' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner[]',
+        'roles' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner[]',
         'count' => 'int',
         'sessions' => 'int',
         'time' => 'int'
@@ -313,7 +313,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
     /**
      * Gets roles
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner[]|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner[]|null
      */
     public function getRoles()
     {
@@ -323,7 +323,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
     /**
      * Sets roles
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner[]|null $roles roles
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner[]|null $roles roles
      *
      * @return self
      */

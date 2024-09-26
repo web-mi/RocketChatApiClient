@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatUsersTypeId200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatUsersTypeId200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'user' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser',
+        'user' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatUsersTypeId200Response implements ModelInterface, ArrayAcc
     /**
      * Gets user
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser|null
      */
     public function getUser()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatUsersTypeId200Response implements ModelInterface, ArrayAcc
     /**
      * Sets user
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser|null $user user
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUser|null $user user
      *
      * @return self
      */

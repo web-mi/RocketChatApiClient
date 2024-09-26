@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatPageVisitedRequestPageInfo Class Doc Comment
  *
  * @category Class
  * @description Enter the page information
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostApiV1LivechatPageVisitedRequestPageInfo implements ModelInterface, Arr
     protected static $openAPITypes = [
         'change' => 'string',
         'title' => 'string',
-        'location' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfoLocation'
+        'location' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfoLocation'
     ];
 
     /**
@@ -370,7 +370,7 @@ class PostApiV1LivechatPageVisitedRequestPageInfo implements ModelInterface, Arr
     /**
      * Gets location
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfoLocation
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfoLocation
      */
     public function getLocation()
     {
@@ -380,7 +380,7 @@ class PostApiV1LivechatPageVisitedRequestPageInfo implements ModelInterface, Arr
     /**
      * Sets location
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfoLocation $location location
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfoLocation $location location
      *
      * @return self
      */

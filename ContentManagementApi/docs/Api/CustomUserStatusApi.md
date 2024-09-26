@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientContentManagementApi\CustomUserStatusApi
+# WebMI\RocketChatApiClient\ContentManagementApi\CustomUserStatusApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1CustomUserStatusList()`
 
 ```php
-getApiV1CustomUserStatusList($x_auth_token, $x_user_id): \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response
+getApiV1CustomUserStatusList($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomUserStatusList200Response
 ```
 
 List Custom User Status
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomUserStatusApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomUserStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200Response**](../Model/GetApiV1CustomUserStatusList200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomUserStatusList200Response**](../Model/GetApiV1CustomUserStatusList200Response.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `postApiV1CustomUserStatusCreate()`
 
 ```php
-postApiV1CustomUserStatusCreate($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_create_request): \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response
+postApiV1CustomUserStatusCreate($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_create_request): \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response
 ```
 
 Create Custom Status
@@ -86,14 +86,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomUserStatusApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomUserStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_custom_user_status_create_request = {"name":"caught up","statusType":"busy"}; // \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest
+$post_api_v1_custom_user_status_create_request = {"name":"caught up","statusType":"busy"}; // \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest
 
 try {
     $result = $apiInstance->postApiV1CustomUserStatusCreate($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_create_request);
@@ -109,11 +109,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_custom_user_status_create_request** | [**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest**](../Model/PostApiV1CustomUserStatusCreateRequest.md)|  | [optional] |
+| **post_api_v1_custom_user_status_create_request** | [**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusCreateRequest**](../Model/PostApiV1CustomUserStatusCreateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response**](../Model/PostApiV1CustomUserStatusCreate200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response**](../Model/PostApiV1CustomUserStatusCreate200Response.md)
 
 ### Authorization
 
@@ -131,7 +131,7 @@ No authorization required
 ## `postApiV1CustomUserStatusDelete()`
 
 ```php
-postApiV1CustomUserStatusDelete($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_delete_request): \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
+postApiV1CustomUserStatusDelete($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_delete_request): \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response
 ```
 
 Delete Custom User Status
@@ -146,14 +146,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomUserStatusApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomUserStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_custom_user_status_delete_request = {"customUserStatusId":"65462e97a2f73c7460e18f84"}; // \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest
+$post_api_v1_custom_user_status_delete_request = {"customUserStatusId":"65462e97a2f73c7460e18f84"}; // \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest
 
 try {
     $result = $apiInstance->postApiV1CustomUserStatusDelete($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_delete_request);
@@ -169,11 +169,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_custom_user_status_delete_request** | [**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest**](../Model/PostApiV1CustomUserStatusDeleteRequest.md)|  | [optional] |
+| **post_api_v1_custom_user_status_delete_request** | [**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusDeleteRequest**](../Model/PostApiV1CustomUserStatusDeleteRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response**](../Model/PostApiV1EmojiCustomCreate200Response.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ No authorization required
 ## `postApiV1CustomUserStatusUpdate()`
 
 ```php
-postApiV1CustomUserStatusUpdate($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_update_request): \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response
+postApiV1CustomUserStatusUpdate($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_update_request): \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response
 ```
 
 Update Custom Status
@@ -206,14 +206,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomUserStatusApi(
+$apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomUserStatusApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_custom_user_status_update_request = {"_id":"65462e97a2f73c7460e18f84","name":"caught up again","statusType":"busy"}; // \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest
+$post_api_v1_custom_user_status_update_request = {"_id":"65462e97a2f73c7460e18f84","name":"caught up again","statusType":"busy"}; // \WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest
 
 try {
     $result = $apiInstance->postApiV1CustomUserStatusUpdate($x_auth_token, $x_user_id, $post_api_v1_custom_user_status_update_request);
@@ -229,11 +229,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_custom_user_status_update_request** | [**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest**](../Model/PostApiV1CustomUserStatusUpdateRequest.md)|  | [optional] |
+| **post_api_v1_custom_user_status_update_request** | [**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusUpdateRequest**](../Model/PostApiV1CustomUserStatusUpdateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response**](../Model/PostApiV1CustomUserStatusCreate200Response.md)
+[**\WebMI\RocketChatApiClient\ContentManagementApi\Model\PostApiV1CustomUserStatusCreate200Response**](../Model/PostApiV1CustomUserStatusCreate200Response.md)
 
 ### Authorization
 

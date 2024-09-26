@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
+namespace WebMI\RocketChatApiClient\MiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1LicensesGet200ResponseLicensesInner Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMiscellaneousApi
+ * @package  WebMI\RocketChatApiClient\MiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,8 +64,8 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
         'max_guest_users' => 'int',
         'max_rooms_per_guest' => 'int',
         'modules' => 'string[]',
-        'tag' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag',
-        'meta' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerMeta'
+        'tag' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag',
+        'meta' => '\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerMeta'
     ];
 
     /**
@@ -537,7 +537,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
     /**
      * Gets tag
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag|null
      */
     public function getTag()
     {
@@ -547,7 +547,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
     /**
      * Sets tag
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag|null $tag tag
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag|null $tag tag
      *
      * @return self
      */
@@ -564,7 +564,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
     /**
      * Gets meta
      *
-     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerMeta|null
+     * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerMeta|null
      */
     public function getMeta()
     {
@@ -574,7 +574,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
     /**
      * Sets meta
      *
-     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerMeta|null $meta meta
+     * @param \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerMeta|null $meta meta
      *
      * @return self
      */

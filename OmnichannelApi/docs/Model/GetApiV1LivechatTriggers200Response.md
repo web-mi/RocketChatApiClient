@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**triggers** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner[]**](GetApiV1LivechatTriggers200ResponseTriggersInner.md) |  | [optional]
+**triggers** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner[]**](GetApiV1LivechatTriggers200ResponseTriggersInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

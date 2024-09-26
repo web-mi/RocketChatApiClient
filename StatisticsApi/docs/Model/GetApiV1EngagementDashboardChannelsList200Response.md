@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channels** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner[]**](GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner.md) |  | [optional]
+**channels** | [**\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner[]**](GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner.md) |  | [optional]
 **total** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **count** | **int** |  | [optional]

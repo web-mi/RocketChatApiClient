@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetChatGetThreadsList200ResponseThreadsInnerReactions Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'smile' => '\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile'
+        'smile' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
     /**
      * Gets smile
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile|null
      */
     public function getSmile()
     {
@@ -302,7 +302,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
     /**
      * Sets smile
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile|null $smile smile
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile|null $smile smile
      *
      * @return self
      */

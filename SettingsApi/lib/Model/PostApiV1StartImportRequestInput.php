@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,17 +26,17 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * PostApiV1StartImportRequestInput Class Doc Comment
  *
  * @category Class
  * @description The input object contains two arrays: &#x60;users&#x60; and &#x60;channels&#x60;.
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'users' => '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequestInputUsersInner[]',
-        'channels' => '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequestInputChannelsInner[]'
+        'users' => '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequestInputUsersInner[]',
+        'channels' => '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequestInputChannelsInner[]'
     ];
 
     /**
@@ -306,7 +306,7 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
     /**
      * Gets users
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequestInputUsersInner[]
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequestInputUsersInner[]
      */
     public function getUsers()
     {
@@ -316,7 +316,7 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
     /**
      * Sets users
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequestInputUsersInner[] $users users
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequestInputUsersInner[] $users users
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
     /**
      * Gets channels
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequestInputChannelsInner[]
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequestInputChannelsInner[]
      */
     public function getChannels()
     {
@@ -343,7 +343,7 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
     /**
      * Sets channels
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequestInputChannelsInner[] $channels channels
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequestInputChannelsInner[] $channels channels
      *
      * @return self
      */

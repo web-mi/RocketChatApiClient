@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientContentManagementApi
+ * @package  WebMI\RocketChatApiClient\ContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientContentManagementApi\Model;
+namespace WebMI\RocketChatApiClient\ContentManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\ContentManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1EmojiCustomDeleteRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientContentManagementApi
+ * @package  WebMI\RocketChatApiClient\ContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

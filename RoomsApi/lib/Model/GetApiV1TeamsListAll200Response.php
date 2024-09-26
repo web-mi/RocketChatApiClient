@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsListAll200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1TeamsListAll200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'teams' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200ResponseTeamsInner[]',
+        'teams' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsListAll200ResponseTeamsInner[]',
         'total' => 'int',
         'count' => 'int',
         'offset' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1TeamsListAll200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets teams
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200ResponseTeamsInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsListAll200ResponseTeamsInner[]|null
      */
     public function getTeams()
     {
@@ -330,7 +330,7 @@ class GetApiV1TeamsListAll200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets teams
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200ResponseTeamsInner[]|null $teams teams
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsListAll200ResponseTeamsInner[]|null $teams teams
      *
      * @return self
      */

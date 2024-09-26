@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Api;
+namespace WebMI\RocketChatApiClient\SettingsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientSettingsApi\ApiException;
-use WebMIRocketChatApiClientSettingsApi\Configuration;
-use WebMIRocketChatApiClientSettingsApi\HeaderSelector;
-use WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\SettingsApi\ApiException;
+use WebMI\RocketChatApiClient\SettingsApi\Configuration;
+use WebMI\RocketChatApiClient\SettingsApi\HeaderSelector;
+use WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * ModerationApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -147,9 +147,9 @@ class ModerationApi
      * @param  string $report_id The ID of the report to fetch details for. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ModerationReportInfo'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1ModerationReportInfo($x_user_id, $x_auth_token, $report_id, string $contentType = self::contentTypes['getApiV1ModerationReportInfo'][0])
     {
@@ -167,9 +167,9 @@ class ModerationApi
      * @param  string $report_id The ID of the report to fetch details for. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ModerationReportInfo'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ModerationReportInfoWithHttpInfo($x_user_id, $x_auth_token, $report_id, string $contentType = self::contentTypes['getApiV1ModerationReportInfo'][0])
     {
@@ -212,11 +212,11 @@ class ModerationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -234,16 +234,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -261,16 +261,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -288,13 +288,13 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -327,7 +327,7 @@ class ModerationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -335,7 +335,7 @@ class ModerationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -343,7 +343,7 @@ class ModerationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -391,7 +391,7 @@ class ModerationApi
      */
     public function getApiV1ModerationReportInfoAsyncWithHttpInfo($x_user_id, $x_auth_token, $report_id, string $contentType = self::contentTypes['getApiV1ModerationReportInfo'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->getApiV1ModerationReportInfoRequest($x_user_id, $x_auth_token, $report_id, $contentType);
 
         return $this->client
@@ -560,9 +560,9 @@ class ModerationApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ModerationReports'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1ModerationReports($x_user_id, $x_auth_token, $msg_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ModerationReports'][0])
     {
@@ -583,9 +583,9 @@ class ModerationApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ModerationReports'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ModerationReportsWithHttpInfo($x_user_id, $x_auth_token, $msg_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ModerationReports'][0])
     {
@@ -628,11 +628,11 @@ class ModerationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -650,16 +650,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -677,16 +677,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -704,13 +704,13 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -743,7 +743,7 @@ class ModerationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -751,7 +751,7 @@ class ModerationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -759,7 +759,7 @@ class ModerationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -813,7 +813,7 @@ class ModerationApi
      */
     public function getApiV1ModerationReportsAsyncWithHttpInfo($x_user_id, $x_auth_token, $msg_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ModerationReports'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200Response';
         $request = $this->getApiV1ModerationReportsRequest($x_user_id, $x_auth_token, $msg_id, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -1016,9 +1016,9 @@ class ModerationApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ModerationReportsByUsers'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1ModerationReportsByUsers($x_user_id, $x_auth_token, $oldest = null, $latest = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ModerationReportsByUsers'][0])
     {
@@ -1040,9 +1040,9 @@ class ModerationApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ModerationReportsByUsers'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ModerationReportsByUsersWithHttpInfo($x_user_id, $x_auth_token, $oldest = null, $latest = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ModerationReportsByUsers'][0])
     {
@@ -1085,11 +1085,11 @@ class ModerationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1107,16 +1107,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1134,16 +1134,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1161,13 +1161,13 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1200,7 +1200,7 @@ class ModerationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1208,7 +1208,7 @@ class ModerationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1216,7 +1216,7 @@ class ModerationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1272,7 +1272,7 @@ class ModerationApi
      */
     public function getApiV1ModerationReportsByUsersAsyncWithHttpInfo($x_user_id, $x_auth_token, $oldest = null, $latest = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ModerationReportsByUsers'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReportsByUsers200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200Response';
         $request = $this->getApiV1ModerationReportsByUsersRequest($x_user_id, $x_auth_token, $oldest, $latest, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -1479,9 +1479,9 @@ class ModerationApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ModerationUserReportedMessages'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1ModerationUserReportedMessages($x_user_id, $x_auth_token, $user_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ModerationUserReportedMessages'][0])
     {
@@ -1502,9 +1502,9 @@ class ModerationApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ModerationUserReportedMessages'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ModerationUserReportedMessagesWithHttpInfo($x_user_id, $x_auth_token, $user_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ModerationUserReportedMessages'][0])
     {
@@ -1547,11 +1547,11 @@ class ModerationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1569,16 +1569,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1596,16 +1596,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1623,13 +1623,13 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1662,7 +1662,7 @@ class ModerationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1670,7 +1670,7 @@ class ModerationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1678,7 +1678,7 @@ class ModerationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1732,7 +1732,7 @@ class ModerationApi
      */
     public function getApiV1ModerationUserReportedMessagesAsyncWithHttpInfo($x_user_id, $x_auth_token, $user_id, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1ModerationUserReportedMessages'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200Response';
         $request = $this->getApiV1ModerationUserReportedMessagesRequest($x_user_id, $x_auth_token, $user_id, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -1928,12 +1928,12 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request post_api_v1_moderation_dismiss_reports_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request post_api_v1_moderation_dismiss_reports_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationDismissReports'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function postApiV1ModerationDismissReports($x_user_id, $x_auth_token, $post_api_v1_moderation_dismiss_reports_request = null, string $contentType = self::contentTypes['postApiV1ModerationDismissReports'][0])
     {
@@ -1948,12 +1948,12 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationDismissReports'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ModerationDismissReportsWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_moderation_dismiss_reports_request = null, string $contentType = self::contentTypes['postApiV1ModerationDismissReports'][0])
     {
@@ -1996,11 +1996,11 @@ class ModerationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2018,16 +2018,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2045,16 +2045,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2072,13 +2072,13 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2111,7 +2111,7 @@ class ModerationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2119,7 +2119,7 @@ class ModerationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2127,7 +2127,7 @@ class ModerationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2144,7 +2144,7 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationDismissReports'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2167,7 +2167,7 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationDismissReports'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2175,7 +2175,7 @@ class ModerationApi
      */
     public function postApiV1ModerationDismissReportsAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_moderation_dismiss_reports_request = null, string $contentType = self::contentTypes['postApiV1ModerationDismissReports'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->postApiV1ModerationDismissReportsRequest($x_user_id, $x_auth_token, $post_api_v1_moderation_dismiss_reports_request, $contentType);
 
         return $this->client
@@ -2219,7 +2219,7 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationDismissReportsRequest $post_api_v1_moderation_dismiss_reports_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationDismissReports'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2330,12 +2330,12 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request post_api_v1_moderation_user_delete_reported_messages_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request post_api_v1_moderation_user_delete_reported_messages_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationUserDeleteReportedMessages'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function postApiV1ModerationUserDeleteReportedMessages($x_user_id, $x_auth_token, $post_api_v1_moderation_user_delete_reported_messages_request = null, string $contentType = self::contentTypes['postApiV1ModerationUserDeleteReportedMessages'][0])
     {
@@ -2350,12 +2350,12 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationUserDeleteReportedMessages'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ModerationUserDeleteReportedMessagesWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_moderation_user_delete_reported_messages_request = null, string $contentType = self::contentTypes['postApiV1ModerationUserDeleteReportedMessages'][0])
     {
@@ -2398,11 +2398,11 @@ class ModerationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2420,16 +2420,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2447,16 +2447,16 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2474,13 +2474,13 @@ class ModerationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2513,7 +2513,7 @@ class ModerationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2521,7 +2521,7 @@ class ModerationApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2529,7 +2529,7 @@ class ModerationApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2546,7 +2546,7 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationUserDeleteReportedMessages'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2569,7 +2569,7 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationUserDeleteReportedMessages'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2577,7 +2577,7 @@ class ModerationApi
      */
     public function postApiV1ModerationUserDeleteReportedMessagesAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_moderation_user_delete_reported_messages_request = null, string $contentType = self::contentTypes['postApiV1ModerationUserDeleteReportedMessages'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response';
         $request = $this->postApiV1ModerationUserDeleteReportedMessagesRequest($x_user_id, $x_auth_token, $post_api_v1_moderation_user_delete_reported_messages_request, $contentType);
 
         return $this->client
@@ -2621,7 +2621,7 @@ class ModerationApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ModerationUserDeleteReportedMessagesRequest $post_api_v1_moderation_user_delete_reported_messages_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ModerationUserDeleteReportedMessages'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

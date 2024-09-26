@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientNotificationsApi\Model;
+namespace WebMI\RocketChatApiClient\NotificationsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\NotificationsApi\ObjectSerializer;
 
 /**
  * GetApiV1PushGet200ResponseDataNotification Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientNotificationsApi
+ * @package  WebMI\RocketChatApiClient\NotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,11 +63,11 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
         'priority' => 'int',
         'title' => 'string',
         'text' => 'string',
-        'payload' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationPayload',
+        'payload' => '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationPayload',
         'user_id' => 'string',
         'not_id' => 'int',
-        'gcm' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationGcm',
-        'apn' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationApn'
+        'gcm' => '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationGcm',
+        'apn' => '\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationApn'
     ];
 
     /**
@@ -524,7 +524,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
     /**
      * Gets payload
      *
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationPayload|null
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationPayload|null
      */
     public function getPayload()
     {
@@ -534,7 +534,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
     /**
      * Sets payload
      *
-     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationPayload|null $payload payload
+     * @param \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationPayload|null $payload payload
      *
      * @return self
      */
@@ -605,7 +605,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
     /**
      * Gets gcm
      *
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationGcm|null
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationGcm|null
      */
     public function getGcm()
     {
@@ -615,7 +615,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
     /**
      * Sets gcm
      *
-     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationGcm|null $gcm gcm
+     * @param \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationGcm|null $gcm gcm
      *
      * @return self
      */
@@ -632,7 +632,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
     /**
      * Gets apn
      *
-     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationApn|null
+     * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationApn|null
      */
     public function getApn()
     {
@@ -642,7 +642,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
     /**
      * Sets apn
      *
-     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationApn|null $apn apn
+     * @param \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationApn|null $apn apn
      *
      * @return self
      */

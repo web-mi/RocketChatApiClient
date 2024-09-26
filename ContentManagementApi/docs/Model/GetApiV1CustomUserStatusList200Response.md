@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**statuses** | [**\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomUserStatusList200ResponseStatusesInner[]**](GetApiV1CustomUserStatusList200ResponseStatusesInner.md) |  | [optional]
+**statuses** | [**\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomUserStatusList200ResponseStatusesInner[]**](GetApiV1CustomUserStatusList200ResponseStatusesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

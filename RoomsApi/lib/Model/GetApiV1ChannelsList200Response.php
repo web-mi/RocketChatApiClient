@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsList200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChannelsList200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'channels' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInner[]',
+        'channels' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ChannelsList200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets channels
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInner[]|null
      */
     public function getChannels()
     {
@@ -330,7 +330,7 @@ class GetApiV1ChannelsList200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets channels
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInner[]|null $channels channels
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInner[]|null $channels channels
      *
      * @return self
      */

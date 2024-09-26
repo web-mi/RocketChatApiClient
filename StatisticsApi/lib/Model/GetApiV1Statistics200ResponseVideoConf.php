@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1Statistics200ResponseVideoConf Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,10 +57,10 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'video_conference' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference',
-        'direct' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect',
-        'livechat' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference',
-        'settings' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseVideoConfSettings'
+        'video_conference' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference',
+        'direct' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect',
+        'livechat' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference',
+        'settings' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseVideoConfSettings'
     ];
 
     /**
@@ -313,7 +313,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
     /**
      * Gets video_conference
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null
      */
     public function getVideoConference()
     {
@@ -323,7 +323,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
     /**
      * Sets video_conference
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null $video_conference video_conference
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null $video_conference video_conference
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
     /**
      * Gets direct
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect|null
      */
     public function getDirect()
     {
@@ -350,7 +350,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
     /**
      * Sets direct
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect|null $direct direct
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect|null $direct direct
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
     /**
      * Gets livechat
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null
      */
     public function getLivechat()
     {
@@ -377,7 +377,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
     /**
      * Sets livechat
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null $livechat livechat
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null $livechat livechat
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
     /**
      * Gets settings
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseVideoConfSettings|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseVideoConfSettings|null
      */
     public function getSettings()
     {
@@ -404,7 +404,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
     /**
      * Sets settings
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseVideoConfSettings|null $settings settings
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseVideoConfSettings|null $settings settings
      *
      * @return self
      */

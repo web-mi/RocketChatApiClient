@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMarketplaceAppsApi\Model;
+namespace WebMI\RocketChatApiClient\MarketplaceAppsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMarketplaceAppsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MarketplaceAppsApi\ObjectSerializer;
 
 /**
  * PostApiApps200ResponseApp Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
         'version' => 'string',
         'required_api_version' => 'string',
         'icon_file' => 'string',
-        'author' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseAppAuthor',
+        'author' => '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseAppAuthor',
         'name' => 'string',
         'name_slug' => 'string',
         'class_file' => 'string',
@@ -477,7 +477,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Gets author
      *
-     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseAppAuthor|null
+     * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseAppAuthor|null
      */
     public function getAuthor()
     {
@@ -487,7 +487,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
     /**
      * Sets author
      *
-     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseAppAuthor|null $author author
+     * @param \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseAppAuthor|null $author author
      *
      * @return self
      */

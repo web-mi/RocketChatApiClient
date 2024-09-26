@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **offline** | **bool** |  | [optional]
 **granted_by** | **object** |  | [optional]
 **granted_to** | **object** |  | [optional]
-**tags** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]**](GetApiV1LicensesGet200ResponseLicensesInnerTag.md) |  | [optional]
+**tags** | [**\WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]**](GetApiV1LicensesGet200ResponseLicensesInnerTag.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

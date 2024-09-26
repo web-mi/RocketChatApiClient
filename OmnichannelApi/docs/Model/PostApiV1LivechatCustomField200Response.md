@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**field** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField**](PostApiV1LivechatCustomField200ResponseField.md) |  | [optional]
+**field** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomField200ResponseField**](PostApiV1LivechatCustomField200ResponseField.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

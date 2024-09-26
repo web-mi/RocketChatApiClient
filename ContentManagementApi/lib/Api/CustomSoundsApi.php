@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientContentManagementApi
+ * @package  WebMI\RocketChatApiClient\ContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientContentManagementApi\Api;
+namespace WebMI\RocketChatApiClient\ContentManagementApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientContentManagementApi\ApiException;
-use WebMIRocketChatApiClientContentManagementApi\Configuration;
-use WebMIRocketChatApiClientContentManagementApi\HeaderSelector;
-use WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\ContentManagementApi\ApiException;
+use WebMI\RocketChatApiClient\ContentManagementApi\Configuration;
+use WebMI\RocketChatApiClient\ContentManagementApi\HeaderSelector;
+use WebMI\RocketChatApiClient\ContentManagementApi\ObjectSerializer;
 
 /**
  * CustomSoundsApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientContentManagementApi
+ * @package  WebMI\RocketChatApiClient\ContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -136,9 +136,9 @@ class CustomSoundsApi
      * @param  string $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;{ \&quot;username\&quot;: 1 } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1CustomSoundsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\ContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200Response|\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function getApiV1CustomSoundsList($x_auth_token, $x_user_id, $offset = null, $count = null, $sort = null, $query = null, $fields = null, string $contentType = self::contentTypes['getApiV1CustomSoundsList'][0])
     {
@@ -160,9 +160,9 @@ class CustomSoundsApi
      * @param  string $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;{ \&quot;username\&quot;: 1 } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1CustomSoundsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\ContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200Response|\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1CustomSoundsListWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $count = null, $sort = null, $query = null, $fields = null, string $contentType = self::contentTypes['getApiV1CustomSoundsList'][0])
     {
@@ -205,11 +205,11 @@ class CustomSoundsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -227,16 +227,16 @@ class CustomSoundsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -254,13 +254,13 @@ class CustomSoundsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response';
+            $returnType = '\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -293,7 +293,7 @@ class CustomSoundsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response',
+                        '\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -301,7 +301,7 @@ class CustomSoundsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -357,7 +357,7 @@ class CustomSoundsApi
      */
     public function getApiV1CustomSoundsListAsyncWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $count = null, $sort = null, $query = null, $fields = null, string $contentType = self::contentTypes['getApiV1CustomSoundsList'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response';
+        $returnType = '\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200Response';
         $request = $this->getApiV1CustomSoundsListRequest($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields, $contentType);
 
         return $this->client

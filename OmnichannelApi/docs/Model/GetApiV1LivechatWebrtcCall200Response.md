@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**video_call** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatWebrtcCall200ResponseVideoCall**](GetApiV1LivechatWebrtcCall200ResponseVideoCall.md) |  | [optional]
+**video_call** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatWebrtcCall200ResponseVideoCall**](GetApiV1LivechatWebrtcCall200ResponseVideoCall.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

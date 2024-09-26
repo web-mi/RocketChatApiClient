@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\LivechatMonitorsApi
+# WebMI\RocketChatApiClient\OmnichannelApi\LivechatMonitorsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatMonitors()`
 
 ```php
-getApiV1LivechatMonitors($x_auth_token, $x_user_id, $offset, $count, $sort, $text): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitors200Response
+getApiV1LivechatMonitors($x_auth_token, $x_user_id, $offset, $count, $sort, $text): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitors200Response
 ```
 
 Get List of Monitors
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMonitorsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMonitorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -61,7 +61,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitors200Response**](../Model/GetApiV1LivechatMonitors200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitors200Response**](../Model/GetApiV1LivechatMonitors200Response.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ No authorization required
 ## `getApiV1LivechatMonitorsGetOne()`
 
 ```php
-getApiV1LivechatMonitorsGetOne($x_auth_token, $x_user_id, $username): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitorsGetOne200Response
+getApiV1LivechatMonitorsGetOne($x_auth_token, $x_user_id, $username): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitorsGetOne200Response
 ```
 
 Get One Monitor
@@ -94,7 +94,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMonitorsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMonitorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitorsGetOne200Response**](../Model/GetApiV1LivechatMonitorsGetOne200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitorsGetOne200Response**](../Model/GetApiV1LivechatMonitorsGetOne200Response.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ No authorization required
 ## `getApiV1LivechatMonitorsList()`
 
 ```php
-getApiV1LivechatMonitorsList($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitorsList200Response
+getApiV1LivechatMonitorsList($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitorsList200Response
 ```
 
 List of Monitors
@@ -154,7 +154,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMonitorsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMonitorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -179,7 +179,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitorsList200Response**](../Model/GetApiV1LivechatMonitorsList200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitorsList200Response**](../Model/GetApiV1LivechatMonitorsList200Response.md)
 
 ### Authorization
 
@@ -197,7 +197,7 @@ No authorization required
 ## `getApiV1LivechatMonitorsUsername()`
 
 ```php
-getApiV1LivechatMonitorsUsername($x_auth_token, $x_user_id, $username): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitorsUsername200Response
+getApiV1LivechatMonitorsUsername($x_auth_token, $x_user_id, $username): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitorsUsername200Response
 ```
 
 Get a Monitor
@@ -212,7 +212,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatMonitorsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatMonitorsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -239,7 +239,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatMonitorsUsername200Response**](../Model/GetApiV1LivechatMonitorsUsername200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMonitorsUsername200Response**](../Model/GetApiV1LivechatMonitorsUsername200Response.md)
 
 ### Authorization
 

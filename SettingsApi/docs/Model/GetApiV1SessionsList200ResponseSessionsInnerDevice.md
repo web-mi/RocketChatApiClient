@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **type** | **string** |  | [optional]
 **name** | **string** |  | [optional]
 **long_version** | **string** |  | [optional]
-**os** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDeviceOs**](GetApiV1SessionsList200ResponseSessionsInnerDeviceOs.md) |  | [optional]
+**os** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDeviceOs**](GetApiV1SessionsList200ResponseSessionsInnerDeviceOs.md) |  | [optional]
 **version** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1OmnichannelContact200ResponseContact Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,11 +62,11 @@ class GetApiV1OmnichannelContact200ResponseContact implements ModelInterface, Ar
         'ts' => 'string',
         'token' => 'string',
         '_updated_at' => 'string',
-        'contact_manager' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactContactManager',
+        'contact_manager' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactContactManager',
         'livechat_data' => 'object',
         'name' => 'string',
-        'phone' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]',
-        'visitor_emails' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]'
+        'phone' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]',
+        'visitor_emails' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]'
     ];
 
     /**
@@ -490,7 +490,7 @@ class GetApiV1OmnichannelContact200ResponseContact implements ModelInterface, Ar
     /**
      * Gets contact_manager
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactContactManager|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactContactManager|null
      */
     public function getContactManager()
     {
@@ -500,7 +500,7 @@ class GetApiV1OmnichannelContact200ResponseContact implements ModelInterface, Ar
     /**
      * Sets contact_manager
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactContactManager|null $contact_manager contact_manager
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactContactManager|null $contact_manager contact_manager
      *
      * @return self
      */
@@ -571,7 +571,7 @@ class GetApiV1OmnichannelContact200ResponseContact implements ModelInterface, Ar
     /**
      * Gets phone
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]|null
      */
     public function getPhone()
     {
@@ -581,7 +581,7 @@ class GetApiV1OmnichannelContact200ResponseContact implements ModelInterface, Ar
     /**
      * Sets phone
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]|null $phone phone
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]|null $phone phone
      *
      * @return self
      */
@@ -598,7 +598,7 @@ class GetApiV1OmnichannelContact200ResponseContact implements ModelInterface, Ar
     /**
      * Gets visitor_emails
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null
      */
     public function getVisitorEmails()
     {
@@ -608,7 +608,7 @@ class GetApiV1OmnichannelContact200ResponseContact implements ModelInterface, Ar
     /**
      * Sets visitor_emails
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null $visitor_emails visitor_emails
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null $visitor_emails visitor_emails
      *
      * @return self
      */

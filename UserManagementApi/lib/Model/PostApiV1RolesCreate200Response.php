@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientUserManagementApi\Model;
+namespace WebMI\RocketChatApiClient\UserManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\UserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1RolesCreate200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientUserManagementApi
+ * @package  WebMI\RocketChatApiClient\UserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1RolesCreate200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'role' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200ResponseRole',
+        'role' => '\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesCreate200ResponseRole',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1RolesCreate200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets role
      *
-     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200ResponseRole|null
+     * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesCreate200ResponseRole|null
      */
     public function getRole()
     {
@@ -309,7 +309,7 @@ class PostApiV1RolesCreate200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets role
      *
-     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesCreate200ResponseRole|null $role role
+     * @param \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1RolesCreate200ResponseRole|null $role role
      *
      * @return self
      */

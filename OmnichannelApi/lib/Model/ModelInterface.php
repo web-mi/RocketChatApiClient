@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi\Model
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi\Model
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,12 +26,12 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 /**
  * Interface abstracting model access.
  *
- * @package WebMIRocketChatApiClientOmnichannelApi\Model
+ * @package WebMI\RocketChatApiClient\OmnichannelApi\Model
  * @author  OpenAPI Generator team
  */
 interface ModelInterface

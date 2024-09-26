@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Model;
+namespace WebMI\RocketChatApiClient\SettingsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1SettingsPublic200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1SettingsPublic200Response implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'settings' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsPublic200ResponseSettingsInner[]',
+        'settings' => '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SettingsPublic200ResponseSettingsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1SettingsPublic200Response implements ModelInterface, ArrayAccess, 
     /**
      * Gets settings
      *
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsPublic200ResponseSettingsInner[]|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SettingsPublic200ResponseSettingsInner[]|null
      */
     public function getSettings()
     {
@@ -330,7 +330,7 @@ class GetApiV1SettingsPublic200Response implements ModelInterface, ArrayAccess, 
     /**
      * Sets settings
      *
-     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsPublic200ResponseSettingsInner[]|null $settings settings
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SettingsPublic200ResponseSettingsInner[]|null $settings settings
      *
      * @return self
      */

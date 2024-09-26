@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientSettingsApi\ImportApi
+# WebMI\RocketChatApiClient\SettingsApi\ImportApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -18,7 +18,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1GetCurrentImportOperation()`
 
 ```php
-getApiV1GetCurrentImportOperation($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response
+getApiV1GetCurrentImportOperation($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response
 ```
 
 Get Current Import Operations
@@ -33,7 +33,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -58,7 +58,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetCurrentImportOperation200Response**](../Model/GetApiV1GetCurrentImportOperation200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetCurrentImportOperation200Response**](../Model/GetApiV1GetCurrentImportOperation200Response.md)
 
 ### Authorization
 
@@ -76,7 +76,7 @@ No authorization required
 ## `getApiV1GetImportFileData()`
 
 ```php
-getApiV1GetImportFileData($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response
+getApiV1GetImportFileData($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response
 ```
 
 Get Import File Data
@@ -91,7 +91,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportFileData200Response**](../Model/GetApiV1GetImportFileData200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportFileData200Response**](../Model/GetApiV1GetImportFileData200Response.md)
 
 ### Authorization
 
@@ -134,7 +134,7 @@ No authorization required
 ## `getApiV1GetImportProgress()`
 
 ```php
-getApiV1GetImportProgress($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response
+getApiV1GetImportProgress($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response
 ```
 
 Get Import Progress
@@ -149,7 +149,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -174,7 +174,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200Response**](../Model/GetApiV1GetImportProgress200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200Response**](../Model/GetApiV1GetImportProgress200Response.md)
 
 ### Authorization
 
@@ -192,7 +192,7 @@ No authorization required
 ## `getApiV1GetLatestImportOperations()`
 
 ```php
-getApiV1GetLatestImportOperations($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]
+getApiV1GetLatestImportOperations($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]
 ```
 
 Get Latest Import Operations
@@ -207,7 +207,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -232,7 +232,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]**](../Model/GetApiV1GetLatestImportOperations200ResponseInner.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner[]**](../Model/GetApiV1GetLatestImportOperations200ResponseInner.md)
 
 ### Authorization
 
@@ -250,7 +250,7 @@ No authorization required
 ## `postApiV1DownloadPendingAvatars()`
 
 ```php
-postApiV1DownloadPendingAvatars($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response
+postApiV1DownloadPendingAvatars($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response
 ```
 
 Download Pending Avatars
@@ -265,7 +265,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -290,7 +290,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response**](../Model/PostApiV1DownloadPendingFiles200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response**](../Model/PostApiV1DownloadPendingFiles200Response.md)
 
 ### Authorization
 
@@ -308,7 +308,7 @@ No authorization required
 ## `postApiV1DownloadPendingFiles()`
 
 ```php
-postApiV1DownloadPendingFiles($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response
+postApiV1DownloadPendingFiles($x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response
 ```
 
 Download Pending Files
@@ -323,7 +323,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -348,7 +348,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPendingFiles200Response**](../Model/PostApiV1DownloadPendingFiles200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPendingFiles200Response**](../Model/PostApiV1DownloadPendingFiles200Response.md)
 
 ### Authorization
 
@@ -366,7 +366,7 @@ No authorization required
 ## `postApiV1DownloadPublicImportFile()`
 
 ```php
-postApiV1DownloadPublicImportFile($x_user_id, $x_auth_token, $post_api_v1_download_public_import_file_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1DownloadPublicImportFile($x_user_id, $x_auth_token, $post_api_v1_download_public_import_file_request): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Download Public Import File
@@ -381,14 +381,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_download_public_import_file_request = {"fileUrl":"https://www.freepik.com/photos/dog","importerKey":"pending-avatars"}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPublicImportFileRequest
+$post_api_v1_download_public_import_file_request = {"fileUrl":"https://www.freepik.com/photos/dog","importerKey":"pending-avatars"}; // \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPublicImportFileRequest
 
 try {
     $result = $apiInstance->postApiV1DownloadPublicImportFile($x_user_id, $x_auth_token, $post_api_v1_download_public_import_file_request);
@@ -404,11 +404,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_download_public_import_file_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1DownloadPublicImportFileRequest**](../Model/PostApiV1DownloadPublicImportFileRequest.md)|  | [optional] |
+| **post_api_v1_download_public_import_file_request** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1DownloadPublicImportFileRequest**](../Model/PostApiV1DownloadPublicImportFileRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -426,7 +426,7 @@ No authorization required
 ## `postApiV1StartImport()`
 
 ```php
-postApiV1StartImport($x_user_id, $x_auth_token, $post_api_v1_start_import_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1StartImport($x_user_id, $x_auth_token, $post_api_v1_start_import_request): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Start Import
@@ -441,14 +441,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_start_import_request = {"input":{"users":[{"user_id":"testbh","username":"testbh","email":"testbh@gmail.com","is_deleted":false,"is_bot":false,"do_import":true,"is_email_taken":false}],"channels":[{"channel_id":"WDuJLFkjwk6L7LdFC","name":"dlp","is_archived":false,"do_import":true,"is_private":false,"is_direct":false}]}}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequest
+$post_api_v1_start_import_request = {"input":{"users":[{"user_id":"testbh","username":"testbh","email":"testbh@gmail.com","is_deleted":false,"is_bot":false,"do_import":true,"is_email_taken":false}],"channels":[{"channel_id":"WDuJLFkjwk6L7LdFC","name":"dlp","is_archived":false,"do_import":true,"is_private":false,"is_direct":false}]}}; // \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequest
 
 try {
     $result = $apiInstance->postApiV1StartImport($x_user_id, $x_auth_token, $post_api_v1_start_import_request);
@@ -464,11 +464,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_start_import_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1StartImportRequest**](../Model/PostApiV1StartImportRequest.md)|  | [optional] |
+| **post_api_v1_start_import_request** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequest**](../Model/PostApiV1StartImportRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -486,7 +486,7 @@ No authorization required
 ## `postApiV1UploadImportFile()`
 
 ```php
-postApiV1UploadImportFile($x_user_id, $x_auth_token, $post_api_v1_upload_import_file_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1UploadImportFile($x_user_id, $x_auth_token, $post_api_v1_upload_import_file_request): \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Upload Import File
@@ -501,14 +501,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\ImportApi(
+$apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_upload_import_file_request = {"binaryContent":"/testfile.csv","importerKey":"csv","fileName":"Testfile","contentType":"text/csv"}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFileRequest
+$post_api_v1_upload_import_file_request = {"binaryContent":"/testfile.csv","importerKey":"csv","fileName":"Testfile","contentType":"text/csv"}; // \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFileRequest
 
 try {
     $result = $apiInstance->postApiV1UploadImportFile($x_user_id, $x_auth_token, $post_api_v1_upload_import_file_request);
@@ -524,11 +524,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_upload_import_file_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1UploadImportFileRequest**](../Model/PostApiV1UploadImportFileRequest.md)|  | [optional] |
+| **post_api_v1_upload_import_file_request** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1UploadImportFileRequest**](../Model/PostApiV1UploadImportFileRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 

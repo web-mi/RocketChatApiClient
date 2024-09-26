@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientOmnichannelApi\LivechatCustomFieldsApi
+# WebMI\RocketChatApiClient\OmnichannelApi\LivechatCustomFieldsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatCustomFields()`
 
 ```php
-getApiV1LivechatCustomFields($x_auth_token, $x_user_id, $offset, $count, $sort, $text): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatCustomFields200Response
+getApiV1LivechatCustomFields($x_auth_token, $x_user_id, $offset, $count, $sort, $text): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatCustomFields200Response
 ```
 
 Get Livechat Custom Fields
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatCustomFieldsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatCustomFieldsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -61,7 +61,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatCustomFields200Response**](../Model/GetApiV1LivechatCustomFields200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatCustomFields200Response**](../Model/GetApiV1LivechatCustomFields200Response.md)
 
 ### Authorization
 
@@ -79,7 +79,7 @@ No authorization required
 ## `getApiV1LivechatCustomFieldsId()`
 
 ```php
-getApiV1LivechatCustomFieldsId($x_auth_token, $x_user_id, $_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatCustomFieldsId200Response
+getApiV1LivechatCustomFieldsId($x_auth_token, $x_user_id, $_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatCustomFieldsId200Response
 ```
 
 Get Custom Field Information
@@ -94,7 +94,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatCustomFieldsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatCustomFieldsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -121,7 +121,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatCustomFieldsId200Response**](../Model/GetApiV1LivechatCustomFieldsId200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatCustomFieldsId200Response**](../Model/GetApiV1LivechatCustomFieldsId200Response.md)
 
 ### Authorization
 
@@ -139,7 +139,7 @@ No authorization required
 ## `postApiV1LivechatCustomField()`
 
 ```php
-postApiV1LivechatCustomField($post_api_v1_livechat_custom_field_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomField200Response
+postApiV1LivechatCustomField($post_api_v1_livechat_custom_field_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomField200Response
 ```
 
 Send Custom Field Value
@@ -154,12 +154,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatCustomFieldsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatCustomFieldsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_livechat_custom_field_request = {"token":"iNKE8a6k6cjbqWhWd","key":"address","value":"Rocket.Chat Avenue","overwrite":true}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFieldRequest
+$post_api_v1_livechat_custom_field_request = {"token":"iNKE8a6k6cjbqWhWd","key":"address","value":"Rocket.Chat Avenue","overwrite":true}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFieldRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatCustomField($post_api_v1_livechat_custom_field_request);
@@ -173,11 +173,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_livechat_custom_field_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFieldRequest**](../Model/PostApiV1LivechatCustomFieldRequest.md)|  | [optional] |
+| **post_api_v1_livechat_custom_field_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFieldRequest**](../Model/PostApiV1LivechatCustomFieldRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomField200Response**](../Model/PostApiV1LivechatCustomField200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomField200Response**](../Model/PostApiV1LivechatCustomField200Response.md)
 
 ### Authorization
 
@@ -195,7 +195,7 @@ No authorization required
 ## `postApiV1LivechatCustomFields()`
 
 ```php
-postApiV1LivechatCustomFields($post_api_v1_livechat_custom_fields_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFields200Response
+postApiV1LivechatCustomFields($post_api_v1_livechat_custom_fields_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFields200Response
 ```
 
 Send Array of Custom Field Values
@@ -210,12 +210,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatCustomFieldsApi(
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatCustomFieldsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_livechat_custom_fields_request = {"token":"iNKE8a6k6cjbqWhWd","customFields":[{"key":"address","value":"Rocket.Chat Avenue","overwrite":true}]}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequest | 
+$post_api_v1_livechat_custom_fields_request = {"token":"iNKE8a6k6cjbqWhWd","customFields":[{"key":"address","value":"Rocket.Chat Avenue","overwrite":true}]}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequest | 
 
 try {
     $result = $apiInstance->postApiV1LivechatCustomFields($post_api_v1_livechat_custom_fields_request);
@@ -229,11 +229,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_livechat_custom_fields_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequest**](../Model/PostApiV1LivechatCustomFieldsRequest.md)|  | [optional] |
+| **post_api_v1_livechat_custom_fields_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequest**](../Model/PostApiV1LivechatCustomFieldsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatCustomFields200Response**](../Model/PostApiV1LivechatCustomFields200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFields200Response**](../Model/PostApiV1LivechatCustomFields200Response.md)
 
 ### Authorization
 

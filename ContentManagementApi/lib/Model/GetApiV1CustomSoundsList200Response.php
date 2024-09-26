@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientContentManagementApi
+ * @package  WebMI\RocketChatApiClient\ContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientContentManagementApi\Model;
+namespace WebMI\RocketChatApiClient\ContentManagementApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\ContentManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1CustomSoundsList200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientContentManagementApi
+ * @package  WebMI\RocketChatApiClient\ContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1CustomSoundsList200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sounds' => '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200ResponseSoundsInner[]',
+        'sounds' => '\WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200ResponseSoundsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1CustomSoundsList200Response implements ModelInterface, ArrayAccess
     /**
      * Gets sounds
      *
-     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200ResponseSoundsInner[]|null
+     * @return \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200ResponseSoundsInner[]|null
      */
     public function getSounds()
     {
@@ -330,7 +330,7 @@ class GetApiV1CustomSoundsList200Response implements ModelInterface, ArrayAccess
     /**
      * Sets sounds
      *
-     * @param \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200ResponseSoundsInner[]|null $sounds sounds
+     * @param \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomSoundsList200ResponseSoundsInner[]|null $sounds sounds
      *
      * @return self
      */

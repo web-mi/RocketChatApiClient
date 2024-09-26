@@ -1,4 +1,4 @@
-# WebMIRocketChatApiClientUserManagementApi\PermissionsApi
+# WebMI\RocketChatApiClient\UserManagementApi\PermissionsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getPermissionsListAll()`
 
 ```php
-getPermissionsListAll($x_user_id, $x_auth_token, $updated_since): \WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll200Response
+getPermissionsListAll($x_user_id, $x_auth_token, $updated_since): \WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll200Response
 ```
 
 List All Permissions
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\PermissionsApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\PermissionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll200Response**](../Model/GetPermissionsListAll200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll200Response**](../Model/GetPermissionsListAll200Response.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `postApiV1PermissionsUpdate()`
 
 ```php
-postApiV1PermissionsUpdate($x_user_id, $x_auth_token, $post_api_v1_permissions_update_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate200Response
+postApiV1PermissionsUpdate($x_user_id, $x_auth_token, $post_api_v1_permissions_update_request): \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate200Response
 ```
 
 Update Permissions
@@ -86,14 +86,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\PermissionsApi(
+$apiInstance = new WebMI\RocketChatApiClient\UserManagementApi\Api\PermissionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_permissions_update_request = {"permissions":[{"_id":"access-permissions","roles":["admin"]}]}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdateRequest | 
+$post_api_v1_permissions_update_request = {"permissions":[{"_id":"access-permissions","roles":["admin"]}]}; // \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdateRequest | 
 
 try {
     $result = $apiInstance->postApiV1PermissionsUpdate($x_user_id, $x_auth_token, $post_api_v1_permissions_update_request);
@@ -109,11 +109,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_permissions_update_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdateRequest**](../Model/PostApiV1PermissionsUpdateRequest.md)|  | [optional] |
+| **post_api_v1_permissions_update_request** | [**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdateRequest**](../Model/PostApiV1PermissionsUpdateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1PermissionsUpdate200Response**](../Model/PostApiV1PermissionsUpdate200Response.md)
+[**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate200Response**](../Model/PostApiV1PermissionsUpdate200Response.md)
 
 ### Authorization
 

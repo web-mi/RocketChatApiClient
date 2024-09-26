@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTransferHistoryRid200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
         'history' => 'object[]',
         'count' => 'int',
         'offset' => 'int',
-        'data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData',
+        'data' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData',
         'total' => 'int',
         'success' => 'bool'
     ];
@@ -408,7 +408,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData|null
      */
     public function getData()
     {
@@ -418,7 +418,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData|null $data data
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData|null $data data
      *
      * @return self
      */

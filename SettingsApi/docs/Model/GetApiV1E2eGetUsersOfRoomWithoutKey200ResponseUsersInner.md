@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_id** | **string** |  | [optional]
-**e2e** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e**](GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e.md) |  | [optional]
+**e2e** | [**\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e**](GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

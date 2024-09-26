@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatIntegrationsSettings200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatIntegrationsSettings200Response implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'settings' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner[]',
+        'settings' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatIntegrationsSettings200Response implements ModelInterface,
     /**
      * Gets settings
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner[]|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner[]|null
      */
     public function getSettings()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatIntegrationsSettings200Response implements ModelInterface,
     /**
      * Sets settings
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner[]|null $settings settings
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner[]|null $settings settings
      *
      * @return self
      */

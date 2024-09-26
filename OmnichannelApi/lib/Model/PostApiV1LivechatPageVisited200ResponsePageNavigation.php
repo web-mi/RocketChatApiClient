@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatPageVisited200ResponsePageNavigation Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigation implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'page' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPage',
+        'page' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPage',
         'token' => 'string'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigation implements ModelInte
     /**
      * Gets page
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPage|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPage|null
      */
     public function getPage()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigation implements ModelInte
     /**
      * Sets page
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPage|null $page page
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPage|null $page page
      *
      * @return self
      */

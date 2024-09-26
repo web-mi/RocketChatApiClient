@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientSettingsApi\Api;
+namespace WebMI\RocketChatApiClient\SettingsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientSettingsApi\ApiException;
-use WebMIRocketChatApiClientSettingsApi\Configuration;
-use WebMIRocketChatApiClientSettingsApi\HeaderSelector;
-use WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\SettingsApi\ApiException;
+use WebMI\RocketChatApiClient\SettingsApi\Configuration;
+use WebMI\RocketChatApiClient\SettingsApi\HeaderSelector;
+use WebMI\RocketChatApiClient\SettingsApi\ObjectSerializer;
 
 /**
  * DeviceManagementApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientSettingsApi
+ * @package  WebMI\RocketChatApiClient\SettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -147,9 +147,9 @@ class DeviceManagementApi
      * @param  string $session_id The session ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1SessionsInfo'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfo200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response
      */
     public function getApiV1SessionsInfo($x_user_id, $x_auth_token, $session_id, string $contentType = self::contentTypes['getApiV1SessionsInfo'][0])
     {
@@ -167,9 +167,9 @@ class DeviceManagementApi
      * @param  string $session_id The session ID. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1SessionsInfo'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfo200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1SessionsInfoWithHttpInfo($x_user_id, $x_auth_token, $session_id, string $contentType = self::contentTypes['getApiV1SessionsInfo'][0])
     {
@@ -212,11 +212,11 @@ class DeviceManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfo200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfo200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -234,16 +234,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfo200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -261,16 +261,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -288,13 +288,13 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfo200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -327,7 +327,7 @@ class DeviceManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfo200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -335,7 +335,7 @@ class DeviceManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -343,7 +343,7 @@ class DeviceManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -391,7 +391,7 @@ class DeviceManagementApi
      */
     public function getApiV1SessionsInfoAsyncWithHttpInfo($x_user_id, $x_auth_token, $session_id, string $contentType = self::contentTypes['getApiV1SessionsInfo'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfo200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfo200Response';
         $request = $this->getApiV1SessionsInfoRequest($x_user_id, $x_auth_token, $session_id, $contentType);
 
         return $this->client
@@ -559,9 +559,9 @@ class DeviceManagementApi
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1SessionsInfoAdmin'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfoAdmin200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1SessionsInfoAdmin($x_user_id, $x_auth_token, $session_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['getApiV1SessionsInfoAdmin'][0])
     {
@@ -581,9 +581,9 @@ class DeviceManagementApi
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1SessionsInfoAdmin'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfoAdmin200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1SessionsInfoAdminWithHttpInfo($x_user_id, $x_auth_token, $session_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['getApiV1SessionsInfoAdmin'][0])
     {
@@ -626,11 +626,11 @@ class DeviceManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfoAdmin200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfoAdmin200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -648,16 +648,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfoAdmin200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -675,16 +675,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -702,16 +702,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -729,13 +729,13 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfoAdmin200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -768,7 +768,7 @@ class DeviceManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfoAdmin200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -776,7 +776,7 @@ class DeviceManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -784,7 +784,7 @@ class DeviceManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -792,7 +792,7 @@ class DeviceManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -844,7 +844,7 @@ class DeviceManagementApi
      */
     public function getApiV1SessionsInfoAdminAsyncWithHttpInfo($x_user_id, $x_auth_token, $session_id, $x_2fa_code, $x_2fa_method, string $contentType = self::contentTypes['getApiV1SessionsInfoAdmin'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsInfoAdmin200Response';
         $request = $this->getApiV1SessionsInfoAdminRequest($x_user_id, $x_auth_token, $session_id, $x_2fa_code, $x_2fa_method, $contentType);
 
         return $this->client
@@ -1037,9 +1037,9 @@ class DeviceManagementApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1SessionsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response
      */
     public function getApiV1SessionsList($x_user_id, $x_auth_token, $filter = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1SessionsList'][0])
     {
@@ -1060,9 +1060,9 @@ class DeviceManagementApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1SessionsList'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1SessionsListWithHttpInfo($x_user_id, $x_auth_token, $filter = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1SessionsList'][0])
     {
@@ -1105,11 +1105,11 @@ class DeviceManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1127,16 +1127,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1154,13 +1154,13 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1193,7 +1193,7 @@ class DeviceManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1201,7 +1201,7 @@ class DeviceManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1255,7 +1255,7 @@ class DeviceManagementApi
      */
     public function getApiV1SessionsListAsyncWithHttpInfo($x_user_id, $x_auth_token, $filter = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1SessionsList'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200Response';
         $request = $this->getApiV1SessionsListRequest($x_user_id, $x_auth_token, $filter, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -1453,9 +1453,9 @@ class DeviceManagementApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1SessionsListAll'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function getApiV1SessionsListAll($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $filter = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1SessionsListAll'][0])
     {
@@ -1478,9 +1478,9 @@ class DeviceManagementApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1SessionsListAll'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1SessionsListAllWithHttpInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $filter = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1SessionsListAll'][0])
     {
@@ -1523,11 +1523,11 @@ class DeviceManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1545,16 +1545,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1572,16 +1572,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1599,16 +1599,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1626,13 +1626,13 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1665,7 +1665,7 @@ class DeviceManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1673,7 +1673,7 @@ class DeviceManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1681,7 +1681,7 @@ class DeviceManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1689,7 +1689,7 @@ class DeviceManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1747,7 +1747,7 @@ class DeviceManagementApi
      */
     public function getApiV1SessionsListAllAsyncWithHttpInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $filter = null, $offset = null, $count = null, $sort = null, string $contentType = self::contentTypes['getApiV1SessionsListAll'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200Response';
         $request = $this->getApiV1SessionsListAllRequest($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $filter, $offset, $count, $sort, $contentType);
 
         return $this->client
@@ -1963,12 +1963,12 @@ class DeviceManagementApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $x_2fa_code The 2FA code from the authentication method. If the method is password, encrypt it as SHA256. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogout'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response
      */
     public function postApiV1SessionsLogout($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_sessions_logout_me_request = null, string $contentType = self::contentTypes['postApiV1SessionsLogout'][0])
     {
@@ -1985,12 +1985,12 @@ class DeviceManagementApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $x_2fa_code The 2FA code from the authentication method. If the method is password, encrypt it as SHA256. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogout'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1SessionsLogoutWithHttpInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_sessions_logout_me_request = null, string $contentType = self::contentTypes['postApiV1SessionsLogout'][0])
     {
@@ -2033,11 +2033,11 @@ class DeviceManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2055,16 +2055,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2082,16 +2082,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2109,16 +2109,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2136,13 +2136,13 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2175,7 +2175,7 @@ class DeviceManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2183,7 +2183,7 @@ class DeviceManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2191,7 +2191,7 @@ class DeviceManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2199,7 +2199,7 @@ class DeviceManagementApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2218,7 +2218,7 @@ class DeviceManagementApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $x_2fa_code The 2FA code from the authentication method. If the method is password, encrypt it as SHA256. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogout'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2243,7 +2243,7 @@ class DeviceManagementApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $x_2fa_code The 2FA code from the authentication method. If the method is password, encrypt it as SHA256. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogout'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2251,7 +2251,7 @@ class DeviceManagementApi
      */
     public function postApiV1SessionsLogoutAsyncWithHttpInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_sessions_logout_me_request = null, string $contentType = self::contentTypes['postApiV1SessionsLogout'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response';
         $request = $this->postApiV1SessionsLogoutRequest($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_sessions_logout_me_request, $contentType);
 
         return $this->client
@@ -2297,7 +2297,7 @@ class DeviceManagementApi
      * @param  string $x_auth_token The authentication token. (required)
      * @param  string $x_2fa_code The 2FA code from the authentication method. If the method is password, encrypt it as SHA256. (required)
      * @param  string $x_2fa_method The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogout'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2430,12 +2430,12 @@ class DeviceManagementApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogoutMe'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response
      */
     public function postApiV1SessionsLogoutMe($x_user_id, $x_auth_token, $post_api_v1_sessions_logout_me_request = null, string $contentType = self::contentTypes['postApiV1SessionsLogoutMe'][0])
     {
@@ -2450,12 +2450,12 @@ class DeviceManagementApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogoutMe'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientSettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\SettingsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response|\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response|\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response|\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1SessionsLogoutMeWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_sessions_logout_me_request = null, string $contentType = self::contentTypes['postApiV1SessionsLogoutMe'][0])
     {
@@ -2498,11 +2498,11 @@ class DeviceManagementApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2520,16 +2520,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2547,16 +2547,16 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2574,13 +2574,13 @@ class DeviceManagementApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response';
+            $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2613,7 +2613,7 @@ class DeviceManagementApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2621,7 +2621,7 @@ class DeviceManagementApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1CloudManualRegister400Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1CloudManualRegister400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2629,7 +2629,7 @@ class DeviceManagementApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1Settings401Response',
+                        '\WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1Settings401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2646,7 +2646,7 @@ class DeviceManagementApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogoutMe'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2669,7 +2669,7 @@ class DeviceManagementApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogoutMe'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2677,7 +2677,7 @@ class DeviceManagementApi
      */
     public function postApiV1SessionsLogoutMeAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_sessions_logout_me_request = null, string $contentType = self::contentTypes['postApiV1SessionsLogoutMe'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMe200Response';
+        $returnType = '\WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMe200Response';
         $request = $this->postApiV1SessionsLogoutMeRequest($x_user_id, $x_auth_token, $post_api_v1_sessions_logout_me_request, $contentType);
 
         return $this->client
@@ -2721,7 +2721,7 @@ class DeviceManagementApi
      *
      * @param  string $x_user_id The user ID. (required)
      * @param  string $x_auth_token The authentication token. (required)
-     * @param  \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
+     * @param  \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1SessionsLogoutMeRequest $post_api_v1_sessions_logout_me_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1SessionsLogoutMe'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

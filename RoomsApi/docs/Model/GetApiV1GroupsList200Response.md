@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**groups** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsCreate200ResponseGroup[]**](PostApiV1GroupsCreate200ResponseGroup.md) |  | [optional]
+**groups** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1GroupsCreate200ResponseGroup[]**](PostApiV1GroupsCreate200ResponseGroup.md) |  | [optional]
 **offset** | **int** |  | [optional]
 **count** | **int** |  | [optional]
 **total** | **int** |  | [optional]

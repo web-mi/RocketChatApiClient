@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImMessagesOthers400Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMessagesOthers400ResponseDetails'
+        'details' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMessagesOthers400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
     /**
      * Gets details
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMessagesOthers400ResponseDetails|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMessagesOthers400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
     /**
      * Sets details
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImMessagesOthers400ResponseDetails|null $details details
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMessagesOthers400ResponseDetails|null $details details
      *
      * @return self
      */

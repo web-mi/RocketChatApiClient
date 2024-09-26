@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientAuthenticationApi\Api;
+namespace WebMI\RocketChatApiClient\AuthenticationApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientAuthenticationApi\ApiException;
-use WebMIRocketChatApiClientAuthenticationApi\Configuration;
-use WebMIRocketChatApiClientAuthenticationApi\HeaderSelector;
-use WebMIRocketChatApiClientAuthenticationApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\AuthenticationApi\ApiException;
+use WebMI\RocketChatApiClient\AuthenticationApi\Configuration;
+use WebMI\RocketChatApiClient\AuthenticationApi\HeaderSelector;
+use WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
  * AuthenticationApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientAuthenticationApi
+ * @package  WebMI\RocketChatApiClient\AuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -146,9 +146,9 @@ class AuthenticationApi
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1Me'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response
      */
     public function getApiV1Me($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1Me'][0])
     {
@@ -165,9 +165,9 @@ class AuthenticationApi
      * @param  string $x_auth_token The authorization token of the user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1Me'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1MeWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1Me'][0])
     {
@@ -210,11 +210,11 @@ class AuthenticationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -232,13 +232,13 @@ class AuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response';
+            $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -271,7 +271,7 @@ class AuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -317,7 +317,7 @@ class AuthenticationApi
      */
     public function getApiV1MeAsyncWithHttpInfo($x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1Me'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\GetApiV1Me200Response';
+        $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200Response';
         $request = $this->getApiV1MeRequest($x_user_id, $x_auth_token, $contentType);
 
         return $this->client
@@ -461,12 +461,12 @@ class AuthenticationApi
      *
      * Login with Username and Password
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Login'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response
      */
     public function postApiV1Login($post_api_v1_login_request = null, string $contentType = self::contentTypes['postApiV1Login'][0])
     {
@@ -479,12 +479,12 @@ class AuthenticationApi
      *
      * Login with Username and Password
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Login'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LoginWithHttpInfo($post_api_v1_login_request = null, string $contentType = self::contentTypes['postApiV1Login'][0])
     {
@@ -527,11 +527,11 @@ class AuthenticationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -549,13 +549,13 @@ class AuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response';
+            $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -588,7 +588,7 @@ class AuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -603,7 +603,7 @@ class AuthenticationApi
      *
      * Login with Username and Password
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Login'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -624,7 +624,7 @@ class AuthenticationApi
      *
      * Login with Username and Password
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Login'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -632,7 +632,7 @@ class AuthenticationApi
      */
     public function postApiV1LoginAsyncWithHttpInfo($post_api_v1_login_request = null, string $contentType = self::contentTypes['postApiV1Login'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response';
+        $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response';
         $request = $this->postApiV1LoginRequest($post_api_v1_login_request, $contentType);
 
         return $this->client
@@ -674,7 +674,7 @@ class AuthenticationApi
     /**
      * Create request for operation 'postApiV1Login'
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginRequest $post_api_v1_login_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Login'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -761,12 +761,12 @@ class AuthenticationApi
      *
      * Login with Facebook
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginFacebook'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response
      */
     public function postApiV1LoginFacebook($post_api_v1_login_facebook_request = null, string $contentType = self::contentTypes['postApiV1LoginFacebook'][0])
     {
@@ -779,12 +779,12 @@ class AuthenticationApi
      *
      * Login with Facebook
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginFacebook'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LoginFacebookWithHttpInfo($post_api_v1_login_facebook_request = null, string $contentType = self::contentTypes['postApiV1LoginFacebook'][0])
     {
@@ -827,11 +827,11 @@ class AuthenticationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -849,13 +849,13 @@ class AuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response';
+            $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -888,7 +888,7 @@ class AuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -903,7 +903,7 @@ class AuthenticationApi
      *
      * Login with Facebook
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginFacebook'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -924,7 +924,7 @@ class AuthenticationApi
      *
      * Login with Facebook
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginFacebook'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -932,7 +932,7 @@ class AuthenticationApi
      */
     public function postApiV1LoginFacebookAsyncWithHttpInfo($post_api_v1_login_facebook_request = null, string $contentType = self::contentTypes['postApiV1LoginFacebook'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response';
+        $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response';
         $request = $this->postApiV1LoginFacebookRequest($post_api_v1_login_facebook_request, $contentType);
 
         return $this->client
@@ -974,7 +974,7 @@ class AuthenticationApi
     /**
      * Create request for operation 'postApiV1LoginFacebook'
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginFacebookRequest $post_api_v1_login_facebook_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginFacebook'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1061,12 +1061,12 @@ class AuthenticationApi
      *
      * Login with Google
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginGoogle'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response
      */
     public function postApiV1LoginGoogle($post_api_v1_login_google_request = null, string $contentType = self::contentTypes['postApiV1LoginGoogle'][0])
     {
@@ -1079,12 +1079,12 @@ class AuthenticationApi
      *
      * Login with Google
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginGoogle'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LoginGoogleWithHttpInfo($post_api_v1_login_google_request = null, string $contentType = self::contentTypes['postApiV1LoginGoogle'][0])
     {
@@ -1127,11 +1127,11 @@ class AuthenticationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1149,13 +1149,13 @@ class AuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response';
+            $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1188,7 +1188,7 @@ class AuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1203,7 +1203,7 @@ class AuthenticationApi
      *
      * Login with Google
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginGoogle'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1224,7 +1224,7 @@ class AuthenticationApi
      *
      * Login with Google
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginGoogle'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1232,7 +1232,7 @@ class AuthenticationApi
      */
     public function postApiV1LoginGoogleAsyncWithHttpInfo($post_api_v1_login_google_request = null, string $contentType = self::contentTypes['postApiV1LoginGoogle'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogle200Response';
+        $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogle200Response';
         $request = $this->postApiV1LoginGoogleRequest($post_api_v1_login_google_request, $contentType);
 
         return $this->client
@@ -1274,7 +1274,7 @@ class AuthenticationApi
     /**
      * Create request for operation 'postApiV1LoginGoogle'
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginGoogleRequest $post_api_v1_login_google_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginGoogle'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1361,12 +1361,12 @@ class AuthenticationApi
      *
      * Login with Twitter
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginTwitter'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response
      */
     public function postApiV1LoginTwitter($post_api_v1_login_twitter_request = null, string $contentType = self::contentTypes['postApiV1LoginTwitter'][0])
     {
@@ -1379,12 +1379,12 @@ class AuthenticationApi
      *
      * Login with Twitter
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginTwitter'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LoginTwitterWithHttpInfo($post_api_v1_login_twitter_request = null, string $contentType = self::contentTypes['postApiV1LoginTwitter'][0])
     {
@@ -1427,11 +1427,11 @@ class AuthenticationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1449,13 +1449,13 @@ class AuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response';
+            $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1488,7 +1488,7 @@ class AuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1503,7 +1503,7 @@ class AuthenticationApi
      *
      * Login with Twitter
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginTwitter'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1524,7 +1524,7 @@ class AuthenticationApi
      *
      * Login with Twitter
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginTwitter'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1532,7 +1532,7 @@ class AuthenticationApi
      */
     public function postApiV1LoginTwitterAsyncWithHttpInfo($post_api_v1_login_twitter_request = null, string $contentType = self::contentTypes['postApiV1LoginTwitter'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200Response';
+        $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200Response';
         $request = $this->postApiV1LoginTwitterRequest($post_api_v1_login_twitter_request, $contentType);
 
         return $this->client
@@ -1574,7 +1574,7 @@ class AuthenticationApi
     /**
      * Create request for operation 'postApiV1LoginTwitter'
      *
-     * @param  \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
+     * @param  \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1LoginTwitterRequest $post_api_v1_login_twitter_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LoginTwitter'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1665,9 +1665,9 @@ class AuthenticationApi
      * @param  string $x_user_id The user id of the user (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Logout'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response
+     * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response
      */
     public function postApiV1Logout($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1Logout'][0])
     {
@@ -1684,9 +1684,9 @@ class AuthenticationApi
      * @param  string $x_user_id The user id of the user (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1Logout'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientAuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\AuthenticationApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LogoutWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1Logout'][0])
     {
@@ -1729,11 +1729,11 @@ class AuthenticationApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1751,13 +1751,13 @@ class AuthenticationApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response';
+            $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1790,7 +1790,7 @@ class AuthenticationApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response',
+                        '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1836,7 +1836,7 @@ class AuthenticationApi
      */
     public function postApiV1LogoutAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['postApiV1Logout'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Logout200Response';
+        $returnType = '\WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Logout200Response';
         $request = $this->postApiV1LogoutRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client

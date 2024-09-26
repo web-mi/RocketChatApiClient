@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientRoomsApi\Model;
+namespace WebMI\RocketChatApiClient\RoomsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsListRooms200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientRoomsApi
+ * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1TeamsListRooms200Response implements ModelInterface, ArrayAccess, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'rooms' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom[]',
+        'rooms' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom[]',
         'total' => 'int',
         'count' => 'int',
         'offset' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1TeamsListRooms200Response implements ModelInterface, ArrayAccess, 
     /**
      * Gets rooms
      *
-     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom[]|null
      */
     public function getRooms()
     {
@@ -330,7 +330,7 @@ class GetApiV1TeamsListRooms200Response implements ModelInterface, ArrayAccess, 
     /**
      * Sets rooms
      *
-     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom[]|null $rooms rooms
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRoom200ResponseRoom[]|null $rooms rooms
      *
      * @return self
      */

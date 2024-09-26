@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatPageVisited200ResponsePageNavigationPage Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
     protected static $openAPITypes = [
         'change' => 'string',
         'title' => 'string',
-        'location' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPageLocation'
+        'location' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPageLocation'
     ];
 
     /**
@@ -360,7 +360,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
     /**
      * Gets location
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPageLocation|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPageLocation|null
      */
     public function getLocation()
     {
@@ -370,7 +370,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
     /**
      * Sets location
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPageLocation|null $location location
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPageLocation|null $location location
      *
      * @return self
      */

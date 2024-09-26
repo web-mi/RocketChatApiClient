@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMessagingApi\Model;
+namespace WebMI\RocketChatApiClient\MessagingApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\MessagingApi\ObjectSerializer;
 
 /**
  * GetChatGetThreadsList200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMessagingApi
+ * @package  WebMI\RocketChatApiClient\MessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetChatGetThreadsList200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'threads' => '\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]',
+        'threads' => '\WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetChatGetThreadsList200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets threads
      *
-     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]|null
+     * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]|null
      */
     public function getThreads()
     {
@@ -330,7 +330,7 @@ class GetChatGetThreadsList200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets threads
      *
-     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]|null $threads threads
+     * @param \WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]|null $threads threads
      *
      * @return self
      */

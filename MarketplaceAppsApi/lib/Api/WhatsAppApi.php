@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientMarketplaceAppsApi\Api;
+namespace WebMI\RocketChatApiClient\MarketplaceAppsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use WebMIRocketChatApiClientMarketplaceAppsApi\ApiException;
-use WebMIRocketChatApiClientMarketplaceAppsApi\Configuration;
-use WebMIRocketChatApiClientMarketplaceAppsApi\HeaderSelector;
-use WebMIRocketChatApiClientMarketplaceAppsApi\ObjectSerializer;
+use WebMI\RocketChatApiClient\MarketplaceAppsApi\ApiException;
+use WebMI\RocketChatApiClient\MarketplaceAppsApi\Configuration;
+use WebMI\RocketChatApiClient\MarketplaceAppsApi\HeaderSelector;
+use WebMI\RocketChatApiClient\MarketplaceAppsApi\ObjectSerializer;
 
 /**
  * WhatsAppApi Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientMarketplaceAppsApi
+ * @package  WebMI\RocketChatApiClient\MarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -128,12 +128,12 @@ class WhatsAppApi
      * Send a WhatsApp Template Message
      *
      * @param  string $app_id app_id (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdTemplateMessage'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMarketplaceAppsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MarketplaceAppsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response|\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response|\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response|\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response
+     * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response|\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response|\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response|\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response
      */
     public function postApiAppsPublicAppIdTemplateMessage($app_id, $post_api_apps_public_app_id_template_message_request = null, string $contentType = self::contentTypes['postApiAppsPublicAppIdTemplateMessage'][0])
     {
@@ -147,12 +147,12 @@ class WhatsAppApi
      * Send a WhatsApp Template Message
      *
      * @param  string $app_id (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdTemplateMessage'] to see the possible values for this operation
      *
-     * @throws \WebMIRocketChatApiClientMarketplaceAppsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMI\RocketChatApiClient\MarketplaceAppsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response|\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response|\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response|\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response|\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response|\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response|\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiAppsPublicAppIdTemplateMessageWithHttpInfo($app_id, $post_api_apps_public_app_id_template_message_request = null, string $contentType = self::contentTypes['postApiAppsPublicAppIdTemplateMessage'][0])
     {
@@ -195,11 +195,11 @@ class WhatsAppApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -217,16 +217,16 @@ class WhatsAppApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -244,16 +244,16 @@ class WhatsAppApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -271,16 +271,16 @@ class WhatsAppApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -298,13 +298,13 @@ class WhatsAppApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response';
+            $returnType = '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -337,7 +337,7 @@ class WhatsAppApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response',
+                        '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -345,7 +345,7 @@ class WhatsAppApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response',
+                        '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncoming401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -353,7 +353,7 @@ class WhatsAppApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response',
+                        '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -361,7 +361,7 @@ class WhatsAppApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response',
+                        '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -377,7 +377,7 @@ class WhatsAppApi
      * Send a WhatsApp Template Message
      *
      * @param  string $app_id (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdTemplateMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -399,7 +399,7 @@ class WhatsAppApi
      * Send a WhatsApp Template Message
      *
      * @param  string $app_id (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdTemplateMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -407,7 +407,7 @@ class WhatsAppApi
      */
     public function postApiAppsPublicAppIdTemplateMessageAsyncWithHttpInfo($app_id, $post_api_apps_public_app_id_template_message_request = null, string $contentType = self::contentTypes['postApiAppsPublicAppIdTemplateMessage'][0])
     {
-        $returnType = '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response';
+        $returnType = '\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessage200Response';
         $request = $this->postApiAppsPublicAppIdTemplateMessageRequest($app_id, $post_api_apps_public_app_id_template_message_request, $contentType);
 
         return $this->client
@@ -450,7 +450,7 @@ class WhatsAppApi
      * Create request for operation 'postApiAppsPublicAppIdTemplateMessage'
      *
      * @param  string $app_id (required)
-     * @param  \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
+     * @param  \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest $post_api_apps_public_app_id_template_message_request We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiAppsPublicAppIdTemplateMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

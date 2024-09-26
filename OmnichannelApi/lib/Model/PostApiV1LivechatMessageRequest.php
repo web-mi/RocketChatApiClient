@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatMessageRequest Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
         'rid' => 'string',
         'msg' => 'string',
         '_id' => 'string',
-        'agent' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessageRequestAgent'
+        'agent' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessageRequestAgent'
     ];
 
     /**
@@ -437,7 +437,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets agent
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessageRequestAgent|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessageRequestAgent|null
      */
     public function getAgent()
     {
@@ -447,7 +447,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets agent
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessageRequestAgent|null $agent agent
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessageRequestAgent|null $agent agent
      *
      * @return self
      */

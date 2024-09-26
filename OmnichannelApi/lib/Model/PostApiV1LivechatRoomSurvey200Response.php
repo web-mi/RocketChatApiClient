@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientOmnichannelApi\Model;
+namespace WebMI\RocketChatApiClient\OmnichannelApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\OmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatRoomSurvey200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientOmnichannelApi
+ * @package  WebMI\RocketChatApiClient\OmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         'rid' => 'string',
-        'data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomSurvey200ResponseData',
+        'data' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomSurvey200ResponseData',
         'success' => 'bool'
     ];
 
@@ -333,7 +333,7 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
     /**
      * Gets data
      *
-     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomSurvey200ResponseData|null
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomSurvey200ResponseData|null
      */
     public function getData()
     {
@@ -343,7 +343,7 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
     /**
      * Sets data
      *
-     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomSurvey200ResponseData|null $data data
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomSurvey200ResponseData|null $data data
      *
      * @return self
      */

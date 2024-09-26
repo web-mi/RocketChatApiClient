@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace WebMIRocketChatApiClientStatisticsApi\Model;
+namespace WebMI\RocketChatApiClient\StatisticsApi\Model;
 
 use \ArrayAccess;
-use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
+use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1EngagementDashboardUsersNewUsers200Response Class Doc Comment
  *
  * @category Class
- * @package  WebMIRocketChatApiClientStatisticsApi
+ * @package  WebMI\RocketChatApiClient\StatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class GetApiV1EngagementDashboardUsersNewUsers200Response implements ModelInterf
       * @var string[]
       */
     protected static $openAPITypes = [
-        'days' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner[]',
-        'period' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod',
-        'yesterday' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod',
+        'days' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner[]',
+        'period' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod',
+        'yesterday' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod',
         'success' => 'bool'
     ];
 
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200Response implements ModelInterf
     /**
      * Gets days
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner[]|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner[]|null
      */
     public function getDays()
     {
@@ -323,7 +323,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200Response implements ModelInterf
     /**
      * Sets days
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner[]|null $days days
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner[]|null $days days
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200Response implements ModelInterf
     /**
      * Gets period
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
      */
     public function getPeriod()
     {
@@ -350,7 +350,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200Response implements ModelInterf
     /**
      * Sets period
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null $period period
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null $period period
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200Response implements ModelInterf
     /**
      * Gets yesterday
      *
-     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
      */
     public function getYesterday()
     {
@@ -377,7 +377,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200Response implements ModelInterf
     /**
      * Sets yesterday
      *
-     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null $yesterday yesterday
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null $yesterday yesterday
      *
      * @return self
      */
