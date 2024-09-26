@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **name** | **string** |  | [optional]
 **fname** | **string** |  | [optional]
 **rid** | **string** |  | [optional]
-**u** | [**\RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU**](GetApiV1SubscriptionsGet200ResponseUpdateInnerU.md) |  | [optional]
+**u** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU**](GetApiV1SubscriptionsGet200ResponseUpdateInnerU.md) |  | [optional]
 **open** | **bool** |  | [optional]
 **alert** | **bool** |  | [optional]
 **unread** | **int** |  | [optional]

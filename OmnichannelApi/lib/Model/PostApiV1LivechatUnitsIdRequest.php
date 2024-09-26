@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatUnitsIdRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'unit_data' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitData',
-        'unit_monitors' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitMonitorsInner[]',
-        'unit_departments' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitDepartmentsInner[]'
+        'unit_data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitData',
+        'unit_monitors' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitMonitorsInner[]',
+        'unit_departments' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitDepartmentsInner[]'
     ];
 
     /**
@@ -315,7 +315,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets unit_data
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitData
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitData
      */
     public function getUnitData()
     {
@@ -325,7 +325,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets unit_data
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitData $unit_data unit_data
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitData $unit_data unit_data
      *
      * @return self
      */
@@ -342,7 +342,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets unit_monitors
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitMonitorsInner[]
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitMonitorsInner[]
      */
     public function getUnitMonitors()
     {
@@ -352,7 +352,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets unit_monitors
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitMonitorsInner[] $unit_monitors The object containing the unit monitors information.
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitMonitorsInner[] $unit_monitors The object containing the unit monitors information.
      *
      * @return self
      */
@@ -369,7 +369,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets unit_departments
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitDepartmentsInner[]
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitDepartmentsInner[]
      */
     public function getUnitDepartments()
     {
@@ -379,7 +379,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets unit_departments
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitDepartmentsInner[] $unit_departments The object containing the department information.
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitDepartmentsInner[] $unit_departments The object containing the department information.
      *
      * @return self
      */

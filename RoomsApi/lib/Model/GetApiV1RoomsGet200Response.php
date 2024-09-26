@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsGet200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RoomsGet200Response implements ModelInterface, ArrayAccess, \JsonS
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]',
+        'update' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]',
         'remove' => 'object[]',
         'success' => 'bool'
     ];
@@ -306,7 +306,7 @@ class GetApiV1RoomsGet200Response implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets update
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]|null
      */
     public function getUpdate()
     {
@@ -316,7 +316,7 @@ class GetApiV1RoomsGet200Response implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets update
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]|null $update update
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInner[]|null $update update
      *
      * @return self
      */

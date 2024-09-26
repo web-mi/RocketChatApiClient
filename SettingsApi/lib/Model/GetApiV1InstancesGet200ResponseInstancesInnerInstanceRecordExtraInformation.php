@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformation Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
         'host' => 'string',
         'port' => 'string',
         'tcp_port' => 'int',
-        'os' => '\RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs',
+        'os' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs',
         'node_version' => 'string',
         'conns' => 'int'
     ];
@@ -408,7 +408,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
     /**
      * Gets os
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs|null
      */
     public function getOs()
     {
@@ -418,7 +418,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
     /**
      * Sets os
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs|null $os os
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs|null $os os
      *
      * @return self
      */

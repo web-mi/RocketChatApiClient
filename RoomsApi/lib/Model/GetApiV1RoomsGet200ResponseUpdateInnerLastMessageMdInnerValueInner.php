@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInner impleme
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInner[]'
+        'value' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInner impleme
     /**
      * Gets value
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInner impleme
     /**
      * Sets value
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInner[]|null $value value
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInner[]|null $value value
      *
      * @return self
      */

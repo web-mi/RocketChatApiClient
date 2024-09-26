@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdateRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
       */
     protected static $openAPITypes = [
         'user_id' => 'string',
-        'data' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateRequestData'
+        'data' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequestData'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Gets data
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateRequestData
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequestData
      */
     public function getData()
     {
@@ -342,7 +342,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
     /**
      * Sets data
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateRequestData $data data
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequestData $data data
      *
      * @return self
      */

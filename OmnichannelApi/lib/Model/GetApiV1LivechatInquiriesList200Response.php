@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatInquiriesList200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatInquiriesList200Response implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'inquiries' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesList200ResponseInquiriesInner[]',
+        'inquiries' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesList200ResponseInquiriesInner[]',
         'offset' => 'int',
         'count' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatInquiriesList200Response implements ModelInterface, ArrayA
     /**
      * Gets inquiries
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesList200ResponseInquiriesInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesList200ResponseInquiriesInner[]|null
      */
     public function getInquiries()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatInquiriesList200Response implements ModelInterface, ArrayA
     /**
      * Sets inquiries
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatInquiriesList200ResponseInquiriesInner[]|null $inquiries inquiries
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatInquiriesList200ResponseInquiriesInner[]|null $inquiries inquiries
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# RocketChatAuthenticationApi\TwoFactorAuthenticationApi
+# WebMIRocketChatApiClientAuthenticationApi\TwoFactorAuthenticationApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiV1Users2faDisableEmail()`
 
 ```php
-postApiV1Users2faDisableEmail($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method): \RocketChatAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response
+postApiV1Users2faDisableEmail($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method): \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response
 ```
 
 Disable 2FA via Email
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatAuthenticationApi\Api\TwoFactorAuthenticationApi(
+$apiInstance = new WebMIRocketChatApiClientAuthenticationApi\Api\TwoFactorAuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\RocketChatAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response**](../Model/PostApiV1Users2faEnableEmail200Response.md)
+[**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response**](../Model/PostApiV1Users2faEnableEmail200Response.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 ## `postApiV1Users2faEnableEmail()`
 
 ```php
-postApiV1Users2faEnableEmail($x_auth_token, $x_user_id): \RocketChatAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response
+postApiV1Users2faEnableEmail($x_auth_token, $x_user_id): \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response
 ```
 
 Enable 2FA via Email
@@ -89,7 +89,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatAuthenticationApi\Api\TwoFactorAuthenticationApi(
+$apiInstance = new WebMIRocketChatApiClientAuthenticationApi\Api\TwoFactorAuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -114,7 +114,7 @@ try {
 
 ### Return type
 
-[**\RocketChatAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response**](../Model/PostApiV1Users2faEnableEmail200Response.md)
+[**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response**](../Model/PostApiV1Users2faEnableEmail200Response.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 ## `postApiV1Users2faSendEmailCode()`
 
 ```php
-postApiV1Users2faSendEmailCode($post_api_v1_users2fa_send_email_code_request): \RocketChatAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response
+postApiV1Users2faSendEmailCode($post_api_v1_users2fa_send_email_code_request): \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response
 ```
 
 Request a new Email Code
@@ -147,12 +147,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatAuthenticationApi\Api\TwoFactorAuthenticationApi(
+$apiInstance = new WebMIRocketChatApiClientAuthenticationApi\Api\TwoFactorAuthenticationApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_users2fa_send_email_code_request = {"emailOrUsername":"test-user"}; // \RocketChatAuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest
+$post_api_v1_users2fa_send_email_code_request = {"emailOrUsername":"test-user"}; // \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest
 
 try {
     $result = $apiInstance->postApiV1Users2faSendEmailCode($post_api_v1_users2fa_send_email_code_request);
@@ -166,11 +166,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_users2fa_send_email_code_request** | [**\RocketChatAuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest**](../Model/PostApiV1Users2faSendEmailCodeRequest.md)|  | [optional] |
+| **post_api_v1_users2fa_send_email_code_request** | [**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faSendEmailCodeRequest**](../Model/PostApiV1Users2faSendEmailCodeRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response**](../Model/PostApiV1Users2faEnableEmail200Response.md)
+[**\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Users2faEnableEmail200Response**](../Model/PostApiV1Users2faEnableEmail200Response.md)
 
 ### Authorization
 

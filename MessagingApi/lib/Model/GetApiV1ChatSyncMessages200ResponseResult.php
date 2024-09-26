@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatSyncMessages200ResponseResult Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'updated' => '\RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]',
+        'updated' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]',
         'deleted' => 'object[]'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
     /**
      * Gets updated
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]|null
      */
     public function getUpdated()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
     /**
      * Sets updated
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]|null $updated updated
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]|null $updated updated
      *
      * @return self
      */

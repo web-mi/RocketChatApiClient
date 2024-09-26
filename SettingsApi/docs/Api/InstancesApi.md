@@ -1,4 +1,4 @@
-# RocketChatSettingsApi\InstancesApi
+# WebMIRocketChatApiClientSettingsApi\InstancesApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1InstancesGet()`
 
 ```php
-getApiV1InstancesGet($x_user_id, $x_auth_token): \RocketChatSettingsApi\Model\GetApiV1InstancesGet200Response
+getApiV1InstancesGet($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200Response
 ```
 
 Get Instances
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\InstancesApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\InstancesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -50,7 +50,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1InstancesGet200Response**](../Model/GetApiV1InstancesGet200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200Response**](../Model/GetApiV1InstancesGet200Response.md)
 
 ### Authorization
 

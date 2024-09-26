@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * PostApiV1UseInviteToken200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1UseInviteToken200Response implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom',
+        'room' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1UseInviteToken200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets room
      *
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom|null
      */
     public function getRoom()
     {
@@ -309,7 +309,7 @@ class PostApiV1UseInviteToken200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets room
      *
-     * @param \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom|null $room room
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200ResponseRoom|null $room room
      *
      * @return self
      */

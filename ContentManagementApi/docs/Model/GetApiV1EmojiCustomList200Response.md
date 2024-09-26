@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**emojis** | [**\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojis**](GetApiV1EmojiCustomList200ResponseEmojis.md) |  | [optional]
+**emojis** | [**\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojis**](GetApiV1EmojiCustomList200ResponseEmojis.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

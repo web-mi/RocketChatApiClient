@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatContentManagementApi\Api;
+namespace WebMIRocketChatApiClientContentManagementApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatContentManagementApi\ApiException;
-use RocketChatContentManagementApi\Configuration;
-use RocketChatContentManagementApi\HeaderSelector;
-use RocketChatContentManagementApi\ObjectSerializer;
+use WebMIRocketChatApiClientContentManagementApi\ApiException;
+use WebMIRocketChatApiClientContentManagementApi\Configuration;
+use WebMIRocketChatApiClientContentManagementApi\HeaderSelector;
+use WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
 
 /**
  * AssetsApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -133,12 +133,12 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsSetAsset'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function postApiV1AssetsSetAsset($x_auth_token, $x_user_id, $post_api_v1_assets_set_asset_request = null, string $contentType = self::contentTypes['postApiV1AssetsSetAsset'][0])
     {
@@ -153,12 +153,12 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsSetAsset'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1AssetsSetAssetWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_assets_set_asset_request = null, string $contentType = self::contentTypes['postApiV1AssetsSetAsset'][0])
     {
@@ -201,11 +201,11 @@ class AssetsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -223,16 +223,16 @@ class AssetsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -250,13 +250,13 @@ class AssetsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -289,7 +289,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -297,7 +297,7 @@ class AssetsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -314,7 +314,7 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsSetAsset'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -337,7 +337,7 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsSetAsset'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -345,7 +345,7 @@ class AssetsApi
      */
     public function postApiV1AssetsSetAssetAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_assets_set_asset_request = null, string $contentType = self::contentTypes['postApiV1AssetsSetAsset'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
         $request = $this->postApiV1AssetsSetAssetRequest($x_auth_token, $x_user_id, $post_api_v1_assets_set_asset_request, $contentType);
 
         return $this->client
@@ -389,7 +389,7 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsSetAssetRequest $post_api_v1_assets_set_asset_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsSetAsset'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -500,12 +500,12 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request post_api_v1_assets_unset_asset_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request post_api_v1_assets_unset_asset_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsUnsetAsset'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function postApiV1AssetsUnsetAsset($x_auth_token, $x_user_id, $post_api_v1_assets_unset_asset_request = null, string $contentType = self::contentTypes['postApiV1AssetsUnsetAsset'][0])
     {
@@ -520,12 +520,12 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsUnsetAsset'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1AssetsUnsetAssetWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_assets_unset_asset_request = null, string $contentType = self::contentTypes['postApiV1AssetsUnsetAsset'][0])
     {
@@ -568,11 +568,11 @@ class AssetsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -590,16 +590,16 @@ class AssetsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -617,13 +617,13 @@ class AssetsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -656,7 +656,7 @@ class AssetsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -664,7 +664,7 @@ class AssetsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -681,7 +681,7 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsUnsetAsset'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -704,7 +704,7 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsUnsetAsset'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -712,7 +712,7 @@ class AssetsApi
      */
     public function postApiV1AssetsUnsetAssetAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_assets_unset_asset_request = null, string $contentType = self::contentTypes['postApiV1AssetsUnsetAsset'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
         $request = $this->postApiV1AssetsUnsetAssetRequest($x_auth_token, $x_user_id, $post_api_v1_assets_unset_asset_request, $contentType);
 
         return $this->client
@@ -756,7 +756,7 @@ class AssetsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1AssetsUnsetAssetRequest $post_api_v1_assets_unset_asset_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1AssetsUnsetAsset'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

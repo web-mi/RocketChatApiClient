@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1OmnichannelAgentsAvailable200ResponseAgent Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class GetApiV1OmnichannelAgentsAvailable200ResponseAgent implements ModelInterfa
         'name' => 'string',
         'status' => 'string',
         'status_livechat' => 'string',
-        'emails' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]',
-        'livechat' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat'
+        'emails' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]',
+        'livechat' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat'
     ];
 
     /**
@@ -469,7 +469,7 @@ class GetApiV1OmnichannelAgentsAvailable200ResponseAgent implements ModelInterfa
     /**
      * Gets emails
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null
      */
     public function getEmails()
     {
@@ -479,7 +479,7 @@ class GetApiV1OmnichannelAgentsAvailable200ResponseAgent implements ModelInterfa
     /**
      * Sets emails
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null $emails emails
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null $emails emails
      *
      * @return self
      */
@@ -496,7 +496,7 @@ class GetApiV1OmnichannelAgentsAvailable200ResponseAgent implements ModelInterfa
     /**
      * Gets livechat
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat|null
      */
     public function getLivechat()
     {
@@ -506,7 +506,7 @@ class GetApiV1OmnichannelAgentsAvailable200ResponseAgent implements ModelInterfa
     /**
      * Sets livechat
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat|null $livechat livechat
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat|null $livechat livechat
      *
      * @return self
      */

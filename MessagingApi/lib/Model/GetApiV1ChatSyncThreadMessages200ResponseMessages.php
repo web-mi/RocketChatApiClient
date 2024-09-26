@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatSyncThreadMessages200ResponseMessages Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatSyncThreadMessages200ResponseMessages implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessagesUpdateInner[]',
+        'update' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessagesUpdateInner[]',
         'remove' => 'object[]'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChatSyncThreadMessages200ResponseMessages implements ModelInterfac
     /**
      * Gets update
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessagesUpdateInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessagesUpdateInner[]|null
      */
     public function getUpdate()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatSyncThreadMessages200ResponseMessages implements ModelInterfac
     /**
      * Sets update
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessagesUpdateInner[]|null $update update
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessagesUpdateInner[]|null $update update
      *
      * @return self
      */

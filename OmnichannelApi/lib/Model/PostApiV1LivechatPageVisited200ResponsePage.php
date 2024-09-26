@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatPageVisited200ResponsePage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1LivechatPageVisited200ResponsePage implements ModelInterface, Arr
       */
     protected static $openAPITypes = [
         'msg' => 'string',
-        'navigation' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation'
+        'navigation' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PostApiV1LivechatPageVisited200ResponsePage implements ModelInterface, Arr
     /**
      * Gets navigation
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null
      */
     public function getNavigation()
     {
@@ -336,7 +336,7 @@ class PostApiV1LivechatPageVisited200ResponsePage implements ModelInterface, Arr
     /**
      * Sets navigation
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null $navigation navigation
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null $navigation navigation
      *
      * @return self
      */

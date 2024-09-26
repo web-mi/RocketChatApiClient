@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **total** | **int** |  | [optional]
-**data** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]**](GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner.md) |  | [optional]
+**data** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]**](GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner.md) |  | [optional]
 **unspecified** | **int** |  | [optional]
 **success** | **bool** |  | [optional]
 

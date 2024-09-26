@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * PostApiV1EmailInboxRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,8 +64,8 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
         'description' => 'string',
         'sender_info' => 'string',
         'department' => 'string',
-        'smtp' => '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequestSmtp',
-        'imap' => '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequestImap'
+        'smtp' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequestSmtp',
+        'imap' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequestImap'
     ];
 
     /**
@@ -552,7 +552,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets smtp
      *
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequestSmtp
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequestSmtp
      */
     public function getSmtp()
     {
@@ -562,7 +562,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets smtp
      *
-     * @param \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequestSmtp $smtp smtp
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequestSmtp $smtp smtp
      *
      * @return self
      */
@@ -579,7 +579,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets imap
      *
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequestImap
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequestImap
      */
     public function getImap()
     {
@@ -589,7 +589,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets imap
      *
-     * @param \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequestImap $imap imap
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequestImap $imap imap
      *
      * @return self
      */

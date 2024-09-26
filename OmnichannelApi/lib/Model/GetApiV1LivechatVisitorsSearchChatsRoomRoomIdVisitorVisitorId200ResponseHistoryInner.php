@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHistoryInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
         'msgs' => 'int',
         'fname' => 'string',
         'ts' => 'string',
-        'v' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV'
+        'v' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV'
     ];
 
     /**
@@ -428,7 +428,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Gets v
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null
      */
     public function getV()
     {
@@ -438,7 +438,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Sets v
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null $v v
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null $v v
      *
      * @return self
      */

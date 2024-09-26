@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1SessionsListAll400Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1SessionsListAll400Response implements ModelInterface, ArrayAccess,
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\RocketChatSettingsApi\Model\GetApiV1SessionsListAll400ResponseDetails'
+        'details' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class GetApiV1SessionsListAll400Response implements ModelInterface, ArrayAccess,
     /**
      * Gets details
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1SessionsListAll400ResponseDetails|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class GetApiV1SessionsListAll400Response implements ModelInterface, ArrayAccess,
     /**
      * Sets details
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1SessionsListAll400ResponseDetails|null $details details
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll400ResponseDetails|null $details details
      *
      * @return self
      */

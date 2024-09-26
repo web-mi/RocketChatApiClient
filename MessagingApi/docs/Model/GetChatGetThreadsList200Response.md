@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**threads** | [**\RocketChatMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]**](GetChatGetThreadsList200ResponseThreadsInner.md) |  | [optional]
+**threads** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInner[]**](GetChatGetThreadsList200ResponseThreadsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

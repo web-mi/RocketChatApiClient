@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1SessionsInfo200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
         'login_token' => 'string',
         'ip' => 'string',
         'host' => 'string',
-        'device' => '\RocketChatSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice',
+        'device' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice',
         'user_id' => 'string',
         'roles' => 'string[]',
         'most_important_role' => 'string',
@@ -621,7 +621,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets device
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null
      */
     public function getDevice()
     {
@@ -631,7 +631,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets device
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null $device device
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null $device device
      *
      * @return self
      */

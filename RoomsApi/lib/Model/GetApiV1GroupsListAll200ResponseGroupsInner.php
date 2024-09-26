@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1GroupsListAll200ResponseGroupsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,8 +62,8 @@ class GetApiV1GroupsListAll200ResponseGroupsInner implements ModelInterface, Arr
         'fname' => 'string',
         't' => 'string',
         'msgs' => 'int',
-        'u' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU',
-        'custom_fields' => '\RocketChatRoomsApi\Model\GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields',
+        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU',
+        'custom_fields' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields',
         'ts' => 'string',
         'ro' => 'bool',
         'sys_mes' => 'bool',
@@ -497,7 +497,7 @@ class GetApiV1GroupsListAll200ResponseGroupsInner implements ModelInterface, Arr
     /**
      * Gets u
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
     public function getU()
     {
@@ -507,7 +507,7 @@ class GetApiV1GroupsListAll200ResponseGroupsInner implements ModelInterface, Arr
     /**
      * Sets u
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $u u
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -524,7 +524,7 @@ class GetApiV1GroupsListAll200ResponseGroupsInner implements ModelInterface, Arr
     /**
      * Gets custom_fields
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields|null
      */
     public function getCustomFields()
     {
@@ -534,7 +534,7 @@ class GetApiV1GroupsListAll200ResponseGroupsInner implements ModelInterface, Arr
     /**
      * Sets custom_fields
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields|null $custom_fields custom_fields
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields|null $custom_fields custom_fields
      *
      * @return self
      */

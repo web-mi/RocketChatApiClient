@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatSyncThreadsList200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatSyncThreadsList200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'threads' => '\RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreads',
+        'threads' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreads',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChatSyncThreadsList200Response implements ModelInterface, ArrayAcc
     /**
      * Gets threads
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreads|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreads|null
      */
     public function getThreads()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatSyncThreadsList200Response implements ModelInterface, ArrayAcc
     /**
      * Sets threads
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreads|null $threads threads
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncThreadsList200ResponseThreads|null $threads threads
      *
      * @return self
      */

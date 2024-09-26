@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PutApiV1LivechatRoomVisitor200ResponseRoom Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,17 +64,17 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
         'fname' => 'string',
         't' => 'string',
         'ts' => 'string',
-        'v' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV',
+        'v' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV',
         'cl' => 'bool',
         'open' => 'bool',
-        'source' => '\RocketChatOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource',
+        'source' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource',
         'queued_at' => 'string',
         'priority_weight' => 'int',
         'estimated_waiting_time_queue' => 'int',
         '_updated_at' => 'string',
-        'last_message' => '\RocketChatOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomLastMessage',
-        'metrics' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetrics',
-        'served_by' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy',
+        'last_message' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomLastMessage',
+        'metrics' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetrics',
+        'served_by' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy',
         'waiting_response' => 'bool'
     ];
 
@@ -607,7 +607,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Gets v
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null
      */
     public function getV()
     {
@@ -617,7 +617,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Sets v
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null $v v
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null $v v
      *
      * @return self
      */
@@ -688,7 +688,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Gets source
      *
-     * @return \RocketChatOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null
      */
     public function getSource()
     {
@@ -698,7 +698,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Sets source
      *
-     * @param \RocketChatOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null $source source
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null $source source
      *
      * @return self
      */
@@ -823,7 +823,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Gets last_message
      *
-     * @return \RocketChatOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomLastMessage|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomLastMessage|null
      */
     public function getLastMessage()
     {
@@ -833,7 +833,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Sets last_message
      *
-     * @param \RocketChatOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomLastMessage|null $last_message last_message
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomLastMessage|null $last_message last_message
      *
      * @return self
      */
@@ -850,7 +850,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Gets metrics
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetrics|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetrics|null
      */
     public function getMetrics()
     {
@@ -860,7 +860,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Sets metrics
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetrics|null $metrics metrics
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetrics|null $metrics metrics
      *
      * @return self
      */
@@ -877,7 +877,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Gets served_by
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null
      */
     public function getServedBy()
     {
@@ -887,7 +887,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
     /**
      * Sets served_by
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null $served_by served_by
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null $served_by served_by
      *
      * @return self
      */

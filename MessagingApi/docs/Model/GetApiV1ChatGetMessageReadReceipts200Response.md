@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**receipts** | [**\RocketChatMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner[]**](GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner.md) |  | [optional]
+**receipts** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner[]**](GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatMessagesRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'visitor' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatMessagesRequestVisitor',
-        'messages' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatMessagesRequestMessagesInner[]'
+        'visitor' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessagesRequestVisitor',
+        'messages' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessagesRequestMessagesInner[]'
     ];
 
     /**
@@ -305,7 +305,7 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
     /**
      * Gets visitor
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatMessagesRequestVisitor
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessagesRequestVisitor
      */
     public function getVisitor()
     {
@@ -315,7 +315,7 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
     /**
      * Sets visitor
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatMessagesRequestVisitor $visitor visitor
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessagesRequestVisitor $visitor visitor
      *
      * @return self
      */
@@ -332,7 +332,7 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
     /**
      * Gets messages
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatMessagesRequestMessagesInner[]
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessagesRequestMessagesInner[]
      */
     public function getMessages()
     {
@@ -342,7 +342,7 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
     /**
      * Sets messages
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatMessagesRequestMessagesInner[] $messages The array of messages.
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatMessagesRequestMessagesInner[] $messages The array of messages.
      *
      * @return self
      */

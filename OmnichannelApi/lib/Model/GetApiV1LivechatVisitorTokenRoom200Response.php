@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorTokenRoom200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
       * @var string[]
       */
     protected static $openAPITypes = [
-        'rooms' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]',
+        'rooms' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
     /**
      * Gets rooms
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]|null
      */
     public function getRooms()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
     /**
      * Sets rooms
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]|null $rooms rooms
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]|null $rooms rooms
      *
      * @return self
      */

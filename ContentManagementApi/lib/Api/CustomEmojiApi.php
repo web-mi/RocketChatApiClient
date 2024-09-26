@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatContentManagementApi\Api;
+namespace WebMIRocketChatApiClientContentManagementApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatContentManagementApi\ApiException;
-use RocketChatContentManagementApi\Configuration;
-use RocketChatContentManagementApi\HeaderSelector;
-use RocketChatContentManagementApi\ObjectSerializer;
+use WebMIRocketChatApiClientContentManagementApi\ApiException;
+use WebMIRocketChatApiClientContentManagementApi\Configuration;
+use WebMIRocketChatApiClientContentManagementApi\HeaderSelector;
+use WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
 
 /**
  * CustomEmojiApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -143,9 +143,9 @@ class CustomEmojiApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmojiCustomAll'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function getApiV1EmojiCustomAll($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1EmojiCustomAll'][0])
     {
@@ -162,9 +162,9 @@ class CustomEmojiApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmojiCustomAll'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1EmojiCustomAllWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1EmojiCustomAll'][0])
     {
@@ -207,11 +207,11 @@ class CustomEmojiApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -229,16 +229,16 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -256,13 +256,13 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -295,7 +295,7 @@ class CustomEmojiApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -303,7 +303,7 @@ class CustomEmojiApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -349,7 +349,7 @@ class CustomEmojiApi
      */
     public function getApiV1EmojiCustomAllAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1EmojiCustomAll'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200Response';
         $request = $this->getApiV1EmojiCustomAllRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client
@@ -499,9 +499,9 @@ class CustomEmojiApi
      * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmojiCustomList'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function getApiV1EmojiCustomList($x_auth_token, $x_user_id, $updated_since = null, $query = null, string $contentType = self::contentTypes['getApiV1EmojiCustomList'][0])
     {
@@ -520,9 +520,9 @@ class CustomEmojiApi
      * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmojiCustomList'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1EmojiCustomListWithHttpInfo($x_auth_token, $x_user_id, $updated_since = null, $query = null, string $contentType = self::contentTypes['getApiV1EmojiCustomList'][0])
     {
@@ -565,11 +565,11 @@ class CustomEmojiApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -587,16 +587,16 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -614,13 +614,13 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -653,7 +653,7 @@ class CustomEmojiApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -661,7 +661,7 @@ class CustomEmojiApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -711,7 +711,7 @@ class CustomEmojiApi
      */
     public function getApiV1EmojiCustomListAsyncWithHttpInfo($x_auth_token, $x_user_id, $updated_since = null, $query = null, string $contentType = self::contentTypes['getApiV1EmojiCustomList'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200Response';
         $request = $this->getApiV1EmojiCustomListRequest($x_auth_token, $x_user_id, $updated_since, $query, $contentType);
 
         return $this->client
@@ -884,9 +884,9 @@ class CustomEmojiApi
      * @param  string $aliases The alias of the new custom emoji. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomCreate'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function postApiV1EmojiCustomCreate($x_auth_token, $x_user_id, $emoji, $name, $aliases, string $contentType = self::contentTypes['postApiV1EmojiCustomCreate'][0])
     {
@@ -906,9 +906,9 @@ class CustomEmojiApi
      * @param  string $aliases The alias of the new custom emoji. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomCreate'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1EmojiCustomCreateWithHttpInfo($x_auth_token, $x_user_id, $emoji, $name, $aliases, string $contentType = self::contentTypes['postApiV1EmojiCustomCreate'][0])
     {
@@ -951,11 +951,11 @@ class CustomEmojiApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -973,16 +973,16 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1000,13 +1000,13 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1039,7 +1039,7 @@ class CustomEmojiApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1047,7 +1047,7 @@ class CustomEmojiApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1099,7 +1099,7 @@ class CustomEmojiApi
      */
     public function postApiV1EmojiCustomCreateAsyncWithHttpInfo($x_auth_token, $x_user_id, $emoji, $name, $aliases, string $contentType = self::contentTypes['postApiV1EmojiCustomCreate'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
         $request = $this->postApiV1EmojiCustomCreateRequest($x_auth_token, $x_user_id, $emoji, $name, $aliases, $contentType);
 
         return $this->client
@@ -1289,12 +1289,12 @@ class CustomEmojiApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request post_api_v1_emoji_custom_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request post_api_v1_emoji_custom_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomDelete'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function postApiV1EmojiCustomDelete($x_auth_token, $x_user_id, $post_api_v1_emoji_custom_delete_request = null, string $contentType = self::contentTypes['postApiV1EmojiCustomDelete'][0])
     {
@@ -1309,12 +1309,12 @@ class CustomEmojiApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomDelete'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1EmojiCustomDeleteWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_emoji_custom_delete_request = null, string $contentType = self::contentTypes['postApiV1EmojiCustomDelete'][0])
     {
@@ -1357,11 +1357,11 @@ class CustomEmojiApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1379,16 +1379,16 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1406,13 +1406,13 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1445,7 +1445,7 @@ class CustomEmojiApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1453,7 +1453,7 @@ class CustomEmojiApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1470,7 +1470,7 @@ class CustomEmojiApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1493,7 +1493,7 @@ class CustomEmojiApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1501,7 +1501,7 @@ class CustomEmojiApi
      */
     public function postApiV1EmojiCustomDeleteAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_emoji_custom_delete_request = null, string $contentType = self::contentTypes['postApiV1EmojiCustomDelete'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
         $request = $this->postApiV1EmojiCustomDeleteRequest($x_auth_token, $x_user_id, $post_api_v1_emoji_custom_delete_request, $contentType);
 
         return $this->client
@@ -1545,7 +1545,7 @@ class CustomEmojiApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomDeleteRequest $post_api_v1_emoji_custom_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1656,12 +1656,12 @@ class CustomEmojiApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomUpdate'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response
      */
     public function postApiV1EmojiCustomUpdate($x_user_id, $x_auth_token, $post_api_v1_emoji_custom_update_request = null, string $contentType = self::contentTypes['postApiV1EmojiCustomUpdate'][0])
     {
@@ -1676,12 +1676,12 @@ class CustomEmojiApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomUpdate'] to see the possible values for this operation
      *
-     * @throws \RocketChatContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientContentManagementApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response|\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1EmojiCustomUpdateWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_emoji_custom_update_request = null, string $contentType = self::contentTypes['postApiV1EmojiCustomUpdate'][0])
     {
@@ -1724,11 +1724,11 @@ class CustomEmojiApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1746,16 +1746,16 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1773,13 +1773,13 @@ class CustomEmojiApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+            $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1812,7 +1812,7 @@ class CustomEmojiApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1820,7 +1820,7 @@ class CustomEmojiApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
+                        '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1837,7 +1837,7 @@ class CustomEmojiApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1860,7 +1860,7 @@ class CustomEmojiApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1868,7 +1868,7 @@ class CustomEmojiApi
      */
     public function postApiV1EmojiCustomUpdateAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_emoji_custom_update_request = null, string $contentType = self::contentTypes['postApiV1EmojiCustomUpdate'][0])
     {
-        $returnType = '\RocketChatContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
+        $returnType = '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomCreate200Response';
         $request = $this->postApiV1EmojiCustomUpdateRequest($x_user_id, $x_auth_token, $post_api_v1_emoji_custom_update_request, $contentType);
 
         return $this->client
@@ -1912,7 +1912,7 @@ class CustomEmojiApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
+     * @param  \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1EmojiCustomUpdateRequest $post_api_v1_emoji_custom_update_request If you are updating the image, provide the image file as form data. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmojiCustomUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

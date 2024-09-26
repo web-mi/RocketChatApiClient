@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,11 +57,11 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
       * @var string[]
       */
     protected static $openAPITypes = [
-        'transferred_by' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy',
+        'transferred_by' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy',
         'ts' => 'string',
         'scope' => 'string',
         'previous_department' => 'string',
-        'next_department' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment'
+        'next_department' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment'
     ];
 
     /**
@@ -320,7 +320,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
     /**
      * Gets transferred_by
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy|null
      */
     public function getTransferredBy()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
     /**
      * Sets transferred_by
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy|null $transferred_by transferred_by
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy|null $transferred_by transferred_by
      *
      * @return self
      */
@@ -428,7 +428,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
     /**
      * Gets next_department
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null
      */
     public function getNextDepartment()
     {
@@ -438,7 +438,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
     /**
      * Sets next_department
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null $next_department next_department
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null $next_department next_department
      *
      * @return self
      */

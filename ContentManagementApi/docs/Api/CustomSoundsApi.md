@@ -1,4 +1,4 @@
-# RocketChatContentManagementApi\CustomSoundsApi
+# WebMIRocketChatApiClientContentManagementApi\CustomSoundsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1CustomSoundsList()`
 
 ```php
-getApiV1CustomSoundsList($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields): \RocketChatContentManagementApi\Model\GetApiV1CustomSoundsList200Response
+getApiV1CustomSoundsList($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields): \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response
 ```
 
 List Custom Sounds
@@ -25,7 +25,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatContentManagementApi\Api\CustomSoundsApi(
+$apiInstance = new WebMIRocketChatApiClientContentManagementApi\Api\CustomSoundsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -60,7 +60,7 @@ try {
 
 ### Return type
 
-[**\RocketChatContentManagementApi\Model\GetApiV1CustomSoundsList200Response**](../Model/GetApiV1CustomSoundsList200Response.md)
+[**\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1CustomSoundsList200Response**](../Model/GetApiV1CustomSoundsList200Response.md)
 
 ### Authorization
 

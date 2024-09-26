@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail implements Mo
       * @var string[]
       */
     protected static $openAPITypes = [
-        'verification_tokens' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTokensInner[]'
+        'verification_tokens' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTokensInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail implements Mo
     /**
      * Gets verification_tokens
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTokensInner[]|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTokensInner[]|null
      */
     public function getVerificationTokens()
     {
@@ -302,7 +302,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail implements Mo
     /**
      * Sets verification_tokens
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTokensInner[]|null $verification_tokens verification_tokens
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTokensInner[]|null $verification_tokens verification_tokens
      *
      * @return self
      */

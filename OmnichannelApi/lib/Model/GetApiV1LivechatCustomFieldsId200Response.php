@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatCustomFieldsId200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatCustomFieldsId200Response implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'custom_field' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatCustomFields200ResponseCustomFieldsInner',
+        'custom_field' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatCustomFields200ResponseCustomFieldsInner',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatCustomFieldsId200Response implements ModelInterface, Array
     /**
      * Gets custom_field
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatCustomFields200ResponseCustomFieldsInner|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatCustomFields200ResponseCustomFieldsInner|null
      */
     public function getCustomField()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatCustomFieldsId200Response implements ModelInterface, Array
     /**
      * Sets custom_field
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatCustomFields200ResponseCustomFieldsInner|null $custom_field custom_field
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatCustomFields200ResponseCustomFieldsInner|null $custom_field custom_field
      *
      * @return self
      */

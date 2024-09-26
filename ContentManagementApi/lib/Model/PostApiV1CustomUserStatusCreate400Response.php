@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatContentManagementApi\Model;
+namespace WebMIRocketChatApiClientContentManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatContentManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1CustomUserStatusCreate400Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class PostApiV1CustomUserStatusCreate400Response implements ModelInterface, Arra
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate400ResponseDetails'
+        'details' => '\WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class PostApiV1CustomUserStatusCreate400Response implements ModelInterface, Arra
     /**
      * Gets details
      *
-     * @return \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate400ResponseDetails|null
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class PostApiV1CustomUserStatusCreate400Response implements ModelInterface, Arra
     /**
      * Sets details
      *
-     * @param \RocketChatContentManagementApi\Model\PostApiV1CustomUserStatusCreate400ResponseDetails|null $details details
+     * @param \WebMIRocketChatApiClientContentManagementApi\Model\PostApiV1CustomUserStatusCreate400ResponseDetails|null $details details
      *
      * @return self
      */

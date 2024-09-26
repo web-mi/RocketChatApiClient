@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsListChildren200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1TeamsListChildren200Response implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'total' => 'int',
-        'data' => '\RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]',
+        'data' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]',
         'offset' => 'int',
         'count' => 'int',
         'success' => 'bool'
@@ -347,7 +347,7 @@ class GetApiV1TeamsListChildren200Response implements ModelInterface, ArrayAcces
     /**
      * Gets data
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]|null
      */
     public function getData()
     {
@@ -357,7 +357,7 @@ class GetApiV1TeamsListChildren200Response implements ModelInterface, ArrayAcces
     /**
      * Sets data
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]|null $data data
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200ResponseDataInner[]|null $data data
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1CannedResponses200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1CannedResponses200Response implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'canned_responses' => '\RocketChatOmnichannelApi\Model\GetApiV1CannedResponses200ResponseCannedResponsesInner[]',
+        'canned_responses' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponses200ResponseCannedResponsesInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1CannedResponses200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets canned_responses
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1CannedResponses200ResponseCannedResponsesInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponses200ResponseCannedResponsesInner[]|null
      */
     public function getCannedResponses()
     {
@@ -330,7 +330,7 @@ class GetApiV1CannedResponses200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets canned_responses
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1CannedResponses200ResponseCannedResponsesInner[]|null $canned_responses canned_responses
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1CannedResponses200ResponseCannedResponsesInner[]|null $canned_responses canned_responses
      *
      * @return self
      */

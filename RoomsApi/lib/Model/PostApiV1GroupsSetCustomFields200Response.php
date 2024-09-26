@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1GroupsSetCustomFields200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
       * @var string[]
       */
     protected static $openAPITypes = [
-        'group' => '\RocketChatRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup',
+        'group' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup',
         'success' => 'bool',
         'developer_warning' => 'string'
     ];
@@ -306,7 +306,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
     /**
      * Gets group
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup|null
      */
     public function getGroup()
     {
@@ -316,7 +316,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
     /**
      * Sets group
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup|null $group group
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup|null $group group
      *
      * @return self
      */

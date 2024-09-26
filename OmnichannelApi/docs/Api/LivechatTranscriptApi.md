@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\LivechatTranscriptApi
+# WebMIRocketChatApiClientOmnichannelApi\LivechatTranscriptApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1LivechatTranscriptRid()`
 
 ```php
-deleteApiV1LivechatTranscriptRid($x_user_id, $x_auth_token, $rid): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+deleteApiV1LivechatTranscriptRid($x_user_id, $x_auth_token, $rid): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Delete Livechat Transcript
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatTranscriptApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTranscriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -55,7 +55,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ No authorization required
 ## `postApiV1LivechatTranscript()`
 
 ```php
-postApiV1LivechatTranscript($post_api_v1_livechat_transcript_request): \RocketChatOmnichannelApi\Model\PostApiV1LivechatTranscript200Response
+postApiV1LivechatTranscript($post_api_v1_livechat_transcript_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTranscript200Response
 ```
 
 Request Livechat Transcript
@@ -88,12 +88,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatTranscriptApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTranscriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_livechat_transcript_request = {"rid":"XFzMqgn33DcsQkpJp","token":"iNKE8a6k6cjbqWhWd","email":"visitor@rocket.chat"}; // \RocketChatOmnichannelApi\Model\PostApiV1LivechatTranscriptRequest
+$post_api_v1_livechat_transcript_request = {"rid":"XFzMqgn33DcsQkpJp","token":"iNKE8a6k6cjbqWhWd","email":"visitor@rocket.chat"}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTranscriptRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatTranscript($post_api_v1_livechat_transcript_request);
@@ -107,11 +107,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_livechat_transcript_request** | [**\RocketChatOmnichannelApi\Model\PostApiV1LivechatTranscriptRequest**](../Model/PostApiV1LivechatTranscriptRequest.md)|  | [optional] |
+| **post_api_v1_livechat_transcript_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTranscriptRequest**](../Model/PostApiV1LivechatTranscriptRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\PostApiV1LivechatTranscript200Response**](../Model/PostApiV1LivechatTranscript200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTranscript200Response**](../Model/PostApiV1LivechatTranscript200Response.md)
 
 ### Authorization
 
@@ -129,7 +129,7 @@ No authorization required
 ## `postApiV1LivechatTranscriptRid()`
 
 ```php
-postApiV1LivechatTranscriptRid($x_auth_token, $x_user_id, $rid, $post_api_v1_livechat_transcript_rid_request): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postApiV1LivechatTranscriptRid($x_auth_token, $x_user_id, $rid, $post_api_v1_livechat_transcript_rid_request): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Send Livechat Transcript
@@ -144,7 +144,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatTranscriptApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTranscriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -152,7 +152,7 @@ $apiInstance = new RocketChatOmnichannelApi\Api\LivechatTranscriptApi(
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $rid = 'rid_example'; // string | The room ID.
-$post_api_v1_livechat_transcript_rid_request = {"email":"email@test.com","subject":"Livechat Transcript"}; // \RocketChatOmnichannelApi\Model\PostApiV1LivechatTranscriptRidRequest
+$post_api_v1_livechat_transcript_rid_request = {"email":"email@test.com","subject":"Livechat Transcript"}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTranscriptRidRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatTranscriptRid($x_auth_token, $x_user_id, $rid, $post_api_v1_livechat_transcript_rid_request);
@@ -169,11 +169,11 @@ try {
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **rid** | **string**| The room ID. | |
-| **post_api_v1_livechat_transcript_rid_request** | [**\RocketChatOmnichannelApi\Model\PostApiV1LivechatTranscriptRidRequest**](../Model/PostApiV1LivechatTranscriptRidRequest.md)|  | [optional] |
+| **post_api_v1_livechat_transcript_rid_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTranscriptRidRequest**](../Model/PostApiV1LivechatTranscriptRidRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -191,7 +191,7 @@ No authorization required
 ## `postApiViOmnichannelRidRequestTranscript()`
 
 ```php
-postApiViOmnichannelRidRequestTranscript($rid, $x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postApiViOmnichannelRidRequestTranscript($rid, $x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Request PDF Transcript
@@ -206,7 +206,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatTranscriptApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatTranscriptApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -233,7 +233,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 

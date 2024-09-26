@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorsPagesVisitedRoomId200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200Response implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'pages' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner[]',
+        'pages' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200Response implements ModelInte
     /**
      * Gets pages
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner[]|null
      */
     public function getPages()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200Response implements ModelInte
     /**
      * Sets pages
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner[]|null $pages pages
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner[]|null $pages pages
      *
      * @return self
      */

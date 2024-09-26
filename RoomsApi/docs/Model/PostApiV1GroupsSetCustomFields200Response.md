@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**group** | [**\RocketChatRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup**](PostApiV1GroupsSetCustomFields200ResponseGroup.md) |  | [optional]
+**group** | [**\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup**](PostApiV1GroupsSetCustomFields200ResponseGroup.md) |  | [optional]
 **success** | **bool** |  | [optional]
 **developer_warning** | **string** |  | [optional]
 

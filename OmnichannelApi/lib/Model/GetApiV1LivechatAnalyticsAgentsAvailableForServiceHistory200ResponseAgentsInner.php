@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
       * @var string[]
       */
     protected static $openAPITypes = [
-        'service_history' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner[]',
+        'service_history' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner[]',
         'available_time_in_seconds' => 'int',
         'username' => 'string'
     ];
@@ -306,7 +306,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
     /**
      * Gets service_history
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner[]|null
      */
     public function getServiceHistory()
     {
@@ -316,7 +316,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
     /**
      * Sets service_history
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner[]|null $service_history service_history
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner[]|null $service_history service_history
      *
      * @return self
      */

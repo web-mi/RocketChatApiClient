@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume implements M
       * @var string[]
       */
     protected static $openAPITypes = [
-        'login_tokens' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensInner[]'
+        'login_tokens' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume implements M
     /**
      * Gets login_tokens
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensInner[]|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensInner[]|null
      */
     public function getLoginTokens()
     {
@@ -302,7 +302,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume implements M
     /**
      * Sets login_tokens
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensInner[]|null $login_tokens login_tokens
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensInner[]|null $login_tokens login_tokens
      *
      * @return self
      */

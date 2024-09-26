@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatNotificationsApi\Model;
+namespace WebMIRocketChatApiClientNotificationsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatNotificationsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
 
 /**
  * PostApiV1PushToken200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1PushToken200Response implements ModelInterface, ArrayAccess, \Jso
       * @var string[]
       */
     protected static $openAPITypes = [
-        'result' => '\RocketChatNotificationsApi\Model\PostApiV1PushToken200ResponseResult',
+        'result' => '\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResult',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1PushToken200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets result
      *
-     * @return \RocketChatNotificationsApi\Model\PostApiV1PushToken200ResponseResult|null
+     * @return \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResult|null
      */
     public function getResult()
     {
@@ -309,7 +309,7 @@ class PostApiV1PushToken200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets result
      *
-     * @param \RocketChatNotificationsApi\Model\PostApiV1PushToken200ResponseResult|null $result result
+     * @param \WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResult|null $result result
      *
      * @return self
      */

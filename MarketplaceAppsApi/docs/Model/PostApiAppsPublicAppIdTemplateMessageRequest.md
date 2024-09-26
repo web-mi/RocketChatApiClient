@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **connected_whats_app_no** | **string** | The WhatsApp Number from which you want to send this template message. The WhatsApp number connected to your workspace via the app. |
 **target_agent** | **string** | Username of the agent you want to transfer the chat to when the WhatsApp user replies. | [optional]
 **target_department** | **string** | Department name or ID where you want to transfer the chat to when the WhatsApp user replies. | [optional]
-**template** | [**\RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplate**](PostApiAppsPublicAppIdTemplateMessageRequestTemplate.md) |  |
+**template** | [**\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplate**](PostApiAppsPublicAppIdTemplateMessageRequestTemplate.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

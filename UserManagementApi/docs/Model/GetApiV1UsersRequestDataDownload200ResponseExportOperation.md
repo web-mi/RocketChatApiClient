@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **_id** | **string** |  | [optional]
 **created_at** | **string** |  | [optional]
 **user_id** | **string** |  | [optional]
-**room_list** | [**\RocketChatUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner[]**](GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner.md) |  | [optional]
+**room_list** | [**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner[]**](GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner.md) |  | [optional]
 **status** | **string** |  | [optional]
 **export_path** | **string** |  | [optional]
 **assets_path** | **string** |  | [optional]

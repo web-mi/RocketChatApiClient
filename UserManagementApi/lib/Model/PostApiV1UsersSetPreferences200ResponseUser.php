@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersSetPreferences200ResponseUser Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
       */
     protected static $openAPITypes = [
         '_id' => 'string',
-        'settings' => '\RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings'
+        'settings' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
     /**
      * Gets settings
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings|null
      */
     public function getSettings()
     {
@@ -336,7 +336,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
     /**
      * Sets settings
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings|null $settings settings
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings|null $settings settings
      *
      * @return self
      */

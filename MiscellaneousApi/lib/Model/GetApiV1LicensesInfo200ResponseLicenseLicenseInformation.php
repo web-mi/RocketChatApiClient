@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1LicensesInfo200ResponseLicenseLicenseInformation Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -68,7 +68,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
         'offline' => 'bool',
         'granted_by' => 'object',
         'granted_to' => 'object',
-        'tags' => '\RocketChatMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]'
+        'tags' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]'
     ];
 
     /**
@@ -666,7 +666,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
     /**
      * Gets tags
      *
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null
      */
     public function getTags()
     {
@@ -676,7 +676,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
     /**
      * Sets tags
      *
-     * @param \RocketChatMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null $tags tags
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null $tags tags
      *
      * @return self
      */

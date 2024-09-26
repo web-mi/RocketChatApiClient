@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\LivechatDashboardsApi
+# WebMIRocketChatApiClientOmnichannelApi\LivechatDashboardsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -18,7 +18,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers($x_auth_token, $x_user_id, $start, $end, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
+getApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers($x_auth_token, $x_user_id, $start, $end, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
 ```
 
 Get Agent Service Time Metrics
@@ -33,7 +33,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDashboardsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -64,7 +64,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response.md)
 
 ### Authorization
 
@@ -82,7 +82,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsChartsAgentsStatus()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsChartsAgentsStatus($x_auth_token, $x_user_id, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response
+getApiV1LivechatAnalyticsDashboardsChartsAgentsStatus($x_auth_token, $x_user_id, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response
 ```
 
 Get Status of Agents
@@ -97,7 +97,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDashboardsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -124,7 +124,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response.md)
 
 ### Authorization
 
@@ -142,7 +142,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsChartsChats()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsChartsChats($x_auth_token, $x_user_id, $start, $end, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChats200Response
+getApiV1LivechatAnalyticsDashboardsChartsChats($x_auth_token, $x_user_id, $start, $end, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChats200Response
 ```
 
 Get Chats Status
@@ -157,7 +157,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDashboardsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -188,7 +188,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChats200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsChats200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChats200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsChats200Response.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent($x_auth_token, $x_user_id, $start, $end, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response
+getApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent($x_auth_token, $x_user_id, $start, $end, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response
 ```
 
 Get Chat Status of Agents
@@ -221,7 +221,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDashboardsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -252,7 +252,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response.md)
 
 ### Authorization
 
@@ -270,7 +270,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment($x_auth_token, $x_user_id, $start, $end, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response
+getApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment($x_auth_token, $x_user_id, $start, $end, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response
 ```
 
 Get Chats Status for Departments
@@ -285,7 +285,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDashboardsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -316,7 +316,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response.md)
 
 ### Authorization
 
@@ -334,7 +334,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsChartsTimings()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsChartsTimings($x_auth_token, $x_user_id, $start, $end, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response
+getApiV1LivechatAnalyticsDashboardsChartsTimings($x_auth_token, $x_user_id, $start, $end, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response
 ```
 
 Get Chat Times
@@ -349,7 +349,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDashboardsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -380,7 +380,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response.md)
 
 ### Authorization
 
@@ -413,7 +413,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDashboardsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -462,7 +462,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsConversationTotalizers()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsConversationTotalizers($x_auth_token, $x_user_id, $start, $end, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response
+getApiV1LivechatAnalyticsDashboardsConversationTotalizers($x_auth_token, $x_user_id, $start, $end, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response
 ```
 
 Get Conversation Metrics
@@ -477,7 +477,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDashboardsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -508,7 +508,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsConversationTotalizers200Response.md)
 
 ### Authorization
 
@@ -526,7 +526,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDashboardsProductivityTotalizers()`
 
 ```php
-getApiV1LivechatAnalyticsDashboardsProductivityTotalizers($x_auth_token, $x_user_id, $start, $end, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
+getApiV1LivechatAnalyticsDashboardsProductivityTotalizers($x_auth_token, $x_user_id, $start, $end, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
 ```
 
 Get Chat Metrics by Time
@@ -541,7 +541,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDashboardsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDashboardsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -572,7 +572,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response**](../Model/GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response.md)
 
 ### Authorization
 

@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**token** | [**\RocketChatNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken**](PostApiV1PushToken200ResponseResultToken.md) |  | [optional]
+**token** | [**\WebMIRocketChatApiClientNotificationsApi\Model\PostApiV1PushToken200ResponseResultToken**](PostApiV1PushToken200ResponseResultToken.md) |  | [optional]
 **app_name** | **string** |  | [optional]
 **user_id** | **string** |  | [optional]
 **enabled** | **bool** |  | [optional]

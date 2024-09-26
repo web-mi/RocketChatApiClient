@@ -7,7 +7,7 @@ Name | Type | Description | Notes
 **host** | **string** |  | [optional]
 **port** | **string** |  | [optional]
 **tcp_port** | **int** |  | [optional]
-**os** | [**\RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs**](GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs.md) |  | [optional]
+**os** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs**](GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs.md) |  | [optional]
 **node_version** | **string** |  | [optional]
 **conns** | **int** |  | [optional]
 

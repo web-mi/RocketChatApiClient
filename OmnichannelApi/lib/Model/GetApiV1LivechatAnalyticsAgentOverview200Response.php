@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsAgentOverview200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
       * @var string[]
       */
     protected static $openAPITypes = [
-        'head' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner[]',
-        'data' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]',
+        'head' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner[]',
+        'data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]',
         'success' => 'bool'
     ];
 
@@ -306,7 +306,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
     /**
      * Gets head
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner[]|null
      */
     public function getHead()
     {
@@ -316,7 +316,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
     /**
      * Sets head
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner[]|null $head head
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner[]|null $head head
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
     /**
      * Gets data
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null
      */
     public function getData()
     {
@@ -343,7 +343,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
     /**
      * Sets data
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null $data data
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null $data data
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsImages200ResponseFilesInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,7 +65,7 @@ class GetApiV1RoomsImages200ResponseFilesInner implements ModelInterface, ArrayA
         'user_id' => 'string',
         'store' => 'string',
         '_updated_at' => 'string',
-        'identify' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify',
+        'identify' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify',
         'complete' => 'bool',
         'etag' => 'string',
         'path' => 'string',
@@ -627,7 +627,7 @@ class GetApiV1RoomsImages200ResponseFilesInner implements ModelInterface, ArrayA
     /**
      * Gets identify
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null
      */
     public function getIdentify()
     {
@@ -637,7 +637,7 @@ class GetApiV1RoomsImages200ResponseFilesInner implements ModelInterface, ArrayA
     /**
      * Sets identify
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null $identify identify
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentify|null $identify identify
      *
      * @return self
      */

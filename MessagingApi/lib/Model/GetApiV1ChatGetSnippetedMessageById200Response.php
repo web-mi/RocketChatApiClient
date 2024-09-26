@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatGetSnippetedMessageById200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatGetSnippetedMessageById200Response implements ModelInterface, 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner',
+        'message' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChatGetSnippetedMessageById200Response implements ModelInterface, 
     /**
      * Gets message
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner|null
      */
     public function getMessage()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatGetSnippetedMessageById200Response implements ModelInterface, 
     /**
      * Sets message
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner|null $message message
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner|null $message message
      *
      * @return self
      */

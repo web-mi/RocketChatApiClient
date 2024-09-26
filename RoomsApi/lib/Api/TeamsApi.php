@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Api;
+namespace WebMIRocketChatApiClientRoomsApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatRoomsApi\ApiException;
-use RocketChatRoomsApi\Configuration;
-use RocketChatRoomsApi\HeaderSelector;
-use RocketChatRoomsApi\ObjectSerializer;
+use WebMIRocketChatApiClientRoomsApi\ApiException;
+use WebMIRocketChatApiClientRoomsApi\Configuration;
+use WebMIRocketChatApiClientRoomsApi\HeaderSelector;
+use WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * TeamsApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -186,9 +186,9 @@ class TeamsApi
      * @param  string $name The pattern (search filter for team names). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsAutocomplete'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function getApiV1TeamsAutocomplete($x_auth_token, $x_user_id, $name, string $contentType = self::contentTypes['getApiV1TeamsAutocomplete'][0])
     {
@@ -206,9 +206,9 @@ class TeamsApi
      * @param  string $name The pattern (search filter for team names). (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsAutocomplete'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1TeamsAutocompleteWithHttpInfo($x_auth_token, $x_user_id, $name, string $contentType = self::contentTypes['getApiV1TeamsAutocomplete'][0])
     {
@@ -251,11 +251,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -273,16 +273,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -300,13 +300,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -339,7 +339,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -347,7 +347,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -395,7 +395,7 @@ class TeamsApi
      */
     public function getApiV1TeamsAutocompleteAsyncWithHttpInfo($x_auth_token, $x_user_id, $name, string $contentType = self::contentTypes['getApiV1TeamsAutocomplete'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsAutocomplete200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsAutocomplete200Response';
         $request = $this->getApiV1TeamsAutocompleteRequest($x_auth_token, $x_user_id, $name, $contentType);
 
         return $this->client
@@ -562,9 +562,9 @@ class TeamsApi
      * @param  string $team_name The team name.  It is required if the &#x60;teamId&#x60; is not provided. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsInfo'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsInfo200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsInfo200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function getApiV1TeamsInfo($x_auth_token, $x_user_id, $team_id = null, $team_name = null, string $contentType = self::contentTypes['getApiV1TeamsInfo'][0])
     {
@@ -583,9 +583,9 @@ class TeamsApi
      * @param  string $team_name The team name.  It is required if the &#x60;teamId&#x60; is not provided. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsInfo'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\GetApiV1TeamsInfo200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsInfo200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1TeamsInfoWithHttpInfo($x_auth_token, $x_user_id, $team_id = null, $team_name = null, string $contentType = self::contentTypes['getApiV1TeamsInfo'][0])
     {
@@ -628,11 +628,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\GetApiV1TeamsInfo200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsInfo200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\GetApiV1TeamsInfo200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsInfo200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -650,16 +650,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\GetApiV1TeamsInfo200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsInfo200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -677,13 +677,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsInfo200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsInfo200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -716,7 +716,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\GetApiV1TeamsInfo200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsInfo200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -724,7 +724,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -774,7 +774,7 @@ class TeamsApi
      */
     public function getApiV1TeamsInfoAsyncWithHttpInfo($x_auth_token, $x_user_id, $team_id = null, $team_name = null, string $contentType = self::contentTypes['getApiV1TeamsInfo'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsInfo200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsInfo200Response';
         $request = $this->getApiV1TeamsInfoRequest($x_auth_token, $x_user_id, $team_id, $team_name, $contentType);
 
         return $this->client
@@ -948,9 +948,9 @@ class TeamsApi
      * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsList'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function getApiV1TeamsList($x_auth_token, $x_user_id, $sort = null, $offset = null, $count = null, $query = null, string $contentType = self::contentTypes['getApiV1TeamsList'][0])
     {
@@ -971,9 +971,9 @@ class TeamsApi
      * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsList'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1TeamsListWithHttpInfo($x_auth_token, $x_user_id, $sort = null, $offset = null, $count = null, $query = null, string $contentType = self::contentTypes['getApiV1TeamsList'][0])
     {
@@ -1016,11 +1016,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1038,16 +1038,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1065,13 +1065,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1104,7 +1104,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1112,7 +1112,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1166,7 +1166,7 @@ class TeamsApi
      */
     public function getApiV1TeamsListAsyncWithHttpInfo($x_auth_token, $x_user_id, $sort = null, $offset = null, $count = null, $query = null, string $contentType = self::contentTypes['getApiV1TeamsList'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response';
         $request = $this->getApiV1TeamsListRequest($x_auth_token, $x_user_id, $sort, $offset, $count, $query, $contentType);
 
         return $this->client
@@ -1360,9 +1360,9 @@ class TeamsApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsListAll'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function getApiV1TeamsListAll($x_auth_token, $x_user_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1TeamsListAll'][0])
     {
@@ -1381,9 +1381,9 @@ class TeamsApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsListAll'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1TeamsListAllWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1TeamsListAll'][0])
     {
@@ -1426,11 +1426,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1448,16 +1448,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1475,13 +1475,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1514,7 +1514,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1522,7 +1522,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1572,7 +1572,7 @@ class TeamsApi
      */
     public function getApiV1TeamsListAllAsyncWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1TeamsListAll'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200Response';
         $request = $this->getApiV1TeamsListAllRequest($x_auth_token, $x_user_id, $offset, $count, $contentType);
 
         return $this->client
@@ -1750,9 +1750,9 @@ class TeamsApi
      * @param  string $room_id The room ID. This parameter is required if you have not provided the &#x60;teamId&#x60; or the &#x60;teamName&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsListChildren'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader400Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader400Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function getApiV1TeamsListChildren($x_user_id, $x_auth_token, $team_name = null, $team_id = null, $offset = null, $count = null, $sort = null, $filter = null, $type = null, $room_id = null, string $contentType = self::contentTypes['getApiV1TeamsListChildren'][0])
     {
@@ -1777,9 +1777,9 @@ class TeamsApi
      * @param  string $room_id The room ID. This parameter is required if you have not provided the &#x60;teamId&#x60; or the &#x60;teamName&#x60;. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsListChildren'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader400Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader400Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1TeamsListChildrenWithHttpInfo($x_user_id, $x_auth_token, $team_name = null, $team_id = null, $offset = null, $count = null, $sort = null, $filter = null, $type = null, $room_id = null, string $contentType = self::contentTypes['getApiV1TeamsListChildren'][0])
     {
@@ -1822,11 +1822,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1844,16 +1844,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1871,16 +1871,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1898,13 +1898,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1937,7 +1937,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1945,7 +1945,7 @@ class TeamsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader400Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1953,7 +1953,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2015,7 +2015,7 @@ class TeamsApi
      */
     public function getApiV1TeamsListChildrenAsyncWithHttpInfo($x_user_id, $x_auth_token, $team_name = null, $team_id = null, $offset = null, $count = null, $sort = null, $filter = null, $type = null, $room_id = null, string $contentType = self::contentTypes['getApiV1TeamsListChildren'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListChildren200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListChildren200Response';
         $request = $this->getApiV1TeamsListChildrenRequest($x_user_id, $x_auth_token, $team_name, $team_id, $offset, $count, $sort, $filter, $type, $room_id, $contentType);
 
         return $this->client
@@ -2256,9 +2256,9 @@ class TeamsApi
      * @param  int $offset Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsListRooms'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsListRooms200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRooms200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function getApiV1TeamsListRooms($x_auth_token, $x_user_id, $team_id = null, $team_name = null, $type = null, $count = null, $offset = null, string $contentType = self::contentTypes['getApiV1TeamsListRooms'][0])
     {
@@ -2280,9 +2280,9 @@ class TeamsApi
      * @param  int $offset Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsListRooms'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\GetApiV1TeamsListRooms200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRooms200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1TeamsListRoomsWithHttpInfo($x_auth_token, $x_user_id, $team_id = null, $team_name = null, $type = null, $count = null, $offset = null, string $contentType = self::contentTypes['getApiV1TeamsListRooms'][0])
     {
@@ -2325,11 +2325,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListRooms200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRooms200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListRooms200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRooms200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2347,16 +2347,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\GetApiV1TeamsListRooms200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRooms200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2374,13 +2374,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListRooms200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRooms200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2413,7 +2413,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\GetApiV1TeamsListRooms200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRooms200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2421,7 +2421,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2477,7 +2477,7 @@ class TeamsApi
      */
     public function getApiV1TeamsListRoomsAsyncWithHttpInfo($x_auth_token, $x_user_id, $team_id = null, $team_name = null, $type = null, $count = null, $offset = null, string $contentType = self::contentTypes['getApiV1TeamsListRooms'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListRooms200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRooms200Response';
         $request = $this->getApiV1TeamsListRoomsRequest($x_auth_token, $x_user_id, $team_id, $team_name, $type, $count, $offset, $contentType);
 
         return $this->client
@@ -2685,9 +2685,9 @@ class TeamsApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsListRoomsOfUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function getApiV1TeamsListRoomsOfUser($x_user_id, $x_auth_token, $user_id, $team_name = null, $team_id = null, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1TeamsListRoomsOfUser'][0])
     {
@@ -2709,9 +2709,9 @@ class TeamsApi
      * @param  int $count The number of items to return. (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsListRoomsOfUser'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1TeamsListRoomsOfUserWithHttpInfo($x_user_id, $x_auth_token, $user_id, $team_name = null, $team_id = null, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1TeamsListRoomsOfUser'][0])
     {
@@ -2754,11 +2754,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2776,16 +2776,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2803,13 +2803,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2842,7 +2842,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2850,7 +2850,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2906,7 +2906,7 @@ class TeamsApi
      */
     public function getApiV1TeamsListRoomsOfUserAsyncWithHttpInfo($x_user_id, $x_auth_token, $user_id, $team_name = null, $team_id = null, $offset = null, $count = null, string $contentType = self::contentTypes['getApiV1TeamsListRoomsOfUser'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListRoomsOfUser200Response';
         $request = $this->getApiV1TeamsListRoomsOfUserRequest($x_user_id, $x_auth_token, $user_id, $team_name, $team_id, $offset, $count, $contentType);
 
         return $this->client
@@ -3120,9 +3120,9 @@ class TeamsApi
      * @param  string[] $status Search filter for the user&#39;s status (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsMembers'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsMembers200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function getApiV1TeamsMembers($x_auth_token, $x_user_id, $team_name = null, $team_id = null, $name = null, $username = null, $status = null, string $contentType = self::contentTypes['getApiV1TeamsMembers'][0])
     {
@@ -3144,9 +3144,9 @@ class TeamsApi
      * @param  string[] $status Search filter for the user&#39;s status (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1TeamsMembers'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\GetApiV1TeamsMembers200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1TeamsMembersWithHttpInfo($x_auth_token, $x_user_id, $team_name = null, $team_id = null, $name = null, $username = null, $status = null, string $contentType = self::contentTypes['getApiV1TeamsMembers'][0])
     {
@@ -3189,11 +3189,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\GetApiV1TeamsMembers200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\GetApiV1TeamsMembers200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3211,16 +3211,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\GetApiV1TeamsMembers200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3238,13 +3238,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsMembers200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3277,7 +3277,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\GetApiV1TeamsMembers200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3285,7 +3285,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3341,7 +3341,7 @@ class TeamsApi
      */
     public function getApiV1TeamsMembersAsyncWithHttpInfo($x_auth_token, $x_user_id, $team_name = null, $team_id = null, $name = null, $username = null, $status = null, string $contentType = self::contentTypes['getApiV1TeamsMembers'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\GetApiV1TeamsMembers200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200Response';
         $request = $this->getApiV1TeamsMembersRequest($x_auth_token, $x_user_id, $team_name, $team_id, $name, $username, $status, $contentType);
 
         return $this->client
@@ -3542,12 +3542,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddMembers'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsAddMembers($x_auth_token, $x_user_id, $post_api_v1_teams_add_members_request = null, string $contentType = self::contentTypes['postApiV1TeamsAddMembers'][0])
     {
@@ -3562,12 +3562,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddMembers'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsAddMembersWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_add_members_request = null, string $contentType = self::contentTypes['postApiV1TeamsAddMembers'][0])
     {
@@ -3610,11 +3610,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3632,16 +3632,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3659,13 +3659,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -3698,7 +3698,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3706,7 +3706,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -3723,7 +3723,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddMembers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3746,7 +3746,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddMembers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3754,7 +3754,7 @@ class TeamsApi
      */
     public function postApiV1TeamsAddMembersAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_add_members_request = null, string $contentType = self::contentTypes['postApiV1TeamsAddMembers'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
         $request = $this->postApiV1TeamsAddMembersRequest($x_auth_token, $x_user_id, $post_api_v1_teams_add_members_request, $contentType);
 
         return $this->client
@@ -3798,7 +3798,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddMembers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -3909,12 +3909,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request post_api_v1_teams_add_rooms_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request post_api_v1_teams_add_rooms_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddRooms'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1TeamsAddRooms200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsAddRooms($x_auth_token, $x_user_id, $post_api_v1_teams_add_rooms_request = null, string $contentType = self::contentTypes['postApiV1TeamsAddRooms'][0])
     {
@@ -3929,12 +3929,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddRooms'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1TeamsAddRooms200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsAddRoomsWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_add_rooms_request = null, string $contentType = self::contentTypes['postApiV1TeamsAddRooms'][0])
     {
@@ -3977,11 +3977,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1TeamsAddRooms200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1TeamsAddRooms200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -3999,16 +3999,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1TeamsAddRooms200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4026,13 +4026,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1TeamsAddRooms200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4065,7 +4065,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1TeamsAddRooms200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4073,7 +4073,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4090,7 +4090,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddRooms'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4113,7 +4113,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddRooms'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4121,7 +4121,7 @@ class TeamsApi
      */
     public function postApiV1TeamsAddRoomsAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_add_rooms_request = null, string $contentType = self::contentTypes['postApiV1TeamsAddRooms'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1TeamsAddRooms200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRooms200Response';
         $request = $this->postApiV1TeamsAddRoomsRequest($x_auth_token, $x_user_id, $post_api_v1_teams_add_rooms_request, $contentType);
 
         return $this->client
@@ -4165,7 +4165,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddRoomsRequest $post_api_v1_teams_add_rooms_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsAddRooms'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4276,12 +4276,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request post_api_v1_teams_convert_to_channel_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request post_api_v1_teams_convert_to_channel_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsConvertToChannel'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsClose400Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsClose400Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsConvertToChannel($x_auth_token, $x_user_id, $post_api_v1_teams_convert_to_channel_request = null, string $contentType = self::contentTypes['postApiV1TeamsConvertToChannel'][0])
     {
@@ -4296,12 +4296,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsConvertToChannel'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsClose400Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsClose400Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsConvertToChannelWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_convert_to_channel_request = null, string $contentType = self::contentTypes['postApiV1TeamsConvertToChannel'][0])
     {
@@ -4344,11 +4344,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4366,16 +4366,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsClose400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsClose400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsClose400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsClose400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4393,16 +4393,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsClose400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsClose400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4420,13 +4420,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4459,7 +4459,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4467,7 +4467,7 @@ class TeamsApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsClose400Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsClose400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4475,7 +4475,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4492,7 +4492,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsConvertToChannel'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4515,7 +4515,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsConvertToChannel'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4523,7 +4523,7 @@ class TeamsApi
      */
     public function postApiV1TeamsConvertToChannelAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_convert_to_channel_request = null, string $contentType = self::contentTypes['postApiV1TeamsConvertToChannel'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
         $request = $this->postApiV1TeamsConvertToChannelRequest($x_auth_token, $x_user_id, $post_api_v1_teams_convert_to_channel_request, $contentType);
 
         return $this->client
@@ -4567,7 +4567,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsConvertToChannelRequest $post_api_v1_teams_convert_to_channel_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsConvertToChannel'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4678,12 +4678,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request post_api_v1_teams_create_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request post_api_v1_teams_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsCreate'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsCreate($x_auth_token, $x_user_id, $post_api_v1_teams_create_request = null, string $contentType = self::contentTypes['postApiV1TeamsCreate'][0])
     {
@@ -4698,12 +4698,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsCreate'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsCreateWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_create_request = null, string $contentType = self::contentTypes['postApiV1TeamsCreate'][0])
     {
@@ -4746,11 +4746,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4768,16 +4768,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -4795,13 +4795,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -4834,7 +4834,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4842,7 +4842,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -4859,7 +4859,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsCreate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4882,7 +4882,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsCreate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -4890,7 +4890,7 @@ class TeamsApi
      */
     public function postApiV1TeamsCreateAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_create_request = null, string $contentType = self::contentTypes['postApiV1TeamsCreate'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsConvertToTeam200Response';
         $request = $this->postApiV1TeamsCreateRequest($x_auth_token, $x_user_id, $post_api_v1_teams_create_request, $contentType);
 
         return $this->client
@@ -4934,7 +4934,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsCreateRequest $post_api_v1_teams_create_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsCreate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5045,12 +5045,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request post_api_v1_teams_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request post_api_v1_teams_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsDelete'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsDelete($x_auth_token, $x_user_id, $post_api_v1_teams_delete_request = null, string $contentType = self::contentTypes['postApiV1TeamsDelete'][0])
     {
@@ -5065,12 +5065,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsDelete'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsDeleteWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_delete_request = null, string $contentType = self::contentTypes['postApiV1TeamsDelete'][0])
     {
@@ -5113,11 +5113,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5135,16 +5135,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5162,13 +5162,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5201,7 +5201,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5209,7 +5209,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5226,7 +5226,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5249,7 +5249,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5257,7 +5257,7 @@ class TeamsApi
      */
     public function postApiV1TeamsDeleteAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_delete_request = null, string $contentType = self::contentTypes['postApiV1TeamsDelete'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
         $request = $this->postApiV1TeamsDeleteRequest($x_auth_token, $x_user_id, $post_api_v1_teams_delete_request, $contentType);
 
         return $this->client
@@ -5301,7 +5301,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsDeleteRequest $post_api_v1_teams_delete_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsDelete'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5412,12 +5412,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request post_api_v1_teams_leave_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request post_api_v1_teams_leave_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsLeave'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsLeave($x_auth_token, $x_user_id, $post_api_v1_teams_leave_request = null, string $contentType = self::contentTypes['postApiV1TeamsLeave'][0])
     {
@@ -5432,12 +5432,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsLeave'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsLeaveWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_leave_request = null, string $contentType = self::contentTypes['postApiV1TeamsLeave'][0])
     {
@@ -5480,11 +5480,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5502,16 +5502,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5529,13 +5529,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5568,7 +5568,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5576,7 +5576,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5593,7 +5593,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsLeave'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5616,7 +5616,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsLeave'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5624,7 +5624,7 @@ class TeamsApi
      */
     public function postApiV1TeamsLeaveAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_leave_request = null, string $contentType = self::contentTypes['postApiV1TeamsLeave'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
         $request = $this->postApiV1TeamsLeaveRequest($x_auth_token, $x_user_id, $post_api_v1_teams_leave_request, $contentType);
 
         return $this->client
@@ -5668,7 +5668,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsLeaveRequest $post_api_v1_teams_leave_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsLeave'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5779,12 +5779,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveMember'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsRemoveMember($x_auth_token, $x_user_id, $post_api_v1_teams_remove_member_request = null, string $contentType = self::contentTypes['postApiV1TeamsRemoveMember'][0])
     {
@@ -5799,12 +5799,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveMember'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsRemoveMemberWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_remove_member_request = null, string $contentType = self::contentTypes['postApiV1TeamsRemoveMember'][0])
     {
@@ -5847,11 +5847,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5869,16 +5869,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -5896,13 +5896,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -5935,7 +5935,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5943,7 +5943,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -5960,7 +5960,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveMember'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5983,7 +5983,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveMember'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5991,7 +5991,7 @@ class TeamsApi
      */
     public function postApiV1TeamsRemoveMemberAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_remove_member_request = null, string $contentType = self::contentTypes['postApiV1TeamsRemoveMember'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
         $request = $this->postApiV1TeamsRemoveMemberRequest($x_auth_token, $x_user_id, $post_api_v1_teams_remove_member_request, $contentType);
 
         return $this->client
@@ -6035,7 +6035,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveMemberRequest $post_api_v1_teams_remove_member_request  (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveMember'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6146,12 +6146,12 @@ class TeamsApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request post_api_v1_teams_remove_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request post_api_v1_teams_remove_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveRoom'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsRemoveRoom($x_user_id, $x_auth_token, $post_api_v1_teams_remove_room_request = null, string $contentType = self::contentTypes['postApiV1TeamsRemoveRoom'][0])
     {
@@ -6166,12 +6166,12 @@ class TeamsApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveRoom'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsRemoveRoomWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_teams_remove_room_request = null, string $contentType = self::contentTypes['postApiV1TeamsRemoveRoom'][0])
     {
@@ -6214,11 +6214,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6236,16 +6236,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6263,13 +6263,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6302,7 +6302,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6310,7 +6310,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6327,7 +6327,7 @@ class TeamsApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6350,7 +6350,7 @@ class TeamsApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6358,7 +6358,7 @@ class TeamsApi
      */
     public function postApiV1TeamsRemoveRoomAsyncWithHttpInfo($x_user_id, $x_auth_token, $post_api_v1_teams_remove_room_request = null, string $contentType = self::contentTypes['postApiV1TeamsRemoveRoom'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoom200Response';
         $request = $this->postApiV1TeamsRemoveRoomRequest($x_user_id, $x_auth_token, $post_api_v1_teams_remove_room_request, $contentType);
 
         return $this->client
@@ -6402,7 +6402,7 @@ class TeamsApi
      *
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsRemoveRoomRequest $post_api_v1_teams_remove_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsRemoveRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6513,12 +6513,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request post_api_v1_teams_update_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request post_api_v1_teams_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdate'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsUpdate($x_auth_token, $x_user_id, $post_api_v1_teams_update_request = null, string $contentType = self::contentTypes['postApiV1TeamsUpdate'][0])
     {
@@ -6533,12 +6533,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdate'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsUpdateWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_update_request = null, string $contentType = self::contentTypes['postApiV1TeamsUpdate'][0])
     {
@@ -6581,11 +6581,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6603,16 +6603,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6630,13 +6630,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -6669,7 +6669,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6677,7 +6677,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -6694,7 +6694,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6717,7 +6717,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6725,7 +6725,7 @@ class TeamsApi
      */
     public function postApiV1TeamsUpdateAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_update_request = null, string $contentType = self::contentTypes['postApiV1TeamsUpdate'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
         $request = $this->postApiV1TeamsUpdateRequest($x_auth_token, $x_user_id, $post_api_v1_teams_update_request, $contentType);
 
         return $this->client
@@ -6769,7 +6769,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRequest $post_api_v1_teams_update_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdate'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -6880,12 +6880,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateMembers'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsUpdateMembers($x_auth_token, $x_user_id, $post_api_v1_teams_add_members_request = null, string $contentType = self::contentTypes['postApiV1TeamsUpdateMembers'][0])
     {
@@ -6900,12 +6900,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateMembers'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsUpdateMembersWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_add_members_request = null, string $contentType = self::contentTypes['postApiV1TeamsUpdateMembers'][0])
     {
@@ -6948,11 +6948,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6970,16 +6970,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -6997,13 +6997,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7036,7 +7036,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7044,7 +7044,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7061,7 +7061,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateMembers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7084,7 +7084,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateMembers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7092,7 +7092,7 @@ class TeamsApi
      */
     public function postApiV1TeamsUpdateMembersAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_add_members_request = null, string $contentType = self::contentTypes['postApiV1TeamsUpdateMembers'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddLeader200Response';
         $request = $this->postApiV1TeamsUpdateMembersRequest($x_auth_token, $x_user_id, $post_api_v1_teams_add_members_request, $contentType);
 
         return $this->client
@@ -7136,7 +7136,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsAddMembersRequest $post_api_v1_teams_add_members_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateMembers'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7247,12 +7247,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request post_api_v1_teams_update_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request post_api_v1_teams_update_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateRoom'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
     public function postApiV1TeamsUpdateRoom($x_auth_token, $x_user_id, $post_api_v1_teams_update_room_request = null, string $contentType = self::contentTypes['postApiV1TeamsUpdateRoom'][0])
     {
@@ -7267,12 +7267,12 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateRoom'] to see the possible values for this operation
      *
-     * @throws \RocketChatRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientRoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response|\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response|\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1TeamsUpdateRoomWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_update_room_request = null, string $contentType = self::contentTypes['postApiV1TeamsUpdateRoom'][0])
     {
@@ -7315,11 +7315,11 @@ class TeamsApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7337,16 +7337,16 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -7364,13 +7364,13 @@ class TeamsApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response';
+            $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -7403,7 +7403,7 @@ class TeamsApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7411,7 +7411,7 @@ class TeamsApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate401Response',
+                        '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -7428,7 +7428,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7451,7 +7451,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -7459,7 +7459,7 @@ class TeamsApi
      */
     public function postApiV1TeamsUpdateRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_teams_update_room_request = null, string $contentType = self::contentTypes['postApiV1TeamsUpdateRoom'][0])
     {
-        $returnType = '\RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response';
+        $returnType = '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoom200Response';
         $request = $this->postApiV1TeamsUpdateRoomRequest($x_auth_token, $x_user_id, $post_api_v1_teams_update_room_request, $contentType);
 
         return $this->client
@@ -7503,7 +7503,7 @@ class TeamsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request (optional)
+     * @param  \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1TeamsUpdateRoomRequest $post_api_v1_teams_update_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1TeamsUpdateRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

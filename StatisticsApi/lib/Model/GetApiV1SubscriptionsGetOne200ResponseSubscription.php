@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Model;
+namespace WebMIRocketChatApiClientStatisticsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatStatisticsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1SubscriptionsGetOne200ResponseSubscription Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -67,7 +67,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
         'rid' => 'string',
         'name' => 'string',
         't' => 'string',
-        'u' => '\RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscriptionU',
+        'u' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscriptionU',
         '_updated_at' => 'string',
         'ls' => 'string'
     ];
@@ -646,7 +646,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
     /**
      * Gets u
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscriptionU|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscriptionU|null
      */
     public function getU()
     {
@@ -656,7 +656,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
     /**
      * Sets u
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscriptionU|null $u u
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscriptionU|null $u u
      *
      * @return self
      */

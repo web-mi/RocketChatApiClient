@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**teams** | [**\RocketChatRoomsApi\Model\GetApiV1TeamsListAll200ResponseTeamsInner[]**](GetApiV1TeamsListAll200ResponseTeamsInner.md) |  | [optional]
+**teams** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsListAll200ResponseTeamsInner[]**](GetApiV1TeamsListAll200ResponseTeamsInner.md) |  | [optional]
 **total** | **int** |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]

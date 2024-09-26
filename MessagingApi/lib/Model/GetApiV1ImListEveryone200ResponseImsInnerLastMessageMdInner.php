@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner implements Mod
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]'
+        'value' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner implements Mod
     /**
      * Gets value
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInner implements Mod
     /**
      * Sets value
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]|null $value value
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]|null $value value
      *
      * @return self
      */

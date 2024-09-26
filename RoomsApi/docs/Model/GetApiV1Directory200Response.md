@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**result** | [**\RocketChatRoomsApi\Model\GetApiV1Directory200ResponseResultInner[]**](GetApiV1Directory200ResponseResultInner.md) |  | [optional]
+**result** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200ResponseResultInner[]**](GetApiV1Directory200ResponseResultInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

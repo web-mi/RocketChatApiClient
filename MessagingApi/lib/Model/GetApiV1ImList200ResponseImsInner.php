@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImList200ResponseImsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -71,7 +71,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
         '_updated_at' => 'string',
         '_usernames' => 'string[]',
         'e2e_key_id' => 'string',
-        'last_message' => '\RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInner',
+        'last_message' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInner',
         'lm' => 'string',
         'topic' => 'string'
     ];
@@ -782,7 +782,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
     /**
      * Gets last_message
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInner|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInner|null
      */
     public function getLastMessage()
     {
@@ -792,7 +792,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
     /**
      * Sets last_message
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInner|null $last_message last_message
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInner|null $last_message last_message
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValueInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,8 +59,8 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValue
     protected static $openAPITypes = [
         'type' => 'string',
         'value' => 'string',
-        'src' => '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner',
-        'label' => '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]'
+        'src' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner',
+        'label' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]'
     ];
 
     /**
@@ -367,7 +367,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValue
     /**
      * Gets src
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner|null
      */
     public function getSrc()
     {
@@ -377,7 +377,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValue
     /**
      * Sets src
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner|null $src src
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner|null $src src
      *
      * @return self
      */
@@ -394,7 +394,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValue
     /**
      * Gets label
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]|null
      */
     public function getLabel()
     {
@@ -404,7 +404,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInnerValue
     /**
      * Sets label
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]|null $label label
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInnerValueInner[]|null $label label
      *
      * @return self
      */

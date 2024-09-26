@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatNotificationsApi\Model;
+namespace WebMIRocketChatApiClientNotificationsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatNotificationsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
 
 /**
  * GetApiV1PushGet200ResponseDataMessageMdInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]'
+        'value' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
     /**
      * Gets value
      *
-     * @return \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]|null
+     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
     /**
      * Sets value
      *
-     * @param \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]|null $value value
+     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]|null $value value
      *
      * @return self
      */

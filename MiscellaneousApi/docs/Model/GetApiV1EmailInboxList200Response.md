@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**email_inboxes** | [**\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInner[]**](GetApiV1EmailInboxList200ResponseEmailInboxesInner.md) |  | [optional]
+**email_inboxes** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInner[]**](GetApiV1EmailInboxList200ResponseEmailInboxesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

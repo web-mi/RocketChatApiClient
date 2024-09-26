@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatVisitor200ResponseVisitor Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,9 +63,9 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
         'ts' => 'string',
         '_updated_at' => 'string',
         'name' => 'string',
-        'phone' => '\RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]',
+        'phone' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]',
         'token' => 'string',
-        'visitor_emails' => '\RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]',
+        'visitor_emails' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]',
         'department' => 'string'
     ];
 
@@ -517,7 +517,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
     /**
      * Gets phone
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]|null
      */
     public function getPhone()
     {
@@ -527,7 +527,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
     /**
      * Sets phone
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]|null $phone phone
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]|null $phone phone
      *
      * @return self
      */
@@ -571,7 +571,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
     /**
      * Gets visitor_emails
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null
      */
     public function getVisitorEmails()
     {
@@ -581,7 +581,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
     /**
      * Sets visitor_emails
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null $visitor_emails visitor_emails
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null $visitor_emails visitor_emails
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\LivechatDepartmentsApi
+# WebMIRocketChatApiClientOmnichannelApi\LivechatDepartmentsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -28,7 +28,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1LivechatDepartmentId()`
 
 ```php
-deleteApiV1LivechatDepartmentId($x_auth_token, $x_user_id, $_id): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+deleteApiV1LivechatDepartmentId($x_auth_token, $x_user_id, $_id): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Remove Department
@@ -43,7 +43,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -70,7 +70,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -88,7 +88,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDepartmentsAmountOfChats()`
 
 ```php
-getApiV1LivechatAnalyticsDepartmentsAmountOfChats($x_auth_token, $x_user_id, $start, $end, $offset, $count, $answered, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response
+getApiV1LivechatAnalyticsDepartmentsAmountOfChats($x_auth_token, $x_user_id, $start, $end, $offset, $count, $answered, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response
 ```
 
 Get Number of Chats
@@ -103,7 +103,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -140,7 +140,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response.md)
 
 ### Authorization
 
@@ -158,7 +158,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime()`
 
 ```php
-getApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200Response
+getApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200Response
 ```
 
 Get Average Chat Duration
@@ -173,7 +173,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -208,7 +208,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200Response.md)
 
 ### Authorization
 
@@ -226,7 +226,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDepartmentsAverageServiceTime()`
 
 ```php
-getApiV1LivechatAnalyticsDepartmentsAverageServiceTime($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200Response
+getApiV1LivechatAnalyticsDepartmentsAverageServiceTime($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200Response
 ```
 
 Get Average Service Time
@@ -241,7 +241,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -276,7 +276,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200Response.md)
 
 ### Authorization
 
@@ -294,7 +294,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDepartmentsAverageWaitingTime()`
 
 ```php
-getApiV1LivechatAnalyticsDepartmentsAverageWaitingTime($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200Response
+getApiV1LivechatAnalyticsDepartmentsAverageWaitingTime($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200Response
 ```
 
 Get Average Waiting Time
@@ -309,7 +309,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -344,7 +344,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200Response.md)
 
 ### Authorization
 
@@ -362,7 +362,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats()`
 
 ```php
-getApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200Response
+getApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200Response
 ```
 
 Get Percentage of Abandoned Chats
@@ -377,7 +377,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -412,7 +412,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200Response.md)
 
 ### Authorization
 
@@ -430,7 +430,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats()`
 
 ```php
-getApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200Response
+getApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200Response
 ```
 
 Get Total Abandoned Chats
@@ -445,7 +445,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -480,7 +480,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200Response.md)
 
 ### Authorization
 
@@ -498,7 +498,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDepartmentsTotalServiceTime()`
 
 ```php
-getApiV1LivechatAnalyticsDepartmentsTotalServiceTime($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalServiceTime206Response
+getApiV1LivechatAnalyticsDepartmentsTotalServiceTime($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalServiceTime206Response
 ```
 
 Get Total Service Time
@@ -513,7 +513,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -548,7 +548,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalServiceTime206Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsTotalServiceTime206Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalServiceTime206Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsTotalServiceTime206Response.md)
 
 ### Authorization
 
@@ -566,7 +566,7 @@ No authorization required
 ## `getApiV1LivechatAnalyticsDepartmentsTotalTransferredChats()`
 
 ```php
-getApiV1LivechatAnalyticsDepartmentsTotalTransferredChats($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206Response
+getApiV1LivechatAnalyticsDepartmentsTotalTransferredChats($x_auth_token, $x_user_id, $start, $end, $offset, $count, $department_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206Response
 ```
 
 Get Total Transferred Chats
@@ -581,7 +581,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -616,7 +616,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206Response**](../Model/GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206Response.md)
 
 ### Authorization
 
@@ -634,7 +634,7 @@ No authorization required
 ## `getApiV1LivechatDepartment()`
 
 ```php
-getApiV1LivechatDepartment($x_auth_token, $x_user_id, $text, $enabled, $show_archived, $only_my_departments, $exclude_department_id, $offset, $count, $sort): \RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartment200Response
+getApiV1LivechatDepartment($x_auth_token, $x_user_id, $text, $enabled, $show_archived, $only_my_departments, $exclude_department_id, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartment200Response
 ```
 
 Get List of Departments
@@ -649,7 +649,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -690,7 +690,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartment200Response**](../Model/GetApiV1LivechatDepartment200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartment200Response**](../Model/GetApiV1LivechatDepartment200Response.md)
 
 ### Authorization
 
@@ -723,7 +723,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -772,7 +772,7 @@ No authorization required
 ## `getApiV1LivechatDepartmentId()`
 
 ```php
-getApiV1LivechatDepartmentId($x_auth_token, $x_user_id, $_id, $include_agents): \RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentId200Response
+getApiV1LivechatDepartmentId($x_auth_token, $x_user_id, $_id, $include_agents): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200Response
 ```
 
 Get Department Information
@@ -787,7 +787,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -816,7 +816,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentId200Response**](../Model/GetApiV1LivechatDepartmentId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200Response**](../Model/GetApiV1LivechatDepartmentId200Response.md)
 
 ### Authorization
 
@@ -834,7 +834,7 @@ No authorization required
 ## `getApiV1LivechatDepartmentIdAgents()`
 
 ```php
-getApiV1LivechatDepartmentIdAgents($x_auth_token, $x_user_id, $_id, $offset, $count, $sort): \RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200Response
+getApiV1LivechatDepartmentIdAgents($x_auth_token, $x_user_id, $_id, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200Response
 ```
 
 Get Agents of Department
@@ -849,7 +849,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -882,7 +882,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200Response**](../Model/GetApiV1LivechatDepartmentIdAgents200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200Response**](../Model/GetApiV1LivechatDepartmentIdAgents200Response.md)
 
 ### Authorization
 
@@ -900,7 +900,7 @@ No authorization required
 ## `getApiV1LivechatDepartmentListByIds()`
 
 ```php
-getApiV1LivechatDepartmentListByIds($x_auth_token, $x_user_id, $ids): \RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentListByIds200Response
+getApiV1LivechatDepartmentListByIds($x_auth_token, $x_user_id, $ids): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentListByIds200Response
 ```
 
 Get Departments by ID
@@ -915,7 +915,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -942,7 +942,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentListByIds200Response**](../Model/GetApiV1LivechatDepartmentListByIds200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentListByIds200Response**](../Model/GetApiV1LivechatDepartmentListByIds200Response.md)
 
 ### Authorization
 
@@ -960,7 +960,7 @@ No authorization required
 ## `getApiV1LivechatDepartmentsAvailableByUnitUnitId()`
 
 ```php
-getApiV1LivechatDepartmentsAvailableByUnitUnitId($x_auth_token, $x_user_id, $unit_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentsAvailableByUnitUnitId200Response
+getApiV1LivechatDepartmentsAvailableByUnitUnitId($x_auth_token, $x_user_id, $unit_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentsAvailableByUnitUnitId200Response
 ```
 
 Get Available Departments by Unit ID
@@ -975,7 +975,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1002,7 +1002,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentsAvailableByUnitUnitId200Response**](../Model/GetApiV1LivechatDepartmentsAvailableByUnitUnitId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentsAvailableByUnitUnitId200Response**](../Model/GetApiV1LivechatDepartmentsAvailableByUnitUnitId200Response.md)
 
 ### Authorization
 
@@ -1020,7 +1020,7 @@ No authorization required
 ## `getApiV1LivechatDepartmentsByUnitUnitId()`
 
 ```php
-getApiV1LivechatDepartmentsByUnitUnitId($x_auth_token, $x_user_id, $start, $end, $unitid): \RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200Response
+getApiV1LivechatDepartmentsByUnitUnitId($x_auth_token, $x_user_id, $start, $end, $unitid): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200Response
 ```
 
 Get Departments by Unit ID
@@ -1035,7 +1035,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1066,7 +1066,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200Response**](../Model/GetApiV1LivechatDepartmentsByUnitUnitId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentsByUnitUnitId200Response**](../Model/GetApiV1LivechatDepartmentsByUnitUnitId200Response.md)
 
 ### Authorization
 
@@ -1084,7 +1084,7 @@ No authorization required
 ## `postApiV1LivechatDepartment()`
 
 ```php
-postApiV1LivechatDepartment($x_auth_token, $x_user_id, $post_api_v1_livechat_department_request): \RocketChatOmnichannelApi\Model\PostApiV1LivechatDepartment200Response
+postApiV1LivechatDepartment($x_auth_token, $x_user_id, $post_api_v1_livechat_department_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartment200Response
 ```
 
 Register New Department
@@ -1099,14 +1099,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_livechat_department_request = {"department":{"enabled":false,"showOnRegistration":true,"name":"new from api","email":"john@doe.com","showOnOfflineForm":true},"agents":[{"agentId":"SQafHvoFPuB57NmBD"}]}; // \RocketChatOmnichannelApi\Model\PostApiV1LivechatDepartmentRequest
+$post_api_v1_livechat_department_request = {"department":{"enabled":false,"showOnRegistration":true,"name":"new from api","email":"john@doe.com","showOnOfflineForm":true},"agents":[{"agentId":"SQafHvoFPuB57NmBD"}]}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatDepartment($x_auth_token, $x_user_id, $post_api_v1_livechat_department_request);
@@ -1122,11 +1122,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_livechat_department_request** | [**\RocketChatOmnichannelApi\Model\PostApiV1LivechatDepartmentRequest**](../Model/PostApiV1LivechatDepartmentRequest.md)|  | [optional] |
+| **post_api_v1_livechat_department_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentRequest**](../Model/PostApiV1LivechatDepartmentRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\PostApiV1LivechatDepartment200Response**](../Model/PostApiV1LivechatDepartment200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartment200Response**](../Model/PostApiV1LivechatDepartment200Response.md)
 
 ### Authorization
 
@@ -1144,7 +1144,7 @@ No authorization required
 ## `postApiV1LivechatDepartmentIdAgents()`
 
 ```php
-postApiV1LivechatDepartmentIdAgents($x_auth_token, $x_user_id, $_id, $post_api_v1_livechat_department_id_agents_request): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postApiV1LivechatDepartmentIdAgents($x_auth_token, $x_user_id, $_id, $post_api_v1_livechat_department_id_agents_request): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Update Agents of Department
@@ -1159,7 +1159,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1167,7 +1167,7 @@ $apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $_id = '_id_example'; // string | The department ID.
-$post_api_v1_livechat_department_id_agents_request = {"upsert":[{"agentId":"6529401b024dde05d3f1cd85","username":"kim"}],"remove":[]}; // \RocketChatOmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequest
+$post_api_v1_livechat_department_id_agents_request = {"upsert":[{"agentId":"6529401b024dde05d3f1cd85","username":"kim"}],"remove":[]}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatDepartmentIdAgents($x_auth_token, $x_user_id, $_id, $post_api_v1_livechat_department_id_agents_request);
@@ -1184,11 +1184,11 @@ try {
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **_id** | **string**| The department ID. | |
-| **post_api_v1_livechat_department_id_agents_request** | [**\RocketChatOmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequest**](../Model/PostApiV1LivechatDepartmentIdAgentsRequest.md)|  | [optional] |
+| **post_api_v1_livechat_department_id_agents_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequest**](../Model/PostApiV1LivechatDepartmentIdAgentsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -1206,7 +1206,7 @@ No authorization required
 ## `putApiV1LivechatDepartmentId()`
 
 ```php
-putApiV1LivechatDepartmentId($x_auth_token, $x_user_id, $_id, $put_api_v1_livechat_department_id_request): \RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentId200Response
+putApiV1LivechatDepartmentId($x_auth_token, $x_user_id, $_id, $put_api_v1_livechat_department_id_request): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200Response
 ```
 
 Update Department
@@ -1221,7 +1221,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatDepartmentsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1229,7 +1229,7 @@ $apiInstance = new RocketChatOmnichannelApi\Api\LivechatDepartmentsApi(
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $_id = '_id_example'; // string | The department ID.
-$put_api_v1_livechat_department_id_request = {"department":{"enabled":true,"name":"new from api - live","showOnRegistration":true,"email":"test@test.com","showOnOfflineForm":false},"agents":[{"agentId":"SQafHvoFPuB57NmBD","username":"john.doe"}]}; // \RocketChatOmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequest
+$put_api_v1_livechat_department_id_request = {"department":{"enabled":true,"name":"new from api - live","showOnRegistration":true,"email":"test@test.com","showOnOfflineForm":false},"agents":[{"agentId":"SQafHvoFPuB57NmBD","username":"john.doe"}]}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequest
 
 try {
     $result = $apiInstance->putApiV1LivechatDepartmentId($x_auth_token, $x_user_id, $_id, $put_api_v1_livechat_department_id_request);
@@ -1246,11 +1246,11 @@ try {
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **_id** | **string**| The department ID. | |
-| **put_api_v1_livechat_department_id_request** | [**\RocketChatOmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequest**](../Model/PutApiV1LivechatDepartmentIdRequest.md)|  | [optional] |
+| **put_api_v1_livechat_department_id_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequest**](../Model/PutApiV1LivechatDepartmentIdRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentId200Response**](../Model/GetApiV1LivechatDepartmentId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentId200Response**](../Model/GetApiV1LivechatDepartmentId200Response.md)
 
 ### Authorization
 

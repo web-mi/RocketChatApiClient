@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsMembers200ResponseMembersInnerUser Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
         'username' => 'string',
         'name' => 'string',
         'status' => 'string',
-        'settings' => '\RocketChatRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings'
+        'settings' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings'
     ];
 
     /**
@@ -428,7 +428,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
     /**
      * Gets settings
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings|null
      */
     public function getSettings()
     {
@@ -438,7 +438,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
     /**
      * Sets settings
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings|null $settings settings
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings|null $settings settings
      *
      * @return self
      */

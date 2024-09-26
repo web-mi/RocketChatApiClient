@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTagsList200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatTagsList200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'tags' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]',
+        'tags' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatTagsList200Response implements ModelInterface, ArrayAccess
     /**
      * Gets tags
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]|null
      */
     public function getTags()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatTagsList200Response implements ModelInterface, ArrayAccess
     /**
      * Sets tags
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]|null $tags tags
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTagsList200ResponseTagsInner[]|null $tags tags
      *
      * @return self
      */

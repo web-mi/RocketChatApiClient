@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**users** | [**\RocketChatUserManagementApi\Model\GetApiV1UsersListByStatus200ResponseUsersInner[]**](GetApiV1UsersListByStatus200ResponseUsersInner.md) |  | [optional]
+**users** | [**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200ResponseUsersInner[]**](GetApiV1UsersListByStatus200ResponseUsersInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatContentManagementApi\Model;
+namespace WebMIRocketChatApiClientContentManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatContentManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1EmojiCustomList200ResponseEmojis Class Doc Comment
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]',
-        'remove' => '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]'
+        'update' => '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]',
+        'remove' => '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]'
     ];
 
     /**
@@ -299,7 +299,7 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
     /**
      * Gets update
      *
-     * @return \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null
      */
     public function getUpdate()
     {
@@ -309,7 +309,7 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
     /**
      * Sets update
      *
-     * @param \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null $update update
+     * @param \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null $update update
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
     /**
      * Gets remove
      *
-     * @return \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null
      */
     public function getRemove()
     {
@@ -336,7 +336,7 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
     /**
      * Sets remove
      *
-     * @param \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null $remove remove
+     * @param \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null $remove remove
      *
      * @return self
      */

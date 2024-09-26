@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMarketplaceAppsApi
+ * @package  WebMIRocketChatApiClientMarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMarketplaceAppsApi\Model;
+namespace WebMIRocketChatApiClientMarketplaceAppsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMarketplaceAppsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMarketplaceAppsApi\ObjectSerializer;
 
 /**
  * PostApiApps200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMarketplaceAppsApi
+ * @package  WebMIRocketChatApiClientMarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
       * @var string[]
       */
     protected static $openAPITypes = [
-        'app' => '\RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseApp',
-        'implemented' => '\RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseImplemented',
-        'license_validation' => '\RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation',
+        'app' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseApp',
+        'implemented' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseImplemented',
+        'license_validation' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation',
         'success' => 'bool'
     ];
 
@@ -313,7 +313,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets app
      *
-     * @return \RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseApp|null
+     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseApp|null
      */
     public function getApp()
     {
@@ -323,7 +323,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets app
      *
-     * @param \RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseApp|null $app app
+     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseApp|null $app app
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets implemented
      *
-     * @return \RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseImplemented|null
+     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseImplemented|null
      */
     public function getImplemented()
     {
@@ -350,7 +350,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets implemented
      *
-     * @param \RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseImplemented|null $implemented implemented
+     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseImplemented|null $implemented implemented
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Gets license_validation
      *
-     * @return \RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation|null
+     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation|null
      */
     public function getLicenseValidation()
     {
@@ -377,7 +377,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
     /**
      * Sets license_validation
      *
-     * @param \RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation|null $license_validation license_validation
+     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation|null $license_validation license_validation
      *
      * @return self
      */

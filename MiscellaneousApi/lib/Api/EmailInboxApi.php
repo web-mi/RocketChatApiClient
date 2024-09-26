@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Api;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatMiscellaneousApi\ApiException;
-use RocketChatMiscellaneousApi\Configuration;
-use RocketChatMiscellaneousApi\HeaderSelector;
-use RocketChatMiscellaneousApi\ObjectSerializer;
+use WebMIRocketChatApiClientMiscellaneousApi\ApiException;
+use WebMIRocketChatApiClientMiscellaneousApi\Configuration;
+use WebMIRocketChatApiClientMiscellaneousApi\HeaderSelector;
+use WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * EmailInboxApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -147,9 +147,9 @@ class EmailInboxApi
      * @param  string $_id Email inbox ID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1EmailInboxId'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
      */
     public function deleteApiV1EmailInboxId($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['deleteApiV1EmailInboxId'][0])
     {
@@ -167,9 +167,9 @@ class EmailInboxApi
      * @param  string $_id Email inbox ID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1EmailInboxId'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteApiV1EmailInboxIdWithHttpInfo($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['deleteApiV1EmailInboxId'][0])
     {
@@ -212,11 +212,11 @@ class EmailInboxApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -234,16 +234,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -261,16 +261,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -288,16 +288,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -315,13 +315,13 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -354,7 +354,7 @@ class EmailInboxApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -362,7 +362,7 @@ class EmailInboxApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -370,7 +370,7 @@ class EmailInboxApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -378,7 +378,7 @@ class EmailInboxApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -426,7 +426,7 @@ class EmailInboxApi
      */
     public function deleteApiV1EmailInboxIdAsyncWithHttpInfo($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['deleteApiV1EmailInboxId'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
         $request = $this->deleteApiV1EmailInboxIdRequest($x_auth_token, $x_user_id, $_id, $contentType);
 
         return $this->client
@@ -591,9 +591,9 @@ class EmailInboxApi
      * @param  string $_id Email inbox ID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmailInboxId'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
      */
     public function getApiV1EmailInboxId($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['getApiV1EmailInboxId'][0])
     {
@@ -611,9 +611,9 @@ class EmailInboxApi
      * @param  string $_id Email inbox ID (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmailInboxId'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1EmailInboxIdWithHttpInfo($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['getApiV1EmailInboxId'][0])
     {
@@ -656,11 +656,11 @@ class EmailInboxApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -678,16 +678,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -705,16 +705,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -732,16 +732,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -759,13 +759,13 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -798,7 +798,7 @@ class EmailInboxApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -806,7 +806,7 @@ class EmailInboxApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -814,7 +814,7 @@ class EmailInboxApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -822,7 +822,7 @@ class EmailInboxApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -870,7 +870,7 @@ class EmailInboxApi
      */
     public function getApiV1EmailInboxIdAsyncWithHttpInfo($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['getApiV1EmailInboxId'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxId200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxId200Response';
         $request = $this->getApiV1EmailInboxIdRequest($x_auth_token, $x_user_id, $_id, $contentType);
 
         return $this->client
@@ -1039,9 +1039,9 @@ class EmailInboxApi
      * @param  string $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;{ \&quot;username\&quot;: 1 } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmailInboxList'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
      */
     public function getApiV1EmailInboxList($x_auth_token, $x_user_id, $offset = null, $sort = null, $count = null, $query = null, $fields = null, string $contentType = self::contentTypes['getApiV1EmailInboxList'][0])
     {
@@ -1063,9 +1063,9 @@ class EmailInboxApi
      * @param  string $fields This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;{ \&quot;username\&quot;: 1 } (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmailInboxList'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1EmailInboxListWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $sort = null, $count = null, $query = null, $fields = null, string $contentType = self::contentTypes['getApiV1EmailInboxList'][0])
     {
@@ -1108,11 +1108,11 @@ class EmailInboxApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1130,16 +1130,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1157,16 +1157,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1184,13 +1184,13 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1223,7 +1223,7 @@ class EmailInboxApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1231,7 +1231,7 @@ class EmailInboxApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1239,7 +1239,7 @@ class EmailInboxApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1295,7 +1295,7 @@ class EmailInboxApi
      */
     public function getApiV1EmailInboxListAsyncWithHttpInfo($x_auth_token, $x_user_id, $offset = null, $sort = null, $count = null, $query = null, $fields = null, string $contentType = self::contentTypes['getApiV1EmailInboxList'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList200Response';
         $request = $this->getApiV1EmailInboxListRequest($x_auth_token, $x_user_id, $offset, $sort, $count, $query, $fields, $contentType);
 
         return $this->client
@@ -1499,9 +1499,9 @@ class EmailInboxApi
      * @param  string $email Email inbox address (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmailInboxSearch'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
      */
     public function getApiV1EmailInboxSearch($x_auth_token, $x_user_id, $email, string $contentType = self::contentTypes['getApiV1EmailInboxSearch'][0])
     {
@@ -1519,9 +1519,9 @@ class EmailInboxApi
      * @param  string $email Email inbox address (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmailInboxSearch'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1EmailInboxSearchWithHttpInfo($x_auth_token, $x_user_id, $email, string $contentType = self::contentTypes['getApiV1EmailInboxSearch'][0])
     {
@@ -1564,11 +1564,11 @@ class EmailInboxApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1586,16 +1586,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1613,13 +1613,13 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1652,7 +1652,7 @@ class EmailInboxApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1660,7 +1660,7 @@ class EmailInboxApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1708,7 +1708,7 @@ class EmailInboxApi
      */
     public function getApiV1EmailInboxSearchAsyncWithHttpInfo($x_auth_token, $x_user_id, $email, string $contentType = self::contentTypes['getApiV1EmailInboxSearch'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxSearch200Response';
         $request = $this->getApiV1EmailInboxSearchRequest($x_auth_token, $x_user_id, $email, $contentType);
 
         return $this->client
@@ -1874,9 +1874,9 @@ class EmailInboxApi
      * @param  string $_id Email inbox id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmailInboxSendTestId'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
      */
     public function getApiV1EmailInboxSendTestId($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['getApiV1EmailInboxSendTestId'][0])
     {
@@ -1894,9 +1894,9 @@ class EmailInboxApi
      * @param  string $_id Email inbox id (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1EmailInboxSendTestId'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1EmailInboxSendTestIdWithHttpInfo($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['getApiV1EmailInboxSendTestId'][0])
     {
@@ -1939,11 +1939,11 @@ class EmailInboxApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1961,16 +1961,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1988,16 +1988,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2015,13 +2015,13 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2054,7 +2054,7 @@ class EmailInboxApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2062,7 +2062,7 @@ class EmailInboxApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2070,7 +2070,7 @@ class EmailInboxApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2118,7 +2118,7 @@ class EmailInboxApi
      */
     public function getApiV1EmailInboxSendTestIdAsyncWithHttpInfo($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['getApiV1EmailInboxSendTestId'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
         $request = $this->getApiV1EmailInboxSendTestIdRequest($x_auth_token, $x_user_id, $_id, $contentType);
 
         return $this->client
@@ -2280,12 +2280,12 @@ class EmailInboxApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request post_api_v1_email_inbox_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request post_api_v1_email_inbox_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmailInbox'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response
      */
     public function postApiV1EmailInbox($x_auth_token, $x_user_id, $post_api_v1_email_inbox_request = null, string $contentType = self::contentTypes['postApiV1EmailInbox'][0])
     {
@@ -2300,12 +2300,12 @@ class EmailInboxApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmailInbox'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1EmailInboxWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_email_inbox_request = null, string $contentType = self::contentTypes['postApiV1EmailInbox'][0])
     {
@@ -2348,11 +2348,11 @@ class EmailInboxApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2370,16 +2370,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2397,16 +2397,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2424,16 +2424,16 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 403:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -2451,13 +2451,13 @@ class EmailInboxApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -2490,7 +2490,7 @@ class EmailInboxApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2498,7 +2498,7 @@ class EmailInboxApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2506,7 +2506,7 @@ class EmailInboxApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2514,7 +2514,7 @@ class EmailInboxApi
                 case 403:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1EmailInboxList403Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -2531,7 +2531,7 @@ class EmailInboxApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmailInbox'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2554,7 +2554,7 @@ class EmailInboxApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmailInbox'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -2562,7 +2562,7 @@ class EmailInboxApi
      */
     public function postApiV1EmailInboxAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_email_inbox_request = null, string $contentType = self::contentTypes['postApiV1EmailInbox'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInbox200Response';
         $request = $this->postApiV1EmailInboxRequest($x_auth_token, $x_user_id, $post_api_v1_email_inbox_request, $contentType);
 
         return $this->client
@@ -2606,7 +2606,7 @@ class EmailInboxApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1EmailInboxRequest $post_api_v1_email_inbox_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1EmailInbox'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

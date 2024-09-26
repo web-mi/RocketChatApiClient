@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**departments** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200ResponseDepartmentsInner[]**](GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200ResponseDepartmentsInner.md) |  | [optional]
+**departments** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200ResponseDepartmentsInner[]**](GetApiV1LivechatAnalyticsDepartmentsAverageServiceTime200ResponseDepartmentsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

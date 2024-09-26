@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatContentManagementApi\Model;
+namespace WebMIRocketChatApiClientContentManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatContentManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientContentManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1EmojiCustomList200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatContentManagementApi
+ * @package  WebMIRocketChatApiClientContentManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1EmojiCustomList200Response implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'emojis' => '\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojis',
+        'emojis' => '\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojis',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1EmojiCustomList200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets emojis
      *
-     * @return \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojis|null
+     * @return \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojis|null
      */
     public function getEmojis()
     {
@@ -309,7 +309,7 @@ class GetApiV1EmojiCustomList200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets emojis
      *
-     * @param \RocketChatContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojis|null $emojis emojis
+     * @param \WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojis|null $emojis emojis
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1RoomsSaveNotificationRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1RoomsSaveNotificationRequest implements ModelInterface, ArrayAcce
       */
     protected static $openAPITypes = [
         'room_id' => 'string',
-        'notifications' => '\RocketChatRoomsApi\Model\PostApiV1RoomsSaveNotificationRequestNotifications'
+        'notifications' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveNotificationRequestNotifications'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1RoomsSaveNotificationRequest implements ModelInterface, ArrayAcce
     /**
      * Gets notifications
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1RoomsSaveNotificationRequestNotifications
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveNotificationRequestNotifications
      */
     public function getNotifications()
     {
@@ -342,7 +342,7 @@ class PostApiV1RoomsSaveNotificationRequest implements ModelInterface, ArrayAcce
     /**
      * Sets notifications
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1RoomsSaveNotificationRequestNotifications $notifications notifications
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveNotificationRequestNotifications $notifications notifications
      *
      * @return self
      */

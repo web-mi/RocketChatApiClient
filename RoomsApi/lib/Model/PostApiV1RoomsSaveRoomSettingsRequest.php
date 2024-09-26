@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1RoomsSaveRoomSettingsRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -80,7 +80,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
         'retention_override_global' => 'bool',
         'encrypted' => 'bool',
         'favorite' => 'object',
-        'sidepanel' => '\RocketChatRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel'
+        'sidepanel' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel'
     ];
 
     /**
@@ -1077,7 +1077,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
     /**
      * Gets sidepanel
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null
      */
     public function getSidepanel()
     {
@@ -1087,7 +1087,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
     /**
      * Sets sidepanel
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null $sidepanel sidepanel
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null $sidepanel sidepanel
      *
      * @return self
      */

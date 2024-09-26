@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatBusinessHours200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatBusinessHours200Response implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'business_hours' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner[]',
+        'business_hours' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatBusinessHours200Response implements ModelInterface, ArrayA
     /**
      * Gets business_hours
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner[]|null
      */
     public function getBusinessHours()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatBusinessHours200Response implements ModelInterface, ArrayA
     /**
      * Sets business_hours
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner[]|null $business_hours business_hours
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInner[]|null $business_hours business_hours
      *
      * @return self
      */

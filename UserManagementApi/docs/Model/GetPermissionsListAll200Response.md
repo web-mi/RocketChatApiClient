@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**update** | [**\RocketChatUserManagementApi\Model\GetPermissionsListAll200ResponseUpdateInner[]**](GetPermissionsListAll200ResponseUpdateInner.md) |  | [optional]
+**update** | [**\WebMIRocketChatApiClientUserManagementApi\Model\GetPermissionsListAll200ResponseUpdateInner[]**](GetPermissionsListAll200ResponseUpdateInner.md) |  | [optional]
 **remove** | **object[]** |  | [optional]
 **success** | **bool** |  | [optional]
 

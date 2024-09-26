@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **text** | **string** |  | [optional]
 **scope** | **string** |  | [optional]
 **user_id** | **string** |  | [optional]
-**created_by** | [**\RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser**](PostApiV1LivechatUsersType200ResponseUser.md) |  | [optional]
+**created_by** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser**](PostApiV1LivechatUsersType200ResponseUser.md) |  | [optional]
 **_created_at** | **string** |  | [optional]
 **_updated_at** | **string** |  | [optional]
 

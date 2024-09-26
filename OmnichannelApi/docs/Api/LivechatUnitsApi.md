@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\LivechatUnitsApi
+# WebMIRocketChatApiClientOmnichannelApi\LivechatUnitsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -20,7 +20,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1LivechatUnitsId()`
 
 ```php
-deleteApiV1LivechatUnitsId($id, $x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+deleteApiV1LivechatUnitsId($id, $x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Delete a Unit
@@ -35,7 +35,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -62,7 +62,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -80,7 +80,7 @@ No authorization required
 ## `getApiV1LivechatUnits()`
 
 ```php
-getApiV1LivechatUnits($x_auth_token, $x_user_id, $text, $offset, $count, $sort): \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnits200Response
+getApiV1LivechatUnits($x_auth_token, $x_user_id, $text, $offset, $count, $sort): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response
 ```
 
 Get List of Units
@@ -95,7 +95,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -128,7 +128,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUnits200Response**](../Model/GetApiV1LivechatUnits200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnits200Response**](../Model/GetApiV1LivechatUnits200Response.md)
 
 ### Authorization
 
@@ -146,7 +146,7 @@ No authorization required
 ## `getApiV1LivechatUnitsGetOne()`
 
 ```php
-getApiV1LivechatUnitsGetOne($x_auth_token, $x_user_id, $unit_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response
+getApiV1LivechatUnitsGetOne($x_auth_token, $x_user_id, $unit_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response
 ```
 
 Get One Unit
@@ -161,7 +161,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -188,7 +188,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response**](../Model/GetApiV1LivechatUnitsGetOne200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsGetOne200Response**](../Model/GetApiV1LivechatUnitsGetOne200Response.md)
 
 ### Authorization
 
@@ -206,7 +206,7 @@ No authorization required
 ## `getApiV1LivechatUnitsList()`
 
 ```php
-getApiV1LivechatUnitsList($x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response
+getApiV1LivechatUnitsList($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response
 ```
 
 List of Units
@@ -221,7 +221,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -246,7 +246,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response**](../Model/GetApiV1LivechatUnitsList200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsList200Response**](../Model/GetApiV1LivechatUnitsList200Response.md)
 
 ### Authorization
 
@@ -264,7 +264,7 @@ No authorization required
 ## `getApiV1LivechatUnitsMonitorsList()`
 
 ```php
-getApiV1LivechatUnitsMonitorsList($x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response
+getApiV1LivechatUnitsMonitorsList($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response
 ```
 
 List of Unit Monitors
@@ -279,7 +279,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -304,7 +304,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response**](../Model/GetApiV1LivechatUnitsMonitorsList200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsMonitorsList200Response**](../Model/GetApiV1LivechatUnitsMonitorsList200Response.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ No authorization required
 ## `getApiV1LivechatUnitsUnitId()`
 
 ```php
-getApiV1LivechatUnitsUnitId($unit_id, $x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response
+getApiV1LivechatUnitsUnitId($unit_id, $x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response
 ```
 
 Get a Unit
@@ -337,7 +337,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -364,7 +364,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response**](../Model/GetApiV1LivechatUnitsUnitId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response**](../Model/GetApiV1LivechatUnitsUnitId200Response.md)
 
 ### Authorization
 
@@ -382,7 +382,7 @@ No authorization required
 ## `getApiV1LivechatUnitsUnitIdDepartments()`
 
 ```php
-getApiV1LivechatUnitsUnitIdDepartments($unit_id, $x_auth_token, $x_user_id, $offset, $count): \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response
+getApiV1LivechatUnitsUnitIdDepartments($unit_id, $x_auth_token, $x_user_id, $offset, $count): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response
 ```
 
 Get Departments by Unit ID
@@ -397,7 +397,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -428,7 +428,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response**](../Model/GetApiV1LivechatUnitsUnitIdDepartments200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartments200Response**](../Model/GetApiV1LivechatUnitsUnitIdDepartments200Response.md)
 
 ### Authorization
 
@@ -446,7 +446,7 @@ No authorization required
 ## `getApiV1LivechatUnitsUnitIdDepartmentsAvailable()`
 
 ```php
-getApiV1LivechatUnitsUnitIdDepartmentsAvailable($unit_id, $x_auth_token, $x_user_id, $offset, $count, $text, $only_my_departments): \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response
+getApiV1LivechatUnitsUnitIdDepartmentsAvailable($unit_id, $x_auth_token, $x_user_id, $offset, $count, $text, $only_my_departments): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response
 ```
 
 Get Available Departments by Unit Id
@@ -461,7 +461,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -496,7 +496,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response**](../Model/GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response**](../Model/GetApiV1LivechatUnitsUnitIdDepartmentsAvailable200Response.md)
 
 ### Authorization
 
@@ -514,7 +514,7 @@ No authorization required
 ## `getApiV1LivechatUnitsUnitIdMonitors()`
 
 ```php
-getApiV1LivechatUnitsUnitIdMonitors($unit_id, $x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response
+getApiV1LivechatUnitsUnitIdMonitors($unit_id, $x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response
 ```
 
 Get List of Unit Monitors
@@ -529,7 +529,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -556,7 +556,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response**](../Model/GetApiV1LivechatUnitsUnitIdMonitors200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200Response**](../Model/GetApiV1LivechatUnitsUnitIdMonitors200Response.md)
 
 ### Authorization
 
@@ -574,7 +574,7 @@ No authorization required
 ## `postApiV1LivechatUnits()`
 
 ```php
-postApiV1LivechatUnits($x_auth_token, $x_user_id, $post_api_v1_livechat_units_request): \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnits200Response
+postApiV1LivechatUnits($x_auth_token, $x_user_id, $post_api_v1_livechat_units_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response
 ```
 
 Create Unit
@@ -589,14 +589,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_livechat_units_request = {"unitData":{"name":"unitxx2","visibility":"public"},"unitMonitors":[{"monitorId":"GT67Tv6x5p5y5xZWN","username":"testerio"}],"unitDepartments":[{"departmentId":"CgM4vfNNtj8t4QEMd"}]}; // \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsRequest
+$post_api_v1_livechat_units_request = {"unitData":{"name":"unitxx2","visibility":"public"},"unitMonitors":[{"monitorId":"GT67Tv6x5p5y5xZWN","username":"testerio"}],"unitDepartments":[{"departmentId":"CgM4vfNNtj8t4QEMd"}]}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatUnits($x_auth_token, $x_user_id, $post_api_v1_livechat_units_request);
@@ -612,11 +612,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_livechat_units_request** | [**\RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsRequest**](../Model/PostApiV1LivechatUnitsRequest.md)|  | [optional] |
+| **post_api_v1_livechat_units_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsRequest**](../Model/PostApiV1LivechatUnitsRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\PostApiV1LivechatUnits200Response**](../Model/PostApiV1LivechatUnits200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response**](../Model/PostApiV1LivechatUnits200Response.md)
 
 ### Authorization
 
@@ -634,7 +634,7 @@ No authorization required
 ## `postApiV1LivechatUnitsId()`
 
 ```php
-postApiV1LivechatUnitsId($id, $x_auth_token, $x_user_id, $post_api_v1_livechat_units_id_request): \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnits200Response
+postApiV1LivechatUnitsId($id, $x_auth_token, $x_user_id, $post_api_v1_livechat_units_id_request): \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response
 ```
 
 Update Unit
@@ -649,7 +649,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatUnitsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -657,7 +657,7 @@ $apiInstance = new RocketChatOmnichannelApi\Api\LivechatUnitsApi(
 $id = 'id_example'; // string | The unit ID that you want to update.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_livechat_units_id_request = {"unitData":{"name":"unitxx2","visibility":"private"},"unitMonitors":[{"monitorId":"GT67Tv6x5p5y5xZWN","username":"testerio"}],"unitDepartments":[{"departmentId":"CgM4vfNNtj8t4QEMd"}]}; // \RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest
+$post_api_v1_livechat_units_id_request = {"unitData":{"name":"unitxx2","visibility":"private"},"unitMonitors":[{"monitorId":"GT67Tv6x5p5y5xZWN","username":"testerio"}],"unitDepartments":[{"departmentId":"CgM4vfNNtj8t4QEMd"}]}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatUnitsId($id, $x_auth_token, $x_user_id, $post_api_v1_livechat_units_id_request);
@@ -674,11 +674,11 @@ try {
 | **id** | **string**| The unit ID that you want to update. | |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_livechat_units_id_request** | [**\RocketChatOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest**](../Model/PostApiV1LivechatUnitsIdRequest.md)|  | [optional] |
+| **post_api_v1_livechat_units_id_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest**](../Model/PostApiV1LivechatUnitsIdRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\PostApiV1LivechatUnits200Response**](../Model/PostApiV1LivechatUnits200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUnits200Response**](../Model/PostApiV1LivechatUnits200Response.md)
 
 ### Authorization
 

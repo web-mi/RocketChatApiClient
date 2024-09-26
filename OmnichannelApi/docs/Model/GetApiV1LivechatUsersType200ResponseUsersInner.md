@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **status** | **string** |  | [optional]
 **status_livechat** | **string** |  | [optional]
 **name** | **string** |  | [optional]
-**emails** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]**](GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner.md) |  | [optional]
+**emails** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]**](GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner.md) |  | [optional]
 **livechat** | **string** |  | [optional]
 **departments** | **string[]** |  | [optional]
 

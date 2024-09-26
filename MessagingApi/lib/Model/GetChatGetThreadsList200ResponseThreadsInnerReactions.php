@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetChatGetThreadsList200ResponseThreadsInnerReactions Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'smile' => '\RocketChatMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile'
+        'smile' => '\WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile'
     ];
 
     /**
@@ -292,7 +292,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
     /**
      * Gets smile
      *
-     * @return \RocketChatMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile|null
      */
     public function getSmile()
     {
@@ -302,7 +302,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
     /**
      * Sets smile
      *
-     * @param \RocketChatMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile|null $smile smile
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile|null $smile smile
      *
      * @return self
      */

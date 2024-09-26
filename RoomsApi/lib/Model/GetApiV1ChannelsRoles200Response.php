@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsRoles200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChannelsRoles200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'roles' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsRoles200ResponseRolesInner[]',
+        'roles' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsRoles200ResponseRolesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChannelsRoles200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets roles
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsRoles200ResponseRolesInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsRoles200ResponseRolesInner[]|null
      */
     public function getRoles()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChannelsRoles200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets roles
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsRoles200ResponseRolesInner[]|null $roles roles
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsRoles200ResponseRolesInner[]|null $roles roles
      *
      * @return self
      */

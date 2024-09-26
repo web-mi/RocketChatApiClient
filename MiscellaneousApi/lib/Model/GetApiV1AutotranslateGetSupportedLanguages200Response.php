@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1AutotranslateGetSupportedLanguages200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'languages' => '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]',
+        'languages' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
     /**
      * Gets languages
      *
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]|null
      */
     public function getLanguages()
     {
@@ -309,7 +309,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
     /**
      * Sets languages
      *
-     * @param \RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]|null $languages languages
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]|null $languages languages
      *
      * @return self
      */

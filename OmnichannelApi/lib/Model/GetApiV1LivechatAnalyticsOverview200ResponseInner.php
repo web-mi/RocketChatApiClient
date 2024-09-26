@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsOverview200ResponseInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1LivechatAnalyticsOverview200ResponseInner implements ModelInterfac
       */
     protected static $openAPITypes = [
         'title' => 'string',
-        'value' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsOverview200ResponseInnerValue'
+        'value' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsOverview200ResponseInnerValue'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1LivechatAnalyticsOverview200ResponseInner implements ModelInterfac
     /**
      * Gets value
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsOverview200ResponseInnerValue|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsOverview200ResponseInnerValue|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetApiV1LivechatAnalyticsOverview200ResponseInner implements ModelInterfac
     /**
      * Sets value
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsOverview200ResponseInnerValue|null $value value
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsOverview200ResponseInnerValue|null $value value
      *
      * @return self
      */
