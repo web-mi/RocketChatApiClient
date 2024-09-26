@@ -19,67 +19,67 @@ jobs:
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/authentication.yaml
-          command-args: --additional-properties invokerPackage=RocketChat\\AuthenticationApi -o ./AuthenticationApi
+          command-args: --additional-properties invokerPackage=WebMI\RocketChatApiClient\AuthenticationApi -o ./AuthenticationApi
       - name: Generate Content Management API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/content-management.yaml
-          command-args: --additional-properties invokerPackage=RocketChat\\ContentManagementApi -o ./ContentManagementApi
+          command-args: --additional-properties invokerPackage=WebMI\RocketChatApiClient\ContentManagementApi -o ./ContentManagementApi
       - name: Generate Marketplace Apps API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/marketplace-apps.yaml
-          command-args: --additional-properties invokerPackage=RocketChat\\MarketplaceAppsApi -o ./MarketplaceAppsApi
+          command-args: --additional-properties invokerPackage=WebMI\RocketChatApiClient\MarketplaceAppsApi -o ./MarketplaceAppsApi
       - name: Generate Messaging API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/messaging.yaml
-          command-args: --additional-properties invokerPackage=RocketChat\\MessagingApi -o ./MessagingApi
+          command-args: --additional-properties invokerPackage=WebMI\RocketChatApiClient\MessagingApi -o ./MessagingApi
       - name: Generate Miscellaneous API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/miscellaneous.yaml
-          command-args: --additional-properties invokerPackage=RocketChat\\MiscellaneousApi -o ./MiscellaneousApi
+          command-args: --additional-properties invokerPackage=WebMI\RocketChatApiClient\MiscellaneousApi -o ./MiscellaneousApi
       - name: Generate Notifications API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/notifications.yaml
-          command-args: --additional-properties invokerPackage=RocketChat\\NotificationsApi -o ./NotificationsApi
+          command-args: --additional-properties invokerPackage=WebMI\RocketChatApiClient\NotificationsApi -o ./NotificationsApi
       - name: Generate Omnichannel API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/omnichannel.yaml
-          command-args: --additional-properties invokerPackage=RocketChat\\OmnichannelApi -o ./OmnichannelApi
+          command-args: --additional-properties invokerPackage=WebMI\RocketChatApiClient\OmnichannelApi -o ./OmnichannelApi
       - name: Generate Rooms API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/rooms.yaml
-          command-args: --additional-properties invokerPackage=RocketChat\\RoomsApi -o ./RoomsApi
+          command-args: --additional-properties invokerPackage=WebMI\RocketChatApiClient\RoomsApi -o ./RoomsApi
       - name: Generate Settings API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/settings.yaml
-          command-args: --skip-validate-spec --additional-properties invokerPackage=RocketChat\\SettingsApi -o ./SettingsApi
+          command-args: --skip-validate-spec --additional-properties invokerPackage=WebMI\RocketChatApiClient\SettingsApi -o ./SettingsApi
       - name: Generate Statistics API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/statistics.yaml
-          command-args: --additional-properties invokerPackage=RocketChat\\StatisticsApi -o ./StatisticsApi
+          command-args: --additional-properties invokerPackage=WebMI\RocketChatApiClient\StatisticsApi -o ./StatisticsApi
       - name: Generate User Management API
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/user-management.yaml
-          command-args: --skip-validate-spec --additional-properties invokerPackage=RocketChat\\UserManagementApi -o ./UserManagementApi
+          command-args: --skip-validate-spec --additional-properties invokerPackage=WebMI\RocketChatApiClient\UserManagementApi -o ./UserManagementApi
       - name: Commit APIs
         run: |
           git add .

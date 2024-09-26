@@ -1,5 +1,5 @@
 {
-    "name": "web-mi/rocket.chat-php-api-client",
+    "name": "web-mi/rocket.chat-api-client",
     "description": "Auto generated (by https://openapi-generator.tech) PHP Api Client from Rocket.chat OpenAPI Specification Repo",
     "keywords": [
         "openapitools",
@@ -33,32 +33,32 @@
     },
     "autoload": {
         "psr-4": {
-            "RocketChat\\AuthenticationApi\\" : "AuthenticationApi/lib/",
-            "RocketChat\\ContentManagementApi\\" : "ContentManagementApi/lib/",
-            "RocketChat\\MarketplaceAppsApi\\" : "MarketplaceAppsApi/lib/",
-            "RocketChat\\MessagingApi\\" : "MessagingApi/lib/",
-            "RocketChat\\MiscellaneousApi\\" : "MiscellaneousApi/lib/",
-            "RocketChat\\NotificationsApi\\" : "NotificationsApi/lib/",
-            "RocketChat\\OmnichannelApi\\" : "OmnichannelApi/lib/",
-            "RocketChat\\RoomsApi\\" : "RoomsApi/lib/",
-            "RocketChat\\SettingsApi\\" : "SettingsApi/lib/",
-            "RocketChat\\StatisticsApi\\" : "StatisticsApi/lib/",
-            "RocketChat\\UserManagementApi\\" : "UserManagementApi/lib/"
+            "WebMI\\RocketChatApiClient\\AuthenticationApi\\" : "AuthenticationApi/lib/",
+            "WebMI\\RocketChatApiClient\\ContentManagementApi\\" : "ContentManagementApi/lib/",
+            "WebMI\\RocketChatApiClient\\MarketplaceAppsApi\\" : "MarketplaceAppsApi/lib/",
+            "WebMI\\RocketChatApiClient\\MessagingApi\\" : "MessagingApi/lib/",
+            "WebMI\\RocketChatApiClient\\MiscellaneousApi\\" : "MiscellaneousApi/lib/",
+            "WebMI\\RocketChatApiClient\\NotificationsApi\\" : "NotificationsApi/lib/",
+            "WebMI\\RocketChatApiClient\\OmnichannelApi\\" : "OmnichannelApi/lib/",
+            "WebMI\\RocketChatApiClient\\RoomsApi\\" : "RoomsApi/lib/",
+            "WebMI\\RocketChatApiClient\\SettingsApi\\" : "SettingsApi/lib/",
+            "WebMI\\RocketChatApiClient\\StatisticsApi\\" : "StatisticsApi/lib/",
+            "WebMI\\RocketChatApiClient\\UserManagementApi\\" : "UserManagementApi/lib/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RocketChat\\AuthenticationApi\\Test\\" : "AuthenticationApi/test/",
-            "RocketChat\\ContentManagementApi\\Test\\" : "ContentManagementApi/test/",
-            "RocketChat\\MarketplaceAppsApi\\Test\\" : "MarketplaceAppsApi/test/",
-            "RocketChat\\MessagingApi\\Test\\" : "MessagingApi/test/",
-            "RocketChat\\MiscellaneousApi\\Test\\" : "MiscellaneousApi/test/",
-            "RocketChat\\NotificationsApi\\Test\\" : "NotificationsApi/test/",
-            "RocketChat\\OmnichannelApi\\Test\\" : "OmnichannelApi/test/",
-            "RocketChat\\RoomsApi\\Test\\" : "RoomsApi/test/",
-            "RocketChat\\SettingsApi\\Test\\" : "SettingsApi/test/",
-            "RocketChat\\StatisticsApi\\Test\\" : "StatisticsApi/test/",
-            "RocketChat\\UserManagementApi\\Test\\" : "UserManagementApi/test/"
+            "WebMI\\RocketChatApiClient\\AuthenticationApi\\Test\\" : "AuthenticationApi/test/",
+            "WebMI\\RocketChatApiClient\\ContentManagementApi\\Test\\" : "ContentManagementApi/test/",
+            "WebMI\\RocketChatApiClient\\MarketplaceAppsApi\\Test\\" : "MarketplaceAppsApi/test/",
+            "WebMI\\RocketChatApiClient\\MessagingApi\\Test\\" : "MessagingApi/test/",
+            "WebMI\\RocketChatApiClient\\MiscellaneousApi\\Test\\" : "MiscellaneousApi/test/",
+            "WebMI\\RocketChatApiClient\\NotificationsApi\\Test\\" : "NotificationsApi/test/",
+            "WebMI\\RocketChatApiClient\\OmnichannelApi\\Test\\" : "OmnichannelApi/test/",
+            "WebMI\\RocketChatApiClient\\RoomsApi\\Test\\" : "RoomsApi/test/",
+            "WebMI\\RocketChatApiClient\\SettingsApi\\Test\\" : "SettingsApi/test/",
+            "WebMI\\RocketChatApiClient\\StatisticsApi\\Test\\" : "StatisticsApi/test/",
+            "WebMI\\RocketChatApiClient\\UserManagementApi\\Test\\" : "UserManagementApi/test/"
         }
     }
 }
