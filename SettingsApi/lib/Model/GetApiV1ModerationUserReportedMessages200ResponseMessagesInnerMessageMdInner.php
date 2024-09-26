@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInn
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'value' => '\RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInnerValueInner[]'
+        'value' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInnerValueInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInn
     /**
      * Gets value
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInnerValueInner[]|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInnerValueInner[]|null
      */
     public function getValue()
     {
@@ -336,7 +336,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInn
     /**
      * Sets value
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInnerValueInner[]|null $value value
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessageMdInnerValueInner[]|null $value value
      *
      * @return self
      */

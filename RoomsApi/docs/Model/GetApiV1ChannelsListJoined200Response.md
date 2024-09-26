@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**channels** | [**\RocketChatRoomsApi\Model\GetApiV1ChannelsListJoined200ResponseChannelsInner[]**](GetApiV1ChannelsListJoined200ResponseChannelsInner.md) |  | [optional]
+**channels** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsListJoined200ResponseChannelsInner[]**](GetApiV1ChannelsListJoined200ResponseChannelsInner.md) |  | [optional]
 **offset** | **int** |  | [optional]
 **count** | **int** |  | [optional]
 **total** | **int** |  | [optional]

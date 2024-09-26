@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * DeleteApiV1RemoveInviteId400Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class DeleteApiV1RemoveInviteId400Response implements ModelInterface, ArrayAcces
         'success' => 'bool',
         'error' => 'string',
         'error_type' => 'string',
-        'details' => '\RocketChatMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails'
+        'details' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails'
     ];
 
     /**
@@ -394,7 +394,7 @@ class DeleteApiV1RemoveInviteId400Response implements ModelInterface, ArrayAcces
     /**
      * Gets details
      *
-     * @return \RocketChatMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails|null
      */
     public function getDetails()
     {
@@ -404,7 +404,7 @@ class DeleteApiV1RemoveInviteId400Response implements ModelInterface, ArrayAcces
     /**
      * Sets details
      *
-     * @param \RocketChatMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails|null $details details
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400ResponseDetails|null $details details
      *
      * @return self
      */

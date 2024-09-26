@@ -1,4 +1,4 @@
-# RocketChatUserManagementApi\UsersApi
+# WebMIRocketChatApiClientUserManagementApi\UsersApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -66,7 +66,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -115,7 +115,7 @@ No authorization required
 ## `getApiV1UsersAutocomplete()`
 
 ```php
-getApiV1UsersAutocomplete($x_auth_token, $x_user_id, $selector): \RocketChatUserManagementApi\Model\GetApiV1UsersAutocomplete200Response
+getApiV1UsersAutocomplete($x_auth_token, $x_user_id, $selector): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response
 ```
 
 Autocomplete User
@@ -130,7 +130,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -157,7 +157,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersAutocomplete200Response**](../Model/GetApiV1UsersAutocomplete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersAutocomplete200Response**](../Model/GetApiV1UsersAutocomplete200Response.md)
 
 ### Authorization
 
@@ -175,7 +175,7 @@ No authorization required
 ## `getApiV1UsersCheckUsernameAvailability()`
 
 ```php
-getApiV1UsersCheckUsernameAvailability($x_auth_token, $x_user_id): \RocketChatUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response
+getApiV1UsersCheckUsernameAvailability($x_auth_token, $x_user_id): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response
 ```
 
 Check Username Availability
@@ -190,7 +190,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -215,7 +215,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response**](../Model/GetApiV1UsersCheckUsernameAvailability200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersCheckUsernameAvailability200Response**](../Model/GetApiV1UsersCheckUsernameAvailability200Response.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -289,7 +289,7 @@ No authorization required
 ## `getApiV1UsersGetPersonalAccessTokens()`
 
 ```php
-getApiV1UsersGetPersonalAccessTokens($x_user_id, $x_auth_token): \RocketChatUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response
+getApiV1UsersGetPersonalAccessTokens($x_user_id, $x_auth_token): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response
 ```
 
 Get Personal Access Tokens
@@ -304,7 +304,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -329,7 +329,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response**](../Model/GetApiV1UsersGetPersonalAccessTokens200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200Response**](../Model/GetApiV1UsersGetPersonalAccessTokens200Response.md)
 
 ### Authorization
 
@@ -347,7 +347,7 @@ No authorization required
 ## `getApiV1UsersGetPreferences()`
 
 ```php
-getApiV1UsersGetPreferences($x_auth_token, $x_user_id): \RocketChatUserManagementApi\Model\GetApiV1UsersGetPreferences200Response
+getApiV1UsersGetPreferences($x_auth_token, $x_user_id): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response
 ```
 
 Get User's Preferences
@@ -362,7 +362,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -387,7 +387,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersGetPreferences200Response**](../Model/GetApiV1UsersGetPreferences200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200Response**](../Model/GetApiV1UsersGetPreferences200Response.md)
 
 ### Authorization
 
@@ -405,7 +405,7 @@ No authorization required
 ## `getApiV1UsersGetPresence()`
 
 ```php
-getApiV1UsersGetPresence($x_user_id, $x_auth_token, $user_id): \RocketChatUserManagementApi\Model\GetApiV1UsersGetPresence200Response
+getApiV1UsersGetPresence($x_user_id, $x_auth_token, $user_id): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response
 ```
 
 Get Specific User's Presence
@@ -420,7 +420,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -447,7 +447,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersGetPresence200Response**](../Model/GetApiV1UsersGetPresence200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPresence200Response**](../Model/GetApiV1UsersGetPresence200Response.md)
 
 ### Authorization
 
@@ -465,7 +465,7 @@ No authorization required
 ## `getApiV1UsersGetStatus()`
 
 ```php
-getApiV1UsersGetStatus($user_id): \RocketChatUserManagementApi\Model\GetApiV1UsersGetStatus200Response
+getApiV1UsersGetStatus($user_id): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response
 ```
 
 Get Status
@@ -480,7 +480,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -503,7 +503,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersGetStatus200Response**](../Model/GetApiV1UsersGetStatus200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetStatus200Response**](../Model/GetApiV1UsersGetStatus200Response.md)
 
 ### Authorization
 
@@ -521,7 +521,7 @@ No authorization required
 ## `getApiV1UsersGetUsernameSuggestion()`
 
 ```php
-getApiV1UsersGetUsernameSuggestion($x_auth_token, $x_user_id): \RocketChatUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response
+getApiV1UsersGetUsernameSuggestion($x_auth_token, $x_user_id): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response
 ```
 
 Get Username Suggestion
@@ -536,7 +536,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -561,7 +561,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response**](../Model/GetApiV1UsersGetUsernameSuggestion200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetUsernameSuggestion200Response**](../Model/GetApiV1UsersGetUsernameSuggestion200Response.md)
 
 ### Authorization
 
@@ -579,7 +579,7 @@ No authorization required
 ## `getApiV1UsersInfo()`
 
 ```php
-getApiV1UsersInfo($x_auth_token, $x_user_id, $user_id, $fields): \RocketChatUserManagementApi\Model\GetApiV1UsersInfo200Response
+getApiV1UsersInfo($x_auth_token, $x_user_id, $user_id, $fields): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response
 ```
 
 Get User's Info
@@ -594,7 +594,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -623,7 +623,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersInfo200Response**](../Model/GetApiV1UsersInfo200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersInfo200Response**](../Model/GetApiV1UsersInfo200Response.md)
 
 ### Authorization
 
@@ -641,7 +641,7 @@ No authorization required
 ## `getApiV1UsersList()`
 
 ```php
-getApiV1UsersList($x_auth_token, $x_user_id, $query, $fields, $offset, $sort, $count): \RocketChatUserManagementApi\Model\GetApiV1UsersList200Response
+getApiV1UsersList($x_auth_token, $x_user_id, $query, $fields, $offset, $sort, $count): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response
 ```
 
 Get Users List
@@ -656,7 +656,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -691,7 +691,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersList200Response**](../Model/GetApiV1UsersList200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersList200Response**](../Model/GetApiV1UsersList200Response.md)
 
 ### Authorization
 
@@ -709,7 +709,7 @@ No authorization required
 ## `getApiV1UsersListByStatus()`
 
 ```php
-getApiV1UsersListByStatus($x_auth_token, $x_user_id, $offset, $sort, $count, $status, $has_logged_in, $type, $roles, $search_term): \RocketChatUserManagementApi\Model\GetApiV1UsersListByStatus200Response
+getApiV1UsersListByStatus($x_auth_token, $x_user_id, $offset, $sort, $count, $status, $has_logged_in, $type, $roles, $search_term): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response
 ```
 
 List Users by Status
@@ -724,7 +724,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -765,7 +765,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersListByStatus200Response**](../Model/GetApiV1UsersListByStatus200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListByStatus200Response**](../Model/GetApiV1UsersListByStatus200Response.md)
 
 ### Authorization
 
@@ -783,7 +783,7 @@ No authorization required
 ## `getApiV1UsersListTeams()`
 
 ```php
-getApiV1UsersListTeams($x_auth_token, $x_user_id, $user_id): \RocketChatUserManagementApi\Model\GetApiV1UsersListTeams200Response
+getApiV1UsersListTeams($x_auth_token, $x_user_id, $user_id): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response
 ```
 
 List User's Teams
@@ -798,7 +798,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -825,7 +825,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersListTeams200Response**](../Model/GetApiV1UsersListTeams200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200Response**](../Model/GetApiV1UsersListTeams200Response.md)
 
 ### Authorization
 
@@ -843,7 +843,7 @@ No authorization required
 ## `getApiV1UsersPresence()`
 
 ```php
-getApiV1UsersPresence($x_user_id, $x_auth_token, $from, $ids): \RocketChatUserManagementApi\Model\GetApiV1UsersPresence200Response
+getApiV1UsersPresence($x_user_id, $x_auth_token, $from, $ids): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response
 ```
 
 Get Users Presence
@@ -858,7 +858,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -887,7 +887,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersPresence200Response**](../Model/GetApiV1UsersPresence200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200Response**](../Model/GetApiV1UsersPresence200Response.md)
 
 ### Authorization
 
@@ -905,7 +905,7 @@ No authorization required
 ## `getApiV1UsersRequestDataDownload()`
 
 ```php
-getApiV1UsersRequestDataDownload($x_auth_token, $x_user_id, $full_export): \RocketChatUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response
+getApiV1UsersRequestDataDownload($x_auth_token, $x_user_id, $full_export): \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response
 ```
 
 Request Data Download
@@ -920,7 +920,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -947,7 +947,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response**](../Model/GetApiV1UsersRequestDataDownload200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersRequestDataDownload200Response**](../Model/GetApiV1UsersRequestDataDownload200Response.md)
 
 ### Authorization
 
@@ -965,7 +965,7 @@ No authorization required
 ## `getApiV1UsersSendWelcomeEmail()`
 
 ```php
-getApiV1UsersSendWelcomeEmail($x_auth_token, $x_user_id, $get_api_v1_users_send_welcome_email_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+getApiV1UsersSendWelcomeEmail($x_auth_token, $x_user_id, $get_api_v1_users_send_welcome_email_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Send Welcome Email to User
@@ -980,14 +980,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
-$get_api_v1_users_send_welcome_email_request = {"email":"test@email.com"}; // \RocketChatUserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest
+$get_api_v1_users_send_welcome_email_request = {"email":"test@email.com"}; // \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest
 
 try {
     $result = $apiInstance->getApiV1UsersSendWelcomeEmail($x_auth_token, $x_user_id, $get_api_v1_users_send_welcome_email_request);
@@ -1003,11 +1003,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authenticated user token. | |
 | **x_user_id** | **string**| The authenticated user ID. | |
-| **get_api_v1_users_send_welcome_email_request** | [**\RocketChatUserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest**](../Model/GetApiV1UsersSendWelcomeEmailRequest.md)|  | [optional] |
+| **get_api_v1_users_send_welcome_email_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersSendWelcomeEmailRequest**](../Model/GetApiV1UsersSendWelcomeEmailRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -1025,7 +1025,7 @@ No authorization required
 ## `postApiV1ModerationReportUser()`
 
 ```php
-postApiV1ModerationReportUser($x_auth_token, $x_user_id, $post_api_v1_moderation_report_user_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1ModerationReportUser($x_auth_token, $x_user_id, $post_api_v1_moderation_report_user_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Report User
@@ -1040,14 +1040,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
-$post_api_v1_moderation_report_user_request = {"userId":"ByehQjC44FwMeiLbX","description":"test"}; // \RocketChatUserManagementApi\Model\PostApiV1ModerationReportUserRequest
+$post_api_v1_moderation_report_user_request = {"userId":"ByehQjC44FwMeiLbX","description":"test"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1ModerationReportUserRequest
 
 try {
     $result = $apiInstance->postApiV1ModerationReportUser($x_auth_token, $x_user_id, $post_api_v1_moderation_report_user_request);
@@ -1063,11 +1063,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authenticated user token. | |
 | **x_user_id** | **string**| The authenticated user ID. | |
-| **post_api_v1_moderation_report_user_request** | [**\RocketChatUserManagementApi\Model\PostApiV1ModerationReportUserRequest**](../Model/PostApiV1ModerationReportUserRequest.md)|  | [optional] |
+| **post_api_v1_moderation_report_user_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1ModerationReportUserRequest**](../Model/PostApiV1ModerationReportUserRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -1085,7 +1085,7 @@ No authorization required
 ## `postApiV1Users2faDisableEmail()`
 
 ```php
-postApiV1Users2faDisableEmail($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1Users2faDisableEmail($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Disable 2FA Email
@@ -1100,7 +1100,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1129,7 +1129,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -1147,7 +1147,7 @@ No authorization required
 ## `postApiV1Users2faEnableEmail()`
 
 ```php
-postApiV1Users2faEnableEmail($x_auth_token, $x_user_id): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1Users2faEnableEmail($x_auth_token, $x_user_id): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Enable 2FA with Email
@@ -1162,7 +1162,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1187,7 +1187,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -1205,7 +1205,7 @@ No authorization required
 ## `postApiV1Users2faSendEmailCode()`
 
 ```php
-postApiV1Users2faSendEmailCode($x_auth_token, $x_user_id, $post_api_v1_users2fa_send_email_code_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1Users2faSendEmailCode($x_auth_token, $x_user_id, $post_api_v1_users2fa_send_email_code_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Send 2FA Email Code
@@ -1220,14 +1220,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
-$post_api_v1_users2fa_send_email_code_request = {"emailOrUsername":"test@email.com"}; // \RocketChatUserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest
+$post_api_v1_users2fa_send_email_code_request = {"emailOrUsername":"test@email.com"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest
 
 try {
     $result = $apiInstance->postApiV1Users2faSendEmailCode($x_auth_token, $x_user_id, $post_api_v1_users2fa_send_email_code_request);
@@ -1243,11 +1243,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authenticated user token. | |
 | **x_user_id** | **string**| The authenticated user ID. | |
-| **post_api_v1_users2fa_send_email_code_request** | [**\RocketChatUserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest**](../Model/PostApiV1Users2faSendEmailCodeRequest.md)|  | [optional] |
+| **post_api_v1_users2fa_send_email_code_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1Users2faSendEmailCodeRequest**](../Model/PostApiV1Users2faSendEmailCodeRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -1265,7 +1265,7 @@ No authorization required
 ## `postApiV1UsersCreate()`
 
 ```php
-postApiV1UsersCreate($x_user_id, $x_auth_token, $post_api_v1_users_create_request): \RocketChatUserManagementApi\Model\PostApiV1UsersCreate200Response
+postApiV1UsersCreate($x_user_id, $x_auth_token, $post_api_v1_users_create_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response
 ```
 
 Create User
@@ -1280,14 +1280,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_users_create_request = new \RocketChatUserManagementApi\Model\PostApiV1UsersCreateRequest(); // \RocketChatUserManagementApi\Model\PostApiV1UsersCreateRequest
+$post_api_v1_users_create_request = new \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateRequest(); // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateRequest
 
 try {
     $result = $apiInstance->postApiV1UsersCreate($x_user_id, $x_auth_token, $post_api_v1_users_create_request);
@@ -1303,11 +1303,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_users_create_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersCreateRequest**](../Model/PostApiV1UsersCreateRequest.md)|  | [optional] |
+| **post_api_v1_users_create_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateRequest**](../Model/PostApiV1UsersCreateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersCreate200Response**](../Model/PostApiV1UsersCreate200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200Response**](../Model/PostApiV1UsersCreate200Response.md)
 
 ### Authorization
 
@@ -1325,7 +1325,7 @@ No authorization required
 ## `postApiV1UsersCreateToken()`
 
 ```php
-postApiV1UsersCreateToken($x_auth_token, $x_user_id, $post_api_v1_users_create_token_request): \RocketChatUserManagementApi\Model\PostApiV1UsersCreateToken200Response
+postApiV1UsersCreateToken($x_auth_token, $x_user_id, $post_api_v1_users_create_token_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response
 ```
 
 Create Users Token
@@ -1340,14 +1340,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
-$post_api_v1_users_create_token_request = {"userId":"BsNr28znDkG8aeo7W"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersCreateTokenRequest
+$post_api_v1_users_create_token_request = {"userId":"BsNr28znDkG8aeo7W"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateTokenRequest
 
 try {
     $result = $apiInstance->postApiV1UsersCreateToken($x_auth_token, $x_user_id, $post_api_v1_users_create_token_request);
@@ -1363,11 +1363,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authenticated user token. | |
 | **x_user_id** | **string**| The authenticated user ID. | |
-| **post_api_v1_users_create_token_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersCreateTokenRequest**](../Model/PostApiV1UsersCreateTokenRequest.md)|  | [optional] |
+| **post_api_v1_users_create_token_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateTokenRequest**](../Model/PostApiV1UsersCreateTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersCreateToken200Response**](../Model/PostApiV1UsersCreateToken200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreateToken200Response**](../Model/PostApiV1UsersCreateToken200Response.md)
 
 ### Authorization
 
@@ -1385,7 +1385,7 @@ No authorization required
 ## `postApiV1UsersDeactivateIdle()`
 
 ```php
-postApiV1UsersDeactivateIdle($x_user_id, $x_auth_token, $post_api_v1_users_deactivate_idle_request): \RocketChatUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response
+postApiV1UsersDeactivateIdle($x_user_id, $x_auth_token, $post_api_v1_users_deactivate_idle_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response
 ```
 
 Deactivate Idle Users
@@ -1400,14 +1400,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_users_deactivate_idle_request = {"daysIdle":2,"role":"user"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest
+$post_api_v1_users_deactivate_idle_request = {"daysIdle":2,"role":"user"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest
 
 try {
     $result = $apiInstance->postApiV1UsersDeactivateIdle($x_user_id, $x_auth_token, $post_api_v1_users_deactivate_idle_request);
@@ -1423,11 +1423,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_users_deactivate_idle_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest**](../Model/PostApiV1UsersDeactivateIdleRequest.md)|  | [optional] |
+| **post_api_v1_users_deactivate_idle_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdleRequest**](../Model/PostApiV1UsersDeactivateIdleRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response**](../Model/PostApiV1UsersDeactivateIdle200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeactivateIdle200Response**](../Model/PostApiV1UsersDeactivateIdle200Response.md)
 
 ### Authorization
 
@@ -1445,7 +1445,7 @@ No authorization required
 ## `postApiV1UsersDelete()`
 
 ```php
-postApiV1UsersDelete($x_auth_token, $x_user_id, $post_api_v1_users_delete_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1UsersDelete($x_auth_token, $x_user_id, $post_api_v1_users_delete_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Delete User
@@ -1460,14 +1460,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
-$post_api_v1_users_delete_request = {"userId":"BsNr28znDkG8aeo7W","confirmRelinquish":true}; // \RocketChatUserManagementApi\Model\PostApiV1UsersDeleteRequest
+$post_api_v1_users_delete_request = {"userId":"BsNr28znDkG8aeo7W","confirmRelinquish":true}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteRequest
 
 try {
     $result = $apiInstance->postApiV1UsersDelete($x_auth_token, $x_user_id, $post_api_v1_users_delete_request);
@@ -1483,11 +1483,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authenticated user token. | |
 | **x_user_id** | **string**| The authenticated user ID. | |
-| **post_api_v1_users_delete_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersDeleteRequest**](../Model/PostApiV1UsersDeleteRequest.md)|  | [optional] |
+| **post_api_v1_users_delete_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteRequest**](../Model/PostApiV1UsersDeleteRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -1505,7 +1505,7 @@ No authorization required
 ## `postApiV1UsersDeleteOwnAccount()`
 
 ```php
-postApiV1UsersDeleteOwnAccount($x_auth_token, $x_user_id, $post_api_v1_users_delete_own_account_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1UsersDeleteOwnAccount($x_auth_token, $x_user_id, $post_api_v1_users_delete_own_account_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Delete Own Account
@@ -1520,14 +1520,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
-$post_api_v1_users_delete_own_account_request = new \RocketChatUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest(); // \RocketChatUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest
+$post_api_v1_users_delete_own_account_request = new \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest(); // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest
 
 try {
     $result = $apiInstance->postApiV1UsersDeleteOwnAccount($x_auth_token, $x_user_id, $post_api_v1_users_delete_own_account_request);
@@ -1543,11 +1543,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authenticated user token. | |
 | **x_user_id** | **string**| The authenticated user ID. | |
-| **post_api_v1_users_delete_own_account_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest**](../Model/PostApiV1UsersDeleteOwnAccountRequest.md)|  | [optional] |
+| **post_api_v1_users_delete_own_account_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersDeleteOwnAccountRequest**](../Model/PostApiV1UsersDeleteOwnAccountRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -1565,7 +1565,7 @@ No authorization required
 ## `postApiV1UsersForgotPassword()`
 
 ```php
-postApiV1UsersForgotPassword($post_api_v1_users_forgot_password_request): \RocketChatUserManagementApi\Model\PostApiV1UsersForgotPassword200Response
+postApiV1UsersForgotPassword($post_api_v1_users_forgot_password_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response
 ```
 
 Forgot Password
@@ -1580,12 +1580,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_users_forgot_password_request = {"email":"email@rocket.cat"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersForgotPasswordRequest
+$post_api_v1_users_forgot_password_request = {"email":"email@rocket.cat"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPasswordRequest
 
 try {
     $result = $apiInstance->postApiV1UsersForgotPassword($post_api_v1_users_forgot_password_request);
@@ -1599,11 +1599,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_users_forgot_password_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersForgotPasswordRequest**](../Model/PostApiV1UsersForgotPasswordRequest.md)|  | [optional] |
+| **post_api_v1_users_forgot_password_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPasswordRequest**](../Model/PostApiV1UsersForgotPasswordRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersForgotPassword200Response**](../Model/PostApiV1UsersForgotPassword200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersForgotPassword200Response**](../Model/PostApiV1UsersForgotPassword200Response.md)
 
 ### Authorization
 
@@ -1621,7 +1621,7 @@ No authorization required
 ## `postApiV1UsersGeneratePersonalAccessToken()`
 
 ```php
-postApiV1UsersGeneratePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_generate_personal_access_token_request): \RocketChatUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response
+postApiV1UsersGeneratePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_generate_personal_access_token_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response
 ```
 
 Generate Personal Access Token
@@ -1636,7 +1636,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1645,7 +1645,7 @@ $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The aut
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_2fa_code = 148750; // string | The 2fa code. See <a href=\"https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\" target=\"_blank\">Introduction to Two-Factor Authentication</a>.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_users_generate_personal_access_token_request = {"tokenName":"mypersonaltoken","bypassTwoFactor":false}; // \RocketChatUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest
+$post_api_v1_users_generate_personal_access_token_request = {"tokenName":"mypersonaltoken","bypassTwoFactor":false}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest
 
 try {
     $result = $apiInstance->postApiV1UsersGeneratePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_generate_personal_access_token_request);
@@ -1663,11 +1663,11 @@ try {
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_2fa_code** | **string**| The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_users_generate_personal_access_token_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest**](../Model/PostApiV1UsersGeneratePersonalAccessTokenRequest.md)|  | [optional] |
+| **post_api_v1_users_generate_personal_access_token_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessTokenRequest**](../Model/PostApiV1UsersGeneratePersonalAccessTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response**](../Model/PostApiV1UsersGeneratePersonalAccessToken200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response**](../Model/PostApiV1UsersGeneratePersonalAccessToken200Response.md)
 
 ### Authorization
 
@@ -1685,7 +1685,7 @@ No authorization required
 ## `postApiV1UsersLogout()`
 
 ```php
-postApiV1UsersLogout($x_auth_token, $x_user_id): \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response
+postApiV1UsersLogout($x_auth_token, $x_user_id): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response
 ```
 
 Logout User
@@ -1698,7 +1698,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1723,7 +1723,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response**](../Model/PostApiV1UsersLogout200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response**](../Model/PostApiV1UsersLogout200Response.md)
 
 ### Authorization
 
@@ -1741,7 +1741,7 @@ No authorization required
 ## `postApiV1UsersLogoutOtherClients()`
 
 ```php
-postApiV1UsersLogoutOtherClients($x_auth_token, $x_user_id): \RocketChatUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response
+postApiV1UsersLogoutOtherClients($x_auth_token, $x_user_id): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response
 ```
 
 Logout Other Clients
@@ -1754,7 +1754,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1779,7 +1779,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response**](../Model/PostApiV1UsersLogoutOtherClients200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogoutOtherClients200Response**](../Model/PostApiV1UsersLogoutOtherClients200Response.md)
 
 ### Authorization
 
@@ -1797,7 +1797,7 @@ No authorization required
 ## `postApiV1UsersRegeneratePersonalAccessToken()`
 
 ```php
-postApiV1UsersRegeneratePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request): \RocketChatUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response
+postApiV1UsersRegeneratePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response
 ```
 
 Regenerate Personal Access Token
@@ -1812,7 +1812,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1821,7 +1821,7 @@ $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The aut
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_2fa_code = 148750; // string | The 2fa code. See <a href=\"https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\" target=\"_blank\">Introduction to Two-Factor Authentication</a>.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_users_regenerate_personal_access_token_request = {"tokenName":"mypersonaltoken"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest
+$post_api_v1_users_regenerate_personal_access_token_request = {"tokenName":"mypersonaltoken"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest
 
 try {
     $result = $apiInstance->postApiV1UsersRegeneratePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request);
@@ -1839,11 +1839,11 @@ try {
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_2fa_code** | **string**| The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_users_regenerate_personal_access_token_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest**](../Model/PostApiV1UsersRegeneratePersonalAccessTokenRequest.md)|  | [optional] |
+| **post_api_v1_users_regenerate_personal_access_token_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest**](../Model/PostApiV1UsersRegeneratePersonalAccessTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response**](../Model/PostApiV1UsersGeneratePersonalAccessToken200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersGeneratePersonalAccessToken200Response**](../Model/PostApiV1UsersGeneratePersonalAccessToken200Response.md)
 
 ### Authorization
 
@@ -1861,7 +1861,7 @@ No authorization required
 ## `postApiV1UsersRegister()`
 
 ```php
-postApiV1UsersRegister($post_api_v1_users_register_request): \RocketChatUserManagementApi\Model\PostApiV1UsersRegister200Response
+postApiV1UsersRegister($post_api_v1_users_register_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response
 ```
 
 Register User
@@ -1876,12 +1876,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_users_register_request = new \RocketChatUserManagementApi\Model\PostApiV1UsersRegisterRequest(); // \RocketChatUserManagementApi\Model\PostApiV1UsersRegisterRequest
+$post_api_v1_users_register_request = new \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegisterRequest(); // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegisterRequest
 
 try {
     $result = $apiInstance->postApiV1UsersRegister($post_api_v1_users_register_request);
@@ -1895,11 +1895,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_users_register_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersRegisterRequest**](../Model/PostApiV1UsersRegisterRequest.md)|  | [optional] |
+| **post_api_v1_users_register_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegisterRequest**](../Model/PostApiV1UsersRegisterRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersRegister200Response**](../Model/PostApiV1UsersRegister200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegister200Response**](../Model/PostApiV1UsersRegister200Response.md)
 
 ### Authorization
 
@@ -1917,7 +1917,7 @@ No authorization required
 ## `postApiV1UsersRemoveOtherTokens()`
 
 ```php
-postApiV1UsersRemoveOtherTokens($x_auth_token, $x_user_id): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1UsersRemoveOtherTokens($x_auth_token, $x_user_id): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Remove Other Tokens
@@ -1932,7 +1932,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1957,7 +1957,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -1975,7 +1975,7 @@ No authorization required
 ## `postApiV1UsersRemovePersonalAccessToken()`
 
 ```php
-postApiV1UsersRemovePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1UsersRemovePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Remove Personal Access Token
@@ -1990,7 +1990,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -1999,7 +1999,7 @@ $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The aut
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_2fa_code = 148750; // string | The 2fa code. See <a href=\"https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\" target=\"_blank\">Introduction to Two-Factor Authentication</a>.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_users_regenerate_personal_access_token_request = {"tokenName":"mytoken"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest
+$post_api_v1_users_regenerate_personal_access_token_request = {"tokenName":"mytoken"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest
 
 try {
     $result = $apiInstance->postApiV1UsersRemovePersonalAccessToken($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_regenerate_personal_access_token_request);
@@ -2017,11 +2017,11 @@ try {
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_2fa_code** | **string**| The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_users_regenerate_personal_access_token_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest**](../Model/PostApiV1UsersRegeneratePersonalAccessTokenRequest.md)|  | [optional] |
+| **post_api_v1_users_regenerate_personal_access_token_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersRegeneratePersonalAccessTokenRequest**](../Model/PostApiV1UsersRegeneratePersonalAccessTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -2039,7 +2039,7 @@ No authorization required
 ## `postApiV1UsersResetAvatar()`
 
 ```php
-postApiV1UsersResetAvatar($x_user_id, $x_auth_token, $post_api_v1_users_reset_avatar_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1UsersResetAvatar($x_user_id, $x_auth_token, $post_api_v1_users_reset_avatar_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Reset Avatar
@@ -2054,14 +2054,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_users_reset_avatar_request = {"userId":"BsNr28znDkG8aeo7W"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersResetAvatarRequest
+$post_api_v1_users_reset_avatar_request = {"userId":"BsNr28znDkG8aeo7W"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetAvatarRequest
 
 try {
     $result = $apiInstance->postApiV1UsersResetAvatar($x_user_id, $x_auth_token, $post_api_v1_users_reset_avatar_request);
@@ -2077,11 +2077,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_users_reset_avatar_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersResetAvatarRequest**](../Model/PostApiV1UsersResetAvatarRequest.md)|  | [optional] |
+| **post_api_v1_users_reset_avatar_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetAvatarRequest**](../Model/PostApiV1UsersResetAvatarRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -2099,7 +2099,7 @@ No authorization required
 ## `postApiV1UsersResetE2EKey()`
 
 ```php
-postApiV1UsersResetE2EKey($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_e2_e_key_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1UsersResetE2EKey($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_e2_e_key_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Reset Users E2E Key
@@ -2114,7 +2114,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2123,7 +2123,7 @@ $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The aut
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_2fa_code = 148750; // string | The 2fa code. See <a href=\"https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\" target=\"_blank\">Introduction to Two-Factor Authentication</a>.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_users_reset_e2_e_key_request = {"userId":"GonjPyg3gB3Z9ur9s"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest
+$post_api_v1_users_reset_e2_e_key_request = {"userId":"GonjPyg3gB3Z9ur9s"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest
 
 try {
     $result = $apiInstance->postApiV1UsersResetE2EKey($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_e2_e_key_request);
@@ -2141,11 +2141,11 @@ try {
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_2fa_code** | **string**| The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_users_reset_e2_e_key_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest**](../Model/PostApiV1UsersResetE2EKeyRequest.md)|  | [optional] |
+| **post_api_v1_users_reset_e2_e_key_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetE2EKeyRequest**](../Model/PostApiV1UsersResetE2EKeyRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -2163,7 +2163,7 @@ No authorization required
 ## `postApiV1UsersResetTOTP()`
 
 ```php
-postApiV1UsersResetTOTP($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_totp_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1UsersResetTOTP($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_totp_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Reset Users TOTP
@@ -2178,7 +2178,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2187,7 +2187,7 @@ $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The aut
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_2fa_code = 148750; // string | The 2fa code. See <a href=\"https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\" target=\"_blank\">Introduction to Two-Factor Authentication</a>.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_users_reset_totp_request = {"userId":"GonjPyg3gB3Z9ur9s"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersResetTOTPRequest
+$post_api_v1_users_reset_totp_request = {"userId":"GonjPyg3gB3Z9ur9s"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetTOTPRequest
 
 try {
     $result = $apiInstance->postApiV1UsersResetTOTP($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method, $post_api_v1_users_reset_totp_request);
@@ -2205,11 +2205,11 @@ try {
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_2fa_code** | **string**| The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_users_reset_totp_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersResetTOTPRequest**](../Model/PostApiV1UsersResetTOTPRequest.md)|  | [optional] |
+| **post_api_v1_users_reset_totp_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersResetTOTPRequest**](../Model/PostApiV1UsersResetTOTPRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -2227,7 +2227,7 @@ No authorization required
 ## `postApiV1UsersSetActiveStatus()`
 
 ```php
-postApiV1UsersSetActiveStatus($x_user_id, $x_auth_token, $post_api_v1_users_set_active_status_request): \RocketChatUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response
+postApiV1UsersSetActiveStatus($x_user_id, $x_auth_token, $post_api_v1_users_set_active_status_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response
 ```
 
 Set User's Status Active
@@ -2242,14 +2242,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_users_set_active_status_request = new \RocketChatUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest(); // \RocketChatUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest | If `activeStatus=false` & `confirmRelinquish=true` and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner.
+$post_api_v1_users_set_active_status_request = new \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest(); // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest | If `activeStatus=false` & `confirmRelinquish=true` and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner.
 
 try {
     $result = $apiInstance->postApiV1UsersSetActiveStatus($x_user_id, $x_auth_token, $post_api_v1_users_set_active_status_request);
@@ -2265,11 +2265,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_users_set_active_status_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest**](../Model/PostApiV1UsersSetActiveStatusRequest.md)| If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. | [optional] |
+| **post_api_v1_users_set_active_status_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatusRequest**](../Model/PostApiV1UsersSetActiveStatusRequest.md)| If &#x60;activeStatus&#x3D;false&#x60; &amp; &#x60;confirmRelinquish&#x3D;true&#x60; and the user is the last remaining owner of a room, the oldest member of that room will be chosen as the new owner. | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response**](../Model/PostApiV1UsersSetActiveStatus200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetActiveStatus200Response**](../Model/PostApiV1UsersSetActiveStatus200Response.md)
 
 ### Authorization
 
@@ -2287,7 +2287,7 @@ No authorization required
 ## `postApiV1UsersSetAvatar()`
 
 ```php
-postApiV1UsersSetAvatar($x_user_id, $x_auth_token, $post_api_v1_users_set_avatar_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1UsersSetAvatar($x_user_id, $x_auth_token, $post_api_v1_users_set_avatar_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Set User Avatar
@@ -2302,14 +2302,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_users_set_avatar_request = {"avatarUrl":"http://domain.tld/to/my/own/avatar.jpg"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersSetAvatarRequest | You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, `image=@my-own-avatar.png`.   * Enter the image URL you want to set as the user avatar in the request body.
+$post_api_v1_users_set_avatar_request = {"avatarUrl":"http://domain.tld/to/my/own/avatar.jpg"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetAvatarRequest | You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, `image=@my-own-avatar.png`.   * Enter the image URL you want to set as the user avatar in the request body.
 
 try {
     $result = $apiInstance->postApiV1UsersSetAvatar($x_user_id, $x_auth_token, $post_api_v1_users_set_avatar_request);
@@ -2325,11 +2325,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_users_set_avatar_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersSetAvatarRequest**](../Model/PostApiV1UsersSetAvatarRequest.md)| You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. | [optional] |
+| **post_api_v1_users_set_avatar_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetAvatarRequest**](../Model/PostApiV1UsersSetAvatarRequest.md)| You have 2 options to set the user avatar:   * Upload the image file to use as the new avatar, as form data. For example, &#x60;image&#x3D;@my-own-avatar.png&#x60;.   * Enter the image URL you want to set as the user avatar in the request body. | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -2347,7 +2347,7 @@ No authorization required
 ## `postApiV1UsersSetPreferences()`
 
 ```php
-postApiV1UsersSetPreferences($x_user_id, $x_auth_token, $post_api_v1_users_set_preferences_request): \RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferences200Response
+postApiV1UsersSetPreferences($x_user_id, $x_auth_token, $post_api_v1_users_set_preferences_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response
 ```
 
 Set User Preferences
@@ -2362,14 +2362,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_users_set_preferences_request = new \RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest(); // \RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest
+$post_api_v1_users_set_preferences_request = new \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest(); // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest
 
 try {
     $result = $apiInstance->postApiV1UsersSetPreferences($x_user_id, $x_auth_token, $post_api_v1_users_set_preferences_request);
@@ -2385,11 +2385,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_users_set_preferences_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest**](../Model/PostApiV1UsersSetPreferencesRequest.md)|  | [optional] |
+| **post_api_v1_users_set_preferences_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferencesRequest**](../Model/PostApiV1UsersSetPreferencesRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersSetPreferences200Response**](../Model/PostApiV1UsersSetPreferences200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetPreferences200Response**](../Model/PostApiV1UsersSetPreferences200Response.md)
 
 ### Authorization
 
@@ -2407,7 +2407,7 @@ No authorization required
 ## `postApiV1UsersSetStatus()`
 
 ```php
-postApiV1UsersSetStatus($x_user_id, $x_auth_token, $post_api_v1_users_set_status_request): \RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response
+postApiV1UsersSetStatus($x_user_id, $x_auth_token, $post_api_v1_users_set_status_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response
 ```
 
 Set User Status
@@ -2422,14 +2422,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
-$post_api_v1_users_set_status_request = {"message":"My status update","status":"online","userId":"zXuq7SvPKYbzYmfpo","username":"bob"}; // \RocketChatUserManagementApi\Model\PostApiV1UsersSetStatusRequest
+$post_api_v1_users_set_status_request = {"message":"My status update","status":"online","userId":"zXuq7SvPKYbzYmfpo","username":"bob"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetStatusRequest
 
 try {
     $result = $apiInstance->postApiV1UsersSetStatus($x_user_id, $x_auth_token, $post_api_v1_users_set_status_request);
@@ -2445,11 +2445,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The authenticated user ID. | |
 | **x_auth_token** | **string**| The authenticated user token. | |
-| **post_api_v1_users_set_status_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersSetStatusRequest**](../Model/PostApiV1UsersSetStatusRequest.md)|  | [optional] |
+| **post_api_v1_users_set_status_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersSetStatusRequest**](../Model/PostApiV1UsersSetStatusRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1RolesDelete200Response**](../Model/PostApiV1RolesDelete200Response.md)
 
 ### Authorization
 
@@ -2467,7 +2467,7 @@ No authorization required
 ## `postApiV1UsersUpdate()`
 
 ```php
-postApiV1UsersUpdate($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_request): \RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200Response
+postApiV1UsersUpdate($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response
 ```
 
 Update User
@@ -2482,7 +2482,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2491,7 +2491,7 @@ $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
 $x_2fa_code = 148750; // string | The 2fa code. See <a href=\"https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\" target=\"_blank\">Introduction to Two-Factor Authentication</a>.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_users_update_request = new \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateRequest(); // \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateRequest
+$post_api_v1_users_update_request = new \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequest(); // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequest
 
 try {
     $result = $apiInstance->postApiV1UsersUpdate($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_request);
@@ -2509,11 +2509,11 @@ try {
 | **x_auth_token** | **string**| The authenticated user token. | |
 | **x_2fa_code** | **string**| The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_users_update_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateRequest**](../Model/PostApiV1UsersUpdateRequest.md)|  | [optional] |
+| **post_api_v1_users_update_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateRequest**](../Model/PostApiV1UsersUpdateRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersUpdate200Response**](../Model/PostApiV1UsersUpdate200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdate200Response**](../Model/PostApiV1UsersUpdate200Response.md)
 
 ### Authorization
 
@@ -2531,7 +2531,7 @@ No authorization required
 ## `postApiV1UsersUpdateOwnBasicInfo()`
 
 ```php
-postApiV1UsersUpdateOwnBasicInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_own_basic_info_request): \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response
+postApiV1UsersUpdateOwnBasicInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_own_basic_info_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response
 ```
 
 Update Own Basic Information
@@ -2546,7 +2546,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\UsersApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\UsersApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -2555,7 +2555,7 @@ $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
 $x_2fa_code = 148750; // string | The 2fa code. See <a href=\"https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\" target=\"_blank\">Introduction to Two-Factor Authentication</a>.
 $x_2fa_method = 'x_2fa_method_example'; // string | The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.
-$post_api_v1_users_update_own_basic_info_request = new \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest(); // \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest
+$post_api_v1_users_update_own_basic_info_request = new \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest(); // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest
 
 try {
     $result = $apiInstance->postApiV1UsersUpdateOwnBasicInfo($x_user_id, $x_auth_token, $x_2fa_code, $x_2fa_method, $post_api_v1_users_update_own_basic_info_request);
@@ -2573,11 +2573,11 @@ try {
 | **x_auth_token** | **string**| The authenticated user token. | |
 | **x_2fa_code** | **string**| The 2fa code. See &lt;a href&#x3D;\&quot;https://developer.rocket.chat/apidocs/introduction-to-two-factor-authentication\&quot; target&#x3D;\&quot;_blank\&quot;&gt;Introduction to Two-Factor Authentication&lt;/a&gt;. | |
 | **x_2fa_method** | **string**| The desired method to get the 2FA code. It can be &#x60;email&#x60;, &#x60;totp&#x60;, or &#x60;password&#x60;. | |
-| **post_api_v1_users_update_own_basic_info_request** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest**](../Model/PostApiV1UsersUpdateOwnBasicInfoRequest.md)|  | [optional] |
+| **post_api_v1_users_update_own_basic_info_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequest**](../Model/PostApiV1UsersUpdateOwnBasicInfoRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response**](../Model/PostApiV1UsersUpdateOwnBasicInfo200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200Response**](../Model/PostApiV1UsersUpdateOwnBasicInfo200Response.md)
 
 ### Authorization
 

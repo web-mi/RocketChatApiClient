@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**messages** | [**\RocketChatMessagingApi\Model\GetApiV1ChatGetDiscussions200ResponseMessagesInner[]**](GetApiV1ChatGetDiscussions200ResponseMessagesInner.md) |  | [optional]
+**messages** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatGetDiscussions200ResponseMessagesInner[]**](GetApiV1ChatGetDiscussions200ResponseMessagesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

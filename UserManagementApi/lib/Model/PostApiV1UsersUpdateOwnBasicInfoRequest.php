@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * PostApiV1UsersUpdateOwnBasicInfoRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequest implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequestData',
+        'data' => '\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequestData',
         'custom_fields' => 'object'
     ];
 
@@ -302,7 +302,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequest implements ModelInterface, ArrayAc
     /**
      * Gets data
      *
-     * @return \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequestData
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequestData
      */
     public function getData()
     {
@@ -312,7 +312,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequest implements ModelInterface, ArrayAc
     /**
      * Sets data
      *
-     * @param \RocketChatUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequestData $data data
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequestData $data data
      *
      * @return self
      */

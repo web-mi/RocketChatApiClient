@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1SessionsListAll200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1SessionsListAll200Response implements ModelInterface, ArrayAccess,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sessions' => '\RocketChatSettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]',
+        'sessions' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]',
         'total' => 'int',
         'count' => 'int',
         'offset' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1SessionsListAll200Response implements ModelInterface, ArrayAccess,
     /**
      * Gets sessions
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]|null
      */
     public function getSessions()
     {
@@ -330,7 +330,7 @@ class GetApiV1SessionsListAll200Response implements ModelInterface, ArrayAccess,
     /**
      * Sets sessions
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]|null $sessions sessions
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInner[]|null $sessions sessions
      *
      * @return self
      */

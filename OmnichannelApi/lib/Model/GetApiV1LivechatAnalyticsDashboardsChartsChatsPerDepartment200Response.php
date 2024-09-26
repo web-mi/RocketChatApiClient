@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
       * @var string[]
       */
     protected static $openAPITypes = [
-        'test' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat',
-        'sales' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat',
-        'finance' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat',
+        'test' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat',
+        'sales' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat',
+        'finance' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat',
         'success' => 'bool'
     ];
 
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
     /**
      * Gets test
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
      */
     public function getTest()
     {
@@ -323,7 +323,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
     /**
      * Sets test
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null $test test
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null $test test
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
     /**
      * Gets sales
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
      */
     public function getSales()
     {
@@ -350,7 +350,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
     /**
      * Sets sales
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null $sales sales
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null $sales sales
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
     /**
      * Gets finance
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
      */
     public function getFinance()
     {
@@ -377,7 +377,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
     /**
      * Sets finance
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null $finance finance
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null $finance finance
      *
      * @return self
      */

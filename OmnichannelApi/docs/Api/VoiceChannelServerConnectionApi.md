@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\VoiceChannelServerConnectionApi
+# WebMIRocketChatApiClientOmnichannelApi\VoiceChannelServerConnectionApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1VoipCallServerCheckConnection()`
 
 ```php
-getApiV1VoipCallServerCheckConnection($x_auth_token, $x_user_id, $websocket_url, $host, $port, $path): \RocketChatOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response
+getApiV1VoipCallServerCheckConnection($x_auth_token, $x_user_id, $websocket_url, $host, $port, $path): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response
 ```
 
 Check Call Server Connection
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\VoiceChannelServerConnectionApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelServerConnectionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -59,7 +59,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response**](../Model/GetApiV1VoipCallServerCheckConnection200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response**](../Model/GetApiV1VoipCallServerCheckConnection200Response.md)
 
 ### Authorization
 
@@ -77,7 +77,7 @@ No authorization required
 ## `getApiV1VoipManagementServerCheckConnection()`
 
 ```php
-getApiV1VoipManagementServerCheckConnection($x_auth_token, $x_user_id, $host, $port, $username, $password): \RocketChatOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response
+getApiV1VoipManagementServerCheckConnection($x_auth_token, $x_user_id, $host, $port, $username, $password): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response
 ```
 
 Check Management Server Connection
@@ -92,7 +92,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\VoiceChannelServerConnectionApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelServerConnectionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -125,7 +125,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response**](../Model/GetApiV1VoipCallServerCheckConnection200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipCallServerCheckConnection200Response**](../Model/GetApiV1VoipCallServerCheckConnection200Response.md)
 
 ### Authorization
 

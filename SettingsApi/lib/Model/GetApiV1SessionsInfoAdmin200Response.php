@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1SessionsInfoAdmin200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,11 +59,11 @@ class GetApiV1SessionsInfoAdmin200Response implements ModelInterface, ArrayAcces
     protected static $openAPITypes = [
         'session_id' => 'string',
         'user_id' => 'string',
-        'device' => '\RocketChatSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice',
+        'device' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice',
         'host' => 'string',
         'ip' => 'string',
         'login_at' => 'string',
-        '_user' => '\RocketChatSettingsApi\Model\GetApiV1SessionsInfoAdmin200ResponseUser',
+        '_user' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200ResponseUser',
         '_id' => 'string',
         'success' => 'bool'
     ];
@@ -402,7 +402,7 @@ class GetApiV1SessionsInfoAdmin200Response implements ModelInterface, ArrayAcces
     /**
      * Gets device
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null
      */
     public function getDevice()
     {
@@ -412,7 +412,7 @@ class GetApiV1SessionsInfoAdmin200Response implements ModelInterface, ArrayAcces
     /**
      * Sets device
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null $device device
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null $device device
      *
      * @return self
      */
@@ -510,7 +510,7 @@ class GetApiV1SessionsInfoAdmin200Response implements ModelInterface, ArrayAcces
     /**
      * Gets _user
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1SessionsInfoAdmin200ResponseUser|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200ResponseUser|null
      */
     public function getUser()
     {
@@ -520,7 +520,7 @@ class GetApiV1SessionsInfoAdmin200Response implements ModelInterface, ArrayAcces
     /**
      * Sets _user
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1SessionsInfoAdmin200ResponseUser|null $_user _user
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SessionsInfoAdmin200ResponseUser|null $_user _user
      *
      * @return self
      */

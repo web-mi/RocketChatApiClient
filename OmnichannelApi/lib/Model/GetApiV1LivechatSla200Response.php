@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatSla200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'sla' => '\RocketChatOmnichannelApi\Model\GetLivechatPrioritiesList200ResponsePrioritiesInner[]',
+        'sla' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPrioritiesList200ResponsePrioritiesInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets sla
      *
-     * @return \RocketChatOmnichannelApi\Model\GetLivechatPrioritiesList200ResponsePrioritiesInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPrioritiesList200ResponsePrioritiesInner[]|null
      */
     public function getSla()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets sla
      *
-     * @param \RocketChatOmnichannelApi\Model\GetLivechatPrioritiesList200ResponsePrioritiesInner[]|null $sla sla
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPrioritiesList200ResponsePrioritiesInner[]|null $sla sla
      *
      * @return self
      */

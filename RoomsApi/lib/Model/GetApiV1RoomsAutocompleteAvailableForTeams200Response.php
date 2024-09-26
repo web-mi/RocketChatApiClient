@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsAutocompleteAvailableForTeams200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\RocketChatRoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]',
+        'items' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
     /**
      * Gets items
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]|null
      */
     public function getItems()
     {
@@ -309,7 +309,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
     /**
      * Sets items
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]|null $items items
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]|null $items items
      *
      * @return self
      */

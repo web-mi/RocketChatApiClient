@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **name** | **string** |  | [optional]
 **type** | **int** |  | [optional]
 **created_at** | **string** |  | [optional]
-**created_by** | [**\RocketChatUserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy**](GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy.md) |  | [optional]
+**created_by** | [**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy**](GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **room_id** | **string** |  | [optional]
 **is_owner** | **bool** |  | [optional]

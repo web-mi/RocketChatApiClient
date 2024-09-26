@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ChatSendMessageRequestMessageAttachmentsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -63,7 +63,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
         'author_name' => 'string',
         'collapsed' => 'bool',
         'color' => 'string',
-        'fields' => '\RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner[]',
+        'fields' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner[]',
         'image_url' => 'string',
         'message_link' => 'string',
         'text' => 'string',
@@ -559,7 +559,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
     /**
      * Gets fields
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner[]|null
      */
     public function getFields()
     {
@@ -569,7 +569,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
     /**
      * Sets fields
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner[]|null $fields fields
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner[]|null $fields fields
      *
      * @return self
      */

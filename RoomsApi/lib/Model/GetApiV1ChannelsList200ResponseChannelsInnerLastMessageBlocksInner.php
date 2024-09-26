@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,10 +58,10 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'text' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerText',
+        'text' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerText',
         'block_id' => 'string',
         'app_id' => 'string',
-        'elements' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElementsInner[]'
+        'elements' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElementsInner[]'
     ];
 
     /**
@@ -347,7 +347,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
     /**
      * Gets text
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerText|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerText|null
      */
     public function getText()
     {
@@ -357,7 +357,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
     /**
      * Sets text
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerText|null $text text
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerText|null $text text
      *
      * @return self
      */
@@ -428,7 +428,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
     /**
      * Gets elements
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElementsInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElementsInner[]|null
      */
     public function getElements()
     {
@@ -438,7 +438,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
     /**
      * Sets elements
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElementsInner[]|null $elements elements
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElementsInner[]|null $elements elements
      *
      * @return self
      */

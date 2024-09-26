@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatBusinessHour200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatBusinessHour200Response implements ModelInterface, ArrayAc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'business_hour' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHour200ResponseBusinessHour',
+        'business_hour' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHour200ResponseBusinessHour',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatBusinessHour200Response implements ModelInterface, ArrayAc
     /**
      * Gets business_hour
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHour200ResponseBusinessHour|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHour200ResponseBusinessHour|null
      */
     public function getBusinessHour()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatBusinessHour200Response implements ModelInterface, ArrayAc
     /**
      * Sets business_hour
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHour200ResponseBusinessHour|null $business_hour business_hour
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHour200ResponseBusinessHour|null $business_hour business_hour
      *
      * @return self
      */

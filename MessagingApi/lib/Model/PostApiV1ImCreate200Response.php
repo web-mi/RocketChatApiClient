@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * PostApiV1ImCreate200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ImCreate200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\RocketChatMessagingApi\Model\PostApiV1ImCreate200ResponseRoom',
+        'room' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreate200ResponseRoom',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1ImCreate200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets room
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ImCreate200ResponseRoom|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreate200ResponseRoom|null
      */
     public function getRoom()
     {
@@ -309,7 +309,7 @@ class PostApiV1ImCreate200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets room
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ImCreate200ResponseRoom|null $room room
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ImCreate200ResponseRoom|null $room room
      *
      * @return self
      */

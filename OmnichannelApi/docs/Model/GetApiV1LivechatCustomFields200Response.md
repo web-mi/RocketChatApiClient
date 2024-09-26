@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**custom_fields** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatCustomFields200ResponseCustomFieldsInner[]**](GetApiV1LivechatCustomFields200ResponseCustomFieldsInner.md) |  | [optional]
+**custom_fields** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatCustomFields200ResponseCustomFieldsInner[]**](GetApiV1LivechatCustomFields200ResponseCustomFieldsInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

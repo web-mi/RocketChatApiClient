@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatNotificationsApi\Model;
+namespace WebMIRocketChatApiClientNotificationsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatNotificationsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
 
 /**
  * GetApiV1PushGet200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'data' => '\RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseData',
+        'data' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseData',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets data
      *
-     * @return \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseData|null
+     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseData|null
      */
     public function getData()
     {
@@ -309,7 +309,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets data
      *
-     * @param \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseData|null $data data
+     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseData|null $data data
      *
      * @return self
      */

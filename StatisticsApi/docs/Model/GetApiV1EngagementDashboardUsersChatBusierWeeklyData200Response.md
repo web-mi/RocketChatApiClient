@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**month** | [**\RocketChatStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner[]**](GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner.md) |  | [optional]
+**month** | [**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner[]**](GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

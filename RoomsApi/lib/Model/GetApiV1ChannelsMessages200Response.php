@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsMessages200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChannelsMessages200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'messages' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsMessages200ResponseMessagesInner[]',
+        'messages' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsMessages200ResponseMessagesInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ChannelsMessages200Response implements ModelInterface, ArrayAccess
     /**
      * Gets messages
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsMessages200ResponseMessagesInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsMessages200ResponseMessagesInner[]|null
      */
     public function getMessages()
     {
@@ -330,7 +330,7 @@ class GetApiV1ChannelsMessages200Response implements ModelInterface, ArrayAccess
     /**
      * Sets messages
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsMessages200ResponseMessagesInner[]|null $messages messages
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsMessages200ResponseMessagesInner[]|null $messages messages
      *
      * @return self
      */

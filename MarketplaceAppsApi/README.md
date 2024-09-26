@@ -50,14 +50,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMarketplaceAppsApi\Api\DefaultApi(
+$apiInstance = new WebMIRocketChatApiClientMarketplaceAppsApi\Api\DefaultApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_apps_request = {"url":"https://github.com/RocketChat/Apps.RocketChat.Tester/blob/master/dist/appsrocketchattester_0.0.5.zip?raw=true"}; // \RocketChatMarketplaceAppsApi\Model\PostApiAppsRequest
+$post_api_apps_request = {"url":"https://github.com/RocketChat/Apps.RocketChat.Tester/blob/master/dist/appsrocketchattester_0.0.5.zip?raw=true"}; // \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsRequest
 
 try {
     $result = $apiInstance->postApiApps($x_auth_token, $x_user_id, $post_api_apps_request);

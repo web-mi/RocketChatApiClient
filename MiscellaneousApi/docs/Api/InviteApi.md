@@ -1,4 +1,4 @@
-# RocketChatMiscellaneousApi\InviteApi
+# WebMIRocketChatApiClientMiscellaneousApi\InviteApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1RemoveInviteId()`
 
 ```php
-deleteApiV1RemoveInviteId($x_auth_token, $x_user_id, $_id): \RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response
+deleteApiV1RemoveInviteId($x_auth_token, $x_user_id, $_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response
 ```
 
 Delete Invite by ID
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\InviteApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\InviteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response**](../Model/PostApiV1AutotranslateSaveSettings200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response**](../Model/PostApiV1AutotranslateSaveSettings200Response.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 ## `getApiV1ListInvites()`
 
 ```php
-getApiV1ListInvites(): \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]
+getApiV1ListInvites(): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]
 ```
 
 List Invites
@@ -89,7 +89,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\InviteApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\InviteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -109,7 +109,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]**](../Model/PostApiV1FindOrCreateInvite200ResponseInner.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]**](../Model/PostApiV1FindOrCreateInvite200ResponseInner.md)
 
 ### Authorization
 
@@ -127,7 +127,7 @@ No authorization required
 ## `postApiV1FindOrCreateInvite()`
 
 ```php
-postApiV1FindOrCreateInvite($x_auth_token, $x_user_id, $post_api_v1_find_or_create_invite_request): \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]
+postApiV1FindOrCreateInvite($x_auth_token, $x_user_id, $post_api_v1_find_or_create_invite_request): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]
 ```
 
 Find or Create Invite
@@ -142,14 +142,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\InviteApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\InviteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_find_or_create_invite_request = {"rid":"csFYrDeixJG7PnrAh","days":10,"maxUses":0}; // \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest
+$post_api_v1_find_or_create_invite_request = {"rid":"csFYrDeixJG7PnrAh","days":10,"maxUses":0}; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest
 
 try {
     $result = $apiInstance->postApiV1FindOrCreateInvite($x_auth_token, $x_user_id, $post_api_v1_find_or_create_invite_request);
@@ -165,11 +165,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_find_or_create_invite_request** | [**\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest**](../Model/PostApiV1FindOrCreateInviteRequest.md)|  | [optional] |
+| **post_api_v1_find_or_create_invite_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest**](../Model/PostApiV1FindOrCreateInviteRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]**](../Model/PostApiV1FindOrCreateInvite200ResponseInner.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]**](../Model/PostApiV1FindOrCreateInvite200ResponseInner.md)
 
 ### Authorization
 
@@ -187,7 +187,7 @@ No authorization required
 ## `postApiV1UseInviteToken()`
 
 ```php
-postApiV1UseInviteToken($x_auth_token, $x_user_id, $post_api_v1_use_invite_token_request): \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response
+postApiV1UseInviteToken($x_auth_token, $x_user_id, $post_api_v1_use_invite_token_request): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response
 ```
 
 Report Invite Token Usage
@@ -202,14 +202,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\InviteApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\InviteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_use_invite_token_request = {"token":"iS7pza"}; // \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest
+$post_api_v1_use_invite_token_request = {"token":"iS7pza"}; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest
 
 try {
     $result = $apiInstance->postApiV1UseInviteToken($x_auth_token, $x_user_id, $post_api_v1_use_invite_token_request);
@@ -225,11 +225,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_use_invite_token_request** | [**\RocketChatMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest**](../Model/PostApiV1UseInviteTokenRequest.md)|  | [optional] |
+| **post_api_v1_use_invite_token_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest**](../Model/PostApiV1UseInviteTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response**](../Model/PostApiV1UseInviteToken200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response**](../Model/PostApiV1UseInviteToken200Response.md)
 
 ### Authorization
 
@@ -247,7 +247,7 @@ No authorization required
 ## `postApiV1ValidateInviteToken()`
 
 ```php
-postApiV1ValidateInviteToken($post_api_v1_validate_invite_token_request): \RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response
+postApiV1ValidateInviteToken($post_api_v1_validate_invite_token_request): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response
 ```
 
 Validate Invite Token
@@ -262,12 +262,12 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\InviteApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\InviteApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$post_api_v1_validate_invite_token_request = iS7pza; // \RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest
+$post_api_v1_validate_invite_token_request = iS7pza; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest
 
 try {
     $result = $apiInstance->postApiV1ValidateInviteToken($post_api_v1_validate_invite_token_request);
@@ -281,11 +281,11 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **post_api_v1_validate_invite_token_request** | [**\RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest**](../Model/PostApiV1ValidateInviteTokenRequest.md)|  | [optional] |
+| **post_api_v1_validate_invite_token_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest**](../Model/PostApiV1ValidateInviteTokenRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response**](../Model/PostApiV1ValidateInviteToken200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response**](../Model/PostApiV1ValidateInviteToken200Response.md)
 
 ### Authorization
 

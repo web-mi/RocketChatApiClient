@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatAuthenticationApi
+ * @package  WebMIRocketChatApiClientAuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatAuthenticationApi\Model;
+namespace WebMIRocketChatApiClientAuthenticationApi\Model;
 
 use \ArrayAccess;
-use \RocketChatAuthenticationApi\ObjectSerializer;
+use \WebMIRocketChatApiClientAuthenticationApi\ObjectSerializer;
 
 /**
  * PostApiV1LoginGoogle200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatAuthenticationApi
+ * @package  WebMIRocketChatApiClientAuthenticationApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1LoginGoogle200Response implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'status' => 'string',
-        'data' => '\RocketChatAuthenticationApi\Model\PostApiV1Login200ResponseData'
+        'data' => '\WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseData'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PostApiV1LoginGoogle200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets data
      *
-     * @return \RocketChatAuthenticationApi\Model\PostApiV1Login200ResponseData|null
+     * @return \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseData|null
      */
     public function getData()
     {
@@ -336,7 +336,7 @@ class PostApiV1LoginGoogle200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets data
      *
-     * @param \RocketChatAuthenticationApi\Model\PostApiV1Login200ResponseData|null $data data
+     * @param \WebMIRocketChatApiClientAuthenticationApi\Model\PostApiV1Login200ResponseData|null $data data
      *
      * @return self
      */

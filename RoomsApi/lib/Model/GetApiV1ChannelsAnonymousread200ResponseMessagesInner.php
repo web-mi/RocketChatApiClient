@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1ChannelsAnonymousread200ResponseMessagesInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,15 +61,15 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
         't' => 'string',
         'msg' => 'string',
         'groupable' => 'bool',
-        'blocks' => '\RocketChatRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]',
+        'blocks' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]',
         'ts' => 'string',
-        'u' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         'rid' => 'string',
         '_updated_at' => 'string',
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
+        'md' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
     ];
 
     /**
@@ -484,7 +484,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Gets blocks
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]|null
      */
     public function getBlocks()
     {
@@ -494,7 +494,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Sets blocks
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]|null $blocks blocks
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]|null $blocks blocks
      *
      * @return self
      */
@@ -538,7 +538,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Gets u
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -548,7 +548,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Sets u
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -700,7 +700,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Gets md
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -710,7 +710,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
     /**
      * Sets md
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
      *
      * @return self
      */

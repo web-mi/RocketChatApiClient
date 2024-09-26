@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHistoryInnerMetrics Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
       * @var string[]
       */
     protected static $openAPITypes = [
-        'reaction' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsReaction',
-        'response' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsResponse',
-        'v' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV'
+        'reaction' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsReaction',
+        'response' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsResponse',
+        'v' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV'
     ];
 
     /**
@@ -306,7 +306,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Gets reaction
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsReaction|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsReaction|null
      */
     public function getReaction()
     {
@@ -316,7 +316,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Sets reaction
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsReaction|null $reaction reaction
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsReaction|null $reaction reaction
      *
      * @return self
      */
@@ -333,7 +333,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Gets response
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsResponse|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsResponse|null
      */
     public function getResponse()
     {
@@ -343,7 +343,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Sets response
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsResponse|null $response response
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsResponse|null $response response
      *
      * @return self
      */
@@ -360,7 +360,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Gets v
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null
      */
     public function getV()
     {
@@ -370,7 +370,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
     /**
      * Sets v
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null $v v
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null $v v
      *
      * @return self
      */

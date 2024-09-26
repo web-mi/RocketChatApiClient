@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMarketplaceAppsApi
+ * @package  WebMIRocketChatApiClientMarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMarketplaceAppsApi\Model;
+namespace WebMIRocketChatApiClientMarketplaceAppsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMarketplaceAppsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMarketplaceAppsApi\ObjectSerializer;
 
 /**
  * PostApiAppsPublicAppIdIncomingRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMarketplaceAppsApi
+ * @package  WebMIRocketChatApiClientMarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -59,7 +59,7 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
     protected static $openAPITypes = [
         'action' => 'string',
         'session_id' => 'string',
-        'action_data' => '\RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequestActionData'
+        'action_data' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequestActionData'
     ];
 
     /**
@@ -366,7 +366,7 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
     /**
      * Gets action_data
      *
-     * @return \RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequestActionData|null
+     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequestActionData|null
      */
     public function getActionData()
     {
@@ -376,7 +376,7 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
     /**
      * Sets action_data
      *
-     * @param \RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequestActionData|null $action_data action_data
+     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequestActionData|null $action_data action_data
      *
      * @return self
      */

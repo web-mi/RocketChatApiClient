@@ -8,6 +8,6 @@ Name | Type | Description | Notes
 **name** | **string** | The contact name. |
 **email** | **string** | The contact email. | [optional]
 **phone** | **string** | The contact phone number. | [optional]
-**contact_manager** | [**\RocketChatOmnichannelApi\Model\PostApiV1OmnichannelContactRequestContactManager**](PostApiV1OmnichannelContactRequestContactManager.md) |  | [optional]
+**contact_manager** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1OmnichannelContactRequestContactManager**](PostApiV1OmnichannelContactRequestContactManager.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

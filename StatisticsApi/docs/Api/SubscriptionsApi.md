@@ -1,4 +1,4 @@
-# RocketChatStatisticsApi\SubscriptionsApi
+# WebMIRocketChatApiClientStatisticsApi\SubscriptionsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -13,7 +13,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1SubscriptionsGet()`
 
 ```php
-getApiV1SubscriptionsGet($x_auth_token, $x_user_id, $updated_since): \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGet200Response
+getApiV1SubscriptionsGet($x_auth_token, $x_user_id, $updated_since): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200Response
 ```
 
 Get All Subscriptions
@@ -28,7 +28,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatStatisticsApi\Api\SubscriptionsApi(
+$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -55,7 +55,7 @@ try {
 
 ### Return type
 
-[**\RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGet200Response**](../Model/GetApiV1SubscriptionsGet200Response.md)
+[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200Response**](../Model/GetApiV1SubscriptionsGet200Response.md)
 
 ### Authorization
 
@@ -73,7 +73,7 @@ No authorization required
 ## `getApiV1SubscriptionsGetOne()`
 
 ```php
-getApiV1SubscriptionsGetOne($x_auth_token, $x_user_id, $room_id): \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGetOne200Response
+getApiV1SubscriptionsGetOne($x_auth_token, $x_user_id, $room_id): \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200Response
 ```
 
 Get Subscription Room
@@ -88,7 +88,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatStatisticsApi\Api\SubscriptionsApi(
+$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -115,7 +115,7 @@ try {
 
 ### Return type
 
-[**\RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGetOne200Response**](../Model/GetApiV1SubscriptionsGetOne200Response.md)
+[**\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGetOne200Response**](../Model/GetApiV1SubscriptionsGetOne200Response.md)
 
 ### Authorization
 
@@ -133,7 +133,7 @@ No authorization required
 ## `postApiV1SubscriptionsRead()`
 
 ```php
-postApiV1SubscriptionsRead($x_auth_token, $x_user_id, $post_api_v1_subscriptions_read_request): \RocketChatStatisticsApi\Model\PostApiV1SubscriptionsRead200Response
+postApiV1SubscriptionsRead($x_auth_token, $x_user_id, $post_api_v1_subscriptions_read_request): \WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsRead200Response
 ```
 
 Mark Channel as Read
@@ -148,14 +148,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatStatisticsApi\Api\SubscriptionsApi(
+$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The token of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The user ID of the authenticated user.
-$post_api_v1_subscriptions_read_request = {"rid":"L6su9mxwdDkvdSaT9hvzu8z6mHFigiXy6Y"}; // \RocketChatStatisticsApi\Model\PostApiV1SubscriptionsReadRequest
+$post_api_v1_subscriptions_read_request = {"rid":"L6su9mxwdDkvdSaT9hvzu8z6mHFigiXy6Y"}; // \WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsReadRequest
 
 try {
     $result = $apiInstance->postApiV1SubscriptionsRead($x_auth_token, $x_user_id, $post_api_v1_subscriptions_read_request);
@@ -171,11 +171,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The token of the authenticated user. | |
 | **x_user_id** | **string**| The user ID of the authenticated user. | |
-| **post_api_v1_subscriptions_read_request** | [**\RocketChatStatisticsApi\Model\PostApiV1SubscriptionsReadRequest**](../Model/PostApiV1SubscriptionsReadRequest.md)|  | [optional] |
+| **post_api_v1_subscriptions_read_request** | [**\WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsReadRequest**](../Model/PostApiV1SubscriptionsReadRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatStatisticsApi\Model\PostApiV1SubscriptionsRead200Response**](../Model/PostApiV1SubscriptionsRead200Response.md)
+[**\WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsRead200Response**](../Model/PostApiV1SubscriptionsRead200Response.md)
 
 ### Authorization
 
@@ -193,7 +193,7 @@ No authorization required
 ## `postApiV1SubscriptionsUnread()`
 
 ```php
-postApiV1SubscriptionsUnread($x_auth_token, $x_user_id, $post_api_v1_subscriptions_unread_request): \RocketChatStatisticsApi\Model\PostApiV1SubscriptionsRead200Response
+postApiV1SubscriptionsUnread($x_auth_token, $x_user_id, $post_api_v1_subscriptions_unread_request): \WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsRead200Response
 ```
 
 Mark Channel as Unread
@@ -208,14 +208,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatStatisticsApi\Api\SubscriptionsApi(
+$apiInstance = new WebMIRocketChatApiClientStatisticsApi\Api\SubscriptionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The token of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The user ID of the authenticated user.
-$post_api_v1_subscriptions_unread_request = {"roomId":"L6su9mxwdDkvdSaT9hvzu8z6mHFigiXy6Y"}; // \RocketChatStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequest | 
+$post_api_v1_subscriptions_unread_request = {"roomId":"L6su9mxwdDkvdSaT9hvzu8z6mHFigiXy6Y"}; // \WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequest | 
 
 try {
     $result = $apiInstance->postApiV1SubscriptionsUnread($x_auth_token, $x_user_id, $post_api_v1_subscriptions_unread_request);
@@ -231,11 +231,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The token of the authenticated user. | |
 | **x_user_id** | **string**| The user ID of the authenticated user. | |
-| **post_api_v1_subscriptions_unread_request** | [**\RocketChatStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequest**](../Model/PostApiV1SubscriptionsUnreadRequest.md)|  | [optional] |
+| **post_api_v1_subscriptions_unread_request** | [**\WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequest**](../Model/PostApiV1SubscriptionsUnreadRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatStatisticsApi\Model\PostApiV1SubscriptionsRead200Response**](../Model/PostApiV1SubscriptionsRead200Response.md)
+[**\WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsRead200Response**](../Model/PostApiV1SubscriptionsRead200Response.md)
 
 ### Authorization
 

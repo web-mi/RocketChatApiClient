@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1ImportStatus200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
       */
     protected static $openAPITypes = [
         'state' => 'string',
-        'operation' => '\RocketChatSettingsApi\Model\GetApiV1ImportStatus200ResponseOperation',
+        'operation' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ImportStatus200ResponseOperation',
         'success' => 'bool'
     ];
 
@@ -333,7 +333,7 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets operation
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1ImportStatus200ResponseOperation|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ImportStatus200ResponseOperation|null
      */
     public function getOperation()
     {
@@ -343,7 +343,7 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets operation
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1ImportStatus200ResponseOperation|null $operation operation
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ImportStatus200ResponseOperation|null $operation operation
      *
      * @return self
      */

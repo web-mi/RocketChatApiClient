@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**history** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner[]**](GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner.md) |  | [optional]
+**history** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner[]**](GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Api;
+namespace WebMIRocketChatApiClientOmnichannelApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatOmnichannelApi\ApiException;
-use RocketChatOmnichannelApi\Configuration;
-use RocketChatOmnichannelApi\HeaderSelector;
-use RocketChatOmnichannelApi\ObjectSerializer;
+use WebMIRocketChatApiClientOmnichannelApi\ApiException;
+use WebMIRocketChatApiClientOmnichannelApi\Configuration;
+use WebMIRocketChatApiClientOmnichannelApi\HeaderSelector;
+use WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * LivechatPageVisitedApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -127,12 +127,12 @@ class LivechatPageVisitedApi
      *
      * Send Visitor navigation history
      *
-     * @param  \RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request post_api_v1_livechat_page_visited_request (optional)
+     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request post_api_v1_livechat_page_visited_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatPageVisited'] to see the possible values for this operation
      *
-     * @throws \RocketChatOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response|\RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType400Response
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType400Response
      */
     public function postApiV1LivechatPageVisited($post_api_v1_livechat_page_visited_request = null, string $contentType = self::contentTypes['postApiV1LivechatPageVisited'][0])
     {
@@ -145,12 +145,12 @@ class LivechatPageVisitedApi
      *
      * Send Visitor navigation history
      *
-     * @param  \RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request (optional)
+     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatPageVisited'] to see the possible values for this operation
      *
-     * @throws \RocketChatOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientOmnichannelApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response|\RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType400Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response|\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1LivechatPageVisitedWithHttpInfo($post_api_v1_livechat_page_visited_request = null, string $contentType = self::contentTypes['postApiV1LivechatPageVisited'][0])
     {
@@ -193,11 +193,11 @@ class LivechatPageVisitedApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -215,16 +215,16 @@ class LivechatPageVisitedApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -242,13 +242,13 @@ class LivechatPageVisitedApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response';
+            $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -281,7 +281,7 @@ class LivechatPageVisitedApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response',
+                        '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -289,7 +289,7 @@ class LivechatPageVisitedApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType400Response',
+                        '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -304,7 +304,7 @@ class LivechatPageVisitedApi
      *
      * Send Visitor navigation history
      *
-     * @param  \RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request (optional)
+     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatPageVisited'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -325,7 +325,7 @@ class LivechatPageVisitedApi
      *
      * Send Visitor navigation history
      *
-     * @param  \RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request (optional)
+     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatPageVisited'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -333,7 +333,7 @@ class LivechatPageVisitedApi
      */
     public function postApiV1LivechatPageVisitedAsyncWithHttpInfo($post_api_v1_livechat_page_visited_request = null, string $contentType = self::contentTypes['postApiV1LivechatPageVisited'][0])
     {
-        $returnType = '\RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response';
+        $returnType = '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisited200Response';
         $request = $this->postApiV1LivechatPageVisitedRequest($post_api_v1_livechat_page_visited_request, $contentType);
 
         return $this->client
@@ -375,7 +375,7 @@ class LivechatPageVisitedApi
     /**
      * Create request for operation 'postApiV1LivechatPageVisited'
      *
-     * @param  \RocketChatOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request (optional)
+     * @param  \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatPageVisitedRequest $post_api_v1_livechat_page_visited_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1LivechatPageVisited'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

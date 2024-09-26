@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * PostApiV1CommandsPreviewRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
         'tmid' => 'string',
         'params' => 'string',
         'trigger_id' => 'string',
-        'preview_item' => '\RocketChatMiscellaneousApi\Model\PostApiV1CommandsPreviewRequestPreviewItem'
+        'preview_item' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1CommandsPreviewRequestPreviewItem'
     ];
 
     /**
@@ -474,7 +474,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Gets preview_item
      *
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1CommandsPreviewRequestPreviewItem
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1CommandsPreviewRequestPreviewItem
      */
     public function getPreviewItem()
     {
@@ -484,7 +484,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
     /**
      * Sets preview_item
      *
-     * @param \RocketChatMiscellaneousApi\Model\PostApiV1CommandsPreviewRequestPreviewItem $preview_item preview_item
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1CommandsPreviewRequestPreviewItem $preview_item preview_item
      *
      * @return self
      */

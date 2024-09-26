@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**emojis** | [**\RocketChatContentManagementApi\Model\GetApiV1EmojiCustomAll200ResponseEmojisInner[]**](GetApiV1EmojiCustomAll200ResponseEmojisInner.md) |  | [optional]
+**emojis** | [**\WebMIRocketChatApiClientContentManagementApi\Model\GetApiV1EmojiCustomAll200ResponseEmojisInner[]**](GetApiV1EmojiCustomAll200ResponseEmojisInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]

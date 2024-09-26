@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * PostApiV1ImportAddUsersRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1ImportAddUsersRequest implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'users' => '\RocketChatSettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]'
+        'users' => '\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]'
     ];
 
     /**
@@ -292,7 +292,7 @@ class PostApiV1ImportAddUsersRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Gets users
      *
-     * @return \RocketChatSettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]|null
      */
     public function getUsers()
     {
@@ -302,7 +302,7 @@ class PostApiV1ImportAddUsersRequest implements ModelInterface, ArrayAccess, \Js
     /**
      * Sets users
      *
-     * @param \RocketChatSettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]|null $users users
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1ImportAddUsersRequestUsersInner[]|null $users users
      *
      * @return self
      */

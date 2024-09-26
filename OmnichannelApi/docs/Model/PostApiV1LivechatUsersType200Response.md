@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user** | [**\RocketChatOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser**](PostApiV1LivechatUsersType200ResponseUser.md) |  | [optional]
+**user** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser**](PostApiV1LivechatUsersType200ResponseUser.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

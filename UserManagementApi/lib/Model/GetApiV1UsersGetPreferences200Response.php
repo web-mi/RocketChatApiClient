@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatUserManagementApi\Model;
+namespace WebMIRocketChatApiClientUserManagementApi\Model;
 
 use \ArrayAccess;
-use \RocketChatUserManagementApi\ObjectSerializer;
+use \WebMIRocketChatApiClientUserManagementApi\ObjectSerializer;
 
 /**
  * GetApiV1UsersGetPreferences200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatUserManagementApi
+ * @package  WebMIRocketChatApiClientUserManagementApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1UsersGetPreferences200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'preferences' => '\RocketChatUserManagementApi\Model\GetApiV1UsersGetPreferences200ResponsePreferences',
+        'preferences' => '\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200ResponsePreferences',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1UsersGetPreferences200Response implements ModelInterface, ArrayAcc
     /**
      * Gets preferences
      *
-     * @return \RocketChatUserManagementApi\Model\GetApiV1UsersGetPreferences200ResponsePreferences|null
+     * @return \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200ResponsePreferences|null
      */
     public function getPreferences()
     {
@@ -309,7 +309,7 @@ class GetApiV1UsersGetPreferences200Response implements ModelInterface, ArrayAcc
     /**
      * Sets preferences
      *
-     * @param \RocketChatUserManagementApi\Model\GetApiV1UsersGetPreferences200ResponsePreferences|null $preferences preferences
+     * @param \WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersGetPreferences200ResponsePreferences|null $preferences preferences
      *
      * @return self
      */

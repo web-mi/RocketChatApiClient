@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatTransferHistoryRid200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
         'history' => 'object[]',
         'count' => 'int',
         'offset' => 'int',
-        'data' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData',
+        'data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData',
         'total' => 'int',
         'success' => 'bool'
     ];
@@ -408,7 +408,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
     /**
      * Gets data
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData|null
      */
     public function getData()
     {
@@ -418,7 +418,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
     /**
      * Sets data
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData|null $data data
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData|null $data data
      *
      * @return self
      */

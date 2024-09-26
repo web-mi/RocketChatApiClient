@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatNotificationsApi\Model;
+namespace WebMIRocketChatApiClientNotificationsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatNotificationsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
 
 /**
  * GetApiV1PushGet200ResponseDataNotificationPayload Class Doc Comment
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,7 +61,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
         'message_id' => 'string',
         'notification_type' => 'string',
         'rid' => 'string',
-        'sender' => '\RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU',
+        'sender' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU',
         'sender_name' => 'string',
         'type' => 'string',
         'name' => 'string'
@@ -449,7 +449,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
     /**
      * Gets sender
      *
-     * @return \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null
+     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null
      */
     public function getSender()
     {
@@ -459,7 +459,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
     /**
      * Sets sender
      *
-     * @param \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null $sender sender
+     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null $sender sender
      *
      * @return self
      */

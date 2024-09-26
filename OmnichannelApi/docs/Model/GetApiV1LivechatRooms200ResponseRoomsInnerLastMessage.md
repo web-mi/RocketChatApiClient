@@ -10,7 +10,7 @@ Name | Type | Description | Notes
 **token** | **string** |  | [optional]
 **alias** | **string** |  | [optional]
 **ts** | **string** |  | [optional]
-**u** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU**](GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU.md) |  | [optional]
+**u** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU**](GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **mentions** | **object[]** |  | [optional]
 **channels** | **object[]** |  | [optional]

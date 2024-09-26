@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1OmnichannelContactSearch200ResponseContact Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -65,9 +65,9 @@ class GetApiV1OmnichannelContactSearch200ResponseContact implements ModelInterfa
         'department' => 'string',
         'name' => 'string',
         'token' => 'string',
-        'visitor_emails' => '\RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]',
-        'last_chat' => '\RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat',
-        'livechat_data' => '\RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLivechatData'
+        'visitor_emails' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]',
+        'last_chat' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat',
+        'livechat_data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLivechatData'
     ];
 
     /**
@@ -578,7 +578,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContact implements ModelInterfa
     /**
      * Gets visitor_emails
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null
      */
     public function getVisitorEmails()
     {
@@ -588,7 +588,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContact implements ModelInterfa
     /**
      * Sets visitor_emails
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null $visitor_emails visitor_emails
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null $visitor_emails visitor_emails
      *
      * @return self
      */
@@ -605,7 +605,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContact implements ModelInterfa
     /**
      * Gets last_chat
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null
      */
     public function getLastChat()
     {
@@ -615,7 +615,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContact implements ModelInterfa
     /**
      * Sets last_chat
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null $last_chat last_chat
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null $last_chat last_chat
      *
      * @return self
      */
@@ -632,7 +632,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContact implements ModelInterfa
     /**
      * Gets livechat_data
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLivechatData|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLivechatData|null
      */
     public function getLivechatData()
     {
@@ -642,7 +642,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContact implements ModelInterfa
     /**
      * Sets livechat_data
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLivechatData|null $livechat_data livechat_data
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLivechatData|null $livechat_data livechat_data
      *
      * @return self
      */

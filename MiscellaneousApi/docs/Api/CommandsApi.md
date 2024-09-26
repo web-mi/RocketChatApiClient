@@ -1,4 +1,4 @@
-# RocketChatMiscellaneousApi\CommandsApi
+# WebMIRocketChatApiClientMiscellaneousApi\CommandsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1CommandsGet()`
 
 ```php
-getApiV1CommandsGet($x_auth_token, $x_user_id, $command): \RocketChatMiscellaneousApi\Model\GetApiV1CommandsGet200Response
+getApiV1CommandsGet($x_auth_token, $x_user_id, $command): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsGet200Response
 ```
 
 Get Slash Commands
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\CommandsApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\GetApiV1CommandsGet200Response**](../Model/GetApiV1CommandsGet200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsGet200Response**](../Model/GetApiV1CommandsGet200Response.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 ## `getApiV1CommandsList()`
 
 ```php
-getApiV1CommandsList($x_auth_token, $x_user_id): \RocketChatMiscellaneousApi\Model\GetApiV1CommandsList200Response
+getApiV1CommandsList($x_auth_token, $x_user_id): \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsList200Response
 ```
 
 List Slash Commands
@@ -89,7 +89,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\CommandsApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -114,7 +114,7 @@ try {
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\GetApiV1CommandsList200Response**](../Model/GetApiV1CommandsList200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsList200Response**](../Model/GetApiV1CommandsList200Response.md)
 
 ### Authorization
 
@@ -147,7 +147,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\CommandsApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -211,14 +211,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\CommandsApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_commands_preview_request = {"command":"unmute","roomId":"ByehQjC44FwMeiLbX","tmid":"Hsj2435g4bvrj4bjh","params":"@user123","triggerId":"awovufbukuefzuper","previewItem":{"id":"nucobdipokaikazia","type":"image","value":"https://dev.null/gif"}}; // \RocketChatMiscellaneousApi\Model\PostApiV1CommandsPreviewRequest
+$post_api_v1_commands_preview_request = {"command":"unmute","roomId":"ByehQjC44FwMeiLbX","tmid":"Hsj2435g4bvrj4bjh","params":"@user123","triggerId":"awovufbukuefzuper","previewItem":{"id":"nucobdipokaikazia","type":"image","value":"https://dev.null/gif"}}; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1CommandsPreviewRequest
 
 try {
     $result = $apiInstance->postApiV1CommandsPreview($x_auth_token, $x_user_id, $post_api_v1_commands_preview_request);
@@ -234,7 +234,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_commands_preview_request** | [**\RocketChatMiscellaneousApi\Model\PostApiV1CommandsPreviewRequest**](../Model/PostApiV1CommandsPreviewRequest.md)|  | [optional] |
+| **post_api_v1_commands_preview_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1CommandsPreviewRequest**](../Model/PostApiV1CommandsPreviewRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -256,7 +256,7 @@ No authorization required
 ## `postApiV1CommandsRun()`
 
 ```php
-postApiV1CommandsRun($x_auth_token, $x_user_id, $post_api_v1_commands_run_request): \RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response
+postApiV1CommandsRun($x_auth_token, $x_user_id, $post_api_v1_commands_run_request): \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response
 ```
 
 Execute a Slash Command
@@ -271,14 +271,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatMiscellaneousApi\Api\CommandsApi(
+$apiInstance = new WebMIRocketChatApiClientMiscellaneousApi\Api\CommandsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_commands_run_request = {"command":"unmute","roomId":"ByehQjC44FwMeiLbX","params":"@user123","tmid":"Hsj2435g4bvrj4bjh","triggerId":"awovufbukuefzuper"}; // \RocketChatMiscellaneousApi\Model\PostApiV1CommandsRunRequest
+$post_api_v1_commands_run_request = {"command":"unmute","roomId":"ByehQjC44FwMeiLbX","params":"@user123","tmid":"Hsj2435g4bvrj4bjh","triggerId":"awovufbukuefzuper"}; // \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1CommandsRunRequest
 
 try {
     $result = $apiInstance->postApiV1CommandsRun($x_auth_token, $x_user_id, $post_api_v1_commands_run_request);
@@ -294,11 +294,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_commands_run_request** | [**\RocketChatMiscellaneousApi\Model\PostApiV1CommandsRunRequest**](../Model/PostApiV1CommandsRunRequest.md)|  | [optional] |
+| **post_api_v1_commands_run_request** | [**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1CommandsRunRequest**](../Model/PostApiV1CommandsRunRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response**](../Model/PostApiV1AutotranslateSaveSettings200Response.md)
+[**\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response**](../Model/PostApiV1AutotranslateSaveSettings200Response.md)
 
 ### Authorization
 

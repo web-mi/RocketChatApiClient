@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\AgentExtensionsApi
+# WebMIRocketChatApiClientOmnichannelApi\AgentExtensionsApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `deleteApiV1OmnichannelAgentExtensionUsername()`
 
 ```php
-deleteApiV1OmnichannelAgentExtensionUsername($username, $x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+deleteApiV1OmnichannelAgentExtensionUsername($username, $x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Delete Omnichannel Agent Extension
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\AgentExtensionsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\AgentExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -87,7 +87,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\AgentExtensionsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\AgentExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -146,7 +146,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\AgentExtensionsApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\AgentExtensionsApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()

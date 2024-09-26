@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatVisitorsAutocomplete200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatVisitorsAutocomplete200Response implements ModelInterface,
       * @var string[]
       */
     protected static $openAPITypes = [
-        'items' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsAutocomplete200ResponseItemsInner[]',
+        'items' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsAutocomplete200ResponseItemsInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1LivechatVisitorsAutocomplete200Response implements ModelInterface,
     /**
      * Gets items
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsAutocomplete200ResponseItemsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsAutocomplete200ResponseItemsInner[]|null
      */
     public function getItems()
     {
@@ -309,7 +309,7 @@ class GetApiV1LivechatVisitorsAutocomplete200Response implements ModelInterface,
     /**
      * Sets items
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatVisitorsAutocomplete200ResponseItemsInner[]|null $items items
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatVisitorsAutocomplete200ResponseItemsInner[]|null $items items
      *
      * @return self
      */

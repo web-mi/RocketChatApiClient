@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatUpload200ResponseAttachmentsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,14 +61,14 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
         'title' => 'string',
         'title_link' => 'string',
         'title_link_download' => 'bool',
-        'image_dimensions' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions',
+        'image_dimensions' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions',
         'image_preview' => 'string',
         'image_url' => 'string',
         'image_type' => 'string',
         'image_size' => 'int',
         'type' => 'string',
         'description' => 'string',
-        'description_md' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]'
+        'description_md' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]'
     ];
 
     /**
@@ -477,7 +477,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
     /**
      * Gets image_dimensions
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions|null
      */
     public function getImageDimensions()
     {
@@ -487,7 +487,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
     /**
      * Sets image_dimensions
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions|null $image_dimensions image_dimensions
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions|null $image_dimensions image_dimensions
      *
      * @return self
      */
@@ -666,7 +666,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
     /**
      * Gets description_md
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]|null
      */
     public function getDescriptionMd()
     {
@@ -676,7 +676,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
     /**
      * Sets description_md
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]|null $description_md description_md
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]|null $description_md description_md
      *
      * @return self
      */

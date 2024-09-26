@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Model;
+namespace WebMIRocketChatApiClientStatisticsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatStatisticsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * PostApiV1SubscriptionsUnreadRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1SubscriptionsUnreadRequest implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'first_unread_message' => '\RocketChatStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequestFirstUnreadMessage',
+        'first_unread_message' => '\WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequestFirstUnreadMessage',
         'room_id' => 'string'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1SubscriptionsUnreadRequest implements ModelInterface, ArrayAccess
     /**
      * Gets first_unread_message
      *
-     * @return \RocketChatStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequestFirstUnreadMessage|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequestFirstUnreadMessage|null
      */
     public function getFirstUnreadMessage()
     {
@@ -309,7 +309,7 @@ class PostApiV1SubscriptionsUnreadRequest implements ModelInterface, ArrayAccess
     /**
      * Sets first_unread_message
      *
-     * @param \RocketChatStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequestFirstUnreadMessage|null $first_unread_message first_unread_message
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\PostApiV1SubscriptionsUnreadRequestFirstUnreadMessage|null $first_unread_message first_unread_message
      *
      * @return self
      */

@@ -9,8 +9,8 @@ Name | Type | Description | Notes
 **description** | **string** |  | [optional]
 **enabled** | **bool** |  | [optional]
 **run_once** | **bool** |  | [optional]
-**conditions** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]**](GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner.md) |  | [optional]
-**actions** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner[]**](GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner.md) |  | [optional]
+**conditions** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]**](GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner.md) |  | [optional]
+**actions** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner[]**](GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

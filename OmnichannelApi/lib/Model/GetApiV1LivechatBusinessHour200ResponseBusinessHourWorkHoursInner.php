@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
       */
     protected static $openAPITypes = [
         'day' => 'string',
-        'start' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart',
-        'finish' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart',
+        'start' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart',
+        'finish' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart',
         'code' => 'int',
         'open' => 'bool'
     ];
@@ -347,7 +347,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
     /**
      * Gets start
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null
      */
     public function getStart()
     {
@@ -357,7 +357,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
     /**
      * Sets start
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null $start start
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null $start start
      *
      * @return self
      */
@@ -374,7 +374,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
     /**
      * Gets finish
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null
      */
     public function getFinish()
     {
@@ -384,7 +384,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
     /**
      * Sets finish
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null $finish finish
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null $finish finish
      *
      * @return self
      */

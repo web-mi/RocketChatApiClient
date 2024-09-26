@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1ModerationUserReportedMessages200ResponseMessagesInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
       */
     protected static $openAPITypes = [
         '_id' => 'string',
-        'message' => '\RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessage',
-        'room' => '\RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom',
+        'message' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessage',
+        'room' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom',
         'ts' => 'string'
     ];
 
@@ -340,7 +340,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
     /**
      * Gets message
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessage|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessage|null
      */
     public function getMessage()
     {
@@ -350,7 +350,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
     /**
      * Sets message
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessage|null $message message
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessage|null $message message
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
     /**
      * Gets room
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null
      */
     public function getRoom()
     {
@@ -377,7 +377,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
     /**
      * Sets room
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null $room room
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null $room room
      *
      * @return self
      */

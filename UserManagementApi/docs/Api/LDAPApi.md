@@ -1,4 +1,4 @@
-# RocketChatUserManagementApi\LDAPApi
+# WebMIRocketChatApiClientUserManagementApi\LDAPApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -12,7 +12,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiV1LdapSyncNow()`
 
 ```php
-postApiV1LdapSyncNow($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method): \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response
+postApiV1LdapSyncNow($x_auth_token, $x_user_id, $x_2fa_code, $x_2fa_method): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response
 ```
 
 LDAP Sync
@@ -27,7 +27,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\LDAPApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\LDAPApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -56,7 +56,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response**](../Model/PostApiV1UsersLogout200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response**](../Model/PostApiV1UsersLogout200Response.md)
 
 ### Authorization
 
@@ -74,7 +74,7 @@ No authorization required
 ## `postApiV1LdapTestConnection()`
 
 ```php
-postApiV1LdapTestConnection($x_auth_token, $x_user_id): \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response
+postApiV1LdapTestConnection($x_auth_token, $x_user_id): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response
 ```
 
 Test LDAP Connection
@@ -89,7 +89,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\LDAPApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\LDAPApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -114,7 +114,7 @@ try {
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response**](../Model/PostApiV1UsersLogout200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response**](../Model/PostApiV1UsersLogout200Response.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 ## `postApiV1LdapTestSearch()`
 
 ```php
-postApiV1LdapTestSearch($x_auth_token, $x_user_id, $post_api_v1_ldap_test_search_request): \RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response
+postApiV1LdapTestSearch($x_auth_token, $x_user_id, $post_api_v1_ldap_test_search_request): \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response
 ```
 
 Test LDAP User Search
@@ -147,14 +147,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatUserManagementApi\Api\LDAPApi(
+$apiInstance = new WebMIRocketChatApiClientUserManagementApi\Api\LDAPApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The authenticated user token.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The authenticated user ID.
-$post_api_v1_ldap_test_search_request = {"username":"bob"}; // \RocketChatUserManagementApi\Model\PostApiV1LdapTestSearchRequest
+$post_api_v1_ldap_test_search_request = {"username":"bob"}; // \WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapTestSearchRequest
 
 try {
     $result = $apiInstance->postApiV1LdapTestSearch($x_auth_token, $x_user_id, $post_api_v1_ldap_test_search_request);
@@ -170,11 +170,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The authenticated user token. | |
 | **x_user_id** | **string**| The authenticated user ID. | |
-| **post_api_v1_ldap_test_search_request** | [**\RocketChatUserManagementApi\Model\PostApiV1LdapTestSearchRequest**](../Model/PostApiV1LdapTestSearchRequest.md)|  | [optional] |
+| **post_api_v1_ldap_test_search_request** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1LdapTestSearchRequest**](../Model/PostApiV1LdapTestSearchRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatUserManagementApi\Model\PostApiV1UsersLogout200Response**](../Model/PostApiV1UsersLogout200Response.md)
+[**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersLogout200Response**](../Model/PostApiV1UsersLogout200Response.md)
 
 ### Authorization
 

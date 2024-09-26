@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1RoomsUploadRid200ResponseMessage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,13 +61,13 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
         'rid' => 'string',
         'ts' => 'string',
         'msg' => 'string',
-        'file' => '\RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile',
-        'files' => '\RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]',
-        'attachments' => '\RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]',
-        'u' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
+        'file' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile',
+        'files' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]',
+        'attachments' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]',
+        'u' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         '_updated_at' => 'string',
         'urls' => 'object[]',
-        'md' => '\RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
+        'md' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
     ];
 
     /**
@@ -470,7 +470,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets file
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile|null
      */
     public function getFile()
     {
@@ -480,7 +480,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets file
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile|null $file file
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile|null $file file
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets files
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]|null
      */
     public function getFiles()
     {
@@ -507,7 +507,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets files
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]|null $files files
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]|null $files files
      *
      * @return self
      */
@@ -524,7 +524,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets attachments
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null
      */
     public function getAttachments()
     {
@@ -534,7 +534,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets attachments
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null $attachments attachments
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null $attachments attachments
      *
      * @return self
      */
@@ -551,7 +551,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets u
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
     public function getU()
     {
@@ -561,7 +561,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets u
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
      *
      * @return self
      */
@@ -632,7 +632,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets md
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -642,7 +642,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets md
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
      *
      * @return self
      */

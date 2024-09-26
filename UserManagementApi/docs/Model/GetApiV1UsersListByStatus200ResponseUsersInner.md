@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_id** | **string** |  | [optional]
 **username** | **string** |  | [optional]
-**emails** | [**\RocketChatUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]**](PostApiV1UsersCreate200ResponseUserEmailsInner.md) |  | [optional]
+**emails** | [**\WebMIRocketChatApiClientUserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]**](PostApiV1UsersCreate200ResponseUserEmailsInner.md) |  | [optional]
 **type** | **string** |  | [optional]
 **roles** | **string[]** |  | [optional]
 **status** | **string** |  | [optional]

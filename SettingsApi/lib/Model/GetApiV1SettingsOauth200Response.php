@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1SettingsOauth200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1SettingsOauth200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'services' => '\RocketChatSettingsApi\Model\GetApiV1SettingsOauth200ResponseServicesInner[]',
+        'services' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsOauth200ResponseServicesInner[]',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1SettingsOauth200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets services
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1SettingsOauth200ResponseServicesInner[]|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsOauth200ResponseServicesInner[]|null
      */
     public function getServices()
     {
@@ -309,7 +309,7 @@ class GetApiV1SettingsOauth200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets services
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1SettingsOauth200ResponseServicesInner[]|null $services services
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1SettingsOauth200ResponseServicesInner[]|null $services services
      *
      * @return self
      */

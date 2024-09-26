@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetChannelsMembersByHighestRole200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetChannelsMembersByHighestRole200Response implements ModelInterface, Arra
       * @var string[]
       */
     protected static $openAPITypes = [
-        'members' => '\RocketChatRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInner[]',
+        'members' => '\WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetChannelsMembersByHighestRole200Response implements ModelInterface, Arra
     /**
      * Gets members
      *
-     * @return \RocketChatRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInner[]|null
      */
     public function getMembers()
     {
@@ -330,7 +330,7 @@ class GetChannelsMembersByHighestRole200Response implements ModelInterface, Arra
     /**
      * Sets members
      *
-     * @param \RocketChatRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInner[]|null $members members
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInner[]|null $members members
      *
      * @return self
      */

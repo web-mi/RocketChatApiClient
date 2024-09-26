@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Model;
+namespace WebMIRocketChatApiClientStatisticsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatStatisticsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1Statistics200ResponseUniqueUsersOfLastWeek Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeek implements ModelInterfa
         'year' => 'int',
         'month' => 'int',
         'day' => 'int',
-        'data' => '\RocketChatStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner[]'
+        'data' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner[]'
     ];
 
     /**
@@ -394,7 +394,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeek implements ModelInterfa
     /**
      * Gets data
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner[]|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner[]|null
      */
     public function getData()
     {
@@ -404,7 +404,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeek implements ModelInterfa
     /**
      * Sets data
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner[]|null $data data
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner[]|null $data data
      *
      * @return self
      */

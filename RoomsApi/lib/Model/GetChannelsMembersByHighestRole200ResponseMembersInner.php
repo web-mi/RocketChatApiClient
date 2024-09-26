@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetChannelsMembersByHighestRole200ResponseMembersInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -64,7 +64,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
         'status_connection' => 'string',
         'username' => 'string',
         'avatar_e_tag' => 'string',
-        'highest_role' => '\RocketChatRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole'
+        'highest_role' => '\WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole'
     ];
 
     /**
@@ -530,7 +530,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
     /**
      * Gets highest_role
      *
-     * @return \RocketChatRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole|null
      */
     public function getHighestRole()
     {
@@ -540,7 +540,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
     /**
      * Sets highest_role
      *
-     * @param \RocketChatRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole|null $highest_role highest_role
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole|null $highest_role highest_role
      *
      * @return self
      */

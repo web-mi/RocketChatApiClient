@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * GetApiV1TeamsMembers200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1TeamsMembers200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'members' => '\RocketChatRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInner[]',
+        'members' => '\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInner[]',
         'total' => 'int',
         'count' => 'int',
         'offset' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1TeamsMembers200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets members
      *
-     * @return \RocketChatRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInner[]|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInner[]|null
      */
     public function getMembers()
     {
@@ -330,7 +330,7 @@ class GetApiV1TeamsMembers200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets members
      *
-     * @param \RocketChatRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInner[]|null $members members
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInner[]|null $members members
      *
      * @return self
      */

@@ -12,8 +12,8 @@ Name | Type | Description | Notes
 **department** | **string** |  | [optional]
 **name** | **string** |  | [optional]
 **token** | **string** |  | [optional]
-**visitor_emails** | [**\RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]**](GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner.md) |  | [optional]
-**last_chat** | [**\RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat**](GetApiV1OmnichannelContactSearch200ResponseContactLastChat.md) |  | [optional]
-**livechat_data** | [**\RocketChatOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLivechatData**](GetApiV1OmnichannelContactSearch200ResponseContactLivechatData.md) |  | [optional]
+**visitor_emails** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]**](GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner.md) |  | [optional]
+**last_chat** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat**](GetApiV1OmnichannelContactSearch200ResponseContactLastChat.md) |  | [optional]
+**livechat_data** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLivechatData**](GetApiV1OmnichannelContactSearch200ResponseContactLivechatData.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

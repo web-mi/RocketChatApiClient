@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1ModerationReports200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ModerationReports200Response implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'reports' => '\RocketChatSettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInner[]',
+        'reports' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ModerationReports200Response implements ModelInterface, ArrayAcces
     /**
      * Gets reports
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInner[]|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInner[]|null
      */
     public function getReports()
     {
@@ -330,7 +330,7 @@ class GetApiV1ModerationReports200Response implements ModelInterface, ArrayAcces
     /**
      * Sets reports
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInner[]|null $reports reports
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInner[]|null $reports reports
      *
      * @return self
      */

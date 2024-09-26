@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatNotificationsApi\Model;
+namespace WebMIRocketChatApiClientNotificationsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatNotificationsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
 
 /**
  * PostApiV1BannersDismiss200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>

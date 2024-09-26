@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Model;
+namespace WebMIRocketChatApiClientStatisticsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatStatisticsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1SubscriptionsGet200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]',
+        'update' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]',
         'remove' => 'object[]',
         'success' => 'bool'
     ];
@@ -306,7 +306,7 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
     /**
      * Gets update
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]|null
      */
     public function getUpdate()
     {
@@ -316,7 +316,7 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
     /**
      * Sets update
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]|null $update update
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInner[]|null $update update
      *
      * @return self
      */

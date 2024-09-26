@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatRoomSaveInfoRequest Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,8 +57,8 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
       * @var string[]
       */
     protected static $openAPITypes = [
-        'guest_data' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestGuestData',
-        'room_data' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestRoomData'
+        'guest_data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestGuestData',
+        'room_data' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestRoomData'
     ];
 
     /**
@@ -299,7 +299,7 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
     /**
      * Gets guest_data
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestGuestData|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestGuestData|null
      */
     public function getGuestData()
     {
@@ -309,7 +309,7 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
     /**
      * Sets guest_data
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestGuestData|null $guest_data guest_data
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestGuestData|null $guest_data guest_data
      *
      * @return self
      */
@@ -326,7 +326,7 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
     /**
      * Gets room_data
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestRoomData|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestRoomData|null
      */
     public function getRoomData()
     {
@@ -336,7 +336,7 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
     /**
      * Sets room_data
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestRoomData|null $room_data room_data
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestRoomData|null $room_data room_data
      *
      * @return self
      */

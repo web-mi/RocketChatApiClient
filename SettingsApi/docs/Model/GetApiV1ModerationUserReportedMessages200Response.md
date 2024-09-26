@@ -4,8 +4,8 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user** | [**\RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseUser**](GetApiV1ModerationUserReportedMessages200ResponseUser.md) |  | [optional]
-**messages** | [**\RocketChatSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInner[]**](GetApiV1ModerationUserReportedMessages200ResponseMessagesInner.md) |  | [optional]
+**user** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseUser**](GetApiV1ModerationUserReportedMessages200ResponseUser.md) |  | [optional]
+**messages** | [**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInner[]**](GetApiV1ModerationUserReportedMessages200ResponseMessagesInner.md) |  | [optional]
 **count** | **int** |  | [optional]
 **total** | **int** |  | [optional]
 **offset** | **int** |  | [optional]

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsAgentsAverageServiceTime200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatAnalyticsAgentsAverageServiceTime200Response implements Mo
       * @var string[]
       */
     protected static $openAPITypes = [
-        'agents' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAverageServiceTime200ResponseAgentsInner[]',
+        'agents' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAverageServiceTime200ResponseAgentsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatAnalyticsAgentsAverageServiceTime200Response implements Mo
     /**
      * Gets agents
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAverageServiceTime200ResponseAgentsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAverageServiceTime200ResponseAgentsInner[]|null
      */
     public function getAgents()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatAnalyticsAgentsAverageServiceTime200Response implements Mo
     /**
      * Sets agents
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAverageServiceTime200ResponseAgentsInner[]|null $agents agents
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAverageServiceTime200ResponseAgentsInner[]|null $agents agents
      *
      * @return self
      */

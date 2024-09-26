@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**departments** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner[]**](GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner.md) |  | [optional]
+**departments** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner[]**](GetApiV1LivechatDepartmentIdAgents200ResponseAgentsInner.md) |  | [optional]
 **success** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

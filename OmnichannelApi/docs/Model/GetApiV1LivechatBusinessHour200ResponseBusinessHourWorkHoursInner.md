@@ -5,8 +5,8 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **day** | **string** |  | [optional]
-**start** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart.md) |  | [optional]
-**finish** | [**\RocketChatOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart.md) |  | [optional]
+**start** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart.md) |  | [optional]
+**finish** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart**](GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart.md) |  | [optional]
 **code** | **int** |  | [optional]
 **open** | **bool** |  | [optional]
 

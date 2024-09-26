@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response implements Mo
       * @var string[]
       */
     protected static $openAPITypes = [
-        'departments' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200ResponseDepartmentsInner[]',
+        'departments' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200ResponseDepartmentsInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response implements Mo
     /**
      * Gets departments
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200ResponseDepartmentsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200ResponseDepartmentsInner[]|null
      */
     public function getDepartments()
     {
@@ -330,7 +330,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200Response implements Mo
     /**
      * Sets departments
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200ResponseDepartmentsInner[]|null $departments departments
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDepartmentsAmountOfChats200ResponseDepartmentsInner[]|null $departments departments
      *
      * @return self
      */

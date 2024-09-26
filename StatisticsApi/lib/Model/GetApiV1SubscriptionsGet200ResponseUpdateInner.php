@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatStatisticsApi\Model;
+namespace WebMIRocketChatApiClientStatisticsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatStatisticsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientStatisticsApi\ObjectSerializer;
 
 /**
  * GetApiV1SubscriptionsGet200ResponseUpdateInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatStatisticsApi
+ * @package  WebMIRocketChatApiClientStatisticsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -62,7 +62,7 @@ class GetApiV1SubscriptionsGet200ResponseUpdateInner implements ModelInterface, 
         'name' => 'string',
         'fname' => 'string',
         'rid' => 'string',
-        'u' => '\RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU',
+        'u' => '\WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU',
         'open' => 'bool',
         'alert' => 'bool',
         'unread' => 'int',
@@ -518,7 +518,7 @@ class GetApiV1SubscriptionsGet200ResponseUpdateInner implements ModelInterface, 
     /**
      * Gets u
      *
-     * @return \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU|null
+     * @return \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU|null
      */
     public function getU()
     {
@@ -528,7 +528,7 @@ class GetApiV1SubscriptionsGet200ResponseUpdateInner implements ModelInterface, 
     /**
      * Sets u
      *
-     * @param \RocketChatStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU|null $u u
+     * @param \WebMIRocketChatApiClientStatisticsApi\Model\GetApiV1SubscriptionsGet200ResponseUpdateInnerU|null $u u
      *
      * @return self
      */

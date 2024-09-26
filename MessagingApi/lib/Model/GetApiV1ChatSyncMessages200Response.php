@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatSyncMessages200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ChatSyncMessages200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'result' => '\RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResult',
+        'result' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResult',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1ChatSyncMessages200Response implements ModelInterface, ArrayAccess
     /**
      * Gets result
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResult|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResult|null
      */
     public function getResult()
     {
@@ -309,7 +309,7 @@ class GetApiV1ChatSyncMessages200Response implements ModelInterface, ArrayAccess
     /**
      * Sets result
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResult|null $result result
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResult|null $result result
      *
      * @return self
      */

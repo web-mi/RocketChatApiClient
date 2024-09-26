@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **message_id** | **string** |  | [optional]
 **notification_type** | **string** |  | [optional]
 **rid** | **string** |  | [optional]
-**sender** | [**\RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU**](GetApiV1PushGet200ResponseDataMessageU.md) |  | [optional]
+**sender** | [**\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU**](GetApiV1PushGet200ResponseDataMessageU.md) |  | [optional]
 **sender_name** | **string** |  | [optional]
 **type** | **string** |  | [optional]
 **name** | **string** |  | [optional]

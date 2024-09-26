@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Api;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatMiscellaneousApi\ApiException;
-use RocketChatMiscellaneousApi\Configuration;
-use RocketChatMiscellaneousApi\HeaderSelector;
-use RocketChatMiscellaneousApi\ObjectSerializer;
+use WebMIRocketChatApiClientMiscellaneousApi\ApiException;
+use WebMIRocketChatApiClientMiscellaneousApi\Configuration;
+use WebMIRocketChatApiClientMiscellaneousApi\HeaderSelector;
+use WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * InviteApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -144,9 +144,9 @@ class InviteApi
      * @param  string $_id The invite ID to be deleted. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1RemoveInviteId'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\RocketChatMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function deleteApiV1RemoveInviteId($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['deleteApiV1RemoveInviteId'][0])
     {
@@ -164,9 +164,9 @@ class InviteApi
      * @param  string $_id The invite ID to be deleted. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1RemoveInviteId'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\RocketChatMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function deleteApiV1RemoveInviteIdWithHttpInfo($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['deleteApiV1RemoveInviteId'][0])
     {
@@ -209,11 +209,11 @@ class InviteApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -231,16 +231,16 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\RocketChatMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -258,16 +258,16 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -285,13 +285,13 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -324,7 +324,7 @@ class InviteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -332,7 +332,7 @@ class InviteApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\DeleteApiV1RemoveInviteId400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -340,7 +340,7 @@ class InviteApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -388,7 +388,7 @@ class InviteApi
      */
     public function deleteApiV1RemoveInviteIdAsyncWithHttpInfo($x_auth_token, $x_user_id, $_id, string $contentType = self::contentTypes['deleteApiV1RemoveInviteId'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1AutotranslateSaveSettings200Response';
         $request = $this->deleteApiV1RemoveInviteIdRequest($x_auth_token, $x_user_id, $_id, $contentType);
 
         return $this->client
@@ -550,9 +550,9 @@ class InviteApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ListInvites'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function getApiV1ListInvites(string $contentType = self::contentTypes['getApiV1ListInvites'][0])
     {
@@ -567,9 +567,9 @@ class InviteApi
      *
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ListInvites'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1ListInvitesWithHttpInfo(string $contentType = self::contentTypes['getApiV1ListInvites'][0])
     {
@@ -612,11 +612,11 @@ class InviteApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -634,16 +634,16 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -661,13 +661,13 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -700,7 +700,7 @@ class InviteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -708,7 +708,7 @@ class InviteApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -750,7 +750,7 @@ class InviteApi
      */
     public function getApiV1ListInvitesAsyncWithHttpInfo(string $contentType = self::contentTypes['getApiV1ListInvites'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]';
         $request = $this->getApiV1ListInvitesRequest($contentType);
 
         return $this->client
@@ -872,12 +872,12 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request post_api_v1_find_or_create_invite_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request post_api_v1_find_or_create_invite_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FindOrCreateInvite'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function postApiV1FindOrCreateInvite($x_auth_token, $x_user_id, $post_api_v1_find_or_create_invite_request = null, string $contentType = self::contentTypes['postApiV1FindOrCreateInvite'][0])
     {
@@ -892,12 +892,12 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FindOrCreateInvite'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1FindOrCreateInviteWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_find_or_create_invite_request = null, string $contentType = self::contentTypes['postApiV1FindOrCreateInvite'][0])
     {
@@ -940,11 +940,11 @@ class InviteApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -962,16 +962,16 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -989,13 +989,13 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1028,7 +1028,7 @@ class InviteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1036,7 +1036,7 @@ class InviteApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1053,7 +1053,7 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FindOrCreateInvite'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1076,7 +1076,7 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FindOrCreateInvite'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1084,7 +1084,7 @@ class InviteApi
      */
     public function postApiV1FindOrCreateInviteAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_find_or_create_invite_request = null, string $contentType = self::contentTypes['postApiV1FindOrCreateInvite'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInvite200ResponseInner[]';
         $request = $this->postApiV1FindOrCreateInviteRequest($x_auth_token, $x_user_id, $post_api_v1_find_or_create_invite_request, $contentType);
 
         return $this->client
@@ -1128,7 +1128,7 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1FindOrCreateInviteRequest $post_api_v1_find_or_create_invite_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1FindOrCreateInvite'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1239,12 +1239,12 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request post_api_v1_use_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request post_api_v1_use_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UseInviteToken'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function postApiV1UseInviteToken($x_auth_token, $x_user_id, $post_api_v1_use_invite_token_request = null, string $contentType = self::contentTypes['postApiV1UseInviteToken'][0])
     {
@@ -1259,12 +1259,12 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UseInviteToken'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1UseInviteTokenWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_use_invite_token_request = null, string $contentType = self::contentTypes['postApiV1UseInviteToken'][0])
     {
@@ -1307,11 +1307,11 @@ class InviteApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1329,16 +1329,16 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1356,13 +1356,13 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1395,7 +1395,7 @@ class InviteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1403,7 +1403,7 @@ class InviteApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1420,7 +1420,7 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UseInviteToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1443,7 +1443,7 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UseInviteToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1451,7 +1451,7 @@ class InviteApi
      */
     public function postApiV1UseInviteTokenAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_use_invite_token_request = null, string $contentType = self::contentTypes['postApiV1UseInviteToken'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1UseInviteToken200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteToken200Response';
         $request = $this->postApiV1UseInviteTokenRequest($x_auth_token, $x_user_id, $post_api_v1_use_invite_token_request, $contentType);
 
         return $this->client
@@ -1495,7 +1495,7 @@ class InviteApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1UseInviteTokenRequest $post_api_v1_use_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1UseInviteToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1604,12 +1604,12 @@ class InviteApi
      *
      * Validate Invite Token
      *
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request post_api_v1_validate_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request post_api_v1_validate_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ValidateInviteToken'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function postApiV1ValidateInviteToken($post_api_v1_validate_invite_token_request = null, string $contentType = self::contentTypes['postApiV1ValidateInviteToken'][0])
     {
@@ -1622,12 +1622,12 @@ class InviteApi
      *
      * Validate Invite Token
      *
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ValidateInviteToken'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1ValidateInviteTokenWithHttpInfo($post_api_v1_validate_invite_token_request = null, string $contentType = self::contentTypes['postApiV1ValidateInviteToken'][0])
     {
@@ -1670,11 +1670,11 @@ class InviteApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1692,16 +1692,16 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1719,13 +1719,13 @@ class InviteApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1758,7 +1758,7 @@ class InviteApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1766,7 +1766,7 @@ class InviteApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1781,7 +1781,7 @@ class InviteApi
      *
      * Validate Invite Token
      *
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ValidateInviteToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1802,7 +1802,7 @@ class InviteApi
      *
      * Validate Invite Token
      *
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ValidateInviteToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -1810,7 +1810,7 @@ class InviteApi
      */
     public function postApiV1ValidateInviteTokenAsyncWithHttpInfo($post_api_v1_validate_invite_token_request = null, string $contentType = self::contentTypes['postApiV1ValidateInviteToken'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteToken200Response';
         $request = $this->postApiV1ValidateInviteTokenRequest($post_api_v1_validate_invite_token_request, $contentType);
 
         return $this->client
@@ -1852,7 +1852,7 @@ class InviteApi
     /**
      * Create request for operation 'postApiV1ValidateInviteToken'
      *
-     * @param  \RocketChatMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request (optional)
+     * @param  \WebMIRocketChatApiClientMiscellaneousApi\Model\PostApiV1ValidateInviteTokenRequest $post_api_v1_validate_invite_token_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1ValidateInviteToken'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

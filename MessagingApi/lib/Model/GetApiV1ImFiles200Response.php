@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ImFiles200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1ImFiles200Response implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'files' => '\RocketChatMessagingApi\Model\GetApiV1ImFiles200ResponseFilesInner[]',
+        'files' => '\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImFiles200ResponseFilesInner[]',
         'count' => 'int',
         'offset' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1ImFiles200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets files
      *
-     * @return \RocketChatMessagingApi\Model\GetApiV1ImFiles200ResponseFilesInner[]|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImFiles200ResponseFilesInner[]|null
      */
     public function getFiles()
     {
@@ -330,7 +330,7 @@ class GetApiV1ImFiles200Response implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets files
      *
-     * @param \RocketChatMessagingApi\Model\GetApiV1ImFiles200ResponseFilesInner[]|null $files files
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImFiles200ResponseFilesInner[]|null $files files
      *
      * @return self
      */

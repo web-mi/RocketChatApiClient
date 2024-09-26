@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatNotificationsApi\Model;
+namespace WebMIRocketChatApiClientNotificationsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatNotificationsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientNotificationsApi\ObjectSerializer;
 
 /**
  * GetApiV1PushGet200ResponseDataMessage Class Doc Comment
  *
  * @category Class
- * @package  RocketChatNotificationsApi
+ * @package  WebMIRocketChatApiClientNotificationsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,11 +61,11 @@ class GetApiV1PushGet200ResponseDataMessage implements ModelInterface, ArrayAcce
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU',
+        'u' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU',
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInner[]',
+        'md' => '\WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInner[]',
         '_updated_at' => 'string'
     ];
 
@@ -463,7 +463,7 @@ class GetApiV1PushGet200ResponseDataMessage implements ModelInterface, ArrayAcce
     /**
      * Gets u
      *
-     * @return \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null
+     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null
      */
     public function getU()
     {
@@ -473,7 +473,7 @@ class GetApiV1PushGet200ResponseDataMessage implements ModelInterface, ArrayAcce
     /**
      * Sets u
      *
-     * @param \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null $u u
+     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null $u u
      *
      * @return self
      */
@@ -571,7 +571,7 @@ class GetApiV1PushGet200ResponseDataMessage implements ModelInterface, ArrayAcce
     /**
      * Gets md
      *
-     * @return \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInner[]|null
+     * @return \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInner[]|null
      */
     public function getMd()
     {
@@ -581,7 +581,7 @@ class GetApiV1PushGet200ResponseDataMessage implements ModelInterface, ArrayAcce
     /**
      * Sets md
      *
-     * @param \RocketChatNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInner[]|null $md md
+     * @param \WebMIRocketChatApiClientNotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInner[]|null $md md
      *
      * @return self
      */

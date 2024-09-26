@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\VoiceChannelApi
+# WebMIRocketChatApiClientOmnichannelApi\VoiceChannelApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1ConnectorExtensionGetRegistrationInfoByUserId()`
 
 ```php
-getApiV1ConnectorExtensionGetRegistrationInfoByUserId($x_auth_token, $x_user_id, $id): \RocketChatOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response
+getApiV1ConnectorExtensionGetRegistrationInfoByUserId($x_auth_token, $x_user_id, $id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response
 ```
 
 Get Voice Channel Registration Information
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\VoiceChannelApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response**](../Model/GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response**](../Model/GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `getApiV1VoipQueuesGetSummary()`
 
 ```php
-getApiV1VoipQueuesGetSummary($x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetApiV1VoipQueuesGetSummary200Response
+getApiV1VoipQueuesGetSummary($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipQueuesGetSummary200Response
 ```
 
 Get Voice Channel Queue Summary
@@ -86,7 +86,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\VoiceChannelApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -111,7 +111,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1VoipQueuesGetSummary200Response**](../Model/GetApiV1VoipQueuesGetSummary200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipQueuesGetSummary200Response**](../Model/GetApiV1VoipQueuesGetSummary200Response.md)
 
 ### Authorization
 

@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\LivechatPrioritiesApi
+# WebMIRocketChatApiClientOmnichannelApi\LivechatPrioritiesApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -17,7 +17,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1LivechatPriorities()`
 
 ```php
-getApiV1LivechatPriorities($x_auth_token, $x_user_id, $offset, $count, $sort, $text): \RocketChatOmnichannelApi\Model\GetApiV1LivechatPriorities200Response
+getApiV1LivechatPriorities($x_auth_token, $x_user_id, $offset, $count, $sort, $text): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatPriorities200Response
 ```
 
 Get List of Priorities
@@ -32,7 +32,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatPrioritiesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatPrioritiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -65,7 +65,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatPriorities200Response**](../Model/GetApiV1LivechatPriorities200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatPriorities200Response**](../Model/GetApiV1LivechatPriorities200Response.md)
 
 ### Authorization
 
@@ -83,7 +83,7 @@ No authorization required
 ## `getApiV1LivechatPrioritiesPriorityId()`
 
 ```php
-getApiV1LivechatPrioritiesPriorityId($x_auth_token, $x_user_id, $priority_id): \RocketChatOmnichannelApi\Model\GetApiV1LivechatPrioritiesPriorityId200Response
+getApiV1LivechatPrioritiesPriorityId($x_auth_token, $x_user_id, $priority_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatPrioritiesPriorityId200Response
 ```
 
 Get a Priority
@@ -98,7 +98,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatPrioritiesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatPrioritiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -125,7 +125,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1LivechatPrioritiesPriorityId200Response**](../Model/GetApiV1LivechatPrioritiesPriorityId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatPrioritiesPriorityId200Response**](../Model/GetApiV1LivechatPrioritiesPriorityId200Response.md)
 
 ### Authorization
 
@@ -143,7 +143,7 @@ No authorization required
 ## `getLivechatPriorities()`
 
 ```php
-getLivechatPriorities($x_user_id, $x_auth_token): \RocketChatOmnichannelApi\Model\GetLivechatPriorities200Response
+getLivechatPriorities($x_user_id, $x_auth_token): \WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPriorities200Response
 ```
 
 Get Priorities
@@ -158,7 +158,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatPrioritiesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatPrioritiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -183,7 +183,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetLivechatPriorities200Response**](../Model/GetLivechatPriorities200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPriorities200Response**](../Model/GetLivechatPriorities200Response.md)
 
 ### Authorization
 
@@ -201,7 +201,7 @@ No authorization required
 ## `getLivechatPrioritiesList()`
 
 ```php
-getLivechatPrioritiesList($x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\GetLivechatPrioritiesList200Response
+getLivechatPrioritiesList($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPrioritiesList200Response
 ```
 
 List of Priorities
@@ -216,7 +216,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatPrioritiesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatPrioritiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -241,7 +241,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetLivechatPrioritiesList200Response**](../Model/GetLivechatPrioritiesList200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPrioritiesList200Response**](../Model/GetLivechatPrioritiesList200Response.md)
 
 ### Authorization
 
@@ -259,7 +259,7 @@ No authorization required
 ## `getLivechatPrioritiesPriorityId()`
 
 ```php
-getLivechatPrioritiesPriorityId($x_auth_token, $x_user_id, $priority_id): \RocketChatOmnichannelApi\Model\GetLivechatPrioritiesPriorityId200Response
+getLivechatPrioritiesPriorityId($x_auth_token, $x_user_id, $priority_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPrioritiesPriorityId200Response
 ```
 
 Get a Priority
@@ -274,7 +274,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatPrioritiesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatPrioritiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -301,7 +301,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetLivechatPrioritiesPriorityId200Response**](../Model/GetLivechatPrioritiesPriorityId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPrioritiesPriorityId200Response**](../Model/GetLivechatPrioritiesPriorityId200Response.md)
 
 ### Authorization
 
@@ -319,7 +319,7 @@ No authorization required
 ## `getLivechatPriorityGetOne()`
 
 ```php
-getLivechatPriorityGetOne($x_auth_token, $x_user_id, $priority_id): \RocketChatOmnichannelApi\Model\GetLivechatPriorityGetOne200Response
+getLivechatPriorityGetOne($x_auth_token, $x_user_id, $priority_id): \WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPriorityGetOne200Response
 ```
 
 Get one Priority
@@ -334,7 +334,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatPrioritiesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatPrioritiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -361,7 +361,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetLivechatPriorityGetOne200Response**](../Model/GetLivechatPriorityGetOne200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetLivechatPriorityGetOne200Response**](../Model/GetLivechatPriorityGetOne200Response.md)
 
 ### Authorization
 
@@ -379,7 +379,7 @@ No authorization required
 ## `postLivechatPrioritiesReset()`
 
 ```php
-postLivechatPrioritiesReset($x_auth_token, $x_user_id): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+postLivechatPrioritiesReset($x_auth_token, $x_user_id): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Reset Priorities
@@ -394,7 +394,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatPrioritiesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatPrioritiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -419,7 +419,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -437,7 +437,7 @@ No authorization required
 ## `putApiV1LivechatPrioritiesPriorityId()`
 
 ```php
-putApiV1LivechatPrioritiesPriorityId($x_auth_token, $x_user_id, $priority_id, $put_api_v1_livechat_priorities_priority_id_request): \RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+putApiV1LivechatPrioritiesPriorityId($x_auth_token, $x_user_id, $priority_id, $put_api_v1_livechat_priorities_priority_id_request): \WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
 ```
 
 Update Priority
@@ -452,7 +452,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\LivechatPrioritiesApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\LivechatPrioritiesApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -460,7 +460,7 @@ $apiInstance = new RocketChatOmnichannelApi\Api\LivechatPrioritiesApi(
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $priority_id = 64007cc2fa0ed7dd905092e3; // string | The priority ID.
-$put_api_v1_livechat_priorities_priority_id_request = {"name":"Very low"}; // \RocketChatOmnichannelApi\Model\PutApiV1LivechatPrioritiesPriorityIdRequest
+$put_api_v1_livechat_priorities_priority_id_request = {"name":"Very low"}; // \WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatPrioritiesPriorityIdRequest
 
 try {
     $result = $apiInstance->putApiV1LivechatPrioritiesPriorityId($x_auth_token, $x_user_id, $priority_id, $put_api_v1_livechat_priorities_priority_id_request);
@@ -477,11 +477,11 @@ try {
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **priority_id** | **string**| The priority ID. | |
-| **put_api_v1_livechat_priorities_priority_id_request** | [**\RocketChatOmnichannelApi\Model\PutApiV1LivechatPrioritiesPriorityIdRequest**](../Model/PutApiV1LivechatPrioritiesPriorityIdRequest.md)|  | [optional] |
+| **put_api_v1_livechat_priorities_priority_id_request** | [**\WebMIRocketChatApiClientOmnichannelApi\Model\PutApiV1LivechatPrioritiesPriorityIdRequest**](../Model/PutApiV1LivechatPrioritiesPriorityIdRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 

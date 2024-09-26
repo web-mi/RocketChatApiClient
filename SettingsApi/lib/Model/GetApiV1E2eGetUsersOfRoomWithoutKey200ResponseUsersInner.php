@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner implements ModelI
       */
     protected static $openAPITypes = [
         '_id' => 'string',
-        'e2e' => '\RocketChatSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e'
+        'e2e' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e'
     ];
 
     /**
@@ -326,7 +326,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner implements ModelI
     /**
      * Gets e2e
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e|null
      */
     public function getE2e()
     {
@@ -336,7 +336,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner implements ModelI
     /**
      * Sets e2e
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e|null $e2e e2e
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e|null $e2e e2e
      *
      * @return self
      */

@@ -5,6 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **type** | **string** |  | [optional]
-**value** | [**\RocketChatMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]**](GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner.md) |  | [optional]
+**value** | [**\WebMIRocketChatApiClientMessagingApi\Model\GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner[]**](GetApiV1ImListEveryone200ResponseImsInnerLastMessageMdInnerValueInner.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

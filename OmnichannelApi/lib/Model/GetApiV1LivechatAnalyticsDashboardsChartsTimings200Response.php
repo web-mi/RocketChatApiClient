@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,9 +57,9 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
       * @var string[]
       */
     protected static $openAPITypes = [
-        'response' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse',
-        'reaction' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse',
-        'chat_duration' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse',
+        'response' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse',
+        'reaction' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse',
+        'chat_duration' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse',
         'success' => 'bool'
     ];
 
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
     /**
      * Gets response
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null
      */
     public function getResponse()
     {
@@ -323,7 +323,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
     /**
      * Sets response
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null $response response
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null $response response
      *
      * @return self
      */
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
     /**
      * Gets reaction
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null
      */
     public function getReaction()
     {
@@ -350,7 +350,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
     /**
      * Sets reaction
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null $reaction reaction
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null $reaction reaction
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
     /**
      * Gets chat_duration
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null
      */
     public function getChatDuration()
     {
@@ -377,7 +377,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
     /**
      * Sets chat_duration
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null $chat_duration chat_duration
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null $chat_duration chat_duration
      *
      * @return self
      */

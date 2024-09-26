@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **version** | **string** |  | [optional]
 **required_api_version** | **string** |  | [optional]
 **icon_file** | **string** |  | [optional]
-**author** | [**\RocketChatMarketplaceAppsApi\Model\PostApiApps200ResponseAppAuthor**](PostApiApps200ResponseAppAuthor.md) |  | [optional]
+**author** | [**\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiApps200ResponseAppAuthor**](PostApiApps200ResponseAppAuthor.md) |  | [optional]
 **name** | **string** |  | [optional]
 **name_slug** | **string** |  | [optional]
 **class_file** | **string** |  | [optional]

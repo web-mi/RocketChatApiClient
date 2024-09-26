@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**users** | [**\RocketChatUserManagementApi\Model\GetApiV1UsersPresence200ResponseUsersInner[]**](GetApiV1UsersPresence200ResponseUsersInner.md) |  | [optional]
+**users** | [**\WebMIRocketChatApiClientUserManagementApi\Model\GetApiV1UsersPresence200ResponseUsersInner[]**](GetApiV1UsersPresence200ResponseUsersInner.md) |  | [optional]
 **full** | **bool** |  | [optional]
 **success** | **bool** |  | [optional]
 

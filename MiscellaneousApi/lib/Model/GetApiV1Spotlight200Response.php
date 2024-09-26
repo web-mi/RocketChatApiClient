@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1Spotlight200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'users' => '\RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]',
+        'users' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]',
         'rooms' => 'object[]',
         'success' => 'bool'
     ];
@@ -306,7 +306,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Gets users
      *
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]|null
      */
     public function getUsers()
     {
@@ -316,7 +316,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
     /**
      * Sets users
      *
-     * @param \RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]|null $users users
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]|null $users users
      *
      * @return self
      */

@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Model;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMiscellaneousApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * GetApiV1CommandsList200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class GetApiV1CommandsList200Response implements ModelInterface, ArrayAccess, \J
       * @var string[]
       */
     protected static $openAPITypes = [
-        'commands' => '\RocketChatMiscellaneousApi\Model\GetApiV1CommandsList200ResponseCommandsInner[]',
+        'commands' => '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsList200ResponseCommandsInner[]',
         'offset' => 'int',
         'count' => 'int',
         'total' => 'int',
@@ -320,7 +320,7 @@ class GetApiV1CommandsList200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Gets commands
      *
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1CommandsList200ResponseCommandsInner[]|null
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsList200ResponseCommandsInner[]|null
      */
     public function getCommands()
     {
@@ -330,7 +330,7 @@ class GetApiV1CommandsList200Response implements ModelInterface, ArrayAccess, \J
     /**
      * Sets commands
      *
-     * @param \RocketChatMiscellaneousApi\Model\GetApiV1CommandsList200ResponseCommandsInner[]|null $commands commands
+     * @param \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1CommandsList200ResponseCommandsInner[]|null $commands commands
      *
      * @return self
      */

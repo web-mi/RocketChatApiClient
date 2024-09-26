@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * PostApiV1LivechatTriggersRequestActionsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiV1LivechatTriggersRequestActionsInner implements ModelInterface, Ar
       */
     protected static $openAPITypes = [
         'name' => 'string',
-        'params' => '\RocketChatOmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInnerParams'
+        'params' => '\WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInnerParams'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PostApiV1LivechatTriggersRequestActionsInner implements ModelInterface, Ar
     /**
      * Gets params
      *
-     * @return \RocketChatOmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInnerParams|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInnerParams|null
      */
     public function getParams()
     {
@@ -336,7 +336,7 @@ class PostApiV1LivechatTriggersRequestActionsInner implements ModelInterface, Ar
     /**
      * Sets params
      *
-     * @param \RocketChatOmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInnerParams|null $params params
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInnerParams|null $params params
      *
      * @return self
      */

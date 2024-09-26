@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMarketplaceAppsApi
+ * @package  WebMIRocketChatApiClientMarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMarketplaceAppsApi\Model;
+namespace WebMIRocketChatApiClientMarketplaceAppsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMarketplaceAppsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMarketplaceAppsApi\ObjectSerializer;
 
 /**
  * PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMarketplaceAppsApi
+ * @package  WebMIRocketChatApiClientMarketplaceAppsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,7 +58,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner implem
       */
     protected static $openAPITypes = [
         'type' => 'string',
-        'parameters' => '\RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInnerParametersInner[]'
+        'parameters' => '\WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInnerParametersInner[]'
     ];
 
     /**
@@ -326,7 +326,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner implem
     /**
      * Gets parameters
      *
-     * @return \RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInnerParametersInner[]|null
+     * @return \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInnerParametersInner[]|null
      */
     public function getParameters()
     {
@@ -336,7 +336,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner implem
     /**
      * Sets parameters
      *
-     * @param \RocketChatMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInnerParametersInner[]|null $parameters parameters
+     * @param \WebMIRocketChatApiClientMarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInnerParametersInner[]|null $parameters parameters
      *
      * @return self
      */

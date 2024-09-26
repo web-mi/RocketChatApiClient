@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **_id** | **string** |  | [optional]
 **created_at** | **string** |  | [optional]
-**emails** | [**\RocketChatRoomsApi\Model\GetApiV1Directory200ResponseResultInnerEmailsInner[]**](GetApiV1Directory200ResponseResultInnerEmailsInner.md) |  | [optional]
+**emails** | [**\WebMIRocketChatApiClientRoomsApi\Model\GetApiV1Directory200ResponseResultInnerEmailsInner[]**](GetApiV1Directory200ResponseResultInnerEmailsInner.md) |  | [optional]
 **name** | **string** |  | [optional]
 **username** | **string** |  | [optional]
 **avatar_e_tag** | **string** |  | [optional]

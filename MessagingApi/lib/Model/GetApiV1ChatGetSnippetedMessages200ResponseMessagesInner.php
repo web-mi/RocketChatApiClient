@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMessagingApi\Model;
+namespace WebMIRocketChatApiClientMessagingApi\Model;
 
 use \ArrayAccess;
-use \RocketChatMessagingApi\ObjectSerializer;
+use \WebMIRocketChatApiClientMessagingApi\ObjectSerializer;
 
 /**
  * GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMessagingApi
+ * @package  WebMIRocketChatApiClientMessagingApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -61,13 +61,13 @@ class GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner implements ModelI
         'rid' => 'string',
         'msg' => 'string',
         'ts' => 'string',
-        'u' => '\RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
+        'u' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
         '_updated_at' => 'string',
         'mentions' => 'object[]',
         'channels' => 'object[]',
         'snippet_name' => 'string',
         'snippeted' => 'bool',
-        'snippeted_by' => '\RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy'
+        'snippeted_by' => '\WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy'
     ];
 
     /**
@@ -470,7 +470,7 @@ class GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner implements ModelI
     /**
      * Gets u
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
     public function getU()
     {
@@ -480,7 +480,7 @@ class GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner implements ModelI
     /**
      * Sets u
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null $u u
      *
      * @return self
      */
@@ -632,7 +632,7 @@ class GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner implements ModelI
     /**
      * Gets snippeted_by
      *
-     * @return \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null
+     * @return \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null
      */
     public function getSnippetedBy()
     {
@@ -642,7 +642,7 @@ class GetApiV1ChatGetSnippetedMessages200ResponseMessagesInner implements ModelI
     /**
      * Sets snippeted_by
      *
-     * @param \RocketChatMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null $snippeted_by snippeted_by
+     * @param \WebMIRocketChatApiClientMessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null $snippeted_by snippeted_by
      *
      * @return self
      */

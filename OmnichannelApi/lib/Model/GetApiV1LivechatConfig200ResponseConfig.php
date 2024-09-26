@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatOmnichannelApi\Model;
+namespace WebMIRocketChatApiClientOmnichannelApi\Model;
 
 use \ArrayAccess;
-use \RocketChatOmnichannelApi\ObjectSerializer;
+use \WebMIRocketChatApiClientOmnichannelApi\ObjectSerializer;
 
 /**
  * GetApiV1LivechatConfig200ResponseConfig Class Doc Comment
  *
  * @category Class
- * @package  RocketChatOmnichannelApi
+ * @package  WebMIRocketChatApiClientOmnichannelApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,15 +58,15 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
       */
     protected static $openAPITypes = [
         'enabled' => 'bool',
-        'settings' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSettings',
-        'theme' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigTheme',
-        'messages' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigMessages',
-        'survey' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSurvey',
-        'departments' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigDepartmentsInner[]',
+        'settings' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSettings',
+        'theme' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigTheme',
+        'messages' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigMessages',
+        'survey' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSurvey',
+        'departments' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigDepartmentsInner[]',
         'online' => 'bool',
-        'guest' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigGuest',
-        'room' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigRoom',
-        'agent' => '\RocketChatOmnichannelApi\Model\GetApiV1LivechatAgentNext200ResponseAgent'
+        'guest' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigGuest',
+        'room' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigRoom',
+        'agent' => '\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAgentNext200ResponseAgent'
     ];
 
     /**
@@ -382,7 +382,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Gets settings
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSettings|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSettings|null
      */
     public function getSettings()
     {
@@ -392,7 +392,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Sets settings
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSettings|null $settings settings
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSettings|null $settings settings
      *
      * @return self
      */
@@ -409,7 +409,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Gets theme
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigTheme|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigTheme|null
      */
     public function getTheme()
     {
@@ -419,7 +419,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Sets theme
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigTheme|null $theme theme
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigTheme|null $theme theme
      *
      * @return self
      */
@@ -436,7 +436,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Gets messages
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigMessages|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigMessages|null
      */
     public function getMessages()
     {
@@ -446,7 +446,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Sets messages
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigMessages|null $messages messages
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigMessages|null $messages messages
      *
      * @return self
      */
@@ -463,7 +463,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Gets survey
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSurvey|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSurvey|null
      */
     public function getSurvey()
     {
@@ -473,7 +473,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Sets survey
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSurvey|null $survey survey
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSurvey|null $survey survey
      *
      * @return self
      */
@@ -490,7 +490,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Gets departments
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigDepartmentsInner[]|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigDepartmentsInner[]|null
      */
     public function getDepartments()
     {
@@ -500,7 +500,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Sets departments
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigDepartmentsInner[]|null $departments departments
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigDepartmentsInner[]|null $departments departments
      *
      * @return self
      */
@@ -544,7 +544,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Gets guest
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigGuest|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigGuest|null
      */
     public function getGuest()
     {
@@ -554,7 +554,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Sets guest
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigGuest|null $guest guest
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigGuest|null $guest guest
      *
      * @return self
      */
@@ -571,7 +571,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Gets room
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigRoom|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigRoom|null
      */
     public function getRoom()
     {
@@ -581,7 +581,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Sets room
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigRoom|null $room room
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigRoom|null $room room
      *
      * @return self
      */
@@ -598,7 +598,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Gets agent
      *
-     * @return \RocketChatOmnichannelApi\Model\GetApiV1LivechatAgentNext200ResponseAgent|null
+     * @return \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAgentNext200ResponseAgent|null
      */
     public function getAgent()
     {
@@ -608,7 +608,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
     /**
      * Sets agent
      *
-     * @param \RocketChatOmnichannelApi\Model\GetApiV1LivechatAgentNext200ResponseAgent|null $agent agent
+     * @param \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1LivechatAgentNext200ResponseAgent|null $agent agent
      *
      * @return self
      */

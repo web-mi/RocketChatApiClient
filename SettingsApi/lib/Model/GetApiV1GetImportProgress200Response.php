@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1GetImportProgress200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -60,7 +60,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
         'key' => 'string',
         'name' => 'string',
         'step' => 'string',
-        'count' => '\RocketChatSettingsApi\Model\GetApiV1GetImportProgress200ResponseCount',
+        'count' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200ResponseCount',
         'success' => 'bool'
     ];
 
@@ -401,7 +401,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
     /**
      * Gets count
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1GetImportProgress200ResponseCount|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200ResponseCount|null
      */
     public function getCount()
     {
@@ -411,7 +411,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
     /**
      * Sets count
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1GetImportProgress200ResponseCount|null $count count
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1GetImportProgress200ResponseCount|null $count count
      *
      * @return self
      */

@@ -1,4 +1,4 @@
-# RocketChatOmnichannelApi\VoiceChannelQueueMembershipApi
+# WebMIRocketChatApiClientOmnichannelApi\VoiceChannelQueueMembershipApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -11,7 +11,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1VoipQueuesGetMembershipSubscription()`
 
 ```php
-getApiV1VoipQueuesGetMembershipSubscription($x_auth_token, $x_user_id, $extension): \RocketChatOmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200Response
+getApiV1VoipQueuesGetMembershipSubscription($x_auth_token, $x_user_id, $extension): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200Response
 ```
 
 Get Call Center Queue Membership Subscription Information
@@ -26,7 +26,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\VoiceChannelQueueMembershipApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelQueueMembershipApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -53,7 +53,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200Response**](../Model/GetApiV1VoipQueuesGetMembershipSubscription200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200Response**](../Model/GetApiV1VoipQueuesGetMembershipSubscription200Response.md)
 
 ### Authorization
 
@@ -71,7 +71,7 @@ No authorization required
 ## `getApiV1VoipQueuesGetQueuedCallsForThisExtension()`
 
 ```php
-getApiV1VoipQueuesGetQueuedCallsForThisExtension($x_auth_token, $x_user_id, $extension): \RocketChatOmnichannelApi\Model\GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response
+getApiV1VoipQueuesGetQueuedCallsForThisExtension($x_auth_token, $x_user_id, $extension): \WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response
 ```
 
 Get Call Center Queue Membership Information
@@ -86,7 +86,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatOmnichannelApi\Api\VoiceChannelQueueMembershipApi(
+$apiInstance = new WebMIRocketChatApiClientOmnichannelApi\Api\VoiceChannelQueueMembershipApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -113,7 +113,7 @@ try {
 
 ### Return type
 
-[**\RocketChatOmnichannelApi\Model\GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response**](../Model/GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response.md)
+[**\WebMIRocketChatApiClientOmnichannelApi\Model\GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response**](../Model/GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response.md)
 
 ### Authorization
 

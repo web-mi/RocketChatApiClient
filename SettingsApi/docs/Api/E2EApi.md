@@ -1,4 +1,4 @@
-# RocketChatSettingsApi\E2EApi
+# WebMIRocketChatApiClientSettingsApi\E2EApi
 
 All URIs are relative to https://apiexplorer.support.rocket.chat, except if the operation defines another base path.
 
@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1E2eFetchMyKeys()`
 
 ```php
-getApiV1E2eFetchMyKeys($x_user_id, $x_auth_token): \RocketChatSettingsApi\Model\GetApiV1E2eFetchMyKeys200Response
+getApiV1E2eFetchMyKeys($x_user_id, $x_auth_token): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eFetchMyKeys200Response
 ```
 
 Get E2E Keys
@@ -29,7 +29,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\E2EApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\E2EApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -54,7 +54,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1E2eFetchMyKeys200Response**](../Model/GetApiV1E2eFetchMyKeys200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eFetchMyKeys200Response**](../Model/GetApiV1E2eFetchMyKeys200Response.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `getApiV1E2eGetUsersOfRoomWithoutKey()`
 
 ```php
-getApiV1E2eGetUsersOfRoomWithoutKey($x_user_id, $x_auth_token, $rid): \RocketChatSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200Response
+getApiV1E2eGetUsersOfRoomWithoutKey($x_user_id, $x_auth_token, $rid): \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200Response
 ```
 
 Get Users of Room Without E2E key
@@ -87,7 +87,7 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\E2EApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\E2EApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
@@ -114,7 +114,7 @@ try {
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200Response**](../Model/GetApiV1E2eGetUsersOfRoomWithoutKey200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200Response**](../Model/GetApiV1E2eGetUsersOfRoomWithoutKey200Response.md)
 
 ### Authorization
 
@@ -132,7 +132,7 @@ No authorization required
 ## `postApiV1E2eSetRoomKeyID()`
 
 ```php
-postApiV1E2eSetRoomKeyID($x_user_id, $x_auth_token, $post_api_v1_e2e_set_room_key_id_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1E2eSetRoomKeyID($x_user_id, $x_auth_token, $post_api_v1_e2e_set_room_key_id_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Set Room E2E Key
@@ -145,14 +145,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\E2EApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\E2EApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_e2e_set_room_key_id_request = {"rid":"wCiXndNp5NqNY3uCc","keyID":"my-UniQu3_ke4_Id"}; // \RocketChatSettingsApi\Model\PostApiV1E2eSetRoomKeyIDRequest
+$post_api_v1_e2e_set_room_key_id_request = {"rid":"wCiXndNp5NqNY3uCc","keyID":"my-UniQu3_ke4_Id"}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1E2eSetRoomKeyIDRequest
 
 try {
     $result = $apiInstance->postApiV1E2eSetRoomKeyID($x_user_id, $x_auth_token, $post_api_v1_e2e_set_room_key_id_request);
@@ -168,11 +168,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_e2e_set_room_key_id_request** | [**\RocketChatSettingsApi\Model\PostApiV1E2eSetRoomKeyIDRequest**](../Model/PostApiV1E2eSetRoomKeyIDRequest.md)|  | [optional] |
+| **post_api_v1_e2e_set_room_key_id_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1E2eSetRoomKeyIDRequest**](../Model/PostApiV1E2eSetRoomKeyIDRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -190,7 +190,7 @@ No authorization required
 ## `postApiV1E2eSetUserPublicAndPrivateKeys()`
 
 ```php
-postApiV1E2eSetUserPublicAndPrivateKeys($x_user_id, $x_auth_token, $post_api_v1_e2e_set_user_public_and_private_keys_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1E2eSetUserPublicAndPrivateKeys($x_user_id, $x_auth_token, $post_api_v1_e2e_set_user_public_and_private_keys_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Set User Key
@@ -203,14 +203,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\E2EApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\E2EApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_e2e_set_user_public_and_private_keys_request = {"public_key":"My-9UbLiK-k34","private_key":"9R1V4t3_k3Y"}; // \RocketChatSettingsApi\Model\PostApiV1E2eSetUserPublicAndPrivateKeysRequest
+$post_api_v1_e2e_set_user_public_and_private_keys_request = {"public_key":"My-9UbLiK-k34","private_key":"9R1V4t3_k3Y"}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1E2eSetUserPublicAndPrivateKeysRequest
 
 try {
     $result = $apiInstance->postApiV1E2eSetUserPublicAndPrivateKeys($x_user_id, $x_auth_token, $post_api_v1_e2e_set_user_public_and_private_keys_request);
@@ -226,11 +226,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_e2e_set_user_public_and_private_keys_request** | [**\RocketChatSettingsApi\Model\PostApiV1E2eSetUserPublicAndPrivateKeysRequest**](../Model/PostApiV1E2eSetUserPublicAndPrivateKeysRequest.md)|  | [optional] |
+| **post_api_v1_e2e_set_user_public_and_private_keys_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1E2eSetUserPublicAndPrivateKeysRequest**](../Model/PostApiV1E2eSetUserPublicAndPrivateKeysRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 
@@ -248,7 +248,7 @@ No authorization required
 ## `postApiV1E2eUpdateGroupKey()`
 
 ```php
-postApiV1E2eUpdateGroupKey($x_user_id, $x_auth_token, $post_api_v1_e2e_update_group_key_request): \RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
+postApiV1E2eUpdateGroupKey($x_user_id, $x_auth_token, $post_api_v1_e2e_update_group_key_request): \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response
 ```
 
 Update User E2E Key in Room
@@ -261,14 +261,14 @@ require_once(__DIR__ . '/vendor/autoload.php');
 
 
 
-$apiInstance = new RocketChatSettingsApi\Api\E2EApi(
+$apiInstance = new WebMIRocketChatApiClientSettingsApi\Api\E2EApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_e2e_update_group_key_request = {"uid":"d26x6zSkaPSe5gCyy","rid":"9R1V4t3_k3Y","key":"M4-Ubd4T3d-k39"}; // \RocketChatSettingsApi\Model\PostApiV1E2eUpdateGroupKeyRequest
+$post_api_v1_e2e_update_group_key_request = {"uid":"d26x6zSkaPSe5gCyy","rid":"9R1V4t3_k3Y","key":"M4-Ubd4T3d-k39"}; // \WebMIRocketChatApiClientSettingsApi\Model\PostApiV1E2eUpdateGroupKeyRequest
 
 try {
     $result = $apiInstance->postApiV1E2eUpdateGroupKey($x_user_id, $x_auth_token, $post_api_v1_e2e_update_group_key_request);
@@ -284,11 +284,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_user_id** | **string**| The user ID. | |
 | **x_auth_token** | **string**| The authentication token. | |
-| **post_api_v1_e2e_update_group_key_request** | [**\RocketChatSettingsApi\Model\PostApiV1E2eUpdateGroupKeyRequest**](../Model/PostApiV1E2eUpdateGroupKeyRequest.md)|  | [optional] |
+| **post_api_v1_e2e_update_group_key_request** | [**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1E2eUpdateGroupKeyRequest**](../Model/PostApiV1E2eUpdateGroupKeyRequest.md)|  | [optional] |
 
 ### Return type
 
-[**\RocketChatSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
+[**\WebMIRocketChatApiClientSettingsApi\Model\PostApiV1SettingsAddCustomOAuth200Response**](../Model/PostApiV1SettingsAddCustomOAuth200Response.md)
 
 ### Authorization
 

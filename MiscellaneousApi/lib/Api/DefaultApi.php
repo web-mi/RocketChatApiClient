@@ -4,7 +4,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -25,7 +25,7 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatMiscellaneousApi\Api;
+namespace WebMIRocketChatApiClientMiscellaneousApi\Api;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
@@ -34,16 +34,16 @@ use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Psr7\MultipartStream;
 use GuzzleHttp\Psr7\Request;
 use GuzzleHttp\RequestOptions;
-use RocketChatMiscellaneousApi\ApiException;
-use RocketChatMiscellaneousApi\Configuration;
-use RocketChatMiscellaneousApi\HeaderSelector;
-use RocketChatMiscellaneousApi\ObjectSerializer;
+use WebMIRocketChatApiClientMiscellaneousApi\ApiException;
+use WebMIRocketChatApiClientMiscellaneousApi\Configuration;
+use WebMIRocketChatApiClientMiscellaneousApi\HeaderSelector;
+use WebMIRocketChatApiClientMiscellaneousApi\ObjectSerializer;
 
 /**
  * DefaultApi Class Doc Comment
  *
  * @category Class
- * @package  RocketChatMiscellaneousApi
+ * @package  WebMIRocketChatApiClientMiscellaneousApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -139,7 +139,7 @@ class DefaultApi
      * @param  string $icon icon (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ShieldSvg'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return object
      */
@@ -160,7 +160,7 @@ class DefaultApi
      * @param  string $icon (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ShieldSvg'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of object, HTTP status code, HTTP response headers (array of strings)
      */
@@ -497,9 +497,9 @@ class DefaultApi
      * @param  string $query The term to be searched. Supports &#39;#&#39; for channels and &#39;@&#39; for users (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1Spotlight'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function getApiV1Spotlight($x_auth_token, $x_user_id, $query, string $contentType = self::contentTypes['getApiV1Spotlight'][0])
     {
@@ -517,9 +517,9 @@ class DefaultApi
      * @param  string $query The term to be searched. Supports &#39;#&#39; for channels and &#39;@&#39; for users (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1Spotlight'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1SpotlightWithHttpInfo($x_auth_token, $x_user_id, $query, string $contentType = self::contentTypes['getApiV1Spotlight'][0])
     {
@@ -562,11 +562,11 @@ class DefaultApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -584,16 +584,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -611,13 +611,13 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -650,7 +650,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -658,7 +658,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -706,7 +706,7 @@ class DefaultApi
      */
     public function getApiV1SpotlightAsyncWithHttpInfo($x_auth_token, $x_user_id, $query, string $contentType = self::contentTypes['getApiV1Spotlight'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1Spotlight200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1Spotlight200Response';
         $request = $this->getApiV1SpotlightRequest($x_auth_token, $x_user_id, $query, $contentType);
 
         return $this->client
@@ -871,9 +871,9 @@ class DefaultApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1StdoutQueue'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
+     * @return \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response
      */
     public function getApiV1StdoutQueue($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1StdoutQueue'][0])
     {
@@ -890,9 +890,9 @@ class DefaultApi
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1StdoutQueue'] to see the possible values for this operation
      *
-     * @throws \RocketChatMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \WebMIRocketChatApiClientMiscellaneousApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response|\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response|\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1StdoutQueueWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1StdoutQueue'][0])
     {
@@ -935,11 +935,11 @@ class DefaultApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -957,16 +957,16 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
+                    if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
+                        if ('\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -984,13 +984,13 @@ class DefaultApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
+                        ObjectSerializer::deserialize($content, '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
             }
 
-            $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response';
+            $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1023,7 +1023,7 @@ class DefaultApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1031,7 +1031,7 @@ class DefaultApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\RocketChatMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
+                        '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1077,7 +1077,7 @@ class DefaultApi
      */
     public function getApiV1StdoutQueueAsyncWithHttpInfo($x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1StdoutQueue'][0])
     {
-        $returnType = '\RocketChatMiscellaneousApi\Model\GetApiV1StdoutQueue200Response';
+        $returnType = '\WebMIRocketChatApiClientMiscellaneousApi\Model\GetApiV1StdoutQueue200Response';
         $request = $this->getApiV1StdoutQueueRequest($x_auth_token, $x_user_id, $contentType);
 
         return $this->client

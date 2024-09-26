@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatSettingsApi\Model;
+namespace WebMIRocketChatApiClientSettingsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatSettingsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientSettingsApi\ObjectSerializer;
 
 /**
  * GetApiV1InstancesGet200ResponseInstancesInner Class Doc Comment
  *
  * @category Class
- * @package  RocketChatSettingsApi
+ * @package  WebMIRocketChatApiClientSettingsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -58,8 +58,8 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
       */
     protected static $openAPITypes = [
         'address' => 'string',
-        'current_status' => '\RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus',
-        'instance_record' => '\RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord',
+        'current_status' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus',
+        'instance_record' => '\WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord',
         'broadcast_auth' => 'bool'
     ];
 
@@ -340,7 +340,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
     /**
      * Gets current_status
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus|null
      */
     public function getCurrentStatus()
     {
@@ -350,7 +350,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
     /**
      * Sets current_status
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus|null $current_status current_status
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus|null $current_status current_status
      *
      * @return self
      */
@@ -367,7 +367,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
     /**
      * Gets instance_record
      *
-     * @return \RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord|null
+     * @return \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord|null
      */
     public function getInstanceRecord()
     {
@@ -377,7 +377,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
     /**
      * Sets instance_record
      *
-     * @param \RocketChatSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord|null $instance_record instance_record
+     * @param \WebMIRocketChatApiClientSettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord|null $instance_record instance_record
      *
      * @return self
      */

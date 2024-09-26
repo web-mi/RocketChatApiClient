@@ -5,7 +5,7 @@
  * PHP version 7.4
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  */
@@ -26,16 +26,16 @@
  * Do not edit the class manually.
  */
 
-namespace RocketChatRoomsApi\Model;
+namespace WebMIRocketChatApiClientRoomsApi\Model;
 
 use \ArrayAccess;
-use \RocketChatRoomsApi\ObjectSerializer;
+use \WebMIRocketChatApiClientRoomsApi\ObjectSerializer;
 
 /**
  * PostApiV1GroupsAddAll200Response Class Doc Comment
  *
  * @category Class
- * @package  RocketChatRoomsApi
+ * @package  WebMIRocketChatApiClientRoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
@@ -57,7 +57,7 @@ class PostApiV1GroupsAddAll200Response implements ModelInterface, ArrayAccess, \
       * @var string[]
       */
     protected static $openAPITypes = [
-        'channel' => '\RocketChatRoomsApi\Model\PostApiV1GroupsAddAll200ResponseChannel',
+        'channel' => '\WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddAll200ResponseChannel',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class PostApiV1GroupsAddAll200Response implements ModelInterface, ArrayAccess, \
     /**
      * Gets channel
      *
-     * @return \RocketChatRoomsApi\Model\PostApiV1GroupsAddAll200ResponseChannel|null
+     * @return \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddAll200ResponseChannel|null
      */
     public function getChannel()
     {
@@ -309,7 +309,7 @@ class PostApiV1GroupsAddAll200Response implements ModelInterface, ArrayAccess, \
     /**
      * Sets channel
      *
-     * @param \RocketChatRoomsApi\Model\PostApiV1GroupsAddAll200ResponseChannel|null $channel channel
+     * @param \WebMIRocketChatApiClientRoomsApi\Model\PostApiV1GroupsAddAll200ResponseChannel|null $channel channel
      *
      * @return self
      */
