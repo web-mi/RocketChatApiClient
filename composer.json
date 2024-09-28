@@ -43,7 +43,8 @@
             "WebMI\\RocketChatApiClient\\RoomsApi\\" : "RoomsApi/lib/",
             "WebMI\\RocketChatApiClient\\SettingsApi\\" : "SettingsApi/lib/",
             "WebMI\\RocketChatApiClient\\StatisticsApi\\" : "StatisticsApi/lib/",
-            "WebMI\\RocketChatApiClient\\UserManagementApi\\" : "UserManagementApi/lib/"
+            "WebMI\\RocketChatApiClient\\UserManagementApi\\" : "UserManagementApi/lib/",
+            "WebMI\\RocketChatApiClient\\CustomApi\\" : "CustomApi/lib/"
         }
     },
     "autoload-dev": {
@@ -58,7 +59,8 @@
             "WebMI\\RocketChatApiClient\\RoomsApi\\Test\\" : "RoomsApi/test/",
             "WebMI\\RocketChatApiClient\\SettingsApi\\Test\\" : "SettingsApi/test/",
             "WebMI\\RocketChatApiClient\\StatisticsApi\\Test\\" : "StatisticsApi/test/",
-            "WebMI\\RocketChatApiClient\\UserManagementApi\\Test\\" : "UserManagementApi/test/"
+            "WebMI\\RocketChatApiClient\\UserManagementApi\\Test\\" : "UserManagementApi/test/",
+            "WebMI\\RocketChatApiClient\\CustomApi\\Test\\" : "CustomApi/test/"
         }
     }
 }

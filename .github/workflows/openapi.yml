@@ -10,7 +10,7 @@ permissions:
   contents: write
 
 jobs:
-  authentication:
+  build:
     name: Build API Clients
     runs-on: ubuntu-latest
     steps:
@@ -82,6 +82,12 @@ jobs:
           generator: php
           openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/user-management.yaml
           command-args: --skip-validate-spec --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\UserManagementApi" -o ./UserManagementApi
+      - name: Generate Custom API
+        uses: openapi-generators/openapitools-generator-action@v1
+        with:
+          generator: php
+          openapi-file: './custom.yaml'
+          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\CustomApi" -o ./CustomApi
       - name: Commit APIs
         run: |
           git add .
