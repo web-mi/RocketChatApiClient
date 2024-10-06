@@ -191,11 +191,11 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      * @var string[]
      */
     protected static $setters = [
-        'transferred_by' => 'setTransferredBy',
-        'ts' => 'setTs',
-        'scope' => 'setScope',
-        'previous_department' => 'setPreviousDepartment',
-        'next_department' => 'setNextDepartment'
+        'transferred_by' => 'set_transferred_by',
+        'ts' => 'set_ts',
+        'scope' => 'set_scope',
+        'previous_department' => 'set_previous_department',
+        'next_department' => 'set_next_department'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      * @var string[]
      */
     protected static $getters = [
-        'transferred_by' => 'getTransferredBy',
-        'ts' => 'getTs',
-        'scope' => 'getScope',
-        'previous_department' => 'getPreviousDepartment',
-        'next_department' => 'getNextDepartment'
+        'transferred_by' => 'get_transferred_by',
+        'ts' => 'get_ts',
+        'scope' => 'get_scope',
+        'previous_department' => 'get_previous_department',
+        'next_department' => 'get_next_department'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy|null
      */
-    public function getTransferredBy()
+    public function get_transferred_by()
     {
         return $this->container['transferred_by'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return self
      */
-    public function setTransferredBy($transferred_by)
+    public function set_transferred_by($transferred_by)
     {
         if (is_null($transferred_by)) {
             throw new \InvalidArgumentException('non-nullable transferred_by cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return string|null
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return string|null
      */
-    public function getPreviousDepartment()
+    public function get_previous_department()
     {
         return $this->container['previous_department'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return self
      */
-    public function setPreviousDepartment($previous_department)
+    public function set_previous_department($previous_department)
     {
         if (is_null($previous_department)) {
             throw new \InvalidArgumentException('non-nullable previous_department cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null
      */
-    public function getNextDepartment()
+    public function get_next_department()
     {
         return $this->container['next_department'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInner implements M
      *
      * @return self
      */
-    public function setNextDepartment($next_department)
+    public function set_next_department($next_department)
     {
         if (is_null($next_department)) {
             throw new \InvalidArgumentException('non-nullable next_department cannot be null');

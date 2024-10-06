@@ -195,12 +195,12 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'created_at' => 'setCreatedAt',
-        'emails' => 'setEmails',
-        'name' => 'setName',
-        'username' => 'setUsername',
-        'avatar_e_tag' => 'setAvatarETag'
+        '_id' => 'set__id',
+        'created_at' => 'set_created_at',
+        'emails' => 'set_emails',
+        'name' => 'set_name',
+        'username' => 'set_username',
+        'avatar_e_tag' => 'set_avatar_e_tag'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'created_at' => 'getCreatedAt',
-        'emails' => 'getEmails',
-        'name' => 'getName',
-        'username' => 'getUsername',
-        'avatar_e_tag' => 'getAvatarETag'
+        '_id' => 'get__id',
+        'created_at' => 'get_created_at',
+        'emails' => 'get_emails',
+        'name' => 'get_name',
+        'username' => 'get_username',
+        'avatar_e_tag' => 'get_avatar_e_tag'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -368,7 +368,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1Directory200ResponseResultInnerEmailsInner[]|null
      */
-    public function getEmails()
+    public function get_emails()
     {
         return $this->container['emails'];
     }
@@ -395,7 +395,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setEmails($emails)
+    public function set_emails($emails)
     {
         if (is_null($emails)) {
             throw new \InvalidArgumentException('non-nullable emails cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -422,7 +422,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -449,7 +449,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getAvatarETag()
+    public function get_avatar_e_tag()
     {
         return $this->container['avatar_e_tag'];
     }
@@ -476,7 +476,7 @@ class GetApiV1Directory200ResponseResultInner implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setAvatarETag($avatar_e_tag)
+    public function set_avatar_e_tag($avatar_e_tag)
     {
         if (is_null($avatar_e_tag)) {
             throw new \InvalidArgumentException('non-nullable avatar_e_tag cannot be null');

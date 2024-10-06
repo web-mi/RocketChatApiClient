@@ -179,8 +179,8 @@ class PostApiV1UsersUpdateOwnBasicInfo200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'user' => 'setUser',
-        'success' => 'setSuccess'
+        'user' => 'set_user',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersUpdateOwnBasicInfo200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'user' => 'getUser',
-        'success' => 'getSuccess'
+        'user' => 'get_user',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200Response implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUser|null
      */
-    public function getUser()
+    public function get_user()
     {
         return $this->container['user'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setUser($user)
+    public function set_user($user)
     {
         if (is_null($user)) {
             throw new \InvalidArgumentException('non-nullable user cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200Response implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -175,7 +175,7 @@ class PostApiAppsPublicAppIdIncomingRequestActionData implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'target_department' => 'setTargetDepartment'
+        'target_department' => 'set_target_department'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiAppsPublicAppIdIncomingRequestActionData implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'target_department' => 'getTargetDepartment'
+        'target_department' => 'get_target_department'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiAppsPublicAppIdIncomingRequestActionData implements ModelInterface,
      *
      * @return string|null
      */
-    public function getTargetDepartment()
+    public function get_target_department()
     {
         return $this->container['target_department'];
     }
@@ -306,7 +306,7 @@ class PostApiAppsPublicAppIdIncomingRequestActionData implements ModelInterface,
      *
      * @return self
      */
-    public function setTargetDepartment($target_department)
+    public function set_target_department($target_department)
     {
         if (is_null($target_department)) {
             throw new \InvalidArgumentException('non-nullable target_department cannot be null');

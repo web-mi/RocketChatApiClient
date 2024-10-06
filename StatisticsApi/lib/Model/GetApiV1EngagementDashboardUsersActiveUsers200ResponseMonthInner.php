@@ -191,11 +191,11 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      * @var string[]
      */
     protected static $setters = [
-        'users_list' => 'setUsersList',
-        'users' => 'setUsers',
-        'day' => 'setDay',
-        'month' => 'setMonth',
-        'year' => 'setYear'
+        'users_list' => 'set_users_list',
+        'users' => 'set_users',
+        'day' => 'set_day',
+        'month' => 'set_month',
+        'year' => 'set_year'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      * @var string[]
      */
     protected static $getters = [
-        'users_list' => 'getUsersList',
-        'users' => 'getUsers',
-        'day' => 'getDay',
-        'month' => 'getMonth',
-        'year' => 'getYear'
+        'users_list' => 'get_users_list',
+        'users' => 'get_users',
+        'day' => 'get_day',
+        'month' => 'get_month',
+        'year' => 'get_year'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return string[]|null
      */
-    public function getUsersList()
+    public function get_users_list()
     {
         return $this->container['users_list'];
     }
@@ -334,7 +334,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return self
      */
-    public function setUsersList($users_list)
+    public function set_users_list($users_list)
     {
         if (is_null($users_list)) {
             throw new \InvalidArgumentException('non-nullable users_list cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -361,7 +361,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return int|null
      */
-    public function getDay()
+    public function get_day()
     {
         return $this->container['day'];
     }
@@ -388,7 +388,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return self
      */
-    public function setDay($day)
+    public function set_day($day)
     {
         if (is_null($day)) {
             throw new \InvalidArgumentException('non-nullable day cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return int|null
      */
-    public function getMonth()
+    public function get_month()
     {
         return $this->container['month'];
     }
@@ -415,7 +415,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return self
      */
-    public function setMonth($month)
+    public function set_month($month)
     {
         if (is_null($month)) {
             throw new \InvalidArgumentException('non-nullable month cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return int|null
      */
-    public function getYear()
+    public function get_year()
     {
         return $this->container['year'];
     }
@@ -442,7 +442,7 @@ class GetApiV1EngagementDashboardUsersActiveUsers200ResponseMonthInner implement
      *
      * @return self
      */
-    public function setYear($year)
+    public function set_year($year)
     {
         if (is_null($year)) {
             throw new \InvalidArgumentException('non-nullable year cannot be null');

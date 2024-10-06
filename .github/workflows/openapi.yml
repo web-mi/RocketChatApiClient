@@ -16,82 +16,107 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Generate Authentication API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/authentication.yaml
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\AuthenticationApi" -o ./AuthenticationApi
-      - name: Generate Content Management API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/content-management.yaml
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\ContentManagementApi" -o ./ContentManagementApi
-      - name: Generate Marketplace Apps API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/marketplace-apps.yaml
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\MarketplaceAppsApi" -o ./MarketplaceAppsApi
-      - name: Generate Messaging API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/messaging.yaml
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\MessagingApi" -o ./MessagingApi
-      - name: Generate Miscellaneous API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/miscellaneous.yaml
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\MiscellaneousApi" -o ./MiscellaneousApi
-      - name: Generate Notifications API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/notifications.yaml
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\NotificationsApi" -o ./NotificationsApi
-      - name: Generate Omnichannel API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/omnichannel.yaml
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\OmnichannelApi" -o ./OmnichannelApi
-      - name: Generate Rooms API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/rooms.yaml
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\RoomsApi" -o ./RoomsApi
-      - name: Generate Settings API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/settings.yaml
-          command-args: --skip-validate-spec --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\SettingsApi" -o ./SettingsApi
-      - name: Generate Statistics API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/statistics.yaml
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\StatisticsApi" -o ./StatisticsApi
-      - name: Generate User Management API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/user-management.yaml
-          command-args: --skip-validate-spec --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\UserManagementApi" -o ./UserManagementApi
-      - name: Generate Custom API
-        uses: openapi-generators/openapitools-generator-action@v1
-        with:
-          generator: php
-          openapi-file: './custom.yaml'
-          command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\CustomApi" -o ./CustomApi
-      - name: Commit APIs
-        run: |
-          git add .
-          git config --global user.name 'Web-MI'
-          git config --global user.email 'info@web-mi.de'
-          git commit -am "Updated APIs"
-          git push
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/AuthenticationApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/authentication.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\AuthenticationApi,methodNamingConvention=snake_case
+      #- name: Generate Authentication API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/authentication.yaml
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\AuthenticationApi",methodNamingConvention=snake_case -o ./AuthenticationApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/ContentManagementApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/content-management.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\ContentManagementApi,methodNamingConvention=snake_case
+      #- name: Generate Content Management API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/content-management.yaml
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\ContentManagementApi",methodNamingConvention=snake_case -o ./ContentManagementApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/MarketplaceAppsApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/marketplace-apps.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\MarketplaceAppsApi,methodNamingConvention=snake_case
+      #- name: Generate Marketplace Apps API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/marketplace-apps.yaml
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\MarketplaceAppsApi",methodNamingConvention=snake_case -o ./MarketplaceAppsApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/MessagingApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/messaging.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\MessagingApi,methodNamingConvention=snake_case
+      #- name: Generate Messaging API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/messaging.yaml
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\MessagingApi",methodNamingConvention=snake_case -o ./MessagingApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/MiscellaneousApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/miscellaneous.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\MiscellaneousApi,methodNamingConvention=snake_case
+      #- name: Generate Miscellaneous API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/miscellaneous.yaml
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\MiscellaneousApi",methodNamingConvention=snake_case -o ./MiscellaneousApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/NotificationsApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/notifications.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\NotificationsApi,methodNamingConvention=snake_case
+      #- name: Generate Notifications API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/notifications.yaml
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\NotificationsApi",methodNamingConvention=snake_case -o ./NotificationsApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/OmnichannelApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/omnichannel.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\OmnichannelApi,methodNamingConvention=snake_case
+      #- name: Generate Omnichannel API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/omnichannel.yaml
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\OmnichannelApi",methodNamingConvention=snake_case -o ./OmnichannelApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/RoomsApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/rooms.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\RoomsApi,methodNamingConvention=snake_case
+      #- name: Generate Rooms API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/rooms.yaml
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\RoomsApi",methodNamingConvention=snake_case -o ./RoomsApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/SettingsApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/settings.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\SettingsApi,methodNamingConvention=snake_case
+      #- name: Generate Settings API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/settings.yaml
+      #    command-args: --skip-validate-spec --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\SettingsApi",methodNamingConvention=snake_case -o ./SettingsApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/StatisticsApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/statistics.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\StatisticsApi,methodNamingConvention=snake_case
+      #- name: Generate Statistics API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/statistics.yaml
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\StatisticsApi",methodNamingConvention=snake_case -o ./StatisticsApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/UserManagementApi -i https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/user-management.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\UserManagementApi,methodNamingConvention=snake_case
+      #- name: Generate User Management API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-url: https://raw.githubusercontent.com/RocketChat/Rocket.Chat-Open-API/refs/heads/main/user-management.yaml
+      #    command-args: --skip-validate-spec --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\UserManagementApi",methodNamingConvention=snake_case -o ./UserManagementApi
+
+      ## Tmp local command: docker run --rm -v "${PWD}:/local" openapi-generator:snake_case generate -g php -o /local/CustomApi -i /local/custom.yaml --skip-validate-spec --additional-properties invokerPackage=WebMI\\RocketChatApiClient\\CustomApi,methodNamingConvention=snake_case
+      #- name: Generate Custom API
+      #  uses: openapi-generators/openapitools-generator-action@v1
+      #  with:
+      #    generator: php
+      #    openapi-file: './custom.yaml'
+      #    command-args: --additional-properties invokerPackage="WebMI\\\\RocketChatApiClient\\\\CustomApi",methodNamingConvention=snake_case -o ./CustomApi
+
+      #- name: Commit APIs
+      #  run: |
+      #    git add .
+      #    git config --global user.name 'Web-MI'
+      #    git config --global user.email 'info@web-mi.de'
+      #    git commit -am "Updated APIs"
+      #    git push

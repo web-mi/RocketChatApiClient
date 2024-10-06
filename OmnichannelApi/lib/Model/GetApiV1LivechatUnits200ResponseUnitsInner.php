@@ -199,13 +199,13 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'visibility' => 'setVisibility',
-        'type' => 'setType',
-        'num_monitors' => 'setNumMonitors',
-        'num_departments' => 'setNumDepartments',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'visibility' => 'set_visibility',
+        'type' => 'set_type',
+        'num_monitors' => 'set_num_monitors',
+        'num_departments' => 'set_num_departments',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'visibility' => 'getVisibility',
-        'type' => 'getType',
-        'num_monitors' => 'getNumMonitors',
-        'num_departments' => 'getNumDepartments',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'visibility' => 'get_visibility',
+        'type' => 'get_type',
+        'num_monitors' => 'get_num_monitors',
+        'num_departments' => 'get_num_departments',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -348,7 +348,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -375,7 +375,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getVisibility()
+    public function get_visibility()
     {
         return $this->container['visibility'];
     }
@@ -402,7 +402,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setVisibility($visibility)
+    public function set_visibility($visibility)
     {
         if (is_null($visibility)) {
             throw new \InvalidArgumentException('non-nullable visibility cannot be null');
@@ -417,7 +417,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -429,7 +429,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -444,7 +444,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getNumMonitors()
+    public function get_num_monitors()
     {
         return $this->container['num_monitors'];
     }
@@ -456,7 +456,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setNumMonitors($num_monitors)
+    public function set_num_monitors($num_monitors)
     {
         if (is_null($num_monitors)) {
             throw new \InvalidArgumentException('non-nullable num_monitors cannot be null');
@@ -471,7 +471,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getNumDepartments()
+    public function get_num_departments()
     {
         return $this->container['num_departments'];
     }
@@ -483,7 +483,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setNumDepartments($num_departments)
+    public function set_num_departments($num_departments)
     {
         if (is_null($num_departments)) {
             throw new \InvalidArgumentException('non-nullable num_departments cannot be null');
@@ -498,7 +498,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -510,7 +510,7 @@ class GetApiV1LivechatUnits200ResponseUnitsInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

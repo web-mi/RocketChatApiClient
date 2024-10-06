@@ -187,10 +187,10 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'address' => 'setAddress',
-        'current_status' => 'setCurrentStatus',
-        'instance_record' => 'setInstanceRecord',
-        'broadcast_auth' => 'setBroadcastAuth'
+        'address' => 'set_address',
+        'current_status' => 'set_current_status',
+        'instance_record' => 'set_instance_record',
+        'broadcast_auth' => 'set_broadcast_auth'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'address' => 'getAddress',
-        'current_status' => 'getCurrentStatus',
-        'instance_record' => 'getInstanceRecord',
-        'broadcast_auth' => 'getBroadcastAuth'
+        'address' => 'get_address',
+        'current_status' => 'get_current_status',
+        'instance_record' => 'get_instance_record',
+        'broadcast_auth' => 'get_broadcast_auth'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getAddress()
+    public function get_address()
     {
         return $this->container['address'];
     }
@@ -327,7 +327,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setAddress($address)
+    public function set_address($address)
     {
         if (is_null($address)) {
             throw new \InvalidArgumentException('non-nullable address cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus|null
      */
-    public function getCurrentStatus()
+    public function get_current_status()
     {
         return $this->container['current_status'];
     }
@@ -354,7 +354,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setCurrentStatus($current_status)
+    public function set_current_status($current_status)
     {
         if (is_null($current_status)) {
             throw new \InvalidArgumentException('non-nullable current_status cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord|null
      */
-    public function getInstanceRecord()
+    public function get_instance_record()
     {
         return $this->container['instance_record'];
     }
@@ -381,7 +381,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setInstanceRecord($instance_record)
+    public function set_instance_record($instance_record)
     {
         if (is_null($instance_record)) {
             throw new \InvalidArgumentException('non-nullable instance_record cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getBroadcastAuth()
+    public function get_broadcast_auth()
     {
         return $this->container['broadcast_auth'];
     }
@@ -408,7 +408,7 @@ class GetApiV1InstancesGet200ResponseInstancesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setBroadcastAuth($broadcast_auth)
+    public function set_broadcast_auth($broadcast_auth)
     {
         if (is_null($broadcast_auth)) {
             throw new \InvalidArgumentException('non-nullable broadcast_auth cannot be null');

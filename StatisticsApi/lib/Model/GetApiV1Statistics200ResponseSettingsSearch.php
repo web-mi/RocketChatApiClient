@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsSearch implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'default_provider' => 'setDefaultProvider'
+        'default_provider' => 'set_default_provider'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsSearch implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'default_provider' => 'getDefaultProvider'
+        'default_provider' => 'get_default_provider'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsSearch implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsSearchDefaultProvider|null
      */
-    public function getDefaultProvider()
+    public function get_default_provider()
     {
         return $this->container['default_provider'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsSearch implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setDefaultProvider($default_provider)
+    public function set_default_provider($default_provider)
     {
         if (is_null($default_provider)) {
             throw new \InvalidArgumentException('non-nullable default_provider cannot be null');

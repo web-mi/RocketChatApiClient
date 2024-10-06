@@ -9,7 +9,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | [**getApiV1LivechatUnitsGetOne()**](LivechatUnitsApi.md#getApiV1LivechatUnitsGetOne) | **GET** /api/v1/livechat/units.getOne | Get One Unit |
 | [**getApiV1LivechatUnitsList()**](LivechatUnitsApi.md#getApiV1LivechatUnitsList) | **GET** /api/v1/livechat/units.list | List of Units |
 | [**getApiV1LivechatUnitsMonitorsList()**](LivechatUnitsApi.md#getApiV1LivechatUnitsMonitorsList) | **GET** /api/v1/livechat/unitMonitors.list | List of Unit Monitors |
-| [**getApiV1LivechatUnitsUnitId()**](LivechatUnitsApi.md#getApiV1LivechatUnitsUnitId) | **GET** /api/v1/livechat/units/{unitId} | Get a Unit |
+| [**getApiV1LivechatUnitsUnitId()**](LivechatUnitsApi.md#getApiV1LivechatUnitsUnitId) | **GET** /api/v1/livechat/units/{id} | Get a Unit |
 | [**getApiV1LivechatUnitsUnitIdDepartments()**](LivechatUnitsApi.md#getApiV1LivechatUnitsUnitIdDepartments) | **GET** /api/v1/livechat/units/{unitId}/departments | Get Departments by Unit ID |
 | [**getApiV1LivechatUnitsUnitIdDepartmentsAvailable()**](LivechatUnitsApi.md#getApiV1LivechatUnitsUnitIdDepartmentsAvailable) | **GET** /api/v1/livechat/units/{unitId}/departments/available | Get Available Departments by Unit Id |
 | [**getApiV1LivechatUnitsUnitIdMonitors()**](LivechatUnitsApi.md#getApiV1LivechatUnitsUnitIdMonitors) | **GET** /api/v1/livechat/units/{unitId}/monitors | Get List of Unit Monitors |
@@ -40,7 +40,7 @@ $apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatUnitsApi
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$id = 'id_example'; // string | The unit ID that you want to update.
+$id = 'id_example'; // string | The unit ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 
@@ -56,7 +56,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| The unit ID that you want to update. | |
+| **id** | **string**| The unit ID. | |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 
@@ -322,7 +322,7 @@ No authorization required
 ## `getApiV1LivechatUnitsUnitId()`
 
 ```php
-getApiV1LivechatUnitsUnitId($unit_id, $x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response
+getApiV1LivechatUnitsUnitId($id, $x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response
 ```
 
 Get a Unit
@@ -342,12 +342,12 @@ $apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatUnitsApi
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$unit_id = 'unit_id_example'; // string | The unit ID.
+$id = 'id_example'; // string | The unit ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 
 try {
-    $result = $apiInstance->getApiV1LivechatUnitsUnitId($unit_id, $x_auth_token, $x_user_id);
+    $result = $apiInstance->getApiV1LivechatUnitsUnitId($id, $x_auth_token, $x_user_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling LivechatUnitsApi->getApiV1LivechatUnitsUnitId: ', $e->getMessage(), PHP_EOL;
@@ -358,7 +358,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **unit_id** | **string**| The unit ID. | |
+| **id** | **string**| The unit ID. | |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 
@@ -654,7 +654,7 @@ $apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatUnitsApi
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client()
 );
-$id = 'id_example'; // string | The unit ID that you want to update.
+$id = 'id_example'; // string | The unit ID.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $post_api_v1_livechat_units_id_request = {"unitData":{"name":"unitxx2","visibility":"private"},"unitMonitors":[{"monitorId":"GT67Tv6x5p5y5xZWN","username":"testerio"}],"unitDepartments":[{"departmentId":"CgM4vfNNtj8t4QEMd"}]}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest
@@ -671,7 +671,7 @@ try {
 
 | Name | Type | Description  | Notes |
 | ------------- | ------------- | ------------- | ------------- |
-| **id** | **string**| The unit ID that you want to update. | |
+| **id** | **string**| The unit ID. | |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **post_api_v1_livechat_units_id_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest**](../Model/PostApiV1LivechatUnitsIdRequest.md)|  | [optional] |

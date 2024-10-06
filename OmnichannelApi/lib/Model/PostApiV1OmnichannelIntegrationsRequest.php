@@ -215,17 +215,17 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'livechat_webhook_url' => 'setLivechatWebhookUrl',
-        'livechat_secret_token' => 'setLivechatSecretToken',
-        'livechat_http_timeout' => 'setLivechatHttpTimeout',
-        'livechat_webhook_on_start' => 'setLivechatWebhookOnStart',
-        'livechat_webhook_on_close' => 'setLivechatWebhookOnClose',
-        'livechat_webhook_on_chat_taken' => 'setLivechatWebhookOnChatTaken',
-        'livechat_webhook_on_chat_queued' => 'setLivechatWebhookOnChatQueued',
-        'livechat_webhook_on_forward' => 'setLivechatWebhookOnForward',
-        'livechat_webhook_on_offline_msg' => 'setLivechatWebhookOnOfflineMsg',
-        'livechat_webhook_on_visitor_message' => 'setLivechatWebhookOnVisitorMessage',
-        'livechat_webhook_on_agent_message' => 'setLivechatWebhookOnAgentMessage'
+        'livechat_webhook_url' => 'set_livechat_webhook_url',
+        'livechat_secret_token' => 'set_livechat_secret_token',
+        'livechat_http_timeout' => 'set_livechat_http_timeout',
+        'livechat_webhook_on_start' => 'set_livechat_webhook_on_start',
+        'livechat_webhook_on_close' => 'set_livechat_webhook_on_close',
+        'livechat_webhook_on_chat_taken' => 'set_livechat_webhook_on_chat_taken',
+        'livechat_webhook_on_chat_queued' => 'set_livechat_webhook_on_chat_queued',
+        'livechat_webhook_on_forward' => 'set_livechat_webhook_on_forward',
+        'livechat_webhook_on_offline_msg' => 'set_livechat_webhook_on_offline_msg',
+        'livechat_webhook_on_visitor_message' => 'set_livechat_webhook_on_visitor_message',
+        'livechat_webhook_on_agent_message' => 'set_livechat_webhook_on_agent_message'
     ];
 
     /**
@@ -234,17 +234,17 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'livechat_webhook_url' => 'getLivechatWebhookUrl',
-        'livechat_secret_token' => 'getLivechatSecretToken',
-        'livechat_http_timeout' => 'getLivechatHttpTimeout',
-        'livechat_webhook_on_start' => 'getLivechatWebhookOnStart',
-        'livechat_webhook_on_close' => 'getLivechatWebhookOnClose',
-        'livechat_webhook_on_chat_taken' => 'getLivechatWebhookOnChatTaken',
-        'livechat_webhook_on_chat_queued' => 'getLivechatWebhookOnChatQueued',
-        'livechat_webhook_on_forward' => 'getLivechatWebhookOnForward',
-        'livechat_webhook_on_offline_msg' => 'getLivechatWebhookOnOfflineMsg',
-        'livechat_webhook_on_visitor_message' => 'getLivechatWebhookOnVisitorMessage',
-        'livechat_webhook_on_agent_message' => 'getLivechatWebhookOnAgentMessage'
+        'livechat_webhook_url' => 'get_livechat_webhook_url',
+        'livechat_secret_token' => 'get_livechat_secret_token',
+        'livechat_http_timeout' => 'get_livechat_http_timeout',
+        'livechat_webhook_on_start' => 'get_livechat_webhook_on_start',
+        'livechat_webhook_on_close' => 'get_livechat_webhook_on_close',
+        'livechat_webhook_on_chat_taken' => 'get_livechat_webhook_on_chat_taken',
+        'livechat_webhook_on_chat_queued' => 'get_livechat_webhook_on_chat_queued',
+        'livechat_webhook_on_forward' => 'get_livechat_webhook_on_forward',
+        'livechat_webhook_on_offline_msg' => 'get_livechat_webhook_on_offline_msg',
+        'livechat_webhook_on_visitor_message' => 'get_livechat_webhook_on_visitor_message',
+        'livechat_webhook_on_agent_message' => 'get_livechat_webhook_on_agent_message'
     ];
 
     /**
@@ -364,7 +364,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getLivechatWebhookUrl()
+    public function get_livechat_webhook_url()
     {
         return $this->container['livechat_webhook_url'];
     }
@@ -376,7 +376,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatWebhookUrl($livechat_webhook_url)
+    public function set_livechat_webhook_url($livechat_webhook_url)
     {
         if (is_null($livechat_webhook_url)) {
             throw new \InvalidArgumentException('non-nullable livechat_webhook_url cannot be null');
@@ -391,7 +391,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getLivechatSecretToken()
+    public function get_livechat_secret_token()
     {
         return $this->container['livechat_secret_token'];
     }
@@ -403,7 +403,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatSecretToken($livechat_secret_token)
+    public function set_livechat_secret_token($livechat_secret_token)
     {
         if (is_null($livechat_secret_token)) {
             throw new \InvalidArgumentException('non-nullable livechat_secret_token cannot be null');
@@ -418,7 +418,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getLivechatHttpTimeout()
+    public function get_livechat_http_timeout()
     {
         return $this->container['livechat_http_timeout'];
     }
@@ -430,7 +430,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatHttpTimeout($livechat_http_timeout)
+    public function set_livechat_http_timeout($livechat_http_timeout)
     {
         if (is_null($livechat_http_timeout)) {
             throw new \InvalidArgumentException('non-nullable livechat_http_timeout cannot be null');
@@ -445,7 +445,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getLivechatWebhookOnStart()
+    public function get_livechat_webhook_on_start()
     {
         return $this->container['livechat_webhook_on_start'];
     }
@@ -457,7 +457,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatWebhookOnStart($livechat_webhook_on_start)
+    public function set_livechat_webhook_on_start($livechat_webhook_on_start)
     {
         if (is_null($livechat_webhook_on_start)) {
             throw new \InvalidArgumentException('non-nullable livechat_webhook_on_start cannot be null');
@@ -472,7 +472,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getLivechatWebhookOnClose()
+    public function get_livechat_webhook_on_close()
     {
         return $this->container['livechat_webhook_on_close'];
     }
@@ -484,7 +484,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatWebhookOnClose($livechat_webhook_on_close)
+    public function set_livechat_webhook_on_close($livechat_webhook_on_close)
     {
         if (is_null($livechat_webhook_on_close)) {
             throw new \InvalidArgumentException('non-nullable livechat_webhook_on_close cannot be null');
@@ -499,7 +499,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getLivechatWebhookOnChatTaken()
+    public function get_livechat_webhook_on_chat_taken()
     {
         return $this->container['livechat_webhook_on_chat_taken'];
     }
@@ -511,7 +511,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatWebhookOnChatTaken($livechat_webhook_on_chat_taken)
+    public function set_livechat_webhook_on_chat_taken($livechat_webhook_on_chat_taken)
     {
         if (is_null($livechat_webhook_on_chat_taken)) {
             throw new \InvalidArgumentException('non-nullable livechat_webhook_on_chat_taken cannot be null');
@@ -526,7 +526,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getLivechatWebhookOnChatQueued()
+    public function get_livechat_webhook_on_chat_queued()
     {
         return $this->container['livechat_webhook_on_chat_queued'];
     }
@@ -538,7 +538,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatWebhookOnChatQueued($livechat_webhook_on_chat_queued)
+    public function set_livechat_webhook_on_chat_queued($livechat_webhook_on_chat_queued)
     {
         if (is_null($livechat_webhook_on_chat_queued)) {
             throw new \InvalidArgumentException('non-nullable livechat_webhook_on_chat_queued cannot be null');
@@ -553,7 +553,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getLivechatWebhookOnForward()
+    public function get_livechat_webhook_on_forward()
     {
         return $this->container['livechat_webhook_on_forward'];
     }
@@ -565,7 +565,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatWebhookOnForward($livechat_webhook_on_forward)
+    public function set_livechat_webhook_on_forward($livechat_webhook_on_forward)
     {
         if (is_null($livechat_webhook_on_forward)) {
             throw new \InvalidArgumentException('non-nullable livechat_webhook_on_forward cannot be null');
@@ -580,7 +580,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getLivechatWebhookOnOfflineMsg()
+    public function get_livechat_webhook_on_offline_msg()
     {
         return $this->container['livechat_webhook_on_offline_msg'];
     }
@@ -592,7 +592,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatWebhookOnOfflineMsg($livechat_webhook_on_offline_msg)
+    public function set_livechat_webhook_on_offline_msg($livechat_webhook_on_offline_msg)
     {
         if (is_null($livechat_webhook_on_offline_msg)) {
             throw new \InvalidArgumentException('non-nullable livechat_webhook_on_offline_msg cannot be null');
@@ -607,7 +607,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getLivechatWebhookOnVisitorMessage()
+    public function get_livechat_webhook_on_visitor_message()
     {
         return $this->container['livechat_webhook_on_visitor_message'];
     }
@@ -619,7 +619,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatWebhookOnVisitorMessage($livechat_webhook_on_visitor_message)
+    public function set_livechat_webhook_on_visitor_message($livechat_webhook_on_visitor_message)
     {
         if (is_null($livechat_webhook_on_visitor_message)) {
             throw new \InvalidArgumentException('non-nullable livechat_webhook_on_visitor_message cannot be null');
@@ -634,7 +634,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getLivechatWebhookOnAgentMessage()
+    public function get_livechat_webhook_on_agent_message()
     {
         return $this->container['livechat_webhook_on_agent_message'];
     }
@@ -646,7 +646,7 @@ class PostApiV1OmnichannelIntegrationsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatWebhookOnAgentMessage($livechat_webhook_on_agent_message)
+    public function set_livechat_webhook_on_agent_message($livechat_webhook_on_agent_message)
     {
         if (is_null($livechat_webhook_on_agent_message)) {
             throw new \InvalidArgumentException('non-nullable livechat_webhook_on_agent_message cannot be null');

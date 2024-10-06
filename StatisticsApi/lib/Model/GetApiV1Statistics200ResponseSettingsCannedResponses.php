@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsCannedResponses implements ModelInter
      * @var string[]
      */
     protected static $setters = [
-        'canned_responses_enabled' => 'setCannedResponsesEnabled'
+        'canned_responses_enabled' => 'set_canned_responses_enabled'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsCannedResponses implements ModelInter
      * @var string[]
      */
     protected static $getters = [
-        'canned_responses_enabled' => 'getCannedResponsesEnabled'
+        'canned_responses_enabled' => 'get_canned_responses_enabled'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsCannedResponses implements ModelInter
      *
      * @return bool|null
      */
-    public function getCannedResponsesEnabled()
+    public function get_canned_responses_enabled()
     {
         return $this->container['canned_responses_enabled'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsCannedResponses implements ModelInter
      *
      * @return self
      */
-    public function setCannedResponsesEnabled($canned_responses_enabled)
+    public function set_canned_responses_enabled($canned_responses_enabled)
     {
         if (is_null($canned_responses_enabled)) {
             throw new \InvalidArgumentException('non-nullable canned_responses_enabled cannot be null');

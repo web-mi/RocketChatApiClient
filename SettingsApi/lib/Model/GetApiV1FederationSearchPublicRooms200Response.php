@@ -195,12 +195,12 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'rooms' => 'setRooms',
-        'count' => 'setCount',
-        'total' => 'setTotal',
-        'next_page_token' => 'setNextPageToken',
-        'prev_page_token' => 'setPrevPageToken',
-        'success' => 'setSuccess'
+        'rooms' => 'set_rooms',
+        'count' => 'set_count',
+        'total' => 'set_total',
+        'next_page_token' => 'set_next_page_token',
+        'prev_page_token' => 'set_prev_page_token',
+        'success' => 'set_success'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'rooms' => 'getRooms',
-        'count' => 'getCount',
-        'total' => 'getTotal',
-        'next_page_token' => 'getNextPageToken',
-        'prev_page_token' => 'getPrevPageToken',
-        'success' => 'getSuccess'
+        'rooms' => 'get_rooms',
+        'count' => 'get_count',
+        'total' => 'get_total',
+        'next_page_token' => 'get_next_page_token',
+        'prev_page_token' => 'get_prev_page_token',
+        'success' => 'get_success'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1FederationSearchPublicRooms200ResponseRoomsInner[]|null
      */
-    public function getRooms()
+    public function get_rooms()
     {
         return $this->container['rooms'];
     }
@@ -341,7 +341,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setRooms($rooms)
+    public function set_rooms($rooms)
     {
         if (is_null($rooms)) {
             throw new \InvalidArgumentException('non-nullable rooms cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -368,7 +368,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -395,7 +395,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getNextPageToken()
+    public function get_next_page_token()
     {
         return $this->container['next_page_token'];
     }
@@ -422,7 +422,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setNextPageToken($next_page_token)
+    public function set_next_page_token($next_page_token)
     {
         if (is_null($next_page_token)) {
             throw new \InvalidArgumentException('non-nullable next_page_token cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getPrevPageToken()
+    public function get_prev_page_token()
     {
         return $this->container['prev_page_token'];
     }
@@ -449,7 +449,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setPrevPageToken($prev_page_token)
+    public function set_prev_page_token($prev_page_token)
     {
         if (is_null($prev_page_token)) {
             throw new \InvalidArgumentException('non-nullable prev_page_token cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -476,7 +476,7 @@ class GetApiV1FederationSearchPublicRooms200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

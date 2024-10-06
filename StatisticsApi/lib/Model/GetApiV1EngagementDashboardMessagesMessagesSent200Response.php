@@ -187,10 +187,10 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'days' => 'setDays',
-        'period' => 'setPeriod',
-        'yesterday' => 'setYesterday',
-        'success' => 'setSuccess'
+        'days' => 'set_days',
+        'period' => 'set_period',
+        'yesterday' => 'set_yesterday',
+        'success' => 'set_success'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'days' => 'getDays',
-        'period' => 'getPeriod',
-        'yesterday' => 'getYesterday',
-        'success' => 'getSuccess'
+        'days' => 'get_days',
+        'period' => 'get_period',
+        'yesterday' => 'get_yesterday',
+        'success' => 'get_success'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner[]|null
      */
-    public function getDays()
+    public function get_days()
     {
         return $this->container['days'];
     }
@@ -327,7 +327,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      *
      * @return self
      */
-    public function setDays($days)
+    public function set_days($days)
     {
         if (is_null($days)) {
             throw new \InvalidArgumentException('non-nullable days cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
      */
-    public function getPeriod()
+    public function get_period()
     {
         return $this->container['period'];
     }
@@ -354,7 +354,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      *
      * @return self
      */
-    public function setPeriod($period)
+    public function set_period($period)
     {
         if (is_null($period)) {
             throw new \InvalidArgumentException('non-nullable period cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod|null
      */
-    public function getYesterday()
+    public function get_yesterday()
     {
         return $this->container['yesterday'];
     }
@@ -381,7 +381,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      *
      * @return self
      */
-    public function setYesterday($yesterday)
+    public function set_yesterday($yesterday)
     {
         if (is_null($yesterday)) {
             throw new \InvalidArgumentException('non-nullable yesterday cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -408,7 +408,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200Response implements Mode
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

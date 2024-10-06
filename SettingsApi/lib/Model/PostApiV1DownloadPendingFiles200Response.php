@@ -179,8 +179,8 @@ class PostApiV1DownloadPendingFiles200Response implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'success' => 'setSuccess',
-        'count' => 'setCount'
+        'success' => 'set_success',
+        'count' => 'set_count'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1DownloadPendingFiles200Response implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'success' => 'getSuccess',
-        'count' => 'getCount'
+        'success' => 'get_success',
+        'count' => 'get_count'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1DownloadPendingFiles200Response implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -313,7 +313,7 @@ class PostApiV1DownloadPendingFiles200Response implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1DownloadPendingFiles200Response implements ModelInterface, ArrayA
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -340,7 +340,7 @@ class PostApiV1DownloadPendingFiles200Response implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');

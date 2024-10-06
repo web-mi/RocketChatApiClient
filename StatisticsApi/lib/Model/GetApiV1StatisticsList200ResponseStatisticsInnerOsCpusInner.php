@@ -183,9 +183,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
      * @var string[]
      */
     protected static $setters = [
-        'model' => 'setModel',
-        'speed' => 'setSpeed',
-        'times' => 'setTimes'
+        'model' => 'set_model',
+        'speed' => 'set_speed',
+        'times' => 'set_times'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
      * @var string[]
      */
     protected static $getters = [
-        'model' => 'getModel',
-        'speed' => 'getSpeed',
-        'times' => 'getTimes'
+        'model' => 'get_model',
+        'speed' => 'get_speed',
+        'times' => 'get_times'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
      *
      * @return string|null
      */
-    public function getModel()
+    public function get_model()
     {
         return $this->container['model'];
     }
@@ -320,7 +320,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
      *
      * @return self
      */
-    public function setModel($model)
+    public function set_model($model)
     {
         if (is_null($model)) {
             throw new \InvalidArgumentException('non-nullable model cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
      *
      * @return int|null
      */
-    public function getSpeed()
+    public function get_speed()
     {
         return $this->container['speed'];
     }
@@ -347,7 +347,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
      *
      * @return self
      */
-    public function setSpeed($speed)
+    public function set_speed($speed)
     {
         if (is_null($speed)) {
             throw new \InvalidArgumentException('non-nullable speed cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes|null
      */
-    public function getTimes()
+    public function get_times()
     {
         return $this->container['times'];
     }
@@ -374,7 +374,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner implements Mod
      *
      * @return self
      */
-    public function setTimes($times)
+    public function set_times($times)
     {
         if (is_null($times)) {
             throw new \InvalidArgumentException('non-nullable times cannot be null');

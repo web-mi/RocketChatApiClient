@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsEmail implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'smtp' => 'setSmtp'
+        'smtp' => 'set_smtp'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsEmail implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'smtp' => 'getSmtp'
+        'smtp' => 'get_smtp'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsEmail implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmailSmtp|null
      */
-    public function getSmtp()
+    public function get_smtp()
     {
         return $this->container['smtp'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsEmail implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setSmtp($smtp)
+    public function set_smtp($smtp)
     {
         if (is_null($smtp)) {
             throw new \InvalidArgumentException('non-nullable smtp cannot be null');

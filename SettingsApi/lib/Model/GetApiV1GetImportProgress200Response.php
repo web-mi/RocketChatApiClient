@@ -191,11 +191,11 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'key' => 'setKey',
-        'name' => 'setName',
-        'step' => 'setStep',
-        'count' => 'setCount',
-        'success' => 'setSuccess'
+        'key' => 'set_key',
+        'name' => 'set_name',
+        'step' => 'set_step',
+        'count' => 'set_count',
+        'success' => 'set_success'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'key' => 'getKey',
-        'name' => 'getName',
-        'step' => 'getStep',
-        'count' => 'getCount',
-        'success' => 'getSuccess'
+        'key' => 'get_key',
+        'name' => 'get_name',
+        'step' => 'get_step',
+        'count' => 'get_count',
+        'success' => 'get_success'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return string|null
      */
-    public function getKey()
+    public function get_key()
     {
         return $this->container['key'];
     }
@@ -334,7 +334,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setKey($key)
+    public function set_key($key)
     {
         if (is_null($key)) {
             throw new \InvalidArgumentException('non-nullable key cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -361,7 +361,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return string|null
      */
-    public function getStep()
+    public function get_step()
     {
         return $this->container['step'];
     }
@@ -388,7 +388,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setStep($step)
+    public function set_step($step)
     {
         if (is_null($step)) {
             throw new \InvalidArgumentException('non-nullable step cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetImportProgress200ResponseCount|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -415,7 +415,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -442,7 +442,7 @@ class GetApiV1GetImportProgress200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

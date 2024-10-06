@@ -183,9 +183,9 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTo
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'address' => 'setAddress',
-        'when' => 'setWhen'
+        'token' => 'set_token',
+        'address' => 'set_address',
+        'when' => 'set_when'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTo
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'address' => 'getAddress',
-        'when' => 'getWhen'
+        'token' => 'get_token',
+        'address' => 'get_address',
+        'when' => 'get_when'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTo
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -320,7 +320,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTo
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTo
      *
      * @return string|null
      */
-    public function getAddress()
+    public function get_address()
     {
         return $this->container['address'];
     }
@@ -347,7 +347,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTo
      *
      * @return self
      */
-    public function setAddress($address)
+    public function set_address($address)
     {
         if (is_null($address)) {
             throw new \InvalidArgumentException('non-nullable address cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTo
      *
      * @return string|null
      */
-    public function getWhen()
+    public function get_when()
     {
         return $this->container['when'];
     }
@@ -374,7 +374,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTo
      *
      * @return self
      */
-    public function setWhen($when)
+    public function set_when($when)
     {
         if (is_null($when)) {
             throw new \InvalidArgumentException('non-nullable when cannot be null');

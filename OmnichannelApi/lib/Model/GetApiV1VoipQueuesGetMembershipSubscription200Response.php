@@ -179,8 +179,8 @@ class GetApiV1VoipQueuesGetMembershipSubscription200Response implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        'queues' => 'setQueues',
-        'extension' => 'setExtension'
+        'queues' => 'set_queues',
+        'extension' => 'set_extension'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1VoipQueuesGetMembershipSubscription200Response implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        'queues' => 'getQueues',
-        'extension' => 'getExtension'
+        'queues' => 'get_queues',
+        'extension' => 'get_extension'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200Response implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues|null
      */
-    public function getQueues()
+    public function get_queues()
     {
         return $this->container['queues'];
     }
@@ -313,7 +313,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200Response implements ModelInt
      *
      * @return self
      */
-    public function setQueues($queues)
+    public function set_queues($queues)
     {
         if (is_null($queues)) {
             throw new \InvalidArgumentException('non-nullable queues cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200Response implements ModelInt
      *
      * @return string|null
      */
-    public function getExtension()
+    public function get_extension()
     {
         return $this->container['extension'];
     }
@@ -340,7 +340,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200Response implements ModelInt
      *
      * @return self
      */
-    public function setExtension($extension)
+    public function set_extension($extension)
     {
         if (is_null($extension)) {
             throw new \InvalidArgumentException('non-nullable extension cannot be null');

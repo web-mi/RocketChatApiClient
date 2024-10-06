@@ -179,8 +179,8 @@ class GetApiV1UsersGetPresence200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'presence' => 'setPresence',
-        'success' => 'setSuccess'
+        'presence' => 'set_presence',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1UsersGetPresence200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'presence' => 'getPresence',
-        'success' => 'getSuccess'
+        'presence' => 'get_presence',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1UsersGetPresence200Response implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getPresence()
+    public function get_presence()
     {
         return $this->container['presence'];
     }
@@ -313,7 +313,7 @@ class GetApiV1UsersGetPresence200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setPresence($presence)
+    public function set_presence($presence)
     {
         if (is_null($presence)) {
             throw new \InvalidArgumentException('non-nullable presence cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1UsersGetPresence200Response implements ModelInterface, ArrayAccess
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1UsersGetPresence200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

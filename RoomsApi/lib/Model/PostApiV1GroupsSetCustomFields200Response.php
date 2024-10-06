@@ -183,9 +183,9 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'group' => 'setGroup',
-        'success' => 'setSuccess',
-        'developer_warning' => 'setDeveloperWarning'
+        'group' => 'set_group',
+        'success' => 'set_success',
+        'developer_warning' => 'set_developer_warning'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'group' => 'getGroup',
-        'success' => 'getSuccess',
-        'developer_warning' => 'getDeveloperWarning'
+        'group' => 'get_group',
+        'success' => 'get_success',
+        'developer_warning' => 'get_developer_warning'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1GroupsSetCustomFields200ResponseGroup|null
      */
-    public function getGroup()
+    public function get_group()
     {
         return $this->container['group'];
     }
@@ -320,7 +320,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setGroup($group)
+    public function set_group($group)
     {
         if (is_null($group)) {
             throw new \InvalidArgumentException('non-nullable group cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -347,7 +347,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getDeveloperWarning()
+    public function get_developer_warning()
     {
         return $this->container['developer_warning'];
     }
@@ -374,7 +374,7 @@ class PostApiV1GroupsSetCustomFields200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setDeveloperWarning($developer_warning)
+    public function set_developer_warning($developer_warning)
     {
         if (is_null($developer_warning)) {
             throw new \InvalidArgumentException('non-nullable developer_warning cannot be null');

@@ -191,11 +191,11 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      * @var string[]
      */
     protected static $setters = [
-        'count' => 'setCount',
-        'time' => 'setTime',
-        'type' => 'setType',
-        'name' => 'setName',
-        'version' => 'setVersion'
+        'count' => 'set_count',
+        'time' => 'set_time',
+        'type' => 'set_type',
+        'name' => 'set_name',
+        'version' => 'set_version'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      * @var string[]
      */
     protected static $getters = [
-        'count' => 'getCount',
-        'time' => 'getTime',
-        'type' => 'getType',
-        'name' => 'getName',
-        'version' => 'getVersion'
+        'count' => 'get_count',
+        'time' => 'get_time',
+        'type' => 'get_type',
+        'name' => 'get_name',
+        'version' => 'get_version'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -334,7 +334,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return int|null
      */
-    public function getTime()
+    public function get_time()
     {
         return $this->container['time'];
     }
@@ -361,7 +361,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return self
      */
-    public function setTime($time)
+    public function set_time($time)
     {
         if (is_null($time)) {
             throw new \InvalidArgumentException('non-nullable time cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -388,7 +388,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -415,7 +415,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return string|null
      */
-    public function getVersion()
+    public function get_version()
     {
         return $this->container['version'];
     }
@@ -442,7 +442,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner implements 
      *
      * @return self
      */
-    public function setVersion($version)
+    public function set_version($version)
     {
         if (is_null($version)) {
             throw new \InvalidArgumentException('non-nullable version cannot be null');

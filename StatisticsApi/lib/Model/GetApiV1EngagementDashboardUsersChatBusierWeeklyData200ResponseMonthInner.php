@@ -187,10 +187,10 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'day' => 'setDay',
-        'month' => 'setMonth',
-        'year' => 'setYear'
+        'users' => 'set_users',
+        'day' => 'set_day',
+        'month' => 'set_month',
+        'year' => 'set_year'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'day' => 'getDay',
-        'month' => 'getMonth',
-        'year' => 'getYear'
+        'users' => 'get_users',
+        'day' => 'get_day',
+        'month' => 'get_month',
+        'year' => 'get_year'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -327,7 +327,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      *
      * @return int|null
      */
-    public function getDay()
+    public function get_day()
     {
         return $this->container['day'];
     }
@@ -354,7 +354,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      *
      * @return self
      */
-    public function setDay($day)
+    public function set_day($day)
     {
         if (is_null($day)) {
             throw new \InvalidArgumentException('non-nullable day cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      *
      * @return int|null
      */
-    public function getMonth()
+    public function get_month()
     {
         return $this->container['month'];
     }
@@ -381,7 +381,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      *
      * @return self
      */
-    public function setMonth($month)
+    public function set_month($month)
     {
         if (is_null($month)) {
             throw new \InvalidArgumentException('non-nullable month cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      *
      * @return int|null
      */
-    public function getYear()
+    public function get_year()
     {
         return $this->container['year'];
     }
@@ -408,7 +408,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner 
      *
      * @return self
      */
-    public function setYear($year)
+    public function set_year($year)
     {
         if (is_null($year)) {
             throw new \InvalidArgumentException('non-nullable year cannot be null');

@@ -199,13 +199,13 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'scope' => 'setScope',
-        'description' => 'setDescription',
-        'mandatory2fa' => 'setMandatory2fa',
-        'name' => 'setName',
-        'protected' => 'setProtected',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'scope' => 'set_scope',
+        'description' => 'set_description',
+        'mandatory2fa' => 'set_mandatory2fa',
+        'name' => 'set_name',
+        'protected' => 'set_protected',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -214,13 +214,13 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'scope' => 'getScope',
-        'description' => 'getDescription',
-        'mandatory2fa' => 'getMandatory2fa',
-        'name' => 'getName',
-        'protected' => 'getProtected',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'scope' => 'get_scope',
+        'description' => 'get_description',
+        'mandatory2fa' => 'get_mandatory2fa',
+        'name' => 'get_name',
+        'protected' => 'get_protected',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -336,7 +336,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -348,7 +348,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -363,7 +363,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -375,7 +375,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');
@@ -390,7 +390,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -402,7 +402,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -417,7 +417,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getMandatory2fa()
+    public function get_mandatory2fa()
     {
         return $this->container['mandatory2fa'];
     }
@@ -429,7 +429,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setMandatory2fa($mandatory2fa)
+    public function set_mandatory2fa($mandatory2fa)
     {
         if (is_null($mandatory2fa)) {
             throw new \InvalidArgumentException('non-nullable mandatory2fa cannot be null');
@@ -444,7 +444,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -456,7 +456,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -471,7 +471,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getProtected()
+    public function get_protected()
     {
         return $this->container['protected'];
     }
@@ -483,7 +483,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setProtected($protected)
+    public function set_protected($protected)
     {
         if (is_null($protected)) {
             throw new \InvalidArgumentException('non-nullable protected cannot be null');
@@ -498,7 +498,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -510,7 +510,7 @@ class PostApiV1RolesAddUserToRole200ResponseRole implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

@@ -187,10 +187,10 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'ts' => 'setTs',
-        'message' => 'setMessage',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'ts' => 'set_ts',
+        'message' => 'set_message',
+        'success' => 'set_success'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'ts' => 'getTs',
-        'message' => 'getMessage',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'ts' => 'get_ts',
+        'message' => 'get_message',
+        'success' => 'get_success'
     ];
 
     /**
@@ -315,7 +315,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -354,7 +354,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -369,7 +369,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessage|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -381,7 +381,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -396,7 +396,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -408,7 +408,7 @@ class PostApiV1ChatDelete200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

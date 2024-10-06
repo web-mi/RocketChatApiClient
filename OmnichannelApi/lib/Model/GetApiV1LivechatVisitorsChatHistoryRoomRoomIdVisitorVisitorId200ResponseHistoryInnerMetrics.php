@@ -183,9 +183,9 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
      * @var string[]
      */
     protected static $setters = [
-        'reaction' => 'setReaction',
-        'response' => 'setResponse',
-        'v' => 'setV'
+        'reaction' => 'set_reaction',
+        'response' => 'set_response',
+        'v' => 'set_v'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
      * @var string[]
      */
     protected static $getters = [
-        'reaction' => 'getReaction',
-        'response' => 'getResponse',
-        'v' => 'getV'
+        'reaction' => 'get_reaction',
+        'response' => 'get_response',
+        'v' => 'get_v'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsReaction|null
      */
-    public function getReaction()
+    public function get_reaction()
     {
         return $this->container['reaction'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return self
      */
-    public function setReaction($reaction)
+    public function set_reaction($reaction)
     {
         if (is_null($reaction)) {
             throw new \InvalidArgumentException('non-nullable reaction cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetricsResponse|null
      */
-    public function getResponse()
+    public function get_response()
     {
         return $this->container['response'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return self
      */
-    public function setResponse($response)
+    public function set_response($response)
     {
         if (is_null($response)) {
             throw new \InvalidArgumentException('non-nullable response cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null
      */
-    public function getV()
+    public function get_v()
     {
         return $this->container['v'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatVisitorsChatHistoryRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return self
      */
-    public function setV($v)
+    public function set_v($v)
     {
         if (is_null($v)) {
             throw new \InvalidArgumentException('non-nullable v cannot be null');

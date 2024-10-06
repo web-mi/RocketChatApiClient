@@ -175,7 +175,7 @@ class PostApiV1CustomUserStatusCreate400ResponseDetails implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'method' => 'setMethod'
+        'method' => 'set_method'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1CustomUserStatusCreate400ResponseDetails implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'method' => 'getMethod'
+        'method' => 'get_method'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1CustomUserStatusCreate400ResponseDetails implements ModelInterfac
      *
      * @return string|null
      */
-    public function getMethod()
+    public function get_method()
     {
         return $this->container['method'];
     }
@@ -306,7 +306,7 @@ class PostApiV1CustomUserStatusCreate400ResponseDetails implements ModelInterfac
      *
      * @return self
      */
-    public function setMethod($method)
+    public function set_method($method)
     {
         if (is_null($method)) {
             throw new \InvalidArgumentException('non-nullable method cannot be null');

@@ -179,8 +179,8 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'fields' => 'setFields',
-        'success' => 'setSuccess'
+        'fields' => 'set_fields',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'fields' => 'getFields',
-        'success' => 'getSuccess'
+        'fields' => 'get_fields',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFields200ResponseFieldsInner[]|null
      */
-    public function getFields()
+    public function get_fields()
     {
         return $this->container['fields'];
     }
@@ -313,7 +313,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setFields($fields)
+    public function set_fields($fields)
     {
         if (is_null($fields)) {
             throw new \InvalidArgumentException('non-nullable fields cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1LivechatCustomFields200Response implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

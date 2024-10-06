@@ -179,8 +179,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport im
      * @var string[]
      */
     protected static $setters = [
-        'required' => 'setRequired',
-        'allowed_stale_in_days' => 'setAllowedStaleInDays'
+        'required' => 'set_required',
+        'allowed_stale_in_days' => 'set_allowed_stale_in_days'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport im
      * @var string[]
      */
     protected static $getters = [
-        'required' => 'getRequired',
-        'allowed_stale_in_days' => 'getAllowedStaleInDays'
+        'required' => 'get_required',
+        'allowed_stale_in_days' => 'get_allowed_stale_in_days'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport im
      *
      * @return bool|null
      */
-    public function getRequired()
+    public function get_required()
     {
         return $this->container['required'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport im
      *
      * @return self
      */
-    public function setRequired($required)
+    public function set_required($required)
     {
         if (is_null($required)) {
             throw new \InvalidArgumentException('non-nullable required cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport im
      *
      * @return int|null
      */
-    public function getAllowedStaleInDays()
+    public function get_allowed_stale_in_days()
     {
         return $this->container['allowed_stale_in_days'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport im
      *
      * @return self
      */
-    public function setAllowedStaleInDays($allowed_stale_in_days)
+    public function set_allowed_stale_in_days($allowed_stale_in_days)
     {
         if (is_null($allowed_stale_in_days)) {
             throw new \InvalidArgumentException('non-nullable allowed_stale_in_days cannot be null');

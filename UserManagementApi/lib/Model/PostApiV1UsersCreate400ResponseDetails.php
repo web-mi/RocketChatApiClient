@@ -179,8 +179,8 @@ class PostApiV1UsersCreate400ResponseDetails implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'method' => 'setMethod',
-        'action' => 'setAction'
+        'method' => 'set_method',
+        'action' => 'set_action'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersCreate400ResponseDetails implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'method' => 'getMethod',
-        'action' => 'getAction'
+        'method' => 'get_method',
+        'action' => 'get_action'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersCreate400ResponseDetails implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getMethod()
+    public function get_method()
     {
         return $this->container['method'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersCreate400ResponseDetails implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setMethod($method)
+    public function set_method($method)
     {
         if (is_null($method)) {
             throw new \InvalidArgumentException('non-nullable method cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersCreate400ResponseDetails implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getAction()
+    public function get_action()
     {
         return $this->container['action'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersCreate400ResponseDetails implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setAction($action)
+    public function set_action($action)
     {
         if (is_null($action)) {
             throw new \InvalidArgumentException('non-nullable action cannot be null');

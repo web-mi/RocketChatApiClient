@@ -175,7 +175,7 @@ class PostApiV1LivechatPageVisitedRequestPageInfoLocation implements ModelInterf
      * @var string[]
      */
     protected static $setters = [
-        'href' => 'setHref'
+        'href' => 'set_href'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1LivechatPageVisitedRequestPageInfoLocation implements ModelInterf
      * @var string[]
      */
     protected static $getters = [
-        'href' => 'getHref'
+        'href' => 'get_href'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1LivechatPageVisitedRequestPageInfoLocation implements ModelInterf
      *
      * @return string
      */
-    public function getHref()
+    public function get_href()
     {
         return $this->container['href'];
     }
@@ -309,7 +309,7 @@ class PostApiV1LivechatPageVisitedRequestPageInfoLocation implements ModelInterf
      *
      * @return self
      */
-    public function setHref($href)
+    public function set_href($href)
     {
         if (is_null($href)) {
             throw new \InvalidArgumentException('non-nullable href cannot be null');

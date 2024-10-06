@@ -219,18 +219,18 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'ts' => 'setTs',
-        'title' => 'setTitle',
-        'title_link' => 'setTitleLink',
-        'title_link_download' => 'setTitleLinkDownload',
-        'image_dimensions' => 'setImageDimensions',
-        'image_preview' => 'setImagePreview',
-        'image_url' => 'setImageUrl',
-        'image_type' => 'setImageType',
-        'image_size' => 'setImageSize',
-        'type' => 'setType',
-        'description' => 'setDescription',
-        'description_md' => 'setDescriptionMd'
+        'ts' => 'set_ts',
+        'title' => 'set_title',
+        'title_link' => 'set_title_link',
+        'title_link_download' => 'set_title_link_download',
+        'image_dimensions' => 'set_image_dimensions',
+        'image_preview' => 'set_image_preview',
+        'image_url' => 'set_image_url',
+        'image_type' => 'set_image_type',
+        'image_size' => 'set_image_size',
+        'type' => 'set_type',
+        'description' => 'set_description',
+        'description_md' => 'set_description_md'
     ];
 
     /**
@@ -239,18 +239,18 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'ts' => 'getTs',
-        'title' => 'getTitle',
-        'title_link' => 'getTitleLink',
-        'title_link_download' => 'getTitleLinkDownload',
-        'image_dimensions' => 'getImageDimensions',
-        'image_preview' => 'getImagePreview',
-        'image_url' => 'getImageUrl',
-        'image_type' => 'getImageType',
-        'image_size' => 'getImageSize',
-        'type' => 'getType',
-        'description' => 'getDescription',
-        'description_md' => 'getDescriptionMd'
+        'ts' => 'get_ts',
+        'title' => 'get_title',
+        'title_link' => 'get_title_link',
+        'title_link_download' => 'get_title_link_download',
+        'image_dimensions' => 'get_image_dimensions',
+        'image_preview' => 'get_image_preview',
+        'image_url' => 'get_image_url',
+        'image_type' => 'get_image_type',
+        'image_size' => 'get_image_size',
+        'type' => 'get_type',
+        'description' => 'get_description',
+        'description_md' => 'get_description_md'
     ];
 
     /**
@@ -371,7 +371,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -383,7 +383,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -398,7 +398,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getTitle()
+    public function get_title()
     {
         return $this->container['title'];
     }
@@ -410,7 +410,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setTitle($title)
+    public function set_title($title)
     {
         if (is_null($title)) {
             throw new \InvalidArgumentException('non-nullable title cannot be null');
@@ -425,7 +425,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getTitleLink()
+    public function get_title_link()
     {
         return $this->container['title_link'];
     }
@@ -437,7 +437,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setTitleLink($title_link)
+    public function set_title_link($title_link)
     {
         if (is_null($title_link)) {
             throw new \InvalidArgumentException('non-nullable title_link cannot be null');
@@ -452,7 +452,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return bool|null
      */
-    public function getTitleLinkDownload()
+    public function get_title_link_download()
     {
         return $this->container['title_link_download'];
     }
@@ -464,7 +464,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setTitleLinkDownload($title_link_download)
+    public function set_title_link_download($title_link_download)
     {
         if (is_null($title_link_download)) {
             throw new \InvalidArgumentException('non-nullable title_link_download cannot be null');
@@ -479,7 +479,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions|null
      */
-    public function getImageDimensions()
+    public function get_image_dimensions()
     {
         return $this->container['image_dimensions'];
     }
@@ -491,7 +491,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setImageDimensions($image_dimensions)
+    public function set_image_dimensions($image_dimensions)
     {
         if (is_null($image_dimensions)) {
             throw new \InvalidArgumentException('non-nullable image_dimensions cannot be null');
@@ -506,7 +506,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getImagePreview()
+    public function get_image_preview()
     {
         return $this->container['image_preview'];
     }
@@ -518,7 +518,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setImagePreview($image_preview)
+    public function set_image_preview($image_preview)
     {
         if (is_null($image_preview)) {
             throw new \InvalidArgumentException('non-nullable image_preview cannot be null');
@@ -533,7 +533,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getImageUrl()
+    public function get_image_url()
     {
         return $this->container['image_url'];
     }
@@ -545,7 +545,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setImageUrl($image_url)
+    public function set_image_url($image_url)
     {
         if (is_null($image_url)) {
             throw new \InvalidArgumentException('non-nullable image_url cannot be null');
@@ -560,7 +560,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getImageType()
+    public function get_image_type()
     {
         return $this->container['image_type'];
     }
@@ -572,7 +572,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setImageType($image_type)
+    public function set_image_type($image_type)
     {
         if (is_null($image_type)) {
             throw new \InvalidArgumentException('non-nullable image_type cannot be null');
@@ -587,7 +587,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return int|null
      */
-    public function getImageSize()
+    public function get_image_size()
     {
         return $this->container['image_size'];
     }
@@ -599,7 +599,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setImageSize($image_size)
+    public function set_image_size($image_size)
     {
         if (is_null($image_size)) {
             throw new \InvalidArgumentException('non-nullable image_size cannot be null');
@@ -614,7 +614,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -626,7 +626,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -641,7 +641,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -653,7 +653,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -668,7 +668,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomLastMessageMdInner[]|null
      */
-    public function getDescriptionMd()
+    public function get_description_md()
     {
         return $this->container['description_md'];
     }
@@ -680,7 +680,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setDescriptionMd($description_md)
+    public function set_description_md($description_md)
     {
         if (is_null($description_md)) {
             throw new \InvalidArgumentException('non-nullable description_md cannot be null');

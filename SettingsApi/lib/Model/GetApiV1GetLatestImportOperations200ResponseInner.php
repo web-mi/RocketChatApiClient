@@ -203,14 +203,14 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'type' => 'setType',
-        'importer_key' => 'setImporterKey',
-        'ts' => 'setTs',
-        'status' => 'setStatus',
-        'valid' => 'setValid',
-        'user' => 'setUser',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'type' => 'set_type',
+        'importer_key' => 'set_importer_key',
+        'ts' => 'set_ts',
+        'status' => 'set_status',
+        'valid' => 'set_valid',
+        'user' => 'set_user',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'type' => 'getType',
-        'importer_key' => 'getImporterKey',
-        'ts' => 'getTs',
-        'status' => 'getStatus',
-        'valid' => 'getValid',
-        'user' => 'getUser',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'type' => 'get_type',
+        'importer_key' => 'get_importer_key',
+        'ts' => 'get_ts',
+        'status' => 'get_status',
+        'valid' => 'get_valid',
+        'user' => 'get_user',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -355,7 +355,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -370,7 +370,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -382,7 +382,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -397,7 +397,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getImporterKey()
+    public function get_importer_key()
     {
         return $this->container['importer_key'];
     }
@@ -409,7 +409,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return self
      */
-    public function setImporterKey($importer_key)
+    public function set_importer_key($importer_key)
     {
         if (is_null($importer_key)) {
             throw new \InvalidArgumentException('non-nullable importer_key cannot be null');
@@ -424,7 +424,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return int|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -436,7 +436,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -463,7 +463,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getValid()
+    public function get_valid()
     {
         return $this->container['valid'];
     }
@@ -490,7 +490,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return self
      */
-    public function setValid($valid)
+    public function set_valid($valid)
     {
         if (is_null($valid)) {
             throw new \InvalidArgumentException('non-nullable valid cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getUser()
+    public function get_user()
     {
         return $this->container['user'];
     }
@@ -517,7 +517,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return self
      */
-    public function setUser($user)
+    public function set_user($user)
     {
         if (is_null($user)) {
             throw new \InvalidArgumentException('non-nullable user cannot be null');
@@ -532,7 +532,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -544,7 +544,7 @@ class GetApiV1GetLatestImportOperations200ResponseInner implements ModelInterfac
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

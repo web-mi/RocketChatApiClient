@@ -207,15 +207,15 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'days' => 'setDays',
-        'max_uses' => 'setMaxUses',
-        'rid' => 'setRid',
-        'user_id' => 'setUserId',
-        'created_at' => 'setCreatedAt',
-        'expires' => 'setExpires',
-        'uses' => 'setUses',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'days' => 'set_days',
+        'max_uses' => 'set_max_uses',
+        'rid' => 'set_rid',
+        'user_id' => 'set_user_id',
+        'created_at' => 'set_created_at',
+        'expires' => 'set_expires',
+        'uses' => 'set_uses',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -224,15 +224,15 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'days' => 'getDays',
-        'max_uses' => 'getMaxUses',
-        'rid' => 'getRid',
-        'user_id' => 'getUserId',
-        'created_at' => 'getCreatedAt',
-        'expires' => 'getExpires',
-        'uses' => 'getUses',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'days' => 'get_days',
+        'max_uses' => 'get_max_uses',
+        'rid' => 'get_rid',
+        'user_id' => 'get_user_id',
+        'created_at' => 'get_created_at',
+        'expires' => 'get_expires',
+        'uses' => 'get_uses',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -350,7 +350,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -362,7 +362,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -377,7 +377,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return int|null
      */
-    public function getDays()
+    public function get_days()
     {
         return $this->container['days'];
     }
@@ -389,7 +389,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setDays($days)
+    public function set_days($days)
     {
         if (is_null($days)) {
             throw new \InvalidArgumentException('non-nullable days cannot be null');
@@ -404,7 +404,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return int|null
      */
-    public function getMaxUses()
+    public function get_max_uses()
     {
         return $this->container['max_uses'];
     }
@@ -416,7 +416,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setMaxUses($max_uses)
+    public function set_max_uses($max_uses)
     {
         if (is_null($max_uses)) {
             throw new \InvalidArgumentException('non-nullable max_uses cannot be null');
@@ -431,7 +431,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -443,7 +443,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -458,7 +458,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -470,7 +470,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -485,7 +485,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -497,7 +497,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -512,7 +512,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getExpires()
+    public function get_expires()
     {
         return $this->container['expires'];
     }
@@ -524,7 +524,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setExpires($expires)
+    public function set_expires($expires)
     {
         if (is_null($expires)) {
             array_push($this->openAPINullablesSetToNull, 'expires');
@@ -546,7 +546,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return int|null
      */
-    public function getUses()
+    public function get_uses()
     {
         return $this->container['uses'];
     }
@@ -558,7 +558,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setUses($uses)
+    public function set_uses($uses)
     {
         if (is_null($uses)) {
             throw new \InvalidArgumentException('non-nullable uses cannot be null');
@@ -573,7 +573,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -585,7 +585,7 @@ class PostApiV1FindOrCreateInvite200ResponseInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

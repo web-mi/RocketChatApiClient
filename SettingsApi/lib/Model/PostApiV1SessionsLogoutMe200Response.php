@@ -179,8 +179,8 @@ class PostApiV1SessionsLogoutMe200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'session_id' => 'setSessionId',
-        'success' => 'setSuccess'
+        'session_id' => 'set_session_id',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1SessionsLogoutMe200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'session_id' => 'getSessionId',
-        'success' => 'getSuccess'
+        'session_id' => 'get_session_id',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1SessionsLogoutMe200Response implements ModelInterface, ArrayAcces
      *
      * @return string|null
      */
-    public function getSessionId()
+    public function get_session_id()
     {
         return $this->container['session_id'];
     }
@@ -313,7 +313,7 @@ class PostApiV1SessionsLogoutMe200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setSessionId($session_id)
+    public function set_session_id($session_id)
     {
         if (is_null($session_id)) {
             throw new \InvalidArgumentException('non-nullable session_id cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1SessionsLogoutMe200Response implements ModelInterface, ArrayAcces
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1SessionsLogoutMe200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

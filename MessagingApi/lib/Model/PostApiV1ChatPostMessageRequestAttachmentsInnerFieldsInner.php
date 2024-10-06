@@ -183,9 +183,9 @@ class PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'short' => 'setShort',
-        'title' => 'setTitle',
-        'value' => 'setValue'
+        'short' => 'set_short',
+        'title' => 'set_title',
+        'value' => 'set_value'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'short' => 'getShort',
-        'title' => 'getTitle',
-        'value' => 'getValue'
+        'short' => 'get_short',
+        'title' => 'get_title',
+        'value' => 'get_value'
     ];
 
     /**
@@ -314,7 +314,7 @@ class PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner implements Mode
      *
      * @return bool|null
      */
-    public function getShort()
+    public function get_short()
     {
         return $this->container['short'];
     }
@@ -326,7 +326,7 @@ class PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner implements Mode
      *
      * @return self
      */
-    public function setShort($short)
+    public function set_short($short)
     {
         if (is_null($short)) {
             throw new \InvalidArgumentException('non-nullable short cannot be null');
@@ -341,7 +341,7 @@ class PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner implements Mode
      *
      * @return string
      */
-    public function getTitle()
+    public function get_title()
     {
         return $this->container['title'];
     }
@@ -353,7 +353,7 @@ class PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner implements Mode
      *
      * @return self
      */
-    public function setTitle($title)
+    public function set_title($title)
     {
         if (is_null($title)) {
             throw new \InvalidArgumentException('non-nullable title cannot be null');
@@ -368,7 +368,7 @@ class PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner implements Mode
      *
      * @return string
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -380,7 +380,7 @@ class PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner implements Mode
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');

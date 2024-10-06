@@ -191,11 +191,11 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'fname' => 'setFname',
-        't' => 'setT',
-        'team_id' => 'setTeamId'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'fname' => 'set_fname',
+        't' => 'set_t',
+        'team_id' => 'set_team_id'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'fname' => 'getFname',
-        't' => 'getT',
-        'team_id' => 'getTeamId'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'fname' => 'get_fname',
+        't' => 'get_t',
+        'team_id' => 'get_team_id'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -361,7 +361,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getFname()
+    public function get_fname()
     {
         return $this->container['fname'];
     }
@@ -388,7 +388,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setFname($fname)
+    public function set_fname($fname)
     {
         if (is_null($fname)) {
             throw new \InvalidArgumentException('non-nullable fname cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -415,7 +415,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getTeamId()
+    public function get_team_id()
     {
         return $this->container['team_id'];
     }
@@ -442,7 +442,7 @@ class GetApiV1TeamsAutocomplete200ResponseTeamsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setTeamId($team_id)
+    public function set_team_id($team_id)
     {
         if (is_null($team_id)) {
             throw new \InvalidArgumentException('non-nullable team_id cannot be null');

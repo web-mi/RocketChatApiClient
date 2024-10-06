@@ -179,8 +179,8 @@ class PostApiV1ChatReportMessageRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'message_id' => 'setMessageId',
-        'description' => 'setDescription'
+        'message_id' => 'set_message_id',
+        'description' => 'set_description'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChatReportMessageRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'message_id' => 'getMessageId',
-        'description' => 'getDescription'
+        'message_id' => 'get_message_id',
+        'description' => 'get_description'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1ChatReportMessageRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getMessageId()
+    public function get_message_id()
     {
         return $this->container['message_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1ChatReportMessageRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setMessageId($message_id)
+    public function set_message_id($message_id)
     {
         if (is_null($message_id)) {
             throw new \InvalidArgumentException('non-nullable message_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1ChatReportMessageRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -346,7 +346,7 @@ class PostApiV1ChatReportMessageRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');

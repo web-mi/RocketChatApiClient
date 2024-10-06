@@ -179,8 +179,8 @@ class PostApiV1LivechatPageVisited200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'page' => 'setPage',
-        'success' => 'setSuccess'
+        'page' => 'set_page',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatPageVisited200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'page' => 'getPage',
-        'success' => 'getSuccess'
+        'page' => 'get_page',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1LivechatPageVisited200Response implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePage|null
      */
-    public function getPage()
+    public function get_page()
     {
         return $this->container['page'];
     }
@@ -313,7 +313,7 @@ class PostApiV1LivechatPageVisited200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setPage($page)
+    public function set_page($page)
     {
         if (is_null($page)) {
             throw new \InvalidArgumentException('non-nullable page cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1LivechatPageVisited200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1LivechatPageVisited200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

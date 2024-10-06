@@ -191,11 +191,11 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'i18n' => 'setI18n',
-        'sort_item' => 'setSortItem',
-        'dirty' => 'setDirty',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'i18n' => 'set_i18n',
+        'sort_item' => 'set_sort_item',
+        'dirty' => 'set_dirty',
+        'success' => 'set_success'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'i18n' => 'getI18n',
-        'sort_item' => 'getSortItem',
-        'dirty' => 'getDirty',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'i18n' => 'get_i18n',
+        'sort_item' => 'get_sort_item',
+        'dirty' => 'get_dirty',
+        'success' => 'get_success'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return string|null
      */
-    public function getI18n()
+    public function get_i18n()
     {
         return $this->container['i18n'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return self
      */
-    public function setI18n($i18n)
+    public function set_i18n($i18n)
     {
         if (is_null($i18n)) {
             throw new \InvalidArgumentException('non-nullable i18n cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return int|null
      */
-    public function getSortItem()
+    public function get_sort_item()
     {
         return $this->container['sort_item'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return self
      */
-    public function setSortItem($sort_item)
+    public function set_sort_item($sort_item)
     {
         if (is_null($sort_item)) {
             throw new \InvalidArgumentException('non-nullable sort_item cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getDirty()
+    public function get_dirty()
     {
         return $this->container['dirty'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return self
      */
-    public function setDirty($dirty)
+    public function set_dirty($dirty)
     {
         if (is_null($dirty)) {
             throw new \InvalidArgumentException('non-nullable dirty cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatPrioritiesPriorityId200Response implements ModelInterface,
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

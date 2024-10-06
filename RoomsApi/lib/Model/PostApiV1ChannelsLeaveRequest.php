@@ -175,7 +175,7 @@ class PostApiV1ChannelsLeaveRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId'
+        'room_id' => 'set_room_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1ChannelsLeaveRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId'
+        'room_id' => 'get_room_id'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1ChannelsLeaveRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -306,7 +306,7 @@ class PostApiV1ChannelsLeaveRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');

@@ -191,11 +191,11 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'hour' => 'setHour',
-        'day' => 'setDay',
-        'month' => 'setMonth',
-        'year' => 'setYear'
+        'users' => 'set_users',
+        'hour' => 'set_hour',
+        'day' => 'set_day',
+        'month' => 'set_month',
+        'year' => 'set_year'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'hour' => 'getHour',
-        'day' => 'getDay',
-        'month' => 'getMonth',
-        'year' => 'getYear'
+        'users' => 'get_users',
+        'hour' => 'get_hour',
+        'day' => 'get_day',
+        'month' => 'get_month',
+        'year' => 'get_year'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -334,7 +334,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return int|null
      */
-    public function getHour()
+    public function get_hour()
     {
         return $this->container['hour'];
     }
@@ -361,7 +361,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return self
      */
-    public function setHour($hour)
+    public function set_hour($hour)
     {
         if (is_null($hour)) {
             throw new \InvalidArgumentException('non-nullable hour cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return int|null
      */
-    public function getDay()
+    public function get_day()
     {
         return $this->container['day'];
     }
@@ -388,7 +388,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return self
      */
-    public function setDay($day)
+    public function set_day($day)
     {
         if (is_null($day)) {
             throw new \InvalidArgumentException('non-nullable day cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return int|null
      */
-    public function getMonth()
+    public function get_month()
     {
         return $this->container['month'];
     }
@@ -415,7 +415,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return self
      */
-    public function setMonth($month)
+    public function set_month($month)
     {
         if (is_null($month)) {
             throw new \InvalidArgumentException('non-nullable month cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return int|null
      */
-    public function getYear()
+    public function get_year()
     {
         return $this->container['year'];
     }
@@ -442,7 +442,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekI
      *
      * @return self
      */
-    public function setYear($year)
+    public function set_year($year)
     {
         if (is_null($year)) {
             throw new \InvalidArgumentException('non-nullable year cannot be null');

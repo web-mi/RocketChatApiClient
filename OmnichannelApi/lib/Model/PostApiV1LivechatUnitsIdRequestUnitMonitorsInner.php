@@ -179,8 +179,8 @@ class PostApiV1LivechatUnitsIdRequestUnitMonitorsInner implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        'monitor_id' => 'setMonitorId',
-        'username' => 'setUsername'
+        'monitor_id' => 'set_monitor_id',
+        'username' => 'set_username'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatUnitsIdRequestUnitMonitorsInner implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        'monitor_id' => 'getMonitorId',
-        'username' => 'getUsername'
+        'monitor_id' => 'get_monitor_id',
+        'username' => 'get_username'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1LivechatUnitsIdRequestUnitMonitorsInner implements ModelInterface
      *
      * @return string
      */
-    public function getMonitorId()
+    public function get_monitor_id()
     {
         return $this->container['monitor_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1LivechatUnitsIdRequestUnitMonitorsInner implements ModelInterface
      *
      * @return self
      */
-    public function setMonitorId($monitor_id)
+    public function set_monitor_id($monitor_id)
     {
         if (is_null($monitor_id)) {
             throw new \InvalidArgumentException('non-nullable monitor_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1LivechatUnitsIdRequestUnitMonitorsInner implements ModelInterface
      *
      * @return string
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -346,7 +346,7 @@ class PostApiV1LivechatUnitsIdRequestUnitMonitorsInner implements ModelInterface
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');

@@ -195,12 +195,12 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'name' => 'setName',
-        'can_join' => 'setCanJoin',
-        'canonical_alias' => 'setCanonicalAlias',
-        'joined_members' => 'setJoinedMembers',
-        'topic' => 'setTopic'
+        'id' => 'set_id',
+        'name' => 'set_name',
+        'can_join' => 'set_can_join',
+        'canonical_alias' => 'set_canonical_alias',
+        'joined_members' => 'set_joined_members',
+        'topic' => 'set_topic'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'name' => 'getName',
-        'can_join' => 'getCanJoin',
-        'canonical_alias' => 'getCanonicalAlias',
-        'joined_members' => 'getJoinedMembers',
-        'topic' => 'getTopic'
+        'id' => 'get_id',
+        'name' => 'get_name',
+        'can_join' => 'get_can_join',
+        'canonical_alias' => 'get_canonical_alias',
+        'joined_members' => 'get_joined_members',
+        'topic' => 'get_topic'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return string|null
      */
-    public function getId()
+    public function get_id()
     {
         return $this->container['id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return self
      */
-    public function setId($id)
+    public function set_id($id)
     {
         if (is_null($id)) {
             throw new \InvalidArgumentException('non-nullable id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -368,7 +368,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return bool|null
      */
-    public function getCanJoin()
+    public function get_can_join()
     {
         return $this->container['can_join'];
     }
@@ -395,7 +395,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return self
      */
-    public function setCanJoin($can_join)
+    public function set_can_join($can_join)
     {
         if (is_null($can_join)) {
             throw new \InvalidArgumentException('non-nullable can_join cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return string|null
      */
-    public function getCanonicalAlias()
+    public function get_canonical_alias()
     {
         return $this->container['canonical_alias'];
     }
@@ -422,7 +422,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return self
      */
-    public function setCanonicalAlias($canonical_alias)
+    public function set_canonical_alias($canonical_alias)
     {
         if (is_null($canonical_alias)) {
             throw new \InvalidArgumentException('non-nullable canonical_alias cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return int|null
      */
-    public function getJoinedMembers()
+    public function get_joined_members()
     {
         return $this->container['joined_members'];
     }
@@ -449,7 +449,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return self
      */
-    public function setJoinedMembers($joined_members)
+    public function set_joined_members($joined_members)
     {
         if (is_null($joined_members)) {
             throw new \InvalidArgumentException('non-nullable joined_members cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return string|null
      */
-    public function getTopic()
+    public function get_topic()
     {
         return $this->container['topic'];
     }
@@ -476,7 +476,7 @@ class GetApiV1FederationSearchPublicRooms200ResponseRoomsInner implements ModelI
      *
      * @return self
      */
-    public function setTopic($topic)
+    public function set_topic($topic)
     {
         if (is_null($topic)) {
             throw new \InvalidArgumentException('non-nullable topic cannot be null');

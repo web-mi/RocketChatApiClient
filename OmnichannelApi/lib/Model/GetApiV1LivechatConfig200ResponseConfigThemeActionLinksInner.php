@@ -187,10 +187,10 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      * @var string[]
      */
     protected static $setters = [
-        'icon' => 'setIcon',
-        'i18n_label' => 'setI18nLabel',
-        'method_id' => 'setMethodId',
-        'params' => 'setParams'
+        'icon' => 'set_icon',
+        'i18n_label' => 'set_i18n_label',
+        'method_id' => 'set_method_id',
+        'params' => 'set_params'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      * @var string[]
      */
     protected static $getters = [
-        'icon' => 'getIcon',
-        'i18n_label' => 'getI18nLabel',
-        'method_id' => 'getMethodId',
-        'params' => 'getParams'
+        'icon' => 'get_icon',
+        'i18n_label' => 'get_i18n_label',
+        'method_id' => 'get_method_id',
+        'params' => 'get_params'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      *
      * @return string|null
      */
-    public function getIcon()
+    public function get_icon()
     {
         return $this->container['icon'];
     }
@@ -327,7 +327,7 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      *
      * @return self
      */
-    public function setIcon($icon)
+    public function set_icon($icon)
     {
         if (is_null($icon)) {
             throw new \InvalidArgumentException('non-nullable icon cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      *
      * @return string|null
      */
-    public function getI18nLabel()
+    public function get_i18n_label()
     {
         return $this->container['i18n_label'];
     }
@@ -354,7 +354,7 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      *
      * @return self
      */
-    public function setI18nLabel($i18n_label)
+    public function set_i18n_label($i18n_label)
     {
         if (is_null($i18n_label)) {
             throw new \InvalidArgumentException('non-nullable i18n_label cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      *
      * @return string|null
      */
-    public function getMethodId()
+    public function get_method_id()
     {
         return $this->container['method_id'];
     }
@@ -381,7 +381,7 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      *
      * @return self
      */
-    public function setMethodId($method_id)
+    public function set_method_id($method_id)
     {
         if (is_null($method_id)) {
             throw new \InvalidArgumentException('non-nullable method_id cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      *
      * @return string|null
      */
-    public function getParams()
+    public function get_params()
     {
         return $this->container['params'];
     }
@@ -408,7 +408,7 @@ class GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner implements Mo
      *
      * @return self
      */
-    public function setParams($params)
+    public function set_params($params)
     {
         if (is_null($params)) {
             throw new \InvalidArgumentException('non-nullable params cannot be null');

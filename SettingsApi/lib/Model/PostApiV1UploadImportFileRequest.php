@@ -187,10 +187,10 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'binary_content' => 'setBinaryContent',
-        'importer_key' => 'setImporterKey',
-        'file_name' => 'setFileName',
-        'content_type' => 'setContentType'
+        'binary_content' => 'set_binary_content',
+        'importer_key' => 'set_importer_key',
+        'file_name' => 'set_file_name',
+        'content_type' => 'set_content_type'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'binary_content' => 'getBinaryContent',
-        'importer_key' => 'getImporterKey',
-        'file_name' => 'getFileName',
-        'content_type' => 'getContentType'
+        'binary_content' => 'get_binary_content',
+        'importer_key' => 'get_importer_key',
+        'file_name' => 'get_file_name',
+        'content_type' => 'get_content_type'
     ];
 
     /**
@@ -327,7 +327,7 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getBinaryContent()
+    public function get_binary_content()
     {
         return $this->container['binary_content'];
     }
@@ -339,7 +339,7 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setBinaryContent($binary_content)
+    public function set_binary_content($binary_content)
     {
         if (is_null($binary_content)) {
             throw new \InvalidArgumentException('non-nullable binary_content cannot be null');
@@ -354,7 +354,7 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getImporterKey()
+    public function get_importer_key()
     {
         return $this->container['importer_key'];
     }
@@ -366,7 +366,7 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setImporterKey($importer_key)
+    public function set_importer_key($importer_key)
     {
         if (is_null($importer_key)) {
             throw new \InvalidArgumentException('non-nullable importer_key cannot be null');
@@ -381,7 +381,7 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getFileName()
+    public function get_file_name()
     {
         return $this->container['file_name'];
     }
@@ -393,7 +393,7 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setFileName($file_name)
+    public function set_file_name($file_name)
     {
         if (is_null($file_name)) {
             throw new \InvalidArgumentException('non-nullable file_name cannot be null');
@@ -408,7 +408,7 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getContentType()
+    public function get_content_type()
     {
         return $this->container['content_type'];
     }
@@ -420,7 +420,7 @@ class PostApiV1UploadImportFileRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setContentType($content_type)
+    public function set_content_type($content_type)
     {
         if (is_null($content_type)) {
             throw new \InvalidArgumentException('non-nullable content_type cannot be null');

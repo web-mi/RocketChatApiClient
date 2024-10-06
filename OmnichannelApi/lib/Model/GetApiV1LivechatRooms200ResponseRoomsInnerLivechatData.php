@@ -175,7 +175,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        'doc_id' => 'setDocId'
+        'doc_id' => 'set_doc_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        'doc_id' => 'getDocId'
+        'doc_id' => 'get_doc_id'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData implements ModelInt
      *
      * @return string|null
      */
-    public function getDocId()
+    public function get_doc_id()
     {
         return $this->container['doc_id'];
     }
@@ -306,7 +306,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerLivechatData implements ModelInt
      *
      * @return self
      */
-    public function setDocId($doc_id)
+    public function set_doc_id($doc_id)
     {
         if (is_null($doc_id)) {
             throw new \InvalidArgumentException('non-nullable doc_id cannot be null');

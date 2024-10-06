@@ -267,30 +267,30 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'room_name' => 'setRoomName',
-        'room_description' => 'setRoomDescription',
-        'room_avatar' => 'setRoomAvatar',
-        'featured' => 'setFeatured',
-        'room_topic' => 'setRoomTopic',
-        'room_announcement' => 'setRoomAnnouncement',
-        'room_custom_fields' => 'setRoomCustomFields',
-        'room_type' => 'setRoomType',
-        'read_only' => 'setReadOnly',
-        'react_when_read_only' => 'setReactWhenReadOnly',
-        'system_messages' => 'setSystemMessages',
-        'default' => 'setDefault',
-        'join_code' => 'setJoinCode',
-        'streaming_options' => 'setStreamingOptions',
-        'retention_enabled' => 'setRetentionEnabled',
-        'retention_max_age' => 'setRetentionMaxAge',
-        'retention_exclude_pinned' => 'setRetentionExcludePinned',
-        'retention_files_only' => 'setRetentionFilesOnly',
-        'retention_ignore_threads' => 'setRetentionIgnoreThreads',
-        'retention_override_global' => 'setRetentionOverrideGlobal',
-        'encrypted' => 'setEncrypted',
-        'favorite' => 'setFavorite',
-        'sidepanel' => 'setSidepanel'
+        'rid' => 'set_rid',
+        'room_name' => 'set_room_name',
+        'room_description' => 'set_room_description',
+        'room_avatar' => 'set_room_avatar',
+        'featured' => 'set_featured',
+        'room_topic' => 'set_room_topic',
+        'room_announcement' => 'set_room_announcement',
+        'room_custom_fields' => 'set_room_custom_fields',
+        'room_type' => 'set_room_type',
+        'read_only' => 'set_read_only',
+        'react_when_read_only' => 'set_react_when_read_only',
+        'system_messages' => 'set_system_messages',
+        'default' => 'set_default',
+        'join_code' => 'set_join_code',
+        'streaming_options' => 'set_streaming_options',
+        'retention_enabled' => 'set_retention_enabled',
+        'retention_max_age' => 'set_retention_max_age',
+        'retention_exclude_pinned' => 'set_retention_exclude_pinned',
+        'retention_files_only' => 'set_retention_files_only',
+        'retention_ignore_threads' => 'set_retention_ignore_threads',
+        'retention_override_global' => 'set_retention_override_global',
+        'encrypted' => 'set_encrypted',
+        'favorite' => 'set_favorite',
+        'sidepanel' => 'set_sidepanel'
     ];
 
     /**
@@ -299,30 +299,30 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'room_name' => 'getRoomName',
-        'room_description' => 'getRoomDescription',
-        'room_avatar' => 'getRoomAvatar',
-        'featured' => 'getFeatured',
-        'room_topic' => 'getRoomTopic',
-        'room_announcement' => 'getRoomAnnouncement',
-        'room_custom_fields' => 'getRoomCustomFields',
-        'room_type' => 'getRoomType',
-        'read_only' => 'getReadOnly',
-        'react_when_read_only' => 'getReactWhenReadOnly',
-        'system_messages' => 'getSystemMessages',
-        'default' => 'getDefault',
-        'join_code' => 'getJoinCode',
-        'streaming_options' => 'getStreamingOptions',
-        'retention_enabled' => 'getRetentionEnabled',
-        'retention_max_age' => 'getRetentionMaxAge',
-        'retention_exclude_pinned' => 'getRetentionExcludePinned',
-        'retention_files_only' => 'getRetentionFilesOnly',
-        'retention_ignore_threads' => 'getRetentionIgnoreThreads',
-        'retention_override_global' => 'getRetentionOverrideGlobal',
-        'encrypted' => 'getEncrypted',
-        'favorite' => 'getFavorite',
-        'sidepanel' => 'getSidepanel'
+        'rid' => 'get_rid',
+        'room_name' => 'get_room_name',
+        'room_description' => 'get_room_description',
+        'room_avatar' => 'get_room_avatar',
+        'featured' => 'get_featured',
+        'room_topic' => 'get_room_topic',
+        'room_announcement' => 'get_room_announcement',
+        'room_custom_fields' => 'get_room_custom_fields',
+        'room_type' => 'get_room_type',
+        'read_only' => 'get_read_only',
+        'react_when_read_only' => 'get_react_when_read_only',
+        'system_messages' => 'get_system_messages',
+        'default' => 'get_default',
+        'join_code' => 'get_join_code',
+        'streaming_options' => 'get_streaming_options',
+        'retention_enabled' => 'get_retention_enabled',
+        'retention_max_age' => 'get_retention_max_age',
+        'retention_exclude_pinned' => 'get_retention_exclude_pinned',
+        'retention_files_only' => 'get_retention_files_only',
+        'retention_ignore_threads' => 'get_retention_ignore_threads',
+        'retention_override_global' => 'get_retention_override_global',
+        'encrypted' => 'get_encrypted',
+        'favorite' => 'get_favorite',
+        'sidepanel' => 'get_sidepanel'
     ];
 
     /**
@@ -458,7 +458,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -470,7 +470,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -485,7 +485,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRoomName()
+    public function get_room_name()
     {
         return $this->container['room_name'];
     }
@@ -497,7 +497,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRoomName($room_name)
+    public function set_room_name($room_name)
     {
         if (is_null($room_name)) {
             throw new \InvalidArgumentException('non-nullable room_name cannot be null');
@@ -512,7 +512,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRoomDescription()
+    public function get_room_description()
     {
         return $this->container['room_description'];
     }
@@ -524,7 +524,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRoomDescription($room_description)
+    public function set_room_description($room_description)
     {
         if (is_null($room_description)) {
             throw new \InvalidArgumentException('non-nullable room_description cannot be null');
@@ -539,7 +539,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRoomAvatar()
+    public function get_room_avatar()
     {
         return $this->container['room_avatar'];
     }
@@ -551,7 +551,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRoomAvatar($room_avatar)
+    public function set_room_avatar($room_avatar)
     {
         if (is_null($room_avatar)) {
             throw new \InvalidArgumentException('non-nullable room_avatar cannot be null');
@@ -566,7 +566,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getFeatured()
+    public function get_featured()
     {
         return $this->container['featured'];
     }
@@ -578,7 +578,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setFeatured($featured)
+    public function set_featured($featured)
     {
         if (is_null($featured)) {
             throw new \InvalidArgumentException('non-nullable featured cannot be null');
@@ -593,7 +593,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRoomTopic()
+    public function get_room_topic()
     {
         return $this->container['room_topic'];
     }
@@ -605,7 +605,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRoomTopic($room_topic)
+    public function set_room_topic($room_topic)
     {
         if (is_null($room_topic)) {
             throw new \InvalidArgumentException('non-nullable room_topic cannot be null');
@@ -620,7 +620,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRoomAnnouncement()
+    public function get_room_announcement()
     {
         return $this->container['room_announcement'];
     }
@@ -632,7 +632,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRoomAnnouncement($room_announcement)
+    public function set_room_announcement($room_announcement)
     {
         if (is_null($room_announcement)) {
             throw new \InvalidArgumentException('non-nullable room_announcement cannot be null');
@@ -647,7 +647,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return object|null
      */
-    public function getRoomCustomFields()
+    public function get_room_custom_fields()
     {
         return $this->container['room_custom_fields'];
     }
@@ -659,7 +659,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRoomCustomFields($room_custom_fields)
+    public function set_room_custom_fields($room_custom_fields)
     {
         if (is_null($room_custom_fields)) {
             throw new \InvalidArgumentException('non-nullable room_custom_fields cannot be null');
@@ -674,7 +674,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRoomType()
+    public function get_room_type()
     {
         return $this->container['room_type'];
     }
@@ -686,7 +686,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRoomType($room_type)
+    public function set_room_type($room_type)
     {
         if (is_null($room_type)) {
             throw new \InvalidArgumentException('non-nullable room_type cannot be null');
@@ -701,7 +701,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getReadOnly()
+    public function get_read_only()
     {
         return $this->container['read_only'];
     }
@@ -713,7 +713,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setReadOnly($read_only)
+    public function set_read_only($read_only)
     {
         if (is_null($read_only)) {
             throw new \InvalidArgumentException('non-nullable read_only cannot be null');
@@ -728,7 +728,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getReactWhenReadOnly()
+    public function get_react_when_read_only()
     {
         return $this->container['react_when_read_only'];
     }
@@ -740,7 +740,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setReactWhenReadOnly($react_when_read_only)
+    public function set_react_when_read_only($react_when_read_only)
     {
         if (is_null($react_when_read_only)) {
             throw new \InvalidArgumentException('non-nullable react_when_read_only cannot be null');
@@ -755,7 +755,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string[]|null
      */
-    public function getSystemMessages()
+    public function get_system_messages()
     {
         return $this->container['system_messages'];
     }
@@ -767,7 +767,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSystemMessages($system_messages)
+    public function set_system_messages($system_messages)
     {
         if (is_null($system_messages)) {
             throw new \InvalidArgumentException('non-nullable system_messages cannot be null');
@@ -782,7 +782,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getDefault()
+    public function get_default()
     {
         return $this->container['default'];
     }
@@ -794,7 +794,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setDefault($default)
+    public function set_default($default)
     {
         if (is_null($default)) {
             throw new \InvalidArgumentException('non-nullable default cannot be null');
@@ -809,7 +809,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getJoinCode()
+    public function get_join_code()
     {
         return $this->container['join_code'];
     }
@@ -821,7 +821,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setJoinCode($join_code)
+    public function set_join_code($join_code)
     {
         if (is_null($join_code)) {
             throw new \InvalidArgumentException('non-nullable join_code cannot be null');
@@ -836,7 +836,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return object|null
      */
-    public function getStreamingOptions()
+    public function get_streaming_options()
     {
         return $this->container['streaming_options'];
     }
@@ -848,7 +848,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setStreamingOptions($streaming_options)
+    public function set_streaming_options($streaming_options)
     {
         if (is_null($streaming_options)) {
             throw new \InvalidArgumentException('non-nullable streaming_options cannot be null');
@@ -863,7 +863,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getRetentionEnabled()
+    public function get_retention_enabled()
     {
         return $this->container['retention_enabled'];
     }
@@ -875,7 +875,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRetentionEnabled($retention_enabled)
+    public function set_retention_enabled($retention_enabled)
     {
         if (is_null($retention_enabled)) {
             throw new \InvalidArgumentException('non-nullable retention_enabled cannot be null');
@@ -890,7 +890,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRetentionMaxAge()
+    public function get_retention_max_age()
     {
         return $this->container['retention_max_age'];
     }
@@ -902,7 +902,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRetentionMaxAge($retention_max_age)
+    public function set_retention_max_age($retention_max_age)
     {
         if (is_null($retention_max_age)) {
             throw new \InvalidArgumentException('non-nullable retention_max_age cannot be null');
@@ -917,7 +917,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getRetentionExcludePinned()
+    public function get_retention_exclude_pinned()
     {
         return $this->container['retention_exclude_pinned'];
     }
@@ -929,7 +929,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRetentionExcludePinned($retention_exclude_pinned)
+    public function set_retention_exclude_pinned($retention_exclude_pinned)
     {
         if (is_null($retention_exclude_pinned)) {
             throw new \InvalidArgumentException('non-nullable retention_exclude_pinned cannot be null');
@@ -944,7 +944,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getRetentionFilesOnly()
+    public function get_retention_files_only()
     {
         return $this->container['retention_files_only'];
     }
@@ -956,7 +956,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRetentionFilesOnly($retention_files_only)
+    public function set_retention_files_only($retention_files_only)
     {
         if (is_null($retention_files_only)) {
             throw new \InvalidArgumentException('non-nullable retention_files_only cannot be null');
@@ -971,7 +971,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getRetentionIgnoreThreads()
+    public function get_retention_ignore_threads()
     {
         return $this->container['retention_ignore_threads'];
     }
@@ -983,7 +983,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRetentionIgnoreThreads($retention_ignore_threads)
+    public function set_retention_ignore_threads($retention_ignore_threads)
     {
         if (is_null($retention_ignore_threads)) {
             throw new \InvalidArgumentException('non-nullable retention_ignore_threads cannot be null');
@@ -998,7 +998,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getRetentionOverrideGlobal()
+    public function get_retention_override_global()
     {
         return $this->container['retention_override_global'];
     }
@@ -1010,7 +1010,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRetentionOverrideGlobal($retention_override_global)
+    public function set_retention_override_global($retention_override_global)
     {
         if (is_null($retention_override_global)) {
             throw new \InvalidArgumentException('non-nullable retention_override_global cannot be null');
@@ -1025,7 +1025,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getEncrypted()
+    public function get_encrypted()
     {
         return $this->container['encrypted'];
     }
@@ -1037,7 +1037,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setEncrypted($encrypted)
+    public function set_encrypted($encrypted)
     {
         if (is_null($encrypted)) {
             throw new \InvalidArgumentException('non-nullable encrypted cannot be null');
@@ -1052,7 +1052,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return object|null
      */
-    public function getFavorite()
+    public function get_favorite()
     {
         return $this->container['favorite'];
     }
@@ -1064,7 +1064,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setFavorite($favorite)
+    public function set_favorite($favorite)
     {
         if (is_null($favorite)) {
             throw new \InvalidArgumentException('non-nullable favorite cannot be null');
@@ -1079,7 +1079,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null
      */
-    public function getSidepanel()
+    public function get_sidepanel()
     {
         return $this->container['sidepanel'];
     }
@@ -1091,7 +1091,7 @@ class PostApiV1RoomsSaveRoomSettingsRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSidepanel($sidepanel)
+    public function set_sidepanel($sidepanel)
     {
         if (is_null($sidepanel)) {
             throw new \InvalidArgumentException('non-nullable sidepanel cannot be null');

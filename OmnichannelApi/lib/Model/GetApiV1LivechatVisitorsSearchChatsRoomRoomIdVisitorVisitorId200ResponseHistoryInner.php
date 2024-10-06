@@ -191,11 +191,11 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'msgs' => 'setMsgs',
-        'fname' => 'setFname',
-        'ts' => 'setTs',
-        'v' => 'setV'
+        '_id' => 'set__id',
+        'msgs' => 'set_msgs',
+        'fname' => 'set_fname',
+        'ts' => 'set_ts',
+        'v' => 'set_v'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'msgs' => 'getMsgs',
-        'fname' => 'getFname',
-        'ts' => 'getTs',
-        'v' => 'getV'
+        '_id' => 'get__id',
+        'msgs' => 'get_msgs',
+        'fname' => 'get_fname',
+        'ts' => 'get_ts',
+        'v' => 'get_v'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return string|null
      */
-    public function getFname()
+    public function get_fname()
     {
         return $this->container['fname'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return self
      */
-    public function setFname($fname)
+    public function set_fname($fname)
     {
         if (is_null($fname)) {
             throw new \InvalidArgumentException('non-nullable fname cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null
      */
-    public function getV()
+    public function get_v()
     {
         return $this->container['v'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatVisitorsSearchChatsRoomRoomIdVisitorVisitorId200ResponseHi
      *
      * @return self
      */
-    public function setV($v)
+    public function set_v($v)
     {
         if (is_null($v)) {
             throw new \InvalidArgumentException('non-nullable v cannot be null');

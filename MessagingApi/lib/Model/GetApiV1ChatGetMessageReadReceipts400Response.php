@@ -179,8 +179,8 @@ class GetApiV1ChatGetMessageReadReceipts400Response implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'error' => 'setError',
-        'success' => 'setSuccess'
+        'error' => 'set_error',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ChatGetMessageReadReceipts400Response implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'error' => 'getError',
-        'success' => 'getSuccess'
+        'error' => 'get_error',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ChatGetMessageReadReceipts400Response implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getError()
+    public function get_error()
     {
         return $this->container['error'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ChatGetMessageReadReceipts400Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setError($error)
+    public function set_error($error)
     {
         if (is_null($error)) {
             throw new \InvalidArgumentException('non-nullable error cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ChatGetMessageReadReceipts400Response implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ChatGetMessageReadReceipts400Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

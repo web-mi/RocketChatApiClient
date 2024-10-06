@@ -219,18 +219,18 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'msg' => 'setMsg',
-        'ts' => 'setTs',
-        'u' => 'setU',
-        '_updated_at' => 'setUpdatedAt',
-        'urls' => 'setUrls',
-        'mentions' => 'setMentions',
-        'channels' => 'setChannels',
-        'md' => 'setMd',
-        'edited_at' => 'setEditedAt',
-        'edited_by' => 'setEditedBy'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'msg' => 'set_msg',
+        'ts' => 'set_ts',
+        'u' => 'set_u',
+        '_updated_at' => 'set__updated_at',
+        'urls' => 'set_urls',
+        'mentions' => 'set_mentions',
+        'channels' => 'set_channels',
+        'md' => 'set_md',
+        'edited_at' => 'set_edited_at',
+        'edited_by' => 'set_edited_by'
     ];
 
     /**
@@ -239,18 +239,18 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'msg' => 'getMsg',
-        'ts' => 'getTs',
-        'u' => 'getU',
-        '_updated_at' => 'getUpdatedAt',
-        'urls' => 'getUrls',
-        'mentions' => 'getMentions',
-        'channels' => 'getChannels',
-        'md' => 'getMd',
-        'edited_at' => 'getEditedAt',
-        'edited_by' => 'getEditedBy'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'msg' => 'get_msg',
+        'ts' => 'get_ts',
+        'u' => 'get_u',
+        '_updated_at' => 'get__updated_at',
+        'urls' => 'get_urls',
+        'mentions' => 'get_mentions',
+        'channels' => 'get_channels',
+        'md' => 'get_md',
+        'edited_at' => 'get_edited_at',
+        'edited_by' => 'get_edited_by'
     ];
 
     /**
@@ -371,7 +371,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -383,7 +383,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -398,7 +398,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -410,7 +410,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -425,7 +425,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -437,7 +437,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -452,7 +452,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -464,7 +464,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -479,7 +479,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -491,7 +491,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -506,7 +506,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -518,7 +518,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -533,7 +533,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageUrlsInner[]|null
      */
-    public function getUrls()
+    public function get_urls()
     {
         return $this->container['urls'];
     }
@@ -545,7 +545,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setUrls($urls)
+    public function set_urls($urls)
     {
         if (is_null($urls)) {
             throw new \InvalidArgumentException('non-nullable urls cannot be null');
@@ -560,7 +560,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return object[]|null
      */
-    public function getMentions()
+    public function get_mentions()
     {
         return $this->container['mentions'];
     }
@@ -572,7 +572,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setMentions($mentions)
+    public function set_mentions($mentions)
     {
         if (is_null($mentions)) {
             throw new \InvalidArgumentException('non-nullable mentions cannot be null');
@@ -587,7 +587,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return object[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -599,7 +599,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -614,7 +614,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null
      */
-    public function getMd()
+    public function get_md()
     {
         return $this->container['md'];
     }
@@ -626,7 +626,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setMd($md)
+    public function set_md($md)
     {
         if (is_null($md)) {
             throw new \InvalidArgumentException('non-nullable md cannot be null');
@@ -641,7 +641,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getEditedAt()
+    public function get_edited_at()
     {
         return $this->container['edited_at'];
     }
@@ -653,7 +653,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setEditedAt($edited_at)
+    public function set_edited_at($edited_at)
     {
         if (is_null($edited_at)) {
             throw new \InvalidArgumentException('non-nullable edited_at cannot be null');
@@ -668,7 +668,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null
      */
-    public function getEditedBy()
+    public function get_edited_by()
     {
         return $this->container['edited_by'];
     }
@@ -680,7 +680,7 @@ class PostApiV1ChatUpdate200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setEditedBy($edited_by)
+    public function set_edited_by($edited_by)
     {
         if (is_null($edited_by)) {
             throw new \InvalidArgumentException('non-nullable edited_by cannot be null');

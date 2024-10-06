@@ -219,18 +219,18 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        't' => 'setT',
-        'msgs' => 'setMsgs',
-        'u' => 'setU',
-        'ts' => 'setTs',
-        'ro' => 'setRo',
-        'sys_mes' => 'setSysMes',
-        '_updated_at' => 'setUpdatedAt',
-        'usernames' => 'setUsernames',
-        'join_code_required' => 'setJoinCodeRequired',
-        'muted' => 'setMuted'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        't' => 'set_t',
+        'msgs' => 'set_msgs',
+        'u' => 'set_u',
+        'ts' => 'set_ts',
+        'ro' => 'set_ro',
+        'sys_mes' => 'set_sys_mes',
+        '_updated_at' => 'set__updated_at',
+        'usernames' => 'set_usernames',
+        'join_code_required' => 'set_join_code_required',
+        'muted' => 'set_muted'
     ];
 
     /**
@@ -239,18 +239,18 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        't' => 'getT',
-        'msgs' => 'getMsgs',
-        'u' => 'getU',
-        'ts' => 'getTs',
-        'ro' => 'getRo',
-        'sys_mes' => 'getSysMes',
-        '_updated_at' => 'getUpdatedAt',
-        'usernames' => 'getUsernames',
-        'join_code_required' => 'getJoinCodeRequired',
-        'muted' => 'getMuted'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        't' => 'get_t',
+        'msgs' => 'get_msgs',
+        'u' => 'get_u',
+        'ts' => 'get_ts',
+        'ro' => 'get_ro',
+        'sys_mes' => 'get_sys_mes',
+        '_updated_at' => 'get__updated_at',
+        'usernames' => 'get_usernames',
+        'join_code_required' => 'get_join_code_required',
+        'muted' => 'get_muted'
     ];
 
     /**
@@ -371,7 +371,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -383,7 +383,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -398,7 +398,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -410,7 +410,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -425,7 +425,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -437,7 +437,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -452,7 +452,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -464,7 +464,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -479,7 +479,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -491,7 +491,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -506,7 +506,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -518,7 +518,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -533,7 +533,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getRo()
+    public function get_ro()
     {
         return $this->container['ro'];
     }
@@ -545,7 +545,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setRo($ro)
+    public function set_ro($ro)
     {
         if (is_null($ro)) {
             throw new \InvalidArgumentException('non-nullable ro cannot be null');
@@ -560,7 +560,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getSysMes()
+    public function get_sys_mes()
     {
         return $this->container['sys_mes'];
     }
@@ -572,7 +572,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setSysMes($sys_mes)
+    public function set_sys_mes($sys_mes)
     {
         if (is_null($sys_mes)) {
             throw new \InvalidArgumentException('non-nullable sys_mes cannot be null');
@@ -587,7 +587,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -599,7 +599,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -614,7 +614,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return string[]|null
      */
-    public function getUsernames()
+    public function get_usernames()
     {
         return $this->container['usernames'];
     }
@@ -626,7 +626,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setUsernames($usernames)
+    public function set_usernames($usernames)
     {
         if (is_null($usernames)) {
             throw new \InvalidArgumentException('non-nullable usernames cannot be null');
@@ -641,7 +641,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getJoinCodeRequired()
+    public function get_join_code_required()
     {
         return $this->container['join_code_required'];
     }
@@ -653,7 +653,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setJoinCodeRequired($join_code_required)
+    public function set_join_code_required($join_code_required)
     {
         if (is_null($join_code_required)) {
             throw new \InvalidArgumentException('non-nullable join_code_required cannot be null');
@@ -668,7 +668,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return object[]|null
      */
-    public function getMuted()
+    public function get_muted()
     {
         return $this->container['muted'];
     }
@@ -680,7 +680,7 @@ class PostApiV1ChannelsSetReadOnly200ResponseChannel implements ModelInterface, 
      *
      * @return self
      */
-    public function setMuted($muted)
+    public function set_muted($muted)
     {
         if (is_null($muted)) {
             throw new \InvalidArgumentException('non-nullable muted cannot be null');

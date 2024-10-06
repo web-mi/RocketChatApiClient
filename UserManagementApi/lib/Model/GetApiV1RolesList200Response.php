@@ -179,8 +179,8 @@ class GetApiV1RolesList200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $setters = [
-        'roles' => 'setRoles',
-        'success' => 'setSuccess'
+        'roles' => 'set_roles',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1RolesList200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $getters = [
-        'roles' => 'getRoles',
-        'success' => 'getSuccess'
+        'roles' => 'get_roles',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1RolesList200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1RolesList200ResponseRolesInner[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -313,7 +313,7 @@ class GetApiV1RolesList200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1RolesList200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1RolesList200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

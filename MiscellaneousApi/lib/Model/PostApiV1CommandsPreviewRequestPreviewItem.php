@@ -184,9 +184,9 @@ class PostApiV1CommandsPreviewRequestPreviewItem implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'type' => 'setType',
-        'value' => 'setValue'
+        'id' => 'set_id',
+        'type' => 'set_type',
+        'value' => 'set_value'
     ];
 
     /**
@@ -195,9 +195,9 @@ class PostApiV1CommandsPreviewRequestPreviewItem implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'type' => 'getType',
-        'value' => 'getValue'
+        'id' => 'get_id',
+        'type' => 'get_type',
+        'value' => 'get_value'
     ];
 
     /**
@@ -318,7 +318,7 @@ class PostApiV1CommandsPreviewRequestPreviewItem implements ModelInterface, Arra
      *
      * @return string
      */
-    public function getId()
+    public function get_id()
     {
         return $this->container['id'];
     }
@@ -330,7 +330,7 @@ class PostApiV1CommandsPreviewRequestPreviewItem implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setId($id)
+    public function set_id($id)
     {
         if (is_null($id)) {
             throw new \InvalidArgumentException('non-nullable id cannot be null');
@@ -345,7 +345,7 @@ class PostApiV1CommandsPreviewRequestPreviewItem implements ModelInterface, Arra
      *
      * @return string
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -357,7 +357,7 @@ class PostApiV1CommandsPreviewRequestPreviewItem implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -372,7 +372,7 @@ class PostApiV1CommandsPreviewRequestPreviewItem implements ModelInterface, Arra
      *
      * @return string
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -384,7 +384,7 @@ class PostApiV1CommandsPreviewRequestPreviewItem implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');

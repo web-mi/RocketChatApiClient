@@ -183,9 +183,9 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
      * @var string[]
      */
     protected static $setters = [
-        'total' => 'setTotal',
-        'data' => 'setData',
-        'success' => 'setSuccess'
+        'total' => 'set_total',
+        'data' => 'set_data',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
      * @var string[]
      */
     protected static $getters = [
-        'total' => 'getTotal',
-        'data' => 'getData',
-        'success' => 'getSuccess'
+        'total' => 'get_total',
+        'data' => 'get_data',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]|null
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200Response implem
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

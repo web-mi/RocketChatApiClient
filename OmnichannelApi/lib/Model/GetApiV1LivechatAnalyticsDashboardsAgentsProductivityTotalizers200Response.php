@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      * @var string[]
      */
     protected static $setters = [
-        'totalizers' => 'setTotalizers',
-        'success' => 'setSuccess'
+        'totalizers' => 'set_totalizers',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      * @var string[]
      */
     protected static $getters = [
-        'totalizers' => 'getTotalizers',
-        'success' => 'getSuccess'
+        'totalizers' => 'get_totalizers',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200ResponseTotalizersInner[]|null
      */
-    public function getTotalizers()
+    public function get_totalizers()
     {
         return $this->container['totalizers'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      *
      * @return self
      */
-    public function setTotalizers($totalizers)
+    public function set_totalizers($totalizers)
     {
         if (is_null($totalizers)) {
             throw new \InvalidArgumentException('non-nullable totalizers cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

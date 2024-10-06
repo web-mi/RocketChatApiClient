@@ -175,7 +175,7 @@ class PostApiV1LicensesAddRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'license' => 'setLicense'
+        'license' => 'set_license'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1LicensesAddRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'license' => 'getLicense'
+        'license' => 'get_license'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1LicensesAddRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getLicense()
+    public function get_license()
     {
         return $this->container['license'];
     }
@@ -306,7 +306,7 @@ class PostApiV1LicensesAddRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setLicense($license)
+    public function set_license($license)
     {
         if (is_null($license)) {
             throw new \InvalidArgumentException('non-nullable license cannot be null');

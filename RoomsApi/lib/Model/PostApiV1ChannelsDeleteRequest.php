@@ -179,8 +179,8 @@ class PostApiV1ChannelsDeleteRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'room_name' => 'setRoomName'
+        'room_id' => 'set_room_id',
+        'room_name' => 'set_room_name'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsDeleteRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'room_name' => 'getRoomName'
+        'room_id' => 'get_room_id',
+        'room_name' => 'get_room_name'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ChannelsDeleteRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string|null
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ChannelsDeleteRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ChannelsDeleteRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string|null
      */
-    public function getRoomName()
+    public function get_room_name()
     {
         return $this->container['room_name'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ChannelsDeleteRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setRoomName($room_name)
+    public function set_room_name($room_name)
     {
         if (is_null($room_name)) {
             throw new \InvalidArgumentException('non-nullable room_name cannot be null');

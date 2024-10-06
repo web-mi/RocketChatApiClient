@@ -179,8 +179,8 @@ class PostApiV1UsersGeneratePersonalAccessToken200Response implements ModelInter
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'success' => 'setSuccess'
+        'token' => 'set_token',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersGeneratePersonalAccessToken200Response implements ModelInter
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'success' => 'getSuccess'
+        'token' => 'get_token',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersGeneratePersonalAccessToken200Response implements ModelInter
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersGeneratePersonalAccessToken200Response implements ModelInter
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersGeneratePersonalAccessToken200Response implements ModelInter
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersGeneratePersonalAccessToken200Response implements ModelInter
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

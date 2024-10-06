@@ -19,7 +19,7 @@ getApiV1LicensesGet($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\Misce
 
 Get Licenses
 
-Use the `/licenses.info` endpoint instead.  Retrieves a list of all registered licenses in the workspace.  Permission required: `view-privileged-setting`  ### Changelog | Version      | Description | | ---------------- | ------------| |6.5.0         | Deprecated       | |3.10.0         | Added       |
+> This endpoint has been deprecated and is scheduled for removal in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. Use the <a href=\"https://developer.rocket.chat/apidocs/get-licenses-1\" target=\"_blank\">/licenses.info</a> endpoint instead.  Retrieves a list of all registered licenses in the workspace.  Permission required: `view-privileged-setting`  ### Changelog | Version      | Description | | ---------------- | ------------| |6.5.0         | Deprecated       | |3.10.0         | Added       |
 
 ### Example
 
@@ -135,7 +135,7 @@ getApiV1LicensesIsEnterprise($x_auth_token, $x_user_id): \WebMI\RocketChatApiCli
 
 Confirm Enterprise License
 
-Use the `/licenses.info` endpoint instead.  Confirm if the current workspace is subscribed to the <a href=\"https://docs.rocket.chat/docs/our-plans#enterprise-plan\" target=\"_blank\">Enterprise plan</a>.  ### Changelog | Version      | Description | | ---------------- | ------------| |6.5.0         | Deprecated       | |5.0.0         | Added       |
+> This endpoint has been deprecated and is scheduled for removal in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. Use the <a href=\"https://developer.rocket.chat/apidocs/get-licenses-1\" target=\"_blank\">/licenses.info</a> endpoint instead.  Confirm if the current workspace is subscribed to the <a href=\"https://docs.rocket.chat/docs/our-plans#enterprise-plan\" target=\"_blank\">Enterprise plan</a>.  ### Changelog | Version      | Description | | ---------------- | ------------| |6.5.0         | Deprecated       | |5.0.0         | Added       |
 
 ### Example
 

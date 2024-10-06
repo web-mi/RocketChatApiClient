@@ -191,11 +191,11 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'title' => 'setTitle',
-        'color' => 'setColor',
-        'offline_title' => 'setOfflineTitle',
-        'offline_color' => 'setOfflineColor',
-        'action_links' => 'setActionLinks'
+        'title' => 'set_title',
+        'color' => 'set_color',
+        'offline_title' => 'set_offline_title',
+        'offline_color' => 'set_offline_color',
+        'action_links' => 'set_action_links'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'title' => 'getTitle',
-        'color' => 'getColor',
-        'offline_title' => 'getOfflineTitle',
-        'offline_color' => 'getOfflineColor',
-        'action_links' => 'getActionLinks'
+        'title' => 'get_title',
+        'color' => 'get_color',
+        'offline_title' => 'get_offline_title',
+        'offline_color' => 'get_offline_color',
+        'action_links' => 'get_action_links'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getTitle()
+    public function get_title()
     {
         return $this->container['title'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTitle($title)
+    public function set_title($title)
     {
         if (is_null($title)) {
             throw new \InvalidArgumentException('non-nullable title cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getColor()
+    public function get_color()
     {
         return $this->container['color'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setColor($color)
+    public function set_color($color)
     {
         if (is_null($color)) {
             throw new \InvalidArgumentException('non-nullable color cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getOfflineTitle()
+    public function get_offline_title()
     {
         return $this->container['offline_title'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setOfflineTitle($offline_title)
+    public function set_offline_title($offline_title)
     {
         if (is_null($offline_title)) {
             throw new \InvalidArgumentException('non-nullable offline_title cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getOfflineColor()
+    public function get_offline_color()
     {
         return $this->container['offline_color'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setOfflineColor($offline_color)
+    public function set_offline_color($offline_color)
     {
         if (is_null($offline_color)) {
             throw new \InvalidArgumentException('non-nullable offline_color cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigThemeActionLinksInner[]|null
      */
-    public function getActionLinks()
+    public function get_action_links()
     {
         return $this->container['action_links'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatConfig200ResponseConfigTheme implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setActionLinks($action_links)
+    public function set_action_links($action_links)
     {
         if (is_null($action_links)) {
             throw new \InvalidArgumentException('non-nullable action_links cannot be null');

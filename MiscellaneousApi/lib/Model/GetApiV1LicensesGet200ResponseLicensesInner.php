@@ -207,15 +207,15 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'version' => 'setVersion',
-        'url' => 'setUrl',
-        'expiry' => 'setExpiry',
-        'max_active_users' => 'setMaxActiveUsers',
-        'max_guest_users' => 'setMaxGuestUsers',
-        'max_rooms_per_guest' => 'setMaxRoomsPerGuest',
-        'modules' => 'setModules',
-        'tag' => 'setTag',
-        'meta' => 'setMeta'
+        'version' => 'set_version',
+        'url' => 'set_url',
+        'expiry' => 'set_expiry',
+        'max_active_users' => 'set_max_active_users',
+        'max_guest_users' => 'set_max_guest_users',
+        'max_rooms_per_guest' => 'set_max_rooms_per_guest',
+        'modules' => 'set_modules',
+        'tag' => 'set_tag',
+        'meta' => 'set_meta'
     ];
 
     /**
@@ -224,15 +224,15 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'version' => 'getVersion',
-        'url' => 'getUrl',
-        'expiry' => 'getExpiry',
-        'max_active_users' => 'getMaxActiveUsers',
-        'max_guest_users' => 'getMaxGuestUsers',
-        'max_rooms_per_guest' => 'getMaxRoomsPerGuest',
-        'modules' => 'getModules',
-        'tag' => 'getTag',
-        'meta' => 'getMeta'
+        'version' => 'get_version',
+        'url' => 'get_url',
+        'expiry' => 'get_expiry',
+        'max_active_users' => 'get_max_active_users',
+        'max_guest_users' => 'get_max_guest_users',
+        'max_rooms_per_guest' => 'get_max_rooms_per_guest',
+        'modules' => 'get_modules',
+        'tag' => 'get_tag',
+        'meta' => 'get_meta'
     ];
 
     /**
@@ -350,7 +350,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return int|null
      */
-    public function getVersion()
+    public function get_version()
     {
         return $this->container['version'];
     }
@@ -362,7 +362,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setVersion($version)
+    public function set_version($version)
     {
         if (is_null($version)) {
             throw new \InvalidArgumentException('non-nullable version cannot be null');
@@ -377,7 +377,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getUrl()
+    public function get_url()
     {
         return $this->container['url'];
     }
@@ -389,7 +389,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setUrl($url)
+    public function set_url($url)
     {
         if (is_null($url)) {
             throw new \InvalidArgumentException('non-nullable url cannot be null');
@@ -404,7 +404,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getExpiry()
+    public function get_expiry()
     {
         return $this->container['expiry'];
     }
@@ -416,7 +416,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setExpiry($expiry)
+    public function set_expiry($expiry)
     {
         if (is_null($expiry)) {
             throw new \InvalidArgumentException('non-nullable expiry cannot be null');
@@ -431,7 +431,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return int|null
      */
-    public function getMaxActiveUsers()
+    public function get_max_active_users()
     {
         return $this->container['max_active_users'];
     }
@@ -443,7 +443,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setMaxActiveUsers($max_active_users)
+    public function set_max_active_users($max_active_users)
     {
         if (is_null($max_active_users)) {
             throw new \InvalidArgumentException('non-nullable max_active_users cannot be null');
@@ -458,7 +458,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return int|null
      */
-    public function getMaxGuestUsers()
+    public function get_max_guest_users()
     {
         return $this->container['max_guest_users'];
     }
@@ -470,7 +470,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setMaxGuestUsers($max_guest_users)
+    public function set_max_guest_users($max_guest_users)
     {
         if (is_null($max_guest_users)) {
             throw new \InvalidArgumentException('non-nullable max_guest_users cannot be null');
@@ -485,7 +485,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return int|null
      */
-    public function getMaxRoomsPerGuest()
+    public function get_max_rooms_per_guest()
     {
         return $this->container['max_rooms_per_guest'];
     }
@@ -497,7 +497,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setMaxRoomsPerGuest($max_rooms_per_guest)
+    public function set_max_rooms_per_guest($max_rooms_per_guest)
     {
         if (is_null($max_rooms_per_guest)) {
             throw new \InvalidArgumentException('non-nullable max_rooms_per_guest cannot be null');
@@ -512,7 +512,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return string[]|null
      */
-    public function getModules()
+    public function get_modules()
     {
         return $this->container['modules'];
     }
@@ -524,7 +524,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setModules($modules)
+    public function set_modules($modules)
     {
         if (is_null($modules)) {
             throw new \InvalidArgumentException('non-nullable modules cannot be null');
@@ -539,7 +539,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag|null
      */
-    public function getTag()
+    public function get_tag()
     {
         return $this->container['tag'];
     }
@@ -551,7 +551,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setTag($tag)
+    public function set_tag($tag)
     {
         if (is_null($tag)) {
             throw new \InvalidArgumentException('non-nullable tag cannot be null');
@@ -566,7 +566,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerMeta|null
      */
-    public function getMeta()
+    public function get_meta()
     {
         return $this->container['meta'];
     }
@@ -578,7 +578,7 @@ class GetApiV1LicensesGet200ResponseLicensesInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setMeta($meta)
+    public function set_meta($meta)
     {
         if (is_null($meta)) {
             throw new \InvalidArgumentException('non-nullable meta cannot be null');

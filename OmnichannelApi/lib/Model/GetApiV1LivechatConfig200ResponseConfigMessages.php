@@ -191,11 +191,11 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'offline_message' => 'setOfflineMessage',
-        'offline_success_message' => 'setOfflineSuccessMessage',
-        'offline_unavailable_message' => 'setOfflineUnavailableMessage',
-        'conversation_finished_message' => 'setConversationFinishedMessage',
-        'transcript_message' => 'setTranscriptMessage'
+        'offline_message' => 'set_offline_message',
+        'offline_success_message' => 'set_offline_success_message',
+        'offline_unavailable_message' => 'set_offline_unavailable_message',
+        'conversation_finished_message' => 'set_conversation_finished_message',
+        'transcript_message' => 'set_transcript_message'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'offline_message' => 'getOfflineMessage',
-        'offline_success_message' => 'getOfflineSuccessMessage',
-        'offline_unavailable_message' => 'getOfflineUnavailableMessage',
-        'conversation_finished_message' => 'getConversationFinishedMessage',
-        'transcript_message' => 'getTranscriptMessage'
+        'offline_message' => 'get_offline_message',
+        'offline_success_message' => 'get_offline_success_message',
+        'offline_unavailable_message' => 'get_offline_unavailable_message',
+        'conversation_finished_message' => 'get_conversation_finished_message',
+        'transcript_message' => 'get_transcript_message'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return string|null
      */
-    public function getOfflineMessage()
+    public function get_offline_message()
     {
         return $this->container['offline_message'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return self
      */
-    public function setOfflineMessage($offline_message)
+    public function set_offline_message($offline_message)
     {
         if (is_null($offline_message)) {
             throw new \InvalidArgumentException('non-nullable offline_message cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return string|null
      */
-    public function getOfflineSuccessMessage()
+    public function get_offline_success_message()
     {
         return $this->container['offline_success_message'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return self
      */
-    public function setOfflineSuccessMessage($offline_success_message)
+    public function set_offline_success_message($offline_success_message)
     {
         if (is_null($offline_success_message)) {
             throw new \InvalidArgumentException('non-nullable offline_success_message cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return string|null
      */
-    public function getOfflineUnavailableMessage()
+    public function get_offline_unavailable_message()
     {
         return $this->container['offline_unavailable_message'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return self
      */
-    public function setOfflineUnavailableMessage($offline_unavailable_message)
+    public function set_offline_unavailable_message($offline_unavailable_message)
     {
         if (is_null($offline_unavailable_message)) {
             throw new \InvalidArgumentException('non-nullable offline_unavailable_message cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return string|null
      */
-    public function getConversationFinishedMessage()
+    public function get_conversation_finished_message()
     {
         return $this->container['conversation_finished_message'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return self
      */
-    public function setConversationFinishedMessage($conversation_finished_message)
+    public function set_conversation_finished_message($conversation_finished_message)
     {
         if (is_null($conversation_finished_message)) {
             throw new \InvalidArgumentException('non-nullable conversation_finished_message cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return string|null
      */
-    public function getTranscriptMessage()
+    public function get_transcript_message()
     {
         return $this->container['transcript_message'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatConfig200ResponseConfigMessages implements ModelInterface,
      *
      * @return self
      */
-    public function setTranscriptMessage($transcript_message)
+    public function set_transcript_message($transcript_message)
     {
         if (is_null($transcript_message)) {
             throw new \InvalidArgumentException('non-nullable transcript_message cannot be null');

@@ -191,11 +191,11 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'username' => 'setUsername',
-        'email' => 'setEmail',
-        'pass' => 'setPass',
-        'name' => 'setName',
-        'secret_url' => 'setSecretUrl'
+        'username' => 'set_username',
+        'email' => 'set_email',
+        'pass' => 'set_pass',
+        'name' => 'set_name',
+        'secret_url' => 'set_secret_url'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'username' => 'getUsername',
-        'email' => 'getEmail',
-        'pass' => 'getPass',
-        'name' => 'getName',
-        'secret_url' => 'getSecretUrl'
+        'username' => 'get_username',
+        'email' => 'get_email',
+        'pass' => 'get_pass',
+        'name' => 'get_name',
+        'secret_url' => 'get_secret_url'
     ];
 
     /**
@@ -334,7 +334,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -346,7 +346,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -361,7 +361,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -373,7 +373,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -388,7 +388,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getPass()
+    public function get_pass()
     {
         return $this->container['pass'];
     }
@@ -400,7 +400,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setPass($pass)
+    public function set_pass($pass)
     {
         if (is_null($pass)) {
             throw new \InvalidArgumentException('non-nullable pass cannot be null');
@@ -415,7 +415,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -427,7 +427,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -442,7 +442,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getSecretUrl()
+    public function get_secret_url()
     {
         return $this->container['secret_url'];
     }
@@ -454,7 +454,7 @@ class PostApiV1UsersRegisterRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setSecretUrl($secret_url)
+    public function set_secret_url($secret_url)
     {
         if (is_null($secret_url)) {
             throw new \InvalidArgumentException('non-nullable secret_url cannot be null');

@@ -175,7 +175,7 @@ class PostApiV1TeamsCreateRequestRoom implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'read_only' => 'setReadOnly'
+        'read_only' => 'set_read_only'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1TeamsCreateRequestRoom implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'read_only' => 'getReadOnly'
+        'read_only' => 'get_read_only'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1TeamsCreateRequestRoom implements ModelInterface, ArrayAccess, \J
      *
      * @return bool|null
      */
-    public function getReadOnly()
+    public function get_read_only()
     {
         return $this->container['read_only'];
     }
@@ -306,7 +306,7 @@ class PostApiV1TeamsCreateRequestRoom implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setReadOnly($read_only)
+    public function set_read_only($read_only)
     {
         if (is_null($read_only)) {
             throw new \InvalidArgumentException('non-nullable read_only cannot be null');

@@ -195,12 +195,12 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'history' => 'setHistory',
-        'count' => 'setCount',
-        'offset' => 'setOffset',
-        'data' => 'setData',
-        'total' => 'setTotal',
-        'success' => 'setSuccess'
+        'history' => 'set_history',
+        'count' => 'set_count',
+        'offset' => 'set_offset',
+        'data' => 'set_data',
+        'total' => 'set_total',
+        'success' => 'set_success'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'history' => 'getHistory',
-        'count' => 'getCount',
-        'offset' => 'getOffset',
-        'data' => 'getData',
-        'total' => 'getTotal',
-        'success' => 'getSuccess'
+        'history' => 'get_history',
+        'count' => 'get_count',
+        'offset' => 'get_offset',
+        'data' => 'get_data',
+        'total' => 'get_total',
+        'success' => 'get_success'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return object[]|null
      */
-    public function getHistory()
+    public function get_history()
     {
         return $this->container['history'];
     }
@@ -341,7 +341,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setHistory($history)
+    public function set_history($history)
     {
         if (is_null($history)) {
             throw new \InvalidArgumentException('non-nullable history cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -368,7 +368,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getOffset()
+    public function get_offset()
     {
         return $this->container['offset'];
     }
@@ -395,7 +395,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setOffset($offset)
+    public function set_offset($offset)
     {
         if (is_null($offset)) {
             throw new \InvalidArgumentException('non-nullable offset cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseData|null
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -422,7 +422,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -449,7 +449,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -476,7 +476,7 @@ class GetApiV1LivechatTransferHistoryRid200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

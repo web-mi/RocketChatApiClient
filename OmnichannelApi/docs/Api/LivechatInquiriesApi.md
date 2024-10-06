@@ -146,7 +146,7 @@ getApiV1LivechatInquiriesQueued($x_user_id, $x_auth_token, $department, $offset,
 
 List Queued Inquiries
 
-Use the `/inquiries.queuedForUser` endpoint instead.  Permission required: `view-l-room`
+> This endpoint has been deprecated and is scheduled for removal in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. Use the [`/livechat/inquiries.queuedForUser`](https://developer.rocket.chat/apidocs/list-queued-user-inquiries) endpoint instead.  Permission required: `view-l-room`
 
 ### Example
 

@@ -892,7 +892,7 @@ $apiInstance = new WebMI\RocketChatApiClient\RoomsApi\Api\ChannelsApi(
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$query = new \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsOnlineQueryParameter(); // GetApiV1ChannelsOnlineQueryParameter | An object of the channel's id.
+$query = new \WebMI\RocketChatApiClient\RoomsApi\Model\\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsOnlineQueryParameter(); // \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsOnlineQueryParameter | An object of the channel's id.
 
 try {
     $result = $apiInstance->getApiV1ChannelsOnline($x_auth_token, $x_user_id, $query);
@@ -908,7 +908,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **query** | [**GetApiV1ChannelsOnlineQueryParameter**](../Model/.md)| An object of the channel&#39;s id. | |
+| **query** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsOnlineQueryParameter**](../Model/.md)| An object of the channel&#39;s id. | |
 
 ### Return type
 

@@ -191,11 +191,11 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'name' => 'setName',
-        'status' => 'setStatus',
-        'settings' => 'setSettings'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'name' => 'set_name',
+        'status' => 'set_status',
+        'settings' => 'set_settings'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'name' => 'getName',
-        'status' => 'getStatus',
-        'settings' => 'getSettings'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'name' => 'get_name',
+        'status' => 'get_status',
+        'settings' => 'get_settings'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -361,7 +361,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -388,7 +388,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -415,7 +415,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettings|null
      */
-    public function getSettings()
+    public function get_settings()
     {
         return $this->container['settings'];
     }
@@ -442,7 +442,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUser implements ModelInterface,
      *
      * @return self
      */
-    public function setSettings($settings)
+    public function set_settings($settings)
     {
         if (is_null($settings)) {
             throw new \InvalidArgumentException('non-nullable settings cannot be null');

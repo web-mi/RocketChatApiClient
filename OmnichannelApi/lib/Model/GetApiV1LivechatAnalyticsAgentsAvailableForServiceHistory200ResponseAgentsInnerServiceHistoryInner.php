@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      * @var string[]
      */
     protected static $setters = [
-        'started_at' => 'setStartedAt',
-        'stopped_at' => 'setStoppedAt'
+        'started_at' => 'set_started_at',
+        'stopped_at' => 'set_stopped_at'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      * @var string[]
      */
     protected static $getters = [
-        'started_at' => 'getStartedAt',
-        'stopped_at' => 'getStoppedAt'
+        'started_at' => 'get_started_at',
+        'stopped_at' => 'get_stopped_at'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return string|null
      */
-    public function getStartedAt()
+    public function get_started_at()
     {
         return $this->container['started_at'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return self
      */
-    public function setStartedAt($started_at)
+    public function set_started_at($started_at)
     {
         if (is_null($started_at)) {
             throw new \InvalidArgumentException('non-nullable started_at cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return string|null
      */
-    public function getStoppedAt()
+    public function get_stopped_at()
     {
         return $this->container['stopped_at'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return self
      */
-    public function setStoppedAt($stopped_at)
+    public function set_stopped_at($stopped_at)
     {
         if (is_null($stopped_at)) {
             throw new \InvalidArgumentException('non-nullable stopped_at cannot be null');

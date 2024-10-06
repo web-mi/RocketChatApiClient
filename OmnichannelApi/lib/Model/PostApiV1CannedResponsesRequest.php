@@ -195,12 +195,12 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'shortcut' => 'setShortcut',
-        'text' => 'setText',
-        'scope' => 'setScope',
-        'tags' => 'setTags',
-        'department_id' => 'setDepartmentId',
-        '_id' => 'setId'
+        'shortcut' => 'set_shortcut',
+        'text' => 'set_text',
+        'scope' => 'set_scope',
+        'tags' => 'set_tags',
+        'department_id' => 'set_department_id',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -209,12 +209,12 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'shortcut' => 'getShortcut',
-        'text' => 'getText',
-        'scope' => 'getScope',
-        'tags' => 'getTags',
-        'department_id' => 'getDepartmentId',
-        '_id' => 'getId'
+        'shortcut' => 'get_shortcut',
+        'text' => 'get_text',
+        'scope' => 'get_scope',
+        'tags' => 'get_tags',
+        'department_id' => 'get_department_id',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -338,7 +338,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getShortcut()
+    public function get_shortcut()
     {
         return $this->container['shortcut'];
     }
@@ -350,7 +350,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setShortcut($shortcut)
+    public function set_shortcut($shortcut)
     {
         if (is_null($shortcut)) {
             throw new \InvalidArgumentException('non-nullable shortcut cannot be null');
@@ -365,7 +365,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -377,7 +377,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -392,7 +392,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -404,7 +404,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');
@@ -419,7 +419,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string[]|null
      */
-    public function getTags()
+    public function get_tags()
     {
         return $this->container['tags'];
     }
@@ -431,7 +431,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setTags($tags)
+    public function set_tags($tags)
     {
         if (is_null($tags)) {
             throw new \InvalidArgumentException('non-nullable tags cannot be null');
@@ -446,7 +446,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getDepartmentId()
+    public function get_department_id()
     {
         return $this->container['department_id'];
     }
@@ -458,7 +458,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setDepartmentId($department_id)
+    public function set_department_id($department_id)
     {
         if (is_null($department_id)) {
             throw new \InvalidArgumentException('non-nullable department_id cannot be null');
@@ -473,7 +473,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -485,7 +485,7 @@ class PostApiV1CannedResponsesRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

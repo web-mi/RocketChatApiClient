@@ -179,8 +179,8 @@ class GetApiV1ChannelsOnline200Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'online' => 'setOnline',
-        'success' => 'setSuccess'
+        'online' => 'set_online',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ChannelsOnline200Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'online' => 'getOnline',
-        'success' => 'getSuccess'
+        'online' => 'get_online',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ChannelsOnline200Response implements ModelInterface, ArrayAccess, 
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU[]|null
      */
-    public function getOnline()
+    public function get_online()
     {
         return $this->container['online'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ChannelsOnline200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setOnline($online)
+    public function set_online($online)
     {
         if (is_null($online)) {
             throw new \InvalidArgumentException('non-nullable online cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ChannelsOnline200Response implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ChannelsOnline200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

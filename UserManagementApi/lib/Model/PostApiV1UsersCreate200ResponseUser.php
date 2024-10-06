@@ -227,20 +227,20 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'created_at' => 'setCreatedAt',
-        'username' => 'setUsername',
-        'emails' => 'setEmails',
-        'type' => 'setType',
-        'roles' => 'setRoles',
-        'status' => 'setStatus',
-        'active' => 'setActive',
-        '_updated_at' => 'setUpdatedAt',
-        'bio' => 'setBio',
-        'name' => 'setName',
-        'nickname' => 'setNickname',
-        'require_password_change' => 'setRequirePasswordChange',
-        'settings' => 'setSettings'
+        '_id' => 'set__id',
+        'created_at' => 'set_created_at',
+        'username' => 'set_username',
+        'emails' => 'set_emails',
+        'type' => 'set_type',
+        'roles' => 'set_roles',
+        'status' => 'set_status',
+        'active' => 'set_active',
+        '_updated_at' => 'set__updated_at',
+        'bio' => 'set_bio',
+        'name' => 'set_name',
+        'nickname' => 'set_nickname',
+        'require_password_change' => 'set_require_password_change',
+        'settings' => 'set_settings'
     ];
 
     /**
@@ -249,20 +249,20 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'created_at' => 'getCreatedAt',
-        'username' => 'getUsername',
-        'emails' => 'getEmails',
-        'type' => 'getType',
-        'roles' => 'getRoles',
-        'status' => 'getStatus',
-        'active' => 'getActive',
-        '_updated_at' => 'getUpdatedAt',
-        'bio' => 'getBio',
-        'name' => 'getName',
-        'nickname' => 'getNickname',
-        'require_password_change' => 'getRequirePasswordChange',
-        'settings' => 'getSettings'
+        '_id' => 'get__id',
+        'created_at' => 'get_created_at',
+        'username' => 'get_username',
+        'emails' => 'get_emails',
+        'type' => 'get_type',
+        'roles' => 'get_roles',
+        'status' => 'get_status',
+        'active' => 'get_active',
+        '_updated_at' => 'get__updated_at',
+        'bio' => 'get_bio',
+        'name' => 'get_name',
+        'nickname' => 'get_nickname',
+        'require_password_change' => 'get_require_password_change',
+        'settings' => 'get_settings'
     ];
 
     /**
@@ -385,7 +385,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -397,7 +397,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -412,7 +412,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -424,7 +424,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -439,7 +439,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -451,7 +451,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -466,7 +466,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null
      */
-    public function getEmails()
+    public function get_emails()
     {
         return $this->container['emails'];
     }
@@ -478,7 +478,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setEmails($emails)
+    public function set_emails($emails)
     {
         if (is_null($emails)) {
             throw new \InvalidArgumentException('non-nullable emails cannot be null');
@@ -493,7 +493,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -505,7 +505,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -520,7 +520,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -532,7 +532,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -547,7 +547,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -559,7 +559,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -574,7 +574,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return bool|null
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -586,7 +586,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');
@@ -601,7 +601,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -613,7 +613,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -628,7 +628,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getBio()
+    public function get_bio()
     {
         return $this->container['bio'];
     }
@@ -640,7 +640,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setBio($bio)
+    public function set_bio($bio)
     {
         if (is_null($bio)) {
             throw new \InvalidArgumentException('non-nullable bio cannot be null');
@@ -655,7 +655,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -667,7 +667,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -682,7 +682,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getNickname()
+    public function get_nickname()
     {
         return $this->container['nickname'];
     }
@@ -694,7 +694,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setNickname($nickname)
+    public function set_nickname($nickname)
     {
         if (is_null($nickname)) {
             throw new \InvalidArgumentException('non-nullable nickname cannot be null');
@@ -709,7 +709,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return bool|null
      */
-    public function getRequirePasswordChange()
+    public function get_require_password_change()
     {
         return $this->container['require_password_change'];
     }
@@ -721,7 +721,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setRequirePasswordChange($require_password_change)
+    public function set_require_password_change($require_password_change)
     {
         if (is_null($require_password_change)) {
             throw new \InvalidArgumentException('non-nullable require_password_change cannot be null');
@@ -736,7 +736,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return object|null
      */
-    public function getSettings()
+    public function get_settings()
     {
         return $this->container['settings'];
     }
@@ -748,7 +748,7 @@ class PostApiV1UsersCreate200ResponseUser implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setSettings($settings)
+    public function set_settings($settings)
     {
         if (is_null($settings)) {
             throw new \InvalidArgumentException('non-nullable settings cannot be null');

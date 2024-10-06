@@ -199,13 +199,13 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'room_name' => 'setRoomName',
-        'user_id' => 'setUserId',
-        'exported_count' => 'setExportedCount',
-        'status' => 'setStatus',
-        'target_file' => 'setTargetFile',
-        'type' => 'setType'
+        'room_id' => 'set_room_id',
+        'room_name' => 'set_room_name',
+        'user_id' => 'set_user_id',
+        'exported_count' => 'set_exported_count',
+        'status' => 'set_status',
+        'target_file' => 'set_target_file',
+        'type' => 'set_type'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'room_name' => 'getRoomName',
-        'user_id' => 'getUserId',
-        'exported_count' => 'getExportedCount',
-        'status' => 'getStatus',
-        'target_file' => 'getTargetFile',
-        'type' => 'getType'
+        'room_id' => 'get_room_id',
+        'room_name' => 'get_room_name',
+        'user_id' => 'get_user_id',
+        'exported_count' => 'get_exported_count',
+        'status' => 'get_status',
+        'target_file' => 'get_target_file',
+        'type' => 'get_type'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return string|null
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -348,7 +348,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return string|null
      */
-    public function getRoomName()
+    public function get_room_name()
     {
         return $this->container['room_name'];
     }
@@ -375,7 +375,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return self
      */
-    public function setRoomName($room_name)
+    public function set_room_name($room_name)
     {
         if (is_null($room_name)) {
             throw new \InvalidArgumentException('non-nullable room_name cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -402,7 +402,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             array_push($this->openAPINullablesSetToNull, 'user_id');
@@ -424,7 +424,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return int|null
      */
-    public function getExportedCount()
+    public function get_exported_count()
     {
         return $this->container['exported_count'];
     }
@@ -436,7 +436,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return self
      */
-    public function setExportedCount($exported_count)
+    public function set_exported_count($exported_count)
     {
         if (is_null($exported_count)) {
             throw new \InvalidArgumentException('non-nullable exported_count cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -463,7 +463,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return string|null
      */
-    public function getTargetFile()
+    public function get_target_file()
     {
         return $this->container['target_file'];
     }
@@ -490,7 +490,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return self
      */
-    public function setTargetFile($target_file)
+    public function set_target_file($target_file)
     {
         if (is_null($target_file)) {
             throw new \InvalidArgumentException('non-nullable target_file cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -517,7 +517,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner im
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');

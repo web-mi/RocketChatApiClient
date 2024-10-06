@@ -175,7 +175,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages implements M
      * @var string[]
      */
     protected static $setters = [
-        'none' => 'setNone'
+        'none' => 'set_none'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages implements M
      * @var string[]
      */
     protected static $getters = [
-        'none' => 'getNone'
+        'none' => 'get_none'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages implements M
      *
      * @return int|null
      */
-    public function getNone()
+    public function get_none()
     {
         return $this->container['none'];
     }
@@ -306,7 +306,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages implements M
      *
      * @return self
      */
-    public function setNone($none)
+    public function set_none($none)
     {
         if (is_null($none)) {
             throw new \InvalidArgumentException('non-nullable none cannot be null');

@@ -183,9 +183,9 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
      * @var string[]
      */
     protected static $setters = [
-        'change' => 'setChange',
-        'title' => 'setTitle',
-        'location' => 'setLocation'
+        'change' => 'set_change',
+        'title' => 'set_title',
+        'location' => 'set_location'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
      * @var string[]
      */
     protected static $getters = [
-        'change' => 'getChange',
-        'title' => 'getTitle',
-        'location' => 'getLocation'
+        'change' => 'get_change',
+        'title' => 'get_title',
+        'location' => 'get_location'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
      *
      * @return string|null
      */
-    public function getChange()
+    public function get_change()
     {
         return $this->container['change'];
     }
@@ -320,7 +320,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
      *
      * @return self
      */
-    public function setChange($change)
+    public function set_change($change)
     {
         if (is_null($change)) {
             throw new \InvalidArgumentException('non-nullable change cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
      *
      * @return string|null
      */
-    public function getTitle()
+    public function get_title()
     {
         return $this->container['title'];
     }
@@ -347,7 +347,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
      *
      * @return self
      */
-    public function setTitle($title)
+    public function set_title($title)
     {
         if (is_null($title)) {
             throw new \InvalidArgumentException('non-nullable title cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPageLocation|null
      */
-    public function getLocation()
+    public function get_location()
     {
         return $this->container['location'];
     }
@@ -374,7 +374,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigationPage implements Model
      *
      * @return self
      */
-    public function setLocation($location)
+    public function set_location($location)
     {
         if (is_null($location)) {
             throw new \InvalidArgumentException('non-nullable location cannot be null');

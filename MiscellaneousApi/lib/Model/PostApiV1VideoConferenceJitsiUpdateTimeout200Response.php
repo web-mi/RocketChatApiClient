@@ -179,8 +179,8 @@ class PostApiV1VideoConferenceJitsiUpdateTimeout200Response implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        'jitsi_timeout' => 'setJitsiTimeout',
-        'success' => 'setSuccess'
+        'jitsi_timeout' => 'set_jitsi_timeout',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1VideoConferenceJitsiUpdateTimeout200Response implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        'jitsi_timeout' => 'getJitsiTimeout',
-        'success' => 'getSuccess'
+        'jitsi_timeout' => 'get_jitsi_timeout',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1VideoConferenceJitsiUpdateTimeout200Response implements ModelInte
      *
      * @return string|null
      */
-    public function getJitsiTimeout()
+    public function get_jitsi_timeout()
     {
         return $this->container['jitsi_timeout'];
     }
@@ -313,7 +313,7 @@ class PostApiV1VideoConferenceJitsiUpdateTimeout200Response implements ModelInte
      *
      * @return self
      */
-    public function setJitsiTimeout($jitsi_timeout)
+    public function set_jitsi_timeout($jitsi_timeout)
     {
         if (is_null($jitsi_timeout)) {
             throw new \InvalidArgumentException('non-nullable jitsi_timeout cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1VideoConferenceJitsiUpdateTimeout200Response implements ModelInte
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1VideoConferenceJitsiUpdateTimeout200Response implements ModelInte
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -179,8 +179,8 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner implem
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'parameters' => 'setParameters'
+        'type' => 'set_type',
+        'parameters' => 'set_parameters'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner implem
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'parameters' => 'getParameters'
+        'type' => 'get_type',
+        'parameters' => 'get_parameters'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner implem
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -313,7 +313,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner implem
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -328,7 +328,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner implem
      *
      * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInnerParametersInner[]|null
      */
-    public function getParameters()
+    public function get_parameters()
     {
         return $this->container['parameters'];
     }
@@ -340,7 +340,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner implem
      *
      * @return self
      */
-    public function setParameters($parameters)
+    public function set_parameters($parameters)
     {
         if (is_null($parameters)) {
             throw new \InvalidArgumentException('non-nullable parameters cannot be null');

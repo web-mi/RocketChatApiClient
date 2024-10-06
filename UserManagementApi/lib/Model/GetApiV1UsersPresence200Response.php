@@ -183,9 +183,9 @@ class GetApiV1UsersPresence200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'full' => 'setFull',
-        'success' => 'setSuccess'
+        'users' => 'set_users',
+        'full' => 'set_full',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1UsersPresence200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'full' => 'getFull',
-        'success' => 'getSuccess'
+        'users' => 'get_users',
+        'full' => 'get_full',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1UsersPresence200Response implements ModelInterface, ArrayAccess, \
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersPresence200ResponseUsersInner[]|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -320,7 +320,7 @@ class GetApiV1UsersPresence200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1UsersPresence200Response implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getFull()
+    public function get_full()
     {
         return $this->container['full'];
     }
@@ -347,7 +347,7 @@ class GetApiV1UsersPresence200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setFull($full)
+    public function set_full($full)
     {
         if (is_null($full)) {
             throw new \InvalidArgumentException('non-nullable full cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1UsersPresence200Response implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1UsersPresence200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

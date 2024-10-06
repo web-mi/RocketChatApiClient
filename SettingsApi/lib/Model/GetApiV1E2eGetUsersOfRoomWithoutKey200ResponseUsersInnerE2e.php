@@ -175,7 +175,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e implements Mod
      * @var string[]
      */
     protected static $setters = [
-        'public_key' => 'setPublicKey'
+        'public_key' => 'set_public_key'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e implements Mod
      * @var string[]
      */
     protected static $getters = [
-        'public_key' => 'getPublicKey'
+        'public_key' => 'get_public_key'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e implements Mod
      *
      * @return string|null
      */
-    public function getPublicKey()
+    public function get_public_key()
     {
         return $this->container['public_key'];
     }
@@ -306,7 +306,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e implements Mod
      *
      * @return self
      */
-    public function setPublicKey($public_key)
+    public function set_public_key($public_key)
     {
         if (is_null($public_key)) {
             throw new \InvalidArgumentException('non-nullable public_key cannot be null');

@@ -215,17 +215,17 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'username' => 'setUsername',
-        'emails' => 'setEmails',
-        'import_ids' => 'setImportIds',
-        'name' => 'setName',
-        'password' => 'setPassword',
-        'utc_offset' => 'setUtcOffset',
-        'roles' => 'setRoles',
-        'type' => 'setType',
-        'bio' => 'setBio',
-        'deleted' => 'setDeleted',
-        'avatar_url' => 'setAvatarUrl'
+        'username' => 'set_username',
+        'emails' => 'set_emails',
+        'import_ids' => 'set_import_ids',
+        'name' => 'set_name',
+        'password' => 'set_password',
+        'utc_offset' => 'set_utc_offset',
+        'roles' => 'set_roles',
+        'type' => 'set_type',
+        'bio' => 'set_bio',
+        'deleted' => 'set_deleted',
+        'avatar_url' => 'set_avatar_url'
     ];
 
     /**
@@ -234,17 +234,17 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'username' => 'getUsername',
-        'emails' => 'getEmails',
-        'import_ids' => 'getImportIds',
-        'name' => 'getName',
-        'password' => 'getPassword',
-        'utc_offset' => 'getUtcOffset',
-        'roles' => 'getRoles',
-        'type' => 'getType',
-        'bio' => 'getBio',
-        'deleted' => 'getDeleted',
-        'avatar_url' => 'getAvatarUrl'
+        'username' => 'get_username',
+        'emails' => 'get_emails',
+        'import_ids' => 'get_import_ids',
+        'name' => 'get_name',
+        'password' => 'get_password',
+        'utc_offset' => 'get_utc_offset',
+        'roles' => 'get_roles',
+        'type' => 'get_type',
+        'bio' => 'get_bio',
+        'deleted' => 'get_deleted',
+        'avatar_url' => 'get_avatar_url'
     ];
 
     /**
@@ -370,7 +370,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -382,7 +382,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -397,7 +397,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return string[]
      */
-    public function getEmails()
+    public function get_emails()
     {
         return $this->container['emails'];
     }
@@ -409,7 +409,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setEmails($emails)
+    public function set_emails($emails)
     {
         if (is_null($emails)) {
             throw new \InvalidArgumentException('non-nullable emails cannot be null');
@@ -424,7 +424,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return string[]
      */
-    public function getImportIds()
+    public function get_import_ids()
     {
         return $this->container['import_ids'];
     }
@@ -436,7 +436,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setImportIds($import_ids)
+    public function set_import_ids($import_ids)
     {
         if (is_null($import_ids)) {
             throw new \InvalidArgumentException('non-nullable import_ids cannot be null');
@@ -451,7 +451,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -463,7 +463,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -478,7 +478,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getPassword()
+    public function get_password()
     {
         return $this->container['password'];
     }
@@ -490,7 +490,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setPassword($password)
+    public function set_password($password)
     {
         if (is_null($password)) {
             throw new \InvalidArgumentException('non-nullable password cannot be null');
@@ -505,7 +505,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return float|null
      */
-    public function getUtcOffset()
+    public function get_utc_offset()
     {
         return $this->container['utc_offset'];
     }
@@ -517,7 +517,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUtcOffset($utc_offset)
+    public function set_utc_offset($utc_offset)
     {
         if (is_null($utc_offset)) {
             throw new \InvalidArgumentException('non-nullable utc_offset cannot be null');
@@ -532,7 +532,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -544,7 +544,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -559,7 +559,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -571,7 +571,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -586,7 +586,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getBio()
+    public function get_bio()
     {
         return $this->container['bio'];
     }
@@ -598,7 +598,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setBio($bio)
+    public function set_bio($bio)
     {
         if (is_null($bio)) {
             throw new \InvalidArgumentException('non-nullable bio cannot be null');
@@ -613,7 +613,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getDeleted()
+    public function get_deleted()
     {
         return $this->container['deleted'];
     }
@@ -625,7 +625,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setDeleted($deleted)
+    public function set_deleted($deleted)
     {
         if (is_null($deleted)) {
             throw new \InvalidArgumentException('non-nullable deleted cannot be null');
@@ -640,7 +640,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getAvatarUrl()
+    public function get_avatar_url()
     {
         return $this->container['avatar_url'];
     }
@@ -652,7 +652,7 @@ class PostApiV1ImportAddUsersRequestUsersInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setAvatarUrl($avatar_url)
+    public function set_avatar_url($avatar_url)
     {
         if (is_null($avatar_url)) {
             throw new \InvalidArgumentException('non-nullable avatar_url cannot be null');

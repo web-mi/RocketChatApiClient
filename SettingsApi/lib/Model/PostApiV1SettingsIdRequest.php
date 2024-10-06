@@ -187,10 +187,10 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $setters = [
-        'value' => 'setValue',
-        'color' => 'setColor',
-        'editor' => 'setEditor',
-        'execute' => 'setExecute'
+        'value' => 'set_value',
+        'color' => 'set_color',
+        'editor' => 'set_editor',
+        'execute' => 'set_execute'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $getters = [
-        'value' => 'getValue',
-        'color' => 'getColor',
-        'editor' => 'getEditor',
-        'execute' => 'getExecute'
+        'value' => 'get_value',
+        'color' => 'get_color',
+        'editor' => 'get_editor',
+        'execute' => 'get_execute'
     ];
 
     /**
@@ -318,7 +318,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -330,7 +330,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');
@@ -345,7 +345,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string|null
      */
-    public function getColor()
+    public function get_color()
     {
         return $this->container['color'];
     }
@@ -357,7 +357,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setColor($color)
+    public function set_color($color)
     {
         if (is_null($color)) {
             throw new \InvalidArgumentException('non-nullable color cannot be null');
@@ -372,7 +372,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string|null
      */
-    public function getEditor()
+    public function get_editor()
     {
         return $this->container['editor'];
     }
@@ -384,7 +384,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setEditor($editor)
+    public function set_editor($editor)
     {
         if (is_null($editor)) {
             throw new \InvalidArgumentException('non-nullable editor cannot be null');
@@ -399,7 +399,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return bool|null
      */
-    public function getExecute()
+    public function get_execute()
     {
         return $this->container['execute'];
     }
@@ -411,7 +411,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setExecute($execute)
+    public function set_execute($execute)
     {
         if (is_null($execute)) {
             throw new \InvalidArgumentException('non-nullable execute cannot be null');

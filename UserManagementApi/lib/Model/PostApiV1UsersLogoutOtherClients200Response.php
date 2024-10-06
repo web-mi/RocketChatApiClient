@@ -183,9 +183,9 @@ class PostApiV1UsersLogoutOtherClients200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'token_expires' => 'setTokenExpires',
-        'success' => 'setSuccess'
+        'token' => 'set_token',
+        'token_expires' => 'set_token_expires',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1UsersLogoutOtherClients200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'token_expires' => 'getTokenExpires',
-        'success' => 'getSuccess'
+        'token' => 'get_token',
+        'token_expires' => 'get_token_expires',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1UsersLogoutOtherClients200Response implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -320,7 +320,7 @@ class PostApiV1UsersLogoutOtherClients200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1UsersLogoutOtherClients200Response implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getTokenExpires()
+    public function get_token_expires()
     {
         return $this->container['token_expires'];
     }
@@ -347,7 +347,7 @@ class PostApiV1UsersLogoutOtherClients200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setTokenExpires($token_expires)
+    public function set_token_expires($token_expires)
     {
         if (is_null($token_expires)) {
             throw new \InvalidArgumentException('non-nullable token_expires cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1UsersLogoutOtherClients200Response implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class PostApiV1UsersLogoutOtherClients200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

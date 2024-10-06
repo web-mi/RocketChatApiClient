@@ -179,8 +179,8 @@ class PostApiV1TeamsAddMembersRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'team_id' => 'setTeamId',
-        'members' => 'setMembers'
+        'team_id' => 'set_team_id',
+        'members' => 'set_members'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1TeamsAddMembersRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'team_id' => 'getTeamId',
-        'members' => 'getMembers'
+        'team_id' => 'get_team_id',
+        'members' => 'get_members'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1TeamsAddMembersRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getTeamId()
+    public function get_team_id()
     {
         return $this->container['team_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1TeamsAddMembersRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setTeamId($team_id)
+    public function set_team_id($team_id)
     {
         if (is_null($team_id)) {
             throw new \InvalidArgumentException('non-nullable team_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1TeamsAddMembersRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsAddMembersRequestMembersInner[]
      */
-    public function getMembers()
+    public function get_members()
     {
         return $this->container['members'];
     }
@@ -346,7 +346,7 @@ class PostApiV1TeamsAddMembersRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setMembers($members)
+    public function set_members($members)
     {
         if (is_null($members)) {
             throw new \InvalidArgumentException('non-nullable members cannot be null');

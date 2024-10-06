@@ -187,10 +187,10 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      * @var string[]
      */
     protected static $setters = [
-        'response' => 'setResponse',
-        'reaction' => 'setReaction',
-        'chat_duration' => 'setChatDuration',
-        'success' => 'setSuccess'
+        'response' => 'set_response',
+        'reaction' => 'set_reaction',
+        'chat_duration' => 'set_chat_duration',
+        'success' => 'set_success'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      * @var string[]
      */
     protected static $getters = [
-        'response' => 'getResponse',
-        'reaction' => 'getReaction',
-        'chat_duration' => 'getChatDuration',
-        'success' => 'getSuccess'
+        'response' => 'get_response',
+        'reaction' => 'get_reaction',
+        'chat_duration' => 'get_chat_duration',
+        'success' => 'get_success'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null
      */
-    public function getResponse()
+    public function get_response()
     {
         return $this->container['response'];
     }
@@ -327,7 +327,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      *
      * @return self
      */
-    public function setResponse($response)
+    public function set_response($response)
     {
         if (is_null($response)) {
             throw new \InvalidArgumentException('non-nullable response cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null
      */
-    public function getReaction()
+    public function get_reaction()
     {
         return $this->container['reaction'];
     }
@@ -354,7 +354,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      *
      * @return self
      */
-    public function setReaction($reaction)
+    public function set_reaction($reaction)
     {
         if (is_null($reaction)) {
             throw new \InvalidArgumentException('non-nullable reaction cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse|null
      */
-    public function getChatDuration()
+    public function get_chat_duration()
     {
         return $this->container['chat_duration'];
     }
@@ -381,7 +381,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      *
      * @return self
      */
-    public function setChatDuration($chat_duration)
+    public function set_chat_duration($chat_duration)
     {
         if (is_null($chat_duration)) {
             throw new \InvalidArgumentException('non-nullable chat_duration cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -408,7 +408,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200Response implements Mod
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -191,11 +191,11 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      * @var string[]
      */
     protected static $setters = [
-        'day' => 'setDay',
-        'start' => 'setStart',
-        'finish' => 'setFinish',
-        'code' => 'setCode',
-        'open' => 'setOpen'
+        'day' => 'set_day',
+        'start' => 'set_start',
+        'finish' => 'set_finish',
+        'code' => 'set_code',
+        'open' => 'set_open'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      * @var string[]
      */
     protected static $getters = [
-        'day' => 'getDay',
-        'start' => 'getStart',
-        'finish' => 'getFinish',
-        'code' => 'getCode',
-        'open' => 'getOpen'
+        'day' => 'get_day',
+        'start' => 'get_start',
+        'finish' => 'get_finish',
+        'code' => 'get_code',
+        'open' => 'get_open'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return string|null
      */
-    public function getDay()
+    public function get_day()
     {
         return $this->container['day'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return self
      */
-    public function setDay($day)
+    public function set_day($day)
     {
         if (is_null($day)) {
             throw new \InvalidArgumentException('non-nullable day cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null
      */
-    public function getStart()
+    public function get_start()
     {
         return $this->container['start'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return self
      */
-    public function setStart($start)
+    public function set_start($start)
     {
         if (is_null($start)) {
             throw new \InvalidArgumentException('non-nullable start cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStart|null
      */
-    public function getFinish()
+    public function get_finish()
     {
         return $this->container['finish'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return self
      */
-    public function setFinish($finish)
+    public function set_finish($finish)
     {
         if (is_null($finish)) {
             throw new \InvalidArgumentException('non-nullable finish cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return int|null
      */
-    public function getCode()
+    public function get_code()
     {
         return $this->container['code'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return self
      */
-    public function setCode($code)
+    public function set_code($code)
     {
         if (is_null($code)) {
             throw new \InvalidArgumentException('non-nullable code cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return bool|null
      */
-    public function getOpen()
+    public function get_open()
     {
         return $this->container['open'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatBusinessHour200ResponseBusinessHourWorkHoursInner implemen
      *
      * @return self
      */
-    public function setOpen($open)
+    public function set_open($open)
     {
         if (is_null($open)) {
             throw new \InvalidArgumentException('non-nullable open cannot be null');

@@ -175,7 +175,7 @@ class PostApiV1ChannelsConvertToTeamRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'channel_id' => 'setChannelId'
+        'channel_id' => 'set_channel_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1ChannelsConvertToTeamRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'channel_id' => 'getChannelId'
+        'channel_id' => 'get_channel_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1ChannelsConvertToTeamRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getChannelId()
+    public function get_channel_id()
     {
         return $this->container['channel_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1ChannelsConvertToTeamRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setChannelId($channel_id)
+    public function set_channel_id($channel_id)
     {
         if (is_null($channel_id)) {
             throw new \InvalidArgumentException('non-nullable channel_id cannot be null');

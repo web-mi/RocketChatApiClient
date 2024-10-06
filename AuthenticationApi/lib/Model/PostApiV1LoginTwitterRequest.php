@@ -195,12 +195,12 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $setters = [
-        'service_name' => 'setServiceName',
-        'access_token' => 'setAccessToken',
-        'access_token_secret' => 'setAccessTokenSecret',
-        'app_secret' => 'setAppSecret',
-        'app_id' => 'setAppId',
-        'expires_in' => 'setExpiresIn'
+        'service_name' => 'set_service_name',
+        'access_token' => 'set_access_token',
+        'access_token_secret' => 'set_access_token_secret',
+        'app_secret' => 'set_app_secret',
+        'app_id' => 'set_app_id',
+        'expires_in' => 'set_expires_in'
     ];
 
     /**
@@ -209,12 +209,12 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $getters = [
-        'service_name' => 'getServiceName',
-        'access_token' => 'getAccessToken',
-        'access_token_secret' => 'getAccessTokenSecret',
-        'app_secret' => 'getAppSecret',
-        'app_id' => 'getAppId',
-        'expires_in' => 'getExpiresIn'
+        'service_name' => 'get_service_name',
+        'access_token' => 'get_access_token',
+        'access_token_secret' => 'get_access_token_secret',
+        'app_secret' => 'get_app_secret',
+        'app_id' => 'get_app_id',
+        'expires_in' => 'get_expires_in'
     ];
 
     /**
@@ -347,7 +347,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return string
      */
-    public function getServiceName()
+    public function get_service_name()
     {
         return $this->container['service_name'];
     }
@@ -359,7 +359,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setServiceName($service_name)
+    public function set_service_name($service_name)
     {
         if (is_null($service_name)) {
             throw new \InvalidArgumentException('non-nullable service_name cannot be null');
@@ -374,7 +374,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return string
      */
-    public function getAccessToken()
+    public function get_access_token()
     {
         return $this->container['access_token'];
     }
@@ -386,7 +386,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setAccessToken($access_token)
+    public function set_access_token($access_token)
     {
         if (is_null($access_token)) {
             throw new \InvalidArgumentException('non-nullable access_token cannot be null');
@@ -401,7 +401,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return string
      */
-    public function getAccessTokenSecret()
+    public function get_access_token_secret()
     {
         return $this->container['access_token_secret'];
     }
@@ -413,7 +413,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setAccessTokenSecret($access_token_secret)
+    public function set_access_token_secret($access_token_secret)
     {
         if (is_null($access_token_secret)) {
             throw new \InvalidArgumentException('non-nullable access_token_secret cannot be null');
@@ -428,7 +428,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return string
      */
-    public function getAppSecret()
+    public function get_app_secret()
     {
         return $this->container['app_secret'];
     }
@@ -440,7 +440,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setAppSecret($app_secret)
+    public function set_app_secret($app_secret)
     {
         if (is_null($app_secret)) {
             throw new \InvalidArgumentException('non-nullable app_secret cannot be null');
@@ -455,7 +455,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return string
      */
-    public function getAppId()
+    public function get_app_id()
     {
         return $this->container['app_id'];
     }
@@ -467,7 +467,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setAppId($app_id)
+    public function set_app_id($app_id)
     {
         if (is_null($app_id)) {
             throw new \InvalidArgumentException('non-nullable app_id cannot be null');
@@ -482,7 +482,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return int
      */
-    public function getExpiresIn()
+    public function get_expires_in()
     {
         return $this->container['expires_in'];
     }
@@ -494,7 +494,7 @@ class PostApiV1LoginTwitterRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setExpiresIn($expires_in)
+    public function set_expires_in($expires_in)
     {
         if (is_null($expires_in)) {
             throw new \InvalidArgumentException('non-nullable expires_in cannot be null');

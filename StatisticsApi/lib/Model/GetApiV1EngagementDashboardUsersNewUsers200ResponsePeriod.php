@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod implements Model
      * @var string[]
      */
     protected static $setters = [
-        'count' => 'setCount',
-        'variation' => 'setVariation'
+        'count' => 'set_count',
+        'variation' => 'set_variation'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod implements Model
      * @var string[]
      */
     protected static $getters = [
-        'count' => 'getCount',
-        'variation' => 'getVariation'
+        'count' => 'get_count',
+        'variation' => 'get_variation'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod implements Model
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod implements Model
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod implements Model
      *
      * @return int|null
      */
-    public function getVariation()
+    public function get_variation()
     {
         return $this->container['variation'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponsePeriod implements Model
      *
      * @return self
      */
-    public function setVariation($variation)
+    public function set_variation($variation)
     {
         if (is_null($variation)) {
             throw new \InvalidArgumentException('non-nullable variation cannot be null');

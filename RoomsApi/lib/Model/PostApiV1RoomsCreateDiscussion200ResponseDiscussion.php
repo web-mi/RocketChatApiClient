@@ -231,21 +231,21 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'name' => 'setName',
-        'fname' => 'setFname',
-        't' => 'setT',
-        'msgs' => 'setMsgs',
-        'users_count' => 'setUsersCount',
-        'u' => 'setU',
-        'topic' => 'setTopic',
-        'prid' => 'setPrid',
-        'ts' => 'setTs',
-        'ro' => 'setRo',
-        'sys_mes' => 'setSysMes',
-        'default' => 'setDefault',
-        '_updated_at' => 'setUpdatedAt',
-        '_id' => 'setId'
+        'rid' => 'set_rid',
+        'name' => 'set_name',
+        'fname' => 'set_fname',
+        't' => 'set_t',
+        'msgs' => 'set_msgs',
+        'users_count' => 'set_users_count',
+        'u' => 'set_u',
+        'topic' => 'set_topic',
+        'prid' => 'set_prid',
+        'ts' => 'set_ts',
+        'ro' => 'set_ro',
+        'sys_mes' => 'set_sys_mes',
+        'default' => 'set_default',
+        '_updated_at' => 'set__updated_at',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -254,21 +254,21 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'name' => 'getName',
-        'fname' => 'getFname',
-        't' => 'getT',
-        'msgs' => 'getMsgs',
-        'users_count' => 'getUsersCount',
-        'u' => 'getU',
-        'topic' => 'getTopic',
-        'prid' => 'getPrid',
-        'ts' => 'getTs',
-        'ro' => 'getRo',
-        'sys_mes' => 'getSysMes',
-        'default' => 'getDefault',
-        '_updated_at' => 'getUpdatedAt',
-        '_id' => 'getId'
+        'rid' => 'get_rid',
+        'name' => 'get_name',
+        'fname' => 'get_fname',
+        't' => 'get_t',
+        'msgs' => 'get_msgs',
+        'users_count' => 'get_users_count',
+        'u' => 'get_u',
+        'topic' => 'get_topic',
+        'prid' => 'get_prid',
+        'ts' => 'get_ts',
+        'ro' => 'get_ro',
+        'sys_mes' => 'get_sys_mes',
+        'default' => 'get_default',
+        '_updated_at' => 'get__updated_at',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -392,7 +392,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -404,7 +404,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -419,7 +419,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -431,7 +431,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -446,7 +446,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return string|null
      */
-    public function getFname()
+    public function get_fname()
     {
         return $this->container['fname'];
     }
@@ -458,7 +458,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setFname($fname)
+    public function set_fname($fname)
     {
         if (is_null($fname)) {
             throw new \InvalidArgumentException('non-nullable fname cannot be null');
@@ -473,7 +473,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -485,7 +485,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -500,7 +500,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -512,7 +512,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -527,7 +527,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return int|null
      */
-    public function getUsersCount()
+    public function get_users_count()
     {
         return $this->container['users_count'];
     }
@@ -539,7 +539,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setUsersCount($users_count)
+    public function set_users_count($users_count)
     {
         if (is_null($users_count)) {
             throw new \InvalidArgumentException('non-nullable users_count cannot be null');
@@ -554,7 +554,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -566,7 +566,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -581,7 +581,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return string|null
      */
-    public function getTopic()
+    public function get_topic()
     {
         return $this->container['topic'];
     }
@@ -593,7 +593,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setTopic($topic)
+    public function set_topic($topic)
     {
         if (is_null($topic)) {
             throw new \InvalidArgumentException('non-nullable topic cannot be null');
@@ -608,7 +608,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return string|null
      */
-    public function getPrid()
+    public function get_prid()
     {
         return $this->container['prid'];
     }
@@ -620,7 +620,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setPrid($prid)
+    public function set_prid($prid)
     {
         if (is_null($prid)) {
             throw new \InvalidArgumentException('non-nullable prid cannot be null');
@@ -635,7 +635,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -647,7 +647,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -662,7 +662,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return bool|null
      */
-    public function getRo()
+    public function get_ro()
     {
         return $this->container['ro'];
     }
@@ -674,7 +674,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setRo($ro)
+    public function set_ro($ro)
     {
         if (is_null($ro)) {
             throw new \InvalidArgumentException('non-nullable ro cannot be null');
@@ -689,7 +689,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return bool|null
      */
-    public function getSysMes()
+    public function get_sys_mes()
     {
         return $this->container['sys_mes'];
     }
@@ -701,7 +701,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setSysMes($sys_mes)
+    public function set_sys_mes($sys_mes)
     {
         if (is_null($sys_mes)) {
             throw new \InvalidArgumentException('non-nullable sys_mes cannot be null');
@@ -716,7 +716,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return bool|null
      */
-    public function getDefault()
+    public function get_default()
     {
         return $this->container['default'];
     }
@@ -728,7 +728,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setDefault($default)
+    public function set_default($default)
     {
         if (is_null($default)) {
             throw new \InvalidArgumentException('non-nullable default cannot be null');
@@ -743,7 +743,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -755,7 +755,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -770,7 +770,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -782,7 +782,7 @@ class PostApiV1RoomsCreateDiscussion200ResponseDiscussion implements ModelInterf
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

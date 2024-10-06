@@ -175,7 +175,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsServedBy implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'lr' => 'setLr'
+        'lr' => 'set_lr'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsServedBy implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'lr' => 'getLr'
+        'lr' => 'get_lr'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsServedBy implements ModelInterfa
      *
      * @return string|null
      */
-    public function getLr()
+    public function get_lr()
     {
         return $this->container['lr'];
     }
@@ -306,7 +306,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsServedBy implements ModelInterfa
      *
      * @return self
      */
-    public function setLr($lr)
+    public function set_lr($lr)
     {
         if (is_null($lr)) {
             throw new \InvalidArgumentException('non-nullable lr cannot be null');

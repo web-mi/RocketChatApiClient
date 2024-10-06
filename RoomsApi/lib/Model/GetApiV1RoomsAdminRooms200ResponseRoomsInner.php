@@ -227,20 +227,20 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'fname' => 'setFname',
-        'description' => 'setDescription',
-        'broadcast' => 'setBroadcast',
-        'federated' => 'setFederated',
-        'name' => 'setName',
-        't' => 'setT',
-        'msgs' => 'setMsgs',
-        'users_count' => 'setUsersCount',
-        'u' => 'setU',
-        'ro' => 'setRo',
-        'default' => 'setDefault',
-        'topic' => 'setTopic',
-        'announcement' => 'setAnnouncement'
+        '_id' => 'set__id',
+        'fname' => 'set_fname',
+        'description' => 'set_description',
+        'broadcast' => 'set_broadcast',
+        'federated' => 'set_federated',
+        'name' => 'set_name',
+        't' => 'set_t',
+        'msgs' => 'set_msgs',
+        'users_count' => 'set_users_count',
+        'u' => 'set_u',
+        'ro' => 'set_ro',
+        'default' => 'set_default',
+        'topic' => 'set_topic',
+        'announcement' => 'set_announcement'
     ];
 
     /**
@@ -249,20 +249,20 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'fname' => 'getFname',
-        'description' => 'getDescription',
-        'broadcast' => 'getBroadcast',
-        'federated' => 'getFederated',
-        'name' => 'getName',
-        't' => 'getT',
-        'msgs' => 'getMsgs',
-        'users_count' => 'getUsersCount',
-        'u' => 'getU',
-        'ro' => 'getRo',
-        'default' => 'getDefault',
-        'topic' => 'getTopic',
-        'announcement' => 'getAnnouncement'
+        '_id' => 'get__id',
+        'fname' => 'get_fname',
+        'description' => 'get_description',
+        'broadcast' => 'get_broadcast',
+        'federated' => 'get_federated',
+        'name' => 'get_name',
+        't' => 'get_t',
+        'msgs' => 'get_msgs',
+        'users_count' => 'get_users_count',
+        'u' => 'get_u',
+        'ro' => 'get_ro',
+        'default' => 'get_default',
+        'topic' => 'get_topic',
+        'announcement' => 'get_announcement'
     ];
 
     /**
@@ -385,7 +385,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -397,7 +397,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -412,7 +412,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getFname()
+    public function get_fname()
     {
         return $this->container['fname'];
     }
@@ -424,7 +424,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setFname($fname)
+    public function set_fname($fname)
     {
         if (is_null($fname)) {
             throw new \InvalidArgumentException('non-nullable fname cannot be null');
@@ -439,7 +439,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -451,7 +451,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -466,7 +466,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getBroadcast()
+    public function get_broadcast()
     {
         return $this->container['broadcast'];
     }
@@ -478,7 +478,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setBroadcast($broadcast)
+    public function set_broadcast($broadcast)
     {
         if (is_null($broadcast)) {
             throw new \InvalidArgumentException('non-nullable broadcast cannot be null');
@@ -493,7 +493,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getFederated()
+    public function get_federated()
     {
         return $this->container['federated'];
     }
@@ -505,7 +505,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setFederated($federated)
+    public function set_federated($federated)
     {
         if (is_null($federated)) {
             throw new \InvalidArgumentException('non-nullable federated cannot be null');
@@ -520,7 +520,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -532,7 +532,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -547,7 +547,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -559,7 +559,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -574,7 +574,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -586,7 +586,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -601,7 +601,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return int|null
      */
-    public function getUsersCount()
+    public function get_users_count()
     {
         return $this->container['users_count'];
     }
@@ -613,7 +613,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setUsersCount($users_count)
+    public function set_users_count($users_count)
     {
         if (is_null($users_count)) {
             throw new \InvalidArgumentException('non-nullable users_count cannot be null');
@@ -628,7 +628,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -640,7 +640,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -655,7 +655,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getRo()
+    public function get_ro()
     {
         return $this->container['ro'];
     }
@@ -667,7 +667,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setRo($ro)
+    public function set_ro($ro)
     {
         if (is_null($ro)) {
             throw new \InvalidArgumentException('non-nullable ro cannot be null');
@@ -682,7 +682,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getDefault()
+    public function get_default()
     {
         return $this->container['default'];
     }
@@ -694,7 +694,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setDefault($default)
+    public function set_default($default)
     {
         if (is_null($default)) {
             throw new \InvalidArgumentException('non-nullable default cannot be null');
@@ -709,7 +709,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getTopic()
+    public function get_topic()
     {
         return $this->container['topic'];
     }
@@ -721,7 +721,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTopic($topic)
+    public function set_topic($topic)
     {
         if (is_null($topic)) {
             throw new \InvalidArgumentException('non-nullable topic cannot be null');
@@ -736,7 +736,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getAnnouncement()
+    public function get_announcement()
     {
         return $this->container['announcement'];
     }
@@ -748,7 +748,7 @@ class GetApiV1RoomsAdminRooms200ResponseRoomsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setAnnouncement($announcement)
+    public function set_announcement($announcement)
     {
         if (is_null($announcement)) {
             throw new \InvalidArgumentException('non-nullable announcement cannot be null');

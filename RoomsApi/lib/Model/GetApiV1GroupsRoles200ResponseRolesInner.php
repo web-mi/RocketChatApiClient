@@ -187,10 +187,10 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'u' => 'setU',
-        'roles' => 'setRoles',
-        '_id' => 'setId'
+        'rid' => 'set_rid',
+        'u' => 'set_u',
+        'roles' => 'set_roles',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'u' => 'getU',
-        'roles' => 'getRoles',
-        '_id' => 'getId'
+        'rid' => 'get_rid',
+        'u' => 'get_u',
+        'roles' => 'get_roles',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -327,7 +327,7 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -354,7 +354,7 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -381,7 +381,7 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -408,7 +408,7 @@ class GetApiV1GroupsRoles200ResponseRolesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

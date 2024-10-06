@@ -187,10 +187,10 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'ldap' => 'setLdap',
-        'saml' => 'setSaml',
-        'cas' => 'setCas',
-        'oauth' => 'setOauth'
+        'ldap' => 'set_ldap',
+        'saml' => 'set_saml',
+        'cas' => 'set_cas',
+        'oauth' => 'set_oauth'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'ldap' => 'getLdap',
-        'saml' => 'getSaml',
-        'cas' => 'getCas',
-        'oauth' => 'getOauth'
+        'ldap' => 'get_ldap',
+        'saml' => 'get_saml',
+        'cas' => 'get_cas',
+        'oauth' => 'get_oauth'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdap|null
      */
-    public function getLdap()
+    public function get_ldap()
     {
         return $this->container['ldap'];
     }
@@ -327,7 +327,7 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setLdap($ldap)
+    public function set_ldap($ldap)
     {
         if (is_null($ldap)) {
             throw new \InvalidArgumentException('non-nullable ldap cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesSaml|null
      */
-    public function getSaml()
+    public function get_saml()
     {
         return $this->container['saml'];
     }
@@ -354,7 +354,7 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSaml($saml)
+    public function set_saml($saml)
     {
         if (is_null($saml)) {
             throw new \InvalidArgumentException('non-nullable saml cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesCas|null
      */
-    public function getCas()
+    public function get_cas()
     {
         return $this->container['cas'];
     }
@@ -381,7 +381,7 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setCas($cas)
+    public function set_cas($cas)
     {
         if (is_null($cas)) {
             throw new \InvalidArgumentException('non-nullable cas cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesOauth|null
      */
-    public function getOauth()
+    public function get_oauth()
     {
         return $this->container['oauth'];
     }
@@ -408,7 +408,7 @@ class GetApiV1Statistics200ResponseServices implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setOauth($oauth)
+    public function set_oauth($oauth)
     {
         if (is_null($oauth)) {
             throw new \InvalidArgumentException('non-nullable oauth cannot be null');

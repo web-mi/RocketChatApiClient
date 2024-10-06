@@ -195,12 +195,12 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'type' => 'setType',
-        'members' => 'setMembers',
-        'room' => 'setRoom',
-        'sidepanel' => 'setSidepanel',
-        'owner' => 'setOwner'
+        'name' => 'set_name',
+        'type' => 'set_type',
+        'members' => 'set_members',
+        'room' => 'set_room',
+        'sidepanel' => 'set_sidepanel',
+        'owner' => 'set_owner'
     ];
 
     /**
@@ -209,12 +209,12 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'type' => 'getType',
-        'members' => 'getMembers',
-        'room' => 'getRoom',
-        'sidepanel' => 'getSidepanel',
-        'owner' => 'getOwner'
+        'name' => 'get_name',
+        'type' => 'get_type',
+        'members' => 'get_members',
+        'room' => 'get_room',
+        'sidepanel' => 'get_sidepanel',
+        'owner' => 'get_owner'
     ];
 
     /**
@@ -335,7 +335,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -347,7 +347,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return int
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -374,7 +374,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -389,7 +389,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string[]|null
      */
-    public function getMembers()
+    public function get_members()
     {
         return $this->container['members'];
     }
@@ -401,7 +401,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setMembers($members)
+    public function set_members($members)
     {
         if (is_null($members)) {
             throw new \InvalidArgumentException('non-nullable members cannot be null');
@@ -416,7 +416,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsCreateRequestRoom|null
      */
-    public function getRoom()
+    public function get_room()
     {
         return $this->container['room'];
     }
@@ -428,7 +428,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setRoom($room)
+    public function set_room($room)
     {
         if (is_null($room)) {
             throw new \InvalidArgumentException('non-nullable room cannot be null');
@@ -443,7 +443,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsSaveRoomSettingsRequestSidepanel|null
      */
-    public function getSidepanel()
+    public function get_sidepanel()
     {
         return $this->container['sidepanel'];
     }
@@ -455,7 +455,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setSidepanel($sidepanel)
+    public function set_sidepanel($sidepanel)
     {
         if (is_null($sidepanel)) {
             throw new \InvalidArgumentException('non-nullable sidepanel cannot be null');
@@ -470,7 +470,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getOwner()
+    public function get_owner()
     {
         return $this->container['owner'];
     }
@@ -482,7 +482,7 @@ class PostApiV1TeamsCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setOwner($owner)
+    public function set_owner($owner)
     {
         if (is_null($owner)) {
             throw new \InvalidArgumentException('non-nullable owner cannot be null');

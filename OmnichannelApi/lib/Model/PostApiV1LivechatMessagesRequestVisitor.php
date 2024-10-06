@@ -176,7 +176,7 @@ class PostApiV1LivechatMessagesRequestVisitor implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken'
+        'token' => 'set_token'
     ];
 
     /**
@@ -185,7 +185,7 @@ class PostApiV1LivechatMessagesRequestVisitor implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken'
+        'token' => 'get_token'
     ];
 
     /**
@@ -295,7 +295,7 @@ class PostApiV1LivechatMessagesRequestVisitor implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -307,7 +307,7 @@ class PostApiV1LivechatMessagesRequestVisitor implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');

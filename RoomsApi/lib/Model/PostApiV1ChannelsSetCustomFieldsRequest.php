@@ -179,8 +179,8 @@ class PostApiV1ChannelsSetCustomFieldsRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'custom_fields' => 'setCustomFields'
+        'room_id' => 'set_room_id',
+        'custom_fields' => 'set_custom_fields'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsSetCustomFieldsRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'custom_fields' => 'getCustomFields'
+        'room_id' => 'get_room_id',
+        'custom_fields' => 'get_custom_fields'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1ChannelsSetCustomFieldsRequest implements ModelInterface, ArrayAc
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1ChannelsSetCustomFieldsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1ChannelsSetCustomFieldsRequest implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsSetCustomFieldsRequestCustomFields
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -346,7 +346,7 @@ class PostApiV1ChannelsSetCustomFieldsRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');

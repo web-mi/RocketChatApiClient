@@ -179,8 +179,8 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom impleme
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        't' => 'setT'
+        '_id' => 'set__id',
+        't' => 'set_t'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom impleme
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        't' => 'getT'
+        '_id' => 'get__id',
+        't' => 'get_t'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom impleme
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom impleme
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom impleme
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom impleme
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');

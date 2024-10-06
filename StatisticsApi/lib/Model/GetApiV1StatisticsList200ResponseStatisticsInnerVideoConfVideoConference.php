@@ -179,8 +179,8 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference i
      * @var string[]
      */
     protected static $setters = [
-        'started' => 'setStarted',
-        'ended' => 'setEnded'
+        'started' => 'set_started',
+        'ended' => 'set_ended'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference i
      * @var string[]
      */
     protected static $getters = [
-        'started' => 'getStarted',
-        'ended' => 'getEnded'
+        'started' => 'get_started',
+        'ended' => 'get_ended'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference i
      *
      * @return int|null
      */
-    public function getStarted()
+    public function get_started()
     {
         return $this->container['started'];
     }
@@ -313,7 +313,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference i
      *
      * @return self
      */
-    public function setStarted($started)
+    public function set_started($started)
     {
         if (is_null($started)) {
             throw new \InvalidArgumentException('non-nullable started cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference i
      *
      * @return int|null
      */
-    public function getEnded()
+    public function get_ended()
     {
         return $this->container['ended'];
     }
@@ -340,7 +340,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference i
      *
      * @return self
      */
-    public function setEnded($ended)
+    public function set_ended($ended)
     {
         if (is_null($ended)) {
             throw new \InvalidArgumentException('non-nullable ended cannot be null');

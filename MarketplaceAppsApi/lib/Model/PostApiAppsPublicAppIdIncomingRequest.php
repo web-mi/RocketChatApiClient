@@ -183,9 +183,9 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'action' => 'setAction',
-        'session_id' => 'setSessionId',
-        'action_data' => 'setActionData'
+        'action' => 'set_action',
+        'session_id' => 'set_session_id',
+        'action_data' => 'set_action_data'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'action' => 'getAction',
-        'session_id' => 'getSessionId',
-        'action_data' => 'getActionData'
+        'action' => 'get_action',
+        'session_id' => 'get_session_id',
+        'action_data' => 'get_action_data'
     ];
 
     /**
@@ -314,7 +314,7 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getAction()
+    public function get_action()
     {
         return $this->container['action'];
     }
@@ -326,7 +326,7 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setAction($action)
+    public function set_action($action)
     {
         if (is_null($action)) {
             throw new \InvalidArgumentException('non-nullable action cannot be null');
@@ -341,7 +341,7 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getSessionId()
+    public function get_session_id()
     {
         return $this->container['session_id'];
     }
@@ -353,7 +353,7 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSessionId($session_id)
+    public function set_session_id($session_id)
     {
         if (is_null($session_id)) {
             throw new \InvalidArgumentException('non-nullable session_id cannot be null');
@@ -368,7 +368,7 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdIncomingRequestActionData|null
      */
-    public function getActionData()
+    public function get_action_data()
     {
         return $this->container['action_data'];
     }
@@ -380,7 +380,7 @@ class PostApiAppsPublicAppIdIncomingRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setActionData($action_data)
+    public function set_action_data($action_data)
     {
         if (is_null($action_data)) {
             throw new \InvalidArgumentException('non-nullable action_data cannot be null');

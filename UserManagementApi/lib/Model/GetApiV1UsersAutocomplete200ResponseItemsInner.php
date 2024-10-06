@@ -191,11 +191,11 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'status' => 'setStatus',
-        'name' => 'setName',
-        'nickname' => 'setNickname'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'status' => 'set_status',
+        'name' => 'set_name',
+        'nickname' => 'set_nickname'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'status' => 'getStatus',
-        'name' => 'getName',
-        'nickname' => 'getNickname'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'status' => 'get_status',
+        'name' => 'get_name',
+        'nickname' => 'get_nickname'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -361,7 +361,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -388,7 +388,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -415,7 +415,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getNickname()
+    public function get_nickname()
     {
         return $this->container['nickname'];
     }
@@ -442,7 +442,7 @@ class GetApiV1UsersAutocomplete200ResponseItemsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setNickname($nickname)
+    public function set_nickname($nickname)
     {
         if (is_null($nickname)) {
             throw new \InvalidArgumentException('non-nullable nickname cannot be null');

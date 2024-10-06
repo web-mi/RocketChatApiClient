@@ -179,8 +179,8 @@ class GetApiV1CommandsGet200Response implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'command' => 'setCommand',
-        'success' => 'setSuccess'
+        'command' => 'set_command',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1CommandsGet200Response implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'command' => 'getCommand',
-        'success' => 'getSuccess'
+        'command' => 'get_command',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1CommandsGet200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1CommandsGet200ResponseCommand|null
      */
-    public function getCommand()
+    public function get_command()
     {
         return $this->container['command'];
     }
@@ -313,7 +313,7 @@ class GetApiV1CommandsGet200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setCommand($command)
+    public function set_command($command)
     {
         if (is_null($command)) {
             throw new \InvalidArgumentException('non-nullable command cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1CommandsGet200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1CommandsGet200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

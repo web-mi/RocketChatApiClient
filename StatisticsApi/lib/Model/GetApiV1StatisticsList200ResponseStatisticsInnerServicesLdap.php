@@ -195,12 +195,12 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'enabled' => 'setEnabled',
-        'login_fallback' => 'setLoginFallback',
-        'encryption' => 'setEncryption',
-        'background_sync' => 'setBackgroundSync',
-        'ee' => 'setEe'
+        'users' => 'set_users',
+        'enabled' => 'set_enabled',
+        'login_fallback' => 'set_login_fallback',
+        'encryption' => 'set_encryption',
+        'background_sync' => 'set_background_sync',
+        'ee' => 'set_ee'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'enabled' => 'getEnabled',
-        'login_fallback' => 'getLoginFallback',
-        'encryption' => 'getEncryption',
-        'background_sync' => 'getBackgroundSync',
-        'ee' => 'getEe'
+        'users' => 'get_users',
+        'enabled' => 'get_enabled',
+        'login_fallback' => 'get_login_fallback',
+        'encryption' => 'get_encryption',
+        'background_sync' => 'get_background_sync',
+        'ee' => 'get_ee'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -341,7 +341,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -368,7 +368,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return bool|null
      */
-    public function getLoginFallback()
+    public function get_login_fallback()
     {
         return $this->container['login_fallback'];
     }
@@ -395,7 +395,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return self
      */
-    public function setLoginFallback($login_fallback)
+    public function set_login_fallback($login_fallback)
     {
         if (is_null($login_fallback)) {
             throw new \InvalidArgumentException('non-nullable login_fallback cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return string|null
      */
-    public function getEncryption()
+    public function get_encryption()
     {
         return $this->container['encryption'];
     }
@@ -422,7 +422,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return self
      */
-    public function setEncryption($encryption)
+    public function set_encryption($encryption)
     {
         if (is_null($encryption)) {
             throw new \InvalidArgumentException('non-nullable encryption cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return object|null
      */
-    public function getBackgroundSync()
+    public function get_background_sync()
     {
         return $this->container['background_sync'];
     }
@@ -449,7 +449,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return self
      */
-    public function setBackgroundSync($background_sync)
+    public function set_background_sync($background_sync)
     {
         if (is_null($background_sync)) {
             throw new \InvalidArgumentException('non-nullable background_sync cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return object|null
      */
-    public function getEe()
+    public function get_ee()
     {
         return $this->container['ee'];
     }
@@ -476,7 +476,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesLdap implements Mo
      *
      * @return self
      */
-    public function setEe($ee)
+    public function set_ee($ee)
     {
         if (is_null($ee)) {
             throw new \InvalidArgumentException('non-nullable ee cannot be null');

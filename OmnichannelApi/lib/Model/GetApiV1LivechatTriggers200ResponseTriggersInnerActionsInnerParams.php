@@ -179,8 +179,8 @@ class GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams impleme
      * @var string[]
      */
     protected static $setters = [
-        'sender' => 'setSender',
-        'msg' => 'setMsg'
+        'sender' => 'set_sender',
+        'msg' => 'set_msg'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams impleme
      * @var string[]
      */
     protected static $getters = [
-        'sender' => 'getSender',
-        'msg' => 'getMsg'
+        'sender' => 'get_sender',
+        'msg' => 'get_msg'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams impleme
      *
      * @return string|null
      */
-    public function getSender()
+    public function get_sender()
     {
         return $this->container['sender'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams impleme
      *
      * @return self
      */
-    public function setSender($sender)
+    public function set_sender($sender)
     {
         if (is_null($sender)) {
             throw new \InvalidArgumentException('non-nullable sender cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams impleme
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInnerParams impleme
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');

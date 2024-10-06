@@ -175,7 +175,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLivechatData implements 
      * @var string[]
      */
     protected static $setters = [
-        'hobby' => 'setHobby'
+        'hobby' => 'set_hobby'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLivechatData implements 
      * @var string[]
      */
     protected static $getters = [
-        'hobby' => 'getHobby'
+        'hobby' => 'get_hobby'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLivechatData implements 
      *
      * @return string|null
      */
-    public function getHobby()
+    public function get_hobby()
     {
         return $this->container['hobby'];
     }
@@ -306,7 +306,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLivechatData implements 
      *
      * @return self
      */
-    public function setHobby($hobby)
+    public function set_hobby($hobby)
     {
         if (is_null($hobby)) {
             throw new \InvalidArgumentException('non-nullable hobby cannot be null');

@@ -207,15 +207,15 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'ts' => 'setTs',
-        't' => 'setT',
-        'name' => 'setName',
-        'usernames' => 'setUsernames',
-        'u' => 'setU',
-        'msgs' => 'setMsgs',
-        '_updated_at' => 'setUpdatedAt',
-        'lm' => 'setLm'
+        '_id' => 'set__id',
+        'ts' => 'set_ts',
+        't' => 'set_t',
+        'name' => 'set_name',
+        'usernames' => 'set_usernames',
+        'u' => 'set_u',
+        'msgs' => 'set_msgs',
+        '_updated_at' => 'set__updated_at',
+        'lm' => 'set_lm'
     ];
 
     /**
@@ -224,15 +224,15 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'ts' => 'getTs',
-        't' => 'getT',
-        'name' => 'getName',
-        'usernames' => 'getUsernames',
-        'u' => 'getU',
-        'msgs' => 'getMsgs',
-        '_updated_at' => 'getUpdatedAt',
-        'lm' => 'getLm'
+        '_id' => 'get__id',
+        'ts' => 'get_ts',
+        't' => 'get_t',
+        'name' => 'get_name',
+        'usernames' => 'get_usernames',
+        'u' => 'get_u',
+        'msgs' => 'get_msgs',
+        '_updated_at' => 'get__updated_at',
+        'lm' => 'get_lm'
     ];
 
     /**
@@ -350,7 +350,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -362,7 +362,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -377,7 +377,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -389,7 +389,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -404,7 +404,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -416,7 +416,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -431,7 +431,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -443,7 +443,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -458,7 +458,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string[]|null
      */
-    public function getUsernames()
+    public function get_usernames()
     {
         return $this->container['usernames'];
     }
@@ -470,7 +470,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setUsernames($usernames)
+    public function set_usernames($usernames)
     {
         if (is_null($usernames)) {
             throw new \InvalidArgumentException('non-nullable usernames cannot be null');
@@ -485,7 +485,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -497,7 +497,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -512,7 +512,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -524,7 +524,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -539,7 +539,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -551,7 +551,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -566,7 +566,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getLm()
+    public function get_lm()
     {
         return $this->container['lm'];
     }
@@ -578,7 +578,7 @@ class PostApiV1GroupsInvite200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setLm($lm)
+    public function set_lm($lm)
     {
         if (is_null($lm)) {
             throw new \InvalidArgumentException('non-nullable lm cannot be null');

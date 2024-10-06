@@ -179,8 +179,8 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerDeploy implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        'method' => 'setMethod',
-        'platform' => 'setPlatform'
+        'method' => 'set_method',
+        'platform' => 'set_platform'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerDeploy implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        'method' => 'getMethod',
-        'platform' => 'getPlatform'
+        'method' => 'get_method',
+        'platform' => 'get_platform'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerDeploy implements ModelInt
      *
      * @return string|null
      */
-    public function getMethod()
+    public function get_method()
     {
         return $this->container['method'];
     }
@@ -313,7 +313,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerDeploy implements ModelInt
      *
      * @return self
      */
-    public function setMethod($method)
+    public function set_method($method)
     {
         if (is_null($method)) {
             throw new \InvalidArgumentException('non-nullable method cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerDeploy implements ModelInt
      *
      * @return string|null
      */
-    public function getPlatform()
+    public function get_platform()
     {
         return $this->container['platform'];
     }
@@ -340,7 +340,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerDeploy implements ModelInt
      *
      * @return self
      */
-    public function setPlatform($platform)
+    public function set_platform($platform)
     {
         if (is_null($platform)) {
             throw new \InvalidArgumentException('non-nullable platform cannot be null');

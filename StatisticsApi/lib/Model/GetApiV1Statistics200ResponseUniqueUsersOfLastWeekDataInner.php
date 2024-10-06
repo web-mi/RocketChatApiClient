@@ -187,10 +187,10 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      * @var string[]
      */
     protected static $setters = [
-        'roles' => 'setRoles',
-        'count' => 'setCount',
-        'sessions' => 'setSessions',
-        'time' => 'setTime'
+        'roles' => 'set_roles',
+        'count' => 'set_count',
+        'sessions' => 'set_sessions',
+        'time' => 'set_time'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      * @var string[]
      */
     protected static $getters = [
-        'roles' => 'getRoles',
-        'count' => 'getCount',
-        'sessions' => 'getSessions',
-        'time' => 'getTime'
+        'roles' => 'get_roles',
+        'count' => 'get_count',
+        'sessions' => 'get_sessions',
+        'time' => 'get_time'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -327,7 +327,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -354,7 +354,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      *
      * @return int|null
      */
-    public function getSessions()
+    public function get_sessions()
     {
         return $this->container['sessions'];
     }
@@ -381,7 +381,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      *
      * @return self
      */
-    public function setSessions($sessions)
+    public function set_sessions($sessions)
     {
         if (is_null($sessions)) {
             throw new \InvalidArgumentException('non-nullable sessions cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      *
      * @return int|null
      */
-    public function getTime()
+    public function get_time()
     {
         return $this->container['time'];
     }
@@ -408,7 +408,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInner implements Mod
      *
      * @return self
      */
-    public function setTime($time)
+    public function set_time($time)
     {
         if (is_null($time)) {
             throw new \InvalidArgumentException('non-nullable time cannot be null');

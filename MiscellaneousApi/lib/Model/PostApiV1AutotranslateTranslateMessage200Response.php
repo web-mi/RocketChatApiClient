@@ -179,8 +179,8 @@ class PostApiV1AutotranslateTranslateMessage200Response implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'setMessage',
-        'success' => 'setSuccess'
+        'message' => 'set_message',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1AutotranslateTranslateMessage200Response implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'getMessage',
-        'success' => 'getSuccess'
+        'message' => 'get_message',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1AutotranslateTranslateMessage200Response implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1AutotranslateTranslateMessage200ResponseMessage|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -313,7 +313,7 @@ class PostApiV1AutotranslateTranslateMessage200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1AutotranslateTranslateMessage200Response implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1AutotranslateTranslateMessage200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

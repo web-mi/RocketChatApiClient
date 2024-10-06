@@ -191,11 +191,11 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'name' => 'setName',
-        'long_version' => 'setLongVersion',
-        'os' => 'setOs',
-        'version' => 'setVersion'
+        'type' => 'set_type',
+        'name' => 'set_name',
+        'long_version' => 'set_long_version',
+        'os' => 'set_os',
+        'version' => 'set_version'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'name' => 'getName',
-        'long_version' => 'getLongVersion',
-        'os' => 'getOs',
-        'version' => 'getVersion'
+        'type' => 'get_type',
+        'name' => 'get_name',
+        'long_version' => 'get_long_version',
+        'os' => 'get_os',
+        'version' => 'get_version'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -334,7 +334,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -361,7 +361,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return string|null
      */
-    public function getLongVersion()
+    public function get_long_version()
     {
         return $this->container['long_version'];
     }
@@ -388,7 +388,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return self
      */
-    public function setLongVersion($long_version)
+    public function set_long_version($long_version)
     {
         if (is_null($long_version)) {
             throw new \InvalidArgumentException('non-nullable long_version cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDeviceOs|null
      */
-    public function getOs()
+    public function get_os()
     {
         return $this->container['os'];
     }
@@ -415,7 +415,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return self
      */
-    public function setOs($os)
+    public function set_os($os)
     {
         if (is_null($os)) {
             throw new \InvalidArgumentException('non-nullable os cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return string|null
      */
-    public function getVersion()
+    public function get_version()
     {
         return $this->container['version'];
     }
@@ -442,7 +442,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDevice implements ModelInterfa
      *
      * @return self
      */
-    public function setVersion($version)
+    public function set_version($version)
     {
         if (is_null($version)) {
             throw new \InvalidArgumentException('non-nullable version cannot be null');

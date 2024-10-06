@@ -183,9 +183,9 @@ class GetApiV1Statistics200ResponseSettingsEmailSmtp implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'smtp_host' => 'setSmtpHost',
-        'smtp_port' => 'setSmtpPort',
-        'from_email' => 'setFromEmail'
+        'smtp_host' => 'set_smtp_host',
+        'smtp_port' => 'set_smtp_port',
+        'from_email' => 'set_from_email'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1Statistics200ResponseSettingsEmailSmtp implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'smtp_host' => 'getSmtpHost',
-        'smtp_port' => 'getSmtpPort',
-        'from_email' => 'getFromEmail'
+        'smtp_host' => 'get_smtp_host',
+        'smtp_port' => 'get_smtp_port',
+        'from_email' => 'get_from_email'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1Statistics200ResponseSettingsEmailSmtp implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getSmtpHost()
+    public function get_smtp_host()
     {
         return $this->container['smtp_host'];
     }
@@ -320,7 +320,7 @@ class GetApiV1Statistics200ResponseSettingsEmailSmtp implements ModelInterface, 
      *
      * @return self
      */
-    public function setSmtpHost($smtp_host)
+    public function set_smtp_host($smtp_host)
     {
         if (is_null($smtp_host)) {
             throw new \InvalidArgumentException('non-nullable smtp_host cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1Statistics200ResponseSettingsEmailSmtp implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getSmtpPort()
+    public function get_smtp_port()
     {
         return $this->container['smtp_port'];
     }
@@ -347,7 +347,7 @@ class GetApiV1Statistics200ResponseSettingsEmailSmtp implements ModelInterface, 
      *
      * @return self
      */
-    public function setSmtpPort($smtp_port)
+    public function set_smtp_port($smtp_port)
     {
         if (is_null($smtp_port)) {
             throw new \InvalidArgumentException('non-nullable smtp_port cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1Statistics200ResponseSettingsEmailSmtp implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getFromEmail()
+    public function get_from_email()
     {
         return $this->container['from_email'];
     }
@@ -374,7 +374,7 @@ class GetApiV1Statistics200ResponseSettingsEmailSmtp implements ModelInterface, 
      *
      * @return self
      */
-    public function setFromEmail($from_email)
+    public function set_from_email($from_email)
     {
         if (is_null($from_email)) {
             throw new \InvalidArgumentException('non-nullable from_email cannot be null');

@@ -187,10 +187,10 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'command' => 'setCommand',
-        'params' => 'setParams',
-        'description' => 'setDescription',
-        'client_only' => 'setClientOnly'
+        'command' => 'set_command',
+        'params' => 'set_params',
+        'description' => 'set_description',
+        'client_only' => 'set_client_only'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'command' => 'getCommand',
-        'params' => 'getParams',
-        'description' => 'getDescription',
-        'client_only' => 'getClientOnly'
+        'command' => 'get_command',
+        'params' => 'get_params',
+        'description' => 'get_description',
+        'client_only' => 'get_client_only'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getCommand()
+    public function get_command()
     {
         return $this->container['command'];
     }
@@ -327,7 +327,7 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setCommand($command)
+    public function set_command($command)
     {
         if (is_null($command)) {
             throw new \InvalidArgumentException('non-nullable command cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getParams()
+    public function get_params()
     {
         return $this->container['params'];
     }
@@ -354,7 +354,7 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setParams($params)
+    public function set_params($params)
     {
         if (is_null($params)) {
             throw new \InvalidArgumentException('non-nullable params cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -381,7 +381,7 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getClientOnly()
+    public function get_client_only()
     {
         return $this->container['client_only'];
     }
@@ -408,7 +408,7 @@ class GetApiV1CommandsGet200ResponseCommand implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setClientOnly($client_only)
+    public function set_client_only($client_only)
     {
         if (is_null($client_only)) {
             throw new \InvalidArgumentException('non-nullable client_only cannot be null');

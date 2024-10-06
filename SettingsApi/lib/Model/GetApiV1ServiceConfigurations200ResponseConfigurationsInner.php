@@ -183,9 +183,9 @@ class GetApiV1ServiceConfigurations200ResponseConfigurationsInner implements Mod
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'service' => 'setService',
-        'client_id' => 'setClientId'
+        '_id' => 'set__id',
+        'service' => 'set_service',
+        'client_id' => 'set_client_id'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1ServiceConfigurations200ResponseConfigurationsInner implements Mod
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'service' => 'getService',
-        'client_id' => 'getClientId'
+        '_id' => 'get__id',
+        'service' => 'get_service',
+        'client_id' => 'get_client_id'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1ServiceConfigurations200ResponseConfigurationsInner implements Mod
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -320,7 +320,7 @@ class GetApiV1ServiceConfigurations200ResponseConfigurationsInner implements Mod
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1ServiceConfigurations200ResponseConfigurationsInner implements Mod
      *
      * @return string|null
      */
-    public function getService()
+    public function get_service()
     {
         return $this->container['service'];
     }
@@ -347,7 +347,7 @@ class GetApiV1ServiceConfigurations200ResponseConfigurationsInner implements Mod
      *
      * @return self
      */
-    public function setService($service)
+    public function set_service($service)
     {
         if (is_null($service)) {
             throw new \InvalidArgumentException('non-nullable service cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1ServiceConfigurations200ResponseConfigurationsInner implements Mod
      *
      * @return string|null
      */
-    public function getClientId()
+    public function get_client_id()
     {
         return $this->container['client_id'];
     }
@@ -374,7 +374,7 @@ class GetApiV1ServiceConfigurations200ResponseConfigurationsInner implements Mod
      *
      * @return self
      */
-    public function setClientId($client_id)
+    public function set_client_id($client_id)
     {
         if (is_null($client_id)) {
             throw new \InvalidArgumentException('non-nullable client_id cannot be null');

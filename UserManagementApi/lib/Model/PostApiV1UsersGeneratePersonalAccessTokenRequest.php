@@ -179,8 +179,8 @@ class PostApiV1UsersGeneratePersonalAccessTokenRequest implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        'token_name' => 'setTokenName',
-        'bypass_two_factor' => 'setBypassTwoFactor'
+        'token_name' => 'set_token_name',
+        'bypass_two_factor' => 'set_bypass_two_factor'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersGeneratePersonalAccessTokenRequest implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        'token_name' => 'getTokenName',
-        'bypass_two_factor' => 'getBypassTwoFactor'
+        'token_name' => 'get_token_name',
+        'bypass_two_factor' => 'get_bypass_two_factor'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1UsersGeneratePersonalAccessTokenRequest implements ModelInterface
      *
      * @return string
      */
-    public function getTokenName()
+    public function get_token_name()
     {
         return $this->container['token_name'];
     }
@@ -316,7 +316,7 @@ class PostApiV1UsersGeneratePersonalAccessTokenRequest implements ModelInterface
      *
      * @return self
      */
-    public function setTokenName($token_name)
+    public function set_token_name($token_name)
     {
         if (is_null($token_name)) {
             throw new \InvalidArgumentException('non-nullable token_name cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1UsersGeneratePersonalAccessTokenRequest implements ModelInterface
      *
      * @return bool|null
      */
-    public function getBypassTwoFactor()
+    public function get_bypass_two_factor()
     {
         return $this->container['bypass_two_factor'];
     }
@@ -343,7 +343,7 @@ class PostApiV1UsersGeneratePersonalAccessTokenRequest implements ModelInterface
      *
      * @return self
      */
-    public function setBypassTwoFactor($bypass_two_factor)
+    public function set_bypass_two_factor($bypass_two_factor)
     {
         if (is_null($bypass_two_factor)) {
             throw new \InvalidArgumentException('non-nullable bypass_two_factor cannot be null');

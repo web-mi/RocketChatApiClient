@@ -175,7 +175,7 @@ class PostApiV1Users2faSendEmailCodeRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'email_or_username' => 'setEmailOrUsername'
+        'email_or_username' => 'set_email_or_username'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1Users2faSendEmailCodeRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'email_or_username' => 'getEmailOrUsername'
+        'email_or_username' => 'get_email_or_username'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1Users2faSendEmailCodeRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getEmailOrUsername()
+    public function get_email_or_username()
     {
         return $this->container['email_or_username'];
     }
@@ -309,7 +309,7 @@ class PostApiV1Users2faSendEmailCodeRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setEmailOrUsername($email_or_username)
+    public function set_email_or_username($email_or_username)
     {
         if (is_null($email_or_username)) {
             throw new \InvalidArgumentException('non-nullable email_or_username cannot be null');

@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsThreads implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'threads_enabled' => 'setThreadsEnabled'
+        'threads_enabled' => 'set_threads_enabled'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsThreads implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'threads_enabled' => 'getThreadsEnabled'
+        'threads_enabled' => 'get_threads_enabled'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsThreads implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getThreadsEnabled()
+    public function get_threads_enabled()
     {
         return $this->container['threads_enabled'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsThreads implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setThreadsEnabled($threads_enabled)
+    public function set_threads_enabled($threads_enabled)
     {
         if (is_null($threads_enabled)) {
             throw new \InvalidArgumentException('non-nullable threads_enabled cannot be null');

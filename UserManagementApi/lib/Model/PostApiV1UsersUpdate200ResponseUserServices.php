@@ -175,7 +175,7 @@ class PostApiV1UsersUpdate200ResponseUserServices implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'password' => 'setPassword'
+        'password' => 'set_password'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersUpdate200ResponseUserServices implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'password' => 'getPassword'
+        'password' => 'get_password'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersUpdate200ResponseUserServices implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServicesPassword|null
      */
-    public function getPassword()
+    public function get_password()
     {
         return $this->container['password'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersUpdate200ResponseUserServices implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setPassword($password)
+    public function set_password($password)
     {
         if (is_null($password)) {
             throw new \InvalidArgumentException('non-nullable password cannot be null');

@@ -183,9 +183,9 @@ class PostApiV1LivechatUpload200ResponseFile implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'type' => 'setType'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'type' => 'set_type'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatUpload200ResponseFile implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'type' => 'getType'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'type' => 'get_type'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1LivechatUpload200ResponseFile implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -320,7 +320,7 @@ class PostApiV1LivechatUpload200ResponseFile implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1LivechatUpload200ResponseFile implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -347,7 +347,7 @@ class PostApiV1LivechatUpload200ResponseFile implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1LivechatUpload200ResponseFile implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -374,7 +374,7 @@ class PostApiV1LivechatUpload200ResponseFile implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');

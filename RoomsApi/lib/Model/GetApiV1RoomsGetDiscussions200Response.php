@@ -191,11 +191,11 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'discussions' => 'setDiscussions',
-        'count' => 'setCount',
-        'offset' => 'setOffset',
-        'total' => 'setTotal',
-        'success' => 'setSuccess'
+        'discussions' => 'set_discussions',
+        'count' => 'set_count',
+        'offset' => 'set_offset',
+        'total' => 'set_total',
+        'success' => 'set_success'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'discussions' => 'getDiscussions',
-        'count' => 'getCount',
-        'offset' => 'getOffset',
-        'total' => 'getTotal',
-        'success' => 'getSuccess'
+        'discussions' => 'get_discussions',
+        'count' => 'get_count',
+        'offset' => 'get_offset',
+        'total' => 'get_total',
+        'success' => 'get_success'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner[]|null
      */
-    public function getDiscussions()
+    public function get_discussions()
     {
         return $this->container['discussions'];
     }
@@ -334,7 +334,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setDiscussions($discussions)
+    public function set_discussions($discussions)
     {
         if (is_null($discussions)) {
             throw new \InvalidArgumentException('non-nullable discussions cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -361,7 +361,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return int|null
      */
-    public function getOffset()
+    public function get_offset()
     {
         return $this->container['offset'];
     }
@@ -388,7 +388,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setOffset($offset)
+    public function set_offset($offset)
     {
         if (is_null($offset)) {
             throw new \InvalidArgumentException('non-nullable offset cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -415,7 +415,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -442,7 +442,7 @@ class GetApiV1RoomsGetDiscussions200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

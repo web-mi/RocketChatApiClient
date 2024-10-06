@@ -179,8 +179,8 @@ class GetApiV1GetImportProgress200ResponseCount implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'completed' => 'setCompleted',
-        'total' => 'setTotal'
+        'completed' => 'set_completed',
+        'total' => 'set_total'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1GetImportProgress200ResponseCount implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'completed' => 'getCompleted',
-        'total' => 'getTotal'
+        'completed' => 'get_completed',
+        'total' => 'get_total'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1GetImportProgress200ResponseCount implements ModelInterface, Array
      *
      * @return int|null
      */
-    public function getCompleted()
+    public function get_completed()
     {
         return $this->container['completed'];
     }
@@ -313,7 +313,7 @@ class GetApiV1GetImportProgress200ResponseCount implements ModelInterface, Array
      *
      * @return self
      */
-    public function setCompleted($completed)
+    public function set_completed($completed)
     {
         if (is_null($completed)) {
             throw new \InvalidArgumentException('non-nullable completed cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1GetImportProgress200ResponseCount implements ModelInterface, Array
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -340,7 +340,7 @@ class GetApiV1GetImportProgress200ResponseCount implements ModelInterface, Array
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');

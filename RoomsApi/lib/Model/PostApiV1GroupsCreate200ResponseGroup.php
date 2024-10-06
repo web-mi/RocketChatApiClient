@@ -207,15 +207,15 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        't' => 'setT',
-        'msgs' => 'setMsgs',
-        'u' => 'setU',
-        'ts' => 'setTs',
-        'ro' => 'setRo',
-        'sys_mes' => 'setSysMes',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        't' => 'set_t',
+        'msgs' => 'set_msgs',
+        'u' => 'set_u',
+        'ts' => 'set_ts',
+        'ro' => 'set_ro',
+        'sys_mes' => 'set_sys_mes',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -224,15 +224,15 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        't' => 'getT',
-        'msgs' => 'getMsgs',
-        'u' => 'getU',
-        'ts' => 'getTs',
-        'ro' => 'getRo',
-        'sys_mes' => 'getSysMes',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        't' => 'get_t',
+        'msgs' => 'get_msgs',
+        'u' => 'get_u',
+        'ts' => 'get_ts',
+        'ro' => 'get_ro',
+        'sys_mes' => 'get_sys_mes',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -350,7 +350,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -362,7 +362,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -377,7 +377,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -389,7 +389,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -404,7 +404,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -416,7 +416,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -431,7 +431,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -443,7 +443,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -458,7 +458,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -470,7 +470,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -485,7 +485,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -497,7 +497,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -512,7 +512,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getRo()
+    public function get_ro()
     {
         return $this->container['ro'];
     }
@@ -524,7 +524,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRo($ro)
+    public function set_ro($ro)
     {
         if (is_null($ro)) {
             throw new \InvalidArgumentException('non-nullable ro cannot be null');
@@ -539,7 +539,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getSysMes()
+    public function get_sys_mes()
     {
         return $this->container['sys_mes'];
     }
@@ -551,7 +551,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSysMes($sys_mes)
+    public function set_sys_mes($sys_mes)
     {
         if (is_null($sys_mes)) {
             throw new \InvalidArgumentException('non-nullable sys_mes cannot be null');
@@ -566,7 +566,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -578,7 +578,7 @@ class PostApiV1GroupsCreate200ResponseGroup implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

@@ -187,10 +187,10 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'i18n' => 'setI18n',
-        'sort_item' => 'setSortItem',
-        'dirty' => 'setDirty'
+        '_id' => 'set__id',
+        'i18n' => 'set_i18n',
+        'sort_item' => 'set_sort_item',
+        'dirty' => 'set_dirty'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'i18n' => 'getI18n',
-        'sort_item' => 'getSortItem',
-        'dirty' => 'getDirty'
+        '_id' => 'get__id',
+        'i18n' => 'get_i18n',
+        'sort_item' => 'get_sort_item',
+        'dirty' => 'get_dirty'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      *
      * @return string|null
      */
-    public function getI18n()
+    public function get_i18n()
     {
         return $this->container['i18n'];
     }
@@ -354,7 +354,7 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      *
      * @return self
      */
-    public function setI18n($i18n)
+    public function set_i18n($i18n)
     {
         if (is_null($i18n)) {
             throw new \InvalidArgumentException('non-nullable i18n cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      *
      * @return int|null
      */
-    public function getSortItem()
+    public function get_sort_item()
     {
         return $this->container['sort_item'];
     }
@@ -381,7 +381,7 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      *
      * @return self
      */
-    public function setSortItem($sort_item)
+    public function set_sort_item($sort_item)
     {
         if (is_null($sort_item)) {
             throw new \InvalidArgumentException('non-nullable sort_item cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      *
      * @return bool|null
      */
-    public function getDirty()
+    public function get_dirty()
     {
         return $this->container['dirty'];
     }
@@ -408,7 +408,7 @@ class GetApiV1LivechatPriorities200ResponsePrioritiesInner implements ModelInter
      *
      * @return self
      */
-    public function setDirty($dirty)
+    public function set_dirty($dirty)
     {
         if (is_null($dirty)) {
             throw new \InvalidArgumentException('non-nullable dirty cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1SettingsOauth200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'services' => 'setServices',
-        'success' => 'setSuccess'
+        'services' => 'set_services',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1SettingsOauth200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'services' => 'getServices',
-        'success' => 'getSuccess'
+        'services' => 'get_services',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1SettingsOauth200Response implements ModelInterface, ArrayAccess, \
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SettingsOauth200ResponseServicesInner[]|null
      */
-    public function getServices()
+    public function get_services()
     {
         return $this->container['services'];
     }
@@ -313,7 +313,7 @@ class GetApiV1SettingsOauth200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setServices($services)
+    public function set_services($services)
     {
         if (is_null($services)) {
             throw new \InvalidArgumentException('non-nullable services cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1SettingsOauth200Response implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1SettingsOauth200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

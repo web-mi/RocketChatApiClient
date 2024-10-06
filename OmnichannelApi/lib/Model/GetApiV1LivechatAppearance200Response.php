@@ -179,8 +179,8 @@ class GetApiV1LivechatAppearance200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'appearance' => 'setAppearance',
-        'success' => 'setSuccess'
+        'appearance' => 'set_appearance',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAppearance200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'appearance' => 'getAppearance',
-        'success' => 'getSuccess'
+        'appearance' => 'get_appearance',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAppearance200Response implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAppearance200ResponseAppearanceInner[]|null
      */
-    public function getAppearance()
+    public function get_appearance()
     {
         return $this->container['appearance'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAppearance200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setAppearance($appearance)
+    public function set_appearance($appearance)
     {
         if (is_null($appearance)) {
             throw new \InvalidArgumentException('non-nullable appearance cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAppearance200Response implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAppearance200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -195,12 +195,12 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'description' => 'setDescription',
-        'mandatory2fa' => 'setMandatory2fa',
-        'protected' => 'setProtected',
-        'scope' => 'setScope',
-        'name' => 'setName'
+        '_id' => 'set__id',
+        'description' => 'set_description',
+        'mandatory2fa' => 'set_mandatory2fa',
+        'protected' => 'set_protected',
+        'scope' => 'set_scope',
+        'name' => 'set_name'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'description' => 'getDescription',
-        'mandatory2fa' => 'getMandatory2fa',
-        'protected' => 'getProtected',
-        'scope' => 'getScope',
-        'name' => 'getName'
+        '_id' => 'get__id',
+        'description' => 'get_description',
+        'mandatory2fa' => 'get_mandatory2fa',
+        'protected' => 'get_protected',
+        'scope' => 'get_scope',
+        'name' => 'get_name'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -368,7 +368,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getMandatory2fa()
+    public function get_mandatory2fa()
     {
         return $this->container['mandatory2fa'];
     }
@@ -395,7 +395,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setMandatory2fa($mandatory2fa)
+    public function set_mandatory2fa($mandatory2fa)
     {
         if (is_null($mandatory2fa)) {
             throw new \InvalidArgumentException('non-nullable mandatory2fa cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getProtected()
+    public function get_protected()
     {
         return $this->container['protected'];
     }
@@ -422,7 +422,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setProtected($protected)
+    public function set_protected($protected)
     {
         if (is_null($protected)) {
             throw new \InvalidArgumentException('non-nullable protected cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -449,7 +449,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -476,7 +476,7 @@ class GetApiV1RolesList200ResponseRolesInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');

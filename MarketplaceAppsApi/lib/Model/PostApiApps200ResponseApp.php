@@ -219,18 +219,18 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'version' => 'setVersion',
-        'required_api_version' => 'setRequiredApiVersion',
-        'icon_file' => 'setIconFile',
-        'author' => 'setAuthor',
-        'name' => 'setName',
-        'name_slug' => 'setNameSlug',
-        'class_file' => 'setClassFile',
-        'description' => 'setDescription',
-        'implements' => 'setImplements',
-        'icon_file_content' => 'setIconFileContent',
-        'status' => 'setStatus'
+        'id' => 'set_id',
+        'version' => 'set_version',
+        'required_api_version' => 'set_required_api_version',
+        'icon_file' => 'set_icon_file',
+        'author' => 'set_author',
+        'name' => 'set_name',
+        'name_slug' => 'set_name_slug',
+        'class_file' => 'set_class_file',
+        'description' => 'set_description',
+        'implements' => 'set_implements',
+        'icon_file_content' => 'set_icon_file_content',
+        'status' => 'set_status'
     ];
 
     /**
@@ -239,18 +239,18 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'version' => 'getVersion',
-        'required_api_version' => 'getRequiredApiVersion',
-        'icon_file' => 'getIconFile',
-        'author' => 'getAuthor',
-        'name' => 'getName',
-        'name_slug' => 'getNameSlug',
-        'class_file' => 'getClassFile',
-        'description' => 'getDescription',
-        'implements' => 'getImplements',
-        'icon_file_content' => 'getIconFileContent',
-        'status' => 'getStatus'
+        'id' => 'get_id',
+        'version' => 'get_version',
+        'required_api_version' => 'get_required_api_version',
+        'icon_file' => 'get_icon_file',
+        'author' => 'get_author',
+        'name' => 'get_name',
+        'name_slug' => 'get_name_slug',
+        'class_file' => 'get_class_file',
+        'description' => 'get_description',
+        'implements' => 'get_implements',
+        'icon_file_content' => 'get_icon_file_content',
+        'status' => 'get_status'
     ];
 
     /**
@@ -371,7 +371,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getId()
+    public function get_id()
     {
         return $this->container['id'];
     }
@@ -383,7 +383,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setId($id)
+    public function set_id($id)
     {
         if (is_null($id)) {
             throw new \InvalidArgumentException('non-nullable id cannot be null');
@@ -398,7 +398,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getVersion()
+    public function get_version()
     {
         return $this->container['version'];
     }
@@ -410,7 +410,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setVersion($version)
+    public function set_version($version)
     {
         if (is_null($version)) {
             throw new \InvalidArgumentException('non-nullable version cannot be null');
@@ -425,7 +425,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getRequiredApiVersion()
+    public function get_required_api_version()
     {
         return $this->container['required_api_version'];
     }
@@ -437,7 +437,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setRequiredApiVersion($required_api_version)
+    public function set_required_api_version($required_api_version)
     {
         if (is_null($required_api_version)) {
             throw new \InvalidArgumentException('non-nullable required_api_version cannot be null');
@@ -452,7 +452,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getIconFile()
+    public function get_icon_file()
     {
         return $this->container['icon_file'];
     }
@@ -464,7 +464,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setIconFile($icon_file)
+    public function set_icon_file($icon_file)
     {
         if (is_null($icon_file)) {
             throw new \InvalidArgumentException('non-nullable icon_file cannot be null');
@@ -479,7 +479,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseAppAuthor|null
      */
-    public function getAuthor()
+    public function get_author()
     {
         return $this->container['author'];
     }
@@ -491,7 +491,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setAuthor($author)
+    public function set_author($author)
     {
         if (is_null($author)) {
             throw new \InvalidArgumentException('non-nullable author cannot be null');
@@ -506,7 +506,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -518,7 +518,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -533,7 +533,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getNameSlug()
+    public function get_name_slug()
     {
         return $this->container['name_slug'];
     }
@@ -545,7 +545,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setNameSlug($name_slug)
+    public function set_name_slug($name_slug)
     {
         if (is_null($name_slug)) {
             throw new \InvalidArgumentException('non-nullable name_slug cannot be null');
@@ -560,7 +560,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getClassFile()
+    public function get_class_file()
     {
         return $this->container['class_file'];
     }
@@ -572,7 +572,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setClassFile($class_file)
+    public function set_class_file($class_file)
     {
         if (is_null($class_file)) {
             throw new \InvalidArgumentException('non-nullable class_file cannot be null');
@@ -587,7 +587,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -599,7 +599,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -614,7 +614,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return object[]|null
      */
-    public function getImplements()
+    public function get_implements()
     {
         return $this->container['implements'];
     }
@@ -626,7 +626,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setImplements($implements)
+    public function set_implements($implements)
     {
         if (is_null($implements)) {
             throw new \InvalidArgumentException('non-nullable implements cannot be null');
@@ -641,7 +641,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getIconFileContent()
+    public function get_icon_file_content()
     {
         return $this->container['icon_file_content'];
     }
@@ -653,7 +653,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setIconFileContent($icon_file_content)
+    public function set_icon_file_content($icon_file_content)
     {
         if (is_null($icon_file_content)) {
             throw new \InvalidArgumentException('non-nullable icon_file_content cannot be null');
@@ -668,7 +668,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -680,7 +680,7 @@ class PostApiApps200ResponseApp implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement 
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'accepted_via' => 'setAcceptedVia'
+        'type' => 'set_type',
+        'accepted_via' => 'set_accepted_via'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement 
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'accepted_via' => 'getAcceptedVia'
+        'type' => 'get_type',
+        'accepted_via' => 'get_accepted_via'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement 
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement 
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement 
      *
      * @return string|null
      */
-    public function getAcceptedVia()
+    public function get_accepted_via()
     {
         return $this->container['accepted_via'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement 
      *
      * @return self
      */
-    public function setAcceptedVia($accepted_via)
+    public function set_accepted_via($accepted_via)
     {
         if (is_null($accepted_via)) {
             throw new \InvalidArgumentException('non-nullable accepted_via cannot be null');

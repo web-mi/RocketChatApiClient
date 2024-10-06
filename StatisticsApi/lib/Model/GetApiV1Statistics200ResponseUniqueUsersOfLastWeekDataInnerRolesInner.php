@@ -187,10 +187,10 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      * @var string[]
      */
     protected static $setters = [
-        'role' => 'setRole',
-        'count' => 'setCount',
-        'sessions' => 'setSessions',
-        'time' => 'setTime'
+        'role' => 'set_role',
+        'count' => 'set_count',
+        'sessions' => 'set_sessions',
+        'time' => 'set_time'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      * @var string[]
      */
     protected static $getters = [
-        'role' => 'getRole',
-        'count' => 'getCount',
-        'sessions' => 'getSessions',
-        'time' => 'getTime'
+        'role' => 'get_role',
+        'count' => 'get_count',
+        'sessions' => 'get_sessions',
+        'time' => 'get_time'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      *
      * @return string|null
      */
-    public function getRole()
+    public function get_role()
     {
         return $this->container['role'];
     }
@@ -327,7 +327,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      *
      * @return self
      */
-    public function setRole($role)
+    public function set_role($role)
     {
         if (is_null($role)) {
             throw new \InvalidArgumentException('non-nullable role cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -354,7 +354,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      *
      * @return int|null
      */
-    public function getSessions()
+    public function get_sessions()
     {
         return $this->container['sessions'];
     }
@@ -381,7 +381,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      *
      * @return self
      */
-    public function setSessions($sessions)
+    public function set_sessions($sessions)
     {
         if (is_null($sessions)) {
             throw new \InvalidArgumentException('non-nullable sessions cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      *
      * @return int|null
      */
-    public function getTime()
+    public function get_time()
     {
         return $this->container['time'];
     }
@@ -408,7 +408,7 @@ class GetApiV1Statistics200ResponseUniqueUsersOfLastWeekDataInnerRolesInner impl
      *
      * @return self
      */
-    public function setTime($time)
+    public function set_time($time)
     {
         if (is_null($time)) {
             throw new \InvalidArgumentException('non-nullable time cannot be null');

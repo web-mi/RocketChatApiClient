@@ -187,10 +187,10 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'emoji' => 'setEmoji',
-        '_id' => 'setId',
-        'name' => 'setName',
-        'aliases' => 'setAliases'
+        'emoji' => 'set_emoji',
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'aliases' => 'set_aliases'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'emoji' => 'getEmoji',
-        '_id' => 'getId',
-        'name' => 'getName',
-        'aliases' => 'getAliases'
+        'emoji' => 'get_emoji',
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'aliases' => 'get_aliases'
     ];
 
     /**
@@ -321,7 +321,7 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getEmoji()
+    public function get_emoji()
     {
         return $this->container['emoji'];
     }
@@ -333,7 +333,7 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setEmoji($emoji)
+    public function set_emoji($emoji)
     {
         if (is_null($emoji)) {
             throw new \InvalidArgumentException('non-nullable emoji cannot be null');
@@ -348,7 +348,7 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -360,7 +360,7 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -375,7 +375,7 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -387,7 +387,7 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -402,7 +402,7 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getAliases()
+    public function get_aliases()
     {
         return $this->container['aliases'];
     }
@@ -414,7 +414,7 @@ class PostApiV1EmojiCustomUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setAliases($aliases)
+    public function set_aliases($aliases)
     {
         if (is_null($aliases)) {
             throw new \InvalidArgumentException('non-nullable aliases cannot be null');

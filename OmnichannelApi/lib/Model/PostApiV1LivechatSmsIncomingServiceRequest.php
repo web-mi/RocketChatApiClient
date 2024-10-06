@@ -215,17 +215,17 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'from' => 'setFrom',
-        'to' => 'setTo',
-        'body' => 'setBody',
-        'to_country' => 'setToCountry',
-        'to_state' => 'setToState',
-        'to_city' => 'setToCity',
-        'to_zip' => 'setToZip',
-        'from_country' => 'setFromCountry',
-        'from_state' => 'setFromState',
-        'from_city' => 'setFromCity',
-        'from_zip' => 'setFromZip'
+        'from' => 'set_from',
+        'to' => 'set_to',
+        'body' => 'set_body',
+        'to_country' => 'set_to_country',
+        'to_state' => 'set_to_state',
+        'to_city' => 'set_to_city',
+        'to_zip' => 'set_to_zip',
+        'from_country' => 'set_from_country',
+        'from_state' => 'set_from_state',
+        'from_city' => 'set_from_city',
+        'from_zip' => 'set_from_zip'
     ];
 
     /**
@@ -234,17 +234,17 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'from' => 'getFrom',
-        'to' => 'getTo',
-        'body' => 'getBody',
-        'to_country' => 'getToCountry',
-        'to_state' => 'getToState',
-        'to_city' => 'getToCity',
-        'to_zip' => 'getToZip',
-        'from_country' => 'getFromCountry',
-        'from_state' => 'getFromState',
-        'from_city' => 'getFromCity',
-        'from_zip' => 'getFromZip'
+        'from' => 'get_from',
+        'to' => 'get_to',
+        'body' => 'get_body',
+        'to_country' => 'get_to_country',
+        'to_state' => 'get_to_state',
+        'to_city' => 'get_to_city',
+        'to_zip' => 'get_to_zip',
+        'from_country' => 'get_from_country',
+        'from_state' => 'get_from_state',
+        'from_city' => 'get_from_city',
+        'from_zip' => 'get_from_zip'
     ];
 
     /**
@@ -364,7 +364,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getFrom()
+    public function get_from()
     {
         return $this->container['from'];
     }
@@ -376,7 +376,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setFrom($from)
+    public function set_from($from)
     {
         if (is_null($from)) {
             throw new \InvalidArgumentException('non-nullable from cannot be null');
@@ -391,7 +391,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getTo()
+    public function get_to()
     {
         return $this->container['to'];
     }
@@ -403,7 +403,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setTo($to)
+    public function set_to($to)
     {
         if (is_null($to)) {
             throw new \InvalidArgumentException('non-nullable to cannot be null');
@@ -418,7 +418,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getBody()
+    public function get_body()
     {
         return $this->container['body'];
     }
@@ -430,7 +430,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setBody($body)
+    public function set_body($body)
     {
         if (is_null($body)) {
             throw new \InvalidArgumentException('non-nullable body cannot be null');
@@ -445,7 +445,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getToCountry()
+    public function get_to_country()
     {
         return $this->container['to_country'];
     }
@@ -457,7 +457,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setToCountry($to_country)
+    public function set_to_country($to_country)
     {
         if (is_null($to_country)) {
             throw new \InvalidArgumentException('non-nullable to_country cannot be null');
@@ -472,7 +472,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getToState()
+    public function get_to_state()
     {
         return $this->container['to_state'];
     }
@@ -484,7 +484,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setToState($to_state)
+    public function set_to_state($to_state)
     {
         if (is_null($to_state)) {
             throw new \InvalidArgumentException('non-nullable to_state cannot be null');
@@ -499,7 +499,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getToCity()
+    public function get_to_city()
     {
         return $this->container['to_city'];
     }
@@ -511,7 +511,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setToCity($to_city)
+    public function set_to_city($to_city)
     {
         if (is_null($to_city)) {
             throw new \InvalidArgumentException('non-nullable to_city cannot be null');
@@ -526,7 +526,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getToZip()
+    public function get_to_zip()
     {
         return $this->container['to_zip'];
     }
@@ -538,7 +538,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setToZip($to_zip)
+    public function set_to_zip($to_zip)
     {
         if (is_null($to_zip)) {
             throw new \InvalidArgumentException('non-nullable to_zip cannot be null');
@@ -553,7 +553,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getFromCountry()
+    public function get_from_country()
     {
         return $this->container['from_country'];
     }
@@ -565,7 +565,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setFromCountry($from_country)
+    public function set_from_country($from_country)
     {
         if (is_null($from_country)) {
             throw new \InvalidArgumentException('non-nullable from_country cannot be null');
@@ -580,7 +580,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getFromState()
+    public function get_from_state()
     {
         return $this->container['from_state'];
     }
@@ -592,7 +592,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setFromState($from_state)
+    public function set_from_state($from_state)
     {
         if (is_null($from_state)) {
             throw new \InvalidArgumentException('non-nullable from_state cannot be null');
@@ -607,7 +607,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getFromCity()
+    public function get_from_city()
     {
         return $this->container['from_city'];
     }
@@ -619,7 +619,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setFromCity($from_city)
+    public function set_from_city($from_city)
     {
         if (is_null($from_city)) {
             throw new \InvalidArgumentException('non-nullable from_city cannot be null');
@@ -634,7 +634,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getFromZip()
+    public function get_from_zip()
     {
         return $this->container['from_zip'];
     }
@@ -646,7 +646,7 @@ class PostApiV1LivechatSmsIncomingServiceRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setFromZip($from_zip)
+    public function set_from_zip($from_zip)
     {
         if (is_null($from_zip)) {
             throw new \InvalidArgumentException('non-nullable from_zip cannot be null');

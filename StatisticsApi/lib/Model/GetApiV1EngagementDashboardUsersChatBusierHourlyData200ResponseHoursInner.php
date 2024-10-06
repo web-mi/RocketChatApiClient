@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner 
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'hour' => 'setHour'
+        'users' => 'set_users',
+        'hour' => 'set_hour'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner 
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'hour' => 'getHour'
+        'users' => 'get_users',
+        'hour' => 'get_hour'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner 
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner 
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner 
      *
      * @return int|null
      */
-    public function getHour()
+    public function get_hour()
     {
         return $this->container['hour'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner 
      *
      * @return self
      */
-    public function setHour($hour)
+    public function set_hour($hour)
     {
         if (is_null($hour)) {
             throw new \InvalidArgumentException('non-nullable hour cannot be null');

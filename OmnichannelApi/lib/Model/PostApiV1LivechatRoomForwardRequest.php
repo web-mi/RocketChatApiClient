@@ -183,9 +183,9 @@ class PostApiV1LivechatRoomForwardRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'user_id' => 'setUserId',
-        'department_id' => 'setDepartmentId'
+        'room_id' => 'set_room_id',
+        'user_id' => 'set_user_id',
+        'department_id' => 'set_department_id'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatRoomForwardRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'user_id' => 'getUserId',
-        'department_id' => 'getDepartmentId'
+        'room_id' => 'get_room_id',
+        'user_id' => 'get_user_id',
+        'department_id' => 'get_department_id'
     ];
 
     /**
@@ -311,7 +311,7 @@ class PostApiV1LivechatRoomForwardRequest implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -323,7 +323,7 @@ class PostApiV1LivechatRoomForwardRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -338,7 +338,7 @@ class PostApiV1LivechatRoomForwardRequest implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -350,7 +350,7 @@ class PostApiV1LivechatRoomForwardRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -365,7 +365,7 @@ class PostApiV1LivechatRoomForwardRequest implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getDepartmentId()
+    public function get_department_id()
     {
         return $this->container['department_id'];
     }
@@ -377,7 +377,7 @@ class PostApiV1LivechatRoomForwardRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setDepartmentId($department_id)
+    public function set_department_id($department_id)
     {
         if (is_null($department_id)) {
             throw new \InvalidArgumentException('non-nullable department_id cannot be null');

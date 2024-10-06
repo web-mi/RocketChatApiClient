@@ -179,8 +179,8 @@ class DeleteApiV1LivechatMessageId200ResponseMessage implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'ls' => 'setLs'
+        '_id' => 'set__id',
+        'ls' => 'set_ls'
     ];
 
     /**
@@ -189,8 +189,8 @@ class DeleteApiV1LivechatMessageId200ResponseMessage implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'ls' => 'getLs'
+        '_id' => 'get__id',
+        'ls' => 'get_ls'
     ];
 
     /**
@@ -301,7 +301,7 @@ class DeleteApiV1LivechatMessageId200ResponseMessage implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class DeleteApiV1LivechatMessageId200ResponseMessage implements ModelInterface, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class DeleteApiV1LivechatMessageId200ResponseMessage implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getLs()
+    public function get_ls()
     {
         return $this->container['ls'];
     }
@@ -340,7 +340,7 @@ class DeleteApiV1LivechatMessageId200ResponseMessage implements ModelInterface, 
      *
      * @return self
      */
-    public function setLs($ls)
+    public function set_ls($ls)
     {
         if (is_null($ls)) {
             throw new \InvalidArgumentException('non-nullable ls cannot be null');

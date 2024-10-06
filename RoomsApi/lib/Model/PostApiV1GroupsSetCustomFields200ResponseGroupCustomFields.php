@@ -175,7 +175,7 @@ class PostApiV1GroupsSetCustomFields200ResponseGroupCustomFields implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'company' => 'setCompany'
+        'company' => 'set_company'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1GroupsSetCustomFields200ResponseGroupCustomFields implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'company' => 'getCompany'
+        'company' => 'get_company'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1GroupsSetCustomFields200ResponseGroupCustomFields implements Mode
      *
      * @return string|null
      */
-    public function getCompany()
+    public function get_company()
     {
         return $this->container['company'];
     }
@@ -306,7 +306,7 @@ class PostApiV1GroupsSetCustomFields200ResponseGroupCustomFields implements Mode
      *
      * @return self
      */
-    public function setCompany($company)
+    public function set_company($company)
     {
         if (is_null($company)) {
             throw new \InvalidArgumentException('non-nullable company cannot be null');

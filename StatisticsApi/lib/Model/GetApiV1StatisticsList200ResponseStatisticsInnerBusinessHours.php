@@ -179,8 +179,8 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours implements M
      * @var string[]
      */
     protected static $setters = [
-        'total' => 'setTotal',
-        'strategy' => 'setStrategy'
+        'total' => 'set_total',
+        'strategy' => 'set_strategy'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours implements M
      * @var string[]
      */
     protected static $getters = [
-        'total' => 'getTotal',
-        'strategy' => 'getStrategy'
+        'total' => 'get_total',
+        'strategy' => 'get_strategy'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours implements M
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -313,7 +313,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours implements M
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours implements M
      *
      * @return string|null
      */
-    public function getStrategy()
+    public function get_strategy()
     {
         return $this->container['strategy'];
     }
@@ -340,7 +340,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours implements M
      *
      * @return self
      */
-    public function setStrategy($strategy)
+    public function set_strategy($strategy)
     {
         if (is_null($strategy)) {
             throw new \InvalidArgumentException('non-nullable strategy cannot be null');

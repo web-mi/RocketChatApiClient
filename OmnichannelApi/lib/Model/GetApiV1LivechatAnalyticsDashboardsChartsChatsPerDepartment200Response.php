@@ -187,10 +187,10 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      * @var string[]
      */
     protected static $setters = [
-        'test' => 'setTest',
-        'sales' => 'setSales',
-        'finance' => 'setFinance',
-        'success' => 'setSuccess'
+        'test' => 'set_test',
+        'sales' => 'set_sales',
+        'finance' => 'set_finance',
+        'success' => 'set_success'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      * @var string[]
      */
     protected static $getters = [
-        'test' => 'getTest',
-        'sales' => 'getSales',
-        'finance' => 'getFinance',
-        'success' => 'getSuccess'
+        'test' => 'get_test',
+        'sales' => 'get_sales',
+        'finance' => 'get_finance',
+        'success' => 'get_success'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
      */
-    public function getTest()
+    public function get_test()
     {
         return $this->container['test'];
     }
@@ -327,7 +327,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      *
      * @return self
      */
-    public function setTest($test)
+    public function set_test($test)
     {
         if (is_null($test)) {
             throw new \InvalidArgumentException('non-nullable test cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
      */
-    public function getSales()
+    public function get_sales()
     {
         return $this->container['sales'];
     }
@@ -354,7 +354,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      *
      * @return self
      */
-    public function setSales($sales)
+    public function set_sales($sales)
     {
         if (is_null($sales)) {
             throw new \InvalidArgumentException('non-nullable sales cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
      */
-    public function getFinance()
+    public function get_finance()
     {
         return $this->container['finance'];
     }
@@ -381,7 +381,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      *
      * @return self
      */
-    public function setFinance($finance)
+    public function set_finance($finance)
     {
         if (is_null($finance)) {
             throw new \InvalidArgumentException('non-nullable finance cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -408,7 +408,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerDepartment200Response imp
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

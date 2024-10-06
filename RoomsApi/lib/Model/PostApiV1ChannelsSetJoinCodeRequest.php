@@ -179,8 +179,8 @@ class PostApiV1ChannelsSetJoinCodeRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'join_code' => 'setJoinCode'
+        'room_id' => 'set_room_id',
+        'join_code' => 'set_join_code'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsSetJoinCodeRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'join_code' => 'getJoinCode'
+        'room_id' => 'get_room_id',
+        'join_code' => 'get_join_code'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1ChannelsSetJoinCodeRequest implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1ChannelsSetJoinCodeRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1ChannelsSetJoinCodeRequest implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getJoinCode()
+    public function get_join_code()
     {
         return $this->container['join_code'];
     }
@@ -346,7 +346,7 @@ class PostApiV1ChannelsSetJoinCodeRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setJoinCode($join_code)
+    public function set_join_code($join_code)
     {
         if (is_null($join_code)) {
             throw new \InvalidArgumentException('non-nullable join_code cannot be null');

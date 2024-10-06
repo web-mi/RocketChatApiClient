@@ -183,9 +183,9 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'update' => 'setUpdate',
-        'remove' => 'setRemove',
-        'success' => 'setSuccess'
+        'update' => 'set_update',
+        'remove' => 'set_remove',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'update' => 'getUpdate',
-        'remove' => 'getRemove',
-        'success' => 'getSuccess'
+        'update' => 'get_update',
+        'remove' => 'get_remove',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetPermissionsListAll200ResponseUpdateInner[]|null
      */
-    public function getUpdate()
+    public function get_update()
     {
         return $this->container['update'];
     }
@@ -320,7 +320,7 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setUpdate($update)
+    public function set_update($update)
     {
         if (is_null($update)) {
             throw new \InvalidArgumentException('non-nullable update cannot be null');
@@ -335,7 +335,7 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
      *
      * @return object[]|null
      */
-    public function getRemove()
+    public function get_remove()
     {
         return $this->container['remove'];
     }
@@ -347,7 +347,7 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setRemove($remove)
+    public function set_remove($remove)
     {
         if (is_null($remove)) {
             throw new \InvalidArgumentException('non-nullable remove cannot be null');
@@ -362,7 +362,7 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetPermissionsListAll200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

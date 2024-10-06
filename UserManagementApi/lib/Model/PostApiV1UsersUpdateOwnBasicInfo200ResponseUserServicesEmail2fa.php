@@ -179,8 +179,8 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa implements
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled',
-        'changed_at' => 'setChangedAt'
+        'enabled' => 'set_enabled',
+        'changed_at' => 'set_changed_at'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa implements
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled',
-        'changed_at' => 'getChangedAt'
+        'enabled' => 'get_enabled',
+        'changed_at' => 'get_changed_at'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa implements
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa implements
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa implements
      *
      * @return string|null
      */
-    public function getChangedAt()
+    public function get_changed_at()
     {
         return $this->container['changed_at'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa implements
      *
      * @return self
      */
-    public function setChangedAt($changed_at)
+    public function set_changed_at($changed_at)
     {
         if (is_null($changed_at)) {
             throw new \InvalidArgumentException('non-nullable changed_at cannot be null');

@@ -183,9 +183,9 @@ class GetApiV1StdoutQueue200ResponseQueueInner implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'string' => 'setString',
-        'ts' => 'setTs'
+        'id' => 'set_id',
+        'string' => 'set_string',
+        'ts' => 'set_ts'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1StdoutQueue200ResponseQueueInner implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'string' => 'getString',
-        'ts' => 'getTs'
+        'id' => 'get_id',
+        'string' => 'get_string',
+        'ts' => 'get_ts'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1StdoutQueue200ResponseQueueInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getId()
+    public function get_id()
     {
         return $this->container['id'];
     }
@@ -320,7 +320,7 @@ class GetApiV1StdoutQueue200ResponseQueueInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setId($id)
+    public function set_id($id)
     {
         if (is_null($id)) {
             throw new \InvalidArgumentException('non-nullable id cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1StdoutQueue200ResponseQueueInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getString()
+    public function get_string()
     {
         return $this->container['string'];
     }
@@ -347,7 +347,7 @@ class GetApiV1StdoutQueue200ResponseQueueInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setString($string)
+    public function set_string($string)
     {
         if (is_null($string)) {
             throw new \InvalidArgumentException('non-nullable string cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1StdoutQueue200ResponseQueueInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -374,7 +374,7 @@ class GetApiV1StdoutQueue200ResponseQueueInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');

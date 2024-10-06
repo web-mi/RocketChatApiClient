@@ -203,14 +203,14 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'priority' => 'setPriority',
-        'title' => 'setTitle',
-        'text' => 'setText',
-        'text_arguments' => 'setTextArguments',
-        'link' => 'setLink',
-        'modifiers' => 'setModifiers',
-        'read' => 'setRead'
+        'id' => 'set_id',
+        'priority' => 'set_priority',
+        'title' => 'set_title',
+        'text' => 'set_text',
+        'text_arguments' => 'set_text_arguments',
+        'link' => 'set_link',
+        'modifiers' => 'set_modifiers',
+        'read' => 'set_read'
     ];
 
     /**
@@ -219,14 +219,14 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'priority' => 'getPriority',
-        'title' => 'getTitle',
-        'text' => 'getText',
-        'text_arguments' => 'getTextArguments',
-        'link' => 'getLink',
-        'modifiers' => 'getModifiers',
-        'read' => 'getRead'
+        'id' => 'get_id',
+        'priority' => 'get_priority',
+        'title' => 'get_title',
+        'text' => 'get_text',
+        'text_arguments' => 'get_text_arguments',
+        'link' => 'get_link',
+        'modifiers' => 'get_modifiers',
+        'read' => 'get_read'
     ];
 
     /**
@@ -343,7 +343,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return string|null
      */
-    public function getId()
+    public function get_id()
     {
         return $this->container['id'];
     }
@@ -355,7 +355,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return self
      */
-    public function setId($id)
+    public function set_id($id)
     {
         if (is_null($id)) {
             throw new \InvalidArgumentException('non-nullable id cannot be null');
@@ -370,7 +370,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return int|null
      */
-    public function getPriority()
+    public function get_priority()
     {
         return $this->container['priority'];
     }
@@ -382,7 +382,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return self
      */
-    public function setPriority($priority)
+    public function set_priority($priority)
     {
         if (is_null($priority)) {
             throw new \InvalidArgumentException('non-nullable priority cannot be null');
@@ -397,7 +397,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return string|null
      */
-    public function getTitle()
+    public function get_title()
     {
         return $this->container['title'];
     }
@@ -409,7 +409,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return self
      */
-    public function setTitle($title)
+    public function set_title($title)
     {
         if (is_null($title)) {
             throw new \InvalidArgumentException('non-nullable title cannot be null');
@@ -424,7 +424,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return string|null
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -436,7 +436,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -451,7 +451,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return string[]|null
      */
-    public function getTextArguments()
+    public function get_text_arguments()
     {
         return $this->container['text_arguments'];
     }
@@ -463,7 +463,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return self
      */
-    public function setTextArguments($text_arguments)
+    public function set_text_arguments($text_arguments)
     {
         if (is_null($text_arguments)) {
             throw new \InvalidArgumentException('non-nullable text_arguments cannot be null');
@@ -478,7 +478,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return string|null
      */
-    public function getLink()
+    public function get_link()
     {
         return $this->container['link'];
     }
@@ -490,7 +490,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return self
      */
-    public function setLink($link)
+    public function set_link($link)
     {
         if (is_null($link)) {
             throw new \InvalidArgumentException('non-nullable link cannot be null');
@@ -505,7 +505,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return object[]|null
      */
-    public function getModifiers()
+    public function get_modifiers()
     {
         return $this->container['modifiers'];
     }
@@ -517,7 +517,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return self
      */
-    public function setModifiers($modifiers)
+    public function set_modifiers($modifiers)
     {
         if (is_null($modifiers)) {
             throw new \InvalidArgumentException('non-nullable modifiers cannot be null');
@@ -532,7 +532,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return bool|null
      */
-    public function getRead()
+    public function get_read()
     {
         return $this->container['read'];
     }
@@ -544,7 +544,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600 imp
      *
      * @return self
      */
-    public function setRead($read)
+    public function set_read($read)
     {
         if (is_null($read)) {
             throw new \InvalidArgumentException('non-nullable read cannot be null');

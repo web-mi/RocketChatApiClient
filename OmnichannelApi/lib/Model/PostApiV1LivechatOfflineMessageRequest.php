@@ -191,11 +191,11 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'email' => 'setEmail',
-        'message' => 'setMessage',
-        'department' => 'setDepartment',
-        'host' => 'setHost'
+        'name' => 'set_name',
+        'email' => 'set_email',
+        'message' => 'set_message',
+        'department' => 'set_department',
+        'host' => 'set_host'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'email' => 'getEmail',
-        'message' => 'getMessage',
-        'department' => 'getDepartment',
-        'host' => 'getHost'
+        'name' => 'get_name',
+        'email' => 'get_email',
+        'message' => 'get_message',
+        'department' => 'get_department',
+        'host' => 'get_host'
     ];
 
     /**
@@ -337,7 +337,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -349,7 +349,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -364,7 +364,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -376,7 +376,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -391,7 +391,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -403,7 +403,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -418,7 +418,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getDepartment()
+    public function get_department()
     {
         return $this->container['department'];
     }
@@ -430,7 +430,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setDepartment($department)
+    public function set_department($department)
     {
         if (is_null($department)) {
             throw new \InvalidArgumentException('non-nullable department cannot be null');
@@ -445,7 +445,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getHost()
+    public function get_host()
     {
         return $this->container['host'];
     }
@@ -457,7 +457,7 @@ class PostApiV1LivechatOfflineMessageRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setHost($host)
+    public function set_host($host)
     {
         if (is_null($host)) {
             throw new \InvalidArgumentException('non-nullable host cannot be null');

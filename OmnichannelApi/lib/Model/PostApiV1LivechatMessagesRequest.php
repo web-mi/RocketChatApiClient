@@ -179,8 +179,8 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'visitor' => 'setVisitor',
-        'messages' => 'setMessages'
+        'visitor' => 'set_visitor',
+        'messages' => 'set_messages'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'visitor' => 'getVisitor',
-        'messages' => 'getMessages'
+        'visitor' => 'get_visitor',
+        'messages' => 'get_messages'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessagesRequestVisitor
      */
-    public function getVisitor()
+    public function get_visitor()
     {
         return $this->container['visitor'];
     }
@@ -319,7 +319,7 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setVisitor($visitor)
+    public function set_visitor($visitor)
     {
         if (is_null($visitor)) {
             throw new \InvalidArgumentException('non-nullable visitor cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessagesRequestMessagesInner[]
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -346,7 +346,7 @@ class PostApiV1LivechatMessagesRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');

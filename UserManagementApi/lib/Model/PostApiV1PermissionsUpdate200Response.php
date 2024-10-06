@@ -179,8 +179,8 @@ class PostApiV1PermissionsUpdate200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'permissions' => 'setPermissions',
-        'success' => 'setSuccess'
+        'permissions' => 'set_permissions',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1PermissionsUpdate200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'permissions' => 'getPermissions',
-        'success' => 'getSuccess'
+        'permissions' => 'get_permissions',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1PermissionsUpdate200Response implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdate200ResponsePermissionsInner[]|null
      */
-    public function getPermissions()
+    public function get_permissions()
     {
         return $this->container['permissions'];
     }
@@ -313,7 +313,7 @@ class PostApiV1PermissionsUpdate200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setPermissions($permissions)
+    public function set_permissions($permissions)
     {
         if (is_null($permissions)) {
             throw new \InvalidArgumentException('non-nullable permissions cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1PermissionsUpdate200Response implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1PermissionsUpdate200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

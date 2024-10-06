@@ -179,8 +179,8 @@ class PostApiV1ImDeleteRequest implements ModelInterface, ArrayAccess, \JsonSeri
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'username' => 'setUsername'
+        'room_id' => 'set_room_id',
+        'username' => 'set_username'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ImDeleteRequest implements ModelInterface, ArrayAccess, \JsonSeri
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'username' => 'getUsername'
+        'room_id' => 'get_room_id',
+        'username' => 'get_username'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ImDeleteRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string|null
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ImDeleteRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ImDeleteRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ImDeleteRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');

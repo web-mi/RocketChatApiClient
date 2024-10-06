@@ -195,12 +195,12 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      * @var string[]
      */
     protected static $setters = [
-        'total_integrations' => 'setTotalIntegrations',
-        'total_incoming' => 'setTotalIncoming',
-        'total_incoming_active' => 'setTotalIncomingActive',
-        'total_outgoing' => 'setTotalOutgoing',
-        'total_outgoing_active' => 'setTotalOutgoingActive',
-        'total_with_script_enabled' => 'setTotalWithScriptEnabled'
+        'total_integrations' => 'set_total_integrations',
+        'total_incoming' => 'set_total_incoming',
+        'total_incoming_active' => 'set_total_incoming_active',
+        'total_outgoing' => 'set_total_outgoing',
+        'total_outgoing_active' => 'set_total_outgoing_active',
+        'total_with_script_enabled' => 'set_total_with_script_enabled'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      * @var string[]
      */
     protected static $getters = [
-        'total_integrations' => 'getTotalIntegrations',
-        'total_incoming' => 'getTotalIncoming',
-        'total_incoming_active' => 'getTotalIncomingActive',
-        'total_outgoing' => 'getTotalOutgoing',
-        'total_outgoing_active' => 'getTotalOutgoingActive',
-        'total_with_script_enabled' => 'getTotalWithScriptEnabled'
+        'total_integrations' => 'get_total_integrations',
+        'total_incoming' => 'get_total_incoming',
+        'total_incoming_active' => 'get_total_incoming_active',
+        'total_outgoing' => 'get_total_outgoing',
+        'total_outgoing_active' => 'get_total_outgoing_active',
+        'total_with_script_enabled' => 'get_total_with_script_enabled'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return int|null
      */
-    public function getTotalIntegrations()
+    public function get_total_integrations()
     {
         return $this->container['total_integrations'];
     }
@@ -341,7 +341,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return self
      */
-    public function setTotalIntegrations($total_integrations)
+    public function set_total_integrations($total_integrations)
     {
         if (is_null($total_integrations)) {
             throw new \InvalidArgumentException('non-nullable total_integrations cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return int|null
      */
-    public function getTotalIncoming()
+    public function get_total_incoming()
     {
         return $this->container['total_incoming'];
     }
@@ -368,7 +368,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return self
      */
-    public function setTotalIncoming($total_incoming)
+    public function set_total_incoming($total_incoming)
     {
         if (is_null($total_incoming)) {
             throw new \InvalidArgumentException('non-nullable total_incoming cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return int|null
      */
-    public function getTotalIncomingActive()
+    public function get_total_incoming_active()
     {
         return $this->container['total_incoming_active'];
     }
@@ -395,7 +395,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return self
      */
-    public function setTotalIncomingActive($total_incoming_active)
+    public function set_total_incoming_active($total_incoming_active)
     {
         if (is_null($total_incoming_active)) {
             throw new \InvalidArgumentException('non-nullable total_incoming_active cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return int|null
      */
-    public function getTotalOutgoing()
+    public function get_total_outgoing()
     {
         return $this->container['total_outgoing'];
     }
@@ -422,7 +422,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return self
      */
-    public function setTotalOutgoing($total_outgoing)
+    public function set_total_outgoing($total_outgoing)
     {
         if (is_null($total_outgoing)) {
             throw new \InvalidArgumentException('non-nullable total_outgoing cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return int|null
      */
-    public function getTotalOutgoingActive()
+    public function get_total_outgoing_active()
     {
         return $this->container['total_outgoing_active'];
     }
@@ -449,7 +449,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return self
      */
-    public function setTotalOutgoingActive($total_outgoing_active)
+    public function set_total_outgoing_active($total_outgoing_active)
     {
         if (is_null($total_outgoing_active)) {
             throw new \InvalidArgumentException('non-nullable total_outgoing_active cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return int|null
      */
-    public function getTotalWithScriptEnabled()
+    public function get_total_with_script_enabled()
     {
         return $this->container['total_with_script_enabled'];
     }
@@ -476,7 +476,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations implements Mo
      *
      * @return self
      */
-    public function setTotalWithScriptEnabled($total_with_script_enabled)
+    public function set_total_with_script_enabled($total_with_script_enabled)
     {
         if (is_null($total_with_script_enabled)) {
             throw new \InvalidArgumentException('non-nullable total_with_script_enabled cannot be null');

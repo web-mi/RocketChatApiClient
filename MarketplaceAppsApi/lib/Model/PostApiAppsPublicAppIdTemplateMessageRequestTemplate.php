@@ -188,10 +188,10 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      * @var string[]
      */
     protected static $setters = [
-        'namespace' => 'setNamespace',
-        'name' => 'setName',
-        'language' => 'setLanguage',
-        'components' => 'setComponents'
+        'namespace' => 'set_namespace',
+        'name' => 'set_name',
+        'language' => 'set_language',
+        'components' => 'set_components'
     ];
 
     /**
@@ -200,10 +200,10 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      * @var string[]
      */
     protected static $getters = [
-        'namespace' => 'getNamespace',
-        'name' => 'getName',
-        'language' => 'getLanguage',
-        'components' => 'getComponents'
+        'namespace' => 'get_namespace',
+        'name' => 'get_name',
+        'language' => 'get_language',
+        'components' => 'get_components'
     ];
 
     /**
@@ -316,7 +316,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      *
      * @return string|null
      */
-    public function getNamespace()
+    public function get_namespace()
     {
         return $this->container['namespace'];
     }
@@ -328,7 +328,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      *
      * @return self
      */
-    public function setNamespace($namespace)
+    public function set_namespace($namespace)
     {
         if (is_null($namespace)) {
             throw new \InvalidArgumentException('non-nullable namespace cannot be null');
@@ -343,7 +343,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -355,7 +355,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -370,7 +370,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      *
      * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage|null
      */
-    public function getLanguage()
+    public function get_language()
     {
         return $this->container['language'];
     }
@@ -382,7 +382,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      *
      * @return self
      */
-    public function setLanguage($language)
+    public function set_language($language)
     {
         if (is_null($language)) {
             throw new \InvalidArgumentException('non-nullable language cannot be null');
@@ -397,7 +397,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      *
      * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner[]|null
      */
-    public function getComponents()
+    public function get_components()
     {
         return $this->container['components'];
     }
@@ -409,7 +409,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplate implements ModelInter
      *
      * @return self
      */
-    public function setComponents($components)
+    public function set_components($components)
     {
         if (is_null($components)) {
             throw new \InvalidArgumentException('non-nullable components cannot be null');

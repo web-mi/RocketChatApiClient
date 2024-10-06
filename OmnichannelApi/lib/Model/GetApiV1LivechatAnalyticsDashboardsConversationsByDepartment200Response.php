@@ -187,10 +187,10 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      * @var string[]
      */
     protected static $setters = [
-        'total' => 'setTotal',
-        'data' => 'setData',
-        'unspecified' => 'setUnspecified',
-        'success' => 'setSuccess'
+        'total' => 'set_total',
+        'data' => 'set_data',
+        'unspecified' => 'set_unspecified',
+        'success' => 'set_success'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      * @var string[]
      */
     protected static $getters = [
-        'total' => 'getTotal',
-        'data' => 'getData',
-        'unspecified' => 'getUnspecified',
-        'success' => 'getSuccess'
+        'total' => 'get_total',
+        'data' => 'get_data',
+        'unspecified' => 'get_unspecified',
+        'success' => 'get_success'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -327,7 +327,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInner[]|null
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -354,7 +354,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      *
      * @return int|null
      */
-    public function getUnspecified()
+    public function get_unspecified()
     {
         return $this->container['unspecified'];
     }
@@ -381,7 +381,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      *
      * @return self
      */
-    public function setUnspecified($unspecified)
+    public function set_unspecified($unspecified)
     {
         if (is_null($unspecified)) {
             throw new \InvalidArgumentException('non-nullable unspecified cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -408,7 +408,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByDepartment200Response im
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

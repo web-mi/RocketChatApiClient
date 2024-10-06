@@ -179,8 +179,8 @@ class GetApiV1LivechatDepartmentListByIds200Response implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'departments' => 'setDepartments',
-        'success' => 'setSuccess'
+        'departments' => 'set_departments',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatDepartmentListByIds200Response implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'departments' => 'getDepartments',
-        'success' => 'getSuccess'
+        'departments' => 'get_departments',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatDepartmentListByIds200Response implements ModelInterface, 
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner[]|null
      */
-    public function getDepartments()
+    public function get_departments()
     {
         return $this->container['departments'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatDepartmentListByIds200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setDepartments($departments)
+    public function set_departments($departments)
     {
         if (is_null($departments)) {
             throw new \InvalidArgumentException('non-nullable departments cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatDepartmentListByIds200Response implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatDepartmentListByIds200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

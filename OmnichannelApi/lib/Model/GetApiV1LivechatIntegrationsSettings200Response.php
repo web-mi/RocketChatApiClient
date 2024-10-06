@@ -179,8 +179,8 @@ class GetApiV1LivechatIntegrationsSettings200Response implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'settings' => 'setSettings',
-        'success' => 'setSuccess'
+        'settings' => 'set_settings',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatIntegrationsSettings200Response implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'settings' => 'getSettings',
-        'success' => 'getSuccess'
+        'settings' => 'get_settings',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatIntegrationsSettings200Response implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner[]|null
      */
-    public function getSettings()
+    public function get_settings()
     {
         return $this->container['settings'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatIntegrationsSettings200Response implements ModelInterface,
      *
      * @return self
      */
-    public function setSettings($settings)
+    public function set_settings($settings)
     {
         if (is_null($settings)) {
             throw new \InvalidArgumentException('non-nullable settings cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatIntegrationsSettings200Response implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatIntegrationsSettings200Response implements ModelInterface,
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

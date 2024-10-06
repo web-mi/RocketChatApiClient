@@ -175,7 +175,7 @@ class PostApiAppsRequest implements ModelInterface, ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static $setters = [
-        'url' => 'setUrl'
+        'url' => 'set_url'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiAppsRequest implements ModelInterface, ArrayAccess, \JsonSerializab
      * @var string[]
      */
     protected static $getters = [
-        'url' => 'getUrl'
+        'url' => 'get_url'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiAppsRequest implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return string
      */
-    public function getUrl()
+    public function get_url()
     {
         return $this->container['url'];
     }
@@ -309,7 +309,7 @@ class PostApiAppsRequest implements ModelInterface, ArrayAccess, \JsonSerializab
      *
      * @return self
      */
-    public function setUrl($url)
+    public function set_url($url)
     {
         if (is_null($url)) {
             throw new \InvalidArgumentException('non-nullable url cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1LivechatWebrtcCall200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'video_call' => 'setVideoCall',
-        'success' => 'setSuccess'
+        'video_call' => 'set_video_call',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatWebrtcCall200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'video_call' => 'getVideoCall',
-        'success' => 'getSuccess'
+        'video_call' => 'get_video_call',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatWebrtcCall200Response implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatWebrtcCall200ResponseVideoCall|null
      */
-    public function getVideoCall()
+    public function get_video_call()
     {
         return $this->container['video_call'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatWebrtcCall200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setVideoCall($video_call)
+    public function set_video_call($video_call)
     {
         if (is_null($video_call)) {
             throw new \InvalidArgumentException('non-nullable video_call cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatWebrtcCall200Response implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatWebrtcCall200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

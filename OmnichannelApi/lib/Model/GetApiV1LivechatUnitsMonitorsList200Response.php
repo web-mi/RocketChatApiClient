@@ -179,8 +179,8 @@ class GetApiV1LivechatUnitsMonitorsList200Response implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'monitors' => 'setMonitors',
-        'success' => 'setSuccess'
+        'monitors' => 'set_monitors',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatUnitsMonitorsList200Response implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'monitors' => 'getMonitors',
-        'success' => 'getSuccess'
+        'monitors' => 'get_monitors',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatUnitsMonitorsList200Response implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner[]|null
      */
-    public function getMonitors()
+    public function get_monitors()
     {
         return $this->container['monitors'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatUnitsMonitorsList200Response implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setMonitors($monitors)
+    public function set_monitors($monitors)
     {
         if (is_null($monitors)) {
             throw new \InvalidArgumentException('non-nullable monitors cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatUnitsMonitorsList200Response implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatUnitsMonitorsList200Response implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

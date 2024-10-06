@@ -195,12 +195,12 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'offline' => 'setOffline',
-        'away' => 'setAway',
-        'busy' => 'setBusy',
-        'available' => 'setAvailable',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'offline' => 'set_offline',
+        'away' => 'set_away',
+        'busy' => 'set_busy',
+        'available' => 'set_available',
+        'success' => 'set_success'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'offline' => 'getOffline',
-        'away' => 'getAway',
-        'busy' => 'getBusy',
-        'available' => 'getAvailable',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'offline' => 'get_offline',
+        'away' => 'get_away',
+        'busy' => 'get_busy',
+        'available' => 'get_available',
+        'success' => 'get_success'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return int|null
      */
-    public function getOffline()
+    public function get_offline()
     {
         return $this->container['offline'];
     }
@@ -368,7 +368,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return self
      */
-    public function setOffline($offline)
+    public function set_offline($offline)
     {
         if (is_null($offline)) {
             throw new \InvalidArgumentException('non-nullable offline cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return int|null
      */
-    public function getAway()
+    public function get_away()
     {
         return $this->container['away'];
     }
@@ -395,7 +395,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return self
      */
-    public function setAway($away)
+    public function set_away($away)
     {
         if (is_null($away)) {
             throw new \InvalidArgumentException('non-nullable away cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return int|null
      */
-    public function getBusy()
+    public function get_busy()
     {
         return $this->container['busy'];
     }
@@ -422,7 +422,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return self
      */
-    public function setBusy($busy)
+    public function set_busy($busy)
     {
         if (is_null($busy)) {
             throw new \InvalidArgumentException('non-nullable busy cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return int|null
      */
-    public function getAvailable()
+    public function get_available()
     {
         return $this->container['available'];
     }
@@ -449,7 +449,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return self
      */
-    public function setAvailable($available)
+    public function set_available($available)
     {
         if (is_null($available)) {
             throw new \InvalidArgumentException('non-nullable available cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -476,7 +476,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsAgentsStatus200Response implement
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

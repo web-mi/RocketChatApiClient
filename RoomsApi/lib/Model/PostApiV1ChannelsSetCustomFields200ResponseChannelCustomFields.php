@@ -175,7 +175,7 @@ class PostApiV1ChannelsSetCustomFields200ResponseChannelCustomFields implements 
      * @var string[]
      */
     protected static $setters = [
-        'organization' => 'setOrganization'
+        'organization' => 'set_organization'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1ChannelsSetCustomFields200ResponseChannelCustomFields implements 
      * @var string[]
      */
     protected static $getters = [
-        'organization' => 'getOrganization'
+        'organization' => 'get_organization'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1ChannelsSetCustomFields200ResponseChannelCustomFields implements 
      *
      * @return string|null
      */
-    public function getOrganization()
+    public function get_organization()
     {
         return $this->container['organization'];
     }
@@ -306,7 +306,7 @@ class PostApiV1ChannelsSetCustomFields200ResponseChannelCustomFields implements 
      *
      * @return self
      */
-    public function setOrganization($organization)
+    public function set_organization($organization)
     {
         if (is_null($organization)) {
             throw new \InvalidArgumentException('non-nullable organization cannot be null');

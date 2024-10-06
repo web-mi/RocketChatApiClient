@@ -179,8 +179,8 @@ class PostApiV1LivechatTriggersRequestActionsInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'params' => 'setParams'
+        'name' => 'set_name',
+        'params' => 'set_params'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatTriggersRequestActionsInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'params' => 'getParams'
+        'name' => 'get_name',
+        'params' => 'get_params'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1LivechatTriggersRequestActionsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -313,7 +313,7 @@ class PostApiV1LivechatTriggersRequestActionsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1LivechatTriggersRequestActionsInner implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestActionsInnerParams|null
      */
-    public function getParams()
+    public function get_params()
     {
         return $this->container['params'];
     }
@@ -340,7 +340,7 @@ class PostApiV1LivechatTriggersRequestActionsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setParams($params)
+    public function set_params($params)
     {
         if (is_null($params)) {
             throw new \InvalidArgumentException('non-nullable params cannot be null');

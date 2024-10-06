@@ -199,13 +199,13 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'emails' => 'setEmails',
-        'status' => 'setStatus',
-        'name' => 'setName',
-        'status_livechat' => 'setStatusLivechat',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'emails' => 'set_emails',
+        'status' => 'set_status',
+        'name' => 'set_name',
+        'status_livechat' => 'set_status_livechat',
+        'success' => 'set_success'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'emails' => 'getEmails',
-        'status' => 'getStatus',
-        'name' => 'getName',
-        'status_livechat' => 'getStatusLivechat',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'emails' => 'get_emails',
+        'status' => 'get_status',
+        'name' => 'get_name',
+        'status_livechat' => 'get_status_livechat',
+        'success' => 'get_success'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -348,7 +348,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -375,7 +375,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null
      */
-    public function getEmails()
+    public function get_emails()
     {
         return $this->container['emails'];
     }
@@ -402,7 +402,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setEmails($emails)
+    public function set_emails($emails)
     {
         if (is_null($emails)) {
             throw new \InvalidArgumentException('non-nullable emails cannot be null');
@@ -417,7 +417,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -429,7 +429,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -444,7 +444,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -456,7 +456,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -471,7 +471,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getStatusLivechat()
+    public function get_status_livechat()
     {
         return $this->container['status_livechat'];
     }
@@ -483,7 +483,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setStatusLivechat($status_livechat)
+    public function set_status_livechat($status_livechat)
     {
         if (is_null($status_livechat)) {
             throw new \InvalidArgumentException('non-nullable status_livechat cannot be null');
@@ -498,7 +498,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -510,7 +510,7 @@ class GetApiV1LivechatMonitorsGetOne200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

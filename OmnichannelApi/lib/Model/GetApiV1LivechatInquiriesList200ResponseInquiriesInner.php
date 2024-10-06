@@ -191,11 +191,11 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'name' => 'setName',
-        'ts' => 'setTs',
-        'status' => 'setStatus'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'name' => 'set_name',
+        'ts' => 'set_ts',
+        'status' => 'set_status'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'name' => 'getName',
-        'ts' => 'getTs',
-        'status' => 'getStatus'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'name' => 'get_name',
+        'ts' => 'get_ts',
+        'status' => 'get_status'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatInquiriesList200ResponseInquiriesInner implements ModelInt
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');

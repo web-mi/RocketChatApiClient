@@ -175,7 +175,7 @@ class PostApiV1UsersUpdate200ResponseUserServicesPassword implements ModelInterf
      * @var string[]
      */
     protected static $setters = [
-        'bcrypt' => 'setBcrypt'
+        'bcrypt' => 'set_bcrypt'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersUpdate200ResponseUserServicesPassword implements ModelInterf
      * @var string[]
      */
     protected static $getters = [
-        'bcrypt' => 'getBcrypt'
+        'bcrypt' => 'get_bcrypt'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersUpdate200ResponseUserServicesPassword implements ModelInterf
      *
      * @return string|null
      */
-    public function getBcrypt()
+    public function get_bcrypt()
     {
         return $this->container['bcrypt'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersUpdate200ResponseUserServicesPassword implements ModelInterf
      *
      * @return self
      */
-    public function setBcrypt($bcrypt)
+    public function set_bcrypt($bcrypt)
     {
         if (is_null($bcrypt)) {
             throw new \InvalidArgumentException('non-nullable bcrypt cannot be null');

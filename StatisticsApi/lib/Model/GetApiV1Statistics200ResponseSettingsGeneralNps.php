@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsGeneralNps implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'survey_enabled' => 'setSurveyEnabled'
+        'survey_enabled' => 'set_survey_enabled'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsGeneralNps implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'survey_enabled' => 'getSurveyEnabled'
+        'survey_enabled' => 'get_survey_enabled'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsGeneralNps implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getSurveyEnabled()
+    public function get_survey_enabled()
     {
         return $this->container['survey_enabled'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsGeneralNps implements ModelInterface,
      *
      * @return self
      */
-    public function setSurveyEnabled($survey_enabled)
+    public function set_survey_enabled($survey_enabled)
     {
         if (is_null($survey_enabled)) {
             throw new \InvalidArgumentException('non-nullable survey_enabled cannot be null');

@@ -195,12 +195,12 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      * @var string[]
      */
     protected static $setters = [
-        'host' => 'setHost',
-        'port' => 'setPort',
-        'tcp_port' => 'setTcpPort',
-        'os' => 'setOs',
-        'node_version' => 'setNodeVersion',
-        'conns' => 'setConns'
+        'host' => 'set_host',
+        'port' => 'set_port',
+        'tcp_port' => 'set_tcp_port',
+        'os' => 'set_os',
+        'node_version' => 'set_node_version',
+        'conns' => 'set_conns'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      * @var string[]
      */
     protected static $getters = [
-        'host' => 'getHost',
-        'port' => 'getPort',
-        'tcp_port' => 'getTcpPort',
-        'os' => 'getOs',
-        'node_version' => 'getNodeVersion',
-        'conns' => 'getConns'
+        'host' => 'get_host',
+        'port' => 'get_port',
+        'tcp_port' => 'get_tcp_port',
+        'os' => 'get_os',
+        'node_version' => 'get_node_version',
+        'conns' => 'get_conns'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return string|null
      */
-    public function getHost()
+    public function get_host()
     {
         return $this->container['host'];
     }
@@ -341,7 +341,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return self
      */
-    public function setHost($host)
+    public function set_host($host)
     {
         if (is_null($host)) {
             throw new \InvalidArgumentException('non-nullable host cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return string|null
      */
-    public function getPort()
+    public function get_port()
     {
         return $this->container['port'];
     }
@@ -368,7 +368,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return self
      */
-    public function setPort($port)
+    public function set_port($port)
     {
         if (is_null($port)) {
             throw new \InvalidArgumentException('non-nullable port cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return int|null
      */
-    public function getTcpPort()
+    public function get_tcp_port()
     {
         return $this->container['tcp_port'];
     }
@@ -395,7 +395,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return self
      */
-    public function setTcpPort($tcp_port)
+    public function set_tcp_port($tcp_port)
     {
         if (is_null($tcp_port)) {
             throw new \InvalidArgumentException('non-nullable tcp_port cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformationOs|null
      */
-    public function getOs()
+    public function get_os()
     {
         return $this->container['os'];
     }
@@ -422,7 +422,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return self
      */
-    public function setOs($os)
+    public function set_os($os)
     {
         if (is_null($os)) {
             throw new \InvalidArgumentException('non-nullable os cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return string|null
      */
-    public function getNodeVersion()
+    public function get_node_version()
     {
         return $this->container['node_version'];
     }
@@ -449,7 +449,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return self
      */
-    public function setNodeVersion($node_version)
+    public function set_node_version($node_version)
     {
         if (is_null($node_version)) {
             throw new \InvalidArgumentException('non-nullable node_version cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return int|null
      */
-    public function getConns()
+    public function get_conns()
     {
         return $this->container['conns'];
     }
@@ -476,7 +476,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformatio
      *
      * @return self
      */
-    public function setConns($conns)
+    public function set_conns($conns)
     {
         if (is_null($conns)) {
             throw new \InvalidArgumentException('non-nullable conns cannot be null');

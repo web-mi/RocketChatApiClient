@@ -179,8 +179,8 @@ class GetApiV1LicensesGet200Response implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'licenses' => 'setLicenses',
-        'success' => 'setSuccess'
+        'licenses' => 'set_licenses',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LicensesGet200Response implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'licenses' => 'getLicenses',
-        'success' => 'getSuccess'
+        'licenses' => 'get_licenses',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LicensesGet200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInner[]|null
      */
-    public function getLicenses()
+    public function get_licenses()
     {
         return $this->container['licenses'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LicensesGet200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setLicenses($licenses)
+    public function set_licenses($licenses)
     {
         if (is_null($licenses)) {
             throw new \InvalidArgumentException('non-nullable licenses cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LicensesGet200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LicensesGet200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

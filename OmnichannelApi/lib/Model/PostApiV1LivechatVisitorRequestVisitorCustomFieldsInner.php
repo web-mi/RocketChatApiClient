@@ -183,9 +183,9 @@ class PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'key' => 'setKey',
-        'value' => 'setValue',
-        'overwrite' => 'setOverwrite'
+        'key' => 'set_key',
+        'value' => 'set_value',
+        'overwrite' => 'set_overwrite'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'key' => 'getKey',
-        'value' => 'getValue',
-        'overwrite' => 'getOverwrite'
+        'key' => 'get_key',
+        'value' => 'get_value',
+        'overwrite' => 'get_overwrite'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getKey()
+    public function get_key()
     {
         return $this->container['key'];
     }
@@ -320,7 +320,7 @@ class PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner implements ModelIn
      *
      * @return self
      */
-    public function setKey($key)
+    public function set_key($key)
     {
         if (is_null($key)) {
             throw new \InvalidArgumentException('non-nullable key cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -347,7 +347,7 @@ class PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner implements ModelIn
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner implements ModelIn
      *
      * @return bool|null
      */
-    public function getOverwrite()
+    public function get_overwrite()
     {
         return $this->container['overwrite'];
     }
@@ -374,7 +374,7 @@ class PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner implements ModelIn
      *
      * @return self
      */
-    public function setOverwrite($overwrite)
+    public function set_overwrite($overwrite)
     {
         if (is_null($overwrite)) {
             throw new \InvalidArgumentException('non-nullable overwrite cannot be null');

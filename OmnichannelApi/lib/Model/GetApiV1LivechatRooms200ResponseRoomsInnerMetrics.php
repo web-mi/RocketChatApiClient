@@ -175,7 +175,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetrics implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'v' => 'setV'
+        'v' => 'set_v'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetrics implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'v' => 'getV'
+        'v' => 'get_v'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetrics implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV|null
      */
-    public function getV()
+    public function get_v()
     {
         return $this->container['v'];
     }
@@ -306,7 +306,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetrics implements ModelInterfac
      *
      * @return self
      */
-    public function setV($v)
+    public function set_v($v)
     {
         if (is_null($v)) {
             throw new \InvalidArgumentException('non-nullable v cannot be null');

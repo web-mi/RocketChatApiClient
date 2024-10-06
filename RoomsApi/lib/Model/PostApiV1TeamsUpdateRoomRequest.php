@@ -179,8 +179,8 @@ class PostApiV1TeamsUpdateRoomRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'is_default' => 'setIsDefault'
+        'room_id' => 'set_room_id',
+        'is_default' => 'set_is_default'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1TeamsUpdateRoomRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'is_default' => 'getIsDefault'
+        'room_id' => 'get_room_id',
+        'is_default' => 'get_is_default'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1TeamsUpdateRoomRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1TeamsUpdateRoomRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1TeamsUpdateRoomRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return bool
      */
-    public function getIsDefault()
+    public function get_is_default()
     {
         return $this->container['is_default'];
     }
@@ -346,7 +346,7 @@ class PostApiV1TeamsUpdateRoomRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setIsDefault($is_default)
+    public function set_is_default($is_default)
     {
         if (is_null($is_default)) {
             throw new \InvalidArgumentException('non-nullable is_default cannot be null');

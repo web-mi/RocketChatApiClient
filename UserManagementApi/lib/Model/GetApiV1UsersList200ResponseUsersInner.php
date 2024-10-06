@@ -215,17 +215,17 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'emails' => 'setEmails',
-        'type' => 'setType',
-        'status' => 'setStatus',
-        'active' => 'setActive',
-        'roles' => 'setRoles',
-        'name' => 'setName',
-        'last_login' => 'setLastLogin',
-        'name_insensitive' => 'setNameInsensitive',
-        'avatar_e_tag' => 'setAvatarETag'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'emails' => 'set_emails',
+        'type' => 'set_type',
+        'status' => 'set_status',
+        'active' => 'set_active',
+        'roles' => 'set_roles',
+        'name' => 'set_name',
+        'last_login' => 'set_last_login',
+        'name_insensitive' => 'set_name_insensitive',
+        'avatar_e_tag' => 'set_avatar_e_tag'
     ];
 
     /**
@@ -234,17 +234,17 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'emails' => 'getEmails',
-        'type' => 'getType',
-        'status' => 'getStatus',
-        'active' => 'getActive',
-        'roles' => 'getRoles',
-        'name' => 'getName',
-        'last_login' => 'getLastLogin',
-        'name_insensitive' => 'getNameInsensitive',
-        'avatar_e_tag' => 'getAvatarETag'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'emails' => 'get_emails',
+        'type' => 'get_type',
+        'status' => 'get_status',
+        'active' => 'get_active',
+        'roles' => 'get_roles',
+        'name' => 'get_name',
+        'last_login' => 'get_last_login',
+        'name_insensitive' => 'get_name_insensitive',
+        'avatar_e_tag' => 'get_avatar_e_tag'
     ];
 
     /**
@@ -364,7 +364,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -376,7 +376,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -391,7 +391,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -403,7 +403,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -418,7 +418,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null
      */
-    public function getEmails()
+    public function get_emails()
     {
         return $this->container['emails'];
     }
@@ -430,7 +430,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setEmails($emails)
+    public function set_emails($emails)
     {
         if (is_null($emails)) {
             throw new \InvalidArgumentException('non-nullable emails cannot be null');
@@ -445,7 +445,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -457,7 +457,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -472,7 +472,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -484,7 +484,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -499,7 +499,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -511,7 +511,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');
@@ -526,7 +526,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -538,7 +538,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -553,7 +553,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -565,7 +565,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -580,7 +580,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getLastLogin()
+    public function get_last_login()
     {
         return $this->container['last_login'];
     }
@@ -592,7 +592,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setLastLogin($last_login)
+    public function set_last_login($last_login)
     {
         if (is_null($last_login)) {
             throw new \InvalidArgumentException('non-nullable last_login cannot be null');
@@ -607,7 +607,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getNameInsensitive()
+    public function get_name_insensitive()
     {
         return $this->container['name_insensitive'];
     }
@@ -619,7 +619,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setNameInsensitive($name_insensitive)
+    public function set_name_insensitive($name_insensitive)
     {
         if (is_null($name_insensitive)) {
             throw new \InvalidArgumentException('non-nullable name_insensitive cannot be null');
@@ -634,7 +634,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getAvatarETag()
+    public function get_avatar_e_tag()
     {
         return $this->container['avatar_e_tag'];
     }
@@ -646,7 +646,7 @@ class GetApiV1UsersList200ResponseUsersInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setAvatarETag($avatar_e_tag)
+    public function set_avatar_e_tag($avatar_e_tag)
     {
         if (is_null($avatar_e_tag)) {
             throw new \InvalidArgumentException('non-nullable avatar_e_tag cannot be null');

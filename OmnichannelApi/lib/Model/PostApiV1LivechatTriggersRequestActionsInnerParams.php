@@ -196,12 +196,12 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'sender' => 'setSender',
-        'name' => 'setName',
-        'msg' => 'setMsg',
-        'service_url' => 'setServiceUrl',
-        'service_timeout' => 'setServiceTimeout',
-        'service_fallback_message' => 'setServiceFallbackMessage'
+        'sender' => 'set_sender',
+        'name' => 'set_name',
+        'msg' => 'set_msg',
+        'service_url' => 'set_service_url',
+        'service_timeout' => 'set_service_timeout',
+        'service_fallback_message' => 'set_service_fallback_message'
     ];
 
     /**
@@ -210,12 +210,12 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'sender' => 'getSender',
-        'name' => 'getName',
-        'msg' => 'getMsg',
-        'service_url' => 'getServiceUrl',
-        'service_timeout' => 'getServiceTimeout',
-        'service_fallback_message' => 'getServiceFallbackMessage'
+        'sender' => 'get_sender',
+        'name' => 'get_name',
+        'msg' => 'get_msg',
+        'service_url' => 'get_service_url',
+        'service_timeout' => 'get_service_timeout',
+        'service_fallback_message' => 'get_service_fallback_message'
     ];
 
     /**
@@ -330,7 +330,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return string|null
      */
-    public function getSender()
+    public function get_sender()
     {
         return $this->container['sender'];
     }
@@ -342,7 +342,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return self
      */
-    public function setSender($sender)
+    public function set_sender($sender)
     {
         if (is_null($sender)) {
             throw new \InvalidArgumentException('non-nullable sender cannot be null');
@@ -357,7 +357,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -369,7 +369,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -384,7 +384,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -396,7 +396,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -411,7 +411,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return string|null
      */
-    public function getServiceUrl()
+    public function get_service_url()
     {
         return $this->container['service_url'];
     }
@@ -423,7 +423,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return self
      */
-    public function setServiceUrl($service_url)
+    public function set_service_url($service_url)
     {
         if (is_null($service_url)) {
             throw new \InvalidArgumentException('non-nullable service_url cannot be null');
@@ -438,7 +438,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return float|null
      */
-    public function getServiceTimeout()
+    public function get_service_timeout()
     {
         return $this->container['service_timeout'];
     }
@@ -450,7 +450,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return self
      */
-    public function setServiceTimeout($service_timeout)
+    public function set_service_timeout($service_timeout)
     {
         if (is_null($service_timeout)) {
             throw new \InvalidArgumentException('non-nullable service_timeout cannot be null');
@@ -465,7 +465,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return string|null
      */
-    public function getServiceFallbackMessage()
+    public function get_service_fallback_message()
     {
         return $this->container['service_fallback_message'];
     }
@@ -477,7 +477,7 @@ class PostApiV1LivechatTriggersRequestActionsInnerParams implements ModelInterfa
      *
      * @return self
      */
-    public function setServiceFallbackMessage($service_fallback_message)
+    public function set_service_fallback_message($service_fallback_message)
     {
         if (is_null($service_fallback_message)) {
             throw new \InvalidArgumentException('non-nullable service_fallback_message cannot be null');

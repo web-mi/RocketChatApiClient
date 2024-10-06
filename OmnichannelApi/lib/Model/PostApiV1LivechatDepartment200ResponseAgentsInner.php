@@ -183,9 +183,9 @@ class PostApiV1LivechatDepartment200ResponseAgentsInner implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'agent_id' => 'setAgentId',
-        'count' => 'setCount',
-        'order' => 'setOrder'
+        'agent_id' => 'set_agent_id',
+        'count' => 'set_count',
+        'order' => 'set_order'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatDepartment200ResponseAgentsInner implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'agent_id' => 'getAgentId',
-        'count' => 'getCount',
-        'order' => 'getOrder'
+        'agent_id' => 'get_agent_id',
+        'count' => 'get_count',
+        'order' => 'get_order'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1LivechatDepartment200ResponseAgentsInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getAgentId()
+    public function get_agent_id()
     {
         return $this->container['agent_id'];
     }
@@ -320,7 +320,7 @@ class PostApiV1LivechatDepartment200ResponseAgentsInner implements ModelInterfac
      *
      * @return self
      */
-    public function setAgentId($agent_id)
+    public function set_agent_id($agent_id)
     {
         if (is_null($agent_id)) {
             throw new \InvalidArgumentException('non-nullable agent_id cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1LivechatDepartment200ResponseAgentsInner implements ModelInterfac
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -347,7 +347,7 @@ class PostApiV1LivechatDepartment200ResponseAgentsInner implements ModelInterfac
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1LivechatDepartment200ResponseAgentsInner implements ModelInterfac
      *
      * @return int|null
      */
-    public function getOrder()
+    public function get_order()
     {
         return $this->container['order'];
     }
@@ -374,7 +374,7 @@ class PostApiV1LivechatDepartment200ResponseAgentsInner implements ModelInterfac
      *
      * @return self
      */
-    public function setOrder($order)
+    public function set_order($order)
     {
         if (is_null($order)) {
             throw new \InvalidArgumentException('non-nullable order cannot be null');

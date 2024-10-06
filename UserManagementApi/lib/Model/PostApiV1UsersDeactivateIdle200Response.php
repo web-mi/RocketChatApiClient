@@ -179,8 +179,8 @@ class PostApiV1UsersDeactivateIdle200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'count' => 'setCount',
-        'success' => 'setSuccess'
+        'count' => 'set_count',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersDeactivateIdle200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'count' => 'getCount',
-        'success' => 'getSuccess'
+        'count' => 'get_count',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersDeactivateIdle200Response implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersDeactivateIdle200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersDeactivateIdle200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersDeactivateIdle200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

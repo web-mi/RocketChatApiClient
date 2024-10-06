@@ -191,11 +191,11 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'monitor_id' => 'setMonitorId',
-        'unit_id' => 'setUnitId',
-        '_updated_at' => 'setUpdatedAt',
-        'username' => 'setUsername'
+        '_id' => 'set__id',
+        'monitor_id' => 'set_monitor_id',
+        'unit_id' => 'set_unit_id',
+        '_updated_at' => 'set__updated_at',
+        'username' => 'set_username'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'monitor_id' => 'getMonitorId',
-        'unit_id' => 'getUnitId',
-        '_updated_at' => 'getUpdatedAt',
-        'username' => 'getUsername'
+        '_id' => 'get__id',
+        'monitor_id' => 'get_monitor_id',
+        'unit_id' => 'get_unit_id',
+        '_updated_at' => 'get__updated_at',
+        'username' => 'get_username'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return string|null
      */
-    public function getMonitorId()
+    public function get_monitor_id()
     {
         return $this->container['monitor_id'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return self
      */
-    public function setMonitorId($monitor_id)
+    public function set_monitor_id($monitor_id)
     {
         if (is_null($monitor_id)) {
             throw new \InvalidArgumentException('non-nullable monitor_id cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return string|null
      */
-    public function getUnitId()
+    public function get_unit_id()
     {
         return $this->container['unit_id'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return self
      */
-    public function setUnitId($unit_id)
+    public function set_unit_id($unit_id)
     {
         if (is_null($unit_id)) {
             throw new \InvalidArgumentException('non-nullable unit_id cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatUnitsUnitIdMonitors200ResponseMonitorsInner implements Mod
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');

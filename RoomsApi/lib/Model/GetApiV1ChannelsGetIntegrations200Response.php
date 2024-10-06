@@ -179,8 +179,8 @@ class GetApiV1ChannelsGetIntegrations200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'integrations' => 'setIntegrations',
-        'success' => 'setSuccess'
+        'integrations' => 'set_integrations',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ChannelsGetIntegrations200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'integrations' => 'getIntegrations',
-        'success' => 'getSuccess'
+        'integrations' => 'get_integrations',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ChannelsGetIntegrations200Response implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner[]|null
      */
-    public function getIntegrations()
+    public function get_integrations()
     {
         return $this->container['integrations'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ChannelsGetIntegrations200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setIntegrations($integrations)
+    public function set_integrations($integrations)
     {
         if (is_null($integrations)) {
             throw new \InvalidArgumentException('non-nullable integrations cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ChannelsGetIntegrations200Response implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ChannelsGetIntegrations200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

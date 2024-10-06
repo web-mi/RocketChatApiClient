@@ -255,27 +255,27 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'type' => 'setType',
-        'session_id' => 'setSessionId',
-        'instance_id' => 'setInstanceId',
-        'login_token' => 'setLoginToken',
-        'ip' => 'setIp',
-        'host' => 'setHost',
-        'device' => 'setDevice',
-        'user_id' => 'setUserId',
-        'roles' => 'setRoles',
-        'most_important_role' => 'setMostImportantRole',
-        'login_at' => 'setLoginAt',
-        'day' => 'setDay',
-        'month' => 'setMonth',
-        'year' => 'setYear',
-        'search_term' => 'setSearchTerm',
-        'created_at' => 'setCreatedAt',
-        '_updated_at' => 'setUpdatedAt',
-        'closed_at' => 'setClosedAt',
-        'last_activity_at' => 'setLastActivityAt',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'type' => 'set_type',
+        'session_id' => 'set_session_id',
+        'instance_id' => 'set_instance_id',
+        'login_token' => 'set_login_token',
+        'ip' => 'set_ip',
+        'host' => 'set_host',
+        'device' => 'set_device',
+        'user_id' => 'set_user_id',
+        'roles' => 'set_roles',
+        'most_important_role' => 'set_most_important_role',
+        'login_at' => 'set_login_at',
+        'day' => 'set_day',
+        'month' => 'set_month',
+        'year' => 'set_year',
+        'search_term' => 'set_search_term',
+        'created_at' => 'set_created_at',
+        '_updated_at' => 'set__updated_at',
+        'closed_at' => 'set_closed_at',
+        'last_activity_at' => 'set_last_activity_at',
+        'success' => 'set_success'
     ];
 
     /**
@@ -284,27 +284,27 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'type' => 'getType',
-        'session_id' => 'getSessionId',
-        'instance_id' => 'getInstanceId',
-        'login_token' => 'getLoginToken',
-        'ip' => 'getIp',
-        'host' => 'getHost',
-        'device' => 'getDevice',
-        'user_id' => 'getUserId',
-        'roles' => 'getRoles',
-        'most_important_role' => 'getMostImportantRole',
-        'login_at' => 'getLoginAt',
-        'day' => 'getDay',
-        'month' => 'getMonth',
-        'year' => 'getYear',
-        'search_term' => 'getSearchTerm',
-        'created_at' => 'getCreatedAt',
-        '_updated_at' => 'getUpdatedAt',
-        'closed_at' => 'getClosedAt',
-        'last_activity_at' => 'getLastActivityAt',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'type' => 'get_type',
+        'session_id' => 'get_session_id',
+        'instance_id' => 'get_instance_id',
+        'login_token' => 'get_login_token',
+        'ip' => 'get_ip',
+        'host' => 'get_host',
+        'device' => 'get_device',
+        'user_id' => 'get_user_id',
+        'roles' => 'get_roles',
+        'most_important_role' => 'get_most_important_role',
+        'login_at' => 'get_login_at',
+        'day' => 'get_day',
+        'month' => 'get_month',
+        'year' => 'get_year',
+        'search_term' => 'get_search_term',
+        'created_at' => 'get_created_at',
+        '_updated_at' => 'get__updated_at',
+        'closed_at' => 'get_closed_at',
+        'last_activity_at' => 'get_last_activity_at',
+        'success' => 'get_success'
     ];
 
     /**
@@ -434,7 +434,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -446,7 +446,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -461,7 +461,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -473,7 +473,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -488,7 +488,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getSessionId()
+    public function get_session_id()
     {
         return $this->container['session_id'];
     }
@@ -500,7 +500,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSessionId($session_id)
+    public function set_session_id($session_id)
     {
         if (is_null($session_id)) {
             throw new \InvalidArgumentException('non-nullable session_id cannot be null');
@@ -515,7 +515,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getInstanceId()
+    public function get_instance_id()
     {
         return $this->container['instance_id'];
     }
@@ -527,7 +527,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setInstanceId($instance_id)
+    public function set_instance_id($instance_id)
     {
         if (is_null($instance_id)) {
             throw new \InvalidArgumentException('non-nullable instance_id cannot be null');
@@ -542,7 +542,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getLoginToken()
+    public function get_login_token()
     {
         return $this->container['login_token'];
     }
@@ -554,7 +554,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setLoginToken($login_token)
+    public function set_login_token($login_token)
     {
         if (is_null($login_token)) {
             throw new \InvalidArgumentException('non-nullable login_token cannot be null');
@@ -569,7 +569,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getIp()
+    public function get_ip()
     {
         return $this->container['ip'];
     }
@@ -581,7 +581,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setIp($ip)
+    public function set_ip($ip)
     {
         if (is_null($ip)) {
             throw new \InvalidArgumentException('non-nullable ip cannot be null');
@@ -596,7 +596,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getHost()
+    public function get_host()
     {
         return $this->container['host'];
     }
@@ -608,7 +608,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setHost($host)
+    public function set_host($host)
     {
         if (is_null($host)) {
             throw new \InvalidArgumentException('non-nullable host cannot be null');
@@ -623,7 +623,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null
      */
-    public function getDevice()
+    public function get_device()
     {
         return $this->container['device'];
     }
@@ -635,7 +635,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setDevice($device)
+    public function set_device($device)
     {
         if (is_null($device)) {
             throw new \InvalidArgumentException('non-nullable device cannot be null');
@@ -650,7 +650,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -662,7 +662,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -677,7 +677,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -689,7 +689,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -704,7 +704,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getMostImportantRole()
+    public function get_most_important_role()
     {
         return $this->container['most_important_role'];
     }
@@ -716,7 +716,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setMostImportantRole($most_important_role)
+    public function set_most_important_role($most_important_role)
     {
         if (is_null($most_important_role)) {
             throw new \InvalidArgumentException('non-nullable most_important_role cannot be null');
@@ -731,7 +731,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getLoginAt()
+    public function get_login_at()
     {
         return $this->container['login_at'];
     }
@@ -743,7 +743,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setLoginAt($login_at)
+    public function set_login_at($login_at)
     {
         if (is_null($login_at)) {
             throw new \InvalidArgumentException('non-nullable login_at cannot be null');
@@ -758,7 +758,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return int|null
      */
-    public function getDay()
+    public function get_day()
     {
         return $this->container['day'];
     }
@@ -770,7 +770,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setDay($day)
+    public function set_day($day)
     {
         if (is_null($day)) {
             throw new \InvalidArgumentException('non-nullable day cannot be null');
@@ -785,7 +785,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return int|null
      */
-    public function getMonth()
+    public function get_month()
     {
         return $this->container['month'];
     }
@@ -797,7 +797,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setMonth($month)
+    public function set_month($month)
     {
         if (is_null($month)) {
             throw new \InvalidArgumentException('non-nullable month cannot be null');
@@ -812,7 +812,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return int|null
      */
-    public function getYear()
+    public function get_year()
     {
         return $this->container['year'];
     }
@@ -824,7 +824,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setYear($year)
+    public function set_year($year)
     {
         if (is_null($year)) {
             throw new \InvalidArgumentException('non-nullable year cannot be null');
@@ -839,7 +839,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getSearchTerm()
+    public function get_search_term()
     {
         return $this->container['search_term'];
     }
@@ -851,7 +851,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSearchTerm($search_term)
+    public function set_search_term($search_term)
     {
         if (is_null($search_term)) {
             throw new \InvalidArgumentException('non-nullable search_term cannot be null');
@@ -866,7 +866,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -878,7 +878,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -893,7 +893,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -905,7 +905,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -920,7 +920,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getClosedAt()
+    public function get_closed_at()
     {
         return $this->container['closed_at'];
     }
@@ -932,7 +932,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setClosedAt($closed_at)
+    public function set_closed_at($closed_at)
     {
         if (is_null($closed_at)) {
             throw new \InvalidArgumentException('non-nullable closed_at cannot be null');
@@ -947,7 +947,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getLastActivityAt()
+    public function get_last_activity_at()
     {
         return $this->container['last_activity_at'];
     }
@@ -959,7 +959,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setLastActivityAt($last_activity_at)
+    public function set_last_activity_at($last_activity_at)
     {
         if (is_null($last_activity_at)) {
             throw new \InvalidArgumentException('non-nullable last_activity_at cannot be null');
@@ -974,7 +974,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -986,7 +986,7 @@ class GetApiV1SessionsInfo200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

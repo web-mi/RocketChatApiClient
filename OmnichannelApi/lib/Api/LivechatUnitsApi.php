@@ -119,7 +119,7 @@ class LivechatUnitsApi
         $hostIndex = 0
     ) {
         $this->client = $client ?: new Client();
-        $this->config = $config ?: new Configuration();
+        $this->config = $config ?: Configuration::getDefaultConfiguration();
         $this->headerSelector = $selector ?: new HeaderSelector();
         $this->hostIndex = $hostIndex;
     }
@@ -157,7 +157,7 @@ class LivechatUnitsApi
      *
      * Delete a Unit
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1LivechatUnitsId'] to see the possible values for this operation
@@ -177,7 +177,7 @@ class LivechatUnitsApi
      *
      * Delete a Unit
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1LivechatUnitsId'] to see the possible values for this operation
@@ -373,7 +373,7 @@ class LivechatUnitsApi
      *
      * Delete a Unit
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1LivechatUnitsId'] to see the possible values for this operation
@@ -396,7 +396,7 @@ class LivechatUnitsApi
      *
      * Delete a Unit
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1LivechatUnitsId'] to see the possible values for this operation
@@ -448,7 +448,7 @@ class LivechatUnitsApi
     /**
      * Create request for operation 'deleteApiV1LivechatUnitsId'
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['deleteApiV1LivechatUnitsId'] to see the possible values for this operation
@@ -2002,7 +2002,7 @@ class LivechatUnitsApi
      *
      * Get a Unit
      *
-     * @param  string $unit_id The unit ID. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitId'] to see the possible values for this operation
@@ -2011,9 +2011,9 @@ class LivechatUnitsApi
      * @throws \InvalidArgumentException
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response
      */
-    public function getApiV1LivechatUnitsUnitId($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
+    public function getApiV1LivechatUnitsUnitId($id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
     {
-        list($response) = $this->getApiV1LivechatUnitsUnitIdWithHttpInfo($unit_id, $x_auth_token, $x_user_id, $contentType);
+        list($response) = $this->getApiV1LivechatUnitsUnitIdWithHttpInfo($id, $x_auth_token, $x_user_id, $contentType);
         return $response;
     }
 
@@ -2022,7 +2022,7 @@ class LivechatUnitsApi
      *
      * Get a Unit
      *
-     * @param  string $unit_id The unit ID. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitId'] to see the possible values for this operation
@@ -2031,9 +2031,9 @@ class LivechatUnitsApi
      * @throws \InvalidArgumentException
      * @return array of \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType401Response|\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType403Response, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getApiV1LivechatUnitsUnitIdWithHttpInfo($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
+    public function getApiV1LivechatUnitsUnitIdWithHttpInfo($id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
     {
-        $request = $this->getApiV1LivechatUnitsUnitIdRequest($unit_id, $x_auth_token, $x_user_id, $contentType);
+        $request = $this->getApiV1LivechatUnitsUnitIdRequest($id, $x_auth_token, $x_user_id, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -2218,7 +2218,7 @@ class LivechatUnitsApi
      *
      * Get a Unit
      *
-     * @param  string $unit_id The unit ID. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitId'] to see the possible values for this operation
@@ -2226,9 +2226,9 @@ class LivechatUnitsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getApiV1LivechatUnitsUnitIdAsync($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
+    public function getApiV1LivechatUnitsUnitIdAsync($id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
     {
-        return $this->getApiV1LivechatUnitsUnitIdAsyncWithHttpInfo($unit_id, $x_auth_token, $x_user_id, $contentType)
+        return $this->getApiV1LivechatUnitsUnitIdAsyncWithHttpInfo($id, $x_auth_token, $x_user_id, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -2241,7 +2241,7 @@ class LivechatUnitsApi
      *
      * Get a Unit
      *
-     * @param  string $unit_id The unit ID. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitId'] to see the possible values for this operation
@@ -2249,10 +2249,10 @@ class LivechatUnitsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getApiV1LivechatUnitsUnitIdAsyncWithHttpInfo($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
+    public function getApiV1LivechatUnitsUnitIdAsyncWithHttpInfo($id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
     {
         $returnType = '\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUnitsUnitId200Response';
-        $request = $this->getApiV1LivechatUnitsUnitIdRequest($unit_id, $x_auth_token, $x_user_id, $contentType);
+        $request = $this->getApiV1LivechatUnitsUnitIdRequest($id, $x_auth_token, $x_user_id, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2293,7 +2293,7 @@ class LivechatUnitsApi
     /**
      * Create request for operation 'getApiV1LivechatUnitsUnitId'
      *
-     * @param  string $unit_id The unit ID. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1LivechatUnitsUnitId'] to see the possible values for this operation
@@ -2301,13 +2301,13 @@ class LivechatUnitsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function getApiV1LivechatUnitsUnitIdRequest($unit_id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
+    public function getApiV1LivechatUnitsUnitIdRequest($id, $x_auth_token, $x_user_id, string $contentType = self::contentTypes['getApiV1LivechatUnitsUnitId'][0])
     {
 
-        // verify the required parameter 'unit_id' is set
-        if ($unit_id === null || (is_array($unit_id) && count($unit_id) === 0)) {
+        // verify the required parameter 'id' is set
+        if ($id === null || (is_array($id) && count($id) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $unit_id when calling getApiV1LivechatUnitsUnitId'
+                'Missing the required parameter $id when calling getApiV1LivechatUnitsUnitId'
             );
         }
 
@@ -2326,7 +2326,7 @@ class LivechatUnitsApi
         }
 
 
-        $resourcePath = '/api/v1/livechat/units/{unitId}';
+        $resourcePath = '/api/v1/livechat/units/{id}';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
@@ -2344,10 +2344,10 @@ class LivechatUnitsApi
         }
 
         // path params
-        if ($unit_id !== null) {
+        if ($id !== null) {
             $resourcePath = str_replace(
-                '{' . 'unitId' . '}',
-                ObjectSerializer::toPathValue($unit_id),
+                '{' . 'id' . '}',
+                ObjectSerializer::toPathValue($id),
                 $resourcePath
             );
         }
@@ -4165,7 +4165,7 @@ class LivechatUnitsApi
      *
      * Update Unit
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request post_api_v1_livechat_units_id_request (optional)
@@ -4186,7 +4186,7 @@ class LivechatUnitsApi
      *
      * Update Unit
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
@@ -4383,7 +4383,7 @@ class LivechatUnitsApi
      *
      * Update Unit
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
@@ -4407,7 +4407,7 @@ class LivechatUnitsApi
      *
      * Update Unit
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)
@@ -4460,7 +4460,7 @@ class LivechatUnitsApi
     /**
      * Create request for operation 'postApiV1LivechatUnitsId'
      *
-     * @param  string $id The unit ID that you want to update. (required)
+     * @param  string $id The unit ID. (required)
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
      * @param  \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequest $post_api_v1_livechat_units_id_request (optional)

@@ -183,9 +183,9 @@ class GetApiV1LivechatQueue200ResponseQueueInnerUser implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'status' => 'setStatus'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'status' => 'set_status'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatQueue200ResponseQueueInnerUser implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'status' => 'getStatus'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'status' => 'get_status'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatQueue200ResponseQueueInnerUser implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatQueue200ResponseQueueInnerUser implements ModelInterface, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatQueue200ResponseQueueInnerUser implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatQueue200ResponseQueueInnerUser implements ModelInterface, 
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatQueue200ResponseQueueInnerUser implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatQueue200ResponseQueueInnerUser implements ModelInterface, 
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');

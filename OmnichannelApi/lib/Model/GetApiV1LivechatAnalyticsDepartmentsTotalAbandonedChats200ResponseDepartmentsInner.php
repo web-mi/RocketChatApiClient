@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200ResponseDepartme
      * @var string[]
      */
     protected static $setters = [
-        'abandoned_rooms' => 'setAbandonedRooms',
-        '_id' => 'setId'
+        'abandoned_rooms' => 'set_abandoned_rooms',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200ResponseDepartme
      * @var string[]
      */
     protected static $getters = [
-        'abandoned_rooms' => 'getAbandonedRooms',
-        '_id' => 'getId'
+        'abandoned_rooms' => 'get_abandoned_rooms',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200ResponseDepartme
      *
      * @return int|null
      */
-    public function getAbandonedRooms()
+    public function get_abandoned_rooms()
     {
         return $this->container['abandoned_rooms'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200ResponseDepartme
      *
      * @return self
      */
-    public function setAbandonedRooms($abandoned_rooms)
+    public function set_abandoned_rooms($abandoned_rooms)
     {
         if (is_null($abandoned_rooms)) {
             throw new \InvalidArgumentException('non-nullable abandoned_rooms cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200ResponseDepartme
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalAbandonedChats200ResponseDepartme
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

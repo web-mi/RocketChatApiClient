@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse implem
      * @var string[]
      */
     protected static $setters = [
-        'avg' => 'setAvg',
-        'longest' => 'setLongest'
+        'avg' => 'set_avg',
+        'longest' => 'set_longest'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse implem
      * @var string[]
      */
     protected static $getters = [
-        'avg' => 'getAvg',
-        'longest' => 'getLongest'
+        'avg' => 'get_avg',
+        'longest' => 'get_longest'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse implem
      *
      * @return int|null
      */
-    public function getAvg()
+    public function get_avg()
     {
         return $this->container['avg'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse implem
      *
      * @return self
      */
-    public function setAvg($avg)
+    public function set_avg($avg)
     {
         if (is_null($avg)) {
             throw new \InvalidArgumentException('non-nullable avg cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse implem
      *
      * @return int|null
      */
-    public function getLongest()
+    public function get_longest()
     {
         return $this->container['longest'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsTimings200ResponseResponse implem
      *
      * @return self
      */
-    public function setLongest($longest)
+    public function set_longest($longest)
     {
         if (is_null($longest)) {
             throw new \InvalidArgumentException('non-nullable longest cannot be null');

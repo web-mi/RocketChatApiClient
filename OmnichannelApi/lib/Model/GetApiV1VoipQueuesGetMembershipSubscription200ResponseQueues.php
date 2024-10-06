@@ -199,13 +199,13 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'loggedin' => 'setLoggedin',
-        'available' => 'setAvailable',
-        'callers' => 'setCallers',
-        'holdtime' => 'setHoldtime',
-        'talktime' => 'setTalktime',
-        'longestholdtime' => 'setLongestholdtime'
+        'name' => 'set_name',
+        'loggedin' => 'set_loggedin',
+        'available' => 'set_available',
+        'callers' => 'set_callers',
+        'holdtime' => 'set_holdtime',
+        'talktime' => 'set_talktime',
+        'longestholdtime' => 'set_longestholdtime'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'loggedin' => 'getLoggedin',
-        'available' => 'getAvailable',
-        'callers' => 'getCallers',
-        'holdtime' => 'getHoldtime',
-        'talktime' => 'getTalktime',
-        'longestholdtime' => 'getLongestholdtime'
+        'name' => 'get_name',
+        'loggedin' => 'get_loggedin',
+        'available' => 'get_available',
+        'callers' => 'get_callers',
+        'holdtime' => 'get_holdtime',
+        'talktime' => 'get_talktime',
+        'longestholdtime' => 'get_longestholdtime'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -348,7 +348,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return string|null
      */
-    public function getLoggedin()
+    public function get_loggedin()
     {
         return $this->container['loggedin'];
     }
@@ -375,7 +375,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return self
      */
-    public function setLoggedin($loggedin)
+    public function set_loggedin($loggedin)
     {
         if (is_null($loggedin)) {
             throw new \InvalidArgumentException('non-nullable loggedin cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return string|null
      */
-    public function getAvailable()
+    public function get_available()
     {
         return $this->container['available'];
     }
@@ -402,7 +402,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return self
      */
-    public function setAvailable($available)
+    public function set_available($available)
     {
         if (is_null($available)) {
             throw new \InvalidArgumentException('non-nullable available cannot be null');
@@ -417,7 +417,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return string|null
      */
-    public function getCallers()
+    public function get_callers()
     {
         return $this->container['callers'];
     }
@@ -429,7 +429,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return self
      */
-    public function setCallers($callers)
+    public function set_callers($callers)
     {
         if (is_null($callers)) {
             throw new \InvalidArgumentException('non-nullable callers cannot be null');
@@ -444,7 +444,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return string|null
      */
-    public function getHoldtime()
+    public function get_holdtime()
     {
         return $this->container['holdtime'];
     }
@@ -456,7 +456,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return self
      */
-    public function setHoldtime($holdtime)
+    public function set_holdtime($holdtime)
     {
         if (is_null($holdtime)) {
             throw new \InvalidArgumentException('non-nullable holdtime cannot be null');
@@ -471,7 +471,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return string|null
      */
-    public function getTalktime()
+    public function get_talktime()
     {
         return $this->container['talktime'];
     }
@@ -483,7 +483,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return self
      */
-    public function setTalktime($talktime)
+    public function set_talktime($talktime)
     {
         if (is_null($talktime)) {
             throw new \InvalidArgumentException('non-nullable talktime cannot be null');
@@ -498,7 +498,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return string|null
      */
-    public function getLongestholdtime()
+    public function get_longestholdtime()
     {
         return $this->container['longestholdtime'];
     }
@@ -510,7 +510,7 @@ class GetApiV1VoipQueuesGetMembershipSubscription200ResponseQueues implements Mo
      *
      * @return self
      */
-    public function setLongestholdtime($longestholdtime)
+    public function set_longestholdtime($longestholdtime)
     {
         if (is_null($longestholdtime)) {
             throw new \InvalidArgumentException('non-nullable longestholdtime cannot be null');

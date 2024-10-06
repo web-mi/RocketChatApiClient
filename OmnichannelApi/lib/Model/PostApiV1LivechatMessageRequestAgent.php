@@ -180,8 +180,8 @@ class PostApiV1LivechatMessageRequestAgent implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'agent_id' => 'setAgentId',
-        'username' => 'setUsername'
+        'agent_id' => 'set_agent_id',
+        'username' => 'set_username'
     ];
 
     /**
@@ -190,8 +190,8 @@ class PostApiV1LivechatMessageRequestAgent implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'agent_id' => 'getAgentId',
-        'username' => 'getUsername'
+        'agent_id' => 'get_agent_id',
+        'username' => 'get_username'
     ];
 
     /**
@@ -302,7 +302,7 @@ class PostApiV1LivechatMessageRequestAgent implements ModelInterface, ArrayAcces
      *
      * @return string|null
      */
-    public function getAgentId()
+    public function get_agent_id()
     {
         return $this->container['agent_id'];
     }
@@ -314,7 +314,7 @@ class PostApiV1LivechatMessageRequestAgent implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setAgentId($agent_id)
+    public function set_agent_id($agent_id)
     {
         if (is_null($agent_id)) {
             throw new \InvalidArgumentException('non-nullable agent_id cannot be null');
@@ -329,7 +329,7 @@ class PostApiV1LivechatMessageRequestAgent implements ModelInterface, ArrayAcces
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -341,7 +341,7 @@ class PostApiV1LivechatMessageRequestAgent implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');

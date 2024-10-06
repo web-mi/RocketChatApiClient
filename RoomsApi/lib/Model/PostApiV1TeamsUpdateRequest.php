@@ -179,8 +179,8 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'team_id' => 'setTeamId',
-        'data' => 'setData'
+        'team_id' => 'set_team_id',
+        'data' => 'set_data'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'team_id' => 'getTeamId',
-        'data' => 'getData'
+        'team_id' => 'get_team_id',
+        'data' => 'get_data'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getTeamId()
+    public function get_team_id()
     {
         return $this->container['team_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setTeamId($team_id)
+    public function set_team_id($team_id)
     {
         if (is_null($team_id)) {
             throw new \InvalidArgumentException('non-nullable team_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1TeamsUpdateRequestData
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -346,7 +346,7 @@ class PostApiV1TeamsUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');

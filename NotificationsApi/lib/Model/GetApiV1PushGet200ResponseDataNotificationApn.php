@@ -175,7 +175,7 @@ class GetApiV1PushGet200ResponseDataNotificationApn implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'category' => 'setCategory'
+        'category' => 'set_category'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1PushGet200ResponseDataNotificationApn implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'category' => 'getCategory'
+        'category' => 'get_category'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1PushGet200ResponseDataNotificationApn implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getCategory()
+    public function get_category()
     {
         return $this->container['category'];
     }
@@ -306,7 +306,7 @@ class GetApiV1PushGet200ResponseDataNotificationApn implements ModelInterface, A
      *
      * @return self
      */
-    public function setCategory($category)
+    public function set_category($category)
     {
         if (is_null($category)) {
             throw new \InvalidArgumentException('non-nullable category cannot be null');

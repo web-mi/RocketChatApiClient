@@ -710,7 +710,7 @@ postApiV1LivechatRoomTransfer($post_api_v1_livechat_room_transfer_request): \Web
 
 Transfer Livechat Room
 
-Use the <a href=\"https://developer.rocket.chat/apidocs/forward-livechat-room\" target=\"_blank\">Forward Livechat Room</a> endpoint instead.  Transfer an omnichannel conversation to another department.
+> This endpoint has been deprecated and is scheduled for removal in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. Use the <a href=\"https://developer.rocket.chat/apidocs/forward-livechat-room\" target=\"_blank\">Forward Livechat Room</a> endpoint instead.  Transfer an omnichannel conversation to another department.
 
 ### Example
 
@@ -828,7 +828,7 @@ putApiV1LivechatRoomVisitor($x_auth_token, $x_user_id, $put_api_v1_livechat_room
 
 Update Livechat Room Visitor
 
-Update room visitor's information. Permission required: `view-l-room`
+> This endpoint has been deprecated and is scheduled for removal in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>.  Update room visitor's information. Permission required: `view-l-room`
 
 ### Example
 

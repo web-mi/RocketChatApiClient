@@ -175,7 +175,7 @@ class PostApiV1StartImportRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'input' => 'setInput'
+        'input' => 'set_input'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1StartImportRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'input' => 'getInput'
+        'input' => 'get_input'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1StartImportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequestInput
      */
-    public function getInput()
+    public function get_input()
     {
         return $this->container['input'];
     }
@@ -309,7 +309,7 @@ class PostApiV1StartImportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setInput($input)
+    public function set_input($input)
     {
         if (is_null($input)) {
             throw new \InvalidArgumentException('non-nullable input cannot be null');

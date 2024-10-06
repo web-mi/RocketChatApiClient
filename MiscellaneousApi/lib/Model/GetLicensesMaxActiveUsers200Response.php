@@ -183,9 +183,9 @@ class GetLicensesMaxActiveUsers200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'max_active_users' => 'setMaxActiveUsers',
-        'active_users' => 'setActiveUsers',
-        'success' => 'setSuccess'
+        'max_active_users' => 'set_max_active_users',
+        'active_users' => 'set_active_users',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetLicensesMaxActiveUsers200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'max_active_users' => 'getMaxActiveUsers',
-        'active_users' => 'getActiveUsers',
-        'success' => 'getSuccess'
+        'max_active_users' => 'get_max_active_users',
+        'active_users' => 'get_active_users',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetLicensesMaxActiveUsers200Response implements ModelInterface, ArrayAcces
      *
      * @return int|null
      */
-    public function getMaxActiveUsers()
+    public function get_max_active_users()
     {
         return $this->container['max_active_users'];
     }
@@ -320,7 +320,7 @@ class GetLicensesMaxActiveUsers200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setMaxActiveUsers($max_active_users)
+    public function set_max_active_users($max_active_users)
     {
         if (is_null($max_active_users)) {
             throw new \InvalidArgumentException('non-nullable max_active_users cannot be null');
@@ -335,7 +335,7 @@ class GetLicensesMaxActiveUsers200Response implements ModelInterface, ArrayAcces
      *
      * @return int|null
      */
-    public function getActiveUsers()
+    public function get_active_users()
     {
         return $this->container['active_users'];
     }
@@ -347,7 +347,7 @@ class GetLicensesMaxActiveUsers200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setActiveUsers($active_users)
+    public function set_active_users($active_users)
     {
         if (is_null($active_users)) {
             throw new \InvalidArgumentException('non-nullable active_users cannot be null');
@@ -362,7 +362,7 @@ class GetLicensesMaxActiveUsers200Response implements ModelInterface, ArrayAcces
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetLicensesMaxActiveUsers200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

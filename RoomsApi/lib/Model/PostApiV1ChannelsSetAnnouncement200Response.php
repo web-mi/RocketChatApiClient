@@ -179,8 +179,8 @@ class PostApiV1ChannelsSetAnnouncement200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'announcement' => 'setAnnouncement',
-        'success' => 'setSuccess'
+        'announcement' => 'set_announcement',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsSetAnnouncement200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'announcement' => 'getAnnouncement',
-        'success' => 'getSuccess'
+        'announcement' => 'get_announcement',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ChannelsSetAnnouncement200Response implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getAnnouncement()
+    public function get_announcement()
     {
         return $this->container['announcement'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ChannelsSetAnnouncement200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setAnnouncement($announcement)
+    public function set_announcement($announcement)
     {
         if (is_null($announcement)) {
             throw new \InvalidArgumentException('non-nullable announcement cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ChannelsSetAnnouncement200Response implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ChannelsSetAnnouncement200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -179,8 +179,8 @@ class PostApiV1UsersSetAvatarRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'avatar_url' => 'setAvatarUrl',
-        'user_id' => 'setUserId'
+        'avatar_url' => 'set_avatar_url',
+        'user_id' => 'set_user_id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersSetAvatarRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'avatar_url' => 'getAvatarUrl',
-        'user_id' => 'getUserId'
+        'avatar_url' => 'get_avatar_url',
+        'user_id' => 'get_user_id'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1UsersSetAvatarRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string
      */
-    public function getAvatarUrl()
+    public function get_avatar_url()
     {
         return $this->container['avatar_url'];
     }
@@ -316,7 +316,7 @@ class PostApiV1UsersSetAvatarRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setAvatarUrl($avatar_url)
+    public function set_avatar_url($avatar_url)
     {
         if (is_null($avatar_url)) {
             throw new \InvalidArgumentException('non-nullable avatar_url cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1UsersSetAvatarRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -343,7 +343,7 @@ class PostApiV1UsersSetAvatarRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');

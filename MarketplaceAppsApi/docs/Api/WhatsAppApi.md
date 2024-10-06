@@ -31,7 +31,7 @@ $apiInstance = new WebMI\RocketChatApiClient\MarketplaceAppsApi\Api\WhatsAppApi(
     new GuzzleHttp\Client()
 );
 $app_id = 'app_id_example'; // string
-$post_api_apps_public_app_id_template_message_request = new \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest(); // \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest | We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use.
+$post_api_apps_public_app_id_template_message_request = {"phoneNumbers":["2368106035555"],"connectedWhatsAppNo":"104920685899299","template":{"name":"ship","language":{"code":"en","policy":"deterministic"},"components":[{"type":"body","parameters":[{"type":"text","text":"20"}]}]}}; // \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequest | We strongly recommend including the + prefix for all phone numbers in the payload. While you can submit numbers without the leading + sign, we have encountered cases where WhatsApp will return an invalid response despite the number being in use.
 
 try {
     $result = $apiInstance->postApiAppsPublicAppIdTemplateMessage($app_id, $post_api_apps_public_app_id_template_message_request);

@@ -199,13 +199,13 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled',
-        'maximum_size_of_public_rooms_users' => 'setMaximumSizeOfPublicRoomsUsers',
-        'biggest_room' => 'setBiggestRoom',
-        'smallest_room' => 'setSmallestRoom',
-        'amount_of_external_users' => 'setAmountOfExternalUsers',
-        'amount_of_federated_rooms' => 'setAmountOfFederatedRooms',
-        'external_connected_servers' => 'setExternalConnectedServers'
+        'enabled' => 'set_enabled',
+        'maximum_size_of_public_rooms_users' => 'set_maximum_size_of_public_rooms_users',
+        'biggest_room' => 'set_biggest_room',
+        'smallest_room' => 'set_smallest_room',
+        'amount_of_external_users' => 'set_amount_of_external_users',
+        'amount_of_federated_rooms' => 'set_amount_of_federated_rooms',
+        'external_connected_servers' => 'set_external_connected_servers'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled',
-        'maximum_size_of_public_rooms_users' => 'getMaximumSizeOfPublicRoomsUsers',
-        'biggest_room' => 'getBiggestRoom',
-        'smallest_room' => 'getSmallestRoom',
-        'amount_of_external_users' => 'getAmountOfExternalUsers',
-        'amount_of_federated_rooms' => 'getAmountOfFederatedRooms',
-        'external_connected_servers' => 'getExternalConnectedServers'
+        'enabled' => 'get_enabled',
+        'maximum_size_of_public_rooms_users' => 'get_maximum_size_of_public_rooms_users',
+        'biggest_room' => 'get_biggest_room',
+        'smallest_room' => 'get_smallest_room',
+        'amount_of_external_users' => 'get_amount_of_external_users',
+        'amount_of_federated_rooms' => 'get_amount_of_federated_rooms',
+        'external_connected_servers' => 'get_external_connected_servers'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -348,7 +348,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getMaximumSizeOfPublicRoomsUsers()
+    public function get_maximum_size_of_public_rooms_users()
     {
         return $this->container['maximum_size_of_public_rooms_users'];
     }
@@ -375,7 +375,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return self
      */
-    public function setMaximumSizeOfPublicRoomsUsers($maximum_size_of_public_rooms_users)
+    public function set_maximum_size_of_public_rooms_users($maximum_size_of_public_rooms_users)
     {
         if (is_null($maximum_size_of_public_rooms_users)) {
             throw new \InvalidArgumentException('non-nullable maximum_size_of_public_rooms_users cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getBiggestRoom()
+    public function get_biggest_room()
     {
         return $this->container['biggest_room'];
     }
@@ -402,7 +402,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return self
      */
-    public function setBiggestRoom($biggest_room)
+    public function set_biggest_room($biggest_room)
     {
         if (is_null($biggest_room)) {
             throw new \InvalidArgumentException('non-nullable biggest_room cannot be null');
@@ -417,7 +417,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getSmallestRoom()
+    public function get_smallest_room()
     {
         return $this->container['smallest_room'];
     }
@@ -429,7 +429,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return self
      */
-    public function setSmallestRoom($smallest_room)
+    public function set_smallest_room($smallest_room)
     {
         if (is_null($smallest_room)) {
             throw new \InvalidArgumentException('non-nullable smallest_room cannot be null');
@@ -444,7 +444,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getAmountOfExternalUsers()
+    public function get_amount_of_external_users()
     {
         return $this->container['amount_of_external_users'];
     }
@@ -456,7 +456,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return self
      */
-    public function setAmountOfExternalUsers($amount_of_external_users)
+    public function set_amount_of_external_users($amount_of_external_users)
     {
         if (is_null($amount_of_external_users)) {
             throw new \InvalidArgumentException('non-nullable amount_of_external_users cannot be null');
@@ -471,7 +471,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getAmountOfFederatedRooms()
+    public function get_amount_of_federated_rooms()
     {
         return $this->container['amount_of_federated_rooms'];
     }
@@ -483,7 +483,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return self
      */
-    public function setAmountOfFederatedRooms($amount_of_federated_rooms)
+    public function set_amount_of_federated_rooms($amount_of_federated_rooms)
     {
         if (is_null($amount_of_federated_rooms)) {
             throw new \InvalidArgumentException('non-nullable amount_of_federated_rooms cannot be null');
@@ -498,7 +498,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers|null
      */
-    public function getExternalConnectedServers()
+    public function get_external_connected_servers()
     {
         return $this->container['external_connected_servers'];
     }
@@ -510,7 +510,7 @@ class GetApiV1Statistics200ResponseMatrixFederation implements ModelInterface, A
      *
      * @return self
      */
-    public function setExternalConnectedServers($external_connected_servers)
+    public function set_external_connected_servers($external_connected_servers)
     {
         if (is_null($external_connected_servers)) {
             throw new \InvalidArgumentException('non-nullable external_connected_servers cannot be null');

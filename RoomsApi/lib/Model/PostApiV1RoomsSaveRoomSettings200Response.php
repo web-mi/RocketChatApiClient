@@ -179,8 +179,8 @@ class PostApiV1RoomsSaveRoomSettings200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'success' => 'setSuccess'
+        'rid' => 'set_rid',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1RoomsSaveRoomSettings200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'success' => 'getSuccess'
+        'rid' => 'get_rid',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1RoomsSaveRoomSettings200Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -313,7 +313,7 @@ class PostApiV1RoomsSaveRoomSettings200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1RoomsSaveRoomSettings200Response implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1RoomsSaveRoomSettings200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

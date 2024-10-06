@@ -199,13 +199,13 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled',
-        'users' => 'setUsers',
-        'signature_validation_type' => 'setSignatureValidationType',
-        'generate_username' => 'setGenerateUsername',
-        'update_subscriptions_on_login' => 'setUpdateSubscriptionsOnLogin',
-        'sync_roles' => 'setSyncRoles',
-        'user_data_custom_field_map' => 'setUserDataCustomFieldMap'
+        'enabled' => 'set_enabled',
+        'users' => 'set_users',
+        'signature_validation_type' => 'set_signature_validation_type',
+        'generate_username' => 'set_generate_username',
+        'update_subscriptions_on_login' => 'set_update_subscriptions_on_login',
+        'sync_roles' => 'set_sync_roles',
+        'user_data_custom_field_map' => 'set_user_data_custom_field_map'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled',
-        'users' => 'getUsers',
-        'signature_validation_type' => 'getSignatureValidationType',
-        'generate_username' => 'getGenerateUsername',
-        'update_subscriptions_on_login' => 'getUpdateSubscriptionsOnLogin',
-        'sync_roles' => 'getSyncRoles',
-        'user_data_custom_field_map' => 'getUserDataCustomFieldMap'
+        'enabled' => 'get_enabled',
+        'users' => 'get_users',
+        'signature_validation_type' => 'get_signature_validation_type',
+        'generate_username' => 'get_generate_username',
+        'update_subscriptions_on_login' => 'get_update_subscriptions_on_login',
+        'sync_roles' => 'get_sync_roles',
+        'user_data_custom_field_map' => 'get_user_data_custom_field_map'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -348,7 +348,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -375,7 +375,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getSignatureValidationType()
+    public function get_signature_validation_type()
     {
         return $this->container['signature_validation_type'];
     }
@@ -402,7 +402,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSignatureValidationType($signature_validation_type)
+    public function set_signature_validation_type($signature_validation_type)
     {
         if (is_null($signature_validation_type)) {
             throw new \InvalidArgumentException('non-nullable signature_validation_type cannot be null');
@@ -417,7 +417,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getGenerateUsername()
+    public function get_generate_username()
     {
         return $this->container['generate_username'];
     }
@@ -429,7 +429,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return self
      */
-    public function setGenerateUsername($generate_username)
+    public function set_generate_username($generate_username)
     {
         if (is_null($generate_username)) {
             throw new \InvalidArgumentException('non-nullable generate_username cannot be null');
@@ -444,7 +444,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getUpdateSubscriptionsOnLogin()
+    public function get_update_subscriptions_on_login()
     {
         return $this->container['update_subscriptions_on_login'];
     }
@@ -456,7 +456,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return self
      */
-    public function setUpdateSubscriptionsOnLogin($update_subscriptions_on_login)
+    public function set_update_subscriptions_on_login($update_subscriptions_on_login)
     {
         if (is_null($update_subscriptions_on_login)) {
             throw new \InvalidArgumentException('non-nullable update_subscriptions_on_login cannot be null');
@@ -471,7 +471,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSyncRoles()
+    public function get_sync_roles()
     {
         return $this->container['sync_roles'];
     }
@@ -483,7 +483,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSyncRoles($sync_roles)
+    public function set_sync_roles($sync_roles)
     {
         if (is_null($sync_roles)) {
             throw new \InvalidArgumentException('non-nullable sync_roles cannot be null');
@@ -498,7 +498,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getUserDataCustomFieldMap()
+    public function get_user_data_custom_field_map()
     {
         return $this->container['user_data_custom_field_map'];
     }
@@ -510,7 +510,7 @@ class GetApiV1Statistics200ResponseServicesSaml implements ModelInterface, Array
      *
      * @return self
      */
-    public function setUserDataCustomFieldMap($user_data_custom_field_map)
+    public function set_user_data_custom_field_map($user_data_custom_field_map)
     {
         if (is_null($user_data_custom_field_map)) {
             throw new \InvalidArgumentException('non-nullable user_data_custom_field_map cannot be null');

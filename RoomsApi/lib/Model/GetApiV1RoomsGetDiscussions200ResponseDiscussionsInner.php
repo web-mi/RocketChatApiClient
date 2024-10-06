@@ -239,23 +239,23 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'fname' => 'setFname',
-        '_updated_at' => 'setUpdatedAt',
-        'topic' => 'setTopic',
-        'prid' => 'setPrid',
-        'encrypted' => 'setEncrypted',
-        'name' => 'setName',
-        't' => 'setT',
-        'msgs' => 'setMsgs',
-        'users_count' => 'setUsersCount',
-        'u' => 'setU',
-        'ts' => 'setTs',
-        'ro' => 'setRo',
-        'default' => 'setDefault',
-        'sys_mes' => 'setSysMes',
-        'last_message' => 'setLastMessage',
-        'lm' => 'setLm'
+        '_id' => 'set__id',
+        'fname' => 'set_fname',
+        '_updated_at' => 'set__updated_at',
+        'topic' => 'set_topic',
+        'prid' => 'set_prid',
+        'encrypted' => 'set_encrypted',
+        'name' => 'set_name',
+        't' => 'set_t',
+        'msgs' => 'set_msgs',
+        'users_count' => 'set_users_count',
+        'u' => 'set_u',
+        'ts' => 'set_ts',
+        'ro' => 'set_ro',
+        'default' => 'set_default',
+        'sys_mes' => 'set_sys_mes',
+        'last_message' => 'set_last_message',
+        'lm' => 'set_lm'
     ];
 
     /**
@@ -264,23 +264,23 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'fname' => 'getFname',
-        '_updated_at' => 'getUpdatedAt',
-        'topic' => 'getTopic',
-        'prid' => 'getPrid',
-        'encrypted' => 'getEncrypted',
-        'name' => 'getName',
-        't' => 'getT',
-        'msgs' => 'getMsgs',
-        'users_count' => 'getUsersCount',
-        'u' => 'getU',
-        'ts' => 'getTs',
-        'ro' => 'getRo',
-        'default' => 'getDefault',
-        'sys_mes' => 'getSysMes',
-        'last_message' => 'getLastMessage',
-        'lm' => 'getLm'
+        '_id' => 'get__id',
+        'fname' => 'get_fname',
+        '_updated_at' => 'get__updated_at',
+        'topic' => 'get_topic',
+        'prid' => 'get_prid',
+        'encrypted' => 'get_encrypted',
+        'name' => 'get_name',
+        't' => 'get_t',
+        'msgs' => 'get_msgs',
+        'users_count' => 'get_users_count',
+        'u' => 'get_u',
+        'ts' => 'get_ts',
+        'ro' => 'get_ro',
+        'default' => 'get_default',
+        'sys_mes' => 'get_sys_mes',
+        'last_message' => 'get_last_message',
+        'lm' => 'get_lm'
     ];
 
     /**
@@ -406,7 +406,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -418,7 +418,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -433,7 +433,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getFname()
+    public function get_fname()
     {
         return $this->container['fname'];
     }
@@ -445,7 +445,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setFname($fname)
+    public function set_fname($fname)
     {
         if (is_null($fname)) {
             throw new \InvalidArgumentException('non-nullable fname cannot be null');
@@ -460,7 +460,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -472,7 +472,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -487,7 +487,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getTopic()
+    public function get_topic()
     {
         return $this->container['topic'];
     }
@@ -499,7 +499,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setTopic($topic)
+    public function set_topic($topic)
     {
         if (is_null($topic)) {
             throw new \InvalidArgumentException('non-nullable topic cannot be null');
@@ -514,7 +514,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getPrid()
+    public function get_prid()
     {
         return $this->container['prid'];
     }
@@ -526,7 +526,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setPrid($prid)
+    public function set_prid($prid)
     {
         if (is_null($prid)) {
             throw new \InvalidArgumentException('non-nullable prid cannot be null');
@@ -541,7 +541,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return bool|null
      */
-    public function getEncrypted()
+    public function get_encrypted()
     {
         return $this->container['encrypted'];
     }
@@ -553,7 +553,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setEncrypted($encrypted)
+    public function set_encrypted($encrypted)
     {
         if (is_null($encrypted)) {
             throw new \InvalidArgumentException('non-nullable encrypted cannot be null');
@@ -568,7 +568,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -580,7 +580,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -595,7 +595,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -607,7 +607,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -622,7 +622,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -634,7 +634,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -649,7 +649,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return int|null
      */
-    public function getUsersCount()
+    public function get_users_count()
     {
         return $this->container['users_count'];
     }
@@ -661,7 +661,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setUsersCount($users_count)
+    public function set_users_count($users_count)
     {
         if (is_null($users_count)) {
             throw new \InvalidArgumentException('non-nullable users_count cannot be null');
@@ -676,7 +676,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -688,7 +688,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -703,7 +703,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -715,7 +715,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -730,7 +730,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return bool|null
      */
-    public function getRo()
+    public function get_ro()
     {
         return $this->container['ro'];
     }
@@ -742,7 +742,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setRo($ro)
+    public function set_ro($ro)
     {
         if (is_null($ro)) {
             throw new \InvalidArgumentException('non-nullable ro cannot be null');
@@ -757,7 +757,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return bool|null
      */
-    public function getDefault()
+    public function get_default()
     {
         return $this->container['default'];
     }
@@ -769,7 +769,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setDefault($default)
+    public function set_default($default)
     {
         if (is_null($default)) {
             throw new \InvalidArgumentException('non-nullable default cannot be null');
@@ -784,7 +784,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return bool|null
      */
-    public function getSysMes()
+    public function get_sys_mes()
     {
         return $this->container['sys_mes'];
     }
@@ -796,7 +796,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setSysMes($sys_mes)
+    public function set_sys_mes($sys_mes)
     {
         if (is_null($sys_mes)) {
             throw new \InvalidArgumentException('non-nullable sys_mes cannot be null');
@@ -811,7 +811,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessage|null
      */
-    public function getLastMessage()
+    public function get_last_message()
     {
         return $this->container['last_message'];
     }
@@ -823,7 +823,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setLastMessage($last_message)
+    public function set_last_message($last_message)
     {
         if (is_null($last_message)) {
             throw new \InvalidArgumentException('non-nullable last_message cannot be null');
@@ -838,7 +838,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getLm()
+    public function get_lm()
     {
         return $this->container['lm'];
     }
@@ -850,7 +850,7 @@ class GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner implements ModelInt
      *
      * @return self
      */
-    public function setLm($lm)
+    public function set_lm($lm)
     {
         if (is_null($lm)) {
             throw new \InvalidArgumentException('non-nullable lm cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1GroupsModerators200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'moderators' => 'setModerators',
-        'success' => 'setSuccess'
+        'moderators' => 'set_moderators',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1GroupsModerators200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'moderators' => 'getModerators',
-        'success' => 'getSuccess'
+        'moderators' => 'get_moderators',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1GroupsModerators200Response implements ModelInterface, ArrayAccess
      *
      * @return object[]|null
      */
-    public function getModerators()
+    public function get_moderators()
     {
         return $this->container['moderators'];
     }
@@ -313,7 +313,7 @@ class GetApiV1GroupsModerators200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setModerators($moderators)
+    public function set_moderators($moderators)
     {
         if (is_null($moderators)) {
             throw new \InvalidArgumentException('non-nullable moderators cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1GroupsModerators200Response implements ModelInterface, ArrayAccess
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1GroupsModerators200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

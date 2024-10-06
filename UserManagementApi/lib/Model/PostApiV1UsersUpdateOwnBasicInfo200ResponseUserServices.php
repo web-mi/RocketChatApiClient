@@ -195,12 +195,12 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'password' => 'setPassword',
-        'email2fa' => 'setEmail2fa',
-        'resume' => 'setResume',
-        'email' => 'setEmail',
-        'totp' => 'setTotp',
-        'password_history' => 'setPasswordHistory'
+        'password' => 'set_password',
+        'email2fa' => 'set_email2fa',
+        'resume' => 'set_resume',
+        'email' => 'set_email',
+        'totp' => 'set_totp',
+        'password_history' => 'set_password_history'
     ];
 
     /**
@@ -209,12 +209,12 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'password' => 'getPassword',
-        'email2fa' => 'getEmail2fa',
-        'resume' => 'getResume',
-        'email' => 'getEmail',
-        'totp' => 'getTotp',
-        'password_history' => 'getPasswordHistory'
+        'password' => 'get_password',
+        'email2fa' => 'get_email2fa',
+        'resume' => 'get_resume',
+        'email' => 'get_email',
+        'totp' => 'get_totp',
+        'password_history' => 'get_password_history'
     ];
 
     /**
@@ -329,7 +329,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdate200ResponseUserServicesPassword|null
      */
-    public function getPassword()
+    public function get_password()
     {
         return $this->container['password'];
     }
@@ -341,7 +341,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return self
      */
-    public function setPassword($password)
+    public function set_password($password)
     {
         if (is_null($password)) {
             throw new \InvalidArgumentException('non-nullable password cannot be null');
@@ -356,7 +356,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail2fa|null
      */
-    public function getEmail2fa()
+    public function get_email2fa()
     {
         return $this->container['email2fa'];
     }
@@ -368,7 +368,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return self
      */
-    public function setEmail2fa($email2fa)
+    public function set_email2fa($email2fa)
     {
         if (is_null($email2fa)) {
             throw new \InvalidArgumentException('non-nullable email2fa cannot be null');
@@ -383,7 +383,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume|null
      */
-    public function getResume()
+    public function get_resume()
     {
         return $this->container['resume'];
     }
@@ -395,7 +395,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return self
      */
-    public function setResume($resume)
+    public function set_resume($resume)
     {
         if (is_null($resume)) {
             throw new \InvalidArgumentException('non-nullable resume cannot be null');
@@ -410,7 +410,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail|null
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -422,7 +422,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -437,7 +437,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp|null
      */
-    public function getTotp()
+    public function get_totp()
     {
         return $this->container['totp'];
     }
@@ -449,7 +449,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return self
      */
-    public function setTotp($totp)
+    public function set_totp($totp)
     {
         if (is_null($totp)) {
             throw new \InvalidArgumentException('non-nullable totp cannot be null');
@@ -464,7 +464,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return string[]|null
      */
-    public function getPasswordHistory()
+    public function get_password_history()
     {
         return $this->container['password_history'];
     }
@@ -476,7 +476,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices implements ModelIn
      *
      * @return self
      */
-    public function setPasswordHistory($password_history)
+    public function set_password_history($password_history)
     {
         if (is_null($password_history)) {
             throw new \InvalidArgumentException('non-nullable password_history cannot be null');

@@ -179,8 +179,8 @@ class GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole implemen
      * @var string[]
      */
     protected static $setters = [
-        'role' => 'setRole',
-        'level' => 'setLevel'
+        'role' => 'set_role',
+        'level' => 'set_level'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole implemen
      * @var string[]
      */
     protected static $getters = [
-        'role' => 'getRole',
-        'level' => 'getLevel'
+        'role' => 'get_role',
+        'level' => 'get_level'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole implemen
      *
      * @return string|null
      */
-    public function getRole()
+    public function get_role()
     {
         return $this->container['role'];
     }
@@ -313,7 +313,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole implemen
      *
      * @return self
      */
-    public function setRole($role)
+    public function set_role($role)
     {
         if (is_null($role)) {
             throw new \InvalidArgumentException('non-nullable role cannot be null');
@@ -328,7 +328,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole implemen
      *
      * @return int|null
      */
-    public function getLevel()
+    public function get_level()
     {
         return $this->container['level'];
     }
@@ -340,7 +340,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole implemen
      *
      * @return self
      */
-    public function setLevel($level)
+    public function set_level($level)
     {
         if (is_null($level)) {
             throw new \InvalidArgumentException('non-nullable level cannot be null');

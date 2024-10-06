@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsPush implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'push_enable' => 'setPushEnable'
+        'push_enable' => 'set_push_enable'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsPush implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'push_enable' => 'getPushEnable'
+        'push_enable' => 'get_push_enable'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsPush implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getPushEnable()
+    public function get_push_enable()
     {
         return $this->container['push_enable'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsPush implements ModelInterface, Array
      *
      * @return self
      */
-    public function setPushEnable($push_enable)
+    public function set_push_enable($push_enable)
     {
         if (is_null($push_enable)) {
             throw new \InvalidArgumentException('non-nullable push_enable cannot be null');

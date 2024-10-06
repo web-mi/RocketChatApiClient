@@ -215,17 +215,17 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        't' => 'setT',
-        'rid' => 'setRid',
-        'ts' => 'setTs',
-        'msg' => 'setMsg',
-        'u' => 'setU',
-        'groupable' => 'setGroupable',
-        'drid' => 'setDrid',
-        '_updated_at' => 'setUpdatedAt',
-        'dcount' => 'setDcount',
-        'dlm' => 'setDlm'
+        '_id' => 'set__id',
+        't' => 'set_t',
+        'rid' => 'set_rid',
+        'ts' => 'set_ts',
+        'msg' => 'set_msg',
+        'u' => 'set_u',
+        'groupable' => 'set_groupable',
+        'drid' => 'set_drid',
+        '_updated_at' => 'set__updated_at',
+        'dcount' => 'set_dcount',
+        'dlm' => 'set_dlm'
     ];
 
     /**
@@ -234,17 +234,17 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        't' => 'getT',
-        'rid' => 'getRid',
-        'ts' => 'getTs',
-        'msg' => 'getMsg',
-        'u' => 'getU',
-        'groupable' => 'getGroupable',
-        'drid' => 'getDrid',
-        '_updated_at' => 'getUpdatedAt',
-        'dcount' => 'getDcount',
-        'dlm' => 'getDlm'
+        '_id' => 'get__id',
+        't' => 'get_t',
+        'rid' => 'get_rid',
+        'ts' => 'get_ts',
+        'msg' => 'get_msg',
+        'u' => 'get_u',
+        'groupable' => 'get_groupable',
+        'drid' => 'get_drid',
+        '_updated_at' => 'get__updated_at',
+        'dcount' => 'get_dcount',
+        'dlm' => 'get_dlm'
     ];
 
     /**
@@ -364,7 +364,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -376,7 +376,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -391,7 +391,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -403,7 +403,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -418,7 +418,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -430,7 +430,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -445,7 +445,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -457,7 +457,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -472,7 +472,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -484,7 +484,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -499,7 +499,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -511,7 +511,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -526,7 +526,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return bool|null
      */
-    public function getGroupable()
+    public function get_groupable()
     {
         return $this->container['groupable'];
     }
@@ -538,7 +538,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setGroupable($groupable)
+    public function set_groupable($groupable)
     {
         if (is_null($groupable)) {
             throw new \InvalidArgumentException('non-nullable groupable cannot be null');
@@ -553,7 +553,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getDrid()
+    public function get_drid()
     {
         return $this->container['drid'];
     }
@@ -565,7 +565,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setDrid($drid)
+    public function set_drid($drid)
     {
         if (is_null($drid)) {
             throw new \InvalidArgumentException('non-nullable drid cannot be null');
@@ -580,7 +580,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -592,7 +592,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -607,7 +607,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return int|null
      */
-    public function getDcount()
+    public function get_dcount()
     {
         return $this->container['dcount'];
     }
@@ -619,7 +619,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setDcount($dcount)
+    public function set_dcount($dcount)
     {
         if (is_null($dcount)) {
             throw new \InvalidArgumentException('non-nullable dcount cannot be null');
@@ -634,7 +634,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getDlm()
+    public function get_dlm()
     {
         return $this->container['dlm'];
     }
@@ -646,7 +646,7 @@ class GetApiV1ChatGetDiscussions200ResponseMessagesInner implements ModelInterfa
      *
      * @return self
      */
-    public function setDlm($dlm)
+    public function set_dlm($dlm)
     {
         if (is_null($dlm)) {
             throw new \InvalidArgumentException('non-nullable dlm cannot be null');

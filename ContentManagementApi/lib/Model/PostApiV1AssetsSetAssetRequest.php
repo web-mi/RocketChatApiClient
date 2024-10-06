@@ -183,9 +183,9 @@ class PostApiV1AssetsSetAssetRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'asset' => 'setAsset',
-        'asset_name' => 'setAssetName',
-        'refresh_all_clients' => 'setRefreshAllClients'
+        'asset' => 'set_asset',
+        'asset_name' => 'set_asset_name',
+        'refresh_all_clients' => 'set_refresh_all_clients'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1AssetsSetAssetRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'asset' => 'getAsset',
-        'asset_name' => 'getAssetName',
-        'refresh_all_clients' => 'getRefreshAllClients'
+        'asset' => 'get_asset',
+        'asset_name' => 'get_asset_name',
+        'refresh_all_clients' => 'get_refresh_all_clients'
     ];
 
     /**
@@ -314,7 +314,7 @@ class PostApiV1AssetsSetAssetRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string
      */
-    public function getAsset()
+    public function get_asset()
     {
         return $this->container['asset'];
     }
@@ -326,7 +326,7 @@ class PostApiV1AssetsSetAssetRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setAsset($asset)
+    public function set_asset($asset)
     {
         if (is_null($asset)) {
             throw new \InvalidArgumentException('non-nullable asset cannot be null');
@@ -341,7 +341,7 @@ class PostApiV1AssetsSetAssetRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string
      */
-    public function getAssetName()
+    public function get_asset_name()
     {
         return $this->container['asset_name'];
     }
@@ -353,7 +353,7 @@ class PostApiV1AssetsSetAssetRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setAssetName($asset_name)
+    public function set_asset_name($asset_name)
     {
         if (is_null($asset_name)) {
             throw new \InvalidArgumentException('non-nullable asset_name cannot be null');
@@ -368,7 +368,7 @@ class PostApiV1AssetsSetAssetRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return bool|null
      */
-    public function getRefreshAllClients()
+    public function get_refresh_all_clients()
     {
         return $this->container['refresh_all_clients'];
     }
@@ -380,7 +380,7 @@ class PostApiV1AssetsSetAssetRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setRefreshAllClients($refresh_all_clients)
+    public function set_refresh_all_clients($refresh_all_clients)
     {
         if (is_null($refresh_all_clients)) {
             throw new \InvalidArgumentException('non-nullable refresh_all_clients cannot be null');

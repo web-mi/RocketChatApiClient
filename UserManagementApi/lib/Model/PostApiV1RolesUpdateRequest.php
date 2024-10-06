@@ -191,11 +191,11 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'role_id' => 'setRoleId',
-        'name' => 'setName',
-        'scope' => 'setScope',
-        'description' => 'setDescription',
-        'mandatory2fa' => 'setMandatory2fa'
+        'role_id' => 'set_role_id',
+        'name' => 'set_name',
+        'scope' => 'set_scope',
+        'description' => 'set_description',
+        'mandatory2fa' => 'set_mandatory2fa'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'role_id' => 'getRoleId',
-        'name' => 'getName',
-        'scope' => 'getScope',
-        'description' => 'getDescription',
-        'mandatory2fa' => 'getMandatory2fa'
+        'role_id' => 'get_role_id',
+        'name' => 'get_name',
+        'scope' => 'get_scope',
+        'description' => 'get_description',
+        'mandatory2fa' => 'get_mandatory2fa'
     ];
 
     /**
@@ -328,7 +328,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getRoleId()
+    public function get_role_id()
     {
         return $this->container['role_id'];
     }
@@ -340,7 +340,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setRoleId($role_id)
+    public function set_role_id($role_id)
     {
         if (is_null($role_id)) {
             throw new \InvalidArgumentException('non-nullable role_id cannot be null');
@@ -355,7 +355,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -367,7 +367,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -382,7 +382,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -394,7 +394,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');
@@ -409,7 +409,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -421,7 +421,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -436,7 +436,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return bool|null
      */
-    public function getMandatory2fa()
+    public function get_mandatory2fa()
     {
         return $this->container['mandatory2fa'];
     }
@@ -448,7 +448,7 @@ class PostApiV1RolesUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setMandatory2fa($mandatory2fa)
+    public function set_mandatory2fa($mandatory2fa)
     {
         if (is_null($mandatory2fa)) {
             throw new \InvalidArgumentException('non-nullable mandatory2fa cannot be null');

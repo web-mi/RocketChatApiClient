@@ -187,10 +187,10 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        'total_csv_imported_users' => 'setTotalCsvImportedUsers',
-        'total_hipchat_enterprise_imported_users' => 'setTotalHipchatEnterpriseImportedUsers',
-        'total_slack_imported_users' => 'setTotalSlackImportedUsers',
-        'total_slack_users_imported_users' => 'setTotalSlackUsersImportedUsers'
+        'total_csv_imported_users' => 'set_total_csv_imported_users',
+        'total_hipchat_enterprise_imported_users' => 'set_total_hipchat_enterprise_imported_users',
+        'total_slack_imported_users' => 'set_total_slack_imported_users',
+        'total_slack_users_imported_users' => 'set_total_slack_users_imported_users'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        'total_csv_imported_users' => 'getTotalCsvImportedUsers',
-        'total_hipchat_enterprise_imported_users' => 'getTotalHipchatEnterpriseImportedUsers',
-        'total_slack_imported_users' => 'getTotalSlackImportedUsers',
-        'total_slack_users_imported_users' => 'getTotalSlackUsersImportedUsers'
+        'total_csv_imported_users' => 'get_total_csv_imported_users',
+        'total_hipchat_enterprise_imported_users' => 'get_total_hipchat_enterprise_imported_users',
+        'total_slack_imported_users' => 'get_total_slack_imported_users',
+        'total_slack_users_imported_users' => 'get_total_slack_users_imported_users'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      *
      * @return int|null
      */
-    public function getTotalCsvImportedUsers()
+    public function get_total_csv_imported_users()
     {
         return $this->container['total_csv_imported_users'];
     }
@@ -327,7 +327,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      *
      * @return self
      */
-    public function setTotalCsvImportedUsers($total_csv_imported_users)
+    public function set_total_csv_imported_users($total_csv_imported_users)
     {
         if (is_null($total_csv_imported_users)) {
             throw new \InvalidArgumentException('non-nullable total_csv_imported_users cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      *
      * @return int|null
      */
-    public function getTotalHipchatEnterpriseImportedUsers()
+    public function get_total_hipchat_enterprise_imported_users()
     {
         return $this->container['total_hipchat_enterprise_imported_users'];
     }
@@ -354,7 +354,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      *
      * @return self
      */
-    public function setTotalHipchatEnterpriseImportedUsers($total_hipchat_enterprise_imported_users)
+    public function set_total_hipchat_enterprise_imported_users($total_hipchat_enterprise_imported_users)
     {
         if (is_null($total_hipchat_enterprise_imported_users)) {
             throw new \InvalidArgumentException('non-nullable total_hipchat_enterprise_imported_users cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      *
      * @return int|null
      */
-    public function getTotalSlackImportedUsers()
+    public function get_total_slack_imported_users()
     {
         return $this->container['total_slack_imported_users'];
     }
@@ -381,7 +381,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      *
      * @return self
      */
-    public function setTotalSlackImportedUsers($total_slack_imported_users)
+    public function set_total_slack_imported_users($total_slack_imported_users)
     {
         if (is_null($total_slack_imported_users)) {
             throw new \InvalidArgumentException('non-nullable total_slack_imported_users cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      *
      * @return int|null
      */
-    public function getTotalSlackUsersImportedUsers()
+    public function get_total_slack_users_imported_users()
     {
         return $this->container['total_slack_users_imported_users'];
     }
@@ -408,7 +408,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerImporter implements ModelI
      *
      * @return self
      */
-    public function setTotalSlackUsersImportedUsers($total_slack_users_imported_users)
+    public function set_total_slack_users_imported_users($total_slack_users_imported_users)
     {
         if (is_null($total_slack_users_imported_users)) {
             throw new \InvalidArgumentException('non-nullable total_slack_users_imported_users cannot be null');

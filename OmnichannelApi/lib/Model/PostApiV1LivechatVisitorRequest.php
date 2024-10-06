@@ -175,7 +175,7 @@ class PostApiV1LivechatVisitorRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'visitor' => 'setVisitor'
+        'visitor' => 'set_visitor'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1LivechatVisitorRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'visitor' => 'getVisitor'
+        'visitor' => 'get_visitor'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1LivechatVisitorRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatVisitorRequestVisitor
      */
-    public function getVisitor()
+    public function get_visitor()
     {
         return $this->container['visitor'];
     }
@@ -309,7 +309,7 @@ class PostApiV1LivechatVisitorRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setVisitor($visitor)
+    public function set_visitor($visitor)
     {
         if (is_null($visitor)) {
             throw new \InvalidArgumentException('non-nullable visitor cannot be null');

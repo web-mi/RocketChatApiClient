@@ -183,9 +183,9 @@ class PostApiV1ImCreate200ResponseRoom implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        't' => 'setT',
-        'rid' => 'setRid',
-        'usernames' => 'setUsernames'
+        't' => 'set_t',
+        'rid' => 'set_rid',
+        'usernames' => 'set_usernames'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1ImCreate200ResponseRoom implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        't' => 'getT',
-        'rid' => 'getRid',
-        'usernames' => 'getUsernames'
+        't' => 'get_t',
+        'rid' => 'get_rid',
+        'usernames' => 'get_usernames'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1ImCreate200ResponseRoom implements ModelInterface, ArrayAccess, \
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -320,7 +320,7 @@ class PostApiV1ImCreate200ResponseRoom implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1ImCreate200ResponseRoom implements ModelInterface, ArrayAccess, \
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -347,7 +347,7 @@ class PostApiV1ImCreate200ResponseRoom implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1ImCreate200ResponseRoom implements ModelInterface, ArrayAccess, \
      *
      * @return string[]|null
      */
-    public function getUsernames()
+    public function get_usernames()
     {
         return $this->container['usernames'];
     }
@@ -374,7 +374,7 @@ class PostApiV1ImCreate200ResponseRoom implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setUsernames($usernames)
+    public function set_usernames($usernames)
     {
         if (is_null($usernames)) {
             throw new \InvalidArgumentException('non-nullable usernames cannot be null');

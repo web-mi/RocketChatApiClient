@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response implemen
      * @var string[]
      */
     protected static $setters = [
-        'test_cat' => 'setTestCat',
-        'success' => 'setSuccess'
+        'test_cat' => 'set_test_cat',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response implemen
      * @var string[]
      */
     protected static $getters = [
-        'test_cat' => 'getTestCat',
-        'success' => 'getSuccess'
+        'test_cat' => 'get_test_cat',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response implemen
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat|null
      */
-    public function getTestCat()
+    public function get_test_cat()
     {
         return $this->container['test_cat'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response implemen
      *
      * @return self
      */
-    public function setTestCat($test_cat)
+    public function set_test_cat($test_cat)
     {
         if (is_null($test_cat)) {
             throw new \InvalidArgumentException('non-nullable test_cat cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response implemen
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200Response implemen
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -183,9 +183,9 @@ class PostApiV1ImCreateRequest implements ModelInterface, ArrayAccess, \JsonSeri
      * @var string[]
      */
     protected static $setters = [
-        'username' => 'setUsername',
-        'usernames' => 'setUsernames',
-        'exclude_self' => 'setExcludeSelf'
+        'username' => 'set_username',
+        'usernames' => 'set_usernames',
+        'exclude_self' => 'set_exclude_self'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1ImCreateRequest implements ModelInterface, ArrayAccess, \JsonSeri
      * @var string[]
      */
     protected static $getters = [
-        'username' => 'getUsername',
-        'usernames' => 'getUsernames',
-        'exclude_self' => 'getExcludeSelf'
+        'username' => 'get_username',
+        'usernames' => 'get_usernames',
+        'exclude_self' => 'get_exclude_self'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1ImCreateRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -320,7 +320,7 @@ class PostApiV1ImCreateRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1ImCreateRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return string|null
      */
-    public function getUsernames()
+    public function get_usernames()
     {
         return $this->container['usernames'];
     }
@@ -347,7 +347,7 @@ class PostApiV1ImCreateRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setUsernames($usernames)
+    public function set_usernames($usernames)
     {
         if (is_null($usernames)) {
             throw new \InvalidArgumentException('non-nullable usernames cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1ImCreateRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return bool|null
      */
-    public function getExcludeSelf()
+    public function get_exclude_self()
     {
         return $this->container['exclude_self'];
     }
@@ -374,7 +374,7 @@ class PostApiV1ImCreateRequest implements ModelInterface, ArrayAccess, \JsonSeri
      *
      * @return self
      */
-    public function setExcludeSelf($exclude_self)
+    public function set_exclude_self($exclude_self)
     {
         if (is_null($exclude_self)) {
             throw new \InvalidArgumentException('non-nullable exclude_self cannot be null');

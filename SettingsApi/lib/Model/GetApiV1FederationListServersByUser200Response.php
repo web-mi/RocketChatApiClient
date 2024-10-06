@@ -179,8 +179,8 @@ class GetApiV1FederationListServersByUser200Response implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'servers' => 'setServers',
-        'success' => 'setSuccess'
+        'servers' => 'set_servers',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1FederationListServersByUser200Response implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'servers' => 'getServers',
-        'success' => 'getSuccess'
+        'servers' => 'get_servers',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1FederationListServersByUser200Response implements ModelInterface, 
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1FederationListServersByUser200ResponseServersInner[]|null
      */
-    public function getServers()
+    public function get_servers()
     {
         return $this->container['servers'];
     }
@@ -313,7 +313,7 @@ class GetApiV1FederationListServersByUser200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setServers($servers)
+    public function set_servers($servers)
     {
         if (is_null($servers)) {
             throw new \InvalidArgumentException('non-nullable servers cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1FederationListServersByUser200Response implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1FederationListServersByUser200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

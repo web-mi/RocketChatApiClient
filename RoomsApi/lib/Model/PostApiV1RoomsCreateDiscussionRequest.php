@@ -191,11 +191,11 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'prid' => 'setPrid',
-        't_name' => 'setTName',
-        'users' => 'setUsers',
-        'pmid' => 'setPmid',
-        'reply' => 'setReply'
+        'prid' => 'set_prid',
+        't_name' => 'set_t_name',
+        'users' => 'set_users',
+        'pmid' => 'set_pmid',
+        'reply' => 'set_reply'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'prid' => 'getPrid',
-        't_name' => 'getTName',
-        'users' => 'getUsers',
-        'pmid' => 'getPmid',
-        'reply' => 'getReply'
+        'prid' => 'get_prid',
+        't_name' => 'get_t_name',
+        'users' => 'get_users',
+        'pmid' => 'get_pmid',
+        'reply' => 'get_reply'
     ];
 
     /**
@@ -328,7 +328,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getPrid()
+    public function get_prid()
     {
         return $this->container['prid'];
     }
@@ -340,7 +340,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setPrid($prid)
+    public function set_prid($prid)
     {
         if (is_null($prid)) {
             throw new \InvalidArgumentException('non-nullable prid cannot be null');
@@ -355,7 +355,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getTName()
+    public function get_t_name()
     {
         return $this->container['t_name'];
     }
@@ -367,7 +367,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setTName($t_name)
+    public function set_t_name($t_name)
     {
         if (is_null($t_name)) {
             throw new \InvalidArgumentException('non-nullable t_name cannot be null');
@@ -382,7 +382,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return string[]|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -394,7 +394,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -409,7 +409,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getPmid()
+    public function get_pmid()
     {
         return $this->container['pmid'];
     }
@@ -421,7 +421,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setPmid($pmid)
+    public function set_pmid($pmid)
     {
         if (is_null($pmid)) {
             throw new \InvalidArgumentException('non-nullable pmid cannot be null');
@@ -436,7 +436,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getReply()
+    public function get_reply()
     {
         return $this->container['reply'];
     }
@@ -448,7 +448,7 @@ class PostApiV1RoomsCreateDiscussionRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setReply($reply)
+    public function set_reply($reply)
     {
         if (is_null($reply)) {
             throw new \InvalidArgumentException('non-nullable reply cannot be null');

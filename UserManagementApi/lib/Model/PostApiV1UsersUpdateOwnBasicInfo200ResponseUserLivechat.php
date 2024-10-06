@@ -175,7 +175,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'max_number_simultaneous_chat' => 'setMaxNumberSimultaneousChat'
+        'max_number_simultaneous_chat' => 'set_max_number_simultaneous_chat'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'max_number_simultaneous_chat' => 'getMaxNumberSimultaneousChat'
+        'max_number_simultaneous_chat' => 'get_max_number_simultaneous_chat'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat implements ModelIn
      *
      * @return string|null
      */
-    public function getMaxNumberSimultaneousChat()
+    public function get_max_number_simultaneous_chat()
     {
         return $this->container['max_number_simultaneous_chat'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat implements ModelIn
      *
      * @return self
      */
-    public function setMaxNumberSimultaneousChat($max_number_simultaneous_chat)
+    public function set_max_number_simultaneous_chat($max_number_simultaneous_chat)
     {
         if (is_null($max_number_simultaneous_chat)) {
             throw new \InvalidArgumentException('non-nullable max_number_simultaneous_chat cannot be null');

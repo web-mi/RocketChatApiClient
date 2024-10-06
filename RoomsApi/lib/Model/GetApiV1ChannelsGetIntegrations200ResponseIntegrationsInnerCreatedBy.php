@@ -179,8 +179,8 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy imple
      * @var string[]
      */
     protected static $setters = [
-        'username' => 'setUsername',
-        '_id' => 'setId'
+        'username' => 'set_username',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy imple
      * @var string[]
      */
     protected static $getters = [
-        'username' => 'getUsername',
-        '_id' => 'getId'
+        'username' => 'get_username',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy imple
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy imple
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy imple
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy imple
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

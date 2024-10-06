@@ -179,8 +179,8 @@ class GetApiV1OmnichannelContact200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'contact' => 'setContact',
-        'success' => 'setSuccess'
+        'contact' => 'set_contact',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1OmnichannelContact200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'contact' => 'getContact',
-        'success' => 'getSuccess'
+        'contact' => 'get_contact',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1OmnichannelContact200Response implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContact|null
      */
-    public function getContact()
+    public function get_contact()
     {
         return $this->container['contact'];
     }
@@ -313,7 +313,7 @@ class GetApiV1OmnichannelContact200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setContact($contact)
+    public function set_contact($contact)
     {
         if (is_null($contact)) {
             throw new \InvalidArgumentException('non-nullable contact cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1OmnichannelContact200Response implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1OmnichannelContact200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

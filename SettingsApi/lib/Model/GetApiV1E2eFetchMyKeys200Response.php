@@ -183,9 +183,9 @@ class GetApiV1E2eFetchMyKeys200Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'public_key' => 'setPublicKey',
-        'private_key' => 'setPrivateKey',
-        'success' => 'setSuccess'
+        'public_key' => 'set_public_key',
+        'private_key' => 'set_private_key',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1E2eFetchMyKeys200Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'public_key' => 'getPublicKey',
-        'private_key' => 'getPrivateKey',
-        'success' => 'getSuccess'
+        'public_key' => 'get_public_key',
+        'private_key' => 'get_private_key',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1E2eFetchMyKeys200Response implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getPublicKey()
+    public function get_public_key()
     {
         return $this->container['public_key'];
     }
@@ -320,7 +320,7 @@ class GetApiV1E2eFetchMyKeys200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setPublicKey($public_key)
+    public function set_public_key($public_key)
     {
         if (is_null($public_key)) {
             throw new \InvalidArgumentException('non-nullable public_key cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1E2eFetchMyKeys200Response implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getPrivateKey()
+    public function get_private_key()
     {
         return $this->container['private_key'];
     }
@@ -347,7 +347,7 @@ class GetApiV1E2eFetchMyKeys200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setPrivateKey($private_key)
+    public function set_private_key($private_key)
     {
         if (is_null($private_key)) {
             throw new \InvalidArgumentException('non-nullable private_key cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1E2eFetchMyKeys200Response implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1E2eFetchMyKeys200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

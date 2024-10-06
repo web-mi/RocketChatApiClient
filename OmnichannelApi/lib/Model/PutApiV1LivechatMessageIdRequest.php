@@ -183,9 +183,9 @@ class PutApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'rid' => 'setRid',
-        'msg' => 'setMsg'
+        'token' => 'set_token',
+        'rid' => 'set_rid',
+        'msg' => 'set_msg'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PutApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'rid' => 'getRid',
-        'msg' => 'getMsg'
+        'token' => 'get_token',
+        'rid' => 'get_rid',
+        'msg' => 'get_msg'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PutApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -320,7 +320,7 @@ class PutApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -335,7 +335,7 @@ class PutApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -347,7 +347,7 @@ class PutApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -362,7 +362,7 @@ class PutApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -374,7 +374,7 @@ class PutApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');

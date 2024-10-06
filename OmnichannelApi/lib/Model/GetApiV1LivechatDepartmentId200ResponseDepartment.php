@@ -199,13 +199,13 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'enabled' => 'setEnabled',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'num_agents' => 'setNumAgents',
-        'show_on_registration' => 'setShowOnRegistration',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'enabled' => 'set_enabled',
+        'name' => 'set_name',
+        'description' => 'set_description',
+        'num_agents' => 'set_num_agents',
+        'show_on_registration' => 'set_show_on_registration',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'enabled' => 'getEnabled',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'num_agents' => 'getNumAgents',
-        'show_on_registration' => 'getShowOnRegistration',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'enabled' => 'get_enabled',
+        'name' => 'get_name',
+        'description' => 'get_description',
+        'num_agents' => 'get_num_agents',
+        'show_on_registration' => 'get_show_on_registration',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -348,7 +348,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -375,7 +375,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -402,7 +402,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -417,7 +417,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -429,7 +429,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -444,7 +444,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return int|null
      */
-    public function getNumAgents()
+    public function get_num_agents()
     {
         return $this->container['num_agents'];
     }
@@ -456,7 +456,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return self
      */
-    public function setNumAgents($num_agents)
+    public function set_num_agents($num_agents)
     {
         if (is_null($num_agents)) {
             throw new \InvalidArgumentException('non-nullable num_agents cannot be null');
@@ -471,7 +471,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getShowOnRegistration()
+    public function get_show_on_registration()
     {
         return $this->container['show_on_registration'];
     }
@@ -483,7 +483,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return self
      */
-    public function setShowOnRegistration($show_on_registration)
+    public function set_show_on_registration($show_on_registration)
     {
         if (is_null($show_on_registration)) {
             throw new \InvalidArgumentException('non-nullable show_on_registration cannot be null');
@@ -498,7 +498,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -510,7 +510,7 @@ class GetApiV1LivechatDepartmentId200ResponseDepartment implements ModelInterfac
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

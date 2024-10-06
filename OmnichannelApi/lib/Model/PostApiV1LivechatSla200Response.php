@@ -179,8 +179,8 @@ class PostApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'sla' => 'setSla',
-        'success' => 'setSuccess'
+        'sla' => 'set_sla',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'sla' => 'getSla',
-        'success' => 'getSuccess'
+        'sla' => 'get_sla',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatSla200ResponseSla|null
      */
-    public function getSla()
+    public function get_sla()
     {
         return $this->container['sla'];
     }
@@ -313,7 +313,7 @@ class PostApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSla($sla)
+    public function set_sla($sla)
     {
         if (is_null($sla)) {
             throw new \InvalidArgumentException('non-nullable sla cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1LivechatSla200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

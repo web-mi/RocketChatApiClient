@@ -187,10 +187,10 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'show_on_registration' => 'setShowOnRegistration',
-        'show_on_offline_form' => 'setShowOnOfflineForm'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'show_on_registration' => 'set_show_on_registration',
+        'show_on_offline_form' => 'set_show_on_offline_form'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'show_on_registration' => 'getShowOnRegistration',
-        'show_on_offline_form' => 'getShowOnOfflineForm'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'show_on_registration' => 'get_show_on_registration',
+        'show_on_offline_form' => 'get_show_on_offline_form'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -354,7 +354,7 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      *
      * @return bool|null
      */
-    public function getShowOnRegistration()
+    public function get_show_on_registration()
     {
         return $this->container['show_on_registration'];
     }
@@ -381,7 +381,7 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      *
      * @return self
      */
-    public function setShowOnRegistration($show_on_registration)
+    public function set_show_on_registration($show_on_registration)
     {
         if (is_null($show_on_registration)) {
             throw new \InvalidArgumentException('non-nullable show_on_registration cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      *
      * @return bool|null
      */
-    public function getShowOnOfflineForm()
+    public function get_show_on_offline_form()
     {
         return $this->container['show_on_offline_form'];
     }
@@ -408,7 +408,7 @@ class GetApiV1LivechatConfig200ResponseConfigDepartmentsInner implements ModelIn
      *
      * @return self
      */
-    public function setShowOnOfflineForm($show_on_offline_form)
+    public function set_show_on_offline_form($show_on_offline_form)
     {
         if (is_null($show_on_offline_form)) {
             throw new \InvalidArgumentException('non-nullable show_on_offline_form cannot be null');

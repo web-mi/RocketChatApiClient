@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsFileUpload implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'file_upload_enable' => 'setFileUploadEnable'
+        'file_upload_enable' => 'set_file_upload_enable'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsFileUpload implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'file_upload_enable' => 'getFileUploadEnable'
+        'file_upload_enable' => 'get_file_upload_enable'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsFileUpload implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getFileUploadEnable()
+    public function get_file_upload_enable()
     {
         return $this->container['file_upload_enable'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsFileUpload implements ModelInterface,
      *
      * @return self
      */
-    public function setFileUploadEnable($file_upload_enable)
+    public function set_file_upload_enable($file_upload_enable)
     {
         if (is_null($file_upload_enable)) {
             throw new \InvalidArgumentException('non-nullable file_upload_enable cannot be null');

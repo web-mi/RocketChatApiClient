@@ -183,9 +183,9 @@ class GetApiV1FederationListServersByUser200ResponseServersInner implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'default' => 'setDefault',
-        'local' => 'setLocal'
+        'name' => 'set_name',
+        'default' => 'set_default',
+        'local' => 'set_local'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1FederationListServersByUser200ResponseServersInner implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'default' => 'getDefault',
-        'local' => 'getLocal'
+        'name' => 'get_name',
+        'default' => 'get_default',
+        'local' => 'get_local'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1FederationListServersByUser200ResponseServersInner implements Mode
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -320,7 +320,7 @@ class GetApiV1FederationListServersByUser200ResponseServersInner implements Mode
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1FederationListServersByUser200ResponseServersInner implements Mode
      *
      * @return bool|null
      */
-    public function getDefault()
+    public function get_default()
     {
         return $this->container['default'];
     }
@@ -347,7 +347,7 @@ class GetApiV1FederationListServersByUser200ResponseServersInner implements Mode
      *
      * @return self
      */
-    public function setDefault($default)
+    public function set_default($default)
     {
         if (is_null($default)) {
             throw new \InvalidArgumentException('non-nullable default cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1FederationListServersByUser200ResponseServersInner implements Mode
      *
      * @return bool|null
      */
-    public function getLocal()
+    public function get_local()
     {
         return $this->container['local'];
     }
@@ -374,7 +374,7 @@ class GetApiV1FederationListServersByUser200ResponseServersInner implements Mode
      *
      * @return self
      */
-    public function setLocal($local)
+    public function set_local($local)
     {
         if (is_null($local)) {
             throw new \InvalidArgumentException('non-nullable local cannot be null');

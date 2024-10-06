@@ -175,7 +175,7 @@ class PostApiV1BannersDismissRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'banner_id' => 'setBannerId'
+        'banner_id' => 'set_banner_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1BannersDismissRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'banner_id' => 'getBannerId'
+        'banner_id' => 'get_banner_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1BannersDismissRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string
      */
-    public function getBannerId()
+    public function get_banner_id()
     {
         return $this->container['banner_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1BannersDismissRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setBannerId($banner_id)
+    public function set_banner_id($banner_id)
     {
         if (is_null($banner_id)) {
             throw new \InvalidArgumentException('non-nullable banner_id cannot be null');

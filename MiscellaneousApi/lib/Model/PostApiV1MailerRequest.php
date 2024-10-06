@@ -187,10 +187,10 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      * @var string[]
      */
     protected static $setters = [
-        'from' => 'setFrom',
-        'subject' => 'setSubject',
-        'body' => 'setBody',
-        'dryrun' => 'setDryrun'
+        'from' => 'set_from',
+        'subject' => 'set_subject',
+        'body' => 'set_body',
+        'dryrun' => 'set_dryrun'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      * @var string[]
      */
     protected static $getters = [
-        'from' => 'getFrom',
-        'subject' => 'getSubject',
-        'body' => 'getBody',
-        'dryrun' => 'getDryrun'
+        'from' => 'get_from',
+        'subject' => 'get_subject',
+        'body' => 'get_body',
+        'dryrun' => 'get_dryrun'
     ];
 
     /**
@@ -321,7 +321,7 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return string
      */
-    public function getFrom()
+    public function get_from()
     {
         return $this->container['from'];
     }
@@ -333,7 +333,7 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setFrom($from)
+    public function set_from($from)
     {
         if (is_null($from)) {
             throw new \InvalidArgumentException('non-nullable from cannot be null');
@@ -348,7 +348,7 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return string
      */
-    public function getSubject()
+    public function get_subject()
     {
         return $this->container['subject'];
     }
@@ -360,7 +360,7 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setSubject($subject)
+    public function set_subject($subject)
     {
         if (is_null($subject)) {
             throw new \InvalidArgumentException('non-nullable subject cannot be null');
@@ -375,7 +375,7 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return string|null
      */
-    public function getBody()
+    public function get_body()
     {
         return $this->container['body'];
     }
@@ -387,7 +387,7 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setBody($body)
+    public function set_body($body)
     {
         if (is_null($body)) {
             throw new \InvalidArgumentException('non-nullable body cannot be null');
@@ -402,7 +402,7 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return string|null
      */
-    public function getDryrun()
+    public function get_dryrun()
     {
         return $this->container['dryrun'];
     }
@@ -414,7 +414,7 @@ class PostApiV1MailerRequest implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setDryrun($dryrun)
+    public function set_dryrun($dryrun)
     {
         if (is_null($dryrun)) {
             throw new \InvalidArgumentException('non-nullable dryrun cannot be null');

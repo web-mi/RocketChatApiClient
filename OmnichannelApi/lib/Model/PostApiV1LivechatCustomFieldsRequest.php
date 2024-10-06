@@ -179,8 +179,8 @@ class PostApiV1LivechatCustomFieldsRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'custom_fields' => 'setCustomFields'
+        'token' => 'set_token',
+        'custom_fields' => 'set_custom_fields'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatCustomFieldsRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'custom_fields' => 'getCustomFields'
+        'token' => 'get_token',
+        'custom_fields' => 'get_custom_fields'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1LivechatCustomFieldsRequest implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -319,7 +319,7 @@ class PostApiV1LivechatCustomFieldsRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1LivechatCustomFieldsRequest implements ModelInterface, ArrayAcces
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatCustomFieldsRequestCustomFieldsInner[]
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -346,7 +346,7 @@ class PostApiV1LivechatCustomFieldsRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');

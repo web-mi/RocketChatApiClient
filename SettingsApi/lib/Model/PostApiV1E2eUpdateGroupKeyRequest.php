@@ -183,9 +183,9 @@ class PostApiV1E2eUpdateGroupKeyRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'uid' => 'setUid',
-        'rid' => 'setRid',
-        'key' => 'setKey'
+        'uid' => 'set_uid',
+        'rid' => 'set_rid',
+        'key' => 'set_key'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1E2eUpdateGroupKeyRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'uid' => 'getUid',
-        'rid' => 'getRid',
-        'key' => 'getKey'
+        'uid' => 'get_uid',
+        'rid' => 'get_rid',
+        'key' => 'get_key'
     ];
 
     /**
@@ -317,7 +317,7 @@ class PostApiV1E2eUpdateGroupKeyRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getUid()
+    public function get_uid()
     {
         return $this->container['uid'];
     }
@@ -329,7 +329,7 @@ class PostApiV1E2eUpdateGroupKeyRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setUid($uid)
+    public function set_uid($uid)
     {
         if (is_null($uid)) {
             throw new \InvalidArgumentException('non-nullable uid cannot be null');
@@ -344,7 +344,7 @@ class PostApiV1E2eUpdateGroupKeyRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -356,7 +356,7 @@ class PostApiV1E2eUpdateGroupKeyRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -371,7 +371,7 @@ class PostApiV1E2eUpdateGroupKeyRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getKey()
+    public function get_key()
     {
         return $this->container['key'];
     }
@@ -383,7 +383,7 @@ class PostApiV1E2eUpdateGroupKeyRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setKey($key)
+    public function set_key($key)
     {
         if (is_null($key)) {
             throw new \InvalidArgumentException('non-nullable key cannot be null');

@@ -183,9 +183,9 @@ class PostApiV1LivechatMessages200ResponseMessagesInner implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'username' => 'setUsername',
-        'msg' => 'setMsg',
-        'ts' => 'setTs'
+        'username' => 'set_username',
+        'msg' => 'set_msg',
+        'ts' => 'set_ts'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatMessages200ResponseMessagesInner implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'username' => 'getUsername',
-        'msg' => 'getMsg',
-        'ts' => 'getTs'
+        'username' => 'get_username',
+        'msg' => 'get_msg',
+        'ts' => 'get_ts'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1LivechatMessages200ResponseMessagesInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -320,7 +320,7 @@ class PostApiV1LivechatMessages200ResponseMessagesInner implements ModelInterfac
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1LivechatMessages200ResponseMessagesInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -347,7 +347,7 @@ class PostApiV1LivechatMessages200ResponseMessagesInner implements ModelInterfac
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1LivechatMessages200ResponseMessagesInner implements ModelInterfac
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -374,7 +374,7 @@ class PostApiV1LivechatMessages200ResponseMessagesInner implements ModelInterfac
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');

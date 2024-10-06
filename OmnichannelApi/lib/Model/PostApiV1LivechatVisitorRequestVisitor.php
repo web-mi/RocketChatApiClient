@@ -200,13 +200,13 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'email' => 'setEmail',
-        'department' => 'setDepartment',
-        'token' => 'setToken',
-        'phone' => 'setPhone',
-        'username' => 'setUsername',
-        'custom_fields' => 'setCustomFields'
+        'name' => 'set_name',
+        'email' => 'set_email',
+        'department' => 'set_department',
+        'token' => 'set_token',
+        'phone' => 'set_phone',
+        'username' => 'set_username',
+        'custom_fields' => 'set_custom_fields'
     ];
 
     /**
@@ -215,13 +215,13 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'email' => 'getEmail',
-        'department' => 'getDepartment',
-        'token' => 'getToken',
-        'phone' => 'getPhone',
-        'username' => 'getUsername',
-        'custom_fields' => 'getCustomFields'
+        'name' => 'get_name',
+        'email' => 'get_email',
+        'department' => 'get_department',
+        'token' => 'get_token',
+        'phone' => 'get_phone',
+        'username' => 'get_username',
+        'custom_fields' => 'get_custom_fields'
     ];
 
     /**
@@ -340,7 +340,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -352,7 +352,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -367,7 +367,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -379,7 +379,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -394,7 +394,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getDepartment()
+    public function get_department()
     {
         return $this->container['department'];
     }
@@ -406,7 +406,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setDepartment($department)
+    public function set_department($department)
     {
         if (is_null($department)) {
             throw new \InvalidArgumentException('non-nullable department cannot be null');
@@ -421,7 +421,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -433,7 +433,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -448,7 +448,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getPhone()
+    public function get_phone()
     {
         return $this->container['phone'];
     }
@@ -460,7 +460,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setPhone($phone)
+    public function set_phone($phone)
     {
         if (is_null($phone)) {
             throw new \InvalidArgumentException('non-nullable phone cannot be null');
@@ -475,7 +475,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -487,7 +487,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -502,7 +502,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatVisitorRequestVisitorCustomFieldsInner[]|null
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -514,7 +514,7 @@ class PostApiV1LivechatVisitorRequestVisitor implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');

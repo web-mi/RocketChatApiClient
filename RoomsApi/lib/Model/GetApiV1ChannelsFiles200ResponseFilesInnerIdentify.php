@@ -179,8 +179,8 @@ class GetApiV1ChannelsFiles200ResponseFilesInnerIdentify implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'format' => 'setFormat',
-        'size' => 'setSize'
+        'format' => 'set_format',
+        'size' => 'set_size'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ChannelsFiles200ResponseFilesInnerIdentify implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'format' => 'getFormat',
-        'size' => 'getSize'
+        'format' => 'get_format',
+        'size' => 'get_size'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInnerIdentify implements ModelInterfa
      *
      * @return string|null
      */
-    public function getFormat()
+    public function get_format()
     {
         return $this->container['format'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInnerIdentify implements ModelInterfa
      *
      * @return self
      */
-    public function setFormat($format)
+    public function set_format($format)
     {
         if (is_null($format)) {
             throw new \InvalidArgumentException('non-nullable format cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInnerIdentify implements ModelInterfa
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsFiles200ResponseFilesInnerIdentifySize|null
      */
-    public function getSize()
+    public function get_size()
     {
         return $this->container['size'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ChannelsFiles200ResponseFilesInnerIdentify implements ModelInterfa
      *
      * @return self
      */
-    public function setSize($size)
+    public function set_size($size)
     {
         if (is_null($size)) {
             throw new \InvalidArgumentException('non-nullable size cannot be null');

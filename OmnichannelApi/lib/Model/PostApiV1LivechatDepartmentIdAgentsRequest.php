@@ -179,8 +179,8 @@ class PostApiV1LivechatDepartmentIdAgentsRequest implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'upsert' => 'setUpsert',
-        'remove' => 'setRemove'
+        'upsert' => 'set_upsert',
+        'remove' => 'set_remove'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatDepartmentIdAgentsRequest implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'upsert' => 'getUpsert',
-        'remove' => 'getRemove'
+        'upsert' => 'get_upsert',
+        'remove' => 'get_remove'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1LivechatDepartmentIdAgentsRequest implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentIdAgentsRequestUpsertInner[]
      */
-    public function getUpsert()
+    public function get_upsert()
     {
         return $this->container['upsert'];
     }
@@ -319,7 +319,7 @@ class PostApiV1LivechatDepartmentIdAgentsRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUpsert($upsert)
+    public function set_upsert($upsert)
     {
         if (is_null($upsert)) {
             throw new \InvalidArgumentException('non-nullable upsert cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1LivechatDepartmentIdAgentsRequest implements ModelInterface, Arra
      *
      * @return object[]
      */
-    public function getRemove()
+    public function get_remove()
     {
         return $this->container['remove'];
     }
@@ -346,7 +346,7 @@ class PostApiV1LivechatDepartmentIdAgentsRequest implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setRemove($remove)
+    public function set_remove($remove)
     {
         if (is_null($remove)) {
             throw new \InvalidArgumentException('non-nullable remove cannot be null');

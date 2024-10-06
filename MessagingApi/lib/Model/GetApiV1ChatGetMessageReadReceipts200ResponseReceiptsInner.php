@@ -195,12 +195,12 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'room_id' => 'setRoomId',
-        'user_id' => 'setUserId',
-        'message_id' => 'setMessageId',
-        'ts' => 'setTs',
-        'user' => 'setUser'
+        '_id' => 'set__id',
+        'room_id' => 'set_room_id',
+        'user_id' => 'set_user_id',
+        'message_id' => 'set_message_id',
+        'ts' => 'set_ts',
+        'user' => 'set_user'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'room_id' => 'getRoomId',
-        'user_id' => 'getUserId',
-        'message_id' => 'getMessageId',
-        'ts' => 'getTs',
-        'user' => 'getUser'
+        '_id' => 'get__id',
+        'room_id' => 'get_room_id',
+        'user_id' => 'get_user_id',
+        'message_id' => 'get_message_id',
+        'ts' => 'get_ts',
+        'user' => 'get_user'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return string|null
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -368,7 +368,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -395,7 +395,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return string|null
      */
-    public function getMessageId()
+    public function get_message_id()
     {
         return $this->container['message_id'];
     }
@@ -422,7 +422,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return self
      */
-    public function setMessageId($message_id)
+    public function set_message_id($message_id)
     {
         if (is_null($message_id)) {
             throw new \InvalidArgumentException('non-nullable message_id cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -449,7 +449,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser|null
      */
-    public function getUser()
+    public function get_user()
     {
         return $this->container['user'];
     }
@@ -476,7 +476,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner implements Mode
      *
      * @return self
      */
-    public function setUser($user)
+    public function set_user($user)
     {
         if (is_null($user)) {
             throw new \InvalidArgumentException('non-nullable user cannot be null');

@@ -179,8 +179,8 @@ class PutApiV1LivechatWebrtcCallCallId200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'status' => 'setStatus',
-        'success' => 'setSuccess'
+        'status' => 'set_status',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PutApiV1LivechatWebrtcCallCallId200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'status' => 'getStatus',
-        'success' => 'getSuccess'
+        'status' => 'get_status',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PutApiV1LivechatWebrtcCallCallId200Response implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -313,7 +313,7 @@ class PutApiV1LivechatWebrtcCallCallId200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -328,7 +328,7 @@ class PutApiV1LivechatWebrtcCallCallId200Response implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PutApiV1LivechatWebrtcCallCallId200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

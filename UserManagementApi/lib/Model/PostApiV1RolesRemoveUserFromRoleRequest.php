@@ -179,8 +179,8 @@ class PostApiV1RolesRemoveUserFromRoleRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'role_id' => 'setRoleId',
-        'username' => 'setUsername'
+        'role_id' => 'set_role_id',
+        'username' => 'set_username'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1RolesRemoveUserFromRoleRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'role_id' => 'getRoleId',
-        'username' => 'getUsername'
+        'role_id' => 'get_role_id',
+        'username' => 'get_username'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1RolesRemoveUserFromRoleRequest implements ModelInterface, ArrayAc
      *
      * @return string
      */
-    public function getRoleId()
+    public function get_role_id()
     {
         return $this->container['role_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1RolesRemoveUserFromRoleRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setRoleId($role_id)
+    public function set_role_id($role_id)
     {
         if (is_null($role_id)) {
             throw new \InvalidArgumentException('non-nullable role_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1RolesRemoveUserFromRoleRequest implements ModelInterface, ArrayAc
      *
      * @return string
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -346,7 +346,7 @@ class PostApiV1RolesRemoveUserFromRoleRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');

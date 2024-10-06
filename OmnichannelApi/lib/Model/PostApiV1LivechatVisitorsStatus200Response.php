@@ -183,9 +183,9 @@ class PostApiV1LivechatVisitorsStatus200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'status' => 'setStatus',
-        'success' => 'setSuccess'
+        'token' => 'set_token',
+        'status' => 'set_status',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatVisitorsStatus200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'status' => 'getStatus',
-        'success' => 'getSuccess'
+        'token' => 'get_token',
+        'status' => 'get_status',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1LivechatVisitorsStatus200Response implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -320,7 +320,7 @@ class PostApiV1LivechatVisitorsStatus200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1LivechatVisitorsStatus200Response implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -347,7 +347,7 @@ class PostApiV1LivechatVisitorsStatus200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1LivechatVisitorsStatus200Response implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class PostApiV1LivechatVisitorsStatus200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -183,9 +183,9 @@ class GetApiV1Statistics200ResponseOmnichannelContactsBySource implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        'contacts_count' => 'setContactsCount',
-        'conversations_count' => 'setConversationsCount',
-        'sources' => 'setSources'
+        'contacts_count' => 'set_contacts_count',
+        'conversations_count' => 'set_conversations_count',
+        'sources' => 'set_sources'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1Statistics200ResponseOmnichannelContactsBySource implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        'contacts_count' => 'getContactsCount',
-        'conversations_count' => 'getConversationsCount',
-        'sources' => 'getSources'
+        'contacts_count' => 'get_contacts_count',
+        'conversations_count' => 'get_conversations_count',
+        'sources' => 'get_sources'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1Statistics200ResponseOmnichannelContactsBySource implements ModelI
      *
      * @return int|null
      */
-    public function getContactsCount()
+    public function get_contacts_count()
     {
         return $this->container['contacts_count'];
     }
@@ -320,7 +320,7 @@ class GetApiV1Statistics200ResponseOmnichannelContactsBySource implements ModelI
      *
      * @return self
      */
-    public function setContactsCount($contacts_count)
+    public function set_contacts_count($contacts_count)
     {
         if (is_null($contacts_count)) {
             throw new \InvalidArgumentException('non-nullable contacts_count cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1Statistics200ResponseOmnichannelContactsBySource implements ModelI
      *
      * @return int|null
      */
-    public function getConversationsCount()
+    public function get_conversations_count()
     {
         return $this->container['conversations_count'];
     }
@@ -347,7 +347,7 @@ class GetApiV1Statistics200ResponseOmnichannelContactsBySource implements ModelI
      *
      * @return self
      */
-    public function setConversationsCount($conversations_count)
+    public function set_conversations_count($conversations_count)
     {
         if (is_null($conversations_count)) {
             throw new \InvalidArgumentException('non-nullable conversations_count cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1Statistics200ResponseOmnichannelContactsBySource implements ModelI
      *
      * @return object[]|null
      */
-    public function getSources()
+    public function get_sources()
     {
         return $this->container['sources'];
     }
@@ -374,7 +374,7 @@ class GetApiV1Statistics200ResponseOmnichannelContactsBySource implements ModelI
      *
      * @return self
      */
-    public function setSources($sources)
+    public function set_sources($sources)
     {
         if (is_null($sources)) {
             throw new \InvalidArgumentException('non-nullable sources cannot be null');

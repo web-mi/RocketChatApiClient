@@ -175,7 +175,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences impleme
      * @var string[]
      */
     protected static $setters = [
-        'theme_appearence' => 'setThemeAppearence'
+        'theme_appearence' => 'set_theme_appearence'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences impleme
      * @var string[]
      */
     protected static $getters = [
-        'theme_appearence' => 'getThemeAppearence'
+        'theme_appearence' => 'get_theme_appearence'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences impleme
      *
      * @return string|null
      */
-    public function getThemeAppearence()
+    public function get_theme_appearence()
     {
         return $this->container['theme_appearence'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettingsPreferences impleme
      *
      * @return self
      */
-    public function setThemeAppearence($theme_appearence)
+    public function set_theme_appearence($theme_appearence)
     {
         if (is_null($theme_appearence)) {
             throw new \InvalidArgumentException('non-nullable theme_appearence cannot be null');

@@ -199,13 +199,13 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'type' => 'setType',
-        'created_at' => 'setCreatedAt',
-        'created_by' => 'setCreatedBy',
-        '_updated_at' => 'setUpdatedAt',
-        'room_id' => 'setRoomId'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'type' => 'set_type',
+        'created_at' => 'set_created_at',
+        'created_by' => 'set_created_by',
+        '_updated_at' => 'set__updated_at',
+        'room_id' => 'set_room_id'
     ];
 
     /**
@@ -214,13 +214,13 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'type' => 'getType',
-        'created_at' => 'getCreatedAt',
-        'created_by' => 'getCreatedBy',
-        '_updated_at' => 'getUpdatedAt',
-        'room_id' => 'getRoomId'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'type' => 'get_type',
+        'created_at' => 'get_created_at',
+        'created_by' => 'get_created_by',
+        '_updated_at' => 'get__updated_at',
+        'room_id' => 'get_room_id'
     ];
 
     /**
@@ -336,7 +336,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -348,7 +348,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -363,7 +363,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -375,7 +375,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -390,7 +390,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -402,7 +402,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -417,7 +417,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -429,7 +429,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -444,7 +444,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
-    public function getCreatedBy()
+    public function get_created_by()
     {
         return $this->container['created_by'];
     }
@@ -456,7 +456,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return self
      */
-    public function setCreatedBy($created_by)
+    public function set_created_by($created_by)
     {
         if (is_null($created_by)) {
             throw new \InvalidArgumentException('non-nullable created_by cannot be null');
@@ -471,7 +471,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -483,7 +483,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -498,7 +498,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -510,7 +510,7 @@ class PostApiV1ChannelsConvertToTeam200ResponseTeam implements ModelInterface, A
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');

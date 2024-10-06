@@ -183,9 +183,9 @@ class PostApiV1UsersSetActiveStatusRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'active_status' => 'setActiveStatus',
-        'user_id' => 'setUserId',
-        'confirm_relinquish' => 'setConfirmRelinquish'
+        'active_status' => 'set_active_status',
+        'user_id' => 'set_user_id',
+        'confirm_relinquish' => 'set_confirm_relinquish'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1UsersSetActiveStatusRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'active_status' => 'getActiveStatus',
-        'user_id' => 'getUserId',
-        'confirm_relinquish' => 'getConfirmRelinquish'
+        'active_status' => 'get_active_status',
+        'user_id' => 'get_user_id',
+        'confirm_relinquish' => 'get_confirm_relinquish'
     ];
 
     /**
@@ -314,7 +314,7 @@ class PostApiV1UsersSetActiveStatusRequest implements ModelInterface, ArrayAcces
      *
      * @return bool
      */
-    public function getActiveStatus()
+    public function get_active_status()
     {
         return $this->container['active_status'];
     }
@@ -326,7 +326,7 @@ class PostApiV1UsersSetActiveStatusRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setActiveStatus($active_status)
+    public function set_active_status($active_status)
     {
         if (is_null($active_status)) {
             throw new \InvalidArgumentException('non-nullable active_status cannot be null');
@@ -341,7 +341,7 @@ class PostApiV1UsersSetActiveStatusRequest implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -353,7 +353,7 @@ class PostApiV1UsersSetActiveStatusRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -368,7 +368,7 @@ class PostApiV1UsersSetActiveStatusRequest implements ModelInterface, ArrayAcces
      *
      * @return bool|null
      */
-    public function getConfirmRelinquish()
+    public function get_confirm_relinquish()
     {
         return $this->container['confirm_relinquish'];
     }
@@ -380,7 +380,7 @@ class PostApiV1UsersSetActiveStatusRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setConfirmRelinquish($confirm_relinquish)
+    public function set_confirm_relinquish($confirm_relinquish)
     {
         if (is_null($confirm_relinquish)) {
             throw new \InvalidArgumentException('non-nullable confirm_relinquish cannot be null');

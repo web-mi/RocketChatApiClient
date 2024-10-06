@@ -183,9 +183,9 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElements
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'text' => 'setText',
-        'emoji' => 'setEmoji'
+        'type' => 'set_type',
+        'text' => 'set_text',
+        'emoji' => 'set_emoji'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElements
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'text' => 'getText',
-        'emoji' => 'getEmoji'
+        'type' => 'get_type',
+        'text' => 'get_text',
+        'emoji' => 'get_emoji'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElements
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -320,7 +320,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElements
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElements
      *
      * @return string|null
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -347,7 +347,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElements
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElements
      *
      * @return bool|null
      */
-    public function getEmoji()
+    public function get_emoji()
     {
         return $this->container['emoji'];
     }
@@ -374,7 +374,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElements
      *
      * @return self
      */
-    public function setEmoji($emoji)
+    public function set_emoji($emoji)
     {
         if (is_null($emoji)) {
             throw new \InvalidArgumentException('non-nullable emoji cannot be null');

@@ -183,9 +183,9 @@ class GetApiV1SessionsListAll400ResponseDetails implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'method' => 'setMethod',
-        'code_generated' => 'setCodeGenerated',
-        'available_methods' => 'setAvailableMethods'
+        'method' => 'set_method',
+        'code_generated' => 'set_code_generated',
+        'available_methods' => 'set_available_methods'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1SessionsListAll400ResponseDetails implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'method' => 'getMethod',
-        'code_generated' => 'getCodeGenerated',
-        'available_methods' => 'getAvailableMethods'
+        'method' => 'get_method',
+        'code_generated' => 'get_code_generated',
+        'available_methods' => 'get_available_methods'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1SessionsListAll400ResponseDetails implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getMethod()
+    public function get_method()
     {
         return $this->container['method'];
     }
@@ -320,7 +320,7 @@ class GetApiV1SessionsListAll400ResponseDetails implements ModelInterface, Array
      *
      * @return self
      */
-    public function setMethod($method)
+    public function set_method($method)
     {
         if (is_null($method)) {
             throw new \InvalidArgumentException('non-nullable method cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1SessionsListAll400ResponseDetails implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getCodeGenerated()
+    public function get_code_generated()
     {
         return $this->container['code_generated'];
     }
@@ -347,7 +347,7 @@ class GetApiV1SessionsListAll400ResponseDetails implements ModelInterface, Array
      *
      * @return self
      */
-    public function setCodeGenerated($code_generated)
+    public function set_code_generated($code_generated)
     {
         if (is_null($code_generated)) {
             throw new \InvalidArgumentException('non-nullable code_generated cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1SessionsListAll400ResponseDetails implements ModelInterface, Array
      *
      * @return object[]|null
      */
-    public function getAvailableMethods()
+    public function get_available_methods()
     {
         return $this->container['available_methods'];
     }
@@ -374,7 +374,7 @@ class GetApiV1SessionsListAll400ResponseDetails implements ModelInterface, Array
      *
      * @return self
      */
-    public function setAvailableMethods($available_methods)
+    public function set_available_methods($available_methods)
     {
         if (is_null($available_methods)) {
             throw new \InvalidArgumentException('non-nullable available_methods cannot be null');

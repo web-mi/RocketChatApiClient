@@ -187,10 +187,10 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'name' => 'setName',
-        'type' => 'setType'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'name' => 'set_name',
+        'type' => 'set_type'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'name' => 'getName',
-        'type' => 'getType'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'name' => 'get_name',
+        'type' => 'get_type'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -354,7 +354,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -381,7 +381,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -408,7 +408,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerTransferredBy
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');

@@ -179,8 +179,8 @@ class PostApiV1UsersCreate200ResponseUserEmailsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'address' => 'setAddress',
-        'verified' => 'setVerified'
+        'address' => 'set_address',
+        'verified' => 'set_verified'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersCreate200ResponseUserEmailsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'address' => 'getAddress',
-        'verified' => 'getVerified'
+        'address' => 'get_address',
+        'verified' => 'get_verified'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersCreate200ResponseUserEmailsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getAddress()
+    public function get_address()
     {
         return $this->container['address'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersCreate200ResponseUserEmailsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setAddress($address)
+    public function set_address($address)
     {
         if (is_null($address)) {
             throw new \InvalidArgumentException('non-nullable address cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersCreate200ResponseUserEmailsInner implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getVerified()
+    public function get_verified()
     {
         return $this->container['verified'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersCreate200ResponseUserEmailsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setVerified($verified)
+    public function set_verified($verified)
     {
         if (is_null($verified)) {
             throw new \InvalidArgumentException('non-nullable verified cannot be null');

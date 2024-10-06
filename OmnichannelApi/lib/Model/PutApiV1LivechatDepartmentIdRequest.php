@@ -58,7 +58,8 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
       */
     protected static $openAPITypes = [
         'department' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequestDepartment',
-        'agents' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequestAgentsInner[]'
+        'agents' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequestAgentsInner[]',
+        'department_unit' => '\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequestDepartmentUnit'
     ];
 
     /**
@@ -70,7 +71,8 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
       */
     protected static $openAPIFormats = [
         'department' => null,
-        'agents' => null
+        'agents' => null,
+        'department_unit' => null
     ];
 
     /**
@@ -80,7 +82,8 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
       */
     protected static array $openAPINullables = [
         'department' => false,
-        'agents' => false
+        'agents' => false,
+        'department_unit' => false
     ];
 
     /**
@@ -170,7 +173,8 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
      */
     protected static $attributeMap = [
         'department' => 'department',
-        'agents' => 'agents'
+        'agents' => 'agents',
+        'department_unit' => 'departmentUnit'
     ];
 
     /**
@@ -179,8 +183,9 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'department' => 'setDepartment',
-        'agents' => 'setAgents'
+        'department' => 'set_department',
+        'agents' => 'set_agents',
+        'department_unit' => 'set_department_unit'
     ];
 
     /**
@@ -189,8 +194,9 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'department' => 'getDepartment',
-        'agents' => 'getAgents'
+        'department' => 'get_department',
+        'agents' => 'get_agents',
+        'department_unit' => 'get_department_unit'
     ];
 
     /**
@@ -252,6 +258,7 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
     {
         $this->setIfExists('department', $data ?? [], null);
         $this->setIfExists('agents', $data ?? [], null);
+        $this->setIfExists('department_unit', $data ?? [], null);
     }
 
     /**
@@ -304,7 +311,7 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequestDepartment
      */
-    public function getDepartment()
+    public function get_department()
     {
         return $this->container['department'];
     }
@@ -316,7 +323,7 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setDepartment($department)
+    public function set_department($department)
     {
         if (is_null($department)) {
             throw new \InvalidArgumentException('non-nullable department cannot be null');
@@ -331,7 +338,7 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequestAgentsInner[]|null
      */
-    public function getAgents()
+    public function get_agents()
     {
         return $this->container['agents'];
     }
@@ -343,12 +350,39 @@ class PutApiV1LivechatDepartmentIdRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setAgents($agents)
+    public function set_agents($agents)
     {
         if (is_null($agents)) {
             throw new \InvalidArgumentException('non-nullable agents cannot be null');
         }
         $this->container['agents'] = $agents;
+
+        return $this;
+    }
+
+    /**
+     * Gets department_unit
+     *
+     * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequestDepartmentUnit|null
+     */
+    public function get_department_unit()
+    {
+        return $this->container['department_unit'];
+    }
+
+    /**
+     * Sets department_unit
+     *
+     * @param \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequestDepartmentUnit|null $department_unit department_unit
+     *
+     * @return self
+     */
+    public function set_department_unit($department_unit)
+    {
+        if (is_null($department_unit)) {
+            throw new \InvalidArgumentException('non-nullable department_unit cannot be null');
+        }
+        $this->container['department_unit'] = $department_unit;
 
         return $this;
     }

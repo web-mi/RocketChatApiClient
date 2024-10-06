@@ -1106,7 +1106,7 @@ $apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatDepartme
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_livechat_department_request = {"department":{"enabled":false,"showOnRegistration":true,"name":"new from api","email":"john@doe.com","showOnOfflineForm":true},"agents":[{"agentId":"SQafHvoFPuB57NmBD"}]}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentRequest
+$post_api_v1_livechat_department_request = {"department":{"enabled":false,"showOnRegistration":true,"name":"new from api","email":"john@doe.com","showOnOfflineForm":true},"agents":[{"agentId":"SQafHvoFPuB57NmBD"}],"departmentUnit":{"_id":"66f46dc59a0766c20712d698"}}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatDepartmentRequest
 
 try {
     $result = $apiInstance->postApiV1LivechatDepartment($x_auth_token, $x_user_id, $post_api_v1_livechat_department_request);
@@ -1229,7 +1229,7 @@ $apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatDepartme
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $_id = '_id_example'; // string | The department ID.
-$put_api_v1_livechat_department_id_request = {"department":{"enabled":true,"name":"new from api - live","showOnRegistration":true,"email":"test@test.com","showOnOfflineForm":false},"agents":[{"agentId":"SQafHvoFPuB57NmBD","username":"john.doe"}]}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequest
+$put_api_v1_livechat_department_id_request = {"department":{"enabled":true,"name":"new from api - live","showOnRegistration":true,"email":"test@test.com","showOnOfflineForm":false},"agents":[{"agentId":"SQafHvoFPuB57NmBD","username":"john.doe"}],"departmentUnit":{"_id":"66f46dc59a0766c20712d698"}}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatDepartmentIdRequest
 
 try {
     $result = $apiInstance->putApiV1LivechatDepartmentId($x_auth_token, $x_user_id, $_id, $put_api_v1_livechat_department_id_request);

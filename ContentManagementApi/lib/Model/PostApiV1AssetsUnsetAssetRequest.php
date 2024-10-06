@@ -179,8 +179,8 @@ class PostApiV1AssetsUnsetAssetRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'asset_name' => 'setAssetName',
-        'refresh_all_clients' => 'setRefreshAllClients'
+        'asset_name' => 'set_asset_name',
+        'refresh_all_clients' => 'set_refresh_all_clients'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1AssetsUnsetAssetRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'asset_name' => 'getAssetName',
-        'refresh_all_clients' => 'getRefreshAllClients'
+        'asset_name' => 'get_asset_name',
+        'refresh_all_clients' => 'get_refresh_all_clients'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1AssetsUnsetAssetRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getAssetName()
+    public function get_asset_name()
     {
         return $this->container['asset_name'];
     }
@@ -316,7 +316,7 @@ class PostApiV1AssetsUnsetAssetRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setAssetName($asset_name)
+    public function set_asset_name($asset_name)
     {
         if (is_null($asset_name)) {
             throw new \InvalidArgumentException('non-nullable asset_name cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1AssetsUnsetAssetRequest implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getRefreshAllClients()
+    public function get_refresh_all_clients()
     {
         return $this->container['refresh_all_clients'];
     }
@@ -343,7 +343,7 @@ class PostApiV1AssetsUnsetAssetRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setRefreshAllClients($refresh_all_clients)
+    public function set_refresh_all_clients($refresh_all_clients)
     {
         if (is_null($refresh_all_clients)) {
             throw new \InvalidArgumentException('non-nullable refresh_all_clients cannot be null');

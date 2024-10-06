@@ -179,8 +179,8 @@ class GetApiV1CannedResponsesGet200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'responses' => 'setResponses',
-        'success' => 'setSuccess'
+        'responses' => 'set_responses',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1CannedResponsesGet200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'responses' => 'getResponses',
-        'success' => 'getSuccess'
+        'responses' => 'get_responses',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1CannedResponsesGet200Response implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1CannedResponsesGet200ResponseResponsesInner[]|null
      */
-    public function getResponses()
+    public function get_responses()
     {
         return $this->container['responses'];
     }
@@ -313,7 +313,7 @@ class GetApiV1CannedResponsesGet200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setResponses($responses)
+    public function set_responses($responses)
     {
         if (is_null($responses)) {
             throw new \InvalidArgumentException('non-nullable responses cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1CannedResponsesGet200Response implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1CannedResponsesGet200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

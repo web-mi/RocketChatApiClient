@@ -191,11 +191,11 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'rooms' => 'setRooms',
-        'total' => 'setTotal',
-        'count' => 'setCount',
-        'offset' => 'setOffset',
-        'success' => 'setSuccess'
+        'rooms' => 'set_rooms',
+        'total' => 'set_total',
+        'count' => 'set_count',
+        'offset' => 'set_offset',
+        'success' => 'set_success'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'rooms' => 'getRooms',
-        'total' => 'getTotal',
-        'count' => 'getCount',
-        'offset' => 'getOffset',
-        'success' => 'getSuccess'
+        'rooms' => 'get_rooms',
+        'total' => 'get_total',
+        'count' => 'get_count',
+        'offset' => 'get_offset',
+        'success' => 'get_success'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsListRoomsOfUser200ResponseRoomsInner[]|null
      */
-    public function getRooms()
+    public function get_rooms()
     {
         return $this->container['rooms'];
     }
@@ -334,7 +334,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setRooms($rooms)
+    public function set_rooms($rooms)
     {
         if (is_null($rooms)) {
             throw new \InvalidArgumentException('non-nullable rooms cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -361,7 +361,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -388,7 +388,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getOffset()
+    public function get_offset()
     {
         return $this->container['offset'];
     }
@@ -415,7 +415,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setOffset($offset)
+    public function set_offset($offset)
     {
         if (is_null($offset)) {
             throw new \InvalidArgumentException('non-nullable offset cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -442,7 +442,7 @@ class GetApiV1TeamsListRoomsOfUser200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

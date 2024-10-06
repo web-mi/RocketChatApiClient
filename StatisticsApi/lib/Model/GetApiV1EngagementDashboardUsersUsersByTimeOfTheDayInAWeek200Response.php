@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response impl
      * @var string[]
      */
     protected static $setters = [
-        'week' => 'setWeek',
-        'success' => 'setSuccess'
+        'week' => 'set_week',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response impl
      * @var string[]
      */
     protected static $getters = [
-        'week' => 'getWeek',
-        'success' => 'getSuccess'
+        'week' => 'get_week',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response impl
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200ResponseWeekInner[]|null
      */
-    public function getWeek()
+    public function get_week()
     {
         return $this->container['week'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response impl
      *
      * @return self
      */
-    public function setWeek($week)
+    public function set_week($week)
     {
         if (is_null($week)) {
             throw new \InvalidArgumentException('non-nullable week cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response impl
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardUsersUsersByTimeOfTheDayInAWeek200Response impl
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

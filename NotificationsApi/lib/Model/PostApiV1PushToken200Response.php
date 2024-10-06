@@ -179,8 +179,8 @@ class PostApiV1PushToken200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'result' => 'setResult',
-        'success' => 'setSuccess'
+        'result' => 'set_result',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1PushToken200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'result' => 'getResult',
-        'success' => 'getSuccess'
+        'result' => 'get_result',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1PushToken200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200ResponseResult|null
      */
-    public function getResult()
+    public function get_result()
     {
         return $this->container['result'];
     }
@@ -313,7 +313,7 @@ class PostApiV1PushToken200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setResult($result)
+    public function set_result($result)
     {
         if (is_null($result)) {
             throw new \InvalidArgumentException('non-nullable result cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1PushToken200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1PushToken200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

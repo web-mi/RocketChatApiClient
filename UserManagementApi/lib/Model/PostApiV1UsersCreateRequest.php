@@ -231,21 +231,21 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'email' => 'setEmail',
-        'password' => 'setPassword',
-        'username' => 'setUsername',
-        'active' => 'setActive',
-        'nickname' => 'setNickname',
-        'bio' => 'setBio',
-        'join_default_channels' => 'setJoinDefaultChannels',
-        'status_text' => 'setStatusText',
-        'roles' => 'setRoles',
-        'require_password_change' => 'setRequirePasswordChange',
-        'set_random_password' => 'setSetRandomPassword',
-        'send_welcome_email' => 'setSendWelcomeEmail',
-        'verified' => 'setVerified',
-        'custom_fields' => 'setCustomFields'
+        'name' => 'set_name',
+        'email' => 'set_email',
+        'password' => 'set_password',
+        'username' => 'set_username',
+        'active' => 'set_active',
+        'nickname' => 'set_nickname',
+        'bio' => 'set_bio',
+        'join_default_channels' => 'set_join_default_channels',
+        'status_text' => 'set_status_text',
+        'roles' => 'set_roles',
+        'require_password_change' => 'set_require_password_change',
+        'set_random_password' => 'set_set_random_password',
+        'send_welcome_email' => 'set_send_welcome_email',
+        'verified' => 'set_verified',
+        'custom_fields' => 'set_custom_fields'
     ];
 
     /**
@@ -254,21 +254,21 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'email' => 'getEmail',
-        'password' => 'getPassword',
-        'username' => 'getUsername',
-        'active' => 'getActive',
-        'nickname' => 'getNickname',
-        'bio' => 'getBio',
-        'join_default_channels' => 'getJoinDefaultChannels',
-        'status_text' => 'getStatusText',
-        'roles' => 'getRoles',
-        'require_password_change' => 'getRequirePasswordChange',
-        'set_random_password' => 'getSetRandomPassword',
-        'send_welcome_email' => 'getSendWelcomeEmail',
-        'verified' => 'getVerified',
-        'custom_fields' => 'getCustomFields'
+        'name' => 'get_name',
+        'email' => 'get_email',
+        'password' => 'get_password',
+        'username' => 'get_username',
+        'active' => 'get_active',
+        'nickname' => 'get_nickname',
+        'bio' => 'get_bio',
+        'join_default_channels' => 'get_join_default_channels',
+        'status_text' => 'get_status_text',
+        'roles' => 'get_roles',
+        'require_password_change' => 'get_require_password_change',
+        'set_random_password' => 'get_set_random_password',
+        'send_welcome_email' => 'get_send_welcome_email',
+        'verified' => 'get_verified',
+        'custom_fields' => 'get_custom_fields'
     ];
 
     /**
@@ -404,7 +404,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -416,7 +416,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -431,7 +431,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -443,7 +443,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -458,7 +458,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getPassword()
+    public function get_password()
     {
         return $this->container['password'];
     }
@@ -470,7 +470,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setPassword($password)
+    public function set_password($password)
     {
         if (is_null($password)) {
             throw new \InvalidArgumentException('non-nullable password cannot be null');
@@ -485,7 +485,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -497,7 +497,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -512,7 +512,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return bool|null
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -524,7 +524,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');
@@ -539,7 +539,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getNickname()
+    public function get_nickname()
     {
         return $this->container['nickname'];
     }
@@ -551,7 +551,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setNickname($nickname)
+    public function set_nickname($nickname)
     {
         if (is_null($nickname)) {
             throw new \InvalidArgumentException('non-nullable nickname cannot be null');
@@ -566,7 +566,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getBio()
+    public function get_bio()
     {
         return $this->container['bio'];
     }
@@ -578,7 +578,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setBio($bio)
+    public function set_bio($bio)
     {
         if (is_null($bio)) {
             throw new \InvalidArgumentException('non-nullable bio cannot be null');
@@ -593,7 +593,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return bool|null
      */
-    public function getJoinDefaultChannels()
+    public function get_join_default_channels()
     {
         return $this->container['join_default_channels'];
     }
@@ -605,7 +605,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setJoinDefaultChannels($join_default_channels)
+    public function set_join_default_channels($join_default_channels)
     {
         if (is_null($join_default_channels)) {
             throw new \InvalidArgumentException('non-nullable join_default_channels cannot be null');
@@ -620,7 +620,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getStatusText()
+    public function get_status_text()
     {
         return $this->container['status_text'];
     }
@@ -632,7 +632,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setStatusText($status_text)
+    public function set_status_text($status_text)
     {
         if (is_null($status_text)) {
             throw new \InvalidArgumentException('non-nullable status_text cannot be null');
@@ -647,7 +647,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -659,7 +659,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -674,7 +674,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return bool|null
      */
-    public function getRequirePasswordChange()
+    public function get_require_password_change()
     {
         return $this->container['require_password_change'];
     }
@@ -686,7 +686,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setRequirePasswordChange($require_password_change)
+    public function set_require_password_change($require_password_change)
     {
         if (is_null($require_password_change)) {
             throw new \InvalidArgumentException('non-nullable require_password_change cannot be null');
@@ -701,7 +701,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return bool|null
      */
-    public function getSetRandomPassword()
+    public function get_set_random_password()
     {
         return $this->container['set_random_password'];
     }
@@ -713,7 +713,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setSetRandomPassword($set_random_password)
+    public function set_set_random_password($set_random_password)
     {
         if (is_null($set_random_password)) {
             throw new \InvalidArgumentException('non-nullable set_random_password cannot be null');
@@ -728,7 +728,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return bool|null
      */
-    public function getSendWelcomeEmail()
+    public function get_send_welcome_email()
     {
         return $this->container['send_welcome_email'];
     }
@@ -740,7 +740,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setSendWelcomeEmail($send_welcome_email)
+    public function set_send_welcome_email($send_welcome_email)
     {
         if (is_null($send_welcome_email)) {
             throw new \InvalidArgumentException('non-nullable send_welcome_email cannot be null');
@@ -755,7 +755,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return bool|null
      */
-    public function getVerified()
+    public function get_verified()
     {
         return $this->container['verified'];
     }
@@ -767,7 +767,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setVerified($verified)
+    public function set_verified($verified)
     {
         if (is_null($verified)) {
             throw new \InvalidArgumentException('non-nullable verified cannot be null');
@@ -782,7 +782,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return object|null
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -794,7 +794,7 @@ class PostApiV1UsersCreateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');

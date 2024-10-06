@@ -195,12 +195,12 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'license' => 'setLicense',
-        'active_modules' => 'setActiveModules',
-        'prevented_actions' => 'setPreventedActions',
-        'limits' => 'setLimits',
-        'tags' => 'setTags',
-        'trial' => 'setTrial'
+        'license' => 'set_license',
+        'active_modules' => 'set_active_modules',
+        'prevented_actions' => 'set_prevented_actions',
+        'limits' => 'set_limits',
+        'tags' => 'set_tags',
+        'trial' => 'set_trial'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'license' => 'getLicense',
-        'active_modules' => 'getActiveModules',
-        'prevented_actions' => 'getPreventedActions',
-        'limits' => 'getLimits',
-        'tags' => 'getTags',
-        'trial' => 'getTrial'
+        'license' => 'get_license',
+        'active_modules' => 'get_active_modules',
+        'prevented_actions' => 'get_prevented_actions',
+        'limits' => 'get_limits',
+        'tags' => 'get_tags',
+        'trial' => 'get_trial'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicense|null
      */
-    public function getLicense()
+    public function get_license()
     {
         return $this->container['license'];
     }
@@ -341,7 +341,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setLicense($license)
+    public function set_license($license)
     {
         if (is_null($license)) {
             throw new \InvalidArgumentException('non-nullable license cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return string[]|null
      */
-    public function getActiveModules()
+    public function get_active_modules()
     {
         return $this->container['active_modules'];
     }
@@ -368,7 +368,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setActiveModules($active_modules)
+    public function set_active_modules($active_modules)
     {
         if (is_null($active_modules)) {
             throw new \InvalidArgumentException('non-nullable active_modules cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicensePreventedActions|null
      */
-    public function getPreventedActions()
+    public function get_prevented_actions()
     {
         return $this->container['prevented_actions'];
     }
@@ -395,7 +395,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setPreventedActions($prevented_actions)
+    public function set_prevented_actions($prevented_actions)
     {
         if (is_null($prevented_actions)) {
             throw new \InvalidArgumentException('non-nullable prevented_actions cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLimits|null
      */
-    public function getLimits()
+    public function get_limits()
     {
         return $this->container['limits'];
     }
@@ -422,7 +422,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setLimits($limits)
+    public function set_limits($limits)
     {
         if (is_null($limits)) {
             throw new \InvalidArgumentException('non-nullable limits cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null
      */
-    public function getTags()
+    public function get_tags()
     {
         return $this->container['tags'];
     }
@@ -449,7 +449,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setTags($tags)
+    public function set_tags($tags)
     {
         if (is_null($tags)) {
             throw new \InvalidArgumentException('non-nullable tags cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getTrial()
+    public function get_trial()
     {
         return $this->container['trial'];
     }
@@ -476,7 +476,7 @@ class GetApiV1LicensesInfo200ResponseLicense implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setTrial($trial)
+    public function set_trial($trial)
     {
         if (is_null($trial)) {
             throw new \InvalidArgumentException('non-nullable trial cannot be null');

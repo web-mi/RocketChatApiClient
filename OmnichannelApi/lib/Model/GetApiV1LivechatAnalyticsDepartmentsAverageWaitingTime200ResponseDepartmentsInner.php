@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200ResponseDepartmen
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'average_waiting_time_in_seconds' => 'setAverageWaitingTimeInSeconds'
+        '_id' => 'set__id',
+        'average_waiting_time_in_seconds' => 'set_average_waiting_time_in_seconds'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200ResponseDepartmen
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'average_waiting_time_in_seconds' => 'getAverageWaitingTimeInSeconds'
+        '_id' => 'get__id',
+        'average_waiting_time_in_seconds' => 'get_average_waiting_time_in_seconds'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200ResponseDepartmen
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200ResponseDepartmen
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200ResponseDepartmen
      *
      * @return int|null
      */
-    public function getAverageWaitingTimeInSeconds()
+    public function get_average_waiting_time_in_seconds()
     {
         return $this->container['average_waiting_time_in_seconds'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageWaitingTime200ResponseDepartmen
      *
      * @return self
      */
-    public function setAverageWaitingTimeInSeconds($average_waiting_time_in_seconds)
+    public function set_average_waiting_time_in_seconds($average_waiting_time_in_seconds)
     {
         if (is_null($average_waiting_time_in_seconds)) {
             throw new \InvalidArgumentException('non-nullable average_waiting_time_in_seconds cannot be null');

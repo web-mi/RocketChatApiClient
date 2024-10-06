@@ -187,10 +187,10 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'message' => 'setMessage',
-        'room' => 'setRoom',
-        'ts' => 'setTs'
+        '_id' => 'set__id',
+        'message' => 'set_message',
+        'room' => 'set_room',
+        'ts' => 'set_ts'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'message' => 'getMessage',
-        'room' => 'getRoom',
-        'ts' => 'getTs'
+        '_id' => 'get__id',
+        'message' => 'get_message',
+        'room' => 'get_room',
+        'ts' => 'get_ts'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerMessage|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -354,7 +354,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null
      */
-    public function getRoom()
+    public function get_room()
     {
         return $this->container['room'];
     }
@@ -381,7 +381,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      *
      * @return self
      */
-    public function setRoom($room)
+    public function set_room($room)
     {
         if (is_null($room)) {
             throw new \InvalidArgumentException('non-nullable room cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -408,7 +408,7 @@ class GetApiV1ModerationUserReportedMessages200ResponseMessagesInner implements 
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');

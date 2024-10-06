@@ -196,12 +196,12 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled',
-        'show_on_registration' => 'setShowOnRegistration',
-        'name' => 'setName',
-        'email' => 'setEmail',
-        'show_on_offline_form' => 'setShowOnOfflineForm',
-        'description' => 'setDescription'
+        'enabled' => 'set_enabled',
+        'show_on_registration' => 'set_show_on_registration',
+        'name' => 'set_name',
+        'email' => 'set_email',
+        'show_on_offline_form' => 'set_show_on_offline_form',
+        'description' => 'set_description'
     ];
 
     /**
@@ -210,12 +210,12 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled',
-        'show_on_registration' => 'getShowOnRegistration',
-        'name' => 'getName',
-        'email' => 'getEmail',
-        'show_on_offline_form' => 'getShowOnOfflineForm',
-        'description' => 'getDescription'
+        'enabled' => 'get_enabled',
+        'show_on_registration' => 'get_show_on_registration',
+        'name' => 'get_name',
+        'email' => 'get_email',
+        'show_on_offline_form' => 'get_show_on_offline_form',
+        'description' => 'get_description'
     ];
 
     /**
@@ -345,7 +345,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return bool
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -357,7 +357,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -372,7 +372,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return bool
      */
-    public function getShowOnRegistration()
+    public function get_show_on_registration()
     {
         return $this->container['show_on_registration'];
     }
@@ -384,7 +384,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return self
      */
-    public function setShowOnRegistration($show_on_registration)
+    public function set_show_on_registration($show_on_registration)
     {
         if (is_null($show_on_registration)) {
             throw new \InvalidArgumentException('non-nullable show_on_registration cannot be null');
@@ -399,7 +399,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -411,7 +411,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -426,7 +426,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return string
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -438,7 +438,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -453,7 +453,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return bool
      */
-    public function getShowOnOfflineForm()
+    public function get_show_on_offline_form()
     {
         return $this->container['show_on_offline_form'];
     }
@@ -465,7 +465,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return self
      */
-    public function setShowOnOfflineForm($show_on_offline_form)
+    public function set_show_on_offline_form($show_on_offline_form)
     {
         if (is_null($show_on_offline_form)) {
             throw new \InvalidArgumentException('non-nullable show_on_offline_form cannot be null');
@@ -480,7 +480,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -492,7 +492,7 @@ class PutApiV1LivechatDepartmentIdRequestDepartment implements ModelInterface, A
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');

@@ -191,11 +191,11 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      * @var string[]
      */
     protected static $setters = [
-        'text' => 'setText',
-        'author_name' => 'setAuthorName',
-        'author_icon' => 'setAuthorIcon',
-        'ts' => 'setTs',
-        'attachments' => 'setAttachments'
+        'text' => 'set_text',
+        'author_name' => 'set_author_name',
+        'author_icon' => 'set_author_icon',
+        'ts' => 'set_ts',
+        'attachments' => 'set_attachments'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      * @var string[]
      */
     protected static $getters = [
-        'text' => 'getText',
-        'author_name' => 'getAuthorName',
-        'author_icon' => 'getAuthorIcon',
-        'ts' => 'getTs',
-        'attachments' => 'getAttachments'
+        'text' => 'get_text',
+        'author_name' => 'get_author_name',
+        'author_icon' => 'get_author_icon',
+        'ts' => 'get_ts',
+        'attachments' => 'get_attachments'
     ];
 
     /**
@@ -322,7 +322,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return string|null
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -334,7 +334,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -349,7 +349,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return string|null
      */
-    public function getAuthorName()
+    public function get_author_name()
     {
         return $this->container['author_name'];
     }
@@ -361,7 +361,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return self
      */
-    public function setAuthorName($author_name)
+    public function set_author_name($author_name)
     {
         if (is_null($author_name)) {
             throw new \InvalidArgumentException('non-nullable author_name cannot be null');
@@ -376,7 +376,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return string|null
      */
-    public function getAuthorIcon()
+    public function get_author_icon()
     {
         return $this->container['author_icon'];
     }
@@ -388,7 +388,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return self
      */
-    public function setAuthorIcon($author_icon)
+    public function set_author_icon($author_icon)
     {
         if (is_null($author_icon)) {
             throw new \InvalidArgumentException('non-nullable author_icon cannot be null');
@@ -403,7 +403,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -415,7 +415,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -430,7 +430,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return object[]|null
      */
-    public function getAttachments()
+    public function get_attachments()
     {
         return $this->container['attachments'];
     }
@@ -442,7 +442,7 @@ class PostApiV1ChatPinMessage200ResponseMessageAttachmentsInner implements Model
      *
      * @return self
      */
-    public function setAttachments($attachments)
+    public function set_attachments($attachments)
     {
         if (is_null($attachments)) {
             throw new \InvalidArgumentException('non-nullable attachments cannot be null');

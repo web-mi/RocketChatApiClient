@@ -191,11 +191,11 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      * @var string[]
      */
     protected static $setters = [
-        'open' => 'setOpen',
-        'closed' => 'setClosed',
-        'queued' => 'setQueued',
-        'onhold' => 'setOnhold',
-        'success' => 'setSuccess'
+        'open' => 'set_open',
+        'closed' => 'set_closed',
+        'queued' => 'set_queued',
+        'onhold' => 'set_onhold',
+        'success' => 'set_success'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      * @var string[]
      */
     protected static $getters = [
-        'open' => 'getOpen',
-        'closed' => 'getClosed',
-        'queued' => 'getQueued',
-        'onhold' => 'getOnhold',
-        'success' => 'getSuccess'
+        'open' => 'get_open',
+        'closed' => 'get_closed',
+        'queued' => 'get_queued',
+        'onhold' => 'get_onhold',
+        'success' => 'get_success'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return int|null
      */
-    public function getOpen()
+    public function get_open()
     {
         return $this->container['open'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return self
      */
-    public function setOpen($open)
+    public function set_open($open)
     {
         if (is_null($open)) {
             throw new \InvalidArgumentException('non-nullable open cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return int|null
      */
-    public function getClosed()
+    public function get_closed()
     {
         return $this->container['closed'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return self
      */
-    public function setClosed($closed)
+    public function set_closed($closed)
     {
         if (is_null($closed)) {
             throw new \InvalidArgumentException('non-nullable closed cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return int|null
      */
-    public function getQueued()
+    public function get_queued()
     {
         return $this->container['queued'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return self
      */
-    public function setQueued($queued)
+    public function set_queued($queued)
     {
         if (is_null($queued)) {
             throw new \InvalidArgumentException('non-nullable queued cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return int|null
      */
-    public function getOnhold()
+    public function get_onhold()
     {
         return $this->container['onhold'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return self
      */
-    public function setOnhold($onhold)
+    public function set_onhold($onhold)
     {
         if (is_null($onhold)) {
             throw new \InvalidArgumentException('non-nullable onhold cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChats200Response implements Model
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

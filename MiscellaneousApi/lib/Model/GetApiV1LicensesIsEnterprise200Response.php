@@ -179,8 +179,8 @@ class GetApiV1LicensesIsEnterprise200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'is_enterprise' => 'setIsEnterprise',
-        'success' => 'setSuccess'
+        'is_enterprise' => 'set_is_enterprise',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LicensesIsEnterprise200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'is_enterprise' => 'getIsEnterprise',
-        'success' => 'getSuccess'
+        'is_enterprise' => 'get_is_enterprise',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LicensesIsEnterprise200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getIsEnterprise()
+    public function get_is_enterprise()
     {
         return $this->container['is_enterprise'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LicensesIsEnterprise200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setIsEnterprise($is_enterprise)
+    public function set_is_enterprise($is_enterprise)
     {
         if (is_null($is_enterprise)) {
             throw new \InvalidArgumentException('non-nullable is_enterprise cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LicensesIsEnterprise200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LicensesIsEnterprise200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

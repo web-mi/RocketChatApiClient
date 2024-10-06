@@ -183,9 +183,9 @@ class GetApiV1LivechatRoom200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'room' => 'setRoom',
-        'new_room' => 'setNewRoom',
-        'success' => 'setSuccess'
+        'room' => 'set_room',
+        'new_room' => 'set_new_room',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatRoom200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'room' => 'getRoom',
-        'new_room' => 'getNewRoom',
-        'success' => 'getSuccess'
+        'room' => 'get_room',
+        'new_room' => 'get_new_room',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatRoom200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoom|null
      */
-    public function getRoom()
+    public function get_room()
     {
         return $this->container['room'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatRoom200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setRoom($room)
+    public function set_room($room)
     {
         if (is_null($room)) {
             throw new \InvalidArgumentException('non-nullable room cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatRoom200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return bool|null
      */
-    public function getNewRoom()
+    public function get_new_room()
     {
         return $this->container['new_room'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatRoom200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setNewRoom($new_room)
+    public function set_new_room($new_room)
     {
         if (is_null($new_room)) {
             throw new \InvalidArgumentException('non-nullable new_room cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatRoom200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatRoom200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

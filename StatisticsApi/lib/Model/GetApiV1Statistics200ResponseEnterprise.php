@@ -219,18 +219,18 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'modules' => 'setModules',
-        'tags' => 'setTags',
-        'seat_requests' => 'setSeatRequests',
-        'canned_responses' => 'setCannedResponses',
-        'livechat_tags' => 'setLivechatTags',
-        'slas' => 'setSlas',
-        'omnichannel_rooms_with_priorities' => 'setOmnichannelRoomsWithPriorities',
-        'omnichannel_rooms_with_slas' => 'setOmnichannelRoomsWithSlas',
-        'business_units' => 'setBusinessUnits',
-        'livechat_monitors' => 'setLivechatMonitors',
-        'omnichannel_pdf_transcript_succeeded' => 'setOmnichannelPdfTranscriptSucceeded',
-        'omnichannel_pdf_transcript_requested' => 'setOmnichannelPdfTranscriptRequested'
+        'modules' => 'set_modules',
+        'tags' => 'set_tags',
+        'seat_requests' => 'set_seat_requests',
+        'canned_responses' => 'set_canned_responses',
+        'livechat_tags' => 'set_livechat_tags',
+        'slas' => 'set_slas',
+        'omnichannel_rooms_with_priorities' => 'set_omnichannel_rooms_with_priorities',
+        'omnichannel_rooms_with_slas' => 'set_omnichannel_rooms_with_slas',
+        'business_units' => 'set_business_units',
+        'livechat_monitors' => 'set_livechat_monitors',
+        'omnichannel_pdf_transcript_succeeded' => 'set_omnichannel_pdf_transcript_succeeded',
+        'omnichannel_pdf_transcript_requested' => 'set_omnichannel_pdf_transcript_requested'
     ];
 
     /**
@@ -239,18 +239,18 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'modules' => 'getModules',
-        'tags' => 'getTags',
-        'seat_requests' => 'getSeatRequests',
-        'canned_responses' => 'getCannedResponses',
-        'livechat_tags' => 'getLivechatTags',
-        'slas' => 'getSlas',
-        'omnichannel_rooms_with_priorities' => 'getOmnichannelRoomsWithPriorities',
-        'omnichannel_rooms_with_slas' => 'getOmnichannelRoomsWithSlas',
-        'business_units' => 'getBusinessUnits',
-        'livechat_monitors' => 'getLivechatMonitors',
-        'omnichannel_pdf_transcript_succeeded' => 'getOmnichannelPdfTranscriptSucceeded',
-        'omnichannel_pdf_transcript_requested' => 'getOmnichannelPdfTranscriptRequested'
+        'modules' => 'get_modules',
+        'tags' => 'get_tags',
+        'seat_requests' => 'get_seat_requests',
+        'canned_responses' => 'get_canned_responses',
+        'livechat_tags' => 'get_livechat_tags',
+        'slas' => 'get_slas',
+        'omnichannel_rooms_with_priorities' => 'get_omnichannel_rooms_with_priorities',
+        'omnichannel_rooms_with_slas' => 'get_omnichannel_rooms_with_slas',
+        'business_units' => 'get_business_units',
+        'livechat_monitors' => 'get_livechat_monitors',
+        'omnichannel_pdf_transcript_succeeded' => 'get_omnichannel_pdf_transcript_succeeded',
+        'omnichannel_pdf_transcript_requested' => 'get_omnichannel_pdf_transcript_requested'
     ];
 
     /**
@@ -371,7 +371,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return string[]|null
      */
-    public function getModules()
+    public function get_modules()
     {
         return $this->container['modules'];
     }
@@ -383,7 +383,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setModules($modules)
+    public function set_modules($modules)
     {
         if (is_null($modules)) {
             throw new \InvalidArgumentException('non-nullable modules cannot be null');
@@ -398,7 +398,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return string[]|null
      */
-    public function getTags()
+    public function get_tags()
     {
         return $this->container['tags'];
     }
@@ -410,7 +410,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setTags($tags)
+    public function set_tags($tags)
     {
         if (is_null($tags)) {
             throw new \InvalidArgumentException('non-nullable tags cannot be null');
@@ -425,7 +425,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getSeatRequests()
+    public function get_seat_requests()
     {
         return $this->container['seat_requests'];
     }
@@ -437,7 +437,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSeatRequests($seat_requests)
+    public function set_seat_requests($seat_requests)
     {
         if (is_null($seat_requests)) {
             throw new \InvalidArgumentException('non-nullable seat_requests cannot be null');
@@ -452,7 +452,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getCannedResponses()
+    public function get_canned_responses()
     {
         return $this->container['canned_responses'];
     }
@@ -464,7 +464,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setCannedResponses($canned_responses)
+    public function set_canned_responses($canned_responses)
     {
         if (is_null($canned_responses)) {
             throw new \InvalidArgumentException('non-nullable canned_responses cannot be null');
@@ -479,7 +479,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getLivechatTags()
+    public function get_livechat_tags()
     {
         return $this->container['livechat_tags'];
     }
@@ -491,7 +491,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatTags($livechat_tags)
+    public function set_livechat_tags($livechat_tags)
     {
         if (is_null($livechat_tags)) {
             throw new \InvalidArgumentException('non-nullable livechat_tags cannot be null');
@@ -506,7 +506,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getSlas()
+    public function get_slas()
     {
         return $this->container['slas'];
     }
@@ -518,7 +518,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSlas($slas)
+    public function set_slas($slas)
     {
         if (is_null($slas)) {
             throw new \InvalidArgumentException('non-nullable slas cannot be null');
@@ -533,7 +533,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getOmnichannelRoomsWithPriorities()
+    public function get_omnichannel_rooms_with_priorities()
     {
         return $this->container['omnichannel_rooms_with_priorities'];
     }
@@ -545,7 +545,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setOmnichannelRoomsWithPriorities($omnichannel_rooms_with_priorities)
+    public function set_omnichannel_rooms_with_priorities($omnichannel_rooms_with_priorities)
     {
         if (is_null($omnichannel_rooms_with_priorities)) {
             throw new \InvalidArgumentException('non-nullable omnichannel_rooms_with_priorities cannot be null');
@@ -560,7 +560,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getOmnichannelRoomsWithSlas()
+    public function get_omnichannel_rooms_with_slas()
     {
         return $this->container['omnichannel_rooms_with_slas'];
     }
@@ -572,7 +572,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setOmnichannelRoomsWithSlas($omnichannel_rooms_with_slas)
+    public function set_omnichannel_rooms_with_slas($omnichannel_rooms_with_slas)
     {
         if (is_null($omnichannel_rooms_with_slas)) {
             throw new \InvalidArgumentException('non-nullable omnichannel_rooms_with_slas cannot be null');
@@ -587,7 +587,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getBusinessUnits()
+    public function get_business_units()
     {
         return $this->container['business_units'];
     }
@@ -599,7 +599,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setBusinessUnits($business_units)
+    public function set_business_units($business_units)
     {
         if (is_null($business_units)) {
             throw new \InvalidArgumentException('non-nullable business_units cannot be null');
@@ -614,7 +614,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getLivechatMonitors()
+    public function get_livechat_monitors()
     {
         return $this->container['livechat_monitors'];
     }
@@ -626,7 +626,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLivechatMonitors($livechat_monitors)
+    public function set_livechat_monitors($livechat_monitors)
     {
         if (is_null($livechat_monitors)) {
             throw new \InvalidArgumentException('non-nullable livechat_monitors cannot be null');
@@ -641,7 +641,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getOmnichannelPdfTranscriptSucceeded()
+    public function get_omnichannel_pdf_transcript_succeeded()
     {
         return $this->container['omnichannel_pdf_transcript_succeeded'];
     }
@@ -653,7 +653,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setOmnichannelPdfTranscriptSucceeded($omnichannel_pdf_transcript_succeeded)
+    public function set_omnichannel_pdf_transcript_succeeded($omnichannel_pdf_transcript_succeeded)
     {
         if (is_null($omnichannel_pdf_transcript_succeeded)) {
             throw new \InvalidArgumentException('non-nullable omnichannel_pdf_transcript_succeeded cannot be null');
@@ -668,7 +668,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getOmnichannelPdfTranscriptRequested()
+    public function get_omnichannel_pdf_transcript_requested()
     {
         return $this->container['omnichannel_pdf_transcript_requested'];
     }
@@ -680,7 +680,7 @@ class GetApiV1Statistics200ResponseEnterprise implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setOmnichannelPdfTranscriptRequested($omnichannel_pdf_transcript_requested)
+    public function set_omnichannel_pdf_transcript_requested($omnichannel_pdf_transcript_requested)
     {
         if (is_null($omnichannel_pdf_transcript_requested)) {
             throw new \InvalidArgumentException('non-nullable omnichannel_pdf_transcript_requested cannot be null');

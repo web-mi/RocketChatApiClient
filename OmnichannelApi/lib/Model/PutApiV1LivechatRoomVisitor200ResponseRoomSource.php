@@ -175,7 +175,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoomSource implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType'
+        'type' => 'set_type'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoomSource implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType'
+        'type' => 'get_type'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoomSource implements ModelInterface
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -306,7 +306,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoomSource implements ModelInterface
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');

@@ -179,8 +179,8 @@ class PutApiV1LivechatWebrtcCallCallIdRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'status' => 'setStatus'
+        'rid' => 'set_rid',
+        'status' => 'set_status'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PutApiV1LivechatWebrtcCallCallIdRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'status' => 'getStatus'
+        'rid' => 'get_rid',
+        'status' => 'get_status'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PutApiV1LivechatWebrtcCallCallIdRequest implements ModelInterface, ArrayAc
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -319,7 +319,7 @@ class PutApiV1LivechatWebrtcCallCallIdRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -334,7 +334,7 @@ class PutApiV1LivechatWebrtcCallCallIdRequest implements ModelInterface, ArrayAc
      *
      * @return string
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -346,7 +346,7 @@ class PutApiV1LivechatWebrtcCallCallIdRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');

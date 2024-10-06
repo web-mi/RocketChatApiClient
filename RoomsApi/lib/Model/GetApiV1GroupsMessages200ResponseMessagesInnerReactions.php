@@ -175,7 +175,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInnerReactions implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'frowning2' => 'setFrowning2'
+        'frowning2' => 'set_frowning2'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInnerReactions implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'frowning2' => 'getFrowning2'
+        'frowning2' => 'get_frowning2'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInnerReactions implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerReactionsFrowning2|null
      */
-    public function getFrowning2()
+    public function get_frowning2()
     {
         return $this->container['frowning2'];
     }
@@ -306,7 +306,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInnerReactions implements ModelIn
      *
      * @return self
      */
-    public function setFrowning2($frowning2)
+    public function set_frowning2($frowning2)
     {
         if (is_null($frowning2)) {
             throw new \InvalidArgumentException('non-nullable frowning2 cannot be null');

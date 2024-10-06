@@ -179,8 +179,8 @@ class PostApiV1UsersUpdateOwnBasicInfoRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'data' => 'setData',
-        'custom_fields' => 'setCustomFields'
+        'data' => 'set_data',
+        'custom_fields' => 'set_custom_fields'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersUpdateOwnBasicInfoRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'data' => 'getData',
-        'custom_fields' => 'getCustomFields'
+        'data' => 'get_data',
+        'custom_fields' => 'get_custom_fields'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequest implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfoRequestData
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -316,7 +316,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequest implements ModelInterface, ArrayAc
      *
      * @return object|null
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -343,7 +343,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');

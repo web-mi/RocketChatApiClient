@@ -191,11 +191,11 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'due_time_in_minutes' => 'setDueTimeInMinutes',
-        '_updated_at' => 'setUpdatedAt',
-        'description' => 'setDescription'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'due_time_in_minutes' => 'set_due_time_in_minutes',
+        '_updated_at' => 'set__updated_at',
+        'description' => 'set_description'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'due_time_in_minutes' => 'getDueTimeInMinutes',
-        '_updated_at' => 'getUpdatedAt',
-        'description' => 'getDescription'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'due_time_in_minutes' => 'get_due_time_in_minutes',
+        '_updated_at' => 'get__updated_at',
+        'description' => 'get_description'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -361,7 +361,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -376,7 +376,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return int|null
      */
-    public function getDueTimeInMinutes()
+    public function get_due_time_in_minutes()
     {
         return $this->container['due_time_in_minutes'];
     }
@@ -388,7 +388,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return self
      */
-    public function setDueTimeInMinutes($due_time_in_minutes)
+    public function set_due_time_in_minutes($due_time_in_minutes)
     {
         if (is_null($due_time_in_minutes)) {
             throw new \InvalidArgumentException('non-nullable due_time_in_minutes cannot be null');
@@ -403,7 +403,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -415,7 +415,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -430,7 +430,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -442,7 +442,7 @@ class GetLivechatPriorities200ResponsePrioritiesInner implements ModelInterface,
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');

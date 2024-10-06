@@ -183,9 +183,9 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'value' => 'setValue',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'value' => 'set_value',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'value' => 'getValue',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'value' => 'get_value',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -320,7 +320,7 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -347,7 +347,7 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -191,11 +191,11 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      * @var string[]
      */
     protected static $setters = [
-        'user' => 'setUser',
-        'nice' => 'setNice',
-        'sys' => 'setSys',
-        'idle' => 'setIdle',
-        'irq' => 'setIrq'
+        'user' => 'set_user',
+        'nice' => 'set_nice',
+        'sys' => 'set_sys',
+        'idle' => 'set_idle',
+        'irq' => 'set_irq'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      * @var string[]
      */
     protected static $getters = [
-        'user' => 'getUser',
-        'nice' => 'getNice',
-        'sys' => 'getSys',
-        'idle' => 'getIdle',
-        'irq' => 'getIrq'
+        'user' => 'get_user',
+        'nice' => 'get_nice',
+        'sys' => 'get_sys',
+        'idle' => 'get_idle',
+        'irq' => 'get_irq'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return int|null
      */
-    public function getUser()
+    public function get_user()
     {
         return $this->container['user'];
     }
@@ -334,7 +334,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return self
      */
-    public function setUser($user)
+    public function set_user($user)
     {
         if (is_null($user)) {
             throw new \InvalidArgumentException('non-nullable user cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return int|null
      */
-    public function getNice()
+    public function get_nice()
     {
         return $this->container['nice'];
     }
@@ -361,7 +361,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return self
      */
-    public function setNice($nice)
+    public function set_nice($nice)
     {
         if (is_null($nice)) {
             throw new \InvalidArgumentException('non-nullable nice cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return int|null
      */
-    public function getSys()
+    public function get_sys()
     {
         return $this->container['sys'];
     }
@@ -388,7 +388,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return self
      */
-    public function setSys($sys)
+    public function set_sys($sys)
     {
         if (is_null($sys)) {
             throw new \InvalidArgumentException('non-nullable sys cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return int|null
      */
-    public function getIdle()
+    public function get_idle()
     {
         return $this->container['idle'];
     }
@@ -415,7 +415,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return self
      */
-    public function setIdle($idle)
+    public function set_idle($idle)
     {
         if (is_null($idle)) {
             throw new \InvalidArgumentException('non-nullable idle cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return int|null
      */
-    public function getIrq()
+    public function get_irq()
     {
         return $this->container['irq'];
     }
@@ -442,7 +442,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInnerTimes implement
      *
      * @return self
      */
-    public function setIrq($irq)
+    public function set_irq($irq)
     {
         if (is_null($irq)) {
             throw new \InvalidArgumentException('non-nullable irq cannot be null');

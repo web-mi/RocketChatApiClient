@@ -203,14 +203,14 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'ts' => 'setTs',
-        'name' => 'setName',
-        'active' => 'setActive',
-        'type' => 'setType',
-        'work_hours' => 'setWorkHours',
-        'timezone' => 'setTimezone',
-        'departments_to_apply_business_hour' => 'setDepartmentsToApplyBusinessHour'
+        '_id' => 'set__id',
+        'ts' => 'set_ts',
+        'name' => 'set_name',
+        'active' => 'set_active',
+        'type' => 'set_type',
+        'work_hours' => 'set_work_hours',
+        'timezone' => 'set_timezone',
+        'departments_to_apply_business_hour' => 'set_departments_to_apply_business_hour'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'ts' => 'getTs',
-        'name' => 'getName',
-        'active' => 'getActive',
-        'type' => 'getType',
-        'work_hours' => 'getWorkHours',
-        'timezone' => 'getTimezone',
-        'departments_to_apply_business_hour' => 'getDepartmentsToApplyBusinessHour'
+        '_id' => 'get__id',
+        'ts' => 'get_ts',
+        'name' => 'get_name',
+        'active' => 'get_active',
+        'type' => 'get_type',
+        'work_hours' => 'get_work_hours',
+        'timezone' => 'get_timezone',
+        'departments_to_apply_business_hour' => 'get_departments_to_apply_business_hour'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -355,7 +355,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -370,7 +370,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -382,7 +382,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -397,7 +397,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -409,7 +409,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -424,7 +424,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return bool|null
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -436,7 +436,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -463,7 +463,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInner[]|null
      */
-    public function getWorkHours()
+    public function get_work_hours()
     {
         return $this->container['work_hours'];
     }
@@ -490,7 +490,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return self
      */
-    public function setWorkHours($work_hours)
+    public function set_work_hours($work_hours)
     {
         if (is_null($work_hours)) {
             throw new \InvalidArgumentException('non-nullable work_hours cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone|null
      */
-    public function getTimezone()
+    public function get_timezone()
     {
         return $this->container['timezone'];
     }
@@ -517,7 +517,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return self
      */
-    public function setTimezone($timezone)
+    public function set_timezone($timezone)
     {
         if (is_null($timezone)) {
             throw new \InvalidArgumentException('non-nullable timezone cannot be null');
@@ -532,7 +532,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return string|null
      */
-    public function getDepartmentsToApplyBusinessHour()
+    public function get_departments_to_apply_business_hour()
     {
         return $this->container['departments_to_apply_business_hour'];
     }
@@ -544,7 +544,7 @@ class GetApiV1LivechatBusinessHoursList200ResponseBusinessHoursInner implements 
      *
      * @return self
      */
-    public function setDepartmentsToApplyBusinessHour($departments_to_apply_business_hour)
+    public function set_departments_to_apply_business_hour($departments_to_apply_business_hour)
     {
         if (is_null($departments_to_apply_business_hour)) {
             throw new \InvalidArgumentException('non-nullable departments_to_apply_business_hour cannot be null');

@@ -175,7 +175,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'lq' => 'setLq'
+        'lq' => 'set_lq'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'lq' => 'getLq'
+        'lq' => 'get_lq'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV implements ModelInterfa
      *
      * @return string|null
      */
-    public function getLq()
+    public function get_lq()
     {
         return $this->container['lq'];
     }
@@ -306,7 +306,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerMetricsV implements ModelInterfa
      *
      * @return self
      */
-    public function setLq($lq)
+    public function set_lq($lq)
     {
         if (is_null($lq)) {
             throw new \InvalidArgumentException('non-nullable lq cannot be null');

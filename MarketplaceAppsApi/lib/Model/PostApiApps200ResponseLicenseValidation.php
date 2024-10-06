@@ -179,8 +179,8 @@ class PostApiApps200ResponseLicenseValidation implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'errors' => 'setErrors',
-        'warnings' => 'setWarnings'
+        'errors' => 'set_errors',
+        'warnings' => 'set_warnings'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiApps200ResponseLicenseValidation implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'errors' => 'getErrors',
-        'warnings' => 'getWarnings'
+        'errors' => 'get_errors',
+        'warnings' => 'get_warnings'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiApps200ResponseLicenseValidation implements ModelInterface, ArrayAc
      *
      * @return object|null
      */
-    public function getErrors()
+    public function get_errors()
     {
         return $this->container['errors'];
     }
@@ -313,7 +313,7 @@ class PostApiApps200ResponseLicenseValidation implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setErrors($errors)
+    public function set_errors($errors)
     {
         if (is_null($errors)) {
             throw new \InvalidArgumentException('non-nullable errors cannot be null');
@@ -328,7 +328,7 @@ class PostApiApps200ResponseLicenseValidation implements ModelInterface, ArrayAc
      *
      * @return object|null
      */
-    public function getWarnings()
+    public function get_warnings()
     {
         return $this->container['warnings'];
     }
@@ -340,7 +340,7 @@ class PostApiApps200ResponseLicenseValidation implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setWarnings($warnings)
+    public function set_warnings($warnings)
     {
         if (is_null($warnings)) {
             throw new \InvalidArgumentException('non-nullable warnings cannot be null');

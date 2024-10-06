@@ -183,9 +183,9 @@ class GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'created_at' => 'setCreatedAt',
-        'last_token_part' => 'setLastTokenPart'
+        'name' => 'set_name',
+        'created_at' => 'set_created_at',
+        'last_token_part' => 'set_last_token_part'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'created_at' => 'getCreatedAt',
-        'last_token_part' => 'getLastTokenPart'
+        'name' => 'get_name',
+        'created_at' => 'get_created_at',
+        'last_token_part' => 'get_last_token_part'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner implements Mode
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -320,7 +320,7 @@ class GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner implements Mode
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner implements Mode
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -347,7 +347,7 @@ class GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner implements Mode
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner implements Mode
      *
      * @return string|null
      */
-    public function getLastTokenPart()
+    public function get_last_token_part()
     {
         return $this->container['last_token_part'];
     }
@@ -374,7 +374,7 @@ class GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner implements Mode
      *
      * @return self
      */
-    public function setLastTokenPart($last_token_part)
+    public function set_last_token_part($last_token_part)
     {
         if (is_null($last_token_part)) {
             throw new \InvalidArgumentException('non-nullable last_token_part cannot be null');

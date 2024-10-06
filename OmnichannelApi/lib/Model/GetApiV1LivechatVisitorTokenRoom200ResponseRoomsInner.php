@@ -187,10 +187,10 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        't' => 'setT',
-        'cl' => 'setCl',
-        'served_by' => 'setServedBy'
+        '_id' => 'set__id',
+        't' => 'set_t',
+        'cl' => 'set_cl',
+        'served_by' => 'set_served_by'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        't' => 'getT',
-        'cl' => 'getCl',
-        'served_by' => 'getServedBy'
+        '_id' => 'get__id',
+        't' => 'get_t',
+        'cl' => 'get_cl',
+        'served_by' => 'get_served_by'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -354,7 +354,7 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      *
      * @return bool|null
      */
-    public function getCl()
+    public function get_cl()
     {
         return $this->container['cl'];
     }
@@ -381,7 +381,7 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      *
      * @return self
      */
-    public function setCl($cl)
+    public function set_cl($cl)
     {
         if (is_null($cl)) {
             throw new \InvalidArgumentException('non-nullable cl cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null
      */
-    public function getServedBy()
+    public function get_served_by()
     {
         return $this->container['served_by'];
     }
@@ -408,7 +408,7 @@ class GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner implements ModelInte
      *
      * @return self
      */
-    public function setServedBy($served_by)
+    public function set_served_by($served_by)
     {
         if (is_null($served_by)) {
             throw new \InvalidArgumentException('non-nullable served_by cannot be null');

@@ -175,7 +175,7 @@ class PostApiV1ChatUnPinMessageRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'message_id' => 'setMessageId'
+        'message_id' => 'set_message_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1ChatUnPinMessageRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'message_id' => 'getMessageId'
+        'message_id' => 'get_message_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1ChatUnPinMessageRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getMessageId()
+    public function get_message_id()
     {
         return $this->container['message_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1ChatUnPinMessageRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setMessageId($message_id)
+    public function set_message_id($message_id)
     {
         if (is_null($message_id)) {
             throw new \InvalidArgumentException('non-nullable message_id cannot be null');

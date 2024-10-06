@@ -175,7 +175,7 @@ class DeleteApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken'
+        'token' => 'set_token'
     ];
 
     /**
@@ -184,7 +184,7 @@ class DeleteApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken'
+        'token' => 'get_token'
     ];
 
     /**
@@ -294,7 +294,7 @@ class DeleteApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -306,7 +306,7 @@ class DeleteApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'value' => 'setValue'
+        'type' => 'set_type',
+        'value' => 'set_value'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'value' => 'getValue'
+        'type' => 'get_type',
+        'value' => 'get_value'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner implements ModelI
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -313,7 +313,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner implements ModelI
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner implements ModelI
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInner[]|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -340,7 +340,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner implements ModelI
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');

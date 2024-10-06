@@ -175,7 +175,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        'smile' => 'setSmile'
+        'smile' => 'set_smile'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        'smile' => 'getSmile'
+        'smile' => 'get_smile'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactionsSmile|null
      */
-    public function getSmile()
+    public function get_smile()
     {
         return $this->container['smile'];
     }
@@ -306,7 +306,7 @@ class GetChatGetThreadsList200ResponseThreadsInnerReactions implements ModelInte
      *
      * @return self
      */
-    public function setSmile($smile)
+    public function set_smile($smile)
     {
         if (is_null($smile)) {
             throw new \InvalidArgumentException('non-nullable smile cannot be null');

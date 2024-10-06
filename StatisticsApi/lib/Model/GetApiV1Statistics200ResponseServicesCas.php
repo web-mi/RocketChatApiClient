@@ -187,10 +187,10 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled',
-        'users' => 'setUsers',
-        'allow_user_creation' => 'setAllowUserCreation',
-        'always_sync_user_data' => 'setAlwaysSyncUserData'
+        'enabled' => 'set_enabled',
+        'users' => 'set_users',
+        'allow_user_creation' => 'set_allow_user_creation',
+        'always_sync_user_data' => 'set_always_sync_user_data'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled',
-        'users' => 'getUsers',
-        'allow_user_creation' => 'getAllowUserCreation',
-        'always_sync_user_data' => 'getAlwaysSyncUserData'
+        'enabled' => 'get_enabled',
+        'users' => 'get_users',
+        'allow_user_creation' => 'get_allow_user_creation',
+        'always_sync_user_data' => 'get_always_sync_user_data'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -327,7 +327,7 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -354,7 +354,7 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getAllowUserCreation()
+    public function get_allow_user_creation()
     {
         return $this->container['allow_user_creation'];
     }
@@ -381,7 +381,7 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setAllowUserCreation($allow_user_creation)
+    public function set_allow_user_creation($allow_user_creation)
     {
         if (is_null($allow_user_creation)) {
             throw new \InvalidArgumentException('non-nullable allow_user_creation cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getAlwaysSyncUserData()
+    public function get_always_sync_user_data()
     {
         return $this->container['always_sync_user_data'];
     }
@@ -408,7 +408,7 @@ class GetApiV1Statistics200ResponseServicesCas implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setAlwaysSyncUserData($always_sync_user_data)
+    public function set_always_sync_user_data($always_sync_user_data)
     {
         if (is_null($always_sync_user_data)) {
             throw new \InvalidArgumentException('non-nullable always_sync_user_data cannot be null');

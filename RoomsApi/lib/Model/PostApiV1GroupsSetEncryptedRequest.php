@@ -179,8 +179,8 @@ class PostApiV1GroupsSetEncryptedRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'encrypted' => 'setEncrypted',
-        'room_id' => 'setRoomId'
+        'encrypted' => 'set_encrypted',
+        'room_id' => 'set_room_id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1GroupsSetEncryptedRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'encrypted' => 'getEncrypted',
-        'room_id' => 'getRoomId'
+        'encrypted' => 'get_encrypted',
+        'room_id' => 'get_room_id'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1GroupsSetEncryptedRequest implements ModelInterface, ArrayAccess,
      *
      * @return bool
      */
-    public function getEncrypted()
+    public function get_encrypted()
     {
         return $this->container['encrypted'];
     }
@@ -316,7 +316,7 @@ class PostApiV1GroupsSetEncryptedRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setEncrypted($encrypted)
+    public function set_encrypted($encrypted)
     {
         if (is_null($encrypted)) {
             throw new \InvalidArgumentException('non-nullable encrypted cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1GroupsSetEncryptedRequest implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -343,7 +343,7 @@ class PostApiV1GroupsSetEncryptedRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');

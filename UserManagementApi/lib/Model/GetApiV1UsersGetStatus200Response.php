@@ -187,10 +187,10 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'setMessage',
-        'connection_status' => 'setConnectionStatus',
-        'status' => 'setStatus',
-        'success' => 'setSuccess'
+        'message' => 'set_message',
+        'connection_status' => 'set_connection_status',
+        'status' => 'set_status',
+        'success' => 'set_success'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'getMessage',
-        'connection_status' => 'getConnectionStatus',
-        'status' => 'getStatus',
-        'success' => 'getSuccess'
+        'message' => 'get_message',
+        'connection_status' => 'get_connection_status',
+        'status' => 'get_status',
+        'success' => 'get_success'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -327,7 +327,7 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getConnectionStatus()
+    public function get_connection_status()
     {
         return $this->container['connection_status'];
     }
@@ -354,7 +354,7 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setConnectionStatus($connection_status)
+    public function set_connection_status($connection_status)
     {
         if (is_null($connection_status)) {
             throw new \InvalidArgumentException('non-nullable connection_status cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -381,7 +381,7 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -408,7 +408,7 @@ class GetApiV1UsersGetStatus200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

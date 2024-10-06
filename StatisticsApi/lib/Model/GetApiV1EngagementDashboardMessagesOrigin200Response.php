@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardMessagesOrigin200Response implements ModelInter
      * @var string[]
      */
     protected static $setters = [
-        'origins' => 'setOrigins',
-        'success' => 'setSuccess'
+        'origins' => 'set_origins',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardMessagesOrigin200Response implements ModelInter
      * @var string[]
      */
     protected static $getters = [
-        'origins' => 'getOrigins',
-        'success' => 'getSuccess'
+        'origins' => 'get_origins',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200Response implements ModelInter
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner[]|null
      */
-    public function getOrigins()
+    public function get_origins()
     {
         return $this->container['origins'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200Response implements ModelInter
      *
      * @return self
      */
-    public function setOrigins($origins)
+    public function set_origins($origins)
     {
         if (is_null($origins)) {
             throw new \InvalidArgumentException('non-nullable origins cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200Response implements ModelInter
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200Response implements ModelInter
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

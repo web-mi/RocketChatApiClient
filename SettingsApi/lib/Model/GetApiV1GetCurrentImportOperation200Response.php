@@ -179,8 +179,8 @@ class GetApiV1GetCurrentImportOperation200Response implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'success' => 'setSuccess',
-        'operation' => 'setOperation'
+        'success' => 'set_success',
+        'operation' => 'set_operation'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1GetCurrentImportOperation200Response implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'success' => 'getSuccess',
-        'operation' => 'getOperation'
+        'success' => 'get_success',
+        'operation' => 'get_operation'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1GetCurrentImportOperation200Response implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -313,7 +313,7 @@ class GetApiV1GetCurrentImportOperation200Response implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1GetCurrentImportOperation200Response implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1GetLatestImportOperations200ResponseInner|null
      */
-    public function getOperation()
+    public function get_operation()
     {
         return $this->container['operation'];
     }
@@ -340,7 +340,7 @@ class GetApiV1GetCurrentImportOperation200Response implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setOperation($operation)
+    public function set_operation($operation)
     {
         if (is_null($operation)) {
             throw new \InvalidArgumentException('non-nullable operation cannot be null');

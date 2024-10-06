@@ -199,13 +199,13 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'channel_id' => 'setChannelId',
-        'name' => 'setName',
-        'is_archived' => 'setIsArchived',
-        'do_import' => 'setDoImport',
-        'is_private' => 'setIsPrivate',
-        'is_direct' => 'setIsDirect',
-        'creator' => 'setCreator'
+        'channel_id' => 'set_channel_id',
+        'name' => 'set_name',
+        'is_archived' => 'set_is_archived',
+        'do_import' => 'set_do_import',
+        'is_private' => 'set_is_private',
+        'is_direct' => 'set_is_direct',
+        'creator' => 'set_creator'
     ];
 
     /**
@@ -214,13 +214,13 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'channel_id' => 'getChannelId',
-        'name' => 'getName',
-        'is_archived' => 'getIsArchived',
-        'do_import' => 'getDoImport',
-        'is_private' => 'getIsPrivate',
-        'is_direct' => 'getIsDirect',
-        'creator' => 'getCreator'
+        'channel_id' => 'get_channel_id',
+        'name' => 'get_name',
+        'is_archived' => 'get_is_archived',
+        'do_import' => 'get_do_import',
+        'is_private' => 'get_is_private',
+        'is_direct' => 'get_is_direct',
+        'creator' => 'get_creator'
     ];
 
     /**
@@ -354,7 +354,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return string
      */
-    public function getChannelId()
+    public function get_channel_id()
     {
         return $this->container['channel_id'];
     }
@@ -366,7 +366,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setChannelId($channel_id)
+    public function set_channel_id($channel_id)
     {
         if (is_null($channel_id)) {
             throw new \InvalidArgumentException('non-nullable channel_id cannot be null');
@@ -381,7 +381,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -393,7 +393,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -408,7 +408,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return bool
      */
-    public function getIsArchived()
+    public function get_is_archived()
     {
         return $this->container['is_archived'];
     }
@@ -420,7 +420,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setIsArchived($is_archived)
+    public function set_is_archived($is_archived)
     {
         if (is_null($is_archived)) {
             throw new \InvalidArgumentException('non-nullable is_archived cannot be null');
@@ -435,7 +435,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return bool
      */
-    public function getDoImport()
+    public function get_do_import()
     {
         return $this->container['do_import'];
     }
@@ -447,7 +447,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setDoImport($do_import)
+    public function set_do_import($do_import)
     {
         if (is_null($do_import)) {
             throw new \InvalidArgumentException('non-nullable do_import cannot be null');
@@ -462,7 +462,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return bool
      */
-    public function getIsPrivate()
+    public function get_is_private()
     {
         return $this->container['is_private'];
     }
@@ -474,7 +474,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setIsPrivate($is_private)
+    public function set_is_private($is_private)
     {
         if (is_null($is_private)) {
             throw new \InvalidArgumentException('non-nullable is_private cannot be null');
@@ -489,7 +489,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return bool
      */
-    public function getIsDirect()
+    public function get_is_direct()
     {
         return $this->container['is_direct'];
     }
@@ -501,7 +501,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setIsDirect($is_direct)
+    public function set_is_direct($is_direct)
     {
         if (is_null($is_direct)) {
             throw new \InvalidArgumentException('non-nullable is_direct cannot be null');
@@ -516,7 +516,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getCreator()
+    public function get_creator()
     {
         return $this->container['creator'];
     }
@@ -528,7 +528,7 @@ class PostApiV1StartImportRequestInputChannelsInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setCreator($creator)
+    public function set_creator($creator)
     {
         if (is_null($creator)) {
             throw new \InvalidArgumentException('non-nullable creator cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response imple
      * @var string[]
      */
     protected static $setters = [
-        'channels' => 'setChannels',
-        'success' => 'setSuccess'
+        'channels' => 'set_channels',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response imple
      * @var string[]
      */
     protected static $getters = [
-        'channels' => 'getChannels',
-        'success' => 'getSuccess'
+        'channels' => 'get_channels',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response imple
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChannelsInner[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response imple
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response imple
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200Response imple
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

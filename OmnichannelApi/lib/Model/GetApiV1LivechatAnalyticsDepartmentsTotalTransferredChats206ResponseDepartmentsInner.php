@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206ResponseDepart
      * @var string[]
      */
     protected static $setters = [
-        'number_of_transferred_rooms' => 'setNumberOfTransferredRooms',
-        '_id' => 'setId'
+        'number_of_transferred_rooms' => 'set_number_of_transferred_rooms',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206ResponseDepart
      * @var string[]
      */
     protected static $getters = [
-        'number_of_transferred_rooms' => 'getNumberOfTransferredRooms',
-        '_id' => 'getId'
+        'number_of_transferred_rooms' => 'get_number_of_transferred_rooms',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206ResponseDepart
      *
      * @return int|null
      */
-    public function getNumberOfTransferredRooms()
+    public function get_number_of_transferred_rooms()
     {
         return $this->container['number_of_transferred_rooms'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206ResponseDepart
      *
      * @return self
      */
-    public function setNumberOfTransferredRooms($number_of_transferred_rooms)
+    public function set_number_of_transferred_rooms($number_of_transferred_rooms)
     {
         if (is_null($number_of_transferred_rooms)) {
             throw new \InvalidArgumentException('non-nullable number_of_transferred_rooms cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206ResponseDepart
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDepartmentsTotalTransferredChats206ResponseDepart
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

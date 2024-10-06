@@ -219,18 +219,18 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        'id' => 'setId',
-        'auto_renew' => 'setAutoRenew',
-        'created_at' => 'setCreatedAt',
-        'visual_expiration' => 'setVisualExpiration',
-        'notify_admins_at' => 'setNotifyAdminsAt',
-        'notify_users_at' => 'setNotifyUsersAt',
-        'trial' => 'setTrial',
-        'cancellable' => 'setCancellable',
-        'offline' => 'setOffline',
-        'granted_by' => 'setGrantedBy',
-        'granted_to' => 'setGrantedTo',
-        'tags' => 'setTags'
+        'id' => 'set_id',
+        'auto_renew' => 'set_auto_renew',
+        'created_at' => 'set_created_at',
+        'visual_expiration' => 'set_visual_expiration',
+        'notify_admins_at' => 'set_notify_admins_at',
+        'notify_users_at' => 'set_notify_users_at',
+        'trial' => 'set_trial',
+        'cancellable' => 'set_cancellable',
+        'offline' => 'set_offline',
+        'granted_by' => 'set_granted_by',
+        'granted_to' => 'set_granted_to',
+        'tags' => 'set_tags'
     ];
 
     /**
@@ -239,18 +239,18 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        'id' => 'getId',
-        'auto_renew' => 'getAutoRenew',
-        'created_at' => 'getCreatedAt',
-        'visual_expiration' => 'getVisualExpiration',
-        'notify_admins_at' => 'getNotifyAdminsAt',
-        'notify_users_at' => 'getNotifyUsersAt',
-        'trial' => 'getTrial',
-        'cancellable' => 'getCancellable',
-        'offline' => 'getOffline',
-        'granted_by' => 'getGrantedBy',
-        'granted_to' => 'getGrantedTo',
-        'tags' => 'getTags'
+        'id' => 'get_id',
+        'auto_renew' => 'get_auto_renew',
+        'created_at' => 'get_created_at',
+        'visual_expiration' => 'get_visual_expiration',
+        'notify_admins_at' => 'get_notify_admins_at',
+        'notify_users_at' => 'get_notify_users_at',
+        'trial' => 'get_trial',
+        'cancellable' => 'get_cancellable',
+        'offline' => 'get_offline',
+        'granted_by' => 'get_granted_by',
+        'granted_to' => 'get_granted_to',
+        'tags' => 'get_tags'
     ];
 
     /**
@@ -371,7 +371,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return string|null
      */
-    public function getId()
+    public function get_id()
     {
         return $this->container['id'];
     }
@@ -383,7 +383,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setId($id)
+    public function set_id($id)
     {
         if (is_null($id)) {
             throw new \InvalidArgumentException('non-nullable id cannot be null');
@@ -398,7 +398,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return bool|null
      */
-    public function getAutoRenew()
+    public function get_auto_renew()
     {
         return $this->container['auto_renew'];
     }
@@ -410,7 +410,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setAutoRenew($auto_renew)
+    public function set_auto_renew($auto_renew)
     {
         if (is_null($auto_renew)) {
             throw new \InvalidArgumentException('non-nullable auto_renew cannot be null');
@@ -425,7 +425,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -437,7 +437,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -452,7 +452,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return string|null
      */
-    public function getVisualExpiration()
+    public function get_visual_expiration()
     {
         return $this->container['visual_expiration'];
     }
@@ -464,7 +464,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setVisualExpiration($visual_expiration)
+    public function set_visual_expiration($visual_expiration)
     {
         if (is_null($visual_expiration)) {
             throw new \InvalidArgumentException('non-nullable visual_expiration cannot be null');
@@ -479,7 +479,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return string|null
      */
-    public function getNotifyAdminsAt()
+    public function get_notify_admins_at()
     {
         return $this->container['notify_admins_at'];
     }
@@ -491,7 +491,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setNotifyAdminsAt($notify_admins_at)
+    public function set_notify_admins_at($notify_admins_at)
     {
         if (is_null($notify_admins_at)) {
             throw new \InvalidArgumentException('non-nullable notify_admins_at cannot be null');
@@ -506,7 +506,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return string|null
      */
-    public function getNotifyUsersAt()
+    public function get_notify_users_at()
     {
         return $this->container['notify_users_at'];
     }
@@ -518,7 +518,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setNotifyUsersAt($notify_users_at)
+    public function set_notify_users_at($notify_users_at)
     {
         if (is_null($notify_users_at)) {
             throw new \InvalidArgumentException('non-nullable notify_users_at cannot be null');
@@ -533,7 +533,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return bool|null
      */
-    public function getTrial()
+    public function get_trial()
     {
         return $this->container['trial'];
     }
@@ -545,7 +545,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setTrial($trial)
+    public function set_trial($trial)
     {
         if (is_null($trial)) {
             throw new \InvalidArgumentException('non-nullable trial cannot be null');
@@ -560,7 +560,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return bool|null
      */
-    public function getCancellable()
+    public function get_cancellable()
     {
         return $this->container['cancellable'];
     }
@@ -572,7 +572,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setCancellable($cancellable)
+    public function set_cancellable($cancellable)
     {
         if (is_null($cancellable)) {
             throw new \InvalidArgumentException('non-nullable cancellable cannot be null');
@@ -587,7 +587,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return bool|null
      */
-    public function getOffline()
+    public function get_offline()
     {
         return $this->container['offline'];
     }
@@ -599,7 +599,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setOffline($offline)
+    public function set_offline($offline)
     {
         if (is_null($offline)) {
             throw new \InvalidArgumentException('non-nullable offline cannot be null');
@@ -614,7 +614,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return object|null
      */
-    public function getGrantedBy()
+    public function get_granted_by()
     {
         return $this->container['granted_by'];
     }
@@ -626,7 +626,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setGrantedBy($granted_by)
+    public function set_granted_by($granted_by)
     {
         if (is_null($granted_by)) {
             throw new \InvalidArgumentException('non-nullable granted_by cannot be null');
@@ -641,7 +641,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return object|null
      */
-    public function getGrantedTo()
+    public function get_granted_to()
     {
         return $this->container['granted_to'];
     }
@@ -653,7 +653,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setGrantedTo($granted_to)
+    public function set_granted_to($granted_to)
     {
         if (is_null($granted_to)) {
             throw new \InvalidArgumentException('non-nullable granted_to cannot be null');
@@ -668,7 +668,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesGet200ResponseLicensesInnerTag[]|null
      */
-    public function getTags()
+    public function get_tags()
     {
         return $this->container['tags'];
     }
@@ -680,7 +680,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseInformation implements ModelI
      *
      * @return self
      */
-    public function setTags($tags)
+    public function set_tags($tags)
     {
         if (is_null($tags)) {
             throw new \InvalidArgumentException('non-nullable tags cannot be null');

@@ -199,13 +199,13 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'agent_id' => 'setAgentId',
-        'department_id' => 'setDepartmentId',
-        'username' => 'setUsername',
-        'count' => 'setCount',
-        'order' => 'setOrder',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'agent_id' => 'set_agent_id',
+        'department_id' => 'set_department_id',
+        'username' => 'set_username',
+        'count' => 'set_count',
+        'order' => 'set_order',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'agent_id' => 'getAgentId',
-        'department_id' => 'getDepartmentId',
-        'username' => 'getUsername',
-        'count' => 'getCount',
-        'order' => 'getOrder',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'agent_id' => 'get_agent_id',
+        'department_id' => 'get_department_id',
+        'username' => 'get_username',
+        'count' => 'get_count',
+        'order' => 'get_order',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -348,7 +348,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getAgentId()
+    public function get_agent_id()
     {
         return $this->container['agent_id'];
     }
@@ -375,7 +375,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setAgentId($agent_id)
+    public function set_agent_id($agent_id)
     {
         if (is_null($agent_id)) {
             throw new \InvalidArgumentException('non-nullable agent_id cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getDepartmentId()
+    public function get_department_id()
     {
         return $this->container['department_id'];
     }
@@ -402,7 +402,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setDepartmentId($department_id)
+    public function set_department_id($department_id)
     {
         if (is_null($department_id)) {
             throw new \InvalidArgumentException('non-nullable department_id cannot be null');
@@ -417,7 +417,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -429,7 +429,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -444,7 +444,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -456,7 +456,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -471,7 +471,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return int|null
      */
-    public function getOrder()
+    public function get_order()
     {
         return $this->container['order'];
     }
@@ -483,7 +483,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setOrder($order)
+    public function set_order($order)
     {
         if (is_null($order)) {
             throw new \InvalidArgumentException('non-nullable order cannot be null');
@@ -498,7 +498,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -510,7 +510,7 @@ class GetApiV1LivechatDepartmentId200ResponseAgentsInner implements ModelInterfa
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

@@ -179,8 +179,8 @@ class PostApiV1LivechatTriggersRequestConditionsInner implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'value' => 'setValue'
+        'name' => 'set_name',
+        'value' => 'set_value'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatTriggersRequestConditionsInner implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'value' => 'getValue'
+        'name' => 'get_name',
+        'value' => 'get_value'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1LivechatTriggersRequestConditionsInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -313,7 +313,7 @@ class PostApiV1LivechatTriggersRequestConditionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1LivechatTriggersRequestConditionsInner implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatTriggersRequestConditionsInnerValue|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -340,7 +340,7 @@ class PostApiV1LivechatTriggersRequestConditionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');

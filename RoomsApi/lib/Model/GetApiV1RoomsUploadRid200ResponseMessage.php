@@ -215,17 +215,17 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'ts' => 'setTs',
-        'msg' => 'setMsg',
-        'file' => 'setFile',
-        'files' => 'setFiles',
-        'attachments' => 'setAttachments',
-        'u' => 'setU',
-        '_updated_at' => 'setUpdatedAt',
-        'urls' => 'setUrls',
-        'md' => 'setMd'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'ts' => 'set_ts',
+        'msg' => 'set_msg',
+        'file' => 'set_file',
+        'files' => 'set_files',
+        'attachments' => 'set_attachments',
+        'u' => 'set_u',
+        '_updated_at' => 'set__updated_at',
+        'urls' => 'set_urls',
+        'md' => 'set_md'
     ];
 
     /**
@@ -234,17 +234,17 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'ts' => 'getTs',
-        'msg' => 'getMsg',
-        'file' => 'getFile',
-        'files' => 'getFiles',
-        'attachments' => 'getAttachments',
-        'u' => 'getU',
-        '_updated_at' => 'getUpdatedAt',
-        'urls' => 'getUrls',
-        'md' => 'getMd'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'ts' => 'get_ts',
+        'msg' => 'get_msg',
+        'file' => 'get_file',
+        'files' => 'get_files',
+        'attachments' => 'get_attachments',
+        'u' => 'get_u',
+        '_updated_at' => 'get__updated_at',
+        'urls' => 'get_urls',
+        'md' => 'get_md'
     ];
 
     /**
@@ -364,7 +364,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -376,7 +376,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -391,7 +391,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -403,7 +403,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -418,7 +418,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -430,7 +430,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -445,7 +445,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -457,7 +457,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -472,7 +472,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile|null
      */
-    public function getFile()
+    public function get_file()
     {
         return $this->container['file'];
     }
@@ -484,7 +484,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setFile($file)
+    public function set_file($file)
     {
         if (is_null($file)) {
             throw new \InvalidArgumentException('non-nullable file cannot be null');
@@ -499,7 +499,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageFile[]|null
      */
-    public function getFiles()
+    public function get_files()
     {
         return $this->container['files'];
     }
@@ -511,7 +511,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setFiles($files)
+    public function set_files($files)
     {
         if (is_null($files)) {
             throw new \InvalidArgumentException('non-nullable files cannot be null');
@@ -526,7 +526,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null
      */
-    public function getAttachments()
+    public function get_attachments()
     {
         return $this->container['attachments'];
     }
@@ -538,7 +538,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setAttachments($attachments)
+    public function set_attachments($attachments)
     {
         if (is_null($attachments)) {
             throw new \InvalidArgumentException('non-nullable attachments cannot be null');
@@ -553,7 +553,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -565,7 +565,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -580,7 +580,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -592,7 +592,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -607,7 +607,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return object[]|null
      */
-    public function getUrls()
+    public function get_urls()
     {
         return $this->container['urls'];
     }
@@ -619,7 +619,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUrls($urls)
+    public function set_urls($urls)
     {
         if (is_null($urls)) {
             throw new \InvalidArgumentException('non-nullable urls cannot be null');
@@ -634,7 +634,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
      */
-    public function getMd()
+    public function get_md()
     {
         return $this->container['md'];
     }
@@ -646,7 +646,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setMd($md)
+    public function set_md($md)
     {
         if (is_null($md)) {
             throw new \InvalidArgumentException('non-nullable md cannot be null');

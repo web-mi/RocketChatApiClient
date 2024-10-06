@@ -179,8 +179,8 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'guest_data' => 'setGuestData',
-        'room_data' => 'setRoomData'
+        'guest_data' => 'set_guest_data',
+        'room_data' => 'set_room_data'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'guest_data' => 'getGuestData',
-        'room_data' => 'getRoomData'
+        'guest_data' => 'get_guest_data',
+        'room_data' => 'get_room_data'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestGuestData|null
      */
-    public function getGuestData()
+    public function get_guest_data()
     {
         return $this->container['guest_data'];
     }
@@ -313,7 +313,7 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setGuestData($guest_data)
+    public function set_guest_data($guest_data)
     {
         if (is_null($guest_data)) {
             throw new \InvalidArgumentException('non-nullable guest_data cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomSaveInfoRequestRoomData|null
      */
-    public function getRoomData()
+    public function get_room_data()
     {
         return $this->container['room_data'];
     }
@@ -340,7 +340,7 @@ class PostApiV1LivechatRoomSaveInfoRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setRoomData($room_data)
+    public function set_room_data($room_data)
     {
         if (is_null($room_data)) {
             throw new \InvalidArgumentException('non-nullable room_data cannot be null');

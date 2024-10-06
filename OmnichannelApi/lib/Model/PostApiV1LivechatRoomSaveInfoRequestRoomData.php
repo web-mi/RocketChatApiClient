@@ -195,12 +195,12 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'topic' => 'setTopic',
-        'tags' => 'setTags',
-        'priority_id' => 'setPriorityId',
-        'sla_id' => 'setSlaId',
-        'livechat_data' => 'setLivechatData'
+        '_id' => 'set__id',
+        'topic' => 'set_topic',
+        'tags' => 'set_tags',
+        'priority_id' => 'set_priority_id',
+        'sla_id' => 'set_sla_id',
+        'livechat_data' => 'set_livechat_data'
     ];
 
     /**
@@ -209,12 +209,12 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'topic' => 'getTopic',
-        'tags' => 'getTags',
-        'priority_id' => 'getPriorityId',
-        'sla_id' => 'getSlaId',
-        'livechat_data' => 'getLivechatData'
+        '_id' => 'get__id',
+        'topic' => 'get_topic',
+        'tags' => 'get_tags',
+        'priority_id' => 'get_priority_id',
+        'sla_id' => 'get_sla_id',
+        'livechat_data' => 'get_livechat_data'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return string
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -344,7 +344,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -359,7 +359,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getTopic()
+    public function get_topic()
     {
         return $this->container['topic'];
     }
@@ -371,7 +371,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTopic($topic)
+    public function set_topic($topic)
     {
         if (is_null($topic)) {
             throw new \InvalidArgumentException('non-nullable topic cannot be null');
@@ -386,7 +386,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return string[]|null
      */
-    public function getTags()
+    public function get_tags()
     {
         return $this->container['tags'];
     }
@@ -398,7 +398,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTags($tags)
+    public function set_tags($tags)
     {
         if (is_null($tags)) {
             throw new \InvalidArgumentException('non-nullable tags cannot be null');
@@ -413,7 +413,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getPriorityId()
+    public function get_priority_id()
     {
         return $this->container['priority_id'];
     }
@@ -425,7 +425,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setPriorityId($priority_id)
+    public function set_priority_id($priority_id)
     {
         if (is_null($priority_id)) {
             throw new \InvalidArgumentException('non-nullable priority_id cannot be null');
@@ -440,7 +440,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getSlaId()
+    public function get_sla_id()
     {
         return $this->container['sla_id'];
     }
@@ -452,7 +452,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setSlaId($sla_id)
+    public function set_sla_id($sla_id)
     {
         if (is_null($sla_id)) {
             throw new \InvalidArgumentException('non-nullable sla_id cannot be null');
@@ -467,7 +467,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return object|null
      */
-    public function getLivechatData()
+    public function get_livechat_data()
     {
         return $this->container['livechat_data'];
     }
@@ -479,7 +479,7 @@ class PostApiV1LivechatRoomSaveInfoRequestRoomData implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setLivechatData($livechat_data)
+    public function set_livechat_data($livechat_data)
     {
         if (is_null($livechat_data)) {
             throw new \InvalidArgumentException('non-nullable livechat_data cannot be null');

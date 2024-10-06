@@ -275,32 +275,32 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'created_at' => 'setCreatedAt',
-        'services' => 'setServices',
-        'username' => 'setUsername',
-        'emails' => 'setEmails',
-        'type' => 'setType',
-        'status' => 'setStatus',
-        'active' => 'setActive',
-        '_updated_at' => 'setUpdatedAt',
-        '__rooms' => 'setRooms',
-        'roles' => 'setRoles',
-        'name' => 'setName',
-        'settings' => 'setSettings',
-        'last_login' => 'setLastLogin',
-        'status_connection' => 'setStatusConnection',
-        'utc_offset' => 'setUtcOffset',
-        'banners' => 'setBanners',
-        'status_default' => 'setStatusDefault',
-        'status_text' => 'setStatusText',
-        'operator' => 'setOperator',
-        'livechat_status_system_modified' => 'setLivechatStatusSystemModified',
-        'status_livechat' => 'setStatusLivechat',
-        'livechat_count' => 'setLivechatCount',
-        'livechat' => 'setLivechat',
-        'bio' => 'setBio',
-        'nickname' => 'setNickname'
+        '_id' => 'set__id',
+        'created_at' => 'set_created_at',
+        'services' => 'set_services',
+        'username' => 'set_username',
+        'emails' => 'set_emails',
+        'type' => 'set_type',
+        'status' => 'set_status',
+        'active' => 'set_active',
+        '_updated_at' => 'set__updated_at',
+        '__rooms' => 'set___rooms',
+        'roles' => 'set_roles',
+        'name' => 'set_name',
+        'settings' => 'set_settings',
+        'last_login' => 'set_last_login',
+        'status_connection' => 'set_status_connection',
+        'utc_offset' => 'set_utc_offset',
+        'banners' => 'set_banners',
+        'status_default' => 'set_status_default',
+        'status_text' => 'set_status_text',
+        'operator' => 'set_operator',
+        'livechat_status_system_modified' => 'set_livechat_status_system_modified',
+        'status_livechat' => 'set_status_livechat',
+        'livechat_count' => 'set_livechat_count',
+        'livechat' => 'set_livechat',
+        'bio' => 'set_bio',
+        'nickname' => 'set_nickname'
     ];
 
     /**
@@ -309,32 +309,32 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'created_at' => 'getCreatedAt',
-        'services' => 'getServices',
-        'username' => 'getUsername',
-        'emails' => 'getEmails',
-        'type' => 'getType',
-        'status' => 'getStatus',
-        'active' => 'getActive',
-        '_updated_at' => 'getUpdatedAt',
-        '__rooms' => 'getRooms',
-        'roles' => 'getRoles',
-        'name' => 'getName',
-        'settings' => 'getSettings',
-        'last_login' => 'getLastLogin',
-        'status_connection' => 'getStatusConnection',
-        'utc_offset' => 'getUtcOffset',
-        'banners' => 'getBanners',
-        'status_default' => 'getStatusDefault',
-        'status_text' => 'getStatusText',
-        'operator' => 'getOperator',
-        'livechat_status_system_modified' => 'getLivechatStatusSystemModified',
-        'status_livechat' => 'getStatusLivechat',
-        'livechat_count' => 'getLivechatCount',
-        'livechat' => 'getLivechat',
-        'bio' => 'getBio',
-        'nickname' => 'getNickname'
+        '_id' => 'get__id',
+        'created_at' => 'get_created_at',
+        'services' => 'get_services',
+        'username' => 'get_username',
+        'emails' => 'get_emails',
+        'type' => 'get_type',
+        'status' => 'get_status',
+        'active' => 'get_active',
+        '_updated_at' => 'get__updated_at',
+        '__rooms' => 'get___rooms',
+        'roles' => 'get_roles',
+        'name' => 'get_name',
+        'settings' => 'get_settings',
+        'last_login' => 'get_last_login',
+        'status_connection' => 'get_status_connection',
+        'utc_offset' => 'get_utc_offset',
+        'banners' => 'get_banners',
+        'status_default' => 'get_status_default',
+        'status_text' => 'get_status_text',
+        'operator' => 'get_operator',
+        'livechat_status_system_modified' => 'get_livechat_status_system_modified',
+        'status_livechat' => 'get_status_livechat',
+        'livechat_count' => 'get_livechat_count',
+        'livechat' => 'get_livechat',
+        'bio' => 'get_bio',
+        'nickname' => 'get_nickname'
     ];
 
     /**
@@ -469,7 +469,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -481,7 +481,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -496,7 +496,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -508,7 +508,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -523,7 +523,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServices|null
      */
-    public function getServices()
+    public function get_services()
     {
         return $this->container['services'];
     }
@@ -535,7 +535,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setServices($services)
+    public function set_services($services)
     {
         if (is_null($services)) {
             throw new \InvalidArgumentException('non-nullable services cannot be null');
@@ -550,7 +550,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -562,7 +562,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -577,7 +577,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersCreate200ResponseUserEmailsInner[]|null
      */
-    public function getEmails()
+    public function get_emails()
     {
         return $this->container['emails'];
     }
@@ -589,7 +589,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setEmails($emails)
+    public function set_emails($emails)
     {
         if (is_null($emails)) {
             throw new \InvalidArgumentException('non-nullable emails cannot be null');
@@ -604,7 +604,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -616,7 +616,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -631,7 +631,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -643,7 +643,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -658,7 +658,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -670,7 +670,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');
@@ -685,7 +685,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -697,7 +697,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -712,7 +712,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string[]|null
      */
-    public function getRooms()
+    public function get___rooms()
     {
         return $this->container['__rooms'];
     }
@@ -724,7 +724,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setRooms($__rooms)
+    public function set___rooms($__rooms)
     {
         if (is_null($__rooms)) {
             throw new \InvalidArgumentException('non-nullable __rooms cannot be null');
@@ -739,7 +739,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -751,7 +751,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -766,7 +766,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -778,7 +778,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -793,7 +793,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserSettings|null
      */
-    public function getSettings()
+    public function get_settings()
     {
         return $this->container['settings'];
     }
@@ -805,7 +805,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setSettings($settings)
+    public function set_settings($settings)
     {
         if (is_null($settings)) {
             throw new \InvalidArgumentException('non-nullable settings cannot be null');
@@ -820,7 +820,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getLastLogin()
+    public function get_last_login()
     {
         return $this->container['last_login'];
     }
@@ -832,7 +832,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setLastLogin($last_login)
+    public function set_last_login($last_login)
     {
         if (is_null($last_login)) {
             throw new \InvalidArgumentException('non-nullable last_login cannot be null');
@@ -847,7 +847,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getStatusConnection()
+    public function get_status_connection()
     {
         return $this->container['status_connection'];
     }
@@ -859,7 +859,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setStatusConnection($status_connection)
+    public function set_status_connection($status_connection)
     {
         if (is_null($status_connection)) {
             throw new \InvalidArgumentException('non-nullable status_connection cannot be null');
@@ -874,7 +874,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return int|null
      */
-    public function getUtcOffset()
+    public function get_utc_offset()
     {
         return $this->container['utc_offset'];
     }
@@ -886,7 +886,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setUtcOffset($utc_offset)
+    public function set_utc_offset($utc_offset)
     {
         if (is_null($utc_offset)) {
             throw new \InvalidArgumentException('non-nullable utc_offset cannot be null');
@@ -901,7 +901,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners|null
      */
-    public function getBanners()
+    public function get_banners()
     {
         return $this->container['banners'];
     }
@@ -913,7 +913,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setBanners($banners)
+    public function set_banners($banners)
     {
         if (is_null($banners)) {
             throw new \InvalidArgumentException('non-nullable banners cannot be null');
@@ -928,7 +928,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getStatusDefault()
+    public function get_status_default()
     {
         return $this->container['status_default'];
     }
@@ -940,7 +940,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setStatusDefault($status_default)
+    public function set_status_default($status_default)
     {
         if (is_null($status_default)) {
             throw new \InvalidArgumentException('non-nullable status_default cannot be null');
@@ -955,7 +955,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getStatusText()
+    public function get_status_text()
     {
         return $this->container['status_text'];
     }
@@ -967,7 +967,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setStatusText($status_text)
+    public function set_status_text($status_text)
     {
         if (is_null($status_text)) {
             throw new \InvalidArgumentException('non-nullable status_text cannot be null');
@@ -982,7 +982,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getOperator()
+    public function get_operator()
     {
         return $this->container['operator'];
     }
@@ -994,7 +994,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setOperator($operator)
+    public function set_operator($operator)
     {
         if (is_null($operator)) {
             throw new \InvalidArgumentException('non-nullable operator cannot be null');
@@ -1009,7 +1009,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getLivechatStatusSystemModified()
+    public function get_livechat_status_system_modified()
     {
         return $this->container['livechat_status_system_modified'];
     }
@@ -1021,7 +1021,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setLivechatStatusSystemModified($livechat_status_system_modified)
+    public function set_livechat_status_system_modified($livechat_status_system_modified)
     {
         if (is_null($livechat_status_system_modified)) {
             throw new \InvalidArgumentException('non-nullable livechat_status_system_modified cannot be null');
@@ -1036,7 +1036,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getStatusLivechat()
+    public function get_status_livechat()
     {
         return $this->container['status_livechat'];
     }
@@ -1048,7 +1048,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setStatusLivechat($status_livechat)
+    public function set_status_livechat($status_livechat)
     {
         if (is_null($status_livechat)) {
             throw new \InvalidArgumentException('non-nullable status_livechat cannot be null');
@@ -1063,7 +1063,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return int|null
      */
-    public function getLivechatCount()
+    public function get_livechat_count()
     {
         return $this->container['livechat_count'];
     }
@@ -1075,7 +1075,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setLivechatCount($livechat_count)
+    public function set_livechat_count($livechat_count)
     {
         if (is_null($livechat_count)) {
             throw new \InvalidArgumentException('non-nullable livechat_count cannot be null');
@@ -1090,7 +1090,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserLivechat|null
      */
-    public function getLivechat()
+    public function get_livechat()
     {
         return $this->container['livechat'];
     }
@@ -1102,7 +1102,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setLivechat($livechat)
+    public function set_livechat($livechat)
     {
         if (is_null($livechat)) {
             throw new \InvalidArgumentException('non-nullable livechat cannot be null');
@@ -1117,7 +1117,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getBio()
+    public function get_bio()
     {
         return $this->container['bio'];
     }
@@ -1129,7 +1129,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setBio($bio)
+    public function set_bio($bio)
     {
         if (is_null($bio)) {
             throw new \InvalidArgumentException('non-nullable bio cannot be null');
@@ -1144,7 +1144,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return string|null
      */
-    public function getNickname()
+    public function get_nickname()
     {
         return $this->container['nickname'];
     }
@@ -1156,7 +1156,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUser implements ModelInterface,
      *
      * @return self
      */
-    public function setNickname($nickname)
+    public function set_nickname($nickname)
     {
         if (is_null($nickname)) {
             throw new \InvalidArgumentException('non-nullable nickname cannot be null');

@@ -175,7 +175,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName'
+        'name' => 'set_name'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName'
+        'name' => 'get_name'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner implements Mode
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -306,7 +306,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner implements Mode
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');

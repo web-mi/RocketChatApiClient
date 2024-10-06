@@ -179,8 +179,8 @@ class PostApiV1LivechatTranscriptRidRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'email' => 'setEmail',
-        'subject' => 'setSubject'
+        'email' => 'set_email',
+        'subject' => 'set_subject'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatTranscriptRidRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'email' => 'getEmail',
-        'subject' => 'getSubject'
+        'email' => 'get_email',
+        'subject' => 'get_subject'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1LivechatTranscriptRidRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -319,7 +319,7 @@ class PostApiV1LivechatTranscriptRidRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1LivechatTranscriptRidRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getSubject()
+    public function get_subject()
     {
         return $this->container['subject'];
     }
@@ -346,7 +346,7 @@ class PostApiV1LivechatTranscriptRidRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSubject($subject)
+    public function set_subject($subject)
     {
         if (is_null($subject)) {
             throw new \InvalidArgumentException('non-nullable subject cannot be null');

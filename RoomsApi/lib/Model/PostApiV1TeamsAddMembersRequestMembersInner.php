@@ -179,8 +179,8 @@ class PostApiV1TeamsAddMembersRequestMembersInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'user_id' => 'setUserId',
-        'roles' => 'setRoles'
+        'user_id' => 'set_user_id',
+        'roles' => 'set_roles'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1TeamsAddMembersRequestMembersInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'user_id' => 'getUserId',
-        'roles' => 'getRoles'
+        'user_id' => 'get_user_id',
+        'roles' => 'get_roles'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1TeamsAddMembersRequestMembersInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -313,7 +313,7 @@ class PostApiV1TeamsAddMembersRequestMembersInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1TeamsAddMembersRequestMembersInner implements ModelInterface, Arr
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -340,7 +340,7 @@ class PostApiV1TeamsAddMembersRequestMembersInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');

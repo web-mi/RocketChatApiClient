@@ -179,8 +179,8 @@ class GetApiV1StdoutQueue200Response implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'queue' => 'setQueue',
-        'success' => 'setSuccess'
+        'queue' => 'set_queue',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1StdoutQueue200Response implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'queue' => 'getQueue',
-        'success' => 'getSuccess'
+        'queue' => 'get_queue',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1StdoutQueue200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1StdoutQueue200ResponseQueueInner[]|null
      */
-    public function getQueue()
+    public function get_queue()
     {
         return $this->container['queue'];
     }
@@ -313,7 +313,7 @@ class GetApiV1StdoutQueue200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setQueue($queue)
+    public function set_queue($queue)
     {
         if (is_null($queue)) {
             throw new \InvalidArgumentException('non-nullable queue cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1StdoutQueue200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1StdoutQueue200Response implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

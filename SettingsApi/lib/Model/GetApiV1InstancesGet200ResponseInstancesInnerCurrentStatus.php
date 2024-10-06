@@ -183,9 +183,9 @@ class GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'connected' => 'setConnected',
-        'last_heartbeat_time' => 'setLastHeartbeatTime',
-        'local' => 'setLocal'
+        'connected' => 'set_connected',
+        'last_heartbeat_time' => 'set_last_heartbeat_time',
+        'local' => 'set_local'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'connected' => 'getConnected',
-        'last_heartbeat_time' => 'getLastHeartbeatTime',
-        'local' => 'getLocal'
+        'connected' => 'get_connected',
+        'last_heartbeat_time' => 'get_last_heartbeat_time',
+        'local' => 'get_local'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus implements Mode
      *
      * @return bool|null
      */
-    public function getConnected()
+    public function get_connected()
     {
         return $this->container['connected'];
     }
@@ -320,7 +320,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus implements Mode
      *
      * @return self
      */
-    public function setConnected($connected)
+    public function set_connected($connected)
     {
         if (is_null($connected)) {
             throw new \InvalidArgumentException('non-nullable connected cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus implements Mode
      *
      * @return int|null
      */
-    public function getLastHeartbeatTime()
+    public function get_last_heartbeat_time()
     {
         return $this->container['last_heartbeat_time'];
     }
@@ -347,7 +347,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus implements Mode
      *
      * @return self
      */
-    public function setLastHeartbeatTime($last_heartbeat_time)
+    public function set_last_heartbeat_time($last_heartbeat_time)
     {
         if (is_null($last_heartbeat_time)) {
             throw new \InvalidArgumentException('non-nullable last_heartbeat_time cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus implements Mode
      *
      * @return bool|null
      */
-    public function getLocal()
+    public function get_local()
     {
         return $this->container['local'];
     }
@@ -374,7 +374,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerCurrentStatus implements Mode
      *
      * @return self
      */
-    public function setLocal($local)
+    public function set_local($local)
     {
         if (is_null($local)) {
             throw new \InvalidArgumentException('non-nullable local cannot be null');

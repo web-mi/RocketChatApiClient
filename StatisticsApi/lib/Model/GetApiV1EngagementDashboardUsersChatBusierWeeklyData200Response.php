@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response implements
      * @var string[]
      */
     protected static $setters = [
-        'month' => 'setMonth',
-        'success' => 'setSuccess'
+        'month' => 'set_month',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response implements
      * @var string[]
      */
     protected static $getters = [
-        'month' => 'getMonth',
-        'success' => 'getSuccess'
+        'month' => 'get_month',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response implements
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierWeeklyData200ResponseMonthInner[]|null
      */
-    public function getMonth()
+    public function get_month()
     {
         return $this->container['month'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response implements
      *
      * @return self
      */
-    public function setMonth($month)
+    public function set_month($month)
     {
         if (is_null($month)) {
             throw new \InvalidArgumentException('non-nullable month cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response implements
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardUsersChatBusierWeeklyData200Response implements
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

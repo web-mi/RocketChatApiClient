@@ -175,7 +175,7 @@ class GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'company_id' => 'setCompanyId'
+        'company_id' => 'set_company_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'company_id' => 'getCompanyId'
+        'company_id' => 'get_company_id'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields implements ModelIn
      *
      * @return string|null
      */
-    public function getCompanyId()
+    public function get_company_id()
     {
         return $this->container['company_id'];
     }
@@ -306,7 +306,7 @@ class GetApiV1GroupsListAll200ResponseGroupsInnerCustomFields implements ModelIn
      *
      * @return self
      */
-    public function setCompanyId($company_id)
+    public function set_company_id($company_id)
     {
         if (is_null($company_id)) {
             throw new \InvalidArgumentException('non-nullable company_id cannot be null');

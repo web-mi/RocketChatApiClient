@@ -183,9 +183,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerTeams implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        'total_teams' => 'setTotalTeams',
-        'total_rooms_inside_teams' => 'setTotalRoomsInsideTeams',
-        'total_default_rooms_inside_teams' => 'setTotalDefaultRoomsInsideTeams'
+        'total_teams' => 'set_total_teams',
+        'total_rooms_inside_teams' => 'set_total_rooms_inside_teams',
+        'total_default_rooms_inside_teams' => 'set_total_default_rooms_inside_teams'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerTeams implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        'total_teams' => 'getTotalTeams',
-        'total_rooms_inside_teams' => 'getTotalRoomsInsideTeams',
-        'total_default_rooms_inside_teams' => 'getTotalDefaultRoomsInsideTeams'
+        'total_teams' => 'get_total_teams',
+        'total_rooms_inside_teams' => 'get_total_rooms_inside_teams',
+        'total_default_rooms_inside_teams' => 'get_total_default_rooms_inside_teams'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerTeams implements ModelInte
      *
      * @return int|null
      */
-    public function getTotalTeams()
+    public function get_total_teams()
     {
         return $this->container['total_teams'];
     }
@@ -320,7 +320,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerTeams implements ModelInte
      *
      * @return self
      */
-    public function setTotalTeams($total_teams)
+    public function set_total_teams($total_teams)
     {
         if (is_null($total_teams)) {
             throw new \InvalidArgumentException('non-nullable total_teams cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerTeams implements ModelInte
      *
      * @return int|null
      */
-    public function getTotalRoomsInsideTeams()
+    public function get_total_rooms_inside_teams()
     {
         return $this->container['total_rooms_inside_teams'];
     }
@@ -347,7 +347,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerTeams implements ModelInte
      *
      * @return self
      */
-    public function setTotalRoomsInsideTeams($total_rooms_inside_teams)
+    public function set_total_rooms_inside_teams($total_rooms_inside_teams)
     {
         if (is_null($total_rooms_inside_teams)) {
             throw new \InvalidArgumentException('non-nullable total_rooms_inside_teams cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerTeams implements ModelInte
      *
      * @return int|null
      */
-    public function getTotalDefaultRoomsInsideTeams()
+    public function get_total_default_rooms_inside_teams()
     {
         return $this->container['total_default_rooms_inside_teams'];
     }
@@ -374,7 +374,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerTeams implements ModelInte
      *
      * @return self
      */
-    public function setTotalDefaultRoomsInsideTeams($total_default_rooms_inside_teams)
+    public function set_total_default_rooms_inside_teams($total_default_rooms_inside_teams)
     {
         if (is_null($total_default_rooms_inside_teams)) {
             throw new \InvalidArgumentException('non-nullable total_default_rooms_inside_teams cannot be null');

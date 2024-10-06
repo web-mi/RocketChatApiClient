@@ -251,26 +251,26 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'enabled' => 'setEnabled',
-        'username' => 'setUsername',
-        'alias' => 'setAlias',
-        'avatar' => 'setAvatar',
-        'name' => 'setName',
-        'trigger_words' => 'setTriggerWords',
-        'urls' => 'setUrls',
-        'token' => 'setToken',
-        'script' => 'setScript',
-        'script_enabled' => 'setScriptEnabled',
-        'impersonate_user' => 'setImpersonateUser',
-        'script_compiled' => 'setScriptCompiled',
-        'script_error' => 'setScriptError',
-        'type' => 'setType',
-        'user_id' => 'setUserId',
-        'channel' => 'setChannel',
-        '_created_at' => 'setCreatedAt',
-        '_created_by' => 'setCreatedBy',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'enabled' => 'set_enabled',
+        'username' => 'set_username',
+        'alias' => 'set_alias',
+        'avatar' => 'set_avatar',
+        'name' => 'set_name',
+        'trigger_words' => 'set_trigger_words',
+        'urls' => 'set_urls',
+        'token' => 'set_token',
+        'script' => 'set_script',
+        'script_enabled' => 'set_script_enabled',
+        'impersonate_user' => 'set_impersonate_user',
+        'script_compiled' => 'set_script_compiled',
+        'script_error' => 'set_script_error',
+        'type' => 'set_type',
+        'user_id' => 'set_user_id',
+        'channel' => 'set_channel',
+        '_created_at' => 'set__created_at',
+        '_created_by' => 'set__created_by',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -279,26 +279,26 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'enabled' => 'getEnabled',
-        'username' => 'getUsername',
-        'alias' => 'getAlias',
-        'avatar' => 'getAvatar',
-        'name' => 'getName',
-        'trigger_words' => 'getTriggerWords',
-        'urls' => 'getUrls',
-        'token' => 'getToken',
-        'script' => 'getScript',
-        'script_enabled' => 'getScriptEnabled',
-        'impersonate_user' => 'getImpersonateUser',
-        'script_compiled' => 'getScriptCompiled',
-        'script_error' => 'getScriptError',
-        'type' => 'getType',
-        'user_id' => 'getUserId',
-        'channel' => 'getChannel',
-        '_created_at' => 'getCreatedAt',
-        '_created_by' => 'getCreatedBy',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'enabled' => 'get_enabled',
+        'username' => 'get_username',
+        'alias' => 'get_alias',
+        'avatar' => 'get_avatar',
+        'name' => 'get_name',
+        'trigger_words' => 'get_trigger_words',
+        'urls' => 'get_urls',
+        'token' => 'get_token',
+        'script' => 'get_script',
+        'script_enabled' => 'get_script_enabled',
+        'impersonate_user' => 'get_impersonate_user',
+        'script_compiled' => 'get_script_compiled',
+        'script_error' => 'get_script_error',
+        'type' => 'get_type',
+        'user_id' => 'get_user_id',
+        'channel' => 'get_channel',
+        '_created_at' => 'get__created_at',
+        '_created_by' => 'get__created_by',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -427,7 +427,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -439,7 +439,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -454,7 +454,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -466,7 +466,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -481,7 +481,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -493,7 +493,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -508,7 +508,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getAlias()
+    public function get_alias()
     {
         return $this->container['alias'];
     }
@@ -520,7 +520,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setAlias($alias)
+    public function set_alias($alias)
     {
         if (is_null($alias)) {
             throw new \InvalidArgumentException('non-nullable alias cannot be null');
@@ -535,7 +535,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getAvatar()
+    public function get_avatar()
     {
         return $this->container['avatar'];
     }
@@ -547,7 +547,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setAvatar($avatar)
+    public function set_avatar($avatar)
     {
         if (is_null($avatar)) {
             throw new \InvalidArgumentException('non-nullable avatar cannot be null');
@@ -562,7 +562,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -574,7 +574,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -589,7 +589,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string[]|null
      */
-    public function getTriggerWords()
+    public function get_trigger_words()
     {
         return $this->container['trigger_words'];
     }
@@ -601,7 +601,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setTriggerWords($trigger_words)
+    public function set_trigger_words($trigger_words)
     {
         if (is_null($trigger_words)) {
             throw new \InvalidArgumentException('non-nullable trigger_words cannot be null');
@@ -616,7 +616,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string[]|null
      */
-    public function getUrls()
+    public function get_urls()
     {
         return $this->container['urls'];
     }
@@ -628,7 +628,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setUrls($urls)
+    public function set_urls($urls)
     {
         if (is_null($urls)) {
             throw new \InvalidArgumentException('non-nullable urls cannot be null');
@@ -643,7 +643,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -655,7 +655,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -670,7 +670,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getScript()
+    public function get_script()
     {
         return $this->container['script'];
     }
@@ -682,7 +682,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setScript($script)
+    public function set_script($script)
     {
         if (is_null($script)) {
             throw new \InvalidArgumentException('non-nullable script cannot be null');
@@ -697,7 +697,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return bool|null
      */
-    public function getScriptEnabled()
+    public function get_script_enabled()
     {
         return $this->container['script_enabled'];
     }
@@ -709,7 +709,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setScriptEnabled($script_enabled)
+    public function set_script_enabled($script_enabled)
     {
         if (is_null($script_enabled)) {
             throw new \InvalidArgumentException('non-nullable script_enabled cannot be null');
@@ -724,7 +724,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return bool|null
      */
-    public function getImpersonateUser()
+    public function get_impersonate_user()
     {
         return $this->container['impersonate_user'];
     }
@@ -736,7 +736,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setImpersonateUser($impersonate_user)
+    public function set_impersonate_user($impersonate_user)
     {
         if (is_null($impersonate_user)) {
             throw new \InvalidArgumentException('non-nullable impersonate_user cannot be null');
@@ -751,7 +751,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getScriptCompiled()
+    public function get_script_compiled()
     {
         return $this->container['script_compiled'];
     }
@@ -763,7 +763,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setScriptCompiled($script_compiled)
+    public function set_script_compiled($script_compiled)
     {
         if (is_null($script_compiled)) {
             throw new \InvalidArgumentException('non-nullable script_compiled cannot be null');
@@ -778,7 +778,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getScriptError()
+    public function get_script_error()
     {
         return $this->container['script_error'];
     }
@@ -790,7 +790,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setScriptError($script_error)
+    public function set_script_error($script_error)
     {
         if (is_null($script_error)) {
             throw new \InvalidArgumentException('non-nullable script_error cannot be null');
@@ -805,7 +805,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -817,7 +817,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -832,7 +832,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -844,7 +844,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -859,7 +859,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return object[]|null
      */
-    public function getChannel()
+    public function get_channel()
     {
         return $this->container['channel'];
     }
@@ -871,7 +871,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setChannel($channel)
+    public function set_channel($channel)
     {
         if (is_null($channel)) {
             throw new \InvalidArgumentException('non-nullable channel cannot be null');
@@ -886,7 +886,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get__created_at()
     {
         return $this->container['_created_at'];
     }
@@ -898,7 +898,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setCreatedAt($_created_at)
+    public function set__created_at($_created_at)
     {
         if (is_null($_created_at)) {
             throw new \InvalidArgumentException('non-nullable _created_at cannot be null');
@@ -913,7 +913,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInnerCreatedBy|null
      */
-    public function getCreatedBy()
+    public function get__created_by()
     {
         return $this->container['_created_by'];
     }
@@ -925,7 +925,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setCreatedBy($_created_by)
+    public function set__created_by($_created_by)
     {
         if (is_null($_created_by)) {
             throw new \InvalidArgumentException('non-nullable _created_by cannot be null');
@@ -940,7 +940,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -952,7 +952,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'subscription' => 'setSubscription',
-        'success' => 'setSuccess'
+        'subscription' => 'set_subscription',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'subscription' => 'getSubscription',
-        'success' => 'getSuccess'
+        'subscription' => 'get_subscription',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null
      */
-    public function getSubscription()
+    public function get_subscription()
     {
         return $this->container['subscription'];
     }
@@ -313,7 +313,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setSubscription($subscription)
+    public function set_subscription($subscription)
     {
         if (is_null($subscription)) {
             throw new \InvalidArgumentException('non-nullable subscription cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

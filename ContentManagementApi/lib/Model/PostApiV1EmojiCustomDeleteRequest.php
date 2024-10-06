@@ -175,7 +175,7 @@ class PostApiV1EmojiCustomDeleteRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'emoji_id' => 'setEmojiId'
+        'emoji_id' => 'set_emoji_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1EmojiCustomDeleteRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'emoji_id' => 'getEmojiId'
+        'emoji_id' => 'get_emoji_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1EmojiCustomDeleteRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getEmojiId()
+    public function get_emoji_id()
     {
         return $this->container['emoji_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1EmojiCustomDeleteRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setEmojiId($emoji_id)
+    public function set_emoji_id($emoji_id)
     {
         if (is_null($emoji_id)) {
             throw new \InvalidArgumentException('non-nullable emoji_id cannot be null');

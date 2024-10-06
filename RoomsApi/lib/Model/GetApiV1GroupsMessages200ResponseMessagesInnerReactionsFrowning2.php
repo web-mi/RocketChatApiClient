@@ -175,7 +175,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInnerReactionsFrowning2 implement
      * @var string[]
      */
     protected static $setters = [
-        'usernames' => 'setUsernames'
+        'usernames' => 'set_usernames'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInnerReactionsFrowning2 implement
      * @var string[]
      */
     protected static $getters = [
-        'usernames' => 'getUsernames'
+        'usernames' => 'get_usernames'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInnerReactionsFrowning2 implement
      *
      * @return string[]|null
      */
-    public function getUsernames()
+    public function get_usernames()
     {
         return $this->container['usernames'];
     }
@@ -306,7 +306,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInnerReactionsFrowning2 implement
      *
      * @return self
      */
-    public function setUsernames($usernames)
+    public function set_usernames($usernames)
     {
         if (is_null($usernames)) {
             throw new \InvalidArgumentException('non-nullable usernames cannot be null');

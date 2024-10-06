@@ -179,8 +179,8 @@ class PutApiV1LivechatInquirySetSLARequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'sla' => 'setSla'
+        'room_id' => 'set_room_id',
+        'sla' => 'set_sla'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PutApiV1LivechatInquirySetSLARequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'sla' => 'getSla'
+        'room_id' => 'get_room_id',
+        'sla' => 'get_sla'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PutApiV1LivechatInquirySetSLARequest implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PutApiV1LivechatInquirySetSLARequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PutApiV1LivechatInquirySetSLARequest implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getSla()
+    public function get_sla()
     {
         return $this->container['sla'];
     }
@@ -346,7 +346,7 @@ class PutApiV1LivechatInquirySetSLARequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setSla($sla)
+    public function set_sla($sla)
     {
         if (is_null($sla)) {
             throw new \InvalidArgumentException('non-nullable sla cannot be null');

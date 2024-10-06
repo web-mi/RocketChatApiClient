@@ -219,18 +219,18 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'msg' => 'setMsg',
-        'ts' => 'setTs',
-        'u' => 'setU',
-        '_updated_at' => 'setUpdatedAt',
-        'reactions' => 'setReactions',
-        'mentions' => 'setMentions',
-        'channels' => 'setChannels',
-        'starred' => 'setStarred',
-        't' => 'setT',
-        'groupable' => 'setGroupable'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'msg' => 'set_msg',
+        'ts' => 'set_ts',
+        'u' => 'set_u',
+        '_updated_at' => 'set__updated_at',
+        'reactions' => 'set_reactions',
+        'mentions' => 'set_mentions',
+        'channels' => 'set_channels',
+        'starred' => 'set_starred',
+        't' => 'set_t',
+        'groupable' => 'set_groupable'
     ];
 
     /**
@@ -239,18 +239,18 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'msg' => 'getMsg',
-        'ts' => 'getTs',
-        'u' => 'getU',
-        '_updated_at' => 'getUpdatedAt',
-        'reactions' => 'getReactions',
-        'mentions' => 'getMentions',
-        'channels' => 'getChannels',
-        'starred' => 'getStarred',
-        't' => 'getT',
-        'groupable' => 'getGroupable'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'msg' => 'get_msg',
+        'ts' => 'get_ts',
+        'u' => 'get_u',
+        '_updated_at' => 'get__updated_at',
+        'reactions' => 'get_reactions',
+        'mentions' => 'get_mentions',
+        'channels' => 'get_channels',
+        'starred' => 'get_starred',
+        't' => 'get_t',
+        'groupable' => 'get_groupable'
     ];
 
     /**
@@ -371,7 +371,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -383,7 +383,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -398,7 +398,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -410,7 +410,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -425,7 +425,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -437,7 +437,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -452,7 +452,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -464,7 +464,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -479,7 +479,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -491,7 +491,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -506,7 +506,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -518,7 +518,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -533,7 +533,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerReactions|null
      */
-    public function getReactions()
+    public function get_reactions()
     {
         return $this->container['reactions'];
     }
@@ -545,7 +545,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setReactions($reactions)
+    public function set_reactions($reactions)
     {
         if (is_null($reactions)) {
             throw new \InvalidArgumentException('non-nullable reactions cannot be null');
@@ -560,7 +560,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return object[]|null
      */
-    public function getMentions()
+    public function get_mentions()
     {
         return $this->container['mentions'];
     }
@@ -572,7 +572,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setMentions($mentions)
+    public function set_mentions($mentions)
     {
         if (is_null($mentions)) {
             throw new \InvalidArgumentException('non-nullable mentions cannot be null');
@@ -587,7 +587,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return object[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -599,7 +599,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -614,7 +614,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerStarred|null
      */
-    public function getStarred()
+    public function get_starred()
     {
         return $this->container['starred'];
     }
@@ -626,7 +626,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setStarred($starred)
+    public function set_starred($starred)
     {
         if (is_null($starred)) {
             throw new \InvalidArgumentException('non-nullable starred cannot be null');
@@ -641,7 +641,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -653,7 +653,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -668,7 +668,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getGroupable()
+    public function get_groupable()
     {
         return $this->container['groupable'];
     }
@@ -680,7 +680,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setGroupable($groupable)
+    public function set_groupable($groupable)
     {
         if (is_null($groupable)) {
             throw new \InvalidArgumentException('non-nullable groupable cannot be null');

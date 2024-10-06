@@ -179,8 +179,8 @@ class GetApiV1TeamsInfo200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $setters = [
-        'team_info' => 'setTeamInfo',
-        'success' => 'setSuccess'
+        'team_info' => 'set_team_info',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1TeamsInfo200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $getters = [
-        'team_info' => 'getTeamInfo',
-        'success' => 'getSuccess'
+        'team_info' => 'get_team_info',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1TeamsInfo200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam|null
      */
-    public function getTeamInfo()
+    public function get_team_info()
     {
         return $this->container['team_info'];
     }
@@ -313,7 +313,7 @@ class GetApiV1TeamsInfo200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setTeamInfo($team_info)
+    public function set_team_info($team_info)
     {
         if (is_null($team_info)) {
             throw new \InvalidArgumentException('non-nullable team_info cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1TeamsInfo200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1TeamsInfo200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

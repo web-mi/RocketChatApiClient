@@ -183,9 +183,9 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'chats' => 'setChats',
-        'user' => 'setUser',
-        'department' => 'setDepartment'
+        'chats' => 'set_chats',
+        'user' => 'set_user',
+        'department' => 'set_department'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'chats' => 'getChats',
-        'user' => 'getUser',
-        'department' => 'getDepartment'
+        'chats' => 'get_chats',
+        'user' => 'get_user',
+        'department' => 'get_department'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getChats()
+    public function get_chats()
     {
         return $this->container['chats'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setChats($chats)
+    public function set_chats($chats)
     {
         if (is_null($chats)) {
             throw new \InvalidArgumentException('non-nullable chats cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatQueue200ResponseQueueInnerUser|null
      */
-    public function getUser()
+    public function get_user()
     {
         return $this->container['user'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUser($user)
+    public function set_user($user)
     {
         if (is_null($user)) {
             throw new \InvalidArgumentException('non-nullable user cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartment|null
      */
-    public function getDepartment()
+    public function get_department()
     {
         return $this->container['department'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatQueue200ResponseQueueInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setDepartment($department)
+    public function set_department($department)
     {
         if (is_null($department)) {
             throw new \InvalidArgumentException('non-nullable department cannot be null');

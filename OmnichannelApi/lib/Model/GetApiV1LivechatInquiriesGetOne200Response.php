@@ -179,8 +179,8 @@ class GetApiV1LivechatInquiriesGetOne200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'inquiry' => 'setInquiry',
-        'success' => 'setSuccess'
+        'inquiry' => 'set_inquiry',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatInquiriesGetOne200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'inquiry' => 'getInquiry',
-        'success' => 'getSuccess'
+        'inquiry' => 'get_inquiry',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatInquiriesGetOne200Response implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiry|null
      */
-    public function getInquiry()
+    public function get_inquiry()
     {
         return $this->container['inquiry'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatInquiriesGetOne200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setInquiry($inquiry)
+    public function set_inquiry($inquiry)
     {
         if (is_null($inquiry)) {
             throw new \InvalidArgumentException('non-nullable inquiry cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatInquiriesGetOne200Response implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatInquiriesGetOne200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

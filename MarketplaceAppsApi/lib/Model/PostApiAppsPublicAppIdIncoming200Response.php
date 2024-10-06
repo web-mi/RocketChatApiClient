@@ -175,7 +175,7 @@ class PostApiAppsPublicAppIdIncoming200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'msg' => 'setMsg'
+        'msg' => 'set_msg'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiAppsPublicAppIdIncoming200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'msg' => 'getMsg'
+        'msg' => 'get_msg'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiAppsPublicAppIdIncoming200Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -306,7 +306,7 @@ class PostApiAppsPublicAppIdIncoming200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');

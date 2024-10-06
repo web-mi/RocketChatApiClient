@@ -223,19 +223,19 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'msg' => 'setMsg',
-        'token' => 'setToken',
-        'alias' => 'setAlias',
-        'ls' => 'setLs',
-        'u' => 'setU',
-        'mentions' => 'setMentions',
-        'channels' => 'setChannels',
-        '_updated_at' => 'setUpdatedAt',
-        'edited_at' => 'setEditedAt',
-        'edited_by' => 'setEditedBy',
-        'urls' => 'setUrls'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'msg' => 'set_msg',
+        'token' => 'set_token',
+        'alias' => 'set_alias',
+        'ls' => 'set_ls',
+        'u' => 'set_u',
+        'mentions' => 'set_mentions',
+        'channels' => 'set_channels',
+        '_updated_at' => 'set__updated_at',
+        'edited_at' => 'set_edited_at',
+        'edited_by' => 'set_edited_by',
+        'urls' => 'set_urls'
     ];
 
     /**
@@ -244,19 +244,19 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'msg' => 'getMsg',
-        'token' => 'getToken',
-        'alias' => 'getAlias',
-        'ls' => 'getLs',
-        'u' => 'getU',
-        'mentions' => 'getMentions',
-        'channels' => 'getChannels',
-        '_updated_at' => 'getUpdatedAt',
-        'edited_at' => 'getEditedAt',
-        'edited_by' => 'getEditedBy',
-        'urls' => 'getUrls'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'msg' => 'get_msg',
+        'token' => 'get_token',
+        'alias' => 'get_alias',
+        'ls' => 'get_ls',
+        'u' => 'get_u',
+        'mentions' => 'get_mentions',
+        'channels' => 'get_channels',
+        '_updated_at' => 'get__updated_at',
+        'edited_at' => 'get_edited_at',
+        'edited_by' => 'get_edited_by',
+        'urls' => 'get_urls'
     ];
 
     /**
@@ -378,7 +378,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -390,7 +390,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -405,7 +405,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -417,7 +417,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -432,7 +432,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -444,7 +444,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -459,7 +459,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -471,7 +471,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -486,7 +486,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return string|null
      */
-    public function getAlias()
+    public function get_alias()
     {
         return $this->container['alias'];
     }
@@ -498,7 +498,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setAlias($alias)
+    public function set_alias($alias)
     {
         if (is_null($alias)) {
             throw new \InvalidArgumentException('non-nullable alias cannot be null');
@@ -513,7 +513,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return string|null
      */
-    public function getLs()
+    public function get_ls()
     {
         return $this->container['ls'];
     }
@@ -525,7 +525,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setLs($ls)
+    public function set_ls($ls)
     {
         if (is_null($ls)) {
             throw new \InvalidArgumentException('non-nullable ls cannot be null');
@@ -540,7 +540,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -552,7 +552,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -567,7 +567,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return object[]|null
      */
-    public function getMentions()
+    public function get_mentions()
     {
         return $this->container['mentions'];
     }
@@ -579,7 +579,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setMentions($mentions)
+    public function set_mentions($mentions)
     {
         if (is_null($mentions)) {
             throw new \InvalidArgumentException('non-nullable mentions cannot be null');
@@ -594,7 +594,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return object[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -606,7 +606,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -621,7 +621,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -633,7 +633,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -648,7 +648,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return string|null
      */
-    public function getEditedAt()
+    public function get_edited_at()
     {
         return $this->container['edited_at'];
     }
@@ -660,7 +660,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setEditedAt($edited_at)
+    public function set_edited_at($edited_at)
     {
         if (is_null($edited_at)) {
             throw new \InvalidArgumentException('non-nullable edited_at cannot be null');
@@ -675,7 +675,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
      */
-    public function getEditedBy()
+    public function get_edited_by()
     {
         return $this->container['edited_by'];
     }
@@ -687,7 +687,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setEditedBy($edited_by)
+    public function set_edited_by($edited_by)
     {
         if (is_null($edited_by)) {
             throw new \InvalidArgumentException('non-nullable edited_by cannot be null');
@@ -702,7 +702,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return object[]|null
      */
-    public function getUrls()
+    public function get_urls()
     {
         return $this->container['urls'];
     }
@@ -714,7 +714,7 @@ class GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner implements Mode
      *
      * @return self
      */
-    public function setUrls($urls)
+    public function set_urls($urls)
     {
         if (is_null($urls)) {
             throw new \InvalidArgumentException('non-nullable urls cannot be null');

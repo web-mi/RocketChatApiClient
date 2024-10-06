@@ -179,8 +179,8 @@ class GetApiV1EmojiCustomList200Response implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'emojis' => 'setEmojis',
-        'success' => 'setSuccess'
+        'emojis' => 'set_emojis',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EmojiCustomList200Response implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'emojis' => 'getEmojis',
-        'success' => 'getSuccess'
+        'emojis' => 'get_emojis',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EmojiCustomList200Response implements ModelInterface, ArrayAccess,
      *
      * @return \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojis|null
      */
-    public function getEmojis()
+    public function get_emojis()
     {
         return $this->container['emojis'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EmojiCustomList200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setEmojis($emojis)
+    public function set_emojis($emojis)
     {
         if (is_null($emojis)) {
             throw new \InvalidArgumentException('non-nullable emojis cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EmojiCustomList200Response implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EmojiCustomList200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

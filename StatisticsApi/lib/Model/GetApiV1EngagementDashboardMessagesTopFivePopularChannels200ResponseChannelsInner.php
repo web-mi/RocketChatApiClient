@@ -187,10 +187,10 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      * @var string[]
      */
     protected static $setters = [
-        'messages' => 'setMessages',
-        't' => 'setT',
-        'name' => 'setName',
-        'usernames' => 'setUsernames'
+        'messages' => 'set_messages',
+        't' => 'set_t',
+        'name' => 'set_name',
+        'usernames' => 'set_usernames'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      * @var string[]
      */
     protected static $getters = [
-        'messages' => 'getMessages',
-        't' => 'getT',
-        'name' => 'getName',
-        'usernames' => 'getUsernames'
+        'messages' => 'get_messages',
+        't' => 'get_t',
+        'name' => 'get_name',
+        'usernames' => 'get_usernames'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      *
      * @return int|null
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -327,7 +327,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -354,7 +354,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -381,7 +381,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      *
      * @return object[]|null
      */
-    public function getUsernames()
+    public function get_usernames()
     {
         return $this->container['usernames'];
     }
@@ -408,7 +408,7 @@ class GetApiV1EngagementDashboardMessagesTopFivePopularChannels200ResponseChanne
      *
      * @return self
      */
-    public function setUsernames($usernames)
+    public function set_usernames($usernames)
     {
         if (is_null($usernames)) {
             throw new \InvalidArgumentException('non-nullable usernames cannot be null');

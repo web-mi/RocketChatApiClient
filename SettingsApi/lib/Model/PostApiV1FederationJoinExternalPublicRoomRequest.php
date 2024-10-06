@@ -175,7 +175,7 @@ class PostApiV1FederationJoinExternalPublicRoomRequest implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        'external_room_id' => 'setExternalRoomId'
+        'external_room_id' => 'set_external_room_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1FederationJoinExternalPublicRoomRequest implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        'external_room_id' => 'getExternalRoomId'
+        'external_room_id' => 'get_external_room_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1FederationJoinExternalPublicRoomRequest implements ModelInterface
      *
      * @return string
      */
-    public function getExternalRoomId()
+    public function get_external_room_id()
     {
         return $this->container['external_room_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1FederationJoinExternalPublicRoomRequest implements ModelInterface
      *
      * @return self
      */
-    public function setExternalRoomId($external_room_id)
+    public function set_external_room_id($external_room_id)
     {
         if (is_null($external_room_id)) {
             throw new \InvalidArgumentException('non-nullable external_room_id cannot be null');

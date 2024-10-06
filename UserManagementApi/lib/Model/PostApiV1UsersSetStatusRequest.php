@@ -187,10 +187,10 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'setMessage',
-        'status' => 'setStatus',
-        'user_id' => 'setUserId',
-        'username' => 'setUsername'
+        'message' => 'set_message',
+        'status' => 'set_status',
+        'user_id' => 'set_user_id',
+        'username' => 'set_username'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'getMessage',
-        'status' => 'getStatus',
-        'user_id' => 'getUserId',
-        'username' => 'getUsername'
+        'message' => 'get_message',
+        'status' => 'get_status',
+        'user_id' => 'get_user_id',
+        'username' => 'get_username'
     ];
 
     /**
@@ -318,7 +318,7 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -330,7 +330,7 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -345,7 +345,7 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -357,7 +357,7 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -372,7 +372,7 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -384,7 +384,7 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -399,7 +399,7 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -411,7 +411,7 @@ class PostApiV1UsersSetStatusRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');

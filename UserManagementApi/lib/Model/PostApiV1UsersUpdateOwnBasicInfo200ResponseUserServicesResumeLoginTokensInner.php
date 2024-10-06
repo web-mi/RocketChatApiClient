@@ -187,10 +187,10 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      * @var string[]
      */
     protected static $setters = [
-        'when' => 'setWhen',
-        'hashed_token' => 'setHashedToken',
-        'two_factor_authorized_hash' => 'setTwoFactorAuthorizedHash',
-        'two_factor_authorized_until' => 'setTwoFactorAuthorizedUntil'
+        'when' => 'set_when',
+        'hashed_token' => 'set_hashed_token',
+        'two_factor_authorized_hash' => 'set_two_factor_authorized_hash',
+        'two_factor_authorized_until' => 'set_two_factor_authorized_until'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      * @var string[]
      */
     protected static $getters = [
-        'when' => 'getWhen',
-        'hashed_token' => 'getHashedToken',
-        'two_factor_authorized_hash' => 'getTwoFactorAuthorizedHash',
-        'two_factor_authorized_until' => 'getTwoFactorAuthorizedUntil'
+        'when' => 'get_when',
+        'hashed_token' => 'get_hashed_token',
+        'two_factor_authorized_hash' => 'get_two_factor_authorized_hash',
+        'two_factor_authorized_until' => 'get_two_factor_authorized_until'
     ];
 
     /**
@@ -315,7 +315,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      *
      * @return string|null
      */
-    public function getWhen()
+    public function get_when()
     {
         return $this->container['when'];
     }
@@ -327,7 +327,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      *
      * @return self
      */
-    public function setWhen($when)
+    public function set_when($when)
     {
         if (is_null($when)) {
             throw new \InvalidArgumentException('non-nullable when cannot be null');
@@ -342,7 +342,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      *
      * @return string|null
      */
-    public function getHashedToken()
+    public function get_hashed_token()
     {
         return $this->container['hashed_token'];
     }
@@ -354,7 +354,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      *
      * @return self
      */
-    public function setHashedToken($hashed_token)
+    public function set_hashed_token($hashed_token)
     {
         if (is_null($hashed_token)) {
             throw new \InvalidArgumentException('non-nullable hashed_token cannot be null');
@@ -369,7 +369,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      *
      * @return string|null
      */
-    public function getTwoFactorAuthorizedHash()
+    public function get_two_factor_authorized_hash()
     {
         return $this->container['two_factor_authorized_hash'];
     }
@@ -381,7 +381,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      *
      * @return self
      */
-    public function setTwoFactorAuthorizedHash($two_factor_authorized_hash)
+    public function set_two_factor_authorized_hash($two_factor_authorized_hash)
     {
         if (is_null($two_factor_authorized_hash)) {
             throw new \InvalidArgumentException('non-nullable two_factor_authorized_hash cannot be null');
@@ -396,7 +396,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      *
      * @return string|null
      */
-    public function getTwoFactorAuthorizedUntil()
+    public function get_two_factor_authorized_until()
     {
         return $this->container['two_factor_authorized_until'];
     }
@@ -408,7 +408,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensIn
      *
      * @return self
      */
-    public function setTwoFactorAuthorizedUntil($two_factor_authorized_until)
+    public function set_two_factor_authorized_until($two_factor_authorized_until)
     {
         if (is_null($two_factor_authorized_until)) {
             throw new \InvalidArgumentException('non-nullable two_factor_authorized_until cannot be null');

@@ -183,9 +183,9 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsReaction implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'fd' => 'setFd',
-        'ft' => 'setFt',
-        'tt' => 'setTt'
+        'fd' => 'set_fd',
+        'ft' => 'set_ft',
+        'tt' => 'set_tt'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsReaction implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'fd' => 'getFd',
-        'ft' => 'getFt',
-        'tt' => 'getTt'
+        'fd' => 'get_fd',
+        'ft' => 'get_ft',
+        'tt' => 'get_tt'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsReaction implements ModelInterfa
      *
      * @return string|null
      */
-    public function getFd()
+    public function get_fd()
     {
         return $this->container['fd'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsReaction implements ModelInterfa
      *
      * @return self
      */
-    public function setFd($fd)
+    public function set_fd($fd)
     {
         if (is_null($fd)) {
             throw new \InvalidArgumentException('non-nullable fd cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsReaction implements ModelInterfa
      *
      * @return float|null
      */
-    public function getFt()
+    public function get_ft()
     {
         return $this->container['ft'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsReaction implements ModelInterfa
      *
      * @return self
      */
-    public function setFt($ft)
+    public function set_ft($ft)
     {
         if (is_null($ft)) {
             throw new \InvalidArgumentException('non-nullable ft cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsReaction implements ModelInterfa
      *
      * @return float|null
      */
-    public function getTt()
+    public function get_tt()
     {
         return $this->container['tt'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsReaction implements ModelInterfa
      *
      * @return self
      */
-    public function setTt($tt)
+    public function set_tt($tt)
     {
         if (is_null($tt)) {
             throw new \InvalidArgumentException('non-nullable tt cannot be null');

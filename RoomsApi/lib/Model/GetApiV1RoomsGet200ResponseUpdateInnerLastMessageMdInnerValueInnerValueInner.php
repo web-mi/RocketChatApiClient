@@ -187,10 +187,10 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'value' => 'setValue',
-        'src' => 'setSrc',
-        'label' => 'setLabel'
+        'type' => 'set_type',
+        'value' => 'set_value',
+        'src' => 'set_src',
+        'label' => 'set_label'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'value' => 'getValue',
-        'src' => 'getSrc',
-        'label' => 'getLabel'
+        'type' => 'get_type',
+        'value' => 'get_value',
+        'src' => 'get_src',
+        'label' => 'get_label'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -327,7 +327,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      *
      * @return string|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -354,7 +354,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner|null
      */
-    public function getSrc()
+    public function get_src()
     {
         return $this->container['src'];
     }
@@ -381,7 +381,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      *
      * @return self
      */
-    public function setSrc($src)
+    public function set_src($src)
     {
         if (is_null($src)) {
             throw new \InvalidArgumentException('non-nullable src cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]|null
      */
-    public function getLabel()
+    public function get_label()
     {
         return $this->container['label'];
     }
@@ -408,7 +408,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInnerValueInnerValueInn
      *
      * @return self
      */
-    public function setLabel($label)
+    public function set_label($label)
     {
         if (is_null($label)) {
             throw new \InvalidArgumentException('non-nullable label cannot be null');

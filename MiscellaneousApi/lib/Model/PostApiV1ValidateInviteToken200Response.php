@@ -179,8 +179,8 @@ class PostApiV1ValidateInviteToken200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'valid' => 'setValid',
-        'success' => 'setSuccess'
+        'valid' => 'set_valid',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ValidateInviteToken200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'valid' => 'getValid',
-        'success' => 'getSuccess'
+        'valid' => 'get_valid',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ValidateInviteToken200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getValid()
+    public function get_valid()
     {
         return $this->container['valid'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ValidateInviteToken200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setValid($valid)
+    public function set_valid($valid)
     {
         if (is_null($valid)) {
             throw new \InvalidArgumentException('non-nullable valid cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ValidateInviteToken200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ValidateInviteToken200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

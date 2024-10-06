@@ -195,12 +195,12 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        'active_users' => 'setActiveUsers',
-        'guest_users' => 'setGuestUsers',
-        'rooms_per_guest' => 'setRoomsPerGuest',
-        'private_apps' => 'setPrivateApps',
-        'marketplace_apps' => 'setMarketplaceApps',
-        'monthly_active_contacts' => 'setMonthlyActiveContacts'
+        'active_users' => 'set_active_users',
+        'guest_users' => 'set_guest_users',
+        'rooms_per_guest' => 'set_rooms_per_guest',
+        'private_apps' => 'set_private_apps',
+        'marketplace_apps' => 'set_marketplace_apps',
+        'monthly_active_contacts' => 'set_monthly_active_contacts'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        'active_users' => 'getActiveUsers',
-        'guest_users' => 'getGuestUsers',
-        'rooms_per_guest' => 'getRoomsPerGuest',
-        'private_apps' => 'getPrivateApps',
-        'marketplace_apps' => 'getMarketplaceApps',
-        'monthly_active_contacts' => 'getMonthlyActiveContacts'
+        'active_users' => 'get_active_users',
+        'guest_users' => 'get_guest_users',
+        'rooms_per_guest' => 'get_rooms_per_guest',
+        'private_apps' => 'get_private_apps',
+        'marketplace_apps' => 'get_marketplace_apps',
+        'monthly_active_contacts' => 'get_monthly_active_contacts'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return bool|null
      */
-    public function getActiveUsers()
+    public function get_active_users()
     {
         return $this->container['active_users'];
     }
@@ -341,7 +341,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return self
      */
-    public function setActiveUsers($active_users)
+    public function set_active_users($active_users)
     {
         if (is_null($active_users)) {
             throw new \InvalidArgumentException('non-nullable active_users cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return bool|null
      */
-    public function getGuestUsers()
+    public function get_guest_users()
     {
         return $this->container['guest_users'];
     }
@@ -368,7 +368,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return self
      */
-    public function setGuestUsers($guest_users)
+    public function set_guest_users($guest_users)
     {
         if (is_null($guest_users)) {
             throw new \InvalidArgumentException('non-nullable guest_users cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return bool|null
      */
-    public function getRoomsPerGuest()
+    public function get_rooms_per_guest()
     {
         return $this->container['rooms_per_guest'];
     }
@@ -395,7 +395,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return self
      */
-    public function setRoomsPerGuest($rooms_per_guest)
+    public function set_rooms_per_guest($rooms_per_guest)
     {
         if (is_null($rooms_per_guest)) {
             throw new \InvalidArgumentException('non-nullable rooms_per_guest cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return bool|null
      */
-    public function getPrivateApps()
+    public function get_private_apps()
     {
         return $this->container['private_apps'];
     }
@@ -422,7 +422,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return self
      */
-    public function setPrivateApps($private_apps)
+    public function set_private_apps($private_apps)
     {
         if (is_null($private_apps)) {
             throw new \InvalidArgumentException('non-nullable private_apps cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return bool|null
      */
-    public function getMarketplaceApps()
+    public function get_marketplace_apps()
     {
         return $this->container['marketplace_apps'];
     }
@@ -449,7 +449,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return self
      */
-    public function setMarketplaceApps($marketplace_apps)
+    public function set_marketplace_apps($marketplace_apps)
     {
         if (is_null($marketplace_apps)) {
             throw new \InvalidArgumentException('non-nullable marketplace_apps cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return bool|null
      */
-    public function getMonthlyActiveContacts()
+    public function get_monthly_active_contacts()
     {
         return $this->container['monthly_active_contacts'];
     }
@@ -476,7 +476,7 @@ class GetApiV1LicensesInfo200ResponseLicensePreventedActions implements ModelInt
      *
      * @return self
      */
-    public function setMonthlyActiveContacts($monthly_active_contacts)
+    public function set_monthly_active_contacts($monthly_active_contacts)
     {
         if (is_null($monthly_active_contacts)) {
             throw new \InvalidArgumentException('non-nullable monthly_active_contacts cannot be null');

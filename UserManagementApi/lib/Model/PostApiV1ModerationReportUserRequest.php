@@ -179,8 +179,8 @@ class PostApiV1ModerationReportUserRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'user_id' => 'setUserId',
-        'description' => 'setDescription'
+        'user_id' => 'set_user_id',
+        'description' => 'set_description'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ModerationReportUserRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'user_id' => 'getUserId',
-        'description' => 'getDescription'
+        'user_id' => 'get_user_id',
+        'description' => 'get_description'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1ModerationReportUserRequest implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1ModerationReportUserRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1ModerationReportUserRequest implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -346,7 +346,7 @@ class PostApiV1ModerationReportUserRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');

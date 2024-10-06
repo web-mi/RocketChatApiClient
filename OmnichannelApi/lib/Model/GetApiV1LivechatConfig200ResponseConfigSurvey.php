@@ -179,8 +179,8 @@ class GetApiV1LivechatConfig200ResponseConfigSurvey implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'items' => 'setItems',
-        'values' => 'setValues'
+        'items' => 'set_items',
+        'values' => 'set_values'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatConfig200ResponseConfigSurvey implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'items' => 'getItems',
-        'values' => 'getValues'
+        'items' => 'get_items',
+        'values' => 'get_values'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatConfig200ResponseConfigSurvey implements ModelInterface, A
      *
      * @return string[]|null
      */
-    public function getItems()
+    public function get_items()
     {
         return $this->container['items'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatConfig200ResponseConfigSurvey implements ModelInterface, A
      *
      * @return self
      */
-    public function setItems($items)
+    public function set_items($items)
     {
         if (is_null($items)) {
             throw new \InvalidArgumentException('non-nullable items cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatConfig200ResponseConfigSurvey implements ModelInterface, A
      *
      * @return string[]|null
      */
-    public function getValues()
+    public function get_values()
     {
         return $this->container['values'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatConfig200ResponseConfigSurvey implements ModelInterface, A
      *
      * @return self
      */
-    public function setValues($values)
+    public function set_values($values)
     {
         if (is_null($values)) {
             throw new \InvalidArgumentException('non-nullable values cannot be null');

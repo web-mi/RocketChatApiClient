@@ -199,13 +199,13 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        't' => 'setT',
-        'usernames' => 'setUsernames',
-        'msgs' => 'setMsgs',
-        'u' => 'setU',
-        'ts' => 'setTs'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        't' => 'set_t',
+        'usernames' => 'set_usernames',
+        'msgs' => 'set_msgs',
+        'u' => 'set_u',
+        'ts' => 'set_ts'
     ];
 
     /**
@@ -214,13 +214,13 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        't' => 'getT',
-        'usernames' => 'getUsernames',
-        'msgs' => 'getMsgs',
-        'u' => 'getU',
-        'ts' => 'getTs'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        't' => 'get_t',
+        'usernames' => 'get_usernames',
+        'msgs' => 'get_msgs',
+        'u' => 'get_u',
+        'ts' => 'get_ts'
     ];
 
     /**
@@ -336,7 +336,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -348,7 +348,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -363,7 +363,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -375,7 +375,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -390,7 +390,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -402,7 +402,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -417,7 +417,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return string[]|null
      */
-    public function getUsernames()
+    public function get_usernames()
     {
         return $this->container['usernames'];
     }
@@ -429,7 +429,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setUsernames($usernames)
+    public function set_usernames($usernames)
     {
         if (is_null($usernames)) {
             throw new \InvalidArgumentException('non-nullable usernames cannot be null');
@@ -444,7 +444,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -456,7 +456,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -471,7 +471,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -483,7 +483,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -498,7 +498,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -510,7 +510,7 @@ class PostApiV1GroupsAddAll200ResponseChannel implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');

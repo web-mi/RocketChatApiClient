@@ -195,12 +195,12 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled',
-        'name' => 'setName',
-        'num_agents' => 'setNumAgents',
-        'show_on_registration' => 'setShowOnRegistration',
-        '_updated_at' => 'setUpdatedAt',
-        '_id' => 'setId'
+        'enabled' => 'set_enabled',
+        'name' => 'set_name',
+        'num_agents' => 'set_num_agents',
+        'show_on_registration' => 'set_show_on_registration',
+        '_updated_at' => 'set__updated_at',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -209,12 +209,12 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled',
-        'name' => 'getName',
-        'num_agents' => 'getNumAgents',
-        'show_on_registration' => 'getShowOnRegistration',
-        '_updated_at' => 'getUpdatedAt',
-        '_id' => 'getId'
+        'enabled' => 'get_enabled',
+        'name' => 'get_name',
+        'num_agents' => 'get_num_agents',
+        'show_on_registration' => 'get_show_on_registration',
+        '_updated_at' => 'get__updated_at',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -329,7 +329,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -341,7 +341,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -356,7 +356,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -368,7 +368,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -383,7 +383,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return int|null
      */
-    public function getNumAgents()
+    public function get_num_agents()
     {
         return $this->container['num_agents'];
     }
@@ -395,7 +395,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return self
      */
-    public function setNumAgents($num_agents)
+    public function set_num_agents($num_agents)
     {
         if (is_null($num_agents)) {
             throw new \InvalidArgumentException('non-nullable num_agents cannot be null');
@@ -410,7 +410,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return bool|null
      */
-    public function getShowOnRegistration()
+    public function get_show_on_registration()
     {
         return $this->container['show_on_registration'];
     }
@@ -422,7 +422,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return self
      */
-    public function setShowOnRegistration($show_on_registration)
+    public function set_show_on_registration($show_on_registration)
     {
         if (is_null($show_on_registration)) {
             throw new \InvalidArgumentException('non-nullable show_on_registration cannot be null');
@@ -437,7 +437,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -449,7 +449,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -464,7 +464,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -476,7 +476,7 @@ class PostApiV1LivechatDepartment200ResponseDepartment implements ModelInterface
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

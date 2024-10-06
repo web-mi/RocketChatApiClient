@@ -187,10 +187,10 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'user' => 'setUser',
-        'roles' => 'setRoles',
-        'created_by' => 'setCreatedBy',
-        'created_at' => 'setCreatedAt'
+        'user' => 'set_user',
+        'roles' => 'set_roles',
+        'created_by' => 'set_created_by',
+        'created_at' => 'set_created_at'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'user' => 'getUser',
-        'roles' => 'getRoles',
-        'created_by' => 'getCreatedBy',
-        'created_at' => 'getCreatedAt'
+        'user' => 'get_user',
+        'roles' => 'get_roles',
+        'created_by' => 'get_created_by',
+        'created_at' => 'get_created_at'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUser|null
      */
-    public function getUser()
+    public function get_user()
     {
         return $this->container['user'];
     }
@@ -327,7 +327,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setUser($user)
+    public function set_user($user)
     {
         if (is_null($user)) {
             throw new \InvalidArgumentException('non-nullable user cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -354,7 +354,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
-    public function getCreatedBy()
+    public function get_created_by()
     {
         return $this->container['created_by'];
     }
@@ -381,7 +381,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setCreatedBy($created_by)
+    public function set_created_by($created_by)
     {
         if (is_null($created_by)) {
             throw new \InvalidArgumentException('non-nullable created_by cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -408,7 +408,7 @@ class GetApiV1TeamsMembers200ResponseMembersInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');

@@ -175,7 +175,7 @@ class GetApiV1OmnichannelContact200ResponseContactContactManager implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'username' => 'setUsername'
+        'username' => 'set_username'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1OmnichannelContact200ResponseContactContactManager implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'username' => 'getUsername'
+        'username' => 'get_username'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1OmnichannelContact200ResponseContactContactManager implements Mode
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -306,7 +306,7 @@ class GetApiV1OmnichannelContact200ResponseContactContactManager implements Mode
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');

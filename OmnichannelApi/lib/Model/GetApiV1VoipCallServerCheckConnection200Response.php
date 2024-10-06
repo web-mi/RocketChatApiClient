@@ -179,8 +179,8 @@ class GetApiV1VoipCallServerCheckConnection200Response implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        'status' => 'setStatus',
-        'error' => 'setError'
+        'status' => 'set_status',
+        'error' => 'set_error'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1VoipCallServerCheckConnection200Response implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        'status' => 'getStatus',
-        'error' => 'getError'
+        'status' => 'get_status',
+        'error' => 'get_error'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1VoipCallServerCheckConnection200Response implements ModelInterface
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -313,7 +313,7 @@ class GetApiV1VoipCallServerCheckConnection200Response implements ModelInterface
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1VoipCallServerCheckConnection200Response implements ModelInterface
      *
      * @return string|null
      */
-    public function getError()
+    public function get_error()
     {
         return $this->container['error'];
     }
@@ -340,7 +340,7 @@ class GetApiV1VoipCallServerCheckConnection200Response implements ModelInterface
      *
      * @return self
      */
-    public function setError($error)
+    public function set_error($error)
     {
         if (is_null($error)) {
             throw new \InvalidArgumentException('non-nullable error cannot be null');

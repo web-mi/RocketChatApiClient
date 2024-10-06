@@ -183,9 +183,9 @@ class PostApiV1ChatDeleteRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'msg_id' => 'setMsgId',
-        'as_user' => 'setAsUser'
+        'room_id' => 'set_room_id',
+        'msg_id' => 'set_msg_id',
+        'as_user' => 'set_as_user'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1ChatDeleteRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'msg_id' => 'getMsgId',
-        'as_user' => 'getAsUser'
+        'room_id' => 'get_room_id',
+        'msg_id' => 'get_msg_id',
+        'as_user' => 'get_as_user'
     ];
 
     /**
@@ -314,7 +314,7 @@ class PostApiV1ChatDeleteRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -326,7 +326,7 @@ class PostApiV1ChatDeleteRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -341,7 +341,7 @@ class PostApiV1ChatDeleteRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function getMsgId()
+    public function get_msg_id()
     {
         return $this->container['msg_id'];
     }
@@ -353,7 +353,7 @@ class PostApiV1ChatDeleteRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setMsgId($msg_id)
+    public function set_msg_id($msg_id)
     {
         if (is_null($msg_id)) {
             throw new \InvalidArgumentException('non-nullable msg_id cannot be null');
@@ -368,7 +368,7 @@ class PostApiV1ChatDeleteRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return bool|null
      */
-    public function getAsUser()
+    public function get_as_user()
     {
         return $this->container['as_user'];
     }
@@ -380,7 +380,7 @@ class PostApiV1ChatDeleteRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setAsUser($as_user)
+    public function set_as_user($as_user)
     {
         if (is_null($as_user)) {
             throw new \InvalidArgumentException('non-nullable as_user cannot be null');

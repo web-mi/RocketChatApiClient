@@ -239,23 +239,23 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        't' => 'setT',
-        'usernames' => 'setUsernames',
-        'users_count' => 'setUsersCount',
-        'msgs' => 'setMsgs',
-        'ts' => 'setTs',
-        'uids' => 'setUids',
-        'encrypted' => 'setEncrypted',
-        'default' => 'setDefault',
-        'ro' => 'setRo',
-        'sys_mes' => 'setSysMes',
-        '_updated_at' => 'setUpdatedAt',
-        '_usernames' => 'setUsernames',
-        'e2e_key_id' => 'setE2eKeyId',
-        'last_message' => 'setLastMessage',
-        'lm' => 'setLm',
-        'topic' => 'setTopic'
+        '_id' => 'set__id',
+        't' => 'set_t',
+        'usernames' => 'set_usernames',
+        'users_count' => 'set_users_count',
+        'msgs' => 'set_msgs',
+        'ts' => 'set_ts',
+        'uids' => 'set_uids',
+        'encrypted' => 'set_encrypted',
+        'default' => 'set_default',
+        'ro' => 'set_ro',
+        'sys_mes' => 'set_sys_mes',
+        '_updated_at' => 'set__updated_at',
+        '_usernames' => 'set__usernames',
+        'e2e_key_id' => 'set_e2e_key_id',
+        'last_message' => 'set_last_message',
+        'lm' => 'set_lm',
+        'topic' => 'set_topic'
     ];
 
     /**
@@ -264,23 +264,23 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        't' => 'getT',
-        'usernames' => 'getUsernames',
-        'users_count' => 'getUsersCount',
-        'msgs' => 'getMsgs',
-        'ts' => 'getTs',
-        'uids' => 'getUids',
-        'encrypted' => 'getEncrypted',
-        'default' => 'getDefault',
-        'ro' => 'getRo',
-        'sys_mes' => 'getSysMes',
-        '_updated_at' => 'getUpdatedAt',
-        '_usernames' => 'getUsernames',
-        'e2e_key_id' => 'getE2eKeyId',
-        'last_message' => 'getLastMessage',
-        'lm' => 'getLm',
-        'topic' => 'getTopic'
+        '_id' => 'get__id',
+        't' => 'get_t',
+        'usernames' => 'get_usernames',
+        'users_count' => 'get_users_count',
+        'msgs' => 'get_msgs',
+        'ts' => 'get_ts',
+        'uids' => 'get_uids',
+        'encrypted' => 'get_encrypted',
+        'default' => 'get_default',
+        'ro' => 'get_ro',
+        'sys_mes' => 'get_sys_mes',
+        '_updated_at' => 'get__updated_at',
+        '_usernames' => 'get__usernames',
+        'e2e_key_id' => 'get_e2e_key_id',
+        'last_message' => 'get_last_message',
+        'lm' => 'get_lm',
+        'topic' => 'get_topic'
     ];
 
     /**
@@ -406,7 +406,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -418,7 +418,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -433,7 +433,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -445,7 +445,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -460,7 +460,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string[]|null
      */
-    public function getUsernames()
+    public function get_usernames()
     {
         return $this->container['usernames'];
     }
@@ -472,7 +472,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setUsernames($usernames)
+    public function set_usernames($usernames)
     {
         if (is_null($usernames)) {
             throw new \InvalidArgumentException('non-nullable usernames cannot be null');
@@ -487,7 +487,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return int|null
      */
-    public function getUsersCount()
+    public function get_users_count()
     {
         return $this->container['users_count'];
     }
@@ -499,7 +499,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setUsersCount($users_count)
+    public function set_users_count($users_count)
     {
         if (is_null($users_count)) {
             throw new \InvalidArgumentException('non-nullable users_count cannot be null');
@@ -514,7 +514,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -526,7 +526,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -541,7 +541,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -553,7 +553,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -568,7 +568,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string[]|null
      */
-    public function getUids()
+    public function get_uids()
     {
         return $this->container['uids'];
     }
@@ -580,7 +580,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setUids($uids)
+    public function set_uids($uids)
     {
         if (is_null($uids)) {
             throw new \InvalidArgumentException('non-nullable uids cannot be null');
@@ -595,7 +595,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getEncrypted()
+    public function get_encrypted()
     {
         return $this->container['encrypted'];
     }
@@ -607,7 +607,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setEncrypted($encrypted)
+    public function set_encrypted($encrypted)
     {
         if (is_null($encrypted)) {
             throw new \InvalidArgumentException('non-nullable encrypted cannot be null');
@@ -622,7 +622,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getDefault()
+    public function get_default()
     {
         return $this->container['default'];
     }
@@ -634,7 +634,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setDefault($default)
+    public function set_default($default)
     {
         if (is_null($default)) {
             throw new \InvalidArgumentException('non-nullable default cannot be null');
@@ -649,7 +649,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getRo()
+    public function get_ro()
     {
         return $this->container['ro'];
     }
@@ -661,7 +661,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setRo($ro)
+    public function set_ro($ro)
     {
         if (is_null($ro)) {
             throw new \InvalidArgumentException('non-nullable ro cannot be null');
@@ -676,7 +676,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getSysMes()
+    public function get_sys_mes()
     {
         return $this->container['sys_mes'];
     }
@@ -688,7 +688,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setSysMes($sys_mes)
+    public function set_sys_mes($sys_mes)
     {
         if (is_null($sys_mes)) {
             throw new \InvalidArgumentException('non-nullable sys_mes cannot be null');
@@ -703,7 +703,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -715,7 +715,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -730,7 +730,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string[]|null
      */
-    public function getUsernames()
+    public function get__usernames()
     {
         return $this->container['_usernames'];
     }
@@ -742,7 +742,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setUsernames($_usernames)
+    public function set__usernames($_usernames)
     {
         if (is_null($_usernames)) {
             throw new \InvalidArgumentException('non-nullable _usernames cannot be null');
@@ -757,7 +757,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getE2eKeyId()
+    public function get_e2e_key_id()
     {
         return $this->container['e2e_key_id'];
     }
@@ -769,7 +769,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setE2eKeyId($e2e_key_id)
+    public function set_e2e_key_id($e2e_key_id)
     {
         if (is_null($e2e_key_id)) {
             throw new \InvalidArgumentException('non-nullable e2e_key_id cannot be null');
@@ -784,7 +784,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMentionedMessages200ResponseMessagesInner|null
      */
-    public function getLastMessage()
+    public function get_last_message()
     {
         return $this->container['last_message'];
     }
@@ -796,7 +796,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setLastMessage($last_message)
+    public function set_last_message($last_message)
     {
         if (is_null($last_message)) {
             throw new \InvalidArgumentException('non-nullable last_message cannot be null');
@@ -811,7 +811,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getLm()
+    public function get_lm()
     {
         return $this->container['lm'];
     }
@@ -823,7 +823,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setLm($lm)
+    public function set_lm($lm)
     {
         if (is_null($lm)) {
             throw new \InvalidArgumentException('non-nullable lm cannot be null');
@@ -838,7 +838,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getTopic()
+    public function get_topic()
     {
         return $this->container['topic'];
     }
@@ -850,7 +850,7 @@ class GetApiV1ImList200ResponseImsInner implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setTopic($topic)
+    public function set_topic($topic)
     {
         if (is_null($topic)) {
             throw new \InvalidArgumentException('non-nullable topic cannot be null');

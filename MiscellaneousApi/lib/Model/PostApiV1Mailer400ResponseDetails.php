@@ -175,7 +175,7 @@ class PostApiV1Mailer400ResponseDetails implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'function' => 'setFunction'
+        'function' => 'set_function'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1Mailer400ResponseDetails implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'function' => 'getFunction'
+        'function' => 'get_function'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1Mailer400ResponseDetails implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getFunction()
+    public function get_function()
     {
         return $this->container['function'];
     }
@@ -306,7 +306,7 @@ class PostApiV1Mailer400ResponseDetails implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setFunction($function)
+    public function set_function($function)
     {
         if (is_null($function)) {
             throw new \InvalidArgumentException('non-nullable function cannot be null');

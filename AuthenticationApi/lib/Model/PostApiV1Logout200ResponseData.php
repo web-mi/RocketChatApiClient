@@ -175,7 +175,7 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'setMessage'
+        'message' => 'set_message'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'getMessage'
+        'message' => 'get_message'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      *
      * @return string|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -306,7 +306,7 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');

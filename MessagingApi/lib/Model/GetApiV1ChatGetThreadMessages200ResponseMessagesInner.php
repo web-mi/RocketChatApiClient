@@ -219,18 +219,18 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'msg' => 'setMsg',
-        'ts' => 'setTs',
-        'u' => 'setU',
-        '_updated_at' => 'setUpdatedAt',
-        'mentions' => 'setMentions',
-        'channels' => 'setChannels',
-        'replies' => 'setReplies',
-        'tcount' => 'setTcount',
-        'tlm' => 'setTlm',
-        'tmid' => 'setTmid'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'msg' => 'set_msg',
+        'ts' => 'set_ts',
+        'u' => 'set_u',
+        '_updated_at' => 'set__updated_at',
+        'mentions' => 'set_mentions',
+        'channels' => 'set_channels',
+        'replies' => 'set_replies',
+        'tcount' => 'set_tcount',
+        'tlm' => 'set_tlm',
+        'tmid' => 'set_tmid'
     ];
 
     /**
@@ -239,18 +239,18 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'msg' => 'getMsg',
-        'ts' => 'getTs',
-        'u' => 'getU',
-        '_updated_at' => 'getUpdatedAt',
-        'mentions' => 'getMentions',
-        'channels' => 'getChannels',
-        'replies' => 'getReplies',
-        'tcount' => 'getTcount',
-        'tlm' => 'getTlm',
-        'tmid' => 'getTmid'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'msg' => 'get_msg',
+        'ts' => 'get_ts',
+        'u' => 'get_u',
+        '_updated_at' => 'get__updated_at',
+        'mentions' => 'get_mentions',
+        'channels' => 'get_channels',
+        'replies' => 'get_replies',
+        'tcount' => 'get_tcount',
+        'tlm' => 'get_tlm',
+        'tmid' => 'get_tmid'
     ];
 
     /**
@@ -371,7 +371,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -383,7 +383,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -398,7 +398,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -410,7 +410,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -425,7 +425,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -437,7 +437,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -452,7 +452,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -464,7 +464,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -479,7 +479,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -491,7 +491,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -506,7 +506,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -518,7 +518,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -533,7 +533,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return object[]|null
      */
-    public function getMentions()
+    public function get_mentions()
     {
         return $this->container['mentions'];
     }
@@ -545,7 +545,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setMentions($mentions)
+    public function set_mentions($mentions)
     {
         if (is_null($mentions)) {
             throw new \InvalidArgumentException('non-nullable mentions cannot be null');
@@ -560,7 +560,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return object[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -572,7 +572,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -587,7 +587,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return string[]|null
      */
-    public function getReplies()
+    public function get_replies()
     {
         return $this->container['replies'];
     }
@@ -599,7 +599,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setReplies($replies)
+    public function set_replies($replies)
     {
         if (is_null($replies)) {
             throw new \InvalidArgumentException('non-nullable replies cannot be null');
@@ -614,7 +614,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return int|null
      */
-    public function getTcount()
+    public function get_tcount()
     {
         return $this->container['tcount'];
     }
@@ -626,7 +626,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setTcount($tcount)
+    public function set_tcount($tcount)
     {
         if (is_null($tcount)) {
             throw new \InvalidArgumentException('non-nullable tcount cannot be null');
@@ -641,7 +641,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return string|null
      */
-    public function getTlm()
+    public function get_tlm()
     {
         return $this->container['tlm'];
     }
@@ -653,7 +653,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setTlm($tlm)
+    public function set_tlm($tlm)
     {
         if (is_null($tlm)) {
             throw new \InvalidArgumentException('non-nullable tlm cannot be null');
@@ -668,7 +668,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return string|null
      */
-    public function getTmid()
+    public function get_tmid()
     {
         return $this->container['tmid'];
     }
@@ -680,7 +680,7 @@ class GetApiV1ChatGetThreadMessages200ResponseMessagesInner implements ModelInte
      *
      * @return self
      */
-    public function setTmid($tmid)
+    public function set_tmid($tmid)
     {
         if (is_null($tmid)) {
             throw new \InvalidArgumentException('non-nullable tmid cannot be null');

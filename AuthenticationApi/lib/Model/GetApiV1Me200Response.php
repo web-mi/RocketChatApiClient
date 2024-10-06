@@ -223,19 +223,19 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'emails' => 'setEmails',
-        'status' => 'setStatus',
-        'status_connection' => 'setStatusConnection',
-        'username' => 'setUsername',
-        'utc_offset' => 'setUtcOffset',
-        'active' => 'setActive',
-        'roles' => 'setRoles',
-        'settings' => 'setSettings',
-        'custom_fields' => 'setCustomFields',
-        'avatar_url' => 'setAvatarUrl',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'emails' => 'set_emails',
+        'status' => 'set_status',
+        'status_connection' => 'set_status_connection',
+        'username' => 'set_username',
+        'utc_offset' => 'set_utc_offset',
+        'active' => 'set_active',
+        'roles' => 'set_roles',
+        'settings' => 'set_settings',
+        'custom_fields' => 'set_custom_fields',
+        'avatar_url' => 'set_avatar_url',
+        'success' => 'set_success'
     ];
 
     /**
@@ -244,19 +244,19 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'emails' => 'getEmails',
-        'status' => 'getStatus',
-        'status_connection' => 'getStatusConnection',
-        'username' => 'getUsername',
-        'utc_offset' => 'getUtcOffset',
-        'active' => 'getActive',
-        'roles' => 'getRoles',
-        'settings' => 'getSettings',
-        'custom_fields' => 'getCustomFields',
-        'avatar_url' => 'getAvatarUrl',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'emails' => 'get_emails',
+        'status' => 'get_status',
+        'status_connection' => 'get_status_connection',
+        'username' => 'get_username',
+        'utc_offset' => 'get_utc_offset',
+        'active' => 'get_active',
+        'roles' => 'get_roles',
+        'settings' => 'get_settings',
+        'custom_fields' => 'get_custom_fields',
+        'avatar_url' => 'get_avatar_url',
+        'success' => 'get_success'
     ];
 
     /**
@@ -378,7 +378,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -390,7 +390,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -405,7 +405,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -417,7 +417,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -432,7 +432,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseDataMeEmailsInner[]|null
      */
-    public function getEmails()
+    public function get_emails()
     {
         return $this->container['emails'];
     }
@@ -444,7 +444,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setEmails($emails)
+    public function set_emails($emails)
     {
         if (is_null($emails)) {
             throw new \InvalidArgumentException('non-nullable emails cannot be null');
@@ -459,7 +459,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -471,7 +471,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -486,7 +486,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getStatusConnection()
+    public function get_status_connection()
     {
         return $this->container['status_connection'];
     }
@@ -498,7 +498,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setStatusConnection($status_connection)
+    public function set_status_connection($status_connection)
     {
         if (is_null($status_connection)) {
             throw new \InvalidArgumentException('non-nullable status_connection cannot be null');
@@ -513,7 +513,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -525,7 +525,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -540,7 +540,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return int|null
      */
-    public function getUtcOffset()
+    public function get_utc_offset()
     {
         return $this->container['utc_offset'];
     }
@@ -552,7 +552,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setUtcOffset($utc_offset)
+    public function set_utc_offset($utc_offset)
     {
         if (is_null($utc_offset)) {
             throw new \InvalidArgumentException('non-nullable utc_offset cannot be null');
@@ -567,7 +567,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return bool|null
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -579,7 +579,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');
@@ -594,7 +594,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -606,7 +606,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');
@@ -621,7 +621,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseSettings|null
      */
-    public function getSettings()
+    public function get_settings()
     {
         return $this->container['settings'];
     }
@@ -633,7 +633,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setSettings($settings)
+    public function set_settings($settings)
     {
         if (is_null($settings)) {
             throw new \InvalidArgumentException('non-nullable settings cannot be null');
@@ -648,7 +648,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\GetApiV1Me200ResponseCustomFields|null
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -660,7 +660,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');
@@ -675,7 +675,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getAvatarUrl()
+    public function get_avatar_url()
     {
         return $this->container['avatar_url'];
     }
@@ -687,7 +687,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setAvatarUrl($avatar_url)
+    public function set_avatar_url($avatar_url)
     {
         if (is_null($avatar_url)) {
             throw new \InvalidArgumentException('non-nullable avatar_url cannot be null');
@@ -702,7 +702,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -714,7 +714,7 @@ class GetApiV1Me200Response implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

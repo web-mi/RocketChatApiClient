@@ -183,9 +183,9 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'state' => 'setState',
-        'operation' => 'setOperation',
-        'success' => 'setSuccess'
+        'state' => 'set_state',
+        'operation' => 'set_operation',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'state' => 'getState',
-        'operation' => 'getOperation',
-        'success' => 'getSuccess'
+        'state' => 'get_state',
+        'operation' => 'get_operation',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getState()
+    public function get_state()
     {
         return $this->container['state'];
     }
@@ -320,7 +320,7 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setState($state)
+    public function set_state($state)
     {
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ImportStatus200ResponseOperation|null
      */
-    public function getOperation()
+    public function get_operation()
     {
         return $this->container['operation'];
     }
@@ -347,7 +347,7 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setOperation($operation)
+    public function set_operation($operation)
     {
         if (is_null($operation)) {
             throw new \InvalidArgumentException('non-nullable operation cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1ImportStatus200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

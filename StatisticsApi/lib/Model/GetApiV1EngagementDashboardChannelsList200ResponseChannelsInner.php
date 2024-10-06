@@ -187,10 +187,10 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      * @var string[]
      */
     protected static $setters = [
-        'room' => 'setRoom',
-        'messages' => 'setMessages',
-        'last_week_messages' => 'setLastWeekMessages',
-        'diff_from_last_week' => 'setDiffFromLastWeek'
+        'room' => 'set_room',
+        'messages' => 'set_messages',
+        'last_week_messages' => 'set_last_week_messages',
+        'diff_from_last_week' => 'set_diff_from_last_week'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      * @var string[]
      */
     protected static $getters = [
-        'room' => 'getRoom',
-        'messages' => 'getMessages',
-        'last_week_messages' => 'getLastWeekMessages',
-        'diff_from_last_week' => 'getDiffFromLastWeek'
+        'room' => 'get_room',
+        'messages' => 'get_messages',
+        'last_week_messages' => 'get_last_week_messages',
+        'diff_from_last_week' => 'get_diff_from_last_week'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200ResponseChannelsInnerRoom|null
      */
-    public function getRoom()
+    public function get_room()
     {
         return $this->container['room'];
     }
@@ -327,7 +327,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      *
      * @return self
      */
-    public function setRoom($room)
+    public function set_room($room)
     {
         if (is_null($room)) {
             throw new \InvalidArgumentException('non-nullable room cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      *
      * @return int|null
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -354,7 +354,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      *
      * @return int|null
      */
-    public function getLastWeekMessages()
+    public function get_last_week_messages()
     {
         return $this->container['last_week_messages'];
     }
@@ -381,7 +381,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      *
      * @return self
      */
-    public function setLastWeekMessages($last_week_messages)
+    public function set_last_week_messages($last_week_messages)
     {
         if (is_null($last_week_messages)) {
             throw new \InvalidArgumentException('non-nullable last_week_messages cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      *
      * @return int|null
      */
-    public function getDiffFromLastWeek()
+    public function get_diff_from_last_week()
     {
         return $this->container['diff_from_last_week'];
     }
@@ -408,7 +408,7 @@ class GetApiV1EngagementDashboardChannelsList200ResponseChannelsInner implements
      *
      * @return self
      */
-    public function setDiffFromLastWeek($diff_from_last_week)
+    public function set_diff_from_last_week($diff_from_last_week)
     {
         if (is_null($diff_from_last_week)) {
             throw new \InvalidArgumentException('non-nullable diff_from_last_week cannot be null');

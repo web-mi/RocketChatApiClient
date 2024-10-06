@@ -179,8 +179,8 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'update' => 'setUpdate',
-        'remove' => 'setRemove'
+        'update' => 'set_update',
+        'remove' => 'set_remove'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'update' => 'getUpdate',
-        'remove' => 'getRemove'
+        'update' => 'get_update',
+        'remove' => 'get_remove'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null
      */
-    public function getUpdate()
+    public function get_update()
     {
         return $this->container['update'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUpdate($update)
+    public function set_update($update)
     {
         if (is_null($update)) {
             throw new \InvalidArgumentException('non-nullable update cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomList200ResponseEmojisUpdateInner[]|null
      */
-    public function getRemove()
+    public function get_remove()
     {
         return $this->container['remove'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EmojiCustomList200ResponseEmojis implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setRemove($remove)
+    public function set_remove($remove)
     {
         if (is_null($remove)) {
             throw new \InvalidArgumentException('non-nullable remove cannot be null');

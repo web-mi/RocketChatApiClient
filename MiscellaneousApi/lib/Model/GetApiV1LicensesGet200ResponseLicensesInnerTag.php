@@ -179,8 +179,8 @@ class GetApiV1LicensesGet200ResponseLicensesInnerTag implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'color' => 'setColor'
+        'name' => 'set_name',
+        'color' => 'set_color'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LicensesGet200ResponseLicensesInnerTag implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'color' => 'getColor'
+        'name' => 'get_name',
+        'color' => 'get_color'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerTag implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerTag implements ModelInterface, 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerTag implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getColor()
+    public function get_color()
     {
         return $this->container['color'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerTag implements ModelInterface, 
      *
      * @return self
      */
-    public function setColor($color)
+    public function set_color($color)
     {
         if (is_null($color)) {
             throw new \InvalidArgumentException('non-nullable color cannot be null');

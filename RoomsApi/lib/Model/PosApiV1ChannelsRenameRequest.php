@@ -179,8 +179,8 @@ class PosApiV1ChannelsRenameRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'name' => 'setName'
+        'room_id' => 'set_room_id',
+        'name' => 'set_name'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PosApiV1ChannelsRenameRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'name' => 'getName'
+        'room_id' => 'get_room_id',
+        'name' => 'get_name'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PosApiV1ChannelsRenameRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PosApiV1ChannelsRenameRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PosApiV1ChannelsRenameRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -346,7 +346,7 @@ class PosApiV1ChannelsRenameRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');

@@ -203,14 +203,14 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'shortcut' => 'setShortcut',
-        'text' => 'setText',
-        'scope' => 'setScope',
-        'user_id' => 'setUserId',
-        'created_by' => 'setCreatedBy',
-        '_created_at' => 'setCreatedAt',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'shortcut' => 'set_shortcut',
+        'text' => 'set_text',
+        'scope' => 'set_scope',
+        'user_id' => 'set_user_id',
+        'created_by' => 'set_created_by',
+        '_created_at' => 'set__created_at',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'shortcut' => 'getShortcut',
-        'text' => 'getText',
-        'scope' => 'getScope',
-        'user_id' => 'getUserId',
-        'created_by' => 'getCreatedBy',
-        '_created_at' => 'getCreatedAt',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'shortcut' => 'get_shortcut',
+        'text' => 'get_text',
+        'scope' => 'get_scope',
+        'user_id' => 'get_user_id',
+        'created_by' => 'get_created_by',
+        '_created_at' => 'get__created_at',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -355,7 +355,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -370,7 +370,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return string|null
      */
-    public function getShortcut()
+    public function get_shortcut()
     {
         return $this->container['shortcut'];
     }
@@ -382,7 +382,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setShortcut($shortcut)
+    public function set_shortcut($shortcut)
     {
         if (is_null($shortcut)) {
             throw new \InvalidArgumentException('non-nullable shortcut cannot be null');
@@ -397,7 +397,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return string|null
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -409,7 +409,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -424,7 +424,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return string|null
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -436,7 +436,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -463,7 +463,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
      */
-    public function getCreatedBy()
+    public function get_created_by()
     {
         return $this->container['created_by'];
     }
@@ -490,7 +490,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setCreatedBy($created_by)
+    public function set_created_by($created_by)
     {
         if (is_null($created_by)) {
             throw new \InvalidArgumentException('non-nullable created_by cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get__created_at()
     {
         return $this->container['_created_at'];
     }
@@ -517,7 +517,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setCreatedAt($_created_at)
+    public function set__created_at($_created_at)
     {
         if (is_null($_created_at)) {
             throw new \InvalidArgumentException('non-nullable _created_at cannot be null');
@@ -532,7 +532,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -544,7 +544,7 @@ class GetApiV1CannedResponsesId200ResponseCannedResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

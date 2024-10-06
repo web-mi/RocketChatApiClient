@@ -183,9 +183,9 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerServedBy implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'ts' => 'setTs'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'ts' => 'set_ts'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerServedBy implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'ts' => 'getTs'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'ts' => 'get_ts'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerServedBy implements ModelInterfa
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerServedBy implements ModelInterfa
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerServedBy implements ModelInterfa
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerServedBy implements ModelInterfa
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerServedBy implements ModelInterfa
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatRooms200ResponseRoomsInnerServedBy implements ModelInterfa
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');

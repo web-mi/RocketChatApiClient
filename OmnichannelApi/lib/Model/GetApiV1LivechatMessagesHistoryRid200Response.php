@@ -183,9 +183,9 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'messages' => 'setMessages',
-        'unread_not_loaded' => 'setUnreadNotLoaded',
-        'success' => 'setSuccess'
+        'messages' => 'set_messages',
+        'unread_not_loaded' => 'set_unread_not_loaded',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'messages' => 'getMessages',
-        'unread_not_loaded' => 'getUnreadNotLoaded',
-        'success' => 'getSuccess'
+        'messages' => 'get_messages',
+        'unread_not_loaded' => 'get_unread_not_loaded',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatMessagesHistoryRid200ResponseMessagesInner[]|null
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getUnreadNotLoaded()
+    public function get_unread_not_loaded()
     {
         return $this->container['unread_not_loaded'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setUnreadNotLoaded($unread_not_loaded)
+    public function set_unread_not_loaded($unread_not_loaded)
     {
         if (is_null($unread_not_loaded)) {
             throw new \InvalidArgumentException('non-nullable unread_not_loaded cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatMessagesHistoryRid200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

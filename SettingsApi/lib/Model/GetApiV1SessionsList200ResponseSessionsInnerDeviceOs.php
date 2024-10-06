@@ -179,8 +179,8 @@ class GetApiV1SessionsList200ResponseSessionsInnerDeviceOs implements ModelInter
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'version' => 'setVersion'
+        'name' => 'set_name',
+        'version' => 'set_version'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1SessionsList200ResponseSessionsInnerDeviceOs implements ModelInter
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'version' => 'getVersion'
+        'name' => 'get_name',
+        'version' => 'get_version'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDeviceOs implements ModelInter
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -313,7 +313,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDeviceOs implements ModelInter
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDeviceOs implements ModelInter
      *
      * @return string|null
      */
-    public function getVersion()
+    public function get_version()
     {
         return $this->container['version'];
     }
@@ -340,7 +340,7 @@ class GetApiV1SessionsList200ResponseSessionsInnerDeviceOs implements ModelInter
      *
      * @return self
      */
-    public function setVersion($version)
+    public function set_version($version)
     {
         if (is_null($version)) {
             throw new \InvalidArgumentException('non-nullable version cannot be null');

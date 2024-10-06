@@ -175,7 +175,7 @@ class PostApiV1SubscriptionsReadRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid'
+        'rid' => 'set_rid'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1SubscriptionsReadRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid'
+        'rid' => 'get_rid'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1SubscriptionsReadRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -309,7 +309,7 @@ class PostApiV1SubscriptionsReadRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');

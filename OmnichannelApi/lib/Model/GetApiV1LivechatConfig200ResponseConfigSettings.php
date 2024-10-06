@@ -231,21 +231,21 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'registration_form' => 'setRegistrationForm',
-        'allow_switching_departments' => 'setAllowSwitchingDepartments',
-        'name_field_registration_form' => 'setNameFieldRegistrationForm',
-        'email_field_registration_form' => 'setEmailFieldRegistrationForm',
-        'display_offline_form' => 'setDisplayOfflineForm',
-        'video_call' => 'setVideoCall',
-        'file_upload' => 'setFileUpload',
-        'language' => 'setLanguage',
-        'transcript' => 'setTranscript',
-        'history_monitor_type' => 'setHistoryMonitorType',
-        'force_accept_data_processing_consent' => 'setForceAcceptDataProcessingConsent',
-        'show_connecting' => 'setShowConnecting',
-        'agent_hidden_info' => 'setAgentHiddenInfo',
-        'clear_local_storage_when_chat_ended' => 'setClearLocalStorageWhenChatEnded',
-        'limit_text_length' => 'setLimitTextLength'
+        'registration_form' => 'set_registration_form',
+        'allow_switching_departments' => 'set_allow_switching_departments',
+        'name_field_registration_form' => 'set_name_field_registration_form',
+        'email_field_registration_form' => 'set_email_field_registration_form',
+        'display_offline_form' => 'set_display_offline_form',
+        'video_call' => 'set_video_call',
+        'file_upload' => 'set_file_upload',
+        'language' => 'set_language',
+        'transcript' => 'set_transcript',
+        'history_monitor_type' => 'set_history_monitor_type',
+        'force_accept_data_processing_consent' => 'set_force_accept_data_processing_consent',
+        'show_connecting' => 'set_show_connecting',
+        'agent_hidden_info' => 'set_agent_hidden_info',
+        'clear_local_storage_when_chat_ended' => 'set_clear_local_storage_when_chat_ended',
+        'limit_text_length' => 'set_limit_text_length'
     ];
 
     /**
@@ -254,21 +254,21 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'registration_form' => 'getRegistrationForm',
-        'allow_switching_departments' => 'getAllowSwitchingDepartments',
-        'name_field_registration_form' => 'getNameFieldRegistrationForm',
-        'email_field_registration_form' => 'getEmailFieldRegistrationForm',
-        'display_offline_form' => 'getDisplayOfflineForm',
-        'video_call' => 'getVideoCall',
-        'file_upload' => 'getFileUpload',
-        'language' => 'getLanguage',
-        'transcript' => 'getTranscript',
-        'history_monitor_type' => 'getHistoryMonitorType',
-        'force_accept_data_processing_consent' => 'getForceAcceptDataProcessingConsent',
-        'show_connecting' => 'getShowConnecting',
-        'agent_hidden_info' => 'getAgentHiddenInfo',
-        'clear_local_storage_when_chat_ended' => 'getClearLocalStorageWhenChatEnded',
-        'limit_text_length' => 'getLimitTextLength'
+        'registration_form' => 'get_registration_form',
+        'allow_switching_departments' => 'get_allow_switching_departments',
+        'name_field_registration_form' => 'get_name_field_registration_form',
+        'email_field_registration_form' => 'get_email_field_registration_form',
+        'display_offline_form' => 'get_display_offline_form',
+        'video_call' => 'get_video_call',
+        'file_upload' => 'get_file_upload',
+        'language' => 'get_language',
+        'transcript' => 'get_transcript',
+        'history_monitor_type' => 'get_history_monitor_type',
+        'force_accept_data_processing_consent' => 'get_force_accept_data_processing_consent',
+        'show_connecting' => 'get_show_connecting',
+        'agent_hidden_info' => 'get_agent_hidden_info',
+        'clear_local_storage_when_chat_ended' => 'get_clear_local_storage_when_chat_ended',
+        'limit_text_length' => 'get_limit_text_length'
     ];
 
     /**
@@ -392,7 +392,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getRegistrationForm()
+    public function get_registration_form()
     {
         return $this->container['registration_form'];
     }
@@ -404,7 +404,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setRegistrationForm($registration_form)
+    public function set_registration_form($registration_form)
     {
         if (is_null($registration_form)) {
             throw new \InvalidArgumentException('non-nullable registration_form cannot be null');
@@ -419,7 +419,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getAllowSwitchingDepartments()
+    public function get_allow_switching_departments()
     {
         return $this->container['allow_switching_departments'];
     }
@@ -431,7 +431,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setAllowSwitchingDepartments($allow_switching_departments)
+    public function set_allow_switching_departments($allow_switching_departments)
     {
         if (is_null($allow_switching_departments)) {
             throw new \InvalidArgumentException('non-nullable allow_switching_departments cannot be null');
@@ -446,7 +446,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getNameFieldRegistrationForm()
+    public function get_name_field_registration_form()
     {
         return $this->container['name_field_registration_form'];
     }
@@ -458,7 +458,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setNameFieldRegistrationForm($name_field_registration_form)
+    public function set_name_field_registration_form($name_field_registration_form)
     {
         if (is_null($name_field_registration_form)) {
             throw new \InvalidArgumentException('non-nullable name_field_registration_form cannot be null');
@@ -473,7 +473,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getEmailFieldRegistrationForm()
+    public function get_email_field_registration_form()
     {
         return $this->container['email_field_registration_form'];
     }
@@ -485,7 +485,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setEmailFieldRegistrationForm($email_field_registration_form)
+    public function set_email_field_registration_form($email_field_registration_form)
     {
         if (is_null($email_field_registration_form)) {
             throw new \InvalidArgumentException('non-nullable email_field_registration_form cannot be null');
@@ -500,7 +500,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getDisplayOfflineForm()
+    public function get_display_offline_form()
     {
         return $this->container['display_offline_form'];
     }
@@ -512,7 +512,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setDisplayOfflineForm($display_offline_form)
+    public function set_display_offline_form($display_offline_form)
     {
         if (is_null($display_offline_form)) {
             throw new \InvalidArgumentException('non-nullable display_offline_form cannot be null');
@@ -527,7 +527,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getVideoCall()
+    public function get_video_call()
     {
         return $this->container['video_call'];
     }
@@ -539,7 +539,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setVideoCall($video_call)
+    public function set_video_call($video_call)
     {
         if (is_null($video_call)) {
             throw new \InvalidArgumentException('non-nullable video_call cannot be null');
@@ -554,7 +554,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getFileUpload()
+    public function get_file_upload()
     {
         return $this->container['file_upload'];
     }
@@ -566,7 +566,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setFileUpload($file_upload)
+    public function set_file_upload($file_upload)
     {
         if (is_null($file_upload)) {
             throw new \InvalidArgumentException('non-nullable file_upload cannot be null');
@@ -581,7 +581,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return string|null
      */
-    public function getLanguage()
+    public function get_language()
     {
         return $this->container['language'];
     }
@@ -593,7 +593,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setLanguage($language)
+    public function set_language($language)
     {
         if (is_null($language)) {
             throw new \InvalidArgumentException('non-nullable language cannot be null');
@@ -608,7 +608,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getTranscript()
+    public function get_transcript()
     {
         return $this->container['transcript'];
     }
@@ -620,7 +620,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setTranscript($transcript)
+    public function set_transcript($transcript)
     {
         if (is_null($transcript)) {
             throw new \InvalidArgumentException('non-nullable transcript cannot be null');
@@ -635,7 +635,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return string|null
      */
-    public function getHistoryMonitorType()
+    public function get_history_monitor_type()
     {
         return $this->container['history_monitor_type'];
     }
@@ -647,7 +647,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setHistoryMonitorType($history_monitor_type)
+    public function set_history_monitor_type($history_monitor_type)
     {
         if (is_null($history_monitor_type)) {
             throw new \InvalidArgumentException('non-nullable history_monitor_type cannot be null');
@@ -662,7 +662,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getForceAcceptDataProcessingConsent()
+    public function get_force_accept_data_processing_consent()
     {
         return $this->container['force_accept_data_processing_consent'];
     }
@@ -674,7 +674,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setForceAcceptDataProcessingConsent($force_accept_data_processing_consent)
+    public function set_force_accept_data_processing_consent($force_accept_data_processing_consent)
     {
         if (is_null($force_accept_data_processing_consent)) {
             throw new \InvalidArgumentException('non-nullable force_accept_data_processing_consent cannot be null');
@@ -689,7 +689,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getShowConnecting()
+    public function get_show_connecting()
     {
         return $this->container['show_connecting'];
     }
@@ -701,7 +701,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setShowConnecting($show_connecting)
+    public function set_show_connecting($show_connecting)
     {
         if (is_null($show_connecting)) {
             throw new \InvalidArgumentException('non-nullable show_connecting cannot be null');
@@ -716,7 +716,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getAgentHiddenInfo()
+    public function get_agent_hidden_info()
     {
         return $this->container['agent_hidden_info'];
     }
@@ -728,7 +728,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setAgentHiddenInfo($agent_hidden_info)
+    public function set_agent_hidden_info($agent_hidden_info)
     {
         if (is_null($agent_hidden_info)) {
             throw new \InvalidArgumentException('non-nullable agent_hidden_info cannot be null');
@@ -743,7 +743,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getClearLocalStorageWhenChatEnded()
+    public function get_clear_local_storage_when_chat_ended()
     {
         return $this->container['clear_local_storage_when_chat_ended'];
     }
@@ -755,7 +755,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setClearLocalStorageWhenChatEnded($clear_local_storage_when_chat_ended)
+    public function set_clear_local_storage_when_chat_ended($clear_local_storage_when_chat_ended)
     {
         if (is_null($clear_local_storage_when_chat_ended)) {
             throw new \InvalidArgumentException('non-nullable clear_local_storage_when_chat_ended cannot be null');
@@ -770,7 +770,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getLimitTextLength()
+    public function get_limit_text_length()
     {
         return $this->container['limit_text_length'];
     }
@@ -782,7 +782,7 @@ class GetApiV1LivechatConfig200ResponseConfigSettings implements ModelInterface,
      *
      * @return self
      */
-    public function setLimitTextLength($limit_text_length)
+    public function set_limit_text_length($limit_text_length)
     {
         if (is_null($limit_text_length)) {
             throw new \InvalidArgumentException('non-nullable limit_text_length cannot be null');

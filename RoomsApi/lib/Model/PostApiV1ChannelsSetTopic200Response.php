@@ -179,8 +179,8 @@ class PostApiV1ChannelsSetTopic200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'topic' => 'setTopic',
-        'success' => 'setSuccess'
+        'topic' => 'set_topic',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsSetTopic200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'topic' => 'getTopic',
-        'success' => 'getSuccess'
+        'topic' => 'get_topic',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ChannelsSetTopic200Response implements ModelInterface, ArrayAcces
      *
      * @return string|null
      */
-    public function getTopic()
+    public function get_topic()
     {
         return $this->container['topic'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ChannelsSetTopic200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setTopic($topic)
+    public function set_topic($topic)
     {
         if (is_null($topic)) {
             throw new \InvalidArgumentException('non-nullable topic cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ChannelsSetTopic200Response implements ModelInterface, ArrayAcces
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ChannelsSetTopic200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

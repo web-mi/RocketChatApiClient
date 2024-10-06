@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200ResponseDepa
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'average_chat_duration_time_in_seconds' => 'setAverageChatDurationTimeInSeconds'
+        '_id' => 'set__id',
+        'average_chat_duration_time_in_seconds' => 'set_average_chat_duration_time_in_seconds'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200ResponseDepa
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'average_chat_duration_time_in_seconds' => 'getAverageChatDurationTimeInSeconds'
+        '_id' => 'get__id',
+        'average_chat_duration_time_in_seconds' => 'get_average_chat_duration_time_in_seconds'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200ResponseDepa
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200ResponseDepa
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200ResponseDepa
      *
      * @return int|null
      */
-    public function getAverageChatDurationTimeInSeconds()
+    public function get_average_chat_duration_time_in_seconds()
     {
         return $this->container['average_chat_duration_time_in_seconds'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDepartmentsAverageChatDurationTime200ResponseDepa
      *
      * @return self
      */
-    public function setAverageChatDurationTimeInSeconds($average_chat_duration_time_in_seconds)
+    public function set_average_chat_duration_time_in_seconds($average_chat_duration_time_in_seconds)
     {
         if (is_null($average_chat_duration_time_in_seconds)) {
             throw new \InvalidArgumentException('non-nullable average_chat_duration_time_in_seconds cannot be null');

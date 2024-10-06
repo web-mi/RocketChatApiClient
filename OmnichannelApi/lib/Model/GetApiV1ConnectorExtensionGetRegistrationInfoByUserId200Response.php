@@ -183,9 +183,9 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
      * @var string[]
      */
     protected static $setters = [
-        'host' => 'setHost',
-        'call_server_config' => 'setCallServerConfig',
-        'extension_details' => 'setExtensionDetails'
+        'host' => 'set_host',
+        'call_server_config' => 'set_call_server_config',
+        'extension_details' => 'set_extension_details'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
      * @var string[]
      */
     protected static $getters = [
-        'host' => 'getHost',
-        'call_server_config' => 'getCallServerConfig',
-        'extension_details' => 'getExtensionDetails'
+        'host' => 'get_host',
+        'call_server_config' => 'get_call_server_config',
+        'extension_details' => 'get_extension_details'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
      *
      * @return string|null
      */
-    public function getHost()
+    public function get_host()
     {
         return $this->container['host'];
     }
@@ -320,7 +320,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
      *
      * @return self
      */
-    public function setHost($host)
+    public function set_host($host)
     {
         if (is_null($host)) {
             throw new \InvalidArgumentException('non-nullable host cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServerConfig|null
      */
-    public function getCallServerConfig()
+    public function get_call_server_config()
     {
         return $this->container['call_server_config'];
     }
@@ -347,7 +347,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
      *
      * @return self
      */
-    public function setCallServerConfig($call_server_config)
+    public function set_call_server_config($call_server_config)
     {
         if (is_null($call_server_config)) {
             throw new \InvalidArgumentException('non-nullable call_server_config cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionDetails|null
      */
-    public function getExtensionDetails()
+    public function get_extension_details()
     {
         return $this->container['extension_details'];
     }
@@ -374,7 +374,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200Response implement
      *
      * @return self
      */
-    public function setExtensionDetails($extension_details)
+    public function set_extension_details($extension_details)
     {
         if (is_null($extension_details)) {
             throw new \InvalidArgumentException('non-nullable extension_details cannot be null');

@@ -179,8 +179,8 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'user_id' => 'setUserId',
-        'data' => 'setData'
+        'user_id' => 'set_user_id',
+        'data' => 'set_data'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'user_id' => 'getUserId',
-        'data' => 'getData'
+        'user_id' => 'get_user_id',
+        'data' => 'get_data'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequestData
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -346,7 +346,7 @@ class PostApiV1UsersUpdateRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');

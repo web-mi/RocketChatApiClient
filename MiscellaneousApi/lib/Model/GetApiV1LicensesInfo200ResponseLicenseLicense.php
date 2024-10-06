@@ -195,12 +195,12 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'version' => 'setVersion',
-        'information' => 'setInformation',
-        'validation' => 'setValidation',
-        'granted_modules' => 'setGrantedModules',
-        'limits' => 'setLimits',
-        'cloud_meta' => 'setCloudMeta'
+        'version' => 'set_version',
+        'information' => 'set_information',
+        'validation' => 'set_validation',
+        'granted_modules' => 'set_granted_modules',
+        'limits' => 'set_limits',
+        'cloud_meta' => 'set_cloud_meta'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'version' => 'getVersion',
-        'information' => 'getInformation',
-        'validation' => 'getValidation',
-        'granted_modules' => 'getGrantedModules',
-        'limits' => 'getLimits',
-        'cloud_meta' => 'getCloudMeta'
+        'version' => 'get_version',
+        'information' => 'get_information',
+        'validation' => 'get_validation',
+        'granted_modules' => 'get_granted_modules',
+        'limits' => 'get_limits',
+        'cloud_meta' => 'get_cloud_meta'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getVersion()
+    public function get_version()
     {
         return $this->container['version'];
     }
@@ -341,7 +341,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return self
      */
-    public function setVersion($version)
+    public function set_version($version)
     {
         if (is_null($version)) {
             throw new \InvalidArgumentException('non-nullable version cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseInformation|null
      */
-    public function getInformation()
+    public function get_information()
     {
         return $this->container['information'];
     }
@@ -368,7 +368,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return self
      */
-    public function setInformation($information)
+    public function set_information($information)
     {
         if (is_null($information)) {
             throw new \InvalidArgumentException('non-nullable information cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidation|null
      */
-    public function getValidation()
+    public function get_validation()
     {
         return $this->container['validation'];
     }
@@ -395,7 +395,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return self
      */
-    public function setValidation($validation)
+    public function set_validation($validation)
     {
         if (is_null($validation)) {
             throw new \InvalidArgumentException('non-nullable validation cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner[]|null
      */
-    public function getGrantedModules()
+    public function get_granted_modules()
     {
         return $this->container['granted_modules'];
     }
@@ -422,7 +422,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return self
      */
-    public function setGrantedModules($granted_modules)
+    public function set_granted_modules($granted_modules)
     {
         if (is_null($granted_modules)) {
             throw new \InvalidArgumentException('non-nullable granted_modules cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimits|null
      */
-    public function getLimits()
+    public function get_limits()
     {
         return $this->container['limits'];
     }
@@ -449,7 +449,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return self
      */
-    public function setLimits($limits)
+    public function set_limits($limits)
     {
         if (is_null($limits)) {
             throw new \InvalidArgumentException('non-nullable limits cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return object|null
      */
-    public function getCloudMeta()
+    public function get_cloud_meta()
     {
         return $this->container['cloud_meta'];
     }
@@ -476,7 +476,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicense implements ModelInterface, A
      *
      * @return self
      */
-    public function setCloudMeta($cloud_meta)
+    public function set_cloud_meta($cloud_meta)
     {
         if (is_null($cloud_meta)) {
             throw new \InvalidArgumentException('non-nullable cloud_meta cannot be null');

@@ -191,11 +191,11 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'msg_id' => 'setMsgId',
-        'text' => 'setText',
-        'preview_urls' => 'setPreviewUrls',
-        'custom_fields' => 'setCustomFields'
+        'room_id' => 'set_room_id',
+        'msg_id' => 'set_msg_id',
+        'text' => 'set_text',
+        'preview_urls' => 'set_preview_urls',
+        'custom_fields' => 'set_custom_fields'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'msg_id' => 'getMsgId',
-        'text' => 'getText',
-        'preview_urls' => 'getPreviewUrls',
-        'custom_fields' => 'getCustomFields'
+        'room_id' => 'get_room_id',
+        'msg_id' => 'get_msg_id',
+        'text' => 'get_text',
+        'preview_urls' => 'get_preview_urls',
+        'custom_fields' => 'get_custom_fields'
     ];
 
     /**
@@ -331,7 +331,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -343,7 +343,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -358,7 +358,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function getMsgId()
+    public function get_msg_id()
     {
         return $this->container['msg_id'];
     }
@@ -370,7 +370,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setMsgId($msg_id)
+    public function set_msg_id($msg_id)
     {
         if (is_null($msg_id)) {
             throw new \InvalidArgumentException('non-nullable msg_id cannot be null');
@@ -385,7 +385,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -397,7 +397,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -412,7 +412,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string[]|null
      */
-    public function getPreviewUrls()
+    public function get_preview_urls()
     {
         return $this->container['preview_urls'];
     }
@@ -424,7 +424,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setPreviewUrls($preview_urls)
+    public function set_preview_urls($preview_urls)
     {
         if (is_null($preview_urls)) {
             throw new \InvalidArgumentException('non-nullable preview_urls cannot be null');
@@ -439,7 +439,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return object|null
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -451,7 +451,7 @@ class PostApiV1ChatUpdateRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');

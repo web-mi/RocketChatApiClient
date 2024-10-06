@@ -183,9 +183,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerProcess implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'node_version' => 'setNodeVersion',
-        'pid' => 'setPid',
-        'uptime' => 'setUptime'
+        'node_version' => 'set_node_version',
+        'pid' => 'set_pid',
+        'uptime' => 'set_uptime'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerProcess implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'node_version' => 'getNodeVersion',
-        'pid' => 'getPid',
-        'uptime' => 'getUptime'
+        'node_version' => 'get_node_version',
+        'pid' => 'get_pid',
+        'uptime' => 'get_uptime'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerProcess implements ModelIn
      *
      * @return string|null
      */
-    public function getNodeVersion()
+    public function get_node_version()
     {
         return $this->container['node_version'];
     }
@@ -320,7 +320,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerProcess implements ModelIn
      *
      * @return self
      */
-    public function setNodeVersion($node_version)
+    public function set_node_version($node_version)
     {
         if (is_null($node_version)) {
             throw new \InvalidArgumentException('non-nullable node_version cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerProcess implements ModelIn
      *
      * @return int|null
      */
-    public function getPid()
+    public function get_pid()
     {
         return $this->container['pid'];
     }
@@ -347,7 +347,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerProcess implements ModelIn
      *
      * @return self
      */
-    public function setPid($pid)
+    public function set_pid($pid)
     {
         if (is_null($pid)) {
             throw new \InvalidArgumentException('non-nullable pid cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerProcess implements ModelIn
      *
      * @return float|null
      */
-    public function getUptime()
+    public function get_uptime()
     {
         return $this->container['uptime'];
     }
@@ -374,7 +374,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerProcess implements ModelIn
      *
      * @return self
      */
-    public function setUptime($uptime)
+    public function set_uptime($uptime)
     {
         if (is_null($uptime)) {
             throw new \InvalidArgumentException('non-nullable uptime cannot be null');

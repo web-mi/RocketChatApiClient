@@ -175,7 +175,7 @@ class GetApiV1UsersSendWelcomeEmailRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'email' => 'setEmail'
+        'email' => 'set_email'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1UsersSendWelcomeEmailRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'email' => 'getEmail'
+        'email' => 'get_email'
     ];
 
     /**
@@ -297,7 +297,7 @@ class GetApiV1UsersSendWelcomeEmailRequest implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -309,7 +309,7 @@ class GetApiV1UsersSendWelcomeEmailRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');

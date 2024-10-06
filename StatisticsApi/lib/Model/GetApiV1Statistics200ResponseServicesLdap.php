@@ -223,19 +223,19 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'enabled' => 'setEnabled',
-        'login_fallback' => 'setLoginFallback',
-        'encryption' => 'setEncryption',
-        'merge_users' => 'setMergeUsers',
-        'sync_roles' => 'setSyncRoles',
-        'sync_roles_auto_remove' => 'setSyncRolesAutoRemove',
-        'sync_data' => 'setSyncData',
-        'sync_channels' => 'setSyncChannels',
-        'sync_avatar' => 'setSyncAvatar',
-        'group_filter' => 'setGroupFilter',
-        'background_sync' => 'setBackgroundSync',
-        'ee' => 'setEe'
+        'users' => 'set_users',
+        'enabled' => 'set_enabled',
+        'login_fallback' => 'set_login_fallback',
+        'encryption' => 'set_encryption',
+        'merge_users' => 'set_merge_users',
+        'sync_roles' => 'set_sync_roles',
+        'sync_roles_auto_remove' => 'set_sync_roles_auto_remove',
+        'sync_data' => 'set_sync_data',
+        'sync_channels' => 'set_sync_channels',
+        'sync_avatar' => 'set_sync_avatar',
+        'group_filter' => 'set_group_filter',
+        'background_sync' => 'set_background_sync',
+        'ee' => 'set_ee'
     ];
 
     /**
@@ -244,19 +244,19 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'enabled' => 'getEnabled',
-        'login_fallback' => 'getLoginFallback',
-        'encryption' => 'getEncryption',
-        'merge_users' => 'getMergeUsers',
-        'sync_roles' => 'getSyncRoles',
-        'sync_roles_auto_remove' => 'getSyncRolesAutoRemove',
-        'sync_data' => 'getSyncData',
-        'sync_channels' => 'getSyncChannels',
-        'sync_avatar' => 'getSyncAvatar',
-        'group_filter' => 'getGroupFilter',
-        'background_sync' => 'getBackgroundSync',
-        'ee' => 'getEe'
+        'users' => 'get_users',
+        'enabled' => 'get_enabled',
+        'login_fallback' => 'get_login_fallback',
+        'encryption' => 'get_encryption',
+        'merge_users' => 'get_merge_users',
+        'sync_roles' => 'get_sync_roles',
+        'sync_roles_auto_remove' => 'get_sync_roles_auto_remove',
+        'sync_data' => 'get_sync_data',
+        'sync_channels' => 'get_sync_channels',
+        'sync_avatar' => 'get_sync_avatar',
+        'group_filter' => 'get_group_filter',
+        'background_sync' => 'get_background_sync',
+        'ee' => 'get_ee'
     ];
 
     /**
@@ -378,7 +378,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -390,7 +390,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -405,7 +405,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -417,7 +417,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -432,7 +432,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getLoginFallback()
+    public function get_login_fallback()
     {
         return $this->container['login_fallback'];
     }
@@ -444,7 +444,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setLoginFallback($login_fallback)
+    public function set_login_fallback($login_fallback)
     {
         if (is_null($login_fallback)) {
             throw new \InvalidArgumentException('non-nullable login_fallback cannot be null');
@@ -459,7 +459,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getEncryption()
+    public function get_encryption()
     {
         return $this->container['encryption'];
     }
@@ -471,7 +471,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setEncryption($encryption)
+    public function set_encryption($encryption)
     {
         if (is_null($encryption)) {
             throw new \InvalidArgumentException('non-nullable encryption cannot be null');
@@ -486,7 +486,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getMergeUsers()
+    public function get_merge_users()
     {
         return $this->container['merge_users'];
     }
@@ -498,7 +498,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setMergeUsers($merge_users)
+    public function set_merge_users($merge_users)
     {
         if (is_null($merge_users)) {
             throw new \InvalidArgumentException('non-nullable merge_users cannot be null');
@@ -513,7 +513,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSyncRoles()
+    public function get_sync_roles()
     {
         return $this->container['sync_roles'];
     }
@@ -525,7 +525,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSyncRoles($sync_roles)
+    public function set_sync_roles($sync_roles)
     {
         if (is_null($sync_roles)) {
             throw new \InvalidArgumentException('non-nullable sync_roles cannot be null');
@@ -540,7 +540,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSyncRolesAutoRemove()
+    public function get_sync_roles_auto_remove()
     {
         return $this->container['sync_roles_auto_remove'];
     }
@@ -552,7 +552,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSyncRolesAutoRemove($sync_roles_auto_remove)
+    public function set_sync_roles_auto_remove($sync_roles_auto_remove)
     {
         if (is_null($sync_roles_auto_remove)) {
             throw new \InvalidArgumentException('non-nullable sync_roles_auto_remove cannot be null');
@@ -567,7 +567,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSyncData()
+    public function get_sync_data()
     {
         return $this->container['sync_data'];
     }
@@ -579,7 +579,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSyncData($sync_data)
+    public function set_sync_data($sync_data)
     {
         if (is_null($sync_data)) {
             throw new \InvalidArgumentException('non-nullable sync_data cannot be null');
@@ -594,7 +594,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSyncChannels()
+    public function get_sync_channels()
     {
         return $this->container['sync_channels'];
     }
@@ -606,7 +606,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSyncChannels($sync_channels)
+    public function set_sync_channels($sync_channels)
     {
         if (is_null($sync_channels)) {
             throw new \InvalidArgumentException('non-nullable sync_channels cannot be null');
@@ -621,7 +621,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSyncAvatar()
+    public function get_sync_avatar()
     {
         return $this->container['sync_avatar'];
     }
@@ -633,7 +633,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSyncAvatar($sync_avatar)
+    public function set_sync_avatar($sync_avatar)
     {
         if (is_null($sync_avatar)) {
             throw new \InvalidArgumentException('non-nullable sync_avatar cannot be null');
@@ -648,7 +648,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getGroupFilter()
+    public function get_group_filter()
     {
         return $this->container['group_filter'];
     }
@@ -660,7 +660,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setGroupFilter($group_filter)
+    public function set_group_filter($group_filter)
     {
         if (is_null($group_filter)) {
             throw new \InvalidArgumentException('non-nullable group_filter cannot be null');
@@ -675,7 +675,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapBackgroundSync|null
      */
-    public function getBackgroundSync()
+    public function get_background_sync()
     {
         return $this->container['background_sync'];
     }
@@ -687,7 +687,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setBackgroundSync($background_sync)
+    public function set_background_sync($background_sync)
     {
         if (is_null($background_sync)) {
             throw new \InvalidArgumentException('non-nullable background_sync cannot be null');
@@ -702,7 +702,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServicesLdapEe|null
      */
-    public function getEe()
+    public function get_ee()
     {
         return $this->container['ee'];
     }
@@ -714,7 +714,7 @@ class GetApiV1Statistics200ResponseServicesLdap implements ModelInterface, Array
      *
      * @return self
      */
-    public function setEe($ee)
+    public function set_ee($ee)
     {
         if (is_null($ee)) {
             throw new \InvalidArgumentException('non-nullable ee cannot be null');

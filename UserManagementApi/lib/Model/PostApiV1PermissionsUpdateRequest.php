@@ -175,7 +175,7 @@ class PostApiV1PermissionsUpdateRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'permissions' => 'setPermissions'
+        'permissions' => 'set_permissions'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1PermissionsUpdateRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'permissions' => 'getPermissions'
+        'permissions' => 'get_permissions'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1PermissionsUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1PermissionsUpdateRequestPermissionsInner[]
      */
-    public function getPermissions()
+    public function get_permissions()
     {
         return $this->container['permissions'];
     }
@@ -309,7 +309,7 @@ class PostApiV1PermissionsUpdateRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setPermissions($permissions)
+    public function set_permissions($permissions)
     {
         if (is_null($permissions)) {
             throw new \InvalidArgumentException('non-nullable permissions cannot be null');

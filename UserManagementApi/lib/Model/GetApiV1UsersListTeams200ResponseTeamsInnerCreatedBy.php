@@ -179,8 +179,8 @@ class GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy implements ModelInter
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername'
+        '_id' => 'set__id',
+        'username' => 'set_username'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy implements ModelInter
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername'
+        '_id' => 'get__id',
+        'username' => 'get_username'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy implements ModelInter
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy implements ModelInter
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy implements ModelInter
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -340,7 +340,7 @@ class GetApiV1UsersListTeams200ResponseTeamsInnerCreatedBy implements ModelInter
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');

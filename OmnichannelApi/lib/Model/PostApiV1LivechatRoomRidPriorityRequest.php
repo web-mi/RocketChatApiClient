@@ -175,7 +175,7 @@ class PostApiV1LivechatRoomRidPriorityRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'priority_id' => 'setPriorityId'
+        'priority_id' => 'set_priority_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1LivechatRoomRidPriorityRequest implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'priority_id' => 'getPriorityId'
+        'priority_id' => 'get_priority_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1LivechatRoomRidPriorityRequest implements ModelInterface, ArrayAc
      *
      * @return string
      */
-    public function getPriorityId()
+    public function get_priority_id()
     {
         return $this->container['priority_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1LivechatRoomRidPriorityRequest implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setPriorityId($priority_id)
+    public function set_priority_id($priority_id)
     {
         if (is_null($priority_id)) {
             throw new \InvalidArgumentException('non-nullable priority_id cannot be null');

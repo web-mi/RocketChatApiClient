@@ -191,11 +191,11 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'phone_numbers' => 'setPhoneNumbers',
-        'connected_whats_app_no' => 'setConnectedWhatsAppNo',
-        'target_agent' => 'setTargetAgent',
-        'target_department' => 'setTargetDepartment',
-        'template' => 'setTemplate'
+        'phone_numbers' => 'set_phone_numbers',
+        'connected_whats_app_no' => 'set_connected_whats_app_no',
+        'target_agent' => 'set_target_agent',
+        'target_department' => 'set_target_department',
+        'template' => 'set_template'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'phone_numbers' => 'getPhoneNumbers',
-        'connected_whats_app_no' => 'getConnectedWhatsAppNo',
-        'target_agent' => 'getTargetAgent',
-        'target_department' => 'getTargetDepartment',
-        'template' => 'getTemplate'
+        'phone_numbers' => 'get_phone_numbers',
+        'connected_whats_app_no' => 'get_connected_whats_app_no',
+        'target_agent' => 'get_target_agent',
+        'target_department' => 'get_target_department',
+        'template' => 'get_template'
     ];
 
     /**
@@ -331,7 +331,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return string[]
      */
-    public function getPhoneNumbers()
+    public function get_phone_numbers()
     {
         return $this->container['phone_numbers'];
     }
@@ -343,7 +343,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setPhoneNumbers($phone_numbers)
+    public function set_phone_numbers($phone_numbers)
     {
         if (is_null($phone_numbers)) {
             throw new \InvalidArgumentException('non-nullable phone_numbers cannot be null');
@@ -358,7 +358,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return string
      */
-    public function getConnectedWhatsAppNo()
+    public function get_connected_whats_app_no()
     {
         return $this->container['connected_whats_app_no'];
     }
@@ -370,7 +370,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setConnectedWhatsAppNo($connected_whats_app_no)
+    public function set_connected_whats_app_no($connected_whats_app_no)
     {
         if (is_null($connected_whats_app_no)) {
             throw new \InvalidArgumentException('non-nullable connected_whats_app_no cannot be null');
@@ -385,7 +385,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getTargetAgent()
+    public function get_target_agent()
     {
         return $this->container['target_agent'];
     }
@@ -397,7 +397,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTargetAgent($target_agent)
+    public function set_target_agent($target_agent)
     {
         if (is_null($target_agent)) {
             throw new \InvalidArgumentException('non-nullable target_agent cannot be null');
@@ -412,7 +412,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getTargetDepartment()
+    public function get_target_department()
     {
         return $this->container['target_department'];
     }
@@ -424,7 +424,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTargetDepartment($target_department)
+    public function set_target_department($target_department)
     {
         if (is_null($target_department)) {
             throw new \InvalidArgumentException('non-nullable target_department cannot be null');
@@ -439,7 +439,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsPublicAppIdTemplateMessageRequestTemplate
      */
-    public function getTemplate()
+    public function get_template()
     {
         return $this->container['template'];
     }
@@ -451,7 +451,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequest implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTemplate($template)
+    public function set_template($template)
     {
         if (is_null($template)) {
             throw new \InvalidArgumentException('non-nullable template cannot be null');

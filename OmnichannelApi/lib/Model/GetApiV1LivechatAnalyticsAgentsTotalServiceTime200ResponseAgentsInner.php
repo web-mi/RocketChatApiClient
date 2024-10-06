@@ -187,10 +187,10 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      * @var string[]
      */
     protected static $setters = [
-        'chats' => 'setChats',
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'service_time_duration' => 'setServiceTimeDuration'
+        'chats' => 'set_chats',
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'service_time_duration' => 'set_service_time_duration'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      * @var string[]
      */
     protected static $getters = [
-        'chats' => 'getChats',
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'service_time_duration' => 'getServiceTimeDuration'
+        'chats' => 'get_chats',
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'service_time_duration' => 'get_service_time_duration'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      *
      * @return int|null
      */
-    public function getChats()
+    public function get_chats()
     {
         return $this->container['chats'];
     }
@@ -327,7 +327,7 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      *
      * @return self
      */
-    public function setChats($chats)
+    public function set_chats($chats)
     {
         if (is_null($chats)) {
             throw new \InvalidArgumentException('non-nullable chats cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -354,7 +354,7 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -381,7 +381,7 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      *
      * @return int|null
      */
-    public function getServiceTimeDuration()
+    public function get_service_time_duration()
     {
         return $this->container['service_time_duration'];
     }
@@ -408,7 +408,7 @@ class GetApiV1LivechatAnalyticsAgentsTotalServiceTime200ResponseAgentsInner impl
      *
      * @return self
      */
-    public function setServiceTimeDuration($service_time_duration)
+    public function set_service_time_duration($service_time_duration)
     {
         if (is_null($service_time_duration)) {
             throw new \InvalidArgumentException('non-nullable service_time_duration cannot be null');

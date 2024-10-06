@@ -235,22 +235,22 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        'audio_url' => 'setAudioUrl',
-        'author_icon' => 'setAuthorIcon',
-        'author_link' => 'setAuthorLink',
-        'author_name' => 'setAuthorName',
-        'collapsed' => 'setCollapsed',
-        'color' => 'setColor',
-        'fields' => 'setFields',
-        'image_url' => 'setImageUrl',
-        'message_link' => 'setMessageLink',
-        'text' => 'setText',
-        'thumb_url' => 'setThumbUrl',
-        'title' => 'setTitle',
-        'title_link' => 'setTitleLink',
-        'title_link_download' => 'setTitleLinkDownload',
-        'ts' => 'setTs',
-        'video_url' => 'setVideoUrl'
+        'audio_url' => 'set_audio_url',
+        'author_icon' => 'set_author_icon',
+        'author_link' => 'set_author_link',
+        'author_name' => 'set_author_name',
+        'collapsed' => 'set_collapsed',
+        'color' => 'set_color',
+        'fields' => 'set_fields',
+        'image_url' => 'set_image_url',
+        'message_link' => 'set_message_link',
+        'text' => 'set_text',
+        'thumb_url' => 'set_thumb_url',
+        'title' => 'set_title',
+        'title_link' => 'set_title_link',
+        'title_link_download' => 'set_title_link_download',
+        'ts' => 'set_ts',
+        'video_url' => 'set_video_url'
     ];
 
     /**
@@ -259,22 +259,22 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        'audio_url' => 'getAudioUrl',
-        'author_icon' => 'getAuthorIcon',
-        'author_link' => 'getAuthorLink',
-        'author_name' => 'getAuthorName',
-        'collapsed' => 'getCollapsed',
-        'color' => 'getColor',
-        'fields' => 'getFields',
-        'image_url' => 'getImageUrl',
-        'message_link' => 'getMessageLink',
-        'text' => 'getText',
-        'thumb_url' => 'getThumbUrl',
-        'title' => 'getTitle',
-        'title_link' => 'getTitleLink',
-        'title_link_download' => 'getTitleLinkDownload',
-        'ts' => 'getTs',
-        'video_url' => 'getVideoUrl'
+        'audio_url' => 'get_audio_url',
+        'author_icon' => 'get_author_icon',
+        'author_link' => 'get_author_link',
+        'author_name' => 'get_author_name',
+        'collapsed' => 'get_collapsed',
+        'color' => 'get_color',
+        'fields' => 'get_fields',
+        'image_url' => 'get_image_url',
+        'message_link' => 'get_message_link',
+        'text' => 'get_text',
+        'thumb_url' => 'get_thumb_url',
+        'title' => 'get_title',
+        'title_link' => 'get_title_link',
+        'title_link_download' => 'get_title_link_download',
+        'ts' => 'get_ts',
+        'video_url' => 'get_video_url'
     ];
 
     /**
@@ -399,7 +399,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getAudioUrl()
+    public function get_audio_url()
     {
         return $this->container['audio_url'];
     }
@@ -411,7 +411,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setAudioUrl($audio_url)
+    public function set_audio_url($audio_url)
     {
         if (is_null($audio_url)) {
             throw new \InvalidArgumentException('non-nullable audio_url cannot be null');
@@ -426,7 +426,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getAuthorIcon()
+    public function get_author_icon()
     {
         return $this->container['author_icon'];
     }
@@ -438,7 +438,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setAuthorIcon($author_icon)
+    public function set_author_icon($author_icon)
     {
         if (is_null($author_icon)) {
             throw new \InvalidArgumentException('non-nullable author_icon cannot be null');
@@ -453,7 +453,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getAuthorLink()
+    public function get_author_link()
     {
         return $this->container['author_link'];
     }
@@ -465,7 +465,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setAuthorLink($author_link)
+    public function set_author_link($author_link)
     {
         if (is_null($author_link)) {
             throw new \InvalidArgumentException('non-nullable author_link cannot be null');
@@ -480,7 +480,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getAuthorName()
+    public function get_author_name()
     {
         return $this->container['author_name'];
     }
@@ -492,7 +492,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setAuthorName($author_name)
+    public function set_author_name($author_name)
     {
         if (is_null($author_name)) {
             throw new \InvalidArgumentException('non-nullable author_name cannot be null');
@@ -507,7 +507,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return bool|null
      */
-    public function getCollapsed()
+    public function get_collapsed()
     {
         return $this->container['collapsed'];
     }
@@ -519,7 +519,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setCollapsed($collapsed)
+    public function set_collapsed($collapsed)
     {
         if (is_null($collapsed)) {
             throw new \InvalidArgumentException('non-nullable collapsed cannot be null');
@@ -534,7 +534,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getColor()
+    public function get_color()
     {
         return $this->container['color'];
     }
@@ -546,7 +546,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setColor($color)
+    public function set_color($color)
     {
         if (is_null($color)) {
             throw new \InvalidArgumentException('non-nullable color cannot be null');
@@ -561,7 +561,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatPostMessageRequestAttachmentsInnerFieldsInner[]|null
      */
-    public function getFields()
+    public function get_fields()
     {
         return $this->container['fields'];
     }
@@ -573,7 +573,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setFields($fields)
+    public function set_fields($fields)
     {
         if (is_null($fields)) {
             throw new \InvalidArgumentException('non-nullable fields cannot be null');
@@ -588,7 +588,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getImageUrl()
+    public function get_image_url()
     {
         return $this->container['image_url'];
     }
@@ -600,7 +600,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setImageUrl($image_url)
+    public function set_image_url($image_url)
     {
         if (is_null($image_url)) {
             throw new \InvalidArgumentException('non-nullable image_url cannot be null');
@@ -615,7 +615,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getMessageLink()
+    public function get_message_link()
     {
         return $this->container['message_link'];
     }
@@ -627,7 +627,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setMessageLink($message_link)
+    public function set_message_link($message_link)
     {
         if (is_null($message_link)) {
             throw new \InvalidArgumentException('non-nullable message_link cannot be null');
@@ -642,7 +642,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -654,7 +654,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -669,7 +669,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getThumbUrl()
+    public function get_thumb_url()
     {
         return $this->container['thumb_url'];
     }
@@ -681,7 +681,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setThumbUrl($thumb_url)
+    public function set_thumb_url($thumb_url)
     {
         if (is_null($thumb_url)) {
             throw new \InvalidArgumentException('non-nullable thumb_url cannot be null');
@@ -696,7 +696,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getTitle()
+    public function get_title()
     {
         return $this->container['title'];
     }
@@ -708,7 +708,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setTitle($title)
+    public function set_title($title)
     {
         if (is_null($title)) {
             throw new \InvalidArgumentException('non-nullable title cannot be null');
@@ -723,7 +723,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getTitleLink()
+    public function get_title_link()
     {
         return $this->container['title_link'];
     }
@@ -735,7 +735,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setTitleLink($title_link)
+    public function set_title_link($title_link)
     {
         if (is_null($title_link)) {
             throw new \InvalidArgumentException('non-nullable title_link cannot be null');
@@ -750,7 +750,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return bool|null
      */
-    public function getTitleLinkDownload()
+    public function get_title_link_download()
     {
         return $this->container['title_link_download'];
     }
@@ -762,7 +762,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setTitleLinkDownload($title_link_download)
+    public function set_title_link_download($title_link_download)
     {
         if (is_null($title_link_download)) {
             throw new \InvalidArgumentException('non-nullable title_link_download cannot be null');
@@ -777,7 +777,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -789,7 +789,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -804,7 +804,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getVideoUrl()
+    public function get_video_url()
     {
         return $this->container['video_url'];
     }
@@ -816,7 +816,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInner implements ModelInt
      *
      * @return self
      */
-    public function setVideoUrl($video_url)
+    public function set_video_url($video_url)
     {
         if (is_null($video_url)) {
             throw new \InvalidArgumentException('non-nullable video_url cannot be null');

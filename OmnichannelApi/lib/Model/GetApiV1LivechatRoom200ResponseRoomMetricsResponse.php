@@ -191,11 +191,11 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'avg' => 'setAvg',
-        'fd' => 'setFd',
-        'ft' => 'setFt',
-        'total' => 'setTotal',
-        'tt' => 'setTt'
+        'avg' => 'set_avg',
+        'fd' => 'set_fd',
+        'ft' => 'set_ft',
+        'total' => 'set_total',
+        'tt' => 'set_tt'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'avg' => 'getAvg',
-        'fd' => 'getFd',
-        'ft' => 'getFt',
-        'total' => 'getTotal',
-        'tt' => 'getTt'
+        'avg' => 'get_avg',
+        'fd' => 'get_fd',
+        'ft' => 'get_ft',
+        'total' => 'get_total',
+        'tt' => 'get_tt'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return float|null
      */
-    public function getAvg()
+    public function get_avg()
     {
         return $this->container['avg'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setAvg($avg)
+    public function set_avg($avg)
     {
         if (is_null($avg)) {
             throw new \InvalidArgumentException('non-nullable avg cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return string|null
      */
-    public function getFd()
+    public function get_fd()
     {
         return $this->container['fd'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setFd($fd)
+    public function set_fd($fd)
     {
         if (is_null($fd)) {
             throw new \InvalidArgumentException('non-nullable fd cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return float|null
      */
-    public function getFt()
+    public function get_ft()
     {
         return $this->container['ft'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setFt($ft)
+    public function set_ft($ft)
     {
         if (is_null($ft)) {
             throw new \InvalidArgumentException('non-nullable ft cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return float|null
      */
-    public function getTt()
+    public function get_tt()
     {
         return $this->container['tt'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatRoom200ResponseRoomMetricsResponse implements ModelInterfa
      *
      * @return self
      */
-    public function setTt($tt)
+    public function set_tt($tt)
     {
         if (is_null($tt)) {
             throw new \InvalidArgumentException('non-nullable tt cannot be null');

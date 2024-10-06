@@ -199,13 +199,13 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        'organization_type' => 'setOrganizationType',
-        'industry' => 'setIndustry',
-        'size' => 'setSize',
-        'country' => 'setCountry',
-        'language' => 'setLanguage',
-        'server_type' => 'setServerType',
-        'register_server' => 'setRegisterServer'
+        'organization_type' => 'set_organization_type',
+        'industry' => 'set_industry',
+        'size' => 'set_size',
+        'country' => 'set_country',
+        'language' => 'set_language',
+        'server_type' => 'set_server_type',
+        'register_server' => 'set_register_server'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        'organization_type' => 'getOrganizationType',
-        'industry' => 'getIndustry',
-        'size' => 'getSize',
-        'country' => 'getCountry',
-        'language' => 'getLanguage',
-        'server_type' => 'getServerType',
-        'register_server' => 'getRegisterServer'
+        'organization_type' => 'get_organization_type',
+        'industry' => 'get_industry',
+        'size' => 'get_size',
+        'country' => 'get_country',
+        'language' => 'get_language',
+        'server_type' => 'get_server_type',
+        'register_server' => 'get_register_server'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return string|null
      */
-    public function getOrganizationType()
+    public function get_organization_type()
     {
         return $this->container['organization_type'];
     }
@@ -348,7 +348,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return self
      */
-    public function setOrganizationType($organization_type)
+    public function set_organization_type($organization_type)
     {
         if (is_null($organization_type)) {
             throw new \InvalidArgumentException('non-nullable organization_type cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return string|null
      */
-    public function getIndustry()
+    public function get_industry()
     {
         return $this->container['industry'];
     }
@@ -375,7 +375,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return self
      */
-    public function setIndustry($industry)
+    public function set_industry($industry)
     {
         if (is_null($industry)) {
             throw new \InvalidArgumentException('non-nullable industry cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return string|null
      */
-    public function getSize()
+    public function get_size()
     {
         return $this->container['size'];
     }
@@ -402,7 +402,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return self
      */
-    public function setSize($size)
+    public function set_size($size)
     {
         if (is_null($size)) {
             throw new \InvalidArgumentException('non-nullable size cannot be null');
@@ -417,7 +417,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return string|null
      */
-    public function getCountry()
+    public function get_country()
     {
         return $this->container['country'];
     }
@@ -429,7 +429,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return self
      */
-    public function setCountry($country)
+    public function set_country($country)
     {
         if (is_null($country)) {
             throw new \InvalidArgumentException('non-nullable country cannot be null');
@@ -444,7 +444,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return string|null
      */
-    public function getLanguage()
+    public function get_language()
     {
         return $this->container['language'];
     }
@@ -456,7 +456,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return self
      */
-    public function setLanguage($language)
+    public function set_language($language)
     {
         if (is_null($language)) {
             throw new \InvalidArgumentException('non-nullable language cannot be null');
@@ -471,7 +471,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return string|null
      */
-    public function getServerType()
+    public function get_server_type()
     {
         return $this->container['server_type'];
     }
@@ -483,7 +483,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return self
      */
-    public function setServerType($server_type)
+    public function set_server_type($server_type)
     {
         if (is_null($server_type)) {
             throw new \InvalidArgumentException('non-nullable server_type cannot be null');
@@ -498,7 +498,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return bool|null
      */
-    public function getRegisterServer()
+    public function get_register_server()
     {
         return $this->container['register_server'];
     }
@@ -510,7 +510,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerWizard implements ModelInt
      *
      * @return self
      */
-    public function setRegisterServer($register_server)
+    public function set_register_server($register_server)
     {
         if (is_null($register_server)) {
             throw new \InvalidArgumentException('non-nullable register_server cannot be null');

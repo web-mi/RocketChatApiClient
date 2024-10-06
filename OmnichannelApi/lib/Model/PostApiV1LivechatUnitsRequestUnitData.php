@@ -180,8 +180,8 @@ class PostApiV1LivechatUnitsRequestUnitData implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'visibility' => 'setVisibility'
+        'name' => 'set_name',
+        'visibility' => 'set_visibility'
     ];
 
     /**
@@ -190,8 +190,8 @@ class PostApiV1LivechatUnitsRequestUnitData implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'visibility' => 'getVisibility'
+        'name' => 'get_name',
+        'visibility' => 'get_visibility'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1LivechatUnitsRequestUnitData implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -320,7 +320,7 @@ class PostApiV1LivechatUnitsRequestUnitData implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1LivechatUnitsRequestUnitData implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getVisibility()
+    public function get_visibility()
     {
         return $this->container['visibility'];
     }
@@ -347,7 +347,7 @@ class PostApiV1LivechatUnitsRequestUnitData implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setVisibility($visibility)
+    public function set_visibility($visibility)
     {
         if (is_null($visibility)) {
             throw new \InvalidArgumentException('non-nullable visibility cannot be null');

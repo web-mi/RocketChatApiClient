@@ -175,7 +175,7 @@ class GetApiV1OmnichannelContact200ResponseContactPhoneInner implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        'phone_number' => 'setPhoneNumber'
+        'phone_number' => 'set_phone_number'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1OmnichannelContact200ResponseContactPhoneInner implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        'phone_number' => 'getPhoneNumber'
+        'phone_number' => 'get_phone_number'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1OmnichannelContact200ResponseContactPhoneInner implements ModelInt
      *
      * @return string|null
      */
-    public function getPhoneNumber()
+    public function get_phone_number()
     {
         return $this->container['phone_number'];
     }
@@ -306,7 +306,7 @@ class GetApiV1OmnichannelContact200ResponseContactPhoneInner implements ModelInt
      *
      * @return self
      */
-    public function setPhoneNumber($phone_number)
+    public function set_phone_number($phone_number)
     {
         if (is_null($phone_number)) {
             throw new \InvalidArgumentException('non-nullable phone_number cannot be null');

@@ -179,8 +179,8 @@ class PostApiV1CustomUserStatusCreate200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'custom_user_status' => 'setCustomUserStatus',
-        'success' => 'setSuccess'
+        'custom_user_status' => 'set_custom_user_status',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1CustomUserStatusCreate200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'custom_user_status' => 'getCustomUserStatus',
-        'success' => 'getSuccess'
+        'custom_user_status' => 'get_custom_user_status',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1CustomUserStatusCreate200Response implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomUserStatusList200ResponseStatusesInner|null
      */
-    public function getCustomUserStatus()
+    public function get_custom_user_status()
     {
         return $this->container['custom_user_status'];
     }
@@ -313,7 +313,7 @@ class PostApiV1CustomUserStatusCreate200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setCustomUserStatus($custom_user_status)
+    public function set_custom_user_status($custom_user_status)
     {
         if (is_null($custom_user_status)) {
             throw new \InvalidArgumentException('non-nullable custom_user_status cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1CustomUserStatusCreate200Response implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1CustomUserStatusCreate200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

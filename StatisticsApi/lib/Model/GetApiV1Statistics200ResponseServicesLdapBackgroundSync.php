@@ -187,10 +187,10 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled',
-        'interval' => 'setInterval',
-        'new_users' => 'setNewUsers',
-        'existing_users' => 'setExistingUsers'
+        'enabled' => 'set_enabled',
+        'interval' => 'set_interval',
+        'new_users' => 'set_new_users',
+        'existing_users' => 'set_existing_users'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled',
-        'interval' => 'getInterval',
-        'new_users' => 'getNewUsers',
-        'existing_users' => 'getExistingUsers'
+        'enabled' => 'get_enabled',
+        'interval' => 'get_interval',
+        'new_users' => 'get_new_users',
+        'existing_users' => 'get_existing_users'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -327,7 +327,7 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      *
      * @return string|null
      */
-    public function getInterval()
+    public function get_interval()
     {
         return $this->container['interval'];
     }
@@ -354,7 +354,7 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      *
      * @return self
      */
-    public function setInterval($interval)
+    public function set_interval($interval)
     {
         if (is_null($interval)) {
             throw new \InvalidArgumentException('non-nullable interval cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      *
      * @return bool|null
      */
-    public function getNewUsers()
+    public function get_new_users()
     {
         return $this->container['new_users'];
     }
@@ -381,7 +381,7 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      *
      * @return self
      */
-    public function setNewUsers($new_users)
+    public function set_new_users($new_users)
     {
         if (is_null($new_users)) {
             throw new \InvalidArgumentException('non-nullable new_users cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      *
      * @return bool|null
      */
-    public function getExistingUsers()
+    public function get_existing_users()
     {
         return $this->container['existing_users'];
     }
@@ -408,7 +408,7 @@ class GetApiV1Statistics200ResponseServicesLdapBackgroundSync implements ModelIn
      *
      * @return self
      */
-    public function setExistingUsers($existing_users)
+    public function set_existing_users($existing_users)
     {
         if (is_null($existing_users)) {
             throw new \InvalidArgumentException('non-nullable existing_users cannot be null');

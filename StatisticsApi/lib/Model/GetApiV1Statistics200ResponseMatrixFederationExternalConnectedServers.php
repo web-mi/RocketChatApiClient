@@ -179,8 +179,8 @@ class GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers impl
      * @var string[]
      */
     protected static $setters = [
-        'quantity' => 'setQuantity',
-        'servers' => 'setServers'
+        'quantity' => 'set_quantity',
+        'servers' => 'set_servers'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers impl
      * @var string[]
      */
     protected static $getters = [
-        'quantity' => 'getQuantity',
-        'servers' => 'getServers'
+        'quantity' => 'get_quantity',
+        'servers' => 'get_servers'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers impl
      *
      * @return int|null
      */
-    public function getQuantity()
+    public function get_quantity()
     {
         return $this->container['quantity'];
     }
@@ -313,7 +313,7 @@ class GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers impl
      *
      * @return self
      */
-    public function setQuantity($quantity)
+    public function set_quantity($quantity)
     {
         if (is_null($quantity)) {
             throw new \InvalidArgumentException('non-nullable quantity cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers impl
      *
      * @return object[]|null
      */
-    public function getServers()
+    public function get_servers()
     {
         return $this->container['servers'];
     }
@@ -340,7 +340,7 @@ class GetApiV1Statistics200ResponseMatrixFederationExternalConnectedServers impl
      *
      * @return self
      */
-    public function setServers($servers)
+    public function set_servers($servers)
     {
         if (is_null($servers)) {
             throw new \InvalidArgumentException('non-nullable servers cannot be null');

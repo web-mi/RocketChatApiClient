@@ -243,24 +243,24 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'client_id' => 'setClientId',
-        'button_label_text' => 'setButtonLabelText',
-        'button_color' => 'setButtonColor',
-        'button_label_color' => 'setButtonLabelColor',
-        'custom' => 'setCustom',
-        'service' => 'setService',
-        'server_url' => 'setServerUrl',
-        'token_path' => 'setTokenPath',
-        'identity_path' => 'setIdentityPath',
-        'authorize_path' => 'setAuthorizePath',
-        'scope' => 'setScope',
-        'login_style' => 'setLoginStyle',
-        'token_sent_via' => 'setTokenSentVia',
-        'identity_token_sent_via' => 'setIdentityTokenSentVia',
-        'username_field' => 'setUsernameField',
-        'merge_users' => 'setMergeUsers'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'client_id' => 'set_client_id',
+        'button_label_text' => 'set_button_label_text',
+        'button_color' => 'set_button_color',
+        'button_label_color' => 'set_button_label_color',
+        'custom' => 'set_custom',
+        'service' => 'set_service',
+        'server_url' => 'set_server_url',
+        'token_path' => 'set_token_path',
+        'identity_path' => 'set_identity_path',
+        'authorize_path' => 'set_authorize_path',
+        'scope' => 'set_scope',
+        'login_style' => 'set_login_style',
+        'token_sent_via' => 'set_token_sent_via',
+        'identity_token_sent_via' => 'set_identity_token_sent_via',
+        'username_field' => 'set_username_field',
+        'merge_users' => 'set_merge_users'
     ];
 
     /**
@@ -269,24 +269,24 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'client_id' => 'getClientId',
-        'button_label_text' => 'getButtonLabelText',
-        'button_color' => 'getButtonColor',
-        'button_label_color' => 'getButtonLabelColor',
-        'custom' => 'getCustom',
-        'service' => 'getService',
-        'server_url' => 'getServerUrl',
-        'token_path' => 'getTokenPath',
-        'identity_path' => 'getIdentityPath',
-        'authorize_path' => 'getAuthorizePath',
-        'scope' => 'getScope',
-        'login_style' => 'getLoginStyle',
-        'token_sent_via' => 'getTokenSentVia',
-        'identity_token_sent_via' => 'getIdentityTokenSentVia',
-        'username_field' => 'getUsernameField',
-        'merge_users' => 'getMergeUsers'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'client_id' => 'get_client_id',
+        'button_label_text' => 'get_button_label_text',
+        'button_color' => 'get_button_color',
+        'button_label_color' => 'get_button_label_color',
+        'custom' => 'get_custom',
+        'service' => 'get_service',
+        'server_url' => 'get_server_url',
+        'token_path' => 'get_token_path',
+        'identity_path' => 'get_identity_path',
+        'authorize_path' => 'get_authorize_path',
+        'scope' => 'get_scope',
+        'login_style' => 'get_login_style',
+        'token_sent_via' => 'get_token_sent_via',
+        'identity_token_sent_via' => 'get_identity_token_sent_via',
+        'username_field' => 'get_username_field',
+        'merge_users' => 'get_merge_users'
     ];
 
     /**
@@ -413,7 +413,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -425,7 +425,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -440,7 +440,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -452,7 +452,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -467,7 +467,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getClientId()
+    public function get_client_id()
     {
         return $this->container['client_id'];
     }
@@ -479,7 +479,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setClientId($client_id)
+    public function set_client_id($client_id)
     {
         if (is_null($client_id)) {
             throw new \InvalidArgumentException('non-nullable client_id cannot be null');
@@ -494,7 +494,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getButtonLabelText()
+    public function get_button_label_text()
     {
         return $this->container['button_label_text'];
     }
@@ -506,7 +506,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setButtonLabelText($button_label_text)
+    public function set_button_label_text($button_label_text)
     {
         if (is_null($button_label_text)) {
             throw new \InvalidArgumentException('non-nullable button_label_text cannot be null');
@@ -521,7 +521,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getButtonColor()
+    public function get_button_color()
     {
         return $this->container['button_color'];
     }
@@ -533,7 +533,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setButtonColor($button_color)
+    public function set_button_color($button_color)
     {
         if (is_null($button_color)) {
             throw new \InvalidArgumentException('non-nullable button_color cannot be null');
@@ -548,7 +548,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getButtonLabelColor()
+    public function get_button_label_color()
     {
         return $this->container['button_label_color'];
     }
@@ -560,7 +560,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setButtonLabelColor($button_label_color)
+    public function set_button_label_color($button_label_color)
     {
         if (is_null($button_label_color)) {
             throw new \InvalidArgumentException('non-nullable button_label_color cannot be null');
@@ -575,7 +575,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getCustom()
+    public function get_custom()
     {
         return $this->container['custom'];
     }
@@ -587,7 +587,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setCustom($custom)
+    public function set_custom($custom)
     {
         if (is_null($custom)) {
             throw new \InvalidArgumentException('non-nullable custom cannot be null');
@@ -602,7 +602,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getService()
+    public function get_service()
     {
         return $this->container['service'];
     }
@@ -614,7 +614,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setService($service)
+    public function set_service($service)
     {
         if (is_null($service)) {
             throw new \InvalidArgumentException('non-nullable service cannot be null');
@@ -629,7 +629,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getServerUrl()
+    public function get_server_url()
     {
         return $this->container['server_url'];
     }
@@ -641,7 +641,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setServerUrl($server_url)
+    public function set_server_url($server_url)
     {
         if (is_null($server_url)) {
             throw new \InvalidArgumentException('non-nullable server_url cannot be null');
@@ -656,7 +656,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getTokenPath()
+    public function get_token_path()
     {
         return $this->container['token_path'];
     }
@@ -668,7 +668,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setTokenPath($token_path)
+    public function set_token_path($token_path)
     {
         if (is_null($token_path)) {
             throw new \InvalidArgumentException('non-nullable token_path cannot be null');
@@ -683,7 +683,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getIdentityPath()
+    public function get_identity_path()
     {
         return $this->container['identity_path'];
     }
@@ -695,7 +695,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setIdentityPath($identity_path)
+    public function set_identity_path($identity_path)
     {
         if (is_null($identity_path)) {
             throw new \InvalidArgumentException('non-nullable identity_path cannot be null');
@@ -710,7 +710,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getAuthorizePath()
+    public function get_authorize_path()
     {
         return $this->container['authorize_path'];
     }
@@ -722,7 +722,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setAuthorizePath($authorize_path)
+    public function set_authorize_path($authorize_path)
     {
         if (is_null($authorize_path)) {
             throw new \InvalidArgumentException('non-nullable authorize_path cannot be null');
@@ -737,7 +737,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -749,7 +749,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');
@@ -764,7 +764,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getLoginStyle()
+    public function get_login_style()
     {
         return $this->container['login_style'];
     }
@@ -776,7 +776,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setLoginStyle($login_style)
+    public function set_login_style($login_style)
     {
         if (is_null($login_style)) {
             throw new \InvalidArgumentException('non-nullable login_style cannot be null');
@@ -791,7 +791,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getTokenSentVia()
+    public function get_token_sent_via()
     {
         return $this->container['token_sent_via'];
     }
@@ -803,7 +803,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setTokenSentVia($token_sent_via)
+    public function set_token_sent_via($token_sent_via)
     {
         if (is_null($token_sent_via)) {
             throw new \InvalidArgumentException('non-nullable token_sent_via cannot be null');
@@ -818,7 +818,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getIdentityTokenSentVia()
+    public function get_identity_token_sent_via()
     {
         return $this->container['identity_token_sent_via'];
     }
@@ -830,7 +830,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setIdentityTokenSentVia($identity_token_sent_via)
+    public function set_identity_token_sent_via($identity_token_sent_via)
     {
         if (is_null($identity_token_sent_via)) {
             throw new \InvalidArgumentException('non-nullable identity_token_sent_via cannot be null');
@@ -845,7 +845,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getUsernameField()
+    public function get_username_field()
     {
         return $this->container['username_field'];
     }
@@ -857,7 +857,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setUsernameField($username_field)
+    public function set_username_field($username_field)
     {
         if (is_null($username_field)) {
             throw new \InvalidArgumentException('non-nullable username_field cannot be null');
@@ -872,7 +872,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getMergeUsers()
+    public function get_merge_users()
     {
         return $this->container['merge_users'];
     }
@@ -884,7 +884,7 @@ class GetApiV1SettingsOauth200ResponseServicesInner implements ModelInterface, A
      *
      * @return self
      */
-    public function setMergeUsers($merge_users)
+    public function set_merge_users($merge_users)
     {
         if (is_null($merge_users)) {
             throw new \InvalidArgumentException('non-nullable merge_users cannot be null');

@@ -231,21 +231,21 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'u' => 'setU',
-        'msg' => 'setMsg',
-        'ts' => 'setTs',
-        '_updated_at' => 'setUpdatedAt',
-        'alias' => 'setAlias',
-        'token' => 'setToken',
-        'unread' => 'setUnread',
-        'urls' => 'setUrls',
-        'mentions' => 'setMentions',
-        'channels' => 'setChannels',
-        'md' => 'setMd',
-        't' => 'setT',
-        'groupable' => 'setGroupable'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'u' => 'set_u',
+        'msg' => 'set_msg',
+        'ts' => 'set_ts',
+        '_updated_at' => 'set__updated_at',
+        'alias' => 'set_alias',
+        'token' => 'set_token',
+        'unread' => 'set_unread',
+        'urls' => 'set_urls',
+        'mentions' => 'set_mentions',
+        'channels' => 'set_channels',
+        'md' => 'set_md',
+        't' => 'set_t',
+        'groupable' => 'set_groupable'
     ];
 
     /**
@@ -254,21 +254,21 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'u' => 'getU',
-        'msg' => 'getMsg',
-        'ts' => 'getTs',
-        '_updated_at' => 'getUpdatedAt',
-        'alias' => 'getAlias',
-        'token' => 'getToken',
-        'unread' => 'getUnread',
-        'urls' => 'getUrls',
-        'mentions' => 'getMentions',
-        'channels' => 'getChannels',
-        'md' => 'getMd',
-        't' => 'getT',
-        'groupable' => 'getGroupable'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'u' => 'get_u',
+        'msg' => 'get_msg',
+        'ts' => 'get_ts',
+        '_updated_at' => 'get__updated_at',
+        'alias' => 'get_alias',
+        'token' => 'get_token',
+        'unread' => 'get_unread',
+        'urls' => 'get_urls',
+        'mentions' => 'get_mentions',
+        'channels' => 'get_channels',
+        'md' => 'get_md',
+        't' => 'get_t',
+        'groupable' => 'get_groupable'
     ];
 
     /**
@@ -392,7 +392,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -404,7 +404,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -419,7 +419,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -431,7 +431,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -446,7 +446,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -458,7 +458,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -473,7 +473,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -485,7 +485,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -500,7 +500,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -512,7 +512,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -527,7 +527,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -539,7 +539,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -554,7 +554,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return string|null
      */
-    public function getAlias()
+    public function get_alias()
     {
         return $this->container['alias'];
     }
@@ -566,7 +566,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setAlias($alias)
+    public function set_alias($alias)
     {
         if (is_null($alias)) {
             throw new \InvalidArgumentException('non-nullable alias cannot be null');
@@ -581,7 +581,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -593,7 +593,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -608,7 +608,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return bool|null
      */
-    public function getUnread()
+    public function get_unread()
     {
         return $this->container['unread'];
     }
@@ -620,7 +620,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setUnread($unread)
+    public function set_unread($unread)
     {
         if (is_null($unread)) {
             throw new \InvalidArgumentException('non-nullable unread cannot be null');
@@ -635,7 +635,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return object[]|null
      */
-    public function getUrls()
+    public function get_urls()
     {
         return $this->container['urls'];
     }
@@ -647,7 +647,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setUrls($urls)
+    public function set_urls($urls)
     {
         if (is_null($urls)) {
             throw new \InvalidArgumentException('non-nullable urls cannot be null');
@@ -662,7 +662,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return object[]|null
      */
-    public function getMentions()
+    public function get_mentions()
     {
         return $this->container['mentions'];
     }
@@ -674,7 +674,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setMentions($mentions)
+    public function set_mentions($mentions)
     {
         if (is_null($mentions)) {
             throw new \InvalidArgumentException('non-nullable mentions cannot be null');
@@ -689,7 +689,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return object[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -701,7 +701,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -716,7 +716,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null
      */
-    public function getMd()
+    public function get_md()
     {
         return $this->container['md'];
     }
@@ -728,7 +728,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setMd($md)
+    public function set_md($md)
     {
         if (is_null($md)) {
             throw new \InvalidArgumentException('non-nullable md cannot be null');
@@ -743,7 +743,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -755,7 +755,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -770,7 +770,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return bool|null
      */
-    public function getGroupable()
+    public function get_groupable()
     {
         return $this->container['groupable'];
     }
@@ -782,7 +782,7 @@ class GetApiV1ChatSyncMessages200ResponseResultUpdatedInner implements ModelInte
      *
      * @return self
      */
-    public function setGroupable($groupable)
+    public function set_groupable($groupable)
     {
         if (is_null($groupable)) {
             throw new \InvalidArgumentException('non-nullable groupable cannot be null');

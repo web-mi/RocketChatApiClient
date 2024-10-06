@@ -175,7 +175,7 @@ class PostApiV1Users2faEnableEmail200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'success' => 'setSuccess'
+        'success' => 'set_success'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1Users2faEnableEmail200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'success' => 'getSuccess'
+        'success' => 'get_success'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1Users2faEnableEmail200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -306,7 +306,7 @@ class PostApiV1Users2faEnableEmail200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

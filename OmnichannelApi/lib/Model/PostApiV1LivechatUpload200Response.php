@@ -235,22 +235,22 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'msg' => 'setMsg',
-        'token' => 'setToken',
-        'file' => 'setFile',
-        'attachments' => 'setAttachments',
-        'alias' => 'setAlias',
-        'ts' => 'setTs',
-        'u' => 'setU',
-        '_updated_at' => 'setUpdatedAt',
-        'urls' => 'setUrls',
-        'mentions' => 'setMentions',
-        'channels' => 'setChannels',
-        'new_room' => 'setNewRoom',
-        'show_connecting' => 'setShowConnecting',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'msg' => 'set_msg',
+        'token' => 'set_token',
+        'file' => 'set_file',
+        'attachments' => 'set_attachments',
+        'alias' => 'set_alias',
+        'ts' => 'set_ts',
+        'u' => 'set_u',
+        '_updated_at' => 'set__updated_at',
+        'urls' => 'set_urls',
+        'mentions' => 'set_mentions',
+        'channels' => 'set_channels',
+        'new_room' => 'set_new_room',
+        'show_connecting' => 'set_show_connecting',
+        'success' => 'set_success'
     ];
 
     /**
@@ -259,22 +259,22 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'msg' => 'getMsg',
-        'token' => 'getToken',
-        'file' => 'getFile',
-        'attachments' => 'getAttachments',
-        'alias' => 'getAlias',
-        'ts' => 'getTs',
-        'u' => 'getU',
-        '_updated_at' => 'getUpdatedAt',
-        'urls' => 'getUrls',
-        'mentions' => 'getMentions',
-        'channels' => 'getChannels',
-        'new_room' => 'getNewRoom',
-        'show_connecting' => 'getShowConnecting',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'msg' => 'get_msg',
+        'token' => 'get_token',
+        'file' => 'get_file',
+        'attachments' => 'get_attachments',
+        'alias' => 'get_alias',
+        'ts' => 'get_ts',
+        'u' => 'get_u',
+        '_updated_at' => 'get__updated_at',
+        'urls' => 'get_urls',
+        'mentions' => 'get_mentions',
+        'channels' => 'get_channels',
+        'new_room' => 'get_new_room',
+        'show_connecting' => 'get_show_connecting',
+        'success' => 'get_success'
     ];
 
     /**
@@ -399,7 +399,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -411,7 +411,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -426,7 +426,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -438,7 +438,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -453,7 +453,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -465,7 +465,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -480,7 +480,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -492,7 +492,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -507,7 +507,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUpload200ResponseFile|null
      */
-    public function getFile()
+    public function get_file()
     {
         return $this->container['file'];
     }
@@ -519,7 +519,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setFile($file)
+    public function set_file($file)
     {
         if (is_null($file)) {
             throw new \InvalidArgumentException('non-nullable file cannot be null');
@@ -534,7 +534,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUpload200ResponseAttachmentsInner[]|null
      */
-    public function getAttachments()
+    public function get_attachments()
     {
         return $this->container['attachments'];
     }
@@ -546,7 +546,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setAttachments($attachments)
+    public function set_attachments($attachments)
     {
         if (is_null($attachments)) {
             throw new \InvalidArgumentException('non-nullable attachments cannot be null');
@@ -561,7 +561,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getAlias()
+    public function get_alias()
     {
         return $this->container['alias'];
     }
@@ -573,7 +573,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setAlias($alias)
+    public function set_alias($alias)
     {
         if (is_null($alias)) {
             throw new \InvalidArgumentException('non-nullable alias cannot be null');
@@ -588,7 +588,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -600,7 +600,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -615,7 +615,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -627,7 +627,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -642,7 +642,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -654,7 +654,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -669,7 +669,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return object[]|null
      */
-    public function getUrls()
+    public function get_urls()
     {
         return $this->container['urls'];
     }
@@ -681,7 +681,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setUrls($urls)
+    public function set_urls($urls)
     {
         if (is_null($urls)) {
             throw new \InvalidArgumentException('non-nullable urls cannot be null');
@@ -696,7 +696,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return object[]|null
      */
-    public function getMentions()
+    public function get_mentions()
     {
         return $this->container['mentions'];
     }
@@ -708,7 +708,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setMentions($mentions)
+    public function set_mentions($mentions)
     {
         if (is_null($mentions)) {
             throw new \InvalidArgumentException('non-nullable mentions cannot be null');
@@ -723,7 +723,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return object[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -735,7 +735,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -750,7 +750,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getNewRoom()
+    public function get_new_room()
     {
         return $this->container['new_room'];
     }
@@ -762,7 +762,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setNewRoom($new_room)
+    public function set_new_room($new_room)
     {
         if (is_null($new_room)) {
             throw new \InvalidArgumentException('non-nullable new_room cannot be null');
@@ -777,7 +777,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getShowConnecting()
+    public function get_show_connecting()
     {
         return $this->container['show_connecting'];
     }
@@ -789,7 +789,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setShowConnecting($show_connecting)
+    public function set_show_connecting($show_connecting)
     {
         if (is_null($show_connecting)) {
             throw new \InvalidArgumentException('non-nullable show_connecting cannot be null');
@@ -804,7 +804,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -816,7 +816,7 @@ class PostApiV1LivechatUpload200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -227,20 +227,20 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'name' => 'setName',
-        'ts' => 'setTs',
-        'message' => 'setMessage',
-        'status' => 'setStatus',
-        'v' => 'setV',
-        't' => 'setT',
-        'priority_weight' => 'setPriorityWeight',
-        'estimated_waiting_time_queue' => 'setEstimatedWaitingTimeQueue',
-        'source' => 'setSource',
-        '_updated_at' => 'setUpdatedAt',
-        'last_message' => 'setLastMessage',
-        'taken_at' => 'setTakenAt'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'name' => 'set_name',
+        'ts' => 'set_ts',
+        'message' => 'set_message',
+        'status' => 'set_status',
+        'v' => 'set_v',
+        't' => 'set_t',
+        'priority_weight' => 'set_priority_weight',
+        'estimated_waiting_time_queue' => 'set_estimated_waiting_time_queue',
+        'source' => 'set_source',
+        '_updated_at' => 'set__updated_at',
+        'last_message' => 'set_last_message',
+        'taken_at' => 'set_taken_at'
     ];
 
     /**
@@ -249,20 +249,20 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'name' => 'getName',
-        'ts' => 'getTs',
-        'message' => 'getMessage',
-        'status' => 'getStatus',
-        'v' => 'getV',
-        't' => 'getT',
-        'priority_weight' => 'getPriorityWeight',
-        'estimated_waiting_time_queue' => 'getEstimatedWaitingTimeQueue',
-        'source' => 'getSource',
-        '_updated_at' => 'getUpdatedAt',
-        'last_message' => 'getLastMessage',
-        'taken_at' => 'getTakenAt'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'name' => 'get_name',
+        'ts' => 'get_ts',
+        'message' => 'get_message',
+        'status' => 'get_status',
+        'v' => 'get_v',
+        't' => 'get_t',
+        'priority_weight' => 'get_priority_weight',
+        'estimated_waiting_time_queue' => 'get_estimated_waiting_time_queue',
+        'source' => 'get_source',
+        '_updated_at' => 'get__updated_at',
+        'last_message' => 'get_last_message',
+        'taken_at' => 'get_taken_at'
     ];
 
     /**
@@ -385,7 +385,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -397,7 +397,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -412,7 +412,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -424,7 +424,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -439,7 +439,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -451,7 +451,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -466,7 +466,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -478,7 +478,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -493,7 +493,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return string|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -505,7 +505,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -520,7 +520,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -532,7 +532,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -547,7 +547,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryV|null
      */
-    public function getV()
+    public function get_v()
     {
         return $this->container['v'];
     }
@@ -559,7 +559,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setV($v)
+    public function set_v($v)
     {
         if (is_null($v)) {
             throw new \InvalidArgumentException('non-nullable v cannot be null');
@@ -574,7 +574,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -586,7 +586,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -601,7 +601,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return int|null
      */
-    public function getPriorityWeight()
+    public function get_priority_weight()
     {
         return $this->container['priority_weight'];
     }
@@ -613,7 +613,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setPriorityWeight($priority_weight)
+    public function set_priority_weight($priority_weight)
     {
         if (is_null($priority_weight)) {
             throw new \InvalidArgumentException('non-nullable priority_weight cannot be null');
@@ -628,7 +628,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return int|null
      */
-    public function getEstimatedWaitingTimeQueue()
+    public function get_estimated_waiting_time_queue()
     {
         return $this->container['estimated_waiting_time_queue'];
     }
@@ -640,7 +640,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setEstimatedWaitingTimeQueue($estimated_waiting_time_queue)
+    public function set_estimated_waiting_time_queue($estimated_waiting_time_queue)
     {
         if (is_null($estimated_waiting_time_queue)) {
             throw new \InvalidArgumentException('non-nullable estimated_waiting_time_queue cannot be null');
@@ -655,7 +655,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null
      */
-    public function getSource()
+    public function get_source()
     {
         return $this->container['source'];
     }
@@ -667,7 +667,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setSource($source)
+    public function set_source($source)
     {
         if (is_null($source)) {
             throw new \InvalidArgumentException('non-nullable source cannot be null');
@@ -682,7 +682,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -694,7 +694,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -709,7 +709,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesGetOne200ResponseInquiryLastMessage|null
      */
-    public function getLastMessage()
+    public function get_last_message()
     {
         return $this->container['last_message'];
     }
@@ -721,7 +721,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setLastMessage($last_message)
+    public function set_last_message($last_message)
     {
         if (is_null($last_message)) {
             throw new \InvalidArgumentException('non-nullable last_message cannot be null');
@@ -736,7 +736,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return string|null
      */
-    public function getTakenAt()
+    public function get_taken_at()
     {
         return $this->container['taken_at'];
     }
@@ -748,7 +748,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiry implements ModelInterfac
      *
      * @return self
      */
-    public function setTakenAt($taken_at)
+    public function set_taken_at($taken_at)
     {
         if (is_null($taken_at)) {
             throw new \InvalidArgumentException('non-nullable taken_at cannot be null');

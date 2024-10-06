@@ -179,8 +179,8 @@ class GetApiV1CommandsList200ResponseCommandsInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'command' => 'setCommand',
-        'client_only' => 'setClientOnly'
+        'command' => 'set_command',
+        'client_only' => 'set_client_only'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1CommandsList200ResponseCommandsInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'command' => 'getCommand',
-        'client_only' => 'getClientOnly'
+        'command' => 'get_command',
+        'client_only' => 'get_client_only'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1CommandsList200ResponseCommandsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getCommand()
+    public function get_command()
     {
         return $this->container['command'];
     }
@@ -313,7 +313,7 @@ class GetApiV1CommandsList200ResponseCommandsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setCommand($command)
+    public function set_command($command)
     {
         if (is_null($command)) {
             throw new \InvalidArgumentException('non-nullable command cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1CommandsList200ResponseCommandsInner implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getClientOnly()
+    public function get_client_only()
     {
         return $this->container['client_only'];
     }
@@ -340,7 +340,7 @@ class GetApiV1CommandsList200ResponseCommandsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setClientOnly($client_only)
+    public function set_client_only($client_only)
     {
         if (is_null($client_only)) {
             throw new \InvalidArgumentException('non-nullable client_only cannot be null');

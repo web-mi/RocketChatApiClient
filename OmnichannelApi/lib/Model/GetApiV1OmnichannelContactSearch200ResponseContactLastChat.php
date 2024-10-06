@@ -179,8 +179,8 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLastChat implements Mode
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'ts' => 'setTs'
+        '_id' => 'set__id',
+        'ts' => 'set_ts'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLastChat implements Mode
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'ts' => 'getTs'
+        '_id' => 'get__id',
+        'ts' => 'get_ts'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLastChat implements Mode
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLastChat implements Mode
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLastChat implements Mode
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -340,7 +340,7 @@ class GetApiV1OmnichannelContactSearch200ResponseContactLastChat implements Mode
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');

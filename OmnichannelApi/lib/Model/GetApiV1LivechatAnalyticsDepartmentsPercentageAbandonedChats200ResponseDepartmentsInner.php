@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200ResponseDep
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'percentage_of_abandoned_chats' => 'setPercentageOfAbandonedChats'
+        '_id' => 'set__id',
+        'percentage_of_abandoned_chats' => 'set_percentage_of_abandoned_chats'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200ResponseDep
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'percentage_of_abandoned_chats' => 'getPercentageOfAbandonedChats'
+        '_id' => 'get__id',
+        'percentage_of_abandoned_chats' => 'get_percentage_of_abandoned_chats'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200ResponseDep
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200ResponseDep
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200ResponseDep
      *
      * @return int|null
      */
-    public function getPercentageOfAbandonedChats()
+    public function get_percentage_of_abandoned_chats()
     {
         return $this->container['percentage_of_abandoned_chats'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDepartmentsPercentageAbandonedChats200ResponseDep
      *
      * @return self
      */
-    public function setPercentageOfAbandonedChats($percentage_of_abandoned_chats)
+    public function set_percentage_of_abandoned_chats($percentage_of_abandoned_chats)
     {
         if (is_null($percentage_of_abandoned_chats)) {
             throw new \InvalidArgumentException('non-nullable percentage_of_abandoned_chats cannot be null');

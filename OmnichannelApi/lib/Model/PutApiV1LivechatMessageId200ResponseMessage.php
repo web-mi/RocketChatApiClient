@@ -187,10 +187,10 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'msg' => 'setMsg',
-        'u' => 'setU',
-        'ls' => 'setLs'
+        '_id' => 'set__id',
+        'msg' => 'set_msg',
+        'u' => 'set_u',
+        'ls' => 'set_ls'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'msg' => 'getMsg',
-        'u' => 'getU',
-        'ls' => 'getLs'
+        '_id' => 'get__id',
+        'msg' => 'get_msg',
+        'u' => 'get_u',
+        'ls' => 'get_ls'
     ];
 
     /**
@@ -315,7 +315,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -354,7 +354,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -369,7 +369,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -381,7 +381,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -396,7 +396,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getLs()
+    public function get_ls()
     {
         return $this->container['ls'];
     }
@@ -408,7 +408,7 @@ class PutApiV1LivechatMessageId200ResponseMessage implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setLs($ls)
+    public function set_ls($ls)
     {
         if (is_null($ls)) {
             throw new \InvalidArgumentException('non-nullable ls cannot be null');

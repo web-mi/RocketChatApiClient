@@ -179,8 +179,8 @@ class GetApiV1EmailInboxSearch200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'email_inbox' => 'setEmailInbox',
-        'success' => 'setSuccess'
+        'email_inbox' => 'set_email_inbox',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EmailInboxSearch200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'email_inbox' => 'getEmailInbox',
-        'success' => 'getSuccess'
+        'email_inbox' => 'get_email_inbox',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EmailInboxSearch200Response implements ModelInterface, ArrayAccess
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInner|null
      */
-    public function getEmailInbox()
+    public function get_email_inbox()
     {
         return $this->container['email_inbox'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EmailInboxSearch200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setEmailInbox($email_inbox)
+    public function set_email_inbox($email_inbox)
     {
         if (is_null($email_inbox)) {
             throw new \InvalidArgumentException('non-nullable email_inbox cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EmailInboxSearch200Response implements ModelInterface, ArrayAccess
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EmailInboxSearch200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

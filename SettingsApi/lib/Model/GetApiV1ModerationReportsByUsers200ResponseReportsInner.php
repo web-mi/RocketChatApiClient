@@ -207,15 +207,15 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'rooms' => 'setRooms',
-        'count' => 'setCount',
-        'message' => 'setMessage',
-        'msg_id' => 'setMsgId',
-        'ts' => 'setTs',
-        'username' => 'setUsername',
-        'name' => 'setName',
-        'user_id' => 'setUserId',
-        'is_user_deleted' => 'setIsUserDeleted'
+        'rooms' => 'set_rooms',
+        'count' => 'set_count',
+        'message' => 'set_message',
+        'msg_id' => 'set_msg_id',
+        'ts' => 'set_ts',
+        'username' => 'set_username',
+        'name' => 'set_name',
+        'user_id' => 'set_user_id',
+        'is_user_deleted' => 'set_is_user_deleted'
     ];
 
     /**
@@ -224,15 +224,15 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'rooms' => 'getRooms',
-        'count' => 'getCount',
-        'message' => 'getMessage',
-        'msg_id' => 'getMsgId',
-        'ts' => 'getTs',
-        'username' => 'getUsername',
-        'name' => 'getName',
-        'user_id' => 'getUserId',
-        'is_user_deleted' => 'getIsUserDeleted'
+        'rooms' => 'get_rooms',
+        'count' => 'get_count',
+        'message' => 'get_message',
+        'msg_id' => 'get_msg_id',
+        'ts' => 'get_ts',
+        'username' => 'get_username',
+        'name' => 'get_name',
+        'user_id' => 'get_user_id',
+        'is_user_deleted' => 'get_is_user_deleted'
     ];
 
     /**
@@ -350,7 +350,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReportsByUsers200ResponseReportsInnerRoomsInner[]|null
      */
-    public function getRooms()
+    public function get_rooms()
     {
         return $this->container['rooms'];
     }
@@ -362,7 +362,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return self
      */
-    public function setRooms($rooms)
+    public function set_rooms($rooms)
     {
         if (is_null($rooms)) {
             throw new \InvalidArgumentException('non-nullable rooms cannot be null');
@@ -377,7 +377,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -389,7 +389,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -404,7 +404,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -416,7 +416,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -431,7 +431,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getMsgId()
+    public function get_msg_id()
     {
         return $this->container['msg_id'];
     }
@@ -443,7 +443,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return self
      */
-    public function setMsgId($msg_id)
+    public function set_msg_id($msg_id)
     {
         if (is_null($msg_id)) {
             throw new \InvalidArgumentException('non-nullable msg_id cannot be null');
@@ -458,7 +458,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -470,7 +470,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -485,7 +485,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -497,7 +497,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -512,7 +512,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -524,7 +524,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -539,7 +539,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -551,7 +551,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -566,7 +566,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return bool|null
      */
-    public function getIsUserDeleted()
+    public function get_is_user_deleted()
     {
         return $this->container['is_user_deleted'];
     }
@@ -578,7 +578,7 @@ class GetApiV1ModerationReportsByUsers200ResponseReportsInner implements ModelIn
      *
      * @return self
      */
-    public function setIsUserDeleted($is_user_deleted)
+    public function set_is_user_deleted($is_user_deleted)
     {
         if (is_null($is_user_deleted)) {
             throw new \InvalidArgumentException('non-nullable is_user_deleted cannot be null');

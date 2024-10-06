@@ -179,8 +179,8 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $setters = [
-        'data' => 'setData',
-        'success' => 'setSuccess'
+        'data' => 'set_data',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $getters = [
-        'data' => 'getData',
-        'success' => 'getSuccess'
+        'data' => 'get_data',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseData|null
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -313,7 +313,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1PushGet200Response implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

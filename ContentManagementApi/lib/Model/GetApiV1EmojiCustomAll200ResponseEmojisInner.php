@@ -191,11 +191,11 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'aliases' => 'setAliases',
-        'extension' => 'setExtension',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'aliases' => 'set_aliases',
+        'extension' => 'set_extension',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'aliases' => 'getAliases',
-        'extension' => 'getExtension',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'aliases' => 'get_aliases',
+        'extension' => 'get_extension',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -361,7 +361,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return string[]|null
      */
-    public function getAliases()
+    public function get_aliases()
     {
         return $this->container['aliases'];
     }
@@ -388,7 +388,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setAliases($aliases)
+    public function set_aliases($aliases)
     {
         if (is_null($aliases)) {
             throw new \InvalidArgumentException('non-nullable aliases cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getExtension()
+    public function get_extension()
     {
         return $this->container['extension'];
     }
@@ -415,7 +415,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setExtension($extension)
+    public function set_extension($extension)
     {
         if (is_null($extension)) {
             throw new \InvalidArgumentException('non-nullable extension cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -442,7 +442,7 @@ class GetApiV1EmojiCustomAll200ResponseEmojisInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

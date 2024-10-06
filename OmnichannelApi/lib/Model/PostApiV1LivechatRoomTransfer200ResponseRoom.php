@@ -187,10 +187,10 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'served_by' => 'setServedBy',
-        'open' => 'setOpen',
-        'department_id' => 'setDepartmentId'
+        '_id' => 'set__id',
+        'served_by' => 'set_served_by',
+        'open' => 'set_open',
+        'department_id' => 'set_department_id'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'served_by' => 'getServedBy',
-        'open' => 'getOpen',
-        'department_id' => 'getDepartmentId'
+        '_id' => 'get__id',
+        'served_by' => 'get_served_by',
+        'open' => 'get_open',
+        'department_id' => 'get_department_id'
     ];
 
     /**
@@ -315,7 +315,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
      */
-    public function getServedBy()
+    public function get_served_by()
     {
         return $this->container['served_by'];
     }
@@ -354,7 +354,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setServedBy($served_by)
+    public function set_served_by($served_by)
     {
         if (is_null($served_by)) {
             throw new \InvalidArgumentException('non-nullable served_by cannot be null');
@@ -369,7 +369,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getOpen()
+    public function get_open()
     {
         return $this->container['open'];
     }
@@ -381,7 +381,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setOpen($open)
+    public function set_open($open)
     {
         if (is_null($open)) {
             throw new \InvalidArgumentException('non-nullable open cannot be null');
@@ -396,7 +396,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getDepartmentId()
+    public function get_department_id()
     {
         return $this->container['department_id'];
     }
@@ -408,7 +408,7 @@ class PostApiV1LivechatRoomTransfer200ResponseRoom implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setDepartmentId($department_id)
+    public function set_department_id($department_id)
     {
         if (is_null($department_id)) {
             throw new \InvalidArgumentException('non-nullable department_id cannot be null');

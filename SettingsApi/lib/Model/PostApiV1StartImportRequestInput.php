@@ -180,8 +180,8 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'channels' => 'setChannels'
+        'users' => 'set_users',
+        'channels' => 'set_channels'
     ];
 
     /**
@@ -190,8 +190,8 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'channels' => 'getChannels'
+        'users' => 'get_users',
+        'channels' => 'get_channels'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequestInputUsersInner[]
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -320,7 +320,7 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequestInputChannelsInner[]
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -347,7 +347,7 @@ class PostApiV1StartImportRequestInput implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');

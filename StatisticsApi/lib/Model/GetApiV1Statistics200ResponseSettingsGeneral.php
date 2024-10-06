@@ -183,9 +183,9 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'apps' => 'setApps',
-        'nps' => 'setNps',
-        'update' => 'setUpdate'
+        'apps' => 'set_apps',
+        'nps' => 'set_nps',
+        'update' => 'set_update'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'apps' => 'getApps',
-        'nps' => 'getNps',
-        'update' => 'getUpdate'
+        'apps' => 'get_apps',
+        'nps' => 'get_nps',
+        'update' => 'get_update'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
      *
      * @return object|null
      */
-    public function getApps()
+    public function get_apps()
     {
         return $this->container['apps'];
     }
@@ -320,7 +320,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setApps($apps)
+    public function set_apps($apps)
     {
         if (is_null($apps)) {
             throw new \InvalidArgumentException('non-nullable apps cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralNps|null
      */
-    public function getNps()
+    public function get_nps()
     {
         return $this->container['nps'];
     }
@@ -347,7 +347,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setNps($nps)
+    public function set_nps($nps)
     {
         if (is_null($nps)) {
             throw new \InvalidArgumentException('non-nullable nps cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneralUpdate|null
      */
-    public function getUpdate()
+    public function get_update()
     {
         return $this->container['update'];
     }
@@ -374,7 +374,7 @@ class GetApiV1Statistics200ResponseSettingsGeneral implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setUpdate($update)
+    public function set_update($update)
     {
         if (is_null($update)) {
             throw new \InvalidArgumentException('non-nullable update cannot be null');

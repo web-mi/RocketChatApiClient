@@ -215,7 +215,7 @@ class ChannelsApi
         $hostIndex = 0
     ) {
         $this->client = $client ?: new Client();
-        $this->config = $config ?: new Configuration();
+        $this->config = $config ?: Configuration::getDefaultConfiguration();
         $this->headerSelector = $selector ?: new HeaderSelector();
         $this->hostIndex = $hostIndex;
     }
@@ -5189,7 +5189,7 @@ class ChannelsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChannelsOnline'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\RoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
@@ -5209,7 +5209,7 @@ class ChannelsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChannelsOnline'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\RoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
@@ -5335,7 +5335,7 @@ class ChannelsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChannelsOnline'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5358,7 +5358,7 @@ class ChannelsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChannelsOnline'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
@@ -5410,7 +5410,7 @@ class ChannelsApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsOnlineQueryParameter $query An object of the channel&#39;s id. (required)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['getApiV1ChannelsOnline'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException

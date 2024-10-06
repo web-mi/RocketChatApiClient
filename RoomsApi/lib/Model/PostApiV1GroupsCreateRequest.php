@@ -195,12 +195,12 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $setters = [
-        'read_only' => 'setReadOnly',
-        'members' => 'setMembers',
-        'exclude_self' => 'setExcludeSelf',
-        'name' => 'setName',
-        'custom_fields' => 'setCustomFields',
-        'extra_data' => 'setExtraData'
+        'read_only' => 'set_read_only',
+        'members' => 'set_members',
+        'exclude_self' => 'set_exclude_self',
+        'name' => 'set_name',
+        'custom_fields' => 'set_custom_fields',
+        'extra_data' => 'set_extra_data'
     ];
 
     /**
@@ -209,12 +209,12 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $getters = [
-        'read_only' => 'getReadOnly',
-        'members' => 'getMembers',
-        'exclude_self' => 'getExcludeSelf',
-        'name' => 'getName',
-        'custom_fields' => 'getCustomFields',
-        'extra_data' => 'getExtraData'
+        'read_only' => 'get_read_only',
+        'members' => 'get_members',
+        'exclude_self' => 'get_exclude_self',
+        'name' => 'get_name',
+        'custom_fields' => 'get_custom_fields',
+        'extra_data' => 'get_extra_data'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return bool|null
      */
-    public function getReadOnly()
+    public function get_read_only()
     {
         return $this->container['read_only'];
     }
@@ -344,7 +344,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setReadOnly($read_only)
+    public function set_read_only($read_only)
     {
         if (is_null($read_only)) {
             throw new \InvalidArgumentException('non-nullable read_only cannot be null');
@@ -359,7 +359,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return string[]|null
      */
-    public function getMembers()
+    public function get_members()
     {
         return $this->container['members'];
     }
@@ -371,7 +371,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setMembers($members)
+    public function set_members($members)
     {
         if (is_null($members)) {
             throw new \InvalidArgumentException('non-nullable members cannot be null');
@@ -386,7 +386,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return bool|null
      */
-    public function getExcludeSelf()
+    public function get_exclude_self()
     {
         return $this->container['exclude_self'];
     }
@@ -398,7 +398,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setExcludeSelf($exclude_self)
+    public function set_exclude_self($exclude_self)
     {
         if (is_null($exclude_self)) {
             throw new \InvalidArgumentException('non-nullable exclude_self cannot be null');
@@ -413,7 +413,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -425,7 +425,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -440,7 +440,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return object|null
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -452,7 +452,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');
@@ -467,7 +467,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return object|null
      */
-    public function getExtraData()
+    public function get_extra_data()
     {
         return $this->container['extra_data'];
     }
@@ -479,7 +479,7 @@ class PostApiV1GroupsCreateRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setExtraData($extra_data)
+    public function set_extra_data($extra_data)
     {
         if (is_null($extra_data)) {
             throw new \InvalidArgumentException('non-nullable extra_data cannot be null');

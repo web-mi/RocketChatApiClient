@@ -179,8 +179,8 @@ class PostApiV1LivechatAppearanceRequestInner implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'value' => 'setValue'
+        '_id' => 'set__id',
+        'value' => 'set_value'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatAppearanceRequestInner implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'value' => 'getValue'
+        '_id' => 'get__id',
+        'value' => 'get_value'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1LivechatAppearanceRequestInner implements ModelInterface, ArrayAc
      *
      * @return string
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1LivechatAppearanceRequestInner implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1LivechatAppearanceRequestInner implements ModelInterface, ArrayAc
      *
      * @return bool
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -346,7 +346,7 @@ class PostApiV1LivechatAppearanceRequestInner implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');

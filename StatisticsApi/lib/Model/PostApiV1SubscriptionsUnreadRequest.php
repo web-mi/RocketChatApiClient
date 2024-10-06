@@ -179,8 +179,8 @@ class PostApiV1SubscriptionsUnreadRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'first_unread_message' => 'setFirstUnreadMessage',
-        'room_id' => 'setRoomId'
+        'first_unread_message' => 'set_first_unread_message',
+        'room_id' => 'set_room_id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1SubscriptionsUnreadRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'first_unread_message' => 'getFirstUnreadMessage',
-        'room_id' => 'getRoomId'
+        'first_unread_message' => 'get_first_unread_message',
+        'room_id' => 'get_room_id'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1SubscriptionsUnreadRequest implements ModelInterface, ArrayAccess
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\PostApiV1SubscriptionsUnreadRequestFirstUnreadMessage|null
      */
-    public function getFirstUnreadMessage()
+    public function get_first_unread_message()
     {
         return $this->container['first_unread_message'];
     }
@@ -313,7 +313,7 @@ class PostApiV1SubscriptionsUnreadRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setFirstUnreadMessage($first_unread_message)
+    public function set_first_unread_message($first_unread_message)
     {
         if (is_null($first_unread_message)) {
             throw new \InvalidArgumentException('non-nullable first_unread_message cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1SubscriptionsUnreadRequest implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -340,7 +340,7 @@ class PostApiV1SubscriptionsUnreadRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');

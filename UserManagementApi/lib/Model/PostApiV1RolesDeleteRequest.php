@@ -175,7 +175,7 @@ class PostApiV1RolesDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'role_id' => 'setRoleId'
+        'role_id' => 'set_role_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1RolesDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'role_id' => 'getRoleId'
+        'role_id' => 'get_role_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1RolesDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getRoleId()
+    public function get_role_id()
     {
         return $this->container['role_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1RolesDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setRoleId($role_id)
+    public function set_role_id($role_id)
     {
         if (is_null($role_id)) {
             throw new \InvalidArgumentException('non-nullable role_id cannot be null');

@@ -179,8 +179,8 @@ class PostApiV1VoipRoomCloseRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'token' => 'setToken'
+        'rid' => 'set_rid',
+        'token' => 'set_token'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1VoipRoomCloseRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'token' => 'getToken'
+        'rid' => 'get_rid',
+        'token' => 'get_token'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1VoipRoomCloseRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -319,7 +319,7 @@ class PostApiV1VoipRoomCloseRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1VoipRoomCloseRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -346,7 +346,7 @@ class PostApiV1VoipRoomCloseRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');

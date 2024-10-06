@@ -243,24 +243,24 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        '_updated_at' => 'setUpdatedAt',
-        'autocomplete' => 'setAutocomplete',
-        'blocked' => 'setBlocked',
-        'created_at' => 'setCreatedAt',
-        'group' => 'setGroup',
-        'hidden' => 'setHidden',
-        'i18n_description' => 'setI18nDescription',
-        'i18n_label' => 'setI18nLabel',
-        'package_value' => 'setPackageValue',
-        'secret' => 'setSecret',
-        'section' => 'setSection',
-        'sorter' => 'setSorter',
-        'ts' => 'setTs',
-        'type' => 'setType',
-        'value' => 'setValue',
-        'value_source' => 'setValueSource',
-        'meteor_settings_value' => 'setMeteorSettingsValue'
+        '_id' => 'set__id',
+        '_updated_at' => 'set__updated_at',
+        'autocomplete' => 'set_autocomplete',
+        'blocked' => 'set_blocked',
+        'created_at' => 'set_created_at',
+        'group' => 'set_group',
+        'hidden' => 'set_hidden',
+        'i18n_description' => 'set_i18n_description',
+        'i18n_label' => 'set_i18n_label',
+        'package_value' => 'set_package_value',
+        'secret' => 'set_secret',
+        'section' => 'set_section',
+        'sorter' => 'set_sorter',
+        'ts' => 'set_ts',
+        'type' => 'set_type',
+        'value' => 'set_value',
+        'value_source' => 'set_value_source',
+        'meteor_settings_value' => 'set_meteor_settings_value'
     ];
 
     /**
@@ -269,24 +269,24 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        '_updated_at' => 'getUpdatedAt',
-        'autocomplete' => 'getAutocomplete',
-        'blocked' => 'getBlocked',
-        'created_at' => 'getCreatedAt',
-        'group' => 'getGroup',
-        'hidden' => 'getHidden',
-        'i18n_description' => 'getI18nDescription',
-        'i18n_label' => 'getI18nLabel',
-        'package_value' => 'getPackageValue',
-        'secret' => 'getSecret',
-        'section' => 'getSection',
-        'sorter' => 'getSorter',
-        'ts' => 'getTs',
-        'type' => 'getType',
-        'value' => 'getValue',
-        'value_source' => 'getValueSource',
-        'meteor_settings_value' => 'getMeteorSettingsValue'
+        '_id' => 'get__id',
+        '_updated_at' => 'get__updated_at',
+        'autocomplete' => 'get_autocomplete',
+        'blocked' => 'get_blocked',
+        'created_at' => 'get_created_at',
+        'group' => 'get_group',
+        'hidden' => 'get_hidden',
+        'i18n_description' => 'get_i18n_description',
+        'i18n_label' => 'get_i18n_label',
+        'package_value' => 'get_package_value',
+        'secret' => 'get_secret',
+        'section' => 'get_section',
+        'sorter' => 'get_sorter',
+        'ts' => 'get_ts',
+        'type' => 'get_type',
+        'value' => 'get_value',
+        'value_source' => 'get_value_source',
+        'meteor_settings_value' => 'get_meteor_settings_value'
     ];
 
     /**
@@ -413,7 +413,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -425,7 +425,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -440,7 +440,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -452,7 +452,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -467,7 +467,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return bool|null
      */
-    public function getAutocomplete()
+    public function get_autocomplete()
     {
         return $this->container['autocomplete'];
     }
@@ -479,7 +479,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setAutocomplete($autocomplete)
+    public function set_autocomplete($autocomplete)
     {
         if (is_null($autocomplete)) {
             throw new \InvalidArgumentException('non-nullable autocomplete cannot be null');
@@ -494,7 +494,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return bool|null
      */
-    public function getBlocked()
+    public function get_blocked()
     {
         return $this->container['blocked'];
     }
@@ -506,7 +506,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setBlocked($blocked)
+    public function set_blocked($blocked)
     {
         if (is_null($blocked)) {
             throw new \InvalidArgumentException('non-nullable blocked cannot be null');
@@ -521,7 +521,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -533,7 +533,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -548,7 +548,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getGroup()
+    public function get_group()
     {
         return $this->container['group'];
     }
@@ -560,7 +560,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setGroup($group)
+    public function set_group($group)
     {
         if (is_null($group)) {
             throw new \InvalidArgumentException('non-nullable group cannot be null');
@@ -575,7 +575,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return bool|null
      */
-    public function getHidden()
+    public function get_hidden()
     {
         return $this->container['hidden'];
     }
@@ -587,7 +587,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setHidden($hidden)
+    public function set_hidden($hidden)
     {
         if (is_null($hidden)) {
             throw new \InvalidArgumentException('non-nullable hidden cannot be null');
@@ -602,7 +602,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getI18nDescription()
+    public function get_i18n_description()
     {
         return $this->container['i18n_description'];
     }
@@ -614,7 +614,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setI18nDescription($i18n_description)
+    public function set_i18n_description($i18n_description)
     {
         if (is_null($i18n_description)) {
             throw new \InvalidArgumentException('non-nullable i18n_description cannot be null');
@@ -629,7 +629,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getI18nLabel()
+    public function get_i18n_label()
     {
         return $this->container['i18n_label'];
     }
@@ -641,7 +641,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setI18nLabel($i18n_label)
+    public function set_i18n_label($i18n_label)
     {
         if (is_null($i18n_label)) {
             throw new \InvalidArgumentException('non-nullable i18n_label cannot be null');
@@ -656,7 +656,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getPackageValue()
+    public function get_package_value()
     {
         return $this->container['package_value'];
     }
@@ -668,7 +668,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setPackageValue($package_value)
+    public function set_package_value($package_value)
     {
         if (is_null($package_value)) {
             throw new \InvalidArgumentException('non-nullable package_value cannot be null');
@@ -683,7 +683,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return bool|null
      */
-    public function getSecret()
+    public function get_secret()
     {
         return $this->container['secret'];
     }
@@ -695,7 +695,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setSecret($secret)
+    public function set_secret($secret)
     {
         if (is_null($secret)) {
             throw new \InvalidArgumentException('non-nullable secret cannot be null');
@@ -710,7 +710,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getSection()
+    public function get_section()
     {
         return $this->container['section'];
     }
@@ -722,7 +722,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setSection($section)
+    public function set_section($section)
     {
         if (is_null($section)) {
             throw new \InvalidArgumentException('non-nullable section cannot be null');
@@ -737,7 +737,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return int|null
      */
-    public function getSorter()
+    public function get_sorter()
     {
         return $this->container['sorter'];
     }
@@ -749,7 +749,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setSorter($sorter)
+    public function set_sorter($sorter)
     {
         if (is_null($sorter)) {
             throw new \InvalidArgumentException('non-nullable sorter cannot be null');
@@ -764,7 +764,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -776,7 +776,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -791,7 +791,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -803,7 +803,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -818,7 +818,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -830,7 +830,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');
@@ -845,7 +845,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getValueSource()
+    public function get_value_source()
     {
         return $this->container['value_source'];
     }
@@ -857,7 +857,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setValueSource($value_source)
+    public function set_value_source($value_source)
     {
         if (is_null($value_source)) {
             throw new \InvalidArgumentException('non-nullable value_source cannot be null');
@@ -872,7 +872,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return string|null
      */
-    public function getMeteorSettingsValue()
+    public function get_meteor_settings_value()
     {
         return $this->container['meteor_settings_value'];
     }
@@ -884,7 +884,7 @@ class GetApiV1LivechatIntegrationsSettings200ResponseSettingsInner implements Mo
      *
      * @return self
      */
-    public function setMeteorSettingsValue($meteor_settings_value)
+    public function set_meteor_settings_value($meteor_settings_value)
     {
         if (is_null($meteor_settings_value)) {
             throw new \InvalidArgumentException('non-nullable meteor_settings_value cannot be null');

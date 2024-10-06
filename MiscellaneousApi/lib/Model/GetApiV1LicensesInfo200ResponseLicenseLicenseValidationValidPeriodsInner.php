@@ -179,8 +179,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner i
      * @var string[]
      */
     protected static $setters = [
-        'valid_until' => 'setValidUntil',
-        'invalid_behavior' => 'setInvalidBehavior'
+        'valid_until' => 'set_valid_until',
+        'invalid_behavior' => 'set_invalid_behavior'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner i
      * @var string[]
      */
     protected static $getters = [
-        'valid_until' => 'getValidUntil',
-        'invalid_behavior' => 'getInvalidBehavior'
+        'valid_until' => 'get_valid_until',
+        'invalid_behavior' => 'get_invalid_behavior'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner i
      *
      * @return string|null
      */
-    public function getValidUntil()
+    public function get_valid_until()
     {
         return $this->container['valid_until'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner i
      *
      * @return self
      */
-    public function setValidUntil($valid_until)
+    public function set_valid_until($valid_until)
     {
         if (is_null($valid_until)) {
             throw new \InvalidArgumentException('non-nullable valid_until cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner i
      *
      * @return string|null
      */
-    public function getInvalidBehavior()
+    public function get_invalid_behavior()
     {
         return $this->container['invalid_behavior'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner i
      *
      * @return self
      */
-    public function setInvalidBehavior($invalid_behavior)
+    public function set_invalid_behavior($invalid_behavior)
     {
         if (is_null($invalid_behavior)) {
             throw new \InvalidArgumentException('non-nullable invalid_behavior cannot be null');

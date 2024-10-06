@@ -183,9 +183,9 @@ class GetApiV1Statistics200ResponseServicesLdapEe implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'sync_active_state' => 'setSyncActiveState',
-        'sync_teams' => 'setSyncTeams',
-        'sync_roles' => 'setSyncRoles'
+        'sync_active_state' => 'set_sync_active_state',
+        'sync_teams' => 'set_sync_teams',
+        'sync_roles' => 'set_sync_roles'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1Statistics200ResponseServicesLdapEe implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'sync_active_state' => 'getSyncActiveState',
-        'sync_teams' => 'getSyncTeams',
-        'sync_roles' => 'getSyncRoles'
+        'sync_active_state' => 'get_sync_active_state',
+        'sync_teams' => 'get_sync_teams',
+        'sync_roles' => 'get_sync_roles'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1Statistics200ResponseServicesLdapEe implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getSyncActiveState()
+    public function get_sync_active_state()
     {
         return $this->container['sync_active_state'];
     }
@@ -320,7 +320,7 @@ class GetApiV1Statistics200ResponseServicesLdapEe implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSyncActiveState($sync_active_state)
+    public function set_sync_active_state($sync_active_state)
     {
         if (is_null($sync_active_state)) {
             throw new \InvalidArgumentException('non-nullable sync_active_state cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1Statistics200ResponseServicesLdapEe implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getSyncTeams()
+    public function get_sync_teams()
     {
         return $this->container['sync_teams'];
     }
@@ -347,7 +347,7 @@ class GetApiV1Statistics200ResponseServicesLdapEe implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSyncTeams($sync_teams)
+    public function set_sync_teams($sync_teams)
     {
         if (is_null($sync_teams)) {
             throw new \InvalidArgumentException('non-nullable sync_teams cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1Statistics200ResponseServicesLdapEe implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getSyncRoles()
+    public function get_sync_roles()
     {
         return $this->container['sync_roles'];
     }
@@ -374,7 +374,7 @@ class GetApiV1Statistics200ResponseServicesLdapEe implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSyncRoles($sync_roles)
+    public function set_sync_roles($sync_roles)
     {
         if (is_null($sync_roles)) {
             throw new \InvalidArgumentException('non-nullable sync_roles cannot be null');

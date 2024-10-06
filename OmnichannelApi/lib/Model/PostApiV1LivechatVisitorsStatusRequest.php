@@ -179,8 +179,8 @@ class PostApiV1LivechatVisitorsStatusRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'status' => 'setStatus'
+        'token' => 'set_token',
+        'status' => 'set_status'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatVisitorsStatusRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'status' => 'getStatus'
+        'token' => 'get_token',
+        'status' => 'get_status'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1LivechatVisitorsStatusRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -319,7 +319,7 @@ class PostApiV1LivechatVisitorsStatusRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1LivechatVisitorsStatusRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -346,7 +346,7 @@ class PostApiV1LivechatVisitorsStatusRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');

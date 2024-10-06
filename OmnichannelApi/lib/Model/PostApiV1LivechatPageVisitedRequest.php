@@ -183,9 +183,9 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'rid' => 'setRid',
-        'page_info' => 'setPageInfo'
+        'token' => 'set_token',
+        'rid' => 'set_rid',
+        'page_info' => 'set_page_info'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'rid' => 'getRid',
-        'page_info' => 'getPageInfo'
+        'token' => 'get_token',
+        'rid' => 'get_rid',
+        'page_info' => 'get_page_info'
     ];
 
     /**
@@ -314,7 +314,7 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -326,7 +326,7 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -341,7 +341,7 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -353,7 +353,7 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -368,7 +368,7 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisitedRequestPageInfo
      */
-    public function getPageInfo()
+    public function get_page_info()
     {
         return $this->container['page_info'];
     }
@@ -380,7 +380,7 @@ class PostApiV1LivechatPageVisitedRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setPageInfo($page_info)
+    public function set_page_info($page_info)
     {
         if (is_null($page_info)) {
             throw new \InvalidArgumentException('non-nullable page_info cannot be null');

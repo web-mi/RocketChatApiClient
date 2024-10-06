@@ -223,19 +223,19 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'label' => 'setLabel',
-        'scope' => 'setScope',
-        'visibility' => 'setVisibility',
-        'regexp' => 'setRegexp',
-        'searchable' => 'setSearchable',
-        'type' => 'setType',
-        'required' => 'setRequired',
-        'default_value' => 'setDefaultValue',
-        'options' => 'setOptions',
-        'public' => 'setPublic',
-        '_updated_at' => 'setUpdatedAt',
-        'id' => 'setId'
+        '_id' => 'set__id',
+        'label' => 'set_label',
+        'scope' => 'set_scope',
+        'visibility' => 'set_visibility',
+        'regexp' => 'set_regexp',
+        'searchable' => 'set_searchable',
+        'type' => 'set_type',
+        'required' => 'set_required',
+        'default_value' => 'set_default_value',
+        'options' => 'set_options',
+        'public' => 'set_public',
+        '_updated_at' => 'set__updated_at',
+        'id' => 'set_id'
     ];
 
     /**
@@ -244,19 +244,19 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'label' => 'getLabel',
-        'scope' => 'getScope',
-        'visibility' => 'getVisibility',
-        'regexp' => 'getRegexp',
-        'searchable' => 'getSearchable',
-        'type' => 'getType',
-        'required' => 'getRequired',
-        'default_value' => 'getDefaultValue',
-        'options' => 'getOptions',
-        'public' => 'getPublic',
-        '_updated_at' => 'getUpdatedAt',
-        'id' => 'getId'
+        '_id' => 'get__id',
+        'label' => 'get_label',
+        'scope' => 'get_scope',
+        'visibility' => 'get_visibility',
+        'regexp' => 'get_regexp',
+        'searchable' => 'get_searchable',
+        'type' => 'get_type',
+        'required' => 'get_required',
+        'default_value' => 'get_default_value',
+        'options' => 'get_options',
+        'public' => 'get_public',
+        '_updated_at' => 'get__updated_at',
+        'id' => 'get_id'
     ];
 
     /**
@@ -378,7 +378,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -390,7 +390,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -405,7 +405,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getLabel()
+    public function get_label()
     {
         return $this->container['label'];
     }
@@ -417,7 +417,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setLabel($label)
+    public function set_label($label)
     {
         if (is_null($label)) {
             throw new \InvalidArgumentException('non-nullable label cannot be null');
@@ -432,7 +432,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -444,7 +444,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');
@@ -459,7 +459,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getVisibility()
+    public function get_visibility()
     {
         return $this->container['visibility'];
     }
@@ -471,7 +471,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setVisibility($visibility)
+    public function set_visibility($visibility)
     {
         if (is_null($visibility)) {
             throw new \InvalidArgumentException('non-nullable visibility cannot be null');
@@ -486,7 +486,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getRegexp()
+    public function get_regexp()
     {
         return $this->container['regexp'];
     }
@@ -498,7 +498,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setRegexp($regexp)
+    public function set_regexp($regexp)
     {
         if (is_null($regexp)) {
             throw new \InvalidArgumentException('non-nullable regexp cannot be null');
@@ -513,7 +513,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return bool|null
      */
-    public function getSearchable()
+    public function get_searchable()
     {
         return $this->container['searchable'];
     }
@@ -525,7 +525,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setSearchable($searchable)
+    public function set_searchable($searchable)
     {
         if (is_null($searchable)) {
             throw new \InvalidArgumentException('non-nullable searchable cannot be null');
@@ -540,7 +540,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -552,7 +552,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -567,7 +567,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return bool|null
      */
-    public function getRequired()
+    public function get_required()
     {
         return $this->container['required'];
     }
@@ -579,7 +579,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setRequired($required)
+    public function set_required($required)
     {
         if (is_null($required)) {
             throw new \InvalidArgumentException('non-nullable required cannot be null');
@@ -594,7 +594,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getDefaultValue()
+    public function get_default_value()
     {
         return $this->container['default_value'];
     }
@@ -606,7 +606,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setDefaultValue($default_value)
+    public function set_default_value($default_value)
     {
         if (is_null($default_value)) {
             throw new \InvalidArgumentException('non-nullable default_value cannot be null');
@@ -621,7 +621,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getOptions()
+    public function get_options()
     {
         return $this->container['options'];
     }
@@ -633,7 +633,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setOptions($options)
+    public function set_options($options)
     {
         if (is_null($options)) {
             throw new \InvalidArgumentException('non-nullable options cannot be null');
@@ -648,7 +648,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return bool|null
      */
-    public function getPublic()
+    public function get_public()
     {
         return $this->container['public'];
     }
@@ -660,7 +660,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setPublic($public)
+    public function set_public($public)
     {
         if (is_null($public)) {
             throw new \InvalidArgumentException('non-nullable public cannot be null');
@@ -675,7 +675,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -687,7 +687,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -702,7 +702,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return string|null
      */
-    public function getId()
+    public function get_id()
     {
         return $this->container['id'];
     }
@@ -714,7 +714,7 @@ class GetApiV1LivechatCustomFields200ResponseCustomFieldsInner implements ModelI
      *
      * @return self
      */
-    public function setId($id)
+    public function set_id($id)
     {
         if (is_null($id)) {
             throw new \InvalidArgumentException('non-nullable id cannot be null');

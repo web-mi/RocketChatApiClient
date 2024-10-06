@@ -179,8 +179,8 @@ class PostApiV1ChannelsInviteRequestOneOf1 implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'user_ids' => 'setUserIds'
+        'room_id' => 'set_room_id',
+        'user_ids' => 'set_user_ids'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsInviteRequestOneOf1 implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'user_ids' => 'getUserIds'
+        'room_id' => 'get_room_id',
+        'user_ids' => 'get_user_ids'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1ChannelsInviteRequestOneOf1 implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1ChannelsInviteRequestOneOf1 implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1ChannelsInviteRequestOneOf1 implements ModelInterface, ArrayAcces
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]
      */
-    public function getUserIds()
+    public function get_user_ids()
     {
         return $this->container['user_ids'];
     }
@@ -346,7 +346,7 @@ class PostApiV1ChannelsInviteRequestOneOf1 implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setUserIds($user_ids)
+    public function set_user_ids($user_ids)
     {
         if (is_null($user_ids)) {
             throw new \InvalidArgumentException('non-nullable user_ids cannot be null');

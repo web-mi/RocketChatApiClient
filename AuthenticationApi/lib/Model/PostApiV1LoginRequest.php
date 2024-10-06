@@ -187,10 +187,10 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $setters = [
-        'user' => 'setUser',
-        'password' => 'setPassword',
-        'resume' => 'setResume',
-        'code' => 'setCode'
+        'user' => 'set_user',
+        'password' => 'set_password',
+        'resume' => 'set_resume',
+        'code' => 'set_code'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      * @var string[]
      */
     protected static $getters = [
-        'user' => 'getUser',
-        'password' => 'getPassword',
-        'resume' => 'getResume',
-        'code' => 'getCode'
+        'user' => 'get_user',
+        'password' => 'get_password',
+        'resume' => 'get_resume',
+        'code' => 'get_code'
     ];
 
     /**
@@ -315,7 +315,7 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getUser()
+    public function get_user()
     {
         return $this->container['user'];
     }
@@ -327,7 +327,7 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setUser($user)
+    public function set_user($user)
     {
         if (is_null($user)) {
             throw new \InvalidArgumentException('non-nullable user cannot be null');
@@ -342,7 +342,7 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getPassword()
+    public function get_password()
     {
         return $this->container['password'];
     }
@@ -354,7 +354,7 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setPassword($password)
+    public function set_password($password)
     {
         if (is_null($password)) {
             throw new \InvalidArgumentException('non-nullable password cannot be null');
@@ -369,7 +369,7 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getResume()
+    public function get_resume()
     {
         return $this->container['resume'];
     }
@@ -381,7 +381,7 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setResume($resume)
+    public function set_resume($resume)
     {
         if (is_null($resume)) {
             throw new \InvalidArgumentException('non-nullable resume cannot be null');
@@ -396,7 +396,7 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return string|null
      */
-    public function getCode()
+    public function get_code()
     {
         return $this->container['code'];
     }
@@ -408,7 +408,7 @@ class PostApiV1LoginRequest implements ModelInterface, ArrayAccess, \JsonSeriali
      *
      * @return self
      */
-    public function setCode($code)
+    public function set_code($code)
     {
         if (is_null($code)) {
             throw new \InvalidArgumentException('non-nullable code cannot be null');

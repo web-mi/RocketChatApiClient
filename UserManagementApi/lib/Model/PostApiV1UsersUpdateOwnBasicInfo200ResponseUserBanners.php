@@ -179,8 +179,8 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        'version_update_6_0_0' => 'setVersionUpdate600',
-        'version_update_6_2_8' => 'setVersionUpdate628'
+        'version_update_6_0_0' => 'set_version_update_6_0_0',
+        'version_update_6_2_8' => 'set_version_update_6_2_8'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        'version_update_6_0_0' => 'getVersionUpdate600',
-        'version_update_6_2_8' => 'getVersionUpdate628'
+        'version_update_6_0_0' => 'get_version_update_6_0_0',
+        'version_update_6_2_8' => 'get_version_update_6_2_8'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate600|null
      */
-    public function getVersionUpdate600()
+    public function get_version_update_6_0_0()
     {
         return $this->container['version_update_6_0_0'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
      *
      * @return self
      */
-    public function setVersionUpdate600($version_update_6_0_0)
+    public function set_version_update_6_0_0($version_update_6_0_0)
     {
         if (is_null($version_update_6_0_0)) {
             throw new \InvalidArgumentException('non-nullable version_update_6_0_0 cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBannersVersionUpdate628|null
      */
-    public function getVersionUpdate628()
+    public function get_version_update_6_2_8()
     {
         return $this->container['version_update_6_2_8'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserBanners implements ModelInt
      *
      * @return self
      */
-    public function setVersionUpdate628($version_update_6_2_8)
+    public function set_version_update_6_2_8($version_update_6_2_8)
     {
         if (is_null($version_update_6_2_8)) {
             throw new \InvalidArgumentException('non-nullable version_update_6_2_8 cannot be null');

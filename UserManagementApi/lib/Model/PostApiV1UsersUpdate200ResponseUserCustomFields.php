@@ -175,7 +175,7 @@ class PostApiV1UsersUpdate200ResponseUserCustomFields implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'twitter' => 'setTwitter'
+        'twitter' => 'set_twitter'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersUpdate200ResponseUserCustomFields implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'twitter' => 'getTwitter'
+        'twitter' => 'get_twitter'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersUpdate200ResponseUserCustomFields implements ModelInterface,
      *
      * @return string|null
      */
-    public function getTwitter()
+    public function get_twitter()
     {
         return $this->container['twitter'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersUpdate200ResponseUserCustomFields implements ModelInterface,
      *
      * @return self
      */
-    public function setTwitter($twitter)
+    public function set_twitter($twitter)
     {
         if (is_null($twitter)) {
             throw new \InvalidArgumentException('non-nullable twitter cannot be null');

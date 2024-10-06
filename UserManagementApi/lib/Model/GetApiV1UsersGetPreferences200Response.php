@@ -179,8 +179,8 @@ class GetApiV1UsersGetPreferences200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'preferences' => 'setPreferences',
-        'success' => 'setSuccess'
+        'preferences' => 'set_preferences',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1UsersGetPreferences200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'preferences' => 'getPreferences',
-        'success' => 'getSuccess'
+        'preferences' => 'get_preferences',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1UsersGetPreferences200Response implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPreferences200ResponsePreferences|null
      */
-    public function getPreferences()
+    public function get_preferences()
     {
         return $this->container['preferences'];
     }
@@ -313,7 +313,7 @@ class GetApiV1UsersGetPreferences200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setPreferences($preferences)
+    public function set_preferences($preferences)
     {
         if (is_null($preferences)) {
             throw new \InvalidArgumentException('non-nullable preferences cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1UsersGetPreferences200Response implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1UsersGetPreferences200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

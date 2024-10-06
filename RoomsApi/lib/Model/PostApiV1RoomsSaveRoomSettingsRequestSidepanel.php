@@ -176,7 +176,7 @@ class PostApiV1RoomsSaveRoomSettingsRequestSidepanel implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'items' => 'setItems'
+        'items' => 'set_items'
     ];
 
     /**
@@ -185,7 +185,7 @@ class PostApiV1RoomsSaveRoomSettingsRequestSidepanel implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'items' => 'getItems'
+        'items' => 'get_items'
     ];
 
     /**
@@ -295,7 +295,7 @@ class PostApiV1RoomsSaveRoomSettingsRequestSidepanel implements ModelInterface, 
      *
      * @return string[]|null
      */
-    public function getItems()
+    public function get_items()
     {
         return $this->container['items'];
     }
@@ -307,7 +307,7 @@ class PostApiV1RoomsSaveRoomSettingsRequestSidepanel implements ModelInterface, 
      *
      * @return self
      */
-    public function setItems($items)
+    public function set_items($items)
     {
         if (is_null($items)) {
             throw new \InvalidArgumentException('non-nullable items cannot be null');

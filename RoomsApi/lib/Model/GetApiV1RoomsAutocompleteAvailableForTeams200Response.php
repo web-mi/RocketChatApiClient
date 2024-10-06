@@ -179,8 +179,8 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        'items' => 'setItems',
-        'success' => 'setSuccess'
+        'items' => 'set_items',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        'items' => 'getItems',
-        'success' => 'getSuccess'
+        'items' => 'get_items',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner[]|null
      */
-    public function getItems()
+    public function get_items()
     {
         return $this->container['items'];
     }
@@ -313,7 +313,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
      *
      * @return self
      */
-    public function setItems($items)
+    public function set_items($items)
     {
         if (is_null($items)) {
             throw new \InvalidArgumentException('non-nullable items cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200Response implements ModelInte
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

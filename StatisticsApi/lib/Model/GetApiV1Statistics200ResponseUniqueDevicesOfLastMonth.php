@@ -187,10 +187,10 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        'year' => 'setYear',
-        'month' => 'setMonth',
-        'day' => 'setDay',
-        'data' => 'setData'
+        'year' => 'set_year',
+        'month' => 'set_month',
+        'day' => 'set_day',
+        'data' => 'set_data'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        'year' => 'getYear',
-        'month' => 'getMonth',
-        'day' => 'getDay',
-        'data' => 'getData'
+        'year' => 'get_year',
+        'month' => 'get_month',
+        'day' => 'get_day',
+        'data' => 'get_data'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      *
      * @return int|null
      */
-    public function getYear()
+    public function get_year()
     {
         return $this->container['year'];
     }
@@ -327,7 +327,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      *
      * @return self
      */
-    public function setYear($year)
+    public function set_year($year)
     {
         if (is_null($year)) {
             throw new \InvalidArgumentException('non-nullable year cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      *
      * @return int|null
      */
-    public function getMonth()
+    public function get_month()
     {
         return $this->container['month'];
     }
@@ -354,7 +354,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      *
      * @return self
      */
-    public function setMonth($month)
+    public function set_month($month)
     {
         if (is_null($month)) {
             throw new \InvalidArgumentException('non-nullable month cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      *
      * @return int|null
      */
-    public function getDay()
+    public function get_day()
     {
         return $this->container['day'];
     }
@@ -381,7 +381,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      *
      * @return self
      */
-    public function setDay($day)
+    public function set_day($day)
     {
         if (is_null($day)) {
             throw new \InvalidArgumentException('non-nullable day cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueDevicesOfLastMonthDataInner[]|null
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -408,7 +408,7 @@ class GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth implements ModelInte
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');

@@ -207,15 +207,15 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'alias' => 'setAlias',
-        'msg' => 'setMsg',
-        'parse_urls' => 'setParseUrls',
-        'groupable' => 'setGroupable',
-        'ts' => 'setTs',
-        'u' => 'setU',
-        'rid' => 'setRid',
-        '_updated_at' => 'setUpdatedAt',
-        '_id' => 'setId'
+        'alias' => 'set_alias',
+        'msg' => 'set_msg',
+        'parse_urls' => 'set_parse_urls',
+        'groupable' => 'set_groupable',
+        'ts' => 'set_ts',
+        'u' => 'set_u',
+        'rid' => 'set_rid',
+        '_updated_at' => 'set__updated_at',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -224,15 +224,15 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'alias' => 'getAlias',
-        'msg' => 'getMsg',
-        'parse_urls' => 'getParseUrls',
-        'groupable' => 'getGroupable',
-        'ts' => 'getTs',
-        'u' => 'getU',
-        'rid' => 'getRid',
-        '_updated_at' => 'getUpdatedAt',
-        '_id' => 'getId'
+        'alias' => 'get_alias',
+        'msg' => 'get_msg',
+        'parse_urls' => 'get_parse_urls',
+        'groupable' => 'get_groupable',
+        'ts' => 'get_ts',
+        'u' => 'get_u',
+        'rid' => 'get_rid',
+        '_updated_at' => 'get__updated_at',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -350,7 +350,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getAlias()
+    public function get_alias()
     {
         return $this->container['alias'];
     }
@@ -362,7 +362,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setAlias($alias)
+    public function set_alias($alias)
     {
         if (is_null($alias)) {
             throw new \InvalidArgumentException('non-nullable alias cannot be null');
@@ -377,7 +377,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -389,7 +389,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -404,7 +404,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getParseUrls()
+    public function get_parse_urls()
     {
         return $this->container['parse_urls'];
     }
@@ -416,7 +416,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setParseUrls($parse_urls)
+    public function set_parse_urls($parse_urls)
     {
         if (is_null($parse_urls)) {
             throw new \InvalidArgumentException('non-nullable parse_urls cannot be null');
@@ -431,7 +431,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getGroupable()
+    public function get_groupable()
     {
         return $this->container['groupable'];
     }
@@ -443,7 +443,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setGroupable($groupable)
+    public function set_groupable($groupable)
     {
         if (is_null($groupable)) {
             throw new \InvalidArgumentException('non-nullable groupable cannot be null');
@@ -458,7 +458,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -470,7 +470,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -485,7 +485,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -497,7 +497,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -512,7 +512,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -524,7 +524,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -539,7 +539,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -551,7 +551,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -566,7 +566,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -578,7 +578,7 @@ class PostApiV1ChatPostMessage200ResponseMessage implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

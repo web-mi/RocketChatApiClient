@@ -175,7 +175,7 @@ class PostApiV1UseInviteTokenRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken'
+        'token' => 'set_token'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UseInviteTokenRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken'
+        'token' => 'get_token'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1UseInviteTokenRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -309,7 +309,7 @@ class PostApiV1UseInviteTokenRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');

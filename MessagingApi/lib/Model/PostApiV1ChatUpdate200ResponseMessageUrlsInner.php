@@ -183,9 +183,9 @@ class PostApiV1ChatUpdate200ResponseMessageUrlsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'url' => 'setUrl',
-        'meta' => 'setMeta',
-        'ignore_parse' => 'setIgnoreParse'
+        'url' => 'set_url',
+        'meta' => 'set_meta',
+        'ignore_parse' => 'set_ignore_parse'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1ChatUpdate200ResponseMessageUrlsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'url' => 'getUrl',
-        'meta' => 'getMeta',
-        'ignore_parse' => 'getIgnoreParse'
+        'url' => 'get_url',
+        'meta' => 'get_meta',
+        'ignore_parse' => 'get_ignore_parse'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1ChatUpdate200ResponseMessageUrlsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getUrl()
+    public function get_url()
     {
         return $this->container['url'];
     }
@@ -320,7 +320,7 @@ class PostApiV1ChatUpdate200ResponseMessageUrlsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setUrl($url)
+    public function set_url($url)
     {
         if (is_null($url)) {
             throw new \InvalidArgumentException('non-nullable url cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1ChatUpdate200ResponseMessageUrlsInner implements ModelInterface, 
      *
      * @return object|null
      */
-    public function getMeta()
+    public function get_meta()
     {
         return $this->container['meta'];
     }
@@ -347,7 +347,7 @@ class PostApiV1ChatUpdate200ResponseMessageUrlsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setMeta($meta)
+    public function set_meta($meta)
     {
         if (is_null($meta)) {
             throw new \InvalidArgumentException('non-nullable meta cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1ChatUpdate200ResponseMessageUrlsInner implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getIgnoreParse()
+    public function get_ignore_parse()
     {
         return $this->container['ignore_parse'];
     }
@@ -374,7 +374,7 @@ class PostApiV1ChatUpdate200ResponseMessageUrlsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setIgnoreParse($ignore_parse)
+    public function set_ignore_parse($ignore_parse)
     {
         if (is_null($ignore_parse)) {
             throw new \InvalidArgumentException('non-nullable ignore_parse cannot be null');

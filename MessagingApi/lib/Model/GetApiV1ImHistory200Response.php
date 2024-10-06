@@ -179,8 +179,8 @@ class GetApiV1ImHistory200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $setters = [
-        'messages' => 'setMessages',
-        'success' => 'setSuccess'
+        'messages' => 'set_messages',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ImHistory200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $getters = [
-        'messages' => 'getMessages',
-        'success' => 'getSuccess'
+        'messages' => 'get_messages',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ImHistory200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImHistory200ResponseMessagesInner[]|null
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ImHistory200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ImHistory200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ImHistory200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

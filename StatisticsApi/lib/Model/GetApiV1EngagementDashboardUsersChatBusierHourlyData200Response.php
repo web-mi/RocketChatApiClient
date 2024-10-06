@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response implements
      * @var string[]
      */
     protected static $setters = [
-        'hours' => 'setHours',
-        'success' => 'setSuccess'
+        'hours' => 'set_hours',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response implements
      * @var string[]
      */
     protected static $getters = [
-        'hours' => 'getHours',
-        'success' => 'getSuccess'
+        'hours' => 'get_hours',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response implements
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardUsersChatBusierHourlyData200ResponseHoursInner[]|null
      */
-    public function getHours()
+    public function get_hours()
     {
         return $this->container['hours'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response implements
      *
      * @return self
      */
-    public function setHours($hours)
+    public function set_hours($hours)
     {
         if (is_null($hours)) {
             throw new \InvalidArgumentException('non-nullable hours cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response implements
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardUsersChatBusierHourlyData200Response implements
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

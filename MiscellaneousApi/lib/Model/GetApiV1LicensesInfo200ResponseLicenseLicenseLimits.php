@@ -183,9 +183,9 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimits implements ModelInterf
      * @var string[]
      */
     protected static $setters = [
-        'guest_users' => 'setGuestUsers',
-        'rooms_per_guest' => 'setRoomsPerGuest',
-        'monthly_active_contacts' => 'setMonthlyActiveContacts'
+        'guest_users' => 'set_guest_users',
+        'rooms_per_guest' => 'set_rooms_per_guest',
+        'monthly_active_contacts' => 'set_monthly_active_contacts'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimits implements ModelInterf
      * @var string[]
      */
     protected static $getters = [
-        'guest_users' => 'getGuestUsers',
-        'rooms_per_guest' => 'getRoomsPerGuest',
-        'monthly_active_contacts' => 'getMonthlyActiveContacts'
+        'guest_users' => 'get_guest_users',
+        'rooms_per_guest' => 'get_rooms_per_guest',
+        'monthly_active_contacts' => 'get_monthly_active_contacts'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimits implements ModelInterf
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimitsGuestUsersInner[]|null
      */
-    public function getGuestUsers()
+    public function get_guest_users()
     {
         return $this->container['guest_users'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimits implements ModelInterf
      *
      * @return self
      */
-    public function setGuestUsers($guest_users)
+    public function set_guest_users($guest_users)
     {
         if (is_null($guest_users)) {
             throw new \InvalidArgumentException('non-nullable guest_users cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimits implements ModelInterf
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimitsGuestUsersInner[]|null
      */
-    public function getRoomsPerGuest()
+    public function get_rooms_per_guest()
     {
         return $this->container['rooms_per_guest'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimits implements ModelInterf
      *
      * @return self
      */
-    public function setRoomsPerGuest($rooms_per_guest)
+    public function set_rooms_per_guest($rooms_per_guest)
     {
         if (is_null($rooms_per_guest)) {
             throw new \InvalidArgumentException('non-nullable rooms_per_guest cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimits implements ModelInterf
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseLimitsGuestUsersInner[]|null
      */
-    public function getMonthlyActiveContacts()
+    public function get_monthly_active_contacts()
     {
         return $this->container['monthly_active_contacts'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimits implements ModelInterf
      *
      * @return self
      */
-    public function setMonthlyActiveContacts($monthly_active_contacts)
+    public function set_monthly_active_contacts($monthly_active_contacts)
     {
         if (is_null($monthly_active_contacts)) {
             throw new \InvalidArgumentException('non-nullable monthly_active_contacts cannot be null');

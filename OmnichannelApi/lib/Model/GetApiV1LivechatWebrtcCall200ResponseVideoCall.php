@@ -183,9 +183,9 @@ class GetApiV1LivechatWebrtcCall200ResponseVideoCall implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'provider' => 'setProvider',
-        'call_status' => 'setCallStatus'
+        'rid' => 'set_rid',
+        'provider' => 'set_provider',
+        'call_status' => 'set_call_status'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatWebrtcCall200ResponseVideoCall implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'provider' => 'getProvider',
-        'call_status' => 'getCallStatus'
+        'rid' => 'get_rid',
+        'provider' => 'get_provider',
+        'call_status' => 'get_call_status'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatWebrtcCall200ResponseVideoCall implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatWebrtcCall200ResponseVideoCall implements ModelInterface, 
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatWebrtcCall200ResponseVideoCall implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getProvider()
+    public function get_provider()
     {
         return $this->container['provider'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatWebrtcCall200ResponseVideoCall implements ModelInterface, 
      *
      * @return self
      */
-    public function setProvider($provider)
+    public function set_provider($provider)
     {
         if (is_null($provider)) {
             throw new \InvalidArgumentException('non-nullable provider cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatWebrtcCall200ResponseVideoCall implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getCallStatus()
+    public function get_call_status()
     {
         return $this->container['call_status'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatWebrtcCall200ResponseVideoCall implements ModelInterface, 
      *
      * @return self
      */
-    public function setCallStatus($call_status)
+    public function set_call_status($call_status)
     {
         if (is_null($call_status)) {
             throw new \InvalidArgumentException('non-nullable call_status cannot be null');

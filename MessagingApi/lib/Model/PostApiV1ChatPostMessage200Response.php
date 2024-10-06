@@ -187,10 +187,10 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'ts' => 'setTs',
-        'channel' => 'setChannel',
-        'message' => 'setMessage',
-        'success' => 'setSuccess'
+        'ts' => 'set_ts',
+        'channel' => 'set_channel',
+        'message' => 'set_message',
+        'success' => 'set_success'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'ts' => 'getTs',
-        'channel' => 'getChannel',
-        'message' => 'getMessage',
-        'success' => 'getSuccess'
+        'ts' => 'get_ts',
+        'channel' => 'get_channel',
+        'message' => 'get_message',
+        'success' => 'get_success'
     ];
 
     /**
@@ -315,7 +315,7 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      *
      * @return int|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -327,7 +327,7 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -342,7 +342,7 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getChannel()
+    public function get_channel()
     {
         return $this->container['channel'];
     }
@@ -354,7 +354,7 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setChannel($channel)
+    public function set_channel($channel)
     {
         if (is_null($channel)) {
             throw new \InvalidArgumentException('non-nullable channel cannot be null');
@@ -369,7 +369,7 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatPostMessage200ResponseMessage|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -381,7 +381,7 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -396,7 +396,7 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -408,7 +408,7 @@ class PostApiV1ChatPostMessage200Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

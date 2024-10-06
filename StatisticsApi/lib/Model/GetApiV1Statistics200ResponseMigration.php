@@ -195,12 +195,12 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        '_updated_at' => 'setUpdatedAt',
-        'locked' => 'setLocked',
-        'version' => 'setVersion',
-        'build_at' => 'setBuildAt',
-        'locked_at' => 'setLockedAt'
+        '_id' => 'set__id',
+        '_updated_at' => 'set__updated_at',
+        'locked' => 'set_locked',
+        'version' => 'set_version',
+        'build_at' => 'set_build_at',
+        'locked_at' => 'set_locked_at'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        '_updated_at' => 'getUpdatedAt',
-        'locked' => 'getLocked',
-        'version' => 'getVersion',
-        'build_at' => 'getBuildAt',
-        'locked_at' => 'getLockedAt'
+        '_id' => 'get__id',
+        '_updated_at' => 'get__updated_at',
+        'locked' => 'get_locked',
+        'version' => 'get_version',
+        'build_at' => 'get_build_at',
+        'locked_at' => 'get_locked_at'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -368,7 +368,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getLocked()
+    public function get_locked()
     {
         return $this->container['locked'];
     }
@@ -395,7 +395,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setLocked($locked)
+    public function set_locked($locked)
     {
         if (is_null($locked)) {
             throw new \InvalidArgumentException('non-nullable locked cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return int|null
      */
-    public function getVersion()
+    public function get_version()
     {
         return $this->container['version'];
     }
@@ -422,7 +422,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setVersion($version)
+    public function set_version($version)
     {
         if (is_null($version)) {
             throw new \InvalidArgumentException('non-nullable version cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getBuildAt()
+    public function get_build_at()
     {
         return $this->container['build_at'];
     }
@@ -449,7 +449,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setBuildAt($build_at)
+    public function set_build_at($build_at)
     {
         if (is_null($build_at)) {
             throw new \InvalidArgumentException('non-nullable build_at cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getLockedAt()
+    public function get_locked_at()
     {
         return $this->container['locked_at'];
     }
@@ -476,7 +476,7 @@ class GetApiV1Statistics200ResponseMigration implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setLockedAt($locked_at)
+    public function set_locked_at($locked_at)
     {
         if (is_null($locked_at)) {
             throw new \InvalidArgumentException('non-nullable locked_at cannot be null');

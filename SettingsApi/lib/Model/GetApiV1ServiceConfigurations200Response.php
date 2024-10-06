@@ -179,8 +179,8 @@ class GetApiV1ServiceConfigurations200Response implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'configurations' => 'setConfigurations',
-        'success' => 'setSuccess'
+        'configurations' => 'set_configurations',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ServiceConfigurations200Response implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'configurations' => 'getConfigurations',
-        'success' => 'getSuccess'
+        'configurations' => 'get_configurations',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ServiceConfigurations200Response implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ServiceConfigurations200ResponseConfigurationsInner[]|null
      */
-    public function getConfigurations()
+    public function get_configurations()
     {
         return $this->container['configurations'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ServiceConfigurations200Response implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setConfigurations($configurations)
+    public function set_configurations($configurations)
     {
         if (is_null($configurations)) {
             throw new \InvalidArgumentException('non-nullable configurations cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ServiceConfigurations200Response implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ServiceConfigurations200Response implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

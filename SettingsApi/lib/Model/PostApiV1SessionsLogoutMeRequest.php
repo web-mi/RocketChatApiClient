@@ -175,7 +175,7 @@ class PostApiV1SessionsLogoutMeRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'session_id' => 'setSessionId'
+        'session_id' => 'set_session_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1SessionsLogoutMeRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'session_id' => 'getSessionId'
+        'session_id' => 'get_session_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1SessionsLogoutMeRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getSessionId()
+    public function get_session_id()
     {
         return $this->container['session_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1SessionsLogoutMeRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setSessionId($session_id)
+    public function set_session_id($session_id)
     {
         if (is_null($session_id)) {
             throw new \InvalidArgumentException('non-nullable session_id cannot be null');

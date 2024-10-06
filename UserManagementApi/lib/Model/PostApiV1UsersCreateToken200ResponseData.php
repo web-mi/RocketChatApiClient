@@ -179,8 +179,8 @@ class PostApiV1UsersCreateToken200ResponseData implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'user_id' => 'setUserId',
-        'auth_token' => 'setAuthToken'
+        'user_id' => 'set_user_id',
+        'auth_token' => 'set_auth_token'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersCreateToken200ResponseData implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'user_id' => 'getUserId',
-        'auth_token' => 'getAuthToken'
+        'user_id' => 'get_user_id',
+        'auth_token' => 'get_auth_token'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersCreateToken200ResponseData implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersCreateToken200ResponseData implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersCreateToken200ResponseData implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getAuthToken()
+    public function get_auth_token()
     {
         return $this->container['auth_token'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersCreateToken200ResponseData implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setAuthToken($auth_token)
+    public function set_auth_token($auth_token)
     {
         if (is_null($auth_token)) {
             throw new \InvalidArgumentException('non-nullable auth_token cannot be null');

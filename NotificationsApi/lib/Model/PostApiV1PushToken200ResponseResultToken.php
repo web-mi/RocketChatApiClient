@@ -175,7 +175,7 @@ class PostApiV1PushToken200ResponseResultToken implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'gcm' => 'setGcm'
+        'gcm' => 'set_gcm'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1PushToken200ResponseResultToken implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'gcm' => 'getGcm'
+        'gcm' => 'get_gcm'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1PushToken200ResponseResultToken implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getGcm()
+    public function get_gcm()
     {
         return $this->container['gcm'];
     }
@@ -306,7 +306,7 @@ class PostApiV1PushToken200ResponseResultToken implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setGcm($gcm)
+    public function set_gcm($gcm)
     {
         if (is_null($gcm)) {
             throw new \InvalidArgumentException('non-nullable gcm cannot be null');

@@ -208,15 +208,15 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'desktop_notifications' => 'setDesktopNotifications',
-        'disable_notifications' => 'setDisableNotifications',
-        'email_notifications' => 'setEmailNotifications',
-        'audio_notification_value' => 'setAudioNotificationValue',
-        'desktop_notification_duration' => 'setDesktopNotificationDuration',
-        'audio_notifications' => 'setAudioNotifications',
-        'unread_alert' => 'setUnreadAlert',
-        'hide_unread_status' => 'setHideUnreadStatus',
-        'mobile_push_notifications' => 'setMobilePushNotifications'
+        'desktop_notifications' => 'set_desktop_notifications',
+        'disable_notifications' => 'set_disable_notifications',
+        'email_notifications' => 'set_email_notifications',
+        'audio_notification_value' => 'set_audio_notification_value',
+        'desktop_notification_duration' => 'set_desktop_notification_duration',
+        'audio_notifications' => 'set_audio_notifications',
+        'unread_alert' => 'set_unread_alert',
+        'hide_unread_status' => 'set_hide_unread_status',
+        'mobile_push_notifications' => 'set_mobile_push_notifications'
     ];
 
     /**
@@ -225,15 +225,15 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'desktop_notifications' => 'getDesktopNotifications',
-        'disable_notifications' => 'getDisableNotifications',
-        'email_notifications' => 'getEmailNotifications',
-        'audio_notification_value' => 'getAudioNotificationValue',
-        'desktop_notification_duration' => 'getDesktopNotificationDuration',
-        'audio_notifications' => 'getAudioNotifications',
-        'unread_alert' => 'getUnreadAlert',
-        'hide_unread_status' => 'getHideUnreadStatus',
-        'mobile_push_notifications' => 'getMobilePushNotifications'
+        'desktop_notifications' => 'get_desktop_notifications',
+        'disable_notifications' => 'get_disable_notifications',
+        'email_notifications' => 'get_email_notifications',
+        'audio_notification_value' => 'get_audio_notification_value',
+        'desktop_notification_duration' => 'get_desktop_notification_duration',
+        'audio_notifications' => 'get_audio_notifications',
+        'unread_alert' => 'get_unread_alert',
+        'hide_unread_status' => 'get_hide_unread_status',
+        'mobile_push_notifications' => 'get_mobile_push_notifications'
     ];
 
     /**
@@ -351,7 +351,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return string|null
      */
-    public function getDesktopNotifications()
+    public function get_desktop_notifications()
     {
         return $this->container['desktop_notifications'];
     }
@@ -363,7 +363,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return self
      */
-    public function setDesktopNotifications($desktop_notifications)
+    public function set_desktop_notifications($desktop_notifications)
     {
         if (is_null($desktop_notifications)) {
             throw new \InvalidArgumentException('non-nullable desktop_notifications cannot be null');
@@ -378,7 +378,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return string|null
      */
-    public function getDisableNotifications()
+    public function get_disable_notifications()
     {
         return $this->container['disable_notifications'];
     }
@@ -390,7 +390,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return self
      */
-    public function setDisableNotifications($disable_notifications)
+    public function set_disable_notifications($disable_notifications)
     {
         if (is_null($disable_notifications)) {
             throw new \InvalidArgumentException('non-nullable disable_notifications cannot be null');
@@ -405,7 +405,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return string|null
      */
-    public function getEmailNotifications()
+    public function get_email_notifications()
     {
         return $this->container['email_notifications'];
     }
@@ -417,7 +417,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return self
      */
-    public function setEmailNotifications($email_notifications)
+    public function set_email_notifications($email_notifications)
     {
         if (is_null($email_notifications)) {
             throw new \InvalidArgumentException('non-nullable email_notifications cannot be null');
@@ -432,7 +432,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return string|null
      */
-    public function getAudioNotificationValue()
+    public function get_audio_notification_value()
     {
         return $this->container['audio_notification_value'];
     }
@@ -444,7 +444,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return self
      */
-    public function setAudioNotificationValue($audio_notification_value)
+    public function set_audio_notification_value($audio_notification_value)
     {
         if (is_null($audio_notification_value)) {
             throw new \InvalidArgumentException('non-nullable audio_notification_value cannot be null');
@@ -459,7 +459,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return string|null
      */
-    public function getDesktopNotificationDuration()
+    public function get_desktop_notification_duration()
     {
         return $this->container['desktop_notification_duration'];
     }
@@ -471,7 +471,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return self
      */
-    public function setDesktopNotificationDuration($desktop_notification_duration)
+    public function set_desktop_notification_duration($desktop_notification_duration)
     {
         if (is_null($desktop_notification_duration)) {
             throw new \InvalidArgumentException('non-nullable desktop_notification_duration cannot be null');
@@ -486,7 +486,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return string|null
      */
-    public function getAudioNotifications()
+    public function get_audio_notifications()
     {
         return $this->container['audio_notifications'];
     }
@@ -498,7 +498,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return self
      */
-    public function setAudioNotifications($audio_notifications)
+    public function set_audio_notifications($audio_notifications)
     {
         if (is_null($audio_notifications)) {
             throw new \InvalidArgumentException('non-nullable audio_notifications cannot be null');
@@ -513,7 +513,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return string|null
      */
-    public function getUnreadAlert()
+    public function get_unread_alert()
     {
         return $this->container['unread_alert'];
     }
@@ -525,7 +525,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return self
      */
-    public function setUnreadAlert($unread_alert)
+    public function set_unread_alert($unread_alert)
     {
         if (is_null($unread_alert)) {
             throw new \InvalidArgumentException('non-nullable unread_alert cannot be null');
@@ -540,7 +540,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return string|null
      */
-    public function getHideUnreadStatus()
+    public function get_hide_unread_status()
     {
         return $this->container['hide_unread_status'];
     }
@@ -552,7 +552,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return self
      */
-    public function setHideUnreadStatus($hide_unread_status)
+    public function set_hide_unread_status($hide_unread_status)
     {
         if (is_null($hide_unread_status)) {
             throw new \InvalidArgumentException('non-nullable hide_unread_status cannot be null');
@@ -567,7 +567,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return string|null
      */
-    public function getMobilePushNotifications()
+    public function get_mobile_push_notifications()
     {
         return $this->container['mobile_push_notifications'];
     }
@@ -579,7 +579,7 @@ class PostApiV1RoomsSaveNotificationRequestNotifications implements ModelInterfa
      *
      * @return self
      */
-    public function setMobilePushNotifications($mobile_push_notifications)
+    public function set_mobile_push_notifications($mobile_push_notifications)
     {
         if (is_null($mobile_push_notifications)) {
             throw new \InvalidArgumentException('non-nullable mobile_push_notifications cannot be null');

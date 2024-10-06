@@ -183,9 +183,9 @@ class GetApiV1LicensesGet200ResponseLicensesInnerMeta implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'trial' => 'setTrial',
-        'trial_end' => 'setTrialEnd',
-        'workspace_id' => 'setWorkspaceId'
+        'trial' => 'set_trial',
+        'trial_end' => 'set_trial_end',
+        'workspace_id' => 'set_workspace_id'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LicensesGet200ResponseLicensesInnerMeta implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'trial' => 'getTrial',
-        'trial_end' => 'getTrialEnd',
-        'workspace_id' => 'getWorkspaceId'
+        'trial' => 'get_trial',
+        'trial_end' => 'get_trial_end',
+        'workspace_id' => 'get_workspace_id'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerMeta implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getTrial()
+    public function get_trial()
     {
         return $this->container['trial'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerMeta implements ModelInterface,
      *
      * @return self
      */
-    public function setTrial($trial)
+    public function set_trial($trial)
     {
         if (is_null($trial)) {
             throw new \InvalidArgumentException('non-nullable trial cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerMeta implements ModelInterface,
      *
      * @return string|null
      */
-    public function getTrialEnd()
+    public function get_trial_end()
     {
         return $this->container['trial_end'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerMeta implements ModelInterface,
      *
      * @return self
      */
-    public function setTrialEnd($trial_end)
+    public function set_trial_end($trial_end)
     {
         if (is_null($trial_end)) {
             throw new \InvalidArgumentException('non-nullable trial_end cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerMeta implements ModelInterface,
      *
      * @return string|null
      */
-    public function getWorkspaceId()
+    public function get_workspace_id()
     {
         return $this->container['workspace_id'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LicensesGet200ResponseLicensesInnerMeta implements ModelInterface,
      *
      * @return self
      */
-    public function setWorkspaceId($workspace_id)
+    public function set_workspace_id($workspace_id)
     {
         if (is_null($workspace_id)) {
             throw new \InvalidArgumentException('non-nullable workspace_id cannot be null');

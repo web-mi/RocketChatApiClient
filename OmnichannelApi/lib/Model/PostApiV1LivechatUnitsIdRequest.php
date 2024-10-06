@@ -183,9 +183,9 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'unit_data' => 'setUnitData',
-        'unit_monitors' => 'setUnitMonitors',
-        'unit_departments' => 'setUnitDepartments'
+        'unit_data' => 'set_unit_data',
+        'unit_monitors' => 'set_unit_monitors',
+        'unit_departments' => 'set_unit_departments'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'unit_data' => 'getUnitData',
-        'unit_monitors' => 'getUnitMonitors',
-        'unit_departments' => 'getUnitDepartments'
+        'unit_data' => 'get_unit_data',
+        'unit_monitors' => 'get_unit_monitors',
+        'unit_departments' => 'get_unit_departments'
     ];
 
     /**
@@ -317,7 +317,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitData
      */
-    public function getUnitData()
+    public function get_unit_data()
     {
         return $this->container['unit_data'];
     }
@@ -329,7 +329,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setUnitData($unit_data)
+    public function set_unit_data($unit_data)
     {
         if (is_null($unit_data)) {
             throw new \InvalidArgumentException('non-nullable unit_data cannot be null');
@@ -344,7 +344,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitMonitorsInner[]
      */
-    public function getUnitMonitors()
+    public function get_unit_monitors()
     {
         return $this->container['unit_monitors'];
     }
@@ -356,7 +356,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setUnitMonitors($unit_monitors)
+    public function set_unit_monitors($unit_monitors)
     {
         if (is_null($unit_monitors)) {
             throw new \InvalidArgumentException('non-nullable unit_monitors cannot be null');
@@ -371,7 +371,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUnitsIdRequestUnitDepartmentsInner[]
      */
-    public function getUnitDepartments()
+    public function get_unit_departments()
     {
         return $this->container['unit_departments'];
     }
@@ -383,7 +383,7 @@ class PostApiV1LivechatUnitsIdRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setUnitDepartments($unit_departments)
+    public function set_unit_departments($unit_departments)
     {
         if (is_null($unit_departments)) {
             throw new \InvalidArgumentException('non-nullable unit_departments cannot be null');

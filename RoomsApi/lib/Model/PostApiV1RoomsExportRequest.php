@@ -207,15 +207,15 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'type' => 'setType',
-        'date_from' => 'setDateFrom',
-        'date_to' => 'setDateTo',
-        'format' => 'setFormat',
-        'to_users' => 'setToUsers',
-        'to_emails' => 'setToEmails',
-        'messages' => 'setMessages',
-        'subject' => 'setSubject'
+        'rid' => 'set_rid',
+        'type' => 'set_type',
+        'date_from' => 'set_date_from',
+        'date_to' => 'set_date_to',
+        'format' => 'set_format',
+        'to_users' => 'set_to_users',
+        'to_emails' => 'set_to_emails',
+        'messages' => 'set_messages',
+        'subject' => 'set_subject'
     ];
 
     /**
@@ -224,15 +224,15 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'type' => 'getType',
-        'date_from' => 'getDateFrom',
-        'date_to' => 'getDateTo',
-        'format' => 'getFormat',
-        'to_users' => 'getToUsers',
-        'to_emails' => 'getToEmails',
-        'messages' => 'getMessages',
-        'subject' => 'getSubject'
+        'rid' => 'get_rid',
+        'type' => 'get_type',
+        'date_from' => 'get_date_from',
+        'date_to' => 'get_date_to',
+        'format' => 'get_format',
+        'to_users' => 'get_to_users',
+        'to_emails' => 'get_to_emails',
+        'messages' => 'get_messages',
+        'subject' => 'get_subject'
     ];
 
     /**
@@ -371,7 +371,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -383,7 +383,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -398,7 +398,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -410,7 +410,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -425,7 +425,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getDateFrom()
+    public function get_date_from()
     {
         return $this->container['date_from'];
     }
@@ -437,7 +437,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setDateFrom($date_from)
+    public function set_date_from($date_from)
     {
         if (is_null($date_from)) {
             throw new \InvalidArgumentException('non-nullable date_from cannot be null');
@@ -452,7 +452,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getDateTo()
+    public function get_date_to()
     {
         return $this->container['date_to'];
     }
@@ -464,7 +464,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setDateTo($date_to)
+    public function set_date_to($date_to)
     {
         if (is_null($date_to)) {
             throw new \InvalidArgumentException('non-nullable date_to cannot be null');
@@ -479,7 +479,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getFormat()
+    public function get_format()
     {
         return $this->container['format'];
     }
@@ -491,7 +491,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setFormat($format)
+    public function set_format($format)
     {
         if (is_null($format)) {
             throw new \InvalidArgumentException('non-nullable format cannot be null');
@@ -506,7 +506,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string[]
      */
-    public function getToUsers()
+    public function get_to_users()
     {
         return $this->container['to_users'];
     }
@@ -518,7 +518,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setToUsers($to_users)
+    public function set_to_users($to_users)
     {
         if (is_null($to_users)) {
             throw new \InvalidArgumentException('non-nullable to_users cannot be null');
@@ -533,7 +533,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string[]
      */
-    public function getToEmails()
+    public function get_to_emails()
     {
         return $this->container['to_emails'];
     }
@@ -545,7 +545,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setToEmails($to_emails)
+    public function set_to_emails($to_emails)
     {
         if (is_null($to_emails)) {
             throw new \InvalidArgumentException('non-nullable to_emails cannot be null');
@@ -560,7 +560,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string[]
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -572,7 +572,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');
@@ -587,7 +587,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getSubject()
+    public function get_subject()
     {
         return $this->container['subject'];
     }
@@ -599,7 +599,7 @@ class PostApiV1RoomsExportRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setSubject($subject)
+    public function set_subject($subject)
     {
         if (is_null($subject)) {
             throw new \InvalidArgumentException('non-nullable subject cannot be null');

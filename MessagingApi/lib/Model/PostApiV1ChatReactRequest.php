@@ -183,9 +183,9 @@ class PostApiV1ChatReactRequest implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $setters = [
-        'message_id' => 'setMessageId',
-        'emoji' => 'setEmoji',
-        'should_react' => 'setShouldReact'
+        'message_id' => 'set_message_id',
+        'emoji' => 'set_emoji',
+        'should_react' => 'set_should_react'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1ChatReactRequest implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $getters = [
-        'message_id' => 'getMessageId',
-        'emoji' => 'getEmoji',
-        'should_react' => 'getShouldReact'
+        'message_id' => 'get_message_id',
+        'emoji' => 'get_emoji',
+        'should_react' => 'get_should_react'
     ];
 
     /**
@@ -314,7 +314,7 @@ class PostApiV1ChatReactRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string
      */
-    public function getMessageId()
+    public function get_message_id()
     {
         return $this->container['message_id'];
     }
@@ -326,7 +326,7 @@ class PostApiV1ChatReactRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setMessageId($message_id)
+    public function set_message_id($message_id)
     {
         if (is_null($message_id)) {
             throw new \InvalidArgumentException('non-nullable message_id cannot be null');
@@ -341,7 +341,7 @@ class PostApiV1ChatReactRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string
      */
-    public function getEmoji()
+    public function get_emoji()
     {
         return $this->container['emoji'];
     }
@@ -353,7 +353,7 @@ class PostApiV1ChatReactRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setEmoji($emoji)
+    public function set_emoji($emoji)
     {
         if (is_null($emoji)) {
             throw new \InvalidArgumentException('non-nullable emoji cannot be null');
@@ -368,7 +368,7 @@ class PostApiV1ChatReactRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return bool|null
      */
-    public function getShouldReact()
+    public function get_should_react()
     {
         return $this->container['should_react'];
     }
@@ -380,7 +380,7 @@ class PostApiV1ChatReactRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setShouldReact($should_react)
+    public function set_should_react($should_react)
     {
         if (is_null($should_react)) {
             throw new \InvalidArgumentException('non-nullable should_react cannot be null');

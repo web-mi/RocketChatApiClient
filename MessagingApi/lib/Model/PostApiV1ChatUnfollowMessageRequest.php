@@ -175,7 +175,7 @@ class PostApiV1ChatUnfollowMessageRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'mid' => 'setMid'
+        'mid' => 'set_mid'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1ChatUnfollowMessageRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'mid' => 'getMid'
+        'mid' => 'get_mid'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1ChatUnfollowMessageRequest implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getMid()
+    public function get_mid()
     {
         return $this->container['mid'];
     }
@@ -309,7 +309,7 @@ class PostApiV1ChatUnfollowMessageRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setMid($mid)
+    public function set_mid($mid)
     {
         if (is_null($mid)) {
             throw new \InvalidArgumentException('non-nullable mid cannot be null');

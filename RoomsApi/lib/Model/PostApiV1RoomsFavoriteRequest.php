@@ -179,8 +179,8 @@ class PostApiV1RoomsFavoriteRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'favorite' => 'setFavorite'
+        'room_id' => 'set_room_id',
+        'favorite' => 'set_favorite'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1RoomsFavoriteRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'favorite' => 'getFavorite'
+        'room_id' => 'get_room_id',
+        'favorite' => 'get_favorite'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1RoomsFavoriteRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1RoomsFavoriteRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1RoomsFavoriteRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool
      */
-    public function getFavorite()
+    public function get_favorite()
     {
         return $this->container['favorite'];
     }
@@ -346,7 +346,7 @@ class PostApiV1RoomsFavoriteRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setFavorite($favorite)
+    public function set_favorite($favorite)
     {
         if (is_null($favorite)) {
             throw new \InvalidArgumentException('non-nullable favorite cannot be null');

@@ -247,25 +247,25 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'msgs' => 'setMsgs',
-        'users_count' => 'setUsersCount',
-        'lm' => 'setLm',
-        'fname' => 'setFname',
-        't' => 'setT',
-        'ts' => 'setTs',
-        'v' => 'setV',
-        'cl' => 'setCl',
-        'open' => 'setOpen',
-        'source' => 'setSource',
-        'queued_at' => 'setQueuedAt',
-        'priority_weight' => 'setPriorityWeight',
-        'estimated_waiting_time_queue' => 'setEstimatedWaitingTimeQueue',
-        '_updated_at' => 'setUpdatedAt',
-        'last_message' => 'setLastMessage',
-        'metrics' => 'setMetrics',
-        'served_by' => 'setServedBy',
-        'waiting_response' => 'setWaitingResponse'
+        '_id' => 'set__id',
+        'msgs' => 'set_msgs',
+        'users_count' => 'set_users_count',
+        'lm' => 'set_lm',
+        'fname' => 'set_fname',
+        't' => 'set_t',
+        'ts' => 'set_ts',
+        'v' => 'set_v',
+        'cl' => 'set_cl',
+        'open' => 'set_open',
+        'source' => 'set_source',
+        'queued_at' => 'set_queued_at',
+        'priority_weight' => 'set_priority_weight',
+        'estimated_waiting_time_queue' => 'set_estimated_waiting_time_queue',
+        '_updated_at' => 'set__updated_at',
+        'last_message' => 'set_last_message',
+        'metrics' => 'set_metrics',
+        'served_by' => 'set_served_by',
+        'waiting_response' => 'set_waiting_response'
     ];
 
     /**
@@ -274,25 +274,25 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'msgs' => 'getMsgs',
-        'users_count' => 'getUsersCount',
-        'lm' => 'getLm',
-        'fname' => 'getFname',
-        't' => 'getT',
-        'ts' => 'getTs',
-        'v' => 'getV',
-        'cl' => 'getCl',
-        'open' => 'getOpen',
-        'source' => 'getSource',
-        'queued_at' => 'getQueuedAt',
-        'priority_weight' => 'getPriorityWeight',
-        'estimated_waiting_time_queue' => 'getEstimatedWaitingTimeQueue',
-        '_updated_at' => 'getUpdatedAt',
-        'last_message' => 'getLastMessage',
-        'metrics' => 'getMetrics',
-        'served_by' => 'getServedBy',
-        'waiting_response' => 'getWaitingResponse'
+        '_id' => 'get__id',
+        'msgs' => 'get_msgs',
+        'users_count' => 'get_users_count',
+        'lm' => 'get_lm',
+        'fname' => 'get_fname',
+        't' => 'get_t',
+        'ts' => 'get_ts',
+        'v' => 'get_v',
+        'cl' => 'get_cl',
+        'open' => 'get_open',
+        'source' => 'get_source',
+        'queued_at' => 'get_queued_at',
+        'priority_weight' => 'get_priority_weight',
+        'estimated_waiting_time_queue' => 'get_estimated_waiting_time_queue',
+        '_updated_at' => 'get__updated_at',
+        'last_message' => 'get_last_message',
+        'metrics' => 'get_metrics',
+        'served_by' => 'get_served_by',
+        'waiting_response' => 'get_waiting_response'
     ];
 
     /**
@@ -420,7 +420,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -432,7 +432,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -447,7 +447,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -459,7 +459,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -474,7 +474,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getUsersCount()
+    public function get_users_count()
     {
         return $this->container['users_count'];
     }
@@ -486,7 +486,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUsersCount($users_count)
+    public function set_users_count($users_count)
     {
         if (is_null($users_count)) {
             throw new \InvalidArgumentException('non-nullable users_count cannot be null');
@@ -501,7 +501,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getLm()
+    public function get_lm()
     {
         return $this->container['lm'];
     }
@@ -513,7 +513,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setLm($lm)
+    public function set_lm($lm)
     {
         if (is_null($lm)) {
             throw new \InvalidArgumentException('non-nullable lm cannot be null');
@@ -528,7 +528,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getFname()
+    public function get_fname()
     {
         return $this->container['fname'];
     }
@@ -540,7 +540,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setFname($fname)
+    public function set_fname($fname)
     {
         if (is_null($fname)) {
             throw new \InvalidArgumentException('non-nullable fname cannot be null');
@@ -555,7 +555,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -567,7 +567,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -582,7 +582,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -594,7 +594,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -609,7 +609,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomV|null
      */
-    public function getV()
+    public function get_v()
     {
         return $this->container['v'];
     }
@@ -621,7 +621,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setV($v)
+    public function set_v($v)
     {
         if (is_null($v)) {
             throw new \InvalidArgumentException('non-nullable v cannot be null');
@@ -636,7 +636,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getCl()
+    public function get_cl()
     {
         return $this->container['cl'];
     }
@@ -648,7 +648,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setCl($cl)
+    public function set_cl($cl)
     {
         if (is_null($cl)) {
             throw new \InvalidArgumentException('non-nullable cl cannot be null');
@@ -663,7 +663,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getOpen()
+    public function get_open()
     {
         return $this->container['open'];
     }
@@ -675,7 +675,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setOpen($open)
+    public function set_open($open)
     {
         if (is_null($open)) {
             throw new \InvalidArgumentException('non-nullable open cannot be null');
@@ -690,7 +690,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomSource|null
      */
-    public function getSource()
+    public function get_source()
     {
         return $this->container['source'];
     }
@@ -702,7 +702,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setSource($source)
+    public function set_source($source)
     {
         if (is_null($source)) {
             throw new \InvalidArgumentException('non-nullable source cannot be null');
@@ -717,7 +717,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getQueuedAt()
+    public function get_queued_at()
     {
         return $this->container['queued_at'];
     }
@@ -729,7 +729,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setQueuedAt($queued_at)
+    public function set_queued_at($queued_at)
     {
         if (is_null($queued_at)) {
             throw new \InvalidArgumentException('non-nullable queued_at cannot be null');
@@ -744,7 +744,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getPriorityWeight()
+    public function get_priority_weight()
     {
         return $this->container['priority_weight'];
     }
@@ -756,7 +756,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setPriorityWeight($priority_weight)
+    public function set_priority_weight($priority_weight)
     {
         if (is_null($priority_weight)) {
             throw new \InvalidArgumentException('non-nullable priority_weight cannot be null');
@@ -771,7 +771,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getEstimatedWaitingTimeQueue()
+    public function get_estimated_waiting_time_queue()
     {
         return $this->container['estimated_waiting_time_queue'];
     }
@@ -783,7 +783,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setEstimatedWaitingTimeQueue($estimated_waiting_time_queue)
+    public function set_estimated_waiting_time_queue($estimated_waiting_time_queue)
     {
         if (is_null($estimated_waiting_time_queue)) {
             throw new \InvalidArgumentException('non-nullable estimated_waiting_time_queue cannot be null');
@@ -798,7 +798,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -810,7 +810,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -825,7 +825,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoomLastMessage|null
      */
-    public function getLastMessage()
+    public function get_last_message()
     {
         return $this->container['last_message'];
     }
@@ -837,7 +837,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setLastMessage($last_message)
+    public function set_last_message($last_message)
     {
         if (is_null($last_message)) {
             throw new \InvalidArgumentException('non-nullable last_message cannot be null');
@@ -852,7 +852,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRoom200ResponseRoomMetrics|null
      */
-    public function getMetrics()
+    public function get_metrics()
     {
         return $this->container['metrics'];
     }
@@ -864,7 +864,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setMetrics($metrics)
+    public function set_metrics($metrics)
     {
         if (is_null($metrics)) {
             throw new \InvalidArgumentException('non-nullable metrics cannot be null');
@@ -879,7 +879,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerServedBy|null
      */
-    public function getServedBy()
+    public function get_served_by()
     {
         return $this->container['served_by'];
     }
@@ -891,7 +891,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setServedBy($served_by)
+    public function set_served_by($served_by)
     {
         if (is_null($served_by)) {
             throw new \InvalidArgumentException('non-nullable served_by cannot be null');
@@ -906,7 +906,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getWaitingResponse()
+    public function get_waiting_response()
     {
         return $this->container['waiting_response'];
     }
@@ -918,7 +918,7 @@ class PutApiV1LivechatRoomVisitor200ResponseRoom implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setWaitingResponse($waiting_response)
+    public function set_waiting_response($waiting_response)
     {
         if (is_null($waiting_response)) {
             throw new \InvalidArgumentException('non-nullable waiting_response cannot be null');

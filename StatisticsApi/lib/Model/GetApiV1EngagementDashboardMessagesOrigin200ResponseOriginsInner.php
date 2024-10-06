@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner implement
      * @var string[]
      */
     protected static $setters = [
-        'messages' => 'setMessages',
-        't' => 'setT'
+        'messages' => 'set_messages',
+        't' => 'set_t'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner implement
      * @var string[]
      */
     protected static $getters = [
-        'messages' => 'getMessages',
-        't' => 'getT'
+        'messages' => 'get_messages',
+        't' => 'get_t'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner implement
      *
      * @return int|null
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner implement
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner implement
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardMessagesOrigin200ResponseOriginsInner implement
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');

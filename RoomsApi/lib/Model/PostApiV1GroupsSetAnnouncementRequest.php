@@ -179,8 +179,8 @@ class PostApiV1GroupsSetAnnouncementRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'announcement' => 'setAnnouncement'
+        'room_id' => 'set_room_id',
+        'announcement' => 'set_announcement'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1GroupsSetAnnouncementRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'announcement' => 'getAnnouncement'
+        'room_id' => 'get_room_id',
+        'announcement' => 'get_announcement'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1GroupsSetAnnouncementRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1GroupsSetAnnouncementRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1GroupsSetAnnouncementRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getAnnouncement()
+    public function get_announcement()
     {
         return $this->container['announcement'];
     }
@@ -346,7 +346,7 @@ class PostApiV1GroupsSetAnnouncementRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setAnnouncement($announcement)
+    public function set_announcement($announcement)
     {
         if (is_null($announcement)) {
             throw new \InvalidArgumentException('non-nullable announcement cannot be null');

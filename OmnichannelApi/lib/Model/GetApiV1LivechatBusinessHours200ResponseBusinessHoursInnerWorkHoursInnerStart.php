@@ -183,9 +183,9 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      * @var string[]
      */
     protected static $setters = [
-        'time' => 'setTime',
-        'utc' => 'setUtc',
-        'cron' => 'setCron'
+        'time' => 'set_time',
+        'utc' => 'set_utc',
+        'cron' => 'set_cron'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      * @var string[]
      */
     protected static $getters = [
-        'time' => 'getTime',
-        'utc' => 'getUtc',
-        'cron' => 'getCron'
+        'time' => 'get_time',
+        'utc' => 'get_utc',
+        'cron' => 'get_cron'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return string|null
      */
-    public function getTime()
+    public function get_time()
     {
         return $this->container['time'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return self
      */
-    public function setTime($time)
+    public function set_time($time)
     {
         if (is_null($time)) {
             throw new \InvalidArgumentException('non-nullable time cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null
      */
-    public function getUtc()
+    public function get_utc()
     {
         return $this->container['utc'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return self
      */
-    public function setUtc($utc)
+    public function set_utc($utc)
     {
         if (is_null($utc)) {
             throw new \InvalidArgumentException('non-nullable utc cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerStartUtc|null
      */
-    public function getCron()
+    public function get_cron()
     {
         return $this->container['cron'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return self
      */
-    public function setCron($cron)
+    public function set_cron($cron)
     {
         if (is_null($cron)) {
             throw new \InvalidArgumentException('non-nullable cron cannot be null');

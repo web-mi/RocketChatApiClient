@@ -175,7 +175,7 @@ class PostApiV1UsersForgotPassword200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'status' => 'setStatus'
+        'status' => 'set_status'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersForgotPassword200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'status' => 'getStatus'
+        'status' => 'get_status'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersForgotPassword200Response implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersForgotPassword200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');

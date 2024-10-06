@@ -179,8 +179,8 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner implements M
      * @var string[]
      */
     protected static $setters = [
-        'url' => 'setUrl',
-        'meta' => 'setMeta'
+        'url' => 'set_url',
+        'meta' => 'set_meta'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner implements M
      * @var string[]
      */
     protected static $getters = [
-        'url' => 'getUrl',
-        'meta' => 'getMeta'
+        'url' => 'get_url',
+        'meta' => 'get_meta'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner implements M
      *
      * @return string|null
      */
-    public function getUrl()
+    public function get_url()
     {
         return $this->container['url'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner implements M
      *
      * @return self
      */
-    public function setUrl($url)
+    public function set_url($url)
     {
         if (is_null($url)) {
             throw new \InvalidArgumentException('non-nullable url cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner implements M
      *
      * @return object|null
      */
-    public function getMeta()
+    public function get_meta()
     {
         return $this->container['meta'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ImListEveryone200ResponseImsInnerLastMessageUrlsInner implements M
      *
      * @return self
      */
-    public function setMeta($meta)
+    public function set_meta($meta)
     {
         if (is_null($meta)) {
             throw new \InvalidArgumentException('non-nullable meta cannot be null');

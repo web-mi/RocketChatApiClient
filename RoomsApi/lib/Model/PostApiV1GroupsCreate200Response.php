@@ -179,8 +179,8 @@ class PostApiV1GroupsCreate200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'group' => 'setGroup',
-        'success' => 'setSuccess'
+        'group' => 'set_group',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1GroupsCreate200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'group' => 'getGroup',
-        'success' => 'getSuccess'
+        'group' => 'get_group',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1GroupsCreate200Response implements ModelInterface, ArrayAccess, \
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1GroupsCreate200ResponseGroup|null
      */
-    public function getGroup()
+    public function get_group()
     {
         return $this->container['group'];
     }
@@ -313,7 +313,7 @@ class PostApiV1GroupsCreate200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setGroup($group)
+    public function set_group($group)
     {
         if (is_null($group)) {
             throw new \InvalidArgumentException('non-nullable group cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1GroupsCreate200Response implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1GroupsCreate200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

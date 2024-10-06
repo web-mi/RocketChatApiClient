@@ -247,25 +247,25 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'size' => 'setSize',
-        'type' => 'setType',
-        'rid' => 'setRid',
-        'description' => 'setDescription',
-        'store' => 'setStore',
-        'complete' => 'setComplete',
-        'uploading' => 'setUploading',
-        'extension' => 'setExtension',
-        'progress' => 'setProgress',
-        'user' => 'setUser',
-        '_updated_at' => 'setUpdatedAt',
-        'instance_id' => 'setInstanceId',
-        'etag' => 'setEtag',
-        'path' => 'setPath',
-        'token' => 'setToken',
-        'uploaded_at' => 'setUploadedAt',
-        'url' => 'setUrl'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'size' => 'set_size',
+        'type' => 'set_type',
+        'rid' => 'set_rid',
+        'description' => 'set_description',
+        'store' => 'set_store',
+        'complete' => 'set_complete',
+        'uploading' => 'set_uploading',
+        'extension' => 'set_extension',
+        'progress' => 'set_progress',
+        'user' => 'set_user',
+        '_updated_at' => 'set__updated_at',
+        'instance_id' => 'set_instance_id',
+        'etag' => 'set_etag',
+        'path' => 'set_path',
+        'token' => 'set_token',
+        'uploaded_at' => 'set_uploaded_at',
+        'url' => 'set_url'
     ];
 
     /**
@@ -274,25 +274,25 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'size' => 'getSize',
-        'type' => 'getType',
-        'rid' => 'getRid',
-        'description' => 'getDescription',
-        'store' => 'getStore',
-        'complete' => 'getComplete',
-        'uploading' => 'getUploading',
-        'extension' => 'getExtension',
-        'progress' => 'getProgress',
-        'user' => 'getUser',
-        '_updated_at' => 'getUpdatedAt',
-        'instance_id' => 'getInstanceId',
-        'etag' => 'getEtag',
-        'path' => 'getPath',
-        'token' => 'getToken',
-        'uploaded_at' => 'getUploadedAt',
-        'url' => 'getUrl'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'size' => 'get_size',
+        'type' => 'get_type',
+        'rid' => 'get_rid',
+        'description' => 'get_description',
+        'store' => 'get_store',
+        'complete' => 'get_complete',
+        'uploading' => 'get_uploading',
+        'extension' => 'get_extension',
+        'progress' => 'get_progress',
+        'user' => 'get_user',
+        '_updated_at' => 'get__updated_at',
+        'instance_id' => 'get_instance_id',
+        'etag' => 'get_etag',
+        'path' => 'get_path',
+        'token' => 'get_token',
+        'uploaded_at' => 'get_uploaded_at',
+        'url' => 'get_url'
     ];
 
     /**
@@ -420,7 +420,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -432,7 +432,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -447,7 +447,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -459,7 +459,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -474,7 +474,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return int|null
      */
-    public function getSize()
+    public function get_size()
     {
         return $this->container['size'];
     }
@@ -486,7 +486,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setSize($size)
+    public function set_size($size)
     {
         if (is_null($size)) {
             throw new \InvalidArgumentException('non-nullable size cannot be null');
@@ -501,7 +501,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -513,7 +513,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -528,7 +528,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -540,7 +540,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -555,7 +555,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -567,7 +567,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -582,7 +582,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getStore()
+    public function get_store()
     {
         return $this->container['store'];
     }
@@ -594,7 +594,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setStore($store)
+    public function set_store($store)
     {
         if (is_null($store)) {
             throw new \InvalidArgumentException('non-nullable store cannot be null');
@@ -609,7 +609,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getComplete()
+    public function get_complete()
     {
         return $this->container['complete'];
     }
@@ -621,7 +621,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setComplete($complete)
+    public function set_complete($complete)
     {
         if (is_null($complete)) {
             throw new \InvalidArgumentException('non-nullable complete cannot be null');
@@ -636,7 +636,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getUploading()
+    public function get_uploading()
     {
         return $this->container['uploading'];
     }
@@ -648,7 +648,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUploading($uploading)
+    public function set_uploading($uploading)
     {
         if (is_null($uploading)) {
             throw new \InvalidArgumentException('non-nullable uploading cannot be null');
@@ -663,7 +663,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getExtension()
+    public function get_extension()
     {
         return $this->container['extension'];
     }
@@ -675,7 +675,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setExtension($extension)
+    public function set_extension($extension)
     {
         if (is_null($extension)) {
             throw new \InvalidArgumentException('non-nullable extension cannot be null');
@@ -690,7 +690,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return int|null
      */
-    public function getProgress()
+    public function get_progress()
     {
         return $this->container['progress'];
     }
@@ -702,7 +702,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setProgress($progress)
+    public function set_progress($progress)
     {
         if (is_null($progress)) {
             throw new \InvalidArgumentException('non-nullable progress cannot be null');
@@ -717,7 +717,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
-    public function getUser()
+    public function get_user()
     {
         return $this->container['user'];
     }
@@ -729,7 +729,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUser($user)
+    public function set_user($user)
     {
         if (is_null($user)) {
             throw new \InvalidArgumentException('non-nullable user cannot be null');
@@ -744,7 +744,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -756,7 +756,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -771,7 +771,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getInstanceId()
+    public function get_instance_id()
     {
         return $this->container['instance_id'];
     }
@@ -783,7 +783,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setInstanceId($instance_id)
+    public function set_instance_id($instance_id)
     {
         if (is_null($instance_id)) {
             throw new \InvalidArgumentException('non-nullable instance_id cannot be null');
@@ -798,7 +798,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getEtag()
+    public function get_etag()
     {
         return $this->container['etag'];
     }
@@ -810,7 +810,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setEtag($etag)
+    public function set_etag($etag)
     {
         if (is_null($etag)) {
             throw new \InvalidArgumentException('non-nullable etag cannot be null');
@@ -825,7 +825,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getPath()
+    public function get_path()
     {
         return $this->container['path'];
     }
@@ -837,7 +837,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setPath($path)
+    public function set_path($path)
     {
         if (is_null($path)) {
             throw new \InvalidArgumentException('non-nullable path cannot be null');
@@ -852,7 +852,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -864,7 +864,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -879,7 +879,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getUploadedAt()
+    public function get_uploaded_at()
     {
         return $this->container['uploaded_at'];
     }
@@ -891,7 +891,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUploadedAt($uploaded_at)
+    public function set_uploaded_at($uploaded_at)
     {
         if (is_null($uploaded_at)) {
             throw new \InvalidArgumentException('non-nullable uploaded_at cannot be null');
@@ -906,7 +906,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getUrl()
+    public function get_url()
     {
         return $this->container['url'];
     }
@@ -918,7 +918,7 @@ class GetApiV1GroupsFiles200ResponseFilesInner implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUrl($url)
+    public function set_url($url)
     {
         if (is_null($url)) {
             throw new \InvalidArgumentException('non-nullable url cannot be null');

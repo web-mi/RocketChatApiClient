@@ -223,19 +223,19 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'name' => 'setName',
-        'ts' => 'setTs',
-        'department' => 'setDepartment',
-        'message' => 'setMessage',
-        'status' => 'setStatus',
-        'v' => 'setV',
-        't' => 'setT',
-        'queue_order' => 'setQueueOrder',
-        'estimated_waiting_time_queue' => 'setEstimatedWaitingTimeQueue',
-        'estimated_service_time_at' => 'setEstimatedServiceTimeAt',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'name' => 'set_name',
+        'ts' => 'set_ts',
+        'department' => 'set_department',
+        'message' => 'set_message',
+        'status' => 'set_status',
+        'v' => 'set_v',
+        't' => 'set_t',
+        'queue_order' => 'set_queue_order',
+        'estimated_waiting_time_queue' => 'set_estimated_waiting_time_queue',
+        'estimated_service_time_at' => 'set_estimated_service_time_at',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -244,19 +244,19 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'name' => 'getName',
-        'ts' => 'getTs',
-        'department' => 'getDepartment',
-        'message' => 'getMessage',
-        'status' => 'getStatus',
-        'v' => 'getV',
-        't' => 'getT',
-        'queue_order' => 'getQueueOrder',
-        'estimated_waiting_time_queue' => 'getEstimatedWaitingTimeQueue',
-        'estimated_service_time_at' => 'getEstimatedServiceTimeAt',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'name' => 'get_name',
+        'ts' => 'get_ts',
+        'department' => 'get_department',
+        'message' => 'get_message',
+        'status' => 'get_status',
+        'v' => 'get_v',
+        't' => 'get_t',
+        'queue_order' => 'get_queue_order',
+        'estimated_waiting_time_queue' => 'get_estimated_waiting_time_queue',
+        'estimated_service_time_at' => 'get_estimated_service_time_at',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -378,7 +378,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -390,7 +390,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -405,7 +405,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -417,7 +417,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -432,7 +432,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -444,7 +444,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -459,7 +459,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -471,7 +471,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -486,7 +486,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getDepartment()
+    public function get_department()
     {
         return $this->container['department'];
     }
@@ -498,7 +498,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setDepartment($department)
+    public function set_department($department)
     {
         if (is_null($department)) {
             throw new \InvalidArgumentException('non-nullable department cannot be null');
@@ -513,7 +513,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -525,7 +525,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -540,7 +540,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -552,7 +552,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -567,7 +567,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerV|null
      */
-    public function getV()
+    public function get_v()
     {
         return $this->container['v'];
     }
@@ -579,7 +579,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setV($v)
+    public function set_v($v)
     {
         if (is_null($v)) {
             throw new \InvalidArgumentException('non-nullable v cannot be null');
@@ -594,7 +594,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -606,7 +606,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -621,7 +621,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return int|null
      */
-    public function getQueueOrder()
+    public function get_queue_order()
     {
         return $this->container['queue_order'];
     }
@@ -633,7 +633,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setQueueOrder($queue_order)
+    public function set_queue_order($queue_order)
     {
         if (is_null($queue_order)) {
             throw new \InvalidArgumentException('non-nullable queue_order cannot be null');
@@ -648,7 +648,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return int|null
      */
-    public function getEstimatedWaitingTimeQueue()
+    public function get_estimated_waiting_time_queue()
     {
         return $this->container['estimated_waiting_time_queue'];
     }
@@ -660,7 +660,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setEstimatedWaitingTimeQueue($estimated_waiting_time_queue)
+    public function set_estimated_waiting_time_queue($estimated_waiting_time_queue)
     {
         if (is_null($estimated_waiting_time_queue)) {
             throw new \InvalidArgumentException('non-nullable estimated_waiting_time_queue cannot be null');
@@ -675,7 +675,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getEstimatedServiceTimeAt()
+    public function get_estimated_service_time_at()
     {
         return $this->container['estimated_service_time_at'];
     }
@@ -687,7 +687,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setEstimatedServiceTimeAt($estimated_service_time_at)
+    public function set_estimated_service_time_at($estimated_service_time_at)
     {
         if (is_null($estimated_service_time_at)) {
             throw new \InvalidArgumentException('non-nullable estimated_service_time_at cannot be null');
@@ -702,7 +702,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -714,7 +714,7 @@ class GetApiV1LivechatInquiriesQueued200ResponseInquiriesInner implements ModelI
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

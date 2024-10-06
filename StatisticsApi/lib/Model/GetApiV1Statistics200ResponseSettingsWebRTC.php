@@ -183,9 +183,9 @@ class GetApiV1Statistics200ResponseSettingsWebRTC implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'web_rtc_enable_channel' => 'setWebRtcEnableChannel',
-        'web_rtc_enable_private' => 'setWebRtcEnablePrivate',
-        'web_rtc_enable_direct' => 'setWebRtcEnableDirect'
+        'web_rtc_enable_channel' => 'set_web_rtc_enable_channel',
+        'web_rtc_enable_private' => 'set_web_rtc_enable_private',
+        'web_rtc_enable_direct' => 'set_web_rtc_enable_direct'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1Statistics200ResponseSettingsWebRTC implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'web_rtc_enable_channel' => 'getWebRtcEnableChannel',
-        'web_rtc_enable_private' => 'getWebRtcEnablePrivate',
-        'web_rtc_enable_direct' => 'getWebRtcEnableDirect'
+        'web_rtc_enable_channel' => 'get_web_rtc_enable_channel',
+        'web_rtc_enable_private' => 'get_web_rtc_enable_private',
+        'web_rtc_enable_direct' => 'get_web_rtc_enable_direct'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1Statistics200ResponseSettingsWebRTC implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getWebRtcEnableChannel()
+    public function get_web_rtc_enable_channel()
     {
         return $this->container['web_rtc_enable_channel'];
     }
@@ -320,7 +320,7 @@ class GetApiV1Statistics200ResponseSettingsWebRTC implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setWebRtcEnableChannel($web_rtc_enable_channel)
+    public function set_web_rtc_enable_channel($web_rtc_enable_channel)
     {
         if (is_null($web_rtc_enable_channel)) {
             throw new \InvalidArgumentException('non-nullable web_rtc_enable_channel cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1Statistics200ResponseSettingsWebRTC implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getWebRtcEnablePrivate()
+    public function get_web_rtc_enable_private()
     {
         return $this->container['web_rtc_enable_private'];
     }
@@ -347,7 +347,7 @@ class GetApiV1Statistics200ResponseSettingsWebRTC implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setWebRtcEnablePrivate($web_rtc_enable_private)
+    public function set_web_rtc_enable_private($web_rtc_enable_private)
     {
         if (is_null($web_rtc_enable_private)) {
             throw new \InvalidArgumentException('non-nullable web_rtc_enable_private cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1Statistics200ResponseSettingsWebRTC implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getWebRtcEnableDirect()
+    public function get_web_rtc_enable_direct()
     {
         return $this->container['web_rtc_enable_direct'];
     }
@@ -374,7 +374,7 @@ class GetApiV1Statistics200ResponseSettingsWebRTC implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setWebRtcEnableDirect($web_rtc_enable_direct)
+    public function set_web_rtc_enable_direct($web_rtc_enable_direct)
     {
         if (is_null($web_rtc_enable_direct)) {
             throw new \InvalidArgumentException('non-nullable web_rtc_enable_direct cannot be null');

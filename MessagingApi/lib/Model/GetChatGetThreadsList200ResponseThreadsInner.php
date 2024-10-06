@@ -243,24 +243,24 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'msg' => 'setMsg',
-        'ts' => 'setTs',
-        'u' => 'setU',
-        '_updated_at' => 'setUpdatedAt',
-        'urls' => 'setUrls',
-        'mentions' => 'setMentions',
-        'channels' => 'setChannels',
-        'md' => 'setMd',
-        'reactions' => 'setReactions',
-        'starred' => 'setStarred',
-        'pinned' => 'setPinned',
-        'pinned_at' => 'setPinnedAt',
-        'pinned_by' => 'setPinnedBy',
-        'replies' => 'setReplies',
-        'tcount' => 'setTcount',
-        'tlm' => 'setTlm'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'msg' => 'set_msg',
+        'ts' => 'set_ts',
+        'u' => 'set_u',
+        '_updated_at' => 'set__updated_at',
+        'urls' => 'set_urls',
+        'mentions' => 'set_mentions',
+        'channels' => 'set_channels',
+        'md' => 'set_md',
+        'reactions' => 'set_reactions',
+        'starred' => 'set_starred',
+        'pinned' => 'set_pinned',
+        'pinned_at' => 'set_pinned_at',
+        'pinned_by' => 'set_pinned_by',
+        'replies' => 'set_replies',
+        'tcount' => 'set_tcount',
+        'tlm' => 'set_tlm'
     ];
 
     /**
@@ -269,24 +269,24 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'msg' => 'getMsg',
-        'ts' => 'getTs',
-        'u' => 'getU',
-        '_updated_at' => 'getUpdatedAt',
-        'urls' => 'getUrls',
-        'mentions' => 'getMentions',
-        'channels' => 'getChannels',
-        'md' => 'getMd',
-        'reactions' => 'getReactions',
-        'starred' => 'getStarred',
-        'pinned' => 'getPinned',
-        'pinned_at' => 'getPinnedAt',
-        'pinned_by' => 'getPinnedBy',
-        'replies' => 'getReplies',
-        'tcount' => 'getTcount',
-        'tlm' => 'getTlm'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'msg' => 'get_msg',
+        'ts' => 'get_ts',
+        'u' => 'get_u',
+        '_updated_at' => 'get__updated_at',
+        'urls' => 'get_urls',
+        'mentions' => 'get_mentions',
+        'channels' => 'get_channels',
+        'md' => 'get_md',
+        'reactions' => 'get_reactions',
+        'starred' => 'get_starred',
+        'pinned' => 'get_pinned',
+        'pinned_at' => 'get_pinned_at',
+        'pinned_by' => 'get_pinned_by',
+        'replies' => 'get_replies',
+        'tcount' => 'get_tcount',
+        'tlm' => 'get_tlm'
     ];
 
     /**
@@ -413,7 +413,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -425,7 +425,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -440,7 +440,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -452,7 +452,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -467,7 +467,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -479,7 +479,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -494,7 +494,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -506,7 +506,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -521,7 +521,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -533,7 +533,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -548,7 +548,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -560,7 +560,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -575,7 +575,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return object[]|null
      */
-    public function getUrls()
+    public function get_urls()
     {
         return $this->container['urls'];
     }
@@ -587,7 +587,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setUrls($urls)
+    public function set_urls($urls)
     {
         if (is_null($urls)) {
             throw new \InvalidArgumentException('non-nullable urls cannot be null');
@@ -602,7 +602,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return object[]|null
      */
-    public function getMentions()
+    public function get_mentions()
     {
         return $this->container['mentions'];
     }
@@ -614,7 +614,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setMentions($mentions)
+    public function set_mentions($mentions)
     {
         if (is_null($mentions)) {
             throw new \InvalidArgumentException('non-nullable mentions cannot be null');
@@ -629,7 +629,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return object[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -641,7 +641,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -656,7 +656,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageMdInner[]|null
      */
-    public function getMd()
+    public function get_md()
     {
         return $this->container['md'];
     }
@@ -668,7 +668,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setMd($md)
+    public function set_md($md)
     {
         if (is_null($md)) {
             throw new \InvalidArgumentException('non-nullable md cannot be null');
@@ -683,7 +683,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetChatGetThreadsList200ResponseThreadsInnerReactions|null
      */
-    public function getReactions()
+    public function get_reactions()
     {
         return $this->container['reactions'];
     }
@@ -695,7 +695,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setReactions($reactions)
+    public function set_reactions($reactions)
     {
         if (is_null($reactions)) {
             throw new \InvalidArgumentException('non-nullable reactions cannot be null');
@@ -710,7 +710,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return object[]|null
      */
-    public function getStarred()
+    public function get_starred()
     {
         return $this->container['starred'];
     }
@@ -722,7 +722,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setStarred($starred)
+    public function set_starred($starred)
     {
         if (is_null($starred)) {
             throw new \InvalidArgumentException('non-nullable starred cannot be null');
@@ -737,7 +737,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getPinned()
+    public function get_pinned()
     {
         return $this->container['pinned'];
     }
@@ -749,7 +749,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setPinned($pinned)
+    public function set_pinned($pinned)
     {
         if (is_null($pinned)) {
             throw new \InvalidArgumentException('non-nullable pinned cannot be null');
@@ -764,7 +764,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getPinnedAt()
+    public function get_pinned_at()
     {
         return $this->container['pinned_at'];
     }
@@ -776,7 +776,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setPinnedAt($pinned_at)
+    public function set_pinned_at($pinned_at)
     {
         if (is_null($pinned_at)) {
             throw new \InvalidArgumentException('non-nullable pinned_at cannot be null');
@@ -791,7 +791,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatUpdate200ResponseMessageEditedBy|null
      */
-    public function getPinnedBy()
+    public function get_pinned_by()
     {
         return $this->container['pinned_by'];
     }
@@ -803,7 +803,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setPinnedBy($pinned_by)
+    public function set_pinned_by($pinned_by)
     {
         if (is_null($pinned_by)) {
             throw new \InvalidArgumentException('non-nullable pinned_by cannot be null');
@@ -818,7 +818,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return string[]|null
      */
-    public function getReplies()
+    public function get_replies()
     {
         return $this->container['replies'];
     }
@@ -830,7 +830,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setReplies($replies)
+    public function set_replies($replies)
     {
         if (is_null($replies)) {
             throw new \InvalidArgumentException('non-nullable replies cannot be null');
@@ -845,7 +845,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return int|null
      */
-    public function getTcount()
+    public function get_tcount()
     {
         return $this->container['tcount'];
     }
@@ -857,7 +857,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTcount($tcount)
+    public function set_tcount($tcount)
     {
         if (is_null($tcount)) {
             throw new \InvalidArgumentException('non-nullable tcount cannot be null');
@@ -872,7 +872,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getTlm()
+    public function get_tlm()
     {
         return $this->container['tlm'];
     }
@@ -884,7 +884,7 @@ class GetChatGetThreadsList200ResponseThreadsInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setTlm($tlm)
+    public function set_tlm($tlm)
     {
         if (is_null($tlm)) {
             throw new \InvalidArgumentException('non-nullable tlm cannot be null');

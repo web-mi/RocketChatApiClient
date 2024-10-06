@@ -175,7 +175,7 @@ class GetApiV1OmnichannelExtension200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'extensions' => 'setExtensions'
+        'extensions' => 'set_extensions'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1OmnichannelExtension200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'extensions' => 'getExtensions'
+        'extensions' => 'get_extensions'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1OmnichannelExtension200Response implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getExtensions()
+    public function get_extensions()
     {
         return $this->container['extensions'];
     }
@@ -306,7 +306,7 @@ class GetApiV1OmnichannelExtension200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setExtensions($extensions)
+    public function set_extensions($extensions)
     {
         if (is_null($extensions)) {
             throw new \InvalidArgumentException('non-nullable extensions cannot be null');

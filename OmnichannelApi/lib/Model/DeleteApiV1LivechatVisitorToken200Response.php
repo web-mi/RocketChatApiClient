@@ -179,8 +179,8 @@ class DeleteApiV1LivechatVisitorToken200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'visitor' => 'setVisitor',
-        'success' => 'setSuccess'
+        'visitor' => 'set_visitor',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class DeleteApiV1LivechatVisitorToken200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'visitor' => 'getVisitor',
-        'success' => 'getSuccess'
+        'visitor' => 'get_visitor',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class DeleteApiV1LivechatVisitorToken200Response implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null
      */
-    public function getVisitor()
+    public function get_visitor()
     {
         return $this->container['visitor'];
     }
@@ -313,7 +313,7 @@ class DeleteApiV1LivechatVisitorToken200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setVisitor($visitor)
+    public function set_visitor($visitor)
     {
         if (is_null($visitor)) {
             throw new \InvalidArgumentException('non-nullable visitor cannot be null');
@@ -328,7 +328,7 @@ class DeleteApiV1LivechatVisitorToken200Response implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class DeleteApiV1LivechatVisitorToken200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

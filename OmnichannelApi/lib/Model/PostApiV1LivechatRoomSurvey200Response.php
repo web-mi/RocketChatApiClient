@@ -183,9 +183,9 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'data' => 'setData',
-        'success' => 'setSuccess'
+        'rid' => 'set_rid',
+        'data' => 'set_data',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'data' => 'getData',
-        'success' => 'getSuccess'
+        'rid' => 'get_rid',
+        'data' => 'get_data',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -320,7 +320,7 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomSurvey200ResponseData|null
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -347,7 +347,7 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class PostApiV1LivechatRoomSurvey200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

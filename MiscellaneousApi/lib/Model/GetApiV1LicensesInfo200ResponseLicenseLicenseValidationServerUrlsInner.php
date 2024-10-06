@@ -179,8 +179,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner imp
      * @var string[]
      */
     protected static $setters = [
-        'value' => 'setValue',
-        'type' => 'setType'
+        'value' => 'set_value',
+        'type' => 'set_type'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner imp
      * @var string[]
      */
     protected static $getters = [
-        'value' => 'getValue',
-        'type' => 'getType'
+        'value' => 'get_value',
+        'type' => 'get_type'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner imp
      *
      * @return string|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner imp
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner imp
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner imp
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');

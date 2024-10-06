@@ -203,14 +203,14 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'joined' => 'setJoined',
-        'members' => 'setMembers',
-        'unreads' => 'setUnreads',
-        'unreads_from' => 'setUnreadsFrom',
-        'msgs' => 'setMsgs',
-        'latest' => 'setLatest',
-        'user_mentions' => 'setUserMentions',
-        'success' => 'setSuccess'
+        'joined' => 'set_joined',
+        'members' => 'set_members',
+        'unreads' => 'set_unreads',
+        'unreads_from' => 'set_unreads_from',
+        'msgs' => 'set_msgs',
+        'latest' => 'set_latest',
+        'user_mentions' => 'set_user_mentions',
+        'success' => 'set_success'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'joined' => 'getJoined',
-        'members' => 'getMembers',
-        'unreads' => 'getUnreads',
-        'unreads_from' => 'getUnreadsFrom',
-        'msgs' => 'getMsgs',
-        'latest' => 'getLatest',
-        'user_mentions' => 'getUserMentions',
-        'success' => 'getSuccess'
+        'joined' => 'get_joined',
+        'members' => 'get_members',
+        'unreads' => 'get_unreads',
+        'unreads_from' => 'get_unreads_from',
+        'msgs' => 'get_msgs',
+        'latest' => 'get_latest',
+        'user_mentions' => 'get_user_mentions',
+        'success' => 'get_success'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getJoined()
+    public function get_joined()
     {
         return $this->container['joined'];
     }
@@ -355,7 +355,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setJoined($joined)
+    public function set_joined($joined)
     {
         if (is_null($joined)) {
             throw new \InvalidArgumentException('non-nullable joined cannot be null');
@@ -370,7 +370,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getMembers()
+    public function get_members()
     {
         return $this->container['members'];
     }
@@ -382,7 +382,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMembers($members)
+    public function set_members($members)
     {
         if (is_null($members)) {
             throw new \InvalidArgumentException('non-nullable members cannot be null');
@@ -397,7 +397,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getUnreads()
+    public function get_unreads()
     {
         return $this->container['unreads'];
     }
@@ -409,7 +409,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUnreads($unreads)
+    public function set_unreads($unreads)
     {
         if (is_null($unreads)) {
             throw new \InvalidArgumentException('non-nullable unreads cannot be null');
@@ -424,7 +424,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getUnreadsFrom()
+    public function get_unreads_from()
     {
         return $this->container['unreads_from'];
     }
@@ -436,7 +436,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUnreadsFrom($unreads_from)
+    public function set_unreads_from($unreads_from)
     {
         if (is_null($unreads_from)) {
             throw new \InvalidArgumentException('non-nullable unreads_from cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -463,7 +463,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getLatest()
+    public function get_latest()
     {
         return $this->container['latest'];
     }
@@ -490,7 +490,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLatest($latest)
+    public function set_latest($latest)
     {
         if (is_null($latest)) {
             throw new \InvalidArgumentException('non-nullable latest cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getUserMentions()
+    public function get_user_mentions()
     {
         return $this->container['user_mentions'];
     }
@@ -517,7 +517,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUserMentions($user_mentions)
+    public function set_user_mentions($user_mentions)
     {
         if (is_null($user_mentions)) {
             throw new \InvalidArgumentException('non-nullable user_mentions cannot be null');
@@ -532,7 +532,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -544,7 +544,7 @@ class GetApiV1ImCounters200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

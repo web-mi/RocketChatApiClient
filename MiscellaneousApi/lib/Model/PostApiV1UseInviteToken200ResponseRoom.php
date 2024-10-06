@@ -187,10 +187,10 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'fname' => 'setFname',
-        'name' => 'setName',
-        't' => 'setT'
+        'rid' => 'set_rid',
+        'fname' => 'set_fname',
+        'name' => 'set_name',
+        't' => 'set_t'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'fname' => 'getFname',
-        'name' => 'getName',
-        't' => 'getT'
+        'rid' => 'get_rid',
+        'fname' => 'get_fname',
+        'name' => 'get_name',
+        't' => 'get_t'
     ];
 
     /**
@@ -315,7 +315,7 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -327,7 +327,7 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -342,7 +342,7 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getFname()
+    public function get_fname()
     {
         return $this->container['fname'];
     }
@@ -354,7 +354,7 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setFname($fname)
+    public function set_fname($fname)
     {
         if (is_null($fname)) {
             throw new \InvalidArgumentException('non-nullable fname cannot be null');
@@ -369,7 +369,7 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -381,7 +381,7 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -396,7 +396,7 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -408,7 +408,7 @@ class PostApiV1UseInviteToken200ResponseRoom implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');

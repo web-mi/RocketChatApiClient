@@ -183,9 +183,9 @@ class GetApiV1Statistics200ResponseSettingsE2ee implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'e2e' => 'setE2e',
-        'e2e_default_direct_room' => 'setE2eDefaultDirectRoom',
-        'e2e_default_private_room' => 'setE2eDefaultPrivateRoom'
+        'e2e' => 'set_e2e',
+        'e2e_default_direct_room' => 'set_e2e_default_direct_room',
+        'e2e_default_private_room' => 'set_e2e_default_private_room'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1Statistics200ResponseSettingsE2ee implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'e2e' => 'getE2e',
-        'e2e_default_direct_room' => 'getE2eDefaultDirectRoom',
-        'e2e_default_private_room' => 'getE2eDefaultPrivateRoom'
+        'e2e' => 'get_e2e',
+        'e2e_default_direct_room' => 'get_e2e_default_direct_room',
+        'e2e_default_private_room' => 'get_e2e_default_private_room'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1Statistics200ResponseSettingsE2ee implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getE2e()
+    public function get_e2e()
     {
         return $this->container['e2e'];
     }
@@ -320,7 +320,7 @@ class GetApiV1Statistics200ResponseSettingsE2ee implements ModelInterface, Array
      *
      * @return self
      */
-    public function setE2e($e2e)
+    public function set_e2e($e2e)
     {
         if (is_null($e2e)) {
             throw new \InvalidArgumentException('non-nullable e2e cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1Statistics200ResponseSettingsE2ee implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getE2eDefaultDirectRoom()
+    public function get_e2e_default_direct_room()
     {
         return $this->container['e2e_default_direct_room'];
     }
@@ -347,7 +347,7 @@ class GetApiV1Statistics200ResponseSettingsE2ee implements ModelInterface, Array
      *
      * @return self
      */
-    public function setE2eDefaultDirectRoom($e2e_default_direct_room)
+    public function set_e2e_default_direct_room($e2e_default_direct_room)
     {
         if (is_null($e2e_default_direct_room)) {
             throw new \InvalidArgumentException('non-nullable e2e_default_direct_room cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1Statistics200ResponseSettingsE2ee implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getE2eDefaultPrivateRoom()
+    public function get_e2e_default_private_room()
     {
         return $this->container['e2e_default_private_room'];
     }
@@ -374,7 +374,7 @@ class GetApiV1Statistics200ResponseSettingsE2ee implements ModelInterface, Array
      *
      * @return self
      */
-    public function setE2eDefaultPrivateRoom($e2e_default_private_room)
+    public function set_e2e_default_private_room($e2e_default_private_room)
     {
         if (is_null($e2e_default_private_room)) {
             throw new \InvalidArgumentException('non-nullable e2e_default_private_room cannot be null');

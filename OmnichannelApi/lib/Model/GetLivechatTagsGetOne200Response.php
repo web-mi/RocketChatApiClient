@@ -199,13 +199,13 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'num_departments' => 'setNumDepartments',
-        'departments' => 'setDepartments',
-        '_updated_at' => 'setUpdatedAt',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'description' => 'set_description',
+        'num_departments' => 'set_num_departments',
+        'departments' => 'set_departments',
+        '_updated_at' => 'set__updated_at',
+        'success' => 'set_success'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'num_departments' => 'getNumDepartments',
-        'departments' => 'getDepartments',
-        '_updated_at' => 'getUpdatedAt',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'description' => 'get_description',
+        'num_departments' => 'get_num_departments',
+        'departments' => 'get_departments',
+        '_updated_at' => 'get__updated_at',
+        'success' => 'get_success'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -348,7 +348,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -363,7 +363,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -375,7 +375,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -390,7 +390,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -402,7 +402,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -417,7 +417,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return int|null
      */
-    public function getNumDepartments()
+    public function get_num_departments()
     {
         return $this->container['num_departments'];
     }
@@ -429,7 +429,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setNumDepartments($num_departments)
+    public function set_num_departments($num_departments)
     {
         if (is_null($num_departments)) {
             throw new \InvalidArgumentException('non-nullable num_departments cannot be null');
@@ -444,7 +444,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return string[]|null
      */
-    public function getDepartments()
+    public function get_departments()
     {
         return $this->container['departments'];
     }
@@ -456,7 +456,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setDepartments($departments)
+    public function set_departments($departments)
     {
         if (is_null($departments)) {
             throw new \InvalidArgumentException('non-nullable departments cannot be null');
@@ -471,7 +471,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -483,7 +483,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -498,7 +498,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -510,7 +510,7 @@ class GetLivechatTagsGetOne200Response implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

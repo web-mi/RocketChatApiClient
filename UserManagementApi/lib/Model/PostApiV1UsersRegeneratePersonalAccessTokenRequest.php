@@ -175,7 +175,7 @@ class PostApiV1UsersRegeneratePersonalAccessTokenRequest implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'token_name' => 'setTokenName'
+        'token_name' => 'set_token_name'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersRegeneratePersonalAccessTokenRequest implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'token_name' => 'getTokenName'
+        'token_name' => 'get_token_name'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1UsersRegeneratePersonalAccessTokenRequest implements ModelInterfa
      *
      * @return string
      */
-    public function getTokenName()
+    public function get_token_name()
     {
         return $this->container['token_name'];
     }
@@ -309,7 +309,7 @@ class PostApiV1UsersRegeneratePersonalAccessTokenRequest implements ModelInterfa
      *
      * @return self
      */
-    public function setTokenName($token_name)
+    public function set_token_name($token_name)
     {
         if (is_null($token_name)) {
             throw new \InvalidArgumentException('non-nullable token_name cannot be null');

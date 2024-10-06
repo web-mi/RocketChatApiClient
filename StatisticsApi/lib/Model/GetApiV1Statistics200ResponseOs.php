@@ -207,15 +207,15 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'platform' => 'setPlatform',
-        'arch' => 'setArch',
-        'release' => 'setRelease',
-        'uptime' => 'setUptime',
-        'loadavg' => 'setLoadavg',
-        'totalmem' => 'setTotalmem',
-        'freemem' => 'setFreemem',
-        'cpus' => 'setCpus'
+        'type' => 'set_type',
+        'platform' => 'set_platform',
+        'arch' => 'set_arch',
+        'release' => 'set_release',
+        'uptime' => 'set_uptime',
+        'loadavg' => 'set_loadavg',
+        'totalmem' => 'set_totalmem',
+        'freemem' => 'set_freemem',
+        'cpus' => 'set_cpus'
     ];
 
     /**
@@ -224,15 +224,15 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'platform' => 'getPlatform',
-        'arch' => 'getArch',
-        'release' => 'getRelease',
-        'uptime' => 'getUptime',
-        'loadavg' => 'getLoadavg',
-        'totalmem' => 'getTotalmem',
-        'freemem' => 'getFreemem',
-        'cpus' => 'getCpus'
+        'type' => 'get_type',
+        'platform' => 'get_platform',
+        'arch' => 'get_arch',
+        'release' => 'get_release',
+        'uptime' => 'get_uptime',
+        'loadavg' => 'get_loadavg',
+        'totalmem' => 'get_totalmem',
+        'freemem' => 'get_freemem',
+        'cpus' => 'get_cpus'
     ];
 
     /**
@@ -350,7 +350,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -362,7 +362,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -377,7 +377,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getPlatform()
+    public function get_platform()
     {
         return $this->container['platform'];
     }
@@ -389,7 +389,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setPlatform($platform)
+    public function set_platform($platform)
     {
         if (is_null($platform)) {
             throw new \InvalidArgumentException('non-nullable platform cannot be null');
@@ -404,7 +404,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getArch()
+    public function get_arch()
     {
         return $this->container['arch'];
     }
@@ -416,7 +416,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setArch($arch)
+    public function set_arch($arch)
     {
         if (is_null($arch)) {
             throw new \InvalidArgumentException('non-nullable arch cannot be null');
@@ -431,7 +431,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getRelease()
+    public function get_release()
     {
         return $this->container['release'];
     }
@@ -443,7 +443,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setRelease($release)
+    public function set_release($release)
     {
         if (is_null($release)) {
             throw new \InvalidArgumentException('non-nullable release cannot be null');
@@ -458,7 +458,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return float|null
      */
-    public function getUptime()
+    public function get_uptime()
     {
         return $this->container['uptime'];
     }
@@ -470,7 +470,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setUptime($uptime)
+    public function set_uptime($uptime)
     {
         if (is_null($uptime)) {
             throw new \InvalidArgumentException('non-nullable uptime cannot be null');
@@ -485,7 +485,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return int[]|null
      */
-    public function getLoadavg()
+    public function get_loadavg()
     {
         return $this->container['loadavg'];
     }
@@ -497,7 +497,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setLoadavg($loadavg)
+    public function set_loadavg($loadavg)
     {
         if (is_null($loadavg)) {
             throw new \InvalidArgumentException('non-nullable loadavg cannot be null');
@@ -512,7 +512,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return int|null
      */
-    public function getTotalmem()
+    public function get_totalmem()
     {
         return $this->container['totalmem'];
     }
@@ -524,7 +524,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setTotalmem($totalmem)
+    public function set_totalmem($totalmem)
     {
         if (is_null($totalmem)) {
             throw new \InvalidArgumentException('non-nullable totalmem cannot be null');
@@ -539,7 +539,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return int|null
      */
-    public function getFreemem()
+    public function get_freemem()
     {
         return $this->container['freemem'];
     }
@@ -551,7 +551,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setFreemem($freemem)
+    public function set_freemem($freemem)
     {
         if (is_null($freemem)) {
             throw new \InvalidArgumentException('non-nullable freemem cannot be null');
@@ -566,7 +566,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerOsCpusInner[]|null
      */
-    public function getCpus()
+    public function get_cpus()
     {
         return $this->container['cpus'];
     }
@@ -578,7 +578,7 @@ class GetApiV1Statistics200ResponseOs implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setCpus($cpus)
+    public function set_cpus($cpus)
     {
         if (is_null($cpus)) {
             throw new \InvalidArgumentException('non-nullable cpus cannot be null');

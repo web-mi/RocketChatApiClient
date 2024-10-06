@@ -183,9 +183,9 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser implements 
      * @var string[]
      */
     protected static $setters = [
-        'username' => 'setUsername',
-        'name' => 'setName',
-        '_id' => 'setId'
+        'username' => 'set_username',
+        'name' => 'set_name',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser implements 
      * @var string[]
      */
     protected static $getters = [
-        'username' => 'getUsername',
-        'name' => 'getName',
-        '_id' => 'getId'
+        'username' => 'get_username',
+        'name' => 'get_name',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser implements 
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -320,7 +320,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser implements 
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser implements 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -347,7 +347,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser implements 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser implements 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -374,7 +374,7 @@ class GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInnerUser implements 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

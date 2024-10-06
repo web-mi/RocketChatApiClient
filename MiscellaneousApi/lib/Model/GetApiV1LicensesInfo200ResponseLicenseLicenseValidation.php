@@ -195,12 +195,12 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'server_urls' => 'setServerUrls',
-        'cloud_workspace_id' => 'setCloudWorkspaceId',
-        'server_unique_id' => 'setServerUniqueId',
-        'valid_periods' => 'setValidPeriods',
-        'legal_text_agreement' => 'setLegalTextAgreement',
-        'statistics_report' => 'setStatisticsReport'
+        'server_urls' => 'set_server_urls',
+        'cloud_workspace_id' => 'set_cloud_workspace_id',
+        'server_unique_id' => 'set_server_unique_id',
+        'valid_periods' => 'set_valid_periods',
+        'legal_text_agreement' => 'set_legal_text_agreement',
+        'statistics_report' => 'set_statistics_report'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'server_urls' => 'getServerUrls',
-        'cloud_workspace_id' => 'getCloudWorkspaceId',
-        'server_unique_id' => 'getServerUniqueId',
-        'valid_periods' => 'getValidPeriods',
-        'legal_text_agreement' => 'getLegalTextAgreement',
-        'statistics_report' => 'getStatisticsReport'
+        'server_urls' => 'get_server_urls',
+        'cloud_workspace_id' => 'get_cloud_workspace_id',
+        'server_unique_id' => 'get_server_unique_id',
+        'valid_periods' => 'get_valid_periods',
+        'legal_text_agreement' => 'get_legal_text_agreement',
+        'statistics_report' => 'get_statistics_report'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationServerUrlsInner[]|null
      */
-    public function getServerUrls()
+    public function get_server_urls()
     {
         return $this->container['server_urls'];
     }
@@ -341,7 +341,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return self
      */
-    public function setServerUrls($server_urls)
+    public function set_server_urls($server_urls)
     {
         if (is_null($server_urls)) {
             throw new \InvalidArgumentException('non-nullable server_urls cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return string|null
      */
-    public function getCloudWorkspaceId()
+    public function get_cloud_workspace_id()
     {
         return $this->container['cloud_workspace_id'];
     }
@@ -368,7 +368,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return self
      */
-    public function setCloudWorkspaceId($cloud_workspace_id)
+    public function set_cloud_workspace_id($cloud_workspace_id)
     {
         if (is_null($cloud_workspace_id)) {
             throw new \InvalidArgumentException('non-nullable cloud_workspace_id cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return string|null
      */
-    public function getServerUniqueId()
+    public function get_server_unique_id()
     {
         return $this->container['server_unique_id'];
     }
@@ -395,7 +395,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return self
      */
-    public function setServerUniqueId($server_unique_id)
+    public function set_server_unique_id($server_unique_id)
     {
         if (is_null($server_unique_id)) {
             throw new \InvalidArgumentException('non-nullable server_unique_id cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationValidPeriodsInner[]|null
      */
-    public function getValidPeriods()
+    public function get_valid_periods()
     {
         return $this->container['valid_periods'];
     }
@@ -422,7 +422,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return self
      */
-    public function setValidPeriods($valid_periods)
+    public function set_valid_periods($valid_periods)
     {
         if (is_null($valid_periods)) {
             throw new \InvalidArgumentException('non-nullable valid_periods cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationLegalTextAgreement|null
      */
-    public function getLegalTextAgreement()
+    public function get_legal_text_agreement()
     {
         return $this->container['legal_text_agreement'];
     }
@@ -449,7 +449,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return self
      */
-    public function setLegalTextAgreement($legal_text_agreement)
+    public function set_legal_text_agreement($legal_text_agreement)
     {
         if (is_null($legal_text_agreement)) {
             throw new \InvalidArgumentException('non-nullable legal_text_agreement cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1LicensesInfo200ResponseLicenseLicenseValidationStatisticsReport|null
      */
-    public function getStatisticsReport()
+    public function get_statistics_report()
     {
         return $this->container['statistics_report'];
     }
@@ -476,7 +476,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseValidation implements ModelIn
      *
      * @return self
      */
-    public function setStatisticsReport($statistics_report)
+    public function set_statistics_report($statistics_report)
     {
         if (is_null($statistics_report)) {
             throw new \InvalidArgumentException('non-nullable statistics_report cannot be null');

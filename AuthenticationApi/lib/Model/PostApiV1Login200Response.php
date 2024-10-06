@@ -179,8 +179,8 @@ class PostApiV1Login200Response implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $setters = [
-        'status' => 'setStatus',
-        'data' => 'setData'
+        'status' => 'set_status',
+        'data' => 'set_data'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1Login200Response implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $getters = [
-        'status' => 'getStatus',
-        'data' => 'getData'
+        'status' => 'get_status',
+        'data' => 'get_data'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1Login200Response implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -313,7 +313,7 @@ class PostApiV1Login200Response implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1Login200Response implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return \WebMI\RocketChatApiClient\AuthenticationApi\Model\PostApiV1Login200ResponseData|null
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -340,7 +340,7 @@ class PostApiV1Login200Response implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200Response implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'success' => 'setSuccess'
+        'users' => 'set_users',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200Response implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'success' => 'getSuccess'
+        'users' => 'get_users',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200Response implements ModelInterface, 
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner[]|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -313,7 +313,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200Response implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200Response implements ModelInterface, 
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

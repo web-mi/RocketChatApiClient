@@ -175,7 +175,7 @@ class PostApiV1LivechatUnitsRequestUnitDepartmentsInner implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'department_id' => 'setDepartmentId'
+        'department_id' => 'set_department_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1LivechatUnitsRequestUnitDepartmentsInner implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'department_id' => 'getDepartmentId'
+        'department_id' => 'get_department_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1LivechatUnitsRequestUnitDepartmentsInner implements ModelInterfac
      *
      * @return string
      */
-    public function getDepartmentId()
+    public function get_department_id()
     {
         return $this->container['department_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1LivechatUnitsRequestUnitDepartmentsInner implements ModelInterfac
      *
      * @return self
      */
-    public function setDepartmentId($department_id)
+    public function set_department_id($department_id)
     {
         if (is_null($department_id)) {
             throw new \InvalidArgumentException('non-nullable department_id cannot be null');

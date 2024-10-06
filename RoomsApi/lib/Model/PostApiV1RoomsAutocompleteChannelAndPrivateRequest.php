@@ -179,8 +179,8 @@ class PostApiV1RoomsAutocompleteChannelAndPrivateRequest implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'action' => 'setAction'
+        'rid' => 'set_rid',
+        'action' => 'set_action'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1RoomsAutocompleteChannelAndPrivateRequest implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'action' => 'getAction'
+        'rid' => 'get_rid',
+        'action' => 'get_action'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1RoomsAutocompleteChannelAndPrivateRequest implements ModelInterfa
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -319,7 +319,7 @@ class PostApiV1RoomsAutocompleteChannelAndPrivateRequest implements ModelInterfa
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1RoomsAutocompleteChannelAndPrivateRequest implements ModelInterfa
      *
      * @return string
      */
-    public function getAction()
+    public function get_action()
     {
         return $this->container['action'];
     }
@@ -346,7 +346,7 @@ class PostApiV1RoomsAutocompleteChannelAndPrivateRequest implements ModelInterfa
      *
      * @return self
      */
-    public function setAction($action)
+    public function set_action($action)
     {
         if (is_null($action)) {
             throw new \InvalidArgumentException('non-nullable action cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1PushGet200ResponseDataNotificationGcm implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'style' => 'setStyle',
-        'image' => 'setImage'
+        'style' => 'set_style',
+        'image' => 'set_image'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1PushGet200ResponseDataNotificationGcm implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'style' => 'getStyle',
-        'image' => 'getImage'
+        'style' => 'get_style',
+        'image' => 'get_image'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1PushGet200ResponseDataNotificationGcm implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getStyle()
+    public function get_style()
     {
         return $this->container['style'];
     }
@@ -313,7 +313,7 @@ class GetApiV1PushGet200ResponseDataNotificationGcm implements ModelInterface, A
      *
      * @return self
      */
-    public function setStyle($style)
+    public function set_style($style)
     {
         if (is_null($style)) {
             throw new \InvalidArgumentException('non-nullable style cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1PushGet200ResponseDataNotificationGcm implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getImage()
+    public function get_image()
     {
         return $this->container['image'];
     }
@@ -340,7 +340,7 @@ class GetApiV1PushGet200ResponseDataNotificationGcm implements ModelInterface, A
      *
      * @return self
      */
-    public function setImage($image)
+    public function set_image($image)
     {
         if (is_null($image)) {
             throw new \InvalidArgumentException('non-nullable image cannot be null');

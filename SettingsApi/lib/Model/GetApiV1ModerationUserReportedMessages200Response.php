@@ -195,12 +195,12 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'user' => 'setUser',
-        'messages' => 'setMessages',
-        'count' => 'setCount',
-        'total' => 'setTotal',
-        'offset' => 'setOffset',
-        'success' => 'setSuccess'
+        'user' => 'set_user',
+        'messages' => 'set_messages',
+        'count' => 'set_count',
+        'total' => 'set_total',
+        'offset' => 'set_offset',
+        'success' => 'set_success'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'user' => 'getUser',
-        'messages' => 'getMessages',
-        'count' => 'getCount',
-        'total' => 'getTotal',
-        'offset' => 'getOffset',
-        'success' => 'getSuccess'
+        'user' => 'get_user',
+        'messages' => 'get_messages',
+        'count' => 'get_count',
+        'total' => 'get_total',
+        'offset' => 'get_offset',
+        'success' => 'get_success'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseUser|null
      */
-    public function getUser()
+    public function get_user()
     {
         return $this->container['user'];
     }
@@ -341,7 +341,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setUser($user)
+    public function set_user($user)
     {
         if (is_null($user)) {
             throw new \InvalidArgumentException('non-nullable user cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInner[]|null
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -368,7 +368,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -395,7 +395,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -422,7 +422,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return int|null
      */
-    public function getOffset()
+    public function get_offset()
     {
         return $this->container['offset'];
     }
@@ -449,7 +449,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setOffset($offset)
+    public function set_offset($offset)
     {
         if (is_null($offset)) {
             throw new \InvalidArgumentException('non-nullable offset cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -476,7 +476,7 @@ class GetApiV1ModerationUserReportedMessages200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

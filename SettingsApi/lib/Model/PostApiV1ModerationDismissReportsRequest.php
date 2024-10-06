@@ -179,8 +179,8 @@ class PostApiV1ModerationDismissReportsRequest implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'user_id' => 'setUserId',
-        'msg_id' => 'setMsgId'
+        'user_id' => 'set_user_id',
+        'msg_id' => 'set_msg_id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ModerationDismissReportsRequest implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'user_id' => 'getUserId',
-        'msg_id' => 'getMsgId'
+        'user_id' => 'get_user_id',
+        'msg_id' => 'get_msg_id'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ModerationDismissReportsRequest implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ModerationDismissReportsRequest implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ModerationDismissReportsRequest implements ModelInterface, ArrayA
      *
      * @return string|null
      */
-    public function getMsgId()
+    public function get_msg_id()
     {
         return $this->container['msg_id'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ModerationDismissReportsRequest implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setMsgId($msg_id)
+    public function set_msg_id($msg_id)
     {
         if (is_null($msg_id)) {
             throw new \InvalidArgumentException('non-nullable msg_id cannot be null');

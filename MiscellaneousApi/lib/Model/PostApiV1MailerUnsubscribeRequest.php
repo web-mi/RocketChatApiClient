@@ -179,8 +179,8 @@ class PostApiV1MailerUnsubscribeRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'created_at' => 'setCreatedAt'
+        '_id' => 'set__id',
+        'created_at' => 'set_created_at'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1MailerUnsubscribeRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'created_at' => 'getCreatedAt'
+        '_id' => 'get__id',
+        'created_at' => 'get_created_at'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1MailerUnsubscribeRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1MailerUnsubscribeRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1MailerUnsubscribeRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -346,7 +346,7 @@ class PostApiV1MailerUnsubscribeRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');

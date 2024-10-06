@@ -179,8 +179,8 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigation implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        'page' => 'setPage',
-        'token' => 'setToken'
+        'page' => 'set_page',
+        'token' => 'set_token'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigation implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        'page' => 'getPage',
-        'token' => 'getToken'
+        'page' => 'get_page',
+        'token' => 'get_token'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigation implements ModelInte
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigationPage|null
      */
-    public function getPage()
+    public function get_page()
     {
         return $this->container['page'];
     }
@@ -313,7 +313,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigation implements ModelInte
      *
      * @return self
      */
-    public function setPage($page)
+    public function set_page($page)
     {
         if (is_null($page)) {
             throw new \InvalidArgumentException('non-nullable page cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigation implements ModelInte
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -340,7 +340,7 @@ class PostApiV1LivechatPageVisited200ResponsePageNavigation implements ModelInte
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');

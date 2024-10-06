@@ -175,7 +175,7 @@ class PostApiV1UsersSetPreferences200ResponseUserSettings implements ModelInterf
      * @var string[]
      */
     protected static $setters = [
-        'preferences' => 'setPreferences'
+        'preferences' => 'set_preferences'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersSetPreferences200ResponseUserSettings implements ModelInterf
      * @var string[]
      */
     protected static $getters = [
-        'preferences' => 'getPreferences'
+        'preferences' => 'get_preferences'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersSetPreferences200ResponseUserSettings implements ModelInterf
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettingsPreferences|null
      */
-    public function getPreferences()
+    public function get_preferences()
     {
         return $this->container['preferences'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersSetPreferences200ResponseUserSettings implements ModelInterf
      *
      * @return self
      */
-    public function setPreferences($preferences)
+    public function set_preferences($preferences)
     {
         if (is_null($preferences)) {
             throw new \InvalidArgumentException('non-nullable preferences cannot be null');

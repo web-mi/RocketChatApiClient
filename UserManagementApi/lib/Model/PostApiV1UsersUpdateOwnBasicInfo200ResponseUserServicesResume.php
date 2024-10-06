@@ -175,7 +175,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume implements M
      * @var string[]
      */
     protected static $setters = [
-        'login_tokens' => 'setLoginTokens'
+        'login_tokens' => 'set_login_tokens'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume implements M
      * @var string[]
      */
     protected static $getters = [
-        'login_tokens' => 'getLoginTokens'
+        'login_tokens' => 'get_login_tokens'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume implements M
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResumeLoginTokensInner[]|null
      */
-    public function getLoginTokens()
+    public function get_login_tokens()
     {
         return $this->container['login_tokens'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesResume implements M
      *
      * @return self
      */
-    public function setLoginTokens($login_tokens)
+    public function set_login_tokens($login_tokens)
     {
         if (is_null($login_tokens)) {
             throw new \InvalidArgumentException('non-nullable login_tokens cannot be null');

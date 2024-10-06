@@ -175,7 +175,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'max' => 'setMax'
+        'max' => 'set_max'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'max' => 'getMax'
+        'max' => 'get_max'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers implements ModelIn
      *
      * @return int|null
      */
-    public function getMax()
+    public function get_max()
     {
         return $this->container['max'];
     }
@@ -306,7 +306,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLimitsActiveUsers implements ModelIn
      *
      * @return self
      */
-    public function setMax($max)
+    public function set_max($max)
     {
         if (is_null($max)) {
             throw new \InvalidArgumentException('non-nullable max cannot be null');

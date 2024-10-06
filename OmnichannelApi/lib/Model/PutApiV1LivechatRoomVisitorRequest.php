@@ -183,9 +183,9 @@ class PutApiV1LivechatRoomVisitorRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'old_visitor_id' => 'setOldVisitorId',
-        'new_visitor_id' => 'setNewVisitorId'
+        'rid' => 'set_rid',
+        'old_visitor_id' => 'set_old_visitor_id',
+        'new_visitor_id' => 'set_new_visitor_id'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PutApiV1LivechatRoomVisitorRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'old_visitor_id' => 'getOldVisitorId',
-        'new_visitor_id' => 'getNewVisitorId'
+        'rid' => 'get_rid',
+        'old_visitor_id' => 'get_old_visitor_id',
+        'new_visitor_id' => 'get_new_visitor_id'
     ];
 
     /**
@@ -317,7 +317,7 @@ class PutApiV1LivechatRoomVisitorRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -329,7 +329,7 @@ class PutApiV1LivechatRoomVisitorRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -344,7 +344,7 @@ class PutApiV1LivechatRoomVisitorRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getOldVisitorId()
+    public function get_old_visitor_id()
     {
         return $this->container['old_visitor_id'];
     }
@@ -356,7 +356,7 @@ class PutApiV1LivechatRoomVisitorRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setOldVisitorId($old_visitor_id)
+    public function set_old_visitor_id($old_visitor_id)
     {
         if (is_null($old_visitor_id)) {
             throw new \InvalidArgumentException('non-nullable old_visitor_id cannot be null');
@@ -371,7 +371,7 @@ class PutApiV1LivechatRoomVisitorRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getNewVisitorId()
+    public function get_new_visitor_id()
     {
         return $this->container['new_visitor_id'];
     }
@@ -383,7 +383,7 @@ class PutApiV1LivechatRoomVisitorRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setNewVisitorId($new_visitor_id)
+    public function set_new_visitor_id($new_visitor_id)
     {
         if (is_null($new_visitor_id)) {
             throw new \InvalidArgumentException('non-nullable new_visitor_id cannot be null');

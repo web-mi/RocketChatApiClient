@@ -179,8 +179,8 @@ class PostApiV1ChannelsSetPurpose200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'purpose' => 'setPurpose',
-        'success' => 'setSuccess'
+        'purpose' => 'set_purpose',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsSetPurpose200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'purpose' => 'getPurpose',
-        'success' => 'getSuccess'
+        'purpose' => 'get_purpose',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ChannelsSetPurpose200Response implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getPurpose()
+    public function get_purpose()
     {
         return $this->container['purpose'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ChannelsSetPurpose200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setPurpose($purpose)
+    public function set_purpose($purpose)
     {
         if (is_null($purpose)) {
             throw new \InvalidArgumentException('non-nullable purpose cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ChannelsSetPurpose200Response implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ChannelsSetPurpose200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

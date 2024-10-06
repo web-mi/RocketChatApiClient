@@ -191,11 +191,11 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'email' => 'setEmail',
-        'phone' => 'setPhone',
-        'livechat_data' => 'setLivechatData'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'email' => 'set_email',
+        'phone' => 'set_phone',
+        'livechat_data' => 'set_livechat_data'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'email' => 'getEmail',
-        'phone' => 'getPhone',
-        'livechat_data' => 'getLivechatData'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'email' => 'get_email',
+        'phone' => 'get_phone',
+        'livechat_data' => 'get_livechat_data'
     ];
 
     /**
@@ -325,7 +325,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return string
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -337,7 +337,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -352,7 +352,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -364,7 +364,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -379,7 +379,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -391,7 +391,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -406,7 +406,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getPhone()
+    public function get_phone()
     {
         return $this->container['phone'];
     }
@@ -418,7 +418,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return self
      */
-    public function setPhone($phone)
+    public function set_phone($phone)
     {
         if (is_null($phone)) {
             throw new \InvalidArgumentException('non-nullable phone cannot be null');
@@ -433,7 +433,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return object|null
      */
-    public function getLivechatData()
+    public function get_livechat_data()
     {
         return $this->container['livechat_data'];
     }
@@ -445,7 +445,7 @@ class PostApiV1LivechatRoomSaveInfoRequestGuestData implements ModelInterface, A
      *
      * @return self
      */
-    public function setLivechatData($livechat_data)
+    public function set_livechat_data($livechat_data)
     {
         if (is_null($livechat_data)) {
             throw new \InvalidArgumentException('non-nullable livechat_data cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServer
      * @var string[]
      */
     protected static $setters = [
-        'websocket_port' => 'setWebsocketPort',
-        'websocket_path' => 'setWebsocketPath'
+        'websocket_port' => 'set_websocket_port',
+        'websocket_path' => 'set_websocket_path'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServer
      * @var string[]
      */
     protected static $getters = [
-        'websocket_port' => 'getWebsocketPort',
-        'websocket_path' => 'getWebsocketPath'
+        'websocket_port' => 'get_websocket_port',
+        'websocket_path' => 'get_websocket_path'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServer
      *
      * @return string|null
      */
-    public function getWebsocketPort()
+    public function get_websocket_port()
     {
         return $this->container['websocket_port'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServer
      *
      * @return self
      */
-    public function setWebsocketPort($websocket_port)
+    public function set_websocket_port($websocket_port)
     {
         if (is_null($websocket_port)) {
             throw new \InvalidArgumentException('non-nullable websocket_port cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServer
      *
      * @return string|null
      */
-    public function getWebsocketPath()
+    public function get_websocket_path()
     {
         return $this->container['websocket_path'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseCallServer
      *
      * @return self
      */
-    public function setWebsocketPath($websocket_path)
+    public function set_websocket_path($websocket_path)
     {
         if (is_null($websocket_path)) {
             throw new \InvalidArgumentException('non-nullable websocket_path cannot be null');

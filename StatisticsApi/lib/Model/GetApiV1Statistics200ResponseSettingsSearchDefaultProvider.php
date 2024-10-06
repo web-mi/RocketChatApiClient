@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsSearchDefaultProvider implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'global_search_enabled' => 'setGlobalSearchEnabled'
+        'global_search_enabled' => 'set_global_search_enabled'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsSearchDefaultProvider implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'global_search_enabled' => 'getGlobalSearchEnabled'
+        'global_search_enabled' => 'get_global_search_enabled'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsSearchDefaultProvider implements Mode
      *
      * @return bool|null
      */
-    public function getGlobalSearchEnabled()
+    public function get_global_search_enabled()
     {
         return $this->container['global_search_enabled'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsSearchDefaultProvider implements Mode
      *
      * @return self
      */
-    public function setGlobalSearchEnabled($global_search_enabled)
+    public function set_global_search_enabled($global_search_enabled)
     {
         if (is_null($global_search_enabled)) {
             throw new \InvalidArgumentException('non-nullable global_search_enabled cannot be null');

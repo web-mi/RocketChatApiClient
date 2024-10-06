@@ -183,9 +183,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise implements Mode
      * @var string[]
      */
     protected static $setters = [
-        'modules' => 'setModules',
-        'tags' => 'setTags',
-        'seat_requests' => 'setSeatRequests'
+        'modules' => 'set_modules',
+        'tags' => 'set_tags',
+        'seat_requests' => 'set_seat_requests'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise implements Mode
      * @var string[]
      */
     protected static $getters = [
-        'modules' => 'getModules',
-        'tags' => 'getTags',
-        'seat_requests' => 'getSeatRequests'
+        'modules' => 'get_modules',
+        'tags' => 'get_tags',
+        'seat_requests' => 'get_seat_requests'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise implements Mode
      *
      * @return object[]|null
      */
-    public function getModules()
+    public function get_modules()
     {
         return $this->container['modules'];
     }
@@ -320,7 +320,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise implements Mode
      *
      * @return self
      */
-    public function setModules($modules)
+    public function set_modules($modules)
     {
         if (is_null($modules)) {
             throw new \InvalidArgumentException('non-nullable modules cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise implements Mode
      *
      * @return object[]|null
      */
-    public function getTags()
+    public function get_tags()
     {
         return $this->container['tags'];
     }
@@ -347,7 +347,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise implements Mode
      *
      * @return self
      */
-    public function setTags($tags)
+    public function set_tags($tags)
     {
         if (is_null($tags)) {
             throw new \InvalidArgumentException('non-nullable tags cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise implements Mode
      *
      * @return int|null
      */
-    public function getSeatRequests()
+    public function get_seat_requests()
     {
         return $this->container['seat_requests'];
     }
@@ -374,7 +374,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerEnterprise implements Mode
      *
      * @return self
      */
-    public function setSeatRequests($seat_requests)
+    public function set_seat_requests($seat_requests)
     {
         if (is_null($seat_requests)) {
             throw new \InvalidArgumentException('non-nullable seat_requests cannot be null');

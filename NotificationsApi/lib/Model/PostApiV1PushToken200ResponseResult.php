@@ -199,13 +199,13 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'app_name' => 'setAppName',
-        'user_id' => 'setUserId',
-        'enabled' => 'setEnabled',
-        'created_at' => 'setCreatedAt',
-        'updated_at' => 'setUpdatedAt',
-        '_id' => 'setId'
+        'token' => 'set_token',
+        'app_name' => 'set_app_name',
+        'user_id' => 'set_user_id',
+        'enabled' => 'set_enabled',
+        'created_at' => 'set_created_at',
+        'updated_at' => 'set_updated_at',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -214,13 +214,13 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'app_name' => 'getAppName',
-        'user_id' => 'getUserId',
-        'enabled' => 'getEnabled',
-        'created_at' => 'getCreatedAt',
-        'updated_at' => 'getUpdatedAt',
-        '_id' => 'getId'
+        'token' => 'get_token',
+        'app_name' => 'get_app_name',
+        'user_id' => 'get_user_id',
+        'enabled' => 'get_enabled',
+        'created_at' => 'get_created_at',
+        'updated_at' => 'get_updated_at',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -336,7 +336,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\PostApiV1PushToken200ResponseResultToken|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -348,7 +348,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -363,7 +363,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getAppName()
+    public function get_app_name()
     {
         return $this->container['app_name'];
     }
@@ -375,7 +375,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setAppName($app_name)
+    public function set_app_name($app_name)
     {
         if (is_null($app_name)) {
             throw new \InvalidArgumentException('non-nullable app_name cannot be null');
@@ -390,7 +390,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -402,7 +402,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -417,7 +417,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -429,7 +429,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -444,7 +444,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -456,7 +456,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -471,7 +471,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get_updated_at()
     {
         return $this->container['updated_at'];
     }
@@ -483,7 +483,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setUpdatedAt($updated_at)
+    public function set_updated_at($updated_at)
     {
         if (is_null($updated_at)) {
             throw new \InvalidArgumentException('non-nullable updated_at cannot be null');
@@ -498,7 +498,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -510,7 +510,7 @@ class PostApiV1PushToken200ResponseResult implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

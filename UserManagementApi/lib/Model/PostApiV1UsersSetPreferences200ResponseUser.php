@@ -179,8 +179,8 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'settings' => 'setSettings'
+        '_id' => 'set__id',
+        'settings' => 'set_settings'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'settings' => 'getSettings'
+        '_id' => 'get__id',
+        'settings' => 'get_settings'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersSetPreferences200ResponseUserSettings|null
      */
-    public function getSettings()
+    public function get_settings()
     {
         return $this->container['settings'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersSetPreferences200ResponseUser implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSettings($settings)
+    public function set_settings($settings)
     {
         if (is_null($settings)) {
             throw new \InvalidArgumentException('non-nullable settings cannot be null');

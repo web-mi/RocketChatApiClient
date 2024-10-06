@@ -231,21 +231,21 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      * @var string[]
      */
     protected static $setters = [
-        'apple' => 'setApple',
-        'dolphin' => 'setDolphin',
-        'drupal' => 'setDrupal',
-        'facebook' => 'setFacebook',
-        'github' => 'setGithub',
-        'github_enterprise' => 'setGithubEnterprise',
-        'gitlab' => 'setGitlab',
-        'google' => 'setGoogle',
-        'linkedin' => 'setLinkedin',
-        'meteor' => 'setMeteor',
-        'nextcloud' => 'setNextcloud',
-        'tokenpass' => 'setTokenpass',
-        'twitter' => 'setTwitter',
-        'wordpress' => 'setWordpress',
-        'custom' => 'setCustom'
+        'apple' => 'set_apple',
+        'dolphin' => 'set_dolphin',
+        'drupal' => 'set_drupal',
+        'facebook' => 'set_facebook',
+        'github' => 'set_github',
+        'github_enterprise' => 'set_github_enterprise',
+        'gitlab' => 'set_gitlab',
+        'google' => 'set_google',
+        'linkedin' => 'set_linkedin',
+        'meteor' => 'set_meteor',
+        'nextcloud' => 'set_nextcloud',
+        'tokenpass' => 'set_tokenpass',
+        'twitter' => 'set_twitter',
+        'wordpress' => 'set_wordpress',
+        'custom' => 'set_custom'
     ];
 
     /**
@@ -254,21 +254,21 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      * @var string[]
      */
     protected static $getters = [
-        'apple' => 'getApple',
-        'dolphin' => 'getDolphin',
-        'drupal' => 'getDrupal',
-        'facebook' => 'getFacebook',
-        'github' => 'getGithub',
-        'github_enterprise' => 'getGithubEnterprise',
-        'gitlab' => 'getGitlab',
-        'google' => 'getGoogle',
-        'linkedin' => 'getLinkedin',
-        'meteor' => 'getMeteor',
-        'nextcloud' => 'getNextcloud',
-        'tokenpass' => 'getTokenpass',
-        'twitter' => 'getTwitter',
-        'wordpress' => 'getWordpress',
-        'custom' => 'getCustom'
+        'apple' => 'get_apple',
+        'dolphin' => 'get_dolphin',
+        'drupal' => 'get_drupal',
+        'facebook' => 'get_facebook',
+        'github' => 'get_github',
+        'github_enterprise' => 'get_github_enterprise',
+        'gitlab' => 'get_gitlab',
+        'google' => 'get_google',
+        'linkedin' => 'get_linkedin',
+        'meteor' => 'get_meteor',
+        'nextcloud' => 'get_nextcloud',
+        'tokenpass' => 'get_tokenpass',
+        'twitter' => 'get_twitter',
+        'wordpress' => 'get_wordpress',
+        'custom' => 'get_custom'
     ];
 
     /**
@@ -392,7 +392,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getApple()
+    public function get_apple()
     {
         return $this->container['apple'];
     }
@@ -404,7 +404,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setApple($apple)
+    public function set_apple($apple)
     {
         if (is_null($apple)) {
             throw new \InvalidArgumentException('non-nullable apple cannot be null');
@@ -419,7 +419,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getDolphin()
+    public function get_dolphin()
     {
         return $this->container['dolphin'];
     }
@@ -431,7 +431,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setDolphin($dolphin)
+    public function set_dolphin($dolphin)
     {
         if (is_null($dolphin)) {
             throw new \InvalidArgumentException('non-nullable dolphin cannot be null');
@@ -446,7 +446,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getDrupal()
+    public function get_drupal()
     {
         return $this->container['drupal'];
     }
@@ -458,7 +458,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setDrupal($drupal)
+    public function set_drupal($drupal)
     {
         if (is_null($drupal)) {
             throw new \InvalidArgumentException('non-nullable drupal cannot be null');
@@ -473,7 +473,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getFacebook()
+    public function get_facebook()
     {
         return $this->container['facebook'];
     }
@@ -485,7 +485,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setFacebook($facebook)
+    public function set_facebook($facebook)
     {
         if (is_null($facebook)) {
             throw new \InvalidArgumentException('non-nullable facebook cannot be null');
@@ -500,7 +500,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getGithub()
+    public function get_github()
     {
         return $this->container['github'];
     }
@@ -512,7 +512,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setGithub($github)
+    public function set_github($github)
     {
         if (is_null($github)) {
             throw new \InvalidArgumentException('non-nullable github cannot be null');
@@ -527,7 +527,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getGithubEnterprise()
+    public function get_github_enterprise()
     {
         return $this->container['github_enterprise'];
     }
@@ -539,7 +539,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setGithubEnterprise($github_enterprise)
+    public function set_github_enterprise($github_enterprise)
     {
         if (is_null($github_enterprise)) {
             throw new \InvalidArgumentException('non-nullable github_enterprise cannot be null');
@@ -554,7 +554,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getGitlab()
+    public function get_gitlab()
     {
         return $this->container['gitlab'];
     }
@@ -566,7 +566,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setGitlab($gitlab)
+    public function set_gitlab($gitlab)
     {
         if (is_null($gitlab)) {
             throw new \InvalidArgumentException('non-nullable gitlab cannot be null');
@@ -581,7 +581,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getGoogle()
+    public function get_google()
     {
         return $this->container['google'];
     }
@@ -593,7 +593,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setGoogle($google)
+    public function set_google($google)
     {
         if (is_null($google)) {
             throw new \InvalidArgumentException('non-nullable google cannot be null');
@@ -608,7 +608,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getLinkedin()
+    public function get_linkedin()
     {
         return $this->container['linkedin'];
     }
@@ -620,7 +620,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setLinkedin($linkedin)
+    public function set_linkedin($linkedin)
     {
         if (is_null($linkedin)) {
             throw new \InvalidArgumentException('non-nullable linkedin cannot be null');
@@ -635,7 +635,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getMeteor()
+    public function get_meteor()
     {
         return $this->container['meteor'];
     }
@@ -647,7 +647,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setMeteor($meteor)
+    public function set_meteor($meteor)
     {
         if (is_null($meteor)) {
             throw new \InvalidArgumentException('non-nullable meteor cannot be null');
@@ -662,7 +662,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getNextcloud()
+    public function get_nextcloud()
     {
         return $this->container['nextcloud'];
     }
@@ -674,7 +674,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setNextcloud($nextcloud)
+    public function set_nextcloud($nextcloud)
     {
         if (is_null($nextcloud)) {
             throw new \InvalidArgumentException('non-nullable nextcloud cannot be null');
@@ -689,7 +689,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getTokenpass()
+    public function get_tokenpass()
     {
         return $this->container['tokenpass'];
     }
@@ -701,7 +701,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setTokenpass($tokenpass)
+    public function set_tokenpass($tokenpass)
     {
         if (is_null($tokenpass)) {
             throw new \InvalidArgumentException('non-nullable tokenpass cannot be null');
@@ -716,7 +716,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getTwitter()
+    public function get_twitter()
     {
         return $this->container['twitter'];
     }
@@ -728,7 +728,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setTwitter($twitter)
+    public function set_twitter($twitter)
     {
         if (is_null($twitter)) {
             throw new \InvalidArgumentException('non-nullable twitter cannot be null');
@@ -743,7 +743,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple|null
      */
-    public function getWordpress()
+    public function get_wordpress()
     {
         return $this->container['wordpress'];
     }
@@ -755,7 +755,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setWordpress($wordpress)
+    public function set_wordpress($wordpress)
     {
         if (is_null($wordpress)) {
             throw new \InvalidArgumentException('non-nullable wordpress cannot be null');
@@ -770,7 +770,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return object|null
      */
-    public function getCustom()
+    public function get_custom()
     {
         return $this->container['custom'];
     }
@@ -782,7 +782,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauth implements M
      *
      * @return self
      */
-    public function setCustom($custom)
+    public function set_custom($custom)
     {
         if (is_null($custom)) {
             throw new \InvalidArgumentException('non-nullable custom cannot be null');

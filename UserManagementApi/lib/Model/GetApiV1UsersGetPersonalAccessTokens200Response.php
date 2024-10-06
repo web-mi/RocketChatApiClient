@@ -179,8 +179,8 @@ class GetApiV1UsersGetPersonalAccessTokens200Response implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'tokens' => 'setTokens',
-        'success' => 'setSuccess'
+        'tokens' => 'set_tokens',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1UsersGetPersonalAccessTokens200Response implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'tokens' => 'getTokens',
-        'success' => 'getSuccess'
+        'tokens' => 'get_tokens',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1UsersGetPersonalAccessTokens200Response implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersGetPersonalAccessTokens200ResponseTokensInner[]|null
      */
-    public function getTokens()
+    public function get_tokens()
     {
         return $this->container['tokens'];
     }
@@ -313,7 +313,7 @@ class GetApiV1UsersGetPersonalAccessTokens200Response implements ModelInterface,
      *
      * @return self
      */
-    public function setTokens($tokens)
+    public function set_tokens($tokens)
     {
         if (is_null($tokens)) {
             throw new \InvalidArgumentException('non-nullable tokens cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1UsersGetPersonalAccessTokens200Response implements ModelInterface,
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1UsersGetPersonalAccessTokens200Response implements ModelInterface,
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

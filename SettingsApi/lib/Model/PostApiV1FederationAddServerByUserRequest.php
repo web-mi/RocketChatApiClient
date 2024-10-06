@@ -175,7 +175,7 @@ class PostApiV1FederationAddServerByUserRequest implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'server_name' => 'setServerName'
+        'server_name' => 'set_server_name'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1FederationAddServerByUserRequest implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'server_name' => 'getServerName'
+        'server_name' => 'get_server_name'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1FederationAddServerByUserRequest implements ModelInterface, Array
      *
      * @return string
      */
-    public function getServerName()
+    public function get_server_name()
     {
         return $this->container['server_name'];
     }
@@ -309,7 +309,7 @@ class PostApiV1FederationAddServerByUserRequest implements ModelInterface, Array
      *
      * @return self
      */
-    public function setServerName($server_name)
+    public function set_server_name($server_name)
     {
         if (is_null($server_name)) {
             throw new \InvalidArgumentException('non-nullable server_name cannot be null');

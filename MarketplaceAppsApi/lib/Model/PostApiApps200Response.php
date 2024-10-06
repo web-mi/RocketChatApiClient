@@ -187,10 +187,10 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      * @var string[]
      */
     protected static $setters = [
-        'app' => 'setApp',
-        'implemented' => 'setImplemented',
-        'license_validation' => 'setLicenseValidation',
-        'success' => 'setSuccess'
+        'app' => 'set_app',
+        'implemented' => 'set_implemented',
+        'license_validation' => 'set_license_validation',
+        'success' => 'set_success'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      * @var string[]
      */
     protected static $getters = [
-        'app' => 'getApp',
-        'implemented' => 'getImplemented',
-        'license_validation' => 'getLicenseValidation',
-        'success' => 'getSuccess'
+        'app' => 'get_app',
+        'implemented' => 'get_implemented',
+        'license_validation' => 'get_license_validation',
+        'success' => 'get_success'
     ];
 
     /**
@@ -315,7 +315,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseApp|null
      */
-    public function getApp()
+    public function get_app()
     {
         return $this->container['app'];
     }
@@ -327,7 +327,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setApp($app)
+    public function set_app($app)
     {
         if (is_null($app)) {
             throw new \InvalidArgumentException('non-nullable app cannot be null');
@@ -342,7 +342,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseImplemented|null
      */
-    public function getImplemented()
+    public function get_implemented()
     {
         return $this->container['implemented'];
     }
@@ -354,7 +354,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setImplemented($implemented)
+    public function set_implemented($implemented)
     {
         if (is_null($implemented)) {
             throw new \InvalidArgumentException('non-nullable implemented cannot be null');
@@ -369,7 +369,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200ResponseLicenseValidation|null
      */
-    public function getLicenseValidation()
+    public function get_license_validation()
     {
         return $this->container['license_validation'];
     }
@@ -381,7 +381,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setLicenseValidation($license_validation)
+    public function set_license_validation($license_validation)
     {
         if (is_null($license_validation)) {
             throw new \InvalidArgumentException('non-nullable license_validation cannot be null');
@@ -396,7 +396,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -408,7 +408,7 @@ class PostApiApps200Response implements ModelInterface, ArrayAccess, \JsonSerial
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

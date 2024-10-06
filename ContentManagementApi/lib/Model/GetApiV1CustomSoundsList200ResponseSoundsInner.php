@@ -187,10 +187,10 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'extension' => 'setExtension',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'extension' => 'set_extension',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'extension' => 'getExtension',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'extension' => 'get_extension',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -354,7 +354,7 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getExtension()
+    public function get_extension()
     {
         return $this->container['extension'];
     }
@@ -381,7 +381,7 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setExtension($extension)
+    public function set_extension($extension)
     {
         if (is_null($extension)) {
             throw new \InvalidArgumentException('non-nullable extension cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -408,7 +408,7 @@ class GetApiV1CustomSoundsList200ResponseSoundsInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

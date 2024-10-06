@@ -179,8 +179,8 @@ class GetApiV1RoomsNameExists200Response implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'exists' => 'setExists',
-        'success' => 'setSuccess'
+        'exists' => 'set_exists',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1RoomsNameExists200Response implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'exists' => 'getExists',
-        'success' => 'getSuccess'
+        'exists' => 'get_exists',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1RoomsNameExists200Response implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getExists()
+    public function get_exists()
     {
         return $this->container['exists'];
     }
@@ -313,7 +313,7 @@ class GetApiV1RoomsNameExists200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setExists($exists)
+    public function set_exists($exists)
     {
         if (is_null($exists)) {
             throw new \InvalidArgumentException('non-nullable exists cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1RoomsNameExists200Response implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1RoomsNameExists200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

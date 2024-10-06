@@ -207,15 +207,15 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'email' => 'setEmail',
-        'active' => 'setActive',
-        'description' => 'setDescription',
-        'sender_info' => 'setSenderInfo',
-        'department' => 'setDepartment',
-        'smtp' => 'setSmtp',
-        'imap' => 'setImap'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'email' => 'set_email',
+        'active' => 'set_active',
+        'description' => 'set_description',
+        'sender_info' => 'set_sender_info',
+        'department' => 'set_department',
+        'smtp' => 'set_smtp',
+        'imap' => 'set_imap'
     ];
 
     /**
@@ -224,15 +224,15 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'email' => 'getEmail',
-        'active' => 'getActive',
-        'description' => 'getDescription',
-        'sender_info' => 'getSenderInfo',
-        'department' => 'getDepartment',
-        'smtp' => 'getSmtp',
-        'imap' => 'getImap'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'email' => 'get_email',
+        'active' => 'get_active',
+        'description' => 'get_description',
+        'sender_info' => 'get_sender_info',
+        'department' => 'get_department',
+        'smtp' => 'get_smtp',
+        'imap' => 'get_imap'
     ];
 
     /**
@@ -365,7 +365,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -377,7 +377,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -392,7 +392,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -404,7 +404,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -419,7 +419,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -431,7 +431,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -446,7 +446,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return bool
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -458,7 +458,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');
@@ -473,7 +473,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -485,7 +485,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -500,7 +500,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string|null
      */
-    public function getSenderInfo()
+    public function get_sender_info()
     {
         return $this->container['sender_info'];
     }
@@ -512,7 +512,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setSenderInfo($sender_info)
+    public function set_sender_info($sender_info)
     {
         if (is_null($sender_info)) {
             throw new \InvalidArgumentException('non-nullable sender_info cannot be null');
@@ -527,7 +527,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return string|null
      */
-    public function getDepartment()
+    public function get_department()
     {
         return $this->container['department'];
     }
@@ -539,7 +539,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setDepartment($department)
+    public function set_department($department)
     {
         if (is_null($department)) {
             throw new \InvalidArgumentException('non-nullable department cannot be null');
@@ -554,7 +554,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1EmailInboxRequestSmtp
      */
-    public function getSmtp()
+    public function get_smtp()
     {
         return $this->container['smtp'];
     }
@@ -566,7 +566,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setSmtp($smtp)
+    public function set_smtp($smtp)
     {
         if (is_null($smtp)) {
             throw new \InvalidArgumentException('non-nullable smtp cannot be null');
@@ -581,7 +581,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1EmailInboxRequestImap
      */
-    public function getImap()
+    public function get_imap()
     {
         return $this->container['imap'];
     }
@@ -593,7 +593,7 @@ class PostApiV1EmailInboxRequest implements ModelInterface, ArrayAccess, \JsonSe
      *
      * @return self
      */
-    public function setImap($imap)
+    public function set_imap($imap)
     {
         if (is_null($imap)) {
             throw new \InvalidArgumentException('non-nullable imap cannot be null');

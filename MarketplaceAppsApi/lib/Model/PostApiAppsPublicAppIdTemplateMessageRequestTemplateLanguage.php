@@ -179,8 +179,8 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage implements Mo
      * @var string[]
      */
     protected static $setters = [
-        'code' => 'setCode',
-        'policy' => 'setPolicy'
+        'code' => 'set_code',
+        'policy' => 'set_policy'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage implements Mo
      * @var string[]
      */
     protected static $getters = [
-        'code' => 'getCode',
-        'policy' => 'getPolicy'
+        'code' => 'get_code',
+        'policy' => 'get_policy'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage implements Mo
      *
      * @return string|null
      */
-    public function getCode()
+    public function get_code()
     {
         return $this->container['code'];
     }
@@ -313,7 +313,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage implements Mo
      *
      * @return self
      */
-    public function setCode($code)
+    public function set_code($code)
     {
         if (is_null($code)) {
             throw new \InvalidArgumentException('non-nullable code cannot be null');
@@ -328,7 +328,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage implements Mo
      *
      * @return string|null
      */
-    public function getPolicy()
+    public function get_policy()
     {
         return $this->container['policy'];
     }
@@ -340,7 +340,7 @@ class PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage implements Mo
      *
      * @return self
      */
-    public function setPolicy($policy)
+    public function set_policy($policy)
     {
         if (is_null($policy)) {
             throw new \InvalidArgumentException('non-nullable policy cannot be null');

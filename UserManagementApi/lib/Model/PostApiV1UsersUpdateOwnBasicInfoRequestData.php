@@ -208,15 +208,15 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'email' => 'setEmail',
-        'new_password' => 'setNewPassword',
-        'current_password' => 'setCurrentPassword',
-        'nickname' => 'setNickname',
-        'bio' => 'setBio',
-        'username' => 'setUsername',
-        'name' => 'setName',
-        'status_type' => 'setStatusType',
-        'status_text' => 'setStatusText'
+        'email' => 'set_email',
+        'new_password' => 'set_new_password',
+        'current_password' => 'set_current_password',
+        'nickname' => 'set_nickname',
+        'bio' => 'set_bio',
+        'username' => 'set_username',
+        'name' => 'set_name',
+        'status_type' => 'set_status_type',
+        'status_text' => 'set_status_text'
     ];
 
     /**
@@ -225,15 +225,15 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'email' => 'getEmail',
-        'new_password' => 'getNewPassword',
-        'current_password' => 'getCurrentPassword',
-        'nickname' => 'getNickname',
-        'bio' => 'getBio',
-        'username' => 'getUsername',
-        'name' => 'getName',
-        'status_type' => 'getStatusType',
-        'status_text' => 'getStatusText'
+        'email' => 'get_email',
+        'new_password' => 'get_new_password',
+        'current_password' => 'get_current_password',
+        'nickname' => 'get_nickname',
+        'bio' => 'get_bio',
+        'username' => 'get_username',
+        'name' => 'get_name',
+        'status_type' => 'get_status_type',
+        'status_text' => 'get_status_text'
     ];
 
     /**
@@ -351,7 +351,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -363,7 +363,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -378,7 +378,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getNewPassword()
+    public function get_new_password()
     {
         return $this->container['new_password'];
     }
@@ -390,7 +390,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setNewPassword($new_password)
+    public function set_new_password($new_password)
     {
         if (is_null($new_password)) {
             throw new \InvalidArgumentException('non-nullable new_password cannot be null');
@@ -405,7 +405,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getCurrentPassword()
+    public function get_current_password()
     {
         return $this->container['current_password'];
     }
@@ -417,7 +417,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setCurrentPassword($current_password)
+    public function set_current_password($current_password)
     {
         if (is_null($current_password)) {
             throw new \InvalidArgumentException('non-nullable current_password cannot be null');
@@ -432,7 +432,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getNickname()
+    public function get_nickname()
     {
         return $this->container['nickname'];
     }
@@ -444,7 +444,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setNickname($nickname)
+    public function set_nickname($nickname)
     {
         if (is_null($nickname)) {
             throw new \InvalidArgumentException('non-nullable nickname cannot be null');
@@ -459,7 +459,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getBio()
+    public function get_bio()
     {
         return $this->container['bio'];
     }
@@ -471,7 +471,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setBio($bio)
+    public function set_bio($bio)
     {
         if (is_null($bio)) {
             throw new \InvalidArgumentException('non-nullable bio cannot be null');
@@ -486,7 +486,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -498,7 +498,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -513,7 +513,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -525,7 +525,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -540,7 +540,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getStatusType()
+    public function get_status_type()
     {
         return $this->container['status_type'];
     }
@@ -552,7 +552,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setStatusType($status_type)
+    public function set_status_type($status_type)
     {
         if (is_null($status_type)) {
             throw new \InvalidArgumentException('non-nullable status_type cannot be null');
@@ -567,7 +567,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getStatusText()
+    public function get_status_text()
     {
         return $this->container['status_text'];
     }
@@ -579,7 +579,7 @@ class PostApiV1UsersUpdateOwnBasicInfoRequestData implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setStatusText($status_text)
+    public function set_status_text($status_text)
     {
         if (is_null($status_text)) {
             throw new \InvalidArgumentException('non-nullable status_text cannot be null');

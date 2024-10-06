@@ -211,16 +211,16 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'latest' => 'setLatest',
-        'oldest' => 'setOldest',
-        'inclusive' => 'setInclusive',
-        'exclude_pinned' => 'setExcludePinned',
-        'files_only' => 'setFilesOnly',
-        'users' => 'setUsers',
-        'limit' => 'setLimit',
-        'ignore_discussion' => 'setIgnoreDiscussion',
-        'ignore_threads' => 'setIgnoreThreads'
+        'room_id' => 'set_room_id',
+        'latest' => 'set_latest',
+        'oldest' => 'set_oldest',
+        'inclusive' => 'set_inclusive',
+        'exclude_pinned' => 'set_exclude_pinned',
+        'files_only' => 'set_files_only',
+        'users' => 'set_users',
+        'limit' => 'set_limit',
+        'ignore_discussion' => 'set_ignore_discussion',
+        'ignore_threads' => 'set_ignore_threads'
     ];
 
     /**
@@ -229,16 +229,16 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'latest' => 'getLatest',
-        'oldest' => 'getOldest',
-        'inclusive' => 'getInclusive',
-        'exclude_pinned' => 'getExcludePinned',
-        'files_only' => 'getFilesOnly',
-        'users' => 'getUsers',
-        'limit' => 'getLimit',
-        'ignore_discussion' => 'getIgnoreDiscussion',
-        'ignore_threads' => 'getIgnoreThreads'
+        'room_id' => 'get_room_id',
+        'latest' => 'get_latest',
+        'oldest' => 'get_oldest',
+        'inclusive' => 'get_inclusive',
+        'exclude_pinned' => 'get_exclude_pinned',
+        'files_only' => 'get_files_only',
+        'users' => 'get_users',
+        'limit' => 'get_limit',
+        'ignore_discussion' => 'get_ignore_discussion',
+        'ignore_threads' => 'get_ignore_threads'
     ];
 
     /**
@@ -366,7 +366,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -378,7 +378,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -393,7 +393,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getLatest()
+    public function get_latest()
     {
         return $this->container['latest'];
     }
@@ -405,7 +405,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setLatest($latest)
+    public function set_latest($latest)
     {
         if (is_null($latest)) {
             throw new \InvalidArgumentException('non-nullable latest cannot be null');
@@ -420,7 +420,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getOldest()
+    public function get_oldest()
     {
         return $this->container['oldest'];
     }
@@ -432,7 +432,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setOldest($oldest)
+    public function set_oldest($oldest)
     {
         if (is_null($oldest)) {
             throw new \InvalidArgumentException('non-nullable oldest cannot be null');
@@ -447,7 +447,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getInclusive()
+    public function get_inclusive()
     {
         return $this->container['inclusive'];
     }
@@ -459,7 +459,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setInclusive($inclusive)
+    public function set_inclusive($inclusive)
     {
         if (is_null($inclusive)) {
             throw new \InvalidArgumentException('non-nullable inclusive cannot be null');
@@ -474,7 +474,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getExcludePinned()
+    public function get_exclude_pinned()
     {
         return $this->container['exclude_pinned'];
     }
@@ -486,7 +486,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setExcludePinned($exclude_pinned)
+    public function set_exclude_pinned($exclude_pinned)
     {
         if (is_null($exclude_pinned)) {
             throw new \InvalidArgumentException('non-nullable exclude_pinned cannot be null');
@@ -501,7 +501,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getFilesOnly()
+    public function get_files_only()
     {
         return $this->container['files_only'];
     }
@@ -513,7 +513,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setFilesOnly($files_only)
+    public function set_files_only($files_only)
     {
         if (is_null($files_only)) {
             throw new \InvalidArgumentException('non-nullable files_only cannot be null');
@@ -528,7 +528,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string[]|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -540,7 +540,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -555,7 +555,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return int|null
      */
-    public function getLimit()
+    public function get_limit()
     {
         return $this->container['limit'];
     }
@@ -567,7 +567,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setLimit($limit)
+    public function set_limit($limit)
     {
         if (is_null($limit)) {
             throw new \InvalidArgumentException('non-nullable limit cannot be null');
@@ -582,7 +582,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getIgnoreDiscussion()
+    public function get_ignore_discussion()
     {
         return $this->container['ignore_discussion'];
     }
@@ -594,7 +594,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setIgnoreDiscussion($ignore_discussion)
+    public function set_ignore_discussion($ignore_discussion)
     {
         if (is_null($ignore_discussion)) {
             throw new \InvalidArgumentException('non-nullable ignore_discussion cannot be null');
@@ -609,7 +609,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return bool|null
      */
-    public function getIgnoreThreads()
+    public function get_ignore_threads()
     {
         return $this->container['ignore_threads'];
     }
@@ -621,7 +621,7 @@ class GetApiV1RoomsCleanHistoryRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setIgnoreThreads($ignore_threads)
+    public function set_ignore_threads($ignore_threads)
     {
         if (is_null($ignore_threads)) {
             throw new \InvalidArgumentException('non-nullable ignore_threads cannot be null');

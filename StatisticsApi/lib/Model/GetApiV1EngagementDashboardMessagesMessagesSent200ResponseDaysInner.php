@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner implem
      * @var string[]
      */
     protected static $setters = [
-        'day' => 'setDay',
-        'messages' => 'setMessages'
+        'day' => 'set_day',
+        'messages' => 'set_messages'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner implem
      * @var string[]
      */
     protected static $getters = [
-        'day' => 'getDay',
-        'messages' => 'getMessages'
+        'day' => 'get_day',
+        'messages' => 'get_messages'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner implem
      *
      * @return string|null
      */
-    public function getDay()
+    public function get_day()
     {
         return $this->container['day'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner implem
      *
      * @return self
      */
-    public function setDay($day)
+    public function set_day($day)
     {
         if (is_null($day)) {
             throw new \InvalidArgumentException('non-nullable day cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner implem
      *
      * @return int|null
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardMessagesMessagesSent200ResponseDaysInner implem
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');

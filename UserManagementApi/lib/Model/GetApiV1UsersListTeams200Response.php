@@ -179,8 +179,8 @@ class GetApiV1UsersListTeams200Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'teams' => 'setTeams',
-        'success' => 'setSuccess'
+        'teams' => 'set_teams',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1UsersListTeams200Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'teams' => 'getTeams',
-        'success' => 'getSuccess'
+        'teams' => 'get_teams',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1UsersListTeams200Response implements ModelInterface, ArrayAccess, 
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersListTeams200ResponseTeamsInner[]|null
      */
-    public function getTeams()
+    public function get_teams()
     {
         return $this->container['teams'];
     }
@@ -313,7 +313,7 @@ class GetApiV1UsersListTeams200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setTeams($teams)
+    public function set_teams($teams)
     {
         if (is_null($teams)) {
             throw new \InvalidArgumentException('non-nullable teams cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1UsersListTeams200Response implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1UsersListTeams200Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

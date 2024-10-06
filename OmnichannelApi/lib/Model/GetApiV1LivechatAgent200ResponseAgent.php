@@ -195,12 +195,12 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'emails' => 'setEmails',
-        'status' => 'setStatus',
-        'name' => 'setName',
-        'username' => 'setUsername',
-        'livechat' => 'setLivechat'
+        '_id' => 'set__id',
+        'emails' => 'set_emails',
+        'status' => 'set_status',
+        'name' => 'set_name',
+        'username' => 'set_username',
+        'livechat' => 'set_livechat'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'emails' => 'getEmails',
-        'status' => 'getStatus',
-        'name' => 'getName',
-        'username' => 'getUsername',
-        'livechat' => 'getLivechat'
+        '_id' => 'get__id',
+        'emails' => 'get_emails',
+        'status' => 'get_status',
+        'name' => 'get_name',
+        'username' => 'get_username',
+        'livechat' => 'get_livechat'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null
      */
-    public function getEmails()
+    public function get_emails()
     {
         return $this->container['emails'];
     }
@@ -368,7 +368,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setEmails($emails)
+    public function set_emails($emails)
     {
         if (is_null($emails)) {
             throw new \InvalidArgumentException('non-nullable emails cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -395,7 +395,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -422,7 +422,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -449,7 +449,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersTypeId200ResponseUserLivechat|null
      */
-    public function getLivechat()
+    public function get_livechat()
     {
         return $this->container['livechat'];
     }
@@ -476,7 +476,7 @@ class GetApiV1LivechatAgent200ResponseAgent implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setLivechat($livechat)
+    public function set_livechat($livechat)
     {
         if (is_null($livechat)) {
             throw new \InvalidArgumentException('non-nullable livechat cannot be null');

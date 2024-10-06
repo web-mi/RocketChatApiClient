@@ -191,11 +191,11 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'description' => 'setDescription',
-        'reported_by' => 'setReportedBy',
-        'room' => 'setRoom',
-        'ts' => 'setTs'
+        '_id' => 'set__id',
+        'description' => 'set_description',
+        'reported_by' => 'set_reported_by',
+        'room' => 'set_room',
+        'ts' => 'set_ts'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'description' => 'getDescription',
-        'reported_by' => 'getReportedBy',
-        'room' => 'getRoom',
-        'ts' => 'getTs'
+        '_id' => 'get__id',
+        'description' => 'get_description',
+        'reported_by' => 'get_reported_by',
+        'room' => 'get_room',
+        'ts' => 'get_ts'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -361,7 +361,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationReports200ResponseReportsInnerReportedBy|null
      */
-    public function getReportedBy()
+    public function get_reported_by()
     {
         return $this->container['reported_by'];
     }
@@ -388,7 +388,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return self
      */
-    public function setReportedBy($reported_by)
+    public function set_reported_by($reported_by)
     {
         if (is_null($reported_by)) {
             throw new \InvalidArgumentException('non-nullable reported_by cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1ModerationUserReportedMessages200ResponseMessagesInnerRoom|null
      */
-    public function getRoom()
+    public function get_room()
     {
         return $this->container['room'];
     }
@@ -415,7 +415,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return self
      */
-    public function setRoom($room)
+    public function set_room($room)
     {
         if (is_null($room)) {
             throw new \InvalidArgumentException('non-nullable room cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -442,7 +442,7 @@ class GetApiV1ModerationReports200ResponseReportsInner implements ModelInterface
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');

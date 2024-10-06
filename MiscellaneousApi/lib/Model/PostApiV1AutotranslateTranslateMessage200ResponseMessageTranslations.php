@@ -175,7 +175,7 @@ class PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations imple
      * @var string[]
      */
     protected static $setters = [
-        'en' => 'setEn'
+        'en' => 'set_en'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations imple
      * @var string[]
      */
     protected static $getters = [
-        'en' => 'getEn'
+        'en' => 'get_en'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations imple
      *
      * @return string|null
      */
-    public function getEn()
+    public function get_en()
     {
         return $this->container['en'];
     }
@@ -306,7 +306,7 @@ class PostApiV1AutotranslateTranslateMessage200ResponseMessageTranslations imple
      *
      * @return self
      */
-    public function setEn($en)
+    public function set_en($en)
     {
         if (is_null($en)) {
             throw new \InvalidArgumentException('non-nullable en cannot be null');

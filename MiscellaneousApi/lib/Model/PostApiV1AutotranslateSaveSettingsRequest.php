@@ -187,10 +187,10 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'field' => 'setField',
-        'value' => 'setValue',
-        'default_language' => 'setDefaultLanguage'
+        'room_id' => 'set_room_id',
+        'field' => 'set_field',
+        'value' => 'set_value',
+        'default_language' => 'set_default_language'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'field' => 'getField',
-        'value' => 'getValue',
-        'default_language' => 'getDefaultLanguage'
+        'room_id' => 'get_room_id',
+        'field' => 'get_field',
+        'value' => 'get_value',
+        'default_language' => 'get_default_language'
     ];
 
     /**
@@ -324,7 +324,7 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -336,7 +336,7 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -351,7 +351,7 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      *
      * @return string
      */
-    public function getField()
+    public function get_field()
     {
         return $this->container['field'];
     }
@@ -363,7 +363,7 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      *
      * @return self
      */
-    public function setField($field)
+    public function set_field($field)
     {
         if (is_null($field)) {
             throw new \InvalidArgumentException('non-nullable field cannot be null');
@@ -378,7 +378,7 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      *
      * @return bool
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -390,7 +390,7 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');
@@ -405,7 +405,7 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getDefaultLanguage()
+    public function get_default_language()
     {
         return $this->container['default_language'];
     }
@@ -417,7 +417,7 @@ class PostApiV1AutotranslateSaveSettingsRequest implements ModelInterface, Array
      *
      * @return self
      */
-    public function setDefaultLanguage($default_language)
+    public function set_default_language($default_language)
     {
         if (is_null($default_language)) {
             throw new \InvalidArgumentException('non-nullable default_language cannot be null');

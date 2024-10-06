@@ -179,8 +179,8 @@ class PostApiV1E2eSetUserPublicAndPrivateKeysRequest implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'public_key' => 'setPublicKey',
-        'private_key' => 'setPrivateKey'
+        'public_key' => 'set_public_key',
+        'private_key' => 'set_private_key'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1E2eSetUserPublicAndPrivateKeysRequest implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'public_key' => 'getPublicKey',
-        'private_key' => 'getPrivateKey'
+        'public_key' => 'get_public_key',
+        'private_key' => 'get_private_key'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1E2eSetUserPublicAndPrivateKeysRequest implements ModelInterface, 
      *
      * @return string
      */
-    public function getPublicKey()
+    public function get_public_key()
     {
         return $this->container['public_key'];
     }
@@ -319,7 +319,7 @@ class PostApiV1E2eSetUserPublicAndPrivateKeysRequest implements ModelInterface, 
      *
      * @return self
      */
-    public function setPublicKey($public_key)
+    public function set_public_key($public_key)
     {
         if (is_null($public_key)) {
             throw new \InvalidArgumentException('non-nullable public_key cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1E2eSetUserPublicAndPrivateKeysRequest implements ModelInterface, 
      *
      * @return string
      */
-    public function getPrivateKey()
+    public function get_private_key()
     {
         return $this->container['private_key'];
     }
@@ -346,7 +346,7 @@ class PostApiV1E2eSetUserPublicAndPrivateKeysRequest implements ModelInterface, 
      *
      * @return self
      */
-    public function setPrivateKey($private_key)
+    public function set_private_key($private_key)
     {
         if (is_null($private_key)) {
             throw new \InvalidArgumentException('non-nullable private_key cannot be null');

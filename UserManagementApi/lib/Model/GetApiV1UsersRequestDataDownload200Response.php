@@ -183,9 +183,9 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'requested' => 'setRequested',
-        'export_operation' => 'setExportOperation',
-        'success' => 'setSuccess'
+        'requested' => 'set_requested',
+        'export_operation' => 'set_export_operation',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'requested' => 'getRequested',
-        'export_operation' => 'getExportOperation',
-        'success' => 'getSuccess'
+        'requested' => 'get_requested',
+        'export_operation' => 'get_export_operation',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getRequested()
+    public function get_requested()
     {
         return $this->container['requested'];
     }
@@ -320,7 +320,7 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setRequested($requested)
+    public function set_requested($requested)
     {
         if (is_null($requested)) {
             throw new \InvalidArgumentException('non-nullable requested cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperation|null
      */
-    public function getExportOperation()
+    public function get_export_operation()
     {
         return $this->container['export_operation'];
     }
@@ -347,7 +347,7 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setExportOperation($export_operation)
+    public function set_export_operation($export_operation)
     {
         if (is_null($export_operation)) {
             throw new \InvalidArgumentException('non-nullable export_operation cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1UsersRequestDataDownload200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

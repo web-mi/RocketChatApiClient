@@ -183,9 +183,9 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'head' => 'setHead',
-        'data' => 'setData',
-        'success' => 'setSuccess'
+        'head' => 'set_head',
+        'data' => 'set_data',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'head' => 'getHead',
-        'data' => 'getData',
-        'success' => 'getSuccess'
+        'head' => 'get_head',
+        'data' => 'get_data',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseHeadInner[]|null
      */
-    public function getHead()
+    public function get_head()
     {
         return $this->container['head'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setHead($head)
+    public function set_head($head)
     {
         if (is_null($head)) {
             throw new \InvalidArgumentException('non-nullable head cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatAnalyticsAgentOverview200Response implements ModelInterfac
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

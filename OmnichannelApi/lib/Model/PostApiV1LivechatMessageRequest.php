@@ -191,11 +191,11 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'rid' => 'setRid',
-        'msg' => 'setMsg',
-        '_id' => 'setId',
-        'agent' => 'setAgent'
+        'token' => 'set_token',
+        'rid' => 'set_rid',
+        'msg' => 'set_msg',
+        '_id' => 'set__id',
+        'agent' => 'set_agent'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'rid' => 'getRid',
-        'msg' => 'getMsg',
-        '_id' => 'getId',
-        'agent' => 'getAgent'
+        'token' => 'get_token',
+        'rid' => 'get_rid',
+        'msg' => 'get_msg',
+        '_id' => 'get__id',
+        'agent' => 'get_agent'
     ];
 
     /**
@@ -331,7 +331,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -343,7 +343,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -358,7 +358,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -370,7 +370,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -385,7 +385,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -397,7 +397,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -412,7 +412,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -424,7 +424,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -439,7 +439,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatMessageRequestAgent|null
      */
-    public function getAgent()
+    public function get_agent()
     {
         return $this->container['agent'];
     }
@@ -451,7 +451,7 @@ class PostApiV1LivechatMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setAgent($agent)
+    public function set_agent($agent)
     {
         if (is_null($agent)) {
             throw new \InvalidArgumentException('non-nullable agent cannot be null');

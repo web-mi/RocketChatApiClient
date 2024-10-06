@@ -179,8 +179,8 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'e2e' => 'setE2e'
+        '_id' => 'set__id',
+        'e2e' => 'set_e2e'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'e2e' => 'getE2e'
+        '_id' => 'get__id',
+        'e2e' => 'get_e2e'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner implements ModelI
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner implements ModelI
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner implements ModelI
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e|null
      */
-    public function getE2e()
+    public function get_e2e()
     {
         return $this->container['e2e'];
     }
@@ -340,7 +340,7 @@ class GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInner implements ModelI
      *
      * @return self
      */
-    public function setE2e($e2e)
+    public function set_e2e($e2e)
     {
         if (is_null($e2e)) {
             throw new \InvalidArgumentException('non-nullable e2e cannot be null');

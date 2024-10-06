@@ -215,17 +215,17 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'from' => 'setFrom',
-        'badge' => 'setBadge',
-        'sound' => 'setSound',
-        'priority' => 'setPriority',
-        'title' => 'setTitle',
-        'text' => 'setText',
-        'payload' => 'setPayload',
-        'user_id' => 'setUserId',
-        'not_id' => 'setNotId',
-        'gcm' => 'setGcm',
-        'apn' => 'setApn'
+        'from' => 'set_from',
+        'badge' => 'set_badge',
+        'sound' => 'set_sound',
+        'priority' => 'set_priority',
+        'title' => 'set_title',
+        'text' => 'set_text',
+        'payload' => 'set_payload',
+        'user_id' => 'set_user_id',
+        'not_id' => 'set_not_id',
+        'gcm' => 'set_gcm',
+        'apn' => 'set_apn'
     ];
 
     /**
@@ -234,17 +234,17 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'from' => 'getFrom',
-        'badge' => 'getBadge',
-        'sound' => 'getSound',
-        'priority' => 'getPriority',
-        'title' => 'getTitle',
-        'text' => 'getText',
-        'payload' => 'getPayload',
-        'user_id' => 'getUserId',
-        'not_id' => 'getNotId',
-        'gcm' => 'getGcm',
-        'apn' => 'getApn'
+        'from' => 'get_from',
+        'badge' => 'get_badge',
+        'sound' => 'get_sound',
+        'priority' => 'get_priority',
+        'title' => 'get_title',
+        'text' => 'get_text',
+        'payload' => 'get_payload',
+        'user_id' => 'get_user_id',
+        'not_id' => 'get_not_id',
+        'gcm' => 'get_gcm',
+        'apn' => 'get_apn'
     ];
 
     /**
@@ -364,7 +364,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getFrom()
+    public function get_from()
     {
         return $this->container['from'];
     }
@@ -376,7 +376,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setFrom($from)
+    public function set_from($from)
     {
         if (is_null($from)) {
             throw new \InvalidArgumentException('non-nullable from cannot be null');
@@ -391,7 +391,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getBadge()
+    public function get_badge()
     {
         return $this->container['badge'];
     }
@@ -403,7 +403,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setBadge($badge)
+    public function set_badge($badge)
     {
         if (is_null($badge)) {
             throw new \InvalidArgumentException('non-nullable badge cannot be null');
@@ -418,7 +418,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getSound()
+    public function get_sound()
     {
         return $this->container['sound'];
     }
@@ -430,7 +430,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setSound($sound)
+    public function set_sound($sound)
     {
         if (is_null($sound)) {
             throw new \InvalidArgumentException('non-nullable sound cannot be null');
@@ -445,7 +445,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getPriority()
+    public function get_priority()
     {
         return $this->container['priority'];
     }
@@ -457,7 +457,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setPriority($priority)
+    public function set_priority($priority)
     {
         if (is_null($priority)) {
             throw new \InvalidArgumentException('non-nullable priority cannot be null');
@@ -472,7 +472,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getTitle()
+    public function get_title()
     {
         return $this->container['title'];
     }
@@ -484,7 +484,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setTitle($title)
+    public function set_title($title)
     {
         if (is_null($title)) {
             throw new \InvalidArgumentException('non-nullable title cannot be null');
@@ -499,7 +499,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -511,7 +511,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -526,7 +526,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationPayload|null
      */
-    public function getPayload()
+    public function get_payload()
     {
         return $this->container['payload'];
     }
@@ -538,7 +538,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setPayload($payload)
+    public function set_payload($payload)
     {
         if (is_null($payload)) {
             throw new \InvalidArgumentException('non-nullable payload cannot be null');
@@ -553,7 +553,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -565,7 +565,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -580,7 +580,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getNotId()
+    public function get_not_id()
     {
         return $this->container['not_id'];
     }
@@ -592,7 +592,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setNotId($not_id)
+    public function set_not_id($not_id)
     {
         if (is_null($not_id)) {
             throw new \InvalidArgumentException('non-nullable not_id cannot be null');
@@ -607,7 +607,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationGcm|null
      */
-    public function getGcm()
+    public function get_gcm()
     {
         return $this->container['gcm'];
     }
@@ -619,7 +619,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setGcm($gcm)
+    public function set_gcm($gcm)
     {
         if (is_null($gcm)) {
             throw new \InvalidArgumentException('non-nullable gcm cannot be null');
@@ -634,7 +634,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotificationApn|null
      */
-    public function getApn()
+    public function get_apn()
     {
         return $this->container['apn'];
     }
@@ -646,7 +646,7 @@ class GetApiV1PushGet200ResponseDataNotification implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setApn($apn)
+    public function set_apn($apn)
     {
         if (is_null($apn)) {
             throw new \InvalidArgumentException('non-nullable apn cannot be null');

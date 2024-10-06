@@ -175,7 +175,7 @@ class PostApiV1LivechatRoomSurvey200ResponseData implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'additional_feedback' => 'setAdditionalFeedback'
+        'additional_feedback' => 'set_additional_feedback'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1LivechatRoomSurvey200ResponseData implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'additional_feedback' => 'getAdditionalFeedback'
+        'additional_feedback' => 'get_additional_feedback'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1LivechatRoomSurvey200ResponseData implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getAdditionalFeedback()
+    public function get_additional_feedback()
     {
         return $this->container['additional_feedback'];
     }
@@ -306,7 +306,7 @@ class PostApiV1LivechatRoomSurvey200ResponseData implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setAdditionalFeedback($additional_feedback)
+    public function set_additional_feedback($additional_feedback)
     {
         if (is_null($additional_feedback)) {
             throw new \InvalidArgumentException('non-nullable additional_feedback cannot be null');

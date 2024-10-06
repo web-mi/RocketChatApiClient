@@ -175,7 +175,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml implements Mo
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers'
+        'users' => 'set_users'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml implements Mo
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers'
+        'users' => 'get_users'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml implements Mo
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -306,7 +306,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesSaml implements Mo
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');

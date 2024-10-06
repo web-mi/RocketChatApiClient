@@ -179,8 +179,8 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      * @var string[]
      */
     protected static $setters = [
-        'day_of_week' => 'setDayOfWeek',
-        'time' => 'setTime'
+        'day_of_week' => 'set_day_of_week',
+        'time' => 'set_time'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      * @var string[]
      */
     protected static $getters = [
-        'day_of_week' => 'getDayOfWeek',
-        'time' => 'getTime'
+        'day_of_week' => 'get_day_of_week',
+        'time' => 'get_time'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return string|null
      */
-    public function getDayOfWeek()
+    public function get_day_of_week()
     {
         return $this->container['day_of_week'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return self
      */
-    public function setDayOfWeek($day_of_week)
+    public function set_day_of_week($day_of_week)
     {
         if (is_null($day_of_week)) {
             throw new \InvalidArgumentException('non-nullable day_of_week cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return string|null
      */
-    public function getTime()
+    public function get_time()
     {
         return $this->container['time'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerWorkHoursInnerSt
      *
      * @return self
      */
-    public function setTime($time)
+    public function set_time($time)
     {
         if (is_null($time)) {
             throw new \InvalidArgumentException('non-nullable time cannot be null');

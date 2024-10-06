@@ -179,8 +179,8 @@ class PostApiV1ChannelsSetTypeRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'type' => 'setType'
+        'room_id' => 'set_room_id',
+        'type' => 'set_type'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsSetTypeRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'type' => 'getType'
+        'room_id' => 'get_room_id',
+        'type' => 'get_type'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1ChannelsSetTypeRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1ChannelsSetTypeRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1ChannelsSetTypeRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -346,7 +346,7 @@ class PostApiV1ChannelsSetTypeRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');

@@ -195,12 +195,12 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        'ts' => 'setTs',
-        'title' => 'setTitle',
-        'title_link' => 'setTitleLink',
-        'title_link_download' => 'setTitleLinkDownload',
-        'type' => 'setType',
-        'description' => 'setDescription'
+        'ts' => 'set_ts',
+        'title' => 'set_title',
+        'title_link' => 'set_title_link',
+        'title_link_download' => 'set_title_link_download',
+        'type' => 'set_type',
+        'description' => 'set_description'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        'ts' => 'getTs',
-        'title' => 'getTitle',
-        'title_link' => 'getTitleLink',
-        'title_link_download' => 'getTitleLinkDownload',
-        'type' => 'getType',
-        'description' => 'getDescription'
+        'ts' => 'get_ts',
+        'title' => 'get_title',
+        'title_link' => 'get_title_link',
+        'title_link_download' => 'get_title_link_download',
+        'type' => 'get_type',
+        'description' => 'get_description'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -341,7 +341,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return string|null
      */
-    public function getTitle()
+    public function get_title()
     {
         return $this->container['title'];
     }
@@ -368,7 +368,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return self
      */
-    public function setTitle($title)
+    public function set_title($title)
     {
         if (is_null($title)) {
             throw new \InvalidArgumentException('non-nullable title cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return string|null
      */
-    public function getTitleLink()
+    public function get_title_link()
     {
         return $this->container['title_link'];
     }
@@ -395,7 +395,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return self
      */
-    public function setTitleLink($title_link)
+    public function set_title_link($title_link)
     {
         if (is_null($title_link)) {
             throw new \InvalidArgumentException('non-nullable title_link cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return bool|null
      */
-    public function getTitleLinkDownload()
+    public function get_title_link_download()
     {
         return $this->container['title_link_download'];
     }
@@ -422,7 +422,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return self
      */
-    public function setTitleLinkDownload($title_link_download)
+    public function set_title_link_download($title_link_download)
     {
         if (is_null($title_link_download)) {
             throw new \InvalidArgumentException('non-nullable title_link_download cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -449,7 +449,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -476,7 +476,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');

@@ -183,9 +183,9 @@ class PostApiV1LivechatRoomClose200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'comment' => 'setComment',
-        'success' => 'setSuccess'
+        'rid' => 'set_rid',
+        'comment' => 'set_comment',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatRoomClose200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'comment' => 'getComment',
-        'success' => 'getSuccess'
+        'rid' => 'get_rid',
+        'comment' => 'get_comment',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1LivechatRoomClose200Response implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -320,7 +320,7 @@ class PostApiV1LivechatRoomClose200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1LivechatRoomClose200Response implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getComment()
+    public function get_comment()
     {
         return $this->container['comment'];
     }
@@ -347,7 +347,7 @@ class PostApiV1LivechatRoomClose200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setComment($comment)
+    public function set_comment($comment)
     {
         if (is_null($comment)) {
             throw new \InvalidArgumentException('non-nullable comment cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1LivechatRoomClose200Response implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class PostApiV1LivechatRoomClose200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

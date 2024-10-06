@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsGeneralUpdate implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'update_checker' => 'setUpdateChecker'
+        'update_checker' => 'set_update_checker'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsGeneralUpdate implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'update_checker' => 'getUpdateChecker'
+        'update_checker' => 'get_update_checker'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsGeneralUpdate implements ModelInterfa
      *
      * @return bool|null
      */
-    public function getUpdateChecker()
+    public function get_update_checker()
     {
         return $this->container['update_checker'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsGeneralUpdate implements ModelInterfa
      *
      * @return self
      */
-    public function setUpdateChecker($update_checker)
+    public function set_update_checker($update_checker)
     {
         if (is_null($update_checker)) {
             throw new \InvalidArgumentException('non-nullable update_checker cannot be null');

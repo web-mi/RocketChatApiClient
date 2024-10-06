@@ -211,16 +211,16 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'status' => 'setStatus',
-        'ts' => 'setTs',
-        '_updated_at' => 'setUpdatedAt',
-        'name' => 'setName',
-        'phone' => 'setPhone',
-        'token' => 'setToken',
-        'visitor_emails' => 'setVisitorEmails',
-        'department' => 'setDepartment'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'status' => 'set_status',
+        'ts' => 'set_ts',
+        '_updated_at' => 'set__updated_at',
+        'name' => 'set_name',
+        'phone' => 'set_phone',
+        'token' => 'set_token',
+        'visitor_emails' => 'set_visitor_emails',
+        'department' => 'set_department'
     ];
 
     /**
@@ -229,16 +229,16 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'status' => 'getStatus',
-        'ts' => 'getTs',
-        '_updated_at' => 'getUpdatedAt',
-        'name' => 'getName',
-        'phone' => 'getPhone',
-        'token' => 'getToken',
-        'visitor_emails' => 'getVisitorEmails',
-        'department' => 'getDepartment'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'status' => 'get_status',
+        'ts' => 'get_ts',
+        '_updated_at' => 'get__updated_at',
+        'name' => 'get_name',
+        'phone' => 'get_phone',
+        'token' => 'get_token',
+        'visitor_emails' => 'get_visitor_emails',
+        'department' => 'get_department'
     ];
 
     /**
@@ -357,7 +357,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -369,7 +369,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -384,7 +384,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -396,7 +396,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -411,7 +411,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -423,7 +423,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -438,7 +438,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -450,7 +450,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -465,7 +465,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -477,7 +477,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -492,7 +492,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -504,7 +504,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -519,7 +519,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactPhoneInner[]|null
      */
-    public function getPhone()
+    public function get_phone()
     {
         return $this->container['phone'];
     }
@@ -531,7 +531,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setPhone($phone)
+    public function set_phone($phone)
     {
         if (is_null($phone)) {
             throw new \InvalidArgumentException('non-nullable phone cannot be null');
@@ -546,7 +546,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -558,7 +558,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -573,7 +573,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null
      */
-    public function getVisitorEmails()
+    public function get_visitor_emails()
     {
         return $this->container['visitor_emails'];
     }
@@ -585,7 +585,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setVisitorEmails($visitor_emails)
+    public function set_visitor_emails($visitor_emails)
     {
         if (is_null($visitor_emails)) {
             throw new \InvalidArgumentException('non-nullable visitor_emails cannot be null');
@@ -600,7 +600,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getDepartment()
+    public function get_department()
     {
         return $this->container['department'];
     }
@@ -612,7 +612,7 @@ class PostApiV1LivechatVisitor200ResponseVisitor implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setDepartment($department)
+    public function set_department($department)
     {
         if (is_null($department)) {
             throw new \InvalidArgumentException('non-nullable department cannot be null');

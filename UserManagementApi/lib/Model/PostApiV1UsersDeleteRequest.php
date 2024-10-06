@@ -179,8 +179,8 @@ class PostApiV1UsersDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'user_id' => 'setUserId',
-        'confirm_relinquish' => 'setConfirmRelinquish'
+        'user_id' => 'set_user_id',
+        'confirm_relinquish' => 'set_confirm_relinquish'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'user_id' => 'getUserId',
-        'confirm_relinquish' => 'getConfirmRelinquish'
+        'user_id' => 'get_user_id',
+        'confirm_relinquish' => 'get_confirm_relinquish'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1UsersDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -316,7 +316,7 @@ class PostApiV1UsersDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1UsersDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return bool|null
      */
-    public function getConfirmRelinquish()
+    public function get_confirm_relinquish()
     {
         return $this->container['confirm_relinquish'];
     }
@@ -343,7 +343,7 @@ class PostApiV1UsersDeleteRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setConfirmRelinquish($confirm_relinquish)
+    public function set_confirm_relinquish($confirm_relinquish)
     {
         if (is_null($confirm_relinquish)) {
             throw new \InvalidArgumentException('non-nullable confirm_relinquish cannot be null');

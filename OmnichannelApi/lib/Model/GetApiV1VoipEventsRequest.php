@@ -183,9 +183,9 @@ class GetApiV1VoipEventsRequest implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'event' => 'setEvent',
-        'comment' => 'setComment'
+        'rid' => 'set_rid',
+        'event' => 'set_event',
+        'comment' => 'set_comment'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1VoipEventsRequest implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'event' => 'getEvent',
-        'comment' => 'getComment'
+        'rid' => 'get_rid',
+        'event' => 'get_event',
+        'comment' => 'get_comment'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1VoipEventsRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -320,7 +320,7 @@ class GetApiV1VoipEventsRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1VoipEventsRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getEvent()
+    public function get_event()
     {
         return $this->container['event'];
     }
@@ -347,7 +347,7 @@ class GetApiV1VoipEventsRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setEvent($event)
+    public function set_event($event)
     {
         if (is_null($event)) {
             throw new \InvalidArgumentException('non-nullable event cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1VoipEventsRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string|null
      */
-    public function getComment()
+    public function get_comment()
     {
         return $this->container['comment'];
     }
@@ -374,7 +374,7 @@ class GetApiV1VoipEventsRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setComment($comment)
+    public function set_comment($comment)
     {
         if (is_null($comment)) {
             throw new \InvalidArgumentException('non-nullable comment cannot be null');

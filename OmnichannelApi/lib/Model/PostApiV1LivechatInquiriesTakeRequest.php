@@ -179,8 +179,8 @@ class PostApiV1LivechatInquiriesTakeRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'inquiry_id' => 'setInquiryId',
-        'user_id' => 'setUserId'
+        'inquiry_id' => 'set_inquiry_id',
+        'user_id' => 'set_user_id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatInquiriesTakeRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'inquiry_id' => 'getInquiryId',
-        'user_id' => 'getUserId'
+        'inquiry_id' => 'get_inquiry_id',
+        'user_id' => 'get_user_id'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1LivechatInquiriesTakeRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getInquiryId()
+    public function get_inquiry_id()
     {
         return $this->container['inquiry_id'];
     }
@@ -316,7 +316,7 @@ class PostApiV1LivechatInquiriesTakeRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setInquiryId($inquiry_id)
+    public function set_inquiry_id($inquiry_id)
     {
         if (is_null($inquiry_id)) {
             throw new \InvalidArgumentException('non-nullable inquiry_id cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1LivechatInquiriesTakeRequest implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -343,7 +343,7 @@ class PostApiV1LivechatInquiriesTakeRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');

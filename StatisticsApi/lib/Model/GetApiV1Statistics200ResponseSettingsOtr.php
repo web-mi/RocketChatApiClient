@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsOtr implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'otr_enable' => 'setOtrEnable'
+        'otr_enable' => 'set_otr_enable'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsOtr implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'otr_enable' => 'getOtrEnable'
+        'otr_enable' => 'get_otr_enable'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsOtr implements ModelInterface, ArrayA
      *
      * @return bool|null
      */
-    public function getOtrEnable()
+    public function get_otr_enable()
     {
         return $this->container['otr_enable'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsOtr implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setOtrEnable($otr_enable)
+    public function set_otr_enable($otr_enable)
     {
         if (is_null($otr_enable)) {
             throw new \InvalidArgumentException('non-nullable otr_enable cannot be null');

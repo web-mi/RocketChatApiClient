@@ -183,9 +183,9 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'rooms' => 'setRooms',
-        'success' => 'setSuccess'
+        'users' => 'set_users',
+        'rooms' => 'set_rooms',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'rooms' => 'getRooms',
-        'success' => 'getSuccess'
+        'users' => 'get_users',
+        'rooms' => 'get_rooms',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1Spotlight200ResponseUsersInner[]|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -320,7 +320,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return object[]|null
      */
-    public function getRooms()
+    public function get_rooms()
     {
         return $this->container['rooms'];
     }
@@ -347,7 +347,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setRooms($rooms)
+    public function set_rooms($rooms)
     {
         if (is_null($rooms)) {
             throw new \InvalidArgumentException('non-nullable rooms cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1Spotlight200Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

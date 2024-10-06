@@ -183,9 +183,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect implements
      * @var string[]
      */
     protected static $setters = [
-        'calling' => 'setCalling',
-        'started' => 'setStarted',
-        'ended' => 'setEnded'
+        'calling' => 'set_calling',
+        'started' => 'set_started',
+        'ended' => 'set_ended'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect implements
      * @var string[]
      */
     protected static $getters = [
-        'calling' => 'getCalling',
-        'started' => 'getStarted',
-        'ended' => 'getEnded'
+        'calling' => 'get_calling',
+        'started' => 'get_started',
+        'ended' => 'get_ended'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect implements
      *
      * @return int|null
      */
-    public function getCalling()
+    public function get_calling()
     {
         return $this->container['calling'];
     }
@@ -320,7 +320,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect implements
      *
      * @return self
      */
-    public function setCalling($calling)
+    public function set_calling($calling)
     {
         if (is_null($calling)) {
             throw new \InvalidArgumentException('non-nullable calling cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect implements
      *
      * @return int|null
      */
-    public function getStarted()
+    public function get_started()
     {
         return $this->container['started'];
     }
@@ -347,7 +347,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect implements
      *
      * @return self
      */
-    public function setStarted($started)
+    public function set_started($started)
     {
         if (is_null($started)) {
             throw new \InvalidArgumentException('non-nullable started cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect implements
      *
      * @return int|null
      */
-    public function getEnded()
+    public function get_ended()
     {
         return $this->container['ended'];
     }
@@ -374,7 +374,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect implements
      *
      * @return self
      */
-    public function setEnded($ended)
+    public function set_ended($ended)
     {
         if (is_null($ended)) {
             throw new \InvalidArgumentException('non-nullable ended cannot be null');

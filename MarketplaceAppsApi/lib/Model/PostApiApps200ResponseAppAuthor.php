@@ -183,9 +183,9 @@ class PostApiApps200ResponseAppAuthor implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'homepage' => 'setHomepage',
-        'support' => 'setSupport'
+        'name' => 'set_name',
+        'homepage' => 'set_homepage',
+        'support' => 'set_support'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiApps200ResponseAppAuthor implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'homepage' => 'getHomepage',
-        'support' => 'getSupport'
+        'name' => 'get_name',
+        'homepage' => 'get_homepage',
+        'support' => 'get_support'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiApps200ResponseAppAuthor implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -320,7 +320,7 @@ class PostApiApps200ResponseAppAuthor implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -335,7 +335,7 @@ class PostApiApps200ResponseAppAuthor implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getHomepage()
+    public function get_homepage()
     {
         return $this->container['homepage'];
     }
@@ -347,7 +347,7 @@ class PostApiApps200ResponseAppAuthor implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setHomepage($homepage)
+    public function set_homepage($homepage)
     {
         if (is_null($homepage)) {
             throw new \InvalidArgumentException('non-nullable homepage cannot be null');
@@ -362,7 +362,7 @@ class PostApiApps200ResponseAppAuthor implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getSupport()
+    public function get_support()
     {
         return $this->container['support'];
     }
@@ -374,7 +374,7 @@ class PostApiApps200ResponseAppAuthor implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSupport($support)
+    public function set_support($support)
     {
         if (is_null($support)) {
             throw new \InvalidArgumentException('non-nullable support cannot be null');

@@ -175,7 +175,7 @@ class PostApiV1CloudManualRegisterRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'cloud_blob' => 'setCloudBlob'
+        'cloud_blob' => 'set_cloud_blob'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1CloudManualRegisterRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'cloud_blob' => 'getCloudBlob'
+        'cloud_blob' => 'get_cloud_blob'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1CloudManualRegisterRequest implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getCloudBlob()
+    public function get_cloud_blob()
     {
         return $this->container['cloud_blob'];
     }
@@ -309,7 +309,7 @@ class PostApiV1CloudManualRegisterRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setCloudBlob($cloud_blob)
+    public function set_cloud_blob($cloud_blob)
     {
         if (is_null($cloud_blob)) {
             throw new \InvalidArgumentException('non-nullable cloud_blob cannot be null');

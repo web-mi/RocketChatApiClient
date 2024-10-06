@@ -203,14 +203,14 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'enabled' => 'setEnabled',
-        'run_once' => 'setRunOnce',
-        'conditions' => 'setConditions',
-        'actions' => 'setActions',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'description' => 'set_description',
+        'enabled' => 'set_enabled',
+        'run_once' => 'set_run_once',
+        'conditions' => 'set_conditions',
+        'actions' => 'set_actions',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'enabled' => 'getEnabled',
-        'run_once' => 'getRunOnce',
-        'conditions' => 'getConditions',
-        'actions' => 'getActions',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'description' => 'get_description',
+        'enabled' => 'get_enabled',
+        'run_once' => 'get_run_once',
+        'conditions' => 'get_conditions',
+        'actions' => 'get_actions',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -355,7 +355,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -370,7 +370,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -382,7 +382,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -397,7 +397,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -409,7 +409,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -424,7 +424,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -436,7 +436,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return bool|null
      */
-    public function getRunOnce()
+    public function get_run_once()
     {
         return $this->container['run_once'];
     }
@@ -463,7 +463,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return self
      */
-    public function setRunOnce($run_once)
+    public function set_run_once($run_once)
     {
         if (is_null($run_once)) {
             throw new \InvalidArgumentException('non-nullable run_once cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]|null
      */
-    public function getConditions()
+    public function get_conditions()
     {
         return $this->container['conditions'];
     }
@@ -490,7 +490,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return self
      */
-    public function setConditions($conditions)
+    public function set_conditions($conditions)
     {
         if (is_null($conditions)) {
             throw new \InvalidArgumentException('non-nullable conditions cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInnerActionsInner[]|null
      */
-    public function getActions()
+    public function get_actions()
     {
         return $this->container['actions'];
     }
@@ -517,7 +517,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return self
      */
-    public function setActions($actions)
+    public function set_actions($actions)
     {
         if (is_null($actions)) {
             throw new \InvalidArgumentException('non-nullable actions cannot be null');
@@ -532,7 +532,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -544,7 +544,7 @@ class GetApiV1LivechatTriggers200ResponseTriggersInner implements ModelInterface
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

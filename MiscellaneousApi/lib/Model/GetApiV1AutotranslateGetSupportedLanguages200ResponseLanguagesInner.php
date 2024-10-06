@@ -179,8 +179,8 @@ class GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner implem
      * @var string[]
      */
     protected static $setters = [
-        'language' => 'setLanguage',
-        'name' => 'setName'
+        'language' => 'set_language',
+        'name' => 'set_name'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner implem
      * @var string[]
      */
     protected static $getters = [
-        'language' => 'getLanguage',
-        'name' => 'getName'
+        'language' => 'get_language',
+        'name' => 'get_name'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner implem
      *
      * @return string|null
      */
-    public function getLanguage()
+    public function get_language()
     {
         return $this->container['language'];
     }
@@ -313,7 +313,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner implem
      *
      * @return self
      */
-    public function setLanguage($language)
+    public function set_language($language)
     {
         if (is_null($language)) {
             throw new \InvalidArgumentException('non-nullable language cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner implem
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -340,7 +340,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner implem
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');

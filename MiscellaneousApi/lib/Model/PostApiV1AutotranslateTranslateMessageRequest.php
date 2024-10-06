@@ -179,8 +179,8 @@ class PostApiV1AutotranslateTranslateMessageRequest implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'message_id' => 'setMessageId',
-        'target_language' => 'setTargetLanguage'
+        'message_id' => 'set_message_id',
+        'target_language' => 'set_target_language'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1AutotranslateTranslateMessageRequest implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'message_id' => 'getMessageId',
-        'target_language' => 'getTargetLanguage'
+        'message_id' => 'get_message_id',
+        'target_language' => 'get_target_language'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1AutotranslateTranslateMessageRequest implements ModelInterface, A
      *
      * @return string
      */
-    public function getMessageId()
+    public function get_message_id()
     {
         return $this->container['message_id'];
     }
@@ -316,7 +316,7 @@ class PostApiV1AutotranslateTranslateMessageRequest implements ModelInterface, A
      *
      * @return self
      */
-    public function setMessageId($message_id)
+    public function set_message_id($message_id)
     {
         if (is_null($message_id)) {
             throw new \InvalidArgumentException('non-nullable message_id cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1AutotranslateTranslateMessageRequest implements ModelInterface, A
      *
      * @return string|null
      */
-    public function getTargetLanguage()
+    public function get_target_language()
     {
         return $this->container['target_language'];
     }
@@ -343,7 +343,7 @@ class PostApiV1AutotranslateTranslateMessageRequest implements ModelInterface, A
      *
      * @return self
      */
-    public function setTargetLanguage($target_language)
+    public function set_target_language($target_language)
     {
         if (is_null($target_language)) {
             throw new \InvalidArgumentException('non-nullable target_language cannot be null');

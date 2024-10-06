@@ -179,8 +179,8 @@ class PostApiV1GroupsSetPurposeRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'purpose' => 'setPurpose'
+        'room_id' => 'set_room_id',
+        'purpose' => 'set_purpose'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1GroupsSetPurposeRequest implements ModelInterface, ArrayAccess, \
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'purpose' => 'getPurpose'
+        'room_id' => 'get_room_id',
+        'purpose' => 'get_purpose'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1GroupsSetPurposeRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1GroupsSetPurposeRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1GroupsSetPurposeRequest implements ModelInterface, ArrayAccess, \
      *
      * @return string
      */
-    public function getPurpose()
+    public function get_purpose()
     {
         return $this->container['purpose'];
     }
@@ -346,7 +346,7 @@ class PostApiV1GroupsSetPurposeRequest implements ModelInterface, ArrayAccess, \
      *
      * @return self
      */
-    public function setPurpose($purpose)
+    public function set_purpose($purpose)
     {
         if (is_null($purpose)) {
             throw new \InvalidArgumentException('non-nullable purpose cannot be null');

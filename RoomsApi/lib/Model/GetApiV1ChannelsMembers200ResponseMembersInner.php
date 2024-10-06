@@ -199,13 +199,13 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'status' => 'setStatus',
-        '_updated_at' => 'setUpdatedAt',
-        'name' => 'setName',
-        'nickname' => 'setNickname',
-        'avatar_e_tag' => 'setAvatarETag'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'status' => 'set_status',
+        '_updated_at' => 'set__updated_at',
+        'name' => 'set_name',
+        'nickname' => 'set_nickname',
+        'avatar_e_tag' => 'set_avatar_e_tag'
     ];
 
     /**
@@ -214,13 +214,13 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'status' => 'getStatus',
-        '_updated_at' => 'getUpdatedAt',
-        'name' => 'getName',
-        'nickname' => 'getNickname',
-        'avatar_e_tag' => 'getAvatarETag'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'status' => 'get_status',
+        '_updated_at' => 'get__updated_at',
+        'name' => 'get_name',
+        'nickname' => 'get_nickname',
+        'avatar_e_tag' => 'get_avatar_e_tag'
     ];
 
     /**
@@ -336,7 +336,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -348,7 +348,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -363,7 +363,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -375,7 +375,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -390,7 +390,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -402,7 +402,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -417,7 +417,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -429,7 +429,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -444,7 +444,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -456,7 +456,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -471,7 +471,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getNickname()
+    public function get_nickname()
     {
         return $this->container['nickname'];
     }
@@ -483,7 +483,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setNickname($nickname)
+    public function set_nickname($nickname)
     {
         if (is_null($nickname)) {
             throw new \InvalidArgumentException('non-nullable nickname cannot be null');
@@ -498,7 +498,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getAvatarETag()
+    public function get_avatar_e_tag()
     {
         return $this->container['avatar_e_tag'];
     }
@@ -510,7 +510,7 @@ class GetApiV1ChannelsMembers200ResponseMembersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setAvatarETag($avatar_e_tag)
+    public function set_avatar_e_tag($avatar_e_tag)
     {
         if (is_null($avatar_e_tag)) {
             throw new \InvalidArgumentException('non-nullable avatar_e_tag cannot be null');

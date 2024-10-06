@@ -179,8 +179,8 @@ class PostApiV1RoomsCreateDiscussion200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'discussion' => 'setDiscussion',
-        'success' => 'setSuccess'
+        'discussion' => 'set_discussion',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1RoomsCreateDiscussion200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'discussion' => 'getDiscussion',
-        'success' => 'getSuccess'
+        'discussion' => 'get_discussion',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1RoomsCreateDiscussion200Response implements ModelInterface, Array
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsCreateDiscussion200ResponseDiscussion|null
      */
-    public function getDiscussion()
+    public function get_discussion()
     {
         return $this->container['discussion'];
     }
@@ -313,7 +313,7 @@ class PostApiV1RoomsCreateDiscussion200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setDiscussion($discussion)
+    public function set_discussion($discussion)
     {
         if (is_null($discussion)) {
             throw new \InvalidArgumentException('non-nullable discussion cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1RoomsCreateDiscussion200Response implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1RoomsCreateDiscussion200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

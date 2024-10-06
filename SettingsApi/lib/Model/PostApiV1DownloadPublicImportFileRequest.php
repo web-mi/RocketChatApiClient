@@ -179,8 +179,8 @@ class PostApiV1DownloadPublicImportFileRequest implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $setters = [
-        'file_url' => 'setFileUrl',
-        'importer_key' => 'setImporterKey'
+        'file_url' => 'set_file_url',
+        'importer_key' => 'set_importer_key'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1DownloadPublicImportFileRequest implements ModelInterface, ArrayA
      * @var string[]
      */
     protected static $getters = [
-        'file_url' => 'getFileUrl',
-        'importer_key' => 'getImporterKey'
+        'file_url' => 'get_file_url',
+        'importer_key' => 'get_importer_key'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1DownloadPublicImportFileRequest implements ModelInterface, ArrayA
      *
      * @return string
      */
-    public function getFileUrl()
+    public function get_file_url()
     {
         return $this->container['file_url'];
     }
@@ -319,7 +319,7 @@ class PostApiV1DownloadPublicImportFileRequest implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setFileUrl($file_url)
+    public function set_file_url($file_url)
     {
         if (is_null($file_url)) {
             throw new \InvalidArgumentException('non-nullable file_url cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1DownloadPublicImportFileRequest implements ModelInterface, ArrayA
      *
      * @return string
      */
-    public function getImporterKey()
+    public function get_importer_key()
     {
         return $this->container['importer_key'];
     }
@@ -346,7 +346,7 @@ class PostApiV1DownloadPublicImportFileRequest implements ModelInterface, ArrayA
      *
      * @return self
      */
-    public function setImporterKey($importer_key)
+    public function set_importer_key($importer_key)
     {
         if (is_null($importer_key)) {
             throw new \InvalidArgumentException('non-nullable importer_key cannot be null');

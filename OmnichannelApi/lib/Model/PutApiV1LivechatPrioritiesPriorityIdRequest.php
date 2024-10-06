@@ -175,7 +175,7 @@ class PutApiV1LivechatPrioritiesPriorityIdRequest implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName'
+        'name' => 'set_name'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PutApiV1LivechatPrioritiesPriorityIdRequest implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName'
+        'name' => 'get_name'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PutApiV1LivechatPrioritiesPriorityIdRequest implements ModelInterface, Arr
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -309,7 +309,7 @@ class PutApiV1LivechatPrioritiesPriorityIdRequest implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');

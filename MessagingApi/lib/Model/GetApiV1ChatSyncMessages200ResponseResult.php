@@ -179,8 +179,8 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'updated' => 'setUpdated',
-        'deleted' => 'setDeleted'
+        'updated' => 'set_updated',
+        'deleted' => 'set_deleted'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'updated' => 'getUpdated',
-        'deleted' => 'getDeleted'
+        'updated' => 'get_updated',
+        'deleted' => 'get_deleted'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncMessages200ResponseResultUpdatedInner[]|null
      */
-    public function getUpdated()
+    public function get_updated()
     {
         return $this->container['updated'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
      *
      * @return self
      */
-    public function setUpdated($updated)
+    public function set_updated($updated)
     {
         if (is_null($updated)) {
             throw new \InvalidArgumentException('non-nullable updated cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
      *
      * @return object[]|null
      */
-    public function getDeleted()
+    public function get_deleted()
     {
         return $this->container['deleted'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ChatSyncMessages200ResponseResult implements ModelInterface, Array
      *
      * @return self
      */
-    public function setDeleted($deleted)
+    public function set_deleted($deleted)
     {
         if (is_null($deleted)) {
             throw new \InvalidArgumentException('non-nullable deleted cannot be null');

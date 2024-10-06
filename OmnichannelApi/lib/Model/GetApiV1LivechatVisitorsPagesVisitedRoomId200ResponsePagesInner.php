@@ -211,16 +211,16 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        't' => 'setT',
-        'ts' => 'setTs',
-        'msg' => 'setMsg',
-        'u' => 'setU',
-        'groupable' => 'setGroupable',
-        'navigation' => 'setNavigation',
-        'expire_at' => 'setExpireAt',
-        '_updated_at' => 'setUpdatedAt',
-        'rid' => 'setRid'
+        '_id' => 'set__id',
+        't' => 'set_t',
+        'ts' => 'set_ts',
+        'msg' => 'set_msg',
+        'u' => 'set_u',
+        'groupable' => 'set_groupable',
+        'navigation' => 'set_navigation',
+        'expire_at' => 'set_expire_at',
+        '_updated_at' => 'set__updated_at',
+        'rid' => 'set_rid'
     ];
 
     /**
@@ -229,16 +229,16 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        't' => 'getT',
-        'ts' => 'getTs',
-        'msg' => 'getMsg',
-        'u' => 'getU',
-        'groupable' => 'getGroupable',
-        'navigation' => 'getNavigation',
-        'expire_at' => 'getExpireAt',
-        '_updated_at' => 'getUpdatedAt',
-        'rid' => 'getRid'
+        '_id' => 'get__id',
+        't' => 'get_t',
+        'ts' => 'get_ts',
+        'msg' => 'get_msg',
+        'u' => 'get_u',
+        'groupable' => 'get_groupable',
+        'navigation' => 'get_navigation',
+        'expire_at' => 'get_expire_at',
+        '_updated_at' => 'get__updated_at',
+        'rid' => 'get_rid'
     ];
 
     /**
@@ -357,7 +357,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -369,7 +369,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -384,7 +384,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -396,7 +396,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -411,7 +411,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -423,7 +423,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -438,7 +438,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -450,7 +450,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -465,7 +465,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatRooms200ResponseRoomsInnerLastMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -477,7 +477,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -492,7 +492,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return bool|null
      */
-    public function getGroupable()
+    public function get_groupable()
     {
         return $this->container['groupable'];
     }
@@ -504,7 +504,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setGroupable($groupable)
+    public function set_groupable($groupable)
     {
         if (is_null($groupable)) {
             throw new \InvalidArgumentException('non-nullable groupable cannot be null');
@@ -519,7 +519,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null
      */
-    public function getNavigation()
+    public function get_navigation()
     {
         return $this->container['navigation'];
     }
@@ -531,7 +531,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setNavigation($navigation)
+    public function set_navigation($navigation)
     {
         if (is_null($navigation)) {
             throw new \InvalidArgumentException('non-nullable navigation cannot be null');
@@ -546,7 +546,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return int|null
      */
-    public function getExpireAt()
+    public function get_expire_at()
     {
         return $this->container['expire_at'];
     }
@@ -558,7 +558,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setExpireAt($expire_at)
+    public function set_expire_at($expire_at)
     {
         if (is_null($expire_at)) {
             throw new \InvalidArgumentException('non-nullable expire_at cannot be null');
@@ -573,7 +573,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -585,7 +585,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -600,7 +600,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -612,7 +612,7 @@ class GetApiV1LivechatVisitorsPagesVisitedRoomId200ResponsePagesInner implements
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');

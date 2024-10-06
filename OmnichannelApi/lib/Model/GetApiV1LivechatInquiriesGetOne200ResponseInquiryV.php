@@ -191,11 +191,11 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'token' => 'setToken',
-        'status' => 'setStatus',
-        'activity' => 'setActivity'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'token' => 'set_token',
+        'status' => 'set_status',
+        'activity' => 'set_activity'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'token' => 'getToken',
-        'status' => 'getStatus',
-        'activity' => 'getActivity'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'token' => 'get_token',
+        'status' => 'get_status',
+        'activity' => 'get_activity'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return string|null
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return string[]|null
      */
-    public function getActivity()
+    public function get_activity()
     {
         return $this->container['activity'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatInquiriesGetOne200ResponseInquiryV implements ModelInterfa
      *
      * @return self
      */
-    public function setActivity($activity)
+    public function set_activity($activity)
     {
         if (is_null($activity)) {
             throw new \InvalidArgumentException('non-nullable activity cannot be null');

@@ -183,9 +183,9 @@ class PostApiV1LivechatTranscriptRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'token' => 'setToken',
-        'email' => 'setEmail'
+        'rid' => 'set_rid',
+        'token' => 'set_token',
+        'email' => 'set_email'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatTranscriptRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'token' => 'getToken',
-        'email' => 'getEmail'
+        'rid' => 'get_rid',
+        'token' => 'get_token',
+        'email' => 'get_email'
     ];
 
     /**
@@ -317,7 +317,7 @@ class PostApiV1LivechatTranscriptRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -329,7 +329,7 @@ class PostApiV1LivechatTranscriptRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -344,7 +344,7 @@ class PostApiV1LivechatTranscriptRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -356,7 +356,7 @@ class PostApiV1LivechatTranscriptRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -371,7 +371,7 @@ class PostApiV1LivechatTranscriptRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -383,7 +383,7 @@ class PostApiV1LivechatTranscriptRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');

@@ -199,13 +199,13 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'user_id' => 'setUserId',
-        'username' => 'setUsername',
-        'email' => 'setEmail',
-        'is_deleted' => 'setIsDeleted',
-        'is_bot' => 'setIsBot',
-        'do_import' => 'setDoImport',
-        'is_email_taken' => 'setIsEmailTaken'
+        'user_id' => 'set_user_id',
+        'username' => 'set_username',
+        'email' => 'set_email',
+        'is_deleted' => 'set_is_deleted',
+        'is_bot' => 'set_is_bot',
+        'do_import' => 'set_do_import',
+        'is_email_taken' => 'set_is_email_taken'
     ];
 
     /**
@@ -214,13 +214,13 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'user_id' => 'getUserId',
-        'username' => 'getUsername',
-        'email' => 'getEmail',
-        'is_deleted' => 'getIsDeleted',
-        'is_bot' => 'getIsBot',
-        'do_import' => 'getDoImport',
-        'is_email_taken' => 'getIsEmailTaken'
+        'user_id' => 'get_user_id',
+        'username' => 'get_username',
+        'email' => 'get_email',
+        'is_deleted' => 'get_is_deleted',
+        'is_bot' => 'get_is_bot',
+        'do_import' => 'get_do_import',
+        'is_email_taken' => 'get_is_email_taken'
     ];
 
     /**
@@ -357,7 +357,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return string
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -369,7 +369,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -384,7 +384,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return string
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -396,7 +396,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -411,7 +411,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return string
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -423,7 +423,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -438,7 +438,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return bool
      */
-    public function getIsDeleted()
+    public function get_is_deleted()
     {
         return $this->container['is_deleted'];
     }
@@ -450,7 +450,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setIsDeleted($is_deleted)
+    public function set_is_deleted($is_deleted)
     {
         if (is_null($is_deleted)) {
             throw new \InvalidArgumentException('non-nullable is_deleted cannot be null');
@@ -465,7 +465,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return bool
      */
-    public function getIsBot()
+    public function get_is_bot()
     {
         return $this->container['is_bot'];
     }
@@ -477,7 +477,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setIsBot($is_bot)
+    public function set_is_bot($is_bot)
     {
         if (is_null($is_bot)) {
             throw new \InvalidArgumentException('non-nullable is_bot cannot be null');
@@ -492,7 +492,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return bool
      */
-    public function getDoImport()
+    public function get_do_import()
     {
         return $this->container['do_import'];
     }
@@ -504,7 +504,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setDoImport($do_import)
+    public function set_do_import($do_import)
     {
         if (is_null($do_import)) {
             throw new \InvalidArgumentException('non-nullable do_import cannot be null');
@@ -519,7 +519,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return bool
      */
-    public function getIsEmailTaken()
+    public function get_is_email_taken()
     {
         return $this->container['is_email_taken'];
     }
@@ -531,7 +531,7 @@ class PostApiV1StartImportRequestInputUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setIsEmailTaken($is_email_taken)
+    public function set_is_email_taken($is_email_taken)
     {
         if (is_null($is_email_taken)) {
             throw new \InvalidArgumentException('non-nullable is_email_taken cannot be null');

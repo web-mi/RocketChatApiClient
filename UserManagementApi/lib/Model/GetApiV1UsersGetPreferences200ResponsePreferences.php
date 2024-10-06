@@ -267,30 +267,30 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'new_room_notification' => 'setNewRoomNotification',
-        'new_message_notification' => 'setNewMessageNotification',
-        'mute_focused_conversations' => 'setMuteFocusedConversations',
-        'use_emojis' => 'setUseEmojis',
-        'convert_ascii_emoji' => 'setConvertAsciiEmoji',
-        'save_mobile_bandwidth' => 'setSaveMobileBandwidth',
-        'collapse_media_by_default' => 'setCollapseMediaByDefault',
-        'auto_image_load' => 'setAutoImageLoad',
-        'email_notification_mode' => 'setEmailNotificationMode',
-        'rooms_list_exhibition_mode' => 'setRoomsListExhibitionMode',
-        'unread_alert' => 'setUnreadAlert',
-        'notifications_sound_volume' => 'setNotificationsSoundVolume',
-        'desktop_notifications' => 'setDesktopNotifications',
-        'mobile_notifications' => 'setMobileNotifications',
-        'enable_auto_away' => 'setEnableAutoAway',
-        'highlights' => 'setHighlights',
-        'desktop_notification_duration' => 'setDesktopNotificationDuration',
-        'view_mode' => 'setViewMode',
-        'hide_usernames' => 'setHideUsernames',
-        'hide_roles' => 'setHideRoles',
-        'hide_avatars' => 'setHideAvatars',
-        'hide_flex_tab' => 'setHideFlexTab',
-        'send_on_enter' => 'setSendOnEnter',
-        'room_counter_sidebar' => 'setRoomCounterSidebar'
+        'new_room_notification' => 'set_new_room_notification',
+        'new_message_notification' => 'set_new_message_notification',
+        'mute_focused_conversations' => 'set_mute_focused_conversations',
+        'use_emojis' => 'set_use_emojis',
+        'convert_ascii_emoji' => 'set_convert_ascii_emoji',
+        'save_mobile_bandwidth' => 'set_save_mobile_bandwidth',
+        'collapse_media_by_default' => 'set_collapse_media_by_default',
+        'auto_image_load' => 'set_auto_image_load',
+        'email_notification_mode' => 'set_email_notification_mode',
+        'rooms_list_exhibition_mode' => 'set_rooms_list_exhibition_mode',
+        'unread_alert' => 'set_unread_alert',
+        'notifications_sound_volume' => 'set_notifications_sound_volume',
+        'desktop_notifications' => 'set_desktop_notifications',
+        'mobile_notifications' => 'set_mobile_notifications',
+        'enable_auto_away' => 'set_enable_auto_away',
+        'highlights' => 'set_highlights',
+        'desktop_notification_duration' => 'set_desktop_notification_duration',
+        'view_mode' => 'set_view_mode',
+        'hide_usernames' => 'set_hide_usernames',
+        'hide_roles' => 'set_hide_roles',
+        'hide_avatars' => 'set_hide_avatars',
+        'hide_flex_tab' => 'set_hide_flex_tab',
+        'send_on_enter' => 'set_send_on_enter',
+        'room_counter_sidebar' => 'set_room_counter_sidebar'
     ];
 
     /**
@@ -299,30 +299,30 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'new_room_notification' => 'getNewRoomNotification',
-        'new_message_notification' => 'getNewMessageNotification',
-        'mute_focused_conversations' => 'getMuteFocusedConversations',
-        'use_emojis' => 'getUseEmojis',
-        'convert_ascii_emoji' => 'getConvertAsciiEmoji',
-        'save_mobile_bandwidth' => 'getSaveMobileBandwidth',
-        'collapse_media_by_default' => 'getCollapseMediaByDefault',
-        'auto_image_load' => 'getAutoImageLoad',
-        'email_notification_mode' => 'getEmailNotificationMode',
-        'rooms_list_exhibition_mode' => 'getRoomsListExhibitionMode',
-        'unread_alert' => 'getUnreadAlert',
-        'notifications_sound_volume' => 'getNotificationsSoundVolume',
-        'desktop_notifications' => 'getDesktopNotifications',
-        'mobile_notifications' => 'getMobileNotifications',
-        'enable_auto_away' => 'getEnableAutoAway',
-        'highlights' => 'getHighlights',
-        'desktop_notification_duration' => 'getDesktopNotificationDuration',
-        'view_mode' => 'getViewMode',
-        'hide_usernames' => 'getHideUsernames',
-        'hide_roles' => 'getHideRoles',
-        'hide_avatars' => 'getHideAvatars',
-        'hide_flex_tab' => 'getHideFlexTab',
-        'send_on_enter' => 'getSendOnEnter',
-        'room_counter_sidebar' => 'getRoomCounterSidebar'
+        'new_room_notification' => 'get_new_room_notification',
+        'new_message_notification' => 'get_new_message_notification',
+        'mute_focused_conversations' => 'get_mute_focused_conversations',
+        'use_emojis' => 'get_use_emojis',
+        'convert_ascii_emoji' => 'get_convert_ascii_emoji',
+        'save_mobile_bandwidth' => 'get_save_mobile_bandwidth',
+        'collapse_media_by_default' => 'get_collapse_media_by_default',
+        'auto_image_load' => 'get_auto_image_load',
+        'email_notification_mode' => 'get_email_notification_mode',
+        'rooms_list_exhibition_mode' => 'get_rooms_list_exhibition_mode',
+        'unread_alert' => 'get_unread_alert',
+        'notifications_sound_volume' => 'get_notifications_sound_volume',
+        'desktop_notifications' => 'get_desktop_notifications',
+        'mobile_notifications' => 'get_mobile_notifications',
+        'enable_auto_away' => 'get_enable_auto_away',
+        'highlights' => 'get_highlights',
+        'desktop_notification_duration' => 'get_desktop_notification_duration',
+        'view_mode' => 'get_view_mode',
+        'hide_usernames' => 'get_hide_usernames',
+        'hide_roles' => 'get_hide_roles',
+        'hide_avatars' => 'get_hide_avatars',
+        'hide_flex_tab' => 'get_hide_flex_tab',
+        'send_on_enter' => 'get_send_on_enter',
+        'room_counter_sidebar' => 'get_room_counter_sidebar'
     ];
 
     /**
@@ -455,7 +455,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return string|null
      */
-    public function getNewRoomNotification()
+    public function get_new_room_notification()
     {
         return $this->container['new_room_notification'];
     }
@@ -467,7 +467,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setNewRoomNotification($new_room_notification)
+    public function set_new_room_notification($new_room_notification)
     {
         if (is_null($new_room_notification)) {
             throw new \InvalidArgumentException('non-nullable new_room_notification cannot be null');
@@ -482,7 +482,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return string|null
      */
-    public function getNewMessageNotification()
+    public function get_new_message_notification()
     {
         return $this->container['new_message_notification'];
     }
@@ -494,7 +494,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setNewMessageNotification($new_message_notification)
+    public function set_new_message_notification($new_message_notification)
     {
         if (is_null($new_message_notification)) {
             throw new \InvalidArgumentException('non-nullable new_message_notification cannot be null');
@@ -509,7 +509,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getMuteFocusedConversations()
+    public function get_mute_focused_conversations()
     {
         return $this->container['mute_focused_conversations'];
     }
@@ -521,7 +521,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setMuteFocusedConversations($mute_focused_conversations)
+    public function set_mute_focused_conversations($mute_focused_conversations)
     {
         if (is_null($mute_focused_conversations)) {
             throw new \InvalidArgumentException('non-nullable mute_focused_conversations cannot be null');
@@ -536,7 +536,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getUseEmojis()
+    public function get_use_emojis()
     {
         return $this->container['use_emojis'];
     }
@@ -548,7 +548,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setUseEmojis($use_emojis)
+    public function set_use_emojis($use_emojis)
     {
         if (is_null($use_emojis)) {
             throw new \InvalidArgumentException('non-nullable use_emojis cannot be null');
@@ -563,7 +563,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getConvertAsciiEmoji()
+    public function get_convert_ascii_emoji()
     {
         return $this->container['convert_ascii_emoji'];
     }
@@ -575,7 +575,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setConvertAsciiEmoji($convert_ascii_emoji)
+    public function set_convert_ascii_emoji($convert_ascii_emoji)
     {
         if (is_null($convert_ascii_emoji)) {
             throw new \InvalidArgumentException('non-nullable convert_ascii_emoji cannot be null');
@@ -590,7 +590,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getSaveMobileBandwidth()
+    public function get_save_mobile_bandwidth()
     {
         return $this->container['save_mobile_bandwidth'];
     }
@@ -602,7 +602,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setSaveMobileBandwidth($save_mobile_bandwidth)
+    public function set_save_mobile_bandwidth($save_mobile_bandwidth)
     {
         if (is_null($save_mobile_bandwidth)) {
             throw new \InvalidArgumentException('non-nullable save_mobile_bandwidth cannot be null');
@@ -617,7 +617,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getCollapseMediaByDefault()
+    public function get_collapse_media_by_default()
     {
         return $this->container['collapse_media_by_default'];
     }
@@ -629,7 +629,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setCollapseMediaByDefault($collapse_media_by_default)
+    public function set_collapse_media_by_default($collapse_media_by_default)
     {
         if (is_null($collapse_media_by_default)) {
             throw new \InvalidArgumentException('non-nullable collapse_media_by_default cannot be null');
@@ -644,7 +644,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getAutoImageLoad()
+    public function get_auto_image_load()
     {
         return $this->container['auto_image_load'];
     }
@@ -656,7 +656,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setAutoImageLoad($auto_image_load)
+    public function set_auto_image_load($auto_image_load)
     {
         if (is_null($auto_image_load)) {
             throw new \InvalidArgumentException('non-nullable auto_image_load cannot be null');
@@ -671,7 +671,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return string|null
      */
-    public function getEmailNotificationMode()
+    public function get_email_notification_mode()
     {
         return $this->container['email_notification_mode'];
     }
@@ -683,7 +683,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setEmailNotificationMode($email_notification_mode)
+    public function set_email_notification_mode($email_notification_mode)
     {
         if (is_null($email_notification_mode)) {
             throw new \InvalidArgumentException('non-nullable email_notification_mode cannot be null');
@@ -698,7 +698,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return string|null
      */
-    public function getRoomsListExhibitionMode()
+    public function get_rooms_list_exhibition_mode()
     {
         return $this->container['rooms_list_exhibition_mode'];
     }
@@ -710,7 +710,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setRoomsListExhibitionMode($rooms_list_exhibition_mode)
+    public function set_rooms_list_exhibition_mode($rooms_list_exhibition_mode)
     {
         if (is_null($rooms_list_exhibition_mode)) {
             throw new \InvalidArgumentException('non-nullable rooms_list_exhibition_mode cannot be null');
@@ -725,7 +725,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getUnreadAlert()
+    public function get_unread_alert()
     {
         return $this->container['unread_alert'];
     }
@@ -737,7 +737,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setUnreadAlert($unread_alert)
+    public function set_unread_alert($unread_alert)
     {
         if (is_null($unread_alert)) {
             throw new \InvalidArgumentException('non-nullable unread_alert cannot be null');
@@ -752,7 +752,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return int|null
      */
-    public function getNotificationsSoundVolume()
+    public function get_notifications_sound_volume()
     {
         return $this->container['notifications_sound_volume'];
     }
@@ -764,7 +764,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setNotificationsSoundVolume($notifications_sound_volume)
+    public function set_notifications_sound_volume($notifications_sound_volume)
     {
         if (is_null($notifications_sound_volume)) {
             throw new \InvalidArgumentException('non-nullable notifications_sound_volume cannot be null');
@@ -779,7 +779,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return string|null
      */
-    public function getDesktopNotifications()
+    public function get_desktop_notifications()
     {
         return $this->container['desktop_notifications'];
     }
@@ -791,7 +791,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setDesktopNotifications($desktop_notifications)
+    public function set_desktop_notifications($desktop_notifications)
     {
         if (is_null($desktop_notifications)) {
             throw new \InvalidArgumentException('non-nullable desktop_notifications cannot be null');
@@ -806,7 +806,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return string|null
      */
-    public function getMobileNotifications()
+    public function get_mobile_notifications()
     {
         return $this->container['mobile_notifications'];
     }
@@ -818,7 +818,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setMobileNotifications($mobile_notifications)
+    public function set_mobile_notifications($mobile_notifications)
     {
         if (is_null($mobile_notifications)) {
             throw new \InvalidArgumentException('non-nullable mobile_notifications cannot be null');
@@ -833,7 +833,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getEnableAutoAway()
+    public function get_enable_auto_away()
     {
         return $this->container['enable_auto_away'];
     }
@@ -845,7 +845,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setEnableAutoAway($enable_auto_away)
+    public function set_enable_auto_away($enable_auto_away)
     {
         if (is_null($enable_auto_away)) {
             throw new \InvalidArgumentException('non-nullable enable_auto_away cannot be null');
@@ -860,7 +860,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return object[]|null
      */
-    public function getHighlights()
+    public function get_highlights()
     {
         return $this->container['highlights'];
     }
@@ -872,7 +872,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setHighlights($highlights)
+    public function set_highlights($highlights)
     {
         if (is_null($highlights)) {
             throw new \InvalidArgumentException('non-nullable highlights cannot be null');
@@ -887,7 +887,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return int|null
      */
-    public function getDesktopNotificationDuration()
+    public function get_desktop_notification_duration()
     {
         return $this->container['desktop_notification_duration'];
     }
@@ -899,7 +899,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setDesktopNotificationDuration($desktop_notification_duration)
+    public function set_desktop_notification_duration($desktop_notification_duration)
     {
         if (is_null($desktop_notification_duration)) {
             throw new \InvalidArgumentException('non-nullable desktop_notification_duration cannot be null');
@@ -914,7 +914,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return int|null
      */
-    public function getViewMode()
+    public function get_view_mode()
     {
         return $this->container['view_mode'];
     }
@@ -926,7 +926,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setViewMode($view_mode)
+    public function set_view_mode($view_mode)
     {
         if (is_null($view_mode)) {
             throw new \InvalidArgumentException('non-nullable view_mode cannot be null');
@@ -941,7 +941,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getHideUsernames()
+    public function get_hide_usernames()
     {
         return $this->container['hide_usernames'];
     }
@@ -953,7 +953,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setHideUsernames($hide_usernames)
+    public function set_hide_usernames($hide_usernames)
     {
         if (is_null($hide_usernames)) {
             throw new \InvalidArgumentException('non-nullable hide_usernames cannot be null');
@@ -968,7 +968,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getHideRoles()
+    public function get_hide_roles()
     {
         return $this->container['hide_roles'];
     }
@@ -980,7 +980,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setHideRoles($hide_roles)
+    public function set_hide_roles($hide_roles)
     {
         if (is_null($hide_roles)) {
             throw new \InvalidArgumentException('non-nullable hide_roles cannot be null');
@@ -995,7 +995,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getHideAvatars()
+    public function get_hide_avatars()
     {
         return $this->container['hide_avatars'];
     }
@@ -1007,7 +1007,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setHideAvatars($hide_avatars)
+    public function set_hide_avatars($hide_avatars)
     {
         if (is_null($hide_avatars)) {
             throw new \InvalidArgumentException('non-nullable hide_avatars cannot be null');
@@ -1022,7 +1022,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getHideFlexTab()
+    public function get_hide_flex_tab()
     {
         return $this->container['hide_flex_tab'];
     }
@@ -1034,7 +1034,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setHideFlexTab($hide_flex_tab)
+    public function set_hide_flex_tab($hide_flex_tab)
     {
         if (is_null($hide_flex_tab)) {
             throw new \InvalidArgumentException('non-nullable hide_flex_tab cannot be null');
@@ -1049,7 +1049,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return string|null
      */
-    public function getSendOnEnter()
+    public function get_send_on_enter()
     {
         return $this->container['send_on_enter'];
     }
@@ -1061,7 +1061,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setSendOnEnter($send_on_enter)
+    public function set_send_on_enter($send_on_enter)
     {
         if (is_null($send_on_enter)) {
             throw new \InvalidArgumentException('non-nullable send_on_enter cannot be null');
@@ -1076,7 +1076,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return bool|null
      */
-    public function getRoomCounterSidebar()
+    public function get_room_counter_sidebar()
     {
         return $this->container['room_counter_sidebar'];
     }
@@ -1088,7 +1088,7 @@ class GetApiV1UsersGetPreferences200ResponsePreferences implements ModelInterfac
      *
      * @return self
      */
-    public function setRoomCounterSidebar($room_counter_sidebar)
+    public function set_room_counter_sidebar($room_counter_sidebar)
     {
         if (is_null($room_counter_sidebar)) {
             throw new \InvalidArgumentException('non-nullable room_counter_sidebar cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone impleme
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'utc' => 'setUtc'
+        'name' => 'set_name',
+        'utc' => 'set_utc'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone impleme
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'utc' => 'getUtc'
+        'name' => 'get_name',
+        'utc' => 'get_utc'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone impleme
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone impleme
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone impleme
      *
      * @return string|null
      */
-    public function getUtc()
+    public function get_utc()
     {
         return $this->container['utc'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatBusinessHours200ResponseBusinessHoursInnerTimezone impleme
      *
      * @return self
      */
-    public function setUtc($utc)
+    public function set_utc($utc)
     {
         if (is_null($utc)) {
             throw new \InvalidArgumentException('non-nullable utc cannot be null');

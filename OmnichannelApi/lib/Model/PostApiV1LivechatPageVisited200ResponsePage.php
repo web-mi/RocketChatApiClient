@@ -179,8 +179,8 @@ class PostApiV1LivechatPageVisited200ResponsePage implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'msg' => 'setMsg',
-        'navigation' => 'setNavigation'
+        'msg' => 'set_msg',
+        'navigation' => 'set_navigation'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatPageVisited200ResponsePage implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'msg' => 'getMsg',
-        'navigation' => 'getNavigation'
+        'msg' => 'get_msg',
+        'navigation' => 'get_navigation'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1LivechatPageVisited200ResponsePage implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -313,7 +313,7 @@ class PostApiV1LivechatPageVisited200ResponsePage implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1LivechatPageVisited200ResponsePage implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatPageVisited200ResponsePageNavigation|null
      */
-    public function getNavigation()
+    public function get_navigation()
     {
         return $this->container['navigation'];
     }
@@ -340,7 +340,7 @@ class PostApiV1LivechatPageVisited200ResponsePage implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setNavigation($navigation)
+    public function set_navigation($navigation)
     {
         if (is_null($navigation)) {
             throw new \InvalidArgumentException('non-nullable navigation cannot be null');

@@ -183,9 +183,9 @@ class GetApiV1LivechatConfig200ResponseConfigRoom implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'served_by' => 'setServedBy',
-        'open' => 'setOpen'
+        '_id' => 'set__id',
+        'served_by' => 'set_served_by',
+        'open' => 'set_open'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatConfig200ResponseConfigRoom implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'served_by' => 'getServedBy',
-        'open' => 'getOpen'
+        '_id' => 'get__id',
+        'served_by' => 'get_served_by',
+        'open' => 'get_open'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatConfig200ResponseConfigRoom implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatConfig200ResponseConfigRoom implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatConfig200ResponseConfigRoom implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
      */
-    public function getServedBy()
+    public function get_served_by()
     {
         return $this->container['served_by'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatConfig200ResponseConfigRoom implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setServedBy($served_by)
+    public function set_served_by($served_by)
     {
         if (is_null($served_by)) {
             throw new \InvalidArgumentException('non-nullable served_by cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatConfig200ResponseConfigRoom implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getOpen()
+    public function get_open()
     {
         return $this->container['open'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatConfig200ResponseConfigRoom implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setOpen($open)
+    public function set_open($open)
     {
         if (is_null($open)) {
             throw new \InvalidArgumentException('non-nullable open cannot be null');

@@ -175,7 +175,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp implements Mod
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled'
+        'enabled' => 'set_enabled'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp implements Mod
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled'
+        'enabled' => 'get_enabled'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp implements Mod
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesTotp implements Mod
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');

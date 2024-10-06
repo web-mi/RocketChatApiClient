@@ -187,10 +187,10 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'fname' => 'setFname',
-        'name' => 'setName',
-        't' => 'setT'
+        '_id' => 'set__id',
+        'fname' => 'set_fname',
+        'name' => 'set_name',
+        't' => 'set_t'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'fname' => 'getFname',
-        'name' => 'getName',
-        't' => 'getT'
+        '_id' => 'get__id',
+        'fname' => 'get_fname',
+        'name' => 'get_name',
+        't' => 'get_t'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      *
      * @return string|null
      */
-    public function getFname()
+    public function get_fname()
     {
         return $this->container['fname'];
     }
@@ -354,7 +354,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      *
      * @return self
      */
-    public function setFname($fname)
+    public function set_fname($fname)
     {
         if (is_null($fname)) {
             throw new \InvalidArgumentException('non-nullable fname cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -381,7 +381,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -408,7 +408,7 @@ class GetApiV1RoomsAutocompleteAvailableForTeams200ResponseItemsInner implements
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');

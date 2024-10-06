@@ -180,8 +180,8 @@ class PostApiV1TeamsUpdateRequestData implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'type' => 'setType'
+        'name' => 'set_name',
+        'type' => 'set_type'
     ];
 
     /**
@@ -190,8 +190,8 @@ class PostApiV1TeamsUpdateRequestData implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'type' => 'getType'
+        'name' => 'get_name',
+        'type' => 'get_type'
     ];
 
     /**
@@ -302,7 +302,7 @@ class PostApiV1TeamsUpdateRequestData implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -314,7 +314,7 @@ class PostApiV1TeamsUpdateRequestData implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -329,7 +329,7 @@ class PostApiV1TeamsUpdateRequestData implements ModelInterface, ArrayAccess, \J
      *
      * @return int|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -341,7 +341,7 @@ class PostApiV1TeamsUpdateRequestData implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');

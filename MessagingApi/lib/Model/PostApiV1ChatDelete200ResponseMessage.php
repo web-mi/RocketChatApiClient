@@ -183,9 +183,9 @@ class PostApiV1ChatDelete200ResponseMessage implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'rid' => 'setRid',
-        'u' => 'setU'
+        '_id' => 'set__id',
+        'rid' => 'set_rid',
+        'u' => 'set_u'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1ChatDelete200ResponseMessage implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'rid' => 'getRid',
-        'u' => 'getU'
+        '_id' => 'get__id',
+        'rid' => 'get_rid',
+        'u' => 'get_u'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1ChatDelete200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -320,7 +320,7 @@ class PostApiV1ChatDelete200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1ChatDelete200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -347,7 +347,7 @@ class PostApiV1ChatDelete200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1ChatDelete200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -374,7 +374,7 @@ class PostApiV1ChatDelete200ResponseMessage implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');

@@ -179,8 +179,8 @@ class PostApiV1UsersSetActiveStatus200ResponseUser implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'active' => 'setActive'
+        '_id' => 'set__id',
+        'active' => 'set_active'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersSetActiveStatus200ResponseUser implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'active' => 'getActive'
+        '_id' => 'get__id',
+        'active' => 'get_active'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1UsersSetActiveStatus200ResponseUser implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class PostApiV1UsersSetActiveStatus200ResponseUser implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1UsersSetActiveStatus200ResponseUser implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -340,7 +340,7 @@ class PostApiV1UsersSetActiveStatus200ResponseUser implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');

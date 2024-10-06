@@ -179,8 +179,8 @@ class GetApiV1LivechatTriggersId200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'trigger' => 'setTrigger',
-        'success' => 'setSuccess'
+        'trigger' => 'set_trigger',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatTriggersId200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'trigger' => 'getTrigger',
-        'success' => 'getSuccess'
+        'trigger' => 'get_trigger',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatTriggersId200Response implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatTriggers200ResponseTriggersInner|null
      */
-    public function getTrigger()
+    public function get_trigger()
     {
         return $this->container['trigger'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatTriggersId200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setTrigger($trigger)
+    public function set_trigger($trigger)
     {
         if (is_null($trigger)) {
             throw new \InvalidArgumentException('non-nullable trigger cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatTriggersId200Response implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatTriggersId200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

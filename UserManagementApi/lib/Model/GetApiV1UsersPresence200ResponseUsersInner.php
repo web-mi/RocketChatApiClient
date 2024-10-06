@@ -195,12 +195,12 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'username' => 'setUsername',
-        'status' => 'setStatus',
-        'utc_offset' => 'setUtcOffset',
-        'avatar_e_tag' => 'setAvatarETag'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'username' => 'set_username',
+        'status' => 'set_status',
+        'utc_offset' => 'set_utc_offset',
+        'avatar_e_tag' => 'set_avatar_e_tag'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'username' => 'getUsername',
-        'status' => 'getStatus',
-        'utc_offset' => 'getUtcOffset',
-        'avatar_e_tag' => 'getAvatarETag'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'username' => 'get_username',
+        'status' => 'get_status',
+        'utc_offset' => 'get_utc_offset',
+        'avatar_e_tag' => 'get_avatar_e_tag'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -368,7 +368,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -395,7 +395,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -422,7 +422,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return int|null
      */
-    public function getUtcOffset()
+    public function get_utc_offset()
     {
         return $this->container['utc_offset'];
     }
@@ -449,7 +449,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setUtcOffset($utc_offset)
+    public function set_utc_offset($utc_offset)
     {
         if (is_null($utc_offset)) {
             throw new \InvalidArgumentException('non-nullable utc_offset cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getAvatarETag()
+    public function get_avatar_e_tag()
     {
         return $this->container['avatar_e_tag'];
     }
@@ -476,7 +476,7 @@ class GetApiV1UsersPresence200ResponseUsersInner implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setAvatarETag($avatar_e_tag)
+    public function set_avatar_e_tag($avatar_e_tag)
     {
         if (is_null($avatar_e_tag)) {
             throw new \InvalidArgumentException('non-nullable avatar_e_tag cannot be null');

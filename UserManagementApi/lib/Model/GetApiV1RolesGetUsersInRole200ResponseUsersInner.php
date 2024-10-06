@@ -195,12 +195,12 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'type' => 'setType',
-        'status' => 'setStatus',
-        'active' => 'setActive',
-        'name' => 'setName'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'type' => 'set_type',
+        'status' => 'set_status',
+        'active' => 'set_active',
+        'name' => 'set_name'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'type' => 'getType',
-        'status' => 'getStatus',
-        'active' => 'getActive',
-        'name' => 'getName'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'type' => 'get_type',
+        'status' => 'get_status',
+        'active' => 'get_active',
+        'name' => 'get_name'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -368,7 +368,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -395,7 +395,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -422,7 +422,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return bool|null
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -449,7 +449,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -476,7 +476,7 @@ class GetApiV1RolesGetUsersInRole200ResponseUsersInner implements ModelInterface
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');

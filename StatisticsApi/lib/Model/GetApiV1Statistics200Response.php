@@ -751,151 +751,151 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'wizard' => 'setWizard',
-        'unique_id' => 'setUniqueId',
-        'installed_at' => 'setInstalledAt',
-        'deployment_fingerprint_hash' => 'setDeploymentFingerprintHash',
-        'deployment_fingerprint_verified' => 'setDeploymentFingerprintVerified',
-        'version' => 'setVersion',
-        'total_users' => 'setTotalUsers',
-        'active_users' => 'setActiveUsers',
-        'active_guests' => 'setActiveGuests',
-        'non_active_users' => 'setNonActiveUsers',
-        'app_users' => 'setAppUsers',
-        'online_users' => 'setOnlineUsers',
-        'away_users' => 'setAwayUsers',
-        'busy_users' => 'setBusyUsers',
-        'total_connected_users' => 'setTotalConnectedUsers',
-        'offline_users' => 'setOfflineUsers',
-        'user_languages' => 'setUserLanguages',
-        'total_rooms' => 'setTotalRooms',
-        'total_channels' => 'setTotalChannels',
-        'total_private_groups' => 'setTotalPrivateGroups',
-        'total_direct' => 'setTotalDirect',
-        'total_livechat' => 'setTotalLivechat',
-        'total_discussions' => 'setTotalDiscussions',
-        'total_threads' => 'setTotalThreads',
-        'total_livechat_visitors' => 'setTotalLivechatVisitors',
-        'total_livechat_agents' => 'setTotalLivechatAgents',
-        'total_livechat_managers' => 'setTotalLivechatManagers',
-        'livechat_enabled' => 'setLivechatEnabled',
-        'is_department_removal_enabled' => 'setIsDepartmentRemovalEnabled',
-        'total_triggers' => 'setTotalTriggers',
-        'archived_departments' => 'setArchivedDepartments',
-        'departments' => 'setDepartments',
-        'total_custom_fields' => 'setTotalCustomFields',
-        'omnichannel_sources' => 'setOmnichannelSources',
-        'total_livechat_public_custom_fields' => 'setTotalLivechatPublicCustomFields',
-        'livechat_automatic_forwarding_unanswered_chats' => 'setLivechatAutomaticForwardingUnansweredChats',
-        'routing_algorithm' => 'setRoutingAlgorithm',
-        'on_hold_enabled' => 'setOnHoldEnabled',
-        'last_chatted_agent_preferred' => 'setLastChattedAgentPreferred',
-        'assign_new_conversations_to_contact_manager' => 'setAssignNewConversationsToContactManager',
-        'visitor_abandonment' => 'setVisitorAbandonment',
-        'voip_enabled' => 'setVoipEnabled',
-        'email_inboxes' => 'setEmailInboxes',
-        'business_hours' => 'setBusinessHours',
-        'voip_calls' => 'setVoipCalls',
-        'voip_extensions' => 'setVoipExtensions',
-        'chats_on_hold' => 'setChatsOnHold',
-        'voip_successful_calls' => 'setVoipSuccessfulCalls',
-        'voip_error_calls' => 'setVoipErrorCalls',
-        'voip_on_hold_calls' => 'setVoipOnHoldCalls',
-        'omnichannel_contacts_by_source' => 'setOmnichannelContactsBySource',
-        'unique_contacts_of_last_week' => 'setUniqueContactsOfLastWeek',
-        'unique_contacts_of_last_month' => 'setUniqueContactsOfLastMonth',
-        'unique_contacts_of_yesterday' => 'setUniqueContactsOfYesterday',
-        'total_channel_messages' => 'setTotalChannelMessages',
-        'total_private_group_messages' => 'setTotalPrivateGroupMessages',
-        'total_discussions_messages' => 'setTotalDiscussionsMessages',
-        'total_direct_messages' => 'setTotalDirectMessages',
-        'total_livechat_messages' => 'setTotalLivechatMessages',
-        'total_messages' => 'setTotalMessages',
-        'last_login' => 'setLastLogin',
-        'last_message_sent_at' => 'setLastMessageSentAt',
-        'federated_servers' => 'setFederatedServers',
-        'federated_users' => 'setFederatedUsers',
-        'last_seen_subscription' => 'setLastSeenSubscription',
-        'os' => 'setOs',
-        'process' => 'setProcess',
-        'deploy' => 'setDeploy',
-        'read_receipts_enabled' => 'setReadReceiptsEnabled',
-        'read_receipts_detailed' => 'setReadReceiptsDetailed',
-        'enterprise_ready' => 'setEnterpriseReady',
-        'uploads_total' => 'setUploadsTotal',
-        'migration' => 'setMigration',
-        'uploads_total_size' => 'setUploadsTotalSize',
-        'instance_count' => 'setInstanceCount',
-        'ms_enabled' => 'setMsEnabled',
-        'oplog_enabled' => 'setOplogEnabled',
-        'mongo_version' => 'setMongoVersion',
-        'mongo_storage_engine' => 'setMongoStorageEngine',
-        'apps' => 'setApps',
-        'unique_users_of_yesterday' => 'setUniqueUsersOfYesterday',
-        'unique_devices_of_yesterday' => 'setUniqueDevicesOfYesterday',
-        'unique_users_of_last_week' => 'setUniqueUsersOfLastWeek',
-        'unique_osof_yesterday' => 'setUniqueOsofYesterday',
-        'unique_devices_of_last_month' => 'setUniqueDevicesOfLastMonth',
-        'unique_osof_last_week' => 'setUniqueOsofLastWeek',
-        'unique_devices_of_last_week' => 'setUniqueDevicesOfLastWeek',
-        'unique_users_of_last_month' => 'setUniqueUsersOfLastMonth',
-        'unique_osof_last_month' => 'setUniqueOsofLastMonth',
-        'services' => 'setServices',
-        'importer' => 'setImporter',
-        'video_conf' => 'setVideoConf',
-        'dashboard_count' => 'setDashboardCount',
-        'message_audit_apply' => 'setMessageAuditApply',
-        'message_audit_load' => 'setMessageAuditLoad',
-        'join_jitsi_button' => 'setJoinJitsiButton',
-        'slash_commands_jitsi' => 'setSlashCommandsJitsi',
-        'settings' => 'setSettings',
-        'push_queue' => 'setPushQueue',
-        'total_otr_rooms' => 'setTotalOtrRooms',
-        'total_otr' => 'setTotalOtr',
-        'integrations' => 'setIntegrations',
-        'total_broadcast_rooms' => 'setTotalBroadcastRooms',
-        'enterprise' => 'setEnterprise',
-        'teams' => 'setTeams',
-        'total_rooms_with_active_livestream' => 'setTotalRoomsWithActiveLivestream',
-        'total_triggered_emails' => 'setTotalTriggeredEmails',
-        'total_rooms_with_starred' => 'setTotalRoomsWithStarred',
-        'total_rooms_with_pinned' => 'setTotalRoomsWithPinned',
-        'total_user_totp' => 'setTotalUserTotp',
-        'total_user_email2fa' => 'setTotalUserEmail2fa',
-        'total_pinned' => 'setTotalPinned',
-        'total_starred' => 'setTotalStarred',
-        'total_link_invitation' => 'setTotalLinkInvitation',
-        'total_link_invitation_uses' => 'setTotalLinkInvitationUses',
-        'total_email_invitation' => 'setTotalEmailInvitation',
-        'total_e2_e_rooms' => 'setTotalE2ERooms',
-        'logo_change' => 'setLogoChange',
-        'show_home_button' => 'setShowHomeButton',
-        'total_encrypted_messages' => 'setTotalEncryptedMessages',
-        'total_manually_added_users' => 'setTotalManuallyAddedUsers',
-        'total_subscription_roles' => 'setTotalSubscriptionRoles',
-        'total_user_roles' => 'setTotalUserRoles',
-        'total_custom_roles' => 'setTotalCustomRoles',
-        'total_web_rtc_calls' => 'setTotalWebRtcCalls',
-        'uncaught_exceptions_count' => 'setUncaughtExceptionsCount',
-        'push' => 'setPush',
-        'push_secured' => 'setPushSecured',
-        'home_title_changed' => 'setHomeTitleChanged',
-        'home_body_changed' => 'setHomeBodyChanged',
-        'custom_css_changed' => 'setCustomCssChanged',
-        'on_logout_custom_script_changed' => 'setOnLogoutCustomScriptChanged',
-        'logged_out_custom_script_changed' => 'setLoggedOutCustomScriptChanged',
-        'logged_in_custom_script_changed' => 'setLoggedInCustomScriptChanged',
-        'daily_peak_connections' => 'setDailyPeakConnections',
-        'max_monthly_peak_connections' => 'setMaxMonthlyPeakConnections',
-        'matrix_federation' => 'setMatrixFederation',
-        'web_rtc_enabled' => 'setWebRtcEnabled',
-        'web_rtc_enabled_for_omnichannel' => 'setWebRtcEnabledForOmnichannel',
-        'omnichannel_web_rtc_calls' => 'setOmnichannelWebRtcCalls',
-        'created_at' => 'setCreatedAt',
-        '_updated_at' => 'setUpdatedAt',
-        'stats_token' => 'setStatsToken',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'wizard' => 'set_wizard',
+        'unique_id' => 'set_unique_id',
+        'installed_at' => 'set_installed_at',
+        'deployment_fingerprint_hash' => 'set_deployment_fingerprint_hash',
+        'deployment_fingerprint_verified' => 'set_deployment_fingerprint_verified',
+        'version' => 'set_version',
+        'total_users' => 'set_total_users',
+        'active_users' => 'set_active_users',
+        'active_guests' => 'set_active_guests',
+        'non_active_users' => 'set_non_active_users',
+        'app_users' => 'set_app_users',
+        'online_users' => 'set_online_users',
+        'away_users' => 'set_away_users',
+        'busy_users' => 'set_busy_users',
+        'total_connected_users' => 'set_total_connected_users',
+        'offline_users' => 'set_offline_users',
+        'user_languages' => 'set_user_languages',
+        'total_rooms' => 'set_total_rooms',
+        'total_channels' => 'set_total_channels',
+        'total_private_groups' => 'set_total_private_groups',
+        'total_direct' => 'set_total_direct',
+        'total_livechat' => 'set_total_livechat',
+        'total_discussions' => 'set_total_discussions',
+        'total_threads' => 'set_total_threads',
+        'total_livechat_visitors' => 'set_total_livechat_visitors',
+        'total_livechat_agents' => 'set_total_livechat_agents',
+        'total_livechat_managers' => 'set_total_livechat_managers',
+        'livechat_enabled' => 'set_livechat_enabled',
+        'is_department_removal_enabled' => 'set_is_department_removal_enabled',
+        'total_triggers' => 'set_total_triggers',
+        'archived_departments' => 'set_archived_departments',
+        'departments' => 'set_departments',
+        'total_custom_fields' => 'set_total_custom_fields',
+        'omnichannel_sources' => 'set_omnichannel_sources',
+        'total_livechat_public_custom_fields' => 'set_total_livechat_public_custom_fields',
+        'livechat_automatic_forwarding_unanswered_chats' => 'set_livechat_automatic_forwarding_unanswered_chats',
+        'routing_algorithm' => 'set_routing_algorithm',
+        'on_hold_enabled' => 'set_on_hold_enabled',
+        'last_chatted_agent_preferred' => 'set_last_chatted_agent_preferred',
+        'assign_new_conversations_to_contact_manager' => 'set_assign_new_conversations_to_contact_manager',
+        'visitor_abandonment' => 'set_visitor_abandonment',
+        'voip_enabled' => 'set_voip_enabled',
+        'email_inboxes' => 'set_email_inboxes',
+        'business_hours' => 'set_business_hours',
+        'voip_calls' => 'set_voip_calls',
+        'voip_extensions' => 'set_voip_extensions',
+        'chats_on_hold' => 'set_chats_on_hold',
+        'voip_successful_calls' => 'set_voip_successful_calls',
+        'voip_error_calls' => 'set_voip_error_calls',
+        'voip_on_hold_calls' => 'set_voip_on_hold_calls',
+        'omnichannel_contacts_by_source' => 'set_omnichannel_contacts_by_source',
+        'unique_contacts_of_last_week' => 'set_unique_contacts_of_last_week',
+        'unique_contacts_of_last_month' => 'set_unique_contacts_of_last_month',
+        'unique_contacts_of_yesterday' => 'set_unique_contacts_of_yesterday',
+        'total_channel_messages' => 'set_total_channel_messages',
+        'total_private_group_messages' => 'set_total_private_group_messages',
+        'total_discussions_messages' => 'set_total_discussions_messages',
+        'total_direct_messages' => 'set_total_direct_messages',
+        'total_livechat_messages' => 'set_total_livechat_messages',
+        'total_messages' => 'set_total_messages',
+        'last_login' => 'set_last_login',
+        'last_message_sent_at' => 'set_last_message_sent_at',
+        'federated_servers' => 'set_federated_servers',
+        'federated_users' => 'set_federated_users',
+        'last_seen_subscription' => 'set_last_seen_subscription',
+        'os' => 'set_os',
+        'process' => 'set_process',
+        'deploy' => 'set_deploy',
+        'read_receipts_enabled' => 'set_read_receipts_enabled',
+        'read_receipts_detailed' => 'set_read_receipts_detailed',
+        'enterprise_ready' => 'set_enterprise_ready',
+        'uploads_total' => 'set_uploads_total',
+        'migration' => 'set_migration',
+        'uploads_total_size' => 'set_uploads_total_size',
+        'instance_count' => 'set_instance_count',
+        'ms_enabled' => 'set_ms_enabled',
+        'oplog_enabled' => 'set_oplog_enabled',
+        'mongo_version' => 'set_mongo_version',
+        'mongo_storage_engine' => 'set_mongo_storage_engine',
+        'apps' => 'set_apps',
+        'unique_users_of_yesterday' => 'set_unique_users_of_yesterday',
+        'unique_devices_of_yesterday' => 'set_unique_devices_of_yesterday',
+        'unique_users_of_last_week' => 'set_unique_users_of_last_week',
+        'unique_osof_yesterday' => 'set_unique_osof_yesterday',
+        'unique_devices_of_last_month' => 'set_unique_devices_of_last_month',
+        'unique_osof_last_week' => 'set_unique_osof_last_week',
+        'unique_devices_of_last_week' => 'set_unique_devices_of_last_week',
+        'unique_users_of_last_month' => 'set_unique_users_of_last_month',
+        'unique_osof_last_month' => 'set_unique_osof_last_month',
+        'services' => 'set_services',
+        'importer' => 'set_importer',
+        'video_conf' => 'set_video_conf',
+        'dashboard_count' => 'set_dashboard_count',
+        'message_audit_apply' => 'set_message_audit_apply',
+        'message_audit_load' => 'set_message_audit_load',
+        'join_jitsi_button' => 'set_join_jitsi_button',
+        'slash_commands_jitsi' => 'set_slash_commands_jitsi',
+        'settings' => 'set_settings',
+        'push_queue' => 'set_push_queue',
+        'total_otr_rooms' => 'set_total_otr_rooms',
+        'total_otr' => 'set_total_otr',
+        'integrations' => 'set_integrations',
+        'total_broadcast_rooms' => 'set_total_broadcast_rooms',
+        'enterprise' => 'set_enterprise',
+        'teams' => 'set_teams',
+        'total_rooms_with_active_livestream' => 'set_total_rooms_with_active_livestream',
+        'total_triggered_emails' => 'set_total_triggered_emails',
+        'total_rooms_with_starred' => 'set_total_rooms_with_starred',
+        'total_rooms_with_pinned' => 'set_total_rooms_with_pinned',
+        'total_user_totp' => 'set_total_user_totp',
+        'total_user_email2fa' => 'set_total_user_email2fa',
+        'total_pinned' => 'set_total_pinned',
+        'total_starred' => 'set_total_starred',
+        'total_link_invitation' => 'set_total_link_invitation',
+        'total_link_invitation_uses' => 'set_total_link_invitation_uses',
+        'total_email_invitation' => 'set_total_email_invitation',
+        'total_e2_e_rooms' => 'set_total_e2_e_rooms',
+        'logo_change' => 'set_logo_change',
+        'show_home_button' => 'set_show_home_button',
+        'total_encrypted_messages' => 'set_total_encrypted_messages',
+        'total_manually_added_users' => 'set_total_manually_added_users',
+        'total_subscription_roles' => 'set_total_subscription_roles',
+        'total_user_roles' => 'set_total_user_roles',
+        'total_custom_roles' => 'set_total_custom_roles',
+        'total_web_rtc_calls' => 'set_total_web_rtc_calls',
+        'uncaught_exceptions_count' => 'set_uncaught_exceptions_count',
+        'push' => 'set_push',
+        'push_secured' => 'set_push_secured',
+        'home_title_changed' => 'set_home_title_changed',
+        'home_body_changed' => 'set_home_body_changed',
+        'custom_css_changed' => 'set_custom_css_changed',
+        'on_logout_custom_script_changed' => 'set_on_logout_custom_script_changed',
+        'logged_out_custom_script_changed' => 'set_logged_out_custom_script_changed',
+        'logged_in_custom_script_changed' => 'set_logged_in_custom_script_changed',
+        'daily_peak_connections' => 'set_daily_peak_connections',
+        'max_monthly_peak_connections' => 'set_max_monthly_peak_connections',
+        'matrix_federation' => 'set_matrix_federation',
+        'web_rtc_enabled' => 'set_web_rtc_enabled',
+        'web_rtc_enabled_for_omnichannel' => 'set_web_rtc_enabled_for_omnichannel',
+        'omnichannel_web_rtc_calls' => 'set_omnichannel_web_rtc_calls',
+        'created_at' => 'set_created_at',
+        '_updated_at' => 'set__updated_at',
+        'stats_token' => 'set_stats_token',
+        'success' => 'set_success'
     ];
 
     /**
@@ -904,151 +904,151 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'wizard' => 'getWizard',
-        'unique_id' => 'getUniqueId',
-        'installed_at' => 'getInstalledAt',
-        'deployment_fingerprint_hash' => 'getDeploymentFingerprintHash',
-        'deployment_fingerprint_verified' => 'getDeploymentFingerprintVerified',
-        'version' => 'getVersion',
-        'total_users' => 'getTotalUsers',
-        'active_users' => 'getActiveUsers',
-        'active_guests' => 'getActiveGuests',
-        'non_active_users' => 'getNonActiveUsers',
-        'app_users' => 'getAppUsers',
-        'online_users' => 'getOnlineUsers',
-        'away_users' => 'getAwayUsers',
-        'busy_users' => 'getBusyUsers',
-        'total_connected_users' => 'getTotalConnectedUsers',
-        'offline_users' => 'getOfflineUsers',
-        'user_languages' => 'getUserLanguages',
-        'total_rooms' => 'getTotalRooms',
-        'total_channels' => 'getTotalChannels',
-        'total_private_groups' => 'getTotalPrivateGroups',
-        'total_direct' => 'getTotalDirect',
-        'total_livechat' => 'getTotalLivechat',
-        'total_discussions' => 'getTotalDiscussions',
-        'total_threads' => 'getTotalThreads',
-        'total_livechat_visitors' => 'getTotalLivechatVisitors',
-        'total_livechat_agents' => 'getTotalLivechatAgents',
-        'total_livechat_managers' => 'getTotalLivechatManagers',
-        'livechat_enabled' => 'getLivechatEnabled',
-        'is_department_removal_enabled' => 'getIsDepartmentRemovalEnabled',
-        'total_triggers' => 'getTotalTriggers',
-        'archived_departments' => 'getArchivedDepartments',
-        'departments' => 'getDepartments',
-        'total_custom_fields' => 'getTotalCustomFields',
-        'omnichannel_sources' => 'getOmnichannelSources',
-        'total_livechat_public_custom_fields' => 'getTotalLivechatPublicCustomFields',
-        'livechat_automatic_forwarding_unanswered_chats' => 'getLivechatAutomaticForwardingUnansweredChats',
-        'routing_algorithm' => 'getRoutingAlgorithm',
-        'on_hold_enabled' => 'getOnHoldEnabled',
-        'last_chatted_agent_preferred' => 'getLastChattedAgentPreferred',
-        'assign_new_conversations_to_contact_manager' => 'getAssignNewConversationsToContactManager',
-        'visitor_abandonment' => 'getVisitorAbandonment',
-        'voip_enabled' => 'getVoipEnabled',
-        'email_inboxes' => 'getEmailInboxes',
-        'business_hours' => 'getBusinessHours',
-        'voip_calls' => 'getVoipCalls',
-        'voip_extensions' => 'getVoipExtensions',
-        'chats_on_hold' => 'getChatsOnHold',
-        'voip_successful_calls' => 'getVoipSuccessfulCalls',
-        'voip_error_calls' => 'getVoipErrorCalls',
-        'voip_on_hold_calls' => 'getVoipOnHoldCalls',
-        'omnichannel_contacts_by_source' => 'getOmnichannelContactsBySource',
-        'unique_contacts_of_last_week' => 'getUniqueContactsOfLastWeek',
-        'unique_contacts_of_last_month' => 'getUniqueContactsOfLastMonth',
-        'unique_contacts_of_yesterday' => 'getUniqueContactsOfYesterday',
-        'total_channel_messages' => 'getTotalChannelMessages',
-        'total_private_group_messages' => 'getTotalPrivateGroupMessages',
-        'total_discussions_messages' => 'getTotalDiscussionsMessages',
-        'total_direct_messages' => 'getTotalDirectMessages',
-        'total_livechat_messages' => 'getTotalLivechatMessages',
-        'total_messages' => 'getTotalMessages',
-        'last_login' => 'getLastLogin',
-        'last_message_sent_at' => 'getLastMessageSentAt',
-        'federated_servers' => 'getFederatedServers',
-        'federated_users' => 'getFederatedUsers',
-        'last_seen_subscription' => 'getLastSeenSubscription',
-        'os' => 'getOs',
-        'process' => 'getProcess',
-        'deploy' => 'getDeploy',
-        'read_receipts_enabled' => 'getReadReceiptsEnabled',
-        'read_receipts_detailed' => 'getReadReceiptsDetailed',
-        'enterprise_ready' => 'getEnterpriseReady',
-        'uploads_total' => 'getUploadsTotal',
-        'migration' => 'getMigration',
-        'uploads_total_size' => 'getUploadsTotalSize',
-        'instance_count' => 'getInstanceCount',
-        'ms_enabled' => 'getMsEnabled',
-        'oplog_enabled' => 'getOplogEnabled',
-        'mongo_version' => 'getMongoVersion',
-        'mongo_storage_engine' => 'getMongoStorageEngine',
-        'apps' => 'getApps',
-        'unique_users_of_yesterday' => 'getUniqueUsersOfYesterday',
-        'unique_devices_of_yesterday' => 'getUniqueDevicesOfYesterday',
-        'unique_users_of_last_week' => 'getUniqueUsersOfLastWeek',
-        'unique_osof_yesterday' => 'getUniqueOsofYesterday',
-        'unique_devices_of_last_month' => 'getUniqueDevicesOfLastMonth',
-        'unique_osof_last_week' => 'getUniqueOsofLastWeek',
-        'unique_devices_of_last_week' => 'getUniqueDevicesOfLastWeek',
-        'unique_users_of_last_month' => 'getUniqueUsersOfLastMonth',
-        'unique_osof_last_month' => 'getUniqueOsofLastMonth',
-        'services' => 'getServices',
-        'importer' => 'getImporter',
-        'video_conf' => 'getVideoConf',
-        'dashboard_count' => 'getDashboardCount',
-        'message_audit_apply' => 'getMessageAuditApply',
-        'message_audit_load' => 'getMessageAuditLoad',
-        'join_jitsi_button' => 'getJoinJitsiButton',
-        'slash_commands_jitsi' => 'getSlashCommandsJitsi',
-        'settings' => 'getSettings',
-        'push_queue' => 'getPushQueue',
-        'total_otr_rooms' => 'getTotalOtrRooms',
-        'total_otr' => 'getTotalOtr',
-        'integrations' => 'getIntegrations',
-        'total_broadcast_rooms' => 'getTotalBroadcastRooms',
-        'enterprise' => 'getEnterprise',
-        'teams' => 'getTeams',
-        'total_rooms_with_active_livestream' => 'getTotalRoomsWithActiveLivestream',
-        'total_triggered_emails' => 'getTotalTriggeredEmails',
-        'total_rooms_with_starred' => 'getTotalRoomsWithStarred',
-        'total_rooms_with_pinned' => 'getTotalRoomsWithPinned',
-        'total_user_totp' => 'getTotalUserTotp',
-        'total_user_email2fa' => 'getTotalUserEmail2fa',
-        'total_pinned' => 'getTotalPinned',
-        'total_starred' => 'getTotalStarred',
-        'total_link_invitation' => 'getTotalLinkInvitation',
-        'total_link_invitation_uses' => 'getTotalLinkInvitationUses',
-        'total_email_invitation' => 'getTotalEmailInvitation',
-        'total_e2_e_rooms' => 'getTotalE2ERooms',
-        'logo_change' => 'getLogoChange',
-        'show_home_button' => 'getShowHomeButton',
-        'total_encrypted_messages' => 'getTotalEncryptedMessages',
-        'total_manually_added_users' => 'getTotalManuallyAddedUsers',
-        'total_subscription_roles' => 'getTotalSubscriptionRoles',
-        'total_user_roles' => 'getTotalUserRoles',
-        'total_custom_roles' => 'getTotalCustomRoles',
-        'total_web_rtc_calls' => 'getTotalWebRtcCalls',
-        'uncaught_exceptions_count' => 'getUncaughtExceptionsCount',
-        'push' => 'getPush',
-        'push_secured' => 'getPushSecured',
-        'home_title_changed' => 'getHomeTitleChanged',
-        'home_body_changed' => 'getHomeBodyChanged',
-        'custom_css_changed' => 'getCustomCssChanged',
-        'on_logout_custom_script_changed' => 'getOnLogoutCustomScriptChanged',
-        'logged_out_custom_script_changed' => 'getLoggedOutCustomScriptChanged',
-        'logged_in_custom_script_changed' => 'getLoggedInCustomScriptChanged',
-        'daily_peak_connections' => 'getDailyPeakConnections',
-        'max_monthly_peak_connections' => 'getMaxMonthlyPeakConnections',
-        'matrix_federation' => 'getMatrixFederation',
-        'web_rtc_enabled' => 'getWebRtcEnabled',
-        'web_rtc_enabled_for_omnichannel' => 'getWebRtcEnabledForOmnichannel',
-        'omnichannel_web_rtc_calls' => 'getOmnichannelWebRtcCalls',
-        'created_at' => 'getCreatedAt',
-        '_updated_at' => 'getUpdatedAt',
-        'stats_token' => 'getStatsToken',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'wizard' => 'get_wizard',
+        'unique_id' => 'get_unique_id',
+        'installed_at' => 'get_installed_at',
+        'deployment_fingerprint_hash' => 'get_deployment_fingerprint_hash',
+        'deployment_fingerprint_verified' => 'get_deployment_fingerprint_verified',
+        'version' => 'get_version',
+        'total_users' => 'get_total_users',
+        'active_users' => 'get_active_users',
+        'active_guests' => 'get_active_guests',
+        'non_active_users' => 'get_non_active_users',
+        'app_users' => 'get_app_users',
+        'online_users' => 'get_online_users',
+        'away_users' => 'get_away_users',
+        'busy_users' => 'get_busy_users',
+        'total_connected_users' => 'get_total_connected_users',
+        'offline_users' => 'get_offline_users',
+        'user_languages' => 'get_user_languages',
+        'total_rooms' => 'get_total_rooms',
+        'total_channels' => 'get_total_channels',
+        'total_private_groups' => 'get_total_private_groups',
+        'total_direct' => 'get_total_direct',
+        'total_livechat' => 'get_total_livechat',
+        'total_discussions' => 'get_total_discussions',
+        'total_threads' => 'get_total_threads',
+        'total_livechat_visitors' => 'get_total_livechat_visitors',
+        'total_livechat_agents' => 'get_total_livechat_agents',
+        'total_livechat_managers' => 'get_total_livechat_managers',
+        'livechat_enabled' => 'get_livechat_enabled',
+        'is_department_removal_enabled' => 'get_is_department_removal_enabled',
+        'total_triggers' => 'get_total_triggers',
+        'archived_departments' => 'get_archived_departments',
+        'departments' => 'get_departments',
+        'total_custom_fields' => 'get_total_custom_fields',
+        'omnichannel_sources' => 'get_omnichannel_sources',
+        'total_livechat_public_custom_fields' => 'get_total_livechat_public_custom_fields',
+        'livechat_automatic_forwarding_unanswered_chats' => 'get_livechat_automatic_forwarding_unanswered_chats',
+        'routing_algorithm' => 'get_routing_algorithm',
+        'on_hold_enabled' => 'get_on_hold_enabled',
+        'last_chatted_agent_preferred' => 'get_last_chatted_agent_preferred',
+        'assign_new_conversations_to_contact_manager' => 'get_assign_new_conversations_to_contact_manager',
+        'visitor_abandonment' => 'get_visitor_abandonment',
+        'voip_enabled' => 'get_voip_enabled',
+        'email_inboxes' => 'get_email_inboxes',
+        'business_hours' => 'get_business_hours',
+        'voip_calls' => 'get_voip_calls',
+        'voip_extensions' => 'get_voip_extensions',
+        'chats_on_hold' => 'get_chats_on_hold',
+        'voip_successful_calls' => 'get_voip_successful_calls',
+        'voip_error_calls' => 'get_voip_error_calls',
+        'voip_on_hold_calls' => 'get_voip_on_hold_calls',
+        'omnichannel_contacts_by_source' => 'get_omnichannel_contacts_by_source',
+        'unique_contacts_of_last_week' => 'get_unique_contacts_of_last_week',
+        'unique_contacts_of_last_month' => 'get_unique_contacts_of_last_month',
+        'unique_contacts_of_yesterday' => 'get_unique_contacts_of_yesterday',
+        'total_channel_messages' => 'get_total_channel_messages',
+        'total_private_group_messages' => 'get_total_private_group_messages',
+        'total_discussions_messages' => 'get_total_discussions_messages',
+        'total_direct_messages' => 'get_total_direct_messages',
+        'total_livechat_messages' => 'get_total_livechat_messages',
+        'total_messages' => 'get_total_messages',
+        'last_login' => 'get_last_login',
+        'last_message_sent_at' => 'get_last_message_sent_at',
+        'federated_servers' => 'get_federated_servers',
+        'federated_users' => 'get_federated_users',
+        'last_seen_subscription' => 'get_last_seen_subscription',
+        'os' => 'get_os',
+        'process' => 'get_process',
+        'deploy' => 'get_deploy',
+        'read_receipts_enabled' => 'get_read_receipts_enabled',
+        'read_receipts_detailed' => 'get_read_receipts_detailed',
+        'enterprise_ready' => 'get_enterprise_ready',
+        'uploads_total' => 'get_uploads_total',
+        'migration' => 'get_migration',
+        'uploads_total_size' => 'get_uploads_total_size',
+        'instance_count' => 'get_instance_count',
+        'ms_enabled' => 'get_ms_enabled',
+        'oplog_enabled' => 'get_oplog_enabled',
+        'mongo_version' => 'get_mongo_version',
+        'mongo_storage_engine' => 'get_mongo_storage_engine',
+        'apps' => 'get_apps',
+        'unique_users_of_yesterday' => 'get_unique_users_of_yesterday',
+        'unique_devices_of_yesterday' => 'get_unique_devices_of_yesterday',
+        'unique_users_of_last_week' => 'get_unique_users_of_last_week',
+        'unique_osof_yesterday' => 'get_unique_osof_yesterday',
+        'unique_devices_of_last_month' => 'get_unique_devices_of_last_month',
+        'unique_osof_last_week' => 'get_unique_osof_last_week',
+        'unique_devices_of_last_week' => 'get_unique_devices_of_last_week',
+        'unique_users_of_last_month' => 'get_unique_users_of_last_month',
+        'unique_osof_last_month' => 'get_unique_osof_last_month',
+        'services' => 'get_services',
+        'importer' => 'get_importer',
+        'video_conf' => 'get_video_conf',
+        'dashboard_count' => 'get_dashboard_count',
+        'message_audit_apply' => 'get_message_audit_apply',
+        'message_audit_load' => 'get_message_audit_load',
+        'join_jitsi_button' => 'get_join_jitsi_button',
+        'slash_commands_jitsi' => 'get_slash_commands_jitsi',
+        'settings' => 'get_settings',
+        'push_queue' => 'get_push_queue',
+        'total_otr_rooms' => 'get_total_otr_rooms',
+        'total_otr' => 'get_total_otr',
+        'integrations' => 'get_integrations',
+        'total_broadcast_rooms' => 'get_total_broadcast_rooms',
+        'enterprise' => 'get_enterprise',
+        'teams' => 'get_teams',
+        'total_rooms_with_active_livestream' => 'get_total_rooms_with_active_livestream',
+        'total_triggered_emails' => 'get_total_triggered_emails',
+        'total_rooms_with_starred' => 'get_total_rooms_with_starred',
+        'total_rooms_with_pinned' => 'get_total_rooms_with_pinned',
+        'total_user_totp' => 'get_total_user_totp',
+        'total_user_email2fa' => 'get_total_user_email2fa',
+        'total_pinned' => 'get_total_pinned',
+        'total_starred' => 'get_total_starred',
+        'total_link_invitation' => 'get_total_link_invitation',
+        'total_link_invitation_uses' => 'get_total_link_invitation_uses',
+        'total_email_invitation' => 'get_total_email_invitation',
+        'total_e2_e_rooms' => 'get_total_e2_e_rooms',
+        'logo_change' => 'get_logo_change',
+        'show_home_button' => 'get_show_home_button',
+        'total_encrypted_messages' => 'get_total_encrypted_messages',
+        'total_manually_added_users' => 'get_total_manually_added_users',
+        'total_subscription_roles' => 'get_total_subscription_roles',
+        'total_user_roles' => 'get_total_user_roles',
+        'total_custom_roles' => 'get_total_custom_roles',
+        'total_web_rtc_calls' => 'get_total_web_rtc_calls',
+        'uncaught_exceptions_count' => 'get_uncaught_exceptions_count',
+        'push' => 'get_push',
+        'push_secured' => 'get_push_secured',
+        'home_title_changed' => 'get_home_title_changed',
+        'home_body_changed' => 'get_home_body_changed',
+        'custom_css_changed' => 'get_custom_css_changed',
+        'on_logout_custom_script_changed' => 'get_on_logout_custom_script_changed',
+        'logged_out_custom_script_changed' => 'get_logged_out_custom_script_changed',
+        'logged_in_custom_script_changed' => 'get_logged_in_custom_script_changed',
+        'daily_peak_connections' => 'get_daily_peak_connections',
+        'max_monthly_peak_connections' => 'get_max_monthly_peak_connections',
+        'matrix_federation' => 'get_matrix_federation',
+        'web_rtc_enabled' => 'get_web_rtc_enabled',
+        'web_rtc_enabled_for_omnichannel' => 'get_web_rtc_enabled_for_omnichannel',
+        'omnichannel_web_rtc_calls' => 'get_omnichannel_web_rtc_calls',
+        'created_at' => 'get_created_at',
+        '_updated_at' => 'get__updated_at',
+        'stats_token' => 'get_stats_token',
+        'success' => 'get_success'
     ];
 
     /**
@@ -1302,7 +1302,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -1314,7 +1314,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -1329,7 +1329,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerWizard|null
      */
-    public function getWizard()
+    public function get_wizard()
     {
         return $this->container['wizard'];
     }
@@ -1341,7 +1341,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setWizard($wizard)
+    public function set_wizard($wizard)
     {
         if (is_null($wizard)) {
             throw new \InvalidArgumentException('non-nullable wizard cannot be null');
@@ -1356,7 +1356,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getUniqueId()
+    public function get_unique_id()
     {
         return $this->container['unique_id'];
     }
@@ -1368,7 +1368,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueId($unique_id)
+    public function set_unique_id($unique_id)
     {
         if (is_null($unique_id)) {
             throw new \InvalidArgumentException('non-nullable unique_id cannot be null');
@@ -1383,7 +1383,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getInstalledAt()
+    public function get_installed_at()
     {
         return $this->container['installed_at'];
     }
@@ -1395,7 +1395,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setInstalledAt($installed_at)
+    public function set_installed_at($installed_at)
     {
         if (is_null($installed_at)) {
             throw new \InvalidArgumentException('non-nullable installed_at cannot be null');
@@ -1410,7 +1410,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getDeploymentFingerprintHash()
+    public function get_deployment_fingerprint_hash()
     {
         return $this->container['deployment_fingerprint_hash'];
     }
@@ -1422,7 +1422,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setDeploymentFingerprintHash($deployment_fingerprint_hash)
+    public function set_deployment_fingerprint_hash($deployment_fingerprint_hash)
     {
         if (is_null($deployment_fingerprint_hash)) {
             throw new \InvalidArgumentException('non-nullable deployment_fingerprint_hash cannot be null');
@@ -1437,7 +1437,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getDeploymentFingerprintVerified()
+    public function get_deployment_fingerprint_verified()
     {
         return $this->container['deployment_fingerprint_verified'];
     }
@@ -1449,7 +1449,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setDeploymentFingerprintVerified($deployment_fingerprint_verified)
+    public function set_deployment_fingerprint_verified($deployment_fingerprint_verified)
     {
         if (is_null($deployment_fingerprint_verified)) {
             throw new \InvalidArgumentException('non-nullable deployment_fingerprint_verified cannot be null');
@@ -1464,7 +1464,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getVersion()
+    public function get_version()
     {
         return $this->container['version'];
     }
@@ -1476,7 +1476,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setVersion($version)
+    public function set_version($version)
     {
         if (is_null($version)) {
             throw new \InvalidArgumentException('non-nullable version cannot be null');
@@ -1491,7 +1491,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalUsers()
+    public function get_total_users()
     {
         return $this->container['total_users'];
     }
@@ -1503,7 +1503,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalUsers($total_users)
+    public function set_total_users($total_users)
     {
         if (is_null($total_users)) {
             throw new \InvalidArgumentException('non-nullable total_users cannot be null');
@@ -1518,7 +1518,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getActiveUsers()
+    public function get_active_users()
     {
         return $this->container['active_users'];
     }
@@ -1530,7 +1530,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setActiveUsers($active_users)
+    public function set_active_users($active_users)
     {
         if (is_null($active_users)) {
             throw new \InvalidArgumentException('non-nullable active_users cannot be null');
@@ -1545,7 +1545,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getActiveGuests()
+    public function get_active_guests()
     {
         return $this->container['active_guests'];
     }
@@ -1557,7 +1557,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setActiveGuests($active_guests)
+    public function set_active_guests($active_guests)
     {
         if (is_null($active_guests)) {
             throw new \InvalidArgumentException('non-nullable active_guests cannot be null');
@@ -1572,7 +1572,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getNonActiveUsers()
+    public function get_non_active_users()
     {
         return $this->container['non_active_users'];
     }
@@ -1584,7 +1584,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setNonActiveUsers($non_active_users)
+    public function set_non_active_users($non_active_users)
     {
         if (is_null($non_active_users)) {
             throw new \InvalidArgumentException('non-nullable non_active_users cannot be null');
@@ -1599,7 +1599,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getAppUsers()
+    public function get_app_users()
     {
         return $this->container['app_users'];
     }
@@ -1611,7 +1611,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setAppUsers($app_users)
+    public function set_app_users($app_users)
     {
         if (is_null($app_users)) {
             throw new \InvalidArgumentException('non-nullable app_users cannot be null');
@@ -1626,7 +1626,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getOnlineUsers()
+    public function get_online_users()
     {
         return $this->container['online_users'];
     }
@@ -1638,7 +1638,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOnlineUsers($online_users)
+    public function set_online_users($online_users)
     {
         if (is_null($online_users)) {
             throw new \InvalidArgumentException('non-nullable online_users cannot be null');
@@ -1653,7 +1653,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getAwayUsers()
+    public function get_away_users()
     {
         return $this->container['away_users'];
     }
@@ -1665,7 +1665,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setAwayUsers($away_users)
+    public function set_away_users($away_users)
     {
         if (is_null($away_users)) {
             throw new \InvalidArgumentException('non-nullable away_users cannot be null');
@@ -1680,7 +1680,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getBusyUsers()
+    public function get_busy_users()
     {
         return $this->container['busy_users'];
     }
@@ -1692,7 +1692,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setBusyUsers($busy_users)
+    public function set_busy_users($busy_users)
     {
         if (is_null($busy_users)) {
             throw new \InvalidArgumentException('non-nullable busy_users cannot be null');
@@ -1707,7 +1707,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalConnectedUsers()
+    public function get_total_connected_users()
     {
         return $this->container['total_connected_users'];
     }
@@ -1719,7 +1719,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalConnectedUsers($total_connected_users)
+    public function set_total_connected_users($total_connected_users)
     {
         if (is_null($total_connected_users)) {
             throw new \InvalidArgumentException('non-nullable total_connected_users cannot be null');
@@ -1734,7 +1734,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getOfflineUsers()
+    public function get_offline_users()
     {
         return $this->container['offline_users'];
     }
@@ -1746,7 +1746,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOfflineUsers($offline_users)
+    public function set_offline_users($offline_users)
     {
         if (is_null($offline_users)) {
             throw new \InvalidArgumentException('non-nullable offline_users cannot be null');
@@ -1761,7 +1761,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerUserLanguages|null
      */
-    public function getUserLanguages()
+    public function get_user_languages()
     {
         return $this->container['user_languages'];
     }
@@ -1773,7 +1773,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUserLanguages($user_languages)
+    public function set_user_languages($user_languages)
     {
         if (is_null($user_languages)) {
             throw new \InvalidArgumentException('non-nullable user_languages cannot be null');
@@ -1788,7 +1788,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalRooms()
+    public function get_total_rooms()
     {
         return $this->container['total_rooms'];
     }
@@ -1800,7 +1800,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalRooms($total_rooms)
+    public function set_total_rooms($total_rooms)
     {
         if (is_null($total_rooms)) {
             throw new \InvalidArgumentException('non-nullable total_rooms cannot be null');
@@ -1815,7 +1815,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalChannels()
+    public function get_total_channels()
     {
         return $this->container['total_channels'];
     }
@@ -1827,7 +1827,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalChannels($total_channels)
+    public function set_total_channels($total_channels)
     {
         if (is_null($total_channels)) {
             throw new \InvalidArgumentException('non-nullable total_channels cannot be null');
@@ -1842,7 +1842,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalPrivateGroups()
+    public function get_total_private_groups()
     {
         return $this->container['total_private_groups'];
     }
@@ -1854,7 +1854,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalPrivateGroups($total_private_groups)
+    public function set_total_private_groups($total_private_groups)
     {
         if (is_null($total_private_groups)) {
             throw new \InvalidArgumentException('non-nullable total_private_groups cannot be null');
@@ -1869,7 +1869,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalDirect()
+    public function get_total_direct()
     {
         return $this->container['total_direct'];
     }
@@ -1881,7 +1881,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalDirect($total_direct)
+    public function set_total_direct($total_direct)
     {
         if (is_null($total_direct)) {
             throw new \InvalidArgumentException('non-nullable total_direct cannot be null');
@@ -1896,7 +1896,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalLivechat()
+    public function get_total_livechat()
     {
         return $this->container['total_livechat'];
     }
@@ -1908,7 +1908,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalLivechat($total_livechat)
+    public function set_total_livechat($total_livechat)
     {
         if (is_null($total_livechat)) {
             throw new \InvalidArgumentException('non-nullable total_livechat cannot be null');
@@ -1923,7 +1923,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalDiscussions()
+    public function get_total_discussions()
     {
         return $this->container['total_discussions'];
     }
@@ -1935,7 +1935,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalDiscussions($total_discussions)
+    public function set_total_discussions($total_discussions)
     {
         if (is_null($total_discussions)) {
             throw new \InvalidArgumentException('non-nullable total_discussions cannot be null');
@@ -1950,7 +1950,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalThreads()
+    public function get_total_threads()
     {
         return $this->container['total_threads'];
     }
@@ -1962,7 +1962,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalThreads($total_threads)
+    public function set_total_threads($total_threads)
     {
         if (is_null($total_threads)) {
             throw new \InvalidArgumentException('non-nullable total_threads cannot be null');
@@ -1977,7 +1977,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalLivechatVisitors()
+    public function get_total_livechat_visitors()
     {
         return $this->container['total_livechat_visitors'];
     }
@@ -1989,7 +1989,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalLivechatVisitors($total_livechat_visitors)
+    public function set_total_livechat_visitors($total_livechat_visitors)
     {
         if (is_null($total_livechat_visitors)) {
             throw new \InvalidArgumentException('non-nullable total_livechat_visitors cannot be null');
@@ -2004,7 +2004,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalLivechatAgents()
+    public function get_total_livechat_agents()
     {
         return $this->container['total_livechat_agents'];
     }
@@ -2016,7 +2016,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalLivechatAgents($total_livechat_agents)
+    public function set_total_livechat_agents($total_livechat_agents)
     {
         if (is_null($total_livechat_agents)) {
             throw new \InvalidArgumentException('non-nullable total_livechat_agents cannot be null');
@@ -2031,7 +2031,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalLivechatManagers()
+    public function get_total_livechat_managers()
     {
         return $this->container['total_livechat_managers'];
     }
@@ -2043,7 +2043,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalLivechatManagers($total_livechat_managers)
+    public function set_total_livechat_managers($total_livechat_managers)
     {
         if (is_null($total_livechat_managers)) {
             throw new \InvalidArgumentException('non-nullable total_livechat_managers cannot be null');
@@ -2058,7 +2058,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getLivechatEnabled()
+    public function get_livechat_enabled()
     {
         return $this->container['livechat_enabled'];
     }
@@ -2070,7 +2070,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLivechatEnabled($livechat_enabled)
+    public function set_livechat_enabled($livechat_enabled)
     {
         if (is_null($livechat_enabled)) {
             throw new \InvalidArgumentException('non-nullable livechat_enabled cannot be null');
@@ -2085,7 +2085,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getIsDepartmentRemovalEnabled()
+    public function get_is_department_removal_enabled()
     {
         return $this->container['is_department_removal_enabled'];
     }
@@ -2097,7 +2097,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setIsDepartmentRemovalEnabled($is_department_removal_enabled)
+    public function set_is_department_removal_enabled($is_department_removal_enabled)
     {
         if (is_null($is_department_removal_enabled)) {
             throw new \InvalidArgumentException('non-nullable is_department_removal_enabled cannot be null');
@@ -2112,7 +2112,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalTriggers()
+    public function get_total_triggers()
     {
         return $this->container['total_triggers'];
     }
@@ -2124,7 +2124,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalTriggers($total_triggers)
+    public function set_total_triggers($total_triggers)
     {
         if (is_null($total_triggers)) {
             throw new \InvalidArgumentException('non-nullable total_triggers cannot be null');
@@ -2139,7 +2139,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getArchivedDepartments()
+    public function get_archived_departments()
     {
         return $this->container['archived_departments'];
     }
@@ -2151,7 +2151,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setArchivedDepartments($archived_departments)
+    public function set_archived_departments($archived_departments)
     {
         if (is_null($archived_departments)) {
             throw new \InvalidArgumentException('non-nullable archived_departments cannot be null');
@@ -2166,7 +2166,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getDepartments()
+    public function get_departments()
     {
         return $this->container['departments'];
     }
@@ -2178,7 +2178,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setDepartments($departments)
+    public function set_departments($departments)
     {
         if (is_null($departments)) {
             throw new \InvalidArgumentException('non-nullable departments cannot be null');
@@ -2193,7 +2193,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalCustomFields()
+    public function get_total_custom_fields()
     {
         return $this->container['total_custom_fields'];
     }
@@ -2205,7 +2205,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalCustomFields($total_custom_fields)
+    public function set_total_custom_fields($total_custom_fields)
     {
         if (is_null($total_custom_fields)) {
             throw new \InvalidArgumentException('non-nullable total_custom_fields cannot be null');
@@ -2220,7 +2220,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return object[]|null
      */
-    public function getOmnichannelSources()
+    public function get_omnichannel_sources()
     {
         return $this->container['omnichannel_sources'];
     }
@@ -2232,7 +2232,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOmnichannelSources($omnichannel_sources)
+    public function set_omnichannel_sources($omnichannel_sources)
     {
         if (is_null($omnichannel_sources)) {
             throw new \InvalidArgumentException('non-nullable omnichannel_sources cannot be null');
@@ -2247,7 +2247,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalLivechatPublicCustomFields()
+    public function get_total_livechat_public_custom_fields()
     {
         return $this->container['total_livechat_public_custom_fields'];
     }
@@ -2259,7 +2259,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalLivechatPublicCustomFields($total_livechat_public_custom_fields)
+    public function set_total_livechat_public_custom_fields($total_livechat_public_custom_fields)
     {
         if (is_null($total_livechat_public_custom_fields)) {
             throw new \InvalidArgumentException('non-nullable total_livechat_public_custom_fields cannot be null');
@@ -2274,7 +2274,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getLivechatAutomaticForwardingUnansweredChats()
+    public function get_livechat_automatic_forwarding_unanswered_chats()
     {
         return $this->container['livechat_automatic_forwarding_unanswered_chats'];
     }
@@ -2286,7 +2286,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLivechatAutomaticForwardingUnansweredChats($livechat_automatic_forwarding_unanswered_chats)
+    public function set_livechat_automatic_forwarding_unanswered_chats($livechat_automatic_forwarding_unanswered_chats)
     {
         if (is_null($livechat_automatic_forwarding_unanswered_chats)) {
             throw new \InvalidArgumentException('non-nullable livechat_automatic_forwarding_unanswered_chats cannot be null');
@@ -2301,7 +2301,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getRoutingAlgorithm()
+    public function get_routing_algorithm()
     {
         return $this->container['routing_algorithm'];
     }
@@ -2313,7 +2313,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setRoutingAlgorithm($routing_algorithm)
+    public function set_routing_algorithm($routing_algorithm)
     {
         if (is_null($routing_algorithm)) {
             throw new \InvalidArgumentException('non-nullable routing_algorithm cannot be null');
@@ -2328,7 +2328,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getOnHoldEnabled()
+    public function get_on_hold_enabled()
     {
         return $this->container['on_hold_enabled'];
     }
@@ -2340,7 +2340,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOnHoldEnabled($on_hold_enabled)
+    public function set_on_hold_enabled($on_hold_enabled)
     {
         if (is_null($on_hold_enabled)) {
             throw new \InvalidArgumentException('non-nullable on_hold_enabled cannot be null');
@@ -2355,7 +2355,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getLastChattedAgentPreferred()
+    public function get_last_chatted_agent_preferred()
     {
         return $this->container['last_chatted_agent_preferred'];
     }
@@ -2367,7 +2367,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLastChattedAgentPreferred($last_chatted_agent_preferred)
+    public function set_last_chatted_agent_preferred($last_chatted_agent_preferred)
     {
         if (is_null($last_chatted_agent_preferred)) {
             throw new \InvalidArgumentException('non-nullable last_chatted_agent_preferred cannot be null');
@@ -2382,7 +2382,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getAssignNewConversationsToContactManager()
+    public function get_assign_new_conversations_to_contact_manager()
     {
         return $this->container['assign_new_conversations_to_contact_manager'];
     }
@@ -2394,7 +2394,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setAssignNewConversationsToContactManager($assign_new_conversations_to_contact_manager)
+    public function set_assign_new_conversations_to_contact_manager($assign_new_conversations_to_contact_manager)
     {
         if (is_null($assign_new_conversations_to_contact_manager)) {
             throw new \InvalidArgumentException('non-nullable assign_new_conversations_to_contact_manager cannot be null');
@@ -2409,7 +2409,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getVisitorAbandonment()
+    public function get_visitor_abandonment()
     {
         return $this->container['visitor_abandonment'];
     }
@@ -2421,7 +2421,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setVisitorAbandonment($visitor_abandonment)
+    public function set_visitor_abandonment($visitor_abandonment)
     {
         if (is_null($visitor_abandonment)) {
             throw new \InvalidArgumentException('non-nullable visitor_abandonment cannot be null');
@@ -2436,7 +2436,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getVoipEnabled()
+    public function get_voip_enabled()
     {
         return $this->container['voip_enabled'];
     }
@@ -2448,7 +2448,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setVoipEnabled($voip_enabled)
+    public function set_voip_enabled($voip_enabled)
     {
         if (is_null($voip_enabled)) {
             throw new \InvalidArgumentException('non-nullable voip_enabled cannot be null');
@@ -2463,7 +2463,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getEmailInboxes()
+    public function get_email_inboxes()
     {
         return $this->container['email_inboxes'];
     }
@@ -2475,7 +2475,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setEmailInboxes($email_inboxes)
+    public function set_email_inboxes($email_inboxes)
     {
         if (is_null($email_inboxes)) {
             throw new \InvalidArgumentException('non-nullable email_inboxes cannot be null');
@@ -2490,7 +2490,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerBusinessHours|null
      */
-    public function getBusinessHours()
+    public function get_business_hours()
     {
         return $this->container['business_hours'];
     }
@@ -2502,7 +2502,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setBusinessHours($business_hours)
+    public function set_business_hours($business_hours)
     {
         if (is_null($business_hours)) {
             throw new \InvalidArgumentException('non-nullable business_hours cannot be null');
@@ -2517,7 +2517,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getVoipCalls()
+    public function get_voip_calls()
     {
         return $this->container['voip_calls'];
     }
@@ -2529,7 +2529,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setVoipCalls($voip_calls)
+    public function set_voip_calls($voip_calls)
     {
         if (is_null($voip_calls)) {
             throw new \InvalidArgumentException('non-nullable voip_calls cannot be null');
@@ -2544,7 +2544,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getVoipExtensions()
+    public function get_voip_extensions()
     {
         return $this->container['voip_extensions'];
     }
@@ -2556,7 +2556,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setVoipExtensions($voip_extensions)
+    public function set_voip_extensions($voip_extensions)
     {
         if (is_null($voip_extensions)) {
             throw new \InvalidArgumentException('non-nullable voip_extensions cannot be null');
@@ -2571,7 +2571,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getChatsOnHold()
+    public function get_chats_on_hold()
     {
         return $this->container['chats_on_hold'];
     }
@@ -2583,7 +2583,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setChatsOnHold($chats_on_hold)
+    public function set_chats_on_hold($chats_on_hold)
     {
         if (is_null($chats_on_hold)) {
             throw new \InvalidArgumentException('non-nullable chats_on_hold cannot be null');
@@ -2598,7 +2598,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getVoipSuccessfulCalls()
+    public function get_voip_successful_calls()
     {
         return $this->container['voip_successful_calls'];
     }
@@ -2610,7 +2610,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setVoipSuccessfulCalls($voip_successful_calls)
+    public function set_voip_successful_calls($voip_successful_calls)
     {
         if (is_null($voip_successful_calls)) {
             throw new \InvalidArgumentException('non-nullable voip_successful_calls cannot be null');
@@ -2625,7 +2625,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getVoipErrorCalls()
+    public function get_voip_error_calls()
     {
         return $this->container['voip_error_calls'];
     }
@@ -2637,7 +2637,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setVoipErrorCalls($voip_error_calls)
+    public function set_voip_error_calls($voip_error_calls)
     {
         if (is_null($voip_error_calls)) {
             throw new \InvalidArgumentException('non-nullable voip_error_calls cannot be null');
@@ -2652,7 +2652,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getVoipOnHoldCalls()
+    public function get_voip_on_hold_calls()
     {
         return $this->container['voip_on_hold_calls'];
     }
@@ -2664,7 +2664,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setVoipOnHoldCalls($voip_on_hold_calls)
+    public function set_voip_on_hold_calls($voip_on_hold_calls)
     {
         if (is_null($voip_on_hold_calls)) {
             throw new \InvalidArgumentException('non-nullable voip_on_hold_calls cannot be null');
@@ -2679,7 +2679,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseOmnichannelContactsBySource|null
      */
-    public function getOmnichannelContactsBySource()
+    public function get_omnichannel_contacts_by_source()
     {
         return $this->container['omnichannel_contacts_by_source'];
     }
@@ -2691,7 +2691,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOmnichannelContactsBySource($omnichannel_contacts_by_source)
+    public function set_omnichannel_contacts_by_source($omnichannel_contacts_by_source)
     {
         if (is_null($omnichannel_contacts_by_source)) {
             throw new \InvalidArgumentException('non-nullable omnichannel_contacts_by_source cannot be null');
@@ -2706,7 +2706,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseOmnichannelContactsBySource|null
      */
-    public function getUniqueContactsOfLastWeek()
+    public function get_unique_contacts_of_last_week()
     {
         return $this->container['unique_contacts_of_last_week'];
     }
@@ -2718,7 +2718,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueContactsOfLastWeek($unique_contacts_of_last_week)
+    public function set_unique_contacts_of_last_week($unique_contacts_of_last_week)
     {
         if (is_null($unique_contacts_of_last_week)) {
             throw new \InvalidArgumentException('non-nullable unique_contacts_of_last_week cannot be null');
@@ -2733,7 +2733,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseOmnichannelContactsBySource|null
      */
-    public function getUniqueContactsOfLastMonth()
+    public function get_unique_contacts_of_last_month()
     {
         return $this->container['unique_contacts_of_last_month'];
     }
@@ -2745,7 +2745,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueContactsOfLastMonth($unique_contacts_of_last_month)
+    public function set_unique_contacts_of_last_month($unique_contacts_of_last_month)
     {
         if (is_null($unique_contacts_of_last_month)) {
             throw new \InvalidArgumentException('non-nullable unique_contacts_of_last_month cannot be null');
@@ -2760,7 +2760,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseOmnichannelContactsBySource|null
      */
-    public function getUniqueContactsOfYesterday()
+    public function get_unique_contacts_of_yesterday()
     {
         return $this->container['unique_contacts_of_yesterday'];
     }
@@ -2772,7 +2772,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueContactsOfYesterday($unique_contacts_of_yesterday)
+    public function set_unique_contacts_of_yesterday($unique_contacts_of_yesterday)
     {
         if (is_null($unique_contacts_of_yesterday)) {
             throw new \InvalidArgumentException('non-nullable unique_contacts_of_yesterday cannot be null');
@@ -2787,7 +2787,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalChannelMessages()
+    public function get_total_channel_messages()
     {
         return $this->container['total_channel_messages'];
     }
@@ -2799,7 +2799,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalChannelMessages($total_channel_messages)
+    public function set_total_channel_messages($total_channel_messages)
     {
         if (is_null($total_channel_messages)) {
             throw new \InvalidArgumentException('non-nullable total_channel_messages cannot be null');
@@ -2814,7 +2814,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalPrivateGroupMessages()
+    public function get_total_private_group_messages()
     {
         return $this->container['total_private_group_messages'];
     }
@@ -2826,7 +2826,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalPrivateGroupMessages($total_private_group_messages)
+    public function set_total_private_group_messages($total_private_group_messages)
     {
         if (is_null($total_private_group_messages)) {
             throw new \InvalidArgumentException('non-nullable total_private_group_messages cannot be null');
@@ -2841,7 +2841,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalDiscussionsMessages()
+    public function get_total_discussions_messages()
     {
         return $this->container['total_discussions_messages'];
     }
@@ -2853,7 +2853,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalDiscussionsMessages($total_discussions_messages)
+    public function set_total_discussions_messages($total_discussions_messages)
     {
         if (is_null($total_discussions_messages)) {
             throw new \InvalidArgumentException('non-nullable total_discussions_messages cannot be null');
@@ -2868,7 +2868,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalDirectMessages()
+    public function get_total_direct_messages()
     {
         return $this->container['total_direct_messages'];
     }
@@ -2880,7 +2880,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalDirectMessages($total_direct_messages)
+    public function set_total_direct_messages($total_direct_messages)
     {
         if (is_null($total_direct_messages)) {
             throw new \InvalidArgumentException('non-nullable total_direct_messages cannot be null');
@@ -2895,7 +2895,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalLivechatMessages()
+    public function get_total_livechat_messages()
     {
         return $this->container['total_livechat_messages'];
     }
@@ -2907,7 +2907,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalLivechatMessages($total_livechat_messages)
+    public function set_total_livechat_messages($total_livechat_messages)
     {
         if (is_null($total_livechat_messages)) {
             throw new \InvalidArgumentException('non-nullable total_livechat_messages cannot be null');
@@ -2922,7 +2922,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalMessages()
+    public function get_total_messages()
     {
         return $this->container['total_messages'];
     }
@@ -2934,7 +2934,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalMessages($total_messages)
+    public function set_total_messages($total_messages)
     {
         if (is_null($total_messages)) {
             throw new \InvalidArgumentException('non-nullable total_messages cannot be null');
@@ -2949,7 +2949,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getLastLogin()
+    public function get_last_login()
     {
         return $this->container['last_login'];
     }
@@ -2961,7 +2961,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLastLogin($last_login)
+    public function set_last_login($last_login)
     {
         if (is_null($last_login)) {
             throw new \InvalidArgumentException('non-nullable last_login cannot be null');
@@ -2976,7 +2976,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getLastMessageSentAt()
+    public function get_last_message_sent_at()
     {
         return $this->container['last_message_sent_at'];
     }
@@ -2988,7 +2988,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLastMessageSentAt($last_message_sent_at)
+    public function set_last_message_sent_at($last_message_sent_at)
     {
         if (is_null($last_message_sent_at)) {
             throw new \InvalidArgumentException('non-nullable last_message_sent_at cannot be null');
@@ -3003,7 +3003,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getFederatedServers()
+    public function get_federated_servers()
     {
         return $this->container['federated_servers'];
     }
@@ -3015,7 +3015,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setFederatedServers($federated_servers)
+    public function set_federated_servers($federated_servers)
     {
         if (is_null($federated_servers)) {
             throw new \InvalidArgumentException('non-nullable federated_servers cannot be null');
@@ -3030,7 +3030,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getFederatedUsers()
+    public function get_federated_users()
     {
         return $this->container['federated_users'];
     }
@@ -3042,7 +3042,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setFederatedUsers($federated_users)
+    public function set_federated_users($federated_users)
     {
         if (is_null($federated_users)) {
             throw new \InvalidArgumentException('non-nullable federated_users cannot be null');
@@ -3057,7 +3057,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getLastSeenSubscription()
+    public function get_last_seen_subscription()
     {
         return $this->container['last_seen_subscription'];
     }
@@ -3069,7 +3069,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLastSeenSubscription($last_seen_subscription)
+    public function set_last_seen_subscription($last_seen_subscription)
     {
         if (is_null($last_seen_subscription)) {
             throw new \InvalidArgumentException('non-nullable last_seen_subscription cannot be null');
@@ -3084,7 +3084,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseOs|null
      */
-    public function getOs()
+    public function get_os()
     {
         return $this->container['os'];
     }
@@ -3096,7 +3096,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOs($os)
+    public function set_os($os)
     {
         if (is_null($os)) {
             throw new \InvalidArgumentException('non-nullable os cannot be null');
@@ -3111,7 +3111,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerProcess|null
      */
-    public function getProcess()
+    public function get_process()
     {
         return $this->container['process'];
     }
@@ -3123,7 +3123,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setProcess($process)
+    public function set_process($process)
     {
         if (is_null($process)) {
             throw new \InvalidArgumentException('non-nullable process cannot be null');
@@ -3138,7 +3138,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerDeploy|null
      */
-    public function getDeploy()
+    public function get_deploy()
     {
         return $this->container['deploy'];
     }
@@ -3150,7 +3150,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setDeploy($deploy)
+    public function set_deploy($deploy)
     {
         if (is_null($deploy)) {
             throw new \InvalidArgumentException('non-nullable deploy cannot be null');
@@ -3165,7 +3165,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getReadReceiptsEnabled()
+    public function get_read_receipts_enabled()
     {
         return $this->container['read_receipts_enabled'];
     }
@@ -3177,7 +3177,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setReadReceiptsEnabled($read_receipts_enabled)
+    public function set_read_receipts_enabled($read_receipts_enabled)
     {
         if (is_null($read_receipts_enabled)) {
             throw new \InvalidArgumentException('non-nullable read_receipts_enabled cannot be null');
@@ -3192,7 +3192,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getReadReceiptsDetailed()
+    public function get_read_receipts_detailed()
     {
         return $this->container['read_receipts_detailed'];
     }
@@ -3204,7 +3204,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setReadReceiptsDetailed($read_receipts_detailed)
+    public function set_read_receipts_detailed($read_receipts_detailed)
     {
         if (is_null($read_receipts_detailed)) {
             throw new \InvalidArgumentException('non-nullable read_receipts_detailed cannot be null');
@@ -3219,7 +3219,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getEnterpriseReady()
+    public function get_enterprise_ready()
     {
         return $this->container['enterprise_ready'];
     }
@@ -3231,7 +3231,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setEnterpriseReady($enterprise_ready)
+    public function set_enterprise_ready($enterprise_ready)
     {
         if (is_null($enterprise_ready)) {
             throw new \InvalidArgumentException('non-nullable enterprise_ready cannot be null');
@@ -3246,7 +3246,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getUploadsTotal()
+    public function get_uploads_total()
     {
         return $this->container['uploads_total'];
     }
@@ -3258,7 +3258,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUploadsTotal($uploads_total)
+    public function set_uploads_total($uploads_total)
     {
         if (is_null($uploads_total)) {
             throw new \InvalidArgumentException('non-nullable uploads_total cannot be null');
@@ -3273,7 +3273,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseMigration|null
      */
-    public function getMigration()
+    public function get_migration()
     {
         return $this->container['migration'];
     }
@@ -3285,7 +3285,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMigration($migration)
+    public function set_migration($migration)
     {
         if (is_null($migration)) {
             throw new \InvalidArgumentException('non-nullable migration cannot be null');
@@ -3300,7 +3300,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getUploadsTotalSize()
+    public function get_uploads_total_size()
     {
         return $this->container['uploads_total_size'];
     }
@@ -3312,7 +3312,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUploadsTotalSize($uploads_total_size)
+    public function set_uploads_total_size($uploads_total_size)
     {
         if (is_null($uploads_total_size)) {
             throw new \InvalidArgumentException('non-nullable uploads_total_size cannot be null');
@@ -3327,7 +3327,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getInstanceCount()
+    public function get_instance_count()
     {
         return $this->container['instance_count'];
     }
@@ -3339,7 +3339,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setInstanceCount($instance_count)
+    public function set_instance_count($instance_count)
     {
         if (is_null($instance_count)) {
             throw new \InvalidArgumentException('non-nullable instance_count cannot be null');
@@ -3354,7 +3354,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getMsEnabled()
+    public function get_ms_enabled()
     {
         return $this->container['ms_enabled'];
     }
@@ -3366,7 +3366,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMsEnabled($ms_enabled)
+    public function set_ms_enabled($ms_enabled)
     {
         if (is_null($ms_enabled)) {
             throw new \InvalidArgumentException('non-nullable ms_enabled cannot be null');
@@ -3381,7 +3381,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getOplogEnabled()
+    public function get_oplog_enabled()
     {
         return $this->container['oplog_enabled'];
     }
@@ -3393,7 +3393,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOplogEnabled($oplog_enabled)
+    public function set_oplog_enabled($oplog_enabled)
     {
         if (is_null($oplog_enabled)) {
             throw new \InvalidArgumentException('non-nullable oplog_enabled cannot be null');
@@ -3408,7 +3408,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getMongoVersion()
+    public function get_mongo_version()
     {
         return $this->container['mongo_version'];
     }
@@ -3420,7 +3420,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMongoVersion($mongo_version)
+    public function set_mongo_version($mongo_version)
     {
         if (is_null($mongo_version)) {
             throw new \InvalidArgumentException('non-nullable mongo_version cannot be null');
@@ -3435,7 +3435,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getMongoStorageEngine()
+    public function get_mongo_storage_engine()
     {
         return $this->container['mongo_storage_engine'];
     }
@@ -3447,7 +3447,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMongoStorageEngine($mongo_storage_engine)
+    public function set_mongo_storage_engine($mongo_storage_engine)
     {
         if (is_null($mongo_storage_engine)) {
             throw new \InvalidArgumentException('non-nullable mongo_storage_engine cannot be null');
@@ -3462,7 +3462,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseApps|null
      */
-    public function getApps()
+    public function get_apps()
     {
         return $this->container['apps'];
     }
@@ -3474,7 +3474,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setApps($apps)
+    public function set_apps($apps)
     {
         if (is_null($apps)) {
             throw new \InvalidArgumentException('non-nullable apps cannot be null');
@@ -3489,7 +3489,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfYesterday|null
      */
-    public function getUniqueUsersOfYesterday()
+    public function get_unique_users_of_yesterday()
     {
         return $this->container['unique_users_of_yesterday'];
     }
@@ -3501,7 +3501,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueUsersOfYesterday($unique_users_of_yesterday)
+    public function set_unique_users_of_yesterday($unique_users_of_yesterday)
     {
         if (is_null($unique_users_of_yesterday)) {
             throw new \InvalidArgumentException('non-nullable unique_users_of_yesterday cannot be null');
@@ -3516,7 +3516,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfYesterday|null
      */
-    public function getUniqueDevicesOfYesterday()
+    public function get_unique_devices_of_yesterday()
     {
         return $this->container['unique_devices_of_yesterday'];
     }
@@ -3528,7 +3528,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueDevicesOfYesterday($unique_devices_of_yesterday)
+    public function set_unique_devices_of_yesterday($unique_devices_of_yesterday)
     {
         if (is_null($unique_devices_of_yesterday)) {
             throw new \InvalidArgumentException('non-nullable unique_devices_of_yesterday cannot be null');
@@ -3543,7 +3543,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeek|null
      */
-    public function getUniqueUsersOfLastWeek()
+    public function get_unique_users_of_last_week()
     {
         return $this->container['unique_users_of_last_week'];
     }
@@ -3555,7 +3555,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueUsersOfLastWeek($unique_users_of_last_week)
+    public function set_unique_users_of_last_week($unique_users_of_last_week)
     {
         if (is_null($unique_users_of_last_week)) {
             throw new \InvalidArgumentException('non-nullable unique_users_of_last_week cannot be null');
@@ -3570,7 +3570,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfYesterday|null
      */
-    public function getUniqueOsofYesterday()
+    public function get_unique_osof_yesterday()
     {
         return $this->container['unique_osof_yesterday'];
     }
@@ -3582,7 +3582,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueOsofYesterday($unique_osof_yesterday)
+    public function set_unique_osof_yesterday($unique_osof_yesterday)
     {
         if (is_null($unique_osof_yesterday)) {
             throw new \InvalidArgumentException('non-nullable unique_osof_yesterday cannot be null');
@@ -3597,7 +3597,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth|null
      */
-    public function getUniqueDevicesOfLastMonth()
+    public function get_unique_devices_of_last_month()
     {
         return $this->container['unique_devices_of_last_month'];
     }
@@ -3609,7 +3609,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueDevicesOfLastMonth($unique_devices_of_last_month)
+    public function set_unique_devices_of_last_month($unique_devices_of_last_month)
     {
         if (is_null($unique_devices_of_last_month)) {
             throw new \InvalidArgumentException('non-nullable unique_devices_of_last_month cannot be null');
@@ -3624,7 +3624,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueOSOfLastWeek|null
      */
-    public function getUniqueOsofLastWeek()
+    public function get_unique_osof_last_week()
     {
         return $this->container['unique_osof_last_week'];
     }
@@ -3636,7 +3636,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueOsofLastWeek($unique_osof_last_week)
+    public function set_unique_osof_last_week($unique_osof_last_week)
     {
         if (is_null($unique_osof_last_week)) {
             throw new \InvalidArgumentException('non-nullable unique_osof_last_week cannot be null');
@@ -3651,7 +3651,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueDevicesOfLastMonth|null
      */
-    public function getUniqueDevicesOfLastWeek()
+    public function get_unique_devices_of_last_week()
     {
         return $this->container['unique_devices_of_last_week'];
     }
@@ -3663,7 +3663,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueDevicesOfLastWeek($unique_devices_of_last_week)
+    public function set_unique_devices_of_last_week($unique_devices_of_last_week)
     {
         if (is_null($unique_devices_of_last_week)) {
             throw new \InvalidArgumentException('non-nullable unique_devices_of_last_week cannot be null');
@@ -3678,7 +3678,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueUsersOfLastWeek|null
      */
-    public function getUniqueUsersOfLastMonth()
+    public function get_unique_users_of_last_month()
     {
         return $this->container['unique_users_of_last_month'];
     }
@@ -3690,7 +3690,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueUsersOfLastMonth($unique_users_of_last_month)
+    public function set_unique_users_of_last_month($unique_users_of_last_month)
     {
         if (is_null($unique_users_of_last_month)) {
             throw new \InvalidArgumentException('non-nullable unique_users_of_last_month cannot be null');
@@ -3705,7 +3705,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseUniqueOSOfLastWeek|null
      */
-    public function getUniqueOsofLastMonth()
+    public function get_unique_osof_last_month()
     {
         return $this->container['unique_osof_last_month'];
     }
@@ -3717,7 +3717,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUniqueOsofLastMonth($unique_osof_last_month)
+    public function set_unique_osof_last_month($unique_osof_last_month)
     {
         if (is_null($unique_osof_last_month)) {
             throw new \InvalidArgumentException('non-nullable unique_osof_last_month cannot be null');
@@ -3732,7 +3732,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseServices|null
      */
-    public function getServices()
+    public function get_services()
     {
         return $this->container['services'];
     }
@@ -3744,7 +3744,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setServices($services)
+    public function set_services($services)
     {
         if (is_null($services)) {
             throw new \InvalidArgumentException('non-nullable services cannot be null');
@@ -3759,7 +3759,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerImporter|null
      */
-    public function getImporter()
+    public function get_importer()
     {
         return $this->container['importer'];
     }
@@ -3771,7 +3771,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setImporter($importer)
+    public function set_importer($importer)
     {
         if (is_null($importer)) {
             throw new \InvalidArgumentException('non-nullable importer cannot be null');
@@ -3786,7 +3786,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseVideoConf|null
      */
-    public function getVideoConf()
+    public function get_video_conf()
     {
         return $this->container['video_conf'];
     }
@@ -3798,7 +3798,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setVideoConf($video_conf)
+    public function set_video_conf($video_conf)
     {
         if (is_null($video_conf)) {
             throw new \InvalidArgumentException('non-nullable video_conf cannot be null');
@@ -3813,7 +3813,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getDashboardCount()
+    public function get_dashboard_count()
     {
         return $this->container['dashboard_count'];
     }
@@ -3825,7 +3825,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setDashboardCount($dashboard_count)
+    public function set_dashboard_count($dashboard_count)
     {
         if (is_null($dashboard_count)) {
             throw new \InvalidArgumentException('non-nullable dashboard_count cannot be null');
@@ -3840,7 +3840,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getMessageAuditApply()
+    public function get_message_audit_apply()
     {
         return $this->container['message_audit_apply'];
     }
@@ -3852,7 +3852,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMessageAuditApply($message_audit_apply)
+    public function set_message_audit_apply($message_audit_apply)
     {
         if (is_null($message_audit_apply)) {
             throw new \InvalidArgumentException('non-nullable message_audit_apply cannot be null');
@@ -3867,7 +3867,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getMessageAuditLoad()
+    public function get_message_audit_load()
     {
         return $this->container['message_audit_load'];
     }
@@ -3879,7 +3879,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMessageAuditLoad($message_audit_load)
+    public function set_message_audit_load($message_audit_load)
     {
         if (is_null($message_audit_load)) {
             throw new \InvalidArgumentException('non-nullable message_audit_load cannot be null');
@@ -3894,7 +3894,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getJoinJitsiButton()
+    public function get_join_jitsi_button()
     {
         return $this->container['join_jitsi_button'];
     }
@@ -3906,7 +3906,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setJoinJitsiButton($join_jitsi_button)
+    public function set_join_jitsi_button($join_jitsi_button)
     {
         if (is_null($join_jitsi_button)) {
             throw new \InvalidArgumentException('non-nullable join_jitsi_button cannot be null');
@@ -3921,7 +3921,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getSlashCommandsJitsi()
+    public function get_slash_commands_jitsi()
     {
         return $this->container['slash_commands_jitsi'];
     }
@@ -3933,7 +3933,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setSlashCommandsJitsi($slash_commands_jitsi)
+    public function set_slash_commands_jitsi($slash_commands_jitsi)
     {
         if (is_null($slash_commands_jitsi)) {
             throw new \InvalidArgumentException('non-nullable slash_commands_jitsi cannot be null');
@@ -3948,7 +3948,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettings|null
      */
-    public function getSettings()
+    public function get_settings()
     {
         return $this->container['settings'];
     }
@@ -3960,7 +3960,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setSettings($settings)
+    public function set_settings($settings)
     {
         if (is_null($settings)) {
             throw new \InvalidArgumentException('non-nullable settings cannot be null');
@@ -3975,7 +3975,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getPushQueue()
+    public function get_push_queue()
     {
         return $this->container['push_queue'];
     }
@@ -3987,7 +3987,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setPushQueue($push_queue)
+    public function set_push_queue($push_queue)
     {
         if (is_null($push_queue)) {
             throw new \InvalidArgumentException('non-nullable push_queue cannot be null');
@@ -4002,7 +4002,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalOtrRooms()
+    public function get_total_otr_rooms()
     {
         return $this->container['total_otr_rooms'];
     }
@@ -4014,7 +4014,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalOtrRooms($total_otr_rooms)
+    public function set_total_otr_rooms($total_otr_rooms)
     {
         if (is_null($total_otr_rooms)) {
             throw new \InvalidArgumentException('non-nullable total_otr_rooms cannot be null');
@@ -4029,7 +4029,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalOtr()
+    public function get_total_otr()
     {
         return $this->container['total_otr'];
     }
@@ -4041,7 +4041,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalOtr($total_otr)
+    public function set_total_otr($total_otr)
     {
         if (is_null($total_otr)) {
             throw new \InvalidArgumentException('non-nullable total_otr cannot be null');
@@ -4056,7 +4056,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerIntegrations|null
      */
-    public function getIntegrations()
+    public function get_integrations()
     {
         return $this->container['integrations'];
     }
@@ -4068,7 +4068,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setIntegrations($integrations)
+    public function set_integrations($integrations)
     {
         if (is_null($integrations)) {
             throw new \InvalidArgumentException('non-nullable integrations cannot be null');
@@ -4083,7 +4083,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalBroadcastRooms()
+    public function get_total_broadcast_rooms()
     {
         return $this->container['total_broadcast_rooms'];
     }
@@ -4095,7 +4095,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalBroadcastRooms($total_broadcast_rooms)
+    public function set_total_broadcast_rooms($total_broadcast_rooms)
     {
         if (is_null($total_broadcast_rooms)) {
             throw new \InvalidArgumentException('non-nullable total_broadcast_rooms cannot be null');
@@ -4110,7 +4110,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseEnterprise|null
      */
-    public function getEnterprise()
+    public function get_enterprise()
     {
         return $this->container['enterprise'];
     }
@@ -4122,7 +4122,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setEnterprise($enterprise)
+    public function set_enterprise($enterprise)
     {
         if (is_null($enterprise)) {
             throw new \InvalidArgumentException('non-nullable enterprise cannot be null');
@@ -4137,7 +4137,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerTeams|null
      */
-    public function getTeams()
+    public function get_teams()
     {
         return $this->container['teams'];
     }
@@ -4149,7 +4149,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTeams($teams)
+    public function set_teams($teams)
     {
         if (is_null($teams)) {
             throw new \InvalidArgumentException('non-nullable teams cannot be null');
@@ -4164,7 +4164,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalRoomsWithActiveLivestream()
+    public function get_total_rooms_with_active_livestream()
     {
         return $this->container['total_rooms_with_active_livestream'];
     }
@@ -4176,7 +4176,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalRoomsWithActiveLivestream($total_rooms_with_active_livestream)
+    public function set_total_rooms_with_active_livestream($total_rooms_with_active_livestream)
     {
         if (is_null($total_rooms_with_active_livestream)) {
             throw new \InvalidArgumentException('non-nullable total_rooms_with_active_livestream cannot be null');
@@ -4191,7 +4191,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalTriggeredEmails()
+    public function get_total_triggered_emails()
     {
         return $this->container['total_triggered_emails'];
     }
@@ -4203,7 +4203,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalTriggeredEmails($total_triggered_emails)
+    public function set_total_triggered_emails($total_triggered_emails)
     {
         if (is_null($total_triggered_emails)) {
             throw new \InvalidArgumentException('non-nullable total_triggered_emails cannot be null');
@@ -4218,7 +4218,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalRoomsWithStarred()
+    public function get_total_rooms_with_starred()
     {
         return $this->container['total_rooms_with_starred'];
     }
@@ -4230,7 +4230,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalRoomsWithStarred($total_rooms_with_starred)
+    public function set_total_rooms_with_starred($total_rooms_with_starred)
     {
         if (is_null($total_rooms_with_starred)) {
             throw new \InvalidArgumentException('non-nullable total_rooms_with_starred cannot be null');
@@ -4245,7 +4245,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalRoomsWithPinned()
+    public function get_total_rooms_with_pinned()
     {
         return $this->container['total_rooms_with_pinned'];
     }
@@ -4257,7 +4257,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalRoomsWithPinned($total_rooms_with_pinned)
+    public function set_total_rooms_with_pinned($total_rooms_with_pinned)
     {
         if (is_null($total_rooms_with_pinned)) {
             throw new \InvalidArgumentException('non-nullable total_rooms_with_pinned cannot be null');
@@ -4272,7 +4272,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalUserTotp()
+    public function get_total_user_totp()
     {
         return $this->container['total_user_totp'];
     }
@@ -4284,7 +4284,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalUserTotp($total_user_totp)
+    public function set_total_user_totp($total_user_totp)
     {
         if (is_null($total_user_totp)) {
             throw new \InvalidArgumentException('non-nullable total_user_totp cannot be null');
@@ -4299,7 +4299,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalUserEmail2fa()
+    public function get_total_user_email2fa()
     {
         return $this->container['total_user_email2fa'];
     }
@@ -4311,7 +4311,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalUserEmail2fa($total_user_email2fa)
+    public function set_total_user_email2fa($total_user_email2fa)
     {
         if (is_null($total_user_email2fa)) {
             throw new \InvalidArgumentException('non-nullable total_user_email2fa cannot be null');
@@ -4326,7 +4326,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalPinned()
+    public function get_total_pinned()
     {
         return $this->container['total_pinned'];
     }
@@ -4338,7 +4338,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalPinned($total_pinned)
+    public function set_total_pinned($total_pinned)
     {
         if (is_null($total_pinned)) {
             throw new \InvalidArgumentException('non-nullable total_pinned cannot be null');
@@ -4353,7 +4353,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalStarred()
+    public function get_total_starred()
     {
         return $this->container['total_starred'];
     }
@@ -4365,7 +4365,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalStarred($total_starred)
+    public function set_total_starred($total_starred)
     {
         if (is_null($total_starred)) {
             throw new \InvalidArgumentException('non-nullable total_starred cannot be null');
@@ -4380,7 +4380,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalLinkInvitation()
+    public function get_total_link_invitation()
     {
         return $this->container['total_link_invitation'];
     }
@@ -4392,7 +4392,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalLinkInvitation($total_link_invitation)
+    public function set_total_link_invitation($total_link_invitation)
     {
         if (is_null($total_link_invitation)) {
             throw new \InvalidArgumentException('non-nullable total_link_invitation cannot be null');
@@ -4407,7 +4407,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalLinkInvitationUses()
+    public function get_total_link_invitation_uses()
     {
         return $this->container['total_link_invitation_uses'];
     }
@@ -4419,7 +4419,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalLinkInvitationUses($total_link_invitation_uses)
+    public function set_total_link_invitation_uses($total_link_invitation_uses)
     {
         if (is_null($total_link_invitation_uses)) {
             throw new \InvalidArgumentException('non-nullable total_link_invitation_uses cannot be null');
@@ -4434,7 +4434,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalEmailInvitation()
+    public function get_total_email_invitation()
     {
         return $this->container['total_email_invitation'];
     }
@@ -4446,7 +4446,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalEmailInvitation($total_email_invitation)
+    public function set_total_email_invitation($total_email_invitation)
     {
         if (is_null($total_email_invitation)) {
             throw new \InvalidArgumentException('non-nullable total_email_invitation cannot be null');
@@ -4461,7 +4461,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalE2ERooms()
+    public function get_total_e2_e_rooms()
     {
         return $this->container['total_e2_e_rooms'];
     }
@@ -4473,7 +4473,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalE2ERooms($total_e2_e_rooms)
+    public function set_total_e2_e_rooms($total_e2_e_rooms)
     {
         if (is_null($total_e2_e_rooms)) {
             throw new \InvalidArgumentException('non-nullable total_e2_e_rooms cannot be null');
@@ -4488,7 +4488,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getLogoChange()
+    public function get_logo_change()
     {
         return $this->container['logo_change'];
     }
@@ -4500,7 +4500,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLogoChange($logo_change)
+    public function set_logo_change($logo_change)
     {
         if (is_null($logo_change)) {
             throw new \InvalidArgumentException('non-nullable logo_change cannot be null');
@@ -4515,7 +4515,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getShowHomeButton()
+    public function get_show_home_button()
     {
         return $this->container['show_home_button'];
     }
@@ -4527,7 +4527,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setShowHomeButton($show_home_button)
+    public function set_show_home_button($show_home_button)
     {
         if (is_null($show_home_button)) {
             throw new \InvalidArgumentException('non-nullable show_home_button cannot be null');
@@ -4542,7 +4542,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalEncryptedMessages()
+    public function get_total_encrypted_messages()
     {
         return $this->container['total_encrypted_messages'];
     }
@@ -4554,7 +4554,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalEncryptedMessages($total_encrypted_messages)
+    public function set_total_encrypted_messages($total_encrypted_messages)
     {
         if (is_null($total_encrypted_messages)) {
             throw new \InvalidArgumentException('non-nullable total_encrypted_messages cannot be null');
@@ -4569,7 +4569,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalManuallyAddedUsers()
+    public function get_total_manually_added_users()
     {
         return $this->container['total_manually_added_users'];
     }
@@ -4581,7 +4581,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalManuallyAddedUsers($total_manually_added_users)
+    public function set_total_manually_added_users($total_manually_added_users)
     {
         if (is_null($total_manually_added_users)) {
             throw new \InvalidArgumentException('non-nullable total_manually_added_users cannot be null');
@@ -4596,7 +4596,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalSubscriptionRoles()
+    public function get_total_subscription_roles()
     {
         return $this->container['total_subscription_roles'];
     }
@@ -4608,7 +4608,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalSubscriptionRoles($total_subscription_roles)
+    public function set_total_subscription_roles($total_subscription_roles)
     {
         if (is_null($total_subscription_roles)) {
             throw new \InvalidArgumentException('non-nullable total_subscription_roles cannot be null');
@@ -4623,7 +4623,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalUserRoles()
+    public function get_total_user_roles()
     {
         return $this->container['total_user_roles'];
     }
@@ -4635,7 +4635,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalUserRoles($total_user_roles)
+    public function set_total_user_roles($total_user_roles)
     {
         if (is_null($total_user_roles)) {
             throw new \InvalidArgumentException('non-nullable total_user_roles cannot be null');
@@ -4650,7 +4650,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalCustomRoles()
+    public function get_total_custom_roles()
     {
         return $this->container['total_custom_roles'];
     }
@@ -4662,7 +4662,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalCustomRoles($total_custom_roles)
+    public function set_total_custom_roles($total_custom_roles)
     {
         if (is_null($total_custom_roles)) {
             throw new \InvalidArgumentException('non-nullable total_custom_roles cannot be null');
@@ -4677,7 +4677,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getTotalWebRtcCalls()
+    public function get_total_web_rtc_calls()
     {
         return $this->container['total_web_rtc_calls'];
     }
@@ -4689,7 +4689,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setTotalWebRtcCalls($total_web_rtc_calls)
+    public function set_total_web_rtc_calls($total_web_rtc_calls)
     {
         if (is_null($total_web_rtc_calls)) {
             throw new \InvalidArgumentException('non-nullable total_web_rtc_calls cannot be null');
@@ -4704,7 +4704,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getUncaughtExceptionsCount()
+    public function get_uncaught_exceptions_count()
     {
         return $this->container['uncaught_exceptions_count'];
     }
@@ -4716,7 +4716,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUncaughtExceptionsCount($uncaught_exceptions_count)
+    public function set_uncaught_exceptions_count($uncaught_exceptions_count)
     {
         if (is_null($uncaught_exceptions_count)) {
             throw new \InvalidArgumentException('non-nullable uncaught_exceptions_count cannot be null');
@@ -4731,7 +4731,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getPush()
+    public function get_push()
     {
         return $this->container['push'];
     }
@@ -4743,7 +4743,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setPush($push)
+    public function set_push($push)
     {
         if (is_null($push)) {
             throw new \InvalidArgumentException('non-nullable push cannot be null');
@@ -4758,7 +4758,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getPushSecured()
+    public function get_push_secured()
     {
         return $this->container['push_secured'];
     }
@@ -4770,7 +4770,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setPushSecured($push_secured)
+    public function set_push_secured($push_secured)
     {
         if (is_null($push_secured)) {
             throw new \InvalidArgumentException('non-nullable push_secured cannot be null');
@@ -4785,7 +4785,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getHomeTitleChanged()
+    public function get_home_title_changed()
     {
         return $this->container['home_title_changed'];
     }
@@ -4797,7 +4797,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setHomeTitleChanged($home_title_changed)
+    public function set_home_title_changed($home_title_changed)
     {
         if (is_null($home_title_changed)) {
             throw new \InvalidArgumentException('non-nullable home_title_changed cannot be null');
@@ -4812,7 +4812,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getHomeBodyChanged()
+    public function get_home_body_changed()
     {
         return $this->container['home_body_changed'];
     }
@@ -4824,7 +4824,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setHomeBodyChanged($home_body_changed)
+    public function set_home_body_changed($home_body_changed)
     {
         if (is_null($home_body_changed)) {
             throw new \InvalidArgumentException('non-nullable home_body_changed cannot be null');
@@ -4839,7 +4839,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getCustomCssChanged()
+    public function get_custom_css_changed()
     {
         return $this->container['custom_css_changed'];
     }
@@ -4851,7 +4851,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setCustomCssChanged($custom_css_changed)
+    public function set_custom_css_changed($custom_css_changed)
     {
         if (is_null($custom_css_changed)) {
             throw new \InvalidArgumentException('non-nullable custom_css_changed cannot be null');
@@ -4866,7 +4866,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getOnLogoutCustomScriptChanged()
+    public function get_on_logout_custom_script_changed()
     {
         return $this->container['on_logout_custom_script_changed'];
     }
@@ -4878,7 +4878,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOnLogoutCustomScriptChanged($on_logout_custom_script_changed)
+    public function set_on_logout_custom_script_changed($on_logout_custom_script_changed)
     {
         if (is_null($on_logout_custom_script_changed)) {
             throw new \InvalidArgumentException('non-nullable on_logout_custom_script_changed cannot be null');
@@ -4893,7 +4893,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getLoggedOutCustomScriptChanged()
+    public function get_logged_out_custom_script_changed()
     {
         return $this->container['logged_out_custom_script_changed'];
     }
@@ -4905,7 +4905,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLoggedOutCustomScriptChanged($logged_out_custom_script_changed)
+    public function set_logged_out_custom_script_changed($logged_out_custom_script_changed)
     {
         if (is_null($logged_out_custom_script_changed)) {
             throw new \InvalidArgumentException('non-nullable logged_out_custom_script_changed cannot be null');
@@ -4920,7 +4920,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getLoggedInCustomScriptChanged()
+    public function get_logged_in_custom_script_changed()
     {
         return $this->container['logged_in_custom_script_changed'];
     }
@@ -4932,7 +4932,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setLoggedInCustomScriptChanged($logged_in_custom_script_changed)
+    public function set_logged_in_custom_script_changed($logged_in_custom_script_changed)
     {
         if (is_null($logged_in_custom_script_changed)) {
             throw new \InvalidArgumentException('non-nullable logged_in_custom_script_changed cannot be null');
@@ -4947,7 +4947,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getDailyPeakConnections()
+    public function get_daily_peak_connections()
     {
         return $this->container['daily_peak_connections'];
     }
@@ -4959,7 +4959,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setDailyPeakConnections($daily_peak_connections)
+    public function set_daily_peak_connections($daily_peak_connections)
     {
         if (is_null($daily_peak_connections)) {
             throw new \InvalidArgumentException('non-nullable daily_peak_connections cannot be null');
@@ -4974,7 +4974,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getMaxMonthlyPeakConnections()
+    public function get_max_monthly_peak_connections()
     {
         return $this->container['max_monthly_peak_connections'];
     }
@@ -4986,7 +4986,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMaxMonthlyPeakConnections($max_monthly_peak_connections)
+    public function set_max_monthly_peak_connections($max_monthly_peak_connections)
     {
         if (is_null($max_monthly_peak_connections)) {
             throw new \InvalidArgumentException('non-nullable max_monthly_peak_connections cannot be null');
@@ -5001,7 +5001,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseMatrixFederation|null
      */
-    public function getMatrixFederation()
+    public function get_matrix_federation()
     {
         return $this->container['matrix_federation'];
     }
@@ -5013,7 +5013,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setMatrixFederation($matrix_federation)
+    public function set_matrix_federation($matrix_federation)
     {
         if (is_null($matrix_federation)) {
             throw new \InvalidArgumentException('non-nullable matrix_federation cannot be null');
@@ -5028,7 +5028,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getWebRtcEnabled()
+    public function get_web_rtc_enabled()
     {
         return $this->container['web_rtc_enabled'];
     }
@@ -5040,7 +5040,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setWebRtcEnabled($web_rtc_enabled)
+    public function set_web_rtc_enabled($web_rtc_enabled)
     {
         if (is_null($web_rtc_enabled)) {
             throw new \InvalidArgumentException('non-nullable web_rtc_enabled cannot be null');
@@ -5055,7 +5055,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getWebRtcEnabledForOmnichannel()
+    public function get_web_rtc_enabled_for_omnichannel()
     {
         return $this->container['web_rtc_enabled_for_omnichannel'];
     }
@@ -5067,7 +5067,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setWebRtcEnabledForOmnichannel($web_rtc_enabled_for_omnichannel)
+    public function set_web_rtc_enabled_for_omnichannel($web_rtc_enabled_for_omnichannel)
     {
         if (is_null($web_rtc_enabled_for_omnichannel)) {
             throw new \InvalidArgumentException('non-nullable web_rtc_enabled_for_omnichannel cannot be null');
@@ -5082,7 +5082,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int|null
      */
-    public function getOmnichannelWebRtcCalls()
+    public function get_omnichannel_web_rtc_calls()
     {
         return $this->container['omnichannel_web_rtc_calls'];
     }
@@ -5094,7 +5094,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOmnichannelWebRtcCalls($omnichannel_web_rtc_calls)
+    public function set_omnichannel_web_rtc_calls($omnichannel_web_rtc_calls)
     {
         if (is_null($omnichannel_web_rtc_calls)) {
             throw new \InvalidArgumentException('non-nullable omnichannel_web_rtc_calls cannot be null');
@@ -5109,7 +5109,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -5121,7 +5121,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -5136,7 +5136,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -5148,7 +5148,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -5163,7 +5163,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string|null
      */
-    public function getStatsToken()
+    public function get_stats_token()
     {
         return $this->container['stats_token'];
     }
@@ -5175,7 +5175,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setStatsToken($stats_token)
+    public function set_stats_token($stats_token)
     {
         if (is_null($stats_token)) {
             throw new \InvalidArgumentException('non-nullable stats_token cannot be null');
@@ -5190,7 +5190,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -5202,7 +5202,7 @@ class GetApiV1Statistics200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

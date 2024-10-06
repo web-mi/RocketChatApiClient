@@ -195,12 +195,12 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'allow_editing' => 'setAllowEditing',
-        'allow_deleting' => 'setAllowDeleting',
-        'allow_unrecognized_slash_command' => 'setAllowUnrecognizedSlashCommand',
-        'allow_bad_words_filter' => 'setAllowBadWordsFilter',
-        'read_receipt_enabled' => 'setReadReceiptEnabled',
-        'read_receipt_store_users' => 'setReadReceiptStoreUsers'
+        'allow_editing' => 'set_allow_editing',
+        'allow_deleting' => 'set_allow_deleting',
+        'allow_unrecognized_slash_command' => 'set_allow_unrecognized_slash_command',
+        'allow_bad_words_filter' => 'set_allow_bad_words_filter',
+        'read_receipt_enabled' => 'set_read_receipt_enabled',
+        'read_receipt_store_users' => 'set_read_receipt_store_users'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'allow_editing' => 'getAllowEditing',
-        'allow_deleting' => 'getAllowDeleting',
-        'allow_unrecognized_slash_command' => 'getAllowUnrecognizedSlashCommand',
-        'allow_bad_words_filter' => 'getAllowBadWordsFilter',
-        'read_receipt_enabled' => 'getReadReceiptEnabled',
-        'read_receipt_store_users' => 'getReadReceiptStoreUsers'
+        'allow_editing' => 'get_allow_editing',
+        'allow_deleting' => 'get_allow_deleting',
+        'allow_unrecognized_slash_command' => 'get_allow_unrecognized_slash_command',
+        'allow_bad_words_filter' => 'get_allow_bad_words_filter',
+        'read_receipt_enabled' => 'get_read_receipt_enabled',
+        'read_receipt_store_users' => 'get_read_receipt_store_users'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getAllowEditing()
+    public function get_allow_editing()
     {
         return $this->container['allow_editing'];
     }
@@ -341,7 +341,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setAllowEditing($allow_editing)
+    public function set_allow_editing($allow_editing)
     {
         if (is_null($allow_editing)) {
             throw new \InvalidArgumentException('non-nullable allow_editing cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getAllowDeleting()
+    public function get_allow_deleting()
     {
         return $this->container['allow_deleting'];
     }
@@ -368,7 +368,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setAllowDeleting($allow_deleting)
+    public function set_allow_deleting($allow_deleting)
     {
         if (is_null($allow_deleting)) {
             throw new \InvalidArgumentException('non-nullable allow_deleting cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getAllowUnrecognizedSlashCommand()
+    public function get_allow_unrecognized_slash_command()
     {
         return $this->container['allow_unrecognized_slash_command'];
     }
@@ -395,7 +395,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setAllowUnrecognizedSlashCommand($allow_unrecognized_slash_command)
+    public function set_allow_unrecognized_slash_command($allow_unrecognized_slash_command)
     {
         if (is_null($allow_unrecognized_slash_command)) {
             throw new \InvalidArgumentException('non-nullable allow_unrecognized_slash_command cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getAllowBadWordsFilter()
+    public function get_allow_bad_words_filter()
     {
         return $this->container['allow_bad_words_filter'];
     }
@@ -422,7 +422,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setAllowBadWordsFilter($allow_bad_words_filter)
+    public function set_allow_bad_words_filter($allow_bad_words_filter)
     {
         if (is_null($allow_bad_words_filter)) {
             throw new \InvalidArgumentException('non-nullable allow_bad_words_filter cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getReadReceiptEnabled()
+    public function get_read_receipt_enabled()
     {
         return $this->container['read_receipt_enabled'];
     }
@@ -449,7 +449,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setReadReceiptEnabled($read_receipt_enabled)
+    public function set_read_receipt_enabled($read_receipt_enabled)
     {
         if (is_null($read_receipt_enabled)) {
             throw new \InvalidArgumentException('non-nullable read_receipt_enabled cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return bool|null
      */
-    public function getReadReceiptStoreUsers()
+    public function get_read_receipt_store_users()
     {
         return $this->container['read_receipt_store_users'];
     }
@@ -476,7 +476,7 @@ class GetApiV1Statistics200ResponseSettingsMessage implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setReadReceiptStoreUsers($read_receipt_store_users)
+    public function set_read_receipt_store_users($read_receipt_store_users)
     {
         if (is_null($read_receipt_store_users)) {
             throw new \InvalidArgumentException('non-nullable read_receipt_store_users cannot be null');

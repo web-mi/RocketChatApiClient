@@ -179,8 +179,8 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        'rooms' => 'setRooms',
-        'success' => 'setSuccess'
+        'rooms' => 'set_rooms',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        'rooms' => 'getRooms',
-        'success' => 'getSuccess'
+        'rooms' => 'get_rooms',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatVisitorTokenRoom200ResponseRoomsInner[]|null
      */
-    public function getRooms()
+    public function get_rooms()
     {
         return $this->container['rooms'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setRooms($rooms)
+    public function set_rooms($rooms)
     {
         if (is_null($rooms)) {
             throw new \InvalidArgumentException('non-nullable rooms cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatVisitorTokenRoom200Response implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

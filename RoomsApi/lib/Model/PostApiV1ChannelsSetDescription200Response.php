@@ -179,8 +179,8 @@ class PostApiV1ChannelsSetDescription200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'description' => 'setDescription',
-        'success' => 'setSuccess'
+        'description' => 'set_description',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsSetDescription200Response implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'description' => 'getDescription',
-        'success' => 'getSuccess'
+        'description' => 'get_description',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ChannelsSetDescription200Response implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ChannelsSetDescription200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ChannelsSetDescription200Response implements ModelInterface, Arra
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ChannelsSetDescription200Response implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

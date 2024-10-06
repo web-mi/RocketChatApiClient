@@ -187,10 +187,10 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'block_id' => 'setBlockId',
-        'call_id' => 'setCallId',
-        'app_id' => 'setAppId'
+        'type' => 'set_type',
+        'block_id' => 'set_block_id',
+        'call_id' => 'set_call_id',
+        'app_id' => 'set_app_id'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'block_id' => 'getBlockId',
-        'call_id' => 'getCallId',
-        'app_id' => 'getAppId'
+        'type' => 'get_type',
+        'block_id' => 'get_block_id',
+        'call_id' => 'get_call_id',
+        'app_id' => 'get_app_id'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -327,7 +327,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      *
      * @return string|null
      */
-    public function getBlockId()
+    public function get_block_id()
     {
         return $this->container['block_id'];
     }
@@ -354,7 +354,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      *
      * @return self
      */
-    public function setBlockId($block_id)
+    public function set_block_id($block_id)
     {
         if (is_null($block_id)) {
             throw new \InvalidArgumentException('non-nullable block_id cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      *
      * @return string|null
      */
-    public function getCallId()
+    public function get_call_id()
     {
         return $this->container['call_id'];
     }
@@ -381,7 +381,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      *
      * @return self
      */
-    public function setCallId($call_id)
+    public function set_call_id($call_id)
     {
         if (is_null($call_id)) {
             throw new \InvalidArgumentException('non-nullable call_id cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      *
      * @return string|null
      */
-    public function getAppId()
+    public function get_app_id()
     {
         return $this->container['app_id'];
     }
@@ -408,7 +408,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner implement
      *
      * @return self
      */
-    public function setAppId($app_id)
+    public function set_app_id($app_id)
     {
         if (is_null($app_id)) {
             throw new \InvalidArgumentException('non-nullable app_id cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      * @var string[]
      */
     protected static $setters = [
-        'title' => 'setTitle',
-        'value' => 'setValue'
+        'title' => 'set_title',
+        'value' => 'set_value'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      * @var string[]
      */
     protected static $getters = [
-        'title' => 'getTitle',
-        'value' => 'getValue'
+        'title' => 'get_title',
+        'value' => 'get_value'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      *
      * @return string|null
      */
-    public function getTitle()
+    public function get_title()
     {
         return $this->container['title'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      *
      * @return self
      */
-    public function setTitle($title)
+    public function set_title($title)
     {
         if (is_null($title)) {
             throw new \InvalidArgumentException('non-nullable title cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      *
      * @return string|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDashboardsAgentsProductivityTotalizers200Response
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');

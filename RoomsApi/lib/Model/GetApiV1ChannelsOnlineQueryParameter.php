@@ -175,7 +175,7 @@ class GetApiV1ChannelsOnlineQueryParameter implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId'
+        '_id' => 'set__id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1ChannelsOnlineQueryParameter implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId'
+        '_id' => 'get__id'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1ChannelsOnlineQueryParameter implements ModelInterface, ArrayAcces
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -306,7 +306,7 @@ class GetApiV1ChannelsOnlineQueryParameter implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

@@ -179,8 +179,8 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'operation' => 'setOperation',
-        'success' => 'setSuccess'
+        'operation' => 'set_operation',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'operation' => 'getOperation',
-        'success' => 'getSuccess'
+        'operation' => 'get_operation',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1ImportNew200ResponseOperation|null
      */
-    public function getOperation()
+    public function get_operation()
     {
         return $this->container['operation'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setOperation($operation)
+    public function set_operation($operation)
     {
         if (is_null($operation)) {
             throw new \InvalidArgumentException('non-nullable operation cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ImportNew200Response implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

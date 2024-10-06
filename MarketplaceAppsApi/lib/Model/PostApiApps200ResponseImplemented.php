@@ -351,51 +351,51 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'i_pre_message_sent_prevent' => 'setIPreMessageSentPrevent',
-        'i_pre_message_sent_extend' => 'setIPreMessageSentExtend',
-        'i_pre_message_sent_modify' => 'setIPreMessageSentModify',
-        'i_post_message_sent' => 'setIPostMessageSent',
-        'i_pre_message_delete_prevent' => 'setIPreMessageDeletePrevent',
-        'i_post_message_deleted' => 'setIPostMessageDeleted',
-        'i_pre_message_updated_prevent' => 'setIPreMessageUpdatedPrevent',
-        'i_pre_message_updated_extend' => 'setIPreMessageUpdatedExtend',
-        'i_pre_message_updated_modify' => 'setIPreMessageUpdatedModify',
-        'i_post_message_updated' => 'setIPostMessageUpdated',
-        'i_post_message_reacted' => 'setIPostMessageReacted',
-        'i_post_message_followed' => 'setIPostMessageFollowed',
-        'i_post_message_pinned' => 'setIPostMessagePinned',
-        'i_post_message_starred' => 'setIPostMessageStarred',
-        'i_post_message_reported' => 'setIPostMessageReported',
-        'i_pre_room_create_prevent' => 'setIPreRoomCreatePrevent',
-        'i_pre_room_create_extend' => 'setIPreRoomCreateExtend',
-        'i_pre_room_create_modify' => 'setIPreRoomCreateModify',
-        'i_post_room_create' => 'setIPostRoomCreate',
-        'i_pre_room_delete_prevent' => 'setIPreRoomDeletePrevent',
-        'i_post_room_deleted' => 'setIPostRoomDeleted',
-        'i_pre_room_user_joined' => 'setIPreRoomUserJoined',
-        'i_post_room_user_joined' => 'setIPostRoomUserJoined',
-        'i_pre_room_user_leave' => 'setIPreRoomUserLeave',
-        'i_post_room_user_leave' => 'setIPostRoomUserLeave',
-        'i_post_external_component_opened' => 'setIPostExternalComponentOpened',
-        'i_post_external_component_closed' => 'setIPostExternalComponentClosed',
-        'iui_kit_interaction_handler' => 'setIuiKitInteractionHandler',
-        'iui_kit_livechat_interaction_handler' => 'setIuiKitLivechatInteractionHandler',
-        'i_post_livechat_room_started' => 'setIPostLivechatRoomStarted',
-        'i_post_livechat_room_closed' => 'setIPostLivechatRoomClosed',
-        'i_livechat_room_closed_handler' => 'setILivechatRoomClosedHandler',
-        'i_post_livechat_agent_assigned' => 'setIPostLivechatAgentAssigned',
-        'i_post_livechat_agent_unassigned' => 'setIPostLivechatAgentUnassigned',
-        'i_post_livechat_room_transferred' => 'setIPostLivechatRoomTransferred',
-        'i_post_livechat_guest_saved' => 'setIPostLivechatGuestSaved',
-        'i_post_livechat_room_saved' => 'setIPostLivechatRoomSaved',
-        'i_pre_file_upload' => 'setIPreFileUpload',
-        'i_pre_email_sent' => 'setIPreEmailSent',
-        'i_post_user_created' => 'setIPostUserCreated',
-        'i_post_user_updated' => 'setIPostUserUpdated',
-        'i_post_user_deleted' => 'setIPostUserDeleted',
-        'i_post_user_logged_in' => 'setIPostUserLoggedIn',
-        'i_post_user_logged_out' => 'setIPostUserLoggedOut',
-        'i_post_user_status_changed' => 'setIPostUserStatusChanged'
+        'i_pre_message_sent_prevent' => 'set_i_pre_message_sent_prevent',
+        'i_pre_message_sent_extend' => 'set_i_pre_message_sent_extend',
+        'i_pre_message_sent_modify' => 'set_i_pre_message_sent_modify',
+        'i_post_message_sent' => 'set_i_post_message_sent',
+        'i_pre_message_delete_prevent' => 'set_i_pre_message_delete_prevent',
+        'i_post_message_deleted' => 'set_i_post_message_deleted',
+        'i_pre_message_updated_prevent' => 'set_i_pre_message_updated_prevent',
+        'i_pre_message_updated_extend' => 'set_i_pre_message_updated_extend',
+        'i_pre_message_updated_modify' => 'set_i_pre_message_updated_modify',
+        'i_post_message_updated' => 'set_i_post_message_updated',
+        'i_post_message_reacted' => 'set_i_post_message_reacted',
+        'i_post_message_followed' => 'set_i_post_message_followed',
+        'i_post_message_pinned' => 'set_i_post_message_pinned',
+        'i_post_message_starred' => 'set_i_post_message_starred',
+        'i_post_message_reported' => 'set_i_post_message_reported',
+        'i_pre_room_create_prevent' => 'set_i_pre_room_create_prevent',
+        'i_pre_room_create_extend' => 'set_i_pre_room_create_extend',
+        'i_pre_room_create_modify' => 'set_i_pre_room_create_modify',
+        'i_post_room_create' => 'set_i_post_room_create',
+        'i_pre_room_delete_prevent' => 'set_i_pre_room_delete_prevent',
+        'i_post_room_deleted' => 'set_i_post_room_deleted',
+        'i_pre_room_user_joined' => 'set_i_pre_room_user_joined',
+        'i_post_room_user_joined' => 'set_i_post_room_user_joined',
+        'i_pre_room_user_leave' => 'set_i_pre_room_user_leave',
+        'i_post_room_user_leave' => 'set_i_post_room_user_leave',
+        'i_post_external_component_opened' => 'set_i_post_external_component_opened',
+        'i_post_external_component_closed' => 'set_i_post_external_component_closed',
+        'iui_kit_interaction_handler' => 'set_iui_kit_interaction_handler',
+        'iui_kit_livechat_interaction_handler' => 'set_iui_kit_livechat_interaction_handler',
+        'i_post_livechat_room_started' => 'set_i_post_livechat_room_started',
+        'i_post_livechat_room_closed' => 'set_i_post_livechat_room_closed',
+        'i_livechat_room_closed_handler' => 'set_i_livechat_room_closed_handler',
+        'i_post_livechat_agent_assigned' => 'set_i_post_livechat_agent_assigned',
+        'i_post_livechat_agent_unassigned' => 'set_i_post_livechat_agent_unassigned',
+        'i_post_livechat_room_transferred' => 'set_i_post_livechat_room_transferred',
+        'i_post_livechat_guest_saved' => 'set_i_post_livechat_guest_saved',
+        'i_post_livechat_room_saved' => 'set_i_post_livechat_room_saved',
+        'i_pre_file_upload' => 'set_i_pre_file_upload',
+        'i_pre_email_sent' => 'set_i_pre_email_sent',
+        'i_post_user_created' => 'set_i_post_user_created',
+        'i_post_user_updated' => 'set_i_post_user_updated',
+        'i_post_user_deleted' => 'set_i_post_user_deleted',
+        'i_post_user_logged_in' => 'set_i_post_user_logged_in',
+        'i_post_user_logged_out' => 'set_i_post_user_logged_out',
+        'i_post_user_status_changed' => 'set_i_post_user_status_changed'
     ];
 
     /**
@@ -404,51 +404,51 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'i_pre_message_sent_prevent' => 'getIPreMessageSentPrevent',
-        'i_pre_message_sent_extend' => 'getIPreMessageSentExtend',
-        'i_pre_message_sent_modify' => 'getIPreMessageSentModify',
-        'i_post_message_sent' => 'getIPostMessageSent',
-        'i_pre_message_delete_prevent' => 'getIPreMessageDeletePrevent',
-        'i_post_message_deleted' => 'getIPostMessageDeleted',
-        'i_pre_message_updated_prevent' => 'getIPreMessageUpdatedPrevent',
-        'i_pre_message_updated_extend' => 'getIPreMessageUpdatedExtend',
-        'i_pre_message_updated_modify' => 'getIPreMessageUpdatedModify',
-        'i_post_message_updated' => 'getIPostMessageUpdated',
-        'i_post_message_reacted' => 'getIPostMessageReacted',
-        'i_post_message_followed' => 'getIPostMessageFollowed',
-        'i_post_message_pinned' => 'getIPostMessagePinned',
-        'i_post_message_starred' => 'getIPostMessageStarred',
-        'i_post_message_reported' => 'getIPostMessageReported',
-        'i_pre_room_create_prevent' => 'getIPreRoomCreatePrevent',
-        'i_pre_room_create_extend' => 'getIPreRoomCreateExtend',
-        'i_pre_room_create_modify' => 'getIPreRoomCreateModify',
-        'i_post_room_create' => 'getIPostRoomCreate',
-        'i_pre_room_delete_prevent' => 'getIPreRoomDeletePrevent',
-        'i_post_room_deleted' => 'getIPostRoomDeleted',
-        'i_pre_room_user_joined' => 'getIPreRoomUserJoined',
-        'i_post_room_user_joined' => 'getIPostRoomUserJoined',
-        'i_pre_room_user_leave' => 'getIPreRoomUserLeave',
-        'i_post_room_user_leave' => 'getIPostRoomUserLeave',
-        'i_post_external_component_opened' => 'getIPostExternalComponentOpened',
-        'i_post_external_component_closed' => 'getIPostExternalComponentClosed',
-        'iui_kit_interaction_handler' => 'getIuiKitInteractionHandler',
-        'iui_kit_livechat_interaction_handler' => 'getIuiKitLivechatInteractionHandler',
-        'i_post_livechat_room_started' => 'getIPostLivechatRoomStarted',
-        'i_post_livechat_room_closed' => 'getIPostLivechatRoomClosed',
-        'i_livechat_room_closed_handler' => 'getILivechatRoomClosedHandler',
-        'i_post_livechat_agent_assigned' => 'getIPostLivechatAgentAssigned',
-        'i_post_livechat_agent_unassigned' => 'getIPostLivechatAgentUnassigned',
-        'i_post_livechat_room_transferred' => 'getIPostLivechatRoomTransferred',
-        'i_post_livechat_guest_saved' => 'getIPostLivechatGuestSaved',
-        'i_post_livechat_room_saved' => 'getIPostLivechatRoomSaved',
-        'i_pre_file_upload' => 'getIPreFileUpload',
-        'i_pre_email_sent' => 'getIPreEmailSent',
-        'i_post_user_created' => 'getIPostUserCreated',
-        'i_post_user_updated' => 'getIPostUserUpdated',
-        'i_post_user_deleted' => 'getIPostUserDeleted',
-        'i_post_user_logged_in' => 'getIPostUserLoggedIn',
-        'i_post_user_logged_out' => 'getIPostUserLoggedOut',
-        'i_post_user_status_changed' => 'getIPostUserStatusChanged'
+        'i_pre_message_sent_prevent' => 'get_i_pre_message_sent_prevent',
+        'i_pre_message_sent_extend' => 'get_i_pre_message_sent_extend',
+        'i_pre_message_sent_modify' => 'get_i_pre_message_sent_modify',
+        'i_post_message_sent' => 'get_i_post_message_sent',
+        'i_pre_message_delete_prevent' => 'get_i_pre_message_delete_prevent',
+        'i_post_message_deleted' => 'get_i_post_message_deleted',
+        'i_pre_message_updated_prevent' => 'get_i_pre_message_updated_prevent',
+        'i_pre_message_updated_extend' => 'get_i_pre_message_updated_extend',
+        'i_pre_message_updated_modify' => 'get_i_pre_message_updated_modify',
+        'i_post_message_updated' => 'get_i_post_message_updated',
+        'i_post_message_reacted' => 'get_i_post_message_reacted',
+        'i_post_message_followed' => 'get_i_post_message_followed',
+        'i_post_message_pinned' => 'get_i_post_message_pinned',
+        'i_post_message_starred' => 'get_i_post_message_starred',
+        'i_post_message_reported' => 'get_i_post_message_reported',
+        'i_pre_room_create_prevent' => 'get_i_pre_room_create_prevent',
+        'i_pre_room_create_extend' => 'get_i_pre_room_create_extend',
+        'i_pre_room_create_modify' => 'get_i_pre_room_create_modify',
+        'i_post_room_create' => 'get_i_post_room_create',
+        'i_pre_room_delete_prevent' => 'get_i_pre_room_delete_prevent',
+        'i_post_room_deleted' => 'get_i_post_room_deleted',
+        'i_pre_room_user_joined' => 'get_i_pre_room_user_joined',
+        'i_post_room_user_joined' => 'get_i_post_room_user_joined',
+        'i_pre_room_user_leave' => 'get_i_pre_room_user_leave',
+        'i_post_room_user_leave' => 'get_i_post_room_user_leave',
+        'i_post_external_component_opened' => 'get_i_post_external_component_opened',
+        'i_post_external_component_closed' => 'get_i_post_external_component_closed',
+        'iui_kit_interaction_handler' => 'get_iui_kit_interaction_handler',
+        'iui_kit_livechat_interaction_handler' => 'get_iui_kit_livechat_interaction_handler',
+        'i_post_livechat_room_started' => 'get_i_post_livechat_room_started',
+        'i_post_livechat_room_closed' => 'get_i_post_livechat_room_closed',
+        'i_livechat_room_closed_handler' => 'get_i_livechat_room_closed_handler',
+        'i_post_livechat_agent_assigned' => 'get_i_post_livechat_agent_assigned',
+        'i_post_livechat_agent_unassigned' => 'get_i_post_livechat_agent_unassigned',
+        'i_post_livechat_room_transferred' => 'get_i_post_livechat_room_transferred',
+        'i_post_livechat_guest_saved' => 'get_i_post_livechat_guest_saved',
+        'i_post_livechat_room_saved' => 'get_i_post_livechat_room_saved',
+        'i_pre_file_upload' => 'get_i_pre_file_upload',
+        'i_pre_email_sent' => 'get_i_pre_email_sent',
+        'i_post_user_created' => 'get_i_post_user_created',
+        'i_post_user_updated' => 'get_i_post_user_updated',
+        'i_post_user_deleted' => 'get_i_post_user_deleted',
+        'i_post_user_logged_in' => 'get_i_post_user_logged_in',
+        'i_post_user_logged_out' => 'get_i_post_user_logged_out',
+        'i_post_user_status_changed' => 'get_i_post_user_status_changed'
     ];
 
     /**
@@ -602,7 +602,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreMessageSentPrevent()
+    public function get_i_pre_message_sent_prevent()
     {
         return $this->container['i_pre_message_sent_prevent'];
     }
@@ -614,7 +614,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreMessageSentPrevent($i_pre_message_sent_prevent)
+    public function set_i_pre_message_sent_prevent($i_pre_message_sent_prevent)
     {
         if (is_null($i_pre_message_sent_prevent)) {
             throw new \InvalidArgumentException('non-nullable i_pre_message_sent_prevent cannot be null');
@@ -629,7 +629,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreMessageSentExtend()
+    public function get_i_pre_message_sent_extend()
     {
         return $this->container['i_pre_message_sent_extend'];
     }
@@ -641,7 +641,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreMessageSentExtend($i_pre_message_sent_extend)
+    public function set_i_pre_message_sent_extend($i_pre_message_sent_extend)
     {
         if (is_null($i_pre_message_sent_extend)) {
             throw new \InvalidArgumentException('non-nullable i_pre_message_sent_extend cannot be null');
@@ -656,7 +656,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreMessageSentModify()
+    public function get_i_pre_message_sent_modify()
     {
         return $this->container['i_pre_message_sent_modify'];
     }
@@ -668,7 +668,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreMessageSentModify($i_pre_message_sent_modify)
+    public function set_i_pre_message_sent_modify($i_pre_message_sent_modify)
     {
         if (is_null($i_pre_message_sent_modify)) {
             throw new \InvalidArgumentException('non-nullable i_pre_message_sent_modify cannot be null');
@@ -683,7 +683,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostMessageSent()
+    public function get_i_post_message_sent()
     {
         return $this->container['i_post_message_sent'];
     }
@@ -695,7 +695,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostMessageSent($i_post_message_sent)
+    public function set_i_post_message_sent($i_post_message_sent)
     {
         if (is_null($i_post_message_sent)) {
             throw new \InvalidArgumentException('non-nullable i_post_message_sent cannot be null');
@@ -710,7 +710,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreMessageDeletePrevent()
+    public function get_i_pre_message_delete_prevent()
     {
         return $this->container['i_pre_message_delete_prevent'];
     }
@@ -722,7 +722,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreMessageDeletePrevent($i_pre_message_delete_prevent)
+    public function set_i_pre_message_delete_prevent($i_pre_message_delete_prevent)
     {
         if (is_null($i_pre_message_delete_prevent)) {
             throw new \InvalidArgumentException('non-nullable i_pre_message_delete_prevent cannot be null');
@@ -737,7 +737,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostMessageDeleted()
+    public function get_i_post_message_deleted()
     {
         return $this->container['i_post_message_deleted'];
     }
@@ -749,7 +749,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostMessageDeleted($i_post_message_deleted)
+    public function set_i_post_message_deleted($i_post_message_deleted)
     {
         if (is_null($i_post_message_deleted)) {
             throw new \InvalidArgumentException('non-nullable i_post_message_deleted cannot be null');
@@ -764,7 +764,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreMessageUpdatedPrevent()
+    public function get_i_pre_message_updated_prevent()
     {
         return $this->container['i_pre_message_updated_prevent'];
     }
@@ -776,7 +776,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreMessageUpdatedPrevent($i_pre_message_updated_prevent)
+    public function set_i_pre_message_updated_prevent($i_pre_message_updated_prevent)
     {
         if (is_null($i_pre_message_updated_prevent)) {
             throw new \InvalidArgumentException('non-nullable i_pre_message_updated_prevent cannot be null');
@@ -791,7 +791,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreMessageUpdatedExtend()
+    public function get_i_pre_message_updated_extend()
     {
         return $this->container['i_pre_message_updated_extend'];
     }
@@ -803,7 +803,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreMessageUpdatedExtend($i_pre_message_updated_extend)
+    public function set_i_pre_message_updated_extend($i_pre_message_updated_extend)
     {
         if (is_null($i_pre_message_updated_extend)) {
             throw new \InvalidArgumentException('non-nullable i_pre_message_updated_extend cannot be null');
@@ -818,7 +818,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreMessageUpdatedModify()
+    public function get_i_pre_message_updated_modify()
     {
         return $this->container['i_pre_message_updated_modify'];
     }
@@ -830,7 +830,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreMessageUpdatedModify($i_pre_message_updated_modify)
+    public function set_i_pre_message_updated_modify($i_pre_message_updated_modify)
     {
         if (is_null($i_pre_message_updated_modify)) {
             throw new \InvalidArgumentException('non-nullable i_pre_message_updated_modify cannot be null');
@@ -845,7 +845,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostMessageUpdated()
+    public function get_i_post_message_updated()
     {
         return $this->container['i_post_message_updated'];
     }
@@ -857,7 +857,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostMessageUpdated($i_post_message_updated)
+    public function set_i_post_message_updated($i_post_message_updated)
     {
         if (is_null($i_post_message_updated)) {
             throw new \InvalidArgumentException('non-nullable i_post_message_updated cannot be null');
@@ -872,7 +872,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostMessageReacted()
+    public function get_i_post_message_reacted()
     {
         return $this->container['i_post_message_reacted'];
     }
@@ -884,7 +884,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostMessageReacted($i_post_message_reacted)
+    public function set_i_post_message_reacted($i_post_message_reacted)
     {
         if (is_null($i_post_message_reacted)) {
             throw new \InvalidArgumentException('non-nullable i_post_message_reacted cannot be null');
@@ -899,7 +899,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostMessageFollowed()
+    public function get_i_post_message_followed()
     {
         return $this->container['i_post_message_followed'];
     }
@@ -911,7 +911,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostMessageFollowed($i_post_message_followed)
+    public function set_i_post_message_followed($i_post_message_followed)
     {
         if (is_null($i_post_message_followed)) {
             throw new \InvalidArgumentException('non-nullable i_post_message_followed cannot be null');
@@ -926,7 +926,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostMessagePinned()
+    public function get_i_post_message_pinned()
     {
         return $this->container['i_post_message_pinned'];
     }
@@ -938,7 +938,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostMessagePinned($i_post_message_pinned)
+    public function set_i_post_message_pinned($i_post_message_pinned)
     {
         if (is_null($i_post_message_pinned)) {
             throw new \InvalidArgumentException('non-nullable i_post_message_pinned cannot be null');
@@ -953,7 +953,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostMessageStarred()
+    public function get_i_post_message_starred()
     {
         return $this->container['i_post_message_starred'];
     }
@@ -965,7 +965,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostMessageStarred($i_post_message_starred)
+    public function set_i_post_message_starred($i_post_message_starred)
     {
         if (is_null($i_post_message_starred)) {
             throw new \InvalidArgumentException('non-nullable i_post_message_starred cannot be null');
@@ -980,7 +980,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostMessageReported()
+    public function get_i_post_message_reported()
     {
         return $this->container['i_post_message_reported'];
     }
@@ -992,7 +992,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostMessageReported($i_post_message_reported)
+    public function set_i_post_message_reported($i_post_message_reported)
     {
         if (is_null($i_post_message_reported)) {
             throw new \InvalidArgumentException('non-nullable i_post_message_reported cannot be null');
@@ -1007,7 +1007,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreRoomCreatePrevent()
+    public function get_i_pre_room_create_prevent()
     {
         return $this->container['i_pre_room_create_prevent'];
     }
@@ -1019,7 +1019,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreRoomCreatePrevent($i_pre_room_create_prevent)
+    public function set_i_pre_room_create_prevent($i_pre_room_create_prevent)
     {
         if (is_null($i_pre_room_create_prevent)) {
             throw new \InvalidArgumentException('non-nullable i_pre_room_create_prevent cannot be null');
@@ -1034,7 +1034,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreRoomCreateExtend()
+    public function get_i_pre_room_create_extend()
     {
         return $this->container['i_pre_room_create_extend'];
     }
@@ -1046,7 +1046,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreRoomCreateExtend($i_pre_room_create_extend)
+    public function set_i_pre_room_create_extend($i_pre_room_create_extend)
     {
         if (is_null($i_pre_room_create_extend)) {
             throw new \InvalidArgumentException('non-nullable i_pre_room_create_extend cannot be null');
@@ -1061,7 +1061,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreRoomCreateModify()
+    public function get_i_pre_room_create_modify()
     {
         return $this->container['i_pre_room_create_modify'];
     }
@@ -1073,7 +1073,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreRoomCreateModify($i_pre_room_create_modify)
+    public function set_i_pre_room_create_modify($i_pre_room_create_modify)
     {
         if (is_null($i_pre_room_create_modify)) {
             throw new \InvalidArgumentException('non-nullable i_pre_room_create_modify cannot be null');
@@ -1088,7 +1088,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostRoomCreate()
+    public function get_i_post_room_create()
     {
         return $this->container['i_post_room_create'];
     }
@@ -1100,7 +1100,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostRoomCreate($i_post_room_create)
+    public function set_i_post_room_create($i_post_room_create)
     {
         if (is_null($i_post_room_create)) {
             throw new \InvalidArgumentException('non-nullable i_post_room_create cannot be null');
@@ -1115,7 +1115,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreRoomDeletePrevent()
+    public function get_i_pre_room_delete_prevent()
     {
         return $this->container['i_pre_room_delete_prevent'];
     }
@@ -1127,7 +1127,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreRoomDeletePrevent($i_pre_room_delete_prevent)
+    public function set_i_pre_room_delete_prevent($i_pre_room_delete_prevent)
     {
         if (is_null($i_pre_room_delete_prevent)) {
             throw new \InvalidArgumentException('non-nullable i_pre_room_delete_prevent cannot be null');
@@ -1142,7 +1142,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostRoomDeleted()
+    public function get_i_post_room_deleted()
     {
         return $this->container['i_post_room_deleted'];
     }
@@ -1154,7 +1154,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostRoomDeleted($i_post_room_deleted)
+    public function set_i_post_room_deleted($i_post_room_deleted)
     {
         if (is_null($i_post_room_deleted)) {
             throw new \InvalidArgumentException('non-nullable i_post_room_deleted cannot be null');
@@ -1169,7 +1169,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreRoomUserJoined()
+    public function get_i_pre_room_user_joined()
     {
         return $this->container['i_pre_room_user_joined'];
     }
@@ -1181,7 +1181,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreRoomUserJoined($i_pre_room_user_joined)
+    public function set_i_pre_room_user_joined($i_pre_room_user_joined)
     {
         if (is_null($i_pre_room_user_joined)) {
             throw new \InvalidArgumentException('non-nullable i_pre_room_user_joined cannot be null');
@@ -1196,7 +1196,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostRoomUserJoined()
+    public function get_i_post_room_user_joined()
     {
         return $this->container['i_post_room_user_joined'];
     }
@@ -1208,7 +1208,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostRoomUserJoined($i_post_room_user_joined)
+    public function set_i_post_room_user_joined($i_post_room_user_joined)
     {
         if (is_null($i_post_room_user_joined)) {
             throw new \InvalidArgumentException('non-nullable i_post_room_user_joined cannot be null');
@@ -1223,7 +1223,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreRoomUserLeave()
+    public function get_i_pre_room_user_leave()
     {
         return $this->container['i_pre_room_user_leave'];
     }
@@ -1235,7 +1235,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreRoomUserLeave($i_pre_room_user_leave)
+    public function set_i_pre_room_user_leave($i_pre_room_user_leave)
     {
         if (is_null($i_pre_room_user_leave)) {
             throw new \InvalidArgumentException('non-nullable i_pre_room_user_leave cannot be null');
@@ -1250,7 +1250,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostRoomUserLeave()
+    public function get_i_post_room_user_leave()
     {
         return $this->container['i_post_room_user_leave'];
     }
@@ -1262,7 +1262,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostRoomUserLeave($i_post_room_user_leave)
+    public function set_i_post_room_user_leave($i_post_room_user_leave)
     {
         if (is_null($i_post_room_user_leave)) {
             throw new \InvalidArgumentException('non-nullable i_post_room_user_leave cannot be null');
@@ -1277,7 +1277,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostExternalComponentOpened()
+    public function get_i_post_external_component_opened()
     {
         return $this->container['i_post_external_component_opened'];
     }
@@ -1289,7 +1289,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostExternalComponentOpened($i_post_external_component_opened)
+    public function set_i_post_external_component_opened($i_post_external_component_opened)
     {
         if (is_null($i_post_external_component_opened)) {
             throw new \InvalidArgumentException('non-nullable i_post_external_component_opened cannot be null');
@@ -1304,7 +1304,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostExternalComponentClosed()
+    public function get_i_post_external_component_closed()
     {
         return $this->container['i_post_external_component_closed'];
     }
@@ -1316,7 +1316,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostExternalComponentClosed($i_post_external_component_closed)
+    public function set_i_post_external_component_closed($i_post_external_component_closed)
     {
         if (is_null($i_post_external_component_closed)) {
             throw new \InvalidArgumentException('non-nullable i_post_external_component_closed cannot be null');
@@ -1331,7 +1331,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIuiKitInteractionHandler()
+    public function get_iui_kit_interaction_handler()
     {
         return $this->container['iui_kit_interaction_handler'];
     }
@@ -1343,7 +1343,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIuiKitInteractionHandler($iui_kit_interaction_handler)
+    public function set_iui_kit_interaction_handler($iui_kit_interaction_handler)
     {
         if (is_null($iui_kit_interaction_handler)) {
             throw new \InvalidArgumentException('non-nullable iui_kit_interaction_handler cannot be null');
@@ -1358,7 +1358,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIuiKitLivechatInteractionHandler()
+    public function get_iui_kit_livechat_interaction_handler()
     {
         return $this->container['iui_kit_livechat_interaction_handler'];
     }
@@ -1370,7 +1370,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIuiKitLivechatInteractionHandler($iui_kit_livechat_interaction_handler)
+    public function set_iui_kit_livechat_interaction_handler($iui_kit_livechat_interaction_handler)
     {
         if (is_null($iui_kit_livechat_interaction_handler)) {
             throw new \InvalidArgumentException('non-nullable iui_kit_livechat_interaction_handler cannot be null');
@@ -1385,7 +1385,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostLivechatRoomStarted()
+    public function get_i_post_livechat_room_started()
     {
         return $this->container['i_post_livechat_room_started'];
     }
@@ -1397,7 +1397,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostLivechatRoomStarted($i_post_livechat_room_started)
+    public function set_i_post_livechat_room_started($i_post_livechat_room_started)
     {
         if (is_null($i_post_livechat_room_started)) {
             throw new \InvalidArgumentException('non-nullable i_post_livechat_room_started cannot be null');
@@ -1412,7 +1412,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostLivechatRoomClosed()
+    public function get_i_post_livechat_room_closed()
     {
         return $this->container['i_post_livechat_room_closed'];
     }
@@ -1424,7 +1424,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostLivechatRoomClosed($i_post_livechat_room_closed)
+    public function set_i_post_livechat_room_closed($i_post_livechat_room_closed)
     {
         if (is_null($i_post_livechat_room_closed)) {
             throw new \InvalidArgumentException('non-nullable i_post_livechat_room_closed cannot be null');
@@ -1439,7 +1439,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getILivechatRoomClosedHandler()
+    public function get_i_livechat_room_closed_handler()
     {
         return $this->container['i_livechat_room_closed_handler'];
     }
@@ -1451,7 +1451,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setILivechatRoomClosedHandler($i_livechat_room_closed_handler)
+    public function set_i_livechat_room_closed_handler($i_livechat_room_closed_handler)
     {
         if (is_null($i_livechat_room_closed_handler)) {
             throw new \InvalidArgumentException('non-nullable i_livechat_room_closed_handler cannot be null');
@@ -1466,7 +1466,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostLivechatAgentAssigned()
+    public function get_i_post_livechat_agent_assigned()
     {
         return $this->container['i_post_livechat_agent_assigned'];
     }
@@ -1478,7 +1478,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostLivechatAgentAssigned($i_post_livechat_agent_assigned)
+    public function set_i_post_livechat_agent_assigned($i_post_livechat_agent_assigned)
     {
         if (is_null($i_post_livechat_agent_assigned)) {
             throw new \InvalidArgumentException('non-nullable i_post_livechat_agent_assigned cannot be null');
@@ -1493,7 +1493,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostLivechatAgentUnassigned()
+    public function get_i_post_livechat_agent_unassigned()
     {
         return $this->container['i_post_livechat_agent_unassigned'];
     }
@@ -1505,7 +1505,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostLivechatAgentUnassigned($i_post_livechat_agent_unassigned)
+    public function set_i_post_livechat_agent_unassigned($i_post_livechat_agent_unassigned)
     {
         if (is_null($i_post_livechat_agent_unassigned)) {
             throw new \InvalidArgumentException('non-nullable i_post_livechat_agent_unassigned cannot be null');
@@ -1520,7 +1520,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostLivechatRoomTransferred()
+    public function get_i_post_livechat_room_transferred()
     {
         return $this->container['i_post_livechat_room_transferred'];
     }
@@ -1532,7 +1532,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostLivechatRoomTransferred($i_post_livechat_room_transferred)
+    public function set_i_post_livechat_room_transferred($i_post_livechat_room_transferred)
     {
         if (is_null($i_post_livechat_room_transferred)) {
             throw new \InvalidArgumentException('non-nullable i_post_livechat_room_transferred cannot be null');
@@ -1547,7 +1547,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostLivechatGuestSaved()
+    public function get_i_post_livechat_guest_saved()
     {
         return $this->container['i_post_livechat_guest_saved'];
     }
@@ -1559,7 +1559,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostLivechatGuestSaved($i_post_livechat_guest_saved)
+    public function set_i_post_livechat_guest_saved($i_post_livechat_guest_saved)
     {
         if (is_null($i_post_livechat_guest_saved)) {
             throw new \InvalidArgumentException('non-nullable i_post_livechat_guest_saved cannot be null');
@@ -1574,7 +1574,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostLivechatRoomSaved()
+    public function get_i_post_livechat_room_saved()
     {
         return $this->container['i_post_livechat_room_saved'];
     }
@@ -1586,7 +1586,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostLivechatRoomSaved($i_post_livechat_room_saved)
+    public function set_i_post_livechat_room_saved($i_post_livechat_room_saved)
     {
         if (is_null($i_post_livechat_room_saved)) {
             throw new \InvalidArgumentException('non-nullable i_post_livechat_room_saved cannot be null');
@@ -1601,7 +1601,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreFileUpload()
+    public function get_i_pre_file_upload()
     {
         return $this->container['i_pre_file_upload'];
     }
@@ -1613,7 +1613,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreFileUpload($i_pre_file_upload)
+    public function set_i_pre_file_upload($i_pre_file_upload)
     {
         if (is_null($i_pre_file_upload)) {
             throw new \InvalidArgumentException('non-nullable i_pre_file_upload cannot be null');
@@ -1628,7 +1628,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPreEmailSent()
+    public function get_i_pre_email_sent()
     {
         return $this->container['i_pre_email_sent'];
     }
@@ -1640,7 +1640,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPreEmailSent($i_pre_email_sent)
+    public function set_i_pre_email_sent($i_pre_email_sent)
     {
         if (is_null($i_pre_email_sent)) {
             throw new \InvalidArgumentException('non-nullable i_pre_email_sent cannot be null');
@@ -1655,7 +1655,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostUserCreated()
+    public function get_i_post_user_created()
     {
         return $this->container['i_post_user_created'];
     }
@@ -1667,7 +1667,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostUserCreated($i_post_user_created)
+    public function set_i_post_user_created($i_post_user_created)
     {
         if (is_null($i_post_user_created)) {
             throw new \InvalidArgumentException('non-nullable i_post_user_created cannot be null');
@@ -1682,7 +1682,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostUserUpdated()
+    public function get_i_post_user_updated()
     {
         return $this->container['i_post_user_updated'];
     }
@@ -1694,7 +1694,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostUserUpdated($i_post_user_updated)
+    public function set_i_post_user_updated($i_post_user_updated)
     {
         if (is_null($i_post_user_updated)) {
             throw new \InvalidArgumentException('non-nullable i_post_user_updated cannot be null');
@@ -1709,7 +1709,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostUserDeleted()
+    public function get_i_post_user_deleted()
     {
         return $this->container['i_post_user_deleted'];
     }
@@ -1721,7 +1721,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostUserDeleted($i_post_user_deleted)
+    public function set_i_post_user_deleted($i_post_user_deleted)
     {
         if (is_null($i_post_user_deleted)) {
             throw new \InvalidArgumentException('non-nullable i_post_user_deleted cannot be null');
@@ -1736,7 +1736,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostUserLoggedIn()
+    public function get_i_post_user_logged_in()
     {
         return $this->container['i_post_user_logged_in'];
     }
@@ -1748,7 +1748,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostUserLoggedIn($i_post_user_logged_in)
+    public function set_i_post_user_logged_in($i_post_user_logged_in)
     {
         if (is_null($i_post_user_logged_in)) {
             throw new \InvalidArgumentException('non-nullable i_post_user_logged_in cannot be null');
@@ -1763,7 +1763,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostUserLoggedOut()
+    public function get_i_post_user_logged_out()
     {
         return $this->container['i_post_user_logged_out'];
     }
@@ -1775,7 +1775,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostUserLoggedOut($i_post_user_logged_out)
+    public function set_i_post_user_logged_out($i_post_user_logged_out)
     {
         if (is_null($i_post_user_logged_out)) {
             throw new \InvalidArgumentException('non-nullable i_post_user_logged_out cannot be null');
@@ -1790,7 +1790,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return bool|null
      */
-    public function getIPostUserStatusChanged()
+    public function get_i_post_user_status_changed()
     {
         return $this->container['i_post_user_status_changed'];
     }
@@ -1802,7 +1802,7 @@ class PostApiApps200ResponseImplemented implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setIPostUserStatusChanged($i_post_user_status_changed)
+    public function set_i_post_user_status_changed($i_post_user_status_changed)
     {
         if (is_null($i_post_user_status_changed)) {
             throw new \InvalidArgumentException('non-nullable i_post_user_status_changed cannot be null');

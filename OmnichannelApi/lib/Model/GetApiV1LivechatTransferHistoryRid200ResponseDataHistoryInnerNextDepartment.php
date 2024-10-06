@@ -179,8 +179,8 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartmen
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName'
+        '_id' => 'set__id',
+        'name' => 'set_name'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartmen
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName'
+        '_id' => 'get__id',
+        'name' => 'get_name'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartmen
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartmen
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartmen
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatTransferHistoryRid200ResponseDataHistoryInnerNextDepartmen
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');

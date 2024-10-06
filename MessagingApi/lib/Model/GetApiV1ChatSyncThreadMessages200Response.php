@@ -179,8 +179,8 @@ class GetApiV1ChatSyncThreadMessages200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'messages' => 'setMessages',
-        'success' => 'setSuccess'
+        'messages' => 'set_messages',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ChatSyncThreadMessages200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'messages' => 'getMessages',
-        'success' => 'getSuccess'
+        'messages' => 'get_messages',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ChatSyncThreadMessages200Response implements ModelInterface, Array
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncThreadMessages200ResponseMessages|null
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ChatSyncThreadMessages200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ChatSyncThreadMessages200Response implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ChatSyncThreadMessages200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

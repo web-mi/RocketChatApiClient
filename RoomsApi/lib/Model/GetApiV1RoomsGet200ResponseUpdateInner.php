@@ -231,21 +231,21 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'ts' => 'setTs',
-        't' => 'setT',
-        'name' => 'setName',
-        'usernames' => 'setUsernames',
-        'msgs' => 'setMsgs',
-        'users_count' => 'setUsersCount',
-        '_updated_at' => 'setUpdatedAt',
-        'u' => 'setU',
-        'default' => 'setDefault',
-        'last_message' => 'setLastMessage',
-        'lm' => 'setLm',
-        'uids' => 'setUids',
-        'ro' => 'setRo',
-        'sys_mes' => 'setSysMes'
+        '_id' => 'set__id',
+        'ts' => 'set_ts',
+        't' => 'set_t',
+        'name' => 'set_name',
+        'usernames' => 'set_usernames',
+        'msgs' => 'set_msgs',
+        'users_count' => 'set_users_count',
+        '_updated_at' => 'set__updated_at',
+        'u' => 'set_u',
+        'default' => 'set_default',
+        'last_message' => 'set_last_message',
+        'lm' => 'set_lm',
+        'uids' => 'set_uids',
+        'ro' => 'set_ro',
+        'sys_mes' => 'set_sys_mes'
     ];
 
     /**
@@ -254,21 +254,21 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'ts' => 'getTs',
-        't' => 'getT',
-        'name' => 'getName',
-        'usernames' => 'getUsernames',
-        'msgs' => 'getMsgs',
-        'users_count' => 'getUsersCount',
-        '_updated_at' => 'getUpdatedAt',
-        'u' => 'getU',
-        'default' => 'getDefault',
-        'last_message' => 'getLastMessage',
-        'lm' => 'getLm',
-        'uids' => 'getUids',
-        'ro' => 'getRo',
-        'sys_mes' => 'getSysMes'
+        '_id' => 'get__id',
+        'ts' => 'get_ts',
+        't' => 'get_t',
+        'name' => 'get_name',
+        'usernames' => 'get_usernames',
+        'msgs' => 'get_msgs',
+        'users_count' => 'get_users_count',
+        '_updated_at' => 'get__updated_at',
+        'u' => 'get_u',
+        'default' => 'get_default',
+        'last_message' => 'get_last_message',
+        'lm' => 'get_lm',
+        'uids' => 'get_uids',
+        'ro' => 'get_ro',
+        'sys_mes' => 'get_sys_mes'
     ];
 
     /**
@@ -392,7 +392,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -404,7 +404,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -419,7 +419,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -431,7 +431,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -446,7 +446,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -458,7 +458,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -473,7 +473,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -485,7 +485,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -500,7 +500,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return string[]|null
      */
-    public function getUsernames()
+    public function get_usernames()
     {
         return $this->container['usernames'];
     }
@@ -512,7 +512,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setUsernames($usernames)
+    public function set_usernames($usernames)
     {
         if (is_null($usernames)) {
             throw new \InvalidArgumentException('non-nullable usernames cannot be null');
@@ -527,7 +527,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -539,7 +539,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -554,7 +554,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return int|null
      */
-    public function getUsersCount()
+    public function get_users_count()
     {
         return $this->container['users_count'];
     }
@@ -566,7 +566,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setUsersCount($users_count)
+    public function set_users_count($users_count)
     {
         if (is_null($users_count)) {
             throw new \InvalidArgumentException('non-nullable users_count cannot be null');
@@ -581,7 +581,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -593,7 +593,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -608,7 +608,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -620,7 +620,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -635,7 +635,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getDefault()
+    public function get_default()
     {
         return $this->container['default'];
     }
@@ -647,7 +647,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setDefault($default)
+    public function set_default($default)
     {
         if (is_null($default)) {
             throw new \InvalidArgumentException('non-nullable default cannot be null');
@@ -662,7 +662,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessage|null
      */
-    public function getLastMessage()
+    public function get_last_message()
     {
         return $this->container['last_message'];
     }
@@ -674,7 +674,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setLastMessage($last_message)
+    public function set_last_message($last_message)
     {
         if (is_null($last_message)) {
             throw new \InvalidArgumentException('non-nullable last_message cannot be null');
@@ -689,7 +689,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getLm()
+    public function get_lm()
     {
         return $this->container['lm'];
     }
@@ -701,7 +701,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setLm($lm)
+    public function set_lm($lm)
     {
         if (is_null($lm)) {
             throw new \InvalidArgumentException('non-nullable lm cannot be null');
@@ -716,7 +716,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return string[]|null
      */
-    public function getUids()
+    public function get_uids()
     {
         return $this->container['uids'];
     }
@@ -728,7 +728,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setUids($uids)
+    public function set_uids($uids)
     {
         if (is_null($uids)) {
             throw new \InvalidArgumentException('non-nullable uids cannot be null');
@@ -743,7 +743,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getRo()
+    public function get_ro()
     {
         return $this->container['ro'];
     }
@@ -755,7 +755,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setRo($ro)
+    public function set_ro($ro)
     {
         if (is_null($ro)) {
             throw new \InvalidArgumentException('non-nullable ro cannot be null');
@@ -770,7 +770,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getSysMes()
+    public function get_sys_mes()
     {
         return $this->container['sys_mes'];
     }
@@ -782,7 +782,7 @@ class GetApiV1RoomsGet200ResponseUpdateInner implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setSysMes($sys_mes)
+    public function set_sys_mes($sys_mes)
     {
         if (is_null($sys_mes)) {
             throw new \InvalidArgumentException('non-nullable sys_mes cannot be null');

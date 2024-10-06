@@ -195,12 +195,12 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'members' => 'setMembers',
-        'read_only' => 'setReadOnly',
-        'exclude_self' => 'setExcludeSelf',
-        'custom_fields' => 'setCustomFields',
-        'extra_data' => 'setExtraData'
+        'name' => 'set_name',
+        'members' => 'set_members',
+        'read_only' => 'set_read_only',
+        'exclude_self' => 'set_exclude_self',
+        'custom_fields' => 'set_custom_fields',
+        'extra_data' => 'set_extra_data'
     ];
 
     /**
@@ -209,12 +209,12 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'members' => 'getMembers',
-        'read_only' => 'getReadOnly',
-        'exclude_self' => 'getExcludeSelf',
-        'custom_fields' => 'getCustomFields',
-        'extra_data' => 'getExtraData'
+        'name' => 'get_name',
+        'members' => 'get_members',
+        'read_only' => 'get_read_only',
+        'exclude_self' => 'get_exclude_self',
+        'custom_fields' => 'get_custom_fields',
+        'extra_data' => 'get_extra_data'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -344,7 +344,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -359,7 +359,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return string[]|null
      */
-    public function getMembers()
+    public function get_members()
     {
         return $this->container['members'];
     }
@@ -371,7 +371,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setMembers($members)
+    public function set_members($members)
     {
         if (is_null($members)) {
             throw new \InvalidArgumentException('non-nullable members cannot be null');
@@ -386,7 +386,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return bool|null
      */
-    public function getReadOnly()
+    public function get_read_only()
     {
         return $this->container['read_only'];
     }
@@ -398,7 +398,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setReadOnly($read_only)
+    public function set_read_only($read_only)
     {
         if (is_null($read_only)) {
             throw new \InvalidArgumentException('non-nullable read_only cannot be null');
@@ -413,7 +413,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return bool|null
      */
-    public function getExcludeSelf()
+    public function get_exclude_self()
     {
         return $this->container['exclude_self'];
     }
@@ -425,7 +425,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setExcludeSelf($exclude_self)
+    public function set_exclude_self($exclude_self)
     {
         if (is_null($exclude_self)) {
             throw new \InvalidArgumentException('non-nullable exclude_self cannot be null');
@@ -440,7 +440,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return object|null
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -452,7 +452,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');
@@ -467,7 +467,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return object|null
      */
-    public function getExtraData()
+    public function get_extra_data()
     {
         return $this->container['extra_data'];
     }
@@ -479,7 +479,7 @@ class PostApiV1ChannelsCreateRequest implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setExtraData($extra_data)
+    public function set_extra_data($extra_data)
     {
         if (is_null($extra_data)) {
             throw new \InvalidArgumentException('non-nullable extra_data cannot be null');

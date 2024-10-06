@@ -175,7 +175,7 @@ class GetApiV1ImMessagesOthers400ResponseDetails implements ModelInterface, Arra
      * @var string[]
      */
     protected static $setters = [
-        'route' => 'setRoute'
+        'route' => 'set_route'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1ImMessagesOthers400ResponseDetails implements ModelInterface, Arra
      * @var string[]
      */
     protected static $getters = [
-        'route' => 'getRoute'
+        'route' => 'get_route'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1ImMessagesOthers400ResponseDetails implements ModelInterface, Arra
      *
      * @return string|null
      */
-    public function getRoute()
+    public function get_route()
     {
         return $this->container['route'];
     }
@@ -306,7 +306,7 @@ class GetApiV1ImMessagesOthers400ResponseDetails implements ModelInterface, Arra
      *
      * @return self
      */
-    public function setRoute($route)
+    public function set_route($route)
     {
         if (is_null($route)) {
             throw new \InvalidArgumentException('non-nullable route cannot be null');

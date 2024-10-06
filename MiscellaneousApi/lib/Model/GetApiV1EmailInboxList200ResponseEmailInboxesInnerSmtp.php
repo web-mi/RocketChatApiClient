@@ -191,11 +191,11 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        'server' => 'setServer',
-        'port' => 'setPort',
-        'username' => 'setUsername',
-        'password' => 'setPassword',
-        'secure' => 'setSecure'
+        'server' => 'set_server',
+        'port' => 'set_port',
+        'username' => 'set_username',
+        'password' => 'set_password',
+        'secure' => 'set_secure'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        'server' => 'getServer',
-        'port' => 'getPort',
-        'username' => 'getUsername',
-        'password' => 'getPassword',
-        'secure' => 'getSecure'
+        'server' => 'get_server',
+        'port' => 'get_port',
+        'username' => 'get_username',
+        'password' => 'get_password',
+        'secure' => 'get_secure'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return string|null
      */
-    public function getServer()
+    public function get_server()
     {
         return $this->container['server'];
     }
@@ -334,7 +334,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return self
      */
-    public function setServer($server)
+    public function set_server($server)
     {
         if (is_null($server)) {
             throw new \InvalidArgumentException('non-nullable server cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return int|null
      */
-    public function getPort()
+    public function get_port()
     {
         return $this->container['port'];
     }
@@ -361,7 +361,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return self
      */
-    public function setPort($port)
+    public function set_port($port)
     {
         if (is_null($port)) {
             throw new \InvalidArgumentException('non-nullable port cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -388,7 +388,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return string|null
      */
-    public function getPassword()
+    public function get_password()
     {
         return $this->container['password'];
     }
@@ -415,7 +415,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return self
      */
-    public function setPassword($password)
+    public function set_password($password)
     {
         if (is_null($password)) {
             throw new \InvalidArgumentException('non-nullable password cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return bool|null
      */
-    public function getSecure()
+    public function get_secure()
     {
         return $this->container['secure'];
     }
@@ -442,7 +442,7 @@ class GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp implements ModelInt
      *
      * @return self
      */
-    public function setSecure($secure)
+    public function set_secure($secure)
     {
         if (is_null($secure)) {
             throw new \InvalidArgumentException('non-nullable secure cannot be null');

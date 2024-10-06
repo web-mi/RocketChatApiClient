@@ -183,9 +183,9 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'token' => 'setToken',
-        'data' => 'setData'
+        'rid' => 'set_rid',
+        'token' => 'set_token',
+        'data' => 'set_data'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'token' => 'getToken',
-        'data' => 'getData'
+        'rid' => 'get_rid',
+        'token' => 'get_token',
+        'data' => 'get_data'
     ];
 
     /**
@@ -317,7 +317,7 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -329,7 +329,7 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -344,7 +344,7 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -356,7 +356,7 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -371,7 +371,7 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentOverview200ResponseDataInner[]
      */
-    public function getData()
+    public function get_data()
     {
         return $this->container['data'];
     }
@@ -383,7 +383,7 @@ class PostApiV1LivechatRoomSurveyRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setData($data)
+    public function set_data($data)
     {
         if (is_null($data)) {
             throw new \InvalidArgumentException('non-nullable data cannot be null');

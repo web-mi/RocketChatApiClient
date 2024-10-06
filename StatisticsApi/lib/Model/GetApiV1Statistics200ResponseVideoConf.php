@@ -187,10 +187,10 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'video_conference' => 'setVideoConference',
-        'direct' => 'setDirect',
-        'livechat' => 'setLivechat',
-        'settings' => 'setSettings'
+        'video_conference' => 'set_video_conference',
+        'direct' => 'set_direct',
+        'livechat' => 'set_livechat',
+        'settings' => 'set_settings'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'video_conference' => 'getVideoConference',
-        'direct' => 'getDirect',
-        'livechat' => 'getLivechat',
-        'settings' => 'getSettings'
+        'video_conference' => 'get_video_conference',
+        'direct' => 'get_direct',
+        'livechat' => 'get_livechat',
+        'settings' => 'get_settings'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null
      */
-    public function getVideoConference()
+    public function get_video_conference()
     {
         return $this->container['video_conference'];
     }
@@ -327,7 +327,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setVideoConference($video_conference)
+    public function set_video_conference($video_conference)
     {
         if (is_null($video_conference)) {
             throw new \InvalidArgumentException('non-nullable video_conference cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfDirect|null
      */
-    public function getDirect()
+    public function get_direct()
     {
         return $this->container['direct'];
     }
@@ -354,7 +354,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setDirect($direct)
+    public function set_direct($direct)
     {
         if (is_null($direct)) {
             throw new \InvalidArgumentException('non-nullable direct cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1StatisticsList200ResponseStatisticsInnerVideoConfVideoConference|null
      */
-    public function getLivechat()
+    public function get_livechat()
     {
         return $this->container['livechat'];
     }
@@ -381,7 +381,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setLivechat($livechat)
+    public function set_livechat($livechat)
     {
         if (is_null($livechat)) {
             throw new \InvalidArgumentException('non-nullable livechat cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseVideoConfSettings|null
      */
-    public function getSettings()
+    public function get_settings()
     {
         return $this->container['settings'];
     }
@@ -408,7 +408,7 @@ class GetApiV1Statistics200ResponseVideoConf implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setSettings($settings)
+    public function set_settings($settings)
     {
         if (is_null($settings)) {
             throw new \InvalidArgumentException('non-nullable settings cannot be null');

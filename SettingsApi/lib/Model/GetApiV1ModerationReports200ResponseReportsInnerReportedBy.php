@@ -187,10 +187,10 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'name' => 'setName',
-        'created_at' => 'setCreatedAt'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'name' => 'set_name',
+        'created_at' => 'set_created_at'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'name' => 'getName',
-        'created_at' => 'getCreatedAt'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'name' => 'get_name',
+        'created_at' => 'get_created_at'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -327,7 +327,7 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -354,7 +354,7 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -381,7 +381,7 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -408,7 +408,7 @@ class GetApiV1ModerationReports200ResponseReportsInnerReportedBy implements Mode
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');

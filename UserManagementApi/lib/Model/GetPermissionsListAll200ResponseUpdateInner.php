@@ -183,9 +183,9 @@ class GetPermissionsListAll200ResponseUpdateInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        '_updated_at' => 'setUpdatedAt',
-        'roles' => 'setRoles'
+        '_id' => 'set__id',
+        '_updated_at' => 'set__updated_at',
+        'roles' => 'set_roles'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetPermissionsListAll200ResponseUpdateInner implements ModelInterface, Arr
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        '_updated_at' => 'getUpdatedAt',
-        'roles' => 'getRoles'
+        '_id' => 'get__id',
+        '_updated_at' => 'get__updated_at',
+        'roles' => 'get_roles'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetPermissionsListAll200ResponseUpdateInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -320,7 +320,7 @@ class GetPermissionsListAll200ResponseUpdateInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -335,7 +335,7 @@ class GetPermissionsListAll200ResponseUpdateInner implements ModelInterface, Arr
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -347,7 +347,7 @@ class GetPermissionsListAll200ResponseUpdateInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -362,7 +362,7 @@ class GetPermissionsListAll200ResponseUpdateInner implements ModelInterface, Arr
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -374,7 +374,7 @@ class GetPermissionsListAll200ResponseUpdateInner implements ModelInterface, Arr
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');

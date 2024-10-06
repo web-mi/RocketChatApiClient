@@ -183,9 +183,9 @@ class PostApiV1FindOrCreateInviteRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'days' => 'setDays',
-        'max_uses' => 'setMaxUses'
+        'rid' => 'set_rid',
+        'days' => 'set_days',
+        'max_uses' => 'set_max_uses'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1FindOrCreateInviteRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'days' => 'getDays',
-        'max_uses' => 'getMaxUses'
+        'rid' => 'get_rid',
+        'days' => 'get_days',
+        'max_uses' => 'get_max_uses'
     ];
 
     /**
@@ -317,7 +317,7 @@ class PostApiV1FindOrCreateInviteRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -329,7 +329,7 @@ class PostApiV1FindOrCreateInviteRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -344,7 +344,7 @@ class PostApiV1FindOrCreateInviteRequest implements ModelInterface, ArrayAccess,
      *
      * @return int
      */
-    public function getDays()
+    public function get_days()
     {
         return $this->container['days'];
     }
@@ -356,7 +356,7 @@ class PostApiV1FindOrCreateInviteRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setDays($days)
+    public function set_days($days)
     {
         if (is_null($days)) {
             throw new \InvalidArgumentException('non-nullable days cannot be null');
@@ -371,7 +371,7 @@ class PostApiV1FindOrCreateInviteRequest implements ModelInterface, ArrayAccess,
      *
      * @return int
      */
-    public function getMaxUses()
+    public function get_max_uses()
     {
         return $this->container['max_uses'];
     }
@@ -383,7 +383,7 @@ class PostApiV1FindOrCreateInviteRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setMaxUses($max_uses)
+    public function set_max_uses($max_uses)
     {
         if (is_null($max_uses)) {
             throw new \InvalidArgumentException('non-nullable max_uses cannot be null');

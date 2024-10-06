@@ -215,17 +215,17 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'created_at' => 'setCreatedAt',
-        'user_id' => 'setUserId',
-        'room_list' => 'setRoomList',
-        'status' => 'setStatus',
-        'export_path' => 'setExportPath',
-        'assets_path' => 'setAssetsPath',
-        'file_list' => 'setFileList',
-        'generated_file' => 'setGeneratedFile',
-        'full_export' => 'setFullExport',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'created_at' => 'set_created_at',
+        'user_id' => 'set_user_id',
+        'room_list' => 'set_room_list',
+        'status' => 'set_status',
+        'export_path' => 'set_export_path',
+        'assets_path' => 'set_assets_path',
+        'file_list' => 'set_file_list',
+        'generated_file' => 'set_generated_file',
+        'full_export' => 'set_full_export',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -234,17 +234,17 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'created_at' => 'getCreatedAt',
-        'user_id' => 'getUserId',
-        'room_list' => 'getRoomList',
-        'status' => 'getStatus',
-        'export_path' => 'getExportPath',
-        'assets_path' => 'getAssetsPath',
-        'file_list' => 'getFileList',
-        'generated_file' => 'getGeneratedFile',
-        'full_export' => 'getFullExport',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'created_at' => 'get_created_at',
+        'user_id' => 'get_user_id',
+        'room_list' => 'get_room_list',
+        'status' => 'get_status',
+        'export_path' => 'get_export_path',
+        'assets_path' => 'get_assets_path',
+        'file_list' => 'get_file_list',
+        'generated_file' => 'get_generated_file',
+        'full_export' => 'get_full_export',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -364,7 +364,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -376,7 +376,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -391,7 +391,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get_created_at()
     {
         return $this->container['created_at'];
     }
@@ -403,7 +403,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setCreatedAt($created_at)
+    public function set_created_at($created_at)
     {
         if (is_null($created_at)) {
             throw new \InvalidArgumentException('non-nullable created_at cannot be null');
@@ -418,7 +418,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -430,7 +430,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -445,7 +445,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\GetApiV1UsersRequestDataDownload200ResponseExportOperationRoomListInner[]|null
      */
-    public function getRoomList()
+    public function get_room_list()
     {
         return $this->container['room_list'];
     }
@@ -457,7 +457,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setRoomList($room_list)
+    public function set_room_list($room_list)
     {
         if (is_null($room_list)) {
             throw new \InvalidArgumentException('non-nullable room_list cannot be null');
@@ -472,7 +472,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -484,7 +484,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -499,7 +499,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return string|null
      */
-    public function getExportPath()
+    public function get_export_path()
     {
         return $this->container['export_path'];
     }
@@ -511,7 +511,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setExportPath($export_path)
+    public function set_export_path($export_path)
     {
         if (is_null($export_path)) {
             throw new \InvalidArgumentException('non-nullable export_path cannot be null');
@@ -526,7 +526,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return string|null
      */
-    public function getAssetsPath()
+    public function get_assets_path()
     {
         return $this->container['assets_path'];
     }
@@ -538,7 +538,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setAssetsPath($assets_path)
+    public function set_assets_path($assets_path)
     {
         if (is_null($assets_path)) {
             throw new \InvalidArgumentException('non-nullable assets_path cannot be null');
@@ -553,7 +553,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return object[]|null
      */
-    public function getFileList()
+    public function get_file_list()
     {
         return $this->container['file_list'];
     }
@@ -565,7 +565,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setFileList($file_list)
+    public function set_file_list($file_list)
     {
         if (is_null($file_list)) {
             throw new \InvalidArgumentException('non-nullable file_list cannot be null');
@@ -580,7 +580,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return string|null
      */
-    public function getGeneratedFile()
+    public function get_generated_file()
     {
         return $this->container['generated_file'];
     }
@@ -592,7 +592,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setGeneratedFile($generated_file)
+    public function set_generated_file($generated_file)
     {
         if (is_null($generated_file)) {
             throw new \InvalidArgumentException('non-nullable generated_file cannot be null');
@@ -607,7 +607,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return bool|null
      */
-    public function getFullExport()
+    public function get_full_export()
     {
         return $this->container['full_export'];
     }
@@ -619,7 +619,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setFullExport($full_export)
+    public function set_full_export($full_export)
     {
         if (is_null($full_export)) {
             throw new \InvalidArgumentException('non-nullable full_export cannot be null');
@@ -634,7 +634,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -646,7 +646,7 @@ class GetApiV1UsersRequestDataDownload200ResponseExportOperation implements Mode
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

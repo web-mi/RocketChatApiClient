@@ -179,8 +179,8 @@ class PostApiV1CustomUserStatusCreateRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'status_type' => 'setStatusType'
+        'name' => 'set_name',
+        'status_type' => 'set_status_type'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1CustomUserStatusCreateRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'status_type' => 'getStatusType'
+        'name' => 'get_name',
+        'status_type' => 'get_status_type'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1CustomUserStatusCreateRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -319,7 +319,7 @@ class PostApiV1CustomUserStatusCreateRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1CustomUserStatusCreateRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getStatusType()
+    public function get_status_type()
     {
         return $this->container['status_type'];
     }
@@ -346,7 +346,7 @@ class PostApiV1CustomUserStatusCreateRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setStatusType($status_type)
+    public function set_status_type($status_type)
     {
         if (is_null($status_type)) {
             throw new \InvalidArgumentException('non-nullable status_type cannot be null');

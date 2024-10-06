@@ -179,8 +179,8 @@ class PostApiV1RoomsSaveNotificationRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'notifications' => 'setNotifications'
+        'room_id' => 'set_room_id',
+        'notifications' => 'set_notifications'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1RoomsSaveNotificationRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'notifications' => 'getNotifications'
+        'room_id' => 'get_room_id',
+        'notifications' => 'get_notifications'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1RoomsSaveNotificationRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1RoomsSaveNotificationRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1RoomsSaveNotificationRequest implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsSaveNotificationRequestNotifications
      */
-    public function getNotifications()
+    public function get_notifications()
     {
         return $this->container['notifications'];
     }
@@ -346,7 +346,7 @@ class PostApiV1RoomsSaveNotificationRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setNotifications($notifications)
+    public function set_notifications($notifications)
     {
         if (is_null($notifications)) {
             throw new \InvalidArgumentException('non-nullable notifications cannot be null');

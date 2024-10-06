@@ -195,12 +195,12 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        '_created_at' => 'setCreatedAt',
-        '_updated_at' => 'setUpdatedAt',
-        'extra_information' => 'setExtraInformation',
-        'name' => 'setName',
-        'pid' => 'setPid'
+        '_id' => 'set__id',
+        '_created_at' => 'set__created_at',
+        '_updated_at' => 'set__updated_at',
+        'extra_information' => 'set_extra_information',
+        'name' => 'set_name',
+        'pid' => 'set_pid'
     ];
 
     /**
@@ -209,12 +209,12 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        '_created_at' => 'getCreatedAt',
-        '_updated_at' => 'getUpdatedAt',
-        'extra_information' => 'getExtraInformation',
-        'name' => 'getName',
-        'pid' => 'getPid'
+        '_id' => 'get__id',
+        '_created_at' => 'get__created_at',
+        '_updated_at' => 'get__updated_at',
+        'extra_information' => 'get_extra_information',
+        'name' => 'get_name',
+        'pid' => 'get_pid'
     ];
 
     /**
@@ -329,7 +329,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -341,7 +341,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -356,7 +356,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get__created_at()
     {
         return $this->container['_created_at'];
     }
@@ -368,7 +368,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return self
      */
-    public function setCreatedAt($_created_at)
+    public function set__created_at($_created_at)
     {
         if (is_null($_created_at)) {
             throw new \InvalidArgumentException('non-nullable _created_at cannot be null');
@@ -383,7 +383,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -395,7 +395,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -410,7 +410,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecordExtraInformation|null
      */
-    public function getExtraInformation()
+    public function get_extra_information()
     {
         return $this->container['extra_information'];
     }
@@ -422,7 +422,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return self
      */
-    public function setExtraInformation($extra_information)
+    public function set_extra_information($extra_information)
     {
         if (is_null($extra_information)) {
             throw new \InvalidArgumentException('non-nullable extra_information cannot be null');
@@ -437,7 +437,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -449,7 +449,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -464,7 +464,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return int|null
      */
-    public function getPid()
+    public function get_pid()
     {
         return $this->container['pid'];
     }
@@ -476,7 +476,7 @@ class GetApiV1InstancesGet200ResponseInstancesInnerInstanceRecord implements Mod
      *
      * @return self
      */
-    public function setPid($pid)
+    public function set_pid($pid)
     {
         if (is_null($pid)) {
             throw new \InvalidArgumentException('non-nullable pid cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1PushGet200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'setMessage',
-        'notification' => 'setNotification'
+        'message' => 'set_message',
+        'notification' => 'set_notification'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1PushGet200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'getMessage',
-        'notification' => 'getNotification'
+        'message' => 'get_message',
+        'notification' => 'get_notification'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1PushGet200ResponseData implements ModelInterface, ArrayAccess, \Js
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessage|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -313,7 +313,7 @@ class GetApiV1PushGet200ResponseData implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1PushGet200ResponseData implements ModelInterface, ArrayAccess, \Js
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataNotification|null
      */
-    public function getNotification()
+    public function get_notification()
     {
         return $this->container['notification'];
     }
@@ -340,7 +340,7 @@ class GetApiV1PushGet200ResponseData implements ModelInterface, ArrayAccess, \Js
      *
      * @return self
      */
-    public function setNotification($notification)
+    public function set_notification($notification)
     {
         if (is_null($notification)) {
             throw new \InvalidArgumentException('non-nullable notification cannot be null');

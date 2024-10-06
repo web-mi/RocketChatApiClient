@@ -296,37 +296,37 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'language' => 'setLanguage',
-        'new_room_notification' => 'setNewRoomNotification',
-        'new_message_notification' => 'setNewMessageNotification',
-        'mute_focused_conversations' => 'setMuteFocusedConversations',
-        'clock_mode' => 'setClockMode',
-        'use_emojis' => 'setUseEmojis',
-        'convert_ascii_emoji' => 'setConvertAsciiEmoji',
-        'save_mobile_bandwidth' => 'setSaveMobileBandwidth',
-        'collapse_media_by_default' => 'setCollapseMediaByDefault',
-        'auto_image_load' => 'setAutoImageLoad',
-        'email_notification_mode' => 'setEmailNotificationMode',
-        'unread_alert' => 'setUnreadAlert',
-        'notifications_sound_volume' => 'setNotificationsSoundVolume',
-        'desktop_notifications' => 'setDesktopNotifications',
-        'push_notifications' => 'setPushNotifications',
-        'enable_auto_away' => 'setEnableAutoAway',
-        'highlights' => 'setHighlights',
-        'message_view_mode' => 'setMessageViewMode',
-        'hide_usernames' => 'setHideUsernames',
-        'hide_roles' => 'setHideRoles',
-        'display_avatars' => 'setDisplayAvatars',
-        'hide_flex_tab' => 'setHideFlexTab',
-        'send_on_enter' => 'setSendOnEnter',
-        'idle_time_limit' => 'setIdleTimeLimit',
-        'sidebar_show_favorites' => 'setSidebarShowFavorites',
-        'sidebar_show_unread' => 'setSidebarShowUnread',
-        'sidebar_sortby' => 'setSidebarSortby',
-        'sidebar_view_mode' => 'setSidebarViewMode',
-        'sidebar_display_avatar' => 'setSidebarDisplayAvatar',
-        'sidebar_group_by_type' => 'setSidebarGroupByType',
-        'dont_ask_again_list' => 'setDontAskAgainList'
+        'language' => 'set_language',
+        'new_room_notification' => 'set_new_room_notification',
+        'new_message_notification' => 'set_new_message_notification',
+        'mute_focused_conversations' => 'set_mute_focused_conversations',
+        'clock_mode' => 'set_clock_mode',
+        'use_emojis' => 'set_use_emojis',
+        'convert_ascii_emoji' => 'set_convert_ascii_emoji',
+        'save_mobile_bandwidth' => 'set_save_mobile_bandwidth',
+        'collapse_media_by_default' => 'set_collapse_media_by_default',
+        'auto_image_load' => 'set_auto_image_load',
+        'email_notification_mode' => 'set_email_notification_mode',
+        'unread_alert' => 'set_unread_alert',
+        'notifications_sound_volume' => 'set_notifications_sound_volume',
+        'desktop_notifications' => 'set_desktop_notifications',
+        'push_notifications' => 'set_push_notifications',
+        'enable_auto_away' => 'set_enable_auto_away',
+        'highlights' => 'set_highlights',
+        'message_view_mode' => 'set_message_view_mode',
+        'hide_usernames' => 'set_hide_usernames',
+        'hide_roles' => 'set_hide_roles',
+        'display_avatars' => 'set_display_avatars',
+        'hide_flex_tab' => 'set_hide_flex_tab',
+        'send_on_enter' => 'set_send_on_enter',
+        'idle_time_limit' => 'set_idle_time_limit',
+        'sidebar_show_favorites' => 'set_sidebar_show_favorites',
+        'sidebar_show_unread' => 'set_sidebar_show_unread',
+        'sidebar_sortby' => 'set_sidebar_sortby',
+        'sidebar_view_mode' => 'set_sidebar_view_mode',
+        'sidebar_display_avatar' => 'set_sidebar_display_avatar',
+        'sidebar_group_by_type' => 'set_sidebar_group_by_type',
+        'dont_ask_again_list' => 'set_dont_ask_again_list'
     ];
 
     /**
@@ -335,37 +335,37 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'language' => 'getLanguage',
-        'new_room_notification' => 'getNewRoomNotification',
-        'new_message_notification' => 'getNewMessageNotification',
-        'mute_focused_conversations' => 'getMuteFocusedConversations',
-        'clock_mode' => 'getClockMode',
-        'use_emojis' => 'getUseEmojis',
-        'convert_ascii_emoji' => 'getConvertAsciiEmoji',
-        'save_mobile_bandwidth' => 'getSaveMobileBandwidth',
-        'collapse_media_by_default' => 'getCollapseMediaByDefault',
-        'auto_image_load' => 'getAutoImageLoad',
-        'email_notification_mode' => 'getEmailNotificationMode',
-        'unread_alert' => 'getUnreadAlert',
-        'notifications_sound_volume' => 'getNotificationsSoundVolume',
-        'desktop_notifications' => 'getDesktopNotifications',
-        'push_notifications' => 'getPushNotifications',
-        'enable_auto_away' => 'getEnableAutoAway',
-        'highlights' => 'getHighlights',
-        'message_view_mode' => 'getMessageViewMode',
-        'hide_usernames' => 'getHideUsernames',
-        'hide_roles' => 'getHideRoles',
-        'display_avatars' => 'getDisplayAvatars',
-        'hide_flex_tab' => 'getHideFlexTab',
-        'send_on_enter' => 'getSendOnEnter',
-        'idle_time_limit' => 'getIdleTimeLimit',
-        'sidebar_show_favorites' => 'getSidebarShowFavorites',
-        'sidebar_show_unread' => 'getSidebarShowUnread',
-        'sidebar_sortby' => 'getSidebarSortby',
-        'sidebar_view_mode' => 'getSidebarViewMode',
-        'sidebar_display_avatar' => 'getSidebarDisplayAvatar',
-        'sidebar_group_by_type' => 'getSidebarGroupByType',
-        'dont_ask_again_list' => 'getDontAskAgainList'
+        'language' => 'get_language',
+        'new_room_notification' => 'get_new_room_notification',
+        'new_message_notification' => 'get_new_message_notification',
+        'mute_focused_conversations' => 'get_mute_focused_conversations',
+        'clock_mode' => 'get_clock_mode',
+        'use_emojis' => 'get_use_emojis',
+        'convert_ascii_emoji' => 'get_convert_ascii_emoji',
+        'save_mobile_bandwidth' => 'get_save_mobile_bandwidth',
+        'collapse_media_by_default' => 'get_collapse_media_by_default',
+        'auto_image_load' => 'get_auto_image_load',
+        'email_notification_mode' => 'get_email_notification_mode',
+        'unread_alert' => 'get_unread_alert',
+        'notifications_sound_volume' => 'get_notifications_sound_volume',
+        'desktop_notifications' => 'get_desktop_notifications',
+        'push_notifications' => 'get_push_notifications',
+        'enable_auto_away' => 'get_enable_auto_away',
+        'highlights' => 'get_highlights',
+        'message_view_mode' => 'get_message_view_mode',
+        'hide_usernames' => 'get_hide_usernames',
+        'hide_roles' => 'get_hide_roles',
+        'display_avatars' => 'get_display_avatars',
+        'hide_flex_tab' => 'get_hide_flex_tab',
+        'send_on_enter' => 'get_send_on_enter',
+        'idle_time_limit' => 'get_idle_time_limit',
+        'sidebar_show_favorites' => 'get_sidebar_show_favorites',
+        'sidebar_show_unread' => 'get_sidebar_show_unread',
+        'sidebar_sortby' => 'get_sidebar_sortby',
+        'sidebar_view_mode' => 'get_sidebar_view_mode',
+        'sidebar_display_avatar' => 'get_sidebar_display_avatar',
+        'sidebar_group_by_type' => 'get_sidebar_group_by_type',
+        'dont_ask_again_list' => 'get_dont_ask_again_list'
     ];
 
     /**
@@ -505,7 +505,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getLanguage()
+    public function get_language()
     {
         return $this->container['language'];
     }
@@ -517,7 +517,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setLanguage($language)
+    public function set_language($language)
     {
         if (is_null($language)) {
             throw new \InvalidArgumentException('non-nullable language cannot be null');
@@ -532,7 +532,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getNewRoomNotification()
+    public function get_new_room_notification()
     {
         return $this->container['new_room_notification'];
     }
@@ -544,7 +544,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setNewRoomNotification($new_room_notification)
+    public function set_new_room_notification($new_room_notification)
     {
         if (is_null($new_room_notification)) {
             throw new \InvalidArgumentException('non-nullable new_room_notification cannot be null');
@@ -559,7 +559,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getNewMessageNotification()
+    public function get_new_message_notification()
     {
         return $this->container['new_message_notification'];
     }
@@ -571,7 +571,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setNewMessageNotification($new_message_notification)
+    public function set_new_message_notification($new_message_notification)
     {
         if (is_null($new_message_notification)) {
             throw new \InvalidArgumentException('non-nullable new_message_notification cannot be null');
@@ -586,7 +586,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getMuteFocusedConversations()
+    public function get_mute_focused_conversations()
     {
         return $this->container['mute_focused_conversations'];
     }
@@ -598,7 +598,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setMuteFocusedConversations($mute_focused_conversations)
+    public function set_mute_focused_conversations($mute_focused_conversations)
     {
         if (is_null($mute_focused_conversations)) {
             throw new \InvalidArgumentException('non-nullable mute_focused_conversations cannot be null');
@@ -613,7 +613,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getClockMode()
+    public function get_clock_mode()
     {
         return $this->container['clock_mode'];
     }
@@ -625,7 +625,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setClockMode($clock_mode)
+    public function set_clock_mode($clock_mode)
     {
         if (is_null($clock_mode)) {
             throw new \InvalidArgumentException('non-nullable clock_mode cannot be null');
@@ -640,7 +640,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getUseEmojis()
+    public function get_use_emojis()
     {
         return $this->container['use_emojis'];
     }
@@ -652,7 +652,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setUseEmojis($use_emojis)
+    public function set_use_emojis($use_emojis)
     {
         if (is_null($use_emojis)) {
             throw new \InvalidArgumentException('non-nullable use_emojis cannot be null');
@@ -667,7 +667,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getConvertAsciiEmoji()
+    public function get_convert_ascii_emoji()
     {
         return $this->container['convert_ascii_emoji'];
     }
@@ -679,7 +679,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setConvertAsciiEmoji($convert_ascii_emoji)
+    public function set_convert_ascii_emoji($convert_ascii_emoji)
     {
         if (is_null($convert_ascii_emoji)) {
             throw new \InvalidArgumentException('non-nullable convert_ascii_emoji cannot be null');
@@ -694,7 +694,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSaveMobileBandwidth()
+    public function get_save_mobile_bandwidth()
     {
         return $this->container['save_mobile_bandwidth'];
     }
@@ -706,7 +706,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSaveMobileBandwidth($save_mobile_bandwidth)
+    public function set_save_mobile_bandwidth($save_mobile_bandwidth)
     {
         if (is_null($save_mobile_bandwidth)) {
             throw new \InvalidArgumentException('non-nullable save_mobile_bandwidth cannot be null');
@@ -721,7 +721,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getCollapseMediaByDefault()
+    public function get_collapse_media_by_default()
     {
         return $this->container['collapse_media_by_default'];
     }
@@ -733,7 +733,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setCollapseMediaByDefault($collapse_media_by_default)
+    public function set_collapse_media_by_default($collapse_media_by_default)
     {
         if (is_null($collapse_media_by_default)) {
             throw new \InvalidArgumentException('non-nullable collapse_media_by_default cannot be null');
@@ -748,7 +748,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getAutoImageLoad()
+    public function get_auto_image_load()
     {
         return $this->container['auto_image_load'];
     }
@@ -760,7 +760,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setAutoImageLoad($auto_image_load)
+    public function set_auto_image_load($auto_image_load)
     {
         if (is_null($auto_image_load)) {
             throw new \InvalidArgumentException('non-nullable auto_image_load cannot be null');
@@ -775,7 +775,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getEmailNotificationMode()
+    public function get_email_notification_mode()
     {
         return $this->container['email_notification_mode'];
     }
@@ -787,7 +787,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setEmailNotificationMode($email_notification_mode)
+    public function set_email_notification_mode($email_notification_mode)
     {
         if (is_null($email_notification_mode)) {
             throw new \InvalidArgumentException('non-nullable email_notification_mode cannot be null');
@@ -802,7 +802,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getUnreadAlert()
+    public function get_unread_alert()
     {
         return $this->container['unread_alert'];
     }
@@ -814,7 +814,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setUnreadAlert($unread_alert)
+    public function set_unread_alert($unread_alert)
     {
         if (is_null($unread_alert)) {
             throw new \InvalidArgumentException('non-nullable unread_alert cannot be null');
@@ -829,7 +829,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getNotificationsSoundVolume()
+    public function get_notifications_sound_volume()
     {
         return $this->container['notifications_sound_volume'];
     }
@@ -841,7 +841,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setNotificationsSoundVolume($notifications_sound_volume)
+    public function set_notifications_sound_volume($notifications_sound_volume)
     {
         if (is_null($notifications_sound_volume)) {
             throw new \InvalidArgumentException('non-nullable notifications_sound_volume cannot be null');
@@ -856,7 +856,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getDesktopNotifications()
+    public function get_desktop_notifications()
     {
         return $this->container['desktop_notifications'];
     }
@@ -868,7 +868,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setDesktopNotifications($desktop_notifications)
+    public function set_desktop_notifications($desktop_notifications)
     {
         if (is_null($desktop_notifications)) {
             throw new \InvalidArgumentException('non-nullable desktop_notifications cannot be null');
@@ -883,7 +883,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getPushNotifications()
+    public function get_push_notifications()
     {
         return $this->container['push_notifications'];
     }
@@ -895,7 +895,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setPushNotifications($push_notifications)
+    public function set_push_notifications($push_notifications)
     {
         if (is_null($push_notifications)) {
             throw new \InvalidArgumentException('non-nullable push_notifications cannot be null');
@@ -910,7 +910,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getEnableAutoAway()
+    public function get_enable_auto_away()
     {
         return $this->container['enable_auto_away'];
     }
@@ -922,7 +922,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setEnableAutoAway($enable_auto_away)
+    public function set_enable_auto_away($enable_auto_away)
     {
         if (is_null($enable_auto_away)) {
             throw new \InvalidArgumentException('non-nullable enable_auto_away cannot be null');
@@ -937,7 +937,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string[]|null
      */
-    public function getHighlights()
+    public function get_highlights()
     {
         return $this->container['highlights'];
     }
@@ -949,7 +949,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setHighlights($highlights)
+    public function set_highlights($highlights)
     {
         if (is_null($highlights)) {
             throw new \InvalidArgumentException('non-nullable highlights cannot be null');
@@ -964,7 +964,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getMessageViewMode()
+    public function get_message_view_mode()
     {
         return $this->container['message_view_mode'];
     }
@@ -976,7 +976,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setMessageViewMode($message_view_mode)
+    public function set_message_view_mode($message_view_mode)
     {
         if (is_null($message_view_mode)) {
             throw new \InvalidArgumentException('non-nullable message_view_mode cannot be null');
@@ -991,7 +991,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getHideUsernames()
+    public function get_hide_usernames()
     {
         return $this->container['hide_usernames'];
     }
@@ -1003,7 +1003,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setHideUsernames($hide_usernames)
+    public function set_hide_usernames($hide_usernames)
     {
         if (is_null($hide_usernames)) {
             throw new \InvalidArgumentException('non-nullable hide_usernames cannot be null');
@@ -1018,7 +1018,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getHideRoles()
+    public function get_hide_roles()
     {
         return $this->container['hide_roles'];
     }
@@ -1030,7 +1030,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setHideRoles($hide_roles)
+    public function set_hide_roles($hide_roles)
     {
         if (is_null($hide_roles)) {
             throw new \InvalidArgumentException('non-nullable hide_roles cannot be null');
@@ -1045,7 +1045,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getDisplayAvatars()
+    public function get_display_avatars()
     {
         return $this->container['display_avatars'];
     }
@@ -1057,7 +1057,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setDisplayAvatars($display_avatars)
+    public function set_display_avatars($display_avatars)
     {
         if (is_null($display_avatars)) {
             throw new \InvalidArgumentException('non-nullable display_avatars cannot be null');
@@ -1072,7 +1072,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getHideFlexTab()
+    public function get_hide_flex_tab()
     {
         return $this->container['hide_flex_tab'];
     }
@@ -1084,7 +1084,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setHideFlexTab($hide_flex_tab)
+    public function set_hide_flex_tab($hide_flex_tab)
     {
         if (is_null($hide_flex_tab)) {
             throw new \InvalidArgumentException('non-nullable hide_flex_tab cannot be null');
@@ -1099,7 +1099,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getSendOnEnter()
+    public function get_send_on_enter()
     {
         return $this->container['send_on_enter'];
     }
@@ -1111,7 +1111,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSendOnEnter($send_on_enter)
+    public function set_send_on_enter($send_on_enter)
     {
         if (is_null($send_on_enter)) {
             throw new \InvalidArgumentException('non-nullable send_on_enter cannot be null');
@@ -1126,7 +1126,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return int|null
      */
-    public function getIdleTimeLimit()
+    public function get_idle_time_limit()
     {
         return $this->container['idle_time_limit'];
     }
@@ -1138,7 +1138,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setIdleTimeLimit($idle_time_limit)
+    public function set_idle_time_limit($idle_time_limit)
     {
         if (is_null($idle_time_limit)) {
             throw new \InvalidArgumentException('non-nullable idle_time_limit cannot be null');
@@ -1153,7 +1153,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSidebarShowFavorites()
+    public function get_sidebar_show_favorites()
     {
         return $this->container['sidebar_show_favorites'];
     }
@@ -1165,7 +1165,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSidebarShowFavorites($sidebar_show_favorites)
+    public function set_sidebar_show_favorites($sidebar_show_favorites)
     {
         if (is_null($sidebar_show_favorites)) {
             throw new \InvalidArgumentException('non-nullable sidebar_show_favorites cannot be null');
@@ -1180,7 +1180,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSidebarShowUnread()
+    public function get_sidebar_show_unread()
     {
         return $this->container['sidebar_show_unread'];
     }
@@ -1192,7 +1192,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSidebarShowUnread($sidebar_show_unread)
+    public function set_sidebar_show_unread($sidebar_show_unread)
     {
         if (is_null($sidebar_show_unread)) {
             throw new \InvalidArgumentException('non-nullable sidebar_show_unread cannot be null');
@@ -1207,7 +1207,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getSidebarSortby()
+    public function get_sidebar_sortby()
     {
         return $this->container['sidebar_sortby'];
     }
@@ -1219,7 +1219,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSidebarSortby($sidebar_sortby)
+    public function set_sidebar_sortby($sidebar_sortby)
     {
         if (is_null($sidebar_sortby)) {
             throw new \InvalidArgumentException('non-nullable sidebar_sortby cannot be null');
@@ -1234,7 +1234,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return string|null
      */
-    public function getSidebarViewMode()
+    public function get_sidebar_view_mode()
     {
         return $this->container['sidebar_view_mode'];
     }
@@ -1246,7 +1246,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSidebarViewMode($sidebar_view_mode)
+    public function set_sidebar_view_mode($sidebar_view_mode)
     {
         if (is_null($sidebar_view_mode)) {
             throw new \InvalidArgumentException('non-nullable sidebar_view_mode cannot be null');
@@ -1261,7 +1261,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSidebarDisplayAvatar()
+    public function get_sidebar_display_avatar()
     {
         return $this->container['sidebar_display_avatar'];
     }
@@ -1273,7 +1273,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSidebarDisplayAvatar($sidebar_display_avatar)
+    public function set_sidebar_display_avatar($sidebar_display_avatar)
     {
         if (is_null($sidebar_display_avatar)) {
             throw new \InvalidArgumentException('non-nullable sidebar_display_avatar cannot be null');
@@ -1288,7 +1288,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSidebarGroupByType()
+    public function get_sidebar_group_by_type()
     {
         return $this->container['sidebar_group_by_type'];
     }
@@ -1300,7 +1300,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSidebarGroupByType($sidebar_group_by_type)
+    public function set_sidebar_group_by_type($sidebar_group_by_type)
     {
         if (is_null($sidebar_group_by_type)) {
             throw new \InvalidArgumentException('non-nullable sidebar_group_by_type cannot be null');
@@ -1315,7 +1315,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return object[]|null
      */
-    public function getDontAskAgainList()
+    public function get_dont_ask_again_list()
     {
         return $this->container['dont_ask_again_list'];
     }
@@ -1327,7 +1327,7 @@ class PostApiV1UsersSetPreferencesRequestData implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setDontAskAgainList($dont_ask_again_list)
+    public function set_dont_ask_again_list($dont_ask_again_list)
     {
         if (is_null($dont_ask_again_list)) {
             throw new \InvalidArgumentException('non-nullable dont_ask_again_list cannot be null');

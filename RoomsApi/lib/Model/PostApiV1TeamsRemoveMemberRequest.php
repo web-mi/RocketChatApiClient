@@ -183,9 +183,9 @@ class PostApiV1TeamsRemoveMemberRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'team_id' => 'setTeamId',
-        'user_id' => 'setUserId',
-        'rooms' => 'setRooms'
+        'team_id' => 'set_team_id',
+        'user_id' => 'set_user_id',
+        'rooms' => 'set_rooms'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1TeamsRemoveMemberRequest implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'team_id' => 'getTeamId',
-        'user_id' => 'getUserId',
-        'rooms' => 'getRooms'
+        'team_id' => 'get_team_id',
+        'user_id' => 'get_user_id',
+        'rooms' => 'get_rooms'
     ];
 
     /**
@@ -314,7 +314,7 @@ class PostApiV1TeamsRemoveMemberRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getTeamId()
+    public function get_team_id()
     {
         return $this->container['team_id'];
     }
@@ -326,7 +326,7 @@ class PostApiV1TeamsRemoveMemberRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setTeamId($team_id)
+    public function set_team_id($team_id)
     {
         if (is_null($team_id)) {
             throw new \InvalidArgumentException('non-nullable team_id cannot be null');
@@ -341,7 +341,7 @@ class PostApiV1TeamsRemoveMemberRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -353,7 +353,7 @@ class PostApiV1TeamsRemoveMemberRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -368,7 +368,7 @@ class PostApiV1TeamsRemoveMemberRequest implements ModelInterface, ArrayAccess, 
      *
      * @return string[]|null
      */
-    public function getRooms()
+    public function get_rooms()
     {
         return $this->container['rooms'];
     }
@@ -380,7 +380,7 @@ class PostApiV1TeamsRemoveMemberRequest implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setRooms($rooms)
+    public function set_rooms($rooms)
     {
         if (is_null($rooms)) {
             throw new \InvalidArgumentException('non-nullable rooms cannot be null');

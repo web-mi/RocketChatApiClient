@@ -223,19 +223,19 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'open' => 'setOpen',
-        'alert' => 'setAlert',
-        'unread' => 'setUnread',
-        'user_mentions' => 'setUserMentions',
-        'group_mentions' => 'setGroupMentions',
-        'ts' => 'setTs',
-        'rid' => 'setRid',
-        'name' => 'setName',
-        't' => 'setT',
-        'u' => 'setU',
-        '_updated_at' => 'setUpdatedAt',
-        'ls' => 'setLs'
+        '_id' => 'set__id',
+        'open' => 'set_open',
+        'alert' => 'set_alert',
+        'unread' => 'set_unread',
+        'user_mentions' => 'set_user_mentions',
+        'group_mentions' => 'set_group_mentions',
+        'ts' => 'set_ts',
+        'rid' => 'set_rid',
+        'name' => 'set_name',
+        't' => 'set_t',
+        'u' => 'set_u',
+        '_updated_at' => 'set__updated_at',
+        'ls' => 'set_ls'
     ];
 
     /**
@@ -244,19 +244,19 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'open' => 'getOpen',
-        'alert' => 'getAlert',
-        'unread' => 'getUnread',
-        'user_mentions' => 'getUserMentions',
-        'group_mentions' => 'getGroupMentions',
-        'ts' => 'getTs',
-        'rid' => 'getRid',
-        'name' => 'getName',
-        't' => 'getT',
-        'u' => 'getU',
-        '_updated_at' => 'getUpdatedAt',
-        'ls' => 'getLs'
+        '_id' => 'get__id',
+        'open' => 'get_open',
+        'alert' => 'get_alert',
+        'unread' => 'get_unread',
+        'user_mentions' => 'get_user_mentions',
+        'group_mentions' => 'get_group_mentions',
+        'ts' => 'get_ts',
+        'rid' => 'get_rid',
+        'name' => 'get_name',
+        't' => 'get_t',
+        'u' => 'get_u',
+        '_updated_at' => 'get__updated_at',
+        'ls' => 'get_ls'
     ];
 
     /**
@@ -378,7 +378,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -390,7 +390,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -405,7 +405,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return bool|null
      */
-    public function getOpen()
+    public function get_open()
     {
         return $this->container['open'];
     }
@@ -417,7 +417,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setOpen($open)
+    public function set_open($open)
     {
         if (is_null($open)) {
             throw new \InvalidArgumentException('non-nullable open cannot be null');
@@ -432,7 +432,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return bool|null
      */
-    public function getAlert()
+    public function get_alert()
     {
         return $this->container['alert'];
     }
@@ -444,7 +444,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setAlert($alert)
+    public function set_alert($alert)
     {
         if (is_null($alert)) {
             throw new \InvalidArgumentException('non-nullable alert cannot be null');
@@ -459,7 +459,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return int|null
      */
-    public function getUnread()
+    public function get_unread()
     {
         return $this->container['unread'];
     }
@@ -471,7 +471,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setUnread($unread)
+    public function set_unread($unread)
     {
         if (is_null($unread)) {
             throw new \InvalidArgumentException('non-nullable unread cannot be null');
@@ -486,7 +486,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return int|null
      */
-    public function getUserMentions()
+    public function get_user_mentions()
     {
         return $this->container['user_mentions'];
     }
@@ -498,7 +498,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setUserMentions($user_mentions)
+    public function set_user_mentions($user_mentions)
     {
         if (is_null($user_mentions)) {
             throw new \InvalidArgumentException('non-nullable user_mentions cannot be null');
@@ -513,7 +513,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return int|null
      */
-    public function getGroupMentions()
+    public function get_group_mentions()
     {
         return $this->container['group_mentions'];
     }
@@ -525,7 +525,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setGroupMentions($group_mentions)
+    public function set_group_mentions($group_mentions)
     {
         if (is_null($group_mentions)) {
             throw new \InvalidArgumentException('non-nullable group_mentions cannot be null');
@@ -540,7 +540,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -552,7 +552,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -567,7 +567,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -579,7 +579,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -594,7 +594,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -606,7 +606,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -621,7 +621,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -633,7 +633,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -648,7 +648,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscriptionU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -660,7 +660,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -675,7 +675,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -687,7 +687,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -702,7 +702,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return string|null
      */
-    public function getLs()
+    public function get_ls()
     {
         return $this->container['ls'];
     }
@@ -714,7 +714,7 @@ class GetApiV1SubscriptionsGetOne200ResponseSubscription implements ModelInterfa
      *
      * @return self
      */
-    public function setLs($ls)
+    public function set_ls($ls)
     {
         if (is_null($ls)) {
             throw new \InvalidArgumentException('non-nullable ls cannot be null');

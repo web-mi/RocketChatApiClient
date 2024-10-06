@@ -179,8 +179,8 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple impleme
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled',
-        'users' => 'setUsers'
+        'enabled' => 'set_enabled',
+        'users' => 'set_users'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple impleme
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled',
-        'users' => 'getUsers'
+        'enabled' => 'get_enabled',
+        'users' => 'get_users'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple impleme
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -313,7 +313,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple impleme
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple impleme
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -340,7 +340,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerServicesOauthApple impleme
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');

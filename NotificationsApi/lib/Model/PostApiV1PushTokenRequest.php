@@ -183,9 +183,9 @@ class PostApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'value' => 'setValue',
-        'app_name' => 'setAppName'
+        'type' => 'set_type',
+        'value' => 'set_value',
+        'app_name' => 'set_app_name'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonSer
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'value' => 'getValue',
-        'app_name' => 'getAppName'
+        'type' => 'get_type',
+        'value' => 'get_value',
+        'app_name' => 'get_app_name'
     ];
 
     /**
@@ -317,7 +317,7 @@ class PostApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -329,7 +329,7 @@ class PostApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -344,7 +344,7 @@ class PostApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -356,7 +356,7 @@ class PostApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');
@@ -371,7 +371,7 @@ class PostApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return string
      */
-    public function getAppName()
+    public function get_app_name()
     {
         return $this->container['app_name'];
     }
@@ -383,7 +383,7 @@ class PostApiV1PushTokenRequest implements ModelInterface, ArrayAccess, \JsonSer
      *
      * @return self
      */
-    public function setAppName($app_name)
+    public function set_app_name($app_name)
     {
         if (is_null($app_name)) {
             throw new \InvalidArgumentException('non-nullable app_name cannot be null');

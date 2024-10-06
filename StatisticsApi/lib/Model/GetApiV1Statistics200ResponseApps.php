@@ -187,10 +187,10 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'engine_version' => 'setEngineVersion',
-        'total_installed' => 'setTotalInstalled',
-        'total_active' => 'setTotalActive',
-        'total_failed' => 'setTotalFailed'
+        'engine_version' => 'set_engine_version',
+        'total_installed' => 'set_total_installed',
+        'total_active' => 'set_total_active',
+        'total_failed' => 'set_total_failed'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'engine_version' => 'getEngineVersion',
-        'total_installed' => 'getTotalInstalled',
-        'total_active' => 'getTotalActive',
-        'total_failed' => 'getTotalFailed'
+        'engine_version' => 'get_engine_version',
+        'total_installed' => 'get_total_installed',
+        'total_active' => 'get_total_active',
+        'total_failed' => 'get_total_failed'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getEngineVersion()
+    public function get_engine_version()
     {
         return $this->container['engine_version'];
     }
@@ -327,7 +327,7 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setEngineVersion($engine_version)
+    public function set_engine_version($engine_version)
     {
         if (is_null($engine_version)) {
             throw new \InvalidArgumentException('non-nullable engine_version cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      *
      * @return int|null
      */
-    public function getTotalInstalled()
+    public function get_total_installed()
     {
         return $this->container['total_installed'];
     }
@@ -354,7 +354,7 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setTotalInstalled($total_installed)
+    public function set_total_installed($total_installed)
     {
         if (is_null($total_installed)) {
             throw new \InvalidArgumentException('non-nullable total_installed cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      *
      * @return int|null
      */
-    public function getTotalActive()
+    public function get_total_active()
     {
         return $this->container['total_active'];
     }
@@ -381,7 +381,7 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setTotalActive($total_active)
+    public function set_total_active($total_active)
     {
         if (is_null($total_active)) {
             throw new \InvalidArgumentException('non-nullable total_active cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      *
      * @return int|null
      */
-    public function getTotalFailed()
+    public function get_total_failed()
     {
         return $this->container['total_failed'];
     }
@@ -408,7 +408,7 @@ class GetApiV1Statistics200ResponseApps implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setTotalFailed($total_failed)
+    public function set_total_failed($total_failed)
     {
         if (is_null($total_failed)) {
             throw new \InvalidArgumentException('non-nullable total_failed cannot be null');

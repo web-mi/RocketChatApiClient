@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat i
      * @var string[]
      */
     protected static $setters = [
-        'open' => 'setOpen',
-        'closed' => 'setClosed'
+        'open' => 'set_open',
+        'closed' => 'set_closed'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat i
      * @var string[]
      */
     protected static $getters = [
-        'open' => 'getOpen',
-        'closed' => 'getClosed'
+        'open' => 'get_open',
+        'closed' => 'get_closed'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat i
      *
      * @return int|null
      */
-    public function getOpen()
+    public function get_open()
     {
         return $this->container['open'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat i
      *
      * @return self
      */
-    public function setOpen($open)
+    public function set_open($open)
     {
         if (is_null($open)) {
             throw new \InvalidArgumentException('non-nullable open cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat i
      *
      * @return int|null
      */
-    public function getClosed()
+    public function get_closed()
     {
         return $this->container['closed'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDashboardsChartsChatsPerAgent200ResponseTestCat i
      *
      * @return self
      */
-    public function setClosed($closed)
+    public function set_closed($closed)
     {
         if (is_null($closed)) {
             throw new \InvalidArgumentException('non-nullable closed cannot be null');

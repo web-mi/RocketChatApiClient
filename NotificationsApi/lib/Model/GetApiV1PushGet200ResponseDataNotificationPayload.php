@@ -203,14 +203,14 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      * @var string[]
      */
     protected static $setters = [
-        'host' => 'setHost',
-        'message_id' => 'setMessageId',
-        'notification_type' => 'setNotificationType',
-        'rid' => 'setRid',
-        'sender' => 'setSender',
-        'sender_name' => 'setSenderName',
-        'type' => 'setType',
-        'name' => 'setName'
+        'host' => 'set_host',
+        'message_id' => 'set_message_id',
+        'notification_type' => 'set_notification_type',
+        'rid' => 'set_rid',
+        'sender' => 'set_sender',
+        'sender_name' => 'set_sender_name',
+        'type' => 'set_type',
+        'name' => 'set_name'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      * @var string[]
      */
     protected static $getters = [
-        'host' => 'getHost',
-        'message_id' => 'getMessageId',
-        'notification_type' => 'getNotificationType',
-        'rid' => 'getRid',
-        'sender' => 'getSender',
-        'sender_name' => 'getSenderName',
-        'type' => 'getType',
-        'name' => 'getName'
+        'host' => 'get_host',
+        'message_id' => 'get_message_id',
+        'notification_type' => 'get_notification_type',
+        'rid' => 'get_rid',
+        'sender' => 'get_sender',
+        'sender_name' => 'get_sender_name',
+        'type' => 'get_type',
+        'name' => 'get_name'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return string|null
      */
-    public function getHost()
+    public function get_host()
     {
         return $this->container['host'];
     }
@@ -355,7 +355,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return self
      */
-    public function setHost($host)
+    public function set_host($host)
     {
         if (is_null($host)) {
             throw new \InvalidArgumentException('non-nullable host cannot be null');
@@ -370,7 +370,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return string|null
      */
-    public function getMessageId()
+    public function get_message_id()
     {
         return $this->container['message_id'];
     }
@@ -382,7 +382,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return self
      */
-    public function setMessageId($message_id)
+    public function set_message_id($message_id)
     {
         if (is_null($message_id)) {
             throw new \InvalidArgumentException('non-nullable message_id cannot be null');
@@ -397,7 +397,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return string|null
      */
-    public function getNotificationType()
+    public function get_notification_type()
     {
         return $this->container['notification_type'];
     }
@@ -409,7 +409,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return self
      */
-    public function setNotificationType($notification_type)
+    public function set_notification_type($notification_type)
     {
         if (is_null($notification_type)) {
             throw new \InvalidArgumentException('non-nullable notification_type cannot be null');
@@ -424,7 +424,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -436,7 +436,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageU|null
      */
-    public function getSender()
+    public function get_sender()
     {
         return $this->container['sender'];
     }
@@ -463,7 +463,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return self
      */
-    public function setSender($sender)
+    public function set_sender($sender)
     {
         if (is_null($sender)) {
             throw new \InvalidArgumentException('non-nullable sender cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return string|null
      */
-    public function getSenderName()
+    public function get_sender_name()
     {
         return $this->container['sender_name'];
     }
@@ -490,7 +490,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return self
      */
-    public function setSenderName($sender_name)
+    public function set_sender_name($sender_name)
     {
         if (is_null($sender_name)) {
             throw new \InvalidArgumentException('non-nullable sender_name cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -517,7 +517,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -532,7 +532,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -544,7 +544,7 @@ class GetApiV1PushGet200ResponseDataNotificationPayload implements ModelInterfac
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');

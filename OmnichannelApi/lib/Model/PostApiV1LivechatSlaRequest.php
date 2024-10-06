@@ -183,9 +183,9 @@ class PostApiV1LivechatSlaRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'due_time_in_minutes' => 'setDueTimeInMinutes'
+        'name' => 'set_name',
+        'description' => 'set_description',
+        'due_time_in_minutes' => 'set_due_time_in_minutes'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1LivechatSlaRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'due_time_in_minutes' => 'getDueTimeInMinutes'
+        'name' => 'get_name',
+        'description' => 'get_description',
+        'due_time_in_minutes' => 'get_due_time_in_minutes'
     ];
 
     /**
@@ -317,7 +317,7 @@ class PostApiV1LivechatSlaRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -329,7 +329,7 @@ class PostApiV1LivechatSlaRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -344,7 +344,7 @@ class PostApiV1LivechatSlaRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -356,7 +356,7 @@ class PostApiV1LivechatSlaRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -371,7 +371,7 @@ class PostApiV1LivechatSlaRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return int
      */
-    public function getDueTimeInMinutes()
+    public function get_due_time_in_minutes()
     {
         return $this->container['due_time_in_minutes'];
     }
@@ -383,7 +383,7 @@ class PostApiV1LivechatSlaRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setDueTimeInMinutes($due_time_in_minutes)
+    public function set_due_time_in_minutes($due_time_in_minutes)
     {
         if (is_null($due_time_in_minutes)) {
             throw new \InvalidArgumentException('non-nullable due_time_in_minutes cannot be null');

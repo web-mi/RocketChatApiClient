@@ -231,21 +231,21 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'name' => 'setName',
-        'fname' => 'setFname',
-        't' => 'setT',
-        'msgs' => 'setMsgs',
-        'users_count' => 'setUsersCount',
-        'u' => 'setU',
-        'custom_fields' => 'setCustomFields',
-        'broadcast' => 'setBroadcast',
-        'encrypted' => 'setEncrypted',
-        'ts' => 'setTs',
-        'ro' => 'setRo',
-        'default' => 'setDefault',
-        'sys_mes' => 'setSysMes',
-        '_updated_at' => 'setUpdatedAt'
+        '_id' => 'set__id',
+        'name' => 'set_name',
+        'fname' => 'set_fname',
+        't' => 'set_t',
+        'msgs' => 'set_msgs',
+        'users_count' => 'set_users_count',
+        'u' => 'set_u',
+        'custom_fields' => 'set_custom_fields',
+        'broadcast' => 'set_broadcast',
+        'encrypted' => 'set_encrypted',
+        'ts' => 'set_ts',
+        'ro' => 'set_ro',
+        'default' => 'set_default',
+        'sys_mes' => 'set_sys_mes',
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -254,21 +254,21 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'name' => 'getName',
-        'fname' => 'getFname',
-        't' => 'getT',
-        'msgs' => 'getMsgs',
-        'users_count' => 'getUsersCount',
-        'u' => 'getU',
-        'custom_fields' => 'getCustomFields',
-        'broadcast' => 'getBroadcast',
-        'encrypted' => 'getEncrypted',
-        'ts' => 'getTs',
-        'ro' => 'getRo',
-        'default' => 'getDefault',
-        'sys_mes' => 'getSysMes',
-        '_updated_at' => 'getUpdatedAt'
+        '_id' => 'get__id',
+        'name' => 'get_name',
+        'fname' => 'get_fname',
+        't' => 'get_t',
+        'msgs' => 'get_msgs',
+        'users_count' => 'get_users_count',
+        'u' => 'get_u',
+        'custom_fields' => 'get_custom_fields',
+        'broadcast' => 'get_broadcast',
+        'encrypted' => 'get_encrypted',
+        'ts' => 'get_ts',
+        'ro' => 'get_ro',
+        'default' => 'get_default',
+        'sys_mes' => 'get_sys_mes',
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -392,7 +392,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -404,7 +404,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -419,7 +419,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -431,7 +431,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -446,7 +446,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getFname()
+    public function get_fname()
     {
         return $this->container['fname'];
     }
@@ -458,7 +458,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setFname($fname)
+    public function set_fname($fname)
     {
         if (is_null($fname)) {
             throw new \InvalidArgumentException('non-nullable fname cannot be null');
@@ -473,7 +473,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -485,7 +485,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -500,7 +500,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return int|null
      */
-    public function getMsgs()
+    public function get_msgs()
     {
         return $this->container['msgs'];
     }
@@ -512,7 +512,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setMsgs($msgs)
+    public function set_msgs($msgs)
     {
         if (is_null($msgs)) {
             throw new \InvalidArgumentException('non-nullable msgs cannot be null');
@@ -527,7 +527,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return int|null
      */
-    public function getUsersCount()
+    public function get_users_count()
     {
         return $this->container['users_count'];
     }
@@ -539,7 +539,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setUsersCount($users_count)
+    public function set_users_count($users_count)
     {
         if (is_null($users_count)) {
             throw new \InvalidArgumentException('non-nullable users_count cannot be null');
@@ -554,7 +554,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -566,7 +566,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -581,7 +581,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return object|null
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -593,7 +593,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');
@@ -608,7 +608,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getBroadcast()
+    public function get_broadcast()
     {
         return $this->container['broadcast'];
     }
@@ -620,7 +620,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setBroadcast($broadcast)
+    public function set_broadcast($broadcast)
     {
         if (is_null($broadcast)) {
             throw new \InvalidArgumentException('non-nullable broadcast cannot be null');
@@ -635,7 +635,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getEncrypted()
+    public function get_encrypted()
     {
         return $this->container['encrypted'];
     }
@@ -647,7 +647,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setEncrypted($encrypted)
+    public function set_encrypted($encrypted)
     {
         if (is_null($encrypted)) {
             throw new \InvalidArgumentException('non-nullable encrypted cannot be null');
@@ -662,7 +662,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -674,7 +674,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -689,7 +689,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getRo()
+    public function get_ro()
     {
         return $this->container['ro'];
     }
@@ -701,7 +701,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setRo($ro)
+    public function set_ro($ro)
     {
         if (is_null($ro)) {
             throw new \InvalidArgumentException('non-nullable ro cannot be null');
@@ -716,7 +716,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getDefault()
+    public function get_default()
     {
         return $this->container['default'];
     }
@@ -728,7 +728,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setDefault($default)
+    public function set_default($default)
     {
         if (is_null($default)) {
             throw new \InvalidArgumentException('non-nullable default cannot be null');
@@ -743,7 +743,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getSysMes()
+    public function get_sys_mes()
     {
         return $this->container['sys_mes'];
     }
@@ -755,7 +755,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setSysMes($sys_mes)
+    public function set_sys_mes($sys_mes)
     {
         if (is_null($sys_mes)) {
             throw new \InvalidArgumentException('non-nullable sys_mes cannot be null');
@@ -770,7 +770,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -782,7 +782,7 @@ class GetApiV1GroupsInfo200ResponseGroup implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');

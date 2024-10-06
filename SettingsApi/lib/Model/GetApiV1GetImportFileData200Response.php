@@ -187,10 +187,10 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'users' => 'setUsers',
-        'channels' => 'setChannels',
-        'message_count' => 'setMessageCount',
-        'success' => 'setSuccess'
+        'users' => 'set_users',
+        'channels' => 'set_channels',
+        'message_count' => 'set_message_count',
+        'success' => 'set_success'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'users' => 'getUsers',
-        'channels' => 'getChannels',
-        'message_count' => 'getMessageCount',
-        'success' => 'getSuccess'
+        'users' => 'get_users',
+        'channels' => 'get_channels',
+        'message_count' => 'get_message_count',
+        'success' => 'get_success'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      *
      * @return object[]|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -327,7 +327,7 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      *
      * @return object[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -354,7 +354,7 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      *
      * @return int|null
      */
-    public function getMessageCount()
+    public function get_message_count()
     {
         return $this->container['message_count'];
     }
@@ -381,7 +381,7 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setMessageCount($message_count)
+    public function set_message_count($message_count)
     {
         if (is_null($message_count)) {
             throw new \InvalidArgumentException('non-nullable message_count cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -408,7 +408,7 @@ class GetApiV1GetImportFileData200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

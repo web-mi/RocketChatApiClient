@@ -175,7 +175,7 @@ class PostApiV1CustomUserStatusDeleteRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'custom_user_status_id' => 'setCustomUserStatusId'
+        'custom_user_status_id' => 'set_custom_user_status_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1CustomUserStatusDeleteRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'custom_user_status_id' => 'getCustomUserStatusId'
+        'custom_user_status_id' => 'get_custom_user_status_id'
     ];
 
     /**
@@ -297,7 +297,7 @@ class PostApiV1CustomUserStatusDeleteRequest implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getCustomUserStatusId()
+    public function get_custom_user_status_id()
     {
         return $this->container['custom_user_status_id'];
     }
@@ -309,7 +309,7 @@ class PostApiV1CustomUserStatusDeleteRequest implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setCustomUserStatusId($custom_user_status_id)
+    public function set_custom_user_status_id($custom_user_status_id)
     {
         if (is_null($custom_user_status_id)) {
             throw new \InvalidArgumentException('non-nullable custom_user_status_id cannot be null');

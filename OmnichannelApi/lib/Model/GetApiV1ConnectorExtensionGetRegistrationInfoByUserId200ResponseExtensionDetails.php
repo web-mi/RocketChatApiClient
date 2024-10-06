@@ -187,10 +187,10 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      * @var string[]
      */
     protected static $setters = [
-        'extension' => 'setExtension',
-        'password' => 'setPassword',
-        'authtype' => 'setAuthtype',
-        'state' => 'setState'
+        'extension' => 'set_extension',
+        'password' => 'set_password',
+        'authtype' => 'set_authtype',
+        'state' => 'set_state'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      * @var string[]
      */
     protected static $getters = [
-        'extension' => 'getExtension',
-        'password' => 'getPassword',
-        'authtype' => 'getAuthtype',
-        'state' => 'getState'
+        'extension' => 'get_extension',
+        'password' => 'get_password',
+        'authtype' => 'get_authtype',
+        'state' => 'get_state'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      *
      * @return string|null
      */
-    public function getExtension()
+    public function get_extension()
     {
         return $this->container['extension'];
     }
@@ -327,7 +327,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      *
      * @return self
      */
-    public function setExtension($extension)
+    public function set_extension($extension)
     {
         if (is_null($extension)) {
             throw new \InvalidArgumentException('non-nullable extension cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      *
      * @return string|null
      */
-    public function getPassword()
+    public function get_password()
     {
         return $this->container['password'];
     }
@@ -354,7 +354,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      *
      * @return self
      */
-    public function setPassword($password)
+    public function set_password($password)
     {
         if (is_null($password)) {
             throw new \InvalidArgumentException('non-nullable password cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      *
      * @return string|null
      */
-    public function getAuthtype()
+    public function get_authtype()
     {
         return $this->container['authtype'];
     }
@@ -381,7 +381,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      *
      * @return self
      */
-    public function setAuthtype($authtype)
+    public function set_authtype($authtype)
     {
         if (is_null($authtype)) {
             throw new \InvalidArgumentException('non-nullable authtype cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      *
      * @return string|null
      */
-    public function getState()
+    public function get_state()
     {
         return $this->container['state'];
     }
@@ -408,7 +408,7 @@ class GetApiV1ConnectorExtensionGetRegistrationInfoByUserId200ResponseExtensionD
      *
      * @return self
      */
-    public function setState($state)
+    public function set_state($state)
     {
         if (is_null($state)) {
             throw new \InvalidArgumentException('non-nullable state cannot be null');

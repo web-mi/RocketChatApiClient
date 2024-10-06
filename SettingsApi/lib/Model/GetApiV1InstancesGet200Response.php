@@ -179,8 +179,8 @@ class GetApiV1InstancesGet200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'instances' => 'setInstances',
-        'success' => 'setSuccess'
+        'instances' => 'set_instances',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1InstancesGet200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'instances' => 'getInstances',
-        'success' => 'getSuccess'
+        'instances' => 'get_instances',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1InstancesGet200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1InstancesGet200ResponseInstancesInner[]|null
      */
-    public function getInstances()
+    public function get_instances()
     {
         return $this->container['instances'];
     }
@@ -313,7 +313,7 @@ class GetApiV1InstancesGet200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setInstances($instances)
+    public function set_instances($instances)
     {
         if (is_null($instances)) {
             throw new \InvalidArgumentException('non-nullable instances cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1InstancesGet200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1InstancesGet200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

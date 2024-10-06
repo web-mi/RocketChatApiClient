@@ -203,14 +203,14 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'shortcut' => 'setShortcut',
-        'text' => 'setText',
-        'scope' => 'setScope',
-        'created_by' => 'setCreatedBy',
-        '_created_at' => 'setCreatedAt',
-        '_updated_at' => 'setUpdatedAt',
-        'tags' => 'setTags'
+        '_id' => 'set__id',
+        'shortcut' => 'set_shortcut',
+        'text' => 'set_text',
+        'scope' => 'set_scope',
+        'created_by' => 'set_created_by',
+        '_created_at' => 'set__created_at',
+        '_updated_at' => 'set__updated_at',
+        'tags' => 'set_tags'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'shortcut' => 'getShortcut',
-        'text' => 'getText',
-        'scope' => 'getScope',
-        'created_by' => 'getCreatedBy',
-        '_created_at' => 'getCreatedAt',
-        '_updated_at' => 'getUpdatedAt',
-        'tags' => 'getTags'
+        '_id' => 'get__id',
+        'shortcut' => 'get_shortcut',
+        'text' => 'get_text',
+        'scope' => 'get_scope',
+        'created_by' => 'get_created_by',
+        '_created_at' => 'get__created_at',
+        '_updated_at' => 'get__updated_at',
+        'tags' => 'get_tags'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -355,7 +355,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -370,7 +370,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getShortcut()
+    public function get_shortcut()
     {
         return $this->container['shortcut'];
     }
@@ -382,7 +382,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return self
      */
-    public function setShortcut($shortcut)
+    public function set_shortcut($shortcut)
     {
         if (is_null($shortcut)) {
             throw new \InvalidArgumentException('non-nullable shortcut cannot be null');
@@ -397,7 +397,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -409,7 +409,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -424,7 +424,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -436,7 +436,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatUsersType200ResponseUser|null
      */
-    public function getCreatedBy()
+    public function get_created_by()
     {
         return $this->container['created_by'];
     }
@@ -463,7 +463,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return self
      */
-    public function setCreatedBy($created_by)
+    public function set_created_by($created_by)
     {
         if (is_null($created_by)) {
             throw new \InvalidArgumentException('non-nullable created_by cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get__created_at()
     {
         return $this->container['_created_at'];
     }
@@ -490,7 +490,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return self
      */
-    public function setCreatedAt($_created_at)
+    public function set__created_at($_created_at)
     {
         if (is_null($_created_at)) {
             throw new \InvalidArgumentException('non-nullable _created_at cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -517,7 +517,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -532,7 +532,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return string[]|null
      */
-    public function getTags()
+    public function get_tags()
     {
         return $this->container['tags'];
     }
@@ -544,7 +544,7 @@ class GetApiV1CannedResponses200ResponseCannedResponsesInner implements ModelInt
      *
      * @return self
      */
-    public function setTags($tags)
+    public function set_tags($tags)
     {
         if (is_null($tags)) {
             throw new \InvalidArgumentException('non-nullable tags cannot be null');

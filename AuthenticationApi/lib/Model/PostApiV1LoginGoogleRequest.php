@@ -191,11 +191,11 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $setters = [
-        'service_name' => 'setServiceName',
-        'access_token' => 'setAccessToken',
-        'id_token' => 'setIdToken',
-        'expires_in' => 'setExpiresIn',
-        'scope' => 'setScope'
+        'service_name' => 'set_service_name',
+        'access_token' => 'set_access_token',
+        'id_token' => 'set_id_token',
+        'expires_in' => 'set_expires_in',
+        'scope' => 'set_scope'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      * @var string[]
      */
     protected static $getters = [
-        'service_name' => 'getServiceName',
-        'access_token' => 'getAccessToken',
-        'id_token' => 'getIdToken',
-        'expires_in' => 'getExpiresIn',
-        'scope' => 'getScope'
+        'service_name' => 'get_service_name',
+        'access_token' => 'get_access_token',
+        'id_token' => 'get_id_token',
+        'expires_in' => 'get_expires_in',
+        'scope' => 'get_scope'
     ];
 
     /**
@@ -334,7 +334,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getServiceName()
+    public function get_service_name()
     {
         return $this->container['service_name'];
     }
@@ -346,7 +346,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setServiceName($service_name)
+    public function set_service_name($service_name)
     {
         if (is_null($service_name)) {
             throw new \InvalidArgumentException('non-nullable service_name cannot be null');
@@ -361,7 +361,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getAccessToken()
+    public function get_access_token()
     {
         return $this->container['access_token'];
     }
@@ -373,7 +373,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setAccessToken($access_token)
+    public function set_access_token($access_token)
     {
         if (is_null($access_token)) {
             throw new \InvalidArgumentException('non-nullable access_token cannot be null');
@@ -388,7 +388,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string
      */
-    public function getIdToken()
+    public function get_id_token()
     {
         return $this->container['id_token'];
     }
@@ -400,7 +400,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setIdToken($id_token)
+    public function set_id_token($id_token)
     {
         if (is_null($id_token)) {
             throw new \InvalidArgumentException('non-nullable id_token cannot be null');
@@ -415,7 +415,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return int
      */
-    public function getExpiresIn()
+    public function get_expires_in()
     {
         return $this->container['expires_in'];
     }
@@ -427,7 +427,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setExpiresIn($expires_in)
+    public function set_expires_in($expires_in)
     {
         if (is_null($expires_in)) {
             throw new \InvalidArgumentException('non-nullable expires_in cannot be null');
@@ -442,7 +442,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return string|null
      */
-    public function getScope()
+    public function get_scope()
     {
         return $this->container['scope'];
     }
@@ -454,7 +454,7 @@ class PostApiV1LoginGoogleRequest implements ModelInterface, ArrayAccess, \JsonS
      *
      * @return self
      */
-    public function setScope($scope)
+    public function set_scope($scope)
     {
         if (is_null($scope)) {
             throw new \InvalidArgumentException('non-nullable scope cannot be null');

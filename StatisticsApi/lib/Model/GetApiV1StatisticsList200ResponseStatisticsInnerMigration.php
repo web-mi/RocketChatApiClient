@@ -183,9 +183,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerMigration implements Model
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'locked' => 'setLocked',
-        'version' => 'setVersion'
+        '_id' => 'set__id',
+        'locked' => 'set_locked',
+        'version' => 'set_version'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerMigration implements Model
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'locked' => 'getLocked',
-        'version' => 'getVersion'
+        '_id' => 'get__id',
+        'locked' => 'get_locked',
+        'version' => 'get_version'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerMigration implements Model
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -320,7 +320,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerMigration implements Model
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerMigration implements Model
      *
      * @return bool|null
      */
-    public function getLocked()
+    public function get_locked()
     {
         return $this->container['locked'];
     }
@@ -347,7 +347,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerMigration implements Model
      *
      * @return self
      */
-    public function setLocked($locked)
+    public function set_locked($locked)
     {
         if (is_null($locked)) {
             throw new \InvalidArgumentException('non-nullable locked cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerMigration implements Model
      *
      * @return int|null
      */
-    public function getVersion()
+    public function get_version()
     {
         return $this->container['version'];
     }
@@ -374,7 +374,7 @@ class GetApiV1StatisticsList200ResponseStatisticsInnerMigration implements Model
      *
      * @return self
      */
-    public function setVersion($version)
+    public function set_version($version)
     {
         if (is_null($version)) {
             throw new \InvalidArgumentException('non-nullable version cannot be null');

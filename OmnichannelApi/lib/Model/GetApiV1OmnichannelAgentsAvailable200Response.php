@@ -179,8 +179,8 @@ class GetApiV1OmnichannelAgentsAvailable200Response implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'agent' => 'setAgent',
-        'success' => 'setSuccess'
+        'agent' => 'set_agent',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1OmnichannelAgentsAvailable200Response implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'agent' => 'getAgent',
-        'success' => 'getSuccess'
+        'agent' => 'get_agent',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1OmnichannelAgentsAvailable200Response implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelAgentsAvailable200ResponseAgent|null
      */
-    public function getAgent()
+    public function get_agent()
     {
         return $this->container['agent'];
     }
@@ -313,7 +313,7 @@ class GetApiV1OmnichannelAgentsAvailable200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setAgent($agent)
+    public function set_agent($agent)
     {
         if (is_null($agent)) {
             throw new \InvalidArgumentException('non-nullable agent cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1OmnichannelAgentsAvailable200Response implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1OmnichannelAgentsAvailable200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

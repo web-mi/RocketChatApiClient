@@ -179,8 +179,8 @@ class PutApiV1LivechatRoomVisitor200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'room' => 'setRoom',
-        'success' => 'setSuccess'
+        'room' => 'set_room',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PutApiV1LivechatRoomVisitor200Response implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'room' => 'getRoom',
-        'success' => 'getSuccess'
+        'room' => 'get_room',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PutApiV1LivechatRoomVisitor200Response implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitor200ResponseRoom|null
      */
-    public function getRoom()
+    public function get_room()
     {
         return $this->container['room'];
     }
@@ -313,7 +313,7 @@ class PutApiV1LivechatRoomVisitor200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setRoom($room)
+    public function set_room($room)
     {
         if (is_null($room)) {
             throw new \InvalidArgumentException('non-nullable room cannot be null');
@@ -328,7 +328,7 @@ class PutApiV1LivechatRoomVisitor200Response implements ModelInterface, ArrayAcc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PutApiV1LivechatRoomVisitor200Response implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

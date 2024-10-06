@@ -251,26 +251,26 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'enabled' => 'setEnabled',
-        'name' => 'setName',
-        'description' => 'setDescription',
-        'show_on_registration' => 'setShowOnRegistration',
-        'show_on_offline_form' => 'setShowOnOfflineForm',
-        'request_tag_before_closing_chat' => 'setRequestTagBeforeClosingChat',
-        'email' => 'setEmail',
-        'chat_closing_tags' => 'setChatClosingTags',
-        'offline_message_channel_name' => 'setOfflineMessageChannelName',
-        'abandoned_rooms_close_custom_message' => 'setAbandonedRoomsCloseCustomMessage',
-        'waiting_queue_message' => 'setWaitingQueueMessage',
-        'departments_allowed_to_forward' => 'setDepartmentsAllowedToForward',
-        '_updated_at' => 'setUpdatedAt',
-        'num_agents' => 'setNumAgents',
-        'ancestors' => 'setAncestors',
-        'max_number_simultaneous_chat' => 'setMaxNumberSimultaneousChat',
-        'type' => 'setType',
-        'visitor_inactivity_timeout_in_seconds' => 'setVisitorInactivityTimeoutInSeconds',
-        'parent_id' => 'setParentId'
+        '_id' => 'set__id',
+        'enabled' => 'set_enabled',
+        'name' => 'set_name',
+        'description' => 'set_description',
+        'show_on_registration' => 'set_show_on_registration',
+        'show_on_offline_form' => 'set_show_on_offline_form',
+        'request_tag_before_closing_chat' => 'set_request_tag_before_closing_chat',
+        'email' => 'set_email',
+        'chat_closing_tags' => 'set_chat_closing_tags',
+        'offline_message_channel_name' => 'set_offline_message_channel_name',
+        'abandoned_rooms_close_custom_message' => 'set_abandoned_rooms_close_custom_message',
+        'waiting_queue_message' => 'set_waiting_queue_message',
+        'departments_allowed_to_forward' => 'set_departments_allowed_to_forward',
+        '_updated_at' => 'set__updated_at',
+        'num_agents' => 'set_num_agents',
+        'ancestors' => 'set_ancestors',
+        'max_number_simultaneous_chat' => 'set_max_number_simultaneous_chat',
+        'type' => 'set_type',
+        'visitor_inactivity_timeout_in_seconds' => 'set_visitor_inactivity_timeout_in_seconds',
+        'parent_id' => 'set_parent_id'
     ];
 
     /**
@@ -279,26 +279,26 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'enabled' => 'getEnabled',
-        'name' => 'getName',
-        'description' => 'getDescription',
-        'show_on_registration' => 'getShowOnRegistration',
-        'show_on_offline_form' => 'getShowOnOfflineForm',
-        'request_tag_before_closing_chat' => 'getRequestTagBeforeClosingChat',
-        'email' => 'getEmail',
-        'chat_closing_tags' => 'getChatClosingTags',
-        'offline_message_channel_name' => 'getOfflineMessageChannelName',
-        'abandoned_rooms_close_custom_message' => 'getAbandonedRoomsCloseCustomMessage',
-        'waiting_queue_message' => 'getWaitingQueueMessage',
-        'departments_allowed_to_forward' => 'getDepartmentsAllowedToForward',
-        '_updated_at' => 'getUpdatedAt',
-        'num_agents' => 'getNumAgents',
-        'ancestors' => 'getAncestors',
-        'max_number_simultaneous_chat' => 'getMaxNumberSimultaneousChat',
-        'type' => 'getType',
-        'visitor_inactivity_timeout_in_seconds' => 'getVisitorInactivityTimeoutInSeconds',
-        'parent_id' => 'getParentId'
+        '_id' => 'get__id',
+        'enabled' => 'get_enabled',
+        'name' => 'get_name',
+        'description' => 'get_description',
+        'show_on_registration' => 'get_show_on_registration',
+        'show_on_offline_form' => 'get_show_on_offline_form',
+        'request_tag_before_closing_chat' => 'get_request_tag_before_closing_chat',
+        'email' => 'get_email',
+        'chat_closing_tags' => 'get_chat_closing_tags',
+        'offline_message_channel_name' => 'get_offline_message_channel_name',
+        'abandoned_rooms_close_custom_message' => 'get_abandoned_rooms_close_custom_message',
+        'waiting_queue_message' => 'get_waiting_queue_message',
+        'departments_allowed_to_forward' => 'get_departments_allowed_to_forward',
+        '_updated_at' => 'get__updated_at',
+        'num_agents' => 'get_num_agents',
+        'ancestors' => 'get_ancestors',
+        'max_number_simultaneous_chat' => 'get_max_number_simultaneous_chat',
+        'type' => 'get_type',
+        'visitor_inactivity_timeout_in_seconds' => 'get_visitor_inactivity_timeout_in_seconds',
+        'parent_id' => 'get_parent_id'
     ];
 
     /**
@@ -427,7 +427,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -439,7 +439,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -454,7 +454,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -466,7 +466,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -481,7 +481,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -493,7 +493,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -508,7 +508,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -520,7 +520,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -535,7 +535,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return bool|null
      */
-    public function getShowOnRegistration()
+    public function get_show_on_registration()
     {
         return $this->container['show_on_registration'];
     }
@@ -547,7 +547,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setShowOnRegistration($show_on_registration)
+    public function set_show_on_registration($show_on_registration)
     {
         if (is_null($show_on_registration)) {
             throw new \InvalidArgumentException('non-nullable show_on_registration cannot be null');
@@ -562,7 +562,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return bool|null
      */
-    public function getShowOnOfflineForm()
+    public function get_show_on_offline_form()
     {
         return $this->container['show_on_offline_form'];
     }
@@ -574,7 +574,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setShowOnOfflineForm($show_on_offline_form)
+    public function set_show_on_offline_form($show_on_offline_form)
     {
         if (is_null($show_on_offline_form)) {
             throw new \InvalidArgumentException('non-nullable show_on_offline_form cannot be null');
@@ -589,7 +589,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return bool|null
      */
-    public function getRequestTagBeforeClosingChat()
+    public function get_request_tag_before_closing_chat()
     {
         return $this->container['request_tag_before_closing_chat'];
     }
@@ -601,7 +601,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setRequestTagBeforeClosingChat($request_tag_before_closing_chat)
+    public function set_request_tag_before_closing_chat($request_tag_before_closing_chat)
     {
         if (is_null($request_tag_before_closing_chat)) {
             throw new \InvalidArgumentException('non-nullable request_tag_before_closing_chat cannot be null');
@@ -616,7 +616,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -628,7 +628,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -643,7 +643,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return object[]|null
      */
-    public function getChatClosingTags()
+    public function get_chat_closing_tags()
     {
         return $this->container['chat_closing_tags'];
     }
@@ -655,7 +655,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setChatClosingTags($chat_closing_tags)
+    public function set_chat_closing_tags($chat_closing_tags)
     {
         if (is_null($chat_closing_tags)) {
             throw new \InvalidArgumentException('non-nullable chat_closing_tags cannot be null');
@@ -670,7 +670,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getOfflineMessageChannelName()
+    public function get_offline_message_channel_name()
     {
         return $this->container['offline_message_channel_name'];
     }
@@ -682,7 +682,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setOfflineMessageChannelName($offline_message_channel_name)
+    public function set_offline_message_channel_name($offline_message_channel_name)
     {
         if (is_null($offline_message_channel_name)) {
             throw new \InvalidArgumentException('non-nullable offline_message_channel_name cannot be null');
@@ -697,7 +697,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getAbandonedRoomsCloseCustomMessage()
+    public function get_abandoned_rooms_close_custom_message()
     {
         return $this->container['abandoned_rooms_close_custom_message'];
     }
@@ -709,7 +709,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setAbandonedRoomsCloseCustomMessage($abandoned_rooms_close_custom_message)
+    public function set_abandoned_rooms_close_custom_message($abandoned_rooms_close_custom_message)
     {
         if (is_null($abandoned_rooms_close_custom_message)) {
             throw new \InvalidArgumentException('non-nullable abandoned_rooms_close_custom_message cannot be null');
@@ -724,7 +724,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getWaitingQueueMessage()
+    public function get_waiting_queue_message()
     {
         return $this->container['waiting_queue_message'];
     }
@@ -736,7 +736,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setWaitingQueueMessage($waiting_queue_message)
+    public function set_waiting_queue_message($waiting_queue_message)
     {
         if (is_null($waiting_queue_message)) {
             throw new \InvalidArgumentException('non-nullable waiting_queue_message cannot be null');
@@ -751,7 +751,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getDepartmentsAllowedToForward()
+    public function get_departments_allowed_to_forward()
     {
         return $this->container['departments_allowed_to_forward'];
     }
@@ -763,7 +763,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setDepartmentsAllowedToForward($departments_allowed_to_forward)
+    public function set_departments_allowed_to_forward($departments_allowed_to_forward)
     {
         if (is_null($departments_allowed_to_forward)) {
             throw new \InvalidArgumentException('non-nullable departments_allowed_to_forward cannot be null');
@@ -778,7 +778,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -790,7 +790,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -805,7 +805,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return int|null
      */
-    public function getNumAgents()
+    public function get_num_agents()
     {
         return $this->container['num_agents'];
     }
@@ -817,7 +817,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setNumAgents($num_agents)
+    public function set_num_agents($num_agents)
     {
         if (is_null($num_agents)) {
             throw new \InvalidArgumentException('non-nullable num_agents cannot be null');
@@ -832,7 +832,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string[]|null
      */
-    public function getAncestors()
+    public function get_ancestors()
     {
         return $this->container['ancestors'];
     }
@@ -844,7 +844,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setAncestors($ancestors)
+    public function set_ancestors($ancestors)
     {
         if (is_null($ancestors)) {
             throw new \InvalidArgumentException('non-nullable ancestors cannot be null');
@@ -859,7 +859,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getMaxNumberSimultaneousChat()
+    public function get_max_number_simultaneous_chat()
     {
         return $this->container['max_number_simultaneous_chat'];
     }
@@ -871,7 +871,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setMaxNumberSimultaneousChat($max_number_simultaneous_chat)
+    public function set_max_number_simultaneous_chat($max_number_simultaneous_chat)
     {
         if (is_null($max_number_simultaneous_chat)) {
             throw new \InvalidArgumentException('non-nullable max_number_simultaneous_chat cannot be null');
@@ -886,7 +886,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -898,7 +898,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -913,7 +913,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getVisitorInactivityTimeoutInSeconds()
+    public function get_visitor_inactivity_timeout_in_seconds()
     {
         return $this->container['visitor_inactivity_timeout_in_seconds'];
     }
@@ -925,7 +925,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setVisitorInactivityTimeoutInSeconds($visitor_inactivity_timeout_in_seconds)
+    public function set_visitor_inactivity_timeout_in_seconds($visitor_inactivity_timeout_in_seconds)
     {
         if (is_null($visitor_inactivity_timeout_in_seconds)) {
             throw new \InvalidArgumentException('non-nullable visitor_inactivity_timeout_in_seconds cannot be null');
@@ -940,7 +940,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return string|null
      */
-    public function getParentId()
+    public function get_parent_id()
     {
         return $this->container['parent_id'];
     }
@@ -952,7 +952,7 @@ class GetApiV1LivechatDepartmentListByIds200ResponseDepartmentsInner implements 
      *
      * @return self
      */
-    public function setParentId($parent_id)
+    public function set_parent_id($parent_id)
     {
         if (is_null($parent_id)) {
             throw new \InvalidArgumentException('non-nullable parent_id cannot be null');

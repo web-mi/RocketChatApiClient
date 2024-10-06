@@ -191,11 +191,11 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        'provider' => 'setProvider',
-        'dms' => 'setDms',
-        'channels' => 'setChannels',
-        'groups' => 'setGroups',
-        'teams' => 'setTeams'
+        'provider' => 'set_provider',
+        'dms' => 'set_dms',
+        'channels' => 'set_channels',
+        'groups' => 'set_groups',
+        'teams' => 'set_teams'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        'provider' => 'getProvider',
-        'dms' => 'getDms',
-        'channels' => 'getChannels',
-        'groups' => 'getGroups',
-        'teams' => 'getTeams'
+        'provider' => 'get_provider',
+        'dms' => 'get_dms',
+        'channels' => 'get_channels',
+        'groups' => 'get_groups',
+        'teams' => 'get_teams'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getProvider()
+    public function get_provider()
     {
         return $this->container['provider'];
     }
@@ -334,7 +334,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return self
      */
-    public function setProvider($provider)
+    public function set_provider($provider)
     {
         if (is_null($provider)) {
             throw new \InvalidArgumentException('non-nullable provider cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getDms()
+    public function get_dms()
     {
         return $this->container['dms'];
     }
@@ -361,7 +361,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return self
      */
-    public function setDms($dms)
+    public function set_dms($dms)
     {
         if (is_null($dms)) {
             throw new \InvalidArgumentException('non-nullable dms cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -388,7 +388,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getGroups()
+    public function get_groups()
     {
         return $this->container['groups'];
     }
@@ -415,7 +415,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return self
      */
-    public function setGroups($groups)
+    public function set_groups($groups)
     {
         if (is_null($groups)) {
             throw new \InvalidArgumentException('non-nullable groups cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return bool|null
      */
-    public function getTeams()
+    public function get_teams()
     {
         return $this->container['teams'];
     }
@@ -442,7 +442,7 @@ class GetApiV1Statistics200ResponseVideoConfSettings implements ModelInterface, 
      *
      * @return self
      */
-    public function setTeams($teams)
+    public function set_teams($teams)
     {
         if (is_null($teams)) {
             throw new \InvalidArgumentException('non-nullable teams cannot be null');

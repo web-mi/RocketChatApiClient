@@ -175,7 +175,7 @@ class GetApiV1LivechatRoom200ResponseRoomCustomFields implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'salesforce_crm_contact_id' => 'setSalesforceCrmContactId'
+        'salesforce_crm_contact_id' => 'set_salesforce_crm_contact_id'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1LivechatRoom200ResponseRoomCustomFields implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'salesforce_crm_contact_id' => 'getSalesforceCrmContactId'
+        'salesforce_crm_contact_id' => 'get_salesforce_crm_contact_id'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1LivechatRoom200ResponseRoomCustomFields implements ModelInterface,
      *
      * @return string|null
      */
-    public function getSalesforceCrmContactId()
+    public function get_salesforce_crm_contact_id()
     {
         return $this->container['salesforce_crm_contact_id'];
     }
@@ -306,7 +306,7 @@ class GetApiV1LivechatRoom200ResponseRoomCustomFields implements ModelInterface,
      *
      * @return self
      */
-    public function setSalesforceCrmContactId($salesforce_crm_contact_id)
+    public function set_salesforce_crm_contact_id($salesforce_crm_contact_id)
     {
         if (is_null($salesforce_crm_contact_id)) {
             throw new \InvalidArgumentException('non-nullable salesforce_crm_contact_id cannot be null');

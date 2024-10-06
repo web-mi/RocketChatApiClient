@@ -179,8 +179,8 @@ class GetApiV1ChatGetMessageReadReceipts200Response implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'receipts' => 'setReceipts',
-        'success' => 'setSuccess'
+        'receipts' => 'set_receipts',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ChatGetMessageReadReceipts200Response implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'receipts' => 'getReceipts',
-        'success' => 'getSuccess'
+        'receipts' => 'get_receipts',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ChatGetMessageReadReceipts200Response implements ModelInterface, A
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMessageReadReceipts200ResponseReceiptsInner[]|null
      */
-    public function getReceipts()
+    public function get_receipts()
     {
         return $this->container['receipts'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ChatGetMessageReadReceipts200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setReceipts($receipts)
+    public function set_receipts($receipts)
     {
         if (is_null($receipts)) {
             throw new \InvalidArgumentException('non-nullable receipts cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ChatGetMessageReadReceipts200Response implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ChatGetMessageReadReceipts200Response implements ModelInterface, A
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

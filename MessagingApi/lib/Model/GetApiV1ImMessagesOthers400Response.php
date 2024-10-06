@@ -187,10 +187,10 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'success' => 'setSuccess',
-        'error' => 'setError',
-        'error_type' => 'setErrorType',
-        'details' => 'setDetails'
+        'success' => 'set_success',
+        'error' => 'set_error',
+        'error_type' => 'set_error_type',
+        'details' => 'set_details'
     ];
 
     /**
@@ -199,10 +199,10 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'success' => 'getSuccess',
-        'error' => 'getError',
-        'error_type' => 'getErrorType',
-        'details' => 'getDetails'
+        'success' => 'get_success',
+        'error' => 'get_error',
+        'error_type' => 'get_error_type',
+        'details' => 'get_details'
     ];
 
     /**
@@ -315,7 +315,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -327,7 +327,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');
@@ -342,7 +342,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getError()
+    public function get_error()
     {
         return $this->container['error'];
     }
@@ -354,7 +354,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setError($error)
+    public function set_error($error)
     {
         if (is_null($error)) {
             throw new \InvalidArgumentException('non-nullable error cannot be null');
@@ -369,7 +369,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getErrorType()
+    public function get_error_type()
     {
         return $this->container['error_type'];
     }
@@ -381,7 +381,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setErrorType($error_type)
+    public function set_error_type($error_type)
     {
         if (is_null($error_type)) {
             throw new \InvalidArgumentException('non-nullable error_type cannot be null');
@@ -396,7 +396,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMessagesOthers400ResponseDetails|null
      */
-    public function getDetails()
+    public function get_details()
     {
         return $this->container['details'];
     }
@@ -408,7 +408,7 @@ class GetApiV1ImMessagesOthers400Response implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setDetails($details)
+    public function set_details($details)
     {
         if (is_null($details)) {
             throw new \InvalidArgumentException('non-nullable details cannot be null');

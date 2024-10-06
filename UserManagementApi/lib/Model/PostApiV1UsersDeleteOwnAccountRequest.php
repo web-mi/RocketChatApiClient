@@ -179,8 +179,8 @@ class PostApiV1UsersDeleteOwnAccountRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'password' => 'setPassword',
-        'confirm_relinquish' => 'setConfirmRelinquish'
+        'password' => 'set_password',
+        'confirm_relinquish' => 'set_confirm_relinquish'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersDeleteOwnAccountRequest implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'password' => 'getPassword',
-        'confirm_relinquish' => 'getConfirmRelinquish'
+        'password' => 'get_password',
+        'confirm_relinquish' => 'get_confirm_relinquish'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1UsersDeleteOwnAccountRequest implements ModelInterface, ArrayAcce
      *
      * @return string
      */
-    public function getPassword()
+    public function get_password()
     {
         return $this->container['password'];
     }
@@ -316,7 +316,7 @@ class PostApiV1UsersDeleteOwnAccountRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setPassword($password)
+    public function set_password($password)
     {
         if (is_null($password)) {
             throw new \InvalidArgumentException('non-nullable password cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1UsersDeleteOwnAccountRequest implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getConfirmRelinquish()
+    public function get_confirm_relinquish()
     {
         return $this->container['confirm_relinquish'];
     }
@@ -343,7 +343,7 @@ class PostApiV1UsersDeleteOwnAccountRequest implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setConfirmRelinquish($confirm_relinquish)
+    public function set_confirm_relinquish($confirm_relinquish)
     {
         if (is_null($confirm_relinquish)) {
             throw new \InvalidArgumentException('non-nullable confirm_relinquish cannot be null');

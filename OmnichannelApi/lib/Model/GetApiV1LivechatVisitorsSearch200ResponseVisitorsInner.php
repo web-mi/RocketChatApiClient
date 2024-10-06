@@ -191,11 +191,11 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'name' => 'setName',
-        'visitor_emails' => 'setVisitorEmails',
-        'last_chat' => 'setLastChat'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'name' => 'set_name',
+        'visitor_emails' => 'set_visitor_emails',
+        'last_chat' => 'set_last_chat'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'name' => 'getName',
-        'visitor_emails' => 'getVisitorEmails',
-        'last_chat' => 'getLastChat'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'name' => 'get_name',
+        'visitor_emails' => 'get_visitor_emails',
+        'last_chat' => 'get_last_chat'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -334,7 +334,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -361,7 +361,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -388,7 +388,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner[]|null
      */
-    public function getVisitorEmails()
+    public function get_visitor_emails()
     {
         return $this->container['visitor_emails'];
     }
@@ -415,7 +415,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return self
      */
-    public function setVisitorEmails($visitor_emails)
+    public function set_visitor_emails($visitor_emails)
     {
         if (is_null($visitor_emails)) {
             throw new \InvalidArgumentException('non-nullable visitor_emails cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1OmnichannelContactSearch200ResponseContactLastChat|null
      */
-    public function getLastChat()
+    public function get_last_chat()
     {
         return $this->container['last_chat'];
     }
@@ -442,7 +442,7 @@ class GetApiV1LivechatVisitorsSearch200ResponseVisitorsInner implements ModelInt
      *
      * @return self
      */
-    public function setLastChat($last_chat)
+    public function set_last_chat($last_chat)
     {
         if (is_null($last_chat)) {
             throw new \InvalidArgumentException('non-nullable last_chat cannot be null');

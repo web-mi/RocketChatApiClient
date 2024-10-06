@@ -195,12 +195,12 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'command' => 'setCommand',
-        'room_id' => 'setRoomId',
-        'tmid' => 'setTmid',
-        'params' => 'setParams',
-        'trigger_id' => 'setTriggerId',
-        'preview_item' => 'setPreviewItem'
+        'command' => 'set_command',
+        'room_id' => 'set_room_id',
+        'tmid' => 'set_tmid',
+        'params' => 'set_params',
+        'trigger_id' => 'set_trigger_id',
+        'preview_item' => 'set_preview_item'
     ];
 
     /**
@@ -209,12 +209,12 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'command' => 'getCommand',
-        'room_id' => 'getRoomId',
-        'tmid' => 'getTmid',
-        'params' => 'getParams',
-        'trigger_id' => 'getTriggerId',
-        'preview_item' => 'getPreviewItem'
+        'command' => 'get_command',
+        'room_id' => 'get_room_id',
+        'tmid' => 'get_tmid',
+        'params' => 'get_params',
+        'trigger_id' => 'get_trigger_id',
+        'preview_item' => 'get_preview_item'
     ];
 
     /**
@@ -341,7 +341,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getCommand()
+    public function get_command()
     {
         return $this->container['command'];
     }
@@ -353,7 +353,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setCommand($command)
+    public function set_command($command)
     {
         if (is_null($command)) {
             throw new \InvalidArgumentException('non-nullable command cannot be null');
@@ -368,7 +368,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -380,7 +380,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -395,7 +395,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getTmid()
+    public function get_tmid()
     {
         return $this->container['tmid'];
     }
@@ -407,7 +407,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setTmid($tmid)
+    public function set_tmid($tmid)
     {
         if (is_null($tmid)) {
             throw new \InvalidArgumentException('non-nullable tmid cannot be null');
@@ -422,7 +422,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getParams()
+    public function get_params()
     {
         return $this->container['params'];
     }
@@ -434,7 +434,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setParams($params)
+    public function set_params($params)
     {
         if (is_null($params)) {
             throw new \InvalidArgumentException('non-nullable params cannot be null');
@@ -449,7 +449,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getTriggerId()
+    public function get_trigger_id()
     {
         return $this->container['trigger_id'];
     }
@@ -461,7 +461,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setTriggerId($trigger_id)
+    public function set_trigger_id($trigger_id)
     {
         if (is_null($trigger_id)) {
             throw new \InvalidArgumentException('non-nullable trigger_id cannot be null');
@@ -476,7 +476,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\PostApiV1CommandsPreviewRequestPreviewItem
      */
-    public function getPreviewItem()
+    public function get_preview_item()
     {
         return $this->container['preview_item'];
     }
@@ -488,7 +488,7 @@ class PostApiV1CommandsPreviewRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setPreviewItem($preview_item)
+    public function set_preview_item($preview_item)
     {
         if (is_null($preview_item)) {
             throw new \InvalidArgumentException('non-nullable preview_item cannot be null');

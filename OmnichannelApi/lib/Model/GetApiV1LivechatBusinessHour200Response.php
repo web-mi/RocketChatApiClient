@@ -179,8 +179,8 @@ class GetApiV1LivechatBusinessHour200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'business_hour' => 'setBusinessHour',
-        'success' => 'setSuccess'
+        'business_hour' => 'set_business_hour',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatBusinessHour200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'business_hour' => 'getBusinessHour',
-        'success' => 'getSuccess'
+        'business_hour' => 'get_business_hour',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatBusinessHour200Response implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatBusinessHour200ResponseBusinessHour|null
      */
-    public function getBusinessHour()
+    public function get_business_hour()
     {
         return $this->container['business_hour'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatBusinessHour200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setBusinessHour($business_hour)
+    public function set_business_hour($business_hour)
     {
         if (is_null($business_hour)) {
             throw new \InvalidArgumentException('non-nullable business_hour cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatBusinessHour200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatBusinessHour200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

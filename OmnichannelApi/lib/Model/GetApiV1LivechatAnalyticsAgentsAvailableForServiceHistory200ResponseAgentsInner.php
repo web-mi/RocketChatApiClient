@@ -183,9 +183,9 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      * @var string[]
      */
     protected static $setters = [
-        'service_history' => 'setServiceHistory',
-        'available_time_in_seconds' => 'setAvailableTimeInSeconds',
-        'username' => 'setUsername'
+        'service_history' => 'set_service_history',
+        'available_time_in_seconds' => 'set_available_time_in_seconds',
+        'username' => 'set_username'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      * @var string[]
      */
     protected static $getters = [
-        'service_history' => 'getServiceHistory',
-        'available_time_in_seconds' => 'getAvailableTimeInSeconds',
-        'username' => 'getUsername'
+        'service_history' => 'get_service_history',
+        'available_time_in_seconds' => 'get_available_time_in_seconds',
+        'username' => 'get_username'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgentsInnerServiceHistoryInner[]|null
      */
-    public function getServiceHistory()
+    public function get_service_history()
     {
         return $this->container['service_history'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return self
      */
-    public function setServiceHistory($service_history)
+    public function set_service_history($service_history)
     {
         if (is_null($service_history)) {
             throw new \InvalidArgumentException('non-nullable service_history cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return int|null
      */
-    public function getAvailableTimeInSeconds()
+    public function get_available_time_in_seconds()
     {
         return $this->container['available_time_in_seconds'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return self
      */
-    public function setAvailableTimeInSeconds($available_time_in_seconds)
+    public function set_available_time_in_seconds($available_time_in_seconds)
     {
         if (is_null($available_time_in_seconds)) {
             throw new \InvalidArgumentException('non-nullable available_time_in_seconds cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatAnalyticsAgentsAvailableForServiceHistory200ResponseAgents
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');

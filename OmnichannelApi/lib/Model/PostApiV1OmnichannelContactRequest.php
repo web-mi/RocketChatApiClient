@@ -191,11 +191,11 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'name' => 'setName',
-        'email' => 'setEmail',
-        'phone' => 'setPhone',
-        'contact_manager' => 'setContactManager'
+        'token' => 'set_token',
+        'name' => 'set_name',
+        'email' => 'set_email',
+        'phone' => 'set_phone',
+        'contact_manager' => 'set_contact_manager'
     ];
 
     /**
@@ -204,11 +204,11 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'name' => 'getName',
-        'email' => 'getEmail',
-        'phone' => 'getPhone',
-        'contact_manager' => 'getContactManager'
+        'token' => 'get_token',
+        'name' => 'get_name',
+        'email' => 'get_email',
+        'phone' => 'get_phone',
+        'contact_manager' => 'get_contact_manager'
     ];
 
     /**
@@ -328,7 +328,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -340,7 +340,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -355,7 +355,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -367,7 +367,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -382,7 +382,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -394,7 +394,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -409,7 +409,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getPhone()
+    public function get_phone()
     {
         return $this->container['phone'];
     }
@@ -421,7 +421,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setPhone($phone)
+    public function set_phone($phone)
     {
         if (is_null($phone)) {
             throw new \InvalidArgumentException('non-nullable phone cannot be null');
@@ -436,7 +436,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1OmnichannelContactRequestContactManager|null
      */
-    public function getContactManager()
+    public function get_contact_manager()
     {
         return $this->container['contact_manager'];
     }
@@ -448,7 +448,7 @@ class PostApiV1OmnichannelContactRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setContactManager($contact_manager)
+    public function set_contact_manager($contact_manager)
     {
         if (is_null($contact_manager)) {
             throw new \InvalidArgumentException('non-nullable contact_manager cannot be null');

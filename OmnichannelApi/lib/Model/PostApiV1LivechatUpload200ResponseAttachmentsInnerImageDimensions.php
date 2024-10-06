@@ -179,8 +179,8 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions implemen
      * @var string[]
      */
     protected static $setters = [
-        'width' => 'setWidth',
-        'height' => 'setHeight'
+        'width' => 'set_width',
+        'height' => 'set_height'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions implemen
      * @var string[]
      */
     protected static $getters = [
-        'width' => 'getWidth',
-        'height' => 'getHeight'
+        'width' => 'get_width',
+        'height' => 'get_height'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions implemen
      *
      * @return int|null
      */
-    public function getWidth()
+    public function get_width()
     {
         return $this->container['width'];
     }
@@ -313,7 +313,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions implemen
      *
      * @return self
      */
-    public function setWidth($width)
+    public function set_width($width)
     {
         if (is_null($width)) {
             throw new \InvalidArgumentException('non-nullable width cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions implemen
      *
      * @return int|null
      */
-    public function getHeight()
+    public function get_height()
     {
         return $this->container['height'];
     }
@@ -340,7 +340,7 @@ class PostApiV1LivechatUpload200ResponseAttachmentsInnerImageDimensions implemen
      *
      * @return self
      */
-    public function setHeight($height)
+    public function set_height($height)
     {
         if (is_null($height)) {
             throw new \InvalidArgumentException('non-nullable height cannot be null');

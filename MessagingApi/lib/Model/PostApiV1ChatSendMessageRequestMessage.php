@@ -211,16 +211,16 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'msg' => 'setMsg',
-        'alias' => 'setAlias',
-        'emoji' => 'setEmoji',
-        'avatar' => 'setAvatar',
-        'attachments' => 'setAttachments',
-        'tmid' => 'setTmid',
-        'tshow' => 'setTshow',
-        'blocks' => 'setBlocks',
-        'custom_fields' => 'setCustomFields'
+        'rid' => 'set_rid',
+        'msg' => 'set_msg',
+        'alias' => 'set_alias',
+        'emoji' => 'set_emoji',
+        'avatar' => 'set_avatar',
+        'attachments' => 'set_attachments',
+        'tmid' => 'set_tmid',
+        'tshow' => 'set_tshow',
+        'blocks' => 'set_blocks',
+        'custom_fields' => 'set_custom_fields'
     ];
 
     /**
@@ -229,16 +229,16 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'msg' => 'getMsg',
-        'alias' => 'getAlias',
-        'emoji' => 'getEmoji',
-        'avatar' => 'getAvatar',
-        'attachments' => 'getAttachments',
-        'tmid' => 'getTmid',
-        'tshow' => 'getTshow',
-        'blocks' => 'getBlocks',
-        'custom_fields' => 'getCustomFields'
+        'rid' => 'get_rid',
+        'msg' => 'get_msg',
+        'alias' => 'get_alias',
+        'emoji' => 'get_emoji',
+        'avatar' => 'get_avatar',
+        'attachments' => 'get_attachments',
+        'tmid' => 'get_tmid',
+        'tshow' => 'get_tshow',
+        'blocks' => 'get_blocks',
+        'custom_fields' => 'get_custom_fields'
     ];
 
     /**
@@ -360,7 +360,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -372,7 +372,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -387,7 +387,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -399,7 +399,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -414,7 +414,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getAlias()
+    public function get_alias()
     {
         return $this->container['alias'];
     }
@@ -426,7 +426,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setAlias($alias)
+    public function set_alias($alias)
     {
         if (is_null($alias)) {
             throw new \InvalidArgumentException('non-nullable alias cannot be null');
@@ -441,7 +441,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getEmoji()
+    public function get_emoji()
     {
         return $this->container['emoji'];
     }
@@ -453,7 +453,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setEmoji($emoji)
+    public function set_emoji($emoji)
     {
         if (is_null($emoji)) {
             throw new \InvalidArgumentException('non-nullable emoji cannot be null');
@@ -468,7 +468,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getAvatar()
+    public function get_avatar()
     {
         return $this->container['avatar'];
     }
@@ -480,7 +480,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setAvatar($avatar)
+    public function set_avatar($avatar)
     {
         if (is_null($avatar)) {
             throw new \InvalidArgumentException('non-nullable avatar cannot be null');
@@ -495,7 +495,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatSendMessageRequestMessageAttachmentsInner[]|null
      */
-    public function getAttachments()
+    public function get_attachments()
     {
         return $this->container['attachments'];
     }
@@ -507,7 +507,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setAttachments($attachments)
+    public function set_attachments($attachments)
     {
         if (is_null($attachments)) {
             throw new \InvalidArgumentException('non-nullable attachments cannot be null');
@@ -522,7 +522,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getTmid()
+    public function get_tmid()
     {
         return $this->container['tmid'];
     }
@@ -534,7 +534,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setTmid($tmid)
+    public function set_tmid($tmid)
     {
         if (is_null($tmid)) {
             throw new \InvalidArgumentException('non-nullable tmid cannot be null');
@@ -549,7 +549,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return string|null
      */
-    public function getTshow()
+    public function get_tshow()
     {
         return $this->container['tshow'];
     }
@@ -561,7 +561,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setTshow($tshow)
+    public function set_tshow($tshow)
     {
         if (is_null($tshow)) {
             throw new \InvalidArgumentException('non-nullable tshow cannot be null');
@@ -576,7 +576,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return object|null
      */
-    public function getBlocks()
+    public function get_blocks()
     {
         return $this->container['blocks'];
     }
@@ -588,7 +588,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setBlocks($blocks)
+    public function set_blocks($blocks)
     {
         if (is_null($blocks)) {
             throw new \InvalidArgumentException('non-nullable blocks cannot be null');
@@ -603,7 +603,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return object|null
      */
-    public function getCustomFields()
+    public function get_custom_fields()
     {
         return $this->container['custom_fields'];
     }
@@ -615,7 +615,7 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      *
      * @return self
      */
-    public function setCustomFields($custom_fields)
+    public function set_custom_fields($custom_fields)
     {
         if (is_null($custom_fields)) {
             throw new \InvalidArgumentException('non-nullable custom_fields cannot be null');

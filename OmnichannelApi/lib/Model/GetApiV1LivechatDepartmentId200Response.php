@@ -183,9 +183,9 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'department' => 'setDepartment',
-        'agents' => 'setAgents',
-        'success' => 'setSuccess'
+        'department' => 'set_department',
+        'agents' => 'set_agents',
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'department' => 'getDepartment',
-        'agents' => 'getAgents',
-        'success' => 'getSuccess'
+        'department' => 'get_department',
+        'agents' => 'get_agents',
+        'success' => 'get_success'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseDepartment|null
      */
-    public function getDepartment()
+    public function get_department()
     {
         return $this->container['department'];
     }
@@ -320,7 +320,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setDepartment($department)
+    public function set_department($department)
     {
         if (is_null($department)) {
             throw new \InvalidArgumentException('non-nullable department cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatDepartmentId200ResponseAgentsInner[]|null
      */
-    public function getAgents()
+    public function get_agents()
     {
         return $this->container['agents'];
     }
@@ -347,7 +347,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setAgents($agents)
+    public function set_agents($agents)
     {
         if (is_null($agents)) {
             throw new \InvalidArgumentException('non-nullable agents cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -374,7 +374,7 @@ class GetApiV1LivechatDepartmentId200Response implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

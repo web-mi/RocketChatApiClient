@@ -191,11 +191,11 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'channels' => 'setChannels',
-        'offset' => 'setOffset',
-        'count' => 'setCount',
-        'total' => 'setTotal',
-        'success' => 'setSuccess'
+        'channels' => 'set_channels',
+        'offset' => 'set_offset',
+        'count' => 'set_count',
+        'total' => 'set_total',
+        'success' => 'set_success'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'channels' => 'getChannels',
-        'offset' => 'getOffset',
-        'count' => 'getCount',
-        'total' => 'getTotal',
-        'success' => 'getSuccess'
+        'channels' => 'get_channels',
+        'offset' => 'get_offset',
+        'count' => 'get_count',
+        'total' => 'get_total',
+        'success' => 'get_success'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsListJoined200ResponseChannelsInner[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -334,7 +334,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return int|null
      */
-    public function getOffset()
+    public function get_offset()
     {
         return $this->container['offset'];
     }
@@ -361,7 +361,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setOffset($offset)
+    public function set_offset($offset)
     {
         if (is_null($offset)) {
             throw new \InvalidArgumentException('non-nullable offset cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return int|null
      */
-    public function getCount()
+    public function get_count()
     {
         return $this->container['count'];
     }
@@ -388,7 +388,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setCount($count)
+    public function set_count($count)
     {
         if (is_null($count)) {
             throw new \InvalidArgumentException('non-nullable count cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -415,7 +415,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -442,7 +442,7 @@ class GetApiV1ChannelsListJoined200Response implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

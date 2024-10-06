@@ -179,8 +179,8 @@ class PostApiV1GroupsSetDescriptionRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'description' => 'setDescription'
+        'room_id' => 'set_room_id',
+        'description' => 'set_description'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1GroupsSetDescriptionRequest implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'description' => 'getDescription'
+        'room_id' => 'get_room_id',
+        'description' => 'get_description'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1GroupsSetDescriptionRequest implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1GroupsSetDescriptionRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1GroupsSetDescriptionRequest implements ModelInterface, ArrayAcces
      *
      * @return string
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -346,7 +346,7 @@ class PostApiV1GroupsSetDescriptionRequest implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');

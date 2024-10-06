@@ -179,8 +179,8 @@ class PostApiV1GroupsAddAllRequest implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'setRoomId',
-        'active_users_only' => 'setActiveUsersOnly'
+        'room_id' => 'set_room_id',
+        'active_users_only' => 'set_active_users_only'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1GroupsAddAllRequest implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'getRoomId',
-        'active_users_only' => 'getActiveUsersOnly'
+        'room_id' => 'get_room_id',
+        'active_users_only' => 'get_active_users_only'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1GroupsAddAllRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -316,7 +316,7 @@ class PostApiV1GroupsAddAllRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1GroupsAddAllRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return string|null
      */
-    public function getActiveUsersOnly()
+    public function get_active_users_only()
     {
         return $this->container['active_users_only'];
     }
@@ -343,7 +343,7 @@ class PostApiV1GroupsAddAllRequest implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setActiveUsersOnly($active_users_only)
+    public function set_active_users_only($active_users_only)
     {
         if (is_null($active_users_only)) {
             throw new \InvalidArgumentException('non-nullable active_users_only cannot be null');

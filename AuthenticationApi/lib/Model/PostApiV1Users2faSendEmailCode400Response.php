@@ -183,9 +183,9 @@ class PostApiV1Users2faSendEmailCode400Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'success' => 'setSuccess',
-        'error' => 'setError',
-        'error_type' => 'setErrorType'
+        'success' => 'set_success',
+        'error' => 'set_error',
+        'error_type' => 'set_error_type'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1Users2faSendEmailCode400Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'success' => 'getSuccess',
-        'error' => 'getError',
-        'error_type' => 'getErrorType'
+        'success' => 'get_success',
+        'error' => 'get_error',
+        'error_type' => 'get_error_type'
     ];
 
     /**
@@ -308,7 +308,7 @@ class PostApiV1Users2faSendEmailCode400Response implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -320,7 +320,7 @@ class PostApiV1Users2faSendEmailCode400Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');
@@ -335,7 +335,7 @@ class PostApiV1Users2faSendEmailCode400Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getError()
+    public function get_error()
     {
         return $this->container['error'];
     }
@@ -347,7 +347,7 @@ class PostApiV1Users2faSendEmailCode400Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setError($error)
+    public function set_error($error)
     {
         if (is_null($error)) {
             throw new \InvalidArgumentException('non-nullable error cannot be null');
@@ -362,7 +362,7 @@ class PostApiV1Users2faSendEmailCode400Response implements ModelInterface, Array
      *
      * @return string|null
      */
-    public function getErrorType()
+    public function get_error_type()
     {
         return $this->container['error_type'];
     }
@@ -374,7 +374,7 @@ class PostApiV1Users2faSendEmailCode400Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setErrorType($error_type)
+    public function set_error_type($error_type)
     {
         if (is_null($error_type)) {
             throw new \InvalidArgumentException('non-nullable error_type cannot be null');

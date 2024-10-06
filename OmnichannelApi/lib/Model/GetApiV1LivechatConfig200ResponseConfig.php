@@ -211,16 +211,16 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $setters = [
-        'enabled' => 'setEnabled',
-        'settings' => 'setSettings',
-        'theme' => 'setTheme',
-        'messages' => 'setMessages',
-        'survey' => 'setSurvey',
-        'departments' => 'setDepartments',
-        'online' => 'setOnline',
-        'guest' => 'setGuest',
-        'room' => 'setRoom',
-        'agent' => 'setAgent'
+        'enabled' => 'set_enabled',
+        'settings' => 'set_settings',
+        'theme' => 'set_theme',
+        'messages' => 'set_messages',
+        'survey' => 'set_survey',
+        'departments' => 'set_departments',
+        'online' => 'set_online',
+        'guest' => 'set_guest',
+        'room' => 'set_room',
+        'agent' => 'set_agent'
     ];
 
     /**
@@ -229,16 +229,16 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      * @var string[]
      */
     protected static $getters = [
-        'enabled' => 'getEnabled',
-        'settings' => 'getSettings',
-        'theme' => 'getTheme',
-        'messages' => 'getMessages',
-        'survey' => 'getSurvey',
-        'departments' => 'getDepartments',
-        'online' => 'getOnline',
-        'guest' => 'getGuest',
-        'room' => 'getRoom',
-        'agent' => 'getAgent'
+        'enabled' => 'get_enabled',
+        'settings' => 'get_settings',
+        'theme' => 'get_theme',
+        'messages' => 'get_messages',
+        'survey' => 'get_survey',
+        'departments' => 'get_departments',
+        'online' => 'get_online',
+        'guest' => 'get_guest',
+        'room' => 'get_room',
+        'agent' => 'get_agent'
     ];
 
     /**
@@ -357,7 +357,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getEnabled()
+    public function get_enabled()
     {
         return $this->container['enabled'];
     }
@@ -369,7 +369,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setEnabled($enabled)
+    public function set_enabled($enabled)
     {
         if (is_null($enabled)) {
             throw new \InvalidArgumentException('non-nullable enabled cannot be null');
@@ -384,7 +384,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSettings|null
      */
-    public function getSettings()
+    public function get_settings()
     {
         return $this->container['settings'];
     }
@@ -396,7 +396,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSettings($settings)
+    public function set_settings($settings)
     {
         if (is_null($settings)) {
             throw new \InvalidArgumentException('non-nullable settings cannot be null');
@@ -411,7 +411,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigTheme|null
      */
-    public function getTheme()
+    public function get_theme()
     {
         return $this->container['theme'];
     }
@@ -423,7 +423,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setTheme($theme)
+    public function set_theme($theme)
     {
         if (is_null($theme)) {
             throw new \InvalidArgumentException('non-nullable theme cannot be null');
@@ -438,7 +438,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigMessages|null
      */
-    public function getMessages()
+    public function get_messages()
     {
         return $this->container['messages'];
     }
@@ -450,7 +450,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setMessages($messages)
+    public function set_messages($messages)
     {
         if (is_null($messages)) {
             throw new \InvalidArgumentException('non-nullable messages cannot be null');
@@ -465,7 +465,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigSurvey|null
      */
-    public function getSurvey()
+    public function get_survey()
     {
         return $this->container['survey'];
     }
@@ -477,7 +477,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setSurvey($survey)
+    public function set_survey($survey)
     {
         if (is_null($survey)) {
             throw new \InvalidArgumentException('non-nullable survey cannot be null');
@@ -492,7 +492,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigDepartmentsInner[]|null
      */
-    public function getDepartments()
+    public function get_departments()
     {
         return $this->container['departments'];
     }
@@ -504,7 +504,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setDepartments($departments)
+    public function set_departments($departments)
     {
         if (is_null($departments)) {
             throw new \InvalidArgumentException('non-nullable departments cannot be null');
@@ -519,7 +519,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return bool|null
      */
-    public function getOnline()
+    public function get_online()
     {
         return $this->container['online'];
     }
@@ -531,7 +531,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setOnline($online)
+    public function set_online($online)
     {
         if (is_null($online)) {
             throw new \InvalidArgumentException('non-nullable online cannot be null');
@@ -546,7 +546,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigGuest|null
      */
-    public function getGuest()
+    public function get_guest()
     {
         return $this->container['guest'];
     }
@@ -558,7 +558,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setGuest($guest)
+    public function set_guest($guest)
     {
         if (is_null($guest)) {
             throw new \InvalidArgumentException('non-nullable guest cannot be null');
@@ -573,7 +573,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatConfig200ResponseConfigRoom|null
      */
-    public function getRoom()
+    public function get_room()
     {
         return $this->container['room'];
     }
@@ -585,7 +585,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setRoom($room)
+    public function set_room($room)
     {
         if (is_null($room)) {
             throw new \InvalidArgumentException('non-nullable room cannot be null');
@@ -600,7 +600,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatAgentNext200ResponseAgent|null
      */
-    public function getAgent()
+    public function get_agent()
     {
         return $this->container['agent'];
     }
@@ -612,7 +612,7 @@ class GetApiV1LivechatConfig200ResponseConfig implements ModelInterface, ArrayAc
      *
      * @return self
      */
-    public function setAgent($agent)
+    public function set_agent($agent)
     {
         if (is_null($agent)) {
             throw new \InvalidArgumentException('non-nullable agent cannot be null');

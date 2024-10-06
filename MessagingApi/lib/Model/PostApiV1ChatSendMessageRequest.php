@@ -179,8 +179,8 @@ class PostApiV1ChatSendMessageRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'setMessage',
-        'preview_urls_' => 'setPreviewUrls'
+        'message' => 'set_message',
+        'preview_urls_' => 'set_preview_urls_'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChatSendMessageRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'getMessage',
-        'preview_urls_' => 'getPreviewUrls'
+        'message' => 'get_message',
+        'preview_urls_' => 'get_preview_urls_'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ChatSendMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatSendMessageRequestMessage|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ChatSendMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ChatSendMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string[]|null
      */
-    public function getPreviewUrls()
+    public function get_preview_urls_()
     {
         return $this->container['preview_urls_'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ChatSendMessageRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setPreviewUrls($preview_urls_)
+    public function set_preview_urls_($preview_urls_)
     {
         if (is_null($preview_urls_)) {
             throw new \InvalidArgumentException('non-nullable preview_urls_ cannot be null');

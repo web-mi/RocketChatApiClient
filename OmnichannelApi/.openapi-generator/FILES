@@ -282,6 +282,7 @@ docs/Model/PostApiV1LivechatDepartmentIdAgentsRequestUpsertInner.md
 docs/Model/PostApiV1LivechatDepartmentRequest.md
 docs/Model/PostApiV1LivechatDepartmentRequestAgentsInner.md
 docs/Model/PostApiV1LivechatDepartmentRequestDepartment.md
+docs/Model/PostApiV1LivechatDepartmentRequestDepartmentUnit.md
 docs/Model/PostApiV1LivechatInquiriesTakeRequest.md
 docs/Model/PostApiV1LivechatMessage200Response.md
 docs/Model/PostApiV1LivechatMessage200ResponseMessage.md
@@ -360,6 +361,7 @@ docs/Model/PostApiV1VoipRoomCloseRequest.md
 docs/Model/PutApiV1LivechatDepartmentIdRequest.md
 docs/Model/PutApiV1LivechatDepartmentIdRequestAgentsInner.md
 docs/Model/PutApiV1LivechatDepartmentIdRequestDepartment.md
+docs/Model/PutApiV1LivechatDepartmentIdRequestDepartmentUnit.md
 docs/Model/PutApiV1LivechatInquirySetSLARequest.md
 docs/Model/PutApiV1LivechatMessageId200Response.md
 docs/Model/PutApiV1LivechatMessageId200ResponseMessage.md
@@ -658,6 +660,7 @@ lib/Model/PostApiV1LivechatDepartmentIdAgentsRequestUpsertInner.php
 lib/Model/PostApiV1LivechatDepartmentRequest.php
 lib/Model/PostApiV1LivechatDepartmentRequestAgentsInner.php
 lib/Model/PostApiV1LivechatDepartmentRequestDepartment.php
+lib/Model/PostApiV1LivechatDepartmentRequestDepartmentUnit.php
 lib/Model/PostApiV1LivechatInquiriesTakeRequest.php
 lib/Model/PostApiV1LivechatMessage200Response.php
 lib/Model/PostApiV1LivechatMessage200ResponseMessage.php
@@ -736,6 +739,7 @@ lib/Model/PostApiV1VoipRoomCloseRequest.php
 lib/Model/PutApiV1LivechatDepartmentIdRequest.php
 lib/Model/PutApiV1LivechatDepartmentIdRequestAgentsInner.php
 lib/Model/PutApiV1LivechatDepartmentIdRequestDepartment.php
+lib/Model/PutApiV1LivechatDepartmentIdRequestDepartmentUnit.php
 lib/Model/PutApiV1LivechatInquirySetSLARequest.php
 lib/Model/PutApiV1LivechatMessageId200Response.php
 lib/Model/PutApiV1LivechatMessageId200ResponseMessage.php
@@ -752,3 +756,5 @@ lib/Model/PutApiV1LivechatWebrtcCallCallId200Response.php
 lib/Model/PutApiV1LivechatWebrtcCallCallIdRequest.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
+test/Model/PostApiV1LivechatDepartmentRequestDepartmentUnitTest.php
+test/Model/PutApiV1LivechatDepartmentIdRequestDepartmentUnitTest.php

@@ -175,7 +175,7 @@ class GetApiV1Statistics200ResponseSettingsAccounts implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'account2fa' => 'setAccount2fa'
+        'account2fa' => 'set_account2fa'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1Statistics200ResponseSettingsAccounts implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'account2fa' => 'getAccount2fa'
+        'account2fa' => 'get_account2fa'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1Statistics200ResponseSettingsAccounts implements ModelInterface, A
      *
      * @return bool|null
      */
-    public function getAccount2fa()
+    public function get_account2fa()
     {
         return $this->container['account2fa'];
     }
@@ -306,7 +306,7 @@ class GetApiV1Statistics200ResponseSettingsAccounts implements ModelInterface, A
      *
      * @return self
      */
-    public function setAccount2fa($account2fa)
+    public function set_account2fa($account2fa)
     {
         if (is_null($account2fa)) {
             throw new \InvalidArgumentException('non-nullable account2fa cannot be null');

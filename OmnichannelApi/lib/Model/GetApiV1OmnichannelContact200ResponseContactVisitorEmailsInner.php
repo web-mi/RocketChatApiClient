@@ -175,7 +175,7 @@ class GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner implements 
      * @var string[]
      */
     protected static $setters = [
-        'address' => 'setAddress'
+        'address' => 'set_address'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner implements 
      * @var string[]
      */
     protected static $getters = [
-        'address' => 'getAddress'
+        'address' => 'get_address'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner implements 
      *
      * @return string|null
      */
-    public function getAddress()
+    public function get_address()
     {
         return $this->container['address'];
     }
@@ -306,7 +306,7 @@ class GetApiV1OmnichannelContact200ResponseContactVisitorEmailsInner implements 
      *
      * @return self
      */
-    public function setAddress($address)
+    public function set_address($address)
     {
         if (is_null($address)) {
             throw new \InvalidArgumentException('non-nullable address cannot be null');

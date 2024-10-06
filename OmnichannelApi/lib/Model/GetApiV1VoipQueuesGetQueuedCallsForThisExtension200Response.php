@@ -183,9 +183,9 @@ class GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response implements Mod
      * @var string[]
      */
     protected static $setters = [
-        'extension' => 'setExtension',
-        'queue_count' => 'setQueueCount',
-        'call_waiting_count' => 'setCallWaitingCount'
+        'extension' => 'set_extension',
+        'queue_count' => 'set_queue_count',
+        'call_waiting_count' => 'set_call_waiting_count'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response implements Mod
      * @var string[]
      */
     protected static $getters = [
-        'extension' => 'getExtension',
-        'queue_count' => 'getQueueCount',
-        'call_waiting_count' => 'getCallWaitingCount'
+        'extension' => 'get_extension',
+        'queue_count' => 'get_queue_count',
+        'call_waiting_count' => 'get_call_waiting_count'
     ];
 
     /**
@@ -308,7 +308,7 @@ class GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response implements Mod
      *
      * @return string|null
      */
-    public function getExtension()
+    public function get_extension()
     {
         return $this->container['extension'];
     }
@@ -320,7 +320,7 @@ class GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response implements Mod
      *
      * @return self
      */
-    public function setExtension($extension)
+    public function set_extension($extension)
     {
         if (is_null($extension)) {
             throw new \InvalidArgumentException('non-nullable extension cannot be null');
@@ -335,7 +335,7 @@ class GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response implements Mod
      *
      * @return string|null
      */
-    public function getQueueCount()
+    public function get_queue_count()
     {
         return $this->container['queue_count'];
     }
@@ -347,7 +347,7 @@ class GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response implements Mod
      *
      * @return self
      */
-    public function setQueueCount($queue_count)
+    public function set_queue_count($queue_count)
     {
         if (is_null($queue_count)) {
             throw new \InvalidArgumentException('non-nullable queue_count cannot be null');
@@ -362,7 +362,7 @@ class GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response implements Mod
      *
      * @return string|null
      */
-    public function getCallWaitingCount()
+    public function get_call_waiting_count()
     {
         return $this->container['call_waiting_count'];
     }
@@ -374,7 +374,7 @@ class GetApiV1VoipQueuesGetQueuedCallsForThisExtension200Response implements Mod
      *
      * @return self
      */
-    public function setCallWaitingCount($call_waiting_count)
+    public function set_call_waiting_count($call_waiting_count)
     {
         if (is_null($call_waiting_count)) {
             throw new \InvalidArgumentException('non-nullable call_waiting_count cannot be null');

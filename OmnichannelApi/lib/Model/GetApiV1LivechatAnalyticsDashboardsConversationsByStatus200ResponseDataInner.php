@@ -179,8 +179,8 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInn
      * @var string[]
      */
     protected static $setters = [
-        'label' => 'setLabel',
-        'value' => 'setValue'
+        'label' => 'set_label',
+        'value' => 'set_value'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInn
      * @var string[]
      */
     protected static $getters = [
-        'label' => 'getLabel',
-        'value' => 'getValue'
+        'label' => 'get_label',
+        'value' => 'get_value'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInn
      *
      * @return string|null
      */
-    public function getLabel()
+    public function get_label()
     {
         return $this->container['label'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInn
      *
      * @return self
      */
-    public function setLabel($label)
+    public function set_label($label)
     {
         if (is_null($label)) {
             throw new \InvalidArgumentException('non-nullable label cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInn
      *
      * @return int|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatAnalyticsDashboardsConversationsByStatus200ResponseDataInn
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'value' => 'setValue'
+        'type' => 'set_type',
+        'value' => 'set_value'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'value' => 'getValue'
+        'type' => 'get_type',
+        'value' => 'get_value'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -313,7 +313,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
      *
      * @return \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1PushGet200ResponseDataMessageMdInnerValueInner[]|null
      */
-    public function getValue()
+    public function get_value()
     {
         return $this->container['value'];
     }
@@ -340,7 +340,7 @@ class GetApiV1PushGet200ResponseDataMessageMdInner implements ModelInterface, Ar
      *
      * @return self
      */
-    public function setValue($value)
+    public function set_value($value)
     {
         if (is_null($value)) {
             throw new \InvalidArgumentException('non-nullable value cannot be null');

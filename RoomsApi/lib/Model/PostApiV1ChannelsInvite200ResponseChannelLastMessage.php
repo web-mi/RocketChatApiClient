@@ -219,18 +219,18 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        't' => 'setT',
-        'msg' => 'setMsg',
-        'groupable' => 'setGroupable',
-        'blocks' => 'setBlocks',
-        'ts' => 'setTs',
-        'u' => 'setU',
-        'rid' => 'setRid',
-        '_updated_at' => 'setUpdatedAt',
-        'urls' => 'setUrls',
-        'mentions' => 'setMentions',
-        'channels' => 'setChannels'
+        '_id' => 'set__id',
+        't' => 'set_t',
+        'msg' => 'set_msg',
+        'groupable' => 'set_groupable',
+        'blocks' => 'set_blocks',
+        'ts' => 'set_ts',
+        'u' => 'set_u',
+        'rid' => 'set_rid',
+        '_updated_at' => 'set__updated_at',
+        'urls' => 'set_urls',
+        'mentions' => 'set_mentions',
+        'channels' => 'set_channels'
     ];
 
     /**
@@ -239,18 +239,18 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        't' => 'getT',
-        'msg' => 'getMsg',
-        'groupable' => 'getGroupable',
-        'blocks' => 'getBlocks',
-        'ts' => 'getTs',
-        'u' => 'getU',
-        'rid' => 'getRid',
-        '_updated_at' => 'getUpdatedAt',
-        'urls' => 'getUrls',
-        'mentions' => 'getMentions',
-        'channels' => 'getChannels'
+        '_id' => 'get__id',
+        't' => 'get_t',
+        'msg' => 'get_msg',
+        'groupable' => 'get_groupable',
+        'blocks' => 'get_blocks',
+        'ts' => 'get_ts',
+        'u' => 'get_u',
+        'rid' => 'get_rid',
+        '_updated_at' => 'get__updated_at',
+        'urls' => 'get_urls',
+        'mentions' => 'get_mentions',
+        'channels' => 'get_channels'
     ];
 
     /**
@@ -371,7 +371,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -383,7 +383,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -398,7 +398,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return string|null
      */
-    public function getT()
+    public function get_t()
     {
         return $this->container['t'];
     }
@@ -410,7 +410,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setT($t)
+    public function set_t($t)
     {
         if (is_null($t)) {
             throw new \InvalidArgumentException('non-nullable t cannot be null');
@@ -425,7 +425,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return string|null
      */
-    public function getMsg()
+    public function get_msg()
     {
         return $this->container['msg'];
     }
@@ -437,7 +437,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setMsg($msg)
+    public function set_msg($msg)
     {
         if (is_null($msg)) {
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
@@ -452,7 +452,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return bool|null
      */
-    public function getGroupable()
+    public function get_groupable()
     {
         return $this->container['groupable'];
     }
@@ -464,7 +464,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setGroupable($groupable)
+    public function set_groupable($groupable)
     {
         if (is_null($groupable)) {
             throw new \InvalidArgumentException('non-nullable groupable cannot be null');
@@ -479,7 +479,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInner[]|null
      */
-    public function getBlocks()
+    public function get_blocks()
     {
         return $this->container['blocks'];
     }
@@ -491,7 +491,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setBlocks($blocks)
+    public function set_blocks($blocks)
     {
         if (is_null($blocks)) {
             throw new \InvalidArgumentException('non-nullable blocks cannot be null');
@@ -506,7 +506,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return string|null
      */
-    public function getTs()
+    public function get_ts()
     {
         return $this->container['ts'];
     }
@@ -518,7 +518,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setTs($ts)
+    public function set_ts($ts)
     {
         if (is_null($ts)) {
             throw new \InvalidArgumentException('non-nullable ts cannot be null');
@@ -533,7 +533,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
      */
-    public function getU()
+    public function get_u()
     {
         return $this->container['u'];
     }
@@ -545,7 +545,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setU($u)
+    public function set_u($u)
     {
         if (is_null($u)) {
             throw new \InvalidArgumentException('non-nullable u cannot be null');
@@ -560,7 +560,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return string|null
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -572,7 +572,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -587,7 +587,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -599,7 +599,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -614,7 +614,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return object[]|null
      */
-    public function getUrls()
+    public function get_urls()
     {
         return $this->container['urls'];
     }
@@ -626,7 +626,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setUrls($urls)
+    public function set_urls($urls)
     {
         if (is_null($urls)) {
             throw new \InvalidArgumentException('non-nullable urls cannot be null');
@@ -641,7 +641,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return object[]|null
      */
-    public function getMentions()
+    public function get_mentions()
     {
         return $this->container['mentions'];
     }
@@ -653,7 +653,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setMentions($mentions)
+    public function set_mentions($mentions)
     {
         if (is_null($mentions)) {
             throw new \InvalidArgumentException('non-nullable mentions cannot be null');
@@ -668,7 +668,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return object[]|null
      */
-    public function getChannels()
+    public function get_channels()
     {
         return $this->container['channels'];
     }
@@ -680,7 +680,7 @@ class PostApiV1ChannelsInvite200ResponseChannelLastMessage implements ModelInter
      *
      * @return self
      */
-    public function setChannels($channels)
+    public function set_channels($channels)
     {
         if (is_null($channels)) {
             throw new \InvalidArgumentException('non-nullable channels cannot be null');

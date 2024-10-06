@@ -179,8 +179,8 @@ class GetApiV1StatisticsList401Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $setters = [
-        'status' => 'setStatus',
-        'message' => 'setMessage'
+        'status' => 'set_status',
+        'message' => 'set_message'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1StatisticsList401Response implements ModelInterface, ArrayAccess, 
      * @var string[]
      */
     protected static $getters = [
-        'status' => 'getStatus',
-        'message' => 'getMessage'
+        'status' => 'get_status',
+        'message' => 'get_message'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1StatisticsList401Response implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -313,7 +313,7 @@ class GetApiV1StatisticsList401Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1StatisticsList401Response implements ModelInterface, ArrayAccess, 
      *
      * @return string|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -340,7 +340,7 @@ class GetApiV1StatisticsList401Response implements ModelInterface, ArrayAccess, 
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');

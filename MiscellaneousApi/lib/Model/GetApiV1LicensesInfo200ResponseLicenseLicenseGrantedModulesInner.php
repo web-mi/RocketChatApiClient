@@ -175,7 +175,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner implement
      * @var string[]
      */
     protected static $setters = [
-        'module' => 'setModule'
+        'module' => 'set_module'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner implement
      * @var string[]
      */
     protected static $getters = [
-        'module' => 'getModule'
+        'module' => 'get_module'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner implement
      *
      * @return string|null
      */
-    public function getModule()
+    public function get_module()
     {
         return $this->container['module'];
     }
@@ -306,7 +306,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseGrantedModulesInner implement
      *
      * @return self
      */
-    public function setModule($module)
+    public function set_module($module)
     {
         if (is_null($module)) {
             throw new \InvalidArgumentException('non-nullable module cannot be null');

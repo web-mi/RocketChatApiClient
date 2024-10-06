@@ -179,8 +179,8 @@ class GetApiV1CannedResponsesId200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $setters = [
-        'canned_response' => 'setCannedResponse',
-        'success' => 'setSuccess'
+        'canned_response' => 'set_canned_response',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1CannedResponsesId200Response implements ModelInterface, ArrayAcces
      * @var string[]
      */
     protected static $getters = [
-        'canned_response' => 'getCannedResponse',
-        'success' => 'getSuccess'
+        'canned_response' => 'get_canned_response',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1CannedResponsesId200Response implements ModelInterface, ArrayAcces
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1CannedResponsesId200ResponseCannedResponse|null
      */
-    public function getCannedResponse()
+    public function get_canned_response()
     {
         return $this->container['canned_response'];
     }
@@ -313,7 +313,7 @@ class GetApiV1CannedResponsesId200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setCannedResponse($canned_response)
+    public function set_canned_response($canned_response)
     {
         if (is_null($canned_response)) {
             throw new \InvalidArgumentException('non-nullable canned_response cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1CannedResponsesId200Response implements ModelInterface, ArrayAcces
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1CannedResponsesId200Response implements ModelInterface, ArrayAcces
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -191,11 +191,11 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      * @var string[]
      */
     protected static $setters = [
-        'type' => 'setType',
-        'text' => 'setText',
-        'block_id' => 'setBlockId',
-        'app_id' => 'setAppId',
-        'elements' => 'setElements'
+        'type' => 'set_type',
+        'text' => 'set_text',
+        'block_id' => 'set_block_id',
+        'app_id' => 'set_app_id',
+        'elements' => 'set_elements'
     ];
 
     /**
@@ -204,11 +204,11 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      * @var string[]
      */
     protected static $getters = [
-        'type' => 'getType',
-        'text' => 'getText',
-        'block_id' => 'getBlockId',
-        'app_id' => 'getAppId',
-        'elements' => 'getElements'
+        'type' => 'get_type',
+        'text' => 'get_text',
+        'block_id' => 'get_block_id',
+        'app_id' => 'get_app_id',
+        'elements' => 'get_elements'
     ];
 
     /**
@@ -322,7 +322,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return string|null
      */
-    public function getType()
+    public function get_type()
     {
         return $this->container['type'];
     }
@@ -334,7 +334,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return self
      */
-    public function setType($type)
+    public function set_type($type)
     {
         if (is_null($type)) {
             throw new \InvalidArgumentException('non-nullable type cannot be null');
@@ -349,7 +349,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerText|null
      */
-    public function getText()
+    public function get_text()
     {
         return $this->container['text'];
     }
@@ -361,7 +361,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return self
      */
-    public function setText($text)
+    public function set_text($text)
     {
         if (is_null($text)) {
             throw new \InvalidArgumentException('non-nullable text cannot be null');
@@ -376,7 +376,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return string|null
      */
-    public function getBlockId()
+    public function get_block_id()
     {
         return $this->container['block_id'];
     }
@@ -388,7 +388,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return self
      */
-    public function setBlockId($block_id)
+    public function set_block_id($block_id)
     {
         if (is_null($block_id)) {
             throw new \InvalidArgumentException('non-nullable block_id cannot be null');
@@ -403,7 +403,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return string|null
      */
-    public function getAppId()
+    public function get_app_id()
     {
         return $this->container['app_id'];
     }
@@ -415,7 +415,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return self
      */
-    public function setAppId($app_id)
+    public function set_app_id($app_id)
     {
         if (is_null($app_id)) {
             throw new \InvalidArgumentException('non-nullable app_id cannot be null');
@@ -430,7 +430,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerElementsInner[]|null
      */
-    public function getElements()
+    public function get_elements()
     {
         return $this->container['elements'];
     }
@@ -442,7 +442,7 @@ class GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner impleme
      *
      * @return self
      */
-    public function setElements($elements)
+    public function set_elements($elements)
     {
         if (is_null($elements)) {
             throw new \InvalidArgumentException('non-nullable elements cannot be null');

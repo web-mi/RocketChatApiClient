@@ -179,8 +179,8 @@ class GetApiV1LivechatCustomFieldsId200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'custom_field' => 'setCustomField',
-        'success' => 'setSuccess'
+        'custom_field' => 'set_custom_field',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LivechatCustomFieldsId200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'custom_field' => 'getCustomField',
-        'success' => 'getSuccess'
+        'custom_field' => 'get_custom_field',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LivechatCustomFieldsId200Response implements ModelInterface, Array
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatCustomFields200ResponseCustomFieldsInner|null
      */
-    public function getCustomField()
+    public function get_custom_field()
     {
         return $this->container['custom_field'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LivechatCustomFieldsId200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setCustomField($custom_field)
+    public function set_custom_field($custom_field)
     {
         if (is_null($custom_field)) {
             throw new \InvalidArgumentException('non-nullable custom_field cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LivechatCustomFieldsId200Response implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LivechatCustomFieldsId200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        'languages' => 'setLanguages',
-        'success' => 'setSuccess'
+        'languages' => 'set_languages',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        'languages' => 'getLanguages',
-        'success' => 'getSuccess'
+        'languages' => 'get_languages',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1AutotranslateGetSupportedLanguages200ResponseLanguagesInner[]|null
      */
-    public function getLanguages()
+    public function get_languages()
     {
         return $this->container['languages'];
     }
@@ -313,7 +313,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
      *
      * @return self
      */
-    public function setLanguages($languages)
+    public function set_languages($languages)
     {
         if (is_null($languages)) {
             throw new \InvalidArgumentException('non-nullable languages cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class GetApiV1AutotranslateGetSupportedLanguages200Response implements ModelInte
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

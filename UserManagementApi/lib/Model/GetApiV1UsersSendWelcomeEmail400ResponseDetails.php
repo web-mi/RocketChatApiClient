@@ -175,7 +175,7 @@ class GetApiV1UsersSendWelcomeEmail400ResponseDetails implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'method' => 'setMethod'
+        'method' => 'set_method'
     ];
 
     /**
@@ -184,7 +184,7 @@ class GetApiV1UsersSendWelcomeEmail400ResponseDetails implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'method' => 'getMethod'
+        'method' => 'get_method'
     ];
 
     /**
@@ -294,7 +294,7 @@ class GetApiV1UsersSendWelcomeEmail400ResponseDetails implements ModelInterface,
      *
      * @return string|null
      */
-    public function getMethod()
+    public function get_method()
     {
         return $this->container['method'];
     }
@@ -306,7 +306,7 @@ class GetApiV1UsersSendWelcomeEmail400ResponseDetails implements ModelInterface,
      *
      * @return self
      */
-    public function setMethod($method)
+    public function set_method($method)
     {
         if (is_null($method)) {
             throw new \InvalidArgumentException('non-nullable method cannot be null');

@@ -179,8 +179,8 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUserSettings implements ModelIn
      * @var string[]
      */
     protected static $setters = [
-        'preferences' => 'setPreferences',
-        'profile' => 'setProfile'
+        'preferences' => 'set_preferences',
+        'profile' => 'set_profile'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUserSettings implements ModelIn
      * @var string[]
      */
     protected static $getters = [
-        'preferences' => 'getPreferences',
-        'profile' => 'getProfile'
+        'preferences' => 'get_preferences',
+        'profile' => 'get_profile'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUserSettings implements ModelIn
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1TeamsMembers200ResponseMembersInnerUserSettingsPreferences|null
      */
-    public function getPreferences()
+    public function get_preferences()
     {
         return $this->container['preferences'];
     }
@@ -313,7 +313,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUserSettings implements ModelIn
      *
      * @return self
      */
-    public function setPreferences($preferences)
+    public function set_preferences($preferences)
     {
         if (is_null($preferences)) {
             throw new \InvalidArgumentException('non-nullable preferences cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUserSettings implements ModelIn
      *
      * @return object|null
      */
-    public function getProfile()
+    public function get_profile()
     {
         return $this->container['profile'];
     }
@@ -340,7 +340,7 @@ class GetApiV1TeamsMembers200ResponseMembersInnerUserSettings implements ModelIn
      *
      * @return self
      */
-    public function setProfile($profile)
+    public function set_profile($profile)
     {
         if (is_null($profile)) {
             throw new \InvalidArgumentException('non-nullable profile cannot be null');

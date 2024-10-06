@@ -203,14 +203,14 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'status' => 'setStatus',
-        '_updated_at' => 'setUpdatedAt',
-        'name' => 'setName',
-        'status_connection' => 'setStatusConnection',
-        'username' => 'setUsername',
-        'avatar_e_tag' => 'setAvatarETag',
-        'highest_role' => 'setHighestRole'
+        '_id' => 'set__id',
+        'status' => 'set_status',
+        '_updated_at' => 'set__updated_at',
+        'name' => 'set_name',
+        'status_connection' => 'set_status_connection',
+        'username' => 'set_username',
+        'avatar_e_tag' => 'set_avatar_e_tag',
+        'highest_role' => 'set_highest_role'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'status' => 'getStatus',
-        '_updated_at' => 'getUpdatedAt',
-        'name' => 'getName',
-        'status_connection' => 'getStatusConnection',
-        'username' => 'getUsername',
-        'avatar_e_tag' => 'getAvatarETag',
-        'highest_role' => 'getHighestRole'
+        '_id' => 'get__id',
+        'status' => 'get_status',
+        '_updated_at' => 'get__updated_at',
+        'name' => 'get_name',
+        'status_connection' => 'get_status_connection',
+        'username' => 'get_username',
+        'avatar_e_tag' => 'get_avatar_e_tag',
+        'highest_role' => 'get_highest_role'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -355,7 +355,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -370,7 +370,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -382,7 +382,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -397,7 +397,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -409,7 +409,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -424,7 +424,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -436,7 +436,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -451,7 +451,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return string|null
      */
-    public function getStatusConnection()
+    public function get_status_connection()
     {
         return $this->container['status_connection'];
     }
@@ -463,7 +463,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return self
      */
-    public function setStatusConnection($status_connection)
+    public function set_status_connection($status_connection)
     {
         if (is_null($status_connection)) {
             throw new \InvalidArgumentException('non-nullable status_connection cannot be null');
@@ -478,7 +478,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -490,7 +490,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -505,7 +505,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return string|null
      */
-    public function getAvatarETag()
+    public function get_avatar_e_tag()
     {
         return $this->container['avatar_e_tag'];
     }
@@ -517,7 +517,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return self
      */
-    public function setAvatarETag($avatar_e_tag)
+    public function set_avatar_e_tag($avatar_e_tag)
     {
         if (is_null($avatar_e_tag)) {
             throw new \InvalidArgumentException('non-nullable avatar_e_tag cannot be null');
@@ -532,7 +532,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole|null
      */
-    public function getHighestRole()
+    public function get_highest_role()
     {
         return $this->container['highest_role'];
     }
@@ -544,7 +544,7 @@ class GetChannelsMembersByHighestRole200ResponseMembersInner implements ModelInt
      *
      * @return self
      */
-    public function setHighestRole($highest_role)
+    public function set_highest_role($highest_role)
     {
         if (is_null($highest_role)) {
             throw new \InvalidArgumentException('non-nullable highest_role cannot be null');

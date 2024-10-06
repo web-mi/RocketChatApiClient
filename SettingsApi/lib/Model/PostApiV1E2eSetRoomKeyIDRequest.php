@@ -179,8 +179,8 @@ class PostApiV1E2eSetRoomKeyIDRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        'rid' => 'setRid',
-        'key_id' => 'setKeyId'
+        'rid' => 'set_rid',
+        'key_id' => 'set_key_id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1E2eSetRoomKeyIDRequest implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        'rid' => 'getRid',
-        'key_id' => 'getKeyId'
+        'rid' => 'get_rid',
+        'key_id' => 'get_key_id'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1E2eSetRoomKeyIDRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -319,7 +319,7 @@ class PostApiV1E2eSetRoomKeyIDRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1E2eSetRoomKeyIDRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return string
      */
-    public function getKeyId()
+    public function get_key_id()
     {
         return $this->container['key_id'];
     }
@@ -346,7 +346,7 @@ class PostApiV1E2eSetRoomKeyIDRequest implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setKeyId($key_id)
+    public function set_key_id($key_id)
     {
         if (is_null($key_id)) {
             throw new \InvalidArgumentException('non-nullable key_id cannot be null');

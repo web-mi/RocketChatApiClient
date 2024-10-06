@@ -223,19 +223,19 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'active' => 'setActive',
-        'name' => 'setName',
-        'email' => 'setEmail',
-        'description' => 'setDescription',
-        'sender_info' => 'setSenderInfo',
-        'department' => 'setDepartment',
-        'smtp' => 'setSmtp',
-        'imap' => 'setImap',
-        '_created_at' => 'setCreatedAt',
-        '_updated_at' => 'setUpdatedAt',
-        '_created_by' => 'setCreatedBy',
-        'success' => 'setSuccess'
+        '_id' => 'set__id',
+        'active' => 'set_active',
+        'name' => 'set_name',
+        'email' => 'set_email',
+        'description' => 'set_description',
+        'sender_info' => 'set_sender_info',
+        'department' => 'set_department',
+        'smtp' => 'set_smtp',
+        'imap' => 'set_imap',
+        '_created_at' => 'set__created_at',
+        '_updated_at' => 'set__updated_at',
+        '_created_by' => 'set__created_by',
+        'success' => 'set_success'
     ];
 
     /**
@@ -244,19 +244,19 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'active' => 'getActive',
-        'name' => 'getName',
-        'email' => 'getEmail',
-        'description' => 'getDescription',
-        'sender_info' => 'getSenderInfo',
-        'department' => 'getDepartment',
-        'smtp' => 'getSmtp',
-        'imap' => 'getImap',
-        '_created_at' => 'getCreatedAt',
-        '_updated_at' => 'getUpdatedAt',
-        '_created_by' => 'getCreatedBy',
-        'success' => 'getSuccess'
+        '_id' => 'get__id',
+        'active' => 'get_active',
+        'name' => 'get_name',
+        'email' => 'get_email',
+        'description' => 'get_description',
+        'sender_info' => 'get_sender_info',
+        'department' => 'get_department',
+        'smtp' => 'get_smtp',
+        'imap' => 'get_imap',
+        '_created_at' => 'get__created_at',
+        '_updated_at' => 'get__updated_at',
+        '_created_by' => 'get__created_by',
+        'success' => 'get_success'
     ];
 
     /**
@@ -378,7 +378,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -390,7 +390,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -405,7 +405,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return bool|null
      */
-    public function getActive()
+    public function get_active()
     {
         return $this->container['active'];
     }
@@ -417,7 +417,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setActive($active)
+    public function set_active($active)
     {
         if (is_null($active)) {
             throw new \InvalidArgumentException('non-nullable active cannot be null');
@@ -432,7 +432,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -444,7 +444,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -459,7 +459,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -471,7 +471,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -486,7 +486,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getDescription()
+    public function get_description()
     {
         return $this->container['description'];
     }
@@ -498,7 +498,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setDescription($description)
+    public function set_description($description)
     {
         if (is_null($description)) {
             throw new \InvalidArgumentException('non-nullable description cannot be null');
@@ -513,7 +513,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getSenderInfo()
+    public function get_sender_info()
     {
         return $this->container['sender_info'];
     }
@@ -525,7 +525,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSenderInfo($sender_info)
+    public function set_sender_info($sender_info)
     {
         if (is_null($sender_info)) {
             throw new \InvalidArgumentException('non-nullable sender_info cannot be null');
@@ -540,7 +540,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getDepartment()
+    public function get_department()
     {
         return $this->container['department'];
     }
@@ -552,7 +552,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setDepartment($department)
+    public function set_department($department)
     {
         if (is_null($department)) {
             throw new \InvalidArgumentException('non-nullable department cannot be null');
@@ -567,7 +567,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null
      */
-    public function getSmtp()
+    public function get_smtp()
     {
         return $this->container['smtp'];
     }
@@ -579,7 +579,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSmtp($smtp)
+    public function set_smtp($smtp)
     {
         if (is_null($smtp)) {
             throw new \InvalidArgumentException('non-nullable smtp cannot be null');
@@ -594,7 +594,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerSmtp|null
      */
-    public function getImap()
+    public function get_imap()
     {
         return $this->container['imap'];
     }
@@ -606,7 +606,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setImap($imap)
+    public function set_imap($imap)
     {
         if (is_null($imap)) {
             throw new \InvalidArgumentException('non-nullable imap cannot be null');
@@ -621,7 +621,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getCreatedAt()
+    public function get__created_at()
     {
         return $this->container['_created_at'];
     }
@@ -633,7 +633,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setCreatedAt($_created_at)
+    public function set__created_at($_created_at)
     {
         if (is_null($_created_at)) {
             throw new \InvalidArgumentException('non-nullable _created_at cannot be null');
@@ -648,7 +648,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return string|null
      */
-    public function getUpdatedAt()
+    public function get__updated_at()
     {
         return $this->container['_updated_at'];
     }
@@ -660,7 +660,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setUpdatedAt($_updated_at)
+    public function set__updated_at($_updated_at)
     {
         if (is_null($_updated_at)) {
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
@@ -675,7 +675,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return \WebMI\RocketChatApiClient\MiscellaneousApi\Model\GetApiV1EmailInboxList200ResponseEmailInboxesInnerCreatedBy|null
      */
-    public function getCreatedBy()
+    public function get__created_by()
     {
         return $this->container['_created_by'];
     }
@@ -687,7 +687,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setCreatedBy($_created_by)
+    public function set__created_by($_created_by)
     {
         if (is_null($_created_by)) {
             throw new \InvalidArgumentException('non-nullable _created_by cannot be null');
@@ -702,7 +702,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -714,7 +714,7 @@ class GetApiV1EmailInboxId200Response implements ModelInterface, ArrayAccess, \J
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

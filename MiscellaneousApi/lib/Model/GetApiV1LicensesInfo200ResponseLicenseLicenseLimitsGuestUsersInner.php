@@ -179,8 +179,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimitsGuestUsersInner impleme
      * @var string[]
      */
     protected static $setters = [
-        'max' => 'setMax',
-        'behavior' => 'setBehavior'
+        'max' => 'set_max',
+        'behavior' => 'set_behavior'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimitsGuestUsersInner impleme
      * @var string[]
      */
     protected static $getters = [
-        'max' => 'getMax',
-        'behavior' => 'getBehavior'
+        'max' => 'get_max',
+        'behavior' => 'get_behavior'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimitsGuestUsersInner impleme
      *
      * @return int|null
      */
-    public function getMax()
+    public function get_max()
     {
         return $this->container['max'];
     }
@@ -313,7 +313,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimitsGuestUsersInner impleme
      *
      * @return self
      */
-    public function setMax($max)
+    public function set_max($max)
     {
         if (is_null($max)) {
             throw new \InvalidArgumentException('non-nullable max cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimitsGuestUsersInner impleme
      *
      * @return string|null
      */
-    public function getBehavior()
+    public function get_behavior()
     {
         return $this->container['behavior'];
     }
@@ -340,7 +340,7 @@ class GetApiV1LicensesInfo200ResponseLicenseLicenseLimitsGuestUsersInner impleme
      *
      * @return self
      */
-    public function setBehavior($behavior)
+    public function set_behavior($behavior)
     {
         if (is_null($behavior)) {
             throw new \InvalidArgumentException('non-nullable behavior cannot be null');

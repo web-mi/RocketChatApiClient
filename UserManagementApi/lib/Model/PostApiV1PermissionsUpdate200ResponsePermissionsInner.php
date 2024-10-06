@@ -179,8 +179,8 @@ class PostApiV1PermissionsUpdate200ResponsePermissionsInner implements ModelInte
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'roles' => 'setRoles'
+        '_id' => 'set__id',
+        'roles' => 'set_roles'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1PermissionsUpdate200ResponsePermissionsInner implements ModelInte
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'roles' => 'getRoles'
+        '_id' => 'get__id',
+        'roles' => 'get_roles'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1PermissionsUpdate200ResponsePermissionsInner implements ModelInte
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -313,7 +313,7 @@ class PostApiV1PermissionsUpdate200ResponsePermissionsInner implements ModelInte
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1PermissionsUpdate200ResponsePermissionsInner implements ModelInte
      *
      * @return string[]|null
      */
-    public function getRoles()
+    public function get_roles()
     {
         return $this->container['roles'];
     }
@@ -340,7 +340,7 @@ class PostApiV1PermissionsUpdate200ResponsePermissionsInner implements ModelInte
      *
      * @return self
      */
-    public function setRoles($roles)
+    public function set_roles($roles)
     {
         if (is_null($roles)) {
             throw new \InvalidArgumentException('non-nullable roles cannot be null');

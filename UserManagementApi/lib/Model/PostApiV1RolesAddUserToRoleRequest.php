@@ -183,9 +183,9 @@ class PostApiV1RolesAddUserToRoleRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'role_name' => 'setRoleName',
-        'username' => 'setUsername',
-        'room_id' => 'setRoomId'
+        'role_name' => 'set_role_name',
+        'username' => 'set_username',
+        'room_id' => 'set_room_id'
     ];
 
     /**
@@ -194,9 +194,9 @@ class PostApiV1RolesAddUserToRoleRequest implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'role_name' => 'getRoleName',
-        'username' => 'getUsername',
-        'room_id' => 'getRoomId'
+        'role_name' => 'get_role_name',
+        'username' => 'get_username',
+        'room_id' => 'get_room_id'
     ];
 
     /**
@@ -314,7 +314,7 @@ class PostApiV1RolesAddUserToRoleRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getRoleName()
+    public function get_role_name()
     {
         return $this->container['role_name'];
     }
@@ -326,7 +326,7 @@ class PostApiV1RolesAddUserToRoleRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setRoleName($role_name)
+    public function set_role_name($role_name)
     {
         if (is_null($role_name)) {
             throw new \InvalidArgumentException('non-nullable role_name cannot be null');
@@ -341,7 +341,7 @@ class PostApiV1RolesAddUserToRoleRequest implements ModelInterface, ArrayAccess,
      *
      * @return string
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -353,7 +353,7 @@ class PostApiV1RolesAddUserToRoleRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -368,7 +368,7 @@ class PostApiV1RolesAddUserToRoleRequest implements ModelInterface, ArrayAccess,
      *
      * @return string|null
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -380,7 +380,7 @@ class PostApiV1RolesAddUserToRoleRequest implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');

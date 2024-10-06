@@ -179,8 +179,8 @@ class GetApiV1RolesSync400Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $setters = [
-        'success' => 'setSuccess',
-        'error' => 'setError'
+        'success' => 'set_success',
+        'error' => 'set_error'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1RolesSync400Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $getters = [
-        'success' => 'getSuccess',
-        'error' => 'getError'
+        'success' => 'get_success',
+        'error' => 'get_error'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1RolesSync400Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -313,7 +313,7 @@ class GetApiV1RolesSync400Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1RolesSync400Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return string|null
      */
-    public function getError()
+    public function get_error()
     {
         return $this->container['error'];
     }
@@ -340,7 +340,7 @@ class GetApiV1RolesSync400Response implements ModelInterface, ArrayAccess, \Json
      *
      * @return self
      */
-    public function setError($error)
+    public function set_error($error)
     {
         if (is_null($error)) {
             throw new \InvalidArgumentException('non-nullable error cannot be null');

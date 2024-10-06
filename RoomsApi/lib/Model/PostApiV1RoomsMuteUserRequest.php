@@ -179,8 +179,8 @@ class PostApiV1RoomsMuteUserRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'user_id' => 'setUserId',
-        'room_id' => 'setRoomId'
+        'user_id' => 'set_user_id',
+        'room_id' => 'set_room_id'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1RoomsMuteUserRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'user_id' => 'getUserId',
-        'room_id' => 'getRoomId'
+        'user_id' => 'get_user_id',
+        'room_id' => 'get_room_id'
     ];
 
     /**
@@ -307,7 +307,7 @@ class PostApiV1RoomsMuteUserRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -319,7 +319,7 @@ class PostApiV1RoomsMuteUserRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -334,7 +334,7 @@ class PostApiV1RoomsMuteUserRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getRoomId()
+    public function get_room_id()
     {
         return $this->container['room_id'];
     }
@@ -346,7 +346,7 @@ class PostApiV1RoomsMuteUserRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setRoomId($room_id)
+    public function set_room_id($room_id)
     {
         if (is_null($room_id)) {
             throw new \InvalidArgumentException('non-nullable room_id cannot be null');

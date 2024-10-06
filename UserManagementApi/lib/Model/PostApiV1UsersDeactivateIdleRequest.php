@@ -179,8 +179,8 @@ class PostApiV1UsersDeactivateIdleRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'days_idle' => 'setDaysIdle',
-        'role' => 'setRole'
+        'days_idle' => 'set_days_idle',
+        'role' => 'set_role'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1UsersDeactivateIdleRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'days_idle' => 'getDaysIdle',
-        'role' => 'getRole'
+        'days_idle' => 'get_days_idle',
+        'role' => 'get_role'
     ];
 
     /**
@@ -304,7 +304,7 @@ class PostApiV1UsersDeactivateIdleRequest implements ModelInterface, ArrayAccess
      *
      * @return int
      */
-    public function getDaysIdle()
+    public function get_days_idle()
     {
         return $this->container['days_idle'];
     }
@@ -316,7 +316,7 @@ class PostApiV1UsersDeactivateIdleRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setDaysIdle($days_idle)
+    public function set_days_idle($days_idle)
     {
         if (is_null($days_idle)) {
             throw new \InvalidArgumentException('non-nullable days_idle cannot be null');
@@ -331,7 +331,7 @@ class PostApiV1UsersDeactivateIdleRequest implements ModelInterface, ArrayAccess
      *
      * @return string|null
      */
-    public function getRole()
+    public function get_role()
     {
         return $this->container['role'];
     }
@@ -343,7 +343,7 @@ class PostApiV1UsersDeactivateIdleRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setRole($role)
+    public function set_role($role)
     {
         if (is_null($role)) {
             throw new \InvalidArgumentException('non-nullable role cannot be null');

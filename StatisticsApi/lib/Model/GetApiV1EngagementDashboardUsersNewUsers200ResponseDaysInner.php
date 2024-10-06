@@ -179,8 +179,8 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner implements Mo
      * @var string[]
      */
     protected static $setters = [
-        'day' => 'setDay',
-        'users' => 'setUsers'
+        'day' => 'set_day',
+        'users' => 'set_users'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner implements Mo
      * @var string[]
      */
     protected static $getters = [
-        'day' => 'getDay',
-        'users' => 'getUsers'
+        'day' => 'get_day',
+        'users' => 'get_users'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner implements Mo
      *
      * @return string|null
      */
-    public function getDay()
+    public function get_day()
     {
         return $this->container['day'];
     }
@@ -313,7 +313,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner implements Mo
      *
      * @return self
      */
-    public function setDay($day)
+    public function set_day($day)
     {
         if (is_null($day)) {
             throw new \InvalidArgumentException('non-nullable day cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner implements Mo
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -340,7 +340,7 @@ class GetApiV1EngagementDashboardUsersNewUsers200ResponseDaysInner implements Mo
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');

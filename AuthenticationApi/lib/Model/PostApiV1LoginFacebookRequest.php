@@ -187,10 +187,10 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $setters = [
-        'service_name' => 'setServiceName',
-        'access_token' => 'setAccessToken',
-        'secret' => 'setSecret',
-        'expires_in' => 'setExpiresIn'
+        'service_name' => 'set_service_name',
+        'access_token' => 'set_access_token',
+        'secret' => 'set_secret',
+        'expires_in' => 'set_expires_in'
     ];
 
     /**
@@ -199,10 +199,10 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      * @var string[]
      */
     protected static $getters = [
-        'service_name' => 'getServiceName',
-        'access_token' => 'getAccessToken',
-        'secret' => 'getSecret',
-        'expires_in' => 'getExpiresIn'
+        'service_name' => 'get_service_name',
+        'access_token' => 'get_access_token',
+        'secret' => 'get_secret',
+        'expires_in' => 'get_expires_in'
     ];
 
     /**
@@ -327,7 +327,7 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getServiceName()
+    public function get_service_name()
     {
         return $this->container['service_name'];
     }
@@ -339,7 +339,7 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setServiceName($service_name)
+    public function set_service_name($service_name)
     {
         if (is_null($service_name)) {
             throw new \InvalidArgumentException('non-nullable service_name cannot be null');
@@ -354,7 +354,7 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getAccessToken()
+    public function get_access_token()
     {
         return $this->container['access_token'];
     }
@@ -366,7 +366,7 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setAccessToken($access_token)
+    public function set_access_token($access_token)
     {
         if (is_null($access_token)) {
             throw new \InvalidArgumentException('non-nullable access_token cannot be null');
@@ -381,7 +381,7 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return string
      */
-    public function getSecret()
+    public function get_secret()
     {
         return $this->container['secret'];
     }
@@ -393,7 +393,7 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setSecret($secret)
+    public function set_secret($secret)
     {
         if (is_null($secret)) {
             throw new \InvalidArgumentException('non-nullable secret cannot be null');
@@ -408,7 +408,7 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return int
      */
-    public function getExpiresIn()
+    public function get_expires_in()
     {
         return $this->container['expires_in'];
     }
@@ -420,7 +420,7 @@ class PostApiV1LoginFacebookRequest implements ModelInterface, ArrayAccess, \Jso
      *
      * @return self
      */
-    public function setExpiresIn($expires_in)
+    public function set_expires_in($expires_in)
     {
         if (is_null($expires_in)) {
             throw new \InvalidArgumentException('non-nullable expires_in cannot be null');

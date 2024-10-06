@@ -179,8 +179,8 @@ class DeleteApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'token' => 'setToken',
-        'rid' => 'setRid'
+        'token' => 'set_token',
+        'rid' => 'set_rid'
     ];
 
     /**
@@ -189,8 +189,8 @@ class DeleteApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'token' => 'getToken',
-        'rid' => 'getRid'
+        'token' => 'get_token',
+        'rid' => 'get_rid'
     ];
 
     /**
@@ -307,7 +307,7 @@ class DeleteApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getToken()
+    public function get_token()
     {
         return $this->container['token'];
     }
@@ -319,7 +319,7 @@ class DeleteApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setToken($token)
+    public function set_token($token)
     {
         if (is_null($token)) {
             throw new \InvalidArgumentException('non-nullable token cannot be null');
@@ -334,7 +334,7 @@ class DeleteApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess
      *
      * @return string
      */
-    public function getRid()
+    public function get_rid()
     {
         return $this->container['rid'];
     }
@@ -346,7 +346,7 @@ class DeleteApiV1LivechatMessageIdRequest implements ModelInterface, ArrayAccess
      *
      * @return self
      */
-    public function setRid($rid)
+    public function set_rid($rid)
     {
         if (is_null($rid)) {
             throw new \InvalidArgumentException('non-nullable rid cannot be null');

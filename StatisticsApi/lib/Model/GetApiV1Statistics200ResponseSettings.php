@@ -223,19 +223,19 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $setters = [
-        'accounts' => 'setAccounts',
-        'canned_responses' => 'setCannedResponses',
-        'e2ee' => 'setE2ee',
-        'email' => 'setEmail',
-        'file_upload' => 'setFileUpload',
-        'general' => 'setGeneral',
-        'live_stream_and_broadcasting' => 'setLiveStreamAndBroadcasting',
-        'message' => 'setMessage',
-        'otr' => 'setOtr',
-        'push' => 'setPush',
-        'search' => 'setSearch',
-        'threads' => 'setThreads',
-        'web_rtc' => 'setWebRtc'
+        'accounts' => 'set_accounts',
+        'canned_responses' => 'set_canned_responses',
+        'e2ee' => 'set_e2ee',
+        'email' => 'set_email',
+        'file_upload' => 'set_file_upload',
+        'general' => 'set_general',
+        'live_stream_and_broadcasting' => 'set_live_stream_and_broadcasting',
+        'message' => 'set_message',
+        'otr' => 'set_otr',
+        'push' => 'set_push',
+        'search' => 'set_search',
+        'threads' => 'set_threads',
+        'web_rtc' => 'set_web_rtc'
     ];
 
     /**
@@ -244,19 +244,19 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      * @var string[]
      */
     protected static $getters = [
-        'accounts' => 'getAccounts',
-        'canned_responses' => 'getCannedResponses',
-        'e2ee' => 'getE2ee',
-        'email' => 'getEmail',
-        'file_upload' => 'getFileUpload',
-        'general' => 'getGeneral',
-        'live_stream_and_broadcasting' => 'getLiveStreamAndBroadcasting',
-        'message' => 'getMessage',
-        'otr' => 'getOtr',
-        'push' => 'getPush',
-        'search' => 'getSearch',
-        'threads' => 'getThreads',
-        'web_rtc' => 'getWebRtc'
+        'accounts' => 'get_accounts',
+        'canned_responses' => 'get_canned_responses',
+        'e2ee' => 'get_e2ee',
+        'email' => 'get_email',
+        'file_upload' => 'get_file_upload',
+        'general' => 'get_general',
+        'live_stream_and_broadcasting' => 'get_live_stream_and_broadcasting',
+        'message' => 'get_message',
+        'otr' => 'get_otr',
+        'push' => 'get_push',
+        'search' => 'get_search',
+        'threads' => 'get_threads',
+        'web_rtc' => 'get_web_rtc'
     ];
 
     /**
@@ -378,7 +378,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsAccounts|null
      */
-    public function getAccounts()
+    public function get_accounts()
     {
         return $this->container['accounts'];
     }
@@ -390,7 +390,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setAccounts($accounts)
+    public function set_accounts($accounts)
     {
         if (is_null($accounts)) {
             throw new \InvalidArgumentException('non-nullable accounts cannot be null');
@@ -405,7 +405,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsCannedResponses|null
      */
-    public function getCannedResponses()
+    public function get_canned_responses()
     {
         return $this->container['canned_responses'];
     }
@@ -417,7 +417,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setCannedResponses($canned_responses)
+    public function set_canned_responses($canned_responses)
     {
         if (is_null($canned_responses)) {
             throw new \InvalidArgumentException('non-nullable canned_responses cannot be null');
@@ -432,7 +432,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsE2ee|null
      */
-    public function getE2ee()
+    public function get_e2ee()
     {
         return $this->container['e2ee'];
     }
@@ -444,7 +444,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setE2ee($e2ee)
+    public function set_e2ee($e2ee)
     {
         if (is_null($e2ee)) {
             throw new \InvalidArgumentException('non-nullable e2ee cannot be null');
@@ -459,7 +459,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsEmail|null
      */
-    public function getEmail()
+    public function get_email()
     {
         return $this->container['email'];
     }
@@ -471,7 +471,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setEmail($email)
+    public function set_email($email)
     {
         if (is_null($email)) {
             throw new \InvalidArgumentException('non-nullable email cannot be null');
@@ -486,7 +486,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsFileUpload|null
      */
-    public function getFileUpload()
+    public function get_file_upload()
     {
         return $this->container['file_upload'];
     }
@@ -498,7 +498,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setFileUpload($file_upload)
+    public function set_file_upload($file_upload)
     {
         if (is_null($file_upload)) {
             throw new \InvalidArgumentException('non-nullable file_upload cannot be null');
@@ -513,7 +513,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsGeneral|null
      */
-    public function getGeneral()
+    public function get_general()
     {
         return $this->container['general'];
     }
@@ -525,7 +525,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setGeneral($general)
+    public function set_general($general)
     {
         if (is_null($general)) {
             throw new \InvalidArgumentException('non-nullable general cannot be null');
@@ -540,7 +540,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return object|null
      */
-    public function getLiveStreamAndBroadcasting()
+    public function get_live_stream_and_broadcasting()
     {
         return $this->container['live_stream_and_broadcasting'];
     }
@@ -552,7 +552,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setLiveStreamAndBroadcasting($live_stream_and_broadcasting)
+    public function set_live_stream_and_broadcasting($live_stream_and_broadcasting)
     {
         if (is_null($live_stream_and_broadcasting)) {
             throw new \InvalidArgumentException('non-nullable live_stream_and_broadcasting cannot be null');
@@ -567,7 +567,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsMessage|null
      */
-    public function getMessage()
+    public function get_message()
     {
         return $this->container['message'];
     }
@@ -579,7 +579,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setMessage($message)
+    public function set_message($message)
     {
         if (is_null($message)) {
             throw new \InvalidArgumentException('non-nullable message cannot be null');
@@ -594,7 +594,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsOtr|null
      */
-    public function getOtr()
+    public function get_otr()
     {
         return $this->container['otr'];
     }
@@ -606,7 +606,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setOtr($otr)
+    public function set_otr($otr)
     {
         if (is_null($otr)) {
             throw new \InvalidArgumentException('non-nullable otr cannot be null');
@@ -621,7 +621,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsPush|null
      */
-    public function getPush()
+    public function get_push()
     {
         return $this->container['push'];
     }
@@ -633,7 +633,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setPush($push)
+    public function set_push($push)
     {
         if (is_null($push)) {
             throw new \InvalidArgumentException('non-nullable push cannot be null');
@@ -648,7 +648,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsSearch|null
      */
-    public function getSearch()
+    public function get_search()
     {
         return $this->container['search'];
     }
@@ -660,7 +660,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setSearch($search)
+    public function set_search($search)
     {
         if (is_null($search)) {
             throw new \InvalidArgumentException('non-nullable search cannot be null');
@@ -675,7 +675,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsThreads|null
      */
-    public function getThreads()
+    public function get_threads()
     {
         return $this->container['threads'];
     }
@@ -687,7 +687,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setThreads($threads)
+    public function set_threads($threads)
     {
         if (is_null($threads)) {
             throw new \InvalidArgumentException('non-nullable threads cannot be null');
@@ -702,7 +702,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1Statistics200ResponseSettingsWebRTC|null
      */
-    public function getWebRtc()
+    public function get_web_rtc()
     {
         return $this->container['web_rtc'];
     }
@@ -714,7 +714,7 @@ class GetApiV1Statistics200ResponseSettings implements ModelInterface, ArrayAcce
      *
      * @return self
      */
-    public function setWebRtc($web_rtc)
+    public function set_web_rtc($web_rtc)
     {
         if (is_null($web_rtc)) {
             throw new \InvalidArgumentException('non-nullable web_rtc cannot be null');

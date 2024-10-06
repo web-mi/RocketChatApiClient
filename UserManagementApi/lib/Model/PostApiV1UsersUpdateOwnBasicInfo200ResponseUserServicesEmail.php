@@ -175,7 +175,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail implements Mo
      * @var string[]
      */
     protected static $setters = [
-        'verification_tokens' => 'setVerificationTokens'
+        'verification_tokens' => 'set_verification_tokens'
     ];
 
     /**
@@ -184,7 +184,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail implements Mo
      * @var string[]
      */
     protected static $getters = [
-        'verification_tokens' => 'getVerificationTokens'
+        'verification_tokens' => 'get_verification_tokens'
     ];
 
     /**
@@ -294,7 +294,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail implements Mo
      *
      * @return \WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmailVerificationTokensInner[]|null
      */
-    public function getVerificationTokens()
+    public function get_verification_tokens()
     {
         return $this->container['verification_tokens'];
     }
@@ -306,7 +306,7 @@ class PostApiV1UsersUpdateOwnBasicInfo200ResponseUserServicesEmail implements Mo
      *
      * @return self
      */
-    public function setVerificationTokens($verification_tokens)
+    public function set_verification_tokens($verification_tokens)
     {
         if (is_null($verification_tokens)) {
             throw new \InvalidArgumentException('non-nullable verification_tokens cannot be null');

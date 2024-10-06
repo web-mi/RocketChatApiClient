@@ -193,7 +193,7 @@ Class | Method | HTTP request | Description
 *LivechatUnitsApi* | [**getApiV1LivechatUnitsGetOne**](docs/Api/LivechatUnitsApi.md#getapiv1livechatunitsgetone) | **GET** /api/v1/livechat/units.getOne | Get One Unit
 *LivechatUnitsApi* | [**getApiV1LivechatUnitsList**](docs/Api/LivechatUnitsApi.md#getapiv1livechatunitslist) | **GET** /api/v1/livechat/units.list | List of Units
 *LivechatUnitsApi* | [**getApiV1LivechatUnitsMonitorsList**](docs/Api/LivechatUnitsApi.md#getapiv1livechatunitsmonitorslist) | **GET** /api/v1/livechat/unitMonitors.list | List of Unit Monitors
-*LivechatUnitsApi* | [**getApiV1LivechatUnitsUnitId**](docs/Api/LivechatUnitsApi.md#getapiv1livechatunitsunitid) | **GET** /api/v1/livechat/units/{unitId} | Get a Unit
+*LivechatUnitsApi* | [**getApiV1LivechatUnitsUnitId**](docs/Api/LivechatUnitsApi.md#getapiv1livechatunitsunitid) | **GET** /api/v1/livechat/units/{id} | Get a Unit
 *LivechatUnitsApi* | [**getApiV1LivechatUnitsUnitIdDepartments**](docs/Api/LivechatUnitsApi.md#getapiv1livechatunitsunitiddepartments) | **GET** /api/v1/livechat/units/{unitId}/departments | Get Departments by Unit ID
 *LivechatUnitsApi* | [**getApiV1LivechatUnitsUnitIdDepartmentsAvailable**](docs/Api/LivechatUnitsApi.md#getapiv1livechatunitsunitiddepartmentsavailable) | **GET** /api/v1/livechat/units/{unitId}/departments/available | Get Available Departments by Unit Id
 *LivechatUnitsApi* | [**getApiV1LivechatUnitsUnitIdMonitors**](docs/Api/LivechatUnitsApi.md#getapiv1livechatunitsunitidmonitors) | **GET** /api/v1/livechat/units/{unitId}/monitors | Get List of Unit Monitors
@@ -485,6 +485,7 @@ Class | Method | HTTP request | Description
 - [PostApiV1LivechatDepartmentRequest](docs/Model/PostApiV1LivechatDepartmentRequest.md)
 - [PostApiV1LivechatDepartmentRequestAgentsInner](docs/Model/PostApiV1LivechatDepartmentRequestAgentsInner.md)
 - [PostApiV1LivechatDepartmentRequestDepartment](docs/Model/PostApiV1LivechatDepartmentRequestDepartment.md)
+- [PostApiV1LivechatDepartmentRequestDepartmentUnit](docs/Model/PostApiV1LivechatDepartmentRequestDepartmentUnit.md)
 - [PostApiV1LivechatInquiriesTakeRequest](docs/Model/PostApiV1LivechatInquiriesTakeRequest.md)
 - [PostApiV1LivechatMessage200Response](docs/Model/PostApiV1LivechatMessage200Response.md)
 - [PostApiV1LivechatMessage200ResponseMessage](docs/Model/PostApiV1LivechatMessage200ResponseMessage.md)
@@ -563,6 +564,7 @@ Class | Method | HTTP request | Description
 - [PutApiV1LivechatDepartmentIdRequest](docs/Model/PutApiV1LivechatDepartmentIdRequest.md)
 - [PutApiV1LivechatDepartmentIdRequestAgentsInner](docs/Model/PutApiV1LivechatDepartmentIdRequestAgentsInner.md)
 - [PutApiV1LivechatDepartmentIdRequestDepartment](docs/Model/PutApiV1LivechatDepartmentIdRequestDepartment.md)
+- [PutApiV1LivechatDepartmentIdRequestDepartmentUnit](docs/Model/PutApiV1LivechatDepartmentIdRequestDepartmentUnit.md)
 - [PutApiV1LivechatInquirySetSLARequest](docs/Model/PutApiV1LivechatInquirySetSLARequest.md)
 - [PutApiV1LivechatMessageId200Response](docs/Model/PutApiV1LivechatMessageId200Response.md)
 - [PutApiV1LivechatMessageId200ResponseMessage](docs/Model/PutApiV1LivechatMessageId200ResponseMessage.md)

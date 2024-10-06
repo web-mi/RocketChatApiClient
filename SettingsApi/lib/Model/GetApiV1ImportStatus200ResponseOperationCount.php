@@ -179,8 +179,8 @@ class GetApiV1ImportStatus200ResponseOperationCount implements ModelInterface, A
      * @var string[]
      */
     protected static $setters = [
-        'total' => 'setTotal',
-        'users' => 'setUsers'
+        'total' => 'set_total',
+        'users' => 'set_users'
     ];
 
     /**
@@ -189,8 +189,8 @@ class GetApiV1ImportStatus200ResponseOperationCount implements ModelInterface, A
      * @var string[]
      */
     protected static $getters = [
-        'total' => 'getTotal',
-        'users' => 'getUsers'
+        'total' => 'get_total',
+        'users' => 'get_users'
     ];
 
     /**
@@ -301,7 +301,7 @@ class GetApiV1ImportStatus200ResponseOperationCount implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getTotal()
+    public function get_total()
     {
         return $this->container['total'];
     }
@@ -313,7 +313,7 @@ class GetApiV1ImportStatus200ResponseOperationCount implements ModelInterface, A
      *
      * @return self
      */
-    public function setTotal($total)
+    public function set_total($total)
     {
         if (is_null($total)) {
             throw new \InvalidArgumentException('non-nullable total cannot be null');
@@ -328,7 +328,7 @@ class GetApiV1ImportStatus200ResponseOperationCount implements ModelInterface, A
      *
      * @return int|null
      */
-    public function getUsers()
+    public function get_users()
     {
         return $this->container['users'];
     }
@@ -340,7 +340,7 @@ class GetApiV1ImportStatus200ResponseOperationCount implements ModelInterface, A
      *
      * @return self
      */
-    public function setUsers($users)
+    public function set_users($users)
     {
         if (is_null($users)) {
             throw new \InvalidArgumentException('non-nullable users cannot be null');

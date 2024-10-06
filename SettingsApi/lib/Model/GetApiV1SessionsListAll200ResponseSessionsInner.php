@@ -203,14 +203,14 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      * @var string[]
      */
     protected static $setters = [
-        'session_id' => 'setSessionId',
-        'user_id' => 'setUserId',
-        'device' => 'setDevice',
-        'host' => 'setHost',
-        'ip' => 'setIp',
-        'login_at' => 'setLoginAt',
-        '_user' => 'setUser',
-        '_id' => 'setId'
+        'session_id' => 'set_session_id',
+        'user_id' => 'set_user_id',
+        'device' => 'set_device',
+        'host' => 'set_host',
+        'ip' => 'set_ip',
+        'login_at' => 'set_login_at',
+        '_user' => 'set__user',
+        '_id' => 'set__id'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      * @var string[]
      */
     protected static $getters = [
-        'session_id' => 'getSessionId',
-        'user_id' => 'getUserId',
-        'device' => 'getDevice',
-        'host' => 'getHost',
-        'ip' => 'getIp',
-        'login_at' => 'getLoginAt',
-        '_user' => 'getUser',
-        '_id' => 'getId'
+        'session_id' => 'get_session_id',
+        'user_id' => 'get_user_id',
+        'device' => 'get_device',
+        'host' => 'get_host',
+        'ip' => 'get_ip',
+        'login_at' => 'get_login_at',
+        '_user' => 'get__user',
+        '_id' => 'get__id'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getSessionId()
+    public function get_session_id()
     {
         return $this->container['session_id'];
     }
@@ -355,7 +355,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setSessionId($session_id)
+    public function set_session_id($session_id)
     {
         if (is_null($session_id)) {
             throw new \InvalidArgumentException('non-nullable session_id cannot be null');
@@ -370,7 +370,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getUserId()
+    public function get_user_id()
     {
         return $this->container['user_id'];
     }
@@ -382,7 +382,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setUserId($user_id)
+    public function set_user_id($user_id)
     {
         if (is_null($user_id)) {
             throw new \InvalidArgumentException('non-nullable user_id cannot be null');
@@ -397,7 +397,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsList200ResponseSessionsInnerDevice|null
      */
-    public function getDevice()
+    public function get_device()
     {
         return $this->container['device'];
     }
@@ -409,7 +409,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setDevice($device)
+    public function set_device($device)
     {
         if (is_null($device)) {
             throw new \InvalidArgumentException('non-nullable device cannot be null');
@@ -424,7 +424,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getHost()
+    public function get_host()
     {
         return $this->container['host'];
     }
@@ -436,7 +436,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setHost($host)
+    public function set_host($host)
     {
         if (is_null($host)) {
             throw new \InvalidArgumentException('non-nullable host cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getIp()
+    public function get_ip()
     {
         return $this->container['ip'];
     }
@@ -463,7 +463,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setIp($ip)
+    public function set_ip($ip)
     {
         if (is_null($ip)) {
             throw new \InvalidArgumentException('non-nullable ip cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getLoginAt()
+    public function get_login_at()
     {
         return $this->container['login_at'];
     }
@@ -490,7 +490,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setLoginAt($login_at)
+    public function set_login_at($login_at)
     {
         if (is_null($login_at)) {
             throw new \InvalidArgumentException('non-nullable login_at cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return \WebMI\RocketChatApiClient\SettingsApi\Model\GetApiV1SessionsListAll200ResponseSessionsInnerUser|null
      */
-    public function getUser()
+    public function get__user()
     {
         return $this->container['_user'];
     }
@@ -517,7 +517,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setUser($_user)
+    public function set__user($_user)
     {
         if (is_null($_user)) {
             throw new \InvalidArgumentException('non-nullable _user cannot be null');
@@ -532,7 +532,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -544,7 +544,7 @@ class GetApiV1SessionsListAll200ResponseSessionsInner implements ModelInterface,
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');

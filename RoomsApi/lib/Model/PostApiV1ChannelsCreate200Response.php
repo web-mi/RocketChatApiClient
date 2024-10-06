@@ -179,8 +179,8 @@ class PostApiV1ChannelsCreate200Response implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $setters = [
-        'channel' => 'setChannel',
-        'success' => 'setSuccess'
+        'channel' => 'set_channel',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsCreate200Response implements ModelInterface, ArrayAccess,
      * @var string[]
      */
     protected static $getters = [
-        'channel' => 'getChannel',
-        'success' => 'getSuccess'
+        'channel' => 'get_channel',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ChannelsCreate200Response implements ModelInterface, ArrayAccess,
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannel|null
      */
-    public function getChannel()
+    public function get_channel()
     {
         return $this->container['channel'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ChannelsCreate200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setChannel($channel)
+    public function set_channel($channel)
     {
         if (is_null($channel)) {
             throw new \InvalidArgumentException('non-nullable channel cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ChannelsCreate200Response implements ModelInterface, ArrayAccess,
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ChannelsCreate200Response implements ModelInterface, ArrayAccess,
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');

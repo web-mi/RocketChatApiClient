@@ -203,14 +203,14 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'setId',
-        'username' => 'setUsername',
-        'status' => 'setStatus',
-        'status_livechat' => 'setStatusLivechat',
-        'name' => 'setName',
-        'emails' => 'setEmails',
-        'livechat' => 'setLivechat',
-        'departments' => 'setDepartments'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'status' => 'set_status',
+        'status_livechat' => 'set_status_livechat',
+        'name' => 'set_name',
+        'emails' => 'set_emails',
+        'livechat' => 'set_livechat',
+        'departments' => 'set_departments'
     ];
 
     /**
@@ -219,14 +219,14 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'getId',
-        'username' => 'getUsername',
-        'status' => 'getStatus',
-        'status_livechat' => 'getStatusLivechat',
-        'name' => 'getName',
-        'emails' => 'getEmails',
-        'livechat' => 'getLivechat',
-        'departments' => 'getDepartments'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'status' => 'get_status',
+        'status_livechat' => 'get_status_livechat',
+        'name' => 'get_name',
+        'emails' => 'get_emails',
+        'livechat' => 'get_livechat',
+        'departments' => 'get_departments'
     ];
 
     /**
@@ -343,7 +343,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getId()
+    public function get__id()
     {
         return $this->container['_id'];
     }
@@ -355,7 +355,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setId($_id)
+    public function set__id($_id)
     {
         if (is_null($_id)) {
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
@@ -370,7 +370,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getUsername()
+    public function get_username()
     {
         return $this->container['username'];
     }
@@ -382,7 +382,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setUsername($username)
+    public function set_username($username)
     {
         if (is_null($username)) {
             throw new \InvalidArgumentException('non-nullable username cannot be null');
@@ -397,7 +397,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getStatus()
+    public function get_status()
     {
         return $this->container['status'];
     }
@@ -409,7 +409,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setStatus($status)
+    public function set_status($status)
     {
         if (is_null($status)) {
             throw new \InvalidArgumentException('non-nullable status cannot be null');
@@ -424,7 +424,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getStatusLivechat()
+    public function get_status_livechat()
     {
         return $this->container['status_livechat'];
     }
@@ -436,7 +436,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setStatusLivechat($status_livechat)
+    public function set_status_livechat($status_livechat)
     {
         if (is_null($status_livechat)) {
             throw new \InvalidArgumentException('non-nullable status_livechat cannot be null');
@@ -451,7 +451,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getName()
+    public function get_name()
     {
         return $this->container['name'];
     }
@@ -463,7 +463,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setName($name)
+    public function set_name($name)
     {
         if (is_null($name)) {
             throw new \InvalidArgumentException('non-nullable name cannot be null');
@@ -478,7 +478,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatUsersType200ResponseUsersInnerEmailsInner[]|null
      */
-    public function getEmails()
+    public function get_emails()
     {
         return $this->container['emails'];
     }
@@ -490,7 +490,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setEmails($emails)
+    public function set_emails($emails)
     {
         if (is_null($emails)) {
             throw new \InvalidArgumentException('non-nullable emails cannot be null');
@@ -505,7 +505,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return string|null
      */
-    public function getLivechat()
+    public function get_livechat()
     {
         return $this->container['livechat'];
     }
@@ -517,7 +517,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setLivechat($livechat)
+    public function set_livechat($livechat)
     {
         if (is_null($livechat)) {
             throw new \InvalidArgumentException('non-nullable livechat cannot be null');
@@ -532,7 +532,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return string[]|null
      */
-    public function getDepartments()
+    public function get_departments()
     {
         return $this->container['departments'];
     }
@@ -544,7 +544,7 @@ class GetApiV1LivechatUsersType200ResponseUsersInner implements ModelInterface, 
      *
      * @return self
      */
-    public function setDepartments($departments)
+    public function set_departments($departments)
     {
         if (is_null($departments)) {
             throw new \InvalidArgumentException('non-nullable departments cannot be null');

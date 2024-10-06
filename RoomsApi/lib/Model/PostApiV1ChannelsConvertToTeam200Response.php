@@ -179,8 +179,8 @@ class PostApiV1ChannelsConvertToTeam200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $setters = [
-        'team' => 'setTeam',
-        'success' => 'setSuccess'
+        'team' => 'set_team',
+        'success' => 'set_success'
     ];
 
     /**
@@ -189,8 +189,8 @@ class PostApiV1ChannelsConvertToTeam200Response implements ModelInterface, Array
      * @var string[]
      */
     protected static $getters = [
-        'team' => 'getTeam',
-        'success' => 'getSuccess'
+        'team' => 'get_team',
+        'success' => 'get_success'
     ];
 
     /**
@@ -301,7 +301,7 @@ class PostApiV1ChannelsConvertToTeam200Response implements ModelInterface, Array
      *
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsConvertToTeam200ResponseTeam|null
      */
-    public function getTeam()
+    public function get_team()
     {
         return $this->container['team'];
     }
@@ -313,7 +313,7 @@ class PostApiV1ChannelsConvertToTeam200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setTeam($team)
+    public function set_team($team)
     {
         if (is_null($team)) {
             throw new \InvalidArgumentException('non-nullable team cannot be null');
@@ -328,7 +328,7 @@ class PostApiV1ChannelsConvertToTeam200Response implements ModelInterface, Array
      *
      * @return bool|null
      */
-    public function getSuccess()
+    public function get_success()
     {
         return $this->container['success'];
     }
@@ -340,7 +340,7 @@ class PostApiV1ChannelsConvertToTeam200Response implements ModelInterface, Array
      *
      * @return self
      */
-    public function setSuccess($success)
+    public function set_success($success)
     {
         if (is_null($success)) {
             throw new \InvalidArgumentException('non-nullable success cannot be null');
