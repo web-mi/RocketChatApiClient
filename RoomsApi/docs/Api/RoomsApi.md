@@ -23,6 +23,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | [**postApiV1RoomsExport()**](RoomsApi.md#postApiV1RoomsExport) | **POST** /api/v1/rooms.export | Export Room |
 | [**postApiV1RoomsFavorite()**](RoomsApi.md#postApiV1RoomsFavorite) | **POST** /api/v1/rooms.favorite | Favorite/Unfavourite a Room |
 | [**postApiV1RoomsLeave()**](RoomsApi.md#postApiV1RoomsLeave) | **POST** /api/v1/rooms.leave | Leave Room |
+| [**postApiV1RoomsMedia()**](RoomsApi.md#postApiV1RoomsMedia) | **POST** /api/v1/rooms.media/{rid} | Upload Media Files to a Room |
 | [**postApiV1RoomsMuteUser()**](RoomsApi.md#postApiV1RoomsMuteUser) | **POST** /api/v1/rooms.muteUser | Mute User in Room |
 | [**postApiV1RoomsSaveNotification()**](RoomsApi.md#postApiV1RoomsSaveNotification) | **POST** /api/v1/rooms.saveNotification | Set Room Notifications |
 | [**postApiV1RoomsSaveRoomSettings()**](RoomsApi.md#postApiV1RoomsSaveRoomSettings) | **POST** /api/v1/rooms.saveRoomSettings | Save Room Settings |
@@ -855,7 +856,7 @@ getApiV1RoomsUploadRid($x_auth_token, $x_user_id, $rid, $file, $msg, $descriptio
 
 Upload File to a Room
 
-Post a message with the attached file to a dedicated room. ### Changelog | Version | Description                          | | ------- | ------------------------------------ | | 6.8.0   | Allow custom fields in messages      |  | 1.0.0   | Return Message object on file upload | | 0.62.0  | Added                                |
+> This endpoint has been deprecated and is scheduled for removal in the 8.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. Use the `rooms.media` endpoint instead.  Post a message with the attached file to a dedicated room. ### Changelog | Version | Description                          | | ------- | ------------------------------------ | | 6.8.0   | Allow custom fields in messages      |  | 1.0.0   | Return Message object on file upload | | 0.62.0  | Added                                |
 
 ### Example
 
@@ -1211,6 +1212,70 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `postApiV1RoomsMedia()`
+
+```php
+postApiV1RoomsMedia($rid, $x_auth_token, $x_user_id, $file, $msg): \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsMedia200Response
+```
+
+Upload Media Files to a Room
+
+Upload media files to a room.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new WebMI\RocketChatApiClient\RoomsApi\Api\RoomsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$rid = GENERAL; // string | The id of the room.
+$x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
+$x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
+$file = "/path/to/file.txt"; // \SplFileObject | The file to upload
+$msg = 'msg_example'; // string | The text to be added to the file message.
+
+try {
+    $result = $apiInstance->postApiV1RoomsMedia($rid, $x_auth_token, $x_user_id, $file, $msg);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling RoomsApi->postApiV1RoomsMedia: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **rid** | **string**| The id of the room. | |
+| **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
+| **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
+| **file** | **\SplFileObject****\SplFileObject**| The file to upload | |
+| **msg** | **string**| The text to be added to the file message. | |
+
+### Return type
+
+[**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsMedia200Response**](../Model/PostApiV1RoomsMedia200Response.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `multipart/form-data`
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)

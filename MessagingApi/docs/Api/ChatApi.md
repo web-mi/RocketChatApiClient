@@ -231,7 +231,7 @@ No authorization required
 ## `getApiV1ChatGetMessage()`
 
 ```php
-getApiV1ChatGetMessage($x_auth_token, $x_user_id, $msg_id): \WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatReact200Response
+getApiV1ChatGetMessage($x_auth_token, $x_user_id, $msg_id): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMessage200Response
 ```
 
 Get Message
@@ -273,7 +273,7 @@ try {
 
 ### Return type
 
-[**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatReact200Response**](../Model/PostApiV1ChatReact200Response.md)
+[**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMessage200Response**](../Model/GetApiV1ChatGetMessage200Response.md)
 
 ### Authorization
 
@@ -809,7 +809,7 @@ No authorization required
 ## `getApiV1ChatSyncMessages()`
 
 ```php
-getApiV1ChatSyncMessages($x_auth_token, $x_user_id, $room_id, $last_update, $offset, $count, $sort): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncMessages200Response
+getApiV1ChatSyncMessages($x_auth_token, $x_user_id, $room_id, $last_update, $offset, $count, $sort, $next, $previous, $type): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatSyncMessages200Response
 ```
 
 Sync Messages
@@ -832,13 +832,16 @@ $apiInstance = new WebMI\RocketChatApiClient\MessagingApi\Api\ChatApi(
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $room_id = 6GFJ3tbmHiyHbahmC; // string | The room ID.
-$last_update = 2019-04-16T18:30:46.669Z; // string | The date as an ISO string.
+$last_update = 2019-04-16T18:30:46.669Z; // string | The date as an ISO string. You cannot use this parameter if you are using the `next` or `previous` parameter.
 $offset = 50; // int | Number of items to \"skip\" in the query, i.e. requests return count items, skipping the first offset items.
 $count = 50; // int | The number of items to return.
 $sort = NULL; // mixed | List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, `{ \"value\": -1, \"_id\": 1 }`
+$next = 14182940000; // float | This indicates whether the query should retrieve items from a **later** point in time. The value must be the number of milliseconds, as it follows [Date getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime). Note that you can use either `next` or `previous` at the same time.
+$previous = 14182940000; // float | This indicates whether the query should retrieve items from an **earlier** point in time. The value must be the number of milliseconds, as it follows [Date getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime).
+$type = 'type_example'; // string | You must specify whether you want to retrieve `DELETED` (for deleted messages) or `UPDATED` (for updated messages, which is the default use case). This parameter is **required** if you are using the `next` or `previous` parameter.
 
 try {
-    $result = $apiInstance->getApiV1ChatSyncMessages($x_auth_token, $x_user_id, $room_id, $last_update, $offset, $count, $sort);
+    $result = $apiInstance->getApiV1ChatSyncMessages($x_auth_token, $x_user_id, $room_id, $last_update, $offset, $count, $sort, $next, $previous, $type);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ChatApi->getApiV1ChatSyncMessages: ', $e->getMessage(), PHP_EOL;
@@ -852,10 +855,13 @@ try {
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **room_id** | **string**| The room ID. | |
-| **last_update** | **string**| The date as an ISO string. | |
+| **last_update** | **string**| The date as an ISO string. You cannot use this parameter if you are using the &#x60;next&#x60; or &#x60;previous&#x60; parameter. | |
 | **offset** | **int**| Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. | [optional] |
 | **count** | **int**| The number of items to return. | [optional] |
 | **sort** | [**mixed**](../Model/.md)| List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; | [optional] |
+| **next** | **float**| This indicates whether the query should retrieve items from a **later** point in time. The value must be the number of milliseconds, as it follows [Date getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime). Note that you can use either &#x60;next&#x60; or &#x60;previous&#x60; at the same time. | [optional] |
+| **previous** | **float**| This indicates whether the query should retrieve items from an **earlier** point in time. The value must be the number of milliseconds, as it follows [Date getTime()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime). | [optional] |
+| **type** | **string**| You must specify whether you want to retrieve &#x60;DELETED&#x60; (for deleted messages) or &#x60;UPDATED&#x60; (for updated messages, which is the default use case). This parameter is **required** if you are using the &#x60;next&#x60; or &#x60;previous&#x60; parameter. | [optional] |
 
 ### Return type
 

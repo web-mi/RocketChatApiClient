@@ -428,12 +428,12 @@ No authorization required
 ## `getApiV1ImMessages()`
 
 ```php
-getApiV1ImMessages($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields, $room_id, $username): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMessages200Response
+getApiV1ImMessages($x_auth_token, $x_user_id, $offset, $count, $sort, $fields, $room_id, $username, $mention_ids, $starred_ids, $pinned): \WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ImMessages200Response
 ```
 
 List DM Messages
 
-List all the messages in a DM.   ### Changelog | Version      | Description |  | ---------------- | ------------| |0.59.0            | Added       |
+List all the messages in a DM.   ### Changelog | Version      | Description |  | ---------------- | ------------| | 7.0.0  | Added `mentionIds`, `starredIds`, `pinned` query parameters.|          |0.59.0            | Added       |
 
 ### Example
 
@@ -453,13 +453,15 @@ $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated us
 $offset = 50; // int | Number of items to \"skip\" in the query, i.e. requests return count items, skipping the first offset items.
 $count = 50; // int | The number of items to return.
 $sort = NULL; // mixed | List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, `{ \"value\": -1, \"_id\": 1 }`
-$query = NULL; // mixed | This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \"g\": query=`{ \"name\": { \"$regex\": \"g\" }}`
 $fields = 'fields_example'; // string | This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields=`{ \"username\": 1 }`
 $room_id = 'room_id_example'; // string | The room ID of the DM. It is required if `username` is not provided.
 $username = 'username_example'; // string | The username of the user in the DM. It is required if `roomId` is not provided.
+$mention_ids = 838ndhd79w; // string | Filter the messages where a user has been mentioned by the userId. For a set of userIds, use an array (`[\"838ndhd79w\", \"dud0wu900\"]`).
+$starred_ids = dud0wu900; // string | Filter the messages a user have starred by userId. For a set of userIds, use an array (`[\"838ndhd79w\", \"dud0wu900\"]`).
+$pinned = true; // bool | Filter pinned messages.
 
 try {
-    $result = $apiInstance->getApiV1ImMessages($x_auth_token, $x_user_id, $offset, $count, $sort, $query, $fields, $room_id, $username);
+    $result = $apiInstance->getApiV1ImMessages($x_auth_token, $x_user_id, $offset, $count, $sort, $fields, $room_id, $username, $mention_ids, $starred_ids, $pinned);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling IMApi->getApiV1ImMessages: ', $e->getMessage(), PHP_EOL;
@@ -475,10 +477,12 @@ try {
 | **offset** | **int**| Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. | [optional] |
 | **count** | **int**| The number of items to return. | [optional] |
 | **sort** | [**mixed**](../Model/.md)| List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, &#x60;{ \&quot;value\&quot;: -1, \&quot;_id\&quot;: 1 }&#x60; | [optional] |
-| **query** | [**mixed**](../Model/.md)| This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;&#x60;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; }}&#x60; | [optional] |
 | **fields** | **string**| This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields&#x3D;&#x60;{ \&quot;username\&quot;: 1 }&#x60; | [optional] |
 | **room_id** | **string**| The room ID of the DM. It is required if &#x60;username&#x60; is not provided. | [optional] |
 | **username** | **string**| The username of the user in the DM. It is required if &#x60;roomId&#x60; is not provided. | [optional] |
+| **mention_ids** | **string**| Filter the messages where a user has been mentioned by the userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). | [optional] |
+| **starred_ids** | **string**| Filter the messages a user have starred by userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). | [optional] |
+| **pinned** | **bool**| Filter pinned messages. | [optional] |
 
 ### Return type
 

@@ -89,11 +89,11 @@ docs/Model/GetApiV1RoomsImages200ResponseFilesInner.md
 docs/Model/GetApiV1RoomsInfo200Response.md
 docs/Model/GetApiV1RoomsInfo200ResponseRoom.md
 docs/Model/GetApiV1RoomsInfo200ResponseRoomLastMessage.md
+docs/Model/GetApiV1RoomsInfo200ResponseRoomLastMessageFile.md
 docs/Model/GetApiV1RoomsNameExists200Response.md
 docs/Model/GetApiV1RoomsUploadRid200Response.md
 docs/Model/GetApiV1RoomsUploadRid200ResponseMessage.md
 docs/Model/GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner.md
-docs/Model/GetApiV1RoomsUploadRid200ResponseMessageFile.md
 docs/Model/GetApiV1TeamsAutocomplete200Response.md
 docs/Model/GetApiV1TeamsAutocomplete200ResponseTeamsInner.md
 docs/Model/GetApiV1TeamsInfo200Response.md
@@ -218,6 +218,8 @@ docs/Model/PostApiV1RoomsCreateDiscussionRequest.md
 docs/Model/PostApiV1RoomsExportRequest.md
 docs/Model/PostApiV1RoomsFavoriteRequest.md
 docs/Model/PostApiV1RoomsLeaveRequest.md
+docs/Model/PostApiV1RoomsMedia200Response.md
+docs/Model/PostApiV1RoomsMedia200ResponseFile.md
 docs/Model/PostApiV1RoomsMuteUserRequest.md
 docs/Model/PostApiV1RoomsSaveNotificationRequest.md
 docs/Model/PostApiV1RoomsSaveNotificationRequestNotifications.md
@@ -334,11 +336,11 @@ lib/Model/GetApiV1RoomsImages200ResponseFilesInner.php
 lib/Model/GetApiV1RoomsInfo200Response.php
 lib/Model/GetApiV1RoomsInfo200ResponseRoom.php
 lib/Model/GetApiV1RoomsInfo200ResponseRoomLastMessage.php
+lib/Model/GetApiV1RoomsInfo200ResponseRoomLastMessageFile.php
 lib/Model/GetApiV1RoomsNameExists200Response.php
 lib/Model/GetApiV1RoomsUploadRid200Response.php
 lib/Model/GetApiV1RoomsUploadRid200ResponseMessage.php
 lib/Model/GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner.php
-lib/Model/GetApiV1RoomsUploadRid200ResponseMessageFile.php
 lib/Model/GetApiV1TeamsAutocomplete200Response.php
 lib/Model/GetApiV1TeamsAutocomplete200ResponseTeamsInner.php
 lib/Model/GetApiV1TeamsInfo200Response.php
@@ -464,6 +466,8 @@ lib/Model/PostApiV1RoomsCreateDiscussionRequest.php
 lib/Model/PostApiV1RoomsExportRequest.php
 lib/Model/PostApiV1RoomsFavoriteRequest.php
 lib/Model/PostApiV1RoomsLeaveRequest.php
+lib/Model/PostApiV1RoomsMedia200Response.php
+lib/Model/PostApiV1RoomsMedia200ResponseFile.php
 lib/Model/PostApiV1RoomsMuteUserRequest.php
 lib/Model/PostApiV1RoomsSaveNotificationRequest.php
 lib/Model/PostApiV1RoomsSaveNotificationRequestNotifications.php
@@ -492,3 +496,6 @@ lib/Model/PostApiV1TeamsUpdateRoomRequest.php
 lib/Model/PostGroupsLeaveRequest.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
+test/Model/GetApiV1RoomsInfo200ResponseRoomLastMessageFileTest.php
+test/Model/PostApiV1RoomsMedia200ResponseFileTest.php
+test/Model/PostApiV1RoomsMedia200ResponseTest.php

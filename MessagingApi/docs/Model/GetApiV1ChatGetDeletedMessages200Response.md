@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**messages** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetDeletedMessages200ResponseMessagesInner[]**](GetApiV1ChatGetDeletedMessages200ResponseMessagesInner.md) |  | [optional]
+**messages** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\GetApiV1ChatGetMessage200ResponseMessageStarred[]**](GetApiV1ChatGetMessage200ResponseMessageStarred.md) |  | [optional]
 **count** | **int** |  | [optional]
 **offset** | **int** |  | [optional]
 **total** | **int** |  | [optional]
