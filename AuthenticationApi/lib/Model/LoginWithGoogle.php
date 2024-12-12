@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1Logout200ResponseData
+ * LoginWithGoogle
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
- * PostApiV1Logout200ResponseData Class Doc Comment
+ * LoginWithGoogle Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\AuthenticationApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \JsonSerializable
+class LoginWithGoogle implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_logout_200_response_data';
+    protected static $openAPIModelName = 'LoginWithGoogle';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,11 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => 'string'
+        'service_name' => 'string',
+        'access_token' => 'string',
+        'id_token' => 'string',
+        'expires_in' => 'int',
+        'scope' => 'string'
     ];
 
     /**
@@ -68,7 +72,11 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'message' => null
+        'service_name' => null,
+        'access_token' => null,
+        'id_token' => null,
+        'expires_in' => null,
+        'scope' => null
     ];
 
     /**
@@ -77,7 +85,11 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'message' => false
+        'service_name' => false,
+        'access_token' => false,
+        'id_token' => false,
+        'expires_in' => false,
+        'scope' => false
     ];
 
     /**
@@ -166,7 +178,11 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $attributeMap = [
-        'message' => 'message'
+        'service_name' => 'serviceName',
+        'access_token' => 'accessToken',
+        'id_token' => 'idToken',
+        'expires_in' => 'expiresIn',
+        'scope' => 'scope'
     ];
 
     /**
@@ -175,7 +191,11 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'set_message'
+        'service_name' => 'set_service_name',
+        'access_token' => 'set_access_token',
+        'id_token' => 'set_id_token',
+        'expires_in' => 'set_expires_in',
+        'scope' => 'set_scope'
     ];
 
     /**
@@ -184,7 +204,11 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'get_message'
+        'service_name' => 'get_service_name',
+        'access_token' => 'get_access_token',
+        'id_token' => 'get_id_token',
+        'expires_in' => 'get_expires_in',
+        'scope' => 'get_scope'
     ];
 
     /**
@@ -244,7 +268,11 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('message', $data ?? [], null);
+        $this->setIfExists('service_name', $data ?? [], null);
+        $this->setIfExists('access_token', $data ?? [], null);
+        $this->setIfExists('id_token', $data ?? [], null);
+        $this->setIfExists('expires_in', $data ?? [], null);
+        $this->setIfExists('scope', $data ?? [], null);
     }
 
     /**
@@ -274,6 +302,18 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
     {
         $invalidProperties = [];
 
+        if ($this->container['service_name'] === null) {
+            $invalidProperties[] = "'service_name' can't be null";
+        }
+        if ($this->container['access_token'] === null) {
+            $invalidProperties[] = "'access_token' can't be null";
+        }
+        if ($this->container['id_token'] === null) {
+            $invalidProperties[] = "'id_token' can't be null";
+        }
+        if ($this->container['expires_in'] === null) {
+            $invalidProperties[] = "'expires_in' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -290,28 +330,136 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
 
 
     /**
-     * Gets message
+     * Gets service_name
      *
-     * @return string|null
+     * @return string
      */
-    public function get_message()
+    public function get_service_name()
     {
-        return $this->container['message'];
+        return $this->container['service_name'];
     }
 
     /**
-     * Sets message
+     * Sets service_name
      *
-     * @param string|null $message message
+     * @param string $service_name The desired OAuth service name. In this case, `google`.
      *
      * @return self
      */
-    public function set_message($message)
+    public function set_service_name($service_name)
     {
-        if (is_null($message)) {
-            throw new \InvalidArgumentException('non-nullable message cannot be null');
+        if (is_null($service_name)) {
+            throw new \InvalidArgumentException('non-nullable service_name cannot be null');
         }
-        $this->container['message'] = $message;
+        $this->container['service_name'] = $service_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets access_token
+     *
+     * @return string
+     */
+    public function get_access_token()
+    {
+        return $this->container['access_token'];
+    }
+
+    /**
+     * Sets access_token
+     *
+     * @param string $access_token Access token provided by Google OAuth.
+     *
+     * @return self
+     */
+    public function set_access_token($access_token)
+    {
+        if (is_null($access_token)) {
+            throw new \InvalidArgumentException('non-nullable access_token cannot be null');
+        }
+        $this->container['access_token'] = $access_token;
+
+        return $this;
+    }
+
+    /**
+     * Gets id_token
+     *
+     * @return string
+     */
+    public function get_id_token()
+    {
+        return $this->container['id_token'];
+    }
+
+    /**
+     * Sets id_token
+     *
+     * @param string $id_token The ID token provided by Google OAuth.
+     *
+     * @return self
+     */
+    public function set_id_token($id_token)
+    {
+        if (is_null($id_token)) {
+            throw new \InvalidArgumentException('non-nullable id_token cannot be null');
+        }
+        $this->container['id_token'] = $id_token;
+
+        return $this;
+    }
+
+    /**
+     * Gets expires_in
+     *
+     * @return int
+     */
+    public function get_expires_in()
+    {
+        return $this->container['expires_in'];
+    }
+
+    /**
+     * Sets expires_in
+     *
+     * @param int $expires_in Lifetime of token (in seconds).
+     *
+     * @return self
+     */
+    public function set_expires_in($expires_in)
+    {
+        if (is_null($expires_in)) {
+            throw new \InvalidArgumentException('non-nullable expires_in cannot be null');
+        }
+        $this->container['expires_in'] = $expires_in;
+
+        return $this;
+    }
+
+    /**
+     * Gets scope
+     *
+     * @return string|null
+     */
+    public function get_scope()
+    {
+        return $this->container['scope'];
+    }
+
+    /**
+     * Sets scope
+     *
+     * @param string|null $scope Google scopes for API.
+     *
+     * @return self
+     */
+    public function set_scope($scope)
+    {
+        if (is_null($scope)) {
+            throw new \InvalidArgumentException('non-nullable scope cannot be null');
+        }
+        $this->container['scope'] = $scope;
 
         return $this;
     }

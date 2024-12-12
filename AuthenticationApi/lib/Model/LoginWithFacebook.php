@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1Logout200ResponseData
+ * LoginWithFacebook
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
- * PostApiV1Logout200ResponseData Class Doc Comment
+ * LoginWithFacebook Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\AuthenticationApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \JsonSerializable
+class LoginWithFacebook implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_logout_200_response_data';
+    protected static $openAPIModelName = 'LoginWithFacebook';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => 'string'
+        'service_name' => 'string',
+        'access_token' => 'string',
+        'secret' => 'string',
+        'expires_in' => 'int'
     ];
 
     /**
@@ -68,7 +71,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'message' => null
+        'service_name' => null,
+        'access_token' => null,
+        'secret' => null,
+        'expires_in' => null
     ];
 
     /**
@@ -77,7 +83,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'message' => false
+        'service_name' => false,
+        'access_token' => false,
+        'secret' => false,
+        'expires_in' => false
     ];
 
     /**
@@ -166,7 +175,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $attributeMap = [
-        'message' => 'message'
+        'service_name' => 'serviceName',
+        'access_token' => 'accessToken',
+        'secret' => 'secret',
+        'expires_in' => 'expiresIn'
     ];
 
     /**
@@ -175,7 +187,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'set_message'
+        'service_name' => 'set_service_name',
+        'access_token' => 'set_access_token',
+        'secret' => 'set_secret',
+        'expires_in' => 'set_expires_in'
     ];
 
     /**
@@ -184,7 +199,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'get_message'
+        'service_name' => 'get_service_name',
+        'access_token' => 'get_access_token',
+        'secret' => 'get_secret',
+        'expires_in' => 'get_expires_in'
     ];
 
     /**
@@ -244,7 +262,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('message', $data ?? [], null);
+        $this->setIfExists('service_name', $data ?? [], null);
+        $this->setIfExists('access_token', $data ?? [], null);
+        $this->setIfExists('secret', $data ?? [], null);
+        $this->setIfExists('expires_in', $data ?? [], null);
     }
 
     /**
@@ -274,6 +295,18 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
     {
         $invalidProperties = [];
 
+        if ($this->container['service_name'] === null) {
+            $invalidProperties[] = "'service_name' can't be null";
+        }
+        if ($this->container['access_token'] === null) {
+            $invalidProperties[] = "'access_token' can't be null";
+        }
+        if ($this->container['secret'] === null) {
+            $invalidProperties[] = "'secret' can't be null";
+        }
+        if ($this->container['expires_in'] === null) {
+            $invalidProperties[] = "'expires_in' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -290,28 +323,109 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
 
 
     /**
-     * Gets message
+     * Gets service_name
      *
-     * @return string|null
+     * @return string
      */
-    public function get_message()
+    public function get_service_name()
     {
-        return $this->container['message'];
+        return $this->container['service_name'];
     }
 
     /**
-     * Sets message
+     * Sets service_name
      *
-     * @param string|null $message message
+     * @param string $service_name The desired OAuth service name. In this case, `facebook`.
      *
      * @return self
      */
-    public function set_message($message)
+    public function set_service_name($service_name)
     {
-        if (is_null($message)) {
-            throw new \InvalidArgumentException('non-nullable message cannot be null');
+        if (is_null($service_name)) {
+            throw new \InvalidArgumentException('non-nullable service_name cannot be null');
         }
-        $this->container['message'] = $message;
+        $this->container['service_name'] = $service_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets access_token
+     *
+     * @return string
+     */
+    public function get_access_token()
+    {
+        return $this->container['access_token'];
+    }
+
+    /**
+     * Sets access_token
+     *
+     * @param string $access_token Access token provided by Facebook oauth.
+     *
+     * @return self
+     */
+    public function set_access_token($access_token)
+    {
+        if (is_null($access_token)) {
+            throw new \InvalidArgumentException('non-nullable access_token cannot be null');
+        }
+        $this->container['access_token'] = $access_token;
+
+        return $this;
+    }
+
+    /**
+     * Gets secret
+     *
+     * @return string
+     */
+    public function get_secret()
+    {
+        return $this->container['secret'];
+    }
+
+    /**
+     * Sets secret
+     *
+     * @param string $secret The secret provided by Facebook.
+     *
+     * @return self
+     */
+    public function set_secret($secret)
+    {
+        if (is_null($secret)) {
+            throw new \InvalidArgumentException('non-nullable secret cannot be null');
+        }
+        $this->container['secret'] = $secret;
+
+        return $this;
+    }
+
+    /**
+     * Gets expires_in
+     *
+     * @return int
+     */
+    public function get_expires_in()
+    {
+        return $this->container['expires_in'];
+    }
+
+    /**
+     * Sets expires_in
+     *
+     * @param int $expires_in Lifetime of token (in seconds).
+     *
+     * @return self
+     */
+    public function set_expires_in($expires_in)
+    {
+        if (is_null($expires_in)) {
+            throw new \InvalidArgumentException('non-nullable expires_in cannot be null');
+        }
+        $this->container['expires_in'] = $expires_in;
 
         return $this;
     }

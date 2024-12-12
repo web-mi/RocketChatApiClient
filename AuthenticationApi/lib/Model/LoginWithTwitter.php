@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1Logout200ResponseData
+ * LoginWithTwitter
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
- * PostApiV1Logout200ResponseData Class Doc Comment
+ * LoginWithTwitter Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\AuthenticationApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \JsonSerializable
+class LoginWithTwitter implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_logout_200_response_data';
+    protected static $openAPIModelName = 'LoginWithTwitter';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,12 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => 'string'
+        'service_name' => 'string',
+        'access_token' => 'string',
+        'access_token_secret' => 'string',
+        'app_secret' => 'string',
+        'app_id' => 'string',
+        'expires_in' => 'int'
     ];
 
     /**
@@ -68,7 +73,12 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'message' => null
+        'service_name' => null,
+        'access_token' => null,
+        'access_token_secret' => null,
+        'app_secret' => null,
+        'app_id' => null,
+        'expires_in' => null
     ];
 
     /**
@@ -77,7 +87,12 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'message' => false
+        'service_name' => false,
+        'access_token' => false,
+        'access_token_secret' => false,
+        'app_secret' => false,
+        'app_id' => false,
+        'expires_in' => false
     ];
 
     /**
@@ -166,7 +181,12 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $attributeMap = [
-        'message' => 'message'
+        'service_name' => 'serviceName',
+        'access_token' => 'accessToken',
+        'access_token_secret' => 'accessTokenSecret',
+        'app_secret' => 'appSecret',
+        'app_id' => 'appId',
+        'expires_in' => 'expiresIn'
     ];
 
     /**
@@ -175,7 +195,12 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'set_message'
+        'service_name' => 'set_service_name',
+        'access_token' => 'set_access_token',
+        'access_token_secret' => 'set_access_token_secret',
+        'app_secret' => 'set_app_secret',
+        'app_id' => 'set_app_id',
+        'expires_in' => 'set_expires_in'
     ];
 
     /**
@@ -184,7 +209,12 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'get_message'
+        'service_name' => 'get_service_name',
+        'access_token' => 'get_access_token',
+        'access_token_secret' => 'get_access_token_secret',
+        'app_secret' => 'get_app_secret',
+        'app_id' => 'get_app_id',
+        'expires_in' => 'get_expires_in'
     ];
 
     /**
@@ -244,7 +274,12 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('message', $data ?? [], null);
+        $this->setIfExists('service_name', $data ?? [], null);
+        $this->setIfExists('access_token', $data ?? [], null);
+        $this->setIfExists('access_token_secret', $data ?? [], null);
+        $this->setIfExists('app_secret', $data ?? [], null);
+        $this->setIfExists('app_id', $data ?? [], null);
+        $this->setIfExists('expires_in', $data ?? [], null);
     }
 
     /**
@@ -274,6 +309,24 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
     {
         $invalidProperties = [];
 
+        if ($this->container['service_name'] === null) {
+            $invalidProperties[] = "'service_name' can't be null";
+        }
+        if ($this->container['access_token'] === null) {
+            $invalidProperties[] = "'access_token' can't be null";
+        }
+        if ($this->container['access_token_secret'] === null) {
+            $invalidProperties[] = "'access_token_secret' can't be null";
+        }
+        if ($this->container['app_secret'] === null) {
+            $invalidProperties[] = "'app_secret' can't be null";
+        }
+        if ($this->container['app_id'] === null) {
+            $invalidProperties[] = "'app_id' can't be null";
+        }
+        if ($this->container['expires_in'] === null) {
+            $invalidProperties[] = "'expires_in' can't be null";
+        }
         return $invalidProperties;
     }
 
@@ -290,28 +343,163 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
 
 
     /**
-     * Gets message
+     * Gets service_name
      *
-     * @return string|null
+     * @return string
      */
-    public function get_message()
+    public function get_service_name()
     {
-        return $this->container['message'];
+        return $this->container['service_name'];
     }
 
     /**
-     * Sets message
+     * Sets service_name
      *
-     * @param string|null $message message
+     * @param string $service_name The desired OAuth service name. In this case, `twitter`.
      *
      * @return self
      */
-    public function set_message($message)
+    public function set_service_name($service_name)
     {
-        if (is_null($message)) {
-            throw new \InvalidArgumentException('non-nullable message cannot be null');
+        if (is_null($service_name)) {
+            throw new \InvalidArgumentException('non-nullable service_name cannot be null');
         }
-        $this->container['message'] = $message;
+        $this->container['service_name'] = $service_name;
+
+        return $this;
+    }
+
+    /**
+     * Gets access_token
+     *
+     * @return string
+     */
+    public function get_access_token()
+    {
+        return $this->container['access_token'];
+    }
+
+    /**
+     * Sets access_token
+     *
+     * @param string $access_token Access token provided by Twitter OAuth.
+     *
+     * @return self
+     */
+    public function set_access_token($access_token)
+    {
+        if (is_null($access_token)) {
+            throw new \InvalidArgumentException('non-nullable access_token cannot be null');
+        }
+        $this->container['access_token'] = $access_token;
+
+        return $this;
+    }
+
+    /**
+     * Gets access_token_secret
+     *
+     * @return string
+     */
+    public function get_access_token_secret()
+    {
+        return $this->container['access_token_secret'];
+    }
+
+    /**
+     * Sets access_token_secret
+     *
+     * @param string $access_token_secret The access token secret provided by Twitter OAuth.
+     *
+     * @return self
+     */
+    public function set_access_token_secret($access_token_secret)
+    {
+        if (is_null($access_token_secret)) {
+            throw new \InvalidArgumentException('non-nullable access_token_secret cannot be null');
+        }
+        $this->container['access_token_secret'] = $access_token_secret;
+
+        return $this;
+    }
+
+    /**
+     * Gets app_secret
+     *
+     * @return string
+     */
+    public function get_app_secret()
+    {
+        return $this->container['app_secret'];
+    }
+
+    /**
+     * Sets app_secret
+     *
+     * @param string $app_secret The app secret provided by Twitter.
+     *
+     * @return self
+     */
+    public function set_app_secret($app_secret)
+    {
+        if (is_null($app_secret)) {
+            throw new \InvalidArgumentException('non-nullable app_secret cannot be null');
+        }
+        $this->container['app_secret'] = $app_secret;
+
+        return $this;
+    }
+
+    /**
+     * Gets app_id
+     *
+     * @return string
+     */
+    public function get_app_id()
+    {
+        return $this->container['app_id'];
+    }
+
+    /**
+     * Sets app_id
+     *
+     * @param string $app_id The app ID provided by Twitter.
+     *
+     * @return self
+     */
+    public function set_app_id($app_id)
+    {
+        if (is_null($app_id)) {
+            throw new \InvalidArgumentException('non-nullable app_id cannot be null');
+        }
+        $this->container['app_id'] = $app_id;
+
+        return $this;
+    }
+
+    /**
+     * Gets expires_in
+     *
+     * @return int
+     */
+    public function get_expires_in()
+    {
+        return $this->container['expires_in'];
+    }
+
+    /**
+     * Sets expires_in
+     *
+     * @param int $expires_in Lifetime of token (in seconds).
+     *
+     * @return self
+     */
+    public function set_expires_in($expires_in)
+    {
+        if (is_null($expires_in)) {
+            throw new \InvalidArgumentException('non-nullable expires_in cannot be null');
+        }
+        $this->container['expires_in'] = $expires_in;
 
         return $this;
     }

@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1Logout200ResponseData
+ * LoginWithUsernameAndPassword
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
 
 /**
- * PostApiV1Logout200ResponseData Class Doc Comment
+ * LoginWithUsernameAndPassword Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\AuthenticationApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\AuthenticationApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \JsonSerializable
+class LoginWithUsernameAndPassword implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_logout_200_response_data';
+    protected static $openAPIModelName = 'LoginWithUsernameAndPassword';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => 'string'
+        'user' => 'string',
+        'password' => 'string',
+        'resume' => 'string',
+        'code' => 'string'
     ];
 
     /**
@@ -68,7 +71,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'message' => null
+        'user' => null,
+        'password' => null,
+        'resume' => null,
+        'code' => null
     ];
 
     /**
@@ -77,7 +83,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'message' => false
+        'user' => false,
+        'password' => false,
+        'resume' => false,
+        'code' => false
     ];
 
     /**
@@ -166,7 +175,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $attributeMap = [
-        'message' => 'message'
+        'user' => 'user',
+        'password' => 'password',
+        'resume' => 'resume',
+        'code' => 'code'
     ];
 
     /**
@@ -175,7 +187,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'message' => 'set_message'
+        'user' => 'set_user',
+        'password' => 'set_password',
+        'resume' => 'set_resume',
+        'code' => 'set_code'
     ];
 
     /**
@@ -184,7 +199,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'message' => 'get_message'
+        'user' => 'get_user',
+        'password' => 'get_password',
+        'resume' => 'get_resume',
+        'code' => 'get_code'
     ];
 
     /**
@@ -244,7 +262,10 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('message', $data ?? [], null);
+        $this->setIfExists('user', $data ?? [], null);
+        $this->setIfExists('password', $data ?? [], null);
+        $this->setIfExists('resume', $data ?? [], null);
+        $this->setIfExists('code', $data ?? [], null);
     }
 
     /**
@@ -290,28 +311,109 @@ class PostApiV1Logout200ResponseData implements ModelInterface, ArrayAccess, \Js
 
 
     /**
-     * Gets message
+     * Gets user
      *
      * @return string|null
      */
-    public function get_message()
+    public function get_user()
     {
-        return $this->container['message'];
+        return $this->container['user'];
     }
 
     /**
-     * Sets message
+     * Sets user
      *
-     * @param string|null $message message
+     * @param string|null $user Your user name or email.
      *
      * @return self
      */
-    public function set_message($message)
+    public function set_user($user)
     {
-        if (is_null($message)) {
-            throw new \InvalidArgumentException('non-nullable message cannot be null');
+        if (is_null($user)) {
+            throw new \InvalidArgumentException('non-nullable user cannot be null');
         }
-        $this->container['message'] = $message;
+        $this->container['user'] = $user;
+
+        return $this;
+    }
+
+    /**
+     * Gets password
+     *
+     * @return string|null
+     */
+    public function get_password()
+    {
+        return $this->container['password'];
+    }
+
+    /**
+     * Sets password
+     *
+     * @param string|null $password Your pasword.
+     *
+     * @return self
+     */
+    public function set_password($password)
+    {
+        if (is_null($password)) {
+            throw new \InvalidArgumentException('non-nullable password cannot be null');
+        }
+        $this->container['password'] = $password;
+
+        return $this;
+    }
+
+    /**
+     * Gets resume
+     *
+     * @return string|null
+     */
+    public function get_resume()
+    {
+        return $this->container['resume'];
+    }
+
+    /**
+     * Sets resume
+     *
+     * @param string|null $resume Your previously issued `authToken`.
+     *
+     * @return self
+     */
+    public function set_resume($resume)
+    {
+        if (is_null($resume)) {
+            throw new \InvalidArgumentException('non-nullable resume cannot be null');
+        }
+        $this->container['resume'] = $resume;
+
+        return $this;
+    }
+
+    /**
+     * Gets code
+     *
+     * @return string|null
+     */
+    public function get_code()
+    {
+        return $this->container['code'];
+    }
+
+    /**
+     * Sets code
+     *
+     * @param string|null $code The 2FA code. It is required if your account has two-factor authentication enabled .
+     *
+     * @return self
+     */
+    public function set_code($code)
+    {
+        if (is_null($code)) {
+            throw new \InvalidArgumentException('non-nullable code cannot be null');
+        }
+        $this->container['code'] = $code;
 
         return $this;
     }
