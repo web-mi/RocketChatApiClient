@@ -488,6 +488,3 @@ lib/Model/PostApiV1TeamsUpdateRoomRequest.php
 lib/Model/PostGroupsLeaveRequest.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Model/MarkdownTest.php
-test/Model/MarkdownValueTest.php
-test/Model/PostApiV1ChannelsInviteRequestOneOf1UserIdsInnerTest.php

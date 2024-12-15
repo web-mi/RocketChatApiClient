@@ -60,6 +60,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         '_id' => 'string',
         'rid' => 'string',
         'msg' => 'string',
+        'alias' => 'string',
         'ts' => 'string',
         'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         '_updated_at' => 'string',
@@ -83,6 +84,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         '_id' => null,
         'rid' => null,
         'msg' => null,
+        'alias' => null,
         'ts' => null,
         'u' => null,
         '_updated_at' => null,
@@ -104,6 +106,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         '_id' => false,
         'rid' => false,
         'msg' => false,
+        'alias' => true,
         'ts' => false,
         'u' => false,
         '_updated_at' => false,
@@ -205,6 +208,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         '_id' => '_id',
         'rid' => 'rid',
         'msg' => 'msg',
+        'alias' => 'alias',
         'ts' => 'ts',
         'u' => 'u',
         '_updated_at' => '_updatedAt',
@@ -226,6 +230,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         '_id' => 'set__id',
         'rid' => 'set_rid',
         'msg' => 'set_msg',
+        'alias' => 'set_alias',
         'ts' => 'set_ts',
         'u' => 'set_u',
         '_updated_at' => 'set__updated_at',
@@ -247,6 +252,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         '_id' => 'get__id',
         'rid' => 'get_rid',
         'msg' => 'get_msg',
+        'alias' => 'get_alias',
         'ts' => 'get_ts',
         'u' => 'get_u',
         '_updated_at' => 'get__updated_at',
@@ -319,6 +325,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         $this->setIfExists('_id', $data ?? [], null);
         $this->setIfExists('rid', $data ?? [], null);
         $this->setIfExists('msg', $data ?? [], null);
+        $this->setIfExists('alias', $data ?? [], null);
         $this->setIfExists('ts', $data ?? [], null);
         $this->setIfExists('u', $data ?? [], null);
         $this->setIfExists('_updated_at', $data ?? [], null);
@@ -450,6 +457,40 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
             throw new \InvalidArgumentException('non-nullable msg cannot be null');
         }
         $this->container['msg'] = $msg;
+
+        return $this;
+    }
+
+    /**
+     * Gets alias
+     *
+     * @return string|null
+     */
+    public function get_alias()
+    {
+        return $this->container['alias'];
+    }
+
+    /**
+     * Sets alias
+     *
+     * @param string|null $alias alias
+     *
+     * @return self
+     */
+    public function set_alias($alias)
+    {
+        if (is_null($alias)) {
+            array_push($this->openAPINullablesSetToNull, 'alias');
+        } else {
+            $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
+            $index = array_search('alias', $nullablesSetToNull);
+            if ($index !== FALSE) {
+                unset($nullablesSetToNull[$index]);
+                $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
+            }
+        }
+        $this->container['alias'] = $alias;
 
         return $this;
     }

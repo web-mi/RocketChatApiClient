@@ -118,7 +118,7 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
         '_id' => false,
         'enabled' => false,
         'username' => false,
-        'alias' => false,
+        'alias' => true,
         'avatar' => false,
         'name' => false,
         'trigger_words' => false,
@@ -523,7 +523,14 @@ class GetApiV1ChannelsGetIntegrations200ResponseIntegrationsInner implements Mod
     public function set_alias($alias)
     {
         if (is_null($alias)) {
-            throw new \InvalidArgumentException('non-nullable alias cannot be null');
+            array_push($this->openAPINullablesSetToNull, 'alias');
+        } else {
+            $nullablesSetToNull = $this->getOpenAPINullablesSetToNull();
+            $index = array_search('alias', $nullablesSetToNull);
+            if ($index !== FALSE) {
+                unset($nullablesSetToNull[$index]);
+                $this->setOpenAPINullablesSetToNull($nullablesSetToNull);
+            }
         }
         $this->container['alias'] = $alias;
 
