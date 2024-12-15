@@ -66,7 +66,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
         'urls' => 'object[]',
         'mentions' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]',
         'channels' => 'object[]',
-        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]'
+        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]'
     ];
 
     /**
@@ -598,7 +598,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
     /**
      * Gets md
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null
      */
     public function get_md()
     {
@@ -608,7 +608,7 @@ class GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInner implem
     /**
      * Sets md
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null $md md
      *
      * @return self
      */

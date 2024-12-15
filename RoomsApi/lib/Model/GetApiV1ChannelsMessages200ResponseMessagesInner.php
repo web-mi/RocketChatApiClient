@@ -66,7 +66,7 @@ class GetApiV1ChannelsMessages200ResponseMessagesInner implements ModelInterface
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]',
+        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]',
         'replies' => 'string[]',
         'tcount' => 'int',
         'tlm' => 'string',
@@ -668,7 +668,7 @@ class GetApiV1ChannelsMessages200ResponseMessagesInner implements ModelInterface
     /**
      * Gets md
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null
      */
     public function get_md()
     {
@@ -678,7 +678,7 @@ class GetApiV1ChannelsMessages200ResponseMessagesInner implements ModelInterface
     /**
      * Sets md
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null $md md
      *
      * @return self
      */

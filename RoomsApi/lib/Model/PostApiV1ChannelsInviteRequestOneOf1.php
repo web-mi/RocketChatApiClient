@@ -58,7 +58,7 @@ class PostApiV1ChannelsInviteRequestOneOf1 implements ModelInterface, ArrayAcces
       */
     protected static $openAPITypes = [
         'room_id' => 'string',
-        'user_ids' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]'
+        'user_ids' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsInviteRequestOneOf1UserIdsInner[]'
     ];
 
     /**
@@ -332,7 +332,7 @@ class PostApiV1ChannelsInviteRequestOneOf1 implements ModelInterface, ArrayAcces
     /**
      * Gets user_ids
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[]
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsInviteRequestOneOf1UserIdsInner[]
      */
     public function get_user_ids()
     {
@@ -342,7 +342,7 @@ class PostApiV1ChannelsInviteRequestOneOf1 implements ModelInterface, ArrayAcces
     /**
      * Sets user_ids
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInnerValueInner[] $user_ids An array of the userId of users to be invited
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsInviteRequestOneOf1UserIdsInner[] $user_ids An array of the userId of users to be invited
      *
      * @return self
      */

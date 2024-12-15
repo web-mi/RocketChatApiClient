@@ -72,7 +72,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'urls' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]'
+        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]'
     ];
 
     /**
@@ -809,7 +809,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Gets md
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null
      */
     public function get_md()
     {
@@ -819,7 +819,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Sets md
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null $md md
      *
      * @return self
      */

@@ -68,7 +68,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         'channels' => 'object[]',
         'starred' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerStarred',
         't' => 'string',
-        'groupable' => 'bool'
+        'groupable' => 'bool',
+        'unread' => 'bool'
     ];
 
     /**
@@ -90,7 +91,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         'channels' => null,
         'starred' => null,
         't' => null,
-        'groupable' => null
+        'groupable' => null,
+        'unread' => null
     ];
 
     /**
@@ -110,7 +112,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         'channels' => false,
         'starred' => false,
         't' => false,
-        'groupable' => false
+        'groupable' => false,
+        'unread' => false
     ];
 
     /**
@@ -210,7 +213,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         'channels' => 'channels',
         'starred' => 'starred',
         't' => 't',
-        'groupable' => 'groupable'
+        'groupable' => 'groupable',
+        'unread' => 'unread'
     ];
 
     /**
@@ -230,7 +234,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         'channels' => 'set_channels',
         'starred' => 'set_starred',
         't' => 'set_t',
-        'groupable' => 'set_groupable'
+        'groupable' => 'set_groupable',
+        'unread' => 'set_unread'
     ];
 
     /**
@@ -250,7 +255,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         'channels' => 'get_channels',
         'starred' => 'get_starred',
         't' => 'get_t',
-        'groupable' => 'get_groupable'
+        'groupable' => 'get_groupable',
+        'unread' => 'get_unread'
     ];
 
     /**
@@ -322,6 +328,7 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         $this->setIfExists('starred', $data ?? [], null);
         $this->setIfExists('t', $data ?? [], null);
         $this->setIfExists('groupable', $data ?? [], null);
+        $this->setIfExists('unread', $data ?? [], null);
     }
 
     /**
@@ -686,6 +693,33 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
             throw new \InvalidArgumentException('non-nullable groupable cannot be null');
         }
         $this->container['groupable'] = $groupable;
+
+        return $this;
+    }
+
+    /**
+     * Gets unread
+     *
+     * @return bool|null
+     */
+    public function get_unread()
+    {
+        return $this->container['unread'];
+    }
+
+    /**
+     * Sets unread
+     *
+     * @param bool|null $unread unread
+     *
+     * @return self
+     */
+    public function set_unread($unread)
+    {
+        if (is_null($unread)) {
+            throw new \InvalidArgumentException('non-nullable unread cannot be null');
+        }
+        $this->container['unread'] = $unread;
 
         return $this;
     }

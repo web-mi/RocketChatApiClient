@@ -66,7 +66,7 @@ class GetApiV1TeamsListChildren200ResponseDataInnerLastMessage implements ModelI
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
+        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]'
     ];
 
     /**
@@ -598,7 +598,7 @@ class GetApiV1TeamsListChildren200ResponseDataInnerLastMessage implements ModelI
     /**
      * Gets md
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null
      */
     public function get_md()
     {
@@ -608,7 +608,7 @@ class GetApiV1TeamsListChildren200ResponseDataInnerLastMessage implements ModelI
     /**
      * Sets md
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null $md md
      *
      * @return self
      */

@@ -66,7 +66,7 @@ class PostApiV1ChannelsAddAll200ResponseChannelLastMessage implements ModelInter
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]'
+        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]'
     ];
 
     /**
@@ -598,7 +598,7 @@ class PostApiV1ChannelsAddAll200ResponseChannelLastMessage implements ModelInter
     /**
      * Gets md
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null
      */
     public function get_md()
     {
@@ -608,7 +608,7 @@ class PostApiV1ChannelsAddAll200ResponseChannelLastMessage implements ModelInter
     /**
      * Sets md
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]|null $md md
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null $md md
      *
      * @return self
      */

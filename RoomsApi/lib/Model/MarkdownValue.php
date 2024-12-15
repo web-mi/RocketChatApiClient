@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1ChannelsInviteRequest
+ * MarkdownValue
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
- * PostApiV1ChannelsInviteRequest Class Doc Comment
+ * MarkdownValue Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\RoomsApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \JsonSerializable
+class MarkdownValue implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_channels_invite_request';
+    protected static $openAPIModelName = 'Markdown_value';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room_id' => 'string',
-        'user_id' => 'string',
-        'user_ids' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsInviteRequestOneOf1UserIdsInner[]'
+        
     ];
 
     /**
@@ -70,9 +68,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'room_id' => null,
-        'user_id' => null,
-        'user_ids' => null
+        
     ];
 
     /**
@@ -81,9 +77,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'room_id' => false,
-        'user_id' => false,
-        'user_ids' => false
+        
     ];
 
     /**
@@ -172,9 +166,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $attributeMap = [
-        'room_id' => 'roomId',
-        'user_id' => 'userId',
-        'user_ids' => 'userIds'
+        
     ];
 
     /**
@@ -183,9 +175,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $setters = [
-        'room_id' => 'set_room_id',
-        'user_id' => 'set_user_id',
-        'user_ids' => 'set_user_ids'
+        
     ];
 
     /**
@@ -194,9 +184,7 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
      * @var string[]
      */
     protected static $getters = [
-        'room_id' => 'get_room_id',
-        'user_id' => 'get_user_id',
-        'user_ids' => 'get_user_ids'
+        
     ];
 
     /**
@@ -256,9 +244,6 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('room_id', $data ?? [], null);
-        $this->setIfExists('user_id', $data ?? [], null);
-        $this->setIfExists('user_ids', $data ?? [], null);
     }
 
     /**
@@ -288,15 +273,6 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
     {
         $invalidProperties = [];
 
-        if ($this->container['room_id'] === null) {
-            $invalidProperties[] = "'room_id' can't be null";
-        }
-        if ($this->container['user_id'] === null) {
-            $invalidProperties[] = "'user_id' can't be null";
-        }
-        if ($this->container['user_ids'] === null) {
-            $invalidProperties[] = "'user_ids' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -311,87 +287,6 @@ class PostApiV1ChannelsInviteRequest implements ModelInterface, ArrayAccess, \Js
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets room_id
-     *
-     * @return string
-     */
-    public function get_room_id()
-    {
-        return $this->container['room_id'];
-    }
-
-    /**
-     * Sets room_id
-     *
-     * @param string $room_id The channel's id
-     *
-     * @return self
-     */
-    public function set_room_id($room_id)
-    {
-        if (is_null($room_id)) {
-            throw new \InvalidArgumentException('non-nullable room_id cannot be null');
-        }
-        $this->container['room_id'] = $room_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets user_id
-     *
-     * @return string
-     */
-    public function get_user_id()
-    {
-        return $this->container['user_id'];
-    }
-
-    /**
-     * Sets user_id
-     *
-     * @param string $user_id The user id to be invited.
-     *
-     * @return self
-     */
-    public function set_user_id($user_id)
-    {
-        if (is_null($user_id)) {
-            throw new \InvalidArgumentException('non-nullable user_id cannot be null');
-        }
-        $this->container['user_id'] = $user_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets user_ids
-     *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsInviteRequestOneOf1UserIdsInner[]
-     */
-    public function get_user_ids()
-    {
-        return $this->container['user_ids'];
-    }
-
-    /**
-     * Sets user_ids
-     *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsInviteRequestOneOf1UserIdsInner[] $user_ids An array of the userId of users to be invited
-     *
-     * @return self
-     */
-    public function set_user_ids($user_ids)
-    {
-        if (is_null($user_ids)) {
-            throw new \InvalidArgumentException('non-nullable user_ids cannot be null');
-        }
-        $this->container['user_ids'] = $user_ids;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      *

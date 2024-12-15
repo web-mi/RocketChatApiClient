@@ -13,7 +13,7 @@ Name | Type | Description | Notes
 **urls** | **object[]** |  | [optional]
 **mentions** | **object[]** |  | [optional]
 **channels** | **object[]** |  | [optional]
-**md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]**](PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner.md) |  | [optional]
+**md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]**](Markdown.md) |  | [optional]
 **groupable** | **bool** |  | [optional]
 **blocks** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner[]**](GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInner.md) |  | [optional]
 **edited_at** | **string** |  | [optional]

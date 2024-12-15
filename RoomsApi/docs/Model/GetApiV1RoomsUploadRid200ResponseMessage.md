@@ -14,6 +14,6 @@ Name | Type | Description | Notes
 **u** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **urls** | **object[]** |  | [optional]
-**md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner[]**](PostApiV1ChannelsAddAll200ResponseChannelLastMessageMdInner.md) |  | [optional]
+**md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]**](Markdown.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

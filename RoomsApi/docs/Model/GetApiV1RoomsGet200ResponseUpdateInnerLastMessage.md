@@ -19,6 +19,6 @@ Name | Type | Description | Notes
 **urls** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]**](GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner.md) |  | [optional]
 **mentions** | **object[]** |  | [optional]
 **channels** | **object[]** |  | [optional]
-**md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner[]**](GetApiV1RoomsGet200ResponseUpdateInnerLastMessageMdInner.md) |  | [optional]
+**md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]**](Markdown.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

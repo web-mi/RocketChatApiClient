@@ -13,6 +13,6 @@ Name | Type | Description | Notes
 **urls** | **object[]** |  | [optional]
 **mentions** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner[]**](GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMentionsInner.md) |  | [optional]
 **channels** | **object[]** |  | [optional]
-**md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner[]**](GetApiV1ChannelsGetAllUserMentionsByChannel200ResponseMentionsInnerMdInner.md) |  | [optional]
+**md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]**](Markdown.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)
