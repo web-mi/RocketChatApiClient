@@ -218,8 +218,3 @@ lib/Model/PostApiV1ImSetTopic200Response.php
 lib/Model/PostApiV1ImSetTopicRequest.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Model/GetApiV1ChatGetMessage200ResponseMessageReactionsFrowning2Test.php
-test/Model/GetApiV1ChatGetMessage200ResponseMessageReactionsTest.php
-test/Model/GetApiV1ChatGetMessage200ResponseMessageStarredTest.php
-test/Model/GetApiV1ChatGetMessage200ResponseMessageTest.php
-test/Model/GetApiV1ChatGetMessage200ResponseTest.php
