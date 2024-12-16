@@ -9,6 +9,8 @@ Name | Type | Description | Notes
 **ts** | **string** |  | [optional]
 **u** | [**\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU**](PostApiV1ChatDelete200ResponseMessageU.md) |  | [optional]
 **unread** | **bool** |  | [optional]
+**t** | **string** |  | [optional]
+**e2e** | **string** |  | [optional]
 **mentions** | **object[]** |  | [optional]
 **channels** | **object[]** |  | [optional]
 **_updated_at** | **string** |  | [optional]

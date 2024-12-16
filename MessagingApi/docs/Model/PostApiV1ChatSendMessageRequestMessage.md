@@ -5,7 +5,6 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **t** | **string** | The message type e.g. e2e | [optional]
-**e2e** | **string** |  | [optional]
 **rid** | **string** | The room ID where the message is to be sent. |
 **msg** | **string** | The message text to send, it is optional because of attachments. | [optional]
 **alias** | **string** | This will cause the message&#39;s name to appear as the given alias, but your username will still be displayed. Requires the &#x60;impersonate-other-user&#x60; permission | [optional]

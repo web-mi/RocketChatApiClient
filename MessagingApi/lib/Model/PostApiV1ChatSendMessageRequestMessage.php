@@ -58,7 +58,6 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
       */
     protected static $openAPITypes = [
         't' => 'string',
-        'e2e' => 'string',
         'rid' => 'string',
         'msg' => 'string',
         'alias' => 'string',
@@ -80,7 +79,6 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
       */
     protected static $openAPIFormats = [
         't' => null,
-        'e2e' => null,
         'rid' => null,
         'msg' => null,
         'alias' => null,
@@ -100,7 +98,6 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
       */
     protected static array $openAPINullables = [
         't' => false,
-        'e2e' => false,
         'rid' => false,
         'msg' => false,
         'alias' => false,
@@ -200,7 +197,6 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      */
     protected static $attributeMap = [
         't' => 't',
-        'e2e' => 'e2e',
         'rid' => 'rid',
         'msg' => 'msg',
         'alias' => 'alias',
@@ -220,7 +216,6 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      */
     protected static $setters = [
         't' => 'set_t',
-        'e2e' => 'set_e2e',
         'rid' => 'set_rid',
         'msg' => 'set_msg',
         'alias' => 'set_alias',
@@ -240,7 +235,6 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
      */
     protected static $getters = [
         't' => 'get_t',
-        'e2e' => 'get_e2e',
         'rid' => 'get_rid',
         'msg' => 'get_msg',
         'alias' => 'get_alias',
@@ -311,7 +305,6 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
     public function __construct(array $data = null)
     {
         $this->setIfExists('t', $data ?? [], null);
-        $this->setIfExists('e2e', $data ?? [], null);
         $this->setIfExists('rid', $data ?? [], null);
         $this->setIfExists('msg', $data ?? [], null);
         $this->setIfExists('alias', $data ?? [], null);
@@ -392,33 +385,6 @@ class PostApiV1ChatSendMessageRequestMessage implements ModelInterface, ArrayAcc
             throw new \InvalidArgumentException('non-nullable t cannot be null');
         }
         $this->container['t'] = $t;
-
-        return $this;
-    }
-
-    /**
-     * Gets e2e
-     *
-     * @return string|null
-     */
-    public function get_e2e()
-    {
-        return $this->container['e2e'];
-    }
-
-    /**
-     * Sets e2e
-     *
-     * @param string|null $e2e e2e
-     *
-     * @return self
-     */
-    public function set_e2e($e2e)
-    {
-        if (is_null($e2e)) {
-            throw new \InvalidArgumentException('non-nullable e2e cannot be null');
-        }
-        $this->container['e2e'] = $e2e;
 
         return $this;
     }

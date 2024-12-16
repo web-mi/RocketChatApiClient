@@ -62,6 +62,8 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
         'ts' => 'string',
         'u' => '\WebMI\RocketChatApiClient\MessagingApi\Model\PostApiV1ChatDelete200ResponseMessageU',
         'unread' => 'bool',
+        't' => 'string',
+        'e2e' => 'string',
         'mentions' => 'object[]',
         'channels' => 'object[]',
         '_updated_at' => 'string',
@@ -81,6 +83,8 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
         'ts' => null,
         'u' => null,
         'unread' => null,
+        't' => null,
+        'e2e' => null,
         'mentions' => null,
         'channels' => null,
         '_updated_at' => null,
@@ -98,6 +102,8 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
         'ts' => false,
         'u' => false,
         'unread' => false,
+        't' => false,
+        'e2e' => false,
         'mentions' => false,
         'channels' => false,
         '_updated_at' => false,
@@ -195,6 +201,8 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
         'ts' => 'ts',
         'u' => 'u',
         'unread' => 'unread',
+        't' => 't',
+        'e2e' => 'e2e',
         'mentions' => 'mentions',
         'channels' => 'channels',
         '_updated_at' => '_updatedAt',
@@ -212,6 +220,8 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
         'ts' => 'set_ts',
         'u' => 'set_u',
         'unread' => 'set_unread',
+        't' => 'set_t',
+        'e2e' => 'set_e2e',
         'mentions' => 'set_mentions',
         'channels' => 'set_channels',
         '_updated_at' => 'set__updated_at',
@@ -229,6 +239,8 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
         'ts' => 'get_ts',
         'u' => 'get_u',
         'unread' => 'get_unread',
+        't' => 'get_t',
+        'e2e' => 'get_e2e',
         'mentions' => 'get_mentions',
         'channels' => 'get_channels',
         '_updated_at' => 'get__updated_at',
@@ -297,6 +309,8 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
         $this->setIfExists('ts', $data ?? [], null);
         $this->setIfExists('u', $data ?? [], null);
         $this->setIfExists('unread', $data ?? [], null);
+        $this->setIfExists('t', $data ?? [], null);
+        $this->setIfExists('e2e', $data ?? [], null);
         $this->setIfExists('mentions', $data ?? [], null);
         $this->setIfExists('channels', $data ?? [], null);
         $this->setIfExists('_updated_at', $data ?? [], null);
@@ -476,6 +490,60 @@ class PostApiV1ChatSendMessage200ResponseMessage implements ModelInterface, Arra
             throw new \InvalidArgumentException('non-nullable unread cannot be null');
         }
         $this->container['unread'] = $unread;
+
+        return $this;
+    }
+
+    /**
+     * Gets t
+     *
+     * @return string|null
+     */
+    public function get_t()
+    {
+        return $this->container['t'];
+    }
+
+    /**
+     * Sets t
+     *
+     * @param string|null $t t
+     *
+     * @return self
+     */
+    public function set_t($t)
+    {
+        if (is_null($t)) {
+            throw new \InvalidArgumentException('non-nullable t cannot be null');
+        }
+        $this->container['t'] = $t;
+
+        return $this;
+    }
+
+    /**
+     * Gets e2e
+     *
+     * @return string|null
+     */
+    public function get_e2e()
+    {
+        return $this->container['e2e'];
+    }
+
+    /**
+     * Sets e2e
+     *
+     * @param string|null $e2e e2e
+     *
+     * @return self
+     */
+    public function set_e2e($e2e)
+    {
+        if (is_null($e2e)) {
+            throw new \InvalidArgumentException('non-nullable e2e cannot be null');
+        }
+        $this->container['e2e'] = $e2e;
 
         return $this;
     }
