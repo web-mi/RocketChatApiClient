@@ -55,7 +55,7 @@ paths:
       tags:
         - MethodCall
       summary: Method Call
-      operationId: post-api-v1-method-call-user-presence-set-default-status
+      operationId: post-api-v1-method-call-user-presence
       parameters:
         - $ref: '#/components/parameters/Auth-Token'
         - $ref: '#/components/parameters/UserId'

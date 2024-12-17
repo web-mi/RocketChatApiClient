@@ -11,7 +11,7 @@ docs/Model/MethodCallUserPresenceTemp.md
 docs/Model/PostApiV1MethodCallDeleteMessage200Response.md
 docs/Model/PostApiV1MethodCallDeleteMessage400Response.md
 docs/Model/PostApiV1MethodCallDeleteMessage401Response.md
-docs/Model/PostApiV1MethodCallUserPresenceSetDefaultStatusRequest.md
+docs/Model/PostApiV1MethodCallUserPresenceRequest.md
 git_push.sh
 lib/Api/MethodCallApi.php
 lib/ApiException.php
@@ -25,8 +25,7 @@ lib/Model/ModelInterface.php
 lib/Model/PostApiV1MethodCallDeleteMessage200Response.php
 lib/Model/PostApiV1MethodCallDeleteMessage400Response.php
 lib/Model/PostApiV1MethodCallDeleteMessage401Response.php
-lib/Model/PostApiV1MethodCallUserPresenceSetDefaultStatusRequest.php
+lib/Model/PostApiV1MethodCallUserPresenceRequest.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Model/MethodCallUserPresenceDefaultTest.php
-test/Model/MethodCallUserPresenceTempTest.php
+test/Model/PostApiV1MethodCallUserPresenceRequestTest.php

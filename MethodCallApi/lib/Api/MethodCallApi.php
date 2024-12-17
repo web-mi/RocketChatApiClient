@@ -77,7 +77,7 @@ class MethodCallApi
         'postApiV1MethodCallDeleteMessage' => [
             'application/json',
         ],
-        'postApiV1MethodCallUserPresenceSetDefaultStatus' => [
+        'postApiV1MethodCallUserPresence' => [
             'application/json',
         ],
     ];
@@ -935,42 +935,42 @@ class MethodCallApi
     }
 
     /**
-     * Operation postApiV1MethodCallUserPresenceSetDefaultStatus
+     * Operation postApiV1MethodCallUserPresence
      *
      * Method Call
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceSetDefaultStatusRequest $post_api_v1_method_call_user_presence_set_default_status_request post_api_v1_method_call_user_presence_set_default_status_request (optional)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'] to see the possible values for this operation
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest $post_api_v1_method_call_user_presence_request post_api_v1_method_call_user_presence_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response
      */
-    public function postApiV1MethodCallUserPresenceSetDefaultStatus($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'][0])
+    public function postApiV1MethodCallUserPresence($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
-        list($response) = $this->postApiV1MethodCallUserPresenceSetDefaultStatusWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request, $contentType);
+        list($response) = $this->postApiV1MethodCallUserPresenceWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request, $contentType);
         return $response;
     }
 
     /**
-     * Operation postApiV1MethodCallUserPresenceSetDefaultStatusWithHttpInfo
+     * Operation postApiV1MethodCallUserPresenceWithHttpInfo
      *
      * Method Call
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceSetDefaultStatusRequest $post_api_v1_method_call_user_presence_set_default_status_request (optional)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'] to see the possible values for this operation
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest $post_api_v1_method_call_user_presence_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response, HTTP status code, HTTP response headers (array of strings)
      */
-    public function postApiV1MethodCallUserPresenceSetDefaultStatusWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'][0])
+    public function postApiV1MethodCallUserPresenceWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
-        $request = $this->postApiV1MethodCallUserPresenceSetDefaultStatusRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request, $contentType);
+        $request = $this->postApiV1MethodCallUserPresenceRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1152,21 +1152,21 @@ class MethodCallApi
     }
 
     /**
-     * Operation postApiV1MethodCallUserPresenceSetDefaultStatusAsync
+     * Operation postApiV1MethodCallUserPresenceAsync
      *
      * Method Call
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceSetDefaultStatusRequest $post_api_v1_method_call_user_presence_set_default_status_request (optional)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'] to see the possible values for this operation
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest $post_api_v1_method_call_user_presence_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallUserPresenceSetDefaultStatusAsync($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'][0])
+    public function postApiV1MethodCallUserPresenceAsync($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
-        return $this->postApiV1MethodCallUserPresenceSetDefaultStatusAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request, $contentType)
+        return $this->postApiV1MethodCallUserPresenceAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1175,22 +1175,22 @@ class MethodCallApi
     }
 
     /**
-     * Operation postApiV1MethodCallUserPresenceSetDefaultStatusAsyncWithHttpInfo
+     * Operation postApiV1MethodCallUserPresenceAsyncWithHttpInfo
      *
      * Method Call
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceSetDefaultStatusRequest $post_api_v1_method_call_user_presence_set_default_status_request (optional)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'] to see the possible values for this operation
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest $post_api_v1_method_call_user_presence_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallUserPresenceSetDefaultStatusAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'][0])
+    public function postApiV1MethodCallUserPresenceAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
         $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
-        $request = $this->postApiV1MethodCallUserPresenceSetDefaultStatusRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request, $contentType);
+        $request = $this->postApiV1MethodCallUserPresenceRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1229,30 +1229,30 @@ class MethodCallApi
     }
 
     /**
-     * Create request for operation 'postApiV1MethodCallUserPresenceSetDefaultStatus'
+     * Create request for operation 'postApiV1MethodCallUserPresence'
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceSetDefaultStatusRequest $post_api_v1_method_call_user_presence_set_default_status_request (optional)
-     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'] to see the possible values for this operation
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest $post_api_v1_method_call_user_presence_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function postApiV1MethodCallUserPresenceSetDefaultStatusRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresenceSetDefaultStatus'][0])
+    public function postApiV1MethodCallUserPresenceRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
 
         // verify the required parameter 'x_auth_token' is set
         if ($x_auth_token === null || (is_array($x_auth_token) && count($x_auth_token) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $x_auth_token when calling postApiV1MethodCallUserPresenceSetDefaultStatus'
+                'Missing the required parameter $x_auth_token when calling postApiV1MethodCallUserPresence'
             );
         }
 
         // verify the required parameter 'x_user_id' is set
         if ($x_user_id === null || (is_array($x_user_id) && count($x_user_id) === 0)) {
             throw new \InvalidArgumentException(
-                'Missing the required parameter $x_user_id when calling postApiV1MethodCallUserPresenceSetDefaultStatus'
+                'Missing the required parameter $x_user_id when calling postApiV1MethodCallUserPresence'
             );
         }
 
@@ -1284,12 +1284,12 @@ class MethodCallApi
         );
 
         // for model (json/xml)
-        if (isset($post_api_v1_method_call_user_presence_set_default_status_request)) {
+        if (isset($post_api_v1_method_call_user_presence_request)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($post_api_v1_method_call_user_presence_set_default_status_request));
+                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($post_api_v1_method_call_user_presence_request));
             } else {
-                $httpBody = $post_api_v1_method_call_user_presence_set_default_status_request;
+                $httpBody = $post_api_v1_method_call_user_presence_request;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {

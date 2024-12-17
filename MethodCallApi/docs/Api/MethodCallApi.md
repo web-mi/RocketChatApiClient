@@ -6,7 +6,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | ------------- | ------------- | ------------- |
 | [**postApiV1MethodCallDeleteFileMessage()**](MethodCallApi.md#postApiV1MethodCallDeleteFileMessage) | **POST** /api/v1/method.call/deleteFileMessage | Method Call |
 | [**postApiV1MethodCallDeleteMessage()**](MethodCallApi.md#postApiV1MethodCallDeleteMessage) | **POST** /api/v1/method.call/deleteMessage | Method Call |
-| [**postApiV1MethodCallUserPresenceSetDefaultStatus()**](MethodCallApi.md#postApiV1MethodCallUserPresenceSetDefaultStatus) | **POST** /api/v1/method.call/UserPresence | Method Call |
+| [**postApiV1MethodCallUserPresence()**](MethodCallApi.md#postApiV1MethodCallUserPresence) | **POST** /api/v1/method.call/UserPresence | Method Call |
 
 
 ## `postApiV1MethodCallDeleteFileMessage()`
@@ -125,10 +125,10 @@ No authorization required
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `postApiV1MethodCallUserPresenceSetDefaultStatus()`
+## `postApiV1MethodCallUserPresence()`
 
 ```php
-postApiV1MethodCallUserPresenceSetDefaultStatus($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
+postApiV1MethodCallUserPresence($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
 ```
 
 Method Call
@@ -148,13 +148,13 @@ $apiInstance = new WebMI\RocketChatApiClient\MethodCallApi\Api\MethodCallApi(
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_v1_method_call_user_presence_set_default_status_request = new \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceSetDefaultStatusRequest(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceSetDefaultStatusRequest
+$post_api_v1_method_call_user_presence_request = new \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest
 
 try {
-    $result = $apiInstance->postApiV1MethodCallUserPresenceSetDefaultStatus($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_set_default_status_request);
+    $result = $apiInstance->postApiV1MethodCallUserPresence($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request);
     print_r($result);
 } catch (Exception $e) {
-    echo 'Exception when calling MethodCallApi->postApiV1MethodCallUserPresenceSetDefaultStatus: ', $e->getMessage(), PHP_EOL;
+    echo 'Exception when calling MethodCallApi->postApiV1MethodCallUserPresence: ', $e->getMessage(), PHP_EOL;
 }
 ```
 
@@ -164,7 +164,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_v1_method_call_user_presence_set_default_status_request** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceSetDefaultStatusRequest**](../Model/PostApiV1MethodCallUserPresenceSetDefaultStatusRequest.md)|  | [optional] |
+| **post_api_v1_method_call_user_presence_request** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest**](../Model/PostApiV1MethodCallUserPresenceRequest.md)|  | [optional] |
 
 ### Return type
 
