@@ -6,7 +6,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | ------------- | ------------- | ------------- |
 | [**postApiV1MethodCallDeleteFileMessage()**](MethodCallApi.md#postApiV1MethodCallDeleteFileMessage) | **POST** /api/v1/method.call/deleteFileMessage | Method Call |
 | [**postApiV1MethodCallDeleteMessage()**](MethodCallApi.md#postApiV1MethodCallDeleteMessage) | **POST** /api/v1/method.call/deleteMessage | Method Call |
-| [**postApiV1MethodCallUserPresenceSetDefaultStatus()**](MethodCallApi.md#postApiV1MethodCallUserPresenceSetDefaultStatus) | **POST** /api/v1/method.call/UserPresence:setDefaultStatus | Method Call |
+| [**postApiV1MethodCallUserPresenceSetDefaultStatus()**](MethodCallApi.md#postApiV1MethodCallUserPresenceSetDefaultStatus) | **POST** /api/v1/method.call/UserPresence | Method Call |
 
 
 ## `postApiV1MethodCallDeleteFileMessage()`

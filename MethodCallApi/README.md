@@ -76,13 +76,14 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *MethodCallApi* | [**postApiV1MethodCallDeleteFileMessage**](docs/Api/MethodCallApi.md#postapiv1methodcalldeletefilemessage) | **POST** /api/v1/method.call/deleteFileMessage | Method Call
 *MethodCallApi* | [**postApiV1MethodCallDeleteMessage**](docs/Api/MethodCallApi.md#postapiv1methodcalldeletemessage) | **POST** /api/v1/method.call/deleteMessage | Method Call
-*MethodCallApi* | [**postApiV1MethodCallUserPresenceSetDefaultStatus**](docs/Api/MethodCallApi.md#postapiv1methodcalluserpresencesetdefaultstatus) | **POST** /api/v1/method.call/UserPresence:setDefaultStatus | Method Call
+*MethodCallApi* | [**postApiV1MethodCallUserPresenceSetDefaultStatus**](docs/Api/MethodCallApi.md#postapiv1methodcalluserpresencesetdefaultstatus) | **POST** /api/v1/method.call/UserPresence | Method Call
 
 ## Models
 
 - [MethodCallDeleteMessage](docs/Model/MethodCallDeleteMessage.md)
 - [MethodCallDeleteMessageParamsInner](docs/Model/MethodCallDeleteMessageParamsInner.md)
-- [MethodCallUserPresenceSetDefaultStatus](docs/Model/MethodCallUserPresenceSetDefaultStatus.md)
+- [MethodCallUserPresenceDefault](docs/Model/MethodCallUserPresenceDefault.md)
+- [MethodCallUserPresenceTemp](docs/Model/MethodCallUserPresenceTemp.md)
 - [PostApiV1MethodCallDeleteMessage200Response](docs/Model/PostApiV1MethodCallDeleteMessage200Response.md)
 - [PostApiV1MethodCallDeleteMessage400Response](docs/Model/PostApiV1MethodCallDeleteMessage400Response.md)
 - [PostApiV1MethodCallDeleteMessage401Response](docs/Model/PostApiV1MethodCallDeleteMessage401Response.md)

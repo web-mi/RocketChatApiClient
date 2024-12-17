@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1MethodCallDeleteMessage200Response
+ * MethodCallUserPresenceTemp
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
 
 /**
- * PostApiV1MethodCallDeleteMessage200Response Class Doc Comment
+ * MethodCallUserPresenceTemp Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\MethodCallApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, ArrayAccess, \JsonSerializable
+class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_method_call_delete_message_200_response';
+    protected static $openAPIModelName = 'MethodCallUserPresence:temp';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,8 +58,9 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
       */
     protected static $openAPITypes = [
         'msg' => 'string',
+        'method' => 'string',
         'id' => 'string',
-        'result' => 'bool'
+        'params' => 'string[]'
     ];
 
     /**
@@ -71,8 +72,9 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
       */
     protected static $openAPIFormats = [
         'msg' => null,
+        'method' => null,
         'id' => null,
-        'result' => null
+        'params' => null
     ];
 
     /**
@@ -82,8 +84,9 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
       */
     protected static array $openAPINullables = [
         'msg' => false,
+        'method' => false,
         'id' => false,
-        'result' => false
+        'params' => false
     ];
 
     /**
@@ -173,8 +176,9 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
      */
     protected static $attributeMap = [
         'msg' => 'msg',
+        'method' => 'method',
         'id' => 'id',
-        'result' => 'result'
+        'params' => 'params'
     ];
 
     /**
@@ -184,8 +188,9 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
      */
     protected static $setters = [
         'msg' => 'set_msg',
+        'method' => 'set_method',
         'id' => 'set_id',
-        'result' => 'set_result'
+        'params' => 'set_params'
     ];
 
     /**
@@ -195,8 +200,9 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
      */
     protected static $getters = [
         'msg' => 'get_msg',
+        'method' => 'get_method',
         'id' => 'get_id',
-        'result' => 'get_result'
+        'params' => 'get_params'
     ];
 
     /**
@@ -240,7 +246,9 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
         return self::$openAPIModelName;
     }
 
-    public const MSG_RESULT = 'result';
+    public const MSG_METHOD = 'method';
+    public const METHOD_ONLINE = 'UserPresence:online';
+    public const METHOD_AWAY = 'UserPresence:away';
 
     /**
      * Gets allowable values of the enum
@@ -250,7 +258,20 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
     public function get_msgAllowableValues()
     {
         return [
-            self::MSG_RESULT,
+            self::MSG_METHOD,
+        ];
+    }
+
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function get_methodAllowableValues()
+    {
+        return [
+            self::METHOD_ONLINE,
+            self::METHOD_AWAY,
         ];
     }
 
@@ -269,9 +290,10 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('msg', $data ?? [], 'result');
+        $this->setIfExists('msg', $data ?? [], 'method');
+        $this->setIfExists('method', $data ?? [], null);
         $this->setIfExists('id', $data ?? [], null);
-        $this->setIfExists('result', $data ?? [], null);
+        $this->setIfExists('params', $data ?? [], null);
     }
 
     /**
@@ -306,6 +328,15 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
             $invalidProperties[] = sprintf(
                 "invalid value '%s' for 'msg', must be one of '%s'",
                 $this->container['msg'],
+                implode("', '", $allowedValues)
+            );
+        }
+
+        $allowedValues = $this->get_methodAllowableValues();
+        if (!is_null($this->container['method']) && !in_array($this->container['method'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'method', must be one of '%s'",
+                $this->container['method'],
                 implode("', '", $allowedValues)
             );
         }
@@ -363,6 +394,43 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
     }
 
     /**
+     * Gets method
+     *
+     * @return string|null
+     */
+    public function get_method()
+    {
+        return $this->container['method'];
+    }
+
+    /**
+     * Sets method
+     *
+     * @param string|null $method method
+     *
+     * @return self
+     */
+    public function set_method($method)
+    {
+        if (is_null($method)) {
+            throw new \InvalidArgumentException('non-nullable method cannot be null');
+        }
+        $allowedValues = $this->get_methodAllowableValues();
+        if (!in_array($method, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'method', must be one of '%s'",
+                    $method,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['method'] = $method;
+
+        return $this;
+    }
+
+    /**
      * Gets id
      *
      * @return string|null
@@ -390,28 +458,28 @@ class PostApiV1MethodCallDeleteMessage200Response implements ModelInterface, Arr
     }
 
     /**
-     * Gets result
+     * Gets params
      *
-     * @return bool|null
+     * @return string[]|null
      */
-    public function get_result()
+    public function get_params()
     {
-        return $this->container['result'];
+        return $this->container['params'];
     }
 
     /**
-     * Sets result
+     * Sets params
      *
-     * @param bool|null $result result
+     * @param string[]|null $params params
      *
      * @return self
      */
-    public function set_result($result)
+    public function set_params($params)
     {
-        if (is_null($result)) {
-            throw new \InvalidArgumentException('non-nullable result cannot be null');
+        if (is_null($params)) {
+            throw new \InvalidArgumentException('non-nullable params cannot be null');
         }
-        $this->container['result'] = $result;
+        $this->container['params'] = $params;
 
         return $this;
     }

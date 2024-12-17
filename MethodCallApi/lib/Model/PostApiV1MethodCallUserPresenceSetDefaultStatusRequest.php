@@ -247,7 +247,8 @@ class PostApiV1MethodCallUserPresenceSetDefaultStatusRequest implements ModelInt
     }
 
     public const MSG_METHOD = 'method';
-    public const METHOD_USER_PRESENCESET_DEFAULT_STATUS = 'UserPresence:setDefaultStatus';
+    public const METHOD_ONLINE = 'UserPresence:online';
+    public const METHOD_AWAY = 'UserPresence:away';
 
     /**
      * Gets allowable values of the enum
@@ -269,7 +270,8 @@ class PostApiV1MethodCallUserPresenceSetDefaultStatusRequest implements ModelInt
     public function get_methodAllowableValues()
     {
         return [
-            self::METHOD_USER_PRESENCESET_DEFAULT_STATUS,
+            self::METHOD_ONLINE,
+            self::METHOD_AWAY,
         ];
     }
 
@@ -289,7 +291,7 @@ class PostApiV1MethodCallUserPresenceSetDefaultStatusRequest implements ModelInt
     public function __construct(array $data = null)
     {
         $this->setIfExists('msg', $data ?? [], 'method');
-        $this->setIfExists('method', $data ?? [], 'UserPresence:setDefaultStatus');
+        $this->setIfExists('method', $data ?? [], null);
         $this->setIfExists('id', $data ?? [], null);
         $this->setIfExists('params', $data ?? [], null);
     }

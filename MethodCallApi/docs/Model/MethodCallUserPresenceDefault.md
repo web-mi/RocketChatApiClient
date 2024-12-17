@@ -1,11 +1,11 @@
-# # PostApiV1MethodCallUserPresenceSetDefaultStatusRequest
+# # MethodCallUserPresenceDefault
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **msg** | **string** |  | [optional] [default to 'method']
-**method** | **string** |  | [optional]
+**method** | **string** |  | [optional] [default to 'UserPresence:setDefaultStatus']
 **id** | **string** |  | [optional]
 **params** | **string[]** |  | [optional]
 

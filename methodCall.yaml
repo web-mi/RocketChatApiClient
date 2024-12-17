@@ -50,7 +50,7 @@ paths:
           $ref: '#/components/responses/MethodCall401'
         '400':
           $ref: '#/components/responses/MethodCall400'
-  /api/v1/method.call/UserPresence:setDefaultStatus:
+  /api/v1/method.call/UserPresence:
     post:
       tags:
         - MethodCall
@@ -63,24 +63,9 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              properties:
-                msg:
-                  type: string
-                  enum: [ "method" ]
-                  default: "method"
-                method:
-                  type: string
-                  enum: [ "UserPresence:setDefaultStatus" ]
-                  default: "UserPresence:setDefaultStatus"
-                id:
-                  type: string
-                params:
-                  type: array
-                  items:
-                    type: string
-                    description: "The status to set. Possible default defined status are: online, away, busy, offline"
-                    example: "online"
+              oneOf:
+                - $ref: '#/components/schemas/MethodCallUserPresence:default'
+                - $ref: '#/components/schemas/MethodCallUserPresence:temp'
       responses:
         '200':
           $ref: '#/components/responses/MethodCall200'
@@ -112,7 +97,7 @@ components:
             properties:
               _id:
                 type: string
-    MethodCallUserPresence:setDefaultStatus:
+    MethodCallUserPresence:default:
       type: object
       properties:
         msg:
@@ -131,6 +116,20 @@ components:
             type: string
             description: "The status to set. Possible default defined status are: online, away, busy, offline"
             example: "online"
+    MethodCallUserPresence:temp:
+      type: object
+      properties:
+        msg:
+          type: string
+          enum: [ "method" ]
+          default: "method"
+        method:
+          type: string
+          enum: [ "UserPresence:online", "UserPresence:away" ]
+        id:
+          type: string
+        params:
+          type: array
   parameters:
     Auth-Token:
       name: X-Auth-Token
@@ -162,6 +161,8 @@ components:
                 default: "result"
               id:
                 type: string
+              result:
+                type: boolean
     MethodCall400:
       description: Bad Request
       content:

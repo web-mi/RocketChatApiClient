@@ -1258,7 +1258,7 @@ class MethodCallApi
 
 
 
-        $resourcePath = '/api/v1/method.call/UserPresence:setDefaultStatus';
+        $resourcePath = '/api/v1/method.call/UserPresence';
         $formParams = [];
         $queryParams = [];
         $headerParams = [];
