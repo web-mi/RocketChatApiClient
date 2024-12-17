@@ -1,0 +1,197 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: MethodCall
+  description: "These are some extra routes for rocket.chat because open api files from rocket.chat has some missing stuff"
+tags:
+  - name: MethodCall
+servers:
+  - url: 'https://apiexplorer.support.rocket.chat'
+paths:
+  /api/v1/method.call/deleteMessage:
+    post:
+      tags:
+        - MethodCall
+      summary: Method Call
+      operationId: post-api-v1-method-call-delete-message
+      parameters:
+        - $ref: '#/components/parameters/Auth-Token'
+        - $ref: '#/components/parameters/UserId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MethodCallDeleteMessage'
+      responses:
+        '200':
+          $ref: '#/components/responses/MethodCall200'
+        '401':
+          $ref: '#/components/responses/MethodCall401'
+        '400':
+          $ref: '#/components/responses/MethodCall400'
+  /api/v1/method.call/deleteFileMessage:
+    post:
+      tags:
+        - MethodCall
+      summary: Method Call
+      operationId: post-api-v1-method-call-delete-file-message
+      parameters:
+        - $ref: '#/components/parameters/Auth-Token'
+        - $ref: '#/components/parameters/UserId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MethodCallDeleteFileMessage'
+      responses:
+        '200':
+          $ref: '#/components/responses/MethodCall200'
+        '401':
+          $ref: '#/components/responses/MethodCall401'
+        '400':
+          $ref: '#/components/responses/MethodCall400'
+  /api/v1/method.call/UserPresence:setDefaultStatus:
+    post:
+      tags:
+        - MethodCall
+      summary: Method Call
+      operationId: post-api-v1-method-call-user-presence-set-default-status
+      parameters:
+        - $ref: '#/components/parameters/Auth-Token'
+        - $ref: '#/components/parameters/UserId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                msg:
+                  type: string
+                  enum: [ "method" ]
+                  default: "method"
+                method:
+                  type: string
+                  enum: [ "UserPresence:setDefaultStatus" ]
+                  default: "UserPresence:setDefaultStatus"
+                id:
+                  type: string
+                params:
+                  type: array
+                  items:
+                    type: string
+                    description: "The status to set. Possible default defined status are: online, away, busy, offline"
+                    example: "online"
+      responses:
+        '200':
+          $ref: '#/components/responses/MethodCall200'
+        '401':
+          $ref: '#/components/responses/MethodCall401'
+        '400':
+          $ref: '#/components/responses/MethodCall400'
+components:
+  schemas:
+    MethodCallDeleteFileMessage:
+      $ref: '#/components/schemas/MethodCallDeleteMessage'
+    MethodCallDeleteMessage:
+      type: object
+      properties:
+        msg:
+          type: string
+          enum: [ "method" ]
+          default: "method"
+        method:
+          type: string
+          enum: [ "deleteMessage", "deleteFileMessage" ]
+          default: "deleteMessage"
+        id:
+          type: string
+        params:
+          type: array
+          items:
+            type: object
+            properties:
+              _id:
+                type: string
+    MethodCallUserPresence:setDefaultStatus:
+      type: object
+      properties:
+        msg:
+          type: string
+          enum: [ "method" ]
+          default: "method"
+        method:
+          type: string
+          enum: [ "UserPresence:setDefaultStatus" ]
+          default: "UserPresence:setDefaultStatus"
+        id:
+          type: string
+        params:
+          type: array
+          items:
+            type: string
+            description: "The status to set. Possible default defined status are: online, away, busy, offline"
+            example: "online"
+  parameters:
+    Auth-Token:
+      name: X-Auth-Token
+      in: header
+      description: The `authToken` of the authenticated user.
+      required: true
+      schema:
+        type: string
+      example: RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f
+    UserId:
+      name: X-User-Id
+      in: header
+      description: The `userId` of the authenticated user.
+      required: true
+      schema:
+        type: string
+      example: rbAXPnMktTFbNpwtJ
+  responses:
+    MethodCall200:
+      description: OK
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              msg:
+                type: string
+                enum: [ "result" ]
+                default: "result"
+              id:
+                type: string
+    MethodCall400:
+      description: Bad Request
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+              error:
+                type: string
+          examples:
+            Example 1:
+              value:
+                success: false
+                error: The "msgId" query parameter must be provided.
+    MethodCall401:
+      description: Unauthorized
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              status:
+                type: string
+              message:
+                type: string
+          examples:
+            Authorization Error:
+              value:
+                status: error
+                message: You must be logged in to do this.
+

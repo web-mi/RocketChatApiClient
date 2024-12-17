@@ -7,7 +7,6 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | [**getApiV1ChatGetMessage()**](CustomApi.md#getApiV1ChatGetMessage) | **GET** /api/v1/chat.getMessage | Get Message |
 | [**postApiV1ChatSendMessage()**](CustomApi.md#postApiV1ChatSendMessage) | **POST** /api/v1/chat.sendMessage | Send Message |
 | [**postApiV1Login()**](CustomApi.md#postApiV1Login) | **POST** /api/v1/login | Login with ServiceName and Token |
-| [**postApiV1MethodCall()**](CustomApi.md#postApiV1MethodCall) | **POST** /api/v1/method.call/{method} | Method Call |
 
 
 ## `getApiV1ChatGetMessage()`
@@ -172,68 +171,6 @@ try {
 ### Return type
 
 [**\WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1Login200Response**](../Model/PostApiV1Login200Response.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `postApiV1MethodCall()`
-
-```php
-postApiV1MethodCall($x_auth_token, $x_user_id, $method, $post_api_v1_method_call_request): \WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1MethodCall200Response
-```
-
-Method Call
-
-Method calls are used to perform actions based on given data. The response to these calls is asynchronous,  meaning they don't occur in a specific order. To track the outcome of a call, it's essential to use a unique ID.  This ID will be used in the response, allowing the client to identify and retrieve the result of the  corresponding call.  ### Changelog | Version      | Description |  | ------------ | ------------| | 0.47.0       | Added       |
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-
-$apiInstance = new WebMI\RocketChatApiClient\CustomApi\Api\CustomApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
-$x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
-$x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$method = deleteMessage; // string | Method to call
-$post_api_v1_method_call_request = new \WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1MethodCallRequest(); // \WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1MethodCallRequest
-
-try {
-    $result = $apiInstance->postApiV1MethodCall($x_auth_token, $x_user_id, $method, $post_api_v1_method_call_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling CustomApi->postApiV1MethodCall: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
-| **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **method** | **string**| Method to call | |
-| **post_api_v1_method_call_request** | [**\WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1MethodCallRequest**](../Model/PostApiV1MethodCallRequest.md)|  | [optional] |
-
-### Return type
-
-[**\WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1MethodCall200Response**](../Model/PostApiV1MethodCall200Response.md)
 
 ### Authorization
 
