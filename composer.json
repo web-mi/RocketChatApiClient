@@ -44,6 +44,7 @@
             "WebMI\\RocketChatApiClient\\SettingsApi\\" : "SettingsApi/lib/",
             "WebMI\\RocketChatApiClient\\StatisticsApi\\" : "StatisticsApi/lib/",
             "WebMI\\RocketChatApiClient\\UserManagementApi\\" : "UserManagementApi/lib/",
+            "WebMI\\RocketChatApiClient\\MethodCallApi\\" : "MethodCallApi/lib/",
             "WebMI\\RocketChatApiClient\\CustomApi\\" : "CustomApi/lib/"
         }
     },
@@ -60,6 +61,7 @@
             "WebMI\\RocketChatApiClient\\SettingsApi\\Test\\" : "SettingsApi/test/",
             "WebMI\\RocketChatApiClient\\StatisticsApi\\Test\\" : "StatisticsApi/test/",
             "WebMI\\RocketChatApiClient\\UserManagementApi\\Test\\" : "UserManagementApi/test/",
+            "WebMI\\RocketChatApiClient\\MethodCallApi\\Test\\" : "MethodCallApi/test/",
             "WebMI\\RocketChatApiClient\\CustomApi\\Test\\" : "CustomApi/test/"
         }
     }
