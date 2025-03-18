@@ -98,7 +98,6 @@ docs/Model/PostApiV1StartImportRequestInputUsers.md
 docs/Model/PostApiV1UploadImportFile400Response.md
 docs/Model/PostApiV1UploadImportFileRequest.md
 docs/Model/Setting.md
-docs/Model/SettingValue.md
 git_push.sh
 lib/Api/BulkUserImportApi.php
 lib/Api/CloudApi.php
@@ -198,7 +197,6 @@ lib/Model/PostApiV1StartImportRequestInputUsers.php
 lib/Model/PostApiV1UploadImportFile400Response.php
 lib/Model/PostApiV1UploadImportFileRequest.php
 lib/Model/Setting.php
-lib/Model/SettingValue.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
 test/Api/BulkUserImportApiTest.php
@@ -295,4 +293,3 @@ test/Model/PostApiV1StartImportRequestTest.php
 test/Model/PostApiV1UploadImportFile400ResponseTest.php
 test/Model/PostApiV1UploadImportFileRequestTest.php
 test/Model/SettingTest.php
-test/Model/SettingValueTest.php
