@@ -68,8 +68,6 @@ docs/Model/GetApiV1SettingsId200Response.md
 docs/Model/GetApiV1SettingsOauth200Response.md
 docs/Model/GetApiV1SettingsOauth200ResponseServicesInner.md
 docs/Model/GetApiV1SettingsPublic200Response.md
-docs/Model/GetApiV1SettingsPublic200ResponseSettingsInner.md
-docs/Model/GetApiV1SettingsPublic200ResponseSettingsInnerValue.md
 docs/Model/PostApiV1CloudManualRegister400Response.md
 docs/Model/PostApiV1CloudManualRegisterRequest.md
 docs/Model/PostApiV1DownloadPendingFiles200Response.md
@@ -94,10 +92,12 @@ docs/Model/PostApiV1SettingsAddCustomOAuthRequest.md
 docs/Model/PostApiV1SettingsIdRequest.md
 docs/Model/PostApiV1StartImportRequest.md
 docs/Model/PostApiV1StartImportRequestInput.md
-docs/Model/PostApiV1StartImportRequestInputChannelsInner.md
-docs/Model/PostApiV1StartImportRequestInputUsersInner.md
+docs/Model/PostApiV1StartImportRequestInputChannels.md
+docs/Model/PostApiV1StartImportRequestInputUsers.md
 docs/Model/PostApiV1UploadImportFile400Response.md
 docs/Model/PostApiV1UploadImportFileRequest.md
+docs/Model/Setting.md
+docs/Model/SettingValue.md
 git_push.sh
 lib/Api/BulkUserImportApi.php
 lib/Api/CloudApi.php
@@ -167,8 +167,6 @@ lib/Model/GetApiV1SettingsId200Response.php
 lib/Model/GetApiV1SettingsOauth200Response.php
 lib/Model/GetApiV1SettingsOauth200ResponseServicesInner.php
 lib/Model/GetApiV1SettingsPublic200Response.php
-lib/Model/GetApiV1SettingsPublic200ResponseSettingsInner.php
-lib/Model/GetApiV1SettingsPublic200ResponseSettingsInnerValue.php
 lib/Model/ModelInterface.php
 lib/Model/PostApiV1CloudManualRegister400Response.php
 lib/Model/PostApiV1CloudManualRegisterRequest.php
@@ -194,9 +192,12 @@ lib/Model/PostApiV1SettingsAddCustomOAuthRequest.php
 lib/Model/PostApiV1SettingsIdRequest.php
 lib/Model/PostApiV1StartImportRequest.php
 lib/Model/PostApiV1StartImportRequestInput.php
-lib/Model/PostApiV1StartImportRequestInputChannelsInner.php
-lib/Model/PostApiV1StartImportRequestInputUsersInner.php
+lib/Model/PostApiV1StartImportRequestInputChannels.php
+lib/Model/PostApiV1StartImportRequestInputUsers.php
 lib/Model/PostApiV1UploadImportFile400Response.php
 lib/Model/PostApiV1UploadImportFileRequest.php
+lib/Model/Setting.php
+lib/Model/SettingValue.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
+test/Model/SettingTest.php

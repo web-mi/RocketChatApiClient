@@ -15,7 +15,7 @@ getPwGetPolicy($x_user_id, $x_auth_token): object
 
 Get Password Policy
 
-Get the current [password policy](https://docs.rocket.chat/v1/docs/accounts#password-policy) for users in your workspace.
+Get the current [password policy](https://docs.rocket.chat/v1/docs/accounts#password-policy) for users in your workspace. The `pw.getPolicyReset` endpoint has been removed from 7.0. Use this endpoint instead.
 
 ### Example
 

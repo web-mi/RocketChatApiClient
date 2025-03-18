@@ -253,6 +253,8 @@ postApiV1E2eUpdateGroupKey($x_user_id, $x_auth_token, $post_api_v1_e2e_update_gr
 
 Update User E2E Key in Room
 
+> This endpoint has been deprecated and is scheduled for removal in the 8.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>.
+
 ### Example
 
 ```php

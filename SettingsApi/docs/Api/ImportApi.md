@@ -431,7 +431,7 @@ postApiV1StartImport($x_user_id, $x_auth_token, $post_api_v1_start_import_reques
 
 Start Import
 
-Triggers the process of importing users, rooms and messages to the workspace. Permission required: `run-import`  ### Changelog | Version      | Description | | ---------------- | ------------| |3.0.0            | Added       |
+Triggers the process of importing users, rooms and messages to the workspace. Permission required: `run-import`  ### Changelog | Version      | Description | | ---------------- | ------------| |7.0.0            | Remove required extra data from `users` and `channels` parameters. Use only record ID of the users or channels.   | |3.0.0            | Added       |
 
 ### Example
 
@@ -448,7 +448,7 @@ $apiInstance = new WebMI\RocketChatApiClient\SettingsApi\Api\ImportApi(
 );
 $x_user_id = CkCPNctrgCDfmWLqC; // string | The user ID.
 $x_auth_token = 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE; // string | The authentication token.
-$post_api_v1_start_import_request = {"input":{"users":[{"user_id":"testbh","username":"testbh","email":"testbh@gmail.com","is_deleted":false,"is_bot":false,"do_import":true,"is_email_taken":false}],"channels":[{"channel_id":"WDuJLFkjwk6L7LdFC","name":"dlp","is_archived":false,"do_import":true,"is_private":false,"is_direct":false}]}}; // \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequest
+$post_api_v1_start_import_request = {"input":{"users":{"all":true,"list":["testbh"]},"channels":{"all":false,"list":["WDuJLFkjwk6L7LdFC"]}}}; // \WebMI\RocketChatApiClient\SettingsApi\Model\PostApiV1StartImportRequest
 
 try {
     $result = $apiInstance->postApiV1StartImport($x_user_id, $x_auth_token, $post_api_v1_start_import_request);
@@ -491,7 +491,7 @@ postApiV1UploadImportFile($x_user_id, $x_auth_token, $post_api_v1_upload_import_
 
 Upload Import File
 
-This endpoint takes in the binary content of the imported file, along with additional information about its content, and stores it in a buffer.  ### Changelog | Version      | Description | | ---------------- | ------------| |3.0.0            | Added       |
+This endpoint takes in the binary content of the imported file, along with additional information about its content, and stores it in a buffer. Permission required: `run-import`.  ### Changelog | Version      | Description | | ---------------- | ------------| |3.0.0            | Added       |
 
 ### Example
 
