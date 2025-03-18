@@ -75,10 +75,10 @@ All URIs are relative to *https://apiexplorer.support.rocket.chat*
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *CustomApi* | [**getApiV1ChatGetMessage**](docs/Api/CustomApi.md#getapiv1chatgetmessage) | **GET** /api/v1/chat.getMessage | Get Message
+*CustomApi* | [**getApiV1SettingsId**](docs/Api/CustomApi.md#getapiv1settingsid) | **GET** /api/v1/settings/{_id} | Get Setting
 *CustomApi* | [**postApiV1ChatSendMessage**](docs/Api/CustomApi.md#postapiv1chatsendmessage) | **POST** /api/v1/chat.sendMessage | Send Message
 *CustomApi* | [**postApiV1Login**](docs/Api/CustomApi.md#postapiv1login) | **POST** /api/v1/login | Login with ServiceName and Token
-*SettingsApi* | [**getApiV1SettingsId**](docs/Api/SettingsApi.md#getapiv1settingsid) | **GET** /api/v1/settings/{_id} | Get Setting
-*SettingsApi* | [**postApiV1SettingsId**](docs/Api/SettingsApi.md#postapiv1settingsid) | **POST** /api/v1/settings/{_id} | Update Setting
+*CustomApi* | [**postApiV1SettingsId**](docs/Api/CustomApi.md#postapiv1settingsid) | **POST** /api/v1/settings/{_id} | Update Setting
 
 ## Models
 

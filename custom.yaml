@@ -574,7 +574,7 @@ paths:
     post:
       summary: Update Setting
       tags:
-        - Settings
+        - Custom
       responses:
         '200':
           $ref: '#/components/responses/trueSuccess'
@@ -637,7 +637,7 @@ paths:
     get:
       summary: Get Setting
       tags:
-        - Settings
+        - Custom
       responses:
         '200':
           description: OK

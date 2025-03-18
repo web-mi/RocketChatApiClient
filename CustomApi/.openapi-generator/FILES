@@ -4,7 +4,6 @@
 README.md
 composer.json
 docs/Api/CustomApi.md
-docs/Api/SettingsApi.md
 docs/Model/GetApiV1ChatGetMessage200Response.md
 docs/Model/GetApiV1ChatGetMessage200ResponseMessage.md
 docs/Model/GetApiV1ChatGetMessage200ResponseMessageReactions.md
@@ -37,7 +36,6 @@ docs/Model/SettingObject.md
 docs/Model/SettingString.md
 git_push.sh
 lib/Api/CustomApi.php
-lib/Api/SettingsApi.php
 lib/ApiException.php
 lib/Configuration.php
 lib/HeaderSelector.php
@@ -74,13 +72,3 @@ lib/Model/SettingObject.php
 lib/Model/SettingString.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Api/SettingsApiTest.php
-test/Model/GetApiV1SettingsId200ResponseTest.php
-test/Model/PostApiV1SettingsId200ResponseTest.php
-test/Model/PostApiV1SettingsIdRequestTest.php
-test/Model/SettingArrayTest.php
-test/Model/SettingBooleanTest.php
-test/Model/SettingIntegerTest.php
-test/Model/SettingObjectTest.php
-test/Model/SettingStringTest.php
-test/Model/SettingTest.php
