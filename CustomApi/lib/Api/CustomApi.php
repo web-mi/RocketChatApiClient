@@ -557,7 +557,7 @@ class CustomApi
      *
      * @throws \WebMI\RocketChatApiClient\CustomApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMI\RocketChatApiClient\CustomApi\Model\Setting|\WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1ChatSendMessage401Response
+     * @return \WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response|\WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1ChatSendMessage401Response
      */
     public function getApiV1SettingsId($_id, $x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1SettingsId'][0])
     {
@@ -577,7 +577,7 @@ class CustomApi
      *
      * @throws \WebMI\RocketChatApiClient\CustomApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMI\RocketChatApiClient\CustomApi\Model\Setting|\WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1ChatSendMessage401Response, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response|\WebMI\RocketChatApiClient\CustomApi\Model\PostApiV1ChatSendMessage401Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function getApiV1SettingsIdWithHttpInfo($_id, $x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1SettingsId'][0])
     {
@@ -608,11 +608,11 @@ class CustomApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMI\RocketChatApiClient\CustomApi\Model\Setting' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\CustomApi\Model\Setting' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -630,7 +630,7 @@ class CustomApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\CustomApi\Model\Setting', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -676,7 +676,7 @@ class CustomApi
                 );
             }
 
-            $returnType = '\WebMI\RocketChatApiClient\CustomApi\Model\Setting';
+            $returnType = '\WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -709,7 +709,7 @@ class CustomApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\CustomApi\Model\Setting',
+                        '\WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -765,7 +765,7 @@ class CustomApi
      */
     public function getApiV1SettingsIdAsyncWithHttpInfo($_id, $x_user_id, $x_auth_token, string $contentType = self::contentTypes['getApiV1SettingsId'][0])
     {
-        $returnType = '\WebMI\RocketChatApiClient\CustomApi\Model\Setting';
+        $returnType = '\WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response';
         $request = $this->getApiV1SettingsIdRequest($_id, $x_user_id, $x_auth_token, $contentType);
 
         return $this->client

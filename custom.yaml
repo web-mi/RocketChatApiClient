@@ -635,7 +635,12 @@ paths:
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Setting'
+                oneOf:
+                  - $ref: '#/components/schemas/SettingBoolean'
+                  - $ref: '#/components/schemas/SettingInteger'
+                  - $ref: '#/components/schemas/SettingString'
+                  - $ref: '#/components/schemas/SettingArray'
+                  - $ref: '#/components/schemas/SettingObject'
               examples:
                 Success Example:
                   value:
@@ -720,15 +725,56 @@ components:
               type: object
               description: The value to update the setting.
 
+    SettingInteger:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: integer
+    SettingString:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: string
+    SettingBoolean:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: boolean
+    SettingArray:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: array
+    SettingObject:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: object
     Setting:
       type: object
       properties:
         _id:
           type: string
-        value: 
-          type: array
-        success:
-          type: boolean
   parameters:
     Auth-Token:
       name: X-Auth-Token

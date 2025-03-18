@@ -10,6 +10,7 @@ docs/Model/GetApiV1ChatGetMessage200ResponseMessageReactions.md
 docs/Model/GetApiV1ChatGetMessage200ResponseMessageReactionsFrowning2.md
 docs/Model/GetApiV1ChatGetMessage200ResponseMessageStarred.md
 docs/Model/GetApiV1ChatGetMessage400Response.md
+docs/Model/GetApiV1SettingsId200Response.md
 docs/Model/PostApiV1ChatSendMessage200Response.md
 docs/Model/PostApiV1ChatSendMessage200ResponseMessage.md
 docs/Model/PostApiV1ChatSendMessage200ResponseMessageU.md
@@ -35,6 +36,11 @@ docs/Model/PostSettingObject.md
 docs/Model/PostSettingString.md
 docs/Model/PostSettingValue.md
 docs/Model/Setting.md
+docs/Model/SettingArray.md
+docs/Model/SettingBoolean.md
+docs/Model/SettingInteger.md
+docs/Model/SettingObject.md
+docs/Model/SettingString.md
 git_push.sh
 lib/Api/CustomApi.php
 lib/ApiException.php
@@ -46,6 +52,7 @@ lib/Model/GetApiV1ChatGetMessage200ResponseMessageReactions.php
 lib/Model/GetApiV1ChatGetMessage200ResponseMessageReactionsFrowning2.php
 lib/Model/GetApiV1ChatGetMessage200ResponseMessageStarred.php
 lib/Model/GetApiV1ChatGetMessage400Response.php
+lib/Model/GetApiV1SettingsId200Response.php
 lib/Model/ModelInterface.php
 lib/Model/PostApiV1ChatSendMessage200Response.php
 lib/Model/PostApiV1ChatSendMessage200ResponseMessage.php
@@ -72,12 +79,10 @@ lib/Model/PostSettingObject.php
 lib/Model/PostSettingString.php
 lib/Model/PostSettingValue.php
 lib/Model/Setting.php
+lib/Model/SettingArray.php
+lib/Model/SettingBoolean.php
+lib/Model/SettingInteger.php
+lib/Model/SettingObject.php
+lib/Model/SettingString.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Model/PostSettingArrayTest.php
-test/Model/PostSettingBooleanTest.php
-test/Model/PostSettingIntegerTest.php
-test/Model/PostSettingObjectTest.php
-test/Model/PostSettingStringTest.php
-test/Model/PostSettingTest.php
-test/Model/PostSettingValueTest.php

@@ -57,9 +57,7 @@ class Setting implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        '_id' => 'string',
-        'value' => 'string[]',
-        'success' => 'bool'
+        '_id' => 'string'
     ];
 
     /**
@@ -70,9 +68,7 @@ class Setting implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        '_id' => null,
-        'value' => null,
-        'success' => null
+        '_id' => null
     ];
 
     /**
@@ -81,9 +77,7 @@ class Setting implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        '_id' => false,
-        'value' => false,
-        'success' => false
+        '_id' => false
     ];
 
     /**
@@ -172,9 +166,7 @@ class Setting implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        '_id' => '_id',
-        'value' => 'value',
-        'success' => 'success'
+        '_id' => '_id'
     ];
 
     /**
@@ -183,9 +175,7 @@ class Setting implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        '_id' => 'set__id',
-        'value' => 'set_value',
-        'success' => 'set_success'
+        '_id' => 'set__id'
     ];
 
     /**
@@ -194,9 +184,7 @@ class Setting implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        '_id' => 'get__id',
-        'value' => 'get_value',
-        'success' => 'get_success'
+        '_id' => 'get__id'
     ];
 
     /**
@@ -257,8 +245,6 @@ class Setting implements ModelInterface, ArrayAccess, \JsonSerializable
     public function __construct(?array $data = null)
     {
         $this->setIfExists('_id', $data ?? [], null);
-        $this->setIfExists('value', $data ?? [], null);
-        $this->setIfExists('success', $data ?? [], null);
     }
 
     /**
@@ -326,60 +312,6 @@ class Setting implements ModelInterface, ArrayAccess, \JsonSerializable
             throw new \InvalidArgumentException('non-nullable _id cannot be null');
         }
         $this->container['_id'] = $_id;
-
-        return $this;
-    }
-
-    /**
-     * Gets value
-     *
-     * @return string[]|null
-     */
-    public function get_value()
-    {
-        return $this->container['value'];
-    }
-
-    /**
-     * Sets value
-     *
-     * @param string[]|null $value value
-     *
-     * @return self
-     */
-    public function set_value($value)
-    {
-        if (is_null($value)) {
-            throw new \InvalidArgumentException('non-nullable value cannot be null');
-        }
-        $this->container['value'] = $value;
-
-        return $this;
-    }
-
-    /**
-     * Gets success
-     *
-     * @return bool|null
-     */
-    public function get_success()
-    {
-        return $this->container['success'];
-    }
-
-    /**
-     * Sets success
-     *
-     * @param bool|null $success success
-     *
-     * @return self
-     */
-    public function set_success($success)
-    {
-        if (is_null($success)) {
-            throw new \InvalidArgumentException('non-nullable success cannot be null');
-        }
-        $this->container['success'] = $success;
 
         return $this;
     }
