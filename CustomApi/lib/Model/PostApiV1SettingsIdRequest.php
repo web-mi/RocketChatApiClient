@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner
+ * PostApiV1SettingsIdRequest
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
 
 /**
- * PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner Class Doc Comment
+ * PostApiV1SettingsIdRequest Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\CustomApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implements ModelInterface, ArrayAccess, \JsonSerializable
+class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_chat_sendMessage_request_message_attachments_inner_fields_inner';
+    protected static $openAPIModelName = 'post_api_v1_settings__id_request';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,10 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       * @var string[]
       */
     protected static $openAPITypes = [
-        'short' => 'bool',
-        'title' => 'string',
-        'value' => 'string'
+        'value' => 'string',
+        'color' => 'string',
+        'editor' => 'string',
+        'execute' => 'bool'
     ];
 
     /**
@@ -70,9 +71,10 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'short' => null,
-        'title' => null,
-        'value' => null
+        'value' => null,
+        'color' => null,
+        'editor' => null,
+        'execute' => null
     ];
 
     /**
@@ -81,9 +83,10 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'short' => false,
-        'title' => false,
-        'value' => false
+        'value' => false,
+        'color' => false,
+        'editor' => false,
+        'execute' => false
     ];
 
     /**
@@ -172,9 +175,10 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      * @var string[]
      */
     protected static $attributeMap = [
-        'short' => 'short',
-        'title' => 'title',
-        'value' => 'value'
+        'value' => 'value',
+        'color' => 'color',
+        'editor' => 'editor',
+        'execute' => 'execute'
     ];
 
     /**
@@ -183,9 +187,10 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      * @var string[]
      */
     protected static $setters = [
-        'short' => 'set_short',
-        'title' => 'set_title',
-        'value' => 'set_value'
+        'value' => 'set_value',
+        'color' => 'set_color',
+        'editor' => 'set_editor',
+        'execute' => 'set_execute'
     ];
 
     /**
@@ -194,9 +199,10 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      * @var string[]
      */
     protected static $getters = [
-        'short' => 'get_short',
-        'title' => 'get_title',
-        'value' => 'get_value'
+        'value' => 'get_value',
+        'color' => 'get_color',
+        'editor' => 'get_editor',
+        'execute' => 'get_execute'
     ];
 
     /**
@@ -256,9 +262,10 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('short', $data ?? [], null);
-        $this->setIfExists('title', $data ?? [], null);
         $this->setIfExists('value', $data ?? [], null);
+        $this->setIfExists('color', $data ?? [], null);
+        $this->setIfExists('editor', $data ?? [], null);
+        $this->setIfExists('execute', $data ?? [], null);
     }
 
     /**
@@ -288,9 +295,6 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
     {
         $invalidProperties = [];
 
-        if ($this->container['title'] === null) {
-            $invalidProperties[] = "'title' can't be null";
-        }
         if ($this->container['value'] === null) {
             $invalidProperties[] = "'value' can't be null";
         }
@@ -310,60 +314,6 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
 
 
     /**
-     * Gets short
-     *
-     * @return bool|null
-     */
-    public function get_short()
-    {
-        return $this->container['short'];
-    }
-
-    /**
-     * Sets short
-     *
-     * @param bool|null $short Whether this field should be a short field.
-     *
-     * @return self
-     */
-    public function set_short($short)
-    {
-        if (is_null($short)) {
-            throw new \InvalidArgumentException('non-nullable short cannot be null');
-        }
-        $this->container['short'] = $short;
-
-        return $this;
-    }
-
-    /**
-     * Gets title
-     *
-     * @return string
-     */
-    public function get_title()
-    {
-        return $this->container['title'];
-    }
-
-    /**
-     * Sets title
-     *
-     * @param string $title The title of this field.
-     *
-     * @return self
-     */
-    public function set_title($title)
-    {
-        if (is_null($title)) {
-            throw new \InvalidArgumentException('non-nullable title cannot be null');
-        }
-        $this->container['title'] = $title;
-
-        return $this;
-    }
-
-    /**
      * Gets value
      *
      * @return string
@@ -376,7 +326,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
     /**
      * Sets value
      *
-     * @param string $value The value of this field, displayed underneath the title value.
+     * @param string $value The value to update the setting.
      *
      * @return self
      */
@@ -386,6 +336,87 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
             throw new \InvalidArgumentException('non-nullable value cannot be null');
         }
         $this->container['value'] = $value;
+
+        return $this;
+    }
+
+    /**
+     * Gets color
+     *
+     * @return string|null
+     */
+    public function get_color()
+    {
+        return $this->container['color'];
+    }
+
+    /**
+     * Sets color
+     *
+     * @param string|null $color The color code to update the setting.
+     *
+     * @return self
+     */
+    public function set_color($color)
+    {
+        if (is_null($color)) {
+            throw new \InvalidArgumentException('non-nullable color cannot be null');
+        }
+        $this->container['color'] = $color;
+
+        return $this;
+    }
+
+    /**
+     * Gets editor
+     *
+     * @return string|null
+     */
+    public function get_editor()
+    {
+        return $this->container['editor'];
+    }
+
+    /**
+     * Sets editor
+     *
+     * @param string|null $editor The editor key, with color value. Required, if color was set.
+     *
+     * @return self
+     */
+    public function set_editor($editor)
+    {
+        if (is_null($editor)) {
+            throw new \InvalidArgumentException('non-nullable editor cannot be null');
+        }
+        $this->container['editor'] = $editor;
+
+        return $this;
+    }
+
+    /**
+     * Gets execute
+     *
+     * @return bool|null
+     */
+    public function get_execute()
+    {
+        return $this->container['execute'];
+    }
+
+    /**
+     * Sets execute
+     *
+     * @param bool|null $execute To trigger a action-button.
+     *
+     * @return self
+     */
+    public function set_execute($execute)
+    {
+        if (is_null($execute)) {
+            throw new \InvalidArgumentException('non-nullable execute cannot be null');
+        }
+        $this->container['execute'] = $execute;
 
         return $this;
     }

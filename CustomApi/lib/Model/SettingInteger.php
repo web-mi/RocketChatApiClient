@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner
+ * SettingInteger
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
 
 /**
- * PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner Class Doc Comment
+ * SettingInteger Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\CustomApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implements ModelInterface, ArrayAccess, \JsonSerializable
+class SettingInteger implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_chat_sendMessage_request_message_attachments_inner_fields_inner';
+    protected static $openAPIModelName = 'SettingInteger';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,9 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       * @var string[]
       */
     protected static $openAPITypes = [
-        'short' => 'bool',
-        'title' => 'string',
-        'value' => 'string'
+        '_id' => 'string',
+        'success' => 'bool',
+        'value' => 'int'
     ];
 
     /**
@@ -70,8 +70,8 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'short' => null,
-        'title' => null,
+        '_id' => null,
+        'success' => null,
         'value' => null
     ];
 
@@ -81,8 +81,8 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'short' => false,
-        'title' => false,
+        '_id' => false,
+        'success' => false,
         'value' => false
     ];
 
@@ -172,8 +172,8 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      * @var string[]
      */
     protected static $attributeMap = [
-        'short' => 'short',
-        'title' => 'title',
+        '_id' => '_id',
+        'success' => 'success',
         'value' => 'value'
     ];
 
@@ -183,8 +183,8 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      * @var string[]
      */
     protected static $setters = [
-        'short' => 'set_short',
-        'title' => 'set_title',
+        '_id' => 'set__id',
+        'success' => 'set_success',
         'value' => 'set_value'
     ];
 
@@ -194,8 +194,8 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      * @var string[]
      */
     protected static $getters = [
-        'short' => 'get_short',
-        'title' => 'get_title',
+        '_id' => 'get__id',
+        'success' => 'get_success',
         'value' => 'get_value'
     ];
 
@@ -256,8 +256,8 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('short', $data ?? [], null);
-        $this->setIfExists('title', $data ?? [], null);
+        $this->setIfExists('_id', $data ?? [], null);
+        $this->setIfExists('success', $data ?? [], null);
         $this->setIfExists('value', $data ?? [], null);
     }
 
@@ -288,12 +288,6 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
     {
         $invalidProperties = [];
 
-        if ($this->container['title'] === null) {
-            $invalidProperties[] = "'title' can't be null";
-        }
-        if ($this->container['value'] === null) {
-            $invalidProperties[] = "'value' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -310,55 +304,55 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
 
 
     /**
-     * Gets short
+     * Gets _id
      *
-     * @return bool|null
+     * @return string|null
      */
-    public function get_short()
+    public function get__id()
     {
-        return $this->container['short'];
+        return $this->container['_id'];
     }
 
     /**
-     * Sets short
+     * Sets _id
      *
-     * @param bool|null $short Whether this field should be a short field.
+     * @param string|null $_id _id
      *
      * @return self
      */
-    public function set_short($short)
+    public function set__id($_id)
     {
-        if (is_null($short)) {
-            throw new \InvalidArgumentException('non-nullable short cannot be null');
+        if (is_null($_id)) {
+            throw new \InvalidArgumentException('non-nullable _id cannot be null');
         }
-        $this->container['short'] = $short;
+        $this->container['_id'] = $_id;
 
         return $this;
     }
 
     /**
-     * Gets title
+     * Gets success
      *
-     * @return string
+     * @return bool|null
      */
-    public function get_title()
+    public function get_success()
     {
-        return $this->container['title'];
+        return $this->container['success'];
     }
 
     /**
-     * Sets title
+     * Sets success
      *
-     * @param string $title The title of this field.
+     * @param bool|null $success success
      *
      * @return self
      */
-    public function set_title($title)
+    public function set_success($success)
     {
-        if (is_null($title)) {
-            throw new \InvalidArgumentException('non-nullable title cannot be null');
+        if (is_null($success)) {
+            throw new \InvalidArgumentException('non-nullable success cannot be null');
         }
-        $this->container['title'] = $title;
+        $this->container['success'] = $success;
 
         return $this;
     }
@@ -366,7 +360,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
     /**
      * Gets value
      *
-     * @return string
+     * @return int|null
      */
     public function get_value()
     {
@@ -376,7 +370,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
     /**
      * Sets value
      *
-     * @param string $value The value of this field, displayed underneath the title value.
+     * @param int|null $value value
      *
      * @return self
      */

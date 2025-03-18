@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner
+ * PostApiV1SettingsId200Response
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
 
 /**
- * PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner Class Doc Comment
+ * PostApiV1SettingsId200Response Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\CustomApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implements ModelInterface, ArrayAccess, \JsonSerializable
+class PostApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_chat_sendMessage_request_message_attachments_inner_fields_inner';
+    protected static $openAPIModelName = 'post_api_v1_settings__id_200_response';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       * @var string[]
       */
     protected static $openAPITypes = [
-        'short' => 'bool',
-        'title' => 'string',
-        'value' => 'string'
+        'success' => 'bool'
     ];
 
     /**
@@ -70,9 +68,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'short' => null,
-        'title' => null,
-        'value' => null
+        'success' => null
     ];
 
     /**
@@ -81,9 +77,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'short' => false,
-        'title' => false,
-        'value' => false
+        'success' => false
     ];
 
     /**
@@ -172,9 +166,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      * @var string[]
      */
     protected static $attributeMap = [
-        'short' => 'short',
-        'title' => 'title',
-        'value' => 'value'
+        'success' => 'success'
     ];
 
     /**
@@ -183,9 +175,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      * @var string[]
      */
     protected static $setters = [
-        'short' => 'set_short',
-        'title' => 'set_title',
-        'value' => 'set_value'
+        'success' => 'set_success'
     ];
 
     /**
@@ -194,9 +184,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      * @var string[]
      */
     protected static $getters = [
-        'short' => 'get_short',
-        'title' => 'get_title',
-        'value' => 'get_value'
+        'success' => 'get_success'
     ];
 
     /**
@@ -256,9 +244,7 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('short', $data ?? [], null);
-        $this->setIfExists('title', $data ?? [], null);
-        $this->setIfExists('value', $data ?? [], null);
+        $this->setIfExists('success', $data ?? [], null);
     }
 
     /**
@@ -288,12 +274,6 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
     {
         $invalidProperties = [];
 
-        if ($this->container['title'] === null) {
-            $invalidProperties[] = "'title' can't be null";
-        }
-        if ($this->container['value'] === null) {
-            $invalidProperties[] = "'value' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -310,82 +290,28 @@ class PostApiV1ChatSendMessageRequestMessageAttachmentsInnerFieldsInner implemen
 
 
     /**
-     * Gets short
+     * Gets success
      *
      * @return bool|null
      */
-    public function get_short()
+    public function get_success()
     {
-        return $this->container['short'];
+        return $this->container['success'];
     }
 
     /**
-     * Sets short
+     * Sets success
      *
-     * @param bool|null $short Whether this field should be a short field.
+     * @param bool|null $success success
      *
      * @return self
      */
-    public function set_short($short)
+    public function set_success($success)
     {
-        if (is_null($short)) {
-            throw new \InvalidArgumentException('non-nullable short cannot be null');
+        if (is_null($success)) {
+            throw new \InvalidArgumentException('non-nullable success cannot be null');
         }
-        $this->container['short'] = $short;
-
-        return $this;
-    }
-
-    /**
-     * Gets title
-     *
-     * @return string
-     */
-    public function get_title()
-    {
-        return $this->container['title'];
-    }
-
-    /**
-     * Sets title
-     *
-     * @param string $title The title of this field.
-     *
-     * @return self
-     */
-    public function set_title($title)
-    {
-        if (is_null($title)) {
-            throw new \InvalidArgumentException('non-nullable title cannot be null');
-        }
-        $this->container['title'] = $title;
-
-        return $this;
-    }
-
-    /**
-     * Gets value
-     *
-     * @return string
-     */
-    public function get_value()
-    {
-        return $this->container['value'];
-    }
-
-    /**
-     * Sets value
-     *
-     * @param string $value The value of this field, displayed underneath the title value.
-     *
-     * @return self
-     */
-    public function set_value($value)
-    {
-        if (is_null($value)) {
-            throw new \InvalidArgumentException('non-nullable value cannot be null');
-        }
-        $this->container['value'] = $value;
+        $this->container['success'] = $success;
 
         return $this;
     }

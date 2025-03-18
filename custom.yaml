@@ -562,7 +562,165 @@ paths:
                   value:
                     success: false
                     error: The "msgId" query parameter must be provided.
+
+  /api/v1/settings/{_id}:
+    parameters:
+      - schema:
+          type: string
+        name: _id
+        in: path
+        required: true
+        description: The unique ID of the setting that you want to update or fetch.
+    post:
+      summary: Update Setting
+      tags:
+        - Settings
+      responses:
+        '200':
+          $ref: '#/components/responses/trueSuccess'
+        '401':
+          $ref: '#/components/responses/authorizationError'
+      operationId: post-api-v1-settings-_id
+      description: |-
+        Permission required: `edit-privileged-setting`
+
+        The `_id` of a setting is the first argument of the `RocketChat.settings.add` method used in `Rocket.Chat/packages/rocketchat-lib/server/startup/settings.js` (among other files). 
+
+        For example, the following code in `settings.js` file:
+          ```json
+          this.add('Accounts_AllowAnonymousRead', false, {
+            type: 'boolean',
+            public: true  });
+          ```
+          This means that the setting labeled `Allow anonymous read` in the section `Accounts` has `_id` equal to `Accounts_AllowAnonymousRead`. The second argument is the default value (false). The third argument specifies the variable's type and whether it is public, hidden, and so on. 
+
+          To set a color, you can send:
+          ```json
+          { value: '<color-code>',
+            editor: 'color' }
+          ```
+
+          And also to trigger a action-button, use:
+          ```json
+          { execute: true }
+          ```
+          ### Changelog
+          | Version      | Description |
+          | ---------------- | ------------|
+          |0.65.0            | Added option to set a color and trigger an action       |
+          |0.42.0            | Added       |
+      parameters:
+        - $ref: '#/components/parameters/X-User-Id'
+        - $ref: '#/components/parameters/X-Auth-Token'
+        - $ref: '#/components/parameters/x-2fa-code'
+        - $ref: '#/components/parameters/X-2fa-method'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                value:
+                  type: string
+                  description: The value to update the setting.
+                color:
+                  type: string
+                  description: The color code to update the setting.
+                editor:
+                  type: string
+                  description: 'The editor key, with color value. Required, if color was set.'
+                execute:
+                  type: boolean
+                  description: To trigger a action-button.
+              required:
+                - value
+    get:
+      summary: Get Setting
+      tags:
+        - Settings
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                oneOf:
+                  - $ref: '#/components/schemas/SettingBoolean'
+                  - $ref: '#/components/schemas/SettingInteger'
+                  - $ref: '#/components/schemas/SettingString'
+                  - $ref: '#/components/schemas/SettingArray'
+                  - $ref: '#/components/schemas/SettingObject'
+              examples:
+                Success Example:
+                  value:
+                    _id: Livechat_enabled
+                    value: false
+                    success: true
+        '401':
+          $ref: '#/components/responses/authorizationError'
+      operationId: get-api-v1-settings-_id
+      description: |-
+        Get details of a setting by ID.
+        Permission required: `view-privileged-setting`
+        ### Changelog
+        | Version      | Description |
+        | ---------------- | ------------|
+        |0.42.0            | Added       |
+      parameters:
+        - $ref: '#/components/parameters/X-User-Id'
+        - $ref: '#/components/parameters/X-Auth-Token'
 components:
+  schemas:
+    SettingInteger:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: integer
+    SettingString:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: string
+    SettingBoolean:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: boolean
+    SettingArray:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: array
+    SettingObject:
+      allOf:
+        - $ref: '#/components/schemas/Setting'
+        - type: object
+          properties:
+            success:
+              type: boolean
+            value:
+              type: object
+    Setting:
+      type: object
+      properties:
+        _id:
+          type: string
   parameters:
     Auth-Token:
       name: X-Auth-Token
@@ -580,6 +738,64 @@ components:
       schema:
         type: string
       example: rbAXPnMktTFbNpwtJ
+    X-User-Id:
+      name: X-User-Id
+      in: header
+      required: true
+      schema:
+        type: string
+      example: CkCPNctrgCDfmWLqC
+      description: The user ID.
+    X-Auth-Token:
+      name: X-Auth-Token
+      in: header
+      required: true
+      schema:
+        type: string
+      example: 1Dd4iN_ClKn5jl-xPC36snQ4s9Zd5GZnXCQuCNSKcVE
+      description: The authentication token.
+    offset:
+      name: offset
+      in: query
+      required: false
+      schema:
+        type: integer
+      example: 50
+      description: 'Number of items to "skip" in the query, i.e. requests return count items, skipping the first offset items.'
+    count:
+      name: count
+      in: query
+      required: false
+      schema:
+        type: integer
+      example: 50
+      description: How many items to return.
+    sort:
+      name: sort
+      in: query
+      required: false
+      schema: { }
+      description: 'List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {"value": -1, "_id": 1}'
+    fields:
+      name: fields
+      in: query
+      required: false
+      schema: { }
+      description: 'This parameter accepts a JSON object with properties that have a value of 1 or 0 to include or exclude them in the response. For example, to only retrieve the usernames of users: fields={ "username": 1 }'
+    x-2fa-code:
+      name: X-2fa-Code
+      in: header
+      required: true
+      schema:
+        type: string
+      description: 'The 2FA code from the authentication method. If the method is password, encrypt it as SHA256.'
+    X-2fa-method:
+      name: X-2fa-method
+      in: header
+      required: true
+      schema:
+        type: string
+      description: 'The desired method to get the 2FA code. It can be `email`, `totp`, or `password`.'
   responses:
     trueSuccess:
       description: OK
