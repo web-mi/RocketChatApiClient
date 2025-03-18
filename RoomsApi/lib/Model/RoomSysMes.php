@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV1RoomsInfo200Response
+ * RoomSysMes
  *
  * PHP version 7.4
  *
@@ -32,15 +32,16 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
- * GetApiV1RoomsInfo200Response Class Doc Comment
+ * RoomSysMes Class Doc Comment
  *
  * @category Class
+ * @description Indicates whether system messages are enabled or an array of allowed system message types.
  * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \JsonSerializable
+class RoomSysMes implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v1_rooms_info_200_response';
+    protected static $openAPIModelName = 'Room_sysMes';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +58,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
       * @var string[]
       */
     protected static $openAPITypes = [
-        'room' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Room',
-        'success' => 'bool'
+        
     ];
 
     /**
@@ -69,8 +69,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'room' => null,
-        'success' => null
+        
     ];
 
     /**
@@ -79,8 +78,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'room' => false,
-        'success' => false
+        
     ];
 
     /**
@@ -169,8 +167,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $attributeMap = [
-        'room' => 'room',
-        'success' => 'success'
+        
     ];
 
     /**
@@ -179,8 +176,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $setters = [
-        'room' => 'set_room',
-        'success' => 'set_success'
+        
     ];
 
     /**
@@ -189,8 +185,7 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
      * @var string[]
      */
     protected static $getters = [
-        'room' => 'get_room',
-        'success' => 'get_success'
+        
     ];
 
     /**
@@ -250,8 +245,6 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
      */
     public function __construct(array $data = null)
     {
-        $this->setIfExists('room', $data ?? [], null);
-        $this->setIfExists('success', $data ?? [], null);
     }
 
     /**
@@ -295,60 +288,6 @@ class GetApiV1RoomsInfo200Response implements ModelInterface, ArrayAccess, \Json
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets room
-     *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Room|null
-     */
-    public function get_room()
-    {
-        return $this->container['room'];
-    }
-
-    /**
-     * Sets room
-     *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Room|null $room room
-     *
-     * @return self
-     */
-    public function set_room($room)
-    {
-        if (is_null($room)) {
-            throw new \InvalidArgumentException('non-nullable room cannot be null');
-        }
-        $this->container['room'] = $room;
-
-        return $this;
-    }
-
-    /**
-     * Gets success
-     *
-     * @return bool|null
-     */
-    public function get_success()
-    {
-        return $this->container['success'];
-    }
-
-    /**
-     * Sets success
-     *
-     * @param bool|null $success success
-     *
-     * @return self
-     */
-    public function set_success($success)
-    {
-        if (is_null($success)) {
-            throw new \InvalidArgumentException('non-nullable success cannot be null');
-        }
-        $this->container['success'] = $success;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      *

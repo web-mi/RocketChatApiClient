@@ -592,7 +592,7 @@ No authorization required
 ## `getApiV1GroupsMessages()`
 
 ```php
-getApiV1GroupsMessages($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $mention_ids, $starred_ids, $pinned): \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200Response
+getApiV1GroupsMessages($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $query, $mention_ids, $starred_ids, $pinned): \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200Response
 ```
 
 Get Group Messages
@@ -620,12 +620,13 @@ $fields = 'fields_example'; // string | This parameter accepts a JSON object wit
 $sort = NULL; // mixed | List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\"value\": -1, \"_id\": 1}
 $offset = 50; // int | Number of items to \"skip\" in the query, i.e. requests return count items, skipping the first offset items.
 $count = 50; // int | The number of items to return.
+$query = NULL; // mixed | This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \"g\": query={ \"name\": { \"$regex\": \"g\" } }
 $mention_ids = dud0wu900; // string | Filter the messages where a user has been mentioned by the userId. For a set of userIds, use an array (`[\"838ndhd79w\", \"dud0wu900\"]`).
 $starred_ids = dud0wu900; // string | Filter the messages a user have starred by userId. For a set of userIds, use an array (`[\"838ndhd79w\", \"dud0wu900\"]`).
 $pinned = true; // bool | Filter pinned messages.
 
 try {
-    $result = $apiInstance->getApiV1GroupsMessages($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $mention_ids, $starred_ids, $pinned);
+    $result = $apiInstance->getApiV1GroupsMessages($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $query, $mention_ids, $starred_ids, $pinned);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling GroupsApi->getApiV1GroupsMessages: ', $e->getMessage(), PHP_EOL;
@@ -644,6 +645,7 @@ try {
 | **sort** | [**mixed**](../Model/.md)| List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} | [optional] |
 | **offset** | **int**| Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. | [optional] |
 | **count** | **int**| The number of items to return. | [optional] |
+| **query** | [**mixed**](../Model/.md)| This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } | [optional] |
 | **mention_ids** | **string**| Filter the messages where a user has been mentioned by the userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). | [optional] |
 | **starred_ids** | **string**| Filter the messages a user have starred by userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). | [optional] |
 | **pinned** | **bool**| Filter pinned messages. | [optional] |

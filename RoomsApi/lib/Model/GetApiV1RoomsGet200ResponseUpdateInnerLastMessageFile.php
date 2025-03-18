@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV1RoomsUploadRid200ResponseMessage
+ * GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
- * GetApiV1RoomsUploadRid200ResponseMessage Class Doc Comment
+ * GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\RoomsApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayAccess, \JsonSerializable
+class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v1_rooms_upload_rid_200_response_message';
+    protected static $openAPIModelName = 'get_api_v1_rooms_get_200_response_update_inner_lastMessage_file';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -58,16 +58,8 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
       */
     protected static $openAPITypes = [
         '_id' => 'string',
-        'rid' => 'string',
-        'ts' => 'string',
-        'msg' => 'string',
-        'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile',
-        'files' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile[]',
-        'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]',
-        'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
-        '_updated_at' => 'string',
-        'urls' => 'object[]',
-        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]'
+        'name' => 'string',
+        'type' => 'string'
     ];
 
     /**
@@ -79,16 +71,8 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
       */
     protected static $openAPIFormats = [
         '_id' => null,
-        'rid' => null,
-        'ts' => null,
-        'msg' => null,
-        'file' => null,
-        'files' => null,
-        'attachments' => null,
-        'u' => null,
-        '_updated_at' => null,
-        'urls' => null,
-        'md' => null
+        'name' => null,
+        'type' => null
     ];
 
     /**
@@ -98,16 +82,8 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
       */
     protected static array $openAPINullables = [
         '_id' => false,
-        'rid' => false,
-        'ts' => false,
-        'msg' => false,
-        'file' => false,
-        'files' => false,
-        'attachments' => false,
-        'u' => false,
-        '_updated_at' => false,
-        'urls' => false,
-        'md' => false
+        'name' => false,
+        'type' => false
     ];
 
     /**
@@ -197,16 +173,8 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      */
     protected static $attributeMap = [
         '_id' => '_id',
-        'rid' => 'rid',
-        'ts' => 'ts',
-        'msg' => 'msg',
-        'file' => 'file',
-        'files' => 'files',
-        'attachments' => 'attachments',
-        'u' => 'u',
-        '_updated_at' => '_updatedAt',
-        'urls' => 'urls',
-        'md' => 'md'
+        'name' => 'name',
+        'type' => 'type'
     ];
 
     /**
@@ -216,16 +184,8 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      */
     protected static $setters = [
         '_id' => 'set__id',
-        'rid' => 'set_rid',
-        'ts' => 'set_ts',
-        'msg' => 'set_msg',
-        'file' => 'set_file',
-        'files' => 'set_files',
-        'attachments' => 'set_attachments',
-        'u' => 'set_u',
-        '_updated_at' => 'set__updated_at',
-        'urls' => 'set_urls',
-        'md' => 'set_md'
+        'name' => 'set_name',
+        'type' => 'set_type'
     ];
 
     /**
@@ -235,16 +195,8 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
      */
     protected static $getters = [
         '_id' => 'get__id',
-        'rid' => 'get_rid',
-        'ts' => 'get_ts',
-        'msg' => 'get_msg',
-        'file' => 'get_file',
-        'files' => 'get_files',
-        'attachments' => 'get_attachments',
-        'u' => 'get_u',
-        '_updated_at' => 'get__updated_at',
-        'urls' => 'get_urls',
-        'md' => 'get_md'
+        'name' => 'get_name',
+        'type' => 'get_type'
     ];
 
     /**
@@ -305,16 +257,8 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     public function __construct(array $data = null)
     {
         $this->setIfExists('_id', $data ?? [], null);
-        $this->setIfExists('rid', $data ?? [], null);
-        $this->setIfExists('ts', $data ?? [], null);
-        $this->setIfExists('msg', $data ?? [], null);
-        $this->setIfExists('file', $data ?? [], null);
-        $this->setIfExists('files', $data ?? [], null);
-        $this->setIfExists('attachments', $data ?? [], null);
-        $this->setIfExists('u', $data ?? [], null);
-        $this->setIfExists('_updated_at', $data ?? [], null);
-        $this->setIfExists('urls', $data ?? [], null);
-        $this->setIfExists('md', $data ?? [], null);
+        $this->setIfExists('name', $data ?? [], null);
+        $this->setIfExists('type', $data ?? [], null);
     }
 
     /**
@@ -387,271 +331,55 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     }
 
     /**
-     * Gets rid
+     * Gets name
      *
      * @return string|null
      */
-    public function get_rid()
+    public function get_name()
     {
-        return $this->container['rid'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets rid
+     * Sets name
      *
-     * @param string|null $rid rid
+     * @param string|null $name name
      *
      * @return self
      */
-    public function set_rid($rid)
+    public function set_name($name)
     {
-        if (is_null($rid)) {
-            throw new \InvalidArgumentException('non-nullable rid cannot be null');
+        if (is_null($name)) {
+            throw new \InvalidArgumentException('non-nullable name cannot be null');
         }
-        $this->container['rid'] = $rid;
+        $this->container['name'] = $name;
 
         return $this;
     }
 
     /**
-     * Gets ts
+     * Gets type
      *
      * @return string|null
      */
-    public function get_ts()
+    public function get_type()
     {
-        return $this->container['ts'];
+        return $this->container['type'];
     }
 
     /**
-     * Sets ts
+     * Sets type
      *
-     * @param string|null $ts ts
+     * @param string|null $type type
      *
      * @return self
      */
-    public function set_ts($ts)
+    public function set_type($type)
     {
-        if (is_null($ts)) {
-            throw new \InvalidArgumentException('non-nullable ts cannot be null');
+        if (is_null($type)) {
+            throw new \InvalidArgumentException('non-nullable type cannot be null');
         }
-        $this->container['ts'] = $ts;
-
-        return $this;
-    }
-
-    /**
-     * Gets msg
-     *
-     * @return string|null
-     */
-    public function get_msg()
-    {
-        return $this->container['msg'];
-    }
-
-    /**
-     * Sets msg
-     *
-     * @param string|null $msg msg
-     *
-     * @return self
-     */
-    public function set_msg($msg)
-    {
-        if (is_null($msg)) {
-            throw new \InvalidArgumentException('non-nullable msg cannot be null');
-        }
-        $this->container['msg'] = $msg;
-
-        return $this;
-    }
-
-    /**
-     * Gets file
-     *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile|null
-     */
-    public function get_file()
-    {
-        return $this->container['file'];
-    }
-
-    /**
-     * Sets file
-     *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile|null $file file
-     *
-     * @return self
-     */
-    public function set_file($file)
-    {
-        if (is_null($file)) {
-            throw new \InvalidArgumentException('non-nullable file cannot be null');
-        }
-        $this->container['file'] = $file;
-
-        return $this;
-    }
-
-    /**
-     * Gets files
-     *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile[]|null
-     */
-    public function get_files()
-    {
-        return $this->container['files'];
-    }
-
-    /**
-     * Sets files
-     *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile[]|null $files files
-     *
-     * @return self
-     */
-    public function set_files($files)
-    {
-        if (is_null($files)) {
-            throw new \InvalidArgumentException('non-nullable files cannot be null');
-        }
-        $this->container['files'] = $files;
-
-        return $this;
-    }
-
-    /**
-     * Gets attachments
-     *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null
-     */
-    public function get_attachments()
-    {
-        return $this->container['attachments'];
-    }
-
-    /**
-     * Sets attachments
-     *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null $attachments attachments
-     *
-     * @return self
-     */
-    public function set_attachments($attachments)
-    {
-        if (is_null($attachments)) {
-            throw new \InvalidArgumentException('non-nullable attachments cannot be null');
-        }
-        $this->container['attachments'] = $attachments;
-
-        return $this;
-    }
-
-    /**
-     * Gets u
-     *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null
-     */
-    public function get_u()
-    {
-        return $this->container['u'];
-    }
-
-    /**
-     * Sets u
-     *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU|null $u u
-     *
-     * @return self
-     */
-    public function set_u($u)
-    {
-        if (is_null($u)) {
-            throw new \InvalidArgumentException('non-nullable u cannot be null');
-        }
-        $this->container['u'] = $u;
-
-        return $this;
-    }
-
-    /**
-     * Gets _updated_at
-     *
-     * @return string|null
-     */
-    public function get__updated_at()
-    {
-        return $this->container['_updated_at'];
-    }
-
-    /**
-     * Sets _updated_at
-     *
-     * @param string|null $_updated_at _updated_at
-     *
-     * @return self
-     */
-    public function set__updated_at($_updated_at)
-    {
-        if (is_null($_updated_at)) {
-            throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
-        }
-        $this->container['_updated_at'] = $_updated_at;
-
-        return $this;
-    }
-
-    /**
-     * Gets urls
-     *
-     * @return object[]|null
-     */
-    public function get_urls()
-    {
-        return $this->container['urls'];
-    }
-
-    /**
-     * Sets urls
-     *
-     * @param object[]|null $urls urls
-     *
-     * @return self
-     */
-    public function set_urls($urls)
-    {
-        if (is_null($urls)) {
-            throw new \InvalidArgumentException('non-nullable urls cannot be null');
-        }
-        $this->container['urls'] = $urls;
-
-        return $this;
-    }
-
-    /**
-     * Gets md
-     *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null
-     */
-    public function get_md()
-    {
-        return $this->container['md'];
-    }
-
-    /**
-     * Sets md
-     *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null $md md
-     *
-     * @return self
-     */
-    public function set_md($md)
-    {
-        if (is_null($md)) {
-            throw new \InvalidArgumentException('non-nullable md cannot be null');
-        }
-        $this->container['md'] = $md;
+        $this->container['type'] = $type;
 
         return $this;
     }

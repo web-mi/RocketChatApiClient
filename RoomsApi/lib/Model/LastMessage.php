@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV1RoomsGet200ResponseUpdateInnerLastMessage
+ * LastMessage
  *
  * PHP version 7.4
  *
@@ -32,15 +32,16 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
- * GetApiV1RoomsGet200ResponseUpdateInnerLastMessage Class Doc Comment
+ * LastMessage Class Doc Comment
  *
  * @category Class
+ * @description The last message sent in the room.
  * @package  WebMI\RocketChatApiClient\RoomsApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterface, ArrayAccess, \JsonSerializable
+class LastMessage implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v1_rooms_get_200_response_update_inner_lastMessage';
+    protected static $openAPIModelName = 'LastMessage';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -68,11 +69,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         'groupable' => 'bool',
         'drid' => 'string',
-        '_updated_at' => 'string',
-        'urls' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]',
-        'mentions' => 'object[]',
-        'channels' => 'object[]',
-        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]'
+        '_updated_at' => 'string'
     ];
 
     /**
@@ -94,11 +91,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'u' => null,
         'groupable' => null,
         'drid' => null,
-        '_updated_at' => null,
-        'urls' => null,
-        'mentions' => null,
-        'channels' => null,
-        'md' => null
+        '_updated_at' => null
     ];
 
     /**
@@ -118,11 +111,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'u' => false,
         'groupable' => false,
         'drid' => false,
-        '_updated_at' => false,
-        'urls' => false,
-        'mentions' => false,
-        'channels' => false,
-        'md' => false
+        '_updated_at' => false
     ];
 
     /**
@@ -222,11 +211,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'u' => 'u',
         'groupable' => 'groupable',
         'drid' => 'drid',
-        '_updated_at' => '_updatedAt',
-        'urls' => 'urls',
-        'mentions' => 'mentions',
-        'channels' => 'channels',
-        'md' => 'md'
+        '_updated_at' => '_updatedAt'
     ];
 
     /**
@@ -246,11 +231,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'u' => 'set_u',
         'groupable' => 'set_groupable',
         'drid' => 'set_drid',
-        '_updated_at' => 'set__updated_at',
-        'urls' => 'set_urls',
-        'mentions' => 'set_mentions',
-        'channels' => 'set_channels',
-        'md' => 'set_md'
+        '_updated_at' => 'set__updated_at'
     ];
 
     /**
@@ -270,11 +251,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'u' => 'get_u',
         'groupable' => 'get_groupable',
         'drid' => 'get_drid',
-        '_updated_at' => 'get__updated_at',
-        'urls' => 'get_urls',
-        'mentions' => 'get_mentions',
-        'channels' => 'get_channels',
-        'md' => 'get_md'
+        '_updated_at' => 'get__updated_at'
     ];
 
     /**
@@ -346,10 +323,6 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         $this->setIfExists('groupable', $data ?? [], null);
         $this->setIfExists('drid', $data ?? [], null);
         $this->setIfExists('_updated_at', $data ?? [], null);
-        $this->setIfExists('urls', $data ?? [], null);
-        $this->setIfExists('mentions', $data ?? [], null);
-        $this->setIfExists('channels', $data ?? [], null);
-        $this->setIfExists('md', $data ?? [], null);
     }
 
     /**
@@ -721,114 +694,6 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
             throw new \InvalidArgumentException('non-nullable _updated_at cannot be null');
         }
         $this->container['_updated_at'] = $_updated_at;
-
-        return $this;
-    }
-
-    /**
-     * Gets urls
-     *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null
-     */
-    public function get_urls()
-    {
-        return $this->container['urls'];
-    }
-
-    /**
-     * Sets urls
-     *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner[]|null $urls urls
-     *
-     * @return self
-     */
-    public function set_urls($urls)
-    {
-        if (is_null($urls)) {
-            throw new \InvalidArgumentException('non-nullable urls cannot be null');
-        }
-        $this->container['urls'] = $urls;
-
-        return $this;
-    }
-
-    /**
-     * Gets mentions
-     *
-     * @return object[]|null
-     */
-    public function get_mentions()
-    {
-        return $this->container['mentions'];
-    }
-
-    /**
-     * Sets mentions
-     *
-     * @param object[]|null $mentions mentions
-     *
-     * @return self
-     */
-    public function set_mentions($mentions)
-    {
-        if (is_null($mentions)) {
-            throw new \InvalidArgumentException('non-nullable mentions cannot be null');
-        }
-        $this->container['mentions'] = $mentions;
-
-        return $this;
-    }
-
-    /**
-     * Gets channels
-     *
-     * @return object[]|null
-     */
-    public function get_channels()
-    {
-        return $this->container['channels'];
-    }
-
-    /**
-     * Sets channels
-     *
-     * @param object[]|null $channels channels
-     *
-     * @return self
-     */
-    public function set_channels($channels)
-    {
-        if (is_null($channels)) {
-            throw new \InvalidArgumentException('non-nullable channels cannot be null');
-        }
-        $this->container['channels'] = $channels;
-
-        return $this;
-    }
-
-    /**
-     * Gets md
-     *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null
-     */
-    public function get_md()
-    {
-        return $this->container['md'];
-    }
-
-    /**
-     * Sets md
-     *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]|null $md md
-     *
-     * @return self
-     */
-    public function set_md($md)
-    {
-        if (is_null($md)) {
-            throw new \InvalidArgumentException('non-nullable md cannot be null');
-        }
-        $this->container['md'] = $md;
 
         return $this;
     }

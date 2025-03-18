@@ -1,10 +1,11 @@
-# # GetApiV1RoomsInfo200Response
+# # GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**room** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Room**](Room.md) |  | [optional]
-**success** | **bool** |  | [optional]
+**_id** | **string** |  | [optional]
+**name** | **string** |  | [optional]
+**type** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

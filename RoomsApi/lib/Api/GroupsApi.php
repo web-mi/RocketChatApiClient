@@ -3631,6 +3631,7 @@ class GroupsApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  int $offset Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. (optional)
      * @param  int $count The number of items to return. (optional)
+     * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } (optional)
      * @param  string $mention_ids Filter the messages where a user has been mentioned by the userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  string $starred_ids Filter the messages a user have starred by userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  bool $pinned Filter pinned messages. (optional)
@@ -3640,9 +3641,9 @@ class GroupsApi
      * @throws \InvalidArgumentException
      * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200Response|\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate401Response
      */
-    public function getApiV1GroupsMessages($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
+    public function getApiV1GroupsMessages($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $query = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
     {
-        list($response) = $this->getApiV1GroupsMessagesWithHttpInfo($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $mention_ids, $starred_ids, $pinned, $contentType);
+        list($response) = $this->getApiV1GroupsMessagesWithHttpInfo($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $query, $mention_ids, $starred_ids, $pinned, $contentType);
         return $response;
     }
 
@@ -3659,6 +3660,7 @@ class GroupsApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  int $offset Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. (optional)
      * @param  int $count The number of items to return. (optional)
+     * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } (optional)
      * @param  string $mention_ids Filter the messages where a user has been mentioned by the userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  string $starred_ids Filter the messages a user have starred by userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  bool $pinned Filter pinned messages. (optional)
@@ -3668,9 +3670,9 @@ class GroupsApi
      * @throws \InvalidArgumentException
      * @return array of \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200Response|\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate401Response, HTTP status code, HTTP response headers (array of strings)
      */
-    public function getApiV1GroupsMessagesWithHttpInfo($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
+    public function getApiV1GroupsMessagesWithHttpInfo($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $query = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
     {
-        $request = $this->getApiV1GroupsMessagesRequest($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $mention_ids, $starred_ids, $pinned, $contentType);
+        $request = $this->getApiV1GroupsMessagesRequest($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $query, $mention_ids, $starred_ids, $pinned, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -3829,6 +3831,7 @@ class GroupsApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  int $offset Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. (optional)
      * @param  int $count The number of items to return. (optional)
+     * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } (optional)
      * @param  string $mention_ids Filter the messages where a user has been mentioned by the userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  string $starred_ids Filter the messages a user have starred by userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  bool $pinned Filter pinned messages. (optional)
@@ -3837,9 +3840,9 @@ class GroupsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getApiV1GroupsMessagesAsync($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
+    public function getApiV1GroupsMessagesAsync($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $query = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
     {
-        return $this->getApiV1GroupsMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $mention_ids, $starred_ids, $pinned, $contentType)
+        return $this->getApiV1GroupsMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $query, $mention_ids, $starred_ids, $pinned, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -3860,6 +3863,7 @@ class GroupsApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  int $offset Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. (optional)
      * @param  int $count The number of items to return. (optional)
+     * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } (optional)
      * @param  string $mention_ids Filter the messages where a user has been mentioned by the userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  string $starred_ids Filter the messages a user have starred by userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  bool $pinned Filter pinned messages. (optional)
@@ -3868,10 +3872,10 @@ class GroupsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function getApiV1GroupsMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
+    public function getApiV1GroupsMessagesAsyncWithHttpInfo($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $query = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
     {
         $returnType = '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200Response';
-        $request = $this->getApiV1GroupsMessagesRequest($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $mention_ids, $starred_ids, $pinned, $contentType);
+        $request = $this->getApiV1GroupsMessagesRequest($x_auth_token, $x_user_id, $room_id, $room_name, $fields, $sort, $offset, $count, $query, $mention_ids, $starred_ids, $pinned, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -3920,6 +3924,7 @@ class GroupsApi
      * @param  mixed $sort List of fields to order by, and in which direction. This is a JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, {\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1} (optional)
      * @param  int $offset Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. (optional)
      * @param  int $count The number of items to return. (optional)
+     * @param  mixed $query This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } (optional)
      * @param  string $mention_ids Filter the messages where a user has been mentioned by the userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  string $starred_ids Filter the messages a user have starred by userId. For a set of userIds, use an array (&#x60;[\&quot;838ndhd79w\&quot;, \&quot;dud0wu900\&quot;]&#x60;). (optional)
      * @param  bool $pinned Filter pinned messages. (optional)
@@ -3928,7 +3933,7 @@ class GroupsApi
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function getApiV1GroupsMessagesRequest($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
+    public function getApiV1GroupsMessagesRequest($x_auth_token, $x_user_id, $room_id = null, $room_name = null, $fields = null, $sort = null, $offset = null, $count = null, $query = null, $mention_ids = null, $starred_ids = null, $pinned = null, string $contentType = self::contentTypes['getApiV1GroupsMessages'][0])
     {
 
         // verify the required parameter 'x_auth_token' is set
@@ -3944,6 +3949,7 @@ class GroupsApi
                 'Missing the required parameter $x_user_id when calling getApiV1GroupsMessages'
             );
         }
+
 
 
 
@@ -4012,6 +4018,15 @@ class GroupsApi
             $count,
             'count', // param base name
             'integer', // openApiType
+            'form', // style
+            true, // explode
+            false // required
+        ) ?? []);
+        // query params
+        $queryParams = array_merge($queryParams, ObjectSerializer::toQueryValue(
+            $query,
+            'query', // param base name
+            'mixed', // openApiType
             'form', // style
             true, // explode
             false // required

@@ -207,6 +207,7 @@ Class | Method | HTTP request | Description
 
 ## Models
 
+- [Channel](docs/Model/Channel.md)
 - [GetApiV1AuditRoomsMembers200Response](docs/Model/GetApiV1AuditRoomsMembers200Response.md)
 - [GetApiV1AuditRoomsMembers200ResponseMembersInner](docs/Model/GetApiV1AuditRoomsMembers200ResponseMembersInner.md)
 - [GetApiV1ChannelsAnonymousread200Response](docs/Model/GetApiV1ChannelsAnonymousread200Response.md)
@@ -275,15 +276,13 @@ Class | Method | HTTP request | Description
 - [GetApiV1RoomsGet200Response](docs/Model/GetApiV1RoomsGet200Response.md)
 - [GetApiV1RoomsGet200ResponseUpdateInner](docs/Model/GetApiV1RoomsGet200ResponseUpdateInner.md)
 - [GetApiV1RoomsGet200ResponseUpdateInnerLastMessage](docs/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessage.md)
+- [GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile](docs/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile.md)
 - [GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner](docs/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner.md)
 - [GetApiV1RoomsGetDiscussions200Response](docs/Model/GetApiV1RoomsGetDiscussions200Response.md)
 - [GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner](docs/Model/GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner.md)
 - [GetApiV1RoomsImages200Response](docs/Model/GetApiV1RoomsImages200Response.md)
 - [GetApiV1RoomsImages200ResponseFilesInner](docs/Model/GetApiV1RoomsImages200ResponseFilesInner.md)
 - [GetApiV1RoomsInfo200Response](docs/Model/GetApiV1RoomsInfo200Response.md)
-- [GetApiV1RoomsInfo200ResponseRoom](docs/Model/GetApiV1RoomsInfo200ResponseRoom.md)
-- [GetApiV1RoomsInfo200ResponseRoomLastMessage](docs/Model/GetApiV1RoomsInfo200ResponseRoomLastMessage.md)
-- [GetApiV1RoomsInfo200ResponseRoomLastMessageFile](docs/Model/GetApiV1RoomsInfo200ResponseRoomLastMessageFile.md)
 - [GetApiV1RoomsNameExists200Response](docs/Model/GetApiV1RoomsNameExists200Response.md)
 - [GetApiV1RoomsUploadRid200Response](docs/Model/GetApiV1RoomsUploadRid200Response.md)
 - [GetApiV1RoomsUploadRid200ResponseMessage](docs/Model/GetApiV1RoomsUploadRid200ResponseMessage.md)
@@ -307,6 +306,7 @@ Class | Method | HTTP request | Description
 - [GetChannelsMembersByHighestRole200Response](docs/Model/GetChannelsMembersByHighestRole200Response.md)
 - [GetChannelsMembersByHighestRole200ResponseMembersInner](docs/Model/GetChannelsMembersByHighestRole200ResponseMembersInner.md)
 - [GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole](docs/Model/GetChannelsMembersByHighestRole200ResponseMembersInnerHighestRole.md)
+- [LastMessage](docs/Model/LastMessage.md)
 - [Markdown](docs/Model/Markdown.md)
 - [MarkdownValue](docs/Model/MarkdownValue.md)
 - [PosApiV1ChannelsRenameRequest](docs/Model/PosApiV1ChannelsRenameRequest.md)
@@ -441,6 +441,11 @@ Class | Method | HTTP request | Description
 - [PostApiV1TeamsUpdateRoom200ResponseRoom](docs/Model/PostApiV1TeamsUpdateRoom200ResponseRoom.md)
 - [PostApiV1TeamsUpdateRoomRequest](docs/Model/PostApiV1TeamsUpdateRoomRequest.md)
 - [PostGroupsLeaveRequest](docs/Model/PostGroupsLeaveRequest.md)
+- [Room](docs/Model/Room.md)
+- [RoomServedBy](docs/Model/RoomServedBy.md)
+- [RoomStreamingOptions](docs/Model/RoomStreamingOptions.md)
+- [RoomSysMes](docs/Model/RoomSysMes.md)
+- [User](docs/Model/User.md)
 
 ## Authorization
 Endpoints do not require authorization.
