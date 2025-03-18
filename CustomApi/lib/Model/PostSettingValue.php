@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1SettingsIdRequest
+ * PostSettingValue
  *
  * PHP version 7.4
  *
@@ -32,15 +32,16 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
 
 /**
- * PostApiV1SettingsIdRequest Class Doc Comment
+ * PostSettingValue Class Doc Comment
  *
  * @category Class
+ * @description The value to update the setting.
  * @package  WebMI\RocketChatApiClient\CustomApi
  * @author   OpenAPI Generator team
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSerializable
+class PostSettingValue implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +50,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_settings__id_request';
+    protected static $openAPIModelName = 'PostSetting_value';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +58,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'value' => 'object',
-        'color' => 'string',
-        'editor' => 'string',
-        'execute' => 'bool'
+        
     ];
 
     /**
@@ -71,10 +69,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'value' => null,
-        'color' => null,
-        'editor' => null,
-        'execute' => null
+        
     ];
 
     /**
@@ -83,10 +78,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'value' => false,
-        'color' => false,
-        'editor' => false,
-        'execute' => false
+        
     ];
 
     /**
@@ -175,10 +167,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $attributeMap = [
-        'value' => 'value',
-        'color' => 'color',
-        'editor' => 'editor',
-        'execute' => 'execute'
+        
     ];
 
     /**
@@ -187,10 +176,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $setters = [
-        'value' => 'set_value',
-        'color' => 'set_color',
-        'editor' => 'set_editor',
-        'execute' => 'set_execute'
+        
     ];
 
     /**
@@ -199,10 +185,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $getters = [
-        'value' => 'get_value',
-        'color' => 'get_color',
-        'editor' => 'get_editor',
-        'execute' => 'get_execute'
+        
     ];
 
     /**
@@ -262,10 +245,6 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('value', $data ?? [], null);
-        $this->setIfExists('color', $data ?? [], null);
-        $this->setIfExists('editor', $data ?? [], null);
-        $this->setIfExists('execute', $data ?? [], null);
     }
 
     /**
@@ -295,9 +274,6 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
     {
         $invalidProperties = [];
 
-        if ($this->container['value'] === null) {
-            $invalidProperties[] = "'value' can't be null";
-        }
         return $invalidProperties;
     }
 
@@ -312,114 +288,6 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
         return count($this->listInvalidProperties()) === 0;
     }
 
-
-    /**
-     * Gets value
-     *
-     * @return object
-     */
-    public function get_value()
-    {
-        return $this->container['value'];
-    }
-
-    /**
-     * Sets value
-     *
-     * @param object $value The value to update the setting.
-     *
-     * @return self
-     */
-    public function set_value($value)
-    {
-        if (is_null($value)) {
-            throw new \InvalidArgumentException('non-nullable value cannot be null');
-        }
-        $this->container['value'] = $value;
-
-        return $this;
-    }
-
-    /**
-     * Gets color
-     *
-     * @return string|null
-     */
-    public function get_color()
-    {
-        return $this->container['color'];
-    }
-
-    /**
-     * Sets color
-     *
-     * @param string|null $color The color code to update the setting.
-     *
-     * @return self
-     */
-    public function set_color($color)
-    {
-        if (is_null($color)) {
-            throw new \InvalidArgumentException('non-nullable color cannot be null');
-        }
-        $this->container['color'] = $color;
-
-        return $this;
-    }
-
-    /**
-     * Gets editor
-     *
-     * @return string|null
-     */
-    public function get_editor()
-    {
-        return $this->container['editor'];
-    }
-
-    /**
-     * Sets editor
-     *
-     * @param string|null $editor The editor key, with color value. Required, if color was set.
-     *
-     * @return self
-     */
-    public function set_editor($editor)
-    {
-        if (is_null($editor)) {
-            throw new \InvalidArgumentException('non-nullable editor cannot be null');
-        }
-        $this->container['editor'] = $editor;
-
-        return $this;
-    }
-
-    /**
-     * Gets execute
-     *
-     * @return bool|null
-     */
-    public function get_execute()
-    {
-        return $this->container['execute'];
-    }
-
-    /**
-     * Sets execute
-     *
-     * @param bool|null $execute To trigger a action-button.
-     *
-     * @return self
-     */
-    public function set_execute($execute)
-    {
-        if (is_null($execute)) {
-            throw new \InvalidArgumentException('non-nullable execute cannot be null');
-        }
-        $this->container['execute'] = $execute;
-
-        return $this;
-    }
     /**
      * Returns true if offset exists. False otherwise.
      *

@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1SettingsIdRequest
+ * PostSettingArray
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
 
 /**
- * PostApiV1SettingsIdRequest Class Doc Comment
+ * PostSettingArray Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\CustomApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSerializable
+class PostSettingArray implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_settings__id_request';
+    protected static $openAPIModelName = 'PostSettingArray';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'value' => 'object',
+        'value' => 'string[]',
         'color' => 'string',
         'editor' => 'string',
         'execute' => 'bool'
@@ -316,7 +316,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Gets value
      *
-     * @return object
+     * @return string[]
      */
     public function get_value()
     {
@@ -326,7 +326,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
     /**
      * Sets value
      *
-     * @param object $value The value to update the setting.
+     * @param string[] $value The value to update the setting.
      *
      * @return self
      */

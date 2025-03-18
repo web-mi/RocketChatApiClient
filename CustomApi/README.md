@@ -88,7 +88,6 @@ Class | Method | HTTP request | Description
 - [GetApiV1ChatGetMessage200ResponseMessageReactionsFrowning2](docs/Model/GetApiV1ChatGetMessage200ResponseMessageReactionsFrowning2.md)
 - [GetApiV1ChatGetMessage200ResponseMessageStarred](docs/Model/GetApiV1ChatGetMessage200ResponseMessageStarred.md)
 - [GetApiV1ChatGetMessage400Response](docs/Model/GetApiV1ChatGetMessage400Response.md)
-- [GetApiV1SettingsId200Response](docs/Model/GetApiV1SettingsId200Response.md)
 - [PostApiV1ChatSendMessage200Response](docs/Model/PostApiV1ChatSendMessage200Response.md)
 - [PostApiV1ChatSendMessage200ResponseMessage](docs/Model/PostApiV1ChatSendMessage200ResponseMessage.md)
 - [PostApiV1ChatSendMessage200ResponseMessageU](docs/Model/PostApiV1ChatSendMessage200ResponseMessageU.md)
@@ -106,12 +105,14 @@ Class | Method | HTTP request | Description
 - [PostApiV1LoginRequest](docs/Model/PostApiV1LoginRequest.md)
 - [PostApiV1SettingsId200Response](docs/Model/PostApiV1SettingsId200Response.md)
 - [PostApiV1SettingsIdRequest](docs/Model/PostApiV1SettingsIdRequest.md)
+- [PostSetting](docs/Model/PostSetting.md)
+- [PostSettingArray](docs/Model/PostSettingArray.md)
+- [PostSettingBoolean](docs/Model/PostSettingBoolean.md)
+- [PostSettingInteger](docs/Model/PostSettingInteger.md)
+- [PostSettingObject](docs/Model/PostSettingObject.md)
+- [PostSettingString](docs/Model/PostSettingString.md)
+- [PostSettingValue](docs/Model/PostSettingValue.md)
 - [Setting](docs/Model/Setting.md)
-- [SettingArray](docs/Model/SettingArray.md)
-- [SettingBoolean](docs/Model/SettingBoolean.md)
-- [SettingInteger](docs/Model/SettingInteger.md)
-- [SettingObject](docs/Model/SettingObject.md)
-- [SettingString](docs/Model/SettingString.md)
 
 ## Authorization
 Endpoints do not require authorization.

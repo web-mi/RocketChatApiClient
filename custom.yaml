@@ -563,6 +563,7 @@ paths:
                     success: false
                     error: The "msgId" query parameter must be provided.
 
+  # Implementation in custom with array because openapi-generator has a problem with oneOf primitives
   /api/v1/settings/{_id}:
     parameters:
       - schema:
@@ -618,22 +619,12 @@ paths:
         content:
           application/json:
             schema:
-              type: object
-              properties:
-                value:
-                  type: string
-                  description: The value to update the setting.
-                color:
-                  type: string
-                  description: The color code to update the setting.
-                editor:
-                  type: string
-                  description: 'The editor key, with color value. Required, if color was set.'
-                execute:
-                  type: boolean
-                  description: To trigger a action-button.
-              required:
-                - value
+              oneOf:
+                - $ref: '#/components/schemas/PostSettingString'
+                - $ref: '#/components/schemas/PostSettingArray'
+                - $ref: '#/components/schemas/PostSettingBoolean'
+                - $ref: '#/components/schemas/PostSettingInteger'
+                - $ref: '#/components/schemas/PostSettingObject'
     get:
       summary: Get Setting
       tags:
@@ -644,12 +635,7 @@ paths:
           content:
             application/json:
               schema:
-                oneOf:
-                  - $ref: '#/components/schemas/SettingBoolean'
-                  - $ref: '#/components/schemas/SettingInteger'
-                  - $ref: '#/components/schemas/SettingString'
-                  - $ref: '#/components/schemas/SettingArray'
-                  - $ref: '#/components/schemas/SettingObject'
+                $ref: '#/components/schemas/Setting'
               examples:
                 Success Example:
                   value:
@@ -671,56 +657,78 @@ paths:
         - $ref: '#/components/parameters/X-Auth-Token'
 components:
   schemas:
-    SettingInteger:
+    PostSetting:
+      type: object
+      properties:
+        value:
+          oneOf:
+            - type: string
+            - type: array
+            - type: boolean
+            - type: integer
+            - type: object
+          description: The value to update the setting.
+        color:
+          type: string
+          description: The color code to update the setting.
+        editor:
+          type: string
+          description: 'The editor key, with color value. Required, if color was set.'
+        execute:
+          type: boolean
+          description: To trigger a action-button.
+      required:
+        - value
+    PostSettingBoolean:
       allOf:
-        - $ref: '#/components/schemas/Setting'
+        - $ref: '#/components/schemas/PostSetting'
         - type: object
           properties:
-            success:
+            value:
               type: boolean
+              description: The value to update the setting.
+    PostSettingInteger:
+      allOf:
+        - $ref: '#/components/schemas/PostSetting'
+        - type: object
+          properties:
             value:
               type: integer
-    SettingString:
+              description: The value to update the setting.
+    PostSettingString:
+        allOf:
+          - $ref: '#/components/schemas/PostSetting'
+          - type: object
+            properties:
+              value:
+                type: string
+                description: The value to update the setting.
+    PostSettingArray:
       allOf:
-        - $ref: '#/components/schemas/Setting'
+        - $ref: '#/components/schemas/PostSetting'
         - type: object
           properties:
-            success:
-              type: boolean
-            value:
-              type: string
-    SettingBoolean:
-      allOf:
-        - $ref: '#/components/schemas/Setting'
-        - type: object
-          properties:
-            success:
-              type: boolean
-            value:
-              type: boolean
-    SettingArray:
-      allOf:
-        - $ref: '#/components/schemas/Setting'
-        - type: object
-          properties:
-            success:
-              type: boolean
             value:
               type: array
-    SettingObject:
+              description: The value to update the setting.
+    PostSettingObject:
       allOf:
-        - $ref: '#/components/schemas/Setting'
+        - $ref: '#/components/schemas/PostSetting'
         - type: object
           properties:
-            success:
-              type: boolean
             value:
               type: object
+              description: The value to update the setting.
+
     Setting:
       type: object
       properties:
         _id:
           type: string
+        value: 
+          type: array
+        success:
+          type: boolean
   parameters:
     Auth-Token:
       name: X-Auth-Token

@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1SettingsIdRequest
+ * PostSettingObject
  *
  * PHP version 7.4
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
 
 /**
- * PostApiV1SettingsIdRequest Class Doc Comment
+ * PostSettingObject Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\CustomApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\CustomApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSerializable
+class PostSettingObject implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1SettingsIdRequest implements ModelInterface, ArrayAccess, \JsonSe
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_settings__id_request';
+    protected static $openAPIModelName = 'PostSettingObject';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

@@ -1,10 +1,10 @@
-# # PostApiV1SettingsIdRequest
+# # PostSetting
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**value** | **object** | The value to update the setting. |
+**value** | [**\WebMI\RocketChatApiClient\CustomApi\Model\PostSettingValue**](PostSettingValue.md) |  |
 **color** | **string** | The color code to update the setting. | [optional]
 **editor** | **string** | The editor key, with color value. Required, if color was set. | [optional]
 **execute** | **bool** | To trigger a action-button. | [optional]

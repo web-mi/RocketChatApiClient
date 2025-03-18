@@ -74,7 +74,7 @@ No authorization required
 ## `getApiV1SettingsId()`
 
 ```php
-getApiV1SettingsId($_id, $x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response
+getApiV1SettingsId($_id, $x_user_id, $x_auth_token): \WebMI\RocketChatApiClient\CustomApi\Model\Setting
 ```
 
 Get Setting
@@ -116,7 +116,7 @@ try {
 
 ### Return type
 
-[**\WebMI\RocketChatApiClient\CustomApi\Model\GetApiV1SettingsId200Response**](../Model/GetApiV1SettingsId200Response.md)
+[**\WebMI\RocketChatApiClient\CustomApi\Model\Setting**](../Model/Setting.md)
 
 ### Authorization
 

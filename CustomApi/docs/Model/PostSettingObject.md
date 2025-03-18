@@ -1,4 +1,4 @@
-# # PostApiV1SettingsIdRequest
+# # PostSettingObject
 
 ## Properties
 
