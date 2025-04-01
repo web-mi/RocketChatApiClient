@@ -9,7 +9,8 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | [**getApiV1LivechatRoomJoin()**](LivechatRoomsApi.md#getApiV1LivechatRoomJoin) | **GET** /api/v1/livechat/room.join | Join Livechat Room |
 | [**getApiV1LivechatRooms()**](LivechatRoomsApi.md#getApiV1LivechatRooms) | **GET** /api/v1/livechat/rooms | Get List of Livechat Rooms |
 | [**getApiV1LivechatTransferHistoryRid()**](LivechatRoomsApi.md#getApiV1LivechatTransferHistoryRid) | **GET** /api/v1/livechat/transfer.history/{rid} | Get Department Transfer History |
-| [**postApiV1LivechatRoomClose()**](LivechatRoomsApi.md#postApiV1LivechatRoomClose) | **POST** /api/v1/livechat/room.close | Close Livechat Room |
+| [**postApiV1LivechatRoomClose()**](LivechatRoomsApi.md#postApiV1LivechatRoomClose) | **POST** /api/v1/livechat/room.close | Close Livechat Room by Visitor |
+| [**postApiV1LivechatRoomCloseByUser()**](LivechatRoomsApi.md#postApiV1LivechatRoomCloseByUser) | **POST** /api/v1/livechat/room.closeByUser | Close Livechat Room |
 | [**postApiV1LivechatRoomForward()**](LivechatRoomsApi.md#postApiV1LivechatRoomForward) | **POST** /api/v1/livechat/room.forward | Forward Livechat Room |
 | [**postApiV1LivechatRoomOnHold()**](LivechatRoomsApi.md#postApiV1LivechatRoomOnHold) | **POST** /api/v1/livechat/room.onHold | Put Livechat Room on Hold |
 | [**postApiV1LivechatRoomRidPriority()**](LivechatRoomsApi.md#postApiV1LivechatRoomRidPriority) | **POST** /api/v1/livechat/room/{rid}/priority | Set Livechat Room Priority |
@@ -17,7 +18,6 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | [**postApiV1LivechatRoomSurvey()**](LivechatRoomsApi.md#postApiV1LivechatRoomSurvey) | **POST** /api/v1/livechat/room.survey | Survey Livechat Room |
 | [**postApiV1LivechatRoomTransfer()**](LivechatRoomsApi.md#postApiV1LivechatRoomTransfer) | **POST** /api/v1/livechat/room.transfer | Transfer Livechat Room |
 | [**postApiV1LivechatUpload()**](LivechatRoomsApi.md#postApiV1LivechatUpload) | **POST** /api/v1/livechat/upload/{rid} | Upload Files to Room |
-| [**putApiV1LivechatRoomVisitor()**](LivechatRoomsApi.md#putApiV1LivechatRoomVisitor) | **PUT** /api/v1/livechat/room.visitor | Update Livechat Room Visitor |
 
 
 ## `deleteApiV1LivechatRoomRidPriority()`
@@ -208,7 +208,7 @@ getApiV1LivechatRooms($x_auth_token, $x_user_id, $agents, $department_id, $open,
 
 Get List of Livechat Rooms
 
-Retrieves a list of Livechat rooms. At least one of the following permissions is required: * `view-livechat-rooms` * `view-l-room`  ### Changelog | Version      | Description |  | ---------------- | ------------| |2.4.0             | Added support to the parameter `roomName`| |2.0.0             | Added       |
+Retrieves a list of Livechat rooms. You can use the available query parameters to filter the response. At least one of the following permissions is required: * `view-livechat-rooms` * `view-l-room`  ### Changelog | Version      | Description |  | ---------------- | ------------| |7.0.0             | Remove support of filtering by agent's username | |2.4.0             | Added support to the parameter `roomName`| |2.0.0             | Added       |
 
 ### Example
 
@@ -225,7 +225,7 @@ $apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatRoomsApi
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$agents = ['b32h3b2hhwb25d']; // string | A list of agents, can be a list of IDs or usernames
+$agents = ['b32h3b2hhwb25d']; // string[] | A list of agent IDs
 $department_id = AkzpHAvZpdnuchw2a; // string | The department ID
 $open = true; // bool | If it should filter by open/closed rooms
 $created_at = {"start": "2018-01-26T00:11:22.345Z", "end": "2018-01-26T00:11:22.345Z"}; // string | An object representing when the room was created (can also be filtered only with `start` or `end`)
@@ -252,7 +252,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **agents** | **string**| A list of agents, can be a list of IDs or usernames | [optional] |
+| **agents** | [**string[]**](../Model/string.md)| A list of agent IDs | [optional] |
 | **department_id** | **string**| The department ID | [optional] |
 | **open** | **bool**| If it should filter by open/closed rooms | [optional] |
 | **created_at** | **string**| An object representing when the room was created (can also be filtered only with &#x60;start&#x60; or &#x60;end&#x60;) | [optional] |
@@ -354,9 +354,9 @@ No authorization required
 postApiV1LivechatRoomClose($post_api_v1_livechat_room_close_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomClose200Response
 ```
 
-Close Livechat Room
+Close Livechat Room by Visitor
 
-
+If you are a visitor, use this endpoint to close the livechat room.
 
 ### Example
 
@@ -390,6 +390,66 @@ try {
 ### Return type
 
 [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomClose200Response**](../Model/PostApiV1LivechatRoomClose200Response.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `postApiV1LivechatRoomCloseByUser()`
+
+```php
+postApiV1LivechatRoomCloseByUser($x_auth_token, $x_user_id, $post_api_v1_livechat_room_close_by_user_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response
+```
+
+Close Livechat Room
+
+If you are an Omnichannel user (agent, manager), use this endpoint to close the livechat room.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatRoomsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
+$x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
+$post_api_v1_livechat_room_close_by_user_request = {"rid":"8ceKgWvo5qT5TrCRN","comment":"close via API","tags":["abc","abc"],"transcriptEmail":{"sendToVisitor":true,"requestData":{"email":"test@example.com","subject":"transcript"}}}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomCloseByUserRequest
+
+try {
+    $result = $apiInstance->postApiV1LivechatRoomCloseByUser($x_auth_token, $x_user_id, $post_api_v1_livechat_room_close_by_user_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling LivechatRoomsApi->postApiV1LivechatRoomCloseByUser: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
+| **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
+| **post_api_v1_livechat_room_close_by_user_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PostApiV1LivechatRoomCloseByUserRequest**](../Model/PostApiV1LivechatRoomCloseByUserRequest.md)|  | [optional] |
+
+### Return type
+
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\DeleteApiV1LivechatUsersTypeId200Response**](../Model/DeleteApiV1LivechatUsersTypeId200Response.md)
 
 ### Authorization
 
@@ -710,7 +770,7 @@ postApiV1LivechatRoomTransfer($post_api_v1_livechat_room_transfer_request): \Web
 
 Transfer Livechat Room
 
-> This endpoint has been deprecated and is scheduled for removal in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. Use the <a href=\"https://developer.rocket.chat/apidocs/forward-livechat-room\" target=\"_blank\">Forward Livechat Room</a> endpoint instead.  Transfer an omnichannel conversation to another department.
+> This endpoint has been deprecated in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. Use the <a href=\"https://developer.rocket.chat/apidocs/forward-livechat-room\" target=\"_blank\">Forward Livechat Room</a> endpoint instead.  Transfer an omnichannel conversation to another department.
 
 ### Example
 
@@ -814,66 +874,6 @@ No authorization required
 ### HTTP request headers
 
 - **Content-Type**: `multipart/form-data`
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
-## `putApiV1LivechatRoomVisitor()`
-
-```php
-putApiV1LivechatRoomVisitor($x_auth_token, $x_user_id, $put_api_v1_livechat_room_visitor_request): \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitor200Response
-```
-
-Update Livechat Room Visitor
-
-> This endpoint has been deprecated and is scheduled for removal in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>.  Update room visitor's information. Permission required: `view-l-room`
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-
-$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatRoomsApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
-$x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
-$x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$put_api_v1_livechat_room_visitor_request = {"rid":"tcbbSmWSLR5uo5PBW","oldVisitorId":"6425bb86c29657e5b3ba26b2","newVisitorId":"6523dc0ba2f73c7460e18d4d"}; // \WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitorRequest
-
-try {
-    $result = $apiInstance->putApiV1LivechatRoomVisitor($x_auth_token, $x_user_id, $put_api_v1_livechat_room_visitor_request);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling LivechatRoomsApi->putApiV1LivechatRoomVisitor: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
-| **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **put_api_v1_livechat_room_visitor_request** | [**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitorRequest**](../Model/PutApiV1LivechatRoomVisitorRequest.md)|  | [optional] |
-
-### Return type
-
-[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\PutApiV1LivechatRoomVisitor200Response**](../Model/PutApiV1LivechatRoomVisitor200Response.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: `application/json`
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)

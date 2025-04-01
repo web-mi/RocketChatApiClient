@@ -10,7 +10,6 @@ Name | Type | Description | Notes
 **username** | **string** | The username for the user. | [optional]
 **active** | **bool** | Whether the user is active, which determines if they can login or not. | [optional] [default to true]
 **roles** | **string[]** | The roles the user has been assigned. | [optional]
-**join_default_channels** | **bool** | Whether the user should join the default channels. | [optional] [default to true]
 **require_password_change** | **bool** | Whether the user should be required to change their password when they login. | [optional] [default to false]
 **send_welcome_email** | **bool** | Whether the user should get a welcome email. | [optional] [default to false]
 **verified** | **bool** | Whether the user&#39;s email address should be verified. | [optional] [default to true]

@@ -498,11 +498,3 @@ lib/Model/RoomSysMes.php
 lib/Model/User.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Model/ChannelTest.php
-test/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFileTest.php
-test/Model/LastMessageTest.php
-test/Model/RoomServedByTest.php
-test/Model/RoomStreamingOptionsTest.php
-test/Model/RoomSysMesTest.php
-test/Model/RoomTest.php
-test/Model/UserTest.php

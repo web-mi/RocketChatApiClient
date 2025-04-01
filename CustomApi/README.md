@@ -7,8 +7,7 @@ These are some extra routes for rocket.chat because open api files from rocket.c
 
 ### Requirements
 
-PHP 7.4 and later.
-Should also work with PHP 8.0.
+PHP 8.1 and later.
 
 ### Composer
 

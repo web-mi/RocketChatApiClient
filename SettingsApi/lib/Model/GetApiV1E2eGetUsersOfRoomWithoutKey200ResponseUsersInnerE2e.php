@@ -2,7 +2,7 @@
 /**
  * GetApiV1E2eGetUsersOfRoomWithoutKey200ResponseUsersInnerE2e
  *
- * PHP version 7.4
+ * PHP version 8.1
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\SettingsApi

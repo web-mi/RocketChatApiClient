@@ -4,7 +4,7 @@
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**user_id** | **string** | The user ID to update. |
+**user_id** | **string** | The user ID to update. This value must not be empty. |
 **data** | [**\WebMI\RocketChatApiClient\UserManagementApi\Model\PostApiV1UsersUpdateRequestData**](PostApiV1UsersUpdateRequestData.md) |  |
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

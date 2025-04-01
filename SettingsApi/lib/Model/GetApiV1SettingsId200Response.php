@@ -2,7 +2,7 @@
 /**
  * GetApiV1SettingsId200Response
  *
- * PHP version 7.4
+ * PHP version 8.1
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\SettingsApi
@@ -58,7 +58,7 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
       */
     protected static $openAPITypes = [
         '_id' => 'string',
-        'value' => 'string',
+        'value' => '\WebMI\RocketChatApiClient\SettingsApi\Model\SettingValue',
         'success' => 'bool'
     ];
 
@@ -333,7 +333,7 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Gets value
      *
-     * @return string|null
+     * @return \WebMI\RocketChatApiClient\SettingsApi\Model\SettingValue|null
      */
     public function get_value()
     {
@@ -343,7 +343,7 @@ class GetApiV1SettingsId200Response implements ModelInterface, ArrayAccess, \Jso
     /**
      * Sets value
      *
-     * @param string|null $value value
+     * @param \WebMI\RocketChatApiClient\SettingsApi\Model\SettingValue|null $value value
      *
      * @return self
      */

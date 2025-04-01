@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiApps()`
 
 ```php
-postApiApps($x_auth_token, $x_user_id, $post_api_apps_request): \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200Response
+postApiApps($x_auth_token, $x_user_id, $url, $app, $permissions): \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiApps200Response
 ```
 
 Install Private Apps
@@ -32,10 +32,12 @@ $apiInstance = new WebMI\RocketChatApiClient\MarketplaceAppsApi\Api\DefaultApi(
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$post_api_apps_request = {"url":"https://github.com/RocketChat/Apps.RocketChat.Tester/blob/master/dist/appsrocketchattester_0.0.5.zip?raw=true"}; // \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsRequest
+$url = 'url_example'; // string | The app URL where the zip file is located.
+$app = '/path/to/file.txt'; // \SplFileObject | The zip file containing the app.
+$permissions = array(new \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsRequestPermissionsInner()); // \WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsRequestPermissionsInner[] | An array of the [permissions](https://developer.rocket.chat/docs/app-permission-system) required for your app. This is required if permissions are defined in your `app.json` file.
 
 try {
-    $result = $apiInstance->postApiApps($x_auth_token, $x_user_id, $post_api_apps_request);
+    $result = $apiInstance->postApiApps($x_auth_token, $x_user_id, $url, $app, $permissions);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling DefaultApi->postApiApps: ', $e->getMessage(), PHP_EOL;
@@ -48,7 +50,9 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **post_api_apps_request** | [**\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsRequest**](../Model/PostApiAppsRequest.md)|  | [optional] |
+| **url** | **string**| The app URL where the zip file is located. | [optional] |
+| **app** | **\SplFileObject****\SplFileObject**| The zip file containing the app. | [optional] |
+| **permissions** | [**\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsRequestPermissionsInner[]**](../Model/\WebMI\RocketChatApiClient\MarketplaceAppsApi\Model\PostApiAppsRequestPermissionsInner.md)| An array of the [permissions](https://developer.rocket.chat/docs/app-permission-system) required for your app. This is required if permissions are defined in your &#x60;app.json&#x60; file. | [optional] |
 
 ### Return type
 
@@ -60,7 +64,7 @@ No authorization required
 
 ### HTTP request headers
 
-- **Content-Type**: `application/json`
+- **Content-Type**: `multipart/form-data`
 - **Accept**: `application/json`
 
 [[Back to top]](#) [[Back to API list]](../../README.md#endpoints)

@@ -874,7 +874,7 @@ $apiInstance = new WebMI\RocketChatApiClient\RoomsApi\Api\RoomsApi(
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $rid = ByehQjC44FwMeiLbX; // string | The room ID to which you want to upload the file.
-$file = "/path/to/file.txt"; // \SplFileObject | The file to upload
+$file = '/path/to/file.txt'; // \SplFileObject | The file to upload
 $msg = 'msg_example'; // string | A message text to be sent with the file.
 $description = 'description_example'; // string | A description of the file.
 $tmid = 'tmid_example'; // string | The thread message ID (if you want to upload a file to a thread).
@@ -1244,7 +1244,7 @@ $apiInstance = new WebMI\RocketChatApiClient\RoomsApi\Api\RoomsApi(
 $rid = GENERAL; // string | The id of the room.
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$file = "/path/to/file.txt"; // \SplFileObject | The file to upload
+$file = '/path/to/file.txt'; // \SplFileObject | The file to upload
 $msg = 'msg_example'; // string | The text to be added to the file message.
 
 try {

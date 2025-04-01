@@ -60,8 +60,3 @@ lib/Model/PostApiV1Users2faSendEmailCode400Response.php
 lib/Model/PostApiV1Users2faSendEmailCodeRequest.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Model/LoginWithFacebookTest.php
-test/Model/LoginWithGoogleTest.php
-test/Model/LoginWithOIDCServiceTest.php
-test/Model/LoginWithTwitterTest.php
-test/Model/LoginWithUsernameAndPasswordTest.php

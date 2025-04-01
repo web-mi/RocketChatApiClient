@@ -1,7 +1,7 @@
 <?php
 /**
  * Configuration
- * PHP version 7.4
+ * PHP version 8.1
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\SettingsApi
@@ -29,7 +29,7 @@ namespace WebMI\RocketChatApiClient\SettingsApi;
 
 /**
  * Configuration Class Doc Comment
- * PHP version 7.4
+ * PHP version 8.1
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\SettingsApi

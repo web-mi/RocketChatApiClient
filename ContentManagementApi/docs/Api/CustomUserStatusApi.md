@@ -13,12 +13,12 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1CustomUserStatusList()`
 
 ```php
-getApiV1CustomUserStatusList($x_auth_token, $x_user_id): \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomUserStatusList200Response
+getApiV1CustomUserStatusList($x_auth_token, $x_user_id, $name, $_id): \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1CustomUserStatusList200Response
 ```
 
 List Custom User Status
 
-Lists all available custom user's status.  ### Changelog | Version      | Description |  | ---------------- | ------------| |2.4.0            | Added       |
+Lists all available custom user's status.  ### Changelog | Version      | Description |  | ---------------- | ------------| |7.0.0           | Added `name` and `_id` query parameters for filtering.      | |2.4.0            | Added       |
 
 ### Example
 
@@ -35,9 +35,11 @@ $apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomUser
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
+$name = lunch; // string | Filter list by the name of the custom status.
+$_id = 6731e2ce3b74d3c57d334d0f; // string | Filter list by the _id of the custom status.
 
 try {
-    $result = $apiInstance->getApiV1CustomUserStatusList($x_auth_token, $x_user_id);
+    $result = $apiInstance->getApiV1CustomUserStatusList($x_auth_token, $x_user_id, $name, $_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CustomUserStatusApi->getApiV1CustomUserStatusList: ', $e->getMessage(), PHP_EOL;
@@ -50,6 +52,8 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
+| **name** | **string**| Filter list by the name of the custom status. | [optional] |
+| **_id** | **string**| Filter list by the _id of the custom status. | [optional] |
 
 ### Return type
 

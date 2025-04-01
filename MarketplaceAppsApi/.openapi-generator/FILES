@@ -22,7 +22,7 @@ docs/Model/PostApiAppsPublicAppIdTemplateMessageRequestTemplate.md
 docs/Model/PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner.md
 docs/Model/PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInnerParametersInner.md
 docs/Model/PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage.md
-docs/Model/PostApiAppsRequest.md
+docs/Model/PostApiAppsRequestPermissionsInner.md
 git_push.sh
 lib/Api/DefaultApi.php
 lib/Api/RasaAppApi.php
@@ -47,6 +47,7 @@ lib/Model/PostApiAppsPublicAppIdTemplateMessageRequestTemplate.php
 lib/Model/PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInner.php
 lib/Model/PostApiAppsPublicAppIdTemplateMessageRequestTemplateComponentsInnerParametersInner.php
 lib/Model/PostApiAppsPublicAppIdTemplateMessageRequestTemplateLanguage.php
-lib/Model/PostApiAppsRequest.php
+lib/Model/PostApiAppsRequestPermissionsInner.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
+test/Model/PostApiAppsRequestPermissionsInnerTest.php

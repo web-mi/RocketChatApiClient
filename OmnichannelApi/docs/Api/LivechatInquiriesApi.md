@@ -6,7 +6,6 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | ------------- | ------------- | ------------- |
 | [**getApiV1LivechatInquiriesGetOne()**](LivechatInquiriesApi.md#getApiV1LivechatInquiriesGetOne) | **GET** /api/v1/livechat/inquiries.getOne | Get Inquiry by Room |
 | [**getApiV1LivechatInquiriesList()**](LivechatInquiriesApi.md#getApiV1LivechatInquiriesList) | **GET** /api/v1/livechat/inquiries.list | Get Inquiries List |
-| [**getApiV1LivechatInquiriesQueued()**](LivechatInquiriesApi.md#getApiV1LivechatInquiriesQueued) | **GET** /api/v1/livechat/inquiries.queued | List Queued Inquiries |
 | [**getApiV1LivechatInquiriesQueuedForUser()**](LivechatInquiriesApi.md#getApiV1LivechatInquiriesQueuedForUser) | **GET** /api/v1/livechat/inquiries.queuedForUser | List Queued User Inquiries |
 | [**postApiV1LivechatInquiriesTake()**](LivechatInquiriesApi.md#postApiV1LivechatInquiriesTake) | **POST** /api/v1/livechat/inquiries.take | Take Inquiry |
 | [**putApiV1LivechatInquirySetSLA()**](LivechatInquiriesApi.md#putApiV1LivechatInquirySetSLA) | **PUT** /api/v1/livechat/inquiry.setSLA | Set SLA Policy to Inquiry |
@@ -138,81 +137,15 @@ No authorization required
 [[Back to Model list]](../../README.md#models)
 [[Back to README]](../../README.md)
 
-## `getApiV1LivechatInquiriesQueued()`
-
-```php
-getApiV1LivechatInquiriesQueued($x_user_id, $x_auth_token, $department, $offset, $count, $sort): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response
-```
-
-List Queued Inquiries
-
-> This endpoint has been deprecated and is scheduled for removal in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. Use the [`/livechat/inquiries.queuedForUser`](https://developer.rocket.chat/apidocs/list-queued-user-inquiries) endpoint instead.  Permission required: `view-l-room`
-
-### Example
-
-```php
-<?php
-require_once(__DIR__ . '/vendor/autoload.php');
-
-
-
-$apiInstance = new WebMI\RocketChatApiClient\OmnichannelApi\Api\LivechatInquiriesApi(
-    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
-    // This is optional, `GuzzleHttp\Client` will be used as default.
-    new GuzzleHttp\Client()
-);
-$x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
-$department = 'department_example'; // string | The department ID or name.
-$offset = 50; // int | Number of items to \"skip\" in the query, i.e. requests return count items, skipping the first offset items.
-$count = 25; // int | The number of items to return.
-$sort = NULL; // mixed | List of fields to order by, and in which direction. JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, sort = `{\"value\": -1, \"_id\": 1}`
-
-try {
-    $result = $apiInstance->getApiV1LivechatInquiriesQueued($x_user_id, $x_auth_token, $department, $offset, $count, $sort);
-    print_r($result);
-} catch (Exception $e) {
-    echo 'Exception when calling LivechatInquiriesApi->getApiV1LivechatInquiriesQueued: ', $e->getMessage(), PHP_EOL;
-}
-```
-
-### Parameters
-
-| Name | Type | Description  | Notes |
-| ------------- | ------------- | ------------- | ------------- |
-| **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
-| **department** | **string**| The department ID or name. | [optional] |
-| **offset** | **int**| Number of items to \&quot;skip\&quot; in the query, i.e. requests return count items, skipping the first offset items. | [optional] |
-| **count** | **int**| The number of items to return. | [optional] |
-| **sort** | [**mixed**](../Model/.md)| List of fields to order by, and in which direction. JSON object, with properties listed in desired order, with values of 1 for ascending, or -1 for descending. For example, sort &#x3D; &#x60;{\&quot;value\&quot;: -1, \&quot;_id\&quot;: 1}&#x60; | [optional] |
-
-### Return type
-
-[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response**](../Model/GetApiV1LivechatInquiriesQueued200Response.md)
-
-### Authorization
-
-No authorization required
-
-### HTTP request headers
-
-- **Content-Type**: Not defined
-- **Accept**: `application/json`
-
-[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
-[[Back to Model list]](../../README.md#models)
-[[Back to README]](../../README.md)
-
 ## `getApiV1LivechatInquiriesQueuedForUser()`
 
 ```php
-getApiV1LivechatInquiriesQueuedForUser($x_user_id, $x_auth_token, $department, $offset, $count, $sort): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response
+getApiV1LivechatInquiriesQueuedForUser($x_user_id, $x_auth_token, $department, $offset, $count, $sort): \WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueuedForUser200Response
 ```
 
 List Queued User Inquiries
 
-Permission required: `view-l-room`
+Permission required: `view-l-room` The `livechat/inquiries.queued` endpoint has been removed from 7.0. Use this endpoint instead.
 
 ### Example
 
@@ -255,7 +188,7 @@ try {
 
 ### Return type
 
-[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueued200Response**](../Model/GetApiV1LivechatInquiriesQueued200Response.md)
+[**\WebMI\RocketChatApiClient\OmnichannelApi\Model\GetApiV1LivechatInquiriesQueuedForUser200Response**](../Model/GetApiV1LivechatInquiriesQueuedForUser200Response.md)
 
 ### Authorization
 

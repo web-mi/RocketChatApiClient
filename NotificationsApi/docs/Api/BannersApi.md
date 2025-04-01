@@ -5,6 +5,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
 | [**getApiV1Banners()**](BannersApi.md#getApiV1Banners) | **GET** /api/v1/banners | Get Banners |
+| [**getApiV1BannersGetNew()**](BannersApi.md#getApiV1BannersGetNew) | **GET** /api/v1/banners.getNew | Get a banner |
 | [**getApiV1BannersId()**](BannersApi.md#getApiV1BannersId) | **GET** /api/v1/banners/{id} | Get Banner by ID |
 | [**postApiV1BannersDismiss()**](BannersApi.md#postApiV1BannersDismiss) | **POST** /api/v1/banners.dismiss | Dismiss a Banner |
 
@@ -51,6 +52,68 @@ try {
 | **x_auth_token** | **string**| The authorization token of the user. | |
 | **x_user_id** | **string**| The user ID of the user. | |
 | **platform** | **string**| The platform rendering the banner | |
+
+### Return type
+
+[**\WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId200Response**](../Model/GetApiV1BannersId200Response.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: Not defined
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `getApiV1BannersGetNew()`
+
+```php
+getApiV1BannersGetNew($x_auth_token, $x_user_id, $platform, $bid): \WebMI\RocketChatApiClient\NotificationsApi\Model\GetApiV1BannersId200Response
+```
+
+Get a banner
+
+> This endpoint has been deprecated and is scheduled for removal in the 8.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. Use [`banners`](https://developer.rocket.chat/apidocs/get-banners) or [`banners/:id`](https://developer.rocket.chat/apidocs/get-banner-by-id) instead.
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new WebMI\RocketChatApiClient\NotificationsApi\Api\BannersApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$x_auth_token = 9HqLlyZOugoStsXCUfD_0YdwnNnunAJF8V47U3QHXSq; // string | The authorization token of the user.
+$x_user_id = aobEdbYhXfu5hkeqG; // string | The user ID of the user.
+$platform = web; // string | The platform rendering the banner.
+$bid = 'bid_example'; // string | The banner ID
+
+try {
+    $result = $apiInstance->getApiV1BannersGetNew($x_auth_token, $x_user_id, $platform, $bid);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling BannersApi->getApiV1BannersGetNew: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_auth_token** | **string**| The authorization token of the user. | |
+| **x_user_id** | **string**| The user ID of the user. | |
+| **platform** | **string**| The platform rendering the banner. | |
+| **bid** | **string**| The banner ID | |
 
 ### Return type
 

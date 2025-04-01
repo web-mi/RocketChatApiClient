@@ -72,12 +72,12 @@ No authorization required
 ## `getApiV1EmojiCustomList()`
 
 ```php
-getApiV1EmojiCustomList($x_auth_token, $x_user_id, $updated_since, $query): \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomList200Response
+getApiV1EmojiCustomList($x_auth_token, $x_user_id, $updated_since, $_updated_at, $_id): \WebMI\RocketChatApiClient\ContentManagementApi\Model\GetApiV1EmojiCustomList200Response
 ```
 
 Get Updated List of Custom Emojis
 
-Get an updated list of custom emojis.  ### Changelog | Version      | Description |  | ---------------- | ------------| |0.75.0            | Added       |
+Get a list of updated and removed emojis.  ### Changelog | Version      | Description |  | ---------------- | ------------| |7.0.0            | Added  `_id` and  `_updatedAt` query parameter     | |0.75.0            | Added       |
 
 ### Example
 
@@ -95,10 +95,11 @@ $apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomEmoj
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
 $updated_since = 2017-11-25T15:08:17.248Z; // string | Date since the emojis were updated. Format: ISO string. When you provide the `updatedSince` query parameter in the URL then the `update` and `remove` in the response will contain only those updated and removed since this date and time.
-$query = NULL; // mixed | This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \"g\": query={ \"name\": { \"$regex\": \"g\" } }
+$_updated_at = 2024-11-02T06:40:43.751Z; // string | 
+$_id = 6725ca0a101755229a8cb3bf; // string | Filter list by custom emoji id.
 
 try {
-    $result = $apiInstance->getApiV1EmojiCustomList($x_auth_token, $x_user_id, $updated_since, $query);
+    $result = $apiInstance->getApiV1EmojiCustomList($x_auth_token, $x_user_id, $updated_since, $_updated_at, $_id);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling CustomEmojiApi->getApiV1EmojiCustomList: ', $e->getMessage(), PHP_EOL;
@@ -112,7 +113,8 @@ try {
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
 | **updated_since** | **string**| Date since the emojis were updated. Format: ISO string. When you provide the &#x60;updatedSince&#x60; query parameter in the URL then the &#x60;update&#x60; and &#x60;remove&#x60; in the response will contain only those updated and removed since this date and time. | [optional] |
-| **query** | [**mixed**](../Model/.md)| This parameter allows you to use MongoDB query operators to search for specific data. For example, to query users with a name that contains the letter \&quot;g\&quot;: query&#x3D;{ \&quot;name\&quot;: { \&quot;$regex\&quot;: \&quot;g\&quot; } } | [optional] |
+| **_updated_at** | **string**|  | [optional] |
+| **_id** | **string**| Filter list by custom emoji id. | [optional] |
 
 ### Return type
 
@@ -156,7 +158,7 @@ $apiInstance = new WebMI\RocketChatApiClient\ContentManagementApi\Api\CustomEmoj
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$emoji = "/path/to/file.txt"; // \SplFileObject | The image file to use as the new custom emoji.
+$emoji = '/path/to/file.txt'; // \SplFileObject | The image file to use as the new custom emoji.
 $name = 'name_example'; // string | The name of the new custom emoji.
 $aliases = 'aliases_example'; // string | The alias of the new custom emoji.
 

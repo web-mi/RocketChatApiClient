@@ -10,7 +10,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `getApiV1EngagementDashboardChannelsList()`
 
 ```php
-getApiV1EngagementDashboardChannelsList($x_auth_token, $x_user_id, $start, $end, $count, $offset): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response
+getApiV1EngagementDashboardChannelsList($x_auth_token, $x_user_id, $start, $end, $count, $offset, $hide_rooms_with_no_activity): \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1EngagementDashboardChannelsList200Response
 ```
 
 Get Channels Engagement
@@ -36,9 +36,10 @@ $start = 2023-10-29T14:48:00.000Z; // string | The start date.
 $end = 2023-11-05T14:48:00.000Z; // string | The end date.
 $count = 50; // int | The number of items to return.
 $offset = 56; // int | Number of items to \"skip\" in the query, i.e. requests return `count` items, skipping the first `offset` items.
+$hide_rooms_with_no_activity = True; // bool | Enable this option to remove rooms without any activity from the response. This parameter has been deprecated and is scheduled for removal in the 7.0.0 <a href=\"https://github.com/RocketChat/Rocket.Chat/releases\" target=\"_blank\">release</a>. After the removal, this endpoint will automatically omit such inactive rooms from the response.
 
 try {
-    $result = $apiInstance->getApiV1EngagementDashboardChannelsList($x_auth_token, $x_user_id, $start, $end, $count, $offset);
+    $result = $apiInstance->getApiV1EngagementDashboardChannelsList($x_auth_token, $x_user_id, $start, $end, $count, $offset, $hide_rooms_with_no_activity);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling ChannelsEngagementApi->getApiV1EngagementDashboardChannelsList: ', $e->getMessage(), PHP_EOL;
@@ -55,6 +56,7 @@ try {
 | **end** | **string**| The end date. | |
 | **count** | **int**| The number of items to return. | [optional] |
 | **offset** | **int**| Number of items to \&quot;skip\&quot; in the query, i.e. requests return &#x60;count&#x60; items, skipping the first &#x60;offset&#x60; items. | [optional] |
+| **hide_rooms_with_no_activity** | **bool**| Enable this option to remove rooms without any activity from the response. This parameter has been deprecated and is scheduled for removal in the 7.0.0 &lt;a href&#x3D;\&quot;https://github.com/RocketChat/Rocket.Chat/releases\&quot; target&#x3D;\&quot;_blank\&quot;&gt;release&lt;/a&gt;. After the removal, this endpoint will automatically omit such inactive rooms from the response. | [optional] |
 
 ### Return type
 

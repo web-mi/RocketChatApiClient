@@ -5,7 +5,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | Method | HTTP request | Description |
 | ------------- | ------------- | ------------- |
 | [**deleteApiV1LivechatVisitorToken()**](LivechatVisitorsApi.md#deleteApiV1LivechatVisitorToken) | **DELETE** /api/v1/livechat/visitor/{token} | Delete Visitor |
-| [**getApiV1LivechatVisitorInfo()**](LivechatVisitorsApi.md#getApiV1LivechatVisitorInfo) | **GET** /api/v1/livechat/visitor.info | Get Visitor Information by ID |
+| [**getApiV1LivechatVisitorInfo()**](LivechatVisitorsApi.md#getApiV1LivechatVisitorInfo) | **GET** /api/v1/livechat/visitors.info | Get Visitor Information by ID |
 | [**getApiV1LivechatVisitorToken()**](LivechatVisitorsApi.md#getApiV1LivechatVisitorToken) | **GET** /api/v1/livechat/visitor/{token} | Get Visitor Information |
 | [**getApiV1LivechatVisitorTokenRoom()**](LivechatVisitorsApi.md#getApiV1LivechatVisitorTokenRoom) | **GET** /api/v1/livechat/visitor/{token}/room | Get Open Conversation of a Visitor |
 | [**getApiV1LivechatVisitorsAutocomplete()**](LivechatVisitorsApi.md#getApiV1LivechatVisitorsAutocomplete) | **GET** /api/v1/livechat/visitors.autocomplete | Autocomplete Visitors |
