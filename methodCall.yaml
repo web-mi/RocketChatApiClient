@@ -229,14 +229,23 @@ components:
           schema:
             type: object
             properties:
-              msg:
-                type: string
-                enum: [ "result" ]
-                default: "result"
-              id:
-                type: string
-              result:
+              message:
+                type: object
+                properties:
+                  msg:
+                    type: string
+                    enum: [ "result" ]
+                    default: "result"
+                  id:
+                    type: string
+                  error:
+                    description: 'The error message if the method call failed but api will return 200.'
+                    type: string
+                  result:
+                    type: boolean
+              success:
                 type: boolean
+                default: true
     MethodCall400:
       description: Bad Request
       content:

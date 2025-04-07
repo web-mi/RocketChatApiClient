@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1MethodCallDeleteMessage200ResponseTest
+ * PostApiV1MethodCallDeleteMessage200ResponseMessageTest
  *
  * PHP version 8.1
  *
@@ -31,15 +31,15 @@ namespace WebMI\RocketChatApiClient\MethodCallApi\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * PostApiV1MethodCallDeleteMessage200ResponseTest Class Doc Comment
+ * PostApiV1MethodCallDeleteMessage200ResponseMessageTest Class Doc Comment
  *
  * @category    Class
- * @description PostApiV1MethodCallDeleteMessage200Response
+ * @description PostApiV1MethodCallDeleteMessage200ResponseMessage
  * @package     WebMI\RocketChatApiClient\MethodCallApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class PostApiV1MethodCallDeleteMessage200ResponseTest extends TestCase
+class PostApiV1MethodCallDeleteMessage200ResponseMessageTest extends TestCase
 {
 
     /**
@@ -71,27 +71,45 @@ class PostApiV1MethodCallDeleteMessage200ResponseTest extends TestCase
     }
 
     /**
-     * Test "PostApiV1MethodCallDeleteMessage200Response"
+     * Test "PostApiV1MethodCallDeleteMessage200ResponseMessage"
      */
-    public function testPostApiV1MethodCallDeleteMessage200Response()
+    public function testPostApiV1MethodCallDeleteMessage200ResponseMessage()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "message"
+     * Test attribute "msg"
      */
-    public function testPropertyMessage()
+    public function testPropertyMsg()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "success"
+     * Test attribute "id"
      */
-    public function testPropertySuccess()
+    public function testPropertyId()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "error"
+     */
+    public function testPropertyError()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "result"
+     */
+    public function testPropertyResult()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');
