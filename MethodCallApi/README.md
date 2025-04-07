@@ -90,6 +90,7 @@ Class | Method | HTTP request | Description
 - [PostApiV1MethodCallDeleteMessage200Response](docs/Model/PostApiV1MethodCallDeleteMessage200Response.md)
 - [PostApiV1MethodCallDeleteMessage400Response](docs/Model/PostApiV1MethodCallDeleteMessage400Response.md)
 - [PostApiV1MethodCallDeleteMessage401Response](docs/Model/PostApiV1MethodCallDeleteMessage401Response.md)
+- [PostApiV1MethodCallMuteUserInRoomRequest](docs/Model/PostApiV1MethodCallMuteUserInRoomRequest.md)
 - [PostApiV1MethodCallUserPresenceRequest](docs/Model/PostApiV1MethodCallUserPresenceRequest.md)
 
 ## Authorization

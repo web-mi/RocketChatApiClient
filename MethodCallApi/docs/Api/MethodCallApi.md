@@ -130,7 +130,7 @@ No authorization required
 ## `postApiV1MethodCallMuteUserInRoom()`
 
 ```php
-postApiV1MethodCallMuteUserInRoom($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
+postApiV1MethodCallMuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
 ```
 
 Method Call
@@ -150,10 +150,10 @@ $apiInstance = new WebMI\RocketChatApiClient\MethodCallApi\Api\MethodCallApi(
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$method_call_un_mute_user_in_room = new \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom
+$post_api_v1_method_call_mute_user_in_room_request = new \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest
 
 try {
-    $result = $apiInstance->postApiV1MethodCallMuteUserInRoom($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room);
+    $result = $apiInstance->postApiV1MethodCallMuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MethodCallApi->postApiV1MethodCallMuteUserInRoom: ', $e->getMessage(), PHP_EOL;
@@ -166,7 +166,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **method_call_un_mute_user_in_room** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom**](../Model/MethodCallUnMuteUserInRoom.md)|  | [optional] |
+| **post_api_v1_method_call_mute_user_in_room_request** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest**](../Model/PostApiV1MethodCallMuteUserInRoomRequest.md)|  | [optional] |
 
 ### Return type
 
@@ -188,7 +188,7 @@ No authorization required
 ## `postApiV1MethodCallUnmuteUserInRoom()`
 
 ```php
-postApiV1MethodCallUnmuteUserInRoom($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
+postApiV1MethodCallUnmuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
 ```
 
 Method Call
@@ -208,10 +208,10 @@ $apiInstance = new WebMI\RocketChatApiClient\MethodCallApi\Api\MethodCallApi(
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$method_call_un_mute_user_in_room = new \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom
+$post_api_v1_method_call_mute_user_in_room_request = new \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest
 
 try {
-    $result = $apiInstance->postApiV1MethodCallUnmuteUserInRoom($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room);
+    $result = $apiInstance->postApiV1MethodCallUnmuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MethodCallApi->postApiV1MethodCallUnmuteUserInRoom: ', $e->getMessage(), PHP_EOL;
@@ -224,7 +224,7 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **method_call_un_mute_user_in_room** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom**](../Model/MethodCallUnMuteUserInRoom.md)|  | [optional] |
+| **post_api_v1_method_call_mute_user_in_room_request** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest**](../Model/PostApiV1MethodCallMuteUserInRoomRequest.md)|  | [optional] |
 
 ### Return type
 

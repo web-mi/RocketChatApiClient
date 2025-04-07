@@ -42,7 +42,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/MethodCallUnMuteUserInRoom'
+              type: object
+              properties:
+                message:
+                  $ref: '#/components/schemas/MethodCallUnMuteUserInRoom'
       responses:
         '200':
           $ref: '#/components/responses/MethodCall200'
@@ -63,7 +66,10 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/MethodCallUnMuteUserInRoom'
+              type: object
+              properties:
+                message:
+                  $ref: '#/components/schemas/MethodCallUnMuteUserInRoom'
       responses:
         '200':
           $ref: '#/components/responses/MethodCall200'
@@ -127,7 +133,7 @@ components:
         method:
           type: string
           enum: [ "muteUserInRoom", "unmuteUserInRoom" ]
-          default: "deleteMessage"
+          default: "muteUserInRoom"
         id:
           type: string
         params:

@@ -5,7 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **msg** | **string** |  | [optional] [default to 'method']
-**method** | **string** |  | [optional] [default to 'deleteMessage']
+**method** | **string** |  | [optional] [default to 'muteUserInRoom']
 **id** | **string** |  | [optional]
 **params** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoomParamsInner[]**](MethodCallUnMuteUserInRoomParamsInner.md) |  | [optional]
 

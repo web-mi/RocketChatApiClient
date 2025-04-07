@@ -1,6 +1,6 @@
 <?php
 /**
- * MethodCallUnMuteUserInRoom
+ * PostApiV1MethodCallMuteUserInRoomRequest
  *
  * PHP version 8.1
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
 
 /**
- * MethodCallUnMuteUserInRoom Class Doc Comment
+ * PostApiV1MethodCallMuteUserInRoomRequest Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\MethodCallApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSerializable
+class PostApiV1MethodCallMuteUserInRoomRequest implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
       *
       * @var string
       */
-    protected static $openAPIModelName = 'MethodCallUnMuteUserInRoom';
+    protected static $openAPIModelName = 'post_api_v1_method_call_mute_user_in_room_request';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +57,7 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'msg' => 'string',
-        'method' => 'string',
-        'id' => 'string',
-        'params' => '\WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoomParamsInner[]'
+        'message' => '\WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom'
     ];
 
     /**
@@ -71,10 +68,7 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'msg' => null,
-        'method' => null,
-        'id' => null,
-        'params' => null
+        'message' => null
     ];
 
     /**
@@ -83,10 +77,7 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'msg' => false,
-        'method' => false,
-        'id' => false,
-        'params' => false
+        'message' => false
     ];
 
     /**
@@ -175,10 +166,7 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $attributeMap = [
-        'msg' => 'msg',
-        'method' => 'method',
-        'id' => 'id',
-        'params' => 'params'
+        'message' => 'message'
     ];
 
     /**
@@ -187,10 +175,7 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $setters = [
-        'msg' => 'set_msg',
-        'method' => 'set_method',
-        'id' => 'set_id',
-        'params' => 'set_params'
+        'message' => 'set_message'
     ];
 
     /**
@@ -199,10 +184,7 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $getters = [
-        'msg' => 'get_msg',
-        'method' => 'get_method',
-        'id' => 'get_id',
-        'params' => 'get_params'
+        'message' => 'get_message'
     ];
 
     /**
@@ -246,34 +228,6 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
         return self::$openAPIModelName;
     }
 
-    public const MSG_METHOD = 'method';
-    public const METHOD_MUTE_USER_IN_ROOM = 'muteUserInRoom';
-    public const METHOD_UNMUTE_USER_IN_ROOM = 'unmuteUserInRoom';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function get_msgAllowableValues()
-    {
-        return [
-            self::MSG_METHOD,
-        ];
-    }
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function get_methodAllowableValues()
-    {
-        return [
-            self::METHOD_MUTE_USER_IN_ROOM,
-            self::METHOD_UNMUTE_USER_IN_ROOM,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -290,10 +244,7 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('msg', $data ?? [], 'method');
-        $this->setIfExists('method', $data ?? [], 'muteUserInRoom');
-        $this->setIfExists('id', $data ?? [], null);
-        $this->setIfExists('params', $data ?? [], null);
+        $this->setIfExists('message', $data ?? [], null);
     }
 
     /**
@@ -323,24 +274,6 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
     {
         $invalidProperties = [];
 
-        $allowedValues = $this->get_msgAllowableValues();
-        if (!is_null($this->container['msg']) && !in_array($this->container['msg'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'msg', must be one of '%s'",
-                $this->container['msg'],
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->get_methodAllowableValues();
-        if (!is_null($this->container['method']) && !in_array($this->container['method'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'method', must be one of '%s'",
-                $this->container['method'],
-                implode("', '", $allowedValues)
-            );
-        }
-
         return $invalidProperties;
     }
 
@@ -357,129 +290,28 @@ class MethodCallUnMuteUserInRoom implements ModelInterface, ArrayAccess, \JsonSe
 
 
     /**
-     * Gets msg
+     * Gets message
      *
-     * @return string|null
+     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null
      */
-    public function get_msg()
+    public function get_message()
     {
-        return $this->container['msg'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets msg
+     * Sets message
      *
-     * @param string|null $msg msg
+     * @param \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $message message
      *
      * @return self
      */
-    public function set_msg($msg)
+    public function set_message($message)
     {
-        if (is_null($msg)) {
-            throw new \InvalidArgumentException('non-nullable msg cannot be null');
+        if (is_null($message)) {
+            throw new \InvalidArgumentException('non-nullable message cannot be null');
         }
-        $allowedValues = $this->get_msgAllowableValues();
-        if (!in_array($msg, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'msg', must be one of '%s'",
-                    $msg,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['msg'] = $msg;
-
-        return $this;
-    }
-
-    /**
-     * Gets method
-     *
-     * @return string|null
-     */
-    public function get_method()
-    {
-        return $this->container['method'];
-    }
-
-    /**
-     * Sets method
-     *
-     * @param string|null $method method
-     *
-     * @return self
-     */
-    public function set_method($method)
-    {
-        if (is_null($method)) {
-            throw new \InvalidArgumentException('non-nullable method cannot be null');
-        }
-        $allowedValues = $this->get_methodAllowableValues();
-        if (!in_array($method, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'method', must be one of '%s'",
-                    $method,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['method'] = $method;
-
-        return $this;
-    }
-
-    /**
-     * Gets id
-     *
-     * @return string|null
-     */
-    public function get_id()
-    {
-        return $this->container['id'];
-    }
-
-    /**
-     * Sets id
-     *
-     * @param string|null $id id
-     *
-     * @return self
-     */
-    public function set_id($id)
-    {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
-        $this->container['id'] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Gets params
-     *
-     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoomParamsInner[]|null
-     */
-    public function get_params()
-    {
-        return $this->container['params'];
-    }
-
-    /**
-     * Sets params
-     *
-     * @param \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoomParamsInner[]|null $params params
-     *
-     * @return self
-     */
-    public function set_params($params)
-    {
-        if (is_null($params)) {
-            throw new \InvalidArgumentException('non-nullable params cannot be null');
-        }
-        $this->container['params'] = $params;
+        $this->container['message'] = $message;
 
         return $this;
     }

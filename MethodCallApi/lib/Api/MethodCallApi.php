@@ -947,16 +947,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallMuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response
      */
-    public function postApiV1MethodCallMuteUserInRoom($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
+    public function postApiV1MethodCallMuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
     {
-        list($response) = $this->postApiV1MethodCallMuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room, $contentType);
+        list($response) = $this->postApiV1MethodCallMuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
         return $response;
     }
 
@@ -967,16 +967,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallMuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response, HTTP status code, HTTP response headers (array of strings)
      */
-    public function postApiV1MethodCallMuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
+    public function postApiV1MethodCallMuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
     {
-        $request = $this->postApiV1MethodCallMuteUserInRoomRequest($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room, $contentType);
+        $request = $this->postApiV1MethodCallMuteUserInRoomRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1164,15 +1164,15 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallMuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallMuteUserInRoomAsync($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
+    public function postApiV1MethodCallMuteUserInRoomAsync($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
     {
-        return $this->postApiV1MethodCallMuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room, $contentType)
+        return $this->postApiV1MethodCallMuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1187,16 +1187,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallMuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallMuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
+    public function postApiV1MethodCallMuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
     {
         $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
-        $request = $this->postApiV1MethodCallMuteUserInRoomRequest($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room, $contentType);
+        $request = $this->postApiV1MethodCallMuteUserInRoomRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1239,13 +1239,13 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallMuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function postApiV1MethodCallMuteUserInRoomRequest($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
+    public function postApiV1MethodCallMuteUserInRoomRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
     {
 
         // verify the required parameter 'x_auth_token' is set
@@ -1290,12 +1290,12 @@ class MethodCallApi
         );
 
         // for model (json/xml)
-        if (isset($method_call_un_mute_user_in_room)) {
+        if (isset($post_api_v1_method_call_mute_user_in_room_request)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($method_call_un_mute_user_in_room));
+                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($post_api_v1_method_call_mute_user_in_room_request));
             } else {
-                $httpBody = $method_call_un_mute_user_in_room;
+                $httpBody = $post_api_v1_method_call_mute_user_in_room_request;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {
@@ -1350,16 +1350,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response
      */
-    public function postApiV1MethodCallUnmuteUserInRoom($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
+    public function postApiV1MethodCallUnmuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
     {
-        list($response) = $this->postApiV1MethodCallUnmuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room, $contentType);
+        list($response) = $this->postApiV1MethodCallUnmuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
         return $response;
     }
 
@@ -1370,16 +1370,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
      * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response, HTTP status code, HTTP response headers (array of strings)
      */
-    public function postApiV1MethodCallUnmuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
+    public function postApiV1MethodCallUnmuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
     {
-        $request = $this->postApiV1MethodCallUnmuteUserInRoomRequest($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room, $contentType);
+        $request = $this->postApiV1MethodCallUnmuteUserInRoomRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1567,15 +1567,15 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallUnmuteUserInRoomAsync($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
+    public function postApiV1MethodCallUnmuteUserInRoomAsync($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
     {
-        return $this->postApiV1MethodCallUnmuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room, $contentType)
+        return $this->postApiV1MethodCallUnmuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1590,16 +1590,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallUnmuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
+    public function postApiV1MethodCallUnmuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
     {
         $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
-        $request = $this->postApiV1MethodCallUnmuteUserInRoomRequest($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room, $contentType);
+        $request = $this->postApiV1MethodCallUnmuteUserInRoomRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -1642,13 +1642,13 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $method_call_un_mute_user_in_room (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function postApiV1MethodCallUnmuteUserInRoomRequest($x_auth_token, $x_user_id, $method_call_un_mute_user_in_room = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
+    public function postApiV1MethodCallUnmuteUserInRoomRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
     {
 
         // verify the required parameter 'x_auth_token' is set
@@ -1693,12 +1693,12 @@ class MethodCallApi
         );
 
         // for model (json/xml)
-        if (isset($method_call_un_mute_user_in_room)) {
+        if (isset($post_api_v1_method_call_mute_user_in_room_request)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($method_call_un_mute_user_in_room));
+                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($post_api_v1_method_call_mute_user_in_room_request));
             } else {
-                $httpBody = $method_call_un_mute_user_in_room;
+                $httpBody = $post_api_v1_method_call_mute_user_in_room_request;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {
