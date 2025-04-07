@@ -1,6 +1,6 @@
 <?php
 /**
- * MethodCallUserPresenceTemp
+ * InlineObject1
  *
  * PHP version 8.1
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
 
 /**
- * MethodCallUserPresenceTemp Class Doc Comment
+ * InlineObject1 Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\MethodCallApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSerializable
+class InlineObject1 implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
       *
       * @var string
       */
-    protected static $openAPIModelName = 'MethodCallUserPresence:temp';
+    protected static $openAPIModelName = 'inline_object_1';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +57,8 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
       * @var string[]
       */
     protected static $openAPITypes = [
-        'msg' => 'string',
-        'method' => 'string',
-        'id' => 'string',
-        'params' => 'mixed[]'
+        'success' => 'bool',
+        'error' => 'string'
     ];
 
     /**
@@ -71,10 +69,8 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'msg' => null,
-        'method' => null,
-        'id' => null,
-        'params' => null
+        'success' => null,
+        'error' => null
     ];
 
     /**
@@ -83,10 +79,8 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'msg' => false,
-        'method' => false,
-        'id' => false,
-        'params' => false
+        'success' => false,
+        'error' => false
     ];
 
     /**
@@ -175,10 +169,8 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $attributeMap = [
-        'msg' => 'msg',
-        'method' => 'method',
-        'id' => 'id',
-        'params' => 'params'
+        'success' => 'success',
+        'error' => 'error'
     ];
 
     /**
@@ -187,10 +179,8 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $setters = [
-        'msg' => 'set_msg',
-        'method' => 'set_method',
-        'id' => 'set_id',
-        'params' => 'set_params'
+        'success' => 'set_success',
+        'error' => 'set_error'
     ];
 
     /**
@@ -199,10 +189,8 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
      * @var string[]
      */
     protected static $getters = [
-        'msg' => 'get_msg',
-        'method' => 'get_method',
-        'id' => 'get_id',
-        'params' => 'get_params'
+        'success' => 'get_success',
+        'error' => 'get_error'
     ];
 
     /**
@@ -246,34 +234,6 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
         return self::$openAPIModelName;
     }
 
-    public const MSG_METHOD = 'method';
-    public const METHOD_USER_PRESENCE_ONLINE = 'UserPresence:online';
-    public const METHOD_USER_PRESENCE_AWAY = 'UserPresence:away';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function get_msgAllowableValues()
-    {
-        return [
-            self::MSG_METHOD,
-        ];
-    }
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function get_methodAllowableValues()
-    {
-        return [
-            self::METHOD_USER_PRESENCE_ONLINE,
-            self::METHOD_USER_PRESENCE_AWAY,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -290,10 +250,8 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('msg', $data ?? [], 'method');
-        $this->setIfExists('method', $data ?? [], null);
-        $this->setIfExists('id', $data ?? [], null);
-        $this->setIfExists('params', $data ?? [], null);
+        $this->setIfExists('success', $data ?? [], null);
+        $this->setIfExists('error', $data ?? [], null);
     }
 
     /**
@@ -323,24 +281,6 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
     {
         $invalidProperties = [];
 
-        $allowedValues = $this->get_msgAllowableValues();
-        if (!is_null($this->container['msg']) && !in_array($this->container['msg'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'msg', must be one of '%s'",
-                $this->container['msg'],
-                implode("', '", $allowedValues)
-            );
-        }
-
-        $allowedValues = $this->get_methodAllowableValues();
-        if (!is_null($this->container['method']) && !in_array($this->container['method'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'method', must be one of '%s'",
-                $this->container['method'],
-                implode("', '", $allowedValues)
-            );
-        }
-
         return $invalidProperties;
     }
 
@@ -357,129 +297,55 @@ class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSe
 
 
     /**
-     * Gets msg
+     * Gets success
      *
-     * @return string|null
+     * @return bool|null
      */
-    public function get_msg()
+    public function get_success()
     {
-        return $this->container['msg'];
+        return $this->container['success'];
     }
 
     /**
-     * Sets msg
+     * Sets success
      *
-     * @param string|null $msg msg
+     * @param bool|null $success success
      *
      * @return self
      */
-    public function set_msg($msg)
+    public function set_success($success)
     {
-        if (is_null($msg)) {
-            throw new \InvalidArgumentException('non-nullable msg cannot be null');
+        if (is_null($success)) {
+            throw new \InvalidArgumentException('non-nullable success cannot be null');
         }
-        $allowedValues = $this->get_msgAllowableValues();
-        if (!in_array($msg, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'msg', must be one of '%s'",
-                    $msg,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['msg'] = $msg;
+        $this->container['success'] = $success;
 
         return $this;
     }
 
     /**
-     * Gets method
+     * Gets error
      *
      * @return string|null
      */
-    public function get_method()
+    public function get_error()
     {
-        return $this->container['method'];
+        return $this->container['error'];
     }
 
     /**
-     * Sets method
+     * Sets error
      *
-     * @param string|null $method method
+     * @param string|null $error error
      *
      * @return self
      */
-    public function set_method($method)
+    public function set_error($error)
     {
-        if (is_null($method)) {
-            throw new \InvalidArgumentException('non-nullable method cannot be null');
+        if (is_null($error)) {
+            throw new \InvalidArgumentException('non-nullable error cannot be null');
         }
-        $allowedValues = $this->get_methodAllowableValues();
-        if (!in_array($method, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'method', must be one of '%s'",
-                    $method,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['method'] = $method;
-
-        return $this;
-    }
-
-    /**
-     * Gets id
-     *
-     * @return string|null
-     */
-    public function get_id()
-    {
-        return $this->container['id'];
-    }
-
-    /**
-     * Sets id
-     *
-     * @param string|null $id id
-     *
-     * @return self
-     */
-    public function set_id($id)
-    {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
-        }
-        $this->container['id'] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Gets params
-     *
-     * @return mixed[]|null
-     */
-    public function get_params()
-    {
-        return $this->container['params'];
-    }
-
-    /**
-     * Sets params
-     *
-     * @param mixed[]|null $params params
-     *
-     * @return self
-     */
-    public function set_params($params)
-    {
-        if (is_null($params)) {
-            throw new \InvalidArgumentException('non-nullable params cannot be null');
-        }
-        $this->container['params'] = $params;
+        $this->container['error'] = $error;
 
         return $this;
     }

@@ -56,7 +56,7 @@ $apiInstance = new WebMI\RocketChatApiClient\MethodCallApi\Api\MethodCallApi(
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$body = new \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessage(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessage
+$body = 'body_example'; // string
 
 try {
     $result = $apiInstance->postApiV1MethodCallDeleteFileMessage($x_auth_token, $x_user_id, $body);
@@ -81,15 +81,9 @@ Class | Method | HTTP request | Description
 
 ## Models
 
-- [MethodCallDeleteMessage](docs/Model/MethodCallDeleteMessage.md)
-- [MethodCallDeleteMessageParamsInner](docs/Model/MethodCallDeleteMessageParamsInner.md)
-- [MethodCallUnMuteUserInRoom](docs/Model/MethodCallUnMuteUserInRoom.md)
-- [MethodCallUnMuteUserInRoomParamsInner](docs/Model/MethodCallUnMuteUserInRoomParamsInner.md)
-- [MethodCallUserPresenceDefault](docs/Model/MethodCallUserPresenceDefault.md)
-- [MethodCallUserPresenceTemp](docs/Model/MethodCallUserPresenceTemp.md)
-- [PostApiV1MethodCallDeleteMessage200Response](docs/Model/PostApiV1MethodCallDeleteMessage200Response.md)
-- [PostApiV1MethodCallDeleteMessage400Response](docs/Model/PostApiV1MethodCallDeleteMessage400Response.md)
-- [PostApiV1MethodCallDeleteMessage401Response](docs/Model/PostApiV1MethodCallDeleteMessage401Response.md)
+- [InlineObject](docs/Model/InlineObject.md)
+- [InlineObject1](docs/Model/InlineObject1.md)
+- [InlineObject2](docs/Model/InlineObject2.md)
 - [PostApiV1MethodCallMuteUserInRoomRequest](docs/Model/PostApiV1MethodCallMuteUserInRoomRequest.md)
 - [PostApiV1MethodCallUserPresenceRequest](docs/Model/PostApiV1MethodCallUserPresenceRequest.md)
 

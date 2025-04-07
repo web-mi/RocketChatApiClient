@@ -57,7 +57,7 @@ class PostApiV1MethodCallMuteUserInRoomRequest implements ModelInterface, ArrayA
       * @var string[]
       */
     protected static $openAPITypes = [
-        'message' => '\WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom'
+        'message' => 'string'
     ];
 
     /**
@@ -292,7 +292,7 @@ class PostApiV1MethodCallMuteUserInRoomRequest implements ModelInterface, ArrayA
     /**
      * Gets message
      *
-     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null
+     * @return string|null
      */
     public function get_message()
     {
@@ -302,7 +302,7 @@ class PostApiV1MethodCallMuteUserInRoomRequest implements ModelInterface, ArrayA
     /**
      * Sets message
      *
-     * @param \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallUnMuteUserInRoom|null $message message
+     * @param string|null $message message
      *
      * @return self
      */

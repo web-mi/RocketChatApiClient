@@ -14,7 +14,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 ## `postApiV1MethodCallDeleteFileMessage()`
 
 ```php
-postApiV1MethodCallDeleteFileMessage($x_auth_token, $x_user_id, $body): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
+postApiV1MethodCallDeleteFileMessage($x_auth_token, $x_user_id, $body): \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject
 ```
 
 Method Call
@@ -34,7 +34,7 @@ $apiInstance = new WebMI\RocketChatApiClient\MethodCallApi\Api\MethodCallApi(
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$body = new \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessage(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessage
+$body = 'body_example'; // string
 
 try {
     $result = $apiInstance->postApiV1MethodCallDeleteFileMessage($x_auth_token, $x_user_id, $body);
@@ -50,11 +50,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **body** | **\WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessage**|  | [optional] |
+| **body** | **string**|  | [optional] |
 
 ### Return type
 
-[**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response**](../Model/PostApiV1MethodCallDeleteMessage200Response.md)
+[**\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject**](../Model/InlineObject.md)
 
 ### Authorization
 
@@ -72,7 +72,7 @@ No authorization required
 ## `postApiV1MethodCallDeleteMessage()`
 
 ```php
-postApiV1MethodCallDeleteMessage($x_auth_token, $x_user_id, $method_call_delete_message): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
+postApiV1MethodCallDeleteMessage($x_auth_token, $x_user_id, $body): \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject
 ```
 
 Method Call
@@ -92,10 +92,10 @@ $apiInstance = new WebMI\RocketChatApiClient\MethodCallApi\Api\MethodCallApi(
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$method_call_delete_message = new \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessage(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessage
+$body = 'body_example'; // string
 
 try {
-    $result = $apiInstance->postApiV1MethodCallDeleteMessage($x_auth_token, $x_user_id, $method_call_delete_message);
+    $result = $apiInstance->postApiV1MethodCallDeleteMessage($x_auth_token, $x_user_id, $body);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MethodCallApi->postApiV1MethodCallDeleteMessage: ', $e->getMessage(), PHP_EOL;
@@ -108,11 +108,11 @@ try {
 | ------------- | ------------- | ------------- | ------------- |
 | **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
 | **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
-| **method_call_delete_message** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessage**](../Model/MethodCallDeleteMessage.md)|  | [optional] |
+| **body** | **string**|  | [optional] |
 
 ### Return type
 
-[**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response**](../Model/PostApiV1MethodCallDeleteMessage200Response.md)
+[**\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject**](../Model/InlineObject.md)
 
 ### Authorization
 
@@ -130,7 +130,7 @@ No authorization required
 ## `postApiV1MethodCallMuteUserInRoom()`
 
 ```php
-postApiV1MethodCallMuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
+postApiV1MethodCallMuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject
 ```
 
 Method Call
@@ -170,7 +170,7 @@ try {
 
 ### Return type
 
-[**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response**](../Model/PostApiV1MethodCallDeleteMessage200Response.md)
+[**\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject**](../Model/InlineObject.md)
 
 ### Authorization
 
@@ -188,7 +188,7 @@ No authorization required
 ## `postApiV1MethodCallUnmuteUserInRoom()`
 
 ```php
-postApiV1MethodCallUnmuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
+postApiV1MethodCallUnmuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject
 ```
 
 Method Call
@@ -228,7 +228,7 @@ try {
 
 ### Return type
 
-[**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response**](../Model/PostApiV1MethodCallDeleteMessage200Response.md)
+[**\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject**](../Model/InlineObject.md)
 
 ### Authorization
 
@@ -246,7 +246,7 @@ No authorization required
 ## `postApiV1MethodCallUserPresence()`
 
 ```php
-postApiV1MethodCallUserPresence($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response
+postApiV1MethodCallUserPresence($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request): \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject
 ```
 
 Method Call
@@ -286,7 +286,7 @@ try {
 
 ### Return type
 
-[**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response**](../Model/PostApiV1MethodCallDeleteMessage200Response.md)
+[**\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject**](../Model/InlineObject.md)
 
 ### Authorization
 
