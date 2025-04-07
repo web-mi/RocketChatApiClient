@@ -96,6 +96,30 @@ class MethodCallApiTest extends TestCase
     }
 
     /**
+     * Test case for postApiV1MethodCallMuteUserInRoom
+     *
+     * Method Call.
+     *
+     */
+    public function testPostApiV1MethodCallMuteUserInRoom()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test case for postApiV1MethodCallUnmuteUserInRoom
+     *
+     * Method Call.
+     *
+     */
+    public function testPostApiV1MethodCallUnmuteUserInRoom()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
      * Test case for postApiV1MethodCallUserPresence
      *
      * Method Call.

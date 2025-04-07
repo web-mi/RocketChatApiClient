@@ -78,40 +78,4 @@ class PostApiV1MethodCallUserPresenceRequestTest extends TestCase
         // TODO: implement
         self::markTestIncomplete('Not implemented');
     }
-
-    /**
-     * Test attribute "msg"
-     */
-    public function testPropertyMsg()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "method"
-     */
-    public function testPropertyMethod()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "id"
-     */
-    public function testPropertyId()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "params"
-     */
-    public function testPropertyParams()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
 }
