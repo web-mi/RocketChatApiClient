@@ -89,6 +89,8 @@ Class | Method | HTTP request | Description
 - [MethodCallUserPresenceTemp](docs/Model/MethodCallUserPresenceTemp.md)
 - [PostApiV1MethodCallDeleteMessage200Response](docs/Model/PostApiV1MethodCallDeleteMessage200Response.md)
 - [PostApiV1MethodCallDeleteMessage200ResponseMessage](docs/Model/PostApiV1MethodCallDeleteMessage200ResponseMessage.md)
+- [PostApiV1MethodCallDeleteMessage200ResponseMessageError](docs/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageError.md)
+- [PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails](docs/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails.md)
 - [PostApiV1MethodCallDeleteMessage400Response](docs/Model/PostApiV1MethodCallDeleteMessage400Response.md)
 - [PostApiV1MethodCallDeleteMessage401Response](docs/Model/PostApiV1MethodCallDeleteMessage401Response.md)
 - [PostApiV1MethodCallMuteUserInRoomRequest](docs/Model/PostApiV1MethodCallMuteUserInRoomRequest.md)

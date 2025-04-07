@@ -13,6 +13,8 @@ docs/Model/MethodCallUserPresenceDefault.md
 docs/Model/MethodCallUserPresenceTemp.md
 docs/Model/PostApiV1MethodCallDeleteMessage200Response.md
 docs/Model/PostApiV1MethodCallDeleteMessage200ResponseMessage.md
+docs/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageError.md
+docs/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails.md
 docs/Model/PostApiV1MethodCallDeleteMessage400Response.md
 docs/Model/PostApiV1MethodCallDeleteMessage401Response.md
 docs/Model/PostApiV1MethodCallMuteUserInRoomRequest.md
@@ -30,6 +32,8 @@ lib/Model/MethodCallUserPresenceTemp.php
 lib/Model/ModelInterface.php
 lib/Model/PostApiV1MethodCallDeleteMessage200Response.php
 lib/Model/PostApiV1MethodCallDeleteMessage200ResponseMessage.php
+lib/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageError.php
+lib/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails.php
 lib/Model/PostApiV1MethodCallDeleteMessage400Response.php
 lib/Model/PostApiV1MethodCallDeleteMessage401Response.php
 lib/Model/PostApiV1MethodCallMuteUserInRoomRequest.php
@@ -42,6 +46,8 @@ test/Model/MethodCallUnMuteUserInRoomParamsInnerTest.php
 test/Model/MethodCallUnMuteUserInRoomTest.php
 test/Model/MethodCallUserPresenceDefaultTest.php
 test/Model/MethodCallUserPresenceTempTest.php
+test/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetailsTest.php
+test/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageErrorTest.php
 test/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageTest.php
 test/Model/PostApiV1MethodCallDeleteMessage200ResponseTest.php
 test/Model/PostApiV1MethodCallDeleteMessage400ResponseTest.php

@@ -6,7 +6,7 @@ Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **msg** | **string** |  | [optional] [default to 'result']
 **id** | **string** |  | [optional]
-**error** | **string** | The error message if the method call failed but api will return 200. | [optional]
+**error** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200ResponseMessageError**](PostApiV1MethodCallDeleteMessage200ResponseMessageError.md) |  | [optional]
 **result** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

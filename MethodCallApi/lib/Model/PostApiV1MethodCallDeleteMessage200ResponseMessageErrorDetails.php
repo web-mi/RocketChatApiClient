@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1MethodCallDeleteMessage200ResponseMessage
+ * PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails
  *
  * PHP version 8.1
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
 
 /**
- * PostApiV1MethodCallDeleteMessage200ResponseMessage Class Doc Comment
+ * PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\MethodCallApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterface, ArrayAccess, \JsonSerializable
+class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_method_call_delete_message_200_response_message';
+    protected static $openAPIModelName = 'post_api_v1_method_call_delete_message_200_response_message_error_details';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,10 +57,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
       * @var string[]
       */
     protected static $openAPITypes = [
-        'msg' => 'string',
-        'id' => 'string',
-        'error' => '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200ResponseMessageError',
-        'result' => 'bool'
+        'method' => 'string',
+        'message' => 'string',
+        'error_type' => 'string'
     ];
 
     /**
@@ -71,10 +70,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'msg' => null,
-        'id' => null,
-        'error' => null,
-        'result' => null
+        'method' => null,
+        'message' => null,
+        'error_type' => null
     ];
 
     /**
@@ -83,10 +81,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'msg' => false,
-        'id' => false,
-        'error' => false,
-        'result' => false
+        'method' => false,
+        'message' => false,
+        'error_type' => false
     ];
 
     /**
@@ -175,10 +172,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
      * @var string[]
      */
     protected static $attributeMap = [
-        'msg' => 'msg',
-        'id' => 'id',
-        'error' => 'error',
-        'result' => 'result'
+        'method' => 'method',
+        'message' => 'message',
+        'error_type' => 'errorType'
     ];
 
     /**
@@ -187,10 +183,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
      * @var string[]
      */
     protected static $setters = [
-        'msg' => 'set_msg',
-        'id' => 'set_id',
-        'error' => 'set_error',
-        'result' => 'set_result'
+        'method' => 'set_method',
+        'message' => 'set_message',
+        'error_type' => 'set_error_type'
     ];
 
     /**
@@ -199,10 +194,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
      * @var string[]
      */
     protected static $getters = [
-        'msg' => 'get_msg',
-        'id' => 'get_id',
-        'error' => 'get_error',
-        'result' => 'get_result'
+        'method' => 'get_method',
+        'message' => 'get_message',
+        'error_type' => 'get_error_type'
     ];
 
     /**
@@ -246,19 +240,6 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
         return self::$openAPIModelName;
     }
 
-    public const MSG_RESULT = 'result';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function get_msgAllowableValues()
-    {
-        return [
-            self::MSG_RESULT,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -275,10 +256,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('msg', $data ?? [], 'result');
-        $this->setIfExists('id', $data ?? [], null);
-        $this->setIfExists('error', $data ?? [], null);
-        $this->setIfExists('result', $data ?? [], null);
+        $this->setIfExists('method', $data ?? [], null);
+        $this->setIfExists('message', $data ?? [], null);
+        $this->setIfExists('error_type', $data ?? [], null);
     }
 
     /**
@@ -308,15 +288,6 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
     {
         $invalidProperties = [];
 
-        $allowedValues = $this->get_msgAllowableValues();
-        if (!is_null($this->container['msg']) && !in_array($this->container['msg'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'msg', must be one of '%s'",
-                $this->container['msg'],
-                implode("', '", $allowedValues)
-            );
-        }
-
         return $invalidProperties;
     }
 
@@ -333,119 +304,82 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessage implements ModelInterfa
 
 
     /**
-     * Gets msg
+     * Gets method
      *
      * @return string|null
      */
-    public function get_msg()
+    public function get_method()
     {
-        return $this->container['msg'];
+        return $this->container['method'];
     }
 
     /**
-     * Sets msg
+     * Sets method
      *
-     * @param string|null $msg msg
+     * @param string|null $method method
      *
      * @return self
      */
-    public function set_msg($msg)
+    public function set_method($method)
     {
-        if (is_null($msg)) {
-            throw new \InvalidArgumentException('non-nullable msg cannot be null');
+        if (is_null($method)) {
+            throw new \InvalidArgumentException('non-nullable method cannot be null');
         }
-        $allowedValues = $this->get_msgAllowableValues();
-        if (!in_array($msg, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'msg', must be one of '%s'",
-                    $msg,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['msg'] = $msg;
+        $this->container['method'] = $method;
 
         return $this;
     }
 
     /**
-     * Gets id
+     * Gets message
      *
      * @return string|null
      */
-    public function get_id()
+    public function get_message()
     {
-        return $this->container['id'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets id
+     * Sets message
      *
-     * @param string|null $id id
+     * @param string|null $message message
      *
      * @return self
      */
-    public function set_id($id)
+    public function set_message($message)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
+        if (is_null($message)) {
+            throw new \InvalidArgumentException('non-nullable message cannot be null');
         }
-        $this->container['id'] = $id;
+        $this->container['message'] = $message;
 
         return $this;
     }
 
     /**
-     * Gets error
+     * Gets error_type
      *
-     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200ResponseMessageError|null
+     * @return string|null
      */
-    public function get_error()
+    public function get_error_type()
     {
-        return $this->container['error'];
+        return $this->container['error_type'];
     }
 
     /**
-     * Sets error
+     * Sets error_type
      *
-     * @param \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200ResponseMessageError|null $error error
+     * @param string|null $error_type error_type
      *
      * @return self
      */
-    public function set_error($error)
+    public function set_error_type($error_type)
     {
-        if (is_null($error)) {
-            throw new \InvalidArgumentException('non-nullable error cannot be null');
+        if (is_null($error_type)) {
+            throw new \InvalidArgumentException('non-nullable error_type cannot be null');
         }
-        $this->container['error'] = $error;
-
-        return $this;
-    }
-
-    /**
-     * Gets result
-     *
-     * @return bool|null
-     */
-    public function get_result()
-    {
-        return $this->container['result'];
-    }
-
-    /**
-     * Sets result
-     *
-     * @param bool|null $result result
-     *
-     * @return self
-     */
-    public function set_result($result)
-    {
-        if (is_null($result)) {
-            throw new \InvalidArgumentException('non-nullable result cannot be null');
-        }
-        $this->container['result'] = $result;
+        $this->container['error_type'] = $error_type;
 
         return $this;
     }

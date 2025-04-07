@@ -240,7 +240,23 @@ components:
                     type: string
                   error:
                     description: 'The error message if the method call failed but api will return 200.'
-                    type: string
+                    type: object
+                    properties:
+                      isClientSafe:
+                        type: boolean
+                      error:
+                        type: string
+                      reason:
+                        type: string
+                      details:
+                        type: object
+                        properties:
+                          method:
+                            type: string
+                          message:
+                            type: string
+                          errorType:
+                            type: string
                   result:
                     type: boolean
               success:
