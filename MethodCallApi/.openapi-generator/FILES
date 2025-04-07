@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .php-cs-fixer.dist.php
 .travis.yml
 README.md
@@ -7,6 +6,8 @@ composer.json
 docs/Api/MethodCallApi.md
 docs/Model/MethodCallDeleteMessage.md
 docs/Model/MethodCallDeleteMessageParamsInner.md
+docs/Model/MethodCallUnMuteUserInRoom.md
+docs/Model/MethodCallUnMuteUserInRoomParamsInner.md
 docs/Model/MethodCallUserPresenceDefault.md
 docs/Model/MethodCallUserPresenceTemp.md
 docs/Model/PostApiV1MethodCallDeleteMessage200Response.md
@@ -20,6 +21,8 @@ lib/Configuration.php
 lib/HeaderSelector.php
 lib/Model/MethodCallDeleteMessage.php
 lib/Model/MethodCallDeleteMessageParamsInner.php
+lib/Model/MethodCallUnMuteUserInRoom.php
+lib/Model/MethodCallUnMuteUserInRoomParamsInner.php
 lib/Model/MethodCallUserPresenceDefault.php
 lib/Model/MethodCallUserPresenceTemp.php
 lib/Model/ModelInterface.php
@@ -29,12 +32,5 @@ lib/Model/PostApiV1MethodCallDeleteMessage401Response.php
 lib/Model/PostApiV1MethodCallUserPresenceRequest.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Api/MethodCallApiTest.php
-test/Model/MethodCallDeleteMessageParamsInnerTest.php
-test/Model/MethodCallDeleteMessageTest.php
-test/Model/MethodCallUserPresenceDefaultTest.php
-test/Model/MethodCallUserPresenceTempTest.php
-test/Model/PostApiV1MethodCallDeleteMessage200ResponseTest.php
-test/Model/PostApiV1MethodCallDeleteMessage400ResponseTest.php
-test/Model/PostApiV1MethodCallDeleteMessage401ResponseTest.php
-test/Model/PostApiV1MethodCallUserPresenceRequestTest.php
+test/Model/MethodCallUnMuteUserInRoomParamsInnerTest.php
+test/Model/MethodCallUnMuteUserInRoomTest.php

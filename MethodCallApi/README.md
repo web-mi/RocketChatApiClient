@@ -75,12 +75,16 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *MethodCallApi* | [**postApiV1MethodCallDeleteFileMessage**](docs/Api/MethodCallApi.md#postapiv1methodcalldeletefilemessage) | **POST** /api/v1/method.call/deleteFileMessage | Method Call
 *MethodCallApi* | [**postApiV1MethodCallDeleteMessage**](docs/Api/MethodCallApi.md#postapiv1methodcalldeletemessage) | **POST** /api/v1/method.call/deleteMessage | Method Call
+*MethodCallApi* | [**postApiV1MethodCallMuteUserInRoom**](docs/Api/MethodCallApi.md#postapiv1methodcallmuteuserinroom) | **POST** /api/v1/method.call/muteUserInRoom | Method Call
+*MethodCallApi* | [**postApiV1MethodCallUnmuteUserInRoom**](docs/Api/MethodCallApi.md#postapiv1methodcallunmuteuserinroom) | **POST** /api/v1/method.call/unmuteUserInRoom | Method Call
 *MethodCallApi* | [**postApiV1MethodCallUserPresence**](docs/Api/MethodCallApi.md#postapiv1methodcalluserpresence) | **POST** /api/v1/method.call/UserPresence | Method Call
 
 ## Models
 
 - [MethodCallDeleteMessage](docs/Model/MethodCallDeleteMessage.md)
 - [MethodCallDeleteMessageParamsInner](docs/Model/MethodCallDeleteMessageParamsInner.md)
+- [MethodCallUnMuteUserInRoom](docs/Model/MethodCallUnMuteUserInRoom.md)
+- [MethodCallUnMuteUserInRoomParamsInner](docs/Model/MethodCallUnMuteUserInRoomParamsInner.md)
 - [MethodCallUserPresenceDefault](docs/Model/MethodCallUserPresenceDefault.md)
 - [MethodCallUserPresenceTemp](docs/Model/MethodCallUserPresenceTemp.md)
 - [PostApiV1MethodCallDeleteMessage200Response](docs/Model/PostApiV1MethodCallDeleteMessage200Response.md)

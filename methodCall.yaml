@@ -29,6 +29,48 @@ paths:
           $ref: '#/components/responses/MethodCall401'
         '400':
           $ref: '#/components/responses/MethodCall400'
+  /api/v1/method.call/muteUserInRoom:
+    post:
+      tags:
+        - MethodCall
+      summary: Method Call
+      operationId: post-api-v1-method-call-mute-user-in-room
+      parameters:
+        - $ref: '#/components/parameters/Auth-Token'
+        - $ref: '#/components/parameters/UserId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MethodCallUnMuteUserInRoom'
+      responses:
+        '200':
+          $ref: '#/components/responses/MethodCall200'
+        '401':
+          $ref: '#/components/responses/MethodCall401'
+        '400':
+          $ref: '#/components/responses/MethodCall400'
+  /api/v1/method.call/unmuteUserInRoom:
+    post:
+      tags:
+        - MethodCall
+      summary: Method Call
+      operationId: post-api-v1-method-call-unmute-user-in-room
+      parameters:
+        - $ref: '#/components/parameters/Auth-Token'
+        - $ref: '#/components/parameters/UserId'
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/MethodCallUnMuteUserInRoom'
+      responses:
+        '200':
+          $ref: '#/components/responses/MethodCall200'
+        '401':
+          $ref: '#/components/responses/MethodCall401'
+        '400':
+          $ref: '#/components/responses/MethodCall400'
   /api/v1/method.call/deleteFileMessage:
     post:
       tags:
@@ -75,6 +117,28 @@ paths:
           $ref: '#/components/responses/MethodCall400'
 components:
   schemas:
+    MethodCallUnMuteUserInRoom:
+      type: object
+      properties:
+        msg:
+          type: string
+          enum: [ "method" ]
+          default: "method"
+        method:
+          type: string
+          enum: [ "muteUserInRoom", "unmuteUserInRoom" ]
+          default: "deleteMessage"
+        id:
+          type: string
+        params:
+          type: array
+          items:
+            type: object
+            properties:
+              rid:
+                type: string
+              username:
+                type: string
     MethodCallDeleteFileMessage:
       $ref: '#/components/schemas/MethodCallDeleteMessage'
     MethodCallDeleteMessage:
