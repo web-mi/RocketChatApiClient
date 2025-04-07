@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1MethodCallUserPresenceRequest
+ * MethodCallUserPresenceTemp
  *
  * PHP version 8.1
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
 
 /**
- * PostApiV1MethodCallUserPresenceRequest Class Doc Comment
+ * MethodCallUserPresenceTemp Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\MethodCallApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAccess, \JsonSerializable
+class MethodCallUserPresenceTemp implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
       *
       * @var string
       */
-    protected static $openAPIModelName = 'post_api_v1_method_call_user_presence_request';
+    protected static $openAPIModelName = 'MethodCallUserPresence:temp';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,7 +57,10 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        
+        'msg' => 'string',
+        'method' => 'string',
+        'id' => 'string',
+        'params' => 'string[]'
     ];
 
     /**
@@ -68,7 +71,10 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        
+        'msg' => null,
+        'method' => null,
+        'id' => null,
+        'params' => null
     ];
 
     /**
@@ -77,7 +83,10 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        
+        'msg' => false,
+        'method' => false,
+        'id' => false,
+        'params' => false
     ];
 
     /**
@@ -166,7 +175,10 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $attributeMap = [
-        
+        'msg' => 'msg',
+        'method' => 'method',
+        'id' => 'id',
+        'params' => 'params'
     ];
 
     /**
@@ -175,7 +187,10 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $setters = [
-        
+        'msg' => 'set_msg',
+        'method' => 'set_method',
+        'id' => 'set_id',
+        'params' => 'set_params'
     ];
 
     /**
@@ -184,7 +199,10 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
      * @var string[]
      */
     protected static $getters = [
-        
+        'msg' => 'get_msg',
+        'method' => 'get_method',
+        'id' => 'get_id',
+        'params' => 'get_params'
     ];
 
     /**
@@ -228,6 +246,34 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
         return self::$openAPIModelName;
     }
 
+    public const MSG_METHOD = 'method';
+    public const METHOD_USER_PRESENCE_ONLINE = 'UserPresence:online';
+    public const METHOD_USER_PRESENCE_AWAY = 'UserPresence:away';
+
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function get_msgAllowableValues()
+    {
+        return [
+            self::MSG_METHOD,
+        ];
+    }
+
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function get_methodAllowableValues()
+    {
+        return [
+            self::METHOD_USER_PRESENCE_ONLINE,
+            self::METHOD_USER_PRESENCE_AWAY,
+        ];
+    }
 
     /**
      * Associative array for storing property values
@@ -244,6 +290,10 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
      */
     public function __construct(?array $data = null)
     {
+        $this->setIfExists('msg', $data ?? [], 'method');
+        $this->setIfExists('method', $data ?? [], null);
+        $this->setIfExists('id', $data ?? [], null);
+        $this->setIfExists('params', $data ?? [], null);
     }
 
     /**
@@ -273,6 +323,24 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
     {
         $invalidProperties = [];
 
+        $allowedValues = $this->get_msgAllowableValues();
+        if (!is_null($this->container['msg']) && !in_array($this->container['msg'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'msg', must be one of '%s'",
+                $this->container['msg'],
+                implode("', '", $allowedValues)
+            );
+        }
+
+        $allowedValues = $this->get_methodAllowableValues();
+        if (!is_null($this->container['method']) && !in_array($this->container['method'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'method', must be one of '%s'",
+                $this->container['method'],
+                implode("', '", $allowedValues)
+            );
+        }
+
         return $invalidProperties;
     }
 
@@ -287,6 +355,134 @@ class PostApiV1MethodCallUserPresenceRequest implements ModelInterface, ArrayAcc
         return count($this->listInvalidProperties()) === 0;
     }
 
+
+    /**
+     * Gets msg
+     *
+     * @return string|null
+     */
+    public function get_msg()
+    {
+        return $this->container['msg'];
+    }
+
+    /**
+     * Sets msg
+     *
+     * @param string|null $msg msg
+     *
+     * @return self
+     */
+    public function set_msg($msg)
+    {
+        if (is_null($msg)) {
+            throw new \InvalidArgumentException('non-nullable msg cannot be null');
+        }
+        $allowedValues = $this->get_msgAllowableValues();
+        if (!in_array($msg, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'msg', must be one of '%s'",
+                    $msg,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['msg'] = $msg;
+
+        return $this;
+    }
+
+    /**
+     * Gets method
+     *
+     * @return string|null
+     */
+    public function get_method()
+    {
+        return $this->container['method'];
+    }
+
+    /**
+     * Sets method
+     *
+     * @param string|null $method method
+     *
+     * @return self
+     */
+    public function set_method($method)
+    {
+        if (is_null($method)) {
+            throw new \InvalidArgumentException('non-nullable method cannot be null');
+        }
+        $allowedValues = $this->get_methodAllowableValues();
+        if (!in_array($method, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'method', must be one of '%s'",
+                    $method,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['method'] = $method;
+
+        return $this;
+    }
+
+    /**
+     * Gets id
+     *
+     * @return string|null
+     */
+    public function get_id()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     *
+     * @param string|null $id id
+     *
+     * @return self
+     */
+    public function set_id($id)
+    {
+        if (is_null($id)) {
+            throw new \InvalidArgumentException('non-nullable id cannot be null');
+        }
+        $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets params
+     *
+     * @return string[]|null
+     */
+    public function get_params()
+    {
+        return $this->container['params'];
+    }
+
+    /**
+     * Sets params
+     *
+     * @param string[]|null $params params
+     *
+     * @return self
+     */
+    public function set_params($params)
+    {
+        if (is_null($params)) {
+            throw new \InvalidArgumentException('non-nullable params cannot be null');
+        }
+        $this->container['params'] = $params;
+
+        return $this;
+    }
     /**
      * Returns true if offset exists. False otherwise.
      *

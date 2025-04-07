@@ -1,6 +1,6 @@
 <?php
 /**
- * InlineObject2
+ * MethodCallDeleteMessage
  *
  * PHP version 8.1
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
 
 /**
- * InlineObject2 Class Doc Comment
+ * MethodCallDeleteMessage Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\MethodCallApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
+class MethodCallDeleteMessage implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'inline_object_2';
+    protected static $openAPIModelName = 'MethodCallDeleteMessage';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,8 +57,10 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'status' => 'string',
-        'message' => 'string'
+        'msg' => 'string',
+        'method' => 'string',
+        'id' => 'string',
+        'params' => '\WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessageParamsInner[]'
     ];
 
     /**
@@ -69,8 +71,10 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'status' => null,
-        'message' => null
+        'msg' => null,
+        'method' => null,
+        'id' => null,
+        'params' => null
     ];
 
     /**
@@ -79,8 +83,10 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'status' => false,
-        'message' => false
+        'msg' => false,
+        'method' => false,
+        'id' => false,
+        'params' => false
     ];
 
     /**
@@ -169,8 +175,10 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'status' => 'status',
-        'message' => 'message'
+        'msg' => 'msg',
+        'method' => 'method',
+        'id' => 'id',
+        'params' => 'params'
     ];
 
     /**
@@ -179,8 +187,10 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'status' => 'set_status',
-        'message' => 'set_message'
+        'msg' => 'set_msg',
+        'method' => 'set_method',
+        'id' => 'set_id',
+        'params' => 'set_params'
     ];
 
     /**
@@ -189,8 +199,10 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'status' => 'get_status',
-        'message' => 'get_message'
+        'msg' => 'get_msg',
+        'method' => 'get_method',
+        'id' => 'get_id',
+        'params' => 'get_params'
     ];
 
     /**
@@ -234,6 +246,34 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
+    public const MSG_METHOD = 'method';
+    public const METHOD_DELETE_MESSAGE = 'deleteMessage';
+    public const METHOD_DELETE_FILE_MESSAGE = 'deleteFileMessage';
+
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function get_msgAllowableValues()
+    {
+        return [
+            self::MSG_METHOD,
+        ];
+    }
+
+    /**
+     * Gets allowable values of the enum
+     *
+     * @return string[]
+     */
+    public function get_methodAllowableValues()
+    {
+        return [
+            self::METHOD_DELETE_MESSAGE,
+            self::METHOD_DELETE_FILE_MESSAGE,
+        ];
+    }
 
     /**
      * Associative array for storing property values
@@ -250,8 +290,10 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('status', $data ?? [], null);
-        $this->setIfExists('message', $data ?? [], null);
+        $this->setIfExists('msg', $data ?? [], 'method');
+        $this->setIfExists('method', $data ?? [], 'deleteMessage');
+        $this->setIfExists('id', $data ?? [], null);
+        $this->setIfExists('params', $data ?? [], null);
     }
 
     /**
@@ -281,6 +323,24 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
+        $allowedValues = $this->get_msgAllowableValues();
+        if (!is_null($this->container['msg']) && !in_array($this->container['msg'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'msg', must be one of '%s'",
+                $this->container['msg'],
+                implode("', '", $allowedValues)
+            );
+        }
+
+        $allowedValues = $this->get_methodAllowableValues();
+        if (!is_null($this->container['method']) && !in_array($this->container['method'], $allowedValues, true)) {
+            $invalidProperties[] = sprintf(
+                "invalid value '%s' for 'method', must be one of '%s'",
+                $this->container['method'],
+                implode("', '", $allowedValues)
+            );
+        }
+
         return $invalidProperties;
     }
 
@@ -297,55 +357,129 @@ class InlineObject2 implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets status
+     * Gets msg
      *
      * @return string|null
      */
-    public function get_status()
+    public function get_msg()
     {
-        return $this->container['status'];
+        return $this->container['msg'];
     }
 
     /**
-     * Sets status
+     * Sets msg
      *
-     * @param string|null $status status
+     * @param string|null $msg msg
      *
      * @return self
      */
-    public function set_status($status)
+    public function set_msg($msg)
     {
-        if (is_null($status)) {
-            throw new \InvalidArgumentException('non-nullable status cannot be null');
+        if (is_null($msg)) {
+            throw new \InvalidArgumentException('non-nullable msg cannot be null');
         }
-        $this->container['status'] = $status;
+        $allowedValues = $this->get_msgAllowableValues();
+        if (!in_array($msg, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'msg', must be one of '%s'",
+                    $msg,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['msg'] = $msg;
 
         return $this;
     }
 
     /**
-     * Gets message
+     * Gets method
      *
      * @return string|null
      */
-    public function get_message()
+    public function get_method()
     {
-        return $this->container['message'];
+        return $this->container['method'];
     }
 
     /**
-     * Sets message
+     * Sets method
      *
-     * @param string|null $message message
+     * @param string|null $method method
      *
      * @return self
      */
-    public function set_message($message)
+    public function set_method($method)
     {
-        if (is_null($message)) {
-            throw new \InvalidArgumentException('non-nullable message cannot be null');
+        if (is_null($method)) {
+            throw new \InvalidArgumentException('non-nullable method cannot be null');
         }
-        $this->container['message'] = $message;
+        $allowedValues = $this->get_methodAllowableValues();
+        if (!in_array($method, $allowedValues, true)) {
+            throw new \InvalidArgumentException(
+                sprintf(
+                    "Invalid value '%s' for 'method', must be one of '%s'",
+                    $method,
+                    implode("', '", $allowedValues)
+                )
+            );
+        }
+        $this->container['method'] = $method;
+
+        return $this;
+    }
+
+    /**
+     * Gets id
+     *
+     * @return string|null
+     */
+    public function get_id()
+    {
+        return $this->container['id'];
+    }
+
+    /**
+     * Sets id
+     *
+     * @param string|null $id id
+     *
+     * @return self
+     */
+    public function set_id($id)
+    {
+        if (is_null($id)) {
+            throw new \InvalidArgumentException('non-nullable id cannot be null');
+        }
+        $this->container['id'] = $id;
+
+        return $this;
+    }
+
+    /**
+     * Gets params
+     *
+     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessageParamsInner[]|null
+     */
+    public function get_params()
+    {
+        return $this->container['params'];
+    }
+
+    /**
+     * Sets params
+     *
+     * @param \WebMI\RocketChatApiClient\MethodCallApi\Model\MethodCallDeleteMessageParamsInner[]|null $params params
+     *
+     * @return self
+     */
+    public function set_params($params)
+    {
+        if (is_null($params)) {
+            throw new \InvalidArgumentException('non-nullable params cannot be null');
+        }
+        $this->container['params'] = $params;
 
         return $this;
     }

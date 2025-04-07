@@ -1,6 +1,6 @@
 <?php
 /**
- * PostApiV1MethodCallUserPresenceRequestTest
+ * MethodCallUserPresenceDefaultTest
  *
  * PHP version 8.1
  *
@@ -31,15 +31,15 @@ namespace WebMI\RocketChatApiClient\MethodCallApi\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * PostApiV1MethodCallUserPresenceRequestTest Class Doc Comment
+ * MethodCallUserPresenceDefaultTest Class Doc Comment
  *
  * @category    Class
- * @description PostApiV1MethodCallUserPresenceRequest
+ * @description MethodCallUserPresenceDefault
  * @package     WebMI\RocketChatApiClient\MethodCallApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class PostApiV1MethodCallUserPresenceRequestTest extends TestCase
+class MethodCallUserPresenceDefaultTest extends TestCase
 {
 
     /**
@@ -71,9 +71,45 @@ class PostApiV1MethodCallUserPresenceRequestTest extends TestCase
     }
 
     /**
-     * Test "PostApiV1MethodCallUserPresenceRequest"
+     * Test "MethodCallUserPresenceDefault"
      */
-    public function testPostApiV1MethodCallUserPresenceRequest()
+    public function testMethodCallUserPresenceDefault()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "msg"
+     */
+    public function testPropertyMsg()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "method"
+     */
+    public function testPropertyMethod()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "id"
+     */
+    public function testPropertyId()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "params"
+     */
+    public function testPropertyParams()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');

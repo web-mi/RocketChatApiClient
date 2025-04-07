@@ -1,6 +1,6 @@
 <?php
 /**
- * InlineObject2Test
+ * MethodCallUnMuteUserInRoomParamsInnerTest
  *
  * PHP version 8.1
  *
@@ -31,15 +31,15 @@ namespace WebMI\RocketChatApiClient\MethodCallApi\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * InlineObject2Test Class Doc Comment
+ * MethodCallUnMuteUserInRoomParamsInnerTest Class Doc Comment
  *
  * @category    Class
- * @description InlineObject2
+ * @description MethodCallUnMuteUserInRoomParamsInner
  * @package     WebMI\RocketChatApiClient\MethodCallApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class InlineObject2Test extends TestCase
+class MethodCallUnMuteUserInRoomParamsInnerTest extends TestCase
 {
 
     /**
@@ -71,27 +71,27 @@ class InlineObject2Test extends TestCase
     }
 
     /**
-     * Test "InlineObject2"
+     * Test "MethodCallUnMuteUserInRoomParamsInner"
      */
-    public function testInlineObject2()
+    public function testMethodCallUnMuteUserInRoomParamsInner()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "status"
+     * Test attribute "rid"
      */
-    public function testPropertyStatus()
+    public function testPropertyRid()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "message"
+     * Test attribute "username"
      */
-    public function testPropertyMessage()
+    public function testPropertyUsername()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');

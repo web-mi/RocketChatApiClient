@@ -1,6 +1,6 @@
 <?php
 /**
- * InlineObject
+ * PostApiV1MethodCallDeleteMessage401Response
  *
  * PHP version 8.1
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
 
 /**
- * InlineObject Class Doc Comment
+ * PostApiV1MethodCallDeleteMessage401Response Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\MethodCallApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\MethodCallApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
+class PostApiV1MethodCallDeleteMessage401Response implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
       *
       * @var string
       */
-    protected static $openAPIModelName = 'inline_object';
+    protected static $openAPIModelName = 'post_api_v1_method_call_delete_message_401_response';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,8 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var string[]
       */
     protected static $openAPITypes = [
-        'msg' => 'string',
-        'id' => 'string',
-        'result' => 'bool'
+        'status' => 'string',
+        'message' => 'string'
     ];
 
     /**
@@ -70,9 +69,8 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'msg' => null,
-        'id' => null,
-        'result' => null
+        'status' => null,
+        'message' => null
     ];
 
     /**
@@ -81,9 +79,8 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'msg' => false,
-        'id' => false,
-        'result' => false
+        'status' => false,
+        'message' => false
     ];
 
     /**
@@ -172,9 +169,8 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $attributeMap = [
-        'msg' => 'msg',
-        'id' => 'id',
-        'result' => 'result'
+        'status' => 'status',
+        'message' => 'message'
     ];
 
     /**
@@ -183,9 +179,8 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $setters = [
-        'msg' => 'set_msg',
-        'id' => 'set_id',
-        'result' => 'set_result'
+        'status' => 'set_status',
+        'message' => 'set_message'
     ];
 
     /**
@@ -194,9 +189,8 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
      * @var string[]
      */
     protected static $getters = [
-        'msg' => 'get_msg',
-        'id' => 'get_id',
-        'result' => 'get_result'
+        'status' => 'get_status',
+        'message' => 'get_message'
     ];
 
     /**
@@ -240,19 +234,6 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
         return self::$openAPIModelName;
     }
 
-    public const MSG_RESULT = 'result';
-
-    /**
-     * Gets allowable values of the enum
-     *
-     * @return string[]
-     */
-    public function get_msgAllowableValues()
-    {
-        return [
-            self::MSG_RESULT,
-        ];
-    }
 
     /**
      * Associative array for storing property values
@@ -269,9 +250,8 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('msg', $data ?? [], 'result');
-        $this->setIfExists('id', $data ?? [], null);
-        $this->setIfExists('result', $data ?? [], null);
+        $this->setIfExists('status', $data ?? [], null);
+        $this->setIfExists('message', $data ?? [], null);
     }
 
     /**
@@ -301,15 +281,6 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
     {
         $invalidProperties = [];
 
-        $allowedValues = $this->get_msgAllowableValues();
-        if (!is_null($this->container['msg']) && !in_array($this->container['msg'], $allowedValues, true)) {
-            $invalidProperties[] = sprintf(
-                "invalid value '%s' for 'msg', must be one of '%s'",
-                $this->container['msg'],
-                implode("', '", $allowedValues)
-            );
-        }
-
         return $invalidProperties;
     }
 
@@ -326,92 +297,55 @@ class InlineObject implements ModelInterface, ArrayAccess, \JsonSerializable
 
 
     /**
-     * Gets msg
+     * Gets status
      *
      * @return string|null
      */
-    public function get_msg()
+    public function get_status()
     {
-        return $this->container['msg'];
+        return $this->container['status'];
     }
 
     /**
-     * Sets msg
+     * Sets status
      *
-     * @param string|null $msg msg
+     * @param string|null $status status
      *
      * @return self
      */
-    public function set_msg($msg)
+    public function set_status($status)
     {
-        if (is_null($msg)) {
-            throw new \InvalidArgumentException('non-nullable msg cannot be null');
+        if (is_null($status)) {
+            throw new \InvalidArgumentException('non-nullable status cannot be null');
         }
-        $allowedValues = $this->get_msgAllowableValues();
-        if (!in_array($msg, $allowedValues, true)) {
-            throw new \InvalidArgumentException(
-                sprintf(
-                    "Invalid value '%s' for 'msg', must be one of '%s'",
-                    $msg,
-                    implode("', '", $allowedValues)
-                )
-            );
-        }
-        $this->container['msg'] = $msg;
+        $this->container['status'] = $status;
 
         return $this;
     }
 
     /**
-     * Gets id
+     * Gets message
      *
      * @return string|null
      */
-    public function get_id()
+    public function get_message()
     {
-        return $this->container['id'];
+        return $this->container['message'];
     }
 
     /**
-     * Sets id
+     * Sets message
      *
-     * @param string|null $id id
+     * @param string|null $message message
      *
      * @return self
      */
-    public function set_id($id)
+    public function set_message($message)
     {
-        if (is_null($id)) {
-            throw new \InvalidArgumentException('non-nullable id cannot be null');
+        if (is_null($message)) {
+            throw new \InvalidArgumentException('non-nullable message cannot be null');
         }
-        $this->container['id'] = $id;
-
-        return $this;
-    }
-
-    /**
-     * Gets result
-     *
-     * @return bool|null
-     */
-    public function get_result()
-    {
-        return $this->container['result'];
-    }
-
-    /**
-     * Sets result
-     *
-     * @param bool|null $result result
-     *
-     * @return self
-     */
-    public function set_result($result)
-    {
-        if (is_null($result)) {
-            throw new \InvalidArgumentException('non-nullable result cannot be null');
-        }
-        $this->container['result'] = $result;
+        $this->container['message'] = $message;
 
         return $this;
     }

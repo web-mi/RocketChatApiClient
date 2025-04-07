@@ -1,6 +1,6 @@
 <?php
 /**
- * InlineObject1Test
+ * PostApiV1MethodCallDeleteMessage400ResponseTest
  *
  * PHP version 8.1
  *
@@ -31,15 +31,15 @@ namespace WebMI\RocketChatApiClient\MethodCallApi\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * InlineObject1Test Class Doc Comment
+ * PostApiV1MethodCallDeleteMessage400ResponseTest Class Doc Comment
  *
  * @category    Class
- * @description InlineObject1
+ * @description PostApiV1MethodCallDeleteMessage400Response
  * @package     WebMI\RocketChatApiClient\MethodCallApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class InlineObject1Test extends TestCase
+class PostApiV1MethodCallDeleteMessage400ResponseTest extends TestCase
 {
 
     /**
@@ -71,9 +71,9 @@ class InlineObject1Test extends TestCase
     }
 
     /**
-     * Test "InlineObject1"
+     * Test "PostApiV1MethodCallDeleteMessage400Response"
      */
-    public function testInlineObject1()
+    public function testPostApiV1MethodCallDeleteMessage400Response()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');

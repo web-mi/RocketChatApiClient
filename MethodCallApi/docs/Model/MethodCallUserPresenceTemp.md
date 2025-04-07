@@ -1,10 +1,12 @@
-# # InlineObject2
+# # MethodCallUserPresenceTemp
 
 ## Properties
 
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**status** | **string** |  | [optional]
-**message** | **string** |  | [optional]
+**msg** | **string** |  | [optional] [default to 'method']
+**method** | **string** |  | [optional]
+**id** | **string** |  | [optional]
+**params** | **string[]** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

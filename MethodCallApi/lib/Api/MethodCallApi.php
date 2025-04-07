@@ -141,16 +141,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  string|null $body body (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallDeleteFileMessage'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1
+     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response
      */
-    public function postApiV1MethodCallDeleteFileMessage($x_auth_token, $x_user_id, $body = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
+    public function postApiV1MethodCallDeleteFileMessage($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
     {
-        list($response) = $this->postApiV1MethodCallDeleteFileMessageWithHttpInfo($x_auth_token, $x_user_id, $body, $contentType);
+        list($response) = $this->postApiV1MethodCallDeleteFileMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
         return $response;
     }
 
@@ -161,16 +161,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  string|null $body (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallDeleteFileMessage'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response, HTTP status code, HTTP response headers (array of strings)
      */
-    public function postApiV1MethodCallDeleteFileMessageWithHttpInfo($x_auth_token, $x_user_id, $body = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
+    public function postApiV1MethodCallDeleteFileMessageWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
     {
-        $request = $this->postApiV1MethodCallDeleteFileMessageRequest($x_auth_token, $x_user_id, $body, $contentType);
+        $request = $this->postApiV1MethodCallDeleteFileMessageRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -197,11 +197,11 @@ class MethodCallApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -219,16 +219,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -246,16 +246,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -273,7 +273,7 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -292,7 +292,7 @@ class MethodCallApi
                 );
             }
 
-            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
+            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -325,7 +325,7 @@ class MethodCallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -333,7 +333,7 @@ class MethodCallApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -341,7 +341,7 @@ class MethodCallApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -358,15 +358,15 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  string|null $body (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallDeleteFileMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallDeleteFileMessageAsync($x_auth_token, $x_user_id, $body = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
+    public function postApiV1MethodCallDeleteFileMessageAsync($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
     {
-        return $this->postApiV1MethodCallDeleteFileMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $body, $contentType)
+        return $this->postApiV1MethodCallDeleteFileMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -381,16 +381,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  string|null $body (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallDeleteFileMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallDeleteFileMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $body = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
+    public function postApiV1MethodCallDeleteFileMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
     {
-        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
-        $request = $this->postApiV1MethodCallDeleteFileMessageRequest($x_auth_token, $x_user_id, $body, $contentType);
+        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
+        $request = $this->postApiV1MethodCallDeleteFileMessageRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -433,13 +433,13 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  string|null $body (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallDeleteFileMessage'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function postApiV1MethodCallDeleteFileMessageRequest($x_auth_token, $x_user_id, $body = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
+    public function postApiV1MethodCallDeleteFileMessageRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteFileMessage'][0])
     {
 
         // verify the required parameter 'x_auth_token' is set
@@ -484,12 +484,12 @@ class MethodCallApi
         );
 
         // for model (json/xml)
-        if (isset($body)) {
+        if (isset($post_api_v1_method_call_mute_user_in_room_request)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($body));
+                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($post_api_v1_method_call_mute_user_in_room_request));
             } else {
-                $httpBody = $body;
+                $httpBody = $post_api_v1_method_call_mute_user_in_room_request;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {
@@ -549,7 +549,7 @@ class MethodCallApi
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1
+     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response
      */
     public function postApiV1MethodCallDeleteMessage($x_auth_token, $x_user_id, $body = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteMessage'][0])
     {
@@ -569,7 +569,7 @@ class MethodCallApi
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1MethodCallDeleteMessageWithHttpInfo($x_auth_token, $x_user_id, $body = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteMessage'][0])
     {
@@ -600,11 +600,11 @@ class MethodCallApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -622,16 +622,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -649,16 +649,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -676,7 +676,7 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -695,7 +695,7 @@ class MethodCallApi
                 );
             }
 
-            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
+            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -728,7 +728,7 @@ class MethodCallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -736,7 +736,7 @@ class MethodCallApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -744,7 +744,7 @@ class MethodCallApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -792,7 +792,7 @@ class MethodCallApi
      */
     public function postApiV1MethodCallDeleteMessageAsyncWithHttpInfo($x_auth_token, $x_user_id, $body = null, string $contentType = self::contentTypes['postApiV1MethodCallDeleteMessage'][0])
     {
-        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
+        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
         $request = $this->postApiV1MethodCallDeleteMessageRequest($x_auth_token, $x_user_id, $body, $contentType);
 
         return $this->client
@@ -952,7 +952,7 @@ class MethodCallApi
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1
+     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response
      */
     public function postApiV1MethodCallMuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
     {
@@ -972,7 +972,7 @@ class MethodCallApi
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1MethodCallMuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
     {
@@ -1003,11 +1003,11 @@ class MethodCallApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1025,16 +1025,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1052,16 +1052,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1079,7 +1079,7 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1098,7 +1098,7 @@ class MethodCallApi
                 );
             }
 
-            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
+            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1131,7 +1131,7 @@ class MethodCallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1139,7 +1139,7 @@ class MethodCallApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1147,7 +1147,7 @@ class MethodCallApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1195,7 +1195,7 @@ class MethodCallApi
      */
     public function postApiV1MethodCallMuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallMuteUserInRoom'][0])
     {
-        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
+        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
         $request = $this->postApiV1MethodCallMuteUserInRoomRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         return $this->client
@@ -1355,7 +1355,7 @@ class MethodCallApi
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1
+     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response
      */
     public function postApiV1MethodCallUnmuteUserInRoom($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
     {
@@ -1375,7 +1375,7 @@ class MethodCallApi
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response, HTTP status code, HTTP response headers (array of strings)
      */
     public function postApiV1MethodCallUnmuteUserInRoomWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
     {
@@ -1406,11 +1406,11 @@ class MethodCallApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1428,16 +1428,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1455,16 +1455,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1482,7 +1482,7 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1501,7 +1501,7 @@ class MethodCallApi
                 );
             }
 
-            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
+            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1534,7 +1534,7 @@ class MethodCallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1542,7 +1542,7 @@ class MethodCallApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1550,7 +1550,7 @@ class MethodCallApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1598,7 +1598,7 @@ class MethodCallApi
      */
     public function postApiV1MethodCallUnmuteUserInRoomAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUnmuteUserInRoom'][0])
     {
-        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
+        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
         $request = $this->postApiV1MethodCallUnmuteUserInRoomRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         return $this->client
@@ -1753,16 +1753,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest|null $post_api_v1_method_call_user_presence_request post_api_v1_method_call_user_presence_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1
+     * @return \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response
      */
-    public function postApiV1MethodCallUserPresence($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
+    public function postApiV1MethodCallUserPresence($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
-        list($response) = $this->postApiV1MethodCallUserPresenceWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request, $contentType);
+        list($response) = $this->postApiV1MethodCallUserPresenceWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
         return $response;
     }
 
@@ -1773,16 +1773,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest|null $post_api_v1_method_call_user_presence_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \WebMI\RocketChatApiClient\MethodCallApi\ApiException on non-2xx response or if the response body is not in the expected format
      * @throws \InvalidArgumentException
-     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2|\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response|\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response, HTTP status code, HTTP response headers (array of strings)
      */
-    public function postApiV1MethodCallUserPresenceWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
+    public function postApiV1MethodCallUserPresenceWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
-        $request = $this->postApiV1MethodCallUserPresenceRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request, $contentType);
+        $request = $this->postApiV1MethodCallUserPresenceRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         try {
             $options = $this->createHttpClientOption();
@@ -1809,11 +1809,11 @@ class MethodCallApi
 
             switch($statusCode) {
                 case 200:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1831,16 +1831,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 401:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1858,16 +1858,16 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
                 case 400:
-                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' === '\SplFileObject') {
+                    if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' === '\SplFileObject') {
                         $content = $response->getBody(); //stream goes to serializer
                     } else {
                         $content = (string) $response->getBody();
-                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1' !== 'string') {
+                        if ('\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response' !== 'string') {
                             try {
                                 $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
                             } catch (\JsonException $exception) {
@@ -1885,7 +1885,7 @@ class MethodCallApi
                     }
 
                     return [
-                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1', []),
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response', []),
                         $response->getStatusCode(),
                         $response->getHeaders()
                     ];
@@ -1904,7 +1904,7 @@ class MethodCallApi
                 );
             }
 
-            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
+            $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
             if ($returnType === '\SplFileObject') {
                 $content = $response->getBody(); //stream goes to serializer
             } else {
@@ -1937,7 +1937,7 @@ class MethodCallApi
                 case 200:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1945,7 +1945,7 @@ class MethodCallApi
                 case 401:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject2',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage401Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1953,7 +1953,7 @@ class MethodCallApi
                 case 400:
                     $data = ObjectSerializer::deserialize(
                         $e->getResponseBody(),
-                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject1',
+                        '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage400Response',
                         $e->getResponseHeaders()
                     );
                     $e->setResponseObject($data);
@@ -1970,15 +1970,15 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest|null $post_api_v1_method_call_user_presence_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallUserPresenceAsync($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
+    public function postApiV1MethodCallUserPresenceAsync($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
-        return $this->postApiV1MethodCallUserPresenceAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request, $contentType)
+        return $this->postApiV1MethodCallUserPresenceAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType)
             ->then(
                 function ($response) {
                     return $response[0];
@@ -1993,16 +1993,16 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest|null $post_api_v1_method_call_user_presence_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Promise\PromiseInterface
      */
-    public function postApiV1MethodCallUserPresenceAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
+    public function postApiV1MethodCallUserPresenceAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
-        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\InlineObject';
-        $request = $this->postApiV1MethodCallUserPresenceRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request, $contentType);
+        $returnType = '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200Response';
+        $request = $this->postApiV1MethodCallUserPresenceRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request, $contentType);
 
         return $this->client
             ->sendAsync($request, $this->createHttpClientOption())
@@ -2045,13 +2045,13 @@ class MethodCallApi
      *
      * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
      * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
-     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallUserPresenceRequest|null $post_api_v1_method_call_user_presence_request (optional)
+     * @param  \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest|null $post_api_v1_method_call_mute_user_in_room_request (optional)
      * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1MethodCallUserPresence'] to see the possible values for this operation
      *
      * @throws \InvalidArgumentException
      * @return \GuzzleHttp\Psr7\Request
      */
-    public function postApiV1MethodCallUserPresenceRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_user_presence_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
+    public function postApiV1MethodCallUserPresenceRequest($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request = null, string $contentType = self::contentTypes['postApiV1MethodCallUserPresence'][0])
     {
 
         // verify the required parameter 'x_auth_token' is set
@@ -2096,12 +2096,12 @@ class MethodCallApi
         );
 
         // for model (json/xml)
-        if (isset($post_api_v1_method_call_user_presence_request)) {
+        if (isset($post_api_v1_method_call_mute_user_in_room_request)) {
             if (stripos($headers['Content-Type'], 'application/json') !== false) {
                 # if Content-Type contains "application/json", json_encode the body
-                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($post_api_v1_method_call_user_presence_request));
+                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($post_api_v1_method_call_mute_user_in_room_request));
             } else {
-                $httpBody = $post_api_v1_method_call_user_presence_request;
+                $httpBody = $post_api_v1_method_call_mute_user_in_room_request;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {

@@ -56,10 +56,10 @@ $apiInstance = new WebMI\RocketChatApiClient\MethodCallApi\Api\MethodCallApi(
 );
 $x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
 $x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
-$body = 'body_example'; // string
+$post_api_v1_method_call_mute_user_in_room_request = new \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest(); // \WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallMuteUserInRoomRequest
 
 try {
-    $result = $apiInstance->postApiV1MethodCallDeleteFileMessage($x_auth_token, $x_user_id, $body);
+    $result = $apiInstance->postApiV1MethodCallDeleteFileMessage($x_auth_token, $x_user_id, $post_api_v1_method_call_mute_user_in_room_request);
     print_r($result);
 } catch (Exception $e) {
     echo 'Exception when calling MethodCallApi->postApiV1MethodCallDeleteFileMessage: ', $e->getMessage(), PHP_EOL;
@@ -81,11 +81,16 @@ Class | Method | HTTP request | Description
 
 ## Models
 
-- [InlineObject](docs/Model/InlineObject.md)
-- [InlineObject1](docs/Model/InlineObject1.md)
-- [InlineObject2](docs/Model/InlineObject2.md)
+- [MethodCallDeleteMessage](docs/Model/MethodCallDeleteMessage.md)
+- [MethodCallDeleteMessageParamsInner](docs/Model/MethodCallDeleteMessageParamsInner.md)
+- [MethodCallUnMuteUserInRoom](docs/Model/MethodCallUnMuteUserInRoom.md)
+- [MethodCallUnMuteUserInRoomParamsInner](docs/Model/MethodCallUnMuteUserInRoomParamsInner.md)
+- [MethodCallUserPresenceDefault](docs/Model/MethodCallUserPresenceDefault.md)
+- [MethodCallUserPresenceTemp](docs/Model/MethodCallUserPresenceTemp.md)
+- [PostApiV1MethodCallDeleteMessage200Response](docs/Model/PostApiV1MethodCallDeleteMessage200Response.md)
+- [PostApiV1MethodCallDeleteMessage400Response](docs/Model/PostApiV1MethodCallDeleteMessage400Response.md)
+- [PostApiV1MethodCallDeleteMessage401Response](docs/Model/PostApiV1MethodCallDeleteMessage401Response.md)
 - [PostApiV1MethodCallMuteUserInRoomRequest](docs/Model/PostApiV1MethodCallMuteUserInRoomRequest.md)
-- [PostApiV1MethodCallUserPresenceRequest](docs/Model/PostApiV1MethodCallUserPresenceRequest.md)
 
 ## Authorization
 Endpoints do not require authorization.
