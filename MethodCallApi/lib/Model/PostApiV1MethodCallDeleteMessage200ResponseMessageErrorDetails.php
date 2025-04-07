@@ -57,9 +57,7 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails implements 
       * @var string[]
       */
     protected static $openAPITypes = [
-        'method' => 'string',
-        'message' => 'string',
-        'error_type' => 'string'
+        'method' => 'string'
     ];
 
     /**
@@ -70,9 +68,7 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails implements 
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'method' => null,
-        'message' => null,
-        'error_type' => null
+        'method' => null
     ];
 
     /**
@@ -81,9 +77,7 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails implements 
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'method' => false,
-        'message' => false,
-        'error_type' => false
+        'method' => false
     ];
 
     /**
@@ -172,9 +166,7 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails implements 
      * @var string[]
      */
     protected static $attributeMap = [
-        'method' => 'method',
-        'message' => 'message',
-        'error_type' => 'errorType'
+        'method' => 'method'
     ];
 
     /**
@@ -183,9 +175,7 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails implements 
      * @var string[]
      */
     protected static $setters = [
-        'method' => 'set_method',
-        'message' => 'set_message',
-        'error_type' => 'set_error_type'
+        'method' => 'set_method'
     ];
 
     /**
@@ -194,9 +184,7 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails implements 
      * @var string[]
      */
     protected static $getters = [
-        'method' => 'get_method',
-        'message' => 'get_message',
-        'error_type' => 'get_error_type'
+        'method' => 'get_method'
     ];
 
     /**
@@ -257,8 +245,6 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails implements 
     public function __construct(?array $data = null)
     {
         $this->setIfExists('method', $data ?? [], null);
-        $this->setIfExists('message', $data ?? [], null);
-        $this->setIfExists('error_type', $data ?? [], null);
     }
 
     /**
@@ -326,60 +312,6 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails implements 
             throw new \InvalidArgumentException('non-nullable method cannot be null');
         }
         $this->container['method'] = $method;
-
-        return $this;
-    }
-
-    /**
-     * Gets message
-     *
-     * @return string|null
-     */
-    public function get_message()
-    {
-        return $this->container['message'];
-    }
-
-    /**
-     * Sets message
-     *
-     * @param string|null $message message
-     *
-     * @return self
-     */
-    public function set_message($message)
-    {
-        if (is_null($message)) {
-            throw new \InvalidArgumentException('non-nullable message cannot be null');
-        }
-        $this->container['message'] = $message;
-
-        return $this;
-    }
-
-    /**
-     * Gets error_type
-     *
-     * @return string|null
-     */
-    public function get_error_type()
-    {
-        return $this->container['error_type'];
-    }
-
-    /**
-     * Sets error_type
-     *
-     * @param string|null $error_type error_type
-     *
-     * @return self
-     */
-    public function set_error_type($error_type)
-    {
-        if (is_null($error_type)) {
-            throw new \InvalidArgumentException('non-nullable error_type cannot be null');
-        }
-        $this->container['error_type'] = $error_type;
 
         return $this;
     }

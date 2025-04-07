@@ -61,7 +61,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageError implements ModelIn
         'is_client_safe' => 'bool',
         'error' => 'string',
         'reason' => 'string',
-        'details' => '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails'
+        'details' => '\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails',
+        'message' => 'string',
+        'error_type' => 'string'
     ];
 
     /**
@@ -75,7 +77,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageError implements ModelIn
         'is_client_safe' => null,
         'error' => null,
         'reason' => null,
-        'details' => null
+        'details' => null,
+        'message' => null,
+        'error_type' => null
     ];
 
     /**
@@ -87,7 +91,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageError implements ModelIn
         'is_client_safe' => false,
         'error' => false,
         'reason' => false,
-        'details' => false
+        'details' => false,
+        'message' => false,
+        'error_type' => false
     ];
 
     /**
@@ -179,7 +185,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageError implements ModelIn
         'is_client_safe' => 'isClientSafe',
         'error' => 'error',
         'reason' => 'reason',
-        'details' => 'details'
+        'details' => 'details',
+        'message' => 'message',
+        'error_type' => 'errorType'
     ];
 
     /**
@@ -191,7 +199,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageError implements ModelIn
         'is_client_safe' => 'set_is_client_safe',
         'error' => 'set_error',
         'reason' => 'set_reason',
-        'details' => 'set_details'
+        'details' => 'set_details',
+        'message' => 'set_message',
+        'error_type' => 'set_error_type'
     ];
 
     /**
@@ -203,7 +213,9 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageError implements ModelIn
         'is_client_safe' => 'get_is_client_safe',
         'error' => 'get_error',
         'reason' => 'get_reason',
-        'details' => 'get_details'
+        'details' => 'get_details',
+        'message' => 'get_message',
+        'error_type' => 'get_error_type'
     ];
 
     /**
@@ -267,6 +279,8 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageError implements ModelIn
         $this->setIfExists('error', $data ?? [], null);
         $this->setIfExists('reason', $data ?? [], null);
         $this->setIfExists('details', $data ?? [], null);
+        $this->setIfExists('message', $data ?? [], null);
+        $this->setIfExists('error_type', $data ?? [], null);
     }
 
     /**
@@ -415,6 +429,60 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageError implements ModelIn
             throw new \InvalidArgumentException('non-nullable details cannot be null');
         }
         $this->container['details'] = $details;
+
+        return $this;
+    }
+
+    /**
+     * Gets message
+     *
+     * @return string|null
+     */
+    public function get_message()
+    {
+        return $this->container['message'];
+    }
+
+    /**
+     * Sets message
+     *
+     * @param string|null $message message
+     *
+     * @return self
+     */
+    public function set_message($message)
+    {
+        if (is_null($message)) {
+            throw new \InvalidArgumentException('non-nullable message cannot be null');
+        }
+        $this->container['message'] = $message;
+
+        return $this;
+    }
+
+    /**
+     * Gets error_type
+     *
+     * @return string|null
+     */
+    public function get_error_type()
+    {
+        return $this->container['error_type'];
+    }
+
+    /**
+     * Sets error_type
+     *
+     * @param string|null $error_type error_type
+     *
+     * @return self
+     */
+    public function set_error_type($error_type)
+    {
+        if (is_null($error_type)) {
+            throw new \InvalidArgumentException('non-nullable error_type cannot be null');
+        }
+        $this->container['error_type'] = $error_type;
 
         return $this;
     }

@@ -8,5 +8,7 @@ Name | Type | Description | Notes
 **error** | **string** |  | [optional]
 **reason** | **string** |  | [optional]
 **details** | [**\WebMI\RocketChatApiClient\MethodCallApi\Model\PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails**](PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetails.md) |  | [optional]
+**message** | **string** |  | [optional]
+**error_type** | **string** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

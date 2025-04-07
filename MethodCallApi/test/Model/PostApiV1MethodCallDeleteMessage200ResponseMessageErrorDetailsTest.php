@@ -87,22 +87,4 @@ class PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetailsTest extends
         // TODO: implement
         self::markTestIncomplete('Not implemented');
     }
-
-    /**
-     * Test attribute "message"
-     */
-    public function testPropertyMessage()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "error_type"
-     */
-    public function testPropertyErrorType()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
 }
