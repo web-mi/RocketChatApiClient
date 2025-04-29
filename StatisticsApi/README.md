@@ -185,16 +185,14 @@ Class | Method | HTTP request | Description
 - [GetApiV1StatisticsList400Response](docs/Model/GetApiV1StatisticsList400Response.md)
 - [GetApiV1StatisticsList401Response](docs/Model/GetApiV1StatisticsList401Response.md)
 - [GetApiV1SubscriptionsGet200Response](docs/Model/GetApiV1SubscriptionsGet200Response.md)
-- [GetApiV1SubscriptionsGet200ResponseUpdateInner](docs/Model/GetApiV1SubscriptionsGet200ResponseUpdateInner.md)
-- [GetApiV1SubscriptionsGet200ResponseUpdateInnerU](docs/Model/GetApiV1SubscriptionsGet200ResponseUpdateInnerU.md)
 - [GetApiV1SubscriptionsGetOne200Response](docs/Model/GetApiV1SubscriptionsGetOne200Response.md)
-- [GetApiV1SubscriptionsGetOne200ResponseSubscription](docs/Model/GetApiV1SubscriptionsGetOne200ResponseSubscription.md)
-- [GetApiV1SubscriptionsGetOne200ResponseSubscriptionU](docs/Model/GetApiV1SubscriptionsGetOne200ResponseSubscriptionU.md)
 - [GetApiV1SubscriptionsGetOne400Response](docs/Model/GetApiV1SubscriptionsGetOne400Response.md)
 - [PostApiV1SubscriptionsRead200Response](docs/Model/PostApiV1SubscriptionsRead200Response.md)
 - [PostApiV1SubscriptionsReadRequest](docs/Model/PostApiV1SubscriptionsReadRequest.md)
 - [PostApiV1SubscriptionsUnreadRequest](docs/Model/PostApiV1SubscriptionsUnreadRequest.md)
 - [PostApiV1SubscriptionsUnreadRequestFirstUnreadMessage](docs/Model/PostApiV1SubscriptionsUnreadRequestFirstUnreadMessage.md)
+- [Subscription](docs/Model/Subscription.md)
+- [SubscriptionU](docs/Model/SubscriptionU.md)
 
 ## Authorization
 Endpoints do not require authorization.

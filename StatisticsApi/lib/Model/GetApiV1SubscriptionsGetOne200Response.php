@@ -57,7 +57,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
       * @var string[]
       */
     protected static $openAPITypes = [
-        'subscription' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription',
+        'subscription' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\Subscription',
         'success' => 'bool'
     ];
 
@@ -299,7 +299,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
     /**
      * Gets subscription
      *
-     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null
+     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\Subscription|null
      */
     public function get_subscription()
     {
@@ -309,7 +309,7 @@ class GetApiV1SubscriptionsGetOne200Response implements ModelInterface, ArrayAcc
     /**
      * Sets subscription
      *
-     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\GetApiV1SubscriptionsGetOne200ResponseSubscription|null $subscription subscription
+     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\Subscription|null $subscription subscription
      *
      * @return self
      */

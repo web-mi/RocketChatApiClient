@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV1SubscriptionsGet200Response
+ * SubscriptionU
  *
  * PHP version 8.1
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
 
 /**
- * GetApiV1SubscriptionsGet200Response Class Doc Comment
+ * SubscriptionU Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\StatisticsApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\StatisticsApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess, \JsonSerializable
+class SubscriptionU implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v1_subscriptions_get_200_response';
+    protected static $openAPIModelName = 'Subscription_u';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,9 +57,9 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
       * @var string[]
       */
     protected static $openAPITypes = [
-        'update' => '\WebMI\RocketChatApiClient\StatisticsApi\Model\Subscription[]',
-        'remove' => 'object[]',
-        'success' => 'bool'
+        '_id' => 'string',
+        'username' => 'string',
+        'name' => 'string'
     ];
 
     /**
@@ -70,9 +70,9 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'update' => null,
-        'remove' => null,
-        'success' => null
+        '_id' => null,
+        'username' => null,
+        'name' => null
     ];
 
     /**
@@ -81,9 +81,9 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'update' => false,
-        'remove' => false,
-        'success' => false
+        '_id' => false,
+        'username' => false,
+        'name' => false
     ];
 
     /**
@@ -172,9 +172,9 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $attributeMap = [
-        'update' => 'update',
-        'remove' => 'remove',
-        'success' => 'success'
+        '_id' => '_id',
+        'username' => 'username',
+        'name' => 'name'
     ];
 
     /**
@@ -183,9 +183,9 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $setters = [
-        'update' => 'set_update',
-        'remove' => 'set_remove',
-        'success' => 'set_success'
+        '_id' => 'set__id',
+        'username' => 'set_username',
+        'name' => 'set_name'
     ];
 
     /**
@@ -194,9 +194,9 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
      * @var string[]
      */
     protected static $getters = [
-        'update' => 'get_update',
-        'remove' => 'get_remove',
-        'success' => 'get_success'
+        '_id' => 'get__id',
+        'username' => 'get_username',
+        'name' => 'get_name'
     ];
 
     /**
@@ -256,9 +256,9 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('update', $data ?? [], null);
-        $this->setIfExists('remove', $data ?? [], null);
-        $this->setIfExists('success', $data ?? [], null);
+        $this->setIfExists('_id', $data ?? [], null);
+        $this->setIfExists('username', $data ?? [], null);
+        $this->setIfExists('name', $data ?? [], null);
     }
 
     /**
@@ -304,82 +304,82 @@ class GetApiV1SubscriptionsGet200Response implements ModelInterface, ArrayAccess
 
 
     /**
-     * Gets update
+     * Gets _id
      *
-     * @return \WebMI\RocketChatApiClient\StatisticsApi\Model\Subscription[]|null
+     * @return string|null
      */
-    public function get_update()
+    public function get__id()
     {
-        return $this->container['update'];
+        return $this->container['_id'];
     }
 
     /**
-     * Sets update
+     * Sets _id
      *
-     * @param \WebMI\RocketChatApiClient\StatisticsApi\Model\Subscription[]|null $update update
+     * @param string|null $_id _id
      *
      * @return self
      */
-    public function set_update($update)
+    public function set__id($_id)
     {
-        if (is_null($update)) {
-            throw new \InvalidArgumentException('non-nullable update cannot be null');
+        if (is_null($_id)) {
+            throw new \InvalidArgumentException('non-nullable _id cannot be null');
         }
-        $this->container['update'] = $update;
+        $this->container['_id'] = $_id;
 
         return $this;
     }
 
     /**
-     * Gets remove
+     * Gets username
      *
-     * @return object[]|null
+     * @return string|null
      */
-    public function get_remove()
+    public function get_username()
     {
-        return $this->container['remove'];
+        return $this->container['username'];
     }
 
     /**
-     * Sets remove
+     * Sets username
      *
-     * @param object[]|null $remove remove
+     * @param string|null $username username
      *
      * @return self
      */
-    public function set_remove($remove)
+    public function set_username($username)
     {
-        if (is_null($remove)) {
-            throw new \InvalidArgumentException('non-nullable remove cannot be null');
+        if (is_null($username)) {
+            throw new \InvalidArgumentException('non-nullable username cannot be null');
         }
-        $this->container['remove'] = $remove;
+        $this->container['username'] = $username;
 
         return $this;
     }
 
     /**
-     * Gets success
+     * Gets name
      *
-     * @return bool|null
+     * @return string|null
      */
-    public function get_success()
+    public function get_name()
     {
-        return $this->container['success'];
+        return $this->container['name'];
     }
 
     /**
-     * Sets success
+     * Sets name
      *
-     * @param bool|null $success success
+     * @param string|null $name name
      *
      * @return self
      */
-    public function set_success($success)
+    public function set_name($name)
     {
-        if (is_null($success)) {
-            throw new \InvalidArgumentException('non-nullable success cannot be null');
+        if (is_null($name)) {
+            throw new \InvalidArgumentException('non-nullable name cannot be null');
         }
-        $this->container['success'] = $success;
+        $this->container['name'] = $name;
 
         return $this;
     }

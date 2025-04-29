@@ -1,5 +1,4 @@
 .gitignore
-.openapi-generator-ignore
 .php-cs-fixer.dist.php
 .travis.yml
 README.md
@@ -39,17 +38,3 @@ lib/Model/PostApiV1MethodCallDeleteMessage401Response.php
 lib/Model/PostApiV1MethodCallMuteUserInRoomRequest.php
 lib/ObjectSerializer.php
 phpunit.xml.dist
-test/Api/MethodCallApiTest.php
-test/Model/MethodCallDeleteMessageParamsInnerTest.php
-test/Model/MethodCallDeleteMessageTest.php
-test/Model/MethodCallUnMuteUserInRoomParamsInnerTest.php
-test/Model/MethodCallUnMuteUserInRoomTest.php
-test/Model/MethodCallUserPresenceDefaultTest.php
-test/Model/MethodCallUserPresenceTempTest.php
-test/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageErrorDetailsTest.php
-test/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageErrorTest.php
-test/Model/PostApiV1MethodCallDeleteMessage200ResponseMessageTest.php
-test/Model/PostApiV1MethodCallDeleteMessage200ResponseTest.php
-test/Model/PostApiV1MethodCallDeleteMessage400ResponseTest.php
-test/Model/PostApiV1MethodCallDeleteMessage401ResponseTest.php
-test/Model/PostApiV1MethodCallMuteUserInRoomRequestTest.php
