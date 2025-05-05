@@ -18,6 +18,8 @@ Name | Type | Description | Notes
 **t** | **string** |  | [optional]
 **groupable** | **bool** |  | [optional]
 **attachments** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]**](Attachment.md) |  | [optional]
+**files** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\File[]**](File.md) |  | [optional]
+**file** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\File**](File.md) |  | [optional]
 **unread** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

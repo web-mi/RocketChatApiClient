@@ -65,7 +65,7 @@ class LastMessage implements ModelInterface, ArrayAccess, \JsonSerializable
         'msg' => 'string',
         'alias' => 'string',
         'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]',
-        'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile',
+        'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\File',
         'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         'groupable' => 'bool',
         'drid' => 'string',
@@ -566,7 +566,7 @@ class LastMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets file
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\File|null
      */
     public function get_file()
     {
@@ -576,7 +576,7 @@ class LastMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets file
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile|null $file file
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\File|null $file file
      *
      * @return self
      */

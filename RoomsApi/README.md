@@ -209,6 +209,7 @@ Class | Method | HTTP request | Description
 
 - [Attachment](docs/Model/Attachment.md)
 - [Channel](docs/Model/Channel.md)
+- [File](docs/Model/File.md)
 - [GetApiV1AuditRoomsMembers200Response](docs/Model/GetApiV1AuditRoomsMembers200Response.md)
 - [GetApiV1AuditRoomsMembers200ResponseMembersInner](docs/Model/GetApiV1AuditRoomsMembers200ResponseMembersInner.md)
 - [GetApiV1ChannelsAnonymousread200Response](docs/Model/GetApiV1ChannelsAnonymousread200Response.md)
@@ -278,7 +279,6 @@ Class | Method | HTTP request | Description
 - [GetApiV1RoomsGet200Response](docs/Model/GetApiV1RoomsGet200Response.md)
 - [GetApiV1RoomsGet200ResponseUpdateInner](docs/Model/GetApiV1RoomsGet200ResponseUpdateInner.md)
 - [GetApiV1RoomsGet200ResponseUpdateInnerLastMessage](docs/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessage.md)
-- [GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile](docs/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile.md)
 - [GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner](docs/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner.md)
 - [GetApiV1RoomsGetDiscussions200Response](docs/Model/GetApiV1RoomsGetDiscussions200Response.md)
 - [GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner](docs/Model/GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner.md)

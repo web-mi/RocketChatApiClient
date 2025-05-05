@@ -11,6 +11,7 @@ docs/Api/RoomsApi.md
 docs/Api/TeamsApi.md
 docs/Model/Attachment.md
 docs/Model/Channel.md
+docs/Model/File.md
 docs/Model/GetApiV1AuditRoomsMembers200Response.md
 docs/Model/GetApiV1AuditRoomsMembers200ResponseMembersInner.md
 docs/Model/GetApiV1ChannelsAnonymousread200Response.md
@@ -80,7 +81,6 @@ docs/Model/GetApiV1RoomsDeleteRequest.md
 docs/Model/GetApiV1RoomsGet200Response.md
 docs/Model/GetApiV1RoomsGet200ResponseUpdateInner.md
 docs/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessage.md
-docs/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile.md
 docs/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner.md
 docs/Model/GetApiV1RoomsGetDiscussions200Response.md
 docs/Model/GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner.md
@@ -264,6 +264,7 @@ lib/Configuration.php
 lib/HeaderSelector.php
 lib/Model/Attachment.php
 lib/Model/Channel.php
+lib/Model/File.php
 lib/Model/GetApiV1AuditRoomsMembers200Response.php
 lib/Model/GetApiV1AuditRoomsMembers200ResponseMembersInner.php
 lib/Model/GetApiV1ChannelsAnonymousread200Response.php
@@ -333,7 +334,6 @@ lib/Model/GetApiV1RoomsDeleteRequest.php
 lib/Model/GetApiV1RoomsGet200Response.php
 lib/Model/GetApiV1RoomsGet200ResponseUpdateInner.php
 lib/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessage.php
-lib/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile.php
 lib/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInner.php
 lib/Model/GetApiV1RoomsGetDiscussions200Response.php
 lib/Model/GetApiV1RoomsGetDiscussions200ResponseDiscussionsInner.php
@@ -516,6 +516,7 @@ test/Api/RoomsApiTest.php
 test/Api/TeamsApiTest.php
 test/Model/AttachmentTest.php
 test/Model/ChannelTest.php
+test/Model/FileTest.php
 test/Model/GetApiV1AuditRoomsMembers200ResponseMembersInnerTest.php
 test/Model/GetApiV1AuditRoomsMembers200ResponseTest.php
 test/Model/GetApiV1ChannelsAnonymousread200ResponseMessagesInnerBlocksInnerTest.php
@@ -583,7 +584,6 @@ test/Model/GetApiV1RoomsAutocompleteAvailableForTeams200ResponseTest.php
 test/Model/GetApiV1RoomsCleanHistoryRequestTest.php
 test/Model/GetApiV1RoomsDeleteRequestTest.php
 test/Model/GetApiV1RoomsGet200ResponseTest.php
-test/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFileTest.php
 test/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageTest.php
 test/Model/GetApiV1RoomsGet200ResponseUpdateInnerLastMessageUrlsInnerTest.php
 test/Model/GetApiV1RoomsGet200ResponseUpdateInnerTest.php

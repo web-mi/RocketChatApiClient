@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFileTest
+ * FileTest
  *
  * PHP version 8.1
  *
@@ -31,15 +31,15 @@ namespace WebMI\RocketChatApiClient\RoomsApi\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFileTest Class Doc Comment
+ * FileTest Class Doc Comment
  *
  * @category    Class
- * @description GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile
+ * @description File
  * @package     WebMI\RocketChatApiClient\RoomsApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFileTest extends TestCase
+class FileTest extends TestCase
 {
 
     /**
@@ -71,9 +71,9 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFileTest extends TestCase
     }
 
     /**
-     * Test "GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile"
+     * Test "File"
      */
-    public function testGetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile()
+    public function testFile()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');

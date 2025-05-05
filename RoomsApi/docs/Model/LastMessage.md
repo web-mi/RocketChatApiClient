@@ -11,7 +11,7 @@ Name | Type | Description | Notes
 **msg** | **string** |  | [optional]
 **alias** | **string** |  | [optional]
 **attachments** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]**](Attachment.md) |  | [optional]
-**file** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile**](GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile.md) |  | [optional]
+**file** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\File**](File.md) |  | [optional]
 **u** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU**](PostApiV1ChannelsCreate200ResponseChannelU.md) |  | [optional]
 **groupable** | **bool** |  | [optional]
 **drid** | **string** |  | [optional]

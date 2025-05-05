@@ -61,8 +61,8 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
         'rid' => 'string',
         'ts' => 'string',
         'msg' => 'string',
-        'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile',
-        'files' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile[]',
+        'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\File',
+        'files' => '\WebMI\RocketChatApiClient\RoomsApi\Model\File[]',
         'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]',
         'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         '_updated_at' => 'string',
@@ -470,7 +470,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets file
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\File|null
      */
     public function get_file()
     {
@@ -480,7 +480,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets file
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile|null $file file
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\File|null $file file
      *
      * @return self
      */
@@ -497,7 +497,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets files
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\File[]|null
      */
     public function get_files()
     {
@@ -507,7 +507,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets files
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile[]|null $files files
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\File[]|null $files files
      *
      * @return self
      */

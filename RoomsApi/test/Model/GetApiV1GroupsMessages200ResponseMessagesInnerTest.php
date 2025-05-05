@@ -206,6 +206,24 @@ class GetApiV1GroupsMessages200ResponseMessagesInnerTest extends TestCase
     }
 
     /**
+     * Test attribute "files"
+     */
+    public function testPropertyFiles()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "file"
+     */
+    public function testPropertyFile()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
      * Test attribute "unread"
      */
     public function testPropertyUnread()

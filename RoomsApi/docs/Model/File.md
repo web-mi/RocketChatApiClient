@@ -1,4 +1,4 @@
-# # GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile
+# # File
 
 ## Properties
 

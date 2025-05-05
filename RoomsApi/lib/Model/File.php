@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile
+ * File
  *
  * PHP version 8.1
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
- * GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile Class Doc Comment
+ * File Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\RoomsApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile implements ModelInterface, ArrayAccess, \JsonSerializable
+class File implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile implements ModelInte
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v1_rooms_get_200_response_update_inner_lastMessage_file';
+    protected static $openAPIModelName = 'File';
 
     /**
       * Array of property to type mappings. Used for (de)serialization

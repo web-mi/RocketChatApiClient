@@ -71,6 +71,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         't' => 'string',
         'groupable' => 'bool',
         'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]',
+        'files' => '\WebMI\RocketChatApiClient\RoomsApi\Model\File[]',
+        'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\File',
         'unread' => 'bool'
     ];
 
@@ -96,6 +98,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         't' => null,
         'groupable' => null,
         'attachments' => null,
+        'files' => null,
+        'file' => null,
         'unread' => null
     ];
 
@@ -119,6 +123,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         't' => false,
         'groupable' => false,
         'attachments' => false,
+        'files' => false,
+        'file' => false,
         'unread' => false
     ];
 
@@ -222,6 +228,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         't' => 't',
         'groupable' => 'groupable',
         'attachments' => 'attachments',
+        'files' => 'files',
+        'file' => 'file',
         'unread' => 'unread'
     ];
 
@@ -245,6 +253,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         't' => 'set_t',
         'groupable' => 'set_groupable',
         'attachments' => 'set_attachments',
+        'files' => 'set_files',
+        'file' => 'set_file',
         'unread' => 'set_unread'
     ];
 
@@ -268,6 +278,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         't' => 'get_t',
         'groupable' => 'get_groupable',
         'attachments' => 'get_attachments',
+        'files' => 'get_files',
+        'file' => 'get_file',
         'unread' => 'get_unread'
     ];
 
@@ -342,6 +354,8 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
         $this->setIfExists('t', $data ?? [], null);
         $this->setIfExists('groupable', $data ?? [], null);
         $this->setIfExists('attachments', $data ?? [], null);
+        $this->setIfExists('files', $data ?? [], null);
+        $this->setIfExists('file', $data ?? [], null);
         $this->setIfExists('unread', $data ?? [], null);
     }
 
@@ -768,6 +782,60 @@ class GetApiV1GroupsMessages200ResponseMessagesInner implements ModelInterface, 
             throw new \InvalidArgumentException('non-nullable attachments cannot be null');
         }
         $this->container['attachments'] = $attachments;
+
+        return $this;
+    }
+
+    /**
+     * Gets files
+     *
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\File[]|null
+     */
+    public function get_files()
+    {
+        return $this->container['files'];
+    }
+
+    /**
+     * Sets files
+     *
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\File[]|null $files files
+     *
+     * @return self
+     */
+    public function set_files($files)
+    {
+        if (is_null($files)) {
+            throw new \InvalidArgumentException('non-nullable files cannot be null');
+        }
+        $this->container['files'] = $files;
+
+        return $this;
+    }
+
+    /**
+     * Gets file
+     *
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\File|null
+     */
+    public function get_file()
+    {
+        return $this->container['file'];
+    }
+
+    /**
+     * Sets file
+     *
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\File|null $file file
+     *
+     * @return self
+     */
+    public function set_file($file)
+    {
+        if (is_null($file)) {
+            throw new \InvalidArgumentException('non-nullable file cannot be null');
+        }
+        $this->container['file'] = $file;
 
         return $this;
     }
