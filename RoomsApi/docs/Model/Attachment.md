@@ -1,4 +1,4 @@
-# # GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner
+# # Attachment
 
 ## Properties
 

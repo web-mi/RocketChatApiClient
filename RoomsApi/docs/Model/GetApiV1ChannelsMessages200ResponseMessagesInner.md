@@ -17,7 +17,7 @@ Name | Type | Description | Notes
 **replies** | **string[]** |  | [optional]
 **tcount** | **int** |  | [optional]
 **tlm** | **string** |  | [optional]
-**attachments** | **object[]** |  | [optional]
+**attachments** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]**](Attachment.md) |  | [optional]
 **edited_at** | **string** |  | [optional]
 **edited_by** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU**](PostApiV1ChannelsAddAll200ResponseChannelU.md) |  | [optional]
 **reactions** | **object** |  | [optional]

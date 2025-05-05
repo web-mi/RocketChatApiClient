@@ -125,6 +125,9 @@ class RoomsApi
         'postApiV1RoomsFavorite' => [
             'application/json',
         ],
+        'postApiV1RoomsHide' => [
+            'application/json',
+        ],
         'postApiV1RoomsLeave' => [
             'application/json',
         ],
@@ -7614,6 +7617,409 @@ class RoomsApi
                 $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($post_api_v1_rooms_favorite_request));
             } else {
                 $httpBody = $post_api_v1_rooms_favorite_request;
+            }
+        } elseif (count($formParams) > 0) {
+            if ($multipart) {
+                $multipartContents = [];
+                foreach ($formParams as $formParamName => $formParamValue) {
+                    $formParamValueItems = is_array($formParamValue) ? $formParamValue : [$formParamValue];
+                    foreach ($formParamValueItems as $formParamValueItem) {
+                        $multipartContents[] = [
+                            'name' => $formParamName,
+                            'contents' => $formParamValueItem
+                        ];
+                    }
+                }
+                // for HTTP post (form)
+                $httpBody = new MultipartStream($multipartContents);
+
+            } elseif (stripos($headers['Content-Type'], 'application/json') !== false) {
+                # if Content-Type contains "application/json", json_encode the form parameters
+                $httpBody = \GuzzleHttp\Utils::jsonEncode($formParams);
+            } else {
+                // for HTTP post (form)
+                $httpBody = ObjectSerializer::buildQuery($formParams);
+            }
+        }
+
+
+        $defaultHeaders = [];
+        if ($this->config->getUserAgent()) {
+            $defaultHeaders['User-Agent'] = $this->config->getUserAgent();
+        }
+
+        $headers = array_merge(
+            $defaultHeaders,
+            $headerParams,
+            $headers
+        );
+
+        $operationHost = $this->config->getHost();
+        $query = ObjectSerializer::buildQuery($queryParams);
+        return new Request(
+            'POST',
+            $operationHost . $resourcePath . ($query ? "?{$query}" : ''),
+            $headers,
+            $httpBody
+        );
+    }
+
+    /**
+     * Operation postApiV1RoomsHide
+     *
+     * Hide Room
+     *
+     * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
+     * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHideRequest|null $post_api_v1_rooms_hide_request post_api_v1_rooms_hide_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1RoomsHide'] to see the possible values for this operation
+     *
+     * @throws \WebMI\RocketChatApiClient\RoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \InvalidArgumentException
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response|\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide400Response|\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide401Response
+     */
+    public function postApiV1RoomsHide($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request = null, string $contentType = self::contentTypes['postApiV1RoomsHide'][0])
+    {
+        list($response) = $this->postApiV1RoomsHideWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request, $contentType);
+        return $response;
+    }
+
+    /**
+     * Operation postApiV1RoomsHideWithHttpInfo
+     *
+     * Hide Room
+     *
+     * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
+     * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHideRequest|null $post_api_v1_rooms_hide_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1RoomsHide'] to see the possible values for this operation
+     *
+     * @throws \WebMI\RocketChatApiClient\RoomsApi\ApiException on non-2xx response or if the response body is not in the expected format
+     * @throws \InvalidArgumentException
+     * @return array of \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response|\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide400Response|\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide401Response, HTTP status code, HTTP response headers (array of strings)
+     */
+    public function postApiV1RoomsHideWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request = null, string $contentType = self::contentTypes['postApiV1RoomsHide'][0])
+    {
+        $request = $this->postApiV1RoomsHideRequest($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request, $contentType);
+
+        try {
+            $options = $this->createHttpClientOption();
+            try {
+                $response = $this->client->send($request, $options);
+            } catch (RequestException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    (int) $e->getCode(),
+                    $e->getResponse() ? $e->getResponse()->getHeaders() : null,
+                    $e->getResponse() ? (string) $e->getResponse()->getBody() : null
+                );
+            } catch (ConnectException $e) {
+                throw new ApiException(
+                    "[{$e->getCode()}] {$e->getMessage()}",
+                    (int) $e->getCode(),
+                    null,
+                    null
+                );
+            }
+
+            $statusCode = $response->getStatusCode();
+
+
+            switch($statusCode) {
+                case 200:
+                    if ('\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                        if ('\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response' !== 'string') {
+                            try {
+                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
+                            } catch (\JsonException $exception) {
+                                throw new ApiException(
+                                    sprintf(
+                                        'Error JSON decoding server response (%s)',
+                                        $request->getUri()
+                                    ),
+                                    $statusCode,
+                                    $response->getHeaders(),
+                                    $content
+                                );
+                            }
+                        }
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 400:
+                    if ('\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide400Response' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                        if ('\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide400Response' !== 'string') {
+                            try {
+                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
+                            } catch (\JsonException $exception) {
+                                throw new ApiException(
+                                    sprintf(
+                                        'Error JSON decoding server response (%s)',
+                                        $request->getUri()
+                                    ),
+                                    $statusCode,
+                                    $response->getHeaders(),
+                                    $content
+                                );
+                            }
+                        }
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide400Response', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                case 401:
+                    if ('\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide401Response' === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                        if ('\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide401Response' !== 'string') {
+                            try {
+                                $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
+                            } catch (\JsonException $exception) {
+                                throw new ApiException(
+                                    sprintf(
+                                        'Error JSON decoding server response (%s)',
+                                        $request->getUri()
+                                    ),
+                                    $statusCode,
+                                    $response->getHeaders(),
+                                    $content
+                                );
+                            }
+                        }
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide401Response', []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+            }
+
+            if ($statusCode < 200 || $statusCode > 299) {
+                throw new ApiException(
+                    sprintf(
+                        '[%d] Error connecting to the API (%s)',
+                        $statusCode,
+                        (string) $request->getUri()
+                    ),
+                    $statusCode,
+                    $response->getHeaders(),
+                    (string) $response->getBody()
+                );
+            }
+
+            $returnType = '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response';
+            if ($returnType === '\SplFileObject') {
+                $content = $response->getBody(); //stream goes to serializer
+            } else {
+                $content = (string) $response->getBody();
+                if ($returnType !== 'string') {
+                    try {
+                        $content = json_decode($content, false, 512, JSON_THROW_ON_ERROR);
+                    } catch (\JsonException $exception) {
+                        throw new ApiException(
+                            sprintf(
+                                'Error JSON decoding server response (%s)',
+                                $request->getUri()
+                            ),
+                            $statusCode,
+                            $response->getHeaders(),
+                            $content
+                        );
+                    }
+                }
+            }
+
+            return [
+                ObjectSerializer::deserialize($content, $returnType, []),
+                $response->getStatusCode(),
+                $response->getHeaders()
+            ];
+
+        } catch (ApiException $e) {
+            switch ($e->getCode()) {
+                case 200:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 400:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide400Response',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+                case 401:
+                    $data = ObjectSerializer::deserialize(
+                        $e->getResponseBody(),
+                        '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide401Response',
+                        $e->getResponseHeaders()
+                    );
+                    $e->setResponseObject($data);
+                    break;
+            }
+            throw $e;
+        }
+    }
+
+    /**
+     * Operation postApiV1RoomsHideAsync
+     *
+     * Hide Room
+     *
+     * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
+     * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHideRequest|null $post_api_v1_rooms_hide_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1RoomsHide'] to see the possible values for this operation
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function postApiV1RoomsHideAsync($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request = null, string $contentType = self::contentTypes['postApiV1RoomsHide'][0])
+    {
+        return $this->postApiV1RoomsHideAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request, $contentType)
+            ->then(
+                function ($response) {
+                    return $response[0];
+                }
+            );
+    }
+
+    /**
+     * Operation postApiV1RoomsHideAsyncWithHttpInfo
+     *
+     * Hide Room
+     *
+     * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
+     * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHideRequest|null $post_api_v1_rooms_hide_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1RoomsHide'] to see the possible values for this operation
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Promise\PromiseInterface
+     */
+    public function postApiV1RoomsHideAsyncWithHttpInfo($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request = null, string $contentType = self::contentTypes['postApiV1RoomsHide'][0])
+    {
+        $returnType = '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response';
+        $request = $this->postApiV1RoomsHideRequest($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request, $contentType);
+
+        return $this->client
+            ->sendAsync($request, $this->createHttpClientOption())
+            ->then(
+                function ($response) use ($returnType) {
+                    if ($returnType === '\SplFileObject') {
+                        $content = $response->getBody(); //stream goes to serializer
+                    } else {
+                        $content = (string) $response->getBody();
+                        if ($returnType !== 'string') {
+                            $content = json_decode($content);
+                        }
+                    }
+
+                    return [
+                        ObjectSerializer::deserialize($content, $returnType, []),
+                        $response->getStatusCode(),
+                        $response->getHeaders()
+                    ];
+                },
+                function ($exception) {
+                    $response = $exception->getResponse();
+                    $statusCode = $response->getStatusCode();
+                    throw new ApiException(
+                        sprintf(
+                            '[%d] Error connecting to the API (%s)',
+                            $statusCode,
+                            $exception->getRequest()->getUri()
+                        ),
+                        $statusCode,
+                        $response->getHeaders(),
+                        (string) $response->getBody()
+                    );
+                }
+            );
+    }
+
+    /**
+     * Create request for operation 'postApiV1RoomsHide'
+     *
+     * @param  string $x_auth_token The &#x60;authToken&#x60; of the authenticated user. (required)
+     * @param  string $x_user_id The &#x60;userId&#x60; of the authenticated user. (required)
+     * @param  \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHideRequest|null $post_api_v1_rooms_hide_request (optional)
+     * @param  string $contentType The value for the Content-Type header. Check self::contentTypes['postApiV1RoomsHide'] to see the possible values for this operation
+     *
+     * @throws \InvalidArgumentException
+     * @return \GuzzleHttp\Psr7\Request
+     */
+    public function postApiV1RoomsHideRequest($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request = null, string $contentType = self::contentTypes['postApiV1RoomsHide'][0])
+    {
+
+        // verify the required parameter 'x_auth_token' is set
+        if ($x_auth_token === null || (is_array($x_auth_token) && count($x_auth_token) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $x_auth_token when calling postApiV1RoomsHide'
+            );
+        }
+
+        // verify the required parameter 'x_user_id' is set
+        if ($x_user_id === null || (is_array($x_user_id) && count($x_user_id) === 0)) {
+            throw new \InvalidArgumentException(
+                'Missing the required parameter $x_user_id when calling postApiV1RoomsHide'
+            );
+        }
+
+
+
+        $resourcePath = '/api/v1/rooms.hide';
+        $formParams = [];
+        $queryParams = [];
+        $headerParams = [];
+        $httpBody = '';
+        $multipart = false;
+
+
+        // header params
+        if ($x_auth_token !== null) {
+            $headerParams['X-Auth-Token'] = ObjectSerializer::toHeaderValue($x_auth_token);
+        }
+        // header params
+        if ($x_user_id !== null) {
+            $headerParams['X-User-Id'] = ObjectSerializer::toHeaderValue($x_user_id);
+        }
+
+
+
+        $headers = $this->headerSelector->selectHeaders(
+            ['application/json', ],
+            $contentType,
+            $multipart
+        );
+
+        // for model (json/xml)
+        if (isset($post_api_v1_rooms_hide_request)) {
+            if (stripos($headers['Content-Type'], 'application/json') !== false) {
+                # if Content-Type contains "application/json", json_encode the body
+                $httpBody = \GuzzleHttp\Utils::jsonEncode(ObjectSerializer::sanitizeForSerialization($post_api_v1_rooms_hide_request));
+            } else {
+                $httpBody = $post_api_v1_rooms_hide_request;
             }
         } elseif (count($formParams) > 0) {
             if ($multipart) {

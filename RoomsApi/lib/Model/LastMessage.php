@@ -64,7 +64,7 @@ class LastMessage implements ModelInterface, ArrayAccess, \JsonSerializable
         'ts' => 'string',
         'msg' => 'string',
         'alias' => 'string',
-        'attachments' => 'object[]',
+        'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]',
         'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile',
         'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         'groupable' => 'bool',
@@ -539,7 +539,7 @@ class LastMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Gets attachments
      *
-     * @return object[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null
      */
     public function get_attachments()
     {
@@ -549,7 +549,7 @@ class LastMessage implements ModelInterface, ArrayAccess, \JsonSerializable
     /**
      * Sets attachments
      *
-     * @param object[]|null $attachments attachments
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null $attachments attachments
      *
      * @return self
      */

@@ -69,7 +69,8 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
         'urls' => 'object[]',
         'mentions' => 'object[]',
         'channels' => 'object[]',
-        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]'
+        'md' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]',
+        'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]'
     ];
 
     /**
@@ -92,7 +93,8 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
         'urls' => null,
         'mentions' => null,
         'channels' => null,
-        'md' => null
+        'md' => null,
+        'attachments' => null
     ];
 
     /**
@@ -113,7 +115,8 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
         'urls' => false,
         'mentions' => false,
         'channels' => false,
-        'md' => false
+        'md' => false,
+        'attachments' => false
     ];
 
     /**
@@ -214,7 +217,8 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
         'urls' => 'urls',
         'mentions' => 'mentions',
         'channels' => 'channels',
-        'md' => 'md'
+        'md' => 'md',
+        'attachments' => 'attachments'
     ];
 
     /**
@@ -235,7 +239,8 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
         'urls' => 'set_urls',
         'mentions' => 'set_mentions',
         'channels' => 'set_channels',
-        'md' => 'set_md'
+        'md' => 'set_md',
+        'attachments' => 'set_attachments'
     ];
 
     /**
@@ -256,7 +261,8 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
         'urls' => 'get_urls',
         'mentions' => 'get_mentions',
         'channels' => 'get_channels',
-        'md' => 'get_md'
+        'md' => 'get_md',
+        'attachments' => 'get_attachments'
     ];
 
     /**
@@ -329,6 +335,7 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
         $this->setIfExists('mentions', $data ?? [], null);
         $this->setIfExists('channels', $data ?? [], null);
         $this->setIfExists('md', $data ?? [], null);
+        $this->setIfExists('attachments', $data ?? [], null);
     }
 
     /**
@@ -720,6 +727,33 @@ class GetApiV1ChannelsAnonymousread200ResponseMessagesInner implements ModelInte
             throw new \InvalidArgumentException('non-nullable md cannot be null');
         }
         $this->container['md'] = $md;
+
+        return $this;
+    }
+
+    /**
+     * Gets attachments
+     *
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null
+     */
+    public function get_attachments()
+    {
+        return $this->container['attachments'];
+    }
+
+    /**
+     * Sets attachments
+     *
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null $attachments attachments
+     *
+     * @return self
+     */
+    public function set_attachments($attachments)
+    {
+        if (is_null($attachments)) {
+            throw new \InvalidArgumentException('non-nullable attachments cannot be null');
+        }
+        $this->container['attachments'] = $attachments;
 
         return $this;
     }

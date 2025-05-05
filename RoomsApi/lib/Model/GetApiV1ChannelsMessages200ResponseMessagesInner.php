@@ -70,7 +70,7 @@ class GetApiV1ChannelsMessages200ResponseMessagesInner implements ModelInterface
         'replies' => 'string[]',
         'tcount' => 'int',
         'tlm' => 'string',
-        'attachments' => 'object[]',
+        'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]',
         'edited_at' => 'string',
         'edited_by' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddAll200ResponseChannelU',
         'reactions' => 'object',
@@ -776,7 +776,7 @@ class GetApiV1ChannelsMessages200ResponseMessagesInner implements ModelInterface
     /**
      * Gets attachments
      *
-     * @return object[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null
      */
     public function get_attachments()
     {
@@ -786,7 +786,7 @@ class GetApiV1ChannelsMessages200ResponseMessagesInner implements ModelInterface
     /**
      * Sets attachments
      *
-     * @param object[]|null $attachments attachments
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null $attachments attachments
      *
      * @return self
      */

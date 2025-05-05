@@ -63,7 +63,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
         'ts' => 'string',
         'msg' => 'string',
         'alias' => 'string',
-        'attachments' => 'object[]',
+        'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]',
         'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile',
         'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         'groupable' => 'bool',
@@ -566,7 +566,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Gets attachments
      *
-     * @return object[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null
      */
     public function get_attachments()
     {
@@ -576,7 +576,7 @@ class GetApiV1RoomsGet200ResponseUpdateInnerLastMessage implements ModelInterfac
     /**
      * Sets attachments
      *
-     * @param object[]|null $attachments attachments
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null $attachments attachments
      *
      * @return self
      */

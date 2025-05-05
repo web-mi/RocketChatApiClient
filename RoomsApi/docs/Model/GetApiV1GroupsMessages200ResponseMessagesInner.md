@@ -17,6 +17,7 @@ Name | Type | Description | Notes
 **starred** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1GroupsMessages200ResponseMessagesInnerStarred**](GetApiV1GroupsMessages200ResponseMessagesInnerStarred.md) |  | [optional]
 **t** | **string** |  | [optional]
 **groupable** | **bool** |  | [optional]
+**attachments** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]**](Attachment.md) |  | [optional]
 **unread** | **bool** |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

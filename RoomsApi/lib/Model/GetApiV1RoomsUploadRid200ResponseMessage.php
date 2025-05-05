@@ -63,7 +63,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
         'msg' => 'string',
         'file' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile',
         'files' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsGet200ResponseUpdateInnerLastMessageFile[]',
-        'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]',
+        'attachments' => '\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]',
         'u' => '\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsCreate200ResponseChannelU',
         '_updated_at' => 'string',
         'urls' => 'object[]',
@@ -524,7 +524,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Gets attachments
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null
      */
     public function get_attachments()
     {
@@ -534,7 +534,7 @@ class GetApiV1RoomsUploadRid200ResponseMessage implements ModelInterface, ArrayA
     /**
      * Sets attachments
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner[]|null $attachments attachments
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]|null $attachments attachments
      *
      * @return self
      */

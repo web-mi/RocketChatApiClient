@@ -22,6 +22,7 @@ All URIs are relative to https://apiexplorer.support.rocket.chat, except if the 
 | [**postApiV1RoomsCreateDiscussion()**](RoomsApi.md#postApiV1RoomsCreateDiscussion) | **POST** /api/v1/rooms.createDiscussion | Create Discussion |
 | [**postApiV1RoomsExport()**](RoomsApi.md#postApiV1RoomsExport) | **POST** /api/v1/rooms.export | Export Room |
 | [**postApiV1RoomsFavorite()**](RoomsApi.md#postApiV1RoomsFavorite) | **POST** /api/v1/rooms.favorite | Favorite/Unfavourite a Room |
+| [**postApiV1RoomsHide()**](RoomsApi.md#postApiV1RoomsHide) | **POST** /api/v1/rooms.hide | Hide Room |
 | [**postApiV1RoomsLeave()**](RoomsApi.md#postApiV1RoomsLeave) | **POST** /api/v1/rooms.leave | Leave Room |
 | [**postApiV1RoomsMedia()**](RoomsApi.md#postApiV1RoomsMedia) | **POST** /api/v1/rooms.media/{rid} | Upload Media Files to a Room |
 | [**postApiV1RoomsMuteUser()**](RoomsApi.md#postApiV1RoomsMuteUser) | **POST** /api/v1/rooms.muteUser | Mute User in Room |
@@ -1144,6 +1145,66 @@ try {
 ### Return type
 
 [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1ChannelsAddLeader200Response**](../Model/PostApiV1ChannelsAddLeader200Response.md)
+
+### Authorization
+
+No authorization required
+
+### HTTP request headers
+
+- **Content-Type**: `application/json`
+- **Accept**: `application/json`
+
+[[Back to top]](#) [[Back to API list]](../../README.md#endpoints)
+[[Back to Model list]](../../README.md#models)
+[[Back to README]](../../README.md)
+
+## `postApiV1RoomsHide()`
+
+```php
+postApiV1RoomsHide($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request): \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response
+```
+
+Hide Room
+
+Hide rooms without restrictions based on type. You can only hide a room if you have access to it.  ### Changelog  | Version | Description                          | | ------- | ------------------------------------ | | 7.4.0   | Added                                |
+
+### Example
+
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+
+
+$apiInstance = new WebMI\RocketChatApiClient\RoomsApi\Api\RoomsApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client()
+);
+$x_auth_token = RScctEHSmLGZGywfIhWyRpyofhKOiMoUIpimhvheU3f; // string | The `authToken` of the authenticated user.
+$x_user_id = rbAXPnMktTFbNpwtJ; // string | The `userId` of the authenticated user.
+$post_api_v1_rooms_hide_request = {"roomId":"6759dea438288929cff551c"}; // \WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHideRequest
+
+try {
+    $result = $apiInstance->postApiV1RoomsHide($x_auth_token, $x_user_id, $post_api_v1_rooms_hide_request);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling RoomsApi->postApiV1RoomsHide: ', $e->getMessage(), PHP_EOL;
+}
+```
+
+### Parameters
+
+| Name | Type | Description  | Notes |
+| ------------- | ------------- | ------------- | ------------- |
+| **x_auth_token** | **string**| The &#x60;authToken&#x60; of the authenticated user. | |
+| **x_user_id** | **string**| The &#x60;userId&#x60; of the authenticated user. | |
+| **post_api_v1_rooms_hide_request** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHideRequest**](../Model/PostApiV1RoomsHideRequest.md)|  | [optional] |
+
+### Return type
+
+[**\WebMI\RocketChatApiClient\RoomsApi\Model\PostApiV1RoomsHide200Response**](../Model/PostApiV1RoomsHide200Response.md)
 
 ### Authorization
 

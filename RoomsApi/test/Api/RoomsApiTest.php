@@ -288,6 +288,18 @@ class RoomsApiTest extends TestCase
     }
 
     /**
+     * Test case for postApiV1RoomsHide
+     *
+     * Hide Room.
+     *
+     */
+    public function testPostApiV1RoomsHide()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
      * Test case for postApiV1RoomsLeave
      *
      * Leave Room.

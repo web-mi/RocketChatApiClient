@@ -75,7 +75,7 @@ class GetApiV1ChannelsListJoined200ResponseChannelsInner implements ModelInterfa
         'sys_mes' => 'bool',
         '_updated_at' => 'string',
         'lm' => 'string',
-        'last_message' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner',
+        'last_message' => '\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsListJoined200ResponseChannelsInnerLastMessage',
         'topic' => 'string',
         'muted' => 'object[]',
         'unmuted' => 'string[]'
@@ -925,7 +925,7 @@ class GetApiV1ChannelsListJoined200ResponseChannelsInner implements ModelInterfa
     /**
      * Gets last_message
      *
-     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner|null
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsListJoined200ResponseChannelsInnerLastMessage|null
      */
     public function get_last_message()
     {
@@ -935,7 +935,7 @@ class GetApiV1ChannelsListJoined200ResponseChannelsInner implements ModelInterfa
     /**
      * Sets last_message
      *
-     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner|null $last_message last_message
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsListJoined200ResponseChannelsInnerLastMessage|null $last_message last_message
      *
      * @return self
      */

@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInnerTest
+ * PostApiV1RoomsHide400ResponseTest
  *
  * PHP version 8.1
  *
@@ -31,15 +31,15 @@ namespace WebMI\RocketChatApiClient\RoomsApi\Test\Model;
 use PHPUnit\Framework\TestCase;
 
 /**
- * GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInnerTest Class Doc Comment
+ * PostApiV1RoomsHide400ResponseTest Class Doc Comment
  *
  * @category    Class
- * @description GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner
+ * @description PostApiV1RoomsHide400Response
  * @package     WebMI\RocketChatApiClient\RoomsApi
  * @author      OpenAPI Generator team
  * @link        https://openapi-generator.tech
  */
-class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInnerTest extends TestCase
+class PostApiV1RoomsHide400ResponseTest extends TestCase
 {
 
     /**
@@ -71,63 +71,36 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInnerTest extends TestC
     }
 
     /**
-     * Test "GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner"
+     * Test "PostApiV1RoomsHide400Response"
      */
-    public function testGetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner()
+    public function testPostApiV1RoomsHide400Response()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "ts"
+     * Test attribute "success"
      */
-    public function testPropertyTs()
+    public function testPropertySuccess()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "title"
+     * Test attribute "error"
      */
-    public function testPropertyTitle()
+    public function testPropertyError()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');
     }
 
     /**
-     * Test attribute "title_link"
+     * Test attribute "error_type"
      */
-    public function testPropertyTitleLink()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "title_link_download"
-     */
-    public function testPropertyTitleLinkDownload()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "type"
-     */
-    public function testPropertyType()
-    {
-        // TODO: implement
-        self::markTestIncomplete('Not implemented');
-    }
-
-    /**
-     * Test attribute "description"
-     */
-    public function testPropertyDescription()
+    public function testPropertyErrorType()
     {
         // TODO: implement
         self::markTestIncomplete('Not implemented');

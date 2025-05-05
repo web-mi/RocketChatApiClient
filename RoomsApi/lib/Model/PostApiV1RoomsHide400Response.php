@@ -1,6 +1,6 @@
 <?php
 /**
- * GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner
+ * PostApiV1RoomsHide400Response
  *
  * PHP version 8.1
  *
@@ -32,7 +32,7 @@ use \ArrayAccess;
 use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
 
 /**
- * GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner Class Doc Comment
+ * PostApiV1RoomsHide400Response Class Doc Comment
  *
  * @category Class
  * @package  WebMI\RocketChatApiClient\RoomsApi
@@ -40,7 +40,7 @@ use \WebMI\RocketChatApiClient\RoomsApi\ObjectSerializer;
  * @link     https://openapi-generator.tech
  * @implements \ArrayAccess<string, mixed>
  */
-class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelInterface, ArrayAccess, \JsonSerializable
+class PostApiV1RoomsHide400Response implements ModelInterface, ArrayAccess, \JsonSerializable
 {
     public const DISCRIMINATOR = null;
 
@@ -49,7 +49,7 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
       *
       * @var string
       */
-    protected static $openAPIModelName = 'get_api_v1_rooms_upload_rid_200_response_message_attachments_inner';
+    protected static $openAPIModelName = 'post_api_v1_rooms_hide_400_response';
 
     /**
       * Array of property to type mappings. Used for (de)serialization
@@ -57,12 +57,9 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
       * @var string[]
       */
     protected static $openAPITypes = [
-        'ts' => 'string',
-        'title' => 'string',
-        'title_link' => 'string',
-        'title_link_download' => 'bool',
-        'type' => 'string',
-        'description' => 'string'
+        'success' => 'bool',
+        'error' => 'string',
+        'error_type' => 'string'
     ];
 
     /**
@@ -73,12 +70,9 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
       * @psalm-var array<string, string|null>
       */
     protected static $openAPIFormats = [
-        'ts' => null,
-        'title' => null,
-        'title_link' => null,
-        'title_link_download' => null,
-        'type' => null,
-        'description' => null
+        'success' => null,
+        'error' => null,
+        'error_type' => null
     ];
 
     /**
@@ -87,12 +81,9 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
       * @var boolean[]
       */
     protected static array $openAPINullables = [
-        'ts' => false,
-        'title' => false,
-        'title_link' => false,
-        'title_link_download' => false,
-        'type' => false,
-        'description' => false
+        'success' => false,
+        'error' => false,
+        'error_type' => false
     ];
 
     /**
@@ -181,12 +172,9 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      * @var string[]
      */
     protected static $attributeMap = [
-        'ts' => 'ts',
-        'title' => 'title',
-        'title_link' => 'title_link',
-        'title_link_download' => 'title_link_download',
-        'type' => 'type',
-        'description' => 'description'
+        'success' => 'success',
+        'error' => 'error',
+        'error_type' => 'errorType'
     ];
 
     /**
@@ -195,12 +183,9 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      * @var string[]
      */
     protected static $setters = [
-        'ts' => 'set_ts',
-        'title' => 'set_title',
-        'title_link' => 'set_title_link',
-        'title_link_download' => 'set_title_link_download',
-        'type' => 'set_type',
-        'description' => 'set_description'
+        'success' => 'set_success',
+        'error' => 'set_error',
+        'error_type' => 'set_error_type'
     ];
 
     /**
@@ -209,12 +194,9 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      * @var string[]
      */
     protected static $getters = [
-        'ts' => 'get_ts',
-        'title' => 'get_title',
-        'title_link' => 'get_title_link',
-        'title_link_download' => 'get_title_link_download',
-        'type' => 'get_type',
-        'description' => 'get_description'
+        'success' => 'get_success',
+        'error' => 'get_error',
+        'error_type' => 'get_error_type'
     ];
 
     /**
@@ -274,12 +256,9 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
      */
     public function __construct(?array $data = null)
     {
-        $this->setIfExists('ts', $data ?? [], null);
-        $this->setIfExists('title', $data ?? [], null);
-        $this->setIfExists('title_link', $data ?? [], null);
-        $this->setIfExists('title_link_download', $data ?? [], null);
-        $this->setIfExists('type', $data ?? [], null);
-        $this->setIfExists('description', $data ?? [], null);
+        $this->setIfExists('success', $data ?? [], null);
+        $this->setIfExists('error', $data ?? [], null);
+        $this->setIfExists('error_type', $data ?? [], null);
     }
 
     /**
@@ -325,163 +304,82 @@ class GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner implements ModelI
 
 
     /**
-     * Gets ts
-     *
-     * @return string|null
-     */
-    public function get_ts()
-    {
-        return $this->container['ts'];
-    }
-
-    /**
-     * Sets ts
-     *
-     * @param string|null $ts ts
-     *
-     * @return self
-     */
-    public function set_ts($ts)
-    {
-        if (is_null($ts)) {
-            throw new \InvalidArgumentException('non-nullable ts cannot be null');
-        }
-        $this->container['ts'] = $ts;
-
-        return $this;
-    }
-
-    /**
-     * Gets title
-     *
-     * @return string|null
-     */
-    public function get_title()
-    {
-        return $this->container['title'];
-    }
-
-    /**
-     * Sets title
-     *
-     * @param string|null $title title
-     *
-     * @return self
-     */
-    public function set_title($title)
-    {
-        if (is_null($title)) {
-            throw new \InvalidArgumentException('non-nullable title cannot be null');
-        }
-        $this->container['title'] = $title;
-
-        return $this;
-    }
-
-    /**
-     * Gets title_link
-     *
-     * @return string|null
-     */
-    public function get_title_link()
-    {
-        return $this->container['title_link'];
-    }
-
-    /**
-     * Sets title_link
-     *
-     * @param string|null $title_link title_link
-     *
-     * @return self
-     */
-    public function set_title_link($title_link)
-    {
-        if (is_null($title_link)) {
-            throw new \InvalidArgumentException('non-nullable title_link cannot be null');
-        }
-        $this->container['title_link'] = $title_link;
-
-        return $this;
-    }
-
-    /**
-     * Gets title_link_download
+     * Gets success
      *
      * @return bool|null
      */
-    public function get_title_link_download()
+    public function get_success()
     {
-        return $this->container['title_link_download'];
+        return $this->container['success'];
     }
 
     /**
-     * Sets title_link_download
+     * Sets success
      *
-     * @param bool|null $title_link_download title_link_download
+     * @param bool|null $success success
      *
      * @return self
      */
-    public function set_title_link_download($title_link_download)
+    public function set_success($success)
     {
-        if (is_null($title_link_download)) {
-            throw new \InvalidArgumentException('non-nullable title_link_download cannot be null');
+        if (is_null($success)) {
+            throw new \InvalidArgumentException('non-nullable success cannot be null');
         }
-        $this->container['title_link_download'] = $title_link_download;
+        $this->container['success'] = $success;
 
         return $this;
     }
 
     /**
-     * Gets type
+     * Gets error
      *
      * @return string|null
      */
-    public function get_type()
+    public function get_error()
     {
-        return $this->container['type'];
+        return $this->container['error'];
     }
 
     /**
-     * Sets type
+     * Sets error
      *
-     * @param string|null $type type
+     * @param string|null $error error
      *
      * @return self
      */
-    public function set_type($type)
+    public function set_error($error)
     {
-        if (is_null($type)) {
-            throw new \InvalidArgumentException('non-nullable type cannot be null');
+        if (is_null($error)) {
+            throw new \InvalidArgumentException('non-nullable error cannot be null');
         }
-        $this->container['type'] = $type;
+        $this->container['error'] = $error;
 
         return $this;
     }
 
     /**
-     * Gets description
+     * Gets error_type
      *
      * @return string|null
      */
-    public function get_description()
+    public function get_error_type()
     {
-        return $this->container['description'];
+        return $this->container['error_type'];
     }
 
     /**
-     * Sets description
+     * Sets error_type
      *
-     * @param string|null $description description
+     * @param string|null $error_type error_type
      *
      * @return self
      */
-    public function set_description($description)
+    public function set_error_type($error_type)
     {
-        if (is_null($description)) {
-            throw new \InvalidArgumentException('non-nullable description cannot be null');
+        if (is_null($error_type)) {
+            throw new \InvalidArgumentException('non-nullable error_type cannot be null');
         }
-        $this->container['description'] = $description;
+        $this->container['error_type'] = $error_type;
 
         return $this;
     }

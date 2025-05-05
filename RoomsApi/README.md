@@ -178,6 +178,7 @@ Class | Method | HTTP request | Description
 *RoomsApi* | [**postApiV1RoomsCreateDiscussion**](docs/Api/RoomsApi.md#postapiv1roomscreatediscussion) | **POST** /api/v1/rooms.createDiscussion | Create Discussion
 *RoomsApi* | [**postApiV1RoomsExport**](docs/Api/RoomsApi.md#postapiv1roomsexport) | **POST** /api/v1/rooms.export | Export Room
 *RoomsApi* | [**postApiV1RoomsFavorite**](docs/Api/RoomsApi.md#postapiv1roomsfavorite) | **POST** /api/v1/rooms.favorite | Favorite/Unfavourite a Room
+*RoomsApi* | [**postApiV1RoomsHide**](docs/Api/RoomsApi.md#postapiv1roomshide) | **POST** /api/v1/rooms.hide | Hide Room
 *RoomsApi* | [**postApiV1RoomsLeave**](docs/Api/RoomsApi.md#postapiv1roomsleave) | **POST** /api/v1/rooms.leave | Leave Room
 *RoomsApi* | [**postApiV1RoomsMedia**](docs/Api/RoomsApi.md#postapiv1roomsmedia) | **POST** /api/v1/rooms.media/{rid} | Upload Media Files to a Room
 *RoomsApi* | [**postApiV1RoomsMuteUser**](docs/Api/RoomsApi.md#postapiv1roomsmuteuser) | **POST** /api/v1/rooms.muteUser | Mute User in Room
@@ -206,6 +207,7 @@ Class | Method | HTTP request | Description
 
 ## Models
 
+- [Attachment](docs/Model/Attachment.md)
 - [Channel](docs/Model/Channel.md)
 - [GetApiV1AuditRoomsMembers200Response](docs/Model/GetApiV1AuditRoomsMembers200Response.md)
 - [GetApiV1AuditRoomsMembers200ResponseMembersInner](docs/Model/GetApiV1AuditRoomsMembers200ResponseMembersInner.md)
@@ -231,6 +233,7 @@ Class | Method | HTTP request | Description
 - [GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerText](docs/Model/GetApiV1ChannelsList200ResponseChannelsInnerLastMessageBlocksInnerText.md)
 - [GetApiV1ChannelsListJoined200Response](docs/Model/GetApiV1ChannelsListJoined200Response.md)
 - [GetApiV1ChannelsListJoined200ResponseChannelsInner](docs/Model/GetApiV1ChannelsListJoined200ResponseChannelsInner.md)
+- [GetApiV1ChannelsListJoined200ResponseChannelsInnerLastMessage](docs/Model/GetApiV1ChannelsListJoined200ResponseChannelsInnerLastMessage.md)
 - [GetApiV1ChannelsMembers200Response](docs/Model/GetApiV1ChannelsMembers200Response.md)
 - [GetApiV1ChannelsMembers200ResponseMembersInner](docs/Model/GetApiV1ChannelsMembers200ResponseMembersInner.md)
 - [GetApiV1ChannelsMessages200Response](docs/Model/GetApiV1ChannelsMessages200Response.md)
@@ -285,7 +288,6 @@ Class | Method | HTTP request | Description
 - [GetApiV1RoomsNameExists200Response](docs/Model/GetApiV1RoomsNameExists200Response.md)
 - [GetApiV1RoomsUploadRid200Response](docs/Model/GetApiV1RoomsUploadRid200Response.md)
 - [GetApiV1RoomsUploadRid200ResponseMessage](docs/Model/GetApiV1RoomsUploadRid200ResponseMessage.md)
-- [GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner](docs/Model/GetApiV1RoomsUploadRid200ResponseMessageAttachmentsInner.md)
 - [GetApiV1TeamsAutocomplete200Response](docs/Model/GetApiV1TeamsAutocomplete200Response.md)
 - [GetApiV1TeamsAutocomplete200ResponseTeamsInner](docs/Model/GetApiV1TeamsAutocomplete200ResponseTeamsInner.md)
 - [GetApiV1TeamsInfo200Response](docs/Model/GetApiV1TeamsInfo200Response.md)
@@ -411,6 +413,10 @@ Class | Method | HTTP request | Description
 - [PostApiV1RoomsCreateDiscussionRequest](docs/Model/PostApiV1RoomsCreateDiscussionRequest.md)
 - [PostApiV1RoomsExportRequest](docs/Model/PostApiV1RoomsExportRequest.md)
 - [PostApiV1RoomsFavoriteRequest](docs/Model/PostApiV1RoomsFavoriteRequest.md)
+- [PostApiV1RoomsHide200Response](docs/Model/PostApiV1RoomsHide200Response.md)
+- [PostApiV1RoomsHide400Response](docs/Model/PostApiV1RoomsHide400Response.md)
+- [PostApiV1RoomsHide401Response](docs/Model/PostApiV1RoomsHide401Response.md)
+- [PostApiV1RoomsHideRequest](docs/Model/PostApiV1RoomsHideRequest.md)
 - [PostApiV1RoomsLeaveRequest](docs/Model/PostApiV1RoomsLeaveRequest.md)
 - [PostApiV1RoomsMedia200Response](docs/Model/PostApiV1RoomsMedia200Response.md)
 - [PostApiV1RoomsMedia200ResponseFile](docs/Model/PostApiV1RoomsMedia200ResponseFile.md)

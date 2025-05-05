@@ -17,5 +17,6 @@ Name | Type | Description | Notes
 **mentions** | **object[]** |  | [optional]
 **channels** | **object[]** |  | [optional]
 **md** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Markdown[]**](Markdown.md) |  | [optional]
+**attachments** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\Attachment[]**](Attachment.md) |  | [optional]
 
 [[Back to Model list]](../../README.md#models) [[Back to API list]](../../README.md#endpoints) [[Back to README]](../../README.md)

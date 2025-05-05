@@ -22,7 +22,7 @@ Name | Type | Description | Notes
 **sys_mes** | **bool** |  | [optional]
 **_updated_at** | **string** |  | [optional]
 **lm** | **string** |  | [optional]
-**last_message** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsAnonymousread200ResponseMessagesInner**](GetApiV1ChannelsAnonymousread200ResponseMessagesInner.md) |  | [optional]
+**last_message** | [**\WebMI\RocketChatApiClient\RoomsApi\Model\GetApiV1ChannelsListJoined200ResponseChannelsInnerLastMessage**](GetApiV1ChannelsListJoined200ResponseChannelsInnerLastMessage.md) |  | [optional]
 **topic** | **string** |  | [optional]
 **muted** | **object[]** |  | [optional]
 **unmuted** | **string[]** |  | [optional]
