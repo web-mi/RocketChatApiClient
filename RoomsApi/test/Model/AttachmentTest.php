@@ -116,6 +116,51 @@ class AttachmentTest extends TestCase
     }
 
     /**
+     * Test attribute "image_dimensions"
+     */
+    public function testPropertyImageDimensions()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "image_preview"
+     */
+    public function testPropertyImagePreview()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "image_url"
+     */
+    public function testPropertyImageUrl()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "image_type"
+     */
+    public function testPropertyImageType()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
+     * Test attribute "image_size"
+     */
+    public function testPropertyImageSize()
+    {
+        // TODO: implement
+        self::markTestIncomplete('Not implemented');
+    }
+
+    /**
      * Test attribute "type"
      */
     public function testPropertyType()

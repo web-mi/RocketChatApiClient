@@ -61,6 +61,11 @@ class Attachment implements ModelInterface, ArrayAccess, \JsonSerializable
         'title' => 'string',
         'title_link' => 'string',
         'title_link_download' => 'bool',
+        'image_dimensions' => '\WebMI\RocketChatApiClient\RoomsApi\Model\AttachmentImageDimensions',
+        'image_preview' => 'string',
+        'image_url' => 'string',
+        'image_type' => 'string',
+        'image_size' => 'int',
         'type' => 'string',
         'description' => 'string'
     ];
@@ -77,6 +82,11 @@ class Attachment implements ModelInterface, ArrayAccess, \JsonSerializable
         'title' => null,
         'title_link' => null,
         'title_link_download' => null,
+        'image_dimensions' => null,
+        'image_preview' => null,
+        'image_url' => null,
+        'image_type' => null,
+        'image_size' => null,
         'type' => null,
         'description' => null
     ];
@@ -91,6 +101,11 @@ class Attachment implements ModelInterface, ArrayAccess, \JsonSerializable
         'title' => false,
         'title_link' => false,
         'title_link_download' => false,
+        'image_dimensions' => false,
+        'image_preview' => false,
+        'image_url' => false,
+        'image_type' => false,
+        'image_size' => false,
         'type' => false,
         'description' => false
     ];
@@ -185,6 +200,11 @@ class Attachment implements ModelInterface, ArrayAccess, \JsonSerializable
         'title' => 'title',
         'title_link' => 'title_link',
         'title_link_download' => 'title_link_download',
+        'image_dimensions' => 'image_dimensions',
+        'image_preview' => 'image_preview',
+        'image_url' => 'image_url',
+        'image_type' => 'image_type',
+        'image_size' => 'image_size',
         'type' => 'type',
         'description' => 'description'
     ];
@@ -199,6 +219,11 @@ class Attachment implements ModelInterface, ArrayAccess, \JsonSerializable
         'title' => 'set_title',
         'title_link' => 'set_title_link',
         'title_link_download' => 'set_title_link_download',
+        'image_dimensions' => 'set_image_dimensions',
+        'image_preview' => 'set_image_preview',
+        'image_url' => 'set_image_url',
+        'image_type' => 'set_image_type',
+        'image_size' => 'set_image_size',
         'type' => 'set_type',
         'description' => 'set_description'
     ];
@@ -213,6 +238,11 @@ class Attachment implements ModelInterface, ArrayAccess, \JsonSerializable
         'title' => 'get_title',
         'title_link' => 'get_title_link',
         'title_link_download' => 'get_title_link_download',
+        'image_dimensions' => 'get_image_dimensions',
+        'image_preview' => 'get_image_preview',
+        'image_url' => 'get_image_url',
+        'image_type' => 'get_image_type',
+        'image_size' => 'get_image_size',
         'type' => 'get_type',
         'description' => 'get_description'
     ];
@@ -278,6 +308,11 @@ class Attachment implements ModelInterface, ArrayAccess, \JsonSerializable
         $this->setIfExists('title', $data ?? [], null);
         $this->setIfExists('title_link', $data ?? [], null);
         $this->setIfExists('title_link_download', $data ?? [], null);
+        $this->setIfExists('image_dimensions', $data ?? [], null);
+        $this->setIfExists('image_preview', $data ?? [], null);
+        $this->setIfExists('image_url', $data ?? [], null);
+        $this->setIfExists('image_type', $data ?? [], null);
+        $this->setIfExists('image_size', $data ?? [], null);
         $this->setIfExists('type', $data ?? [], null);
         $this->setIfExists('description', $data ?? [], null);
     }
@@ -428,6 +463,141 @@ class Attachment implements ModelInterface, ArrayAccess, \JsonSerializable
             throw new \InvalidArgumentException('non-nullable title_link_download cannot be null');
         }
         $this->container['title_link_download'] = $title_link_download;
+
+        return $this;
+    }
+
+    /**
+     * Gets image_dimensions
+     *
+     * @return \WebMI\RocketChatApiClient\RoomsApi\Model\AttachmentImageDimensions|null
+     */
+    public function get_image_dimensions()
+    {
+        return $this->container['image_dimensions'];
+    }
+
+    /**
+     * Sets image_dimensions
+     *
+     * @param \WebMI\RocketChatApiClient\RoomsApi\Model\AttachmentImageDimensions|null $image_dimensions image_dimensions
+     *
+     * @return self
+     */
+    public function set_image_dimensions($image_dimensions)
+    {
+        if (is_null($image_dimensions)) {
+            throw new \InvalidArgumentException('non-nullable image_dimensions cannot be null');
+        }
+        $this->container['image_dimensions'] = $image_dimensions;
+
+        return $this;
+    }
+
+    /**
+     * Gets image_preview
+     *
+     * @return string|null
+     */
+    public function get_image_preview()
+    {
+        return $this->container['image_preview'];
+    }
+
+    /**
+     * Sets image_preview
+     *
+     * @param string|null $image_preview image_preview
+     *
+     * @return self
+     */
+    public function set_image_preview($image_preview)
+    {
+        if (is_null($image_preview)) {
+            throw new \InvalidArgumentException('non-nullable image_preview cannot be null');
+        }
+        $this->container['image_preview'] = $image_preview;
+
+        return $this;
+    }
+
+    /**
+     * Gets image_url
+     *
+     * @return string|null
+     */
+    public function get_image_url()
+    {
+        return $this->container['image_url'];
+    }
+
+    /**
+     * Sets image_url
+     *
+     * @param string|null $image_url image_url
+     *
+     * @return self
+     */
+    public function set_image_url($image_url)
+    {
+        if (is_null($image_url)) {
+            throw new \InvalidArgumentException('non-nullable image_url cannot be null');
+        }
+        $this->container['image_url'] = $image_url;
+
+        return $this;
+    }
+
+    /**
+     * Gets image_type
+     *
+     * @return string|null
+     */
+    public function get_image_type()
+    {
+        return $this->container['image_type'];
+    }
+
+    /**
+     * Sets image_type
+     *
+     * @param string|null $image_type image_type
+     *
+     * @return self
+     */
+    public function set_image_type($image_type)
+    {
+        if (is_null($image_type)) {
+            throw new \InvalidArgumentException('non-nullable image_type cannot be null');
+        }
+        $this->container['image_type'] = $image_type;
+
+        return $this;
+    }
+
+    /**
+     * Gets image_size
+     *
+     * @return int|null
+     */
+    public function get_image_size()
+    {
+        return $this->container['image_size'];
+    }
+
+    /**
+     * Sets image_size
+     *
+     * @param int|null $image_size image_size
+     *
+     * @return self
+     */
+    public function set_image_size($image_size)
+    {
+        if (is_null($image_size)) {
+            throw new \InvalidArgumentException('non-nullable image_size cannot be null');
+        }
+        $this->container['image_size'] = $image_size;
 
         return $this;
     }

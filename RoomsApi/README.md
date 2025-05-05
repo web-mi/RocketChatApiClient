@@ -208,6 +208,7 @@ Class | Method | HTTP request | Description
 ## Models
 
 - [Attachment](docs/Model/Attachment.md)
+- [AttachmentImageDimensions](docs/Model/AttachmentImageDimensions.md)
 - [Channel](docs/Model/Channel.md)
 - [File](docs/Model/File.md)
 - [GetApiV1AuditRoomsMembers200Response](docs/Model/GetApiV1AuditRoomsMembers200Response.md)

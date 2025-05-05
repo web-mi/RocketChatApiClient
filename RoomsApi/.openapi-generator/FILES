@@ -10,6 +10,7 @@ docs/Api/GroupsApi.md
 docs/Api/RoomsApi.md
 docs/Api/TeamsApi.md
 docs/Model/Attachment.md
+docs/Model/AttachmentImageDimensions.md
 docs/Model/Channel.md
 docs/Model/File.md
 docs/Model/GetApiV1AuditRoomsMembers200Response.md
@@ -263,6 +264,7 @@ lib/ApiException.php
 lib/Configuration.php
 lib/HeaderSelector.php
 lib/Model/Attachment.php
+lib/Model/AttachmentImageDimensions.php
 lib/Model/Channel.php
 lib/Model/File.php
 lib/Model/GetApiV1AuditRoomsMembers200Response.php
@@ -514,6 +516,7 @@ test/Api/DirectoryApiTest.php
 test/Api/GroupsApiTest.php
 test/Api/RoomsApiTest.php
 test/Api/TeamsApiTest.php
+test/Model/AttachmentImageDimensionsTest.php
 test/Model/AttachmentTest.php
 test/Model/ChannelTest.php
 test/Model/FileTest.php
